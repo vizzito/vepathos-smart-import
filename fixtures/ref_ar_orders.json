@@ -1,0 +1,436 @@
+{
+  "addresses": [
+    {
+      "delivery_id": "VP-1000",
+      "lat": -34.5898,
+      "lng": -58.3772,
+      "address": "Av. del Libertador 900, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 1,
+      "service_time_min": 5,
+      "packages": [
+        {
+          "package_id": "VP-PKG-001",
+          "weight_kg": 0.5,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 500,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 09:00",
+            "end": "2026-09-15 11:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1001",
+      "lat": -34.5921,
+      "lng": -58.3745,
+      "address": "Maipú 400, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 2,
+      "service_time_min": 10,
+      "packages": [
+        {
+          "package_id": "VP-PKG-002-1",
+          "weight_kg": 0.15,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 150,
+          "status": "PENDING"
+        },
+        {
+          "package_id": "VP-PKG-002-2",
+          "weight_kg": 0.15,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 150,
+          "status": "PENDING"
+        },
+        {
+          "package_id": "VP-PKG-002-B",
+          "weight_kg": 0.05,
+          "dimensions": {
+            "length": 20,
+            "width": 15,
+            "height": 4
+          },
+          "volume_cm3": 1200,
+          "packaging": "BOX",
+          "value_cents": 50,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1002",
+      "lat": -34.6012,
+      "lng": -58.3848,
+      "address": "Lavalle 1200, Buenos Aires",
+      "zone": "San Nicolás",
+      "priority": 3,
+      "service_time_min": 15,
+      "packages": [
+        {
+          "package_id": "VP-PKG-003",
+          "weight_kg": 0.35,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 350,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 11:00",
+            "end": "2026-09-15 13:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1003",
+      "lat": -34.6025,
+      "lng": -58.3795,
+      "address": "Tucumán 900, Buenos Aires",
+      "zone": "San Nicolás",
+      "priority": 1,
+      "service_time_min": 20,
+      "packages": [
+        {
+          "package_id": "VP-PKG-004",
+          "weight_kg": 0.22,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 220,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1004",
+      "lat": -34.5955,
+      "lng": -58.3812,
+      "address": "Sarmiento 600, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 2,
+      "service_time_min": 5,
+      "packages": [
+        {
+          "package_id": "VP-PKG-005",
+          "weight_kg": 1.1,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 1100,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 13:00",
+            "end": "2026-09-15 15:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1005",
+      "lat": -34.5938,
+      "lng": -58.3768,
+      "address": "Esmeralda 300, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 3,
+      "service_time_min": 10,
+      "packages": [
+        {
+          "package_id": "VP-PKG-006",
+          "weight_kg": 0.4,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 400,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1006",
+      "lat": -34.5915,
+      "lng": -58.3721,
+      "address": "Reconquista 500, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 1,
+      "service_time_min": 15,
+      "packages": [
+        {
+          "package_id": "VP-PKG-007",
+          "weight_kg": 0.18,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 180,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 10:00",
+            "end": "2026-09-15 12:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1007",
+      "lat": -34.5942,
+      "lng": -58.3738,
+      "address": "San Martín 200, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 2,
+      "service_time_min": 20,
+      "packages": [
+        {
+          "package_id": "VP-PKG-008",
+          "weight_kg": 0.55,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 550,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1008",
+      "lat": -34.5998,
+      "lng": -58.3825,
+      "address": "Viamonte 800, Buenos Aires",
+      "zone": "San Nicolás",
+      "priority": 3,
+      "service_time_min": 5,
+      "packages": [
+        {
+          "package_id": "VP-PKG-009",
+          "weight_kg": 0.3,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 300,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 12:00",
+            "end": "2026-09-15 14:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1009",
+      "lat": -34.5972,
+      "lng": -58.3788,
+      "address": "Cerrito 700, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 1,
+      "service_time_min": 10,
+      "packages": [
+        {
+          "package_id": "VP-PKG-010-1",
+          "weight_kg": 0.05,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 50,
+          "status": "PENDING"
+        },
+        {
+          "package_id": "VP-PKG-010-2",
+          "weight_kg": 0.05,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 50,
+          "status": "PENDING"
+        },
+        {
+          "package_id": "VP-PKG-010-3",
+          "weight_kg": 0.05,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 50,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1010",
+      "lat": -34.5965,
+      "lng": -58.3755,
+      "address": "Libertad 450, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 2,
+      "service_time_min": 15,
+      "packages": [
+        {
+          "package_id": "VP-PKG-011-1",
+          "weight_kg": 0.08,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 80,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 09:00",
+            "end": "2026-09-15 11:00",
+            "time_zone": "UTC"
+          }
+        },
+        {
+          "package_id": "VP-PKG-011-2",
+          "weight_kg": 0.08,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 80,
+          "status": "PENDING",
+          "time_window": {
+            "start": "2026-09-15 09:00",
+            "end": "2026-09-15 11:00",
+            "time_zone": "UTC"
+          }
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1011",
+      "lat": -34.5988,
+      "lng": -58.3742,
+      "address": "Florida 500, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 3,
+      "service_time_min": 20,
+      "packages": [
+        {
+          "package_id": "VP-PKG-012",
+          "weight_kg": 0.65,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 650,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1998",
+      "address": "Paraguay 1200, Buenos Aires",
+      "zone": "Retiro",
+      "priority": 2,
+      "service_time_min": 10,
+      "packages": [
+        {
+          "package_id": "VP-PKG-GEO",
+          "weight_kg": 0.8,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 800,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "VP-1999",
+      "lat": 95,
+      "lng": 200,
+      "address": "Invalid row, Buenos Aires",
+      "zone": "Retiro",
+      "packages": [
+        {
+          "package_id": "VP-PKG-BAD",
+          "weight_kg": 0.5,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "volume_cm3": 2376,
+          "packaging": "BOX",
+          "value_cents": 500,
+          "status": "PENDING"
+        }
+      ]
+    }
+  ]
+}

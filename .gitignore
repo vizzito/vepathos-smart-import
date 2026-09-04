@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+out/
+data/
+benchmarks/results.*
+.env
+.env.prod
+# fixtures generados: se recrean con `make-fixtures`
+fixtures/*.xlsx
+fixtures/*.xls
+fixtures/*.tsv
+fixtures/*.txt
+fixtures/es_*.csv
+fixtures/en_*.csv
+fixtures/no_headers.csv
+fixtures/merged_field.csv
+fixtures/swapped_coords.csv
+fixtures/semicolon_latin1.csv
+!fixtures/ref_*

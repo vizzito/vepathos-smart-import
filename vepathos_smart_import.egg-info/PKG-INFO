@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: vepathos-smart-import
+Version: 0.1.0
+Summary: Normaliza archivos de entregas de cualquier formato al schema Vepathos, y geocodifica como accion aparte.
+Requires-Python: >=3.11
+Requires-Dist: typer>=0.12
+Requires-Dist: pydantic>=2.6
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: xlrd>=2.0
+Requires-Dist: rapidfuzz>=3.6
+Requires-Dist: charset-normalizer>=3.3
+Requires-Dist: phonenumbers>=8.13
+Provides-Extra: geo
+Requires-Dist: osmium>=4.0; extra == "geo"
+Provides-Extra: ai
+Requires-Dist: transformers>=4.40; extra == "ai"
+Requires-Dist: torch>=2.2; extra == "ai"
+Requires-Dist: accelerate>=0.30; extra == "ai"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: psutil>=5.9; extra == "dev"
+Requires-Dist: xlwt>=1.3; extra == "dev"
+Requires-Dist: pandas>=2.2; extra == "dev"
