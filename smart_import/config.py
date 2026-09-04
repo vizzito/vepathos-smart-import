@@ -51,6 +51,7 @@ class Config:
     model: str = "numind/NuExtract-1.5-tiny"
     device: str = "cpu"
     ai_timeout_s: float = 30.0
+    extract_max_rows: int = 2_000
 
     # --- geocoding ---
     pbf_dir: str = ""
@@ -72,6 +73,7 @@ class Config:
             model=os.getenv("SMART_IMPORT_MODEL", "numind/NuExtract-1.5-tiny"),
             device=os.getenv("SMART_IMPORT_DEVICE", "cpu"),
             ai_timeout_s=_float("SMART_IMPORT_AI_TIMEOUT", 30.0),
+            extract_max_rows=_int("SMART_IMPORT_EXTRACT_MAX_ROWS", 2_000),
             pbf_dir=os.getenv("SMART_IMPORT_PBF_DIR", ""),
             index_dir=os.getenv("SMART_IMPORT_INDEX_DIR", "data/indexes"),
             cache_path=os.getenv("SMART_IMPORT_CACHE_PATH", "data/cache/geocode_cache.sqlite"),

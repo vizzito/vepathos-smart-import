@@ -23,10 +23,11 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"        # normalización + tests
 pip install -e ".[geo]"        # + geocoder (pyosmium)
-pip install -e ".[ai]"         # + NuExtract (opcional, ~2-3 GB)
+pip install -e ".[api]"        # + servicio HTTP (FastAPI)
+pip install -e ".[ai]"         # + NuExtract (opcional, ~2,5 GB)
 ```
 
-## Los cinco comandos
+## Los comandos
 
 ```bash
 python -m smart_import inspect fixtures/preamble_dirty.xlsx
@@ -38,6 +39,8 @@ python -m smart_import build-geocoder-index --pbf /data/pbf/<region>.osm.pbf \
 python -m smart_import geocode --input out/normalized.csv \
     --index data/indexes/<region>.sqlite --origin-lat -34.6037 --origin-lon -58.3816 \
     --output out/geocoded.csv
+python -m smart_import extract --input out/normalized.csv --output out/separado.csv
+python -m smart_import serve --port 8100
 ```
 
 ---
@@ -190,6 +193,92 @@ segunda corrida: 6 filas, 0.001 s  (100 % hits)
 
 ---
 
+## Servicio HTTP
+
+```bash
+export SMART_IMPORT_PBF_DIR=/ruta/al/route-optimizer-app/data/_extracts
+python -m smart_import serve --port 8100
+# docs interactivas: http://localhost:8100/docs
+```
+
+| Método | Ruta | Qué hace |
+|---|---|---|
+| `GET` | `/health` | capacidades: IA instalada, PBFs visibles, índices construidos |
+| `GET` | `/schemas` | schemas destino y sus campos |
+| `POST` | `/imports` | sube y **normaliza** (síncrono). Devuelve mapping + report + `next_actions` |
+| `GET` | `/imports/{id}` | estado del job |
+| `GET` | `/imports/{id}/preview` | muestra de filas para pintar en la UI |
+| `PUT` | `/imports/{id}/mapping` | corrige el mapping y re-normaliza |
+| `GET` | `/imports/{id}/download?format=flat\|nested\|geocoded` | descarga el resultado |
+| `POST` | `/imports/{id}/extract` | separa una columna compuesta **con el modelo** (async) |
+| `POST` | `/imports/{id}/geocode` | geolocaliza (async). **Nunca automático** |
+| `GET` | `/geocoding/coverage?lat&lon` | ¿hay PBF para esta zona? Consultalo antes de ofrecer el botón |
+| `DELETE` | `/imports/{id}` | borra job y archivos |
+
+`normalize` es síncrono porque 50k filas tardan ~1,5 s. `extract` y `geocode` son
+asíncronos (un worker cada uno) y se consultan con `GET /imports/{id}`.
+
+Cada respuesta trae **`next_actions`**: qué puede hacer el usuario ahora y con qué link.
+La UI no necesita conocer la máquina de estados.
+
+```jsonc
+{"job_id": "imp_ab12", "status": "normalized",
+ "report": {"deliveries": 40, "packages": 67, "valid_rows": 0, "needs_geocode": 40,
+            "mapping": {"Dest.": {"target": "address", "confidence": 0.99}}},
+ "next_actions": [
+   {"action": "download", "href": "/imports/imp_ab12/download?format=flat"},
+   {"action": "geocode",  "href": "/imports/imp_ab12/geocode",
+    "description": "Geolocalizar 40 fila(s). NO se ejecuta solo: lo decide el usuario."}]}
+```
+
+> El almacén de jobs vive **en memoria del proceso**: con `--workers > 1` cada worker
+> vería jobs distintos. Para escalar hace falta el store compartido, que es la etapa
+> siguiente junto con RabbitMQ.
+
+---
+
+## El modelo: qué hace y qué no
+
+**El mapeo de columnas es 100 % determinístico — sin IA.** Se probó delegarlo a
+NuExtract-1.5-tiny y el modelo **devuelve el schema del prompt** en lugar de razonar
+sobre él: mapear headers es una tarea de instrucción, y un 0.5B entrenado para
+extracción no la hace. Las reglas resuelven 15 de 16 fixtures.
+
+El modelo se usa en **una sola operación**: separar una columna que mezcla campos, que
+es exactamente su tarea de entrenamiento (template JSON + texto → template completo).
+
+```bash
+pip install -e ".[ai]"                     # torch + transformers, ~2,5 GB
+export SMART_IMPORT_AI_ENABLED=true
+python -m smart_import extract -i out/normalized.csv -o out/separado.csv \
+    --column address --fields customer_name,address,phone --max-rows 200
+```
+
+El modelo se baja solo la primera vez desde HuggingFace (~1 GB) a `~/.cache/huggingface`.
+
+### Medido sobre 12 filas reales (NuExtract-1.5-tiny, 0.5B, CPU)
+
+| Campo | Acierto | |
+|---|---|---|
+| `address` | **12/12** | limpia, con tildes intactas |
+| `phone` | **12/12** | |
+| `customer_name` | **9/12** | el 0.5B corrompe nombres con tilde |
+| alucinaciones | **0/12** | ninguna, por construcción |
+
+**1,4 s por fila en CPU.** Por eso es opt-in, tiene tope (`SMART_IMPORT_EXTRACT_MAX_ROWS`,
+default 2000) y corre en segundo plano.
+
+Cero alucinaciones no es suerte: **todo valor extraído tiene que aparecer en el texto
+original**. Extraer no es generar. Cuando el modelo devuelve `"Ana Rodrñez"`, se busca
+ese texto en la fuente y se devuelve el span real — `"Ana Rodríguez"`, con su tilde.
+Lo que no aparece en la fuente se descarta.
+
+Si el modelo no está instalado o falla, el job **no se rompe**: termina con un aviso y
+el archivo normalizado sigue siendo válido.
+
+
+---
+
 ## Archivos de prueba
 
 No se versionan binarios: se regeneran.
@@ -270,6 +359,7 @@ Todo por environment variable, todo con default razonable — ver `.env.example`
 | `SMART_IMPORT_DEVICE` | `cpu` | `cpu` / `mps` / `cuda` / `auto` |
 | `SMART_IMPORT_PBF_DIR` | — | los `_extracts` del cutter |
 | `GEOCODER_FALLBACK` | `none` | nunca llama afuera solo |
+| `SMART_IMPORT_EXTRACT_MAX_ROWS` | `2000` | tope de filas para `extract` |
 
 ---
 

@@ -30,6 +30,8 @@ services:
       # archivos de trabajo
       - ./data/input:/data/input
       - ./data/output:/data/output
+    ports:
+      - "${SMART_IMPORT_PORT:-8100}:8100"
     mem_limit: ${SMART_IMPORT_MEMORY_LIMIT:-4g}
     cpus: ${SMART_IMPORT_CPUS:-2}
 

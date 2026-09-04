@@ -24,7 +24,10 @@ geo = ["osmium>=4.0"]
 # transformers+torch pesan ~2-3 GB. Opt-in explicito: el sistema funciona entero
 # con reglas y SMART_IMPORT_AI_ENABLED=false.
 ai = ["transformers>=4.40", "torch>=2.2", "accelerate>=0.30"]
-dev = ["pytest>=8.0", "psutil>=5.9", "xlwt>=1.3", "pandas>=2.2"]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9"]
+dev = ["pytest>=8.0", "psutil>=5.9", "xlwt>=1.3", "pandas>=2.2",
+       "fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9",
+       "httpx>=0.27"]
 
 [project.scripts]
 smart-import = "smart_import.cli:main"

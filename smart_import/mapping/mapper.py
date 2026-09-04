@@ -157,9 +157,9 @@ def _flag_composite_columns(result: MappingResult, table: Table, limit: int) -> 
             m.confidence = min(m.confidence, 0.68)
             m.evidence += " | la columna mezcla varios campos (telefono/nombre dentro del texto)"
             result.warnings.append(
-                f"'{col}' parece contener varios campos en un solo texto. Se mapeo a "
-                "'address' pero conviene revisarlo o habilitar SMART_IMPORT_AI_ENABLED "
-                "para separar nombre/direccion/telefono."
+                f"'{col}' parece contener varios campos en un solo texto. Se mapeo "
+                "entero a 'address'. Para separar nombre/direccion/telefono usa la "
+                "accion 'extract' (requiere el modelo)."
             )
 
 

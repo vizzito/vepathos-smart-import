@@ -316,3 +316,90 @@ def geocode_eval(
         typer.echo(f"  error: mediana {e['median']} m | p90 {e['p90']} m | max {e['max']} m")
         typer.echo(f"  dentro de 100 m: {e['under_100m_pct']}%  |  dentro de 500 m: {e['under_500m_pct']}%")
     _echo_json({"worst": d["worst"]})
+
+
+@app.command()
+def serve(
+    host: str = typer.Option("0.0.0.0", help="0.0.0.0 para exponerlo al host."),
+    port: int = typer.Option(8100, help="Puerto HTTP."),
+    reload: bool = typer.Option(False, help="Auto-reload (desarrollo)."),
+    workers: int = typer.Option(1, help="Procesos uvicorn. Con 1 el store en memoria es consistente."),
+) -> None:
+    """Levanta la API HTTP.
+
+    OJO: el almacen de jobs vive en memoria del proceso. Con workers > 1 cada
+    worker veria jobs distintos. Para escalar hace falta el store compartido
+    (Redis/Postgres), que es la etapa siguiente.
+    """
+    import uvicorn
+
+    cfg = Config.from_env()
+    typer.echo(f"  Smart Import escuchando en http://{host}:{port}")
+    typer.echo(f"  docs: http://localhost:{port}/docs")
+    typer.echo(f"  IA: {'on' if cfg.ai_enabled else 'off'} | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
+    if workers > 1:
+        typer.echo("  aviso: con workers > 1 los jobs no se comparten entre procesos")
+    uvicorn.run("smart_import.api:app", host=host, port=port, reload=reload,
+                workers=workers if not reload else 1)
+
+
+@app.command()
+def extract(
+    input: Path = typer.Option(..., "--input", "-i", exists=True, help="CSV ya normalizado."),
+    output: Path = typer.Option(..., "--output", "-o"),
+    column: str = typer.Option("address", help="Columna que mezcla varios campos."),
+    fields: str = typer.Option("customer_name,address,phone", help="Campos a separar."),
+    max_rows: int = typer.Option(None, help="Tope de filas (default: SMART_IMPORT_EXTRACT_MAX_ROWS)."),
+) -> None:
+    """Separa una columna que mezcla nombre/direccion/telefono usando el modelo.
+
+    Es la UNICA operacion que usa IA. Cuesta ~1 s por fila en CPU, asi que tiene
+    tope de filas y conviene correrla en segundo plano.
+    """
+    import csv as _csv
+
+    from .extraction import CompositeExtractor
+
+    cfg = Config.from_env()
+    names = tuple(f.strip() for f in fields.split(",") if f.strip())
+    limit = max_rows or cfg.extract_max_rows
+
+    with open(input, encoding="utf-8", newline="") as fh:
+        rows = list(_csv.DictReader(fh))
+    if not rows:
+        raise typer.BadParameter(f"{input} no tiene filas")
+    if column not in rows[0]:
+        raise typer.BadParameter(f"la columna '{column}' no existe. Hay: {list(rows[0])}")
+
+    texts = [r.get(column) or "" for r in rows]
+    typer.echo(f"  modelo: {cfg.model} en {cfg.device}")
+    typer.echo(f"  separando '{column}' en {list(names)} ({min(len(texts), limit)} filas)...")
+
+    def progress(done, res):
+        typer.echo(f"    {done} filas... ({res.extracted} extraidas, {res.failed} fallidas)")
+
+    extractor = CompositeExtractor(cfg, fields=names)
+    result = extractor.run(texts, max_rows=limit, progress=progress)
+
+    columns = list(rows[0])
+    for name in names:
+        if name not in columns:
+            columns.append(name)
+    for row, values in zip(rows, result.values):
+        for name in names:
+            if values.get(name):
+                row[name] = values[name]
+
+    Path(output).parent.mkdir(parents=True, exist_ok=True)
+    with open(output, "w", encoding="utf-8", newline="") as fh:
+        writer = _csv.DictWriter(fh, fieldnames=columns, lineterminator="\n")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({c: row.get(c, "") for c in columns})
+
+    d = result.as_dict()
+    typer.echo(f"  {d['extracted']}/{d['rows']} filas separadas | {d['failed']} fallidas")
+    typer.echo(f"  {d['elapsed_s']}s ({d['seconds_per_row']}s por fila)")
+    for w in d["warnings"]:
+        typer.echo(f"  aviso: {w}")
+    typer.echo(f"  salida: {output}")

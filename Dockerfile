@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 COPY pyproject.toml README.md ./
 COPY smart_import ./smart_import
-RUN pip install --prefix=/install ".[geo]"
+RUN pip install --prefix=/install ".[geo,api]"
 
 
 FROM base AS runtime
@@ -49,8 +49,9 @@ ENV SMART_IMPORT_PBF_DIR=/data/pbf \
     SMART_IMPORT_AI_ENABLED=false \
     SMART_IMPORT_DEVICE=cpu
 
+EXPOSE 8100
 ENTRYPOINT ["python", "-m", "smart_import"]
-CMD ["--help"]
+CMD ["serve", "--host", "0.0.0.0", "--port", "8100"]
 
 
 FROM runtime AS ai
