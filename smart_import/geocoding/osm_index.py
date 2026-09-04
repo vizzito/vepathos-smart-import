@@ -12,7 +12,10 @@ import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
 
+from ..logging_setup import get_logger, stage
 from .address import normalize_text
+
+logger = get_logger("index")
 
 SCHEMA_SQL = """
 PRAGMA journal_mode = OFF;
@@ -130,6 +133,8 @@ def build(pbf_path: str | Path, output: str | Path,
     if out.exists():
         out.unlink()
 
+    stage(logger, "INDEX", "construyendo indice desde PBF (se hace UNA vez por region)",
+          pbf=src.name, tamano=f"{src.stat().st_size / 1e6:.1f}MB")
     conn = sqlite3.connect(out)
     conn.executescript(SCHEMA_SQL)
     stats = BuildStats()
@@ -180,6 +185,7 @@ def build(pbf_path: str | Path, output: str | Path,
     flush()
 
     # FTS y RTree se pueblan al final: es mucho mas rapido que indexar fila a fila
+    stage(logger, "INDEX", "poblando FTS5 y RTree", lugares=stats.nodes + stats.ways)
     conn.execute("INSERT INTO places_fts(rowid, normalized_text) "
                  "SELECT id, normalized_text FROM places")
     conn.execute("INSERT INTO places_rtree(id, min_lat, max_lat, min_lon, max_lon) "
@@ -192,6 +198,9 @@ def build(pbf_path: str | Path, output: str | Path,
     conn.commit()
     conn.execute("PRAGMA journal_mode = DELETE")
     conn.close()
+    stage(logger, "INDEX", "listo", indice=out.name,
+          tamano=f"{out.stat().st_size / 1e6:.1f}MB",
+          con_direccion=stats.with_address, con_nombre=stats.named)
     return stats
 
 

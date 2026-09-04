@@ -16,6 +16,16 @@ app = typer.Typer(add_completion=False, help="Vepathos Smart Import - normaliza 
 DEFAULT_SCHEMA = "schemas/vepathos_flat_v1.json"
 
 
+@app.callback()
+def _root(
+    verbose: bool = typer.Option(False, "--verbose", "-v", help="Log paso a paso de cada etapa."),
+    quiet: bool = typer.Option(False, "--quiet", "-q", help="Solo errores."),
+) -> None:
+    """Los logs van a stderr, para que stdout quede limpio y pipeable."""
+    from .logging_setup import setup
+    setup(verbose=verbose, quiet=quiet)
+
+
 def _echo_json(payload: dict) -> None:
     typer.echo(json.dumps(payload, ensure_ascii=False, indent=2, default=str))
 

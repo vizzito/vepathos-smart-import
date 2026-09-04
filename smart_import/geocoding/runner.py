@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..config import Config
+from ..logging_setup import detail, get_logger, stage
 from ..normalization.values import render, to_float
 from .base import (
     STATUS_ALREADY, STATUS_ERROR, STATUS_LOW, STATUS_MATCHED, STATUS_NOT_FOUND,
@@ -20,6 +21,8 @@ from .base import (
 )
 from .cache import GeocodeCache
 from .osm_geocoder import LocalOSMGeocoder
+
+logger = get_logger("geocode")
 
 DIAGNOSTIC_COLUMNS = ("geocode_status", "geocode_confidence", "geocode_precision",
                       "geocode_source")
@@ -84,9 +87,14 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         if col not in columns:
             columns.append(col)
 
+    stage(logger, "GEOCODE", "abriendo indice", indice=Path(index_path).name,
+          filas=len(rows), depot=f"{origin[0]},{origin[1]}" if origin else None,
+          bbox="si" if bbox else None)
     geocoder = LocalOSMGeocoder(index_path, match_threshold=cfg.match_threshold,
                                 low_threshold=cfg.low_confidence_threshold)
     cache = GeocodeCache(cache_path or cfg.cache_path)
+    stage(logger, "GEOCODE", "umbrales", matched=f">={cfg.match_threshold}",
+          low_confidence=f">={cfg.low_confidence_threshold}", fallback_externo=cfg.geocoder_fallback)
     context = Path(index_path).stem
     report = GeocodeReport(rows=len(rows), index=str(index_path))
     if origin:
@@ -101,7 +109,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
             if _valid_coords(row.get("lat"), row.get("lng")):
                 _stamp(row, GeocodeResult(status=STATUS_ALREADY))
                 report.already_geocoded += 1
-                continue
+                continue                          # ya tenia coordenadas: no se toca
 
             if not address:
                 _stamp(row, GeocodeResult(status=STATUS_NOT_FOUND,
@@ -109,10 +117,17 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                 report.not_found += 1
                 continue
 
-            result = cache.get(address, context)
+            cached = cache.get(address, context)
+            result = cached
             if result is None:
                 result = geocoder.geocode(address, origin=origin, bbox=bbox)
                 cache.put(address, result, context)
+            if i <= 12:
+                origen = "cache" if cached else "indice"
+                coords = (f"{result.lat:.5f},{result.lon:.5f}" if result.has_coords else "-")
+                detail(logger, f"{address[:38]:<40} {result.status:<14} "
+                               f"{result.confidence:.2f} {str(result.precision or ''):<11} "
+                               f"{coords:<22} ({origen})")
 
             if result.status in (STATUS_MATCHED, STATUS_LOW) and result.has_coords:
                 row["lat"] = render(result.lat)
@@ -148,6 +163,15 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
 
     report.cache = cache_stats
     report.elapsed_s = time.perf_counter() - started
+    stage(logger, "GEOCODE", "",
+          ya_tenian=report.already_geocoded, geocodificadas=report.matched,
+          confianza_baja=report.low_confidence, no_encontradas=report.not_found,
+          errores=report.errors or None)
+    stage(logger, "GEOCODE", "cache", hits=cache_stats["hits"],
+          misses=cache_stats["misses"], hit_rate=f"{cache_stats['hit_rate']:.0%}")
+    stage(logger, "DONE", "geocode terminado", salida=str(dst),
+          t=f"{report.elapsed_s:.3f}s", filas_por_s=int(report.rows / report.elapsed_s)
+          if report.elapsed_s else 0)
     return report
 
 

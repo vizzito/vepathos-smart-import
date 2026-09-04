@@ -26,6 +26,9 @@ import unicodedata
 from dataclasses import dataclass, field
 
 from ..config import Config
+from ..logging_setup import detail, get_logger, stage
+
+logger = get_logger("extract")
 
 # campos que tiene sentido extraer de un texto libre de entregas
 DEFAULT_TEMPLATE_FIELDS = ("customer_name", "address", "phone")
@@ -211,8 +214,14 @@ class CompositeExtractor:
                 f"se procesaron {max_rows} de {len(texts)} filas "
                 "(tope SMART_IMPORT_EXTRACT_MAX_ROWS)")
 
+        stage(logger, "EXTRACT", "cargando modelo (una vez por proceso)",
+              modelo=self.config.model, device=self.config.device,
+              campos=",".join(self.fields), filas=result.rows)
         try:
-            self._ensure_model()
+            loaded = self._ensure_model()
+            seconds = getattr(loaded, "load_seconds", None)
+            stage(logger, "EXTRACT", "modelo listo",
+                  carga=f"{seconds:.1f}s" if seconds is not None else None)
         except Exception as exc:
             # sin modelo NO se rompe nada: la columna queda como estaba
             result.warnings.append(f"el modelo no esta disponible ({exc}); "
@@ -236,10 +245,16 @@ class CompositeExtractor:
             result.values.append(values)
             if values:
                 result.extracted += 1
+            if i <= 8:
+                detail(logger, f"{str(text)[:44]:<46} -> " +
+                       " | ".join(f"{k}={v}" for k, v in values.items()) or "(nada)")
             if progress and i % 10 == 0:
                 progress(i, result)
 
         result.elapsed_s = time.perf_counter() - started
+        stage(logger, "DONE", "extract terminado", extraidas=result.extracted,
+              fallidas=result.failed, t=f"{result.elapsed_s:.1f}s",
+              s_por_fila=f"{result.elapsed_s / result.rows:.2f}" if result.rows else None)
         return result
 
 

@@ -5,12 +5,14 @@ consumer de cola llaman aca.
 """
 from __future__ import annotations
 
+import logging
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 from .config import Config
+from .logging_setup import detail, get_logger, stage
 from .emit import write_flat_csv, write_flat_xlsx, write_nested_json, write_report
 from .mapping import build_mapper
 from .mapping.base import ColumnMapping, MappingResult
@@ -20,6 +22,8 @@ from .normalization.row_normalizer import (
 from .readers import read_any
 from .schemas import TargetSchema
 from .assemble import assemble
+
+logger = get_logger("pipeline")
 
 
 class Timer:
@@ -88,22 +92,65 @@ def run_normalize(
         raise ValueError(f"archivo de {size_mb:.1f} MB supera el limite de {cfg.max_file_mb} MB "
                          f"(SMART_IMPORT_MAX_FILE_MB)")
 
+    stage(logger, "READ", "abriendo", archivo=src.name, tamano=f"{size_mb:.2f}MB")
     table = read_any(src, max_rows=cfg.max_rows, sheet=sheet)
     timer.mark("read")
+    meta = table.meta
+    stage(logger, "READ", "", formato=meta.format, encoding=meta.encoding,
+          delimiter=repr(meta.delimiter) if meta.delimiter else None,
+          hoja=meta.sheet, header_row=meta.header_row,
+          filas=len(table), columnas=len(table.columns), t=f"{timer.marks['read']}s")
+    for note in meta.notes:
+        detail(logger, note)
 
+    stage(logger, "DETECT", "resolviendo columnas contra", schema=schema.name)
     mapper = build_mapper(cfg)
     mapping = mapper.detect(table, schema)
     timer.mark("detect")
+    for column, m in sorted(mapping.mapping.items(), key=lambda kv: -kv[1].confidence):
+        flag = "" if m.confidence >= cfg.auto_accept_threshold else "   <-- REVISAR"
+        detail(logger, f"{column:<24} -> {m.target:<18} {m.confidence:.2f} {m.method}{flag}")
+    for column in mapping.unmapped:
+        detail(logger, f"{column:<24} -> (sin mapear)")
+    stage(logger, "DETECT", "", mapeadas=len(mapping.mapping),
+          sin_mapear=len(mapping.unmapped), a_revisar=len(mapping.ambiguous),
+          ia="no", t=f"{timer.marks['detect']}s")
+    for warning in mapping.warnings:
+        stage(logger, "WARN", warning, level=logging.WARNING)
+
     if manual_mapping:
+        stage(logger, "DETECT", "aplicando correcciones del usuario",
+              columnas=len(manual_mapping))
         mapping = apply_manual_mapping(mapping, manual_mapping)
 
+    stage(logger, "NORMALIZE", "aplicando el mapping a todas las filas",
+          filas=len(table), region_telefono=phone_region)
     outcome = RowNormalizer(schema, phone_region=phone_region,
                             derive_volume=derive_volume).run(table, mapping)
     timer.mark("normalize")
+    counts_ = outcome.counts()
+    stage(logger, "NORMALIZE", "",
+          con_coordenadas=counts_.get(STATUS_OK, 0),
+          necesitan_geocoding=counts_.get(STATUS_NEEDS_GEOCODE, 0),
+          invalidas=counts_.get(STATUS_INVALID, 0),
+          filas_vacias_descartadas=outcome.skipped_empty or None,
+          t=f"{timer.marks['normalize']}s")
+    for warning in outcome.warnings:
+        stage(logger, "WARN", warning, level=logging.WARNING)
+    for issue in [r for r in outcome.rows if r.issues][:5]:
+        detail(logger, f"fila {issue.index} ({issue.values.get('delivery_id') or 's/id'}): "
+                       f"{issue.issues[0]}")
 
+    stage(logger, "ASSEMBLE", f"agrupando filas por {schema.group_by}")
     deliveries, group_warnings = assemble(outcome.rows, schema)
     outcome.warnings.extend(group_warnings)
     timer.mark("assemble")
+    sin_bultos = sum(1 for d in deliveries if not d["packages"])
+    stage(logger, "ASSEMBLE", "", entregas=len(deliveries),
+          bultos=sum(len(d["packages"]) for d in deliveries),
+          entregas_sin_bultos=sin_bultos or None, t=f"{timer.marks['assemble']}s")
+    for warning in group_warnings:
+        stage(logger, "WARN", warning, level=logging.WARNING)
 
     counts = outcome.counts()
     report = {
@@ -139,6 +186,7 @@ def run_normalize(
                           deliveries=deliveries, report=report)
 
     if output_path:
+        stage(logger, "EMIT", "escribiendo salidas", formatos=",".join(emit))
         out = Path(output_path)
         stem = out.with_suffix("")
         if "flat" in emit:
@@ -155,5 +203,10 @@ def run_normalize(
         report_path = Path(f"{stem}.report.json")
         write_report(report_path, report)
         result.outputs["report"] = str(report_path)
+        for kind, path in result.outputs.items():
+            detail(logger, f"{kind:<8} {path}")
 
+    stage(logger, "DONE", "normalize terminado",
+          total=f"{report['processing_times']['total']}s",
+          revisar="si" if report["needs_review"] else "no")
     return result

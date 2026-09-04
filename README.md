@@ -17,6 +17,10 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 
 ---
 
+> **¿Cómo lo pruebo?** Ver [RUNBOOK.md](RUNBOOK.md) — cinco niveles, de `pytest`
+> (30 s, sin dependencias) hasta la integración con la web. **No hace falta subir un
+> archivo por la web para probar que todo anda.**
+
 ## Instalación
 
 ```bash

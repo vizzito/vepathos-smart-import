@@ -26,7 +26,10 @@ from .jobs import (
     NEEDS_REVIEW, NORMALIZED, Job, JobStore, safe_filename,
 )
 
-logger = logging.getLogger("smart_import.api")
+from ..logging_setup import get_logger, setup as setup_logging, stage
+
+setup_logging(verbose=bool(__import__("os").getenv("SMART_IMPORT_VERBOSE")))
+logger = get_logger("api")
 
 SCHEMA_DIR = Path(__file__).resolve().parent.parent.parent / "schemas"
 WORK_DIR = Path(Config.from_env().__dict__.get("work_dir", "data/jobs"))
@@ -172,7 +175,12 @@ async def create_import(
         await file.close()
 
     job.raw_path = str(raw_path)
-    return _run_normalize(job, schema_path, phone_region, diagnostics)
+    stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
+          tamano=f"{size / 1024:.1f}KB", schema=schema)
+    response = _run_normalize(job, schema_path, phone_region, diagnostics)
+    stage(logger, "HTTP", "201 creado", job=job.id, estado=job.status,
+          acciones=",".join(a["action"] for a in job.next_actions()))
+    return response
 
 
 def _run_normalize(job: Job, schema_path: Path, phone_region: str | None,
@@ -302,6 +310,9 @@ def start_geocode(
         raise HTTPException(400, "indica --origin (depot), un bbox o un indice: sin eso no se "
                                  "puede elegir que region de OSM usar")
 
+    stage(logger, "HTTP", "POST /imports/{id}/geocode  (accion EXPLICITA del usuario)",
+          job=job_id, depot=f"{origin_lat},{origin_lon}" if origin else None,
+          filas_a_geocodificar=job.needs_geocode)
     job.geocode_progress = {"done": 0, "total": job.report.get("rows_output", 0)}
     job.geocode_report = {}
     job.touch(GEOCODE_QUEUED)
@@ -415,6 +426,8 @@ def start_extract(
     if not names:
         raise HTTPException(400, "indica al menos un campo en 'fields'")
 
+    stage(logger, "HTTP", "POST /imports/{id}/extract  (usa el modelo)",
+          job=job_id, columna=column, campos=fields)
     job.extract_progress = {"phase": "queued", "done": 0}
     job.touch(EXTRACTING)
     _extract_pool.submit(_extract_worker, job.id, column, names, max_rows)
