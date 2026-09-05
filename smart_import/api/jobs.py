@@ -23,11 +23,15 @@ NORMALIZED = "normalized"          # estado FINAL valido aunque nunca se geocodi
 EXTRACTING = "extracting"
 GEOCODE_QUEUED = "geocode_queued"
 GEOCODING = "geocoding"
+GEOCODE_FAILED = "geocode_failed"  # normalize OK; geocode duro fallo → UI pide geo manual
 COMPLETED = "completed"
 FAILED = "failed"
 
 # operaciones largas: la web pollea / se suscribe hasta que busy=false
 BUSY_STATUSES = {UPLOADED, ANALYZING, EXTRACTING, GEOCODE_QUEUED, GEOCODING}
+
+# Normalize sobrevivio: se puede descargar y (re)intentar geocode / geo manual
+HAS_NORMALIZE = {NORMALIZED, NEEDS_REVIEW, COMPLETED, GEOCODE_FAILED}
 
 ALLOWED_SUFFIXES = {".csv", ".tsv", ".txt", ".xlsx", ".xlsm", ".xls", ".json"}
 _UNSAFE = re.compile(r"[^A-Za-z0-9._-]+")
@@ -48,6 +52,7 @@ class Job:
     created_at: float = field(default_factory=time.time)
     updated_at: float = field(default_factory=time.time)
     schema: str = "vepathos_flat_v1"
+    phone_region: str | None = None
     raw_path: str | None = None
     normalized_path: str | None = None
     nested_path: str | None = None
@@ -95,7 +100,7 @@ class Job:
         if self.busy:
             return []
         actions: list[dict[str, str]] = []
-        if self.status in (NORMALIZED, NEEDS_REVIEW, COMPLETED):
+        if self.status in HAS_NORMALIZE and self.normalized_path:
             actions.append({
                 "action": "download",
                 "href": f"/imports/{self.id}/download?format=flat",
@@ -113,7 +118,7 @@ class Job:
                     "href": f"/imports/{self.id}/download?format=geocoded",
                     "description": "Descargar CSV geocodificado",
                 })
-        if (self.status in (NORMALIZED, NEEDS_REVIEW) and self.composite_column
+        if (self.status in (NORMALIZED, NEEDS_REVIEW, GEOCODE_FAILED) and self.composite_column
                 and self.capabilities.get("extract", True)):
             actions.append({
                 "action": "extract",
@@ -127,13 +132,25 @@ class Job:
                 "href": f"/imports/{self.id}/mapping",
                 "description": "Corregir el mapping de las columnas dudosas y re-normalizar",
             })
-        if (self.status in (NORMALIZED, NEEDS_REVIEW) and self.needs_geocode
+        # geocode_failed / completed con residuales: el normalize quedo; se puede
+        # reintentar o ubicar a mano en la UI
+        if (self.status in (NORMALIZED, NEEDS_REVIEW, GEOCODE_FAILED, COMPLETED)
+                and self.needs_geocode
                 and self.capabilities.get("geocoding", True)):
             actions.append({
                 "action": "geocode",
                 "href": f"/imports/{self.id}/geocode",
                 "description": (f"Geolocalizar {self.needs_geocode} fila(s) sin coordenadas. "
                                 "NO se ejecuta solo: lo decide el usuario."),
+            })
+        if self.status == GEOCODE_FAILED or (
+                self.status == COMPLETED and self.needs_geocode > 0):
+            actions.append({
+                "action": "manual_geocode",
+                "href": f"/imports/{self.id}/issues",
+                "description": (self.error
+                                or f"{self.needs_geocode} entrega(s) sin coordenadas. "
+                                   "Ubicalas a mano en el mapa."),
             })
         return actions
 
@@ -186,6 +203,10 @@ class Job:
         elif self.status == FAILED:
             phase = "failed"
             message = self.error or "Fallo"
+        elif self.status == GEOCODE_FAILED:
+            phase = "geocode_failed"
+            message = (self.error
+                       or "Geolocalizacion automatica fallo — ubica a mano en el mapa")
         elif self.status == NEEDS_REVIEW:
             phase = "needs_review"
             message = "Revisar mapping"
@@ -218,6 +239,25 @@ class Job:
             "updated_at": self.updated_at,
             "error": self.error,
         }
+
+    def poll_after_ms(self) -> int | None:
+        """Cada cuanto conviene volver a preguntar. Crece con la espera.
+
+        Un intervalo fijo de 500 ms es razonable para un normalize de 2 s, pero
+        una extraccion con modelo puede tardar minutos: a 500 ms fijos son
+        cientos de requests que no aportan nada. Se arranca rapido (la mayoria
+        de los jobs terminan enseguida) y se va espaciando hasta 3 s.
+        """
+        if not self.busy:
+            return None
+        esperando = time.time() - self.updated_at
+        if esperando < 5:
+            return 500
+        if esperando < 20:
+            return 1_000
+        if esperando < 60:
+            return 2_000
+        return 3_000
 
     def urls(self) -> dict[str, str]:
         base = f"/imports/{self.id}"
@@ -252,7 +292,7 @@ class Job:
             "next_actions": self.next_actions(),
             "urls": self.urls(),
             # hint para la web: cada cuantos ms conviene pollear si no usa SSE
-            "poll_after_ms": 500 if self.busy else None,
+            "poll_after_ms": self.poll_after_ms(),
         }
 
 
