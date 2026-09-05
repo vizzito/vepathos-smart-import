@@ -363,6 +363,45 @@ def preview(job_id: str, limit: int = Query(20, le=200),
             "rows": rows, "mapping": job.report.get("mapping", {})}
 
 
+@app.get("/imports/{job_id}/issues", tags=["import"])
+def issues(job_id: str, limit: int = Query(200, le=1000)) -> dict[str, Any]:
+    """Las filas que NO quedaron listas, con el motivo y la columna culpable.
+
+    Ninguna fila se descarta: todas estan en el archivo de salida. Este endpoint
+    existe para que la UI pueda mostrar "3 listas, 3 a geocodificar, 1 con
+    problema" en vez de perder filas en silencio.
+    """
+    job = _job_or_404(job_id)
+    report = job.report or {}
+    if not report:
+        raise HTTPException(409, "el job todavia no fue normalizado")
+
+    filas = report.get("row_issues", [])[:limit]
+    geo = job.geocode_report or {}
+
+    return {
+        "job_id": job_id,
+        "summary": {
+            "total": report.get("rows_output", 0),
+            "listas": report.get("valid_rows", 0),
+            "a_geocodificar": report.get("needs_geocode", 0),
+            "no_localizables": report.get("invalid_rows", 0),
+            "con_observaciones": report.get("rows_with_issues", 0),
+            "coordenadas_rechazadas": report.get("rejected_coordinates", 0),
+            **({"geocodificadas": geo.get("matched", 0),
+                "geocode_confianza_baja": geo.get("low_confidence", 0),
+                "geocode_no_encontradas": geo.get("not_found", 0)} if geo else {}),
+        },
+        # columnas del archivo que el mapper no supo ubicar: no se pierden datos,
+        # simplemente no entran al schema
+        "columnas_sin_mapear": report.get("unmapped", []),
+        "columnas_a_revisar": report.get("ambiguous", []),
+        "avisos": report.get("warnings", []),
+        "filas": filas,
+        "truncado": len(report.get("row_issues", [])) > limit,
+    }
+
+
 @app.put("/imports/{job_id}/mapping", tags=["import"])
 def confirm_mapping(
     job_id: str,

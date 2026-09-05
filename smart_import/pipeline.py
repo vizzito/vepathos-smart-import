@@ -170,13 +170,16 @@ def run_normalize(
         "invalid_rows": counts.get(STATUS_INVALID, 0),
         "rows_with_issues": sum(1 for r in outcome.rows if r.issues),
         "rejected_coordinates": sum(
-            1 for r in outcome.rows if any("fuera de rango" in i for i in r.issues)),
+            1 for r in outcome.rows if any("fuera de rango" in m for m in r.messages)),
         "output_columns": outcome.targets_present,
         **mapping.as_dict(),
         "warnings": mapping.warnings + outcome.warnings,
         "row_issues": [
             {"row": r.index, "delivery_id": r.values.get("delivery_id"),
-             "status": r.status, "issues": r.issues}
+             "status": r.status,
+             "issues": [i.as_dict() for i in r.issues],
+             "messages": r.messages,
+             "fields": r.problem_fields}
             for r in outcome.rows if r.issues
         ][:200],
     }

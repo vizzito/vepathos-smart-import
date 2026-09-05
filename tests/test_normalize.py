@@ -74,7 +74,10 @@ def test_coordenadas_fuera_de_rango_se_rechazan_y_se_reportan(tmp_path):
     report = norm("ref_ar_orders.csv", tmp_path).report
     bad = [i for i in report["row_issues"] if i["delivery_id"] == "VP-1999"]
     assert bad, "la fila con lat=95/lng=200 tiene que aparecer en row_issues"
-    assert any("fuera de rango" in msg for msg in bad[0]["issues"])
+    assert any("fuera de rango" in msg for msg in bad[0]["messages"])
+    # y se sabe QUE columnas fallaron, no solo que algo fallo
+    assert set(bad[0]["fields"]) == {"lat", "lng"}
+    assert all(i["severity"] == "error" for i in bad[0]["issues"])
 
 
 def test_fila_sin_coords_pero_con_direccion_no_se_descarta(tmp_path):

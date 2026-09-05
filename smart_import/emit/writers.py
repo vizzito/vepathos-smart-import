@@ -23,7 +23,7 @@ def write_flat_csv(path: str | Path, columns: list[str], rows: list[NormalizedRo
         for row in rows:
             line = [render(row.values.get(c)) for c in columns]
             if diagnostics:
-                line += [row.status, " | ".join(row.issues)]
+                line += [row.status, " | ".join(row.messages)]
             w.writerow(line)
     return p
 
@@ -40,7 +40,7 @@ def write_flat_xlsx(path: str | Path, columns: list[str], rows: list[NormalizedR
     for row in rows:
         line: list[Any] = [row.values.get(c) for c in columns]
         if diagnostics:
-            line += [row.status, " | ".join(row.issues)]
+            line += [row.status, " | ".join(row.messages)]
         ws.append(line)
     wb.save(p)
     return p

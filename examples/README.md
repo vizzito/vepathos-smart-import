@@ -1,6 +1,7 @@
 # Ejemplos para probar a mano
 
 - **Entradas que la web ya acepta** (completas o mínimas): [`vepathos-golden/`](vepathos-golden/README.md)
+- **Forzar IA (`extract`)**: [`force-ai/`](force-ai/README.md) — nombre+dir+tel en una columna + textos pegables
 - **Entradas sintéticas hostiles** (headers raros, latin1, sin coords, etc.): los archivos de esta carpeta
 
 Casos variables listos para CLI / curl. Se regeneran (no editar a mano):
