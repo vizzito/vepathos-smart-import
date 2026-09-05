@@ -2,11 +2,21 @@
 from __future__ import annotations
 
 import csv
+import re
 from pathlib import Path
 
 from .base import FileMeta, Table, choose_header_row, dedupe_columns, is_blank
 
 CANDIDATE_DELIMITERS = [",", ";", "\t", "|"]
+
+# 1) Ana… / 12. Juan… / 3- María…  y tambien viñetas: - Ana… / * Juan… / • Maria…
+# Las listas de WhatsApp casi siempre usan guion, no numero. Sin la viñeta, el
+# texto cae al lector delimitado y se parte por la primera coma de cada linea.
+_NUMBERED_DELIVERY = re.compile(r"^\s*(?:\d+[\)\.\-]|[-*•·])\s+\S")
+_FOOTERISH = re.compile(
+    r"^\s*(gracias|thanks|atte\.?|saludos|despacho|team|equipo)\b",
+    re.IGNORECASE,
+)
 
 
 def detect_encoding(path: str | Path, sample_bytes: int = 64 * 1024) -> str:
@@ -56,11 +66,65 @@ def detect_delimiter(text: str) -> str:
     return best
 
 
+def looks_like_numbered_delivery_list(text: str) -> bool:
+    """Paste tipo mail: '1) Nombre <tel> → calle…' (una entrega por línea)."""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if len(lines) < 3:
+        return False
+    numbered = [ln for ln in lines if _NUMBERED_DELIVERY.match(ln)]
+    if len(numbered) < 3:
+        return False
+    return len(numbered) / len(lines) >= 0.25
+
+
+def _read_numbered_delivery_list(
+    path: Path, text: str, encoding: str, fmt: str, max_rows: int | None,
+) -> Table:
+    """Una columna 'info_cliente' = línea completa (no partir por comas)."""
+    rows: list[tuple] = []
+    skipped_preamble = 0
+    skipped_footer = 0
+    seen_delivery = False
+    for ln in text.splitlines():
+        raw = ln.strip()
+        if not raw:
+            continue
+        if _NUMBERED_DELIVERY.match(raw):
+            seen_delivery = True
+            rows.append((raw,))
+            if max_rows and len(rows) >= max_rows:
+                break
+            continue
+        if not seen_delivery:
+            skipped_preamble += 1
+            continue
+        if _FOOTERISH.match(raw) or len(raw) < 40:
+            skipped_footer += 1
+            continue
+        rows.append((raw,))
+
+    columns = ["info_cliente"]
+    meta = FileMeta(
+        path=str(path), format=fmt, size_bytes=path.stat().st_size,
+        encoding=encoding, delimiter=None,
+        header_row=0, preamble_rows=skipped_preamble,
+    )
+    meta.notes.append(
+        f"lista numerada: {len(rows)} entrega(s) como columna unica "
+        f"(preambulo={skipped_preamble}, pie={skipped_footer})"
+    )
+    return Table(meta=meta, columns=columns, rows=rows)
+
+
 def read(path: str | Path, max_rows: int | None = None, fmt: str = "csv") -> Table:
     p = Path(path)
     encoding = detect_encoding(p)
     with open(p, "r", encoding=encoding, errors="replace", newline="") as fh:
         text = fh.read()
+
+    # Pastes de despacho: NO usar delimiter ',' (rompe "calle 100, CABA | nota")
+    if fmt in ("txt", "csv") and looks_like_numbered_delivery_list(text):
+        return _read_numbered_delivery_list(p, text, encoding, fmt, max_rows)
 
     delimiter = "\t" if fmt == "tsv" else detect_delimiter(text)
     matrix = list(csv.reader(text.splitlines(), delimiter=delimiter))
