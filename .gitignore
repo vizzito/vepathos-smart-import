@@ -7,7 +7,7 @@ data/
 benchmarks/results.*
 .env
 .env.prod
-# fixtures generados: se recrean con `make-fixtures`
+# fixtures/examples generados: se recrean con `make-fixtures`
 fixtures/*.xlsx
 fixtures/*.xls
 fixtures/*.tsv
@@ -19,4 +19,11 @@ fixtures/merged_field.csv
 fixtures/swapped_coords.csv
 fixtures/semicolon_latin1.csv
 !fixtures/ref_*
+examples/*.xlsx
+examples/*.xls
+examples/*.tsv
+examples/*.txt
+examples/*.csv
+!examples/README.md
+!examples/vepathos-golden/
 *.egg-info/

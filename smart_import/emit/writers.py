@@ -46,11 +46,18 @@ def write_flat_xlsx(path: str | Path, columns: list[str], rows: list[NormalizedR
     return p
 
 
-def write_nested_json(path: str | Path, deliveries: list[dict]) -> Path:
+def write_nested_json(path: str | Path, deliveries: list[dict],
+                      version: int = 1) -> Path:
+    """Emite el JSON nested que ya consume el optimizador / router.
+
+    Forma canónica (ver examples/vepathos-golden/):
+      {"version": 1, "addresses": [{delivery_id, lat, lng, address, zone, packages: [...]}]}
+    """
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(
-        json.dumps({"addresses": deliveries}, ensure_ascii=False, indent=2) + "\n",
+        json.dumps({"version": version, "addresses": deliveries},
+                   ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     return p

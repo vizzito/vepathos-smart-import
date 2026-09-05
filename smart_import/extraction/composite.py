@@ -248,7 +248,7 @@ class CompositeExtractor:
             if i <= 8:
                 detail(logger, f"{str(text)[:44]:<46} -> " +
                        " | ".join(f"{k}={v}" for k, v in values.items()) or "(nada)")
-            if progress and i % 10 == 0:
+            if progress and (i == 1 or i % 5 == 0 or i == len(subset)):
                 progress(i, result)
 
         result.elapsed_s = time.perf_counter() - started

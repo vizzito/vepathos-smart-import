@@ -146,7 +146,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                 report.not_found += 1
                 _sample(report, row, address, result)
 
-            if progress and i % 250 == 0:
+            if progress and (i == 1 or i % 25 == 0 or i == len(rows)):
                 progress(i, report)
         cache.commit()
     finally:

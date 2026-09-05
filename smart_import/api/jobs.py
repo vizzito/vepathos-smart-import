@@ -26,6 +26,9 @@ GEOCODING = "geocoding"
 COMPLETED = "completed"
 FAILED = "failed"
 
+# operaciones largas: la web pollea / se suscribe hasta que busy=false
+BUSY_STATUSES = {UPLOADED, ANALYZING, EXTRACTING, GEOCODE_QUEUED, GEOCODING}
+
 ALLOWED_SUFFIXES = {".csv", ".tsv", ".txt", ".xlsx", ".xlsm", ".xls", ".json"}
 _UNSAFE = re.compile(r"[^A-Za-z0-9._-]+")
 
@@ -55,6 +58,8 @@ class Job:
     extract_report: dict = field(default_factory=dict)
     extract_progress: dict = field(default_factory=dict)
     error: str | None = None
+    # marca de tiempo del inicio de la operacion async actual (para eta)
+    op_started_at: float | None = None
 
     def touch(self, status: str | None = None) -> None:
         if status:
@@ -73,8 +78,22 @@ class Job:
     def needs_geocode(self) -> int:
         return int(self.report.get("needs_geocode", 0))
 
+    @property
+    def busy(self) -> bool:
+        return self.status in BUSY_STATUSES
+
+    #: capacidades del despliegue; las setea la API al arrancar
+    capabilities: dict = field(default_factory=lambda: {"geocoding": True, "extract": True})
+
     def next_actions(self) -> list[dict[str, str]]:
-        """Que puede hacer el usuario ahora. Geocodificar SIEMPRE es opt-in."""
+        """Que puede hacer el usuario ahora.
+
+        Solo se ofrece lo que este despliegue puede ejecutar de verdad: si el
+        geocoding esta apagado, el boton no aparece en vez de fallar al apretarlo.
+        Geocodificar SIEMPRE es opt-in. Mientras busy, no se ofrecen acciones.
+        """
+        if self.busy:
+            return []
         actions: list[dict[str, str]] = []
         if self.status in (NORMALIZED, NEEDS_REVIEW, COMPLETED):
             actions.append({
@@ -82,7 +101,20 @@ class Job:
                 "href": f"/imports/{self.id}/download?format=flat",
                 "description": "Descargar el archivo normalizado (formato Vepathos)",
             })
-        if self.status in (NORMALIZED, NEEDS_REVIEW) and self.composite_column:
+            if self.nested_path:
+                actions.append({
+                    "action": "download_nested",
+                    "href": f"/imports/{self.id}/download?format=nested",
+                    "description": "Descargar JSON nested (optimizador)",
+                })
+            if self.geocoded_path:
+                actions.append({
+                    "action": "download_geocoded",
+                    "href": f"/imports/{self.id}/download?format=geocoded",
+                    "description": "Descargar CSV geocodificado",
+                })
+        if (self.status in (NORMALIZED, NEEDS_REVIEW) and self.composite_column
+                and self.capabilities.get("extract", True)):
             actions.append({
                 "action": "extract",
                 "href": f"/imports/{self.id}/extract",
@@ -95,7 +127,8 @@ class Job:
                 "href": f"/imports/{self.id}/mapping",
                 "description": "Corregir el mapping de las columnas dudosas y re-normalizar",
             })
-        if self.status in (NORMALIZED, NEEDS_REVIEW) and self.needs_geocode:
+        if (self.status in (NORMALIZED, NEEDS_REVIEW) and self.needs_geocode
+                and self.capabilities.get("geocoding", True)):
             actions.append({
                 "action": "geocode",
                 "href": f"/imports/{self.id}/geocode",
@@ -104,21 +137,122 @@ class Job:
             })
         return actions
 
+    def progress_snapshot(self) -> dict[str, Any]:
+        """Vista unica de avance para la web (poll o SSE).
+
+        Siempre presente en la respuesta del job. Mientras `busy=true`, la UI
+        muestra barra / texto; cuando pasa a false, mira `next_actions`.
+        """
+        phase = "idle"
+        done = 0
+        total = 0
+        detail: dict[str, Any] = {}
+        message = ""
+
+        if self.status in (GEOCODE_QUEUED, GEOCODING):
+            p = self.geocode_progress or {}
+            phase = str(p.get("phase") or self.status)
+            done = int(p.get("done") or 0)
+            total = int(p.get("total") or self.report.get("rows_output") or 0)
+            detail = {k: v for k, v in p.items()
+                      if k not in ("done", "total", "phase", "started_at")}
+            if phase == "building_index":
+                message = f"Construyendo indice OSM ({p.get('pbf', '')})"
+            elif phase == "geocoding":
+                message = f"Geolocalizando {done}/{total}"
+            elif phase == "queued" or self.status == GEOCODE_QUEUED:
+                message = "Geolocalizacion en cola"
+            elif phase == "done":
+                message = "Geolocalizacion lista"
+            elif phase == "failed":
+                message = self.error or "Geolocalizacion fallo"
+        elif self.status == EXTRACTING:
+            p = self.extract_progress or {}
+            phase = str(p.get("phase") or "extracting")
+            done = int(p.get("done") or 0)
+            total = int(p.get("total") or 0)
+            detail = {k: v for k, v in p.items()
+                      if k not in ("done", "total", "phase", "started_at")}
+            if phase == "queued":
+                message = "Extraccion con modelo en cola"
+            elif phase == "loading_model":
+                message = "Cargando modelo…"
+            elif phase == "extracting":
+                message = f"Extrayendo campos {done}/{total}"
+            elif phase == "done":
+                message = "Extraccion lista"
+            elif phase == "failed":
+                message = self.error or "Extraccion fallo"
+        elif self.status == FAILED:
+            phase = "failed"
+            message = self.error or "Fallo"
+        elif self.status == NEEDS_REVIEW:
+            phase = "needs_review"
+            message = "Revisar mapping"
+        elif self.status == COMPLETED:
+            phase = "done"
+            message = "Completado"
+        elif self.status == NORMALIZED:
+            phase = "normalized"
+            message = "Normalizado"
+
+        pct = round(100.0 * done / total, 1) if total > 0 else None
+        eta_s = None
+        started = self.op_started_at
+        if started and done > 0 and total > done and self.busy:
+            rate = done / max(time.time() - started, 0.001)
+            if rate > 0:
+                eta_s = round((total - done) / rate, 1)
+
+        return {
+            "job_id": self.id,
+            "status": self.status,
+            "phase": phase,
+            "message": message,
+            "done": done,
+            "total": total,
+            "pct": pct,
+            "eta_s": eta_s,
+            "busy": self.busy,
+            "detail": detail or None,
+            "updated_at": self.updated_at,
+            "error": self.error,
+        }
+
+    def urls(self) -> dict[str, str]:
+        base = f"/imports/{self.id}"
+        return {
+            "self": base,
+            "events": f"{base}/events",
+            "preview": f"{base}/preview",
+            "download_flat": f"{base}/download?format=flat",
+            "download_nested": f"{base}/download?format=nested",
+            "download_geocoded": f"{base}/download?format=geocoded",
+            "geocode": f"{base}/geocode",
+            "extract": f"{base}/extract",
+            "mapping": f"{base}/mapping",
+        }
+
     def as_dict(self) -> dict[str, Any]:
         return {
             "job_id": self.id,
             "status": self.status,
+            "busy": self.busy,
             "filename": self.filename,
             "schema": self.schema,
             "created_at": self.created_at,
             "updated_at": self.updated_at,
             "report": self.report,
+            "progress": self.progress_snapshot(),
             "geocode": {**self.geocode_report, "progress": self.geocode_progress}
                        if (self.geocode_report or self.geocode_progress) else None,
             "extract": {**self.extract_report, "progress": self.extract_progress}
                        if (self.extract_report or self.extract_progress) else None,
             "error": self.error,
             "next_actions": self.next_actions(),
+            "urls": self.urls(),
+            # hint para la web: cada cuantos ms conviene pollear si no usa SSE
+            "poll_after_ms": 500 if self.busy else None,
         }
 
 

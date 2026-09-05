@@ -10,11 +10,12 @@ Cómo correrlo local y en producción, y cómo probarlo **sin tocar la web**.
 2. [Setup local](#2-setup-local)
 3. [Nivel 1 — tests](#nivel-1--tests-30-segundos)
 4. [Nivel 2 — demo del stack completo](#nivel-2--demo-del-stack-completo)
-5. [Nivel 3 — CLI sobre tus propios archivos](#nivel-3--cli-sobre-tus-propios-archivos)
+5. [Nivel 3 — CLI / ejemplos variables](#nivel-3--cli--ejemplos-variables)
 6. [Nivel 4 — servicio HTTP con curl](#nivel-4--servicio-http-con-curl)
-7. [Nivel 5 — desde tu web](#nivel-5--desde-tu-web)
-8. [Producción](#8-producción)
-9. [Diagnóstico](#9-diagnóstico)
+7. [Salida, IA y geocoding](#salida-ia-y-geocoding)
+8. [Nivel 5 — desde tu web](#nivel-5--desde-tu-web)
+9. [Producción](#8-producción)
+10. [Diagnóstico](#9-diagnóstico)
 
 ---
 
@@ -27,8 +28,8 @@ la web es el último, no el primero.
 |---|---|---|---|
 | 1. `pytest` | toda la lógica: 113 tests | nada | 4 s |
 | 2. `demo.sh` | el stack entero con logs | nada | 15 s |
-| 3. CLI | tus archivos reales | tus archivos | segundos |
-| 4. `curl` | el contrato HTTP | el servicio arriba | 1 min |
+| 3. CLI | archivos en `examples/` + tus archivos | archivos | segundos |
+| 4. `curl` / `http-smoke.sh` | el contrato HTTP | el servicio arriba | 1 min |
 | 5. tu web | la integración | todo lo anterior | — |
 
 **Empezá por el 2.** Muestra cada etapa y cada decisión en pantalla.
@@ -119,39 +120,46 @@ Con `--geocode` vas a ver la diferencia entre la primera corrida y la segunda:
 
 ---
 
-## Nivel 3 — CLI sobre tus propios archivos
+## Nivel 3 — CLI / ejemplos variables
 
-Todos los comandos aceptan `-v` para el log paso a paso.
+Los casos variables para probar a mano viven en [`examples/`](examples/README.md)
+(headers raros, sin coords, latin1, preamble, lat/lng invertidas, columna mezclada, etc.).
 
 ```bash
-# ¿Qué hay dentro del archivo?
-.venv/bin/python -m smart_import inspect mi_archivo.xlsx
+.venv/bin/python -m smart_import make-fixtures --out examples --rows 40
+```
 
-# ¿Cómo mapea las columnas y con cuánta confianza?
-.venv/bin/python -m smart_import detect -i mi_archivo.xlsx
+Todos los comandos aceptan `-v`. **Corré desde la raíz del repo** (o usá rutas absolutas):
+si el archivo no existe, `curl`/`normalize` fallan con un error confuso.
 
-# Convertir al formato Vepathos
+```bash
+FILE=examples/es_sin_coords.csv     # o tu archivo real
+
+.venv/bin/python -m smart_import inspect "$FILE"
+.venv/bin/python -m smart_import detect -i "$FILE"
+
+# Convertir al formato Vepathos (schema: vepathos_flat_v1)
 .venv/bin/python -m smart_import -v normalize \
-    -i mi_archivo.xlsx -o out/normalizado.csv --emit flat,nested --phone-region AR
+    -i "$FILE" -o out/normalizado.csv --emit flat,nested --phone-region AR
 
-# Geolocalizar (acción aparte)
+# Geolocalizar (acción aparte; necesita SMART_IMPORT_PBF_DIR)
 .venv/bin/python -m smart_import -v geocode \
     -i out/normalizado.csv -o out/geocodificado.csv \
     --origin-lat -34.6037 --origin-lon -58.3816
 ```
 
-**Corregir un mapping que salió mal:**
+**Corregir un mapping** (ejemplo real para `examples/preamble_dirty.xlsx`):
 
 ```bash
 echo '{"Codigo interno": "reference", "Sucursal origen": null}' > mapping.json
-.venv/bin/python -m smart_import normalize -i mi_archivo.xlsx \
+.venv/bin/python -m smart_import normalize -i examples/preamble_dirty.xlsx \
     -o out/normalizado.csv --mapping mapping.json
 ```
 
 **Diagnosticar fila por fila:**
 
 ```bash
-.venv/bin/python -m smart_import normalize -i mi_archivo.xlsx \
+.venv/bin/python -m smart_import normalize -i "$FILE" \
     -o out/diag.csv --diagnostics       # agrega row_status y row_issues
 ```
 
@@ -160,67 +168,242 @@ echo '{"Codigo interno": "reference", "Sucursal origen": null}' > mapping.json
 ## Nivel 4 — servicio HTTP con curl
 
 ```bash
+cd ~/workspace/vepathos-smart-import
 export SMART_IMPORT_PBF_DIR=~/workspace/route-optimizer-app/data/_extracts
 .venv/bin/python -m smart_import serve --port 8100
 ```
 
-Escucha en **:8100**. Docs interactivas en <http://localhost:8100/docs>.
+Escucha en **:8100**. Docs: <http://localhost:8100/docs>.
 Los logs salen por stderr con el mismo formato del CLI.
+
+### Atajo (recomendado)
+
+Captura el `job_id` de verdad, hace preview + download, y opcionalmente geocode:
+
+```bash
+./scripts/http-smoke.sh
+./scripts/http-smoke.sh --geocode examples/es_sin_coords.csv
+./scripts/http-smoke.sh examples/merged_field.csv
+```
+
+### A mano (paso a paso)
+
+Importante:
+
+1. Estás en la **raíz del repo** (o usá ruta absoluta al archivo).
+2. **No** pongas `JOB=imp_xxxxxxxx` — eso era un placeholder. Capturá el id real.
+3. macOS no trae `watch`; usá el loop de abajo.
+4. Preferí `curl -sf` (falla ruidoso si el servicio/archivo no existen).
 
 ```bash
 # 1. ¿Qué puede hacer el servicio ahora?
-curl -s localhost:8100/health | python -m json.tool
+curl -sf localhost:8100/health | .venv/bin/python -m json.tool
+# Mirá: ai.enabled / ai.dependencies_installed / geocoding.pbf_available
 
-# 2. Subir y normalizar
-curl -s -X POST "localhost:8100/imports?phone_region=AR" \
-     -F "file=@mi_archivo.xlsx" | python -m json.tool
+# 2. Subir y normalizar — GUARDÁ la respuesta
+FILE=examples/es_sin_coords.csv
+[ -f "$FILE" ] || .venv/bin/python -m smart_import make-fixtures --out examples --rows 40
 
-# 3. Estado (guardá el job_id del paso anterior)
-JOB=imp_xxxxxxxx
-curl -s localhost:8100/imports/$JOB | python -m json.tool
+RESP=$(curl -sf -X POST "localhost:8100/imports?phone_region=AR" -F "file=@${FILE}")
+echo "$RESP" | .venv/bin/python -m json.tool
+
+# 3. Capturar el job_id REAL
+JOB=$(echo "$RESP" | .venv/bin/python -c 'import json,sys; print(json.load(sys.stdin)["job_id"])')
+echo "JOB=$JOB"
+
+curl -sf "localhost:8100/imports/$JOB" | .venv/bin/python -m json.tool
 
 # 4. Muestra de filas para la UI
-curl -s "localhost:8100/imports/$JOB/preview?limit=5" | python -m json.tool
+curl -sf "localhost:8100/imports/$JOB/preview?limit=5" | .venv/bin/python -m json.tool
 
-# 5. Corregir el mapping
-curl -s -X PUT localhost:8100/imports/$JOB/mapping \
-     -H 'Content-Type: application/json' \
-     -d '{"Codigo interno": "reference"}' | python -m json.tool
+# 5. Corregir mapping (solo si next_actions trae "mapping" / needs_review)
+#    Ejemplo válido para preamble_dirty.xlsx (no para one_row_per_delivery):
+# curl -sf -X PUT "localhost:8100/imports/$JOB/mapping" \
+#      -H 'Content-Type: application/json' \
+#      -d '{"Codigo interno": "reference"}' | .venv/bin/python -m json.tool
 
-# 6. Descargar
-curl -s "localhost:8100/imports/$JOB/download?format=flat"   -o normalizado.csv
-curl -s "localhost:8100/imports/$JOB/download?format=nested" -o optimizador.json
+# 6. Descargar — salidas estándar Vepathos
+mkdir -p out
+curl -sf "localhost:8100/imports/$JOB/download?format=flat"   -o out/normalizado.csv
+curl -sf "localhost:8100/imports/$JOB/download?format=nested" -o out/optimizador.json
 
-# 7. ¿Hay cobertura antes de ofrecer el botón?
-curl -s "localhost:8100/geocoding/coverage?lat=-34.60&lon=-58.38" | python -m json.tool
+# 7. ¿Hay cobertura PBF antes de ofrecer el botón?
+curl -sf "localhost:8100/geocoding/coverage?lat=-34.60&lon=-58.38" | .venv/bin/python -m json.tool
 
-# 8. Geolocalizar (asíncrono)
-curl -s -X POST "localhost:8100/imports/$JOB/geocode?origin_lat=-34.60&origin_lon=-58.38"
-watch -n2 "curl -s localhost:8100/imports/$JOB | python -c \
-    'import json,sys; d=json.load(sys.stdin); print(d[\"status\"], d.get(\"geocode\",{}).get(\"progress\"))'"
+# 8. Geolocalizar (async). Solo si next_actions incluye "geocode"
+curl -sf -X POST "localhost:8100/imports/$JOB/geocode?origin_lat=-34.60&origin_lon=-58.38" \
+  | .venv/bin/python -m json.tool
 
-# 9. Separar columna compuesta con el modelo (requiere [ai])
-curl -s -X POST "localhost:8100/imports/$JOB/extract?max_rows=200"
+# Polling portable (sin `watch`):
+while true; do
+  curl -sf "localhost:8100/imports/$JOB" | .venv/bin/python -c \
+    'import json,sys; d=json.load(sys.stdin); g=d.get("geocode") or {}; print(d["status"], g.get("progress"))'
+  sleep 2
+done
+# Ctrl-C cuando status=geocoded / phase=done
+
+# 9. Separar columna compuesta (requiere AI + archivo tipo merged_field)
+# FILE=examples/merged_field.csv   # re-importá ese archivo primero → nuevo JOB
+# curl -sf -X POST "localhost:8100/imports/$JOB/extract?max_rows=200" | .venv/bin/python -m json.tool
 ```
+
+Si `python -m json.tool` dice `Expecting value: line 1 column 1`, casi siempre es:
+(a) servicio caído, (b) el path de `-F file=@…` no existe desde tu cwd, o
+(c) usaste `-s` y curl falló en silencio — usá `-sf`.
+
+Si ves `job 'imp_xxxxxxxx' inexistente`, copiaste el placeholder del doc: capturá
+`$JOB` desde la respuesta del `POST /imports`.
+
+---
+
+## Salida, IA y geocoding
+
+### Salida canónica = `vepathos_flat_v1`
+
+Definida en [`schemas/vepathos_flat_v1.json`](schemas/vepathos_flat_v1.json).
+
+| Formato | Qué es | Quién lo consume |
+|---|---|---|
+| **flat** (CSV/XLSX) | Una fila por `delivery × package`, columnas en orden del schema | UI, export, auditoría |
+| **nested** (JSON) | `{"addresses":[{..., "packages":[...]}]}` | optimizador |
+| **report** (`*.report.json`) | mapping + confianza + contadores + avisos | depuración / UI |
+
+Solo se emiten las columnas que existían (o se pudieron mapear) en la entrada.
+Un archivo que ya viene en formato Vepathos sale idéntico (round-trip).
+
+```bash
+curl -sf localhost:8100/schemas | .venv/bin/python -m json.tool
+```
+
+### ¿Está corriendo el modelo?
+
+**No en `normalize`.** El mapeo de columnas es 100 % reglas. El modelo
+(NuExtract-1.5-tiny) **solo** corre en `extract` (separar una columna compuesta).
+
+Cómo saberlo:
+
+```bash
+curl -sf localhost:8100/health | .venv/bin/python -m json.tool
+```
+
+| Campo en `/health` o en el job | Significado |
+|---|---|
+| `ai.enabled` | Flag `SMART_IMPORT_AI_ENABLED` |
+| `ai.dependencies_installed` | torch/transformers instalados |
+| `ai.model` / `ai.device` | Qué cargaría y dónde (`cpu` / `mps` / `cuda`) |
+| `report.ai_used == false` | Normal en imports: el mapping **no** usó IA |
+| `extract` en `next_actions` | El servicio ofrece separación con modelo |
+| Logs `POST /extract` / stage EXTRACT | Ahí sí se cargó/usó el modelo |
+
+Tu `/health` con `enabled=true` + `dependencies_installed=true` significa “listo para
+`extract`”, **no** que el modelo esté corriendo en cada import.
+
+### ¿Cómo funciona la geocodificación y dónde corre?
+
+Corre **local, dentro del proceso** `smart_import serve` (un worker en thread pool).
+No es un microservicio aparte y, con `GEOCODER_FALLBACK=none`, **no llama** a
+Nominatim/Google ni a nada externo.
+
+```
+PBF del cutter (_extracts/*.osm.pbf)
+        │  SMART_IMPORT_PBF_DIR
+        ▼
+build-geocoder-index  →  data/indexes/<bbox>.sqlite   (una vez por región)
+        │
+        ▼
+POST /imports/{id}/geocode   →  lee SQLite (FTS5 + RTree) + cache local
+        │
+        ▼
+CSV con lat/lng + geocode_status / confidence / precision
+```
+
+- **Dónde:** misma máquina/VM que el servicio (`:8100`). Lee los PBF del cutter
+  read-only; escribe índices/cache en `data/indexes` y `data/cache`.
+- **Cuándo:** solo si llamás `POST …/geocode`. Nunca automático
+  (`geocoding.automatic: false` en `/health`).
+- **Qué PBF elige:** el extract más chico cuyo bbox cubre `origin_lat/lon`.
+- **Estados de fila:** `already_geocoded` | `matched` | `low_confidence` |
+  `not_found` | `error`.
 
 ---
 
 ## Nivel 5 — desde tu web
 
-El contrato para el cliente es corto:
+### Contrato de estado (listo para conectar)
+
+Cada respuesta de job trae lo que la UI necesita para barra de progreso y botones:
+
+```jsonc
+{
+  "job_id": "imp_ab12",
+  "status": "geocoding",          // o extracting | normalized | …
+  "busy": true,                   // true = no ofrecer acciones; mostrar progreso
+  "progress": {
+    "phase": "geocoding",         // queued | loading_model | building_index | extracting | …
+    "message": "Geolocalizando 120/1000",
+    "done": 120,
+    "total": 1000,
+    "pct": 12.0,
+    "eta_s": 45.2,
+    "busy": true,
+    "detail": {"matched": 90, "not_found": 10}
+  },
+  "poll_after_ms": 500,           // null cuando busy=false
+  "urls": {
+    "self": "/imports/imp_ab12",
+    "events": "/imports/imp_ab12/events",   // SSE
+    "preview": "/imports/imp_ab12/preview",
+    "download_flat": "/imports/imp_ab12/download?format=flat",
+    "download_nested": "/imports/imp_ab12/download?format=nested"
+  },
+  "next_actions": [ /* vacio si busy */ ],
+  "report": { "deliveries": 1000, "needs_geocode": 800, "ai_used": false }
+}
+```
+
+**Dos formas de seguir el avance** (elige una):
+
+```js
+// A) Polling (simple)
+async function watch(jobId) {
+  for (;;) {
+    const j = await fetch(`${SI}/imports/${jobId}`).then(r => r.json())
+    setProgress(j.progress)
+    if (!j.busy) { setJob(j); return j }
+    await sleep(j.poll_after_ms ?? 500)
+  }
+}
+
+// B) SSE (menos requests; ideal para 1k filas + modelo/geocode)
+const es = new EventSource(`${SI}/imports/${jobId}/events`)
+es.addEventListener('progress', e => setProgress(JSON.parse(e.data)))
+es.addEventListener('done', e => { setJob(JSON.parse(e.data)); es.close() })
+```
+
+Payload chico si solo querés la barra: `GET /imports/{id}/progress`.
+
+### Flujo de la UI
 
 ```
-POST /imports                  multipart  file=<archivo>
-  -> { job_id, status, report{mapping, deliveries, needs_geocode}, next_actions[] }
+POST /imports                  multipart  file=<archivo>   → sync (~ms–s)
+  -> { job_id, status, busy:false, progress, report, next_actions, urls }
 
 GET  /imports/{id}             polling de estado
+GET  /imports/{id}/progress    solo barra
+GET  /imports/{id}/events      SSE (progress + done)
 GET  /imports/{id}/preview     filas para la tabla de revisión
 PUT  /imports/{id}/mapping     el usuario corrige un dropdown
 GET  /imports/{id}/download?format=flat|nested|geocoded
-POST /imports/{id}/geocode     el usuario aprieta "Geolocalizar"
+
+POST /imports/{id}/geocode     → 202 + busy=true  (async; 1000 dirs OK)
+POST /imports/{id}/extract     → 202 + busy=true  (async; modelo ~1.4s/fila)
 ```
 
-**`next_actions` es el contrato clave.** Cada respuesta te dice qué puede hacer el
+`normalize` es síncrono (50k filas ~1.5 s). Lo que tarda de verdad — **geocode** y
+**extract** — es async: la web arranca, se suscribe a `events` / pollea, y cuando
+`busy=false` pinta `next_actions`.
+
+**`next_actions` es el contrato de botones.** Cada respuesta te dice qué puede hacer el
 usuario ahora y con qué link; tu UI no necesita replicar la máquina de estados:
 
 ```jsonc
@@ -233,125 +416,168 @@ usuario ahora y con qué link; tu UI no necesita replicar la máquina de estados
 ```
 
 Pintá un botón por cada acción que venga. Si `geocode` no está en la lista, no lo
-muestres — significa que no hay filas sin coordenadas.
+muestres — significa que no hay filas sin coordenadas. Mientras `busy=true`,
+`next_actions` viene vacío a propósito.
 
-Para desarrollo, CORS está en `*`. **Cerralo al dominio real antes de producción**
-(`smart_import/api/app.py`, `allow_origins`).
+Para desarrollo, CORS está en `*` (`SMART_IMPORT_CORS_ORIGINS`).
+**Cerralo al dominio real antes de producción.**
+
+Estados útiles:
+
+| status | busy | Qué mostrar |
+|---|---|---|
+| `normalized` / `needs_mapping_review` | no | preview + botones |
+| `extracting` | sí | barra “Extrayendo N/M” + eta |
+| `geocode_queued` / `geocoding` | sí | barra geo (+ “building_index” la 1ª vez) |
+| `completed` | no | download geocoded |
+| `failed` | no | `error` + reintentar |
 
 ---
 
 ## 8. Producción
 
-Corre como **container independiente en la misma VM del cutter**, leyendo sus PBF en
-read-only. No comparte proceso, código ni entorno con el cutter.
+Un solo `docker compose`, configurado por `.env`. Ver [ARCHITECTURE.md](ARCHITECTURE.md)
+para el diagrama completo y qué falta resolver.
 
-### 8.1 Preparar
-
-```bash
-ssh <vm-del-cutter>
-cd ~ && git clone <repo> vepathos-smart-import && cd vepathos-smart-import
-cp .env.example .env.prod
-```
-
-Editá `.env.prod`:
+### 8.1 Elegir qué corre
 
 ```bash
-SMART_IMPORT_MAX_FILE_MB=10
-SMART_IMPORT_MAX_ROWS=50000
-SMART_IMPORT_AI_ENABLED=false          # prendelo sólo si el benchmark lo justifica
-SMART_IMPORT_PBF_DIR=/data/pbf         # montado read-only, no tocar
-SMART_IMPORT_INDEX_DIR=/data/indexes
-GEOCODER_FALLBACK=none                 # nunca llama a un servicio externo solo
+cp .env.example .env
 ```
+
+El núcleo (`normalize`) siempre está. Las otras dos se prenden y apagan solas:
+
+| Quiero… | `.env` | Imagen |
+|---|---|---|
+| **Todo** (default) | `AI_ENABLED=true` `GEOCODING_ENABLED=true` `TARGET=ai` | ~3 GB |
+| Sólo normalizar | `AI_ENABLED=false` `GEOCODING_ENABLED=false` `TARGET=runtime` | ~370 MB |
+| Normalizar + geocodificar | `AI_ENABLED=false` `GEOCODING_ENABLED=true` `TARGET=runtime` | ~370 MB |
+| Sólo el modelo | `AI_ENABLED=true` `GEOCODING_ENABLED=false` `TARGET=ai` | ~3 GB |
+
+Lo único que **sí** hay que ajustar sí o sí es dónde están los PBFs del cutter **en el
+host**:
+
+```bash
+ROUTE_OPTIMIZER_DATA=/home/martin/route-optimizer-app/data
+```
+
+El compose lo monta read-only en `/data/pbf`. Las rutas internas del container las fija
+el compose, no el `.env`: no las toques.
 
 ### 8.2 Levantar
 
 ```bash
-export ROUTE_OPTIMIZER_DATA=/home/martin/route-optimizer-app/data   # donde está el cutter
-docker compose -f docker-compose.prod.yml build
-docker compose -f docker-compose.prod.yml up -d
-docker compose -f docker-compose.prod.yml logs -f smart-import
+docker compose up -d
+docker compose logs -f smart-import
 ```
 
-Queda como un tercer container en la VM:
+Los logs de arranque te dicen qué quedó activo:
 
 ```
-VM 16 GB
-├── route-optimizer-cutter    escribe  data/_extracts/*.osm.pbf
-├── vepathos-worker
-└── vepathos-smart-import     lee      /data/pbf  (:ro)     ← nuevo
-                              escribe  /data/indexes, /data/cache
+0.023s  HTTP   arrancando Smart Import version=0.1.0 puerto=8100 work_dir=/data/jobs
+0.023s  HTTP   capacidades normalize=on geocoding=on ia=off
 ```
 
-El `:ro` garantiza que no puede modificar ni borrar los extracts del cutter.
+Con la imagen `ai`, conviene bajar el modelo **antes** de empezar a servir, para que el
+primer usuario no espere ~60 s:
+
+```bash
+docker compose --profile warmup up warmup      # baja el modelo al volumen
+docker compose up -d                           # después levanta el servicio
+```
 
 ### 8.3 Verificar
 
 ```bash
 curl -s localhost:8100/health | python3 -m json.tool
+curl -s localhost:8100/config | python3 -m json.tool   # config efectiva del proceso
 ```
 
+`capabilities` tiene que decir lo que esperás, y si el geocoding está prendido,
 `geocoding.pbf_available` tiene que ser > 0. Si da 0, el mount está mal:
 
 ```bash
-docker compose -f docker-compose.prod.yml exec smart-import ls /data/pbf | head
+docker compose exec smart-import ls /data/pbf | head
 ```
 
-### 8.4 Pre-construir índices (opcional pero recomendado)
+### 8.4 Pre-construir índices (recomendado)
 
-La primera geolocalización de una zona construye su índice (~10 s por cada 25 MB de
-PBF) y el usuario espera. Para las zonas donde ya sabés que operan tus clientes,
-adelantalo:
+La primera geolocalización de una zona construye su índice (~10 s por cada 25 MB de PBF)
+y el usuario espera. Para las zonas donde ya sabés que operan tus clientes, adelantalo:
 
 ```bash
-docker compose -f docker-compose.prod.yml exec smart-import \
-  python -m smart_import build-geocoder-index --origin-lat -34.60 --origin-lon -58.38
+docker compose --profile tools run --rm tools \
+    build-geocoder-index --origin-lat -34.60 --origin-lon -58.38
+```
+
+`tools` comparte los volúmenes del servicio, así que el índice queda listo para él.
+Otros comandos útiles:
+
+```bash
+docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4
+docker compose --profile tools run --rm tools warmup
 ```
 
 ### 8.5 Conectar routehub-fastapi
 
-Smart Import corre en la red privada; **no lo expongas a internet**. routehub-fastapi
-le hace proxy. Feature flag del lado de routehub:
+Smart Import **no tiene auth ni multi-tenancy**: no lo expongas a internet. routehub le
+hace de puerta, que ya resuelve API key y tenant.
 
 ```bash
-SMART_IMPORT_ENABLED=false      # default: con esto apagado, todo sigue como hoy
+# en routehub-fastapi
+SMART_IMPORT_ENABLED=false                  # default: con esto todo sigue como hoy
 SMART_IMPORT_URL=http://10.0.0.x:8100
 ```
 
-Si Smart Import está caído, el flujo legacy de Vepathos funciona idéntico: no hay
-ninguna dependencia en sentido inverso.
+Y cerrá CORS al dominio real:
+
+```bash
+SMART_IMPORT_CORS_ORIGINS=https://app.vepathos.com
+```
+
+Si Smart Import está caído, el flujo legacy funciona idéntico: no hay dependencia en
+sentido inverso.
 
 ### 8.6 Recursos
 
 Arranca conservador — comparte la VM con el cutter:
 
-```yaml
-mem_limit: 4g
-cpus: 2
+```bash
+SMART_IMPORT_MEMORY_LIMIT=4g
+SMART_IMPORT_CPUS=2
+SMART_IMPORT_GEOCODE_WORKERS=1
+SMART_IMPORT_EXTRACT_WORKERS=1
 ```
 
 `normalize` usa 82 MB para 50k filas. Lo que consume memoria de verdad es construir un
-índice de un PBF grande. Subilo cuando tengas medición, no antes.
-
----
+índice de un PBF grande, y cargar el modelo (~1 GB residente). Subí los workers cuando
+tengas medición, no antes.
 
 ## 9. Diagnóstico
 
 | Síntoma | Causa probable | Qué hacer |
 |---|---|---|
-| `pbf_available: 0` | el mount de `_extracts` está mal | `exec smart-import ls /data/pbf` |
+| `Expecting value: line 1 column 1` | servicio caído o `file=@…` inexistente desde tu cwd | `curl -sf …/health`; `ls` el archivo; corré desde la raíz del repo |
+| `job 'imp_xxxxxxxx' inexistente` | usaste el placeholder del doc | capturá `$JOB` del `POST /imports` |
+| `watch: command not found` | macOS no trae `watch` | usá el `while true; do …; sleep 2; done` o `./scripts/http-smoke.sh --geocode` |
+| `pbf_available: 0` | el mount / `SMART_IMPORT_PBF_DIR` está mal | `list-pbf` o `ls $SMART_IMPORT_PBF_DIR` |
 | `sin cobertura PBF para el area` | no hay extract para esa zona | `list-pbf --lat X --lon Y`; el cutter todavía no cortó ahí |
 | geocode tarda mucho la 1ª vez | está construyendo el índice | normal, ~10 s por 25 MB; queda cacheado |
 | `needs_review` siempre | headers muy raros | mirá `detect`; corregí con `PUT /mapping` |
 | todo `not_found` | falta el depot | pasá `--origin-lat/--origin-lon`: sin eso no hay desempate |
 | `dependencies_installed: false` | falta torch | `pip install -e ".[ai]"` (solo si querés `extract`) |
+| `ai.enabled=true` pero `ai_used=false` | esperado en normalize | el modelo solo corre en `extract` |
 | `extract` tarda muchísimo | 1,4 s por fila en CPU | bajá `SMART_IMPORT_EXTRACT_MAX_ROWS` |
 | jobs que desaparecen | el store es en memoria | no uses `--workers > 1` todavía |
+| `503` al geocodificar | capacidad apagada | el mensaje dice qué env var prender |
+| `Permission denied` en `/data/...` | volumen creado por root | el path tiene que existir en la imagen; ver Dockerfile |
+| el botón de geocode no aparece | `pbf_dir` vacío o capacidad off | `curl /health` → `capabilities` |
+| `.env` que no se aplica | está montado pero no leído | `curl /config` muestra la config efectiva |
 
 **Ver qué decidió y por qué:**
 
 ```bash
-cat out/normalizado.report.json | python -m json.tool | head -40
+.venv/bin/python -m json.tool out/normalizado.report.json | head -40
 ```
 
 Trae el mapping con confianza y método, los contadores por estado, los avisos y hasta

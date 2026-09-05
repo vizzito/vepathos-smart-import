@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "addresses": [
+    {
+      "delivery_id": "TANDIL_0001",
+      "address": "Arana 1298, Tandil, Buenos Aires, Argentina",
+      "lat": -37.33574981,
+      "lng": -59.14780346,
+      "zone": "TANDIL_OESTE",
+      "packages": [
+        {
+          "package_id": "PKG_TANDIL_0001",
+          "weight_kg": 13.36,
+          "dimensions": {
+            "length": 52.0,
+            "width": 37.0,
+            "height": 39.0
+          },
+          "time_window": null,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "TANDIL_0002",
+      "address": "Pellegrini 1181, Tandil, Buenos Aires, Argentina",
+      "lat": -37.3315931,
+      "lng": -59.14192292,
+      "zone": "TANDIL_CENTRO",
+      "packages": [
+        {
+          "package_id": "PKG_TANDIL_0002",
+          "weight_kg": 10.63,
+          "dimensions": {
+            "length": 34.0,
+            "width": 47.0,
+            "height": 31.0
+          },
+          "time_window": null,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "TANDIL_0003",
+      "address": "Av. Marconi 1437, Tandil, Buenos Aires, Argentina",
+      "lat": -37.32522626,
+      "lng": -59.14354039,
+      "zone": "TANDIL_CENTRO",
+      "packages": [
+        {
+          "package_id": "PKG_TANDIL_0003",
+          "weight_kg": 9.46,
+          "dimensions": {
+            "length": 35.0,
+            "width": 44.0,
+            "height": 37.0
+          },
+          "time_window": null,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "TANDIL_0004",
+      "address": "Rauch 1429, Tandil, Buenos Aires, Argentina",
+      "lat": -37.34494839,
+      "lng": -59.12734862,
+      "zone": "TANDIL_SUR",
+      "packages": [
+        {
+          "package_id": "PKG_TANDIL_0004",
+          "weight_kg": 18.66,
+          "dimensions": {
+            "length": 29.0,
+            "width": 28.0,
+            "height": 13.0
+          },
+          "time_window": null,
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "TANDIL_0005",
+      "address": "Sarmiento 1077, Tandil, Buenos Aires, Argentina",
+      "lat": -37.32112761,
+      "lng": -59.13401587,
+      "zone": "TANDIL_CENTRO",
+      "packages": [
+        {
+          "package_id": "PKG_TANDIL_0005",
+          "weight_kg": 5.79,
+          "dimensions": {
+            "length": 27.0,
+            "width": 37.0,
+            "height": 21.0
+          },
+          "time_window": null,
+          "status": "PENDING"
+        }
+      ]
+    }
+  ]
+}

@@ -18,8 +18,9 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 ---
 
 > **¿Cómo lo pruebo?** Ver [RUNBOOK.md](RUNBOOK.md) — cinco niveles, de `pytest`
-> (30 s, sin dependencias) hasta la integración con la web. **No hace falta subir un
-> archivo por la web para probar que todo anda.**
+> (30 s, sin dependencias) hasta la integración con la web. Casos variables en
+> [`examples/`](examples/README.md). Smoke HTTP: `./scripts/http-smoke.sh`.
+> **No hace falta subir un archivo por la web para probar que todo anda.**
 
 ## Instalación
 
@@ -210,7 +211,9 @@ python -m smart_import serve --port 8100
 | `GET` | `/health` | capacidades: IA instalada, PBFs visibles, índices construidos |
 | `GET` | `/schemas` | schemas destino y sus campos |
 | `POST` | `/imports` | sube y **normaliza** (síncrono). Devuelve mapping + report + `next_actions` |
-| `GET` | `/imports/{id}` | estado del job |
+| `GET` | `/imports/{id}` | estado del job (`progress`, `busy`, `next_actions`, `urls`) |
+| `GET` | `/imports/{id}/progress` | solo barra de avance (polling liviano) |
+| `GET` | `/imports/{id}/events` | **SSE**: `progress` + `done` en vivo |
 | `GET` | `/imports/{id}/preview` | muestra de filas para pintar en la UI |
 | `PUT` | `/imports/{id}/mapping` | corrige el mapping y re-normaliza |
 | `GET` | `/imports/{id}/download?format=flat\|nested\|geocoded` | descarga el resultado |

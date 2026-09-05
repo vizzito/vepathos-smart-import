@@ -1,0 +1,90 @@
+# ===========================================================================
+# Smart Import — un compose para local y para produccion.
+#
+#   cp .env.example .env
+#   docker compose up -d                    todo: normalize + geocoding + IA
+#   docker compose --profile warmup up      + precarga el modelo antes de servir
+#   docker compose --profile tools run --rm tools <comando>
+#
+# Para un despliegue mas chico, edita .env:
+#   SMART_IMPORT_AI_ENABLED=false + SMART_IMPORT_TARGET=runtime   -> imagen 8x menor
+#   SMART_IMPORT_GEOCODING_ENABLED=false                          -> sin PBFs
+#
+# Nada se activa por estar el container arriba: las capacidades salen del .env
+# y se ven en GET /health.
+# ===========================================================================
+
+x-common: &common
+  build:
+    context: .
+    target: ${SMART_IMPORT_TARGET:-ai}
+  image: vepathos/smart-import:${SMART_IMPORT_TARGET:-ai}-${IMAGE_TAG:-latest}
+  env_file: [.env]
+  environment:
+    # Rutas DENTRO del container. No se tocan desde .env: el mapeo host->container
+    # lo define este archivo, no la config de la app.
+    SMART_IMPORT_PBF_DIR: /data/pbf
+    SMART_IMPORT_INDEX_DIR: /data/indexes
+    SMART_IMPORT_CACHE_PATH: /data/cache/geocode_cache.sqlite
+    SMART_IMPORT_WORK_DIR: /data/jobs
+    SMART_IMPORT_SCHEMA_DIR: /app/schemas
+    HF_HOME: /model-cache
+  volumes:
+    # Los .osm.pbf que ya genera el cutter: SOLO LECTURA.
+    # Si no usas geocoding, este mount es inofensivo aunque la ruta no exista.
+    - ${ROUTE_OPTIMIZER_DATA:-./data}/_extracts:/data/pbf:ro
+    # Artefactos propios, separados de los del cutter para que su limpieza
+    # de PBFs no se lleve puestos los indices de geocoding.
+    - smart_import_indexes:/data/indexes
+    - smart_import_cache:/data/cache
+    - smart_import_jobs:/data/jobs
+    - smart_import_models:/model-cache
+    # Schemas editables sin rebuild: agrega un campo y reinicia.
+    - ./schemas:/app/schemas:ro
+
+services:
+
+  # ---- el servicio ----
+  smart-import:
+    <<: *common
+    container_name: vepathos-smart-import
+    restart: unless-stopped
+    ports:
+      - "${SMART_IMPORT_PORT:-8100}:8100"
+    command: ["serve", "--host", "0.0.0.0", "--port", "8100"]
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8100/health', timeout=5).status==200 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      # el arranque con precarga de modelo puede tardar: no marcar unhealthy antes
+      start_period: ${SMART_IMPORT_START_PERIOD:-180s}
+    mem_limit: ${SMART_IMPORT_MEMORY_LIMIT:-4g}
+    cpus: ${SMART_IMPORT_CPUS:-2}
+
+  # ---- baja el modelo al volumen ANTES de que el servicio empiece a servir ----
+  # `docker compose --profile warmup up`
+  warmup:
+    <<: *common
+    container_name: vepathos-smart-import-warmup
+    profiles: [warmup]
+    restart: "no"
+    command: ["warmup"]
+
+  # ---- comandos sueltos contra los mismos volumenes ----
+  # `docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4`
+  # `docker compose --profile tools run --rm tools build-geocoder-index --origin-lat -34.6 --origin-lon -58.4`
+  tools:
+    <<: *common
+    container_name: vepathos-smart-import-tools
+    profiles: [tools]
+    restart: "no"
+    entrypoint: ["python", "-m", "smart_import"]
+    command: ["--help"]
+
+volumes:
+  smart_import_indexes:
+  smart_import_cache:
+  smart_import_jobs:
+  smart_import_models:

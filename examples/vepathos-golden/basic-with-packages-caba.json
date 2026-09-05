@@ -1,0 +1,615 @@
+{
+  "version": "1.0",
+  "addresses": [
+    {
+      "delivery_id": "DLV-1000",
+      "lat": -34.600695,
+      "lng": -58.4507,
+      "address": "400 Av. Corrientes, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-001",
+          "weight_kg": 0.4,
+          "dimensions": {
+            "length": 22,
+            "width": 18,
+            "height": 6
+          },
+          "status": "DELIVERED"
+        },
+        {
+          "package_id": "PKG-002",
+          "weight_kg": 1,
+          "dimensions": {
+            "length": 25.1,
+            "width": 20.4,
+            "height": 8.8
+          },
+          "status": "DELIVERED"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1001",
+      "lat": -34.610331,
+      "lng": -58.444989,
+      "address": "483 Av. Santa Fe, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-003",
+          "weight_kg": 1,
+          "dimensions": {
+            "length": 25.1,
+            "width": 20.4,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1002",
+      "lat": -34.604339,
+      "lng": -58.462619,
+      "address": "566 Defensa, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-005",
+          "weight_kg": 1.5,
+          "dimensions": {
+            "length": 28.2,
+            "width": 22.8,
+            "height": 11.6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1003",
+      "lat": -34.597186,
+      "lng": -58.438,
+      "address": "649 Av. Independencia, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-007",
+          "weight_kg": 1.4,
+          "dimensions": {
+            "length": 31.3,
+            "width": 25.2,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1004",
+      "lat": -34.618446,
+      "lng": -58.453547,
+      "address": "732 Av. Córdoba, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-009",
+          "weight_kg": 2,
+          "dimensions": {
+            "length": 34.4,
+            "width": 27.6,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1005",
+      "lat": -34.591046,
+      "lng": -58.461639,
+      "address": "815 Av. San Juan, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-011",
+          "weight_kg": 2.6,
+          "dimensions": {
+            "length": 37.5,
+            "width": 30,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1006",
+      "lat": -34.610531,
+      "lng": -58.426607,
+      "address": "898 Bolívar, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-013",
+          "weight_kg": 2.5,
+          "dimensions": {
+            "length": 40.6,
+            "width": 32.4,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1007",
+      "lat": -34.616597,
+      "lng": -58.477362,
+      "address": "981 Chile, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-015",
+          "weight_kg": 3.1,
+          "dimensions": {
+            "length": 43.7,
+            "width": 18,
+            "height": 11.6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1008",
+      "lat": -34.584161,
+      "lng": -58.441365,
+      "address": "1064 Perú, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-017",
+          "weight_kg": 3.6,
+          "dimensions": {
+            "length": 46.8,
+            "width": 20.4,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1009",
+      "lat": -34.62978,
+      "lng": -58.438373,
+      "address": "1147 Brasil, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-019",
+          "weight_kg": 3.6,
+          "dimensions": {
+            "length": 22,
+            "width": 22.8,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        },
+        {
+          "package_id": "PKG-020",
+          "weight_kg": 4.1,
+          "dimensions": {
+            "length": 25.1,
+            "width": 25.2,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1010",
+      "lat": -34.591967,
+      "lng": -58.485056,
+      "address": "1230 Av. Corrientes, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-021",
+          "weight_kg": 4.1,
+          "dimensions": {
+            "length": 25.1,
+            "width": 25.2,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1011",
+      "lat": -34.594341,
+      "lng": -58.408637,
+      "address": "1313 Av. Santa Fe, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-023",
+          "weight_kg": 0.8,
+          "dimensions": {
+            "length": 28.2,
+            "width": 27.6,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1012",
+      "lat": -34.63232,
+      "lng": -58.469795,
+      "address": "1396 Defensa, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-025",
+          "weight_kg": 0.8,
+          "dimensions": {
+            "length": 31.3,
+            "width": 30,
+            "height": 11.6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1013",
+      "lat": -34.56964,
+      "lng": -58.460198,
+      "address": "1479 Av. Independencia, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-027",
+          "weight_kg": 1.3,
+          "dimensions": {
+            "length": 34.4,
+            "width": 32.4,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1014",
+      "lat": -34.629302,
+      "lng": -58.409048,
+      "address": "1562 Av. Córdoba, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-029",
+          "weight_kg": 1.8,
+          "dimensions": {
+            "length": 37.5,
+            "width": 18,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1015",
+      "lat": -34.611348,
+      "lng": -58.508342,
+      "address": "1645 Av. San Juan, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-031",
+          "weight_kg": 1.8,
+          "dimensions": {
+            "length": 40.6,
+            "width": 20.4,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1016",
+      "lat": -34.574391,
+      "lng": -58.419153,
+      "address": "1728 Bolívar, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-033",
+          "weight_kg": 2.4,
+          "dimensions": {
+            "length": 43.7,
+            "width": 22.8,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1017",
+      "lat": -34.651386,
+      "lng": -58.44838,
+      "address": "1811 Chile, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-035",
+          "weight_kg": 2.9,
+          "dimensions": {
+            "length": 46.8,
+            "width": 25.2,
+            "height": 11.6
+          },
+          "status": "DELIVERED"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1018",
+      "lat": -34.56792,
+      "lng": -58.495773,
+      "address": "1894 Perú, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-037",
+          "weight_kg": 2.8,
+          "dimensions": {
+            "length": 22,
+            "width": 27.6,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        },
+        {
+          "package_id": "PKG-038",
+          "weight_kg": 3.4,
+          "dimensions": {
+            "length": 25.1,
+            "width": 30,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1019",
+      "lat": -34.607944,
+      "lng": -58.378613,
+      "address": "1977 Brasil, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-039",
+          "weight_kg": 3.4,
+          "dimensions": {
+            "length": 25.1,
+            "width": 30,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1020",
+      "lat": -34.636748,
+      "lng": -58.496631,
+      "address": "2060 Av. Corrientes, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-041",
+          "weight_kg": 4,
+          "dimensions": {
+            "length": 28.2,
+            "width": 32.4,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1021",
+      "lat": -34.549658,
+      "lng": -58.441621,
+      "address": "2143 Av. Santa Fe, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-043",
+          "weight_kg": 3.9,
+          "dimensions": {
+            "length": 31.3,
+            "width": 18,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1022",
+      "lat": -34.657144,
+      "lng": -58.40679,
+      "address": "2226 Defensa, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-045",
+          "weight_kg": 0.6,
+          "dimensions": {
+            "length": 34.4,
+            "width": 20.4,
+            "height": 11.6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1023",
+      "lat": -34.589627,
+      "lng": -58.534803,
+      "address": "2309 Av. Independencia, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-047",
+          "weight_kg": 1.2,
+          "dimensions": {
+            "length": 37.5,
+            "width": 22.8,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1024",
+      "lat": -34.576271,
+      "lng": -58.389364,
+      "address": "2392 Av. Córdoba, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-049",
+          "weight_kg": 1.1,
+          "dimensions": {
+            "length": 40.6,
+            "width": 25.2,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1025",
+      "lat": -34.667943,
+      "lng": -58.475019,
+      "address": "2475 Av. San Juan, CABA",
+      "zone": "C-1",
+      "packages": [
+        {
+          "package_id": "PKG-051",
+          "weight_kg": 1.6,
+          "dimensions": {
+            "length": 43.7,
+            "width": 27.6,
+            "height": 6
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1026",
+      "lat": -34.538053,
+      "lng": -58.488392,
+      "address": "2558 Bolívar, CABA",
+      "zone": "C-2",
+      "packages": [
+        {
+          "package_id": "PKG-053",
+          "weight_kg": 2.2,
+          "dimensions": {
+            "length": 46.8,
+            "width": 30,
+            "height": 8.8
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1027",
+      "lat": -34.637054,
+      "lng": -58.358227,
+      "address": "2641 Chile, CABA",
+      "zone": "B-1",
+      "packages": [
+        {
+          "package_id": "PKG-055",
+          "weight_kg": 2.2,
+          "dimensions": {
+            "length": 22,
+            "width": 32.4,
+            "height": 11.6
+          },
+          "status": "PENDING"
+        },
+        {
+          "package_id": "PKG-056",
+          "weight_kg": 2.7,
+          "dimensions": {
+            "length": 25.1,
+            "width": 18,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1028",
+      "lat": -34.627921,
+      "lng": -58.527449,
+      "address": "2724 Perú, CABA",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PKG-057",
+          "weight_kg": 2.7,
+          "dimensions": {
+            "length": 25.1,
+            "width": 18,
+            "height": 14.4
+          },
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "delivery_id": "DLV-1029",
+      "lat": -34.538213,
+      "lng": -58.407926,
+      "address": "2807 Brasil, CABA",
+      "zone": "N-2",
+      "packages": [
+        {
+          "package_id": "PKG-059",
+          "weight_kg": 3.2,
+          "dimensions": {
+            "length": 28.2,
+            "width": 20.4,
+            "height": 17.2
+          },
+          "status": "PENDING"
+        }
+      ]
+    }
+  ]
+}

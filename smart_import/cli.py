@@ -413,3 +413,52 @@ def extract(
     for w in d["warnings"]:
         typer.echo(f"  aviso: {w}")
     typer.echo(f"  salida: {output}")
+
+
+@app.command()
+def warmup() -> None:
+    """Baja el modelo al cache y verifica que el servicio puede arrancar.
+
+    Se corre ANTES de servir para que el primer usuario no pague la descarga.
+    Sale con codigo 0 aunque el modelo no cargue: no poder precargar no es
+    motivo para impedir que el servicio arranque.
+    """
+    from .logging_setup import stage
+    from .geocoding.pbf_registry import PbfRegistry
+    from .logging_setup import get_logger
+
+    log = get_logger("warmup")
+    cfg = Config.from_env()
+
+    stage(log, "HTTP", "verificando el despliegue",
+          geocoding="on" if cfg.geocoding_enabled else "off",
+          ia="on" if cfg.ai_enabled else "off")
+
+    schema_dir = Path(cfg.schema_dir)
+    schemas = sorted(p.stem for p in schema_dir.glob("*.json")) if schema_dir.exists() else []
+    stage(log, "HTTP", "schemas", encontrados=",".join(schemas) or "NINGUNO")
+    if not schemas:
+        typer.echo(f"  aviso: no hay schemas en {schema_dir}", err=True)
+
+    if cfg.geocoding_enabled:
+        registry = PbfRegistry.scan(cfg.pbf_dir) if cfg.pbf_dir else PbfRegistry([])
+        stage(log, "GEOCODE", "PBF disponibles", directorio=cfg.pbf_dir or "(sin configurar)",
+              cantidad=len(registry.entries), con_bbox=len(registry.with_bbox()))
+        if not registry.entries:
+            typer.echo("  aviso: geocoding habilitado pero no se ve ningun .osm.pbf. "
+                       "Revisa el mount de /data/pbf.", err=True)
+
+    if not cfg.ai_enabled:
+        stage(log, "DONE", "warmup listo (IA deshabilitada, no hay modelo que bajar)")
+        return
+
+    try:
+        from .models.loader import load
+        stage(log, "EXTRACT", "descargando/cargando modelo",
+              modelo=cfg.model, device=cfg.device)
+        loaded = load(cfg.model, cfg.device)
+        stage(log, "DONE", "warmup listo", modelo=cfg.model,
+              carga=f"{loaded.load_seconds:.1f}s")
+    except Exception as exc:
+        typer.echo(f"  aviso: no se pudo precargar el modelo ({exc}). "
+                   "El servicio arranca igual; extract va a devolver 503.", err=True)

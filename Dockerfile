@@ -37,10 +37,14 @@ COPY smart_import ./smart_import
 COPY schemas ./schemas
 COPY pyproject.toml README.md ./
 
-# /data/pbf se monta READ ONLY desde los _extracts del cutter
-RUN mkdir -p /data/input /data/output /data/pbf /data/indexes /data/cache /data/tmp \
+# TODOS los puntos de montaje se crean aca con el owner correcto.
+# Un volumen nombrado sobre una ruta que NO existe en la imagen lo crea Docker
+# como root, y el proceso (uid 10001) no puede escribir. Si el path existe,
+# Docker inicializa el volumen preservando permisos.
+RUN mkdir -p /data/input /data/output /data/pbf /data/indexes /data/cache \
+             /data/tmp /data/jobs /model-cache \
     && useradd -r -u 10001 -d /app smartimport \
-    && chown -R smartimport /app /data
+    && chown -R smartimport /app /data /model-cache
 USER smartimport
 
 ENV SMART_IMPORT_PBF_DIR=/data/pbf \
@@ -60,4 +64,5 @@ RUN pip install --no-cache-dir "transformers>=4.40" "torch>=2.2" --index-url htt
     || pip install --no-cache-dir "transformers>=4.40" "torch>=2.2"
 USER smartimport
 ENV SMART_IMPORT_AI_ENABLED=true \
+    SMART_IMPORT_AI_PRELOAD=true \
     HF_HOME=/model-cache
