@@ -464,6 +464,24 @@ ROUTE_OPTIMIZER_DATA=/home/martin/route-optimizer-app/data
 El compose lo monta read-only en `/data/pbf`. Las rutas internas del container las fija
 el compose, no el `.env`: no las toques.
 
+> **Espacio en disco.** La imagen `ai` pesa **3,34 GB** (torch) contra 370 MB la
+> `runtime`. Sumale ~1 GB del modelo en el volumen. Verificá antes de construir:
+>
+> ```bash
+> df -h /System/Volumes/Data     # macOS
+> df -h /var/lib/docker          # Linux
+> docker system df               # cuánto ocupa Docker hoy
+> ```
+>
+> Para liberar espacio **de este proyecto solamente** (no toca otros):
+>
+> ```bash
+> docker compose down --rmi local -v
+> ```
+>
+> Evitá `docker system prune -a --volumes`: borra imágenes y volúmenes de **todos**
+> tus proyectos, no sólo de este.
+
 ### 8.2 Levantar
 
 ```bash
