@@ -5,6 +5,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 import importlib
+from pathlib import Path
 
 from smart_import.api.app import app, store
 
@@ -261,3 +262,32 @@ def test_issues_falla_claro_si_no_se_normalizo(client):
         assert client.get("/imports/imp_vacio/issues").status_code == 409
     finally:
         store._jobs.pop("imp_vacio", None)
+
+
+def test_el_nested_refleja_las_coordenadas_del_geocoding(client, tmp_path, monkeypatch):
+    """El nested se genera en normalize, antes de geocodificar. Si no se
+    regenera, la UI (que consume nested) no ve nada del geocoding."""
+    import json as _json
+
+    from smart_import.api.app import _refresh_nested
+    from smart_import.api.jobs import Job
+
+    job = Job(id="imp_nested", filename="x.csv", schema="vepathos_flat_v1")
+    store._jobs[job.id] = job
+    try:
+        (store.dir_for(job.id) / "geocoded").mkdir(parents=True, exist_ok=True)
+        geocodificado = tmp_path / "geo.csv"
+        geocodificado.write_text(
+            "delivery_id,lat,lng,address,geocode_status\n"
+            'A,-34.6037,-58.3816,"Av. Corrientes 1234",already_geocoded\n'
+            'B,-34.6023972,-58.3753277,"Florida 500",matched\n',
+            encoding="utf-8")
+
+        _refresh_nested(job, geocodificado)
+
+        assert job.nested_path
+        doc = _json.loads(Path(job.nested_path).read_text(encoding="utf-8"))
+        coords = {a["delivery_id"]: (a.get("lat"), a.get("lng")) for a in doc["addresses"]}
+        assert coords["B"] == (-34.6023972, -58.3753277)   # la geocodificada aparece
+    finally:
+        store.delete(job.id)

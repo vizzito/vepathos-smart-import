@@ -548,6 +548,11 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
                      config=cfg, progress=progress)
         job.geocoded_path = str(output)
         job.geocode_report = report.as_dict()
+
+        # El nested se genero durante normalize, ANTES de tener coordenadas. Si no
+        # se regenera, `download?format=nested` (que es lo que consume la UI)
+        # devuelve la version vieja y todo el geocoding queda invisible.
+        _refresh_nested(job, output)
         job.geocode_progress = {"phase": "done", "done": report.rows, "total": report.rows}
         job.op_started_at = None
         job.touch(COMPLETED)
@@ -559,6 +564,28 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
         job.op_started_at = None
         job.touch(FAILED)
         logger.exception("geocode fallo en %s", job_id)
+
+
+def _refresh_nested(job: Job, geocoded_csv: Path) -> None:
+    """Regenera el JSON anidado a partir del CSV geocodificado.
+
+    El CSV geocodificado ya esta en formato Vepathos, asi que vuelve a pasar por
+    el pipeline sin cambios (round-trip) y sale el nested con las coordenadas.
+    """
+    from ..pipeline import run_normalize
+
+    try:
+        destino = store.dir_for(job.id) / "geocoded" / "geocoded.csv"
+        resultado = run_normalize(geocoded_csv, _schema_path(job.schema), destino,
+                                  emit=("nested",), config=CFG)
+        if nested := resultado.outputs.get("nested"):
+            job.nested_path = nested
+            stage(logger, "EMIT", "nested regenerado con las coordenadas nuevas",
+                  entregas=len(resultado.deliveries))
+    except Exception as exc:
+        # que falle el refresco no puede invalidar un geocoding que salio bien
+        stage(logger, "WARN", f"no se pudo regenerar el nested tras geocodificar: {exc}",
+              level=logging.WARNING)
 
 
 @app.get("/geocoding/coverage", tags=["geocode"])

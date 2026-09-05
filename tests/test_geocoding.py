@@ -284,3 +284,65 @@ def test_encuentra_la_direccion_aunque_haya_POIs_con_el_mismo_nombre(index, tmp_
     assert r.status == STATUS_MATCHED
     assert r.precision == "housenumber"
     assert r.lat == pytest.approx(-34.6024, abs=1e-3)
+
+
+# ---------- el cache no puede tapar una mejora del geocoder ----------
+
+def test_una_entrada_de_version_anterior_se_ignora(tmp_path):
+    """Sin esto, una mejora del geocoder es invisible hasta borrar el cache."""
+    from smart_import.geocoding import cache as cache_mod
+    from smart_import.geocoding.base import GeocodeResult
+
+    ruta = tmp_path / "c.sqlite"
+    viejo = cache_mod.GeocodeCache(ruta)
+    viejo.put("Florida 500", GeocodeResult(status="not_found", confidence=0.12), "ar")
+    viejo.commit()
+    viejo.close()
+
+    # el geocoder mejora y sube su version
+    original = cache_mod.GEOCODER_VERSION
+    cache_mod.GEOCODER_VERSION = original + 1
+    try:
+        nuevo = cache_mod.GeocodeCache(ruta)
+        assert nuevo.get("Florida 500", "ar") is None      # se ignora, se reconsulta
+        assert nuevo.stats()["stale"] == 1
+        nuevo.close()
+    finally:
+        cache_mod.GEOCODER_VERSION = original
+
+
+def test_un_cache_viejo_sin_la_columna_version_se_migra(tmp_path):
+    """Un cache ya existente en produccion no puede romper el arranque."""
+    import sqlite3
+
+    from smart_import.geocoding.cache import GeocodeCache
+
+    ruta = tmp_path / "legacy.sqlite"
+    conn = sqlite3.connect(ruta)
+    conn.executescript(
+        "CREATE TABLE geocode_cache (key TEXT PRIMARY KEY, normalized_address TEXT NOT NULL,"
+        " lat REAL, lon REAL, status TEXT NOT NULL, confidence REAL, precision TEXT,"
+        " source TEXT, created_at REAL NOT NULL);")
+    conn.execute("INSERT INTO geocode_cache VALUES ('k','x',1.0,2.0,'matched',1.0,'s','osm',0)")
+    conn.commit()
+    conn.close()
+
+    c = GeocodeCache(ruta)                                  # no debe explotar
+    columnas = {r[1] for r in c._conn.execute("PRAGMA table_info(geocode_cache)")}
+    assert "version" in columnas
+    c.close()
+
+
+def test_el_cache_sirve_una_entrada_de_la_version_actual(tmp_path):
+    from smart_import.geocoding.base import STATUS_MATCHED, GeocodeResult
+    from smart_import.geocoding.cache import GeocodeCache
+
+    ruta = tmp_path / "c.sqlite"
+    c = GeocodeCache(ruta)
+    c.put("Av. Corrientes 1234", GeocodeResult(status=STATUS_MATCHED, lat=-34.6, lon=-58.4,
+                                               confidence=1.0), "ar")
+    c.commit()
+    hit = c.get("Av. Corrientes 1234", "ar")
+    assert hit is not None and hit.lat == -34.6
+    assert c.stats()["stale"] == 0
+    c.close()
