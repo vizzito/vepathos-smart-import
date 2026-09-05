@@ -230,11 +230,12 @@ def test_geocode_202_incluye_events_url(client):
 def test_issues_reporta_lo_que_no_entro_sin_descartarlo(client, tmp_path):
     """Ninguna fila se pierde: las que fallan salen igual y se explican."""
     contenido = (
-        "delivery_id,address,lat,lng\n"
-        'OK-1,"Av. Corrientes 1234",-34.6037,-58.3816\n'
-        'GEO-1,"Florida 500",,\n'
-        'BAD,"Cabildo 1800",95,200\n'
-        "NADA,,,\n"
+        "delivery_id,address,lat,lng,cliente\n"
+        'OK-1,"Av. Corrientes 1234",-34.6037,-58.3816,Juan\n'
+        'GEO-1,"Florida 500",,,Maria\n'
+        'BAD,"Cabildo 1800",95,200,Carlos\n'
+        "SIN-DESTINO,,,,Pedro\n"      # entrega real: tiene cliente, le falta destino
+        "Totales:,,,,\n"              # NO es una entrega: pie de pagina
     )
     archivo = tmp_path / "prob.csv"
     archivo.write_text(contenido, encoding="utf-8")
@@ -243,16 +244,18 @@ def test_issues_reporta_lo_que_no_entro_sin_descartarlo(client, tmp_path):
 
     body = client.get(f"/imports/{job_id}/issues").json()
     resumen = body["summary"]
-    assert resumen["total"] == 4                       # entraron 4, salieron 4
+    assert resumen["total"] == 5                       # entraron 5, salieron 5
     assert resumen["listas"] == 1
     assert resumen["a_geocodificar"] == 2              # GEO-1 y BAD (por direccion)
-    assert resumen["no_localizables"] == 1             # NADA
+    assert resumen["no_localizables"] == 1             # SIN-DESTINO: entrega real
+    assert resumen["ignoradas"] == 1                   # 'Totales:' no era una entrega
     assert resumen["coordenadas_rechazadas"] == 1
 
     por_id = {f["delivery_id"]: f for f in body["filas"]}
     assert set(por_id["BAD"]["fields"]) == {"lat", "lng"}
-    assert por_id["NADA"]["fields"] == ["address"]
     assert any("fuera de rango" in m for m in por_id["BAD"]["messages"])
+    assert por_id["SIN-DESTINO"]["status"] == "invalid"
+    assert por_id["Totales:"]["status"] == "ignored"
 
 
 def test_issues_falla_claro_si_no_se_normalizo(client):

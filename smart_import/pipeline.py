@@ -17,7 +17,7 @@ from .emit import write_flat_csv, write_flat_xlsx, write_nested_json, write_repo
 from .mapping import build_mapper
 from .mapping.base import ColumnMapping, MappingResult
 from .normalization.row_normalizer import (
-    STATUS_INVALID, STATUS_NEEDS_GEOCODE, STATUS_OK, RowNormalizer,
+    STATUS_IGNORED, STATUS_INVALID, STATUS_NEEDS_GEOCODE, STATUS_OK, RowNormalizer,
 )
 from .readers import read_any
 from .schemas import TargetSchema
@@ -133,6 +133,7 @@ def run_normalize(
           con_coordenadas=counts_.get(STATUS_OK, 0),
           necesitan_geocoding=counts_.get(STATUS_NEEDS_GEOCODE, 0),
           invalidas=counts_.get(STATUS_INVALID, 0),
+          ignoradas=counts_.get(STATUS_IGNORED, 0) or None,
           filas_vacias_descartadas=outcome.skipped_empty or None,
           t=f"{timer.marks['normalize']}s")
     for warning in outcome.warnings:
@@ -168,6 +169,7 @@ def run_normalize(
         "valid_rows": counts.get(STATUS_OK, 0),
         "needs_geocode": counts.get(STATUS_NEEDS_GEOCODE, 0),
         "invalid_rows": counts.get(STATUS_INVALID, 0),
+        "ignored_rows": counts.get(STATUS_IGNORED, 0),
         "rows_with_issues": sum(1 for r in outcome.rows if r.issues),
         "rejected_coordinates": sum(
             1 for r in outcome.rows if any("fuera de rango" in m for m in r.messages)),

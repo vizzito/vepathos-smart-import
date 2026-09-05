@@ -13,6 +13,15 @@ from .values import coerce, is_blank
 STATUS_OK = "ok"
 STATUS_NEEDS_GEOCODE = "needs_geocode"
 STATUS_INVALID = "invalid"
+#: La fila no parece una entrega: filas de totales, notas al pie, fragmentos.
+#: Se separa de `invalid` a proposito. Contar el pie de pagina del cliente como
+#: "entrega fallida" hace parecer roto un archivo que esta bien.
+STATUS_IGNORED = "ignored"
+
+#: Campos que identifican un DESTINO. Sin ninguno de estos, la fila no es un
+#: intento de entrega: un delivery_id suelto puede ser "Totales:" y una cantidad
+#: suelta puede ser la suma del pie.
+IDENTITY_FIELDS = ("address", "lat", "lng", "customer_name", "phone")
 
 
 @dataclass
@@ -71,7 +80,7 @@ class NormalizeOutcome:
     targets_present: list[str] = field(default_factory=list)
 
     def counts(self) -> dict[str, int]:
-        out = {STATUS_OK: 0, STATUS_NEEDS_GEOCODE: 0, STATUS_INVALID: 0}
+        out = {STATUS_OK: 0, STATUS_NEEDS_GEOCODE: 0, STATUS_INVALID: 0, STATUS_IGNORED: 0}
         for r in self.rows:
             out[r.status] = out.get(r.status, 0) + 1
         return out
@@ -197,9 +206,19 @@ class RowNormalizer:
         has_address = not is_blank(row.values.get("address"))
         if has_coords:
             row.status = STATUS_OK
-        elif has_address:
+            return
+        if has_address:
             row.status = STATUS_NEEDS_GEOCODE
-        else:
-            row.status = STATUS_INVALID
-            row.flag("address", "fila no localizable: sin coordenadas validas "
-                                "y sin direccion")
+            return
+
+        # Sin destino Y sin ninguna sena de identidad: no es una entrega fallida,
+        # es una fila que no era una entrega (totales, nota al pie, fragmento).
+        if not any(not is_blank(row.values.get(f)) for f in IDENTITY_FIELDS):
+            row.status = STATUS_IGNORED
+            row.flag(None, "la fila no parece una entrega (sin direccion, coordenadas, "
+                           "cliente ni telefono): se ignora", severity="warning")
+            return
+
+        row.status = STATUS_INVALID
+        row.flag("address", "entrega sin destino: falta la direccion y no hay "
+                            "coordenadas validas")

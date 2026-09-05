@@ -259,3 +259,52 @@ def test_cada_bulto_conserva_sus_propias_dimensiones(tmp_path):
     assert p1["dimensions"] == {"length": 30.0, "width": 20.0, "height": 10.0}
     assert p2["dimensions"] == {"length": 50.0, "width": 40.0, "height": 25.0}
     assert (p1["weight_kg"], p2["weight_kg"]) == (1.2, 3.4)
+
+
+# ---------- el pie de pagina del cliente no es una entrega fallida ----------
+
+CON_BASURA = (
+    "delivery_id,address,lat,lng,cliente,bultos\n"
+    'VP-1,"Av. Corrientes 1234",-34.6037,-58.3816,Juan Perez,1\n'
+    'VP-2,"Maipu 400",-34.5921,-58.3745,Maria Gomez,2\n'
+    'VP-3,"Florida 500",,,Carlos Lopez,1\n'
+    ",,,,,150\n"                                          # fragmento de totales
+    "Totales:,,,,,153\n"                                  # fila de totales
+    '"Nota: coordinar antes de las 9am",,,,,\n'           # nota al pie
+    "VP-4,,,,Pedro Ruiz,1\n"                              # entrega REAL sin direccion
+)
+
+
+def test_las_filas_que_no_son_entregas_no_cuentan_como_fallidas(tmp_path):
+    """Contar el pie de pagina como 'entrega fallida' hace parecer roto un
+    archivo que esta bien."""
+    archivo = tmp_path / "basura.csv"
+    archivo.write_text(CON_BASURA, encoding="utf-8")
+    report = run_normalize(archivo, SCHEMA, tmp_path / "o.csv").report
+
+    assert report["valid_rows"] == 2
+    assert report["needs_geocode"] == 1
+    assert report["invalid_rows"] == 1        # solo VP-4, que SI es una entrega
+    assert report["ignored_rows"] == 3        # totales, fragmento y nota
+
+    por_estado = {i["row"]: i["status"] for i in report["row_issues"]}
+    assert por_estado[7] == "invalid"         # VP-4: tiene cliente, le falta destino
+    assert all(por_estado[n] == "ignored" for n in (4, 5, 6))
+
+
+def test_una_entrega_sin_direccion_pero_con_cliente_si_cuenta_como_fallida(tmp_path):
+    """VP-4 tiene delivery_id y cliente: es una entrega, le falta el destino."""
+    archivo = tmp_path / "x.csv"
+    archivo.write_text("delivery_id,address,cliente,telefono\n"
+                       "VP-9,,Pedro Ruiz,1155554444\n", encoding="utf-8")
+    report = run_normalize(archivo, SCHEMA, tmp_path / "o.csv").report
+    assert report["invalid_rows"] == 1 and report["ignored_rows"] == 0
+
+
+def test_las_ignoradas_son_warning_no_error(tmp_path):
+    archivo = tmp_path / "y.csv"
+    archivo.write_text("delivery_id,address,bultos\nTotales:,,153\n", encoding="utf-8")
+    report = run_normalize(archivo, SCHEMA, tmp_path / "o.csv").report
+    issue = report["row_issues"][0]
+    assert issue["status"] == "ignored"
+    assert issue["issues"][0]["severity"] == "warning"

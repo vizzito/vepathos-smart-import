@@ -386,6 +386,7 @@ def issues(job_id: str, limit: int = Query(200, le=1000)) -> dict[str, Any]:
             "listas": report.get("valid_rows", 0),
             "a_geocodificar": report.get("needs_geocode", 0),
             "no_localizables": report.get("invalid_rows", 0),
+            "ignoradas": report.get("ignored_rows", 0),
             "con_observaciones": report.get("rows_with_issues", 0),
             "coordenadas_rechazadas": report.get("rejected_coordinates", 0),
             **({"geocodificadas": geo.get("matched", 0),
