@@ -92,12 +92,20 @@ def assemble(rows: list[NormalizedRow], schema: TargetSchema) -> tuple[list[dict
             pkg["time_window"] = tw
 
         qty = row.values.get("quantity")
-        if not is_blank(pkg.get("package_id")) or not qty or qty <= 1:
+        base = row.values.get("delivery_id") or f"row{row.index}"
+
+        if not is_blank(pkg.get("package_id")):
+            delivery["packages"].append(pkg)
+            continue
+
+        if not qty or qty <= 1:
+            # sin id propio: se sintetiza igual que en la expansion, para que el
+            # MISMO pedido escrito de las dos formas de la MISMA estructura
+            pkg.setdefault("package_id", f"{base}-{len(delivery['packages']) + 1}")
             delivery["packages"].append(pkg)
             continue
 
         # forma B: 'bultos: 3' sin package_id -> 3 bultos con id sintetico
-        base = row.values.get("delivery_id") or f"row{row.index}"
         pkg.pop("quantity", None)
         for n in range(1, int(qty) + 1):
             clone = dict(pkg)

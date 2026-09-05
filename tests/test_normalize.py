@@ -184,3 +184,75 @@ def test_limite_de_tamano_de_archivo(tmp_path, monkeypatch):
     tiny = Config(**{**cfg.__dict__, "max_file_mb": 0.000001})
     with pytest.raises(ValueError, match="supera el limite"):
         run_normalize(FIXTURES / "ref_us_seattle.xlsx", SCHEMA, tmp_path / "x.csv", config=tiny)
+
+
+# ---------- el MISMO pedido escrito de distintas formas da la MISMA estructura ----------
+
+def _deliveries(tmp_path, nombre, contenido):
+    archivo = tmp_path / nombre
+    archivo.write_text(contenido, encoding="utf-8")
+    return run_normalize(archivo, SCHEMA, tmp_path / f"{nombre}.out.csv",
+                         emit=("nested",)).deliveries
+
+
+FORMA_A = (                                   # una fila POR BULTO
+    "delivery_id,address,lat,lng,cliente,package_id,weight_kg\n"
+    'VP-100,"Av. Corrientes 1234",-34.6037,-58.3816,Juan,PKG-1,1.5\n'
+    'VP-100,"Av. Corrientes 1234",-34.6037,-58.3816,Juan,PKG-2,0.8\n'
+    'VP-100,"Av. Corrientes 1234",-34.6037,-58.3816,Juan,PKG-3,2.1\n'
+    'VP-200,"Maipu 400",-34.5921,-58.3745,Maria,PKG-4,0.5\n'
+)
+FORMA_B = (                                   # una fila POR ENTREGA con cantidad
+    "Nro entrega,Domicilio,Latitud,Longitud,Cliente,Cant bultos,Peso kg\n"
+    'VP-100,"Av. Corrientes 1234",-34.6037,-58.3816,Juan,3,1.5\n'
+    'VP-200,"Maipu 400",-34.5921,-58.3745,Maria,1,0.5\n'
+)
+
+
+def test_una_fila_por_bulto_se_agrupa(tmp_path):
+    d = _deliveries(tmp_path, "a.csv", FORMA_A)
+    assert len(d) == 2
+    assert [len(x["packages"]) for x in d] == [3, 1]
+    assert [p["package_id"] for p in d[0]["packages"]] == ["PKG-1", "PKG-2", "PKG-3"]
+
+
+def test_una_fila_con_cantidad_se_expande(tmp_path):
+    d = _deliveries(tmp_path, "b.csv", FORMA_B)
+    assert len(d) == 2
+    assert [len(x["packages"]) for x in d] == [3, 1]
+
+
+def test_las_dos_formas_dan_la_misma_estructura(tmp_path):
+    """Invariante: el mismo pedido, escrito de las dos maneras, sale igual."""
+    a = _deliveries(tmp_path, "a.csv", FORMA_A)
+    b = _deliveries(tmp_path, "b.csv", FORMA_B)
+
+    forma = lambda ds: [(x["delivery_id"], x["address"], len(x["packages"])) for x in ds]
+    assert forma(a) == forma(b)
+    # y todo bulto tiene id, sea propio o sintetizado
+    for ds in (a, b):
+        for entrega in ds:
+            for pkg in entrega["packages"]:
+                assert pkg.get("package_id")
+
+
+def test_sin_delivery_id_agrupa_por_identidad_geografica(tmp_path):
+    d = _deliveries(tmp_path, "c.csv",
+                    "Domicilio,Latitud,Longitud,Bulto,Kg\n"
+                    '"Av. Corrientes 1234",-34.6037,-58.3816,A-1,1.5\n'
+                    '"Av. Corrientes 1234",-34.6037,-58.3816,A-2,0.8\n'
+                    '"Maipu 400",-34.5921,-58.3745,B-1,0.5\n')
+    assert len(d) == 2
+    assert [len(x["packages"]) for x in d] == [2, 1]
+
+
+def test_cada_bulto_conserva_sus_propias_dimensiones(tmp_path):
+    d = _deliveries(tmp_path, "d.csv",
+                    "Nro pedido,Direccion,Lat,Lon,Bulto,Kg,Largo,Ancho,Alto\n"
+                    'PED-9,"Cabildo 1800",-34.5615,-58.4560,B1,1.2,30,20,10\n'
+                    'PED-9,"Cabildo 1800",-34.5615,-58.4560,B2,3.4,50,40,25\n')
+    assert len(d) == 1
+    p1, p2 = d[0]["packages"]
+    assert p1["dimensions"] == {"length": 30.0, "width": 20.0, "height": 10.0}
+    assert p2["dimensions"] == {"length": 50.0, "width": 40.0, "height": 25.0}
+    assert (p1["weight_kg"], p2["weight_kg"]) == (1.2, 3.4)
