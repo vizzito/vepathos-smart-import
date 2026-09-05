@@ -87,6 +87,19 @@ class ColumnProfile:
             return 0.0
         return sum(1 for x in self.nums if lo <= x <= hi) / len(self.nums)
 
+    def mostly_in(self, lo: float, hi: float) -> bool:
+        """True si los valores caen en el rango salvo unos pocos outliers.
+
+        Un porcentaje fijo no sirve: en una muestra de 3 valores UNA fila corrupta
+        ya es el 33% y daria vuelta la clasificacion de la columna entera (lat
+        pasaria a leerse como lng). Se permite 1 outlier siempre, o el 10% cuando
+        la muestra es grande.
+        """
+        if not self.nums:
+            return False
+        outliers = sum(1 for x in self.nums if not (lo <= x <= hi))
+        return outliers <= max(1, int(len(self.nums) * 0.1))
+
     def trimmed_spread(self) -> float:
         """Amplitud entre los percentiles 5 y 95: ignora valores corruptos sueltos."""
         if not self.nums:
@@ -120,18 +133,19 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
     if p.numeric_frac >= 0.9 and p.nums and phoneish < 0.7:
         # Rangos ROBUSTOS: una sola fila corrupta (lat=95) no puede reclasificar la
         # columna entera. Esa fila se reporta despues como invalida, en normalize.
+        in_lat = p.mostly_in(-90, 90)
+        in_lng = p.mostly_in(-180, 180)
         frac_lat = p.frac_in(-90, 90)
-        frac_lng = p.frac_in(-180, 180)
         spread = p.trimmed_spread()
         precise = p.has_decimals and any(len(str(abs(x)).split(".")[-1]) >= 3 for x in p.nums)
 
-        if precise and frac_lat >= 0.9 and spread < 40:
+        if precise and in_lat and spread < 40:
             add("lat", 0.86, f"{frac_lat:.0%} en [-90,90] con >=3 decimales")
-        if precise and frac_lng >= 0.9 and frac_lat < 0.9:
+        if precise and in_lng and not in_lat:
             # una parte sustancial excede |90| => imposible que sea latitud
             add("lng", 0.95, f"{1 - frac_lat:.0%} de los valores fuera de [-90,90]", CAP_STRONG)
-        elif precise and frac_lng >= 0.9 and spread < 40:
-            add("lng", 0.84, f"{frac_lng:.0%} en [-180,180] con >=3 decimales")
+        elif precise and in_lng and spread < 40:
+            add("lng", 0.84, f"en [-180,180] con >=3 decimales")
 
         if p.all_int and 0 < p.lo and p.hi <= 200 and p.distinct <= 30:
             add("quantity", 0.72, f"enteros chicos {int(p.lo)}..{int(p.hi)}")

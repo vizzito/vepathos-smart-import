@@ -77,3 +77,23 @@ def test_funciona_con_ia_deshabilitada(monkeypatch, schema):
     result = build_mapper(Config.from_env()).detect(read_any(FIXTURES / "es_headers_raros.xlsx"), schema)
     assert not result.ai_used
     assert len(result.mapping) >= 7
+
+
+def test_una_fila_corrupta_en_muestra_chica_tampoco_invierte_lat_lng(schema, tmp_path):
+    """Con 4 filas, una corrupta es el 33%: un umbral porcentual fijo daba vuelta
+    la columna entera y lat/lng salian intercambiadas."""
+    from smart_import.mapping import RuleSchemaMapper
+    from smart_import.readers import read_any
+
+    archivo = tmp_path / "chico.csv"
+    archivo.write_text(
+        "Dir. entrega;Latitud;Longitud\n"
+        "Av. Corrientes 1234;-34.6037;-58.3816\n"
+        "Maipu 400;-34.5921;-58.3745\n"
+        "Cabildo 1800;-34.5610;-58.4560\n"
+        "Florida 500;95;200\n",              # fila deliberadamente corrupta
+        encoding="utf-8")
+
+    mapping = RuleSchemaMapper().detect(read_any(archivo), schema).mapping
+    assert mapping["Latitud"].target == "lat"
+    assert mapping["Longitud"].target == "lng"

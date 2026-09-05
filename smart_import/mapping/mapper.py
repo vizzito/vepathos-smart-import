@@ -74,7 +74,7 @@ def _in_coord_range(target: str, profile) -> bool:
     """Robusto: se tolera hasta un 10% de valores corruptos antes de desconfiar
     del nombre de la columna."""
     lo, hi = (-90.0, 90.0) if target == "lat" else (-180.0, 180.0)
-    return profile.frac_in(lo, hi) >= 0.9
+    return profile.mostly_in(lo, hi)
 
 
 def _keep(scored: dict, col: str, target: str, score: float, method: str, why: str) -> None:

@@ -225,3 +225,62 @@ def test_columnas_de_diagnostico_siempre_presentes(index, tmp_path):
         assert col in row
     assert row["geocode_status"] == STATUS_NOT_FOUND
     assert row["lat"] == ""          # sin coordenadas inventadas
+
+
+def test_la_altura_entra_en_la_consulta_fts(index):
+    """Sin la altura, `"florida" OR "buenos" OR "aires"` ordenado por bm25 devolvia
+    40 POIs llamados "Florida" y NINGUNA fila de la calle Florida: los documentos
+    de direccion son mas largos y bm25 los castiga."""
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    p = parse("Avenida Corrientes 1234, Buenos Aires")
+
+    precisa = g._precise_query(p)
+    assert precisa is not None
+    assert '"1234"' in precisa and "AND" in precisa
+
+    amplia = g._fts_query(p)
+    assert "1234" not in amplia          # la amplia es la red de contencion
+
+
+def test_sin_altura_solo_queda_la_consulta_amplia(index):
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    assert g._precise_query(parse("Shanti Nagar, Mumbai")) is None
+    assert g._fts_query(parse("Shanti Nagar, Mumbai"))
+
+
+def test_encuentra_la_direccion_aunque_haya_POIs_con_el_mismo_nombre(index, tmp_path):
+    """Regresion: el POI homonimo no puede tapar a la calle con altura."""
+    import sqlite3
+
+    from smart_import.geocoding.address import normalize_text
+    from smart_import.geocoding.osm_index import SCHEMA_SQL
+
+    ruta = tmp_path / "poi.sqlite"
+    conn = sqlite3.connect(ruta)
+    conn.executescript(SCHEMA_SQL)
+    filas = [("node", i, -34.60, -58.37, "bus_stop", "Florida", None, None, "florida")
+             for i in range(1, 51)]                      # 50 POIs llamados "Florida"
+    filas.append(("node", 99, -34.6024, -58.3753, "building", None, "500", "Florida",
+                  "500 florida buenos aires"))           # la direccion real
+    for osm_type, osm_id, lat, lon, kind, name, num, street, texto in filas:
+        conn.execute(
+            "INSERT INTO places (osm_type, osm_id, lat, lon, kind, name, house_number,"
+            " street, city, district, state, postcode, country, normalized_text)"
+            " VALUES (?,?,?,?,?,?,?,?,'Buenos Aires',NULL,NULL,NULL,NULL,?)",
+            (osm_type, osm_id, lat, lon, kind, name, num, street,
+             normalize_text(texto + " buenos aires")))
+    conn.execute("INSERT INTO places_fts(rowid, normalized_text) "
+                 "SELECT id, normalized_text FROM places")
+    conn.execute("INSERT INTO places_rtree(id, min_lat, max_lat, min_lon, max_lon) "
+                 "SELECT id, lat, lat, lon, lon FROM places")
+    conn.commit()
+    conn.close()
+
+    r = LocalOSMGeocoder(ruta).geocode("Florida 500, Buenos Aires")
+    assert r.status == STATUS_MATCHED
+    assert r.precision == "housenumber"
+    assert r.lat == pytest.approx(-34.6024, abs=1e-3)

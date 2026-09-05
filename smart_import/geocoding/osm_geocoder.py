@@ -39,19 +39,45 @@ class LocalOSMGeocoder:
 
     # ---------- busqueda ----------
 
+    @staticmethod
+    def _clean_tokens(parsed: ParsedAddress) -> tuple[list[str], list[str]]:
+        """(palabras, numeros) del texto normalizado, listos para FTS."""
+        words, numbers = [], []
+        for token in parsed.tokens:
+            clean = _FTS_UNSAFE.sub("", token)
+            if not clean:
+                continue
+            if clean.isdigit():
+                numbers.append(clean)
+            elif len(clean) > 1:
+                words.append(clean)
+        return words[:8], numbers[:3]
+
+    def _precise_query(self, parsed: ParsedAddress) -> str | None:
+        """Altura AND calle. Es la consulta que realmente encuentra direcciones.
+
+        Sin la altura, `"florida" OR "buenos" OR "aires"` ordenado por bm25 devuelve
+        40 POIs llamados "Florida" (paradas, comercios) y NINGUNA fila de la calle
+        Florida: los documentos de direccion son mas largos y bm25 los castiga.
+        La altura esta en normalized_text, asi que incluirla discrimina de una.
+        """
+        words, numbers = self._clean_tokens(parsed)
+        number = parsed.house_number or (numbers[0] if numbers else None)
+        if not number or not words:
+            return None
+        number = _FTS_UNSAFE.sub("", str(number))
+        if not number:
+            return None
+        calle = " OR ".join(f'"{w}"' for w in words)
+        return f'"{number}" AND ({calle})'
+
     def _fts_query(self, parsed: ParsedAddress) -> str:
-        """Tokens en OR: una direccion del cliente casi nunca coincide palabra por
-        palabra con OSM, asi que se pide recall y despues se ordena con el scorer."""
-        tokens = [_FTS_UNSAFE.sub("", t) for t in parsed.tokens]
-        tokens = [t for t in tokens if len(t) > 1 and not t.isdigit()][:8]
-        return " OR ".join(f'"{t}"' for t in tokens)
+        """Consulta amplia: tokens en OR. Se usa como red de contencion cuando la
+        consulta precisa no aplica o no devuelve nada."""
+        words, _ = self._clean_tokens(parsed)
+        return " OR ".join(f'"{w}"' for w in words)
 
-    def _candidates(self, parsed: ParsedAddress,
-                    bbox: tuple[float, float, float, float] | None) -> list[Candidate]:
-        query = self._fts_query(parsed)
-        if not query:
-            return []
-
+    def _run(self, query: str, bbox, limit: int) -> list[Candidate]:
         sql = (f"SELECT {SELECT_COLUMNS} FROM places_fts f"
                " JOIN places p ON p.id = f.rowid"
                " WHERE places_fts MATCH ?")
@@ -62,9 +88,28 @@ class LocalOSMGeocoder:
                     " max_lat >= ? AND min_lat <= ? AND max_lon >= ? AND min_lon <= ?)")
             params += [south, north, west, east]
         sql += " ORDER BY bm25(places_fts) LIMIT ?"
-        params.append(CANDIDATE_LIMIT)
-
+        params.append(limit)
         return [Candidate(*row) for row in self._conn.execute(sql, params)]
+
+    def _candidates(self, parsed: ParsedAddress,
+                    bbox: tuple[float, float, float, float] | None) -> list[Candidate]:
+        """Dos pasadas: primero la precisa (altura AND calle), despues la amplia.
+
+        Se juntan las dos porque la precisa da los aciertos exactos y la amplia
+        cubre el caso en que OSM no tiene esa altura pero si la calle.
+        """
+        found: dict[int, Candidate] = {}
+
+        if precise := self._precise_query(parsed):
+            for cand in self._run(precise, bbox, CANDIDATE_LIMIT):
+                found[cand.id] = cand
+
+        broad = self._fts_query(parsed)
+        if broad:
+            for cand in self._run(broad, bbox, CANDIDATE_LIMIT):
+                found.setdefault(cand.id, cand)
+
+        return list(found.values())
 
     def geocode(self, address: str, origin: tuple[float, float] | None = None,
                 bbox: tuple[float, float, float, float] | None = None) -> GeocodeResult:

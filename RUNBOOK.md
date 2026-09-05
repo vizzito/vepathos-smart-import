@@ -587,6 +587,7 @@ tengas medición, no antes.
 | `ai.enabled=true` pero `ai_used=false` | esperado en normalize | el modelo solo corre en `extract` |
 | `extract` tarda muchísimo | 1,4 s por fila en CPU | bajá `SMART_IMPORT_EXTRACT_MAX_ROWS` |
 | jobs que desaparecen | el store es en memoria | no uses `--workers > 1` todavía |
+| mejoré el geocoder y sigue fallando igual | el cache guarda también los `not_found` | `rm data/cache/geocode_cache.sqlite` (o el volumen `smart_import_cache`) |
 | `503` al geocodificar | capacidad apagada | el mensaje dice qué env var prender |
 | `Permission denied` en `/data/...` | volumen creado por root | el path tiene que existir en la imagen; ver Dockerfile |
 | el botón de geocode no aparece | `pbf_dir` vacío o capacidad off | `curl /health` → `capabilities` |
