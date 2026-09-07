@@ -1,0 +1,18 @@
+{
+  "id": "v08",
+  "min_deliveries": 4,
+  "stops": [
+    {
+      "customer_name_contains": "Gonzalo",
+      "phone_contains": "1166778899",
+      "address_contains": ["Thames"]
+    },
+    {
+      "address_contains": ["Directorio"]
+    },
+    {
+      "phone_contains": "1122334455",
+      "address_contains": ["Santa Fe"]
+    }
+  ]
+}

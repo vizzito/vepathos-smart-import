@@ -1,0 +1,23 @@
+{
+  "id": "v25",
+  "min_deliveries": 3,
+  "stops": [
+    {
+      "customer_name_contains": "Esteban",
+      "phone_contains": "1144119988",
+      "address_contains": [
+        "Directorio"
+      ]
+    },
+    {
+      "customer_name_contains": "Paula",
+      "address_contains": [
+        "San Martin"
+      ]
+    },
+    {
+      "customer_name_contains": "Santiago",
+      "phone_contains": "1166772211"
+    }
+  ]
+}

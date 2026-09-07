@@ -1,0 +1,17 @@
+{
+  "id": "v11",
+  "min_deliveries": 4,
+  "stops": [
+    {
+      "customer_name_contains": "Jorge",
+      "phone_contains": "1144332211",
+      "address_contains": ["Scalabrini"]
+    },
+    {
+      "address_contains": ["Cabildo", "1500"]
+    },
+    {
+      "address_contains": ["Heras", "2200"]
+    }
+  ]
+}

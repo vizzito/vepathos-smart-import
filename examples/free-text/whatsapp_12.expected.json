@@ -1,0 +1,20 @@
+{
+  "_comment": "Gold del dataset de regresion. Prioridad de accuracy: deteccion > address > phone > customer_name > time windows > reference.",
+  "source": "whatsapp_12.txt",
+  "deliveries": 12,
+  "ignored": ["Hola chicos! Dejo el listado", "Salutos,", "Despacho"],
+  "records": [
+    {"customer_name": "Ana Perez",        "address_contains": "Av. Corrientes 100",       "phone": "+541140001000", "tw_end_hour": 14},
+    {"customer_name": "Juan Lopez",       "address_contains": "Av. Santa Fe",             "phone": "+541140011001", "tw_end_hour": null},
+    {"customer_name": "Maria Gomez",      "address_contains": "Av. Cabildo 174",          "phone": "+541140021002", "tw_end_hour": null},
+    {"customer_name": "Carlos Ruiz",      "address_contains": "Av. Rivadavia 211",        "phone": "+5491140031003", "tw_end_hour": null},
+    {"customer_name": "Lucia Fernandez",  "address_contains": "Av. Cordoba 248",          "phone": "+541140041004", "tw_end_hour": null},
+    {"customer_name": "Martin Castro",    "address_contains": "Av. Pueyrredon 359",       "phone": "+541140071007", "tw_end_hour": 14},
+    {"customer_name": "Santiago Herrera", "address_contains": "Lavalle 507",              "phone": "+541140111011", "tw_end_hour": null},
+    {"customer_name": "Facundo Molina",   "address_contains": "Malabia 1136",             "phone": "+541140281028", "tw_end_hour": 14},
+    {"customer_name": "Diego Martinez",   "address_contains": "Darwin 1395",              "phone": "+541140351035", "tw_end_hour": 14},
+    {"customer_name": "Julia Rios",       "address_contains": "Olazabal 1728",            "phone": "+541140441044", "tw_end_hour": null},
+    {"customer_name": "Lucia Fernandez",  "address_contains": "11 de Septiembre",         "phone": "+541140491049", "tw_end_hour": 14},
+    {"customer_name": "Nicolas Diaz",     "address_contains": "Av. Elcano 2098",          "phone": "+541140541054", "tw_end_hour": null}
+  ]
+}

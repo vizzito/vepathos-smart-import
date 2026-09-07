@@ -1,0 +1,28 @@
+{
+  "id": "v12",
+  "min_deliveries": 4,
+  "stops": [
+    {
+      "customer_name_contains": "Santiago",
+      "phone_contains": "1133445566",
+      "address_contains": [
+        "La Plata",
+        "800"
+      ]
+    },
+    {
+      "customer_name_contains": "Clara",
+      "address_contains": [
+        "Corrientes",
+        "1200"
+      ]
+    },
+    {
+      "customer_name_contains": "Felipe",
+      "phone_contains": "1177889900",
+      "address_contains": [
+        "Rivadavia"
+      ]
+    }
+  ]
+}

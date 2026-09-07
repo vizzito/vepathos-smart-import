@@ -1,0 +1,14 @@
+{
+  "_comment": "Texto del placeholder de la UI (6 stops). Si esto falla, el usuario pega el ejemplo y cree que el producto no anda.",
+  "source": "whatsapp_placeholder_6.txt",
+  "deliveries": 6,
+  "ignored_contains": ["Hola chicos", "pegá"],
+  "records": [
+    {"customer_name": "Ana Perez", "address_contains": "Corrientes 100", "phone": "+541140001000", "tw_end_hour": 14},
+    {"customer_name": "Juan Lopez", "address_contains": "Santa Fe", "phone": "+541140011001", "tw_end_hour": null},
+    {"customer_name": "Maria Gomez", "address_contains": "Cabildo 174", "phone": "+541140021002", "tw_end_hour": null},
+    {"customer_name": "Carlos Ruiz", "address_contains": "Rivadavia 211", "phone": "+5491140031003", "tw_end_hour": null},
+    {"customer_name": "Martin Castro", "address_contains": "Pueyrredon 359", "phone": "+541140071007", "tw_end_hour": null},
+    {"customer_name": "Facundo Molina", "address_contains": "Malabia 1136", "phone": "+541140281028", "tw_end_hour": 14}
+  ]
+}

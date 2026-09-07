@@ -1,0 +1,26 @@
+{
+  "id": "v03",
+  "min_deliveries": 4,
+  "stops": [
+    {
+      "customer_name_contains": "Manuel",
+      "phone_contains": "1134561234",
+      "address_contains": [
+        "Cabildo"
+      ]
+    },
+    {
+      "customer_name_contains": "Claudia",
+      "phone_contains": "1187654321",
+      "address_contains": [
+        "Corrientes"
+      ]
+    },
+    {
+      "phone_contains": "1123456789",
+      "address_contains": [
+        "Santa Fe"
+      ]
+    }
+  ]
+}

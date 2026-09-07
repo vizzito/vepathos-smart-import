@@ -1,0 +1,1012 @@
+[
+  {
+    "id": "v01",
+    "title": "Chat informal WhatsApp",
+    "file": "v01_chat_informal_whatsapp.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v02",
+    "title": "CSV / Tabular sucio",
+    "file": "v02_csv___tabular_sucio.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v03",
+    "title": "Email Formal Corporativo",
+    "file": "v03_email_formal_corporativo.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v04",
+    "title": "Multilinea por Registro",
+    "file": "v04_multilinea_por_registro.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v05",
+    "title": "JSON / API Payloads",
+    "file": "v05_json___api_payloads.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v06",
+    "title": "Transcripcion Audio / Speech-to-Text",
+    "file": "v06_transcripcion_audio___speech-to-text.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": "free_text",
+    "tags": [
+      "speech_numbers_spelled"
+    ]
+  },
+  {
+    "id": "v07",
+    "title": "Excel Copy-Paste Tab Separated",
+    "file": "v07_excel_copy-paste_tab_separated.tsv",
+    "suffix": ".tsv",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": null,
+    "tags": []
+  },
+  {
+    "id": "v08",
+    "title": "Shopify / Ecommerce export",
+    "file": "v08_shopify___ecommerce_export.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v09",
+    "title": "Comentarios MercadoLibre",
+    "file": "v09_comentarios_mercadolibre.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v10",
+    "title": "Etiquetas envio / PDF extraction",
+    "file": "v10_etiquetas_envio___pdf_extraction.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v11",
+    "title": "Lista por barrio",
+    "file": "v11_lista_por_barrio.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v12",
+    "title": "Formularios Web key-value",
+    "file": "v12_formularios_web_key-value.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": "free_text",
+    "tags": [
+      "urlencoded_form"
+    ]
+  },
+  {
+    "id": "v13",
+    "title": "Intersecciones / entre calles",
+    "file": "v13_intersecciones___entre_calles.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v14",
+    "title": "Notas adhesivas / memo",
+    "file": "v14_notas_adhesivas___memo.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v15",
+    "title": "SMS Tradicional",
+    "file": "v15_sms_tradicional.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v16",
+    "title": "Planilla turnos / ruteo",
+    "file": "v16_planilla_turnos___ruteo.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v17",
+    "title": "Sanitizados / tokens",
+    "file": "v17_sanitizados___tokens.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v18",
+    "title": "ERP Fixed Width",
+    "file": "v18_erp_fixed_width.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v19",
+    "title": "Comprobante pago / memo transferencia",
+    "file": "v19_comprobante_pago___memo_transferencia.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v20",
+    "title": "Bot / Flow Automation",
+    "file": "v20_bot___flow_automation.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v21",
+    "title": "CRM / Hubspot Raw",
+    "file": "v21_crm___hubspot_raw.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v22",
+    "title": "Ticket consola / terminal",
+    "file": "v22_ticket_consola___terminal.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v23",
+    "title": "Trello / Kanban title",
+    "file": "v23_trello___kanban_title.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v24",
+    "title": "Telegram / Markdown",
+    "file": "v24_telegram___markdown.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v25",
+    "title": "Webhook unstructured",
+    "file": "v25_webhook_unstructured.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": "free_text",
+    "tags": [
+      "urlencoded_webhook"
+    ]
+  },
+  {
+    "id": "v26",
+    "title": "Discord / commit message",
+    "file": "v26_discord___commit_message.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v27",
+    "title": "Planilla recorrido transporte",
+    "file": "v27_planilla_recorrido_transporte.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v28",
+    "title": "CSV ISO-8859-1 style semicolon",
+    "file": "v28_csv_iso-8859-1_style_semicolon.csv",
+    "suffix": ".csv",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": null,
+    "tags": []
+  },
+  {
+    "id": "v29",
+    "title": "Voz con errores de tipeo",
+    "file": "v29_voz_con_errores_de_tipeo.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v30",
+    "title": "Impresion matricial legacy",
+    "file": "v30_impresion_matricial_legacy.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v31",
+    "title": "Operador logistico manual",
+    "file": "v31_operador_logistico_manual.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v32",
+    "title": "Retiro sucursal / pickup",
+    "file": "v32_retiro_sucursal___pickup.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v33",
+    "title": "Pipe delimited",
+    "file": "v33_pipe_delimited.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v34",
+    "title": "Transcripcion call center",
+    "file": "v34_transcripcion_call_center.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v35",
+    "title": "Twitter / X DMs",
+    "file": "v35_twitter___x_dms.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v36",
+    "title": "Push / SMS gateway logs",
+    "file": "v36_push___sms_gateway_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v37",
+    "title": "SQL INSERT text",
+    "file": "v37_sql_insert_text.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v38",
+    "title": "Zebra / ZPL raw",
+    "file": "v38_zebra___zpl_raw.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v39",
+    "title": "Google Forms summary",
+    "file": "v39_google_forms_summary.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v40",
+    "title": "Google Docs comments",
+    "file": "v40_google_docs_comments.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v41",
+    "title": "vCard simplificado",
+    "file": "v41_vcard_simplificado.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v42",
+    "title": "Slack / Teams",
+    "file": "v42_slack___teams.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v43",
+    "title": "Hoja de firmas / asistencia",
+    "file": "v43_hoja_de_firmas___asistencia.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v44",
+    "title": "Chatbot soporte",
+    "file": "v44_chatbot_soporte.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v45",
+    "title": "Freshdesk / Zendesk tickets",
+    "file": "v45_freshdesk___zendesk_tickets.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v46",
+    "title": "Mobile app logs",
+    "file": "v46_mobile_app_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v47",
+    "title": "POS print / remito",
+    "file": "v47_pos_print___remito.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v48",
+    "title": "WhatsApp Business quick replies",
+    "file": "v48_whatsapp_business_quick_replies.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v49",
+    "title": "Garita / control entrada",
+    "file": "v49_garita___control_entrada.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v50",
+    "title": "Slash separated block",
+    "file": "v50_slash_separated_block.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v51",
+    "title": "Spreadsheet cell notes",
+    "file": "v51_spreadsheet_cell_notes.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v52",
+    "title": "Discord bot voice transcription",
+    "file": "v52_discord_bot_voice_transcription.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": "free_text",
+    "tags": [
+      "spoken_command"
+    ]
+  },
+  {
+    "id": "v53",
+    "title": "YAML config",
+    "file": "v53_yaml_config.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v54",
+    "title": "XML legacy",
+    "file": "v54_xml_legacy.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v55",
+    "title": "Memos cadeteria",
+    "file": "v55_memos_cadeteria.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v56",
+    "title": "Billing / invoicing",
+    "file": "v56_billing___invoicing.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v57",
+    "title": "Dating / social DM",
+    "file": "v57_dating___social_dm.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v58",
+    "title": "Access/DBF quoted CSV",
+    "file": "v58_access_dbf_quoted_csv.csv",
+    "suffix": ".csv",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": null,
+    "tags": []
+  },
+  {
+    "id": "v59",
+    "title": "Checkout ecommerce",
+    "file": "v59_checkout_ecommerce.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v60",
+    "title": "Garantia producto",
+    "file": "v60_garantia_producto.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v61",
+    "title": "Calendar reminders",
+    "file": "v61_calendar_reminders.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v62",
+    "title": "INI config stops",
+    "file": "v62_ini_config_stops.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v63",
+    "title": "Facebook Marketplace DM",
+    "file": "v63_facebook_marketplace_dm.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v64",
+    "title": "Stripe-like webhook",
+    "file": "v64_stripe-like_webhook.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v65",
+    "title": "Visita medica domiciliaria",
+    "file": "v65_visita_medica_domiciliaria.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v66",
+    "title": "Encuesta satisfaccion",
+    "file": "v66_encuesta_satisfaccion.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v67",
+    "title": "Markdown table",
+    "file": "v67_markdown_table.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v68",
+    "title": "Incidencias logistica",
+    "file": "v68_incidencias_logistica.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v69",
+    "title": "Whisper / AI voice logs",
+    "file": "v69_whisper___ai_voice_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 2,
+    "expect_mode": "free_text",
+    "tags": [
+      "whisper_spoken"
+    ]
+  },
+  {
+    "id": "v70",
+    "title": "Mensajeria interna tags",
+    "file": "v70_mensajeria_interna_tags.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v71",
+    "title": "PedidosYa / Rappi unstructured",
+    "file": "v71_pedidosya___rappi_unstructured.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v72",
+    "title": "Instagram DM",
+    "file": "v72_instagram_dm.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v73",
+    "title": "Supply chain receptor",
+    "file": "v73_supply_chain_receptor.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v74",
+    "title": "Fichaje empleados",
+    "file": "v74_fichaje_empleados.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v75",
+    "title": "Siri / Google Assistant",
+    "file": "v75_siri___google_assistant.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v76",
+    "title": "Contratos / legales",
+    "file": "v76_contratos___legales.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v77",
+    "title": "Tracking status logs",
+    "file": "v77_tracking_status_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v78",
+    "title": "Event badges",
+    "file": "v78_event_badges.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v79",
+    "title": "ERP chat integrado",
+    "file": "v79_erp_chat_integrado.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v80",
+    "title": "Concierge / guardia",
+    "file": "v80_concierge___guardia.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v81",
+    "title": "TSV raw columns",
+    "file": "v81_tsv_raw_columns.tsv",
+    "suffix": ".tsv",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": null,
+    "tags": []
+  },
+  {
+    "id": "v82",
+    "title": "Lista regalos / eventos",
+    "file": "v82_lista_regalos___eventos.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v83",
+    "title": "Devolucion mercaderia",
+    "file": "v83_devolucion_mercaderia.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v84",
+    "title": "SMS / pager corto",
+    "file": "v84_sms___pager_corto.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v85",
+    "title": "Correo interno sucursales",
+    "file": "v85_correo_interno_sucursales.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v86",
+    "title": "Flota GPS stop log",
+    "file": "v86_flota_gps_stop_log.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v87",
+    "title": "Suscripciones diarios",
+    "file": "v87_suscripciones_diarios.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v88",
+    "title": "WhatsApp Web paste con timestamps",
+    "file": "v88_whatsapp_web_paste_con_timestamps.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v89",
+    "title": "Tracking inquiry search",
+    "file": "v89_tracking_inquiry_search.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v90",
+    "title": "Outlook contacts CSV",
+    "file": "v90_outlook_contacts_csv.csv",
+    "suffix": ".csv",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": null,
+    "tags": []
+  },
+  {
+    "id": "v91",
+    "title": "Remises / transfers",
+    "file": "v91_remises___transfers.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v92",
+    "title": "CRM call logs",
+    "file": "v92_crm_call_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v93",
+    "title": "Android payload JSON inline",
+    "file": "v93_android_payload_json_inline.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v94",
+    "title": "IT support tickets",
+    "file": "v94_it_support_tickets.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v95",
+    "title": "SMS gateway mass",
+    "file": "v95_sms_gateway_mass.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v96",
+    "title": "Asana / task board",
+    "file": "v96_asana___task_board.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 3,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v97",
+    "title": "Picking list deposito",
+    "file": "v97_picking_list_deposito.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v98",
+    "title": "IVR logs",
+    "file": "v98_ivr_logs.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v99",
+    "title": "Kitchen display / food delivery",
+    "file": "v99_kitchen_display___food_delivery.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  },
+  {
+    "id": "v100",
+    "title": "Booking confirmations",
+    "file": "v100_booking_confirmations.txt",
+    "suffix": ".txt",
+    "n_examples": 5,
+    "min_deliveries": 4,
+    "expect_mode": "free_text",
+    "tags": []
+  }
+]
