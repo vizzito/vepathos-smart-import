@@ -5,6 +5,7 @@ import csv
 import re
 from pathlib import Path
 
+from ..detection.text_mode import TextMode, classify_text_mode
 from .base import FileMeta, Table, choose_header_row, dedupe_columns, is_blank
 
 CANDIDATE_DELIMITERS = [",", ";", "\t", "|"]
@@ -116,14 +117,47 @@ def _read_numbered_delivery_list(
     return Table(meta=meta, columns=columns, rows=rows)
 
 
-def read(path: str | Path, max_rows: int | None = None, fmt: str = "csv") -> Table:
+def _read_free_text(path: Path, text: str, encoding: str, fmt: str,
+                    decision) -> Table:
+    """Documento COMPLETO en una sola celda.
+
+    Nada de header, nada de preambulo descartado, nada partido por comas: lo que
+    sigue (segmentacion + clasificacion + extraccion) necesita el texto entero.
+    """
+    meta = FileMeta(
+        path=str(path), format=fmt, size_bytes=path.stat().st_size,
+        encoding=encoding, delimiter=None, header_row=0, preamble_rows=0,
+        text_mode=TextMode.FREE_TEXT.value, text_mode_evidence=decision.as_dict(),
+    )
+    lines = sum(1 for ln in text.splitlines() if ln.strip())
+    meta.notes.append(
+        f"texto libre: el documento se preserva entero ({lines} linea(s), "
+        f"{len(text)} caracteres). Motivo: {decision.reasons[0]}")
+    return Table(meta=meta, columns=["document"], rows=[(text,)])
+
+
+def read(path: str | Path, max_rows: int | None = None, fmt: str = "csv",
+         config=None) -> Table:
     p = Path(path)
     encoding = detect_encoding(p)
     with open(p, "r", encoding=encoding, errors="replace", newline="") as fh:
         text = fh.read()
 
-    # Pastes de despacho: NO usar delimiter ',' (rompe "calle 100, CABA | nota")
-    if fmt in ("txt", "csv") and looks_like_numbered_delivery_list(text):
+    # Un .txt no es una tabla porque tenga comas. Se exige evidencia estructural.
+    decision = None
+    if fmt == "txt":
+        decision = classify_text_mode(
+            text, fmt=fmt,
+            min_consistency=getattr(config, "text_tabular_min_consistency", 0.80),
+            min_lines=getattr(config, "text_tabular_min_lines", 3),
+            max_prose_ratio=getattr(config, "text_max_prose_ratio", 0.20),
+            min_header_score=getattr(config, "text_min_header_score", 0.50),
+        )
+        if decision.mode is TextMode.FREE_TEXT:
+            return _read_free_text(p, text, encoding, fmt, decision)
+
+    # Paste de despacho guardado como .csv: NO partir por ',' ("calle 100, CABA")
+    if fmt == "csv" and looks_like_numbered_delivery_list(text):
         return _read_numbered_delivery_list(p, text, encoding, fmt, max_rows)
 
     delimiter = "\t" if fmt == "tsv" else detect_delimiter(text)
@@ -148,6 +182,8 @@ def read(path: str | Path, max_rows: int | None = None, fmt: str = "csv") -> Tab
         path=str(p), format=fmt, size_bytes=p.stat().st_size,
         encoding=encoding, delimiter=delimiter,
         header_row=header_row, preamble_rows=header_row,
+        text_mode=TextMode.TABULAR.value if fmt in ("txt", "csv", "tsv") else None,
+        text_mode_evidence=decision.as_dict() if decision else {},
     )
     if header_row:
         meta.notes.append(f"{header_row} fila(s) de preambulo descartadas antes del header")

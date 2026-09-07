@@ -1,0 +1,106 @@
+{
+  "addresses": [
+    {
+      "lat": 42.442605,
+      "lng": -71.156235,
+      "address": "1345 Harrison Ave, Boston, MA 02130",
+      "zone": "G-3",
+      "packages": [
+        {
+          "package_id": "PackageID_1636625f",
+          "weight_kg": 3.2,
+          "dimensions": {
+            "length": 49.5,
+            "width": 35.6,
+            "height": 7.6
+          },
+          "time_window": null,
+          "status": "PENDING",
+          "packaging": "BOX",
+          "value_cents": 0,
+          "value_currency": "USD"
+        },
+        {
+          "package_id": "PackageID_2036a986",
+          "weight_kg": 0.7,
+          "dimensions": {
+            "length": 31.9,
+            "width": 29.4,
+            "height": 1.1
+          },
+          "time_window": null,
+          "status": "PENDING",
+          "packaging": "BOX",
+          "value_cents": 0,
+          "value_currency": "USD"
+        }
+      ]
+    },
+    {
+      "lat": 42.441147,
+      "lng": -71.154245,
+      "address": "4584 Newbury St, Boston, MA 02109",
+      "zone": "G-2",
+      "packages": [
+        {
+          "package_id": "PackageID_5b8e053c",
+          "weight_kg": 0.9,
+          "dimensions": {
+            "length": 32,
+            "width": 29.5,
+            "height": 1
+          },
+          "time_window": null,
+          "status": "PENDING",
+          "packaging": "BOX",
+          "value_cents": 0,
+          "value_currency": "USD"
+        }
+      ]
+    },
+    {
+      "lat": 42.427487,
+      "lng": -71.15436,
+      "address": "8734 Albany St, Boston, MA 02136",
+      "zone": "G-2",
+      "packages": [
+        {
+          "package_id": "PackageID_568d7110",
+          "weight_kg": 3.1,
+          "dimensions": {
+            "length": 30.5,
+            "width": 19.1,
+            "height": 10.2
+          },
+          "time_window": {
+            "start": "2018-07-24 13:00",
+            "end": "2018-07-24 21:00",
+            "time_zone": "UTC"
+          },
+          "status": "PENDING",
+          "packaging": "BOX",
+          "value_cents": 0,
+          "value_currency": "USD"
+        },
+        {
+          "package_id": "PackageID_144f7af6",
+          "weight_kg": 3.1,
+          "dimensions": {
+            "length": 24.1,
+            "width": 17.3,
+            "height": 4.3
+          },
+          "time_window": {
+            "start": "2018-07-24 13:00",
+            "end": "2018-07-24 21:00",
+            "time_zone": "UTC"
+          },
+          "status": "PENDING",
+          "packaging": "BOX",
+          "value_cents": 0,
+          "value_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

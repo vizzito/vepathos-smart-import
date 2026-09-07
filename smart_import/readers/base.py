@@ -21,7 +21,15 @@ class FileMeta:
     sheets: list[str] = field(default_factory=list)
     header_row: int = 0              # 0-based, dentro del archivo/hoja
     preamble_rows: int = 0
+    #: solo para texto: "tabular" | "free_text". None = no aplica (xlsx/json)
+    text_mode: str | None = None
+    #: por que se decidio ese modo (evidencia estructural)
+    text_mode_evidence: dict = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
+
+    @property
+    def is_free_text(self) -> bool:
+        return self.text_mode == "free_text"
 
 
 @dataclass
