@@ -21,13 +21,15 @@ dependencies = [
 # El geocoder necesita leer PBFs. Se separa para que la imagen base no lo cargue
 # si el despliegue solo normaliza.
 geo = ["osmium>=4.0"]
-# transformers+torch pesan ~2-3 GB. Opt-in explicito: el sistema funciona entero
-# con reglas y SMART_IMPORT_AI_ENABLED=false.
-ai = ["transformers>=4.40", "torch>=2.2", "accelerate>=0.30"]
+# libpostal: parser internacional de direcciones. Requiere la libreria C + ~2 GB
+# de datos, ver docs/libpostal.md. Opcional y apagado por defecto.
+libpostal = ["postal>=1.1"]
 api = ["fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9"]
+s3 = ["boto3>=1.34"]
+queue = ["pika>=1.3"]
 dev = ["pytest>=8.0", "psutil>=5.9", "xlwt>=1.3", "pandas>=2.2",
        "fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9",
-       "httpx>=0.27"]
+       "httpx>=0.27", "boto3>=1.34", "pika>=1.3"]
 
 [project.scripts]
 smart-import = "smart_import.cli:main"
@@ -35,6 +37,15 @@ smart-import = "smart_import.cli:main"
 [tool.setuptools.packages.find]
 include = ["smart_import*"]
 
+[tool.setuptools.package-data]
+# Las etiquetas por idioma son DATOS, no codigo: tienen que viajar con el paquete.
+smart_import = ["resources/*.json", "resources/vocab/*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = [
+    "geocoding: geocoding unit tests (synthetic OSM index)",
+    "real_geo: needs local PBF extracts under SMART_IMPORT_PBF_DIR / ROUTE_OPTIMIZER_DATA",
+    "libpostal: needs brew libpostal + pip postal (SMART_IMPORT_LIBPOSTAL_ENABLED para factory)",
+]
