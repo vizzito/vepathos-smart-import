@@ -1,0 +1,42 @@
+{
+  "source": "examples/geocode-truth/miami_whatsapp_6.txt",
+  "note": "Address = lo que produce el extract (lo que geocodifica la web). lat/lng = puerta verificada.",
+  "stops": [
+    {
+      "customer_name": "Ana Rivera",
+      "address": "100 Biscayne Blvd, Downtown Miami, United States",
+      "lat": 25.7743,
+      "lng": -80.1894
+    },
+    {
+      "customer_name": "James Lopez",
+      "address": "200 Ocean Dr, Miami, United States",
+      "lat": 25.7794,
+      "lng": -80.1312
+    },
+    {
+      "customer_name": "Maria Gomez",
+      "address": "350 NE 1st Ave, Miami, United States",
+      "lat": 25.7756,
+      "lng": -80.1917
+    },
+    {
+      "customer_name": "Carlos Ruiz",
+      "address": "1200 NW 7th Ave, Miami, United States",
+      "lat": 25.7839,
+      "lng": -80.2074
+    },
+    {
+      "customer_name": "Martin Castro",
+      "address": "801 Brickell Ave, Miami, United States",
+      "lat": 25.7656,
+      "lng": -80.1909
+    },
+    {
+      "customer_name": "Facundo Molina",
+      "address": "1500 Collins Ave Miami Beach, United States",
+      "lat": 25.7881,
+      "lng": -80.1299
+    }
+  ]
+}

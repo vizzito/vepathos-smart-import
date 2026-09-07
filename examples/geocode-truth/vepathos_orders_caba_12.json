@@ -1,0 +1,18 @@
+{
+  "source": "examples/geocode-truth/sources/vepathos-orders.csv",
+  "note": "Export Vepathos (address ya compuesto). Una fila por delivery_id; se excluyen sin coords e inválidas.",
+  "stops": [
+    {"customer_name": "VP-1000", "address": "Av. del Libertador 900, Buenos Aires", "lat": -34.5898, "lng": -58.3772, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1001", "address": "Maipú 400, Buenos Aires", "lat": -34.5921, "lng": -58.3745, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1002", "address": "Lavalle 1200, Buenos Aires", "lat": -34.6012, "lng": -58.3848, "zone": "San Nicolás", "country": "Argentina"},
+    {"customer_name": "VP-1003", "address": "Tucumán 900, Buenos Aires", "lat": -34.6025, "lng": -58.3795, "zone": "San Nicolás", "country": "Argentina"},
+    {"customer_name": "VP-1004", "address": "Sarmiento 600, Buenos Aires", "lat": -34.5955, "lng": -58.3812, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1005", "address": "Esmeralda 300, Buenos Aires", "lat": -34.5938, "lng": -58.3768, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1006", "address": "Reconquista 500, Buenos Aires", "lat": -34.5915, "lng": -58.3721, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1007", "address": "San Martín 200, Buenos Aires", "lat": -34.5942, "lng": -58.3738, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1008", "address": "Viamonte 800, Buenos Aires", "lat": -34.5998, "lng": -58.3825, "zone": "San Nicolás", "country": "Argentina"},
+    {"customer_name": "VP-1009", "address": "Cerrito 700, Buenos Aires", "lat": -34.5972, "lng": -58.3788, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1010", "address": "Libertad 450, Buenos Aires", "lat": -34.5965, "lng": -58.3755, "zone": "Retiro", "country": "Argentina"},
+    {"customer_name": "VP-1011", "address": "Florida 500, Buenos Aires", "lat": -34.5988, "lng": -58.3742, "zone": "Retiro", "country": "Argentina"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source": "examples/geocode-truth/sources/mercadolibre-shipment-flattened.csv",
+  "note": "address_line ya viene compuesto. Se excluyen filas sin coords o con lat/lng imposibles (95, 200).",
+  "stops": [
+    {"customer_name": "Juan Pérez", "address": "Av. Santa Fe 3200", "lat": -34.5875, "lng": -58.4253, "city": "Buenos Aires", "zone": "Palermo", "country": "Argentina"},
+    {"customer_name": "María Gómez", "address": "Thames 1800", "lat": -34.5952, "lng": -58.4118, "city": "Buenos Aires", "zone": "Palermo", "country": "Argentina"},
+    {"customer_name": "Carlos Ruiz", "address": "Av. Corrientes 1234", "lat": -34.6037, "lng": -58.3816, "city": "Buenos Aires", "zone": "San Nicolás", "country": "Argentina"},
+    {"customer_name": "Lucía Fernández", "address": "José Hernández 2100", "lat": -34.575, "lng": -58.435, "city": "Buenos Aires", "zone": "Belgrano", "country": "Argentina"},
+    {"customer_name": "Diego Martínez", "address": "Av. Cabildo 2400", "lat": -34.5621, "lng": -58.4568, "city": "Buenos Aires", "zone": "Belgrano", "country": "Argentina"},
+    {"customer_name": "Sofía Berg", "address": "Av. Las Heras 2800", "lat": -34.5881, "lng": -58.3994, "city": "Buenos Aires", "zone": "Recoleta", "country": "Argentina"},
+    {"customer_name": "Martín Soto", "address": "Av. Córdoba 4500", "lat": -34.5912, "lng": -58.4301, "city": "Buenos Aires", "zone": "Palermo", "country": "Argentina"},
+    {"customer_name": "Paula Núñez", "address": "Av. Dorrego 1900", "lat": -34.5778, "lng": -58.4462, "city": "Buenos Aires", "zone": "Palermo", "country": "Argentina"},
+    {"customer_name": "Andrés Vega", "address": "Av. Federico Lacroze 3200", "lat": -34.5712, "lng": -58.4495, "city": "Buenos Aires", "zone": "Colegiales", "country": "Argentina"},
+    {"customer_name": "Valentina Quiroga", "address": "Av. Corrientes 5200", "lat": -34.5984, "lng": -58.4378, "city": "Buenos Aires", "zone": "Villa Crespo", "country": "Argentina"},
+    {"customer_name": "Elena Rivas", "address": "Av. Cabildo 3800", "lat": -34.5489, "lng": -58.4622, "city": "Buenos Aires", "zone": "Núñez", "country": "Argentina"},
+    {"customer_name": "Hugo Paredes", "address": "Av. Santa Fe 4500", "lat": -34.5862, "lng": -58.4088, "city": "Buenos Aires", "zone": "Palermo", "country": "Argentina"}
+  ]
+}

@@ -4,37 +4,40 @@ No se descarta nada: se conserva el texto original y se agrega una version
 normalizada mas los componentes que se pudieron extraer. Pensado para funcionar
 tambien con direcciones de India, donde muchas veces NO hay calle + numero sino
 edificio, localidad y pincode.
+
+Abreviaturas / hints: `resources/geo_keywords.json`.
 """
 from __future__ import annotations
 
 import re
 import unicodedata
 from dataclasses import dataclass, field
+from functools import lru_cache
 
-# abreviatura -> forma larga. Configurable: agregar una fila no toca el codigo.
-ABBREVIATIONS = {
-    "av": "avenida", "avda": "avenida", "ave": "avenue", "avd": "avenida",
-    "c": "calle", "cl": "calle", "st": "street", "str": "street",
-    "rd": "road", "dr": "drive", "blvd": "boulevard", "bvd": "boulevard",
-    "ln": "lane", "ct": "court", "pl": "place", "sq": "square", "hwy": "highway",
-    "pje": "pasaje", "psje": "pasaje", "dpto": "departamento", "depto": "departamento",
-    "dto": "departamento", "piso": "piso", "pb": "planta baja",
-    "nte": "norte", "sur": "sur", "ote": "oeste", "n": "norte", "s": "sur",
-    "e": "este", "w": "oeste", "ne": "noreste", "nw": "noroeste",
-    "flt": "flat", "apt": "apartment", "bldg": "building", "opp": "opposite",
-    "nr": "near", "sec": "sector", "ph": "phase", "extn": "extension",
-}
+from ..resources import address_abbreviations, landmark_hints, unit_hints
 
 # pincode (India, 6 digitos), CP argentino (4) y ZIP (5) se detectan por forma
 _PINCODE_IN = re.compile(r"(?<!\d)(\d{6})(?!\d)")
 _ZIP_US = re.compile(r"(?<!\d)(\d{5})(?:-\d{4})?(?!\d)")
 _CP_AR = re.compile(r"\b([A-Z]\d{4}[A-Z]{3})\b|(?<!\d)(\d{4})(?!\d)")
 _HOUSE_NUMBER = re.compile(r"(?<!\w)(\d{1,5})(?:\s*[-/]\s*\d{1,4})?(?:[a-zA-Z](?!\w))?(?!\d)")
+#: '1st' / '7th' no son altura (si no, 'NE 1st Ave 350' → house=1)
+_ORDINAL = re.compile(r"^\d{1,3}(?:st|nd|rd|th)$", re.IGNORECASE)
 
-_LANDMARK_HINTS = ("near", "opposite", "opp", "behind", "next to", "cerca de", "frente a",
-                   "al lado de", "landmark", "junto a")
-_UNIT_HINTS = ("flat", "apt", "apartment", "piso", "depto", "departamento", "dpto",
-               "unit", "suite", "block", "tower", "torre", "local", "oficina", "office")
+
+@lru_cache(maxsize=1)
+def _abbreviations() -> dict[str, str]:
+    return address_abbreviations()
+
+
+@lru_cache(maxsize=1)
+def _unit_hints() -> tuple[str, ...]:
+    return tuple(h.lower() for h in unit_hints())
+
+
+@lru_cache(maxsize=1)
+def _landmark_hints() -> tuple[str, ...]:
+    return tuple(h.lower() for h in landmark_hints())
 
 
 @dataclass
@@ -43,6 +46,10 @@ class ParsedAddress:
     normalized: str = ""
     tokens: tuple[str, ...] = ()
     house_number: str | None = None
+    #: nombre de la calle aislado ('Av. Cabildo'), cuando se pudo determinar.
+    #: Sin esto el scoring compara la calle candidata contra el texto ENTERO y
+    #: 'Olazabal 1728 Belgrano' matchea la calle Belgrano con 1.00.
+    road: str | None = None
     postcode: str | None = None
     unit: str | None = None
     landmark: str | None = None
@@ -51,7 +58,8 @@ class ParsedAddress:
     def as_dict(self) -> dict:
         return {
             "original_address": self.original, "normalized_address": self.normalized,
-            "house_number": self.house_number, "postcode": self.postcode,
+            "house_number": self.house_number, "road": self.road,
+            "postcode": self.postcode,
             "unit": self.unit, "landmark": self.landmark,
         }
 
@@ -65,7 +73,8 @@ def normalize_text(text: str) -> str:
     """Minusculas, sin acentos, sin puntuacion, abreviaturas expandidas."""
     s = strip_accents(str(text)).lower()
     s = re.sub(r"[^\w\s]", " ", s, flags=re.UNICODE)
-    words = [ABBREVIATIONS.get(w, w) for w in s.split()]
+    abbr = _abbreviations()
+    words = [abbr.get(w, w) for w in s.split()]
     return " ".join(words)
 
 
@@ -96,26 +105,59 @@ def parse(address: str) -> ParsedAddress:
     parts = [p.strip() for p in re.split(r"[,;]", original) if p.strip()]
     postcode = _extract_postcode(original)
 
-    lower = original.lower()
-    unit = next((p for p in parts if any(h in p.lower() for h in _UNIT_HINTS)), None)
-    landmark = next((p for p in parts if any(h in p.lower() for h in _LANDMARK_HINTS)), None)
+    unit = next((p for p in parts if any(h in p.lower() for h in _unit_hints())), None)
+    landmark = next((p for p in parts if any(h in p.lower() for h in _landmark_hints())), None)
 
-    # numero de puerta: el primer numero que NO sea el codigo postal
-    house_number = None
-    for m in _HOUSE_NUMBER.finditer(original):
-        candidate = m.group(1)
-        if postcode and candidate == postcode:
-            continue
-        if len(candidate) >= 6:
-            continue
-        house_number = m.group(0).strip()
-        break
+    parsed = {}
+    try:
+        parsed = _address_parser().parse(original)
+    except Exception:
+        parsed = {}
+    road = (parsed.get("road") or "").strip() or None
+    house_number = (parsed.get("house_number") or "").strip() or None
+    if not house_number:
+        for m in _HOUSE_NUMBER.finditer(original):
+            candidate = m.group(1)
+            token = m.group(0).strip()
+            if postcode and candidate == postcode:
+                continue
+            if len(candidate) >= 6 or _ORDINAL.match(token):
+                continue
+            house_number = token
+            break
 
     normalized = normalize_text(original)
     tokens = tuple(t for t in normalized.split() if len(t) > 1 or t.isdigit())
 
     return ParsedAddress(
         original=original, normalized=normalized, tokens=tokens,
-        house_number=house_number, postcode=postcode, unit=unit, landmark=landmark,
+        house_number=house_number, road=road,
+        postcode=postcode, unit=unit, landmark=landmark,
         parts=parts,
     )
+
+
+_bound_parser_config = None
+
+
+def bind_parser_config(config) -> None:
+    """Usa este Config en `parse()` (p.ej. geocode-accuracy con libpostal on)."""
+    global _bound_parser_config
+    _bound_parser_config = config
+    _address_parser.cache_clear()
+    from ..addresses import factory as factory_mod
+    factory_mod._announced.clear()
+
+
+def unbind_parser_config() -> None:
+    global _bound_parser_config
+    _bound_parser_config = None
+    _address_parser.cache_clear()
+
+
+@lru_cache(maxsize=1)
+def _address_parser():
+    """Mismo parser que extraction. Respeta bind_parser_config o el env."""
+    from ..addresses.factory import build_address_parser
+    from ..config import Config
+    return build_address_parser(_bound_parser_config or Config.from_env())

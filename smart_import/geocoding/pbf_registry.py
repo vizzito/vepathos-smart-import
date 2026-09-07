@@ -7,6 +7,26 @@ Aprovecha que el cutter YA codifica el bbox en el nombre del extract:
 Se lee solo el nombre del archivo: cero acoplamiento con el codigo del cutter y
 cero necesidad de abrir PBFs de 300 MB para saber que contienen. Los PBF de pais
 (argentina-pyrosm.osm.pbf) quedan como cobertura amplia de ultimo recurso.
+
+Prioridad al resolver (depot / bbox):
+  1. extract con bbox en el nombre que cubra el punto  → el MAS CHICO
+  2. extract que cubra un bbox pedido                  → el MAS CHICO
+  3. zone_hint por nombre de carpeta/archivo
+  4. PBF de pais (sin bbox en el nombre) cuyo bbox
+     en pbf_country_bounds.json cubre el punto
+     → mayor margen interior (nunca el mas chico en disco)
+  5. None  (nunca inventa ni llama afuera)
+
+Los PBF viven en la raíz data/ del route-optimizer, separados por continente:
+
+    data/south-america_tile_…/argentina-pyrosm.osm.pbf
+    data/asia_tile_…/india/western-zone-pyrosm.osm.pbf
+    data/north-america_tile_…/us_tile_…/florida-pyrosm.osm.pbf
+    data/_extracts/…/n-34.48_s-34.73_e-58.30_w-58.58-pyrosm.osm.pbf
+
+`scan()` hace rglob: el nombre de carpeta `*_tile_*` no importa. El JSON de
+bounds dice QUÉ archivo abrir cuando no hay extract (slug + path_hints).
+Calles = índice OSM de ese PBF, no vocab sqlite.
 """
 from __future__ import annotations
 
@@ -14,11 +34,17 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
+from ..resources import coverage_bounds_for
+
 PBF_SUFFIX = "-pyrosm.osm.pbf"
 _BBOX_RE = re.compile(
     r"n(?P<north>-?\d+(?:\.\d+)?)_s(?P<south>-?\d+(?:\.\d+)?)"
     r"_e(?P<east>-?\d+(?:\.\d+)?)_w(?P<west>-?\d+(?:\.\d+)?)"
 )
+
+
+def _coverage_for(entry: "PbfEntry") -> tuple[float, float, float, float] | None:
+    return coverage_bounds_for(entry.country_slug, entry.path)
 
 
 @dataclass(frozen=True)
@@ -41,6 +67,15 @@ class PbfEntry:
         return self.path.name.replace(PBF_SUFFIX, "").replace(".osm.pbf", "")
 
     @property
+    def country_slug(self) -> str | None:
+        """'argentina' desde 'argentina-pyrosm.osm.pbf'."""
+        if self.has_bbox:
+            return None
+        name = self.path.name.lower()
+        stem = name.replace(PBF_SUFFIX, "").replace(".osm.pbf", "")
+        return stem or None
+
+    @property
     def area(self) -> float:
         if not self.has_bbox:
             return float("inf")
@@ -58,10 +93,38 @@ class PbfEntry:
         return (self.south <= south and self.north >= north
                 and self.west <= west and self.east >= east)
 
+    def country_covers(self, lat: float, lon: float) -> bool:
+        slug = self.country_slug
+        if not slug:
+            return False
+        bounds = _coverage_for(self)
+        if not bounds:
+            return False
+        n, s, e, w = bounds
+        return s <= lat <= n and w <= lon <= e
+
+    def country_interior_margin(self, lat: float, lon: float) -> float:
+        """Qué tan 'adentro' está el punto del bbox del país (min distancia al borde).
+
+        Sirve para desempatar solapes (CABA cae en el bbox flojo de Uruguay y
+        Argentina): preferimos el país donde el depot queda más lejos del borde.
+        """
+        slug = self.country_slug
+        if not slug:
+            return float("-inf")
+        bounds = _coverage_for(self)
+        if not bounds:
+            return float("-inf")
+        n, s, e, w = bounds
+        if not (s <= lat <= n and w <= lon <= e):
+            return float("-inf")
+        return min(n - lat, lat - s, e - lon, lon - w)
+
     def as_dict(self) -> dict:
         return {
             "path": str(self.path), "zone": self.zone, "key": self.key,
             "size_mb": round(self.size_bytes / (1024 * 1024), 1),
+            "kind": "extract" if self.has_bbox else "country",
             "bbox": ({"north": self.north, "south": self.south,
                       "east": self.east, "west": self.west} if self.has_bbox else None),
         }
@@ -113,10 +176,25 @@ class PbfRegistry:
             return min(covering, key=lambda e: (e.area, e.size_bytes))
         return None
 
+    def find_country_for_point(self, lat: float, lon: float) -> PbfEntry | None:
+        """PBF de pais cuyo bbox aproximado cubre el punto.
+
+        Si varios paises solapan (Rio de la Plata: AR vs UY), gana el de mayor
+        margen interior — NO el mas chico en disco (Uruguay ~56 MB ganaba mal
+        sobre Argentina ~400 MB y geocodificaba CABA contra calles uruguayas).
+        """
+        covering = [e for e in self.broad() if e.country_covers(lat, lon)]
+        if not covering:
+            return None
+        return max(
+            covering,
+            key=lambda e: (e.country_interior_margin(lat, lon), -e.size_bytes),
+        )
+
     def resolve(self, lat: float | None = None, lon: float | None = None,
                 bbox: tuple[float, float, float, float] | None = None,
                 zone_hint: str | None = None) -> PbfEntry | None:
-        """bbox > punto > zona por nombre. Nunca adivina fuera de eso."""
+        """Prioridad: extract bbox > punto > zone_hint > pais. Nunca adivina fuera."""
         if bbox:
             if found := self.find_for_bbox(*bbox):
                 return found
@@ -130,5 +208,8 @@ class PbfRegistry:
             matches = [e for e in self.entries if zone_hint.lower() in e.zone.lower()
                        or zone_hint.lower() in e.path.name.lower()]
             if matches:
-                return min(matches, key=lambda e: e.size_bytes)
+                return min(matches, key=lambda e: (0 if e.has_bbox else 1, e.size_bytes))
+        if lat is not None and lon is not None:
+            if found := self.find_country_for_point(lat, lon):
+                return found
         return None

@@ -8,6 +8,7 @@ tiene que ser el PBF original.
 """
 from __future__ import annotations
 
+import re
 import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
@@ -207,3 +208,58 @@ def build(pbf_path: str | Path, output: str | Path,
 def index_path_for(entry, index_dir: str | Path) -> Path:
     """Nombre estable derivado del PBF: el mismo extract da siempre el mismo indice."""
     return Path(index_dir).expanduser() / f"{entry.key}.sqlite"
+
+
+_INDEX_BBOX_RE = re.compile(
+    r"n(?P<north>-?\d+(?:\.\d+)?)_s(?P<south>-?\d+(?:\.\d+)?)"
+    r"_e(?P<east>-?\d+(?:\.\d+)?)_w(?P<west>-?\d+(?:\.\d+)?)"
+)
+
+
+def covering_extract_index(
+    index_dir: str | Path,
+    lat: float,
+    lon: float,
+    bbox: tuple[float, float, float, float] | None = None,
+) -> Path | None:
+    """Indice de extract (n…_s…_e…_w….sqlite) que cubre el punto, el más chico.
+
+    Si desapareció el PBF del extract, el país (argentina.sqlite) no debe
+    sustituirlo: CABA ya tiene índice y no hay que reconstruir 400 MB.
+    """
+    root = Path(index_dir).expanduser()
+    if not root.is_dir():
+        return None
+    covering: list[tuple[float, Path]] = []
+    for path in root.glob("n*.sqlite"):
+        match = _INDEX_BBOX_RE.search(path.name)
+        if not match or path.stat().st_size < 1_000_000:
+            continue
+        north = float(match.group("north"))
+        south = float(match.group("south"))
+        east = float(match.group("east"))
+        west = float(match.group("west"))
+        if not (south <= lat <= north and west <= lon <= east):
+            continue
+        if bbox is not None:
+            bn, bs, be, bw = bbox
+            if not (south <= bs and north >= bn and west <= bw and east >= be):
+                continue
+        covering.append((abs(north - south) * abs(east - west), path))
+    if not covering:
+        return None
+    covering.sort(key=lambda item: item[0])
+    return covering[0][1]
+
+
+def prefer_index(resolved: Path, index_dir: str | Path, lat: float, lon: float,
+                 bbox: tuple[float, float, float, float] | None = None) -> Path:
+    """Extract local gana sobre índice de país (argentina.sqlite / florida.sqlite)."""
+    extract = covering_extract_index(index_dir, lat, lon, bbox)
+    if extract is None:
+        return resolved
+    name = resolved.name.lower()
+    looks_country = _INDEX_BBOX_RE.search(resolved.name) is None
+    if looks_country or not resolved.exists():
+        return extract
+    return resolved

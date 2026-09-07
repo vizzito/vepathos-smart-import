@@ -1,0 +1,18 @@
+{
+  "source": "examples/geocode-truth/sources/tiendanube-orders-ba.csv",
+  "note": "Calle + número separados. Solo filas con lat/lng válidos; se deduplica por orden. address = lo que geocodifica la UI tras compose.",
+  "stops": [
+    {"customer_name": "Juan Pérez", "address": "Av. Rivadavia 4800", "lat": -34.6186, "lng": -58.4372, "city": "Buenos Aires", "zone": "Caballito", "country": "Argentina"},
+    {"customer_name": "María Gómez", "address": "Av. Acoyte 500", "lat": -34.6181, "lng": -58.436, "city": "Buenos Aires", "zone": "Caballito", "country": "Argentina"},
+    {"customer_name": "Carlos Ruiz", "address": "Av. La Plata 800", "lat": -34.6225, "lng": -58.4288, "city": "Buenos Aires", "zone": "Caballito", "country": "Argentina"},
+    {"customer_name": "Lucía Fernández", "address": "Av. Rivadavia 6800", "lat": -34.6284, "lng": -58.4635, "city": "Buenos Aires", "zone": "Flores", "country": "Argentina"},
+    {"customer_name": "Diego Martínez", "address": "Av. Nazca 400", "lat": -34.6271, "lng": -58.4752, "city": "Buenos Aires", "zone": "Flores", "country": "Argentina"},
+    {"customer_name": "Sofía Berg", "address": "Av. Díaz Vélez 4200", "lat": -34.6078, "lng": -58.4241, "city": "Buenos Aires", "zone": "Almagro", "country": "Argentina"},
+    {"customer_name": "Martín Soto", "address": "Av. Boedo 800", "lat": -34.6288, "lng": -58.4165, "city": "Buenos Aires", "zone": "Boedo", "country": "Argentina"},
+    {"customer_name": "Paula Núñez", "address": "Av. San Juan 3500", "lat": -34.6255, "lng": -58.4122, "city": "Buenos Aires", "zone": "Boedo", "country": "Argentina"},
+    {"customer_name": "Andrés Vega", "address": "Av. Asamblea 1200", "lat": -34.6368, "lng": -58.4412, "city": "Buenos Aires", "zone": "Parque Chacabuco", "country": "Argentina"},
+    {"customer_name": "Valentina Quiroga", "address": "Av. Directorio 1400", "lat": -34.6335, "lng": -58.4328, "city": "Buenos Aires", "zone": "Parque Chacabuco", "country": "Argentina"},
+    {"customer_name": "Elena Rivas", "address": "Av. Rivadavia 5400", "lat": -34.6208, "lng": -58.4488, "city": "Buenos Aires", "zone": "Caballito", "country": "Argentina"},
+    {"customer_name": "Hugo Paredes", "address": "Av. Rivadavia 9800", "lat": -34.6392, "lng": -58.5021, "city": "Buenos Aires", "zone": "Villa Luro", "country": "Argentina"}
+  ]
+}

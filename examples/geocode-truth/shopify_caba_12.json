@@ -1,0 +1,18 @@
+{
+  "source": "examples/geocode-truth/sources/shopify-orders-caba.json",
+  "note": "shipping_address.address1 + latitude/longitude. Se excluye #1013 (Bolívar 500) sin coords.",
+  "stops": [
+    {"customer_name": "Juan Pérez", "address": "Defensa 800", "lat": -34.6178, "lng": -58.3719, "city": "CABA", "postcode": "1065", "country": "Argentina"},
+    {"customer_name": "María Gómez", "address": "Av. Independencia 1500", "lat": -34.6172, "lng": -58.3855, "city": "CABA", "postcode": "1100", "country": "Argentina"},
+    {"customer_name": "Carlos Ruiz", "address": "Av. Paseo Colón 800", "lat": -34.6165, "lng": -58.3698, "city": "CABA", "postcode": "1063", "country": "Argentina"},
+    {"customer_name": "Lucía Fernández", "address": "Brandsen 800", "lat": -34.6355, "lng": -58.3642, "city": "CABA", "postcode": "1161", "country": "Argentina"},
+    {"customer_name": "Diego Martínez", "address": "Av. Alicia Moreau de Justo 200", "lat": -34.6092, "lng": -58.3651, "city": "CABA", "postcode": "1107", "country": "Argentina"},
+    {"customer_name": "Sofía Berg", "address": "Av. San Juan 2200", "lat": -34.6224, "lng": -58.3988, "city": "CABA", "postcode": "1232", "country": "Argentina"},
+    {"customer_name": "Martín Soto", "address": "Av. Juan de Garay 1100", "lat": -34.6278, "lng": -58.3812, "city": "CABA", "postcode": "1153", "country": "Argentina"},
+    {"customer_name": "Paula Núñez", "address": "Av. Martín García 400", "lat": -34.6331, "lng": -58.3705, "city": "CABA", "postcode": "1267", "country": "Argentina"},
+    {"customer_name": "Andrés Vega", "address": "Av. Brasil 700", "lat": -34.6289, "lng": -58.3774, "city": "CABA", "postcode": "1154", "country": "Argentina"},
+    {"customer_name": "Valentina Quiroga", "address": "Av. Caseros 1800", "lat": -34.6372, "lng": -58.3918, "city": "CABA", "postcode": "1264", "country": "Argentina"},
+    {"customer_name": "Elena Rivas", "address": "Chile 900", "lat": -34.6169, "lng": -58.3756, "city": "CABA", "postcode": "1098", "country": "Argentina"},
+    {"customer_name": "Hugo Paredes", "address": "Av. Belgrano 1400", "lat": -34.6128, "lng": -58.3841, "city": "CABA", "postcode": "1092", "country": "Argentina"}
+  ]
+}

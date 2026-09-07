@@ -22,7 +22,9 @@ from .base import GeocodeResult
 #: geocoder es INVISIBLE hasta borrar el cache a mano. Los `not_found` son los
 #: que mas envenenan, porque una direccion que antes no se encontraba se sigue
 #: reportando como perdida aunque ahora si se encuentre.
-GEOCODER_VERSION = 2
+#: Bump cuando cambia enrichment / geofence / scoring (invalida cache vieja).
+#: v4: la clave de cache tambien incluye umbrales (ver runner context).
+GEOCODER_VERSION = 5
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (

@@ -3,11 +3,16 @@
 El indice se arma sinteticamente para que la suite no dependa de un .osm.pbf de
 25 MB. Los tests contra un PBF real viven en test_geocoding_real.py y se saltan
 si no hay extracts disponibles.
+
+Correr solo geocoding:   pytest -q -m geocoding
+PBF real (opt-in):       pytest -q -m real_geo
 """
 import csv
 import sqlite3
 
 import pytest
+
+pytestmark = pytest.mark.geocoding
 
 from smart_import.geocoding.address import normalize_text, parse
 from smart_import.geocoding.base import (
@@ -71,6 +76,15 @@ def test_extrae_altura_y_codigo_postal(address, house, postcode):
     assert p.postcode == postcode
 
 
+def test_parse_no_come_ordinal_us():
+    """'NE 1st Ave 350' no puede resolver house=1 (el ordinal)."""
+    p = parse("350 NE 1st Ave, Miami, United States")
+    assert p.house_number == "350"
+    assert "1st" in (p.road or "")
+    p2 = parse("NE 1st Ave 350, Miami, United States")
+    assert p2.house_number == "350"
+
+
 def test_no_confunde_altura_con_codigo_postal():
     """'Av. Corrientes 1234' -> 1234 es la altura, no un CP de 4 digitos."""
     p = parse("Av. Corrientes 1234, CABA")
@@ -123,6 +137,77 @@ def test_sin_cobertura_devuelve_none():
     assert registry.find_for_point(-34.60, -58.38) is None
 
 
+def test_fallback_a_pbf_de_pais_cuando_no_hay_extract():
+    pais = _parse(Path("/data/south-america/argentina-pyrosm.osm.pbf"))
+    otro = _parse(Path("/data/europe/norway-pyrosm.osm.pbf"))
+    # size_bytes=0 en paths ficticios; da igual, solo hay un candidato que cubre BA
+    registry = PbfRegistry([pais, otro])
+    chosen = registry.resolve(lat=-34.60, lon=-58.38)
+    assert chosen is pais
+    assert chosen.country_slug == "argentina"
+
+
+def test_caba_no_elige_uruguay_aunque_sea_mas_chico():
+    """Regresión: bbox flojo de UY + 'más chico gana' geocodificaba BA en Uruguay."""
+    from smart_import.geocoding.pbf_registry import PbfEntry
+
+    ar = PbfEntry(
+        path=Path("/data/south-america/argentina-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=427_000_000,
+    )
+    uy = PbfEntry(
+        path=Path("/data/south-america/uruguay-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=56_000_000,
+    )
+    registry = PbfRegistry([ar, uy])
+    chosen = registry.resolve(lat=-34.593, lon=-58.394)
+    assert chosen is ar
+    assert chosen.country_slug == "argentina"
+
+
+def test_extract_chico_gana_sobre_pais():
+    extract = _parse(Path("/d/_extracts/ba/n-34.58_s-34.92_e-58.15_w-58.62-pyrosm.osm.pbf"))
+    pais = _parse(Path("/data/south-america/argentina-pyrosm.osm.pbf"))
+    registry = PbfRegistry([extract, pais])
+    assert registry.resolve(lat=-34.60, lon=-58.38) is extract
+
+
+def test_pbf_de_pais_cubre_puntos_fuera_de_latam():
+    """Bounds viven en pbf_country_bounds.json: India / USA / Japón sin extract."""
+    india = _parse(Path("/data/asia/india-pyrosm.osm.pbf"))
+    usa = _parse(Path("/data/north-america/usa-pyrosm.osm.pbf"))
+    japan = _parse(Path("/data/asia/japan-pyrosm.osm.pbf"))
+    registry = PbfRegistry([india, usa, japan])
+    assert registry.resolve(lat=19.076, lon=72.877) is india          # Mumbai
+    assert registry.resolve(lat=25.7617, lon=-80.1918) is usa         # Miami
+    assert registry.resolve(lat=35.6762, lon=139.6503) is japan       # Tokyo
+
+
+def test_pbf_por_region_del_cutter_elige_la_subdivision():
+    """El cutter parte US/India/Japón/UK: no hay usa.pbf, hay florida / kanto / …"""
+    base = Path("/data")
+    florida = _parse(base / "north-america_tile_x/us_tile_y/florida-pyrosm.osm.pbf")
+    western = _parse(base / "asia_tile_x/india/western-zone-pyrosm.osm.pbf")
+    kanto = _parse(base / "asia_tile_x/japan/kanto-pyrosm.osm.pbf")
+    england = _parse(base / "europe_tile_x/united-kingdom/england-pyrosm.osm.pbf")
+    us_ga = _parse(base / "north-america_tile_x/us_tile_y/georgia-pyrosm.osm.pbf")
+    eu_ga = _parse(base / "europe_tile_x/georgia-pyrosm.osm.pbf")
+    bahamas = _parse(base / "central-america_tile_x/bahamas-pyrosm.osm.pbf")
+    registry = PbfRegistry([florida, western, kanto, england, us_ga, eu_ga, bahamas])
+    assert registry.resolve(lat=25.7617, lon=-80.1918) is florida     # Miami, no Bahamas
+    assert registry.resolve(lat=19.076, lon=72.877) is western        # Mumbai
+    assert registry.resolve(lat=35.6762, lon=139.6503) is kanto       # Tokyo
+    assert registry.resolve(lat=51.5074, lon=-0.1278) is england      # London
+    assert registry.resolve(lat=33.7490, lon=-84.3880) is us_ga       # Atlanta
+    assert registry.resolve(lat=41.7151, lon=44.8271) is eu_ga        # Tbilisi
+
+
+def test_pbf_de_pais_sin_bounds_no_se_adivina():
+    desconocido = _parse(Path("/data/other/atlantis-pyrosm.osm.pbf"))
+    registry = PbfRegistry([desconocido])
+    assert registry.resolve(lat=-34.60, lon=-58.38) is None
+
+
 def test_registry_vacio_si_el_directorio_no_existe():
     assert PbfRegistry.scan("/no/existe/nada").entries == []
 
@@ -142,6 +227,18 @@ def test_calle_sin_altura_exacta_es_confianza_baja_no_descarte(index):
     assert r.status == STATUS_LOW
     assert r.precision == "street"
     assert r.has_coords
+
+
+def test_calle_sin_pedir_altura_nunca_es_valid(index):
+    """OSM tiene 'Corrientes 1234'; la query no pidio puerta → street/review.
+
+    Si heredamos precision=housenumber del candidato, CABA 2907 pinta verde
+    un centroide a 500 m (Alfredo Colmo, Zuviria, …).
+    """
+    r = LocalOSMGeocoder(index).geocode("Av. Corrientes, Buenos Aires")
+    assert r.has_coords
+    assert r.precision == "street"
+    assert r.status == STATUS_LOW
 
 
 def test_direccion_inexistente_no_inventa_coordenadas(index):
@@ -227,6 +324,101 @@ def test_columnas_de_diagnostico_siempre_presentes(index, tmp_path):
     assert row["lat"] == ""          # sin coordenadas inventadas
 
 
+@pytest.mark.geocoding
+def test_low_confidence_lejos_del_depot_no_escribe_coords(index, tmp_path):
+    """Match a nivel calle lejos del depot = falso positivo; no inventar coords."""
+    from smart_import.config import Config
+    from smart_import.geocoding.runner import run
+
+    src = tmp_path / "in.csv"
+    _write_normalized(src, [{
+        "delivery_id": "A",
+        "address": "Av. Corrientes 9999, Buenos Aires",
+        "lat": "", "lng": "",
+    }])
+    cfg = Config.from_env().replace(max_low_confidence_km=15.0)
+    # Depot en Cordoba (~700 km de CABA)
+    report = run(
+        src, tmp_path / "out.csv", index,
+        origin=(-31.42, -64.19),
+        config=cfg,
+        cache_path=tmp_path / "cache.sqlite",
+    )
+    row = next(iter(csv.DictReader(open(tmp_path / "out.csv", encoding="utf-8"))))
+    assert report.not_found == 1
+    assert report.low_confidence == 0
+    assert row["lat"] == "" and row["lng"] == ""
+    assert row["geocode_status"] == STATUS_NOT_FOUND
+
+
+@pytest.mark.geocoding
+def test_low_confidence_cerca_del_depot_se_conserva(index, tmp_path):
+    from smart_import.config import Config
+    from smart_import.geocoding.runner import run
+
+    src = tmp_path / "in.csv"
+    _write_normalized(src, [{
+        "delivery_id": "A",
+        "address": "Av. Corrientes 9999, Buenos Aires",
+        "lat": "", "lng": "",
+    }])
+    cfg = Config.from_env().replace(max_low_confidence_km=15.0)
+    report = run(
+        src, tmp_path / "out.csv", index,
+        origin=(-34.60, -58.38),
+        config=cfg,
+        cache_path=tmp_path / "cache.sqlite",
+    )
+    row = next(iter(csv.DictReader(open(tmp_path / "out.csv", encoding="utf-8"))))
+    # Contadores siguen la banda (valid/review), no el status crudo low_confidence.
+    assert report.matched + report.low_confidence == 1
+    assert row["lat"] and row["lng"]
+    assert row["geocode_status"] == STATUS_LOW
+    assert row["geocode_band"] in ("valid", "review")
+
+
+@pytest.mark.geocoding
+def test_runner_enriquece_query_con_depot(index, tmp_path, monkeypatch):
+    """Sin ciudad en la fila, el runner geocodifica con tokens del depot."""
+    from smart_import.config import Config
+    from smart_import.geocoding import osm_geocoder as og
+    from smart_import.geocoding.depot_context import DepotContext
+    from smart_import.geocoding.runner import run
+
+    seen: list[str] = []
+    real = og.LocalOSMGeocoder.geocode
+
+    def wrap(self, address, origin=None, bbox=None):
+        seen.append(address)
+        return real(self, address, origin=origin, bbox=bbox)
+
+    monkeypatch.setattr(og.LocalOSMGeocoder, "geocode", wrap)
+
+    src = tmp_path / "in.csv"
+    _write_normalized(src, [{
+        "delivery_id": "A",
+        "address": "Av. Corrientes 1234",
+        "lat": "", "lng": "",
+    }])
+    depot = DepotContext(
+        lat=-34.60, lon=-58.38,
+        city="CABA", region="Buenos Aires",
+        max_distance_km=500.0,
+    )
+    report = run(
+        src, tmp_path / "out.csv", index, depot=depot,
+        config=Config.from_env(), cache_path=tmp_path / "cache_enrich.sqlite",
+    )
+    assert seen and "CABA" in seen[0] and "Buenos Aires" in seen[0]
+    assert report.enriched == 1
+    # El address VISIBLE no se muta: el enrich solo vive en la query interna
+    import csv
+    with open(tmp_path / "out.csv", encoding="utf-8") as fh:
+        out_row = next(csv.DictReader(fh))
+    assert out_row["address"] == "Av. Corrientes 1234"
+    assert "CABA" not in out_row["address"]
+
+
 def test_la_altura_entra_en_la_consulta_fts(index):
     """Sin la altura, `"florida" OR "buenos" OR "aires"` ordenado por bm25 devolvia
     40 POIs llamados "Florida" y NINGUNA fila de la calle Florida: los documentos
@@ -239,9 +431,208 @@ def test_la_altura_entra_en_la_consulta_fts(index):
     precisa = g._precise_query(p)
     assert precisa is not None
     assert '"1234"' in precisa and "AND" in precisa
+    assert "corrientes" in precisa
+    assert "argentina" not in precisa
+    assert "avenida" not in precisa
 
     amplia = g._fts_query(p)
     assert "1234" not in amplia          # la amplia es la red de contencion
+    assert "argentina" not in amplia
+
+
+def test_fts_no_usa_el_pais_anexado_por_el_depot(index):
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    p = parse("AV CORRIENTES 919, Argentina, CABA")
+    q = g._precise_query(p)
+    assert q is not None
+    assert '"919"' in q and "corrientes" in q
+    assert "argentina" not in q and "caba" not in q
+
+
+def test_fts_busca_el_dia_en_calles_fecha(index):
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    p = parse("11 de septiembre 1735, CABA, Argentina")
+    words = g._search_words(p)
+    assert "11" in words and "septiembre" in words
+    amplia = g._fts_query(p)
+    assert '"11"' in amplia and '"septiembre"' in amplia
+    assert " AND " in amplia
+
+
+def test_fts_grilla_us_no_or_el_cuadrante_con_el_ordinal(index):
+    """'350 NE 1st' no puede MATCH-ear '350 Northeast 71st Street'."""
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    p = parse("350 NE 1st Ave, Miami, United States")
+    q = g._precise_query(p)
+    assert q is not None
+    assert "350" in q and "1st" in q
+    assert " AND " in q
+    # el ordinal no va en el mismo OR que northeast
+    assert 'northeast" OR "1st"' not in q
+    assert '"1st" OR "noreste"' not in q
+    assert '"1st" OR "ne"' not in q
+
+
+def test_calle_us_1st_no_es_71st():
+    from smart_import.geocoding.address import parse, normalize_text
+    from smart_import.geocoding.scoring import _street_score
+
+    p = parse("350 NE 1st Ave, Miami")
+    assert _street_score(p, normalize_text("Northeast 71st Street"), p.normalized) == 0.0
+    assert _street_score(p, normalize_text("Northwest 1st Avenue"), p.normalized) == 0.0
+    assert _street_score(p, normalize_text("Northeast 1st Avenue"), p.normalized) == 1.0
+
+
+def test_brickell_no_es_brickell_key():
+    from smart_import.geocoding.address import parse, normalize_text
+    from smart_import.geocoding.scoring import _street_score
+
+    p = parse("801 Brickell Ave, Miami")
+    ave = _street_score(p, normalize_text("Brickell Avenue"), p.normalized)
+    key = _street_score(p, normalize_text("Brickell Key Boulevard"), p.normalized)
+    assert ave == 1.0
+    assert key < ave
+
+
+def test_elige_1st_ave_no_71st_aunque_la_altura_350_este_en_71st(tmp_path):
+    """El caso Miami: misma altura en otra calle de la grilla, 7 km al norte."""
+    ruta = tmp_path / "grid.sqlite"
+    conn = sqlite3.connect(ruta)
+    conn.executescript(SCHEMA_SQL)
+    filas = [
+        ("node", 1, 25.83994, -80.18957, "building", None, "350",
+         "Northeast 71st Street",
+         "350 northeast 71st street miami fl 33138"),
+        ("node", 2, 25.77766, -80.19247, "building", None, "300",
+         "Northeast 1st Avenue",
+         "300 northeast 1st avenue miami fl 33132"),
+    ]
+    for osm_type, osm_id, lat, lon, kind, name, num, street, texto in filas:
+        conn.execute(
+            "INSERT INTO places (osm_type, osm_id, lat, lon, kind, name, house_number,"
+            " street, city, district, state, postcode, country, normalized_text)"
+            " VALUES (?,?,?,?,?,?,?,?,?,NULL,NULL,NULL,NULL,?)",
+            (osm_type, osm_id, lat, lon, kind, name, num, street,
+             "Miami", normalize_text(texto)),
+        )
+    conn.execute("INSERT INTO places_fts(rowid, normalized_text) "
+                 "SELECT id, normalized_text FROM places")
+    conn.execute("INSERT INTO places_rtree(id, min_lat, max_lat, min_lon, max_lon) "
+                 "SELECT id, lat, lat, lon, lon FROM places")
+    conn.commit()
+    conn.close()
+
+    r = LocalOSMGeocoder(ruta).geocode(
+        "350 NE 1st Ave, Miami, United States",
+        origin=(25.77427, -80.19366),
+    )
+    assert r.has_coords
+    assert r.lat == pytest.approx(25.77766, abs=1e-4)
+    assert "71st" not in (r.matched_text or "")
+    assert r.precision == "street"  # OSM no tiene 350 en 1st → Review, no Valid
+
+
+def test_localidad_en_el_road_no_tumba_la_calle():
+    """El parser deja 'Miami Beach' en road; OSM solo tiene 'Collins Avenue'."""
+    from smart_import.geocoding.address import parse, normalize_text
+    from smart_import.geocoding.scoring import _street_score
+
+    p = parse("1500 Collins Ave Miami Beach, United States")
+    assert _street_score(p, normalize_text("Collins Avenue"), p.normalized) == 1.0
+
+
+def test_fts_altura_sin_ceros_a_la_izquierda(index):
+    from smart_import.geocoding.address import parse
+
+    g = LocalOSMGeocoder(index)
+    p = parse("AV JUAN DE GARAY 03845, CABA, Argentina")
+    q = g._precise_query(p)
+    assert q is not None
+    assert "3845" in q
+
+
+def test_caba_cuenta_como_ciudad_autonoma():
+    from smart_import.geocoding.address import parse
+    from smart_import.geocoding.scoring import Candidate, score
+
+    parsed = parse("AV CORRIENTES 919, CABA, Argentina")
+    caba = Candidate(
+        1, -34.6034, -58.3796, "building", None, "902", "Avenida Corrientes",
+        "Ciudad Autónoma de Buenos Aires", None, None, None, "Argentina",
+        "902 avenida corrientes",
+    )
+    _, parts = score(parsed, caba, origin=(-34.6037, -58.3816))
+    assert parts["locality"] == 1.0
+    assert parts["house_number"] == 0.55  # 919 vs 902, cercana
+
+    pba = Candidate(
+        2, -34.64, -58.56, "building", None, "902", "Corrientes",
+        "Ramos Mejía", None, "Buenos Aires", None, "Argentina",
+        "902 corrientes ramos mejia",
+    )
+    _, pba_parts = score(parsed, pba)
+    assert pba_parts["locality"] == 0.0
+
+
+def test_altura_ignora_ceros_a_la_izquierda():
+    from smart_import.geocoding.address import parse
+    from smart_import.geocoding.scoring import Candidate, score
+
+    parsed = parse("AV JUAN DE GARAY 03845, CABA")
+    cand = Candidate(
+        1, -34.63, -58.41, "building", None, "3845", "Avenida Juan de Garay",
+        "Ciudad Autónoma de Buenos Aires", None, None, None, None,
+        "3845 avenida juan de garay",
+    )
+    _, parts = score(parsed, cand)
+    assert parts["house_number"] == 1.0
+
+
+def test_elige_altura_cercana_no_el_bm25_de_la_avenida(tmp_path):
+    """bm25 de 'corrientes' prioriza 1-40; 919 vive cerca de 902."""
+    ruta = tmp_path / "avenida.sqlite"
+    conn = sqlite3.connect(ruta)
+    conn.executescript(SCHEMA_SQL)
+    # 40 alturas bajas (ganan bm25) + la cercana a 919
+    filas = [
+        ("node", i, -34.6037, -58.3700 + i * 0.00001, "building", None,
+         str(i), "Avenida Corrientes",
+         f"{i} avenida corrientes ciudad autonoma de buenos aires")
+        for i in range(1, 41)
+    ]
+    filas.append((
+        "node", 902, -34.60369, -58.37959, "building", None, "902",
+        "Avenida Corrientes",
+        "902 avenida corrientes ciudad autonoma de buenos aires",
+    ))
+    for osm_type, osm_id, lat, lon, kind, name, num, street, texto in filas:
+        conn.execute(
+            "INSERT INTO places (osm_type, osm_id, lat, lon, kind, name, house_number,"
+            " street, city, district, state, postcode, country, normalized_text)"
+            " VALUES (?,?,?,?,?,?,?,?,?,NULL,NULL,NULL,NULL,?)",
+            (osm_type, osm_id, lat, lon, kind, name, num, street,
+             "Ciudad Autónoma de Buenos Aires", normalize_text(texto)),
+        )
+    conn.execute("INSERT INTO places_fts(rowid, normalized_text) "
+                 "SELECT id, normalized_text FROM places")
+    conn.execute("INSERT INTO places_rtree(id, min_lat, max_lat, min_lon, max_lon) "
+                 "SELECT id, lat, lat, lon, lon FROM places")
+    conn.commit()
+    conn.close()
+
+    r = LocalOSMGeocoder(ruta).geocode(
+        "AV CORRIENTES 919, CABA, Argentina",
+        origin=(-34.6037, -58.3816),
+    )
+    assert r.has_coords
+    assert r.lat == pytest.approx(-34.60369, abs=1e-4)
+    assert r.precision == "street"  # 902 != 919: review, no valid
 
 
 def test_sin_altura_solo_queda_la_consulta_amplia(index):
