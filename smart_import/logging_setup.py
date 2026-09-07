@@ -44,7 +44,12 @@ class StageFormatter(logging.Formatter):
             label = f"{tint}{label}{_RESET}" if tint else label
             timestamp = f"{_DIM}{elapsed:7.3f}s{_RESET}"
         else:
-            timestamp = f"{elapsed:7.3f}s"
+            # Fuera de una terminal esto va a un agregador de logs, donde
+            # "12.480s desde que arranco el proceso" no sirve para correlacionar
+            # un incidente con nada. En la terminal el elapsed sigue siendo lo
+            # comodo para leer una corrida.
+            timestamp = time.strftime("%Y-%m-%dT%H:%M:%S",
+                                      time.localtime(record.created))
 
         line = f"  {timestamp}  {label}  {message}"
         if record.exc_info:
@@ -81,5 +86,12 @@ def stage(logger: logging.Logger, name: str, message: str,
 
 
 def detail(logger: logging.Logger, message: str) -> None:
-    """Sub-linea indentada, para enumerar decisiones dentro de una etapa."""
-    logger.info(f"    {message}", extra={"stage": ""})
+    """Sub-linea indentada, para enumerar decisiones dentro de una etapa.
+
+    Va en DEBUG a proposito: estas lineas llevan direcciones y nombres de
+    clientes finales (el detalle por fila del geocode, las muestras de lo que se
+    ignoro). En INFO terminaban en el json-file de Docker, sin rotacion, para
+    siempre. Con SMART_IMPORT_VERBOSE=true vuelven a verse — que es justamente
+    para lo que existe el flag.
+    """
+    logger.debug(f"    {message}", extra={"stage": ""})

@@ -441,3 +441,44 @@ def test_serve_con_varios_workers_no_arranca():
     resultado = CliRunner().invoke(cli_app, ["serve", "--workers", "4"])
     assert resultado.exit_code == 2
     assert "workers 4" in resultado.output or "--workers 1" in resultado.output
+
+
+def test_los_jobs_viejos_se_barren_y_los_ocupados_no(tmp_path):
+    """Sin TTL, cada import quedaba en disco para siempre — y el disco es el
+    mismo que usa el cutter."""
+    import time as _time
+
+    from smart_import.api.jobs import COMPLETED, GEOCODING, JobStore, NORMALIZED
+
+    almacen = JobStore(tmp_path)
+    viejo = almacen.create("viejo.csv", "vepathos_flat_v1")
+    ocupado = almacen.create("ocupado.csv", "vepathos_flat_v1")
+    reciente = almacen.create("reciente.csv", "vepathos_flat_v1")
+
+    viejo.touch(COMPLETED)
+    viejo.updated_at = _time.time() - 48 * 3600
+    ocupado.touch(GEOCODING)                       # geocode largo, no se toca
+    ocupado.updated_at = _time.time() - 48 * 3600
+    reciente.touch(NORMALIZED)
+
+    borrados = almacen.purge_older_than(24 * 3600)
+
+    assert borrados == [viejo.id]
+    assert almacen.get(viejo.id) is None
+    assert not almacen.dir_for(viejo.id).exists(), "quedo la carpeta en disco"
+    assert almacen.get(ocupado.id) is not None, "se borro un geocode en curso"
+    assert almacen.get(reciente.id) is not None
+
+
+def test_ttl_en_cero_no_barre_nada(tmp_path):
+    import time as _time
+
+    from smart_import.api.jobs import COMPLETED, JobStore
+
+    almacen = JobStore(tmp_path)
+    job = almacen.create("x.csv", "vepathos_flat_v1")
+    job.touch(COMPLETED)
+    job.updated_at = _time.time() - 1000 * 3600
+
+    assert almacen.purge_older_than(0) == []
+    assert almacen.get(job.id) is not None

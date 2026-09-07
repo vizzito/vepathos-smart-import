@@ -1,0 +1,20 @@
+# ===========================================================================
+# Override de DESARROLLO. No existe en produccion.
+#
+#   cp docker-compose.override.yml.example docker-compose.override.yml
+#
+# `docker compose` toma docker-compose.override.yml automaticamente si esta,
+# asi que el comando de todos los dias sigue siendo `docker compose up -d`.
+# En el servidor no se crea este archivo, y el compose base queda como esta:
+# codigo de la imagen y puerto solo en loopback.
+# ===========================================================================
+
+services:
+  smart-import:
+    volumes:
+      # Codigo del host sin rebuild. En prod esto haria que el container corra
+      # algo distinto de la imagen que se construyo y probo.
+      - ./smart_import:/app/smart_import:ro
+    # Descomenta si necesitas pegarle a :8100 desde otra maquina de la LAN.
+    # ports:
+    #   - "0.0.0.0:${SMART_IMPORT_PORT:-8100}:8100"

@@ -10,6 +10,9 @@ benchmarks/results.*
 benchmarks/extraction.json
 .env
 .env.prod
+# Override de desarrollo (monta el codigo del host). Se copia del .example y
+# NUNCA se versiona: si viajara al servidor, prod dejaria de correr la imagen.
+docker-compose.override.yml
 # Exploracion local (libpostal / pastes raros): no versionar
 local-explore/
 # fixtures/examples generados: se recrean con `make-fixtures`

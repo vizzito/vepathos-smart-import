@@ -114,6 +114,9 @@ class Config:
     cors_origins: tuple[str, ...] = ("*",)
     work_dir: str = "data/jobs"
     verbose: bool = False
+    #: Horas que sobrevive un job terminado antes de que se borre su carpeta.
+    #: 0 = no barrer (el disco crece sin techo).
+    job_ttl_hours: float = 24.0
 
     # ---------------- extraccion determinística ----------------
     #: region ISO por defecto para telefonos; el job puede sobrescribirla
@@ -195,6 +198,7 @@ class Config:
             cors_origins=tuple(_list("SMART_IMPORT_CORS_ORIGINS", ["*"])),
             work_dir=_str("SMART_IMPORT_WORK_DIR", "data/jobs"),
             verbose=_bool("SMART_IMPORT_VERBOSE", False),
+            job_ttl_hours=_float("SMART_IMPORT_JOB_TTL_HOURS", 24.0),
 
             default_phone_region=_str("SMART_IMPORT_DEFAULT_PHONE_REGION", ""),
             delivery_accept_threshold=_float("SMART_IMPORT_DELIVERY_ACCEPT_THRESHOLD", 0.55),

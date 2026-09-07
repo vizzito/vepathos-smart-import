@@ -70,7 +70,39 @@ async def lifespan(_app: FastAPI):
                               "no va a poder resolver ninguna direccion",
               level=logging.WARNING)
 
-    yield
+    barrendero = asyncio.create_task(_purge_loop())
+    try:
+        yield
+    finally:
+        barrendero.cancel()
+
+
+#: Cada cuanto se barren los jobs vencidos. Una hora alcanza: el TTL se mide en
+#: horas y el barrido es una pasada sobre un dict.
+PURGE_EVERY_S = 3600
+
+
+async def _purge_loop() -> None:
+    """Borra periodicamente los jobs terminados que ya nadie va a mirar.
+
+    Sin esto el disco crece sin techo, y en este host lo comparte con el cutter.
+    """
+    ttl_s = float(CFG.job_ttl_hours) * 3600
+    if ttl_s <= 0:
+        stage(logger, "HTTP", "barrido de jobs desactivado (SMART_IMPORT_JOB_TTL_HOURS=0)")
+        return
+    while True:
+        try:
+            await asyncio.sleep(PURGE_EVERY_S)
+            borrados = await run_in_threadpool(store.purge_older_than, ttl_s)
+            if borrados:
+                stage(logger, "HTTP", "jobs vencidos borrados",
+                      cantidad=len(borrados), ttl_h=CFG.job_ttl_hours)
+        except asyncio.CancelledError:
+            raise
+        except Exception:
+            # El barrido no puede tumbar el servicio: se reintenta a la hora.
+            logger.exception("fallo el barrido de jobs vencidos")
 
 
 app = FastAPI(

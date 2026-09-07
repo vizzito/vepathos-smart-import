@@ -49,8 +49,12 @@ x-common: &common
     - smart_import_models:/model-cache
     # Schemas editables sin rebuild: agrega un campo y reinicia.
     - ./schemas:/app/schemas:ro
-    # Codigo local sin rebuild (solo desarrollo). Comenta en prod.
-    - ./smart_import:/app/smart_import:ro
+    # OJO: el bind mount del codigo (./smart_import) vive en
+    # docker-compose.override.yml, que es SOLO para desarrollo. Si estuviera
+    # aca, el container de produccion correria el codigo del host en vez del
+    # de la imagen — y el deploy dejaria de ser reproducible.
+    #   local:  cp docker-compose.override.yml.example docker-compose.override.yml
+    #   prod:   no crear ese archivo (compose lo toma solo si existe)
 
 services:
 
@@ -60,8 +64,20 @@ services:
     container_name: vepathos-smart-import
     restart: unless-stopped
     ports:
-      - "${SMART_IMPORT_PORT:-8100}:8100"
+      # El servicio NO tiene autenticacion propia: quien lo protege es la red.
+      # Docker escribe sus reglas en la cadena DOCKER-USER y puentea ufw, asi
+      # que publicar en 0.0.0.0 lo deja accesible desde internet aunque el
+      # firewall diga lo contrario. Default seguro; en local se abre con
+      # SMART_IMPORT_BIND=0.0.0.0 en el .env.
+      - "${SMART_IMPORT_BIND:-127.0.0.1}:${SMART_IMPORT_PORT:-8100}:8100"
     command: ["serve", "--host", "0.0.0.0", "--port", "8100"]
+    logging:
+      # Los logs llevan direcciones de clientes y el driver por defecto no rota:
+      # sin esto, el disco que comparte con el cutter se llena solo.
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
     healthcheck:
       test: ["CMD", "python", "-c",
              "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8100/health', timeout=5).status==200 else 1)"]

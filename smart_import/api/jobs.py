@@ -320,3 +320,22 @@ class JobStore:
             return False
         shutil.rmtree(self.dir_for(job_id), ignore_errors=True)
         return True
+
+    def purge_older_than(self, max_age_s: float) -> list[str]:
+        """Borra los jobs terminados que ya nadie va a mirar.
+
+        No habia ni TTL ni limite: cada import dejaba raw + normalized +
+        geocoded + reports en disco para siempre, y el dict en memoria nunca se
+        podaba. En un host que comparte disco con el cutter eso termina en
+        'no space left on device' a la madrugada.
+
+        Un job ocupado nunca se toca, por viejo que parezca: puede ser un
+        geocode largo construyendo un indice.
+        """
+        if max_age_s <= 0:
+            return []
+        corte = time.time() - max_age_s
+        with self._lock:
+            vencidos = [jid for jid, job in self._jobs.items()
+                        if job.updated_at < corte and not job.busy]
+        return [jid for jid in vencidos if self.delete(jid)]
