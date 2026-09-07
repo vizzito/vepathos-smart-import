@@ -1,5 +1,6 @@
 # Ejemplos para probar a mano
 
+- **Geocode vs coords reales (CABA ML 13 + orders 13 + Miami 6 + 2907 + Tandil 326):** [`geocode-truth/`](geocode-truth/README.md)
 - **Entradas que la web ya acepta** (completas o mínimas): [`vepathos-golden/`](vepathos-golden/README.md)
 - **Forzar IA (`extract`)**: [`force-ai/`](force-ai/README.md) — nombre+dir+tel en una columna + textos pegables
 - **Entradas sintéticas hostiles** (headers raros, latin1, sin coords, etc.): los archivos de esta carpeta

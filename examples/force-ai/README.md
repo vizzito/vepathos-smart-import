@@ -1,3 +1,13 @@
+> **Nota (refactor de extracción):** estos archivos ya NO necesitan el modelo.
+> El `normalize` separa la columna compuesta con reglas + `phonenumbers` en
+> milisegundos. Se conservan porque siguen siendo los casos más hostiles del
+> corpus: si alguno se rompe, se rompió el `FieldExtractionPipeline`.
+>
+> ```bash
+> python -m smart_import normalize -i examples/force-ai/04_marketplace_whatsapp.csv \
+>     -o out/mk.csv --phone-region AR
+> ```
+
 # Ejemplos que fuerzan el uso de IA (`extract`)
 
 Estos archivos mezclan **nombre + dirección + teléfono** en **una sola columna**.
@@ -74,4 +84,6 @@ Contact: María Eugenia Torres — Street: Florida 500, Buenos Aires — Mobile:
 3. Tras `POST …/extract`, logs con `-> customer_name=… | address=… | phone=…`
 4. Preview con columnas separadas (ya no un solo blob)
 
-**Importante:** el webclient hoy **no** llama `extract` solo; hay que pegarlo por curl/CLI o cablearlo en el proxy. Normalize solo deja el blob en `address`.
+**Importante:** el proxy de la UI (`vepathos-router-client` → `/api/optimization/smart-import`)
+ahora, si detecta columna mezclada / `next_actions.extract`, corre **`extract` → espera → `geocode`**
+antes de devolver stops. Sin AI (`extract: false`) geocodea el blob y avisa.

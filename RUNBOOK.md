@@ -17,6 +17,9 @@ Cómo correrlo local y en producción, y cómo probarlo **sin tocar la web**.
 9. [Producción](#8-producción)
 10. [Diagnóstico](#9-diagnóstico)
 
+> **Install / Docker / Rabbit / prune / prod:** guía operativa completa en
+> **[SETUP.md](SETUP.md)**. Este runbook se centra en **cómo probar** el pipeline.
+
 ---
 
 ## 1. ¿Tengo que subir un archivo por la web? No
@@ -51,11 +54,16 @@ El modelo de IA es aparte y **opcional**:
 .venv/bin/pip install -e ".[ai]"      # ~2,5 GB (torch + transformers)
 ```
 
-Para el geocoder, apuntá a los PBF que ya genera el cutter:
+Para el geocoder, apuntá a la **raíz** `data/` del route-optimizer (PBF de país
+por región + `_extracts` chicos). No solo a `_extracts`:
 
 ```bash
-export SMART_IMPORT_PBF_DIR=~/workspace/route-optimizer-app/data/_extracts
+unset SMART_IMPORT_PBF_DIR
+export ROUTE_OPTIMIZER_DATA=~/workspace/route-optimizer-app/data
 ```
+
+País sin extract (India, Japón, USA…): el slug tiene que estar en
+`smart_import/resources/pbf_country_bounds.json`. Ver SETUP §6.1.
 
 ---
 
@@ -65,15 +73,26 @@ export SMART_IMPORT_PBF_DIR=~/workspace/route-optimizer-app/data/_extracts
 .venv/bin/python -m pytest tests/ -q
 ```
 
-No necesita archivos, ni servicio, ni modelo, ni PBFs. Cubre lectura de los 6 formatos,
-mapeo, normalización, agrupado, geocoding (con un índice sintético), la API y el
-comportamiento cuando el modelo no está.
-
-Para ver qué prueba cada uno:
+No necesita archivos, ni servicio, ni PBFs. Cubre lectura, mapeo, normalización,
+agrupado, geocoding sintético y la API.
 
 ```bash
-.venv/bin/python -m pytest tests/ -v
-.venv/bin/python -m pytest tests/test_normalize.py -v -k coordenadas
+.venv/bin/python -m pytest tests/test_vocab.py tests/test_mapping.py -q
+.venv/bin/python -m pytest tests/test_geocode_accuracy.py -q   # sin PBF: solo detecta columnas
+```
+
+**Geocode vs coords reales (CABA, 13 + 2907):** hace falta la raíz `data/` del
+route-optimizer, no `/workspace/.../_extracts`. Comandos y cómo leer el %:
+[examples/geocode-truth/README.md](examples/geocode-truth/README.md).
+
+```bash
+unset SMART_IMPORT_PBF_DIR
+export ROUTE_OPTIMIZER_DATA=/Users/martinvizzolini/workspace/route-optimizer-app/data
+
+.venv/bin/python -m smart_import geocode-accuracy \
+  --truth examples/geocode-truth/caba_stops_2907.json
+
+.venv/bin/python -m pytest -q -m real_geo tests/test_geocode_accuracy.py
 ```
 
 ---
@@ -169,7 +188,7 @@ echo '{"Codigo interno": "reference", "Sucursal origen": null}' > mapping.json
 
 ```bash
 cd ~/workspace/vepathos-smart-import
-export SMART_IMPORT_PBF_DIR=~/workspace/route-optimizer-app/data/_extracts
+export ROUTE_OPTIMIZER_DATA=~/workspace/route-optimizer-app/data
 .venv/bin/python -m smart_import serve --port 8100
 ```
 
@@ -204,7 +223,7 @@ curl -sf localhost:8100/health | .venv/bin/python -m json.tool
 FILE=examples/es_sin_coords.csv
 [ -f "$FILE" ] || .venv/bin/python -m smart_import make-fixtures --out examples --rows 40
 
-RESP=$(curl -sf -X POST "localhost:8100/imports?phone_region=AR" -F "file=@${FILE}")
+RESP=$(curl -sf -X POST "localhost:8100/imports?phone_region=AR&timezone=America/Argentina/Buenos_Aires" -F "file=@${FILE}")
 echo "$RESP" | .venv/bin/python -m json.tool
 
 # 3. Capturar el job_id REAL
@@ -305,10 +324,10 @@ No es un microservicio aparte y, con `GEOCODER_FALLBACK=none`, **no llama** a
 Nominatim/Google ni a nada externo.
 
 ```
-PBF del cutter (_extracts/*.osm.pbf)
-        │  SMART_IMPORT_PBF_DIR
+PBF de país (india-pyrosm.osm.pbf, …)  +  extracts chicos (_extracts/…)
+        │  ROUTE_OPTIMIZER_DATA  (raíz data/; no solo _extracts)
         ▼
-build-geocoder-index  →  data/indexes/<bbox>.sqlite   (una vez por región)
+build-geocoder-index  →  data/indexes/<key>.sqlite   (una vez por archivo)
         │
         ▼
 POST /imports/{id}/geocode   →  lee SQLite (FTS5 + RTree) + cache local
@@ -321,7 +340,10 @@ CSV con lat/lng + geocode_status / confidence / precision
   read-only; escribe índices/cache en `data/indexes` y `data/cache`.
 - **Cuándo:** solo si llamás `POST …/geocode`. Nunca automático
   (`geocoding.automatic: false` en `/health`).
-- **Qué PBF elige:** el extract más chico cuyo bbox cubre `origin_lat/lon`.
+- **Qué PBF elige:** extract más chico que cubra el punto; si no hay, corta
+  uno desde el PBF de país/región (`osmium extract` → `data/extracts/`) y
+  indexa ese recorte. Nunca construye `argentina.sqlite` / `florida.sqlite`
+  para una ciudad. Si falta `osmium-tool`, error claro (no fallback silencioso).
 - **Estados de fila:** `already_geocoded` | `matched` | `low_confidence` |
   `not_found` | `error`.
 
@@ -449,10 +471,23 @@ El núcleo (`normalize`) siempre está. Las otras dos se prenden y apagan solas:
 
 | Quiero… | `.env` | Imagen |
 |---|---|---|
-| **Todo** (default) | `AI_ENABLED=true` `GEOCODING_ENABLED=true` `TARGET=ai` | ~3 GB |
-| Sólo normalizar | `AI_ENABLED=false` `GEOCODING_ENABLED=false` `TARGET=runtime` | ~370 MB |
-| Normalizar + geocodificar | `AI_ENABLED=false` `GEOCODING_ENABLED=true` `TARGET=runtime` | ~370 MB |
-| Sólo el modelo | `AI_ENABLED=true` `GEOCODING_ENABLED=false` `TARGET=ai` | ~3 GB |
+| **Prod (recomendado)** | `TARGET=runtime-libpostal` `LIBPOSTAL_ENABLED=true` `GEOCODING_ENABLED=true` | ~2.4 GB |
+| Sin libpostal | `TARGET=runtime` `LIBPOSTAL_ENABLED=false` | ~370 MB |
+| Sólo normalizar | `GEOCODING_ENABLED=false` `TARGET=runtime` | ~370 MB |
+
+`SMART_IMPORT_TARGET` es el **build stage** del Dockerfile (`runtime` o
+`runtime-libpostal`), no un modo de proceso. Ver [docs/libpostal.md](docs/libpostal.md).
+
+Checklist prod libpostal:
+
+```bash
+SMART_IMPORT_TARGET=runtime-libpostal
+SMART_IMPORT_LIBPOSTAL_ENABLED=true
+docker compose build smart-import
+docker compose up -d --force-recreate smart-import
+curl -sf localhost:8100/health | python -m json.tool
+# capabilities.libpostal == true, extraction.address_parser == enhanced
+```
 
 Lo único que **sí** hay que ajustar sí o sí es dónde están los PBFs del cutter **en el
 host**:
@@ -536,6 +571,25 @@ docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4
 docker compose --profile tools run --rm tools warmup
 ```
 
+### 8.4.1 Medir recall por zona (no bajar umbrales)
+
+CABA 2907: ~12% pin con altura. El techo es cobertura OSM. Cómo apuntar PBF,
+correr las 2907, pytest y agregar otra zona:
+
+[examples/geocode-truth/README.md](examples/geocode-truth/README.md)
+
+```bash
+unset SMART_IMPORT_PBF_DIR
+export ROUTE_OPTIMIZER_DATA=/Users/martinvizzolini/workspace/route-optimizer-app/data
+
+.venv/bin/python -m smart_import geocode-accuracy \
+  --truth examples/geocode-truth/caba_stops_2907.json --out /tmp/caba_2907.json
+
+.venv/bin/python -m pytest -q -m real_geo tests/test_geocode_accuracy.py
+```
+
+No bajes `GEOCODE_*` thresholds para inflar pines.
+
 ### 8.5 Conectar routehub-fastapi
 
 Smart Import **no tiene auth ni multi-tenancy**: no lo expongas a internet. routehub le
@@ -547,11 +601,17 @@ SMART_IMPORT_ENABLED=false                  # default: con esto todo sigue como 
 SMART_IMPORT_URL=http://10.0.0.x:8100
 ```
 
-Y cerrá CORS al dominio real:
+Y cerrá CORS al dominio real (checklist de deploy — no hardcodear en codigo):
 
 ```bash
+# un origin, o varios separados por coma (sin espacios obligatorios)
 SMART_IMPORT_CORS_ORIGINS=https://app.vepathos.com
+# SMART_IMPORT_CORS_ORIGINS=https://app.vepathos.com,https://admin.vepathos.com
 ```
+
+- `*` solo en local / desarrollo.
+- No commitear el dominio de prod en el repo; va en el `.env` del host.
+- Si el browser no habla con `:8100` (solo RouteHub server-side), CORS es menos critico, pero igual no dejes `*` en un puerto expuesto.
 
 Si Smart Import está caído, el flujo legacy funciona idéntico: no hay dependencia en
 sentido inverso.
@@ -579,7 +639,8 @@ tengas medición, no antes.
 | `job 'imp_xxxxxxxx' inexistente` | usaste el placeholder del doc | capturá `$JOB` del `POST /imports` |
 | `watch: command not found` | macOS no trae `watch` | usá el `while true; do …; sleep 2; done` o `./scripts/http-smoke.sh --geocode` |
 | `pbf_available: 0` | el mount / `SMART_IMPORT_PBF_DIR` está mal | `list-pbf` o `ls $SMART_IMPORT_PBF_DIR` |
-| `sin cobertura PBF para el area` | no hay extract para esa zona | `list-pbf --lat X --lon Y`; el cutter todavía no cortó ahí |
+| `sin cobertura PBF para el area` | no hay PBF de país/región que cubra el depot | `list-pbf --lat X --lon Y`; el slug tiene que estar en `pbf_country_bounds.json` |
+| `falta osmium-tool para cortar el extract` | no hay extract y no está osmium | `brew install osmium-tool` (local) o rebuild de la imagen |
 | geocode tarda mucho la 1ª vez | está construyendo el índice | normal, ~10 s por 25 MB; queda cacheado |
 | `needs_review` siempre | headers muy raros | mirá `detect`; corregí con `PUT /mapping` |
 | todo `not_found` | falta el depot | pasá `--origin-lat/--origin-lon`: sin eso no hay desempate |

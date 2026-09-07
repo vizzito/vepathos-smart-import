@@ -17,6 +17,9 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 
 ---
 
+> **¿Cómo lo instalo / deployo?** Ver [SETUP.md](SETUP.md) — Docker local y prod,
+> qué son Rabbit/MinIO, prune de imágenes, web, variables y cheatsheet.
+>
 > **¿Cómo lo pruebo?** Ver [RUNBOOK.md](RUNBOOK.md) — cinco niveles, de `pytest`
 > (30 s, sin dependencias) hasta la integración con la web. Casos variables en
 > [`examples/`](examples/README.md). Smoke HTTP: `./scripts/http-smoke.sh`.
@@ -29,8 +32,12 @@ python3.12 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"        # normalización + tests
 pip install -e ".[geo]"        # + geocoder (pyosmium)
 pip install -e ".[api]"        # + servicio HTTP (FastAPI)
-pip install -e ".[ai]"         # + NuExtract (opcional, ~2,5 GB)
+pip install -e ".[libpostal]"  # + parser libpostal (opcional, ver docs/libpostal.md)
+python -m smart_import.vocab setup            # sqlite; en Docker lo hace el build
+python -m smart_import.vocab setup --geonames # ciudades mundiales (opcional)
 ```
+
+Deploy (local y prod): [SETUP.md](SETUP.md). El `docker compose build` ya corre el setup.
 
 ## Los comandos
 
@@ -44,7 +51,9 @@ python -m smart_import build-geocoder-index --pbf /data/pbf/<region>.osm.pbf \
 python -m smart_import geocode --input out/normalized.csv \
     --index data/indexes/<region>.sqlite --origin-lat -34.6037 --origin-lon -58.3816 \
     --output out/geocoded.csv
-python -m smart_import extract --input out/normalized.csv --output out/separado.csv
+python -m smart_import normalize --input examples/free-text/whatsapp_12.txt \
+    --output out/wa.csv --phone-region AR       # texto libre: 12 entregas, sin modelo
+python -m smart_import benchmark-extraction --repeats 5
 python -m smart_import serve --port 8100
 ```
 
@@ -87,9 +96,9 @@ y hasta 200 filas con problemas detallados.
 
 ## Cómo decide el mapping
 
-El modelo de IA **nunca ve el archivo entero**: ve headers + 10-30 filas de muestra.
-Una inferencia por archivo, no por fila. El mapping resultante se aplica a las N filas
-con código determinístico.
+El mapping de columnas es **determinístico**: alias del schema, normalización de
+nombres, fuzzy matching y perfilado del contenido. No interviene ningún modelo. El
+mapping resultante se aplica a las N filas con código.
 
 | # | Paso | Confianza |
 |---|---|---|
@@ -167,8 +176,9 @@ python -m smart_import geocode -i out/normalized.csv -o out/geocoded.csv \
 |---|---|
 | `already_geocoded` | ya tenía coordenadas: se conservan intactas |
 | `matched` | score ≥ 0.90 **y** altura resuelta |
-| `low_confidence` | 0.70 – 0.90, o calle sin altura exacta → coordenadas cargadas **pero marcadas** |
-| `not_found` | < 0.70 → **sin coordenadas**, nunca inventadas |
+| `matched` | ≥ ~81% con altura resuelta → pin confiable (UI verde Valid) |
+| `low_confidence` | 70–80%, o calle sin altura exacta → coordenadas a revisar (UI amarillo Review) |
+| `not_found` | < 70% → **sin coordenadas**, nunca inventadas |
 | `error` | fallo del índice |
 
 Un match a nivel calle **no puede** declararse `matched` por más que puntúe alto: sería
@@ -179,13 +189,16 @@ ciudades — la señal que ningún geocoder genérico tiene y Vepathos siempre c
 
 ### Medir la calidad antes de confiar
 
-```bash
-python -m smart_import geocode-eval --truth direcciones_conocidas.csv \
-    --index data/indexes/oslo.sqlite --origin-lat 59.91 --origin-lon 10.75
-```
+CABA 13 + 2907 (PBF, pytest, cómo leer el %):
+[examples/geocode-truth/README.md](examples/geocode-truth/README.md).
 
-Esconde las coordenadas verdaderas, geocodifica por dirección y compara: cobertura,
-% exactas, error en metros (mediana / p90 / máximo).
+```bash
+unset SMART_IMPORT_PBF_DIR
+export ROUTE_OPTIMIZER_DATA=/Users/martinvizzolini/workspace/route-optimizer-app/data
+
+.venv/bin/python -m smart_import geocode-accuracy \
+  --truth examples/geocode-truth/caba_stops_2907.json
+```
 
 ### Cache
 
@@ -228,6 +241,48 @@ asíncronos (un worker cada uno) y se consultan con `GET /imports/{id}`.
 Cada respuesta trae **`next_actions`**: qué puede hacer el usuario ahora y con qué link.
 La UI no necesita conocer la máquina de estados.
 
+### `geocode_band`: el color lo decide el back
+
+La UI **no calcula la banda**. Smart Import la resuelve una sola vez y la publica; el
+cliente la usa tal cual. Recalcularla con umbrales propios es lo que hacía que un
+match a nivel calle se pintara verde: el `status` decía "revisar" y el número decía
+otra cosa.
+
+| Banda | Significado | UI |
+|---|---|---|
+| `valid` | la coordenada se usa tal cual | verde, con `%` |
+| `review` | hay pin, pero es a nivel calle | ámbar, con `%` |
+| `needs_geocoding` | no hay pin | "Set location", sin `%` |
+
+Los cortes viven en el back (`GEOCODE_REVIEW_BAND`, `GEOCODE_VALID_BAND`) y viajan en
+`/issues → summary.umbrales_banda`. **No usar `NEXT_PUBLIC_GEOCODE_*` en el cliente**:
+dos fuentes de umbral se desincronizan solas.
+
+Dónde llega la banda:
+
+- **CSV** (`download?format=geocoded`, `preview?source=geocoded`) →
+  `geocode_band`, `geocode_confidence`, `geocode_status`, `geocode_precision`, `geocode_source`
+- **JSON nested** (`download?format=nested`) → `addresses[].geocode.{band, confidence, status, precision, source}`
+- **`/issues`** → una fila por entrega que hay que tocar, con `geocode_band`,
+  `geocode_percent` y `geocode_precision`; el resumen trae `bandas` y `umbrales_banda`
+
+Dos invariantes que el cliente puede asumir:
+
+1. `geocode_confidence` es la confianza en el **punto**, no en el match textual. Una
+   fila `review` nunca reporta un número de la banda verde.
+2. Sin pin no hay `geocode_confidence`. Un `%` al lado de "Set location" describiría un
+   candidato que se descartó.
+
+```jsonc
+// GET /imports/{id}/issues
+{"summary": {"total": 12, "listas": 1, "a_revisar": 9, "a_geocodificar": 2,
+             "bandas": {"valid": 1, "review": 9, "needs_geocoding": 2},
+             "umbrales_banda": {"valid": 0.85, "review": 0.75}},
+ "filas": [{"delivery_id": "003", "status": "a_revisar", "geocode_band": "review",
+            "geocode_confidence": 0.80, "geocode_percent": 80,
+            "geocode_precision": "street"}]}
+```
+
 ```jsonc
 {"job_id": "imp_ab12", "status": "normalized",
  "report": {"deliveries": 40, "packages": 67, "valid_rows": 0, "needs_geocode": 40,
@@ -244,45 +299,78 @@ La UI no necesita conocer la máquina de estados.
 
 ---
 
-## El modelo: qué hace y qué no
+## Texto libre: cómo se resuelve sin modelo
 
-**El mapeo de columnas es 100 % determinístico — sin IA.** Se probó delegarlo a
-NuExtract-1.5-tiny y el modelo **devuelve el schema del prompt** en lugar de razonar
-sobre él: mapear headers es una tarea de instrucción, y un 0.5B entrenado para
-extracción no la hace. Las reglas resuelven 15 de 16 fixtures.
+Un paste de WhatsApp **no es un CSV porque tenga comas**. Antes lo era, y el
+documento quedaba destruido antes de llegar a ningún extractor:
 
-El modelo se usa en **una sola operación**: separar una columna que mezcla campos, que
-es exactamente su tarea de entrenamiento (template JSON + texto → template completo).
-
-```bash
-pip install -e ".[ai]"                     # torch + transformers, ~2,5 GB
-export SMART_IMPORT_AI_ENABLED=true
-python -m smart_import extract -i out/normalized.csv -o out/separado.csv \
-    --column address --fields customer_name,address,phone --max-rows 200
+```
+delimiter=','  header_row=2  columns=2
+→ ['- Juan Lopez (1140011001) entrega en Palermo', ' la calle es Av. Santa Fe al 137.']
 ```
 
-El modelo se baja solo la primera vez desde HuggingFace (~1 GB) a `~/.cache/huggingface`.
+La primera entrega (Ana Perez) desaparecía tomada como fila de header.
 
-### Medido sobre 12 filas reales (NuExtract-1.5-tiny, 0.5B, CPU)
+Hoy un `.txt` se declara **tabular** solo con evidencia estructural real: mismo número
+de campos en la mayoría de las líneas, suficientes líneas coherentes, ausencia de
+viñetas y saludos, y un header plausible. Sin eso es `free_text` y **el documento se
+preserva entero**.
 
-| Campo | Acierto | |
+```
+FREE TEXT
+ → segmentar            viñetas / numeración / bloques / líneas
+ → clasificar           ¿este segmento es una entrega? (evidencia, no adivinanza)
+ → extraer              coordenadas → teléfono → email → bultos → etiquetas →
+                        horario → dirección → nombre → notas
+ → validar              confidence por campo
+ → normalizar           E.164, ventanas horarias, contexto regional
+ → geocodificar         opcional, y solo lo que tiene evidencia suficiente
+```
+
+Cada extractor resuelto **achica la ambigüedad del siguiente**: cuando el teléfono ya
+se identificó, el que busca el nombre no pelea con esos dígitos. El texto original
+nunca se modifica — se enmascara lo consumido y los spans siguen siendo válidos.
+
+### Medido sobre el mismo documento de 12 entregas
+
+| | reglas | NuExtract 0.5B por fila |
 |---|---|---|
-| `address` | **12/12** | limpia, con tildes intactas |
-| `phone` | **12/12** | |
-| `customer_name` | **9/12** | el 0.5B corrompe nombres con tilde |
-| alucinaciones | **0/12** | ninguna, por construcción |
+| tiempo | **5 ms** | 18 100 ms |
+| CPU | **5 ms** | 100 600 ms (~550 % sostenido) |
+| RAM (Δ RSS) | **0,1 MB** | 955 MB |
+| llamadas al modelo | **0** | 12 |
+| `address` correcta | **12/12** | 11/12 |
+| `phone` correcto | **12/12** | 11/12 |
+| falsos positivos | **0** | 0 |
+| "Salutos"/"Despacho" ignorados | **3/3** | no los detecta |
 
-**1,4 s por fila en CPU.** Por eso es opt-in, tiene tope (`SMART_IMPORT_EXTRACT_MAX_ROWS`,
-default 2000) y corre en segundo plano.
+```bash
+python -m smart_import benchmark-extraction --repeats 5
+```
 
-Cero alucinaciones no es suerte: **todo valor extraído tiene que aparecer en el texto
-original**. Extraer no es generar. Cuando el modelo devuelve `"Ana Rodrñez"`, se busca
-ese texto en la fuente y se devuelve el span real — `"Ana Rodríguez"`, con su tilde.
-Lo que no aparece en la fuente se descarta.
+Las reglas son ~3 500× más rápidas en tiempo de pared y ~20 000× en CPU, **y aciertan
+más**. Por eso no hay modelo de IA en el camino.
 
-Si el modelo no está instalado o falla, el job **no se rompe**: termina con un aviso y
-el archivo normalizado sigue siendo válido.
+### Qué garantiza el pipeline
 
+- **No inventa.** Sin evidencia suficiente el campo queda en `null` y la fila en
+  `needs_review`. Preferimos `address = null` antes que `address = "Salutos"`.
+- **`ignored` ≠ `invalid`.** El saludo y la despedida de un mensaje no son entregas
+  fallidas: no aparecen como filas rotas ni llegan al geocoder.
+- **Extraer ≠ normalizar.** El extractor devuelve solo lo que está escrito; agregar
+  "Buenos Aires" o "Argentina" es trabajo del normalizador, y solo con contexto
+  regional explícito.
+- **Cada campo trae `confidence`, `method` y `evidence`**, para poder explicar por qué
+  se decidió lo que se decidió.
+
+El mapeo de columnas es 100 % determinístico (aliases + heurísticas + catálogo).
+
+### Direcciones: `libpostal` es un paso de calidad opcional
+
+El heuristico siempre corre. Con `SMART_IMPORT_LIBPOSTAL_ENABLED=true` (y la
+libreria instalada) libpostal se consulta **solo** cuando falta `road` o la road
+es sospechosa — no es un cambio de estrategia. Apagado por defecto; ver
+[docs/libpostal.md](docs/libpostal.md).
 
 ---
 
@@ -350,8 +438,7 @@ VM 16 GB
                              escribe  /data/indexes, /data/cache
 ```
 
-Target `runtime` (por defecto) no incluye torch. El target `ai` sí; usalo solo si el
-benchmark lo justifica.
+Target `runtime` (por defecto) o `runtime-libpostal` si querés el parser C.
 
 ## Configuración
 
@@ -362,11 +449,15 @@ Todo por environment variable, todo con default razonable — ver `.env.example`
 | `SMART_IMPORT_MAX_FILE_MB` | `10` | límite de tamaño |
 | `SMART_IMPORT_MAX_ROWS` | `50000` | límite de filas |
 | `AUTO_ACCEPT_THRESHOLD` | `0.90` | por debajo → revisión |
-| `SMART_IMPORT_AI_ENABLED` | `false` | la IA es opt-in |
-| `SMART_IMPORT_DEVICE` | `cpu` | `cpu` / `mps` / `cuda` / `auto` |
+| `SMART_IMPORT_DEFAULT_PHONE_REGION` | — | región ISO para teléfonos (`AR`, `IN`…) |
+| `SMART_IMPORT_DELIVERY_ACCEPT_THRESHOLD` | `0.55` | evidencia mínima para ser una entrega |
+| `SMART_IMPORT_ADDRESS_ACCEPT_THRESHOLD` | `0.50` | por debajo no se acepta ni se geocodifica |
+| `SMART_IMPORT_TEXT_MAX_PROSE_RATIO` | `0.20` | cuánta prosa tolera un `.txt` tabular |
+| `SMART_IMPORT_LIBPOSTAL_ENABLED` | `false` | enhancer opcional; ver `docs/libpostal.md` |
+| `SMART_IMPORT_ADDRESS_PARSER` | `heuristic` | solo benchmarks: `libpostal` / `enhanced` / `hybrid` |
 | `SMART_IMPORT_PBF_DIR` | — | los `_extracts` del cutter |
 | `GEOCODER_FALLBACK` | `none` | nunca llama afuera solo |
-| `SMART_IMPORT_EXTRACT_MAX_ROWS` | `2000` | tope de filas para `extract` |
+| `SMART_IMPORT_EXTRACT_MAX_ROWS` | `2000` | tope de filas para `extract` (solo con IA) |
 
 ---
 

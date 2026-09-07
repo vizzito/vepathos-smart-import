@@ -1,8 +1,6 @@
 """Benchmark reproducible: tiempo por etapa y pico de memoria, por tamano de archivo.
 
 Lo que importa medir por separado:
-  - carga del modelo (se paga UNA vez por proceso, no por archivo)
-  - inferencia (eso si se paga por archivo)
   - el resto del pipeline, que escala con las filas
 """
 from __future__ import annotations
@@ -51,7 +49,6 @@ def run_one(path: Path, schema: Path, repeats: int, config: Config) -> dict:
         "file": path.name,
         "rows": rows,
         "repeats": repeats,
-        "ai_enabled": config.ai_enabled,
         "read_s": stage_avg("read"),
         "detect_s": stage_avg("detect"),
         "normalize_s": stage_avg("normalize"),

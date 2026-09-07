@@ -21,7 +21,7 @@ directo.
    vepathos-smart-import  :8100     ← NUEVO. Todo el trabajo pesado.
             │
             ├── normalize   reglas + fuzzy + heurísticas       (síncrono, ~1.5 s / 50k filas)
-            ├── extract     NuExtract 0.5B                     (async, ~1.4 s / fila)
+            ├── extract     reglas + phonenumbers + libpostal  (síncrono)
             └── geocode     índice SQLite desde OSM            (async)
                     │
                     └──▶ /data/pbf  ← los .osm.pbf del cutter, READ-ONLY
@@ -85,15 +85,14 @@ mañana corrés un script de limpieza de PBFs, no te lleva puestos los índices.
 
 ## 3. Configuración: qué corre y qué no
 
-Todo sale de `.env`. El núcleo (`normalize`) siempre está; las otras dos capacidades se
-prenden y apagan sin tocar código.
+Todo sale de `.env`. El núcleo —`normalize` **y la extracción de texto libre**— siempre
+está y no necesita modelo. Lo demás se prende y apaga sin tocar código.
 
 | Quiero… | `.env` | Imagen |
 |---|---|---|
-| **Todo** (default) | `AI_ENABLED=true` `GEOCODING_ENABLED=true` `TARGET=ai` | ~3 GB |
-| Sólo normalizar | `AI_ENABLED=false` `GEOCODING_ENABLED=false` `TARGET=runtime` | ~370 MB |
-| Normalizar + geocodificar | `AI_ENABLED=false` `GEOCODING_ENABLED=true` `TARGET=runtime` | ~370 MB |
-| Sólo el modelo | `AI_ENABLED=true` `GEOCODING_ENABLED=false` `TARGET=ai` | ~3 GB |
+| **Normalizar + geocodificar** (default) | `GEOCODING_ENABLED=true` `TARGET=runtime` | ~370 MB |
+| Sólo normalizar | `GEOCODING_ENABLED=false` `TARGET=runtime` | ~370 MB |
+| + libpostal | `LIBPOSTAL_ENABLED=true` `TARGET=runtime-libpostal` | ~2 GB extra de datos |
 
 ```bash
 cp .env.example .env
@@ -105,7 +104,10 @@ curl -s localhost:8100/config      # la config efectiva del proceso
 `/health` devuelve las capacidades reales:
 
 ```json
-{"capabilities": {"normalize": true, "geocoding": true, "extract": false}}
+{"capabilities": {"normalize": true, "geocoding": true, "extract": false,
+                  "rules": true, "phonenumbers": true, "libpostal": false, "ai": false},
+ "extraction": {"engine": "rules", "address_parser": "heuristic",
+                "libpostal_installed": false}}
 ```
 
 Una capacidad apagada **no aparece en `next_actions`** — el botón no se dibuja, en vez
@@ -135,6 +137,8 @@ ahí lo usa el servicio sin copiar nada.
 2. POST /imports/smart  (routehub valida y hace proxy)
        │
 3. Smart Import: READ → DETECT → NORMALIZE → ASSEMBLE → EMIT     ~1.5 s
+       │        (si el archivo es texto libre, DETECT es
+       │         segmentar → clasificar → extraer, sin modelo)
        │
 4. Respuesta:  mapping con confianza + contadores + next_actions
        │
@@ -161,6 +165,26 @@ ahí lo usa el servicio sin copiar nada.
    → alimenta el mismo pipeline que hoy recibe un archivo bien formateado
 ```
 
+### Cuando el archivo es texto libre
+
+Un `.txt` solo se trata como tabla si hay **evidencia estructural**: mismo número de
+campos en la mayoría de las líneas, suficientes líneas coherentes, sin viñetas ni
+saludos, y un header plausible. Una coma repetida no alcanza.
+
+```
+documento entero (nunca se recorta)
+  → FreeTextSegmenter          viñetas / numeración / bloques / líneas
+  → DeliveryCandidateClassifier ¿hay evidencia logística? si no → `ignored`
+  → FieldExtractionPipeline     coordenadas → teléfono → email → bultos →
+                                etiquetas → horario → dirección → nombre → notas
+  → filas del schema Vepathos
+```
+
+`ignored` no es `invalid`: el saludo y la despedida de un mensaje no aparecen como
+entregas fallidas ni llegan al geocoder. Cada campo trae `confidence`, `method` y
+`evidence`, y el `report` incluye un bloque `extraction` con los contadores y los
+descartes con su motivo.
+
 **El paso 6 es el que define el producto.** `normalize` nunca geocodifica: informa
 cuántas filas necesitan coordenadas y ofrece la acción. Un archivo normalizado sin
 coordenadas **es un resultado válido**.
@@ -177,7 +201,9 @@ GET  /imports/{id}              polling de estado y progreso
 GET  /imports/{id}/preview      filas para la tabla de revisión
 PUT  /imports/{id}/mapping      { "Dest.": "address", "Obs": null }
 GET  /imports/{id}/download?format=flat|nested|geocoded
-POST /imports/{id}/geocode?origin_lat&origin_lon
+POST  /imports/{id}/geocode?origin_lat&origin_lon
+      [&depot_city&depot_region&depot_postcode&depot_country&depot_address]
+      [&max_distance_km]
 POST /imports/{id}/extract      separar columna compuesta con el modelo
 GET  /geocoding/coverage?lat&lon   ¿hay PBF acá? consultalo antes de ofrecer el botón
 ```
@@ -237,14 +263,31 @@ El diseño del mensaje ya está y el pipeline no cambia — sólo el almacén.
 ## 7. Orden sugerido
 
 ```
-Fase 1  ✅  CLI + API standalone, dockerizado, con tests      ← ESTAMOS ACÁ
+Fase 1  ✅  CLI + API standalone, dockerizado, con tests
 Fase 2  ⬜  probarlo con archivos reales de tus clientes
 Fase 3  ⬜  medir cobertura de geocoding en tus zonas (geocode-eval)
-Fase 4  ⬜  jobs compartidos + object storage
-Fase 5  ⬜  endpoints en routehub-fastapi con SMART_IMPORT_ENABLED
-Fase 6  ⬜  UI en vepathos-router-client
+Fase 4  ✅  object storage (local/MinIO) + RabbitMQ (compose --profile infra)
+Fase 5  ✅  proxy RouteHub `/imports/smart` + SMART_IMPORT_ENABLED
+Fase 6  ✅  UI: geocode fallido → normalize + requires_geocoding (geo manual)
 ```
 
-La fase 2 es la que más información da por menos trabajo: pasale 5-10 archivos reales de
-clientes y mirá el `report.json`. Ahí vas a ver si las reglas alcanzan o si hace falta
-ampliar los alias del schema — que es editar un JSON, no tocar código.
+Geocode duro que falla deja el job en `geocode_failed` (normalize intacto). La UI
+importa las paradas con coords y mete el resto en el preview como
+`requires_geocoding` para `LocateMissingStopDialog`.
+
+Local prod-shaped:
+
+```bash
+# infra
+docker compose --profile infra up -d          # RabbitMQ :5672 + MinIO :9000
+# smart-import
+docker compose up -d                          # API :8100
+# routehub
+SMART_IMPORT_ENABLED=true SMART_IMPORT_URL=http://host.docker.internal:8100
+# UI (.env.local) — directo o via RouteHub:
+# SMART_IMPORT_URL=http://localhost:8100
+# ROUTEHUB_SMART_IMPORT_URL=http://localhost:8000/imports/smart
+```
+
+Lo que sigue (persistencia de jobs entre reinicios / Redis): el store sigue en
+memoria del proceso; los artefactos ya pueden vivir en MinIO/S3.
