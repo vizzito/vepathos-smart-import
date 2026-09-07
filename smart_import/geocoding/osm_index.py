@@ -8,6 +8,8 @@ tiene que ser el PBF original.
 """
 from __future__ import annotations
 
+import fcntl
+import os
 import re
 import sqlite3
 from dataclasses import dataclass
@@ -17,6 +19,11 @@ from ..logging_setup import get_logger, stage
 from .address import normalize_text
 
 logger = get_logger("index")
+
+#: Filtro barato para no abrir sqlite por cada archivo del glob: un sqlite con
+#: esquema no baja de unos KB. Quien decide de verdad si el indice sirve es
+#: `index_is_complete`, que lo consulta como lo va a consultar el geocoder.
+MIN_INDEX_BYTES = 4_096
 
 SCHEMA_SQL = """
 PRAGMA journal_mode = OFF;
@@ -124,19 +131,128 @@ def _way_centroid(way) -> tuple[float, float] | None:
     return sum(lats) / len(lats), sum(lons) / len(lons)
 
 
+def index_is_complete(path: str | Path) -> bool:
+    """True si el indice existe y esta ENTERO.
+
+    `exists()` no alcanza: un OOM-kill o un `docker stop` a mitad del build
+    dejaba un sqlite truncado en la ruta final y todos los geocodes siguientes
+    lo usaban en silencio. Se verifica la marca que escribe el build y, para los
+    indices construidos antes de que esa marca existiera, que las dos tablas que
+    consulta el geocoder tengan datos.
+    """
+    p = Path(path).expanduser()
+    try:
+        if not p.is_file() or p.stat().st_size < MIN_INDEX_BYTES:
+            return False
+    except OSError:
+        return False
+    try:
+        conn = sqlite3.connect(f"file:{p}?mode=ro", uri=True)
+    except sqlite3.Error:
+        return False
+    try:
+        marca = conn.execute(
+            "SELECT value FROM meta WHERE key = 'build_completed'").fetchone()
+        if marca and str(marca[0]) == "1":
+            return True
+        # Indice anterior a la marca: no se reconstruye si sirve.
+        fila = conn.execute(
+            "SELECT normalized_text FROM places"
+            " WHERE normalized_text <> '' LIMIT 1").fetchone()
+        if fila is None:
+            return False                  # build cortado antes de poblar places
+        # `places_fts` es external-content: leerla directo devuelve filas de
+        # `places` aunque el indice FTS este vacio. La unica prueba de que el
+        # FTS se poblo es buscar como busca el geocoder.
+        termino = str(fila[0]).split()[0].replace('"', "")
+        if not termino:
+            return False
+        hit = conn.execute(
+            "SELECT rowid FROM places_fts WHERE places_fts MATCH ? LIMIT 1",
+            (f'"{termino}"',)).fetchone()
+        return hit is not None
+    except sqlite3.DatabaseError:
+        return False                      # truncado, corrupto o sin esquema
+    finally:
+        conn.close()
+
+
 def build(pbf_path: str | Path, output: str | Path,
           location_index: str = "flex_mem", progress=None) -> BuildStats:
-    import osmium
+    """Construye el indice de forma ATOMICA y bajo lock.
 
+    Se escribe en un temporal y se renombra al final: hasta que el build no
+    termina, la ruta definitiva no existe. El lock evita que dos jobs de la
+    misma ciudad se pisen — el segundo borraba el archivo que el primero estaba
+    escribiendo. Es el mismo patron que ya usaba el corte del PBF.
+    """
     src = Path(pbf_path)
     out = Path(output)
     out.parent.mkdir(parents=True, exist_ok=True)
-    if out.exists():
-        out.unlink()
+
+    lock_dir = out.parent / ".locks"
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    with open(lock_dir / f"{out.name}.lock", "a+", encoding="utf-8") as lock_fh:
+        fcntl.flock(lock_fh.fileno(), fcntl.LOCK_EX)
+        if index_is_complete(out):
+            # Otro proceso lo construyo mientras esperabamos el lock.
+            stage(logger, "INDEX", "indice reutilizado (lo construyo otro job)",
+                  indice=out.name)
+            return _stats_from_meta(out)
+        return _build_locked(src, out, location_index, progress)
+
+
+def _stats_from_meta(index: Path) -> BuildStats:
+    """BuildStats de un indice ya construido, para no mentir con ceros."""
+    stats = BuildStats()
+    try:
+        conn = sqlite3.connect(f"file:{index}?mode=ro", uri=True)
+    except sqlite3.Error:
+        return stats
+    try:
+        meta = dict(conn.execute("SELECT key, value FROM meta"))
+        stats.nodes = int(meta.get("places", 0) or 0)
+        stats.with_address = int(meta.get("with_address", 0) or 0)
+        stats.named = int(meta.get("named", 0) or 0)
+    except (sqlite3.DatabaseError, ValueError):
+        pass
+    finally:
+        conn.close()
+    return stats
+
+
+def _build_locked(src: Path, out: Path, location_index: str, progress) -> BuildStats:
+    import osmium
+
+    # El temporal lleva el pid: dos procesos nunca comparten archivo, y un
+    # temporal huerfano de una corrida muerta no se confunde con el indice.
+    tmp = out.with_name(f"{out.name}.tmp.{os.getpid()}")
+    tmp.unlink(missing_ok=True)
 
     stage(logger, "INDEX", "construyendo indice desde PBF (se hace UNA vez por region)",
           pbf=src.name, tamano=f"{src.stat().st_size / 1e6:.1f}MB")
-    conn = sqlite3.connect(out)
+    conn = sqlite3.connect(tmp)
+    try:
+        stats = _fill(conn, src, location_index, progress)
+    except BaseException:
+        # Un build a medias no puede quedar en ningun lado: ni en la ruta final
+        # (la usaria el proximo geocode) ni como temporal huerfano.
+        conn.close()
+        tmp.unlink(missing_ok=True)
+        raise
+
+    conn.close()
+    os.replace(tmp, out)                  # atomico: recien aca aparece el indice
+    stage(logger, "INDEX", "listo", indice=out.name,
+          tamano=f"{out.stat().st_size / 1e6:.1f}MB",
+          con_direccion=stats.with_address, con_nombre=stats.named)
+    return stats
+
+
+def _fill(conn: sqlite3.Connection, src: Path, location_index: str,
+          progress) -> BuildStats:
+    import osmium
+
     conn.executescript(SCHEMA_SQL)
     stats = BuildStats()
     batch: list[tuple] = []
@@ -195,13 +311,11 @@ def build(pbf_path: str | Path, output: str | Path,
         ("source_pbf", str(src)), ("source_name", src.name),
         ("places", str(stats.nodes + stats.ways)),
         ("with_address", str(stats.with_address)), ("named", str(stats.named)),
+        # Ultima escritura del build: si falta, el indice quedo a medias.
+        ("build_completed", "1"),
     ])
     conn.commit()
     conn.execute("PRAGMA journal_mode = DELETE")
-    conn.close()
-    stage(logger, "INDEX", "listo", indice=out.name,
-          tamano=f"{out.stat().st_size / 1e6:.1f}MB",
-          con_direccion=stats.with_address, con_nombre=stats.named)
     return stats
 
 
@@ -233,7 +347,9 @@ def covering_extract_index(
     covering: list[tuple[float, Path]] = []
     for path in root.glob("n*.sqlite"):
         match = _INDEX_BBOX_RE.search(path.name)
-        if not match or path.stat().st_size < 1_000_000:
+        # Un indice truncado por un build interrumpido no puede sustituir al
+        # del pais: daria menos resultados sin que nadie se entere.
+        if not match or not index_is_complete(path):
             continue
         north = float(match.group("north"))
         south = float(match.group("south"))

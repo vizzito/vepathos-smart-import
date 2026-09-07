@@ -18,6 +18,34 @@ CABA = (-34.6037, -58.3816)
 CABA_BBOX = (-34.537, -34.697, -58.356, -58.530)
 
 
+def _fake_index(path) -> None:
+    """Indice sqlite minimo pero VALIDO.
+
+    Un archivo de ceros ya no sirve como doble: `index_is_complete` consulta el
+    indice como lo consulta el geocoder, justamente para no volver a usar un
+    sqlite truncado por un build interrumpido.
+    """
+    import sqlite3
+
+    from smart_import.geocoding.osm_index import SCHEMA_SQL
+
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(path)
+    conn.executescript(SCHEMA_SQL)
+    conn.execute(
+        "INSERT INTO places (osm_type, osm_id, lat, lon, street, house_number,"
+        " normalized_text) VALUES ('node', 1, -34.60, -58.38, 'corrientes',"
+        " '100', 'corrientes 100')")
+    conn.execute("INSERT INTO places_fts(rowid, normalized_text) "
+                 "SELECT id, normalized_text FROM places")
+    conn.execute(
+        "INSERT OR REPLACE INTO meta(key, value) VALUES ('build_completed', '1')")
+    conn.commit()
+    conn.close()
+
+
+
 def test_bbox_filename_estable_y_parseable():
     west, south, east, north = -58.6, -34.8, -58.2, -34.4
     name = bbox_filename(west, south, east, north, 0.1)
@@ -73,8 +101,7 @@ def test_sin_extract_corta_y_no_indexa_el_pais(tmp_path, monkeypatch):
 
     def fake_build(pbf, output, location_index="flex_mem", progress=None):
         output = Path(output)
-        output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_bytes(b"\0" * 2_000_000)
+        _fake_index(output)
         builds.append((str(Path(pbf).name), str(output.name)))
 
     monkeypatch.setattr("smart_import.geocoding.extract.run_osmium_extract", fake_extract)
@@ -100,7 +127,7 @@ def test_si_ya_hay_indice_de_extract_no_corta(tmp_path, monkeypatch):
     index_dir.mkdir()
     _country_pbf(pbf_dir)
     leftover = index_dir / "n-34.48_s-34.73_e-58.30_w-58.58.sqlite"
-    leftover.write_bytes(b"\0" * 2_000_000)
+    _fake_index(leftover)
 
     def boom(*_a, **_k):
         raise AssertionError("no debe cortar ni indexar")
@@ -129,7 +156,7 @@ def test_si_ya_hay_extract_pbf_indexa_ese(tmp_path, monkeypatch):
     builds: list[str] = []
 
     def fake_build(pbf, output, location_index="flex_mem", progress=None):
-        Path(output).write_bytes(b"\0" * 2_000_000)
+        _fake_index(output)
         builds.append(Path(pbf).name)
 
     def boom(*_a, **_k):

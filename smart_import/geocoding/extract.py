@@ -24,6 +24,7 @@ from ..logging_setup import get_logger, stage
 from .osm_index import (
     build,
     covering_extract_index,
+    index_is_complete,
     index_path_for,
 )
 from .pbf_registry import PbfEntry, PbfRegistry, _parse
@@ -348,7 +349,9 @@ def ensure_geocode_index(
     if entry.has_bbox:
         index = index_path_for(entry, index_dir)
         built = False
-        if not index.exists():
+        # `exists()` no alcanza: un build interrumpido dejaba un sqlite truncado
+        # en la ruta final y se usaba en silencio.
+        if not index_is_complete(index):
             if not autobuild:
                 raise FileNotFoundError(
                     f"falta el indice {index.name} y SMART_IMPORT_AUTOBUILD_INDEX "
@@ -394,7 +397,7 @@ def ensure_geocode_index(
     cut_entry = _parse(dest)
     index = index_path_for(cut_entry, index_dir)
     built = False
-    if not index.exists():
+    if not index_is_complete(index):
         if progress:
             progress("building_index", pbf=dest.name)
         build(dest, index)
