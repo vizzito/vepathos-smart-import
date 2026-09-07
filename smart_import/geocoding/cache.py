@@ -46,14 +46,43 @@ def make_key(address: str, context: str = "") -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+#: Segundos que un escritor espera al otro antes de fallar. El default de
+#: sqlite3 son 5 s: poco margen cuando el otro job esta escribiendo su fila.
+BUSY_TIMEOUT_S = 30.0
+
+
 class GeocodeCache:
+    """Cache compartida entre jobs concurrentes.
+
+    Dos decisiones que parecen detalles y son la diferencia entre que
+    SMART_IMPORT_GEOCODE_WORKERS=2 funcione o mate el segundo job:
+
+    * **WAL**: los lectores no se bloquean con el escritor.
+    * **autocommit** (`isolation_level=None`): cada escritura es su propia
+      transaccion, corta. Antes se acumulaba todo hasta un unico commit al
+      final del archivo, asi que la primera fila tomaba el lock de escritura y
+      no lo soltaba nunca: el segundo job esperaba el timeout y moria con
+      "database is locked". Agrupar en lotes tampoco alcanza — entre fila y
+      fila hay una consulta al indice OSM, y el lote retiene el lock todo ese
+      tiempo.
+    """
+
     def __init__(self, path: str | Path):
         self.path = Path(path).expanduser()
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        self._conn = sqlite3.connect(self.path)
+        self._conn = sqlite3.connect(
+            self.path, timeout=BUSY_TIMEOUT_S, isolation_level=None)
+        try:
+            self._conn.execute("PRAGMA journal_mode = WAL")
+        except sqlite3.DatabaseError:
+            # Algunos filesystems de red no soportan WAL. La cache es un
+            # acelerador: si no se puede, se sigue con el modo por defecto.
+            pass
+        # Con WAL, NORMAL no hace fsync por transaccion: el costo de escribir
+        # fila a fila queda en el orden de los microsegundos.
+        self._conn.execute("PRAGMA synchronous = NORMAL")
         self._conn.executescript(SCHEMA)
         self._migrate()
-        self._conn.commit()
         self.hits = 0
         self.misses = 0
         self.stale = 0
@@ -96,12 +125,14 @@ class GeocodeCache:
              result.lat, result.lon, result.status, result.confidence,
              result.precision, result.source, time.time(), GEOCODER_VERSION),
         )
-
     def commit(self) -> None:
-        self._conn.commit()
+        """No-op: en autocommit cada `put` ya quedo escrito.
+
+        Se conserva porque el runner lo llama al terminar el archivo, y porque
+        deja el contrato listo si algun dia la cache vuelve a agrupar.
+        """
 
     def close(self) -> None:
-        self._conn.commit()
         self._conn.close()
 
     def stats(self) -> dict:
