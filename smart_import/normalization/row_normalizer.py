@@ -8,6 +8,8 @@ from ..mapping.base import MappingResult
 from ..readers.base import Table
 from ..schemas import TargetSchema
 from . import phone as phone_mod
+from .address import apply_composed_address
+from .units import column_declares_pounds, pounds_to_kg
 from .values import coerce, is_blank
 
 STATUS_OK = "ok"
@@ -22,6 +24,11 @@ STATUS_IGNORED = "ignored"
 #: intento de entrega: un delivery_id suelto puede ser "Totales:" y una cantidad
 #: suelta puede ser la suma del pie.
 IDENTITY_FIELDS = ("address", "lat", "lng", "customer_name", "phone")
+
+#: Columnas que NO son del schema pero tienen que sobrevivir el round-trip.
+#: Sin esto, regenerar el nested despues de geocodificar tira `geocode_band` y
+#: la UI se queda sin con que colorear.
+PASSTHROUGH_PREFIX = "geocode_"
 
 
 @dataclass
@@ -88,12 +95,13 @@ class NormalizeOutcome:
 
 class RowNormalizer:
     def __init__(self, schema: TargetSchema, phone_region: str | None = None,
-                 derive_volume: bool = False):
+                 derive_volume: bool = False, timezone: str | None = None):
         self.schema = schema
         self.phone_region = phone_region
         # Derivar volumen AGREGA una columna que el cliente no mando. Por defecto
         # no se hace: el output tiene que reflejar lo que vino en el archivo.
         self.derive_volume = derive_volume
+        self.timezone = timezone
 
     def run(self, table: Table, mapping: MappingResult) -> NormalizeOutcome:
         by_target = mapping.by_target()                  # target -> columna origen
@@ -111,6 +119,12 @@ class RowNormalizer:
                 warn_seen.add(msg)
                 out.warnings.append(msg)
 
+        passthrough = [c for c in table.columns if c.startswith(PASSTHROUGH_PREFIX)]
+
+        weight_src = by_target.get("weight_kg")
+        convert_lb = bool(weight_src and column_declares_pounds(weight_src))
+        converted_lb_rows = 0
+
         for i, raw_row in enumerate(table.rows, start=1):
             values: dict[str, Any] = {}
             for target in targets:
@@ -118,17 +132,39 @@ class RowNormalizer:
                 raw = raw_row[idx] if idx is not None and idx < len(raw_row) else None
                 values[target] = coerce(raw, self.schema.fields[target].type)
 
+            # La decision de "fila vacia" mira SOLO los campos del schema: un
+            # `geocode_status` suelto no convierte una fila vacia en una entrega.
             if all(is_blank(v) for v in values.values()):
                 out.skipped_empty += 1
                 continue
 
+            if convert_lb and values.get("weight_kg") is not None:
+                values["weight_kg"] = pounds_to_kg(values["weight_kg"])
+                converted_lb_rows += 1
+
+            # Partes mapeadas (house_number/city/…) → address unica para UI + geocode.
+            apply_composed_address(values)
+
+            for column in passthrough:
+                idx = col_index.get(column)
+                raw = raw_row[idx] if idx is not None and idx < len(raw_row) else None
+                if not is_blank(raw):
+                    values[column] = str(raw).strip()
+
             row = NormalizedRow(index=i, values=values)
             self._validate_coordinates(row, warn)
             self._validate_time_window(row, warn)
+            self._apply_timezone(row)
             self._normalize_phone(row)
             self._derive_volume(row, derivable, warn)
             self._classify(row)
             out.rows.append(row)
+
+        if convert_lb and converted_lb_rows:
+            warn(
+                f"Columna '{weight_src}' interpretada como libras → convertida a "
+                f"weight_kg (×{0.45359237:g}) en {converted_lb_rows} fila(s)."
+            )
 
         for name in derivable:
             if any(name in r.values for r in out.rows):
@@ -181,7 +217,27 @@ class RowNormalizer:
             row.flag("tw_start", f"ventana horaria invertida ({start} > {end}): "
                                  "se descarto la ventana", severity="warning")
             row.values["tw_start"] = row.values["tw_end"] = None
+            row.values.pop("tw_timezone", None)
             warn("Hay filas con ventana horaria invertida; se descartaron esas ventanas.")
+
+    def _apply_timezone(self, row: NormalizedRow) -> None:
+        """Si hay TZ de settings/depot, las horas naive se emiten en UTC.
+
+        No inventa timezone si la ventana no cerro (start+end).
+        """
+        if not self.timezone:
+            return
+        start, end = row.values.get("tw_start"), row.values.get("tw_end")
+        if not start or not end:
+            return
+        from ..extraction.tz import UTC_NAME, convert_naive_stamp
+        converted_start = convert_naive_stamp(str(start), self.timezone)
+        converted_end = convert_naive_stamp(str(end), self.timezone)
+        if converted_start is None or converted_end is None:
+            return
+        row.values["tw_start"] = converted_start
+        row.values["tw_end"] = converted_end
+        row.values["tw_timezone"] = UTC_NAME
 
     def _normalize_phone(self, row: NormalizedRow) -> None:
         if "phone" not in row.values:

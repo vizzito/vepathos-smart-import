@@ -7,7 +7,7 @@ __all__ = ["ColumnMapping", "MappingResult", "SchemaMapper", "RuleSchemaMapper",
 def build_mapper(config=None):
     """El mapeo de columnas es 100% deterministico.
 
-    Se probo delegarlo a NuExtract-1.5-tiny y el modelo devuelve el schema del
+    Se probo delegarlo a un modelo de extraccion y devolvia el schema del
     prompt en lugar de razonar sobre el: mapear headers es una tarea de
     instruccion, no de extraccion. Las reglas resuelven 15 de 16 fixtures.
     El modelo se usa en `smart_import.extraction`, que es su trabajo real.

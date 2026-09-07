@@ -32,7 +32,7 @@ def capabilities(monkeypatch):
 
 @pytest.fixture
 def client(capabilities):
-    capabilities(geocoding_enabled=True, pbf_dir="/tmp/pbf", ai_enabled=True)
+    capabilities(geocoding_enabled=True, pbf_dir="/tmp/pbf")
     return TestClient(app)
 
 
@@ -45,14 +45,17 @@ def test_health_expone_las_capacidades(client):
     body = client.get("/health").json()
     assert body["status"] == "ok"
     assert body["geocoding"]["automatic"] is False      # el contrato del producto
-    assert body["ai"]["degrades_to_rules"] is True
+    assert body["geocoding"]["autoextract"] is True
+    assert body["geocoding"]["autobuild_index"] is True
+    assert body["capabilities"]["rules"] is True
+    assert body["extraction"]["engine"] == "rules"
     assert body["capabilities"]["normalize"] is True    # el nucleo nunca se apaga
     assert "vepathos_flat_v1" in body["schemas"]
 
 
 def test_config_expone_la_configuracion_efectiva(client):
     body = client.get("/config").json()["config"]
-    assert "geocoding_enabled" in body and "ai_enabled" in body
+    assert "geocoding_enabled" in body and "address_parser" in body
     assert body["max_file_mb"] > 0
 
 
@@ -75,11 +78,18 @@ def test_import_nunca_geocodifica_solo(client):
     assert "geocode" in actions
 
 
-def test_ofrece_extraer_solo_si_hay_columna_compuesta(client):
+def test_columna_compuesta_se_separa_sola_sin_modelo(client):
+    """La columna compuesta la separan las reglas durante el normalize."""
     compuesto = _upload(client, "merged_field.csv").json()
-    limpio = _upload(client, "ref_us_seattle.xlsx").json()
-    assert "extract" in {a["action"] for a in compuesto["next_actions"]}
-    assert "extract" not in {a["action"] for a in limpio["next_actions"]}
+    report = compuesto["report"]
+
+    assert report["ai_calls"] == 0
+    columnas = set(report["output_columns"])
+    assert {"address", "customer_name", "phone"} <= columnas
+    # ya no queda ninguna columna marcada como "mezcla varios campos"
+    assert not any("varios campos" in (m.get("evidence") or "")
+                   for m in report["mapping"].values())
+    assert "extract" not in {a["action"] for a in compuesto["next_actions"]}
 
 
 def test_rechaza_extensiones_no_soportadas(client):
@@ -146,7 +156,7 @@ def test_borrar_un_job(client):
 # ---------- capacidades apagadas: el despliegue minimo tambien tiene que servir ----------
 
 def test_sin_geocoding_no_se_ofrece_la_accion(capabilities):
-    capabilities(geocoding_enabled=False, ai_enabled=False)
+    capabilities(geocoding_enabled=False)
     c = TestClient(app)
     body = _upload(c, "es_sin_coords.csv").json()
 
@@ -164,25 +174,25 @@ def test_sin_geocoding_el_endpoint_explica_por_que(capabilities):
     assert "SMART_IMPORT_GEOCODING_ENABLED" in r.json()["detail"]
 
 
-def test_sin_ia_no_se_ofrece_extraer(capabilities):
-    capabilities(ai_enabled=False, geocoding_enabled=False)
+def test_ya_no_existe_el_endpoint_de_extraccion_con_modelo(capabilities):
+    """El modelo se elimino: la columna compuesta la separan las reglas en normalize."""
+    capabilities(geocoding_enabled=False)
     c = TestClient(app)
     body = _upload(c, "merged_field.csv").json()
     assert "extract" not in {a["action"] for a in body["next_actions"]}
-
-    r = c.post(f"/imports/{body['job_id']}/extract")
-    assert r.status_code == 503
-    assert "SMART_IMPORT_AI_ENABLED" in r.json()["detail"]
+    assert "extract" not in body["urls"]
+    assert c.post(f"/imports/{body['job_id']}/extract").status_code == 404
 
 
 def test_normalizar_funciona_con_todo_apagado(capabilities):
     """El despliegue minimo (sin PBF ni modelo) tiene que seguir sirviendo."""
-    capabilities(geocoding_enabled=False, ai_enabled=False, pbf_dir="")
+    capabilities(geocoding_enabled=False, pbf_dir="")
     c = TestClient(app)
     body = _upload(c, "es_headers_raros.xlsx").json()
     assert body["report"]["deliveries"] == 40
-    assert c.get("/health").json()["capabilities"] == {
-        "normalize": True, "geocoding": False, "extract": False}
+    caps = c.get("/health").json()["capabilities"]
+    assert caps == {"normalize": True, "geocoding": False,
+                    "rules": True, "phonenumbers": True, "libpostal": False}
 
 
 def test_job_expone_progress_y_urls_para_la_web(client):
@@ -294,3 +304,27 @@ def test_el_nested_refleja_las_coordenadas_del_geocoding(client, tmp_path, monke
         assert coords["B"] == (-34.6023972, -58.3753277)   # la geocodificada aparece
     finally:
         store.delete(job.id)
+
+
+def test_el_polling_se_espacia_a_medida_que_el_job_tarda(client):
+    """500 ms fijos en un geocode de varios minutos son cientos de requests inutiles."""
+    import time as _time
+
+    from smart_import.api.jobs import GEOCODING, Job
+
+    job = Job(id="imp_poll", filename="x.csv")
+    store._jobs[job.id] = job
+    try:
+        job.touch(GEOCODING)
+        assert job.poll_after_ms() == 500                 # recien arranca
+
+        job.updated_at = _time.time() - 30
+        assert job.poll_after_ms() == 2_000                # ya lleva medio minuto
+
+        job.updated_at = _time.time() - 120
+        assert job.poll_after_ms() == 3_000                # tope
+
+        job.touch("completed")
+        assert job.poll_after_ms() is None                 # terminado: no pollear
+    finally:
+        store._jobs.pop(job.id, None)

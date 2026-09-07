@@ -80,6 +80,12 @@ def run_normalize(
     diagnostics: bool = False,
     sheet: str | None = None,
     derive_volume: bool = False,
+    service_date=None,
+    timezone: str | None = None,
+    depot_city: str | None = None,
+    depot_region: str | None = None,
+    depot_country: str | None = None,
+    expand_composite: bool = True,
 ) -> ImportResult:
     cfg = config or Config.from_env()
     schema = TargetSchema.load(schema_path)
@@ -93,20 +99,31 @@ def run_normalize(
                          f"(SMART_IMPORT_MAX_FILE_MB)")
 
     stage(logger, "READ", "abriendo", archivo=src.name, tamano=f"{size_mb:.2f}MB")
-    table = read_any(src, max_rows=cfg.max_rows, sheet=sheet)
+    table = read_any(src, max_rows=cfg.max_rows, sheet=sheet, config=cfg)
     timer.mark("read")
     meta = table.meta
     stage(logger, "READ", "", formato=meta.format, encoding=meta.encoding,
+          modo=meta.text_mode,
           delimiter=repr(meta.delimiter) if meta.delimiter else None,
           hoja=meta.sheet, header_row=meta.header_row,
           filas=len(table), columnas=len(table.columns), t=f"{timer.marks['read']}s")
     for note in meta.notes:
         detail(logger, note)
 
-    stage(logger, "DETECT", "resolviendo columnas contra", schema=schema.name)
-    mapper = build_mapper(cfg)
-    mapping = mapper.detect(table, schema)
-    timer.mark("detect")
+    extraction = None
+    if meta.is_free_text:
+        # El archivo entero es texto libre: segmentar -> clasificar -> extraer.
+        # No hay columnas que mapear, asi que el mapper no corre.
+        table, mapping, extraction = _extract_free_text(
+            table, schema, cfg, phone_region, service_date, timezone,
+            depot_city=depot_city, depot_region=depot_region,
+            depot_country=depot_country)
+        timer.mark("detect")
+    else:
+        stage(logger, "DETECT", "resolviendo columnas contra", schema=schema.name)
+        mapper = build_mapper(cfg)
+        mapping = mapper.detect(table, schema)
+        timer.mark("detect")
     for column, m in sorted(mapping.mapping.items(), key=lambda kv: -kv[1].confidence):
         flag = "" if m.confidence >= cfg.auto_accept_threshold else "   <-- REVISAR"
         detail(logger, f"{column:<24} -> {m.target:<18} {m.confidence:.2f} {m.method}{flag}")
@@ -123,10 +140,18 @@ def run_normalize(
               columnas=len(manual_mapping))
         mapping = apply_manual_mapping(mapping, manual_mapping)
 
+    if expand_composite and extraction is None and not meta.is_free_text:
+        # Una columna que mezcla nombre/direccion/telefono se separa con reglas.
+        # Solo esa columna: el resto del archivo sigue el camino rapido.
+        # Tras geocode el CSV YA es Vepathos enriquecido: expand_composite=False.
+        table, mapping = _expand_composite_column(
+            table, mapping, schema, cfg, phone_region, service_date, timezone)
+
     stage(logger, "NORMALIZE", "aplicando el mapping a todas las filas",
           filas=len(table), region_telefono=phone_region)
     outcome = RowNormalizer(schema, phone_region=phone_region,
-                            derive_volume=derive_volume).run(table, mapping)
+                            derive_volume=derive_volume,
+                            timezone=timezone).run(table, mapping)
     timer.mark("normalize")
     counts_ = outcome.counts()
     stage(logger, "NORMALIZE", "",
@@ -143,7 +168,8 @@ def run_normalize(
                        f"{issue.issues[0]}")
 
     stage(logger, "ASSEMBLE", f"agrupando filas por {schema.group_by}")
-    deliveries, group_warnings = assemble(outcome.rows, schema)
+    deliveries, group_warnings = assemble(
+        outcome.rows, schema, weight_is_total=bool(meta.is_free_text))
     outcome.warnings.extend(group_warnings)
     timer.mark("assemble")
     sin_bultos = sum(1 for d in deliveries if not d["packages"])
@@ -162,6 +188,7 @@ def run_normalize(
             "columns": table.columns, "notes": table.meta.notes,
         },
         "schema": schema.name,
+        "text_mode": table.meta.text_mode,
         "rows_input": len(table), "rows_output": len(outcome.rows),
         "skipped_empty_rows": outcome.skipped_empty,
         "deliveries": len(deliveries),
@@ -186,6 +213,10 @@ def run_normalize(
         ][:200],
     }
     report["processing_times"] = timer.as_dict(time.perf_counter() - t_start)
+    report["extraction"] = (extraction.as_dict() if extraction is not None
+                            else {"deliveries": len(deliveries), "ignored": 0,
+                                  "ai_calls": 0, "mode": "tabular"})
+    report["ai_calls"] = report["extraction"].get("ai_calls", 0)
 
     result = ImportResult(table=table, mapping=mapping, outcome=outcome,
                           deliveries=deliveries, report=report)
@@ -215,3 +246,102 @@ def run_normalize(
           total=f"{report['processing_times']['total']}s",
           revisar="si" if report["needs_review"] else "no")
     return result
+
+
+# --------------------------------------------------------------- texto libre
+
+def _extract_free_text(table, schema, cfg, phone_region, service_date,
+                       timezone=None, depot_city=None, depot_region=None,
+                       depot_country=None):
+    """Documento completo -> filas del schema. Sin modelo, sin llamadas de IA."""
+    from .extraction.context import ExtractionContext
+    from .extraction.free_text import FreeTextExtractor, records_to_table
+    from .normalization.address import infer_locality_tokens, iso_from_country_label
+
+    document = table.rows[0][0] if table.rows else ""
+    depot_iso = iso_from_country_label(depot_country)
+    doc_iso = next(
+        (iso_from_country_label(t) for t in infer_locality_tokens(document)
+         if iso_from_country_label(t)),
+        None,
+    )
+    # Depot o ciudad del texto ganan sobre un phone_region default (AR en Miami).
+    inferred_iso = depot_iso or doc_iso
+    if inferred_iso and (not phone_region or phone_region.upper() != inferred_iso):
+        phone_region = inferred_iso
+    context = ExtractionContext.from_config(
+        cfg, phone_region=phone_region,
+        city=depot_city, state=depot_region, country=depot_country,
+        country_code=inferred_iso,
+    )
+    from .addresses import describe_parsers
+    parsers = describe_parsers(cfg)
+    stage(logger, "EXTRACT", "texto libre: segmentando y extrayendo con reglas",
+          caracteres=len(document), region=context.phone_region or None,
+          address_parser=parsers["active"],
+          libpostal="on" if parsers.get("libpostal_as_enhancer") else "off")
+
+    extractor = FreeTextExtractor(cfg, context, service_date=service_date,
+                                  timezone=timezone)
+    result = extractor.run_document(document)
+    new_table, mapping = records_to_table(result.records, schema, table.meta)
+
+    counts = result.counts()
+    stage(logger, "EXTRACT", "", segmentos=result.segments,
+          entregas=len(result.records), ignorados=len(result.ignored),
+          a_revisar=counts.get("needs_review", 0), llamadas_ia=result.ai_calls,
+          t=f"{result.elapsed_s:.3f}s")
+    # Resumen del enhancer: una linea, no una por direccion.
+    stats = getattr(extractor.fields.address_parser, "stats", None)
+    if callable(stats):
+        s = stats()
+        calls = s.get("enhancer_calls", 0)
+        skips = s.get("enhancer_skips", 0)
+        if calls == 0:
+            stage(logger, "ADDRESS", "libpostal no hizo falta",
+                  skip=skips)
+        else:
+            stage(logger, "ADDRESS", "resumen libpostal",
+                  skip=f"{skips} ({s.get('skip_pct', 0):.0f}%)",
+                  called=calls,
+                  helped=s.get("helped", 0),
+                  noop=s.get("noop", 0),
+                  reasons=",".join(
+                      f"{k}:{v}" for k, v in (s.get("by_reason") or {}).items()) or None)
+            for example in (s.get("helped_examples") or [])[:3]:
+                detail(logger, f"libpostal helped: {example}")
+    for item in result.ignored[:5]:
+        detail(logger, f"ignorado: {item['text'][:60]!r} -> "
+                       f"{(item['reasons'] or ['sin evidencia'])[0]}")
+    return new_table, mapping, result
+
+
+def _expand_composite_column(table, mapping, schema, cfg, phone_region,
+                             service_date, timezone=None):
+    """Si el mapper marco una columna como 'mezcla varios campos', separarla."""
+    from .extraction.context import ExtractionContext
+    from .extraction.free_text import FreeTextExtractor, expand_free_text_column
+
+    column = next(
+        (
+            col for col, m in mapping.mapping.items()
+            if "varios campos" in (m.evidence or "")
+            and m.target == "address"          # nunca expandir phone/name ya mapeados
+        ),
+        None,
+    )
+    if column is None:
+        return table, mapping
+
+    stage(logger, "EXTRACT", "columna con varios campos: separando con reglas",
+          columna=column, filas=len(table))
+    context = ExtractionContext.from_config(cfg, phone_region=phone_region)
+    extractor = FreeTextExtractor(cfg, context, service_date=service_date,
+                                  timezone=timezone)
+    expanded = expand_free_text_column(table, column, extractor, schema)
+
+    mapper = build_mapper(cfg)
+    new_mapping = mapper.detect(expanded, schema)
+    stage(logger, "EXTRACT", "", campos_nuevos=len(expanded.columns) - len(table.columns) + 1,
+          t=f"{extractor.fields.stats.elapsed_s:.3f}s")
+    return expanded, new_mapping

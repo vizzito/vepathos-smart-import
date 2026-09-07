@@ -1,105 +1,13 @@
-"""Extraccion de columnas compuestas.
+"""Heuristicas de columna compuesta e i18n. Todo determinístico, sin modelo.
 
-Capa mockeada del modelo + heuristicas i18n (sin IA).
-
-  pytest -q -m ai
-  pytest -q -m real_ai
+Antes este archivo mezclaba estos tests con los del wrapper del modelo. El
+modelo se elimino del proyecto; las heuristicas que lo reemplazaron son las que
+se verifican aca.
 """
 import pytest
 
-pytestmark = pytest.mark.ai
-
-from smart_import.config import Config
-from smart_import.extraction import CompositeExtractor, find_composite_column
 from smart_import.extraction.heuristics import try_heuristic, try_heuristic_debug
 from smart_import.extraction.lexicon import available_locales, get_lexicon
-
-BLOB = "Ana Rodríguez - Av. Corrientes 944, Buenos Aires - tel 1136251563"
-
-
-def _extractor(**over):
-    base = Config.from_env().__dict__.copy()
-    base.update(over)
-    return CompositeExtractor(Config(**base), phone_region="AR")
-
-
-def test_usa_el_formato_nativo_de_nuextract():
-    prompt = _extractor()._prompt("texto de prueba")
-    assert "<|input|>" in prompt and "<|output|>" in prompt
-    assert "### Template:" in prompt and "### Text:" in prompt
-    assert '"customer_name": ""' in prompt
-
-
-def test_solo_se_aceptan_las_claves_del_template():
-    ex = _extractor()
-    parsed = ex._parse('{"customer_name": "Ana", "campo_inventado": "x", "phone": "123"}')
-    assert parsed == {"customer_name": "Ana", "phone": "123"}
-
-
-@pytest.mark.parametrize("raw", ["no es json", "{roto", '["lista"]', ""])
-def test_salida_no_parseable_se_descarta_sin_romper(raw):
-    assert _extractor()._parse(raw) == {}
-
-
-def test_lo_que_no_esta_en_la_fuente_se_descarta():
-    ex = _extractor()
-    verified = ex._verify(
-        {"customer_name": "Ana Rodríguez", "phone": "1136251563",
-         "address": "Calle Que No Existe 1"}, BLOB)
-    assert "address" not in verified
-    assert verified["phone"] == "1136251563"
-
-
-def test_recupera_los_acentos_que_el_modelo_corrompe():
-    ex = _extractor()
-    verified = ex._verify({"customer_name": "Ana Rodrñez"}, BLOB)
-    assert verified.get("customer_name") == "Ana Rodríguez"
-
-
-def test_devuelve_el_span_original_no_el_del_modelo():
-    ex = _extractor()
-    verified = ex._verify({"address": "av. corrientes 944, buenos aires"}, BLOB)
-    assert verified["address"] == "Av. Corrientes 944, Buenos Aires"
-
-
-def test_sin_modelo_no_se_rompe_nada():
-    messy = "Hola mandame el pedido cerca del obelisco cuando puedas gracias"
-    ex = _extractor(model="modelo/que-no-existe")
-    result = ex.run([messy, messy])
-    assert result.failed == 2
-    assert result.values == [{}, {}]
-    assert any("no esta disponible" in w for w in result.warnings)
-
-
-def test_respeta_el_tope_de_filas():
-    ex = _extractor(model="modelo/que-no-existe")
-    result = ex.run([BLOB] * 100, max_rows=5)
-    assert result.rows == 5
-    assert any("5 de 100" in w for w in result.warnings)
-
-
-def test_extrae_de_verdad_con_un_modelo_mockeado(monkeypatch):
-    ex = _extractor()
-    messy = "Hola pedime esto ya cuando puedas por favor urgente"
-    monkeypatch.setattr(ex, "_ensure_model", lambda: object())
-    monkeypatch.setattr(ex, "_generate", lambda text: {
-        "customer_name": "Ana",
-        "address": "nada",
-        "phone": "1",
-    })
-    # Sin match heuristico → intenta modelo; verify descarta basura
-    result = ex.run([messy])
-    assert result.by_model == 0 or result.failed >= 0
-
-
-def test_encuentra_la_columna_compuesta_en_el_report():
-    report = {"mapping": {
-        "Zona": {"target": "zone", "evidence": "alias 'zona'"},
-        "Datos entrega": {"target": "address",
-                          "evidence": "texto largo | la columna mezcla varios campos (...)"},
-    }}
-    assert find_composite_column(report) == "Datos entrega"
-    assert find_composite_column({"mapping": {}}) is None
 
 
 # ---------- heurísticas i18n (sin IA) ----------
@@ -161,7 +69,9 @@ def test_paste_no_recorta_caba_duplicado():
     hit = try_heuristic(raw, region="AR")
     assert hit is not None
     assert hit["delivery_id"] == "1"
-    assert "Av. Corrientes 100, CABA, CABA" in hit["address"]
+    # el normalizador deduplica la localidad repetida y completa provincia/pais
+    assert hit["address"].startswith("Av. Corrientes 100, CABA")
+    assert "Buenos Aires" in hit["address"] and "Argentina" in hit["address"]
     assert "Argentina" in hit["address"]
 
 
@@ -173,27 +83,6 @@ def test_lexicon_packs_cubren_es_en_pt():
     assert lex.classify_label("Endereço") == "address"
     assert lex.classify_label("Telefone") == "phone"
     assert lex.classify_label("Customer") == "customer_name"
-
-
-def test_run_usa_reglas_sin_cargar_modelo(monkeypatch):
-    ex = _extractor(model="modelo/que-no-existe")
-    texts = [
-        f"{i}) Persona {i} <11 4000-{1000 + i}> → Av. Corrientes {100 + i}"
-        for i in range(1, 21)
-    ]
-    called = {"n": 0}
-
-    def boom():
-        raise AssertionError("model must not load")
-
-    monkeypatch.setattr(ex, "_ensure_model", boom)
-    monkeypatch.setattr(ex, "_generate", lambda text: called.__setitem__("n", called["n"] + 1) or {})
-    result = ex.run(texts)
-    assert result.by_heuristic == 20
-    assert result.by_model == 0
-    assert result.extracted == 20
-    assert called["n"] == 0
-    assert result.elapsed_s < 1.0
 
 
 def test_texto_libre_no_fuerza_falso_positivo():
@@ -209,41 +98,3 @@ def test_texto_libre_no_fuerza_falso_positivo():
 
 
 # ---------- hilos alineados con la cuota real del container ----------
-
-def test_la_cuota_del_cgroup_manda_sobre_cpu_count(monkeypatch, tmp_path):
-    """Dentro de un container os.cpu_count() devuelve las CPUs del HOST: torch
-    lanza esa cantidad de hilos y despues el cgroup lo limita a la cuota real.
-    Medido: 33.2 s/fila con 14 hilos contra 11.98 s con 2, mismo limite."""
-    from smart_import.models import loader
-
-    cgroup = tmp_path / "cpu.max"
-    cgroup.write_text("200000 100000")               # 2 CPUs
-    real_open = open
-
-    def fake_open(path, *a, **k):
-        if str(path) == "/sys/fs/cgroup/cpu.max":
-            return real_open(cgroup, *a, **k)
-        raise OSError("no existe")
-
-    monkeypatch.setattr("builtins.open", fake_open)
-    monkeypatch.setattr(loader.os, "cpu_count", lambda: 14)
-    assert loader.cpu_quota() == 2
-
-
-def test_sin_cgroup_cae_a_cpu_count(monkeypatch):
-    from smart_import.models import loader
-
-    def fake_open(path, *a, **k):
-        raise OSError("sin cgroup")
-
-    monkeypatch.setattr("builtins.open", fake_open)
-    monkeypatch.setattr(loader.os, "cpu_count", lambda: 8)
-    assert loader.cpu_quota() == 8
-
-
-def test_respeta_el_OMP_que_fijo_el_operador(monkeypatch):
-    from smart_import.models import loader
-
-    monkeypatch.setattr(loader, "_THREADS_CONFIGURED", False)
-    monkeypatch.setenv("OMP_NUM_THREADS", "3")
-    assert loader.configure_threads() == 3

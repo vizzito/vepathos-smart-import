@@ -86,11 +86,15 @@ def normalize(
     emit: str = typer.Option("flat", help="flat, nested o 'flat,nested'."),
     mapping: Path = typer.Option(None, help="JSON {columna: campo} con el mapping confirmado."),
     phone_region: str = typer.Option(None, help="Region ISO para telefonos (AR, US, IN...)."),
+    timezone: str = typer.Option(
+        None, help="IANA TZ (ej. America/Argentina/Buenos_Aires). Ventanas → UTC.",
+    ),
     diagnostics: bool = typer.Option(False, help="Agrega columnas row_status/row_issues."),
     derive_volume: bool = typer.Option(False, help="Calcular volume_cm3 desde LxWxH si falta."),
     sheet: str = typer.Option(None),
 ) -> None:
     """Convierte el archivo al formato Vepathos. NUNCA geocodifica."""
+    from .extraction.tz import resolve_timezone
     from .pipeline import run_normalize
 
     overrides = json.loads(Path(mapping).read_text(encoding="utf-8")) if mapping else None
@@ -99,6 +103,7 @@ def normalize(
         emit=tuple(e.strip() for e in emit.split(",") if e.strip()),
         manual_mapping=overrides, phone_region=phone_region,
         diagnostics=diagnostics, sheet=sheet, derive_volume=derive_volume,
+        timezone=resolve_timezone(timezone),
     )
     r = result.report
     typer.echo(f"  {r['rows_input']} filas leidas -> {r['deliveries']} entregas, {r['packages']} bultos")
@@ -161,10 +166,35 @@ def benchmark(
         files.append(path)
 
     cfg = Config.from_env()
-    typer.echo(f"  AI={'on' if cfg.ai_enabled else 'off'} device={cfg.device}\n")
+    typer.echo(f"  parser de direcciones: {cfg.address_parser}\n")
     results = run(files, schema, repeats=repeats, out_dir=out, config=cfg)
     typer.echo(format_table(results))
     typer.echo(f"\n  resultados en {out}/results.csv y {out}/results.json")
+
+
+@app.command("benchmark-extraction")
+def benchmark_extraction(
+    corpus: Path = typer.Option("examples/free-text", "--corpus",
+                                help="Directorio con los .txt de texto libre."),
+    parsers: str = typer.Option("heuristic", "--parsers",
+                                help="heuristic,libpostal,enhanced,hybrid (los que falten se saltan)."),
+    repeats: int = typer.Option(3, help="Corridas por documento (se promedia)."),
+    region: str = typer.Option("AR", "--region", help="Region ISO para telefonos."),
+    out: Path = typer.Option("benchmarks", "--out"),
+) -> None:
+    """Compara estrategias de parser de direcciones: costo y accuracy.
+
+    Todo el pipeline es determinístico, asi que `ai_calls` es siempre 0.
+    """
+    from .benchmark_extraction import format_table, run
+
+    cfg = Config.from_env()
+    names = tuple(p.strip() for p in parsers.split(",") if p.strip())
+    typer.echo(f"  corpus: {corpus} | parsers: {', '.join(names)} | region: {region}")
+    results = run(corpus=corpus, parsers=names, repeats=repeats, region=region,
+                  out_dir=out, config=cfg)
+    typer.echo(format_table(results))
+    typer.echo(f"\n  resultados en {out}/extraction.json")
 
 
 @app.command("build-geocoder-index")
@@ -182,8 +212,8 @@ def build_geocoder_index(
     Se hace UNA vez por region y queda cacheado: geocodificar despues no vuelve
     a tocar el PBF.
     """
-    from .geocoding.osm_index import build, index_path_for
-    from .geocoding.pbf_registry import PbfRegistry
+    from .geocoding.extract import ExtractError, ensure_geocode_index_from_config
+    from .geocoding.osm_index import build
 
     cfg = Config.from_env()
     target_index_dir = index_dir or Path(cfg.index_dir)
@@ -192,15 +222,27 @@ def build_geocoder_index(
         root = pbf_dir or cfg.pbf_dir
         if not root:
             raise typer.BadParameter("indica --pbf, o --pbf-dir/SMART_IMPORT_PBF_DIR con --origin-lat/--origin-lon")
-        registry = PbfRegistry.scan(root)
-        entry = registry.resolve(lat=origin_lat, lon=origin_lon)
-        if entry is None:
-            typer.echo(f"  sin cobertura PBF para ({origin_lat}, {origin_lon}) en {root}")
-            typer.echo(f"  {len(registry.entries)} PBF disponibles")
+        try:
+            ready = ensure_geocode_index_from_config(
+                cfg, lat=origin_lat, lon=origin_lon,
+                pbf_dir=root, index_dir=target_index_dir,
+            )
+        except (FileNotFoundError, ExtractError) as exc:
+            typer.echo(f"  {exc}", err=True)
             raise typer.Exit(code=1)
-        pbf = entry.path
-        output = output or index_path_for(entry, target_index_dir)
-        typer.echo(f"  PBF elegido: {pbf.name} (zona {entry.zone}, {entry.size_bytes / 1e6:.1f} MB)")
+        pbf = ready.entry.path
+        output = output or ready.path
+        extra = " (extract generado)" if ready.cut_extract else ""
+        typer.echo(
+            f"  PBF elegido: {pbf.name} (zona {ready.entry.zone}, "
+            f"{ready.entry.size_bytes / 1e6:.1f} MB){extra}"
+        )
+        if ready.path.exists():
+            if ready.built_index:
+                typer.echo(f"  indice: {ready.path}")
+            else:
+                typer.echo(f"  el indice ya existe: {ready.path}")
+            raise typer.Exit(code=0)
 
     if output is None:
         raise typer.BadParameter("falta --output")
@@ -223,13 +265,13 @@ def list_pbf(
     lon: float = typer.Option(None),
 ) -> None:
     """Lista los .osm.pbf disponibles y cual cubre un punto dado."""
-    from .geocoding.pbf_registry import PbfRegistry
+    from .geocoding.extract import scan_registry
 
     cfg = Config.from_env()
     root = pbf_dir or cfg.pbf_dir
     if not root:
         raise typer.BadParameter("indica --pbf-dir o SMART_IMPORT_PBF_DIR")
-    registry = PbfRegistry.scan(root)
+    registry = scan_registry(root, cfg.extract_dir)
     typer.echo(f"  {len(registry.entries)} PBF en {root} "
                f"({len(registry.with_bbox())} con bbox en el nombre)", err=True)
     if lat is not None and lon is not None:
@@ -251,14 +293,26 @@ def geocode(
     index: Path = typer.Option(None, "--index", help="Indice .sqlite a usar."),
     origin_lat: float = typer.Option(None, "--origin-lat", help="Depot: sesga y desempata."),
     origin_lon: float = typer.Option(None, "--origin-lon"),
+    depot_city: str = typer.Option(None, "--depot-city", help="Ciudad del depot (enrichment)."),
+    depot_region: str = typer.Option(None, "--depot-region"),
+    depot_postcode: str = typer.Option(None, "--depot-postcode"),
+    depot_country: str = typer.Option(None, "--depot-country"),
+    depot_address: str = typer.Option(None, "--depot-address",
+                                      help="Direccion libre del depot."),
+    max_distance_km: float = typer.Option(
+        None, "--max-distance-km",
+        help="Geofence duro en km (default GEOCODE_MAX_DISTANCE_KM)."),
     bbox: str = typer.Option(None, help="north,south,east,west para acotar la busqueda."),
     pbf_dir: Path = typer.Option(None, "--pbf-dir"),
     index_dir: Path = typer.Option(None, "--index-dir"),
     build_missing: bool = typer.Option(True, help="Construir el indice si no existe."),
+    enhance_addresses: bool = typer.Option(
+        False, "--enhance-addresses",
+        help="Reescribe la query con parser/enhance; no muta el address del CSV."),
 ) -> None:
     """Completa coordenadas de las filas que tienen direccion y no tienen lat/lng."""
-    from .geocoding.osm_index import build, index_path_for
-    from .geocoding.pbf_registry import PbfRegistry
+    from .geocoding.depot_context import depot_from_params
+    from .geocoding.extract import ExtractError, ensure_geocode_index_from_config
     from .geocoding.runner import run
 
     cfg = Config.from_env()
@@ -267,32 +321,51 @@ def geocode(
     if box and len(box) != 4:
         raise typer.BadParameter("--bbox espera north,south,east,west")
 
+    depot = depot_from_params(
+        origin_lat=origin_lat,
+        origin_lon=origin_lon,
+        depot_city=depot_city,
+        depot_region=depot_region,
+        depot_postcode=depot_postcode,
+        depot_country=depot_country,
+        depot_address=depot_address,
+        max_distance_km=(
+            float(max_distance_km)
+            if max_distance_km is not None
+            else float(cfg.max_geocode_distance_km)
+        ),
+    )
+
     if index is None:
         root = pbf_dir or cfg.pbf_dir
         if not root:
             raise typer.BadParameter("indica --index, o --pbf-dir/SMART_IMPORT_PBF_DIR con --origin-lat/--origin-lon")
-        registry = PbfRegistry.scan(root)
-        entry = registry.resolve(lat=origin_lat, lon=origin_lon, bbox=box)
-        if entry is None:
-            typer.echo(f"  sin cobertura PBF para el area pedida en {root}")
+        try:
+            ready = ensure_geocode_index_from_config(
+                cfg.replace(autobuild_index=build_missing),
+                lat=origin_lat, lon=origin_lon, bbox=box,
+                pbf_dir=root, index_dir=index_dir or cfg.index_dir,
+            )
+        except (FileNotFoundError, ExtractError) as exc:
+            typer.echo(f"  {exc}", err=True)
             raise typer.Exit(code=1)
-        index = index_path_for(entry, index_dir or cfg.index_dir)
-        if not index.exists():
-            if not build_missing:
-                typer.echo(f"  falta el indice {index}")
-                raise typer.Exit(code=1)
-            typer.echo(f"  construyendo indice desde {entry.path.name} (una sola vez) ...")
-            build(entry.path, index)
+        index = ready.path
+        typer.echo(f"  indice: {index.name}"
+                   f"{' (extract generado)' if ready.cut_extract else ''}")
 
     def progress(done, rep):
         typer.echo(f"    {done} filas... ({rep.matched} matched, {rep.low_confidence} low, "
-                   f"{rep.not_found} not found)")
+                   f"{rep.not_found} not found, {rep.rejected_far} far)")
 
-    report = run(input, output, index, origin=origin, bbox=box, config=cfg, progress=progress)
+    report = run(input, output, index, origin=origin, bbox=box, config=cfg,
+                 progress=progress, depot=depot,
+                 enhance_addresses=bool(enhance_addresses))
     d = report.as_dict()
     typer.echo(f"  {d['rows']} filas | {d['already_geocoded']} ya tenian coordenadas")
     typer.echo(f"  {d['matched']} geocodificadas | {d['low_confidence']} confianza baja | "
                f"{d['not_found']} no encontradas | {d['errors']} errores")
+    if d.get("rejected_far") or d.get("enriched"):
+        typer.echo(f"  enrichment: {d.get('enriched', 0)} | fuera de radio: {d.get('rejected_far', 0)}")
     typer.echo(f"  cache: {d['cache']['hits']} hits / {d['cache']['misses']} misses "
                f"({d['cache']['hit_rate']:.0%})")
     typer.echo(f"  {d['elapsed_s']}s ({d['rows_per_s']} filas/s)")
@@ -301,6 +374,159 @@ def geocode(
     report_path = Path(str(output).rsplit(".", 1)[0] + ".geocode.report.json")
     report_path.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     typer.echo(f"  report: {report_path}")
+
+
+@app.command("geocode-accuracy")
+def geocode_accuracy(
+    truth: Path = typer.Option(..., "--truth", exists=True,
+                               help="CSV/JSON/XLSX con direcciones Y coordenadas verificadas."),
+    index: Path = typer.Option(None, "--index", help="Indice .sqlite. Por defecto se elige por bbox."),
+    origin_lat: float = typer.Option(None, "--origin-lat", help="Depot: sesga y desempata."),
+    origin_lon: float = typer.Option(None, "--origin-lon"),
+    depot_city: str = typer.Option(
+        None, "--depot-city",
+        help="Geolocalizador de la UI (Near CABA). Misma query que POST /geocode."),
+    depot_region: str = typer.Option(None, "--depot-region"),
+    depot_postcode: str = typer.Option(None, "--depot-postcode"),
+    depot_country: str = typer.Option(None, "--depot-country"),
+    depot_address: str = typer.Option(
+        None, "--depot-address",
+        help="Dirección libre del depot (NO se parsea para enrichment)."),
+    max_distance_km: float = typer.Option(
+        None, "--max-distance-km",
+        help="Geofence del form (default GEOCODE_MAX_DISTANCE_KM)."),
+    enhance: bool = typer.Option(
+        False, "--enhance/--no-enhance",
+        help="Como enhance_addresses de la UI: reescribe road+altura en la query."),
+    libpostal: bool = typer.Option(
+        True, "--libpostal/--no-libpostal",
+        help="Usar libpostal on-demand si esta instalado (default: si)."),
+    pbf_dir: Path = typer.Option(None, "--pbf-dir"),
+    index_dir: Path = typer.Option(None, "--index-dir"),
+    split_by_housenumber: bool = typer.Option(
+        True, "--split-by-housenumber/--no-split",
+        help="Separar direcciones con altura de las que no la tienen."),
+    limit: int = typer.Option(None, help="Evaluar solo las primeras N."),
+    fail_under: float = typer.Option(
+        None, "--fail-under",
+        help="Salir con codigo 1 si el %% dentro de 100 m (con altura) queda debajo."),
+    out: Path = typer.Option(None, "--out", help="Guardar el reporte JSON (resumen)."),
+    dump: bool = typer.Option(
+        True, "--dump/--no-dump",
+        help="Tabla fila a fila: coords, address in/sent, metros, confianza."),
+    dump_only: str = typer.Option(
+        "all", "--dump-only",
+        help="all | house | pin | miss | far (>250m) | over (valid y lejos)."),
+    dump_out: Path = typer.Option(
+        None, "--dump-out",
+        help="JSON con todas las filas (address, sent, coords)."),
+) -> None:
+    """Cuantas direcciones acierta el geocoder, y a cuantos metros.
+
+    Es la medicion que decide si esto se puede ofrecer como servicio. El indice se
+    elige por el bbox de los DATOS: medir con el indice equivocado da kilometros de
+    error y parece un problema de scoring cuando es de cobertura.
+    """
+    from .geocoding.accuracy import (
+        data_bbox, format_report, format_rows_table, load_truth, run,
+    )
+    from .geocoding.extract import ExtractError, ensure_geocode_index_from_config
+
+    cfg = Config.from_env()
+    from .addresses.libpostal_parser import is_installed
+    if libpostal:
+        if is_installed():
+            cfg = cfg.replace(libpostal_enabled=True)
+        else:
+            typer.echo(
+                "  libpostal pedido pero no esta instalado "
+                "(brew install libpostal && pip install -e '.[libpostal]')",
+                err=True,
+            )
+    else:
+        cfg = cfg.replace(libpostal_enabled=False)
+    from .addresses.factory import build_address_parser
+    parser = build_address_parser(cfg)
+    typer.echo(f"  parser={parser.name}  libpostal="
+               f"{'on-demand' if cfg.libpostal_enabled and is_installed() else 'off'}")
+    filas, columnas = load_truth(truth)
+    typer.echo(f"  {len(filas)} filas | columnas detectadas: "
+               f"address={columnas['address']!r} lat={columnas['lat']!r} lng={columnas['lng']!r}")
+
+    bbox = data_bbox(filas, columnas)
+    if bbox is None:
+        typer.echo("  el archivo no tiene ninguna coordenada valida", err=True)
+        raise typer.Exit(1)
+    centro = ((bbox[0] + bbox[1]) / 2, (bbox[2] + bbox[3]) / 2)
+    typer.echo(f"  bbox de los datos: N{bbox[0]:.3f} S{bbox[1]:.3f} E{bbox[2]:.3f} W{bbox[3]:.3f}")
+
+    if index is None:
+        raiz = pbf_dir or cfg.pbf_dir
+        if not raiz:
+            raise typer.BadParameter("indica --index, o --pbf-dir/SMART_IMPORT_PBF_DIR")
+        try:
+            ready = ensure_geocode_index_from_config(
+                cfg, lat=centro[0], lon=centro[1], bbox=bbox,
+                pbf_dir=raiz, index_dir=index_dir or cfg.index_dir,
+            )
+        except (FileNotFoundError, ExtractError) as exc:
+            typer.echo(f"  {exc}", err=True)
+            raise typer.Exit(1)
+        index = ready.path
+        extra = " (extract generado)" if ready.cut_extract else ""
+        typer.echo(f"  indice elegido por bbox: {index.name}{extra}")
+
+    origen = ((origin_lat, origin_lon)
+              if origin_lat is not None and origin_lon is not None else centro)
+    from .geocoding.depot_context import depot_from_params
+    depot = depot_from_params(
+        origin_lat=origen[0], origin_lon=origen[1],
+        depot_city=depot_city, depot_region=depot_region,
+        depot_postcode=depot_postcode, depot_country=depot_country,
+        depot_address=depot_address,
+        max_distance_km=(
+            float(max_distance_km)
+            if max_distance_km is not None
+            else float(cfg.max_geocode_distance_km)
+        ),
+    )
+    typer.echo(f"  origen (desempate): {origen[0]:.4f},{origen[1]:.4f}")
+
+    reporte = run(truth, index, origin=origen, config=cfg, limit=limit,
+                  depot=depot, enhance=enhance)
+    if reporte.depot_tokens:
+        typer.echo(f"  depot enrich (como la UI): {', '.join(reporte.depot_tokens)}")
+    typer.echo("")
+    if dump:
+        tabla = format_rows_table(reporte.rows, only=dump_only)
+        n_filas = max(0, len(tabla.splitlines()) - 2)
+        typer.echo(f"tabla ({n_filas} filas, filtro={dump_only}):")
+        typer.echo(tabla)
+        typer.echo("")
+    typer.echo(format_report(reporte, split=split_by_housenumber))
+    if dump_out:
+        dump_out.write_text(
+            json.dumps(reporte.rows, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        typer.echo(f"\n  filas: {dump_out}")
+
+    d = reporte.as_dict()
+    typer.echo("\n  peores 5:")
+    for w in d["worst"][:5]:
+        typer.echo(f"    {w['error_m']:8.0f} m  [{w['band']}] {w['address'][:44]}")
+
+    if out:
+        Path(out).write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n",
+                             encoding="utf-8")
+        typer.echo(f"\n  reporte: {out}")
+
+    if fail_under is not None:
+        clave = d["with_house_number"] if split_by_housenumber else d["overall"]
+        logrado = clave["within_100m_pct"]
+        typer.echo(f"\n  gate: {logrado}% dentro de 100 m (minimo {fail_under}%)")
+        if logrado < fail_under:
+            raise typer.Exit(1)
 
 
 @app.command("geocode-eval")
@@ -346,119 +572,65 @@ def serve(
     cfg = Config.from_env()
     typer.echo(f"  Smart Import escuchando en http://{host}:{port}")
     typer.echo(f"  docs: http://localhost:{port}/docs")
-    typer.echo(f"  IA: {'on' if cfg.ai_enabled else 'off'} | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
+    typer.echo(f"  parser: {cfg.address_parser} | libpostal: {'on' if cfg.libpostal_enabled else 'off'}"
+               f" | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
     if workers > 1:
         typer.echo("  aviso: con workers > 1 los jobs no se comparten entre procesos")
     uvicorn.run("smart_import.api:app", host=host, port=port, reload=reload,
                 workers=workers if not reload else 1)
 
 
-@app.command()
-def extract(
-    input: Path = typer.Option(..., "--input", "-i", exists=True, help="CSV ya normalizado."),
-    output: Path = typer.Option(..., "--output", "-o"),
-    column: str = typer.Option("address", help="Columna que mezcla varios campos."),
-    fields: str = typer.Option("customer_name,address,phone", help="Campos a separar."),
-    max_rows: int = typer.Option(None, help="Tope de filas (default: SMART_IMPORT_EXTRACT_MAX_ROWS)."),
-) -> None:
-    """Separa una columna que mezcla nombre/direccion/telefono usando el modelo.
-
-    Es la UNICA operacion que usa IA. Cuesta ~1 s por fila en CPU, asi que tiene
-    tope de filas y conviene correrla en segundo plano.
-    """
-    import csv as _csv
-
-    from .extraction import CompositeExtractor
-
-    cfg = Config.from_env()
-    names = tuple(f.strip() for f in fields.split(",") if f.strip())
-    limit = max_rows or cfg.extract_max_rows
-
-    with open(input, encoding="utf-8", newline="") as fh:
-        rows = list(_csv.DictReader(fh))
-    if not rows:
-        raise typer.BadParameter(f"{input} no tiene filas")
-    if column not in rows[0]:
-        raise typer.BadParameter(f"la columna '{column}' no existe. Hay: {list(rows[0])}")
-
-    texts = [r.get(column) or "" for r in rows]
-    typer.echo(f"  modelo: {cfg.model} en {cfg.device}")
-    typer.echo(f"  separando '{column}' en {list(names)} ({min(len(texts), limit)} filas)...")
-
-    def progress(done, res):
-        typer.echo(f"    {done} filas... ({res.extracted} extraidas, {res.failed} fallidas)")
-
-    extractor = CompositeExtractor(cfg, fields=names)
-    result = extractor.run(texts, max_rows=limit, progress=progress)
-
-    columns = list(rows[0])
-    for name in names:
-        if name not in columns:
-            columns.append(name)
-    for row, values in zip(rows, result.values):
-        for name in names:
-            if values.get(name):
-                row[name] = values[name]
-
-    Path(output).parent.mkdir(parents=True, exist_ok=True)
-    with open(output, "w", encoding="utf-8", newline="") as fh:
-        writer = _csv.DictWriter(fh, fieldnames=columns, lineterminator="\n")
-        writer.writeheader()
-        for row in rows:
-            writer.writerow({c: row.get(c, "") for c in columns})
-
-    d = result.as_dict()
-    typer.echo(f"  {d['extracted']}/{d['rows']} filas separadas | {d['failed']} fallidas")
-    typer.echo(f"  {d['elapsed_s']}s ({d['seconds_per_row']}s por fila)")
-    for w in d["warnings"]:
-        typer.echo(f"  aviso: {w}")
-    typer.echo(f"  salida: {output}")
 
 
 @app.command()
-def warmup() -> None:
-    """Baja el modelo al cache y verifica que el servicio puede arrancar.
+def worker() -> None:
+    """Consume smart-import-tasks de RabbitMQ (geocode async).
 
-    Se corre ANTES de servir para que el primer usuario no pague la descarga.
-    Sale con codigo 0 aunque el modelo no cargue: no poder precargar no es
-    motivo para impedir que el servicio arranque.
+    Requiere RABBITMQ_HOST o RABBITMQ_URL. El archivo viaja por object storage
+    (local o MinIO/S3); el mensaje solo lleva keys.
     """
-    from .logging_setup import stage
-    from .geocoding.pbf_registry import PbfRegistry
-    from .logging_setup import get_logger
+    from .queue import SmartImportQueue
+    from .storage import build_storage_from_env
 
-    log = get_logger("warmup")
-    cfg = Config.from_env()
+    q = SmartImportQueue()
+    if not q.enabled:
+        typer.echo("  RabbitMQ no configurado. Setea RABBITMQ_URL o RABBITMQ_HOST.", err=True)
+        raise typer.Exit(1)
 
-    stage(log, "HTTP", "verificando el despliegue",
-          geocoding="on" if cfg.geocoding_enabled else "off",
-          ia="on" if cfg.ai_enabled else "off")
+    storage = build_storage_from_env()
+    typer.echo(f"  worker escuchando {q.queue_name}")
 
-    schema_dir = Path(cfg.schema_dir)
-    schemas = sorted(p.stem for p in schema_dir.glob("*.json")) if schema_dir.exists() else []
-    stage(log, "HTTP", "schemas", encontrados=",".join(schemas) or "NINGUNO")
-    if not schemas:
-        typer.echo(f"  aviso: no hay schemas en {schema_dir}", err=True)
+    def handle(msg: dict) -> None:
+        kind = msg.get("type")
+        job_id = msg.get("job_id")
+        typer.echo(f"  → {kind} job={job_id}")
+        if kind == "smart_import.geocode":
+            from .geocoding.runner import run
+            from .config import Config
+            from pathlib import Path
 
-    if cfg.geocoding_enabled:
-        registry = PbfRegistry.scan(cfg.pbf_dir) if cfg.pbf_dir else PbfRegistry([])
-        stage(log, "GEOCODE", "PBF disponibles", directorio=cfg.pbf_dir or "(sin configurar)",
-              cantidad=len(registry.entries), con_bbox=len(registry.with_bbox()))
-        if not registry.entries:
-            typer.echo("  aviso: geocoding habilitado pero no se ve ningun .osm.pbf. "
-                       "Revisa el mount de /data/pbf.", err=True)
+            opts = msg.get("options") or {}
+            inp_key = msg["input_object_key"]
+            out_key = msg["output_object_key"]
+            local_in = storage.local_path(inp_key)
+            if local_in is None or not local_in.exists():
+                raw = storage.get(inp_key)
+                local_in = Path(Config.from_env().work_dir) / job_id / "normalized.csv"
+                local_in.parent.mkdir(parents=True, exist_ok=True)
+                local_in.write_bytes(raw)
+            local_out = Path(Config.from_env().work_dir) / job_id / "geocoded.csv"
+            local_out.parent.mkdir(parents=True, exist_ok=True)
+            index = opts.get("index")
+            if not index:
+                raise RuntimeError("worker geocode necesita options.index (ruta sqlite)")
+            origin = None
+            if opts.get("origin_lat") is not None and opts.get("origin_lon") is not None:
+                origin = (float(opts["origin_lat"]), float(opts["origin_lon"]))
+            run(str(local_in), str(local_out), Path(index), origin=origin,
+                config=Config.from_env())
+            storage.put(out_key, local_out.read_bytes(), "text/csv")
+            typer.echo(f"  ✓ geocode {job_id} → {out_key}")
+        else:
+            typer.echo(f"  aviso: tipo desconocido {kind}", err=True)
 
-    if not cfg.ai_enabled:
-        stage(log, "DONE", "warmup listo (IA deshabilitada, no hay modelo que bajar)")
-        return
-
-    try:
-        from .models.loader import load
-        stage(log, "EXTRACT", "descargando/cargando modelo",
-              modelo=cfg.model, device=cfg.device)
-        loaded = load(cfg.model, cfg.device)
-        stage(log, "DONE", "warmup listo", modelo=cfg.model,
-              carga=f"{loaded.load_seconds:.1f}s")
-    except Exception as exc:
-        typer.echo(f"  aviso: no se pudo precargar el modelo ({exc}). "
-                   "El servicio arranca igual; extract va a devolver 503.", err=True)
+    q.consume(handle)

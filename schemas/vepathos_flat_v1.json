@@ -1,140 +1,564 @@
 {
   "name": "vepathos_flat_v1",
   "version": 1,
-  "description": "Formato Vepathos canonico. Plano: una fila por delivery x package. Anidado: addresses[].packages[].",
+  "description": "Formato Vepathos canonico. El schema es un OBJETO STOP que se va llenando: address parts + contact + geocode + time_window + packages[]. Plano = una fila por delivery x package; nested = addresses[{…, packages[], time_window, geocode}]. Compose de address: road/address + house_number + zone + city + region + postcode + country.",
   "sheet_name": "deliveries",
   "group_by": "delivery_id",
   "column_order": [
-    "delivery_id", "lat", "lng", "address", "zone",
-    "customer_name", "phone", "reference",
-    "package_id", "quantity", "weight_kg",
-    "length_cm", "width_cm", "height_cm", "volume_cm3",
-    "packaging", "value_cents",
-    "tw_start", "tw_end", "tw_timezone",
-    "priority", "service_time_min", "status"
+    "delivery_id",
+    "lat",
+    "lng",
+    "address",
+    "house_number",
+    "unit",
+    "zone",
+    "city",
+    "region",
+    "postcode",
+    "country",
+    "customer_name",
+    "phone",
+    "reference",
+    "package_id",
+    "quantity",
+    "weight_kg",
+    "length_cm",
+    "width_cm",
+    "height_cm",
+    "volume_cm3",
+    "packaging",
+    "value_cents",
+    "value_currency",
+    "tw_start",
+    "tw_end",
+    "tw_timezone",
+    "priority",
+    "service_time_min",
+    "status"
   ],
   "fields": {
     "delivery_id": {
-      "type": "string", "level": "delivery",
-      "aliases": ["delivery_id", "delivery id", "deliveryid", "id entrega", "id_entrega",
-                  "nro entrega", "orden", "order id", "order_id", "order", "pedido",
-                  "nro pedido", "remito", "envio", "shipment", "shipment id", "stop id",
-                  "stop_id", "id parada", "id"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "delivery_id",
+        "deliveryid",
+        "id entrega",
+        "nro entrega",
+        "orden",
+        "order id",
+        "order",
+        "pedido",
+        "nro pedido",
+        "remito",
+        "envio",
+        "shipment",
+        "shipment id",
+        "stop id",
+        "id parada",
+        "id"
+      ]
     },
     "lat": {
-      "type": "float", "level": "delivery", "range": [-90.0, 90.0],
-      "aliases": ["lat", "latitude", "latitud", "latitud cliente", "y", "coord_y", "lat_dec"]
+      "type": "float",
+      "level": "delivery",
+      "range": [
+        -90.0,
+        90.0
+      ],
+      "aliases": [
+        "lat",
+        "latitude",
+        "latitud",
+        "latitud cliente",
+        "y",
+        "coord_y",
+        "lat_dec"
+      ]
     },
     "lng": {
-      "type": "float", "level": "delivery", "range": [-180.0, 180.0],
-      "aliases": ["lng", "lon", "long", "longitude", "longitud", "longitud cliente",
-                  "x", "coord_x", "lng_dec"]
+      "type": "float",
+      "level": "delivery",
+      "range": [
+        -180.0,
+        180.0
+      ],
+      "aliases": [
+        "lng",
+        "lon",
+        "long",
+        "longitude",
+        "longitud",
+        "longitud cliente",
+        "x",
+        "coord_x",
+        "lng_dec"
+      ]
     },
     "address": {
-      "type": "string", "level": "delivery",
-      "aliases": ["address", "direccion", "domicilio", "domicilio entrega",
-                  "direccion entrega", "direccion de entrega", "delivery address",
-                  "ship to address", "shipping address", "destination", "destino",
-                  "dest", "dest.", "dir", "dir.", "dir entrega", "dir. entrega",
-                  "calle", "street address", "lugar entrega", "entrega", "domicilio destino"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "address",
+        "direccion",
+        "domicilio",
+        "domicilio entrega",
+        "direccion entrega",
+        "direccion de entrega",
+        "delivery address",
+        "ship to address",
+        "shipping address",
+        "destination",
+        "destino",
+        "dest",
+        "dir",
+        "dir entrega",
+        "calle",
+        "street",
+        "street address",
+        "street name",
+        "road",
+        "lugar entrega",
+        "entrega",
+        "domicilio destino",
+        "info_cliente",
+        "datos cliente",
+        "texto",
+        "mensaje",
+        "shipping_address.address"
+      ]
+    },
+    "house_number": {
+      "type": "string",
+      "level": "delivery",
+      "_comment": "Altura / door number. NO alias 'number' solo: en ecommerce suele ser el nro de orden.",
+      "aliases": [
+        "house_number",
+        "housenumber",
+        "house no",
+        "street_number",
+        "street no",
+        "address_number",
+        "door_number",
+        "door no",
+        "unit number",
+        "altura puerta",
+        "altura calle",
+        "nro puerta",
+        "numero puerta",
+        "numero de puerta",
+        "nro de calle",
+        "numero de calle",
+        "nro calle",
+        "num puerta",
+        "no puerta",
+        "shipping_address.number",
+        "addr housenumber"
+      ]
     },
     "zone": {
-      "type": "string", "level": "delivery",
-      "aliases": ["zone", "zona", "area", "sector", "region", "barrio", "cluster",
-                  "route zone", "zona reparto"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "zone",
+        "zona",
+        "area",
+        "sector",
+        "barrio",
+        "cluster",
+        "route zone",
+        "zona reparto",
+        "locality",
+        "neighbourhood",
+        "neighborhood",
+        "colonia",
+        "comuna",
+        "distrito",
+        "shipping_address.locality"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "city",
+        "ciudad",
+        "localidad",
+        "municipio",
+        "partido",
+        "shipping_city",
+        "town",
+        "shipping_address.city"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "region",
+        "province",
+        "state",
+        "provincia",
+        "estado",
+        "departamento",
+        "shipping_province",
+        "shipping_state",
+        "shipping_address.province",
+        "shipping_address.state"
+      ]
+    },
+    "postcode": {
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "postcode",
+        "postal_code",
+        "zip",
+        "zipcode",
+        "zip code",
+        "cp",
+        "c.p.",
+        "codigo postal",
+        "shipping_zip",
+        "shipping_postcode",
+        "shipping_address.zipcode",
+        "shipping_address.postcode"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "country",
+        "pais",
+        "country_code",
+        "shipping_country",
+        "shipping_address.country"
+      ]
+    },
+    "unit": {
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "unit",
+        "apt",
+        "apto",
+        "apartment",
+        "depto",
+        "dpto",
+        "departamento",
+        "piso",
+        "floor",
+        "suite",
+        "oficina",
+        "unit_number",
+        "apt number",
+        "shipping_address.floor"
+      ]
     },
     "customer_name": {
-      "type": "string", "level": "delivery",
-      "aliases": ["customer_name", "customer name", "customer", "cliente",
-                  "nombre cliente", "nombre", "destinatario", "receptor", "recipient",
-                  "consignee", "razon social", "razon_social", "nom dest", "nombre dest",
-                  "contact name", "name"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "customer_name",
+        "customer",
+        "cliente",
+        "nombre cliente",
+        "nombre",
+        "destinatario",
+        "receptor",
+        "recipient",
+        "consignee",
+        "razon social",
+        "nom dest",
+        "nombre dest",
+        "contact name",
+        "name"
+      ]
     },
     "phone": {
-      "type": "string", "level": "delivery",
-      "aliases": ["phone", "telefono", "tel", "tel.", "tel dest", "tel contacto",
-                  "contacto", "contacto 1", "celular", "cel", "cel.", "mobile",
-                  "movil", "whatsapp", "phone number", "telephone"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "phone",
+        "telefono",
+        "tel",
+        "tel dest",
+        "tel contacto",
+        "contacto",
+        "contacto 1",
+        "celular",
+        "cel",
+        "mobile",
+        "movil",
+        "whatsapp",
+        "phone number",
+        "telephone"
+      ]
     },
     "reference": {
-      "type": "string", "level": "delivery",
-      "aliases": ["reference", "referencia", "observaciones", "observacion", "obs",
-                  "notes", "note", "comments", "comentarios", "instrucciones",
-                  "delivery notes", "remarks", "detalle"]
+      "type": "string",
+      "level": "delivery",
+      "aliases": [
+        "reference",
+        "referencia",
+        "observaciones",
+        "observacion",
+        "obs",
+        "notes",
+        "note",
+        "comments",
+        "comentarios",
+        "instrucciones",
+        "delivery notes",
+        "remarks",
+        "detalle"
+      ]
     },
     "package_id": {
-      "type": "string", "level": "package",
-      "aliases": ["package_id", "package id", "packageid", "bulto", "id bulto",
-                  "paquete", "id paquete", "pkg", "pkg id", "parcel id", "tracking",
-                  "tracking number", "codigo bulto", "sscc"]
+      "type": "string",
+      "level": "package",
+      "aliases": [
+        "package_id",
+        "packageid",
+        "bulto",
+        "id bulto",
+        "paquete",
+        "id paquete",
+        "pkg",
+        "pkg id",
+        "parcel id",
+        "tracking",
+        "tracking number",
+        "codigo bulto",
+        "sscc"
+      ]
     },
     "quantity": {
-      "type": "integer", "level": "package",
-      "aliases": ["quantity", "qty", "cantidad", "cant", "cant.", "cant bultos",
-                  "cantidad bultos", "bultos", "packages", "package quantity",
-                  "pkg count", "nro bultos", "unidades", "piezas", "pieces"]
+      "type": "integer",
+      "level": "package",
+      "aliases": [
+        "quantity",
+        "qty",
+        "cantidad",
+        "cant",
+        "cant bultos",
+        "cantidad bultos",
+        "bultos",
+        "packages",
+        "package quantity",
+        "pkg count",
+        "nro bultos",
+        "unidades",
+        "piezas",
+        "pieces"
+      ]
     },
     "weight_kg": {
-      "type": "float", "level": "package",
-      "aliases": ["weight_kg", "weight", "peso", "peso kg", "peso_kg", "kg", "kgs",
-                  "kilos", "weight (kg)", "gross weight", "peso bruto"]
+      "type": "float",
+      "level": "package",
+      "aliases": [
+        "weight_kg",
+        "weight",
+        "peso",
+        "peso kg",
+        "kg",
+        "kgs",
+        "kilos",
+        "gross weight",
+        "peso bruto",
+        "weight_lb",
+        "weight_lbs",
+        "lb",
+        "lbs",
+        "pound",
+        "pounds",
+        "peso_lb",
+        "peso_lbs",
+        "peso libras",
+        "libras",
+        "libra",
+        "wt_lb",
+        "wt_lbs",
+        "gross weight lb"
+      ]
     },
     "length_cm": {
-      "type": "float", "level": "package",
-      "aliases": ["length_cm", "length", "largo", "largo cm", "long_cm", "profundidad",
-                  "depth", "depth_cm", "len"]
+      "type": "float",
+      "level": "package",
+      "aliases": [
+        "length_cm",
+        "length",
+        "largo",
+        "largo cm",
+        "long_cm",
+        "profundidad",
+        "depth",
+        "depth_cm",
+        "len"
+      ]
     },
     "width_cm": {
-      "type": "float", "level": "package",
-      "aliases": ["width_cm", "width", "ancho", "ancho cm", "anch"]
+      "type": "float",
+      "level": "package",
+      "aliases": [
+        "width_cm",
+        "width",
+        "ancho",
+        "ancho cm",
+        "anch"
+      ]
     },
     "height_cm": {
-      "type": "float", "level": "package",
-      "aliases": ["height_cm", "height", "alto", "altura", "alto cm", "high"]
+      "type": "float",
+      "level": "package",
+      "aliases": [
+        "height_cm",
+        "height",
+        "alto",
+        "altura",
+        "alto cm",
+        "high"
+      ]
     },
     "volume_cm3": {
-      "type": "float", "level": "package", "derivable": true,
-      "aliases": ["volume_cm3", "volume", "volumen", "vol", "vol cm3", "m3", "cbm"]
+      "type": "float",
+      "level": "package",
+      "derivable": true,
+      "aliases": [
+        "volume_cm3",
+        "volume",
+        "volumen",
+        "vol",
+        "vol cm3",
+        "m3",
+        "cbm"
+      ]
     },
     "packaging": {
-      "type": "string", "level": "package",
-      "aliases": ["packaging", "embalaje", "tipo bulto", "package type", "packaging_type",
-                  "tipo paquete", "container"]
+      "type": "string",
+      "level": "package",
+      "aliases": [
+        "packaging",
+        "embalaje",
+        "tipo bulto",
+        "package type",
+        "packaging_type",
+        "tipo paquete",
+        "container"
+      ]
     },
     "value_cents": {
-      "type": "integer", "level": "package",
-      "aliases": ["value_cents", "value", "valor", "valor declarado", "importe",
-                  "declared value", "amount", "monto"]
+      "type": "integer",
+      "level": "package",
+      "aliases": [
+        "value_cents",
+        "value",
+        "valor",
+        "valor declarado",
+        "importe",
+        "declared value",
+        "amount",
+        "monto"
+      ]
+    },
+    "value_currency": {
+      "type": "string",
+      "level": "package",
+      "aliases": [
+        "value_currency",
+        "currency",
+        "moneda",
+        "divisa",
+        "curr",
+        "declared currency"
+      ]
     },
     "status": {
-      "type": "string", "level": "package",
-      "aliases": ["status", "estado", "estatus", "delivery status", "situacion"]
+      "type": "string",
+      "level": "package",
+      "aliases": [
+        "status",
+        "estado",
+        "estatus",
+        "delivery status",
+        "situacion"
+      ]
     },
     "tw_start": {
-      "type": "datetime", "level": "timewindow",
-      "aliases": ["tw_start", "time_window_start", "ventana desde", "desde", "hora desde",
-                  "start", "start time", "from", "horario desde", "franja desde",
-                  "window start", "earliest"]
+      "type": "datetime",
+      "level": "timewindow",
+      "aliases": [
+        "tw_start",
+        "time_window_start",
+        "ventana desde",
+        "desde",
+        "hora desde",
+        "start",
+        "start time",
+        "from",
+        "horario desde",
+        "franja desde",
+        "window start",
+        "earliest"
+      ]
     },
     "tw_end": {
-      "type": "datetime", "level": "timewindow",
-      "aliases": ["tw_end", "time_window_end", "ventana hasta", "hasta", "hora hasta",
-                  "end", "end time", "to", "horario hasta", "franja hasta",
-                  "window end", "latest"]
+      "type": "datetime",
+      "level": "timewindow",
+      "aliases": [
+        "tw_end",
+        "time_window_end",
+        "ventana hasta",
+        "hasta",
+        "hora hasta",
+        "end",
+        "end time",
+        "to",
+        "horario hasta",
+        "franja hasta",
+        "window end",
+        "latest"
+      ]
     },
     "tw_timezone": {
-      "type": "string", "level": "timewindow",
-      "aliases": ["tw_timezone", "timezone", "time_zone", "tz", "zona horaria", "huso"]
+      "type": "string",
+      "level": "timewindow",
+      "description": "Si RouteHub manda timezone IANA, tw_start/tw_end salen en UTC y este campo es UTC. Sin timezone, horas naive locales y este campo vacio.",
+      "aliases": [
+        "tw_timezone",
+        "timezone",
+        "time_zone",
+        "tz",
+        "zona horaria",
+        "huso"
+      ]
     },
     "priority": {
-      "type": "integer", "level": "delivery",
-      "aliases": ["priority", "prioridad", "prio", "urgencia", "rank"]
+      "type": "integer",
+      "level": "delivery",
+      "aliases": [
+        "priority",
+        "prioridad",
+        "prio",
+        "urgencia",
+        "rank"
+      ]
     },
     "service_time_min": {
-      "type": "float", "level": "delivery",
-      "aliases": ["service_time_min", "service time", "tiempo servicio",
-                  "tiempo de servicio", "service_time", "duracion", "duration",
-                  "minutos", "service min", "stop duration"]
+      "type": "float",
+      "level": "delivery",
+      "aliases": [
+        "service_time_min",
+        "service time",
+        "tiempo servicio",
+        "tiempo de servicio",
+        "duracion",
+        "duration",
+        "minutos",
+        "service min",
+        "stop duration"
+      ]
     }
   }
 }

@@ -8,10 +8,12 @@ from __future__ import annotations
 
 import math
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Any
 
 DATETIME_OUT = "%Y-%m-%d %H:%M"
+UTC_OUT = "%Y-%m-%dT%H:%M:%SZ"
+_AWARE = re.compile(r"(Z|[+-]\d{2}:?\d{2})$")
 
 _DATE_FORMATS = (
     "%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%dT%H:%M",
@@ -84,27 +86,46 @@ def to_str(value: Any) -> str | None:
     return str(value).strip() or None
 
 
-def to_datetime(value: Any) -> str | None:
-    """Devuelve 'YYYY-MM-DD HH:MM' o None. No inventa fecha si solo hay hora."""
+def _as_utc_iso(dt: datetime) -> str:
+    if dt.tzinfo is None:
+        return dt.strftime(DATETIME_OUT)
+    return dt.astimezone(timezone.utc).strftime(UTC_OUT)
+
+
+def parse_datetime(value: Any) -> datetime | None:
+    """Parsea a datetime (aware si el stamp traia offset/Z). No inventa fecha."""
     if is_blank(value):
         return None
     if isinstance(value, datetime):
-        return value.strftime(DATETIME_OUT)
+        return value
     if isinstance(value, date):
-        return datetime(value.year, value.month, value.day).strftime(DATETIME_OUT)
+        return datetime(value.year, value.month, value.day)
 
     s = str(value).strip()
     if _TIME_ONLY.match(s):
-        return None                                  # hora suelta sin fecha: inutil
+        return None
+    if _AWARE.search(s):
+        try:
+            return datetime.fromisoformat(s.replace("Z", "+00:00"))
+        except ValueError:
+            return None
     for fmt in _DATE_FORMATS:
         try:
-            return datetime.strptime(s, fmt).strftime(DATETIME_OUT)
+            return datetime.strptime(s, fmt)
         except ValueError:
             continue
     try:
-        return datetime.fromisoformat(s.replace("Z", "+00:00")).strftime(DATETIME_OUT)
+        return datetime.fromisoformat(s)
     except ValueError:
         return None
+
+
+def to_datetime(value: Any) -> str | None:
+    """Naive → 'YYYY-MM-DD HH:MM'. Aware/Z → ISO UTC. No inventa fecha si solo hay hora."""
+    dt = parse_datetime(value)
+    if dt is None:
+        return None
+    return _as_utc_iso(dt)
 
 
 def format_number(value: float | int | None) -> str:

@@ -3,11 +3,18 @@
 Es lo que salva los archivos con headers inutiles ('col_3', 'Campo 1', 'A').
 Los scores estan topeados por debajo de un alias exacto: el nombre gana si existe,
 el contenido decide cuando el nombre no dice nada o miente.
+
+Vocabulario de empaque/estado: VocabularyStore (catálogo → SQLite).
+Codigos UNECE de 2–3 letras (BX, BA, RO) solo matchean exactos en columnas
+que parecen codigos categoricos — nunca fuzzy.
 """
 from __future__ import annotations
 
+import math
 import re
 from typing import Any
+
+from ..resources import fold, packaging_codes, packaging_words, status_words
 
 CAP = 0.93                      # techo general: nunca le gana a un alias exacto
 CAP_STRONG = 0.95               # solo para evidencia dura (rango de coordenadas)
@@ -16,9 +23,15 @@ _PHONE_RE = re.compile(r"^[+()\d][\d\s\-().]{5,}$")
 _TZ_RE = re.compile(r"^[A-Za-z]+/[A-Za-z_+\-0-9]+$|^(UTC|GMT)([+-]\d{1,2})?$", re.I)
 _DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}|\d{1,2}[/-]\d{1,2}[/-]\d{2,4}")
 _ID_RE = re.compile(r"^[A-Za-z0-9]+([-_][A-Za-z0-9]+)*$")
-_PACKAGING = {"box", "pallet", "bag", "envelope", "caja", "pallets", "sobre", "bolsa", "crate"}
-_STATUS = {"pending", "delivered", "failed", "in_transit", "pendiente", "entregado",
-           "cancelado", "cancelled", "new", "assigned", "done"}
+
+
+def _is_monotonic_ids(nums: list[float]) -> bool:
+    """True si parece nro de orden (1,2,3… o 1001,1002…), no alturas de calle."""
+    if len(nums) < 3:
+        return False
+    ordered = sorted(int(x) for x in nums)
+    diffs = [b - a for a, b in zip(ordered, ordered[1:])]
+    return bool(diffs) and all(d == 1 for d in diffs)
 
 
 def _to_float(value: Any) -> float | None:
@@ -27,7 +40,8 @@ def _to_float(value: Any) -> float | None:
     if isinstance(value, bool):
         return None
     if isinstance(value, (int, float)):
-        return float(value)
+        f = float(value)
+        return f if math.isfinite(f) else None
     s = str(value).strip()
     if not s:
         return None
@@ -38,9 +52,11 @@ def _to_float(value: Any) -> float | None:
     elif "," in s:
         s = s.replace(",", ".") if len(s.split(",")[-1]) != 3 else s.replace(",", "")
     try:
-        return float(s)
+        f = float(s)
     except ValueError:
         return None
+    # JSON no-estándar: NaN / Infinity (común en dumps de Python / pandas)
+    return f if math.isfinite(f) else None
 
 
 def _is_phone(text: str) -> bool:
@@ -73,10 +89,14 @@ class ColumnProfile:
         self.distinct = len(set(self.texts))
         self.cardinality = (self.distinct / self.n) if self.n else 0.0
         self.avg_len = (sum(len(t) for t in self.texts) / self.n) if self.n else 0.0
-        self.has_decimals = any(abs(x - int(x)) > 1e-9 for x in self.nums)
+        # int(NaN) / int(inf) explotan; nums ya filtra no-finitos via _to_float
+        self.has_decimals = any(
+            abs(x - int(x)) > 1e-9 for x in self.nums if math.isfinite(x)
+        )
         self.all_int = bool(self.nums) and not self.has_decimals
-        self.lo = min(self.nums) if self.nums else None
-        self.hi = max(self.nums) if self.nums else None
+        finite = [x for x in self.nums if math.isfinite(x)]
+        self.lo = min(finite) if finite else None
+        self.hi = max(finite) if finite else None
 
     def frac(self, pred) -> float:
         return (sum(1 for t in self.texts if pred(t)) / self.n) if self.n else 0.0
@@ -149,6 +169,16 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
 
         if p.all_int and 0 < p.lo and p.hi <= 200 and p.distinct <= 30:
             add("quantity", 0.72, f"enteros chicos {int(p.lo)}..{int(p.hi)}")
+        # Altura tipica: enteros/cortos, NO secuencia de orden (1,2,3… o 1001,1002…).
+        if (
+            p.numeric_frac >= 0.9
+            and p.avg_len <= 6
+            and p.hi <= 30_000
+            and p.cardinality >= 0.5
+            and not _is_monotonic_ids(p.nums)
+        ):
+            add("house_number", 0.70,
+                f"numeros cortos no-secuenciales ({int(p.lo)}..{int(p.hi)})")
         if p.all_int and 1 <= p.lo and p.hi <= 10 and p.distinct <= 10:
             add("priority", 0.70, f"enteros 1..10, {p.distinct} valores distintos")
         if p.has_decimals and 0 <= p.lo and p.hi <= 2000:
@@ -166,9 +196,38 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
             add("tw_start", 0.55, "parseable como fecha/hora")
             add("tw_end", 0.55, "parseable como fecha/hora")
 
-        has_num_and_word = p.frac(lambda t: any(c.isdigit() for c in t) and any(c.isalpha() for c in t))
+        has_num_and_word = p.frac(
+            lambda t: any(c.isdigit() for c in t) and any(c.isalpha() for c in t)
+        )
+        # Intersecciones tipicas AR/LatAm: "Alsina y Pelegrini", "Maipu e Yrigoyen"
+        has_intersection = p.frac(
+            lambda t: bool(re.search(r"\s+[ye]\s+", t, re.I)) and len(t.split()) >= 3
+        )
+        has_street_token = p.frac(
+            lambda t: bool(
+                re.search(
+                    r"\b(av\.?|avenida|calle|pasaje|ruta|camino|diag\.?|diagonal|"
+                    r"boulevard|bvd\.?|bv\.?)\b",
+                    t,
+                    re.I,
+                )
+            )
+        )
         if p.avg_len >= 12 and has_num_and_word >= 0.6 and p.cardinality >= 0.4:
             add("address", 0.84, f"texto largo ({p.avg_len:.0f} chars) con numero y palabras")
+        elif (
+            p.avg_len >= 10
+            and p.cardinality >= 0.5
+            and p.numeric_frac < 0.25
+            and (has_num_and_word >= 0.35 or has_intersection >= 0.12 or has_street_token >= 0.2)
+        ):
+            # Planillas de reparto local: muchas calles sin altura o "X y Y"
+            add(
+                "address",
+                0.80,
+                f"texto de lugar ({p.avg_len:.0f} chars; "
+                f"num+palabra={has_num_and_word:.0%} interseccion={has_intersection:.0%})",
+            )
 
         idish = p.frac(_is_identifier)
         if idish >= 0.8 and p.avg_len <= 32:
@@ -179,9 +238,17 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
 
         if p.distinct <= 12 and p.avg_len <= 24 and (p.cardinality < 0.35 or p.distinct <= 8):
             lowers = {t.lower() for t in p.texts}
-            if lowers & _STATUS:
+            folded = {fold(t) for t in p.texts}
+            codes = packaging_codes()
+            words = packaging_words()
+            word_hits = (lowers | folded) & (words - codes)
+            code_hits = folded & codes
+            looks_like_codes = p.avg_len <= 4 and p.frac(
+                lambda t: 2 <= len(t.strip()) <= 3 and t.strip().isalpha()
+            ) >= 0.6
+            if lowers & status_words() or folded & status_words():
                 add("status", 0.86, f"valores de estado conocidos: {sorted(lowers)[:3]}")
-            elif lowers & _PACKAGING:
+            elif word_hits or (looks_like_codes and code_hits):
                 add("packaging", 0.86, f"tipos de embalaje: {sorted(lowers)[:3]}")
             else:
                 add("zone", 0.66, f"baja cardinalidad ({p.distinct} valores)")

@@ -7,7 +7,8 @@ from __future__ import annotations
 
 from ..config import Config
 from ..readers.base import Table
-from ..schemas import TargetSchema
+from ..resources import ambiguous_aliases
+from ..schemas import TargetSchema, normalize_key
 from . import fuzzy, heuristics, rules
 from .base import ColumnMapping, MappingResult
 
@@ -58,13 +59,20 @@ class RuleSchemaMapper:
         for (col, target), name_score in name_hits.items():
             if target in ("lat", "lng") and content_hits.get((col, target), 0.0) == 0.0:
                 vals = heuristics.ColumnProfile(table.column_values(col, limit=sample_limit))
+                score, method, why = scored[(col, target)]
                 if vals.nums and not _in_coord_range(target, vals):
-                    score, method, why = scored[(col, target)]
                     scored[(col, target)] = (score * 0.55, method,
                                              f"{why} pero los valores NO estan en rango")
+                elif vals.nums and (vals.all_int or not vals.has_decimals):
+                    # "Nylon"~"lon" con enteros 1..10: no es longitud geografica
+                    scored[(col, target)] = (
+                        score * 0.35, method,
+                        f"{why} pero los valores son enteros (no parecen coordenadas)",
+                    )
 
         result = _assign(scored, table, schema, self.config)
         _resolve_coordinate_pair(result, table, scored)
+        _disambiguate_columns(result, table)
         _flag_composite_columns(result, table, sample_limit)
         _flag_review(result, table, self.config)
         return result
@@ -136,13 +144,68 @@ def _resolve_coordinate_pair(result: MappingResult, table: Table, scored: dict) 
     )
 
 
+def _disambiguate_columns(result: MappingResult, table: Table) -> None:
+    """Alias que significan cosas distintas segun el resto de las columnas.
+
+    'Altura' junto a 'Calle' es el numero de puerta; junto a 'Ancho' es el alto
+    del bulto. 'Departamento' es una provincia en UY/CO/PE y un depto en AR.
+    'Long' es longitud con 'Lat' al lado y largo con 'Ancho'.
+
+    Ninguno se resuelve con alias —el nombre de columna es identico— ni con el
+    contenido: 2450 es un numero en los dos casos. Lo resuelve el CONTEXTO, y las
+    reglas viven en `resources/vepathos_overrides.json` para que sumar un caso sea
+    editar datos.
+    """
+    reglas = ambiguous_aliases()
+    if not reglas:
+        return
+    for regla in reglas:
+        alias = {normalize_key(a) for a in regla.get("alias", ())}
+        preferido = regla.get("prefer")
+        if not alias or not preferido:
+            continue
+        columna = next((c for c in table.columns if normalize_key(c) in alias), None)
+        if columna is None:
+            continue
+
+        presentes = set(result.by_target())
+        actual = result.mapping.get(columna)
+        if actual is not None and actual.target == preferido:
+            continue
+        # `when_none` mira el resto: la propia columna no se cuenta como evidencia
+        # contra si misma.
+        otros = {t for c, m in result.mapping.items() if c != columna for t in (m.target,)}
+        if not (set(regla.get("when_any", ())) & presentes):
+            continue
+        if set(regla.get("when_none", ())) & otros:
+            continue
+
+        anterior = actual.target if actual else "(sin mapear)"
+        if actual is not None and preferido in otros:
+            continue                     # ya hay otra columna en ese target
+        if actual is None:
+            result.mapping[columna] = ColumnMapping(
+                columna, preferido, 0.80, "heuristic", "")
+            if columna in result.unmapped:
+                result.unmapped.remove(columna)
+            actual = result.mapping[columna]
+        actual.target = preferido
+        actual.evidence += (f" | '{columna}' es ambiguo; el contexto de columnas "
+                            f"indica {preferido}")
+        result.warnings.append(
+            f"'{columna}' se mapeo a {preferido} (no a {anterior}) por el contexto "
+            "del archivo. Si en el tuyo significa otra cosa, corregilo en el mapping.")
+
+
+
 def _flag_composite_columns(result: MappingResult, table: Table, limit: int) -> None:
     """Una columna que mezcla varios campos ('Juan Perez - Corrientes 1250 - tel 11...').
 
     Las reglas la mapean entera a `address`, que es lo mejor que pueden hacer, pero
     el resultado arrastra nombre y telefono adentro de la direccion y eso rompe el
-    geocoding. Se baja la confianza para que caiga en revision: es exactamente el
-    caso donde el modelo de extraccion aporta.
+    geocoding. Marcarla baja la confianza Y le dice al pipeline que corra el
+    `FieldExtractionPipeline` SOLO sobre esta columna: el resto del archivo sigue
+    el camino rapido.
     """
     for col, m in result.mapping.items():
         if m.target != "address":
@@ -157,9 +220,9 @@ def _flag_composite_columns(result: MappingResult, table: Table, limit: int) -> 
             m.confidence = min(m.confidence, 0.68)
             m.evidence += " | la columna mezcla varios campos (telefono/nombre dentro del texto)"
             result.warnings.append(
-                f"'{col}' parece contener varios campos en un solo texto. Se mapeo "
-                "entero a 'address'. Para separar nombre/direccion/telefono usa la "
-                "accion 'extract' (requiere el modelo)."
+                f"'{col}' parece contener varios campos en un solo texto. Se separa "
+                "en nombre/direccion/telefono con reglas durante el normalize "
+                "(sin modelo)."
             )
 
 

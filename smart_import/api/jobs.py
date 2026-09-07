@@ -20,7 +20,6 @@ UPLOADED = "uploaded"
 ANALYZING = "analyzing"
 NEEDS_REVIEW = "needs_mapping_review"
 NORMALIZED = "normalized"          # estado FINAL valido aunque nunca se geocodifique
-EXTRACTING = "extracting"
 GEOCODE_QUEUED = "geocode_queued"
 GEOCODING = "geocoding"
 GEOCODE_FAILED = "geocode_failed"  # normalize OK; geocode duro fallo → UI pide geo manual
@@ -28,7 +27,7 @@ COMPLETED = "completed"
 FAILED = "failed"
 
 # operaciones largas: la web pollea / se suscribe hasta que busy=false
-BUSY_STATUSES = {UPLOADED, ANALYZING, EXTRACTING, GEOCODE_QUEUED, GEOCODING}
+BUSY_STATUSES = {UPLOADED, ANALYZING, GEOCODE_QUEUED, GEOCODING}
 
 # Normalize sobrevivio: se puede descargar y (re)intentar geocode / geo manual
 HAS_NORMALIZE = {NORMALIZED, NEEDS_REVIEW, COMPLETED, GEOCODE_FAILED}
@@ -53,6 +52,7 @@ class Job:
     updated_at: float = field(default_factory=time.time)
     schema: str = "vepathos_flat_v1"
     phone_region: str | None = None
+    timezone: str | None = None
     raw_path: str | None = None
     normalized_path: str | None = None
     nested_path: str | None = None
@@ -60,8 +60,6 @@ class Job:
     report: dict = field(default_factory=dict)
     geocode_report: dict = field(default_factory=dict)
     geocode_progress: dict = field(default_factory=dict)
-    extract_report: dict = field(default_factory=dict)
-    extract_progress: dict = field(default_factory=dict)
     error: str | None = None
     # marca de tiempo del inicio de la operacion async actual (para eta)
     op_started_at: float | None = None
@@ -72,14 +70,6 @@ class Job:
         self.updated_at = time.time()
 
     @property
-    def composite_column(self) -> str | None:
-        """Columna marcada como 'mezcla varios campos', si el mapper detecto una."""
-        for column, info in (self.report.get("mapping") or {}).items():
-            if "varios campos" in (info.get("evidence") or ""):
-                return column
-        return None
-
-    @property
     def needs_geocode(self) -> int:
         return int(self.report.get("needs_geocode", 0))
 
@@ -88,7 +78,7 @@ class Job:
         return self.status in BUSY_STATUSES
 
     #: capacidades del despliegue; las setea la API al arrancar
-    capabilities: dict = field(default_factory=lambda: {"geocoding": True, "extract": True})
+    capabilities: dict = field(default_factory=lambda: {"geocoding": True})
 
     def next_actions(self) -> list[dict[str, str]]:
         """Que puede hacer el usuario ahora.
@@ -118,14 +108,6 @@ class Job:
                     "href": f"/imports/{self.id}/download?format=geocoded",
                     "description": "Descargar CSV geocodificado",
                 })
-        if (self.status in (NORMALIZED, NEEDS_REVIEW, GEOCODE_FAILED) and self.composite_column
-                and self.capabilities.get("extract", True)):
-            actions.append({
-                "action": "extract",
-                "href": f"/imports/{self.id}/extract",
-                "description": (f"Separar '{self.composite_column}' en nombre/direccion/"
-                                "telefono con el modelo. Opt-in, ~1.4 s por fila."),
-            })
         if self.status == NEEDS_REVIEW:
             actions.append({
                 "action": "confirm_mapping",
@@ -140,8 +122,22 @@ class Job:
             actions.append({
                 "action": "geocode",
                 "href": f"/imports/{self.id}/geocode",
-                "description": (f"Geolocalizar {self.needs_geocode} fila(s) sin coordenadas. "
-                                "NO se ejecuta solo: lo decide el usuario."),
+                "description": (
+                    f"Geolocalizar {self.needs_geocode} fila(s) sin coordenadas. "
+                    "Usa el address cargado (sin reescribirlo). "
+                    "Opcional: ?enhance_addresses=true para mejorar solo la query."
+                ),
+                "options": {
+                    "enhance_addresses": {
+                        "type": "boolean",
+                        "default": False,
+                        "label": "Mejorar direcciones para geocodificar",
+                        "help": (
+                            "Reescribe la query interna (parser/enhance). "
+                            "El address visible en la tabla no cambia."
+                        ),
+                    },
+                },
             })
         if self.status == GEOCODE_FAILED or (
                 self.status == COMPLETED and self.needs_geocode > 0):
@@ -183,23 +179,6 @@ class Job:
                 message = "Geolocalizacion lista"
             elif phase == "failed":
                 message = self.error or "Geolocalizacion fallo"
-        elif self.status == EXTRACTING:
-            p = self.extract_progress or {}
-            phase = str(p.get("phase") or "extracting")
-            done = int(p.get("done") or 0)
-            total = int(p.get("total") or 0)
-            detail = {k: v for k, v in p.items()
-                      if k not in ("done", "total", "phase", "started_at")}
-            if phase == "queued":
-                message = "Extraccion con modelo en cola"
-            elif phase == "loading_model":
-                message = "Cargando modelo…"
-            elif phase == "extracting":
-                message = f"Extrayendo campos {done}/{total}"
-            elif phase == "done":
-                message = "Extraccion lista"
-            elif phase == "failed":
-                message = self.error or "Extraccion fallo"
         elif self.status == FAILED:
             phase = "failed"
             message = self.error or "Fallo"
@@ -269,7 +248,6 @@ class Job:
             "download_nested": f"{base}/download?format=nested",
             "download_geocoded": f"{base}/download?format=geocoded",
             "geocode": f"{base}/geocode",
-            "extract": f"{base}/extract",
             "mapping": f"{base}/mapping",
         }
 
@@ -280,14 +258,13 @@ class Job:
             "busy": self.busy,
             "filename": self.filename,
             "schema": self.schema,
+            "timezone": self.timezone,
             "created_at": self.created_at,
             "updated_at": self.updated_at,
             "report": self.report,
             "progress": self.progress_snapshot(),
             "geocode": {**self.geocode_report, "progress": self.geocode_progress}
                        if (self.geocode_report or self.geocode_progress) else None,
-            "extract": {**self.extract_report, "progress": self.extract_progress}
-                       if (self.extract_report or self.extract_progress) else None,
             "error": self.error,
             "next_actions": self.next_actions(),
             "urls": self.urls(),

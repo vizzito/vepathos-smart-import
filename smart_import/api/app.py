@@ -15,6 +15,7 @@ import shutil
 import time
 from contextlib import asynccontextmanager
 from concurrent.futures import ThreadPoolExecutor
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -25,7 +26,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from ..config import Config
 from ..schemas import TargetSchema
 from .jobs import (
-    ALLOWED_SUFFIXES, COMPLETED, EXTRACTING, FAILED,
+    ALLOWED_SUFFIXES, COMPLETED, FAILED, GEOCODE_FAILED,
     GEOCODE_QUEUED, GEOCODING, NEEDS_REVIEW, NORMALIZED, Job, JobStore,
     safe_filename,
 )
@@ -46,8 +47,6 @@ if not SCHEMA_DIR.is_absolute() and not SCHEMA_DIR.exists():
 # el cutter y no tiene que competirle CPU. Configurable cuando haya medicion.
 _geocode_pool = ThreadPoolExecutor(max_workers=max(1, CFG.geocode_workers),
                                    thread_name_prefix="geocode")
-_extract_pool = ThreadPoolExecutor(max_workers=max(1, CFG.extract_workers),
-                                   thread_name_prefix="extract")
 
 
 def _capability_guard(enabled: bool, name: str, hint: str) -> None:
@@ -63,28 +62,15 @@ async def lifespan(_app: FastAPI):
     stage(logger, "HTTP", "capacidades",
           normalize="on",
           geocoding="on" if CFG.geocoding_enabled else "off",
-          ia="on" if CFG.ai_enabled else "off")
+          )
 
     if CFG.geocoding_enabled and not CFG.pbf_dir:
         stage(logger, "WARN", "geocoding habilitado pero SMART_IMPORT_PBF_DIR esta vacio: "
                               "no va a poder resolver ninguna direccion",
               level=logging.WARNING)
 
-    if CFG.ai_enabled and CFG.ai_preload:
-        # Cargar aca y no en el primer request: la descarga del modelo son ~60 s
-        # la primera vez, y no queremos que la pague un usuario.
-        try:
-            from ..models.loader import load
-            stage(logger, "EXTRACT", "precargando modelo", modelo=CFG.model, device=CFG.device)
-            loaded = load(CFG.model, CFG.device)
-            stage(logger, "EXTRACT", "modelo listo", carga=f"{loaded.load_seconds:.1f}s")
-        except Exception as exc:
-            # que el modelo no cargue NO puede impedir que el servicio arranque
-            stage(logger, "WARN", f"no se pudo precargar el modelo ({exc}); "
-                                  "el resto del servicio funciona igual",
-                  level=logging.WARNING)
     yield
-    stage(logger, "HTTP", "cerrando")
+
 
 app = FastAPI(
     lifespan=lifespan,
@@ -126,22 +112,23 @@ def _job_or_404(job_id: str) -> Job:
 @app.get("/health", tags=["meta"])
 def health() -> dict[str, Any]:
     """Que puede hacer este servicio ahora mismo."""
+    from ..geocoding.extract import scan_registry
     from ..geocoding.pbf_registry import PbfRegistry
-    from ..models.loader import is_loaded
 
     cfg = CFG
-    registry = (PbfRegistry.scan(cfg.pbf_dir)
+    registry = (scan_registry(cfg.pbf_dir, cfg.extract_dir)
                 if cfg.geocoding_enabled and cfg.pbf_dir else PbfRegistry([]))
     indexes = sorted(p.name for p in Path(cfg.index_dir).glob("*.sqlite")) \
         if Path(cfg.index_dir).exists() else []
 
-    # se chequea SIEMPRE, no solo cuando esta habilitada: saber si las
-    # dependencias estan es distinto de saber si el flag esta prendido
     try:
-        import torch, transformers              # noqa: F401
-        ai_ready = True
+        import phonenumbers                     # noqa: F401
+        phones_ready = True
     except ImportError:
-        ai_ready = False
+        phones_ready = False
+
+    from ..addresses import describe_parsers
+    parsers = describe_parsers(cfg)
 
     return {
         "status": "ok",
@@ -151,17 +138,24 @@ def health() -> dict[str, Any]:
         "capabilities": {
             "normalize": True,                        # siempre; es el nucleo
             "geocoding": cfg.geocoding_enabled,
-            "extract": cfg.ai_enabled and ai_ready,
+            # el motor real de extraccion: reglas + librerias, sin modelo
+            "rules": True,
+            "phonenumbers": phones_ready,
+            "libpostal": parsers["libpostal_installed"] and parsers["libpostal_enabled"],
         },
-        "ai": {
-            "enabled": cfg.ai_enabled,
-            "dependencies_installed": ai_ready,
-            "preloaded": is_loaded(cfg.model, cfg.device) if ai_ready else False,
-            "model": cfg.model,
-            "device": cfg.device,
-            "max_rows": cfg.extract_max_rows,
-            # sin IA el sistema sigue funcionando entero con reglas
-            "degrades_to_rules": True,
+        "extraction": {
+            "engine": "rules",
+            "address_parser": parsers["active"],
+            "libpostal_installed": parsers["libpostal_installed"],
+            "libpostal_loaded": parsers.get("libpostal_loaded", False),
+            "libpostal_enabled": parsers["libpostal_enabled"],
+            "libpostal_as_enhancer": parsers.get("libpostal_as_enhancer", False),
+            "default_phone_region": cfg.default_phone_region or None,
+            "thresholds": {
+                "delivery_accept": cfg.delivery_accept_threshold,
+                "delivery_review": cfg.delivery_review_threshold,
+                "address_accept": cfg.address_accept_threshold,
+            },
         },
         "geocoding": {
             "enabled": cfg.geocoding_enabled,
@@ -169,6 +163,8 @@ def health() -> dict[str, Any]:
             "pbf_available": len(registry.entries),
             "indexes_built": indexes,
             "autobuild_index": cfg.autobuild_index,
+            "autoextract": cfg.autoextract,
+            "extract_dir": cfg.extract_dir or None,
             "fallback": cfg.geocoder_fallback,
             "automatic": False,        # NUNCA se dispara solo
         },
@@ -205,6 +201,22 @@ async def create_import(
     file: UploadFile = File(..., description="CSV, TSV, TXT, XLSX, XLS o JSON"),
     schema: str = Query("vepathos_flat_v1"),
     phone_region: str | None = Query(None, description="ISO de region para telefonos: AR, US, IN"),
+    timezone: str | None = Query(
+        None,
+        description="IANA TZ de settings del usuario (ej. America/Argentina/Buenos_Aires). "
+                    "Si viene, las ventanas se interpretan en esa zona y se emiten en UTC.",
+    ),
+    depot_timezone: str | None = Query(
+        None, description="IANA TZ del depot (fallback si no hay timezone de settings).",
+    ),
+    service_date: date | None = Query(
+        None, description="Dia de servicio para ventanas horarias (default: manana).",
+    ),
+    depot_city: str | None = Query(None, description="Ciudad del depot (enriquece address)"),
+    depot_region: str | None = Query(None),
+    depot_country: str | None = Query(
+        None, description="Pais del depot. Gana sobre phone_region para el pais de las direcciones.",
+    ),
     diagnostics: bool = Query(False, description="Agregar columnas row_status/row_issues"),
 ) -> dict[str, Any]:
     """Sube un archivo y lo normaliza al formato Vepathos.
@@ -222,7 +234,7 @@ async def create_import(
     schema_path = _schema_path(schema)
     job = store.create(name, schema)
     job.capabilities = {"geocoding": CFG.geocoding_enabled and bool(CFG.pbf_dir),
-                        "extract": CFG.ai_enabled}
+                        }
     raw_path = store.dir_for(job.id) / "raw" / name
 
     size = 0
@@ -243,26 +255,43 @@ async def create_import(
     job.raw_path = str(raw_path)
     stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
           tamano=f"{size / 1024:.1f}KB", schema=schema)
-    response = _run_normalize(job, schema_path, phone_region, diagnostics)
+    response = _run_normalize(
+        job, schema_path, phone_region, diagnostics,
+        timezone=timezone, depot_timezone=depot_timezone,
+        service_date=service_date,
+        depot_city=depot_city, depot_region=depot_region,
+        depot_country=depot_country,
+    )
     stage(logger, "HTTP", "201 creado", job=job.id, estado=job.status,
           acciones=",".join(a["action"] for a in job.next_actions()))
     return response
 
 
 def _run_normalize(job: Job, schema_path: Path, phone_region: str | None,
-                   diagnostics: bool, manual_mapping: dict | None = None) -> dict[str, Any]:
+                   diagnostics: bool, manual_mapping: dict | None = None,
+                   timezone: str | None = None,
+                   depot_timezone: str | None = None,
+                   service_date: date | None = None,
+                   depot_city: str | None = None,
+                   depot_region: str | None = None,
+                   depot_country: str | None = None) -> dict[str, Any]:
+    from ..extraction.tz import resolve_timezone
     from ..pipeline import run_normalize
 
     out_dir = store.dir_for(job.id) / "normalized"
     out_dir.mkdir(parents=True, exist_ok=True)
     output = out_dir / "normalized.csv"
+    resolved_tz = resolve_timezone(timezone, depot_timezone, job.timezone)
 
     job.touch(NORMALIZED)
     try:
         result = run_normalize(
             job.raw_path, schema_path, output, emit=("flat", "nested"),
             manual_mapping=manual_mapping, phone_region=phone_region,
-            diagnostics=diagnostics,
+            diagnostics=diagnostics, timezone=resolved_tz,
+            service_date=service_date,
+            depot_city=depot_city, depot_region=depot_region,
+            depot_country=depot_country,
         )
     except Exception as exc:
         job.error = str(exc)
@@ -273,6 +302,8 @@ def _run_normalize(job: Job, schema_path: Path, phone_region: str | None,
     job.report = result.report
     job.normalized_path = result.outputs.get("flat")
     job.nested_path = result.outputs.get("nested")
+    job.phone_region = phone_region
+    job.timezone = resolved_tz
     job.touch(NEEDS_REVIEW if result.report.get("needs_review") else NORMALIZED)
     return job.as_dict()
 
@@ -346,12 +377,23 @@ async def import_events(
 
 @app.get("/imports/{job_id}/preview", tags=["import"])
 def preview(job_id: str, limit: int = Query(20, le=200),
-            source: str = Query("normalized", pattern="^(normalized|geocoded)$")) -> dict[str, Any]:
-    """Muestra de las filas resultantes, para que la UI las pinte antes de importar."""
+            source: str = Query("auto",
+                                pattern="^(auto|normalized|geocoded)$")) -> dict[str, Any]:
+    """Muestra de las filas resultantes, para que la UI las pinte antes de importar.
+
+    `auto` (default) devuelve el resultado VIGENTE: el geocodificado si ya existe.
+    Con el default anterior (`normalized`) la UI recibia el CSV previo al geocode,
+    sin `geocode_band` ni confianza, y pintaba todas las filas iguales.
+    """
     import csv
 
     job = _job_or_404(job_id)
-    path = job.geocoded_path if source == "geocoded" else job.normalized_path
+    if source == "auto":
+        path = _flat_path(job)
+        source = ("geocoded" if job.geocoded_path and path == job.geocoded_path
+                  else "normalized")
+    else:
+        path = job.geocoded_path if source == "geocoded" else job.normalized_path
     if not path or not Path(path).exists():
         raise HTTPException(409, f"el job todavia no tiene resultado '{source}'")
 
@@ -364,42 +406,128 @@ def preview(job_id: str, limit: int = Query(20, le=200),
 
 
 @app.get("/imports/{job_id}/issues", tags=["import"])
-def issues(job_id: str, limit: int = Query(200, le=1000)) -> dict[str, Any]:
+def issues(job_id: str, limit: int = Query(500, le=2000)) -> dict[str, Any]:
     """Las filas que NO quedaron listas, con el motivo y la columna culpable.
 
     Ninguna fila se descarta: todas estan en el archivo de salida. Este endpoint
     existe para que la UI pueda mostrar "3 listas, 3 a geocodificar, 1 con
     problema" en vez de perder filas en silencio.
+
+    Despues del geocode, las filas sin coordenadas (not_found / sin match) se
+    listan como `a_geocodificar` para que el usuario las ubique a mano.
     """
+    from ..geocoding.bands import (
+        BAND_NEEDS_GEOCODING, BAND_REVIEW, BAND_VALID, band_from_row, percent,
+    )
+
     job = _job_or_404(job_id)
     report = job.report or {}
     if not report:
         raise HTTPException(409, "el job todavia no fue normalizado")
 
-    filas = report.get("row_issues", [])[:limit]
+    filas = list(report.get("row_issues", []) or [])
     geo = job.geocode_report or {}
 
+    # Despues del geocode se listan las filas que el operador tiene que TOCAR:
+    # las que no tienen pin (ubicar a mano) y las de la banda de revision (hay
+    # pin, pero es a nivel calle). Antes del geocode, los row_issues del normalize.
+    pending_manual: list[dict[str, Any]] = []
+    por_banda = {BAND_VALID: 0, BAND_REVIEW: 0, BAND_NEEDS_GEOCODING: 0}
+    if geo:
+        geo_path = Path(job.geocoded_path) if job.geocoded_path else None
+        src_path = geo_path if geo_path and geo_path.exists() else (
+            Path(job.normalized_path) if job.normalized_path else None
+        )
+        if src_path and src_path.exists() and src_path.suffix.lower() == ".csv":
+            import csv as _csv
+            bandas = (CFG.geocode_valid_band, CFG.geocode_review_band)
+            with open(src_path, encoding="utf-8", newline="") as fh:
+                for i, row in enumerate(_csv.DictReader(fh), start=1):
+                    address = (row.get("address") or "").strip()
+                    if not address and not (row.get("delivery_id") or "").strip():
+                        continue
+                    # Siempre recalcular: un CSV stamped con reglas viejas no
+                    # puede pintar Review 87% cuando VALID_BAND=0.85.
+                    banda = band_from_row(
+                        row, valid_at=bandas[0], review_at=bandas[1])
+                    por_banda[banda] = por_banda.get(banda, 0) + 1
+                    if banda == BAND_VALID:
+                        continue
+
+                    status = (row.get("geocode_status") or "").strip() or "needs_geocode"
+                    try:
+                        confianza = float(row.get("geocode_confidence") or "") or None
+                    except (TypeError, ValueError):
+                        confianza = None
+                    try:
+                        raw_score = float(row.get("geocode_raw_score") or "") or None
+                    except (TypeError, ValueError):
+                        raw_score = None
+                    reason = (row.get("geocode_reason") or "").strip() or None
+                    show_pct = percent(confianza if confianza is not None else raw_score)
+                    manual = banda == BAND_NEEDS_GEOCODING
+                    pending_manual.append({
+                        "row": i,
+                        "delivery_id": row.get("delivery_id") or None,
+                        "status": "a_geocodificar" if manual else "a_revisar",
+                        "geocode_band": banda,
+                        "geocode_status": status,
+                        "geocode_confidence": confianza,
+                        "geocode_raw_score": raw_score,
+                        "geocode_reason": reason,
+                        "geocode_percent": show_pct,
+                        "geocode_precision": (row.get("geocode_precision") or "") or None,
+                        "fields": ["address", "lat", "lng"],
+                        "messages": [
+                            address or "(sin direccion)",
+                            f"geocode={status}"
+                            + (f" ({show_pct}%)" if show_pct is not None else "")
+                            + (f" · {reason}" if reason else ""),
+                        ],
+                    })
+        if pending_manual:
+            filas = pending_manual
+
+    a_geocodificar = int(report.get("needs_geocode", 0) or 0)
+    a_revisar = 0
+    if geo:
+        # "listas" = solo la banda verde. Una fila ambar tiene pin pero NO esta
+        # lista: contarla como lista es lo que hacia que nadie la revisara.
+        listas = por_banda.get(BAND_VALID, 0) or int(geo.get("matched", 0) or 0)
+        a_revisar = por_banda.get(BAND_REVIEW, 0)
+        a_geocodificar = por_banda.get(BAND_NEEDS_GEOCODING, 0) or (
+            int(geo.get("not_found", 0) or 0) + int(geo.get("errors", 0) or 0))
+    else:
+        listas = report.get("valid_rows", 0)
     return {
         "job_id": job_id,
         "summary": {
-            "total": report.get("rows_output", 0),
-            "listas": report.get("valid_rows", 0),
-            "a_geocodificar": report.get("needs_geocode", 0),
+            "total": report.get("deliveries") or report.get("rows_output", 0),
+            "listas": listas,
+            "a_revisar": a_revisar,
+            "a_geocodificar": a_geocodificar,
             "no_localizables": report.get("invalid_rows", 0),
             "ignoradas": report.get("ignored_rows", 0),
             "con_observaciones": report.get("rows_with_issues", 0),
             "coordenadas_rechazadas": report.get("rejected_coordinates", 0),
             **({"geocodificadas": geo.get("matched", 0),
                 "geocode_confianza_baja": geo.get("low_confidence", 0),
-                "geocode_no_encontradas": geo.get("not_found", 0)} if geo else {}),
+                "geocode_no_encontradas": geo.get("not_found", 0),
+                "bandas": por_banda,
+                "umbrales_banda": {"valid": CFG.geocode_valid_band,
+                                   "review": CFG.geocode_review_band}} if geo else {}),
         },
-        # columnas del archivo que el mapper no supo ubicar: no se pierden datos,
-        # simplemente no entran al schema
         "columnas_sin_mapear": report.get("unmapped", []),
         "columnas_a_revisar": report.get("ambiguous", []),
-        "avisos": report.get("warnings", []),
-        "filas": filas,
-        "truncado": len(report.get("row_issues", [])) > limit,
+        "avisos": list(report.get("warnings") or []) + (
+            [f"{a_geocodificar} entrega(s) sin coordenadas: ubicar a mano en el mapa"]
+            if a_geocodificar else []
+        ) + (
+            [f"{a_revisar} entrega(s) resueltas a nivel calle: revisar el pin"]
+            if a_revisar else []
+        ),
+        "filas": filas[:limit],
+        "truncado": len(filas) > limit,
     }
 
 
@@ -408,6 +536,12 @@ def confirm_mapping(
     job_id: str,
     mapping: dict[str, str | None] = Body(..., examples=[{"Dest.": "address", "Obs": None}]),
     phone_region: str | None = Query(None),
+    timezone: str | None = Query(None),
+    depot_timezone: str | None = Query(None),
+    service_date: date | None = Query(None),
+    depot_city: str | None = Query(None),
+    depot_region: str | None = Query(None),
+    depot_country: str | None = Query(None),
     diagnostics: bool = Query(False),
 ) -> dict[str, Any]:
     """Corrige el mapping sugerido y vuelve a normalizar.
@@ -418,15 +552,38 @@ def confirm_mapping(
     if not job.raw_path or not Path(job.raw_path).exists():
         raise HTTPException(409, "el archivo original ya no esta disponible")
     return _run_normalize(job, _schema_path(job.schema), phone_region, diagnostics,
-                          manual_mapping=mapping)
+                          manual_mapping=mapping, timezone=timezone,
+                          depot_timezone=depot_timezone, service_date=service_date,
+                          depot_city=depot_city, depot_region=depot_region,
+                          depot_country=depot_country)
+
+
+def _flat_path(job: Job) -> str | None:
+    """El CSV plano MAS ACTUAL del job.
+
+    Despues de geocodificar, el resultado vigente es el CSV geocodificado: mismas
+    columnas del schema MAS `lat/lng` y los `geocode_*` (superset estricto). Servir
+    el de antes del geocode deja al cliente sin `geocode_band` ni confianza y le
+    hace pintar todo igual — que es exactamente el sintoma que trajo este arreglo.
+    """
+    geocoded = job.geocoded_path
+    if geocoded and Path(geocoded).exists():
+        return geocoded
+    return job.normalized_path
 
 
 @app.get("/imports/{job_id}/download", tags=["import"])
 def download(job_id: str,
-             format: str = Query("flat", pattern="^(flat|nested|geocoded)$")) -> FileResponse:
-    """Descarga el resultado. `flat` = CSV Vepathos, `nested` = JSON del optimizador."""
+             format: str = Query("flat",
+                                 pattern="^(flat|nested|geocoded|normalized)$")) -> FileResponse:
+    """Descarga el resultado.
+
+    `flat` = el CSV Vepathos vigente (el geocodificado si ya se geocodifico).
+    `normalized` fuerza el previo al geocode; `geocoded` exige que exista.
+    """
     job = _job_or_404(job_id)
-    path = {"flat": job.normalized_path, "nested": job.nested_path,
+    path = {"flat": _flat_path(job), "nested": job.nested_path,
+            "normalized": job.normalized_path,
             "geocoded": job.geocoded_path}.get(format)
     if not path or not Path(path).exists():
         raise HTTPException(409, f"el job no tiene salida '{format}' todavia")
@@ -449,11 +606,31 @@ def start_geocode(
     origin_lon: float | None = Query(None),
     bbox: str | None = Query(None, description="north,south,east,west"),
     index: str | None = Query(None, description="Nombre del indice .sqlite a forzar"),
+    depot_city: str | None = Query(None, description="Ciudad/comuna del depot (enrichment)"),
+    depot_region: str | None = Query(None, description="Provincia/estado del depot"),
+    depot_postcode: str | None = Query(None, description="Codigo postal del depot"),
+    depot_country: str | None = Query(None, description="Pais del depot"),
+    depot_address: str | None = Query(
+        None, description="Direccion libre del depot (se parte por comas)"),
+    max_distance_km: float | None = Query(
+        None, description="Geofence duro en km (default GEOCODE_MAX_DISTANCE_KM=500)"),
+    enhance_addresses: bool = Query(
+        False,
+        description=(
+            "Opt-in: reescribe la QUERY de geocode con el parser/enhance "
+            "(road+altura). El address visible del usuario NO se modifica. "
+            "Pensado para el switch 'mejorar direcciones' del modal de geocode."
+        ),
+    ),
 ) -> dict[str, Any]:
     """Arranca la geolocalizacion de las filas que NO tienen coordenadas.
 
     Es una accion explicita: el pipeline nunca la dispara por su cuenta. Las
     filas que ya traian coordenadas se conservan intactas.
+
+    Por defecto geocodifica con el address cargado (+ ciudad/region de la fila
+    y del depot solo en la query interna). Con `enhance_addresses=true` la query
+    se limpia/reescribe; el texto en tabla sigue siendo el del usuario.
     """
     _capability_guard(CFG.geocoding_enabled, "El geocoding",
                       "Habilitalo con SMART_IMPORT_GEOCODING_ENABLED=true.")
@@ -477,23 +654,50 @@ def start_geocode(
         raise HTTPException(400, "indica --origin (depot), un bbox o un indice: sin eso no se "
                                  "puede elegir que region de OSM usar")
 
+    from ..geocoding.depot_context import depot_from_params
+    depot = depot_from_params(
+        origin_lat=origin_lat,
+        origin_lon=origin_lon,
+        depot_city=depot_city,
+        depot_region=depot_region,
+        depot_postcode=depot_postcode,
+        depot_country=depot_country,
+        depot_address=depot_address,
+        max_distance_km=(
+            float(max_distance_km)
+            if max_distance_km is not None
+            else float(CFG.max_geocode_distance_km)
+        ),
+    )
+
     total = int(job.report.get("rows_output") or job.needs_geocode or 0)
     stage(logger, "HTTP", "POST /imports/{id}/geocode  (accion EXPLICITA del usuario)",
           job=job_id, depot=f"{origin_lat},{origin_lon}" if origin else None,
+          enrich=depot.enrichment_tokens() if depot else None,
+          enhance_addresses=bool(enhance_addresses) or None,
           filas_a_geocodificar=job.needs_geocode)
     job.op_started_at = time.time()
     job.geocode_progress = {"phase": "queued", "done": 0, "total": total}
     job.geocode_report = {}
     job.touch(GEOCODE_QUEUED)
-    _geocode_pool.submit(_geocode_worker, job.id, origin, box, index)
+    _geocode_pool.submit(
+        _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
     return {**job.as_dict(),
             "poll": f"/imports/{job_id}",
-            "events": f"/imports/{job_id}/events"}
+            "events": f"/imports/{job_id}/events",
+            "geocode_options": {
+                "enhance_addresses": bool(enhance_addresses),
+                "note": ("Por defecto se geocodifica el address cargado "
+                         "(query + city/depot internos). "
+                         "enhance_addresses=true mejora solo la query."),
+            }}
 
 
-def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
-    from ..geocoding.osm_index import build, index_path_for
-    from ..geocoding.pbf_registry import PbfRegistry
+def _geocode_worker(job_id: str, origin, box, index_name: str | None,
+                    depot=None, enhance_addresses: bool = False) -> None:
+    from ..geocoding.extract import ExtractError, ensure_geocode_index_from_config
+    from ..geocoding.locality import fill_depot_from_index
+    from ..geocoding.osm_index import index_path_for
     from ..geocoding.runner import run
 
     job = store.get(job_id)
@@ -504,32 +708,53 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
     job.touch(GEOCODING)
 
     try:
+        from ..geocoding.depot_context import align_depot_to_geolocator
+        depot = align_depot_to_geolocator(depot)
+        if depot is not None and depot.origin is not None:
+            origin = depot.origin
+
+        country_slug = None
         if index_name:
             index_path = Path(cfg.index_dir) / index_name
             if not index_path.exists():
                 raise FileNotFoundError(f"no existe el indice {index_path}")
         else:
-            registry = PbfRegistry.scan(cfg.pbf_dir)
             lat = origin[0] if origin else None
             lon = origin[1] if origin else None
-            entry = registry.resolve(lat=lat, lon=lon, bbox=box)
-            if entry is None:
-                raise FileNotFoundError(
-                    f"sin cobertura PBF para el area pedida en {cfg.pbf_dir}. "
-                    f"({len(registry.entries)} PBF disponibles)")
-            index_path = index_path_for(entry, cfg.index_dir)
-            if not index_path.exists():
-                if not cfg.autobuild_index:
-                    raise FileNotFoundError(
-                        f"falta el indice {index_path.name} y SMART_IMPORT_AUTOBUILD_INDEX "
-                        "esta en false. Generalo con 'build-geocoder-index'.")
-                # el PBF se procesa UNA vez por region y queda cacheado
+            zone_hint = None
+            if depot is not None:
+                zone_hint = (depot.city or depot.region or depot.country or None)
+                if zone_hint:
+                    zone_hint = str(zone_hint).strip() or None
+
+            def _index_progress(phase: str, pbf: str = "", **_kw) -> None:
                 job.geocode_progress = {
-                    "phase": "building_index", "pbf": entry.path.name,
+                    "phase": phase, "pbf": pbf,
                     "done": 0, "total": int(job.report.get("rows_output") or 0),
                 }
                 job.touch()
-                build(entry.path, index_path)
+
+            try:
+                ready = ensure_geocode_index_from_config(
+                    cfg, lat=lat, lon=lon, bbox=box, zone_hint=zone_hint,
+                    progress=_index_progress,
+                )
+            except ExtractError as exc:
+                raise FileNotFoundError(str(exc)) from exc
+            index_path = ready.path
+            country_slug = ready.country_slug
+            stage(logger, "GEOCODE", "PBF elegido",
+                  pbf=ready.entry.path.name, pais=ready.country_slug,
+                  extract=ready.entry.key if ready.entry.has_bbox else None,
+                  zone_hint=zone_hint,
+                  cut=ready.cut_extract)
+
+        # Ciudad/CP del depot desde el indice (Tandil, B7000, …) si el cliente
+        # solo mando lat/lon. Sin esto enrich=[] y "Dufau 1418" no geocodifica.
+        depot = fill_depot_from_index(depot, index_path, country_slug=country_slug)
+        if depot and depot.enrichment_tokens():
+            stage(logger, "GEOCODE", "contexto depot",
+                  enrich=depot.enrichment_tokens())
 
         total = int(job.report.get("rows_output") or 0)
 
@@ -538,6 +763,7 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
                 "phase": "geocoding", "done": done, "total": total,
                 "matched": report.matched, "low_confidence": report.low_confidence,
                 "not_found": report.not_found,
+                "rejected_far": getattr(report, "rejected_far", 0),
             }
             job.touch()
 
@@ -546,9 +772,16 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
         output = out_dir / "geocoded.csv"
 
         report = run(job.normalized_path, output, index_path, origin=origin, bbox=box,
-                     config=cfg, progress=progress)
+                     config=cfg, progress=progress, depot=depot,
+                     enhance_addresses=bool(enhance_addresses))
         job.geocoded_path = str(output)
         job.geocode_report = report.as_dict()
+
+        # Actualizar needs_geocode residual: las not_found siguen pendientes
+        # de ubicacion manual (o de un reintento). El normalize NO se pierde.
+        remaining = int(report.not_found or 0) + int(report.errors or 0)
+        if isinstance(job.report, dict):
+            job.report = {**job.report, "needs_geocode": remaining}
 
         # El nested se genero durante normalize, ANTES de tener coordenadas. Si no
         # se regenera, `download?format=nested` (que es lo que consume la UI)
@@ -556,15 +789,19 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None) -> None:
         _refresh_nested(job, output)
         job.geocode_progress = {"phase": "done", "done": report.rows, "total": report.rows}
         job.op_started_at = None
+        # Si quedaron sin coords, COMPLETED igual — la UI las pide a mano.
         job.touch(COMPLETED)
     except Exception as exc:
+        # Normalize NO se pierde: el job vuelve a un estado descargable y la UI
+        # puede pedir geolocalizacion manual para las filas sin coords.
         job.error = str(exc)
         job.geocode_progress = {"phase": "failed",
                                 "done": (job.geocode_progress or {}).get("done", 0),
                                 "total": (job.geocode_progress or {}).get("total", 0)}
         job.op_started_at = None
-        job.touch(FAILED)
-        logger.exception("geocode fallo en %s", job_id)
+        # GEOCODE_FAILED (no FAILED): el normalize sigue descargable / usable
+        job.touch(GEOCODE_FAILED)
+        logger.exception("geocode fallo en %s (normalize conservado)", job_id)
 
 
 def _refresh_nested(job: Job, geocoded_csv: Path) -> None:
@@ -577,8 +814,13 @@ def _refresh_nested(job: Job, geocoded_csv: Path) -> None:
 
     try:
         destino = store.dir_for(job.id) / "geocoded" / "geocoded.csv"
-        resultado = run_normalize(geocoded_csv, _schema_path(job.schema), destino,
-                                  emit=("nested",), config=CFG)
+        resultado = run_normalize(
+            geocoded_csv, _schema_path(job.schema), destino,
+            emit=("nested",), config=CFG,
+            # El CSV ya es Vepathos flat con address enriquecida: re-detectar
+            # "varios campos" y extraer destruye filas (32→11). Solo round-trip.
+            expand_composite=False,
+        )
         if nested := resultado.outputs.get("nested"):
             job.nested_path = nested
             stage(logger, "EMIT", "nested regenerado con las coordenadas nuevas",
@@ -592,131 +834,40 @@ def _refresh_nested(job: Job, geocoded_csv: Path) -> None:
 @app.get("/geocoding/coverage", tags=["geocode"])
 def coverage(lat: float = Query(...), lon: float = Query(...)) -> dict[str, Any]:
     """Hay cobertura OSM para este punto? Sirve para decidir ANTES de ofrecer el boton."""
-    from ..geocoding.osm_index import index_path_for
+    from ..geocoding.extract import scan_registry
+    from ..geocoding.osm_index import covering_extract_index, index_path_for
     from ..geocoding.pbf_registry import PbfRegistry
 
     cfg = CFG
     if not cfg.geocoding_enabled:
         return {"available": False, "point": [lat, lon],
                 "reason": "el geocoding esta deshabilitado en este despliegue"}
-    registry = PbfRegistry.scan(cfg.pbf_dir) if cfg.pbf_dir else PbfRegistry([])
+    registry = (scan_registry(cfg.pbf_dir, cfg.extract_dir)
+                if cfg.pbf_dir else PbfRegistry([]))
     entry = registry.resolve(lat=lat, lon=lon)
     if entry is None:
         return {"available": False, "point": [lat, lon],
                 "reason": "ningun .osm.pbf cubre ese punto",
                 "pbf_scanned": len(registry.entries)}
-    index_path = index_path_for(entry, cfg.index_dir)
+    leftover = covering_extract_index(cfg.index_dir, lat, lon)
+    index_path = leftover or index_path_for(entry, cfg.index_dir)
+    will_cut = (
+        leftover is None and not entry.has_bbox and cfg.autoextract
+        and not index_path.exists()
+    )
     return {
         "available": True, "point": [lat, lon],
         "pbf": entry.as_dict(),
         "index_ready": index_path.exists(),
         "index": str(index_path),
+        "will_cut_extract": will_cut,
         "note": ("el indice ya esta construido" if index_path.exists()
-                 else "la primera geolocalizacion en esta zona construye el indice "
-                      "(una sola vez, ~10 s por cada 25 MB de PBF)"),
+                 else ("la primera geolocalizacion corta un extract de ciudad "
+                       "y construye el indice (no indexa el PBF de pais)"
+                       if will_cut
+                       else "la primera geolocalizacion en esta zona construye el indice "
+                            "(una sola vez, ~10 s por cada 25 MB de PBF)")),
     }
 
 
-# --------------------------------------------------------------- extract (IA)
 
-@app.post("/imports/{job_id}/extract", tags=["extract"], status_code=202)
-def start_extract(
-    job_id: str,
-    column: str = Query("address", description="Columna que mezcla varios campos"),
-    fields: str = Query("customer_name,address,phone"),
-    max_rows: int | None = Query(None, description="Tope de filas"),
-) -> dict[str, Any]:
-    """Separa una columna compuesta usando el modelo. UNICA operacion con IA.
-
-    Es opt-in y cuesta ~1.4 s por fila en CPU. Si el modelo no esta instalado,
-    el job no se rompe: termina con un aviso y el archivo normalizado sigue
-    siendo valido.
-    """
-    _capability_guard(CFG.ai_enabled, "La extraccion con modelo",
-                      "Habilitala con SMART_IMPORT_AI_ENABLED=true "
-                      "(requiere la imagen con torch).")
-    job = _job_or_404(job_id)
-    if not job.normalized_path or not Path(job.normalized_path).exists():
-        raise HTTPException(409, "hay que normalizar el archivo antes de extraer")
-    if job.status == EXTRACTING:
-        raise HTTPException(409, "ya hay una extraccion en curso para este job")
-
-    names = tuple(f.strip() for f in fields.split(",") if f.strip())
-    if not names:
-        raise HTTPException(400, "indica al menos un campo en 'fields'")
-
-    stage(logger, "HTTP", "POST /imports/{id}/extract  (usa el modelo)",
-          job=job_id, columna=column, campos=fields)
-    cap = max_rows or CFG.extract_max_rows
-    job.op_started_at = time.time()
-    job.extract_progress = {"phase": "queued", "done": 0, "total": cap}
-    job.touch(EXTRACTING)
-    _extract_pool.submit(_extract_worker, job.id, column, names, max_rows)
-    return {**job.as_dict(),
-            "poll": f"/imports/{job_id}",
-            "events": f"/imports/{job_id}/events"}
-
-
-def _extract_worker(job_id: str, column: str, fields: tuple[str, ...],
-                    max_rows: int | None) -> None:
-    import csv
-
-    from ..extraction import CompositeExtractor
-
-    job = store.get(job_id)
-    if job is None:
-        return
-    cfg = CFG
-    job.op_started_at = time.time()
-    try:
-        with open(job.normalized_path, encoding="utf-8", newline="") as fh:
-            rows = list(csv.DictReader(fh))
-        if not rows or column not in rows[0]:
-            raise ValueError(f"la columna '{column}' no existe en el resultado normalizado")
-
-        limit = max_rows or cfg.extract_max_rows
-        total = min(len(rows), limit)
-        job.extract_progress = {"phase": "loading_model", "done": 0, "total": total}
-        job.touch()
-
-        def progress(done: int, res) -> None:
-            job.extract_progress = {
-                "phase": "extracting", "done": done, "total": total,
-                "extracted": res.extracted, "failed": res.failed,
-            }
-            job.touch()
-
-        extractor = CompositeExtractor(cfg, fields=fields)
-        result = extractor.run([r.get(column) or "" for r in rows],
-                               max_rows=limit, progress=progress)
-
-        columns = list(rows[0])
-        for name in fields:
-            if name not in columns:
-                columns.append(name)
-        for row, values in zip(rows, result.values):
-            for name in fields:
-                if values.get(name):
-                    row[name] = values[name]
-
-        output = store.dir_for(job_id) / "normalized" / "extracted.csv"
-        with open(output, "w", encoding="utf-8", newline="") as fh:
-            writer = csv.DictWriter(fh, fieldnames=columns, lineterminator="\n")
-            writer.writeheader()
-            for row in rows:
-                writer.writerow({c: row.get(c, "") for c in columns})
-
-        job.normalized_path = str(output)      # las etapas siguientes usan el separado
-        job.extract_report = result.as_dict()
-        job.extract_progress = {"phase": "done", "done": result.rows, "total": result.rows,
-                                "extracted": result.extracted, "failed": result.failed}
-        job.op_started_at = None
-        job.touch(NORMALIZED)
-    except Exception as exc:
-        job.error = str(exc)
-        job.extract_progress = {"phase": "failed",
-                                "done": (job.extract_progress or {}).get("done", 0),
-                                "total": (job.extract_progress or {}).get("total", 0)}
-        job.op_started_at = None
-        job.touch(FAILED)
-        logger.exception("extract fallo en %s", job_id)

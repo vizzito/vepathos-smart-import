@@ -41,6 +41,11 @@ def test_fechas(raw, expected):
     assert to_datetime(raw) == expected
 
 
+def test_datetime_utc_iso_se_conserva():
+    assert to_datetime("2026-09-06T17:00:00Z") == "2026-09-06T17:00:00Z"
+    assert to_datetime("2026-09-06T17:00:00+00:00") == "2026-09-06T17:00:00Z"
+
+
 # ---------- round-trip contra los archivos reales ----------
 
 def test_seattle_round_trip_identico(tmp_path):
@@ -57,15 +62,24 @@ def test_seattle_round_trip_identico(tmp_path):
 
 
 def test_ar_round_trip_salvo_la_fila_corrupta(tmp_path):
+    """Coords corruptas se limpian; address puede enriquecerse con zone (compose)."""
     result = norm("ref_ar_orders.csv", tmp_path)
     original = (FIXTURES / "ref_ar_orders.csv").read_text(encoding="utf-8").splitlines()
     emitted = (tmp_path / "out.csv").read_text(encoding="utf-8").splitlines()
     original = [l for l in original if l.strip()]
-    diffs = [(a, b) for a, b in zip(original, emitted) if a != b]
-    assert len(diffs) == 1                       # solo VP-1999
-    assert diffs[0][0].startswith("VP-1999,95,200")
-    assert diffs[0][1].startswith("VP-1999,,,")
+    # Header + filas: misma cantidad (1 header + N)
+    assert len(emitted) == len(original)
+    # Solo VP-1999 pierde lat/lng invalidos
+    bad_orig = next(l for l in original if l.startswith("VP-1999,"))
+    bad_out = next(l for l in emitted if l.startswith("VP-1999,"))
+    assert bad_orig.startswith("VP-1999,95,200")
+    assert bad_out.startswith("VP-1999,,,")
     assert result.report["rejected_coordinates"] == 1
+    # El resto conserva delivery_id; address puede ganar barrio via compose
+    for line in emitted[1:]:
+        if line.startswith("VP-1999,"):
+            continue
+        assert line.split(",", 1)[0].startswith("VP-")
 
 
 # ---------- casos borde que vienen en los archivos del cliente ----------
@@ -239,14 +253,42 @@ def test_las_dos_formas_dan_la_misma_estructura(tmp_path):
                 assert pkg.get("package_id")
 
 
-def test_sin_delivery_id_agrupa_por_identidad_geografica(tmp_path):
+def test_sin_delivery_id_no_fusiona_por_coordenadas(tmp_path):
+    """Sin id, cada fila es un stop: mismo lat/lng NO une pedidos distintos."""
     d = _deliveries(tmp_path, "c.csv",
                     "Domicilio,Latitud,Longitud,Bulto,Kg\n"
                     '"Av. Corrientes 1234",-34.6037,-58.3816,A-1,1.5\n'
                     '"Av. Corrientes 1234",-34.6037,-58.3816,A-2,0.8\n'
                     '"Maipu 400",-34.5921,-58.3745,B-1,0.5\n')
+    assert len(d) == 3
+    assert [len(x["packages"]) for x in d] == [1, 1, 1]
+
+
+def test_mismo_delivery_id_une_bultos_aunque_compartan_coords_con_otro(tmp_path):
+    """Mismo id → 1 stop. Distinto id + mismas coords → 2 stops (no merge geo)."""
+    d = _deliveries(
+        tmp_path, "same_geo.csv",
+        "delivery_id,address,lat,lng,package_id,weight_kg\n"
+        'DLV-A,"200 Park Ave",40.7527,-73.9772,PKG-02,1.2\n'
+        'DLV-A,"200 Park Ave",40.7527,-73.9772,PKG-02B,0.5\n'
+        'DLV-B,"89 E 42nd St",40.7527,-73.9772,PKG-13,2.0\n',
+    )
     assert len(d) == 2
-    assert [len(x["packages"]) for x in d] == [2, 1]
+    by_id = {x["delivery_id"]: x for x in d}
+    assert len(by_id["DLV-A"]["packages"]) == 2
+    assert len(by_id["DLV-B"]["packages"]) == 1
+    assert by_id["DLV-B"]["address"] == "89 E 42nd St"
+
+
+def test_mismo_address_distinto_id_son_stops_distintos(tmp_path):
+    d = _deliveries(
+        tmp_path, "same_addr.csv",
+        "delivery_id,address,lat,lng,package_id,weight_kg\n"
+        'ORD-1,"350 5th Ave, New York, NY",40.7484,-73.9857,P1,1.0\n'
+        'ORD-2,"350 5th Ave, New York, NY",40.7484,-73.9857,P2,2.0\n',
+    )
+    assert len(d) == 2
+    assert {x["delivery_id"] for x in d} == {"ORD-1", "ORD-2"}
 
 
 def test_cada_bulto_conserva_sus_propias_dimensiones(tmp_path):
@@ -308,3 +350,61 @@ def test_las_ignoradas_son_warning_no_error(tmp_path):
     issue = report["row_issues"][0]
     assert issue["status"] == "ignored"
     assert issue["issues"][0]["severity"] == "warning"
+
+
+# ---------- time windows + multi-paquete (formas reales de planillas) ----------
+
+TW_MULTI = (
+    "Nro entrega,Cliente,Domicilio,Lat,Lon,Bulto,Kg,"
+    "Ventana desde,Ventana hasta,Zona horaria\n"
+    'VP-TW1,Ana,"Av. Corrientes 1234",-34.6037,-58.3816,B1,1.2,'
+    "2026-09-15 09:00,2026-09-15 12:00,America/Argentina/Buenos_Aires\n"
+    'VP-TW1,Ana,"Av. Corrientes 1234",-34.6037,-58.3816,B2,0.8,'
+    "2026-09-15 09:00,2026-09-15 12:00,America/Argentina/Buenos_Aires\n"
+    'VP-TW2,Luis,"Maipu 400",-34.5921,-58.3745,B3,2.0,'
+    "2026-09-15 14:00,2026-09-15 18:00,America/Argentina/Buenos_Aires\n"
+)
+
+
+def test_ventana_horaria_completa_queda_en_la_entrega(tmp_path):
+    d = _deliveries(tmp_path, "tw.csv", TW_MULTI)
+    tw1 = next(x for x in d if x["delivery_id"] == "VP-TW1")
+    # Con bultos, la ventana vive en cada package (no se inventa a nivel delivery)
+    assert all(p["time_window"]["start"] == "2026-09-15 09:00" for p in tw1["packages"])
+    assert all(p["time_window"]["end"] == "2026-09-15 12:00" for p in tw1["packages"])
+    tz = tw1["packages"][0]["time_window"].get("time_zone")
+    assert tz is None or "Buenos_Aires" in str(tz)
+
+
+def test_multi_paquete_con_misma_ventana_agrupa(tmp_path):
+    d = _deliveries(tmp_path, "tw.csv", TW_MULTI)
+    tw1 = next(x for x in d if x["delivery_id"] == "VP-TW1")
+    tw2 = next(x for x in d if x["delivery_id"] == "VP-TW2")
+    assert len(tw1["packages"]) == 2
+    assert len(tw2["packages"]) == 1
+    assert {p["package_id"] for p in tw1["packages"]} == {"B1", "B2"}
+
+
+def test_cantidad_bultos_y_ventana_en_una_fila(tmp_path):
+    csv_text = (
+        "Pedido,Direccion,Latitud,Longitud,Cant bultos,Peso kg,"
+        "Desde,Hasta\n"
+        'PED-88,"Cabildo 1800",-34.5615,-58.4560,3,1.5,'
+        "15/09/2026 10:00,15/09/2026 13:00\n"
+    )
+    d = _deliveries(tmp_path, "qty_tw.csv", csv_text)
+    assert len(d) == 1
+    assert len(d[0]["packages"]) == 3
+    assert all(p["time_window"]["start"] == "2026-09-15 10:00" for p in d[0]["packages"])
+    assert all(p["time_window"]["end"] == "2026-09-15 13:00" for p in d[0]["packages"])
+
+
+def test_ventana_solo_inicio_se_descarta(tmp_path):
+    csv_text = (
+        "delivery_id,address,lat,lng,tw_start,tw_end\n"
+        'X1,"Florida 500",-34.60,-58.37,2026-09-15 09:00,\n'
+    )
+    d = _deliveries(tmp_path, "half_tw.csv", csv_text)
+    assert "time_window" not in d[0]
+    for p in d[0].get("packages", []):
+        assert "time_window" not in p
