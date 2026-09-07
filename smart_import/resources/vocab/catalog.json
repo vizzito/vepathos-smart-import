@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "_comment": "Fuente de verdad de conceptos (packaging/status/…). El SQLite se GENERA: python -m smart_import.vocab setup. NO meter calles ni ciudades acá: calles = PBF OSM; ciudades = locality_expand + GeoNames JSON.",
+  "packaging": [
+    {
+      "id": "package.box",
+      "code": "BX",
+      "canonical": "box",
+      "aliases": {
+        "en": ["box", "boxes"],
+        "es": ["caja", "cajas", "cajon", "cajón", "cajones"],
+        "pt": ["caixa", "caixas"],
+        "fr": ["boite", "boîte"],
+        "de": ["schachtel"],
+        "it": ["scatola"],
+        "nl": ["doos", "dozen"],
+        "ru": ["коробка", "ящик"]
+      }
+    },
+    {
+      "id": "package.carton",
+      "code": "CT",
+      "canonical": "carton",
+      "aliases": {
+        "en": ["carton", "cartons"],
+        "es": ["carton", "cartón", "cartones"],
+        "de": ["karton"],
+        "it": ["cartone"],
+        "nl": ["karton"]
+      }
+    },
+    {
+      "id": "package.case",
+      "code": "CS",
+      "canonical": "case",
+      "aliases": {
+        "en": ["case", "cases"],
+        "de": ["kiste"],
+        "it": ["cassa"],
+        "nl": ["kist"]
+      }
+    },
+    {
+      "id": "package.crate",
+      "code": "CR",
+      "canonical": "crate",
+      "aliases": {
+        "en": ["crate", "crates"]
+      }
+    },
+    {
+      "id": "package.pallet",
+      "code": "PX",
+      "canonical": "pallet",
+      "aliases": {
+        "en": ["pallet", "pallets"],
+        "es": ["palet", "palets", "tarima", "tarimas"],
+        "pt": ["palete", "paletes"],
+        "fr": ["palette"],
+        "de": ["palette"],
+        "it": ["bancale", "pallet"],
+        "nl": ["pallet"],
+        "ru": ["паллета"]
+      }
+    },
+    {
+      "id": "package.bag",
+      "code": "BG",
+      "canonical": "bag",
+      "aliases": {
+        "en": ["bag", "bags", "sack", "sacks"],
+        "es": ["bolsa", "bolsas", "saco", "sacos"],
+        "pt": ["saco", "sacola"],
+        "fr": ["sac"],
+        "de": ["beutel", "sack"],
+        "it": ["sacco"],
+        "nl": ["zak"],
+        "ru": ["мешок"]
+      }
+    },
+    {
+      "id": "package.envelope",
+      "code": "EN",
+      "canonical": "envelope",
+      "aliases": {
+        "en": ["envelope", "envelopes", "mailer"],
+        "es": ["sobre", "sobres"],
+        "pt": ["envelope"],
+        "fr": ["enveloppe"],
+        "de": ["umschlag"],
+        "it": ["busta"],
+        "nl": ["envelop"],
+        "ru": ["конверт"]
+      }
+    },
+    {
+      "id": "package.parcel",
+      "code": "PC",
+      "canonical": "parcel",
+      "aliases": {
+        "en": ["parcel", "parcels"],
+        "es": ["paquete", "paquetes"],
+        "pt": ["pacote", "pacotes", "volume", "volumes", "embrulho"],
+        "fr": ["colis", "paquet"],
+        "de": ["paket", "packung"],
+        "it": ["pacco", "pacchi"],
+        "nl": ["pakket"],
+        "ru": ["пакет", "посылка"]
+      }
+    },
+    {
+      "id": "package.package",
+      "code": "PK",
+      "canonical": "package",
+      "aliases": {
+        "en": ["package", "packages", "pack", "packs"],
+        "es": ["bulto", "bultos", "envase", "envases"]
+      }
+    },
+    {
+      "id": "package.bundle",
+      "code": "",
+      "canonical": "bundle",
+      "aliases": {
+        "en": ["bundle", "bundles"],
+        "es": ["atado", "atados", "fardo", "fardos"],
+        "pt": ["fardo"],
+        "fr": ["ballot"],
+        "de": ["ballen"],
+        "it": ["balla"]
+      }
+    },
+    {
+      "id": "package.drum",
+      "code": "DR",
+      "canonical": "drum",
+      "aliases": {
+        "en": ["drum", "drums"],
+        "es": ["tambor", "tambores", "bidon", "bidón"],
+        "pt": ["tambor"],
+        "fr": ["fût", "fut"],
+        "de": ["fass", "trommel"],
+        "it": ["fusto"],
+        "nl": ["vat"],
+        "ru": ["бочка"]
+      }
+    },
+    {
+      "id": "package.barrel",
+      "code": "BA",
+      "canonical": "barrel",
+      "aliases": {
+        "en": ["barrel", "barrels"],
+        "es": ["barril", "barriles"],
+        "pt": ["barril"],
+        "fr": ["baril"],
+        "it": ["barile"]
+      }
+    },
+    {
+      "id": "package.can",
+      "code": "CA",
+      "canonical": "can",
+      "aliases": {
+        "en": ["can", "cans"],
+        "es": ["lata", "latas"],
+        "pt": ["lata"]
+      }
+    },
+    {
+      "id": "package.tin",
+      "code": "TN",
+      "canonical": "tin",
+      "aliases": {
+        "en": ["tin", "tins"]
+      }
+    },
+    {
+      "id": "package.bottle",
+      "code": "BO",
+      "canonical": "bottle",
+      "aliases": {
+        "en": ["bottle", "bottles"],
+        "es": ["botella", "botellas"],
+        "pt": ["garrafa"],
+        "fr": ["bouteille"],
+        "de": ["flasche"],
+        "it": ["bottiglia"],
+        "nl": ["fles"],
+        "ru": ["бутылка"]
+      }
+    },
+    {
+      "id": "package.jar",
+      "code": "JR",
+      "canonical": "jar",
+      "aliases": {
+        "en": ["jar", "jars"],
+        "es": ["frasco"],
+        "fr": ["pot"],
+        "de": ["glas"],
+        "it": ["barattolo"],
+        "nl": ["pot"],
+        "ru": ["банка"]
+      }
+    },
+    {
+      "id": "package.tube",
+      "code": "TU",
+      "canonical": "tube",
+      "aliases": {
+        "en": ["tube", "tubes"],
+        "es": ["tubo", "tubos"],
+        "pt": ["tubo"],
+        "fr": ["tube"],
+        "de": ["tube"],
+        "it": ["tubo"],
+        "nl": ["tube"],
+        "ru": ["туба"]
+      }
+    },
+    {
+      "id": "package.tray",
+      "code": "TY",
+      "canonical": "tray",
+      "aliases": {
+        "en": ["tray", "trays"],
+        "es": ["bandeja"],
+        "pt": ["bandeja"],
+        "fr": ["plateau"],
+        "de": ["schale"],
+        "it": ["vassoi"],
+        "nl": ["tray"],
+        "ru": ["лоток"]
+      }
+    },
+    {
+      "id": "package.roll",
+      "code": "RO",
+      "canonical": "roll",
+      "aliases": {
+        "en": ["roll", "rolls", "reel", "reels", "coil", "coils"],
+        "es": ["rollo", "rollos"],
+        "pt": ["rolo"],
+        "fr": ["rouleau"],
+        "de": ["rolle"],
+        "it": ["rotolo"],
+        "nl": ["rol"],
+        "ru": ["рулон"]
+      }
+    },
+    {
+      "id": "package.container",
+      "code": "CN",
+      "canonical": "container",
+      "aliases": {
+        "en": ["container", "containers"],
+        "es": ["contenedor", "contenedores"],
+        "pt": ["contentor"],
+        "fr": ["conteneur"],
+        "de": ["container"],
+        "it": ["contenitore"],
+        "nl": ["container"],
+        "ru": ["контейнер"]
+      }
+    },
+    {
+      "id": "package.tote",
+      "code": "",
+      "canonical": "tote",
+      "aliases": {
+        "en": ["tote", "totes", "bin", "bins"]
+      }
+    },
+    {
+      "id": "package.unit",
+      "code": "",
+      "canonical": "unit",
+      "aliases": {
+        "en": ["unit", "units", "piece", "pieces"],
+        "es": ["pieza", "piezas", "unidad", "unidades"],
+        "pt": ["peca", "peça", "unidade"],
+        "fr": ["piece", "pièce", "unite", "unité"],
+        "de": ["stuck", "stück", "einheit"],
+        "it": ["pezzo", "unita", "unità"],
+        "nl": ["stuk", "eenheid"]
+      }
+    },
+    {
+      "id": "package.shrink",
+      "code": "SW",
+      "canonical": "shrinkwrap",
+      "aliases": {
+        "en": ["shrink", "wrap", "wrapper"]
+      }
+    },
+    {
+      "id": "package.blister",
+      "code": "",
+      "canonical": "blister",
+      "aliases": {"en": ["blister"]}
+    },
+    {
+      "id": "package.ampoule",
+      "code": "AM",
+      "canonical": "ampoule",
+      "aliases": {"en": ["ampoule", "vial"]}
+    },
+    {
+      "id": "package.ibc",
+      "code": "",
+      "canonical": "ibc",
+      "aliases": {"en": ["ibc"]}
+    },
+    {
+      "id": "package.tank",
+      "code": "TK",
+      "canonical": "tank",
+      "aliases": {"en": ["tank", "tanks"]}
+    },
+    {
+      "id": "package.cage",
+      "code": "CG",
+      "canonical": "cage",
+      "aliases": {"en": ["cage", "cages"]}
+    },
+    {
+      "id": "package.skid",
+      "code": "",
+      "canonical": "skid",
+      "aliases": {"en": ["skid", "skids"]}
+    },
+    {
+      "id": "package.slipsheet",
+      "code": "SL",
+      "canonical": "slipsheet",
+      "aliases": {"en": ["slip sheet", "slipsheet"]}
+    },
+    {
+      "id": "package.polybag",
+      "code": "",
+      "canonical": "polybag",
+      "aliases": {"en": ["polybag", "poly bag"]}
+    },
+    {
+      "id": "package.pail",
+      "code": "PL",
+      "canonical": "pail",
+      "aliases": {"en": ["pail", "pails"]}
+    }
+  ],
+  "status": [
+    {
+      "id": "status.pending",
+      "canonical": "pending",
+      "aliases": {
+        "en": ["pending"],
+        "es": ["pendiente"],
+        "pt": ["pendente"],
+        "fr": ["en attente"],
+        "de": ["ausstehend"],
+        "it": ["in attesa"]
+      }
+    },
+    {
+      "id": "status.new",
+      "canonical": "new",
+      "aliases": {
+        "en": ["new"],
+        "es": ["nuevo"],
+        "pt": ["novo"],
+        "fr": ["nouveau"],
+        "de": ["neu"],
+        "it": ["nuovo"]
+      }
+    },
+    {
+      "id": "status.created",
+      "canonical": "created",
+      "aliases": {
+        "en": ["created"],
+        "es": ["creado"],
+        "pt": ["criado"],
+        "fr": [],
+        "de": ["erstellt"],
+        "it": ["creato"]
+      }
+    },
+    {
+      "id": "status.assigned",
+      "canonical": "assigned",
+      "aliases": {
+        "en": ["assigned"],
+        "es": ["asignado"],
+        "pt": ["atribuido"],
+        "fr": ["assigne"],
+        "de": ["zugewiesen"],
+        "it": ["assegnato"]
+      }
+    },
+    {
+      "id": "status.confirmed",
+      "canonical": "confirmed",
+      "aliases": {
+        "en": ["confirmed"],
+        "es": ["confirmado"],
+        "fr": ["confirmé"],
+        "de": ["bestaetigt", "bestätigt"]
+      }
+    },
+    {
+      "id": "status.accepted",
+      "canonical": "accepted",
+      "aliases": {
+        "en": ["accepted"],
+        "es": ["aceptado"],
+        "pt": ["aceito"],
+        "de": ["angenommen"],
+        "it": ["accettato"]
+      }
+    },
+    {
+      "id": "status.processing",
+      "canonical": "processing",
+      "aliases": {
+        "en": ["processing"],
+        "es": ["procesando"],
+        "pt": ["processando"],
+        "fr": ["en traitement"],
+        "it": ["in elaborazione"]
+      }
+    },
+    {
+      "id": "status.picking",
+      "canonical": "picking",
+      "aliases": {
+        "en": ["picking"],
+        "es": ["preparando"],
+        "fr": ["en preparation", "en préparation"],
+        "de": ["kommissionierung"]
+      }
+    },
+    {
+      "id": "status.packed",
+      "canonical": "packed",
+      "aliases": {
+        "en": ["packed"],
+        "es": ["empacado"],
+        "pt": ["embalado"],
+        "fr": ["emballé"],
+        "de": ["verpackt"],
+        "it": ["imballato"]
+      }
+    },
+    {
+      "id": "status.ready",
+      "canonical": "ready",
+      "aliases": {
+        "en": ["ready"],
+        "es": ["listo"],
+        "pt": ["pronto"],
+        "fr": ["prêt"],
+        "de": ["bereit"]
+      }
+    },
+    {
+      "id": "status.dispatched",
+      "canonical": "dispatched",
+      "aliases": {
+        "en": ["dispatched"],
+        "es": ["despachado"],
+        "pt": ["expedido"],
+        "fr": ["expédié"],
+        "de": ["versandt"],
+        "it": ["spedito"]
+      }
+    },
+    {
+      "id": "status.shipped",
+      "canonical": "shipped",
+      "aliases": {
+        "en": ["shipped"],
+        "es": ["enviado"],
+        "pt": ["expedido"],
+        "fr": ["envoyé"],
+        "de": ["versendet"],
+        "it": ["spedito"]
+      }
+    },
+    {
+      "id": "status.in_transit",
+      "canonical": "in_transit",
+      "aliases": {
+        "en": ["in_transit", "in transit"],
+        "es": ["en_transito", "en tránsito", "en transito"],
+        "pt": ["em transito", "em trânsito"],
+        "fr": ["en cours"],
+        "de": ["unterwegs"]
+      }
+    },
+    {
+      "id": "status.out_for_delivery",
+      "canonical": "out_for_delivery",
+      "aliases": {
+        "en": ["out_for_delivery", "out for delivery"],
+        "es": ["en_reparto", "en reparto"],
+        "pt": ["saiu para entrega"],
+        "fr": ["en livraison"],
+        "de": ["zustellung"]
+      }
+    },
+    {
+      "id": "status.delivered",
+      "canonical": "delivered",
+      "aliases": {
+        "en": ["delivered"],
+        "es": ["entregado"],
+        "pt": ["entregue"],
+        "fr": ["livré"],
+        "de": ["geliefert"],
+        "it": ["consegnato"]
+      }
+    },
+    {
+      "id": "status.completed",
+      "canonical": "completed",
+      "aliases": {
+        "en": ["completed", "done"],
+        "es": ["completado", "completo", "hecho"],
+        "pt": ["feito"],
+        "fr": ["terminé", "fait"],
+        "de": ["abgeschlossen", "erledigt"],
+        "it": ["completato", "fatto"]
+      }
+    },
+    {
+      "id": "status.failed",
+      "canonical": "failed",
+      "aliases": {
+        "en": ["failed", "failed_delivery"],
+        "es": ["fallido", "entrega fallida"],
+        "pt": ["falhou", "entrega falhada"],
+        "fr": ["échoué", "livraison echouee"],
+        "de": ["fehlgeschlagen"],
+        "it": ["fallito"]
+      }
+    },
+    {
+      "id": "status.undelivered",
+      "canonical": "undelivered",
+      "aliases": {
+        "en": ["undelivered"],
+        "es": ["no entregado"],
+        "pt": ["nao entregue", "não entregue"],
+        "fr": ["non livré"]
+      }
+    },
+    {
+      "id": "status.returned",
+      "canonical": "returned",
+      "aliases": {
+        "en": ["returned", "return_to_sender", "rts"],
+        "es": ["devuelto", "devolucion"],
+        "pt": ["devolvido", "devolução"],
+        "fr": ["retourné"],
+        "de": ["retourniert"],
+        "it": ["reso"]
+      }
+    },
+    {
+      "id": "status.cancelled",
+      "canonical": "cancelled",
+      "aliases": {
+        "en": ["cancelled", "canceled"],
+        "es": ["cancelado"],
+        "fr": ["annulé"],
+        "de": ["storniert"],
+        "it": ["annullato"]
+      }
+    },
+    {
+      "id": "status.rejected",
+      "canonical": "rejected",
+      "aliases": {
+        "en": ["rejected"],
+        "es": ["rechazado"],
+        "pt": ["rejeitado"],
+        "fr": ["rejeté"],
+        "de": ["abgelehnt"],
+        "it": ["rifiutato"]
+      }
+    },
+    {
+      "id": "status.on_hold",
+      "canonical": "on_hold",
+      "aliases": {
+        "en": ["on_hold", "on hold"],
+        "es": ["en espera"],
+        "pt": ["em espera"],
+        "de": ["wartend"]
+      }
+    },
+    {
+      "id": "status.delayed",
+      "canonical": "delayed",
+      "aliases": {
+        "en": ["delayed"],
+        "es": ["retrasado"],
+        "pt": ["atrasado"],
+        "fr": ["retardé"],
+        "de": ["verzögert"],
+        "it": ["in ritardo"]
+      }
+    },
+    {
+      "id": "status.lost",
+      "canonical": "lost",
+      "aliases": {
+        "en": ["lost"],
+        "es": ["perdido", "extraviado"],
+        "fr": ["perdu"],
+        "de": ["verloren"],
+        "it": ["smarrito"]
+      }
+    },
+    {
+      "id": "status.damaged",
+      "canonical": "damaged",
+      "aliases": {
+        "en": ["damaged"],
+        "es": ["danado"],
+        "pt": ["danificado"],
+        "fr": ["endommagé"],
+        "de": ["beschädigt"],
+        "it": ["danneggiato"]
+      }
+    },
+    {
+      "id": "status.partial",
+      "canonical": "partial",
+      "aliases": {
+        "en": ["partial"],
+        "es": ["parcial"],
+        "de": ["teilweise"],
+        "it": ["parziale"]
+      }
+    },
+    {
+      "id": "status.rescheduled",
+      "canonical": "rescheduled",
+      "aliases": {
+        "en": ["rescheduled"],
+        "es": ["reprogramado"],
+        "pt": ["reagendado"],
+        "fr": ["reporté"],
+        "de": ["verschoben"]
+      }
+    },
+    {
+      "id": "status.attempted",
+      "canonical": "attempted",
+      "aliases": {
+        "en": ["attempted"],
+        "es": ["intento"],
+        "pt": ["tentativa"],
+        "fr": ["tentative"],
+        "de": ["versuch"]
+      }
+    },
+    {
+      "id": "status.awaiting_pickup",
+      "canonical": "awaiting_pickup",
+      "aliases": {
+        "en": ["awaiting_pickup"],
+        "es": ["retirar", "para retirar"],
+        "fr": ["a retirer"],
+        "de": ["abzuholen"]
+      }
+    },
+    {
+      "id": "status.picked_up",
+      "canonical": "picked_up",
+      "aliases": {
+        "en": ["picked_up"],
+        "es": ["retirado"],
+        "pt": ["coletado"],
+        "fr": ["récupéré"],
+        "de": ["abgeholt"],
+        "it": ["ritirato"]
+      }
+    },
+    {
+      "id": "status.closed",
+      "canonical": "closed",
+      "aliases": {
+        "en": ["closed"],
+        "es": ["cerrado"],
+        "pt": ["fechado"],
+        "fr": ["fermé"],
+        "de": ["geschlossen"],
+        "it": ["chiuso"]
+      }
+    },
+    {
+      "id": "status.open",
+      "canonical": "open",
+      "aliases": {
+        "en": ["open"],
+        "es": ["abierto"],
+        "pt": ["aberto"],
+        "fr": ["ouvert"],
+        "de": ["offen"],
+        "it": ["aperto"]
+      }
+    },
+    {
+      "id": "status.active",
+      "canonical": "active",
+      "aliases": {
+        "en": ["active"],
+        "es": ["activo"],
+        "pt": ["ativo"],
+        "fr": ["actif"],
+        "de": ["aktiv"],
+        "it": ["attivo"]
+      }
+    },
+    {
+      "id": "status.inactive",
+      "canonical": "inactive",
+      "aliases": {
+        "en": ["inactive"],
+        "es": ["inactivo"],
+        "pt": ["inativo"],
+        "fr": ["inactif"],
+        "de": ["inaktiv"]
+      }
+    },
+    {
+      "id": "status.draft",
+      "canonical": "draft",
+      "aliases": {
+        "en": ["draft"],
+        "es": ["borrador"],
+        "pt": ["rascunho"],
+        "fr": ["brouillon"],
+        "de": ["entwurf"],
+        "it": ["bozza"]
+      }
+    },
+    {
+      "id": "status.scheduled",
+      "canonical": "scheduled",
+      "aliases": {
+        "en": ["scheduled"],
+        "es": ["programado"],
+        "pt": ["agendado"],
+        "fr": ["planifié"],
+        "de": ["geplant"],
+        "it": ["programmato"]
+      }
+    },
+    {
+      "id": "status.unassigned",
+      "canonical": "unassigned",
+      "aliases": {
+        "en": ["unassigned"],
+        "es": ["sin asignar"],
+        "pt": ["nao atribuido"],
+        "fr": ["non assigné"]
+      }
+    }
+  ]
+}

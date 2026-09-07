@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "_comment": "SOLO slang no-estandar y reglas que el catalogo no puede decidir. No copiar sinonimos de catalog.json. Confiar: schema (headers) > catalog (valores) > estas reglas (contexto) > fuzzy (ultimo).",
+  "aliases": {
+    "packaging": [
+      "cargadas"
+    ]
+  },
+  "ambiguous_aliases": [
+    {
+      "_": "'Altura' es el alto del bulto Y el numero de puerta de la calle (AR/LatAm).",
+      "alias": ["altura", "alt"],
+      "prefer": "house_number",
+      "when_any": ["address", "zone", "city"],
+      "when_none": ["width_cm", "length_cm", "house_number"]
+    },
+    {
+      "_": "'Departamento' es provincia (UY/CO/PE) Y el depto de un edificio (AR).",
+      "alias": ["departamento", "depto", "dpto"],
+      "prefer": "unit",
+      "when_any": ["house_number"],
+      "when_none": ["unit"]
+    },
+    {
+      "_": "'Long' es longitud Y largo. Con lat es coordenada; con ancho/peso es dimension.",
+      "alias": ["long"],
+      "prefer": "length_cm",
+      "when_any": ["width_cm", "height_cm", "weight_kg"],
+      "when_none": ["lat", "length_cm"]
+    },
+    {
+      "_": "'Estado' es provincia (BR/MX) Y estado del envio. Con pais/ciudad es region.",
+      "alias": ["estado"],
+      "prefer": "region",
+      "when_any": ["country", "city"],
+      "when_none": ["region", "packaging"]
+    }
+  ]
+}

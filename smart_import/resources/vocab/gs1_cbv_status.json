@@ -1,0 +1,39 @@
+{
+  "_comment": "Subset of GS1 EPCIS Core Business Vocabulary (business step + disposition). Offline fixture; no scrape.",
+  "business_steps": [
+    "accepting",
+    "arriving",
+    "assembling",
+    "collecting",
+    "commissioning",
+    "consigning",
+    "holding",
+    "inspecting",
+    "loading",
+    "packing",
+    "picking",
+    "receiving",
+    "repackaging",
+    "shipping",
+    "staging_outbound",
+    "stocking",
+    "storing",
+    "transporting",
+    "unloading"
+  ],
+  "dispositions": [
+    "active",
+    "available",
+    "damaged",
+    "destroyed",
+    "expired",
+    "in_progress",
+    "in_transit",
+    "inactive",
+    "recalled",
+    "reserved",
+    "returned",
+    "stolen",
+    "unknown"
+  ]
+}
