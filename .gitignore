@@ -4,9 +4,14 @@ __pycache__/
 .pytest_cache/
 out/
 data/
+# Generado: python -m smart_import.vocab setup --geonames
+smart_import/resources/locality_expand_geonames.json
 benchmarks/results.*
+benchmarks/extraction.json
 .env
 .env.prod
+# Exploracion local (libpostal / pastes raros): no versionar
+local-explore/
 # fixtures/examples generados: se recrean con `make-fixtures`
 fixtures/*.xlsx
 fixtures/*.xls

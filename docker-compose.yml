@@ -2,13 +2,13 @@
 # Smart Import — un compose para local y para produccion.
 #
 #   cp .env.example .env
-#   docker compose up -d                    todo: normalize + geocoding + IA
-#   docker compose --profile warmup up      + precarga el modelo antes de servir
+#   docker compose up -d                    normalize + geocoding (+ libpostal si el target)
 #   docker compose --profile tools run --rm tools <comando>
 #
 # Para un despliegue mas chico, edita .env:
-#   SMART_IMPORT_AI_ENABLED=false + SMART_IMPORT_TARGET=runtime   -> imagen 8x menor
+#   SMART_IMPORT_TARGET=runtime (default)                          -> imagen ~370 MB
 #   SMART_IMPORT_GEOCODING_ENABLED=false                          -> sin PBFs
+#   SMART_IMPORT_TARGET=runtime-libpostal                           -> +libpostal (~2 GB)
 #
 # Nada se activa por estar el container arriba: las capacidades salen del .env
 # y se ven en GET /health.
@@ -17,30 +17,40 @@
 x-common: &common
   build:
     context: .
-    target: ${SMART_IMPORT_TARGET:-ai}
-  image: vepathos/smart-import:${SMART_IMPORT_TARGET:-ai}-${IMAGE_TAG:-latest}
+    target: ${SMART_IMPORT_TARGET:-runtime}
+    args:
+      SMART_IMPORT_VOCAB_GEONAMES: ${SMART_IMPORT_VOCAB_GEONAMES:-1}
+  image: vepathos/smart-import:${SMART_IMPORT_TARGET:-runtime}-${IMAGE_TAG:-latest}
   env_file: [.env]
   environment:
     # Rutas DENTRO del container. No se tocan desde .env: el mapeo host->container
     # lo define este archivo, no la config de la app.
     SMART_IMPORT_PBF_DIR: /data/pbf
     SMART_IMPORT_INDEX_DIR: /data/indexes
+    SMART_IMPORT_EXTRACT_DIR: /data/extracts
     SMART_IMPORT_CACHE_PATH: /data/cache/geocode_cache.sqlite
     SMART_IMPORT_WORK_DIR: /data/jobs
     SMART_IMPORT_SCHEMA_DIR: /app/schemas
+    SMART_IMPORT_VOCAB_PATH: /data/vocab/smart_import_vocab.sqlite
+    SMART_IMPORT_LOCALITY_GEONAMES_PATH: /data/vocab/locality_expand_geonames.json
     HF_HOME: /model-cache
   volumes:
-    # Los .osm.pbf que ya genera el cutter: SOLO LECTURA.
-    # Si no usas geocoding, este mount es inofensivo aunque la ruta no exista.
-    - ${ROUTE_OPTIMIZER_DATA:-./data}/_extracts:/data/pbf:ro
+    # Los .osm.pbf del route-optimizer: extracts chicos + paises (83GB en disco,
+    # el mount es bind, no copia). READ ONLY.
+    # Preferí la raiz `data/` (no solo `_extracts`) para que el fallback de pais
+    # (argentina-pyrosm.osm.pbf) tambien sea visible.
+    - ${ROUTE_OPTIMIZER_DATA:-./data}:/data/pbf:ro
     # Artefactos propios, separados de los del cutter para que su limpieza
     # de PBFs no se lleve puestos los indices de geocoding.
     - smart_import_indexes:/data/indexes
+    - smart_import_extracts:/data/extracts
     - smart_import_cache:/data/cache
     - smart_import_jobs:/data/jobs
     - smart_import_models:/model-cache
     # Schemas editables sin rebuild: agrega un campo y reinicia.
     - ./schemas:/app/schemas:ro
+    # Codigo local sin rebuild (solo desarrollo). Comenta en prod.
+    - ./smart_import:/app/smart_import:ro
 
 services:
 
@@ -58,19 +68,84 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      # el arranque con precarga de modelo puede tardar: no marcar unhealthy antes
-      start_period: ${SMART_IMPORT_START_PERIOD:-180s}
-    mem_limit: ${SMART_IMPORT_MEMORY_LIMIT:-4g}
-    cpus: ${SMART_IMPORT_CPUS:-2}
+      # vocab setup al arrancar: no marcar unhealthy al toque
+      start_period: ${SMART_IMPORT_START_PERIOD:-60s}
+    mem_limit: ${SMART_IMPORT_MEMORY_LIMIT:-8g}
+    cpus: ${SMART_IMPORT_CPUS:-4}
+
+  # ---- infra local (prod-shaped): RabbitMQ + MinIO ----
+  # `docker compose --profile infra up -d`
+  rabbitmq:
+    profiles: [infra]
+    image: rabbitmq:3.13-management-alpine
+    container_name: vepathos-smart-import-rabbit
+    restart: unless-stopped
+    ports:
+      - "${RABBITMQ_PORT:-5672}:5672"
+      - "${RABBITMQ_MGMT_PORT:-15672}:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-guest}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-guest}
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  minio:
+    profiles: [infra]
+    image: minio/minio:latest
+    container_name: vepathos-smart-import-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:-minioadmin}
+    volumes:
+      - smart_import_minio:/data
+
+  minio-init:
+    profiles: [infra]
+    image: minio/mc:latest
+    container_name: vepathos-smart-import-minio-init
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      sleep 3;
+      mc alias set local http://minio:9000 $${MINIO_ROOT_USER:-minioadmin} $${MINIO_ROOT_PASSWORD:-minioadmin};
+      mc mb -p local/$${S3_BUCKET:-vepathosprod} || true;
+      exit 0;
+      "
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:-minioadmin}
+      S3_BUCKET: ${S3_BUCKET:-vepathosprod}
 
   # ---- baja el modelo al volumen ANTES de que el servicio empiece a servir ----
-  # `docker compose --profile warmup up`
-  warmup:
+
+  worker:
     <<: *common
-    container_name: vepathos-smart-import-warmup
-    profiles: [warmup]
-    restart: "no"
-    command: ["warmup"]
+    container_name: vepathos-smart-import-worker
+    profiles: [worker]
+    restart: unless-stopped
+    command: ["worker"]
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USER: ${RABBITMQ_USER:-guest}
+      RABBITMQ_PASSWORD: ${RABBITMQ_PASSWORD:-guest}
+      USE_S3: ${USE_S3:-false}
+      S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-http://minio:9000}
+      S3_ACCESS_KEY: ${S3_ACCESS_KEY:-minioadmin}
+      S3_SECRET_KEY: ${S3_SECRET_KEY:-minioadmin}
+      S3_BUCKET: ${S3_BUCKET:-vepathosprod}
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
 
   # ---- comandos sueltos contra los mismos volumenes ----
   # `docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4`
@@ -80,11 +155,12 @@ services:
     container_name: vepathos-smart-import-tools
     profiles: [tools]
     restart: "no"
-    entrypoint: ["python", "-m", "smart_import"]
     command: ["--help"]
 
 volumes:
   smart_import_indexes:
+  smart_import_extracts:
   smart_import_cache:
   smart_import_jobs:
   smart_import_models:
+  smart_import_minio:
