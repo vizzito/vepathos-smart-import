@@ -22,6 +22,7 @@ from typing import Any
 from fastapi import Body, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
+from starlette.concurrency import run_in_threadpool
 
 from ..config import Config
 from ..schemas import TargetSchema
@@ -255,7 +256,13 @@ async def create_import(
     job.raw_path = str(raw_path)
     stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
           tamano=f"{size / 1024:.1f}KB", schema=schema)
-    response = _run_normalize(
+    # El normalize es CPU-bound (lectura, mapping, extraccion, libpostal) y este
+    # endpoint es una corrutina: ejecutarlo inline bloquea el event loop y con el
+    # loop bloqueado no se atiende NADA — ni /health (el healthcheck marca el
+    # container unhealthy) ni los SSE de progreso ni el polling del front.
+    # El upload de arriba si es async de verdad: `await file.read()` cede.
+    response = await run_in_threadpool(
+        _run_normalize,
         job, schema_path, phone_region, diagnostics,
         timezone=timezone, depot_timezone=depot_timezone,
         service_date=service_date,

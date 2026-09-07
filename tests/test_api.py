@@ -328,3 +328,47 @@ def test_el_polling_se_espacia_a_medida_que_el_job_tarda(client):
         assert job.poll_after_ms() is None                 # terminado: no pollear
     finally:
         store._jobs.pop(job.id, None)
+
+
+def test_el_normalize_no_corre_en_el_event_loop(capabilities, monkeypatch):
+    """El import es CPU-bound: si corre en el loop, el proceso no atiende nada mas.
+
+    Con el normalize inline en la corrutina, mientras dura un import grande el
+    servicio no responde /health (el healthcheck de compose marca el container
+    unhealthy), no empuja los SSE de progreso y no contesta el polling del front.
+
+    El test compara el thread donde corre el normalize contra el thread del event
+    loop: tienen que ser distintos.
+    """
+    import asyncio
+    import threading
+
+    import httpx
+
+    capabilities(geocoding_enabled=True, pbf_dir="/tmp/pbf")
+    visto: dict[str, int] = {}
+    real = api_module._run_normalize
+
+    def spy(*args, **kwargs):
+        visto["normalize"] = threading.get_ident()
+        return real(*args, **kwargs)
+
+    monkeypatch.setattr(api_module, "_run_normalize", spy)
+
+    async def subir():
+        # El loop corre en ESTE thread: cualquier trabajo que lo comparta lo bloquea.
+        visto["loop"] = threading.get_ident()
+        transport = httpx.ASGITransport(app=app)
+        async with httpx.AsyncClient(transport=transport, base_url="http://t") as cli:
+            with open(FIXTURES / "es_sin_coords.csv", "rb") as fh:
+                return await cli.post(
+                    "/imports", files={"file": ("es_sin_coords.csv", fh.read())})
+
+    respuesta = asyncio.run(subir())
+    assert respuesta.status_code == 201
+    try:
+        assert visto["normalize"] != visto["loop"], (
+            "el normalize corrio en el thread del event loop: vuelve a bloquear "
+            "/health, los SSE y el polling mientras dura el import")
+    finally:
+        store.delete(respuesta.json()["job_id"])
