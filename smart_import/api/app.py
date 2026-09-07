@@ -644,7 +644,9 @@ def start_geocode(
     _capability_guard(bool(CFG.pbf_dir), "El geocoding",
                       "Falta SMART_IMPORT_PBF_DIR apuntando a los .osm.pbf.")
     job = _job_or_404(job_id)
-    if job.status in (GEOCODING, GEOCODE_QUEUED):
+    if job.busy:
+        # Chequeo temprano para no hacer trabajo al pedo; el que decide de
+        # verdad es el claim atomico de mas abajo.
         raise HTTPException(409, "ya hay una geolocalizacion en curso para este job")
     if not job.normalized_path or not Path(job.normalized_path).exists():
         raise HTTPException(409, "hay que normalizar el archivo antes de geocodificar")
@@ -678,6 +680,10 @@ def start_geocode(
     )
 
     total = int(job.report.get("rows_output") or job.needs_geocode or 0)
+    # Reserva atomica: si otro request se adelanto, este no lanza un segundo
+    # worker sobre el mismo CSV.
+    if not store.claim_geocode(job.id):
+        raise HTTPException(409, "ya hay una geolocalizacion en curso para este job")
     stage(logger, "HTTP", "POST /imports/{id}/geocode  (accion EXPLICITA del usuario)",
           job=job_id, depot=f"{origin_lat},{origin_lon}" if origin else None,
           enrich=depot.enrichment_tokens() if depot else None,
@@ -686,7 +692,6 @@ def start_geocode(
     job.op_started_at = time.time()
     job.geocode_progress = {"phase": "queued", "done": 0, "total": total}
     job.geocode_report = {}
-    job.touch(GEOCODE_QUEUED)
     _geocode_pool.submit(
         _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
     return {**job.as_dict(),

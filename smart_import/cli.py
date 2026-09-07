@@ -575,9 +575,21 @@ def serve(
     typer.echo(f"  parser: {cfg.address_parser} | libpostal: {'on' if cfg.libpostal_enabled else 'off'}"
                f" | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
     if workers > 1:
-        typer.echo("  aviso: con workers > 1 los jobs no se comparten entre procesos")
+        # Era un aviso, y un aviso no impide nada: quien levantaba el servicio
+        # con --workers 4 para "escalar" rompia el flujo de forma intermitente.
+        # El POST /imports cae en un worker y el POST /geocode en otro, que
+        # responde 404 porque no conoce ese job. Falla el arranque hasta que el
+        # almacen sea compartido (Redis/Postgres).
+        typer.echo(
+            f"  ERROR: --workers {workers} no es una configuracion valida.\n"
+            "  El almacen de jobs vive en memoria del proceso: con mas de un\n"
+            "  worker, el import y su geocode caen en procesos distintos y el\n"
+            "  segundo responde 404. Usa --workers 1.\n"
+            "  Para escalar hace falta el store compartido, no mas procesos.",
+            err=True)
+        raise typer.Exit(2)
     uvicorn.run("smart_import.api:app", host=host, port=port, reload=reload,
-                workers=workers if not reload else 1)
+                workers=1)
 
 
 

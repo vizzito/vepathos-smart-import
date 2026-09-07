@@ -291,6 +291,22 @@ class JobStore:
     def get(self, job_id: str) -> Job | None:
         return self._jobs.get(job_id)
 
+    def claim_geocode(self, job_id: str) -> bool:
+        """Reserva el job para geocodificar. False si ya esta ocupado.
+
+        Mirar el estado y despues escribirlo son dos pasos: separados, dos POST
+        simultaneos (doble click, retry del front, reintento de httpx) pasan los
+        dos la guarda y lanzan dos workers sobre el mismo CSV, que se pisan el
+        archivo de salida y el reporte. Aca el chequeo y el cambio ocurren bajo
+        el mismo lock, asi que solo uno puede reservar.
+        """
+        with self._lock:
+            job = self._jobs.get(job_id)
+            if job is None or job.status in BUSY_STATUSES:
+                return False
+            job.touch(GEOCODE_QUEUED)
+            return True
+
     def list(self, limit: int = 50) -> list[Job]:
         return sorted(self._jobs.values(), key=lambda j: -j.created_at)[:limit]
 

@@ -372,3 +372,72 @@ def test_el_normalize_no_corre_en_el_event_loop(capabilities, monkeypatch):
             "/health, los SSE y el polling mientras dura el import")
     finally:
         store.delete(respuesta.json()["job_id"])
+
+
+def test_solo_un_request_puede_reservar_el_geocode():
+    """Mirar el estado y escribirlo son dos pasos: entre medio entra el otro POST.
+
+    Doble click, retry del front o reintento de httpx alcanzaban para lanzar dos
+    workers sobre el mismo CSV, que se pisan la salida y el reporte.
+    """
+    import threading
+
+    from smart_import.api.jobs import GEOCODE_QUEUED, NORMALIZED, Job
+
+    job = Job(id="imp_claim", filename="x.csv")
+    job.touch(NORMALIZED)
+    store._jobs[job.id] = job
+    try:
+        arrancar = threading.Barrier(8)
+        ganados: list[bool] = []
+        cerrojo = threading.Lock()
+
+        def intentar():
+            arrancar.wait()
+            ok = store.claim_geocode(job.id)
+            with cerrojo:
+                ganados.append(ok)
+
+        hilos = [threading.Thread(target=intentar) for _ in range(8)]
+        for h in hilos:
+            h.start()
+        for h in hilos:
+            h.join()
+
+        assert sum(ganados) == 1, f"{sum(ganados)} requests lanzaron un worker"
+        assert job.status == GEOCODE_QUEUED
+    finally:
+        store._jobs.pop(job.id, None)
+
+
+def test_un_job_reservado_no_se_puede_volver_a_reservar():
+    """El contrato, sin depender del scheduler: reservado una vez, cerrado.
+
+    (El test de hilos de arriba prueba la misma propiedad bajo concurrencia,
+    pero el GIL puede tapar la carrera; este es el que no depende del timing.)
+    """
+    from smart_import.api.jobs import NORMALIZED, Job
+
+    job = Job(id="imp_claim_2", filename="x.csv")
+    job.touch(NORMALIZED)
+    store._jobs[job.id] = job
+    try:
+        assert store.claim_geocode(job.id) is True
+        assert store.claim_geocode(job.id) is False
+    finally:
+        store._jobs.pop(job.id, None)
+
+
+def test_no_se_puede_reservar_un_job_inexistente():
+    assert store.claim_geocode("imp_no_existe") is False
+
+
+def test_serve_con_varios_workers_no_arranca():
+    """Con el store en memoria, --workers 4 parte el flujo entre procesos."""
+    from typer.testing import CliRunner
+
+    from smart_import.cli import app as cli_app
+
+    resultado = CliRunner().invoke(cli_app, ["serve", "--workers", "4"])
+    assert resultado.exit_code == 2
+    assert "workers 4" in resultado.output or "--workers 1" in resultado.output
