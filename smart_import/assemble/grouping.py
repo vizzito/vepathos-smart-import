@@ -83,9 +83,15 @@ def assemble(rows: list[NormalizedRow], schema: TargetSchema, *,
              weight_is_total: bool = False) -> tuple[list[dict], list[str]]:
     """Devuelve (deliveries anidadas, warnings).
 
-    `weight_is_total=True` (texto libre): al expandir `quantity` el `weight_kg` se
-    interpreta como peso TOTAL de la entrega y se reparte entre los bultos.
-    En tabular (default) el peso se clona tal cual — suele ser unitario en Excel.
+    Invariante de entrada: cuando una fila llega aca, `weight_kg` YA es el peso
+    de UN bulto. En texto libre lo reparte el extractor aguas arriba; en tabular
+    la columna ya es unitaria. Por eso el unico caller pasa `weight_is_total=
+    False` en los dos caminos (`pipeline.py`).
+
+    `weight_is_total=True` reparte el peso entre los bultos al expandir
+    `quantity`. Hoy NADIE lo usa, y activarlo desde el pipeline reintroduce un
+    bug de round-trip: el flat se relee como tabular despues de geocodificar,
+    asi que el peso se dividiria de nuevo en cada vuelta flat -> geocode -> flat.
     """
     warnings: list[str] = []
     order: list[str] = []

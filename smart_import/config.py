@@ -203,20 +203,29 @@ class Config:
     # Acepta coords desde este score (UI: Review 70–79%, Valid ≥80%).
     low_confidence_threshold: float = 0.70
     # ---- bandas que consume la UI (una sola fuente de verdad) ----
-    #: >= esto: verde, la coordenada se usa tal cual (GEOCODE_VALID_BAND / _MIN_PCT)
-    geocode_valid_band: float = 0.80
+    #: >= esto: verde, la coordenada se usa tal cual (GEOCODE_VALID_BAND / _MIN_PCT).
+    #: Tiene que ser == `match_threshold`: `matched` pide
+    #: score >= max(match_threshold, valid_band), pero el COLOR lo decide
+    #: valid_band sola. Con 0.80 acá y 0.81 arriba, un score de 0.805 volvia con
+    #: status=low_confidence y banda VERDE — un pin que le dice al operador
+    #: "usalo tal cual" sobre algo que el geocoder marco dudoso.
+    geocode_valid_band: float = 0.81
     #: >= esto y < valid: ambar Review (GEOCODE_REVIEW_BAND / _MIN_PCT)
     geocode_review_band: float = 0.70
     #: score crudo minimo para dar pin a un match A NIVEL CALLE (sin altura)
     geocode_street_level_floor: float = 0.60
     #: cuan fuerte tiene que matchear la CALLE para aceptar cualquier coordenada.
     #: Sin esto, coincidir solo en la altura manda el pin a otra calle.
-    geocode_street_match_min: float = 0.80
+    geocode_street_match_min: float = 0.70
     #: Si True, candidatos que antes eran not_found (calle mala / debajo umbral)
     #: salen como Review CON pin para poder medir distancia en el mapa.
     geocode_soft_reject: bool = True
-    #: score minimo para soft-reject (debajo = not_found duro sin pin)
-    geocode_soft_reject_min: float = 0.50
+    #: Score minimo para soft-reject (debajo = not_found duro sin pin). Tiene que
+    #: ser >= `geocode_review_band`: por debajo de esa banda, `band_for` pasa la
+    #: fila a needs_geocoding y le SACA el pin, asi que el trabajo se hace y se
+    #: descarta. Estaba en 0.50 y violaba eso — pero solo cuando alguien
+    #: construia `Config()` a mano, porque `from_env` ya usaba 0.70.
+    geocode_soft_reject_min: float = 0.70
     # low_confidence mas lejos que esto del depot se trata como not_found
     max_low_confidence_km: float = 15.0
     # hard geofence: cualquier match (matched|low) fuera de este radio = not_found
@@ -295,7 +304,7 @@ class Config:
             match_threshold=_float("GEOCODE_MATCH_THRESHOLD", 0.81),
             low_confidence_threshold=_float("GEOCODE_LOW_CONFIDENCE_THRESHOLD", 0.70),
             # UI bands (0–1 o 0–100). Fuente unica — la web NO redefine cortes.
-            geocode_valid_band=_band("GEOCODE_VALID_BAND", "GEOCODE_VALID_MIN_PCT", 0.80),
+            geocode_valid_band=_band("GEOCODE_VALID_BAND", "GEOCODE_VALID_MIN_PCT", 0.81),
             geocode_review_band=_band("GEOCODE_REVIEW_BAND", "GEOCODE_REVIEW_MIN_PCT", 0.70),
             geocode_street_level_floor=_float("GEOCODE_STREET_LEVEL_FLOOR", 0.60),
             geocode_street_match_min=_float("GEOCODE_STREET_MATCH_MIN", 0.70),

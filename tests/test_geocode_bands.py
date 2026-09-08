@@ -5,6 +5,9 @@ El bug que originó esto: un match a nivel calle salia con status
 le llega el status— lo pintaba verde. Numero, status y banda tienen que decir
 siempre lo mismo.
 """
+import os
+from dataclasses import fields
+
 import pytest
 
 from smart_import.config import Config
@@ -218,3 +221,86 @@ def test_la_banda_sobrevive_el_round_trip_al_nested(tmp_path):
     bandas = [d.get("geocode", {}).get("band") for d in result.deliveries]
     assert bandas == [BAND_VALID, BAND_REVIEW]
     assert result.deliveries[1]["geocode"]["confidence"] == 0.708
+
+
+def test_los_defaults_del_dataclass_y_de_from_env_no_pueden_divergir(monkeypatch):
+    """`Config()` y `Config.from_env()` sin env tienen que dar lo mismo.
+
+    El config promete que el servicio arranca sin ninguna env seteada, o sea que
+    hay UN default por variable. Cuando el literal de `from_env` se movio y el
+    del dataclass no, quedaron dos: los tests que construian `Config()` a mano
+    veian street_match_min=0.80 y soft_reject_min=0.50, y produccion 0.70/0.70.
+
+    El de soft_reject era el caro: 0.50 esta por debajo de `review_band`, y ahi
+    `band_for` pasa la fila a needs_geocoding y le saca el pin. O sea que el
+    soft-reject calculaba un pin de respaldo para que lo tirara la banda.
+    """
+    for name in list(os.environ):
+        if name.startswith(("SMART_IMPORT_", "GEOCODE", "AUTO_ACCEPT",
+                            "REVIEW_THRESHOLD", "MAPPING_MIN", "ROUTE_OPTIMIZER")):
+            monkeypatch.delenv(name, raising=False)
+
+    quieto = Config()
+    del_env = Config.from_env()
+    # pbf_dir se resuelve del filesystem (repo vecino), no es un default fijo.
+    ignorar = {"pbf_dir"}
+    distintos = {
+        f.name: (getattr(quieto, f.name), getattr(del_env, f.name))
+        for f in fields(Config)
+        if f.name not in ignorar
+        and getattr(quieto, f.name) != getattr(del_env, f.name)
+    }
+    assert not distintos, (
+        f"defaults duplicados que ya divergieron: {distintos}. El default vive "
+        "en el dataclass; `from_env` tiene que repetir EL MISMO valor.")
+
+
+def test_verde_y_matched_tienen_que_significar_lo_mismo():
+    """`geocode_valid_band` == `match_threshold`, o el color miente.
+
+    `matched` sale con score >= max(match_threshold, valid_band), pero el COLOR
+    lo decide valid_band sola. Con match=0.81 y valid=0.80 —los defaults que
+    traia el codigo— habia una ventana de 0.01 donde el geocoder devolvia
+    status=low_confidence y la banda salia VERDE: un pin que le dice al operador
+    "usalo tal cual" sobre algo que el sistema marco dudoso.
+    """
+    cfg = Config.from_env()
+    assert cfg.geocode_valid_band == cfg.match_threshold, (
+        f"valid_band={cfg.geocode_valid_band} != "
+        f"match_threshold={cfg.match_threshold}: hay scores que salen "
+        "low_confidence y se pintan verde")
+
+    # La ventana concreta: el score justo debajo del corte de `matched`.
+    apenas_abajo = cfg.match_threshold - 0.005
+    assert band_for("low_confidence", apenas_abajo, has_coords=True,
+                    valid_at=cfg.geocode_valid_band,
+                    review_at=cfg.geocode_review_band) == BAND_REVIEW
+
+
+def test_el_soft_reject_no_puede_quedar_debajo_de_la_banda_ambar():
+    """Invariante de producto, no de codigo: SOFT_REJECT_MIN >= REVIEW_BAND.
+
+    El soft-reject existe para dejar un pin de respaldo y poder medir distancia
+    en el mapa. Debajo de la banda ambar ese pin no se muestra: `band_for`
+    devuelve needs_geocoding y `_stamp` borra lat/lng. Configurarlo mas abajo no
+    da mas pines, da trabajo que se descarta.
+    """
+    cfg = Config.from_env()
+    assert cfg.geocode_soft_reject_min >= cfg.geocode_review_band, (
+        f"soft_reject_min={cfg.geocode_soft_reject_min} < "
+        f"review_band={cfg.geocode_review_band}: los pines de soft-reject se "
+        "calculan y la banda los tira")
+
+
+def test_la_banda_ambar_arranca_donde_arranca_el_pin():
+    """`geocode_review_band` == `low_confidence_threshold`.
+
+    LOW_CONFIDENCE es el piso para DEVOLVER coordenada; REVIEW_BAND el piso para
+    MOSTRARLA. Si REVIEW fuera mas alto se calculan pines que la banda tira a la
+    basura; si fuera mas bajo, la UI reservaria un color para scores que el
+    geocoder nunca devuelve con pin.
+    """
+    cfg = Config.from_env()
+    assert cfg.geocode_review_band == cfg.low_confidence_threshold, (
+        f"review_band={cfg.geocode_review_band} != "
+        f"low_confidence_threshold={cfg.low_confidence_threshold}")

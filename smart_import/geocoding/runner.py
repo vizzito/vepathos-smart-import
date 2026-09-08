@@ -394,7 +394,11 @@ def _stamp(row: dict, result: GeocodeResult, bands: tuple[float, float] = (0.80,
         has_coords=con_pin,
         valid_at=valid_at, review_at=review_at,
         precision=result.precision,
-        force_review=soft,  # ignored: banda = score vs umbrales
+        # Baja un verde a ambar. El comentario viejo decia "ignored" y no es
+        # cierto: `band_for` lo aplica. Es lo que traduce el techo ambar del
+        # geocoder ("altura exacta pero la calle no es la pedida") al color,
+        # que si no saldria verde por tener el score alto.
+        force_review=soft,
     )
     # Soft pin debajo del corte ambar: no dejar lat/lng colgados como "listos".
     if row["geocode_band"] == BAND_NEEDS_GEOCODING and con_pin and result.status != STATUS_ALREADY:
