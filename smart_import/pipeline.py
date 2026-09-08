@@ -1,7 +1,6 @@
 """Pipeline completo: read -> detect -> normalize -> assemble -> emit.
 
-Es la unica pieza que conoce el orden de las etapas; el CLI y (mas adelante) el
-consumer de cola llaman aca.
+Es la unica pieza que conoce el orden de las etapas; el CLI y la API llaman aca.
 """
 from __future__ import annotations
 
@@ -22,6 +21,7 @@ from .normalization.row_normalizer import (
 from .readers import read_any
 from .schemas import TargetSchema
 from .assemble import assemble
+from .locality import detect_locality
 
 logger = get_logger("pipeline")
 
@@ -110,6 +110,10 @@ def run_normalize(
     for note in meta.notes:
         detail(logger, note)
 
+    # El documento crudo se guarda ANTES de extraer: `table` se reemplaza por
+    # las filas y el encabezado ('Deliveries for today (Miami)') se pierde.
+    document_text = (table.rows[0][0] if meta.is_free_text and table.rows else None)
+
     extraction = None
     if meta.is_free_text:
         # El archivo entero es texto libre: segmentar -> clasificar -> extraer.
@@ -167,9 +171,35 @@ def run_normalize(
         detail(logger, f"fila {issue.index} ({issue.values.get('delivery_id') or 's/id'}): "
                        f"{issue.issues[0]}")
 
+    # De que ciudad habla el archivo. No decide nada: el depot del selector
+    # sigue mandando. La UI usa esto para pre-cargar / preguntar antes de
+    # geocodificar, porque un depot de otra ciudad no devuelve NINGUN pin.
+    locality = detect_locality(rows=[r.values for r in outcome.rows],
+                               document=document_text)
+    best = locality.best
+    if best is None:
+        stage(logger, "LOCALITY", "no se detecto ciudad en el archivo: "
+                                  "la UI tiene que pedirla antes de geocodificar")
+    else:
+        stage(logger, "LOCALITY", "ciudad del archivo",
+              ciudad=best.city, region=best.region, pais=best.country,
+              confianza=f"{best.confidence:.2f}",
+              filas=f"{best.support}/{locality.rows_total}" if best.support else None,
+              fuentes=",".join(best.sources),
+              confirmar="si" if locality.needs_user_input else "no")
+        if locality.reason:
+            detail(logger, f"localidad: {locality.reason}")
+        for other in locality.candidates[1:4]:
+            detail(logger, f"localidad alternativa: {other.city} "
+                           f"({other.confidence:.2f}, {','.join(other.sources)})")
+
     stage(logger, "ASSEMBLE", f"agrupando filas por {schema.group_by}")
-    deliveries, group_warnings = assemble(
-        outcome.rows, schema, weight_is_total=bool(meta.is_free_text))
+    # `weight_kg` es el peso de UN bulto, venga de donde venga: el extractor de
+    # texto libre ya reparte lo que la frase declaro como total. Repartirlo aca
+    # otra vez rompia el round-trip (el flat se relee como tabular despues de
+    # geocodificar, y el peso se multiplicaba por la cantidad en cada vuelta).
+    deliveries, group_warnings = assemble(outcome.rows, schema,
+                                          weight_is_total=False)
     outcome.warnings.extend(group_warnings)
     timer.mark("assemble")
     sin_bultos = sum(1 for d in deliveries if not d["packages"])
@@ -189,6 +219,9 @@ def run_normalize(
         },
         "schema": schema.name,
         "text_mode": table.meta.text_mode,
+        # Evidencia de ciudad/region del archivo. La UI la usa para confirmar
+        # antes de geocodificar; el backend no la aplica por su cuenta.
+        "locality": locality.as_dict(),
         "rows_input": len(table), "rows_output": len(outcome.rows),
         "skipped_empty_rows": outcome.skipped_empty,
         "deliveries": len(deliveries),
@@ -282,9 +315,15 @@ def _extract_free_text(table, schema, cfg, phone_region, service_date,
           libpostal="on" if parsers.get("libpostal_as_enhancer") else "off")
 
     extractor = FreeTextExtractor(cfg, context, service_date=service_date,
-                                  timezone=timezone)
+                                  timezone=timezone, schema=schema)
     result = extractor.run_document(document)
     new_table, mapping = records_to_table(result.records, schema, table.meta)
+
+    for block in result.tables:
+        stage(logger, "EXTRACT", "bloque tabular embebido: se lee como tabla, "
+                                 "no linea por linea",
+              filas=block["rows"], delimiter=repr(block["delimiter"]),
+              columnas=",".join(f"{c}->{t}" for c, t in block["mapped"].items()))
 
     counts = result.counts()
     stage(logger, "EXTRACT", "", segmentos=result.segments,

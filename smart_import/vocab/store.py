@@ -196,6 +196,32 @@ class VocabularyStore:
                 }
         return None
 
+    def alias_map(self, domain: str, *, words_only: bool = False) -> dict[str, dict]:
+        """alias foldeado → {canonical, code, key}, en UNA sola query.
+
+        `resolve()` recorre la tabla por alias; para compilar un lexico entero
+        (269 alias de packaging) eso es cuadratico. Aca se arma el diccionario
+        completo de una pasada y el que compila lo cachea.
+        """
+        rows = self._fetchall(
+            """SELECT a.alias, c.key, c.canonical, c.code FROM aliases a
+               JOIN concepts c ON c.id = a.concept_id
+               WHERE c.domain = ?""",
+            (domain,),
+        )
+        out: dict[str, dict] = {}
+        for r in rows:
+            folded = fold(r["alias"])
+            if not folded:
+                continue
+            code = r["code"] or ""
+            if words_only and (_is_standard_code(r["alias"])
+                               or (code and folded == fold(code))):
+                continue
+            out.setdefault(folded, {"key": r["key"], "canonical": r["canonical"],
+                                    "code": code})
+        return out
+
     def aliases(
         self,
         domain: str,

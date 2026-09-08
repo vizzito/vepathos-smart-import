@@ -6,6 +6,7 @@ Sin archivo → None: no se inventa una ciudad.
 from __future__ import annotations
 
 import os
+from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 
@@ -52,21 +53,50 @@ def _city_index() -> dict[str, list[tuple[int, str, float, float]]]:
     return index
 
 
-def lookup_city_centroid(
+@dataclass(frozen=True)
+class CityHit:
+    """Una ciudad de GeoNames que coincide con el nombre buscado."""
+    name: str
+    iso: str
+    lat: float
+    lon: float
+    population: int
+
+
+def city_matches(
     city: str | None,
     country: str | None = None,
-) -> tuple[float, float] | None:
-    """(lat, lon) de la ciudad más poblada que matchee, filtrada por país si hay."""
+) -> tuple[CityHit, ...]:
+    """Todas las ciudades con ese nombre, más poblada primero.
+
+    Devolver la lista completa (y no solo la mejor) es lo que permite ver que
+    'Córdoba' existe en AR y en ES: sin país que filtre, eso es una ambigüedad
+    que hay que preguntar, no adivinar.
+    """
     name = fold(city or "")
     if not name:
-        return None
+        return ()
     rows = _city_index().get(name)
     if not rows:
-        return None
+        return ()
     iso = iso_from_country_label(country)
     if iso:
         matched = [r for r in rows if r[1] == iso]
         if matched:
             rows = matched
-    _pop, _iso, lat, lon = rows[0]
-    return (lat, lon)
+    label = (city or "").strip()
+    return tuple(
+        CityHit(name=label, iso=iso2, lat=lat, lon=lon, population=pop)
+        for pop, iso2, lat, lon in rows
+    )
+
+
+def lookup_city_centroid(
+    city: str | None,
+    country: str | None = None,
+) -> tuple[float, float] | None:
+    """(lat, lon) de la ciudad más poblada que matchee, filtrada por país si hay."""
+    hits = city_matches(city, country)
+    if not hits:
+        return None
+    return (hits[0].lat, hits[0].lon)

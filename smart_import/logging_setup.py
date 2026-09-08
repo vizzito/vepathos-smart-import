@@ -17,6 +17,7 @@ _COLORS = {
     "READ": "\033[36m", "DETECT": "\033[35m", "NORMALIZE": "\033[34m",
     "ASSEMBLE": "\033[34m", "EMIT": "\033[32m", "INDEX": "\033[33m",
     "GEOCODE": "\033[33m", "EXTRACT": "\033[35m", "ADDRESS": "\033[35m",
+    "LOCALITY": "\033[36m",
     "HTTP": "\033[36m",
     "WARN": "\033[31m", "DONE": "\033[32m",
 }
