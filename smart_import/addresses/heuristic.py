@@ -66,9 +66,33 @@ _ROAD_THEN_NUMBER = re.compile(
 _ROAD_TAIL = re.compile(r"[\s,]+(?:al|nro|nro\.|n[°º]|num|num\.|numero|número|#)$",
                         re.IGNORECASE)
 
+# Los tres patrones `number+road` de abajo arrancan con `_NUM_START`, que exige
+# que la altura NO venga pegada a otra palabra.
+#
+# Con `(?<!\d)` la altura solo tenia prohibido venir pegada a otro DIGITO, no a
+# una letra. En un paste de despacho eso alcanza para arruinar la direccion:
+#
+#   'mensajero1 Av Corrientes 1800 2B'  ->  road='Av Corrientes'  altura='1'
+#
+# El '1' de 'mensajero1' pasaba el lookbehind (antes hay una 'o'), armaba el
+# candidato number+road 'Av Corrientes' + '1', empataba en boost con el
+# candidato correcto (los dos tienen el token de via 'av') y el desempate es
+# por posicion: gana el que empieza mas a la izquierda, o sea el falso.
+#
+# Es el peor error del extractor porque no pierde un dato: pone un pin CONFIADO
+# treinta cuadras mas aca. Y dispara con todo lo que abunda en un despacho real:
+# ids de mensajero, moviles, rutas, zonas, numeros de pedido ('movil3', 'zona2',
+# 'Pedido123'). `(?<!\w)` es un superconjunto estricto de `(?<!\d)`: no habilita
+# ningun match nuevo, solo saca estos falsos positivos.
+#
+# La excepcion es el marcador de numero: en 'Nº1234 Calle Falsa' la altura SI
+# viene pegada a una palabra, y es la altura. Python cuenta 'º' y 'ª' como \w
+# (el '°' de grados no), asi que sin esta alternativa `(?<!\w)` se las comia.
+_NUM_START = r"(?:(?<!\w)|(?<=[nN][ºª°]))"
+
 # '1171 1st Ave' / '350 5th Avenue' — ordinales EN que empiezan con digito.
 _NUMBER_THEN_ORDINAL_ROAD = re.compile(
-    r"(?<!\d)(?P<num>\d{1,5}[A-Za-z]?)\s+"
+    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+"
     r"(?P<road>\d{1,3}(?:st|nd|rd|th)\.?\s+"
     r"[^\W\d_][\w'’.\-]*(?:\s+[^\W\d_][\w'’.\-]*){0,2})",
     re.IGNORECASE | re.UNICODE)
@@ -76,7 +100,7 @@ _NUMBER_THEN_ORDINAL_ROAD = re.compile(
 # '350 NE 1st Ave' / '1200 NW 7th Ave' — cardinal US + ordinal (NE/NW no es la calle).
 _CARDINAL = r"(?:N|S|E|W|NE|NW|SE|SW|N\.|S\.|E\.|W\.)"
 _NUMBER_THEN_CARDINAL_ORDINAL = re.compile(
-    r"(?<!\d)(?P<num>\d{1,5}[A-Za-z]?)\s+"
+    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+"
     r"(?P<road>" + _CARDINAL + r"\s+"
     r"\d{1,3}(?:st|nd|rd|th)\.?\s+"
     r"[^\W\d_][\w'’.\-]*)",
@@ -85,7 +109,7 @@ _NUMBER_THEN_CARDINAL_ORDINAL = re.compile(
 # '23 MG Road' / '507 Broadway' — solo whitespace: la coma separa segmentos
 # ('3, Ciudad de la Costa' NO es number+road).
 _NUMBER_THEN_ROAD = re.compile(
-    r"(?<!\d)(?P<num>\d{1,5}[A-Za-z]?)\s+(?P<road>[^\W\d_][\w'’.\-]*"
+    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+(?P<road>[^\W\d_][\w'’.\-]*"
     r"(?:\s+[^\W\d_][\w'’.\-]*){0,3})", re.IGNORECASE | re.UNICODE)
 
 _SPLIT = re.compile(r"\s*[,;|]\s*")
@@ -114,6 +138,13 @@ def _unit_re() -> re.Pattern[str]:
         r"(?P<v>[\w][\w\-/]{0,7}(?:\s+[A-Za-z](?![\w]))?)",
         re.IGNORECASE,
     )
+
+
+#: Unidad sin etiqueta INMEDIATAMENTE despues de la altura: 'Av Cabildo 900 1A'.
+#: Anclado al final del match de calle+altura (ver `_take_bare_unit`), y con la
+#: letra pegada al numero: '2 u' / '3 kg' de paqueteria no entran.
+_BARE_UNIT_AFTER_NUMBER = re.compile(
+    r"\s+(?P<v>\d{1,3}[A-Za-z]|PB)(?![\w])", re.IGNORECASE)
 
 
 @lru_cache(maxsize=1)
@@ -257,6 +288,7 @@ class HeuristicAddressParser(AddressParser):
         take(_POSTCODE.search(raw), "postcode", "pc")
         take(_LEVEL.search(raw), "level")
         take(_unit_re().search(raw), "unit")
+        self._take_bare_unit(raw, consumed, components, evidence)
         take(_landmark_re().search(raw), "landmark")
         take(_neighbourhood_re().search(raw), "neighbourhood")
 
@@ -286,6 +318,33 @@ class HeuristicAddressParser(AddressParser):
         components["house_number"] = number
         consumed.append((begin, end))
         evidence.append(f"'{road}' + numero '{number}' ({order})")
+
+    def _take_bare_unit(self, raw, consumed, components, evidence) -> None:
+        """Unidad SIN etiqueta pegada a la altura: 'Av Cabildo 900 1A'.
+
+        `_unit_re` exige prefijo ('depto 4B') a proposito: un '4B' suelto en
+        cualquier parte de la frase es demasiado ambiguo. Pero inmediatamente
+        despues de la altura no lo es — ahi no hay otra cosa que pueda ser.
+
+        Se ancla en el final del match de calle+altura, y solo acepta la forma
+        digito(s)+letra pegadas. Sin este anclaje 'Ruta 2 km 5' o un '2 u' de
+        paqueteria entrarian como unidad.
+        """
+        if components.get("unit") or not components.get("house_number"):
+            return
+        if not consumed:
+            return
+        _, fin_calle = consumed[0]
+        match = _BARE_UNIT_AFTER_NUMBER.match(raw, fin_calle)
+        if not match:
+            return
+        span = match.span("v")
+        if any(_overlaps(span, other) for other in consumed):
+            return
+        value = match.group("v")
+        components["unit"] = value
+        consumed.append(span)
+        evidence.append(f"unidad '{value}' pegada a la altura (sin etiqueta)")
 
     def _take_bare_road(self, raw: str, consumed, components, evidence) -> None:
         """Calle sin altura: 'Yerbal, CABA' / 'Av. Cabildo, Argentina'.

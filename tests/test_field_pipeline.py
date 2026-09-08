@@ -91,8 +91,9 @@ def test_si_no_se_entiende_no_se_inventa_la_ventana():
 def test_bultos_peso_y_medidas(ar_context):
     values = {v.field: v.value for v in
               extract_packages(TextCanvas("Caja 20x30x40 cm, 8 kg, 2 bultos"), ar_context)}
+    # 8 kg para 2 bultos -> 4 kg cada uno; el schema guarda el peso por bulto
     assert values == {"length_cm": 20.0, "width_cm": 30.0, "height_cm": 40.0,
-                      "weight_kg": 8.0, "quantity": 2}
+                      "weight_kg": 4.0, "quantity": 2, "packaging": "package"}
 
 
 def test_un_numero_suelto_no_es_una_cantidad(ar_context):
@@ -147,6 +148,38 @@ def test_el_nombre_nunca_arrastra_la_etiqueta(pipeline, texto, _n, _a, _p):
 def test_la_direccion_no_es_la_frase_entera(pipeline, texto, _n, _a, _p):
     direccion = pipeline.run(texto, service_date=DAY).get("address") or ""
     assert len(direccion) < len(texto) * 0.6
+
+
+@pytest.mark.parametrize("texto,esperado", [
+    ("Av Cabildo 900 1A, Belgrano, CABA", ("Belgrano", "CABA")),
+    ("Av Corrientes 1800 2B, Palermo, CABA", ("Palermo", "CABA")),
+    ("Sarmiento 451 3C, Tandil", ("Tandil",)),
+    ("Av Corrientes 1800 PB, Palermo", ("Palermo",)),
+])
+def test_una_unidad_sin_etiqueta_no_corta_la_direccion(pipeline, texto, esperado):
+    """La unidad pegada a la altura cortaba el span y se perdia lo de atras.
+
+    `_expand_right` frena cuando el segmento deja de parecer un lugar, y '1A'
+    empieza con digito: no pasaba el filtro. Resultado: quedaba 'Av Cabildo 900'
+    y barrio y ciudad desaparecian sin aviso. Con etiqueta ('depto 4B') el
+    segmento arranca con un street_token y siempre funciono, que es la razon por
+    la que no se veia.
+    """
+    direccion = pipeline.run(texto, service_date=DAY).get("address") or ""
+    for parte in esperado:
+        assert parte in direccion, f"{texto!r} -> {direccion!r} perdio {parte!r}"
+
+
+@pytest.mark.parametrize("texto,no_debe_estar", [
+    ("Av. Cabildo 174, llamar al 11-4002-1002 si no contesta", "llamar"),
+    ("Av Cabildo 174, 2 u", "2 u"),
+    ("Av Cabildo 174, 2 cajas", "cajas"),
+    ("Av Cabildo 174, 3 kg", "kg"),
+])
+def test_el_span_sigue_frenando_donde_empieza_lo_que_no_es_direccion(
+        pipeline, texto, no_debe_estar):
+    direccion = pipeline.run(texto, service_date=DAY).get("address") or ""
+    assert no_debe_estar not in direccion, f"{texto!r} -> {direccion!r}"
 
 
 def test_cada_campo_trae_confianza_metodo_y_evidencia(pipeline):

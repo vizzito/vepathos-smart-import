@@ -25,6 +25,17 @@ _LEAD = re.compile(r"^(?:en|a|al|the|de|do|da|na|no|at|in)\s+", re.IGNORECASE)
 _TRAIL = re.compile(r"\s+(?:y|e|and|de|el|la|los|las|the)$", re.IGNORECASE)
 #: cuantas palabras puede tener un segmento de barrio/ciudad antes de ser prosa
 MAX_LOCALITY_WORDS = 4
+#: unidad SIN etiqueta pegada a la altura: '2B', '1A', '3C', 'PB'.
+#:
+#: Con etiqueta ('depto 4B') el segmento arranca con un street_token y pasa; sin
+#: etiqueta arranca con un digito, no parecia un lugar y CORTABA el span ahi. En
+#: 'Av Cabildo 900 1A, Belgrano, CABA' eso se llevaba la unidad, el barrio y la
+#: ciudad: quedaba 'Av Cabildo 900' y el resto se perdia sin aviso.
+#:
+#: Se exige la letra pegada al numero a proposito. Admitir el numero solo ('5') o
+#: separado ('2 u') se come la paqueteria, que se escribe igual: '2 u', '3 kg',
+#: '2 cajas' viven en este mismo lugar de la frase.
+_BARE_UNIT = re.compile(r"^(?:\d{1,3}[A-Za-z]|PB)$", re.IGNORECASE)
 
 
 def _clause_end(text: str, start: int) -> int:
@@ -104,8 +115,9 @@ def _expand_right(text: str, start: int, limit: int, context) -> int:
             position = stop + 1
             continue
         head = words[0].strip(".,;:")
+        parece_lugar = head[:1].isupper() or fold(head) in tokens
         if len(words) > MAX_LOCALITY_WORDS or not (
-                head[:1].isupper() or fold(head) in tokens):
+                parece_lugar or _BARE_UNIT.match(cleaned)):
             break
         end = stop
         position = stop + 1

@@ -179,6 +179,40 @@ def _cue_matches(folded_haystack: str, cue: str, tokens: frozenset[str] | None =
     return c in bag
 
 
+#: separadores de segmento dentro de una direccion escrita
+_SEGMENTS = re.compile(r"[,;|]|\s+-\s+")
+#: una altura de calle: numero pelado, con a lo sumo una letra ('1234', '450b').
+#: Un CPA ('b7000') o un codigo postal largo NO cuentan.
+_BARE_NUMBER = re.compile(r"^\d{1,5}[a-z]?$")
+
+
+def _cue_is_street(folded_haystack: str, cue: str) -> bool:
+    """True si la pista de localidad esta pegada a una altura: es una calle.
+
+    Media ciudad del mundo comparte nombre con una calle de otra: Callao es un
+    puerto peruano y una avenida porteña, Asuncion es la capital de Paraguay y
+    una calle de Buenos Aires, Cordoba es las dos cosas en el mismo pais. El
+    gazetteer no puede distinguirlas, pero la posicion si: nadie escribe la
+    ciudad pegada a un numero de puerta.
+
+        'callao 2862'        -> calle   (la altura viene inmediatamente despues)
+        'b7000 tandil'       -> ciudad  (b7000 es un CPA, no una altura)
+        'downtown miami'     -> ciudad
+    """
+    c = fold(cue)
+    largo = len(c.split())
+    for segment in _SEGMENTS.split(folded_haystack):
+        words = segment.split()
+        for i in range(len(words) - largo + 1):
+            if " ".join(words[i:i + largo]) != c:
+                continue
+            antes = words[i - 1] if i > 0 else ""
+            despues = words[i + largo] if i + largo < len(words) else ""
+            if _BARE_NUMBER.match(antes) or _BARE_NUMBER.match(despues):
+                return True
+    return False
+
+
 def _country_names() -> set[str]:
     names = {fold(v) for v in phone_region_country_map().values()}
     names.update({
@@ -281,7 +315,11 @@ def maximize_address_for_geocode(
     folded = fold(raw)
     bag = _haystack_tokens(folded)
     for cues, tokens in locality_expansions():
-        if any(_cue_matches(folded, cue, bag) for cue in cues):
+        # Una pista pegada a una altura es el nombre de la CALLE, no la ciudad.
+        # Sin esto 'Av Callao 1219' se enriquece con 'Peru' y la query sale a
+        # buscar la direccion al pais equivocado.
+        if any(_cue_matches(folded, cue, bag) and not _cue_is_street(folded, cue)
+               for cue in cues):
             for tok in tokens:
                 if tok not in extras:
                     extras.append(tok)

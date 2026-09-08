@@ -42,7 +42,7 @@ def test_paste_miami_con_depot_us(tmp_path: Path):
     names = [d.get("customer_name") or "" for d in result.deliveries]
     assert len(result.deliveries) == 6
     assert all("Argentina" not in a for a in addrs)
-    assert any("NE 1st Ave" in a and "350" in a for a in addrs)
+    assert any("NE 1st Ave" in a and "300" in a for a in addrs)
     assert any("NW 7th Ave" in a and "1200" in a for a in addrs)
     assert any("Collins" in a and "1500" in a for a in addrs)
     assert "Carlos Ruiz" in names

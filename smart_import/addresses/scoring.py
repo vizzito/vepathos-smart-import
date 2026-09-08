@@ -51,6 +51,27 @@ class AddressCandidateScorer:
     def _street_tokens(self) -> frozenset[str]:
         return label_set("street_tokens", self.locales)
 
+    def _street_suffixes(self) -> frozenset[str]:
+        return label_set("street_suffixes", self.locales)
+
+    def _street_hit(self, words: list[str]) -> str | None:
+        """El tipo de via, esté suelto o pegado al nombre.
+
+        En las lenguas romances va aparte —`Av. Corrientes`, `Rue de Rivoli`— y
+        alcanza con comparar la palabra. En las germanicas va pegado:
+        `Hauptstrasse`, `Kalverstraat`, `Prinsengracht`. Buscar solo palabras
+        sueltas deja a esos idiomas sin ninguna señal de via.
+        """
+        tokens = self._street_tokens()
+        cleaned = [fold(w.strip(".,;:")) for w in words]
+        if hit := next((w for w in cleaned if w in tokens), None):
+            return hit
+        suffixes = self._street_suffixes()
+        if not suffixes:
+            return None
+        return next((w for w in cleaned
+                     if len(w) > 4 and any(w.endswith(s) for s in suffixes)), None)
+
     def score(self, candidate: str | ParsedAddress) -> AddressScore:
         parsed = candidate if isinstance(candidate, ParsedAddress) else None
         text = parsed.text if parsed else str(candidate or "")
@@ -66,9 +87,7 @@ class AddressCandidateScorer:
             total += W_HOUSE_NUMBER
             why.append("numero de puerta junto a un nombre de calle")
 
-        tokens = self._street_tokens()
-        hit = next((w for w in words if fold(w.strip(".,;:")) in tokens), None)
-        if hit:
+        if hit := self._street_hit(words):
             total += W_STREET_TOKEN
             why.append(f"token de via '{hit}'")
 

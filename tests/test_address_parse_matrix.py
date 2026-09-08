@@ -75,6 +75,45 @@ def test_sin_calle_no_inventa_altura(texto):
     assert not PARSER.parse(texto).get("house_number")
 
 
+@pytest.mark.parametrize("texto,road,house", [
+    ("mensajero1 Av Corrientes 1800 2B", "Av Corrientes", "1800"),
+    ("@mensajero1 llevar a Av Corrientes 1800", "Av Corrientes", "1800"),
+    ("movil3 Av Cabildo 900, Belgrano, CABA", "Av Cabildo", "900"),
+    ("Pedido123 Av Corrientes 1800", "Av Corrientes", "1800"),
+    ("zona2 entregar en Av Santa Fe 3100", "Av Santa Fe", "3100"),
+    ("Ruta1 Av Corrientes 1800", "Av Corrientes", "1800"),
+    ("T1 Av Corrientes 1800", "Av Corrientes", "1800"),
+    ("sector5 Av Cabildo 900", "Av Cabildo", "900"),
+    ("ruta1 350 NE 1st Ave, Miami", "NE 1st Ave", "350"),
+])
+def test_una_palabra_terminada_en_digito_no_es_la_altura(texto, road, house):
+    """El peor error posible: pin CONFIADO en la direccion equivocada.
+
+    El lookbehind de los patrones number+road era `(?<!\\d)`, o sea que la
+    altura solo tenia prohibido venir pegada a otro digito, no a una letra. El
+    '1' de 'mensajero1' pasaba, armaba el candidato 'Av Corrientes' + '1',
+    empataba en boost con el candidato correcto (los dos traen el token 'av') y
+    el desempate por posicion se lo daba al falso, que empieza antes.
+
+    'Av Corrientes 1' esta a treinta cuadras de 'Av Corrientes 1800', y sale con
+    la misma confianza. Dispara con todo lo que abunda en un paste de despacho:
+    ids de mensajero, moviles, rutas, zonas, numeros de pedido.
+    """
+    parsed = PARSER.parse(texto)
+    assert parsed.get("house_number") == house, parsed.components
+    assert parsed.get("road") == road, parsed.components
+
+
+@pytest.mark.parametrize("texto,house", [
+    ("Nº1234 Calle Falsa", "1234"),
+    ("N°1234 Calle Falsa", "1234"),
+    ("Calle Falsa Nº1234", "1234"),
+])
+def test_el_marcador_de_numero_si_puede_estar_pegado_a_la_altura(texto, house):
+    """`(?<!\\w)` a secas se comia esta forma: Python cuenta 'º' como \\w."""
+    assert PARSER.parse(texto).get("house_number") == house
+
+
 # ---------- compose al esquema (partes → address) ----------
 
 @pytest.mark.parametrize("parts,needle", [
