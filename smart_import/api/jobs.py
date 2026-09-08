@@ -1,8 +1,10 @@
 """Almacen de jobs: metadata en memoria, archivos en disco.
 
-Deliberadamente simple para el MVP: un proceso, sin base de datos ni cola. La
-forma de los estados y del mensaje ya es la que va a usar el consumer de
-RabbitMQ, asi que migrar despues es cambiar el almacen, no el pipeline.
+Un proceso, sin base de datos ni cola: el normalize de 50k filas tarda ~1.5 s,
+que no justifica la infraestructura de un trabajo asincronico. La consecuencia a
+tener presente es que el estado no sobrevive a un reinicio, y que cada instancia
+solo conoce sus propios jobs (ver `serve`: para escalar se agregan instancias
+con balanceo sticky, no procesos).
 """
 from __future__ import annotations
 
@@ -309,6 +311,11 @@ class JobStore:
 
     def list(self, limit: int = 50) -> list[Job]:
         return sorted(self._jobs.values(), key=lambda j: -j.created_at)[:limit]
+
+    def __len__(self) -> int:
+        """Cuantos jobs vivos hay. Para /health, que solo quiere el numero:
+        contarlos con `list()` ordenaba todo el store en cada probe."""
+        return len(self._jobs)
 
     def dir_for(self, job_id: str) -> Path:
         return self.work_dir / job_id

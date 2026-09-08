@@ -563,86 +563,48 @@ def serve(
 ) -> None:
     """Levanta la API HTTP.
 
-    OJO: el almacen de jobs vive en memoria del proceso. Con workers > 1 cada
-    worker veria jobs distintos. Para escalar hace falta el store compartido
-    (Redis/Postgres), que es la etapa siguiente.
+    OJO: el almacen de jobs vive en memoria del proceso, asi que este servicio
+    escala agregando INSTANCIAS, no procesos. Y cada instancia solo conoce sus
+    propios jobs: el balanceador tiene que mandar todos los requests de un job
+    a la misma (sticky por IP o por cookie). Con round-robin, el POST /imports
+    cae en una y el POST /geocode en otra, que responde 404.
     """
     import uvicorn
 
     cfg = Config.from_env()
-    typer.echo(f"  Smart Import escuchando en http://{host}:{port}")
-    typer.echo(f"  docs: http://localhost:{port}/docs")
-    typer.echo(f"  parser: {cfg.address_parser} | libpostal: {'on' if cfg.libpostal_enabled else 'off'}"
-               f" | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
+    # El guard va ANTES del banner. Al revés, el log dice "escuchando en :8100"
+    # y despues falla: alguien mirando `docker logs` lee que el servicio arranco
+    # cuando en realidad salio con exit 2 y no hay nadie atendiendo el puerto.
     if workers > 1:
         # Era un aviso, y un aviso no impide nada: quien levantaba el servicio
         # con --workers 4 para "escalar" rompia el flujo de forma intermitente.
         # El POST /imports cae en un worker y el POST /geocode en otro, que
-        # responde 404 porque no conoce ese job. Falla el arranque hasta que el
-        # almacen sea compartido (Redis/Postgres).
+        # responde 404 porque no conoce ese job.
         typer.echo(
             f"  ERROR: --workers {workers} no es una configuracion valida.\n"
             "  El almacen de jobs vive en memoria del proceso: con mas de un\n"
             "  worker, el import y su geocode caen en procesos distintos y el\n"
             "  segundo responde 404. Usa --workers 1.\n"
-            "  Para escalar hace falta el store compartido, no mas procesos.",
+            "  Para escalar, levanta otra INSTANCIA (otra VM o otro puerto) y\n"
+            "  balancea sticky, de modo que cada job vuelva siempre a la suya.",
             err=True)
         raise typer.Exit(2)
+    typer.echo(f"  Smart Import escuchando en http://{host}:{port}")
+    typer.echo(f"  docs: http://localhost:{port}/docs")
+    typer.echo(f"  parser: {cfg.address_parser} | libpostal: {'on' if cfg.libpostal_enabled else 'off'}"
+               f" | PBF dir: {cfg.pbf_dir or '(sin configurar)'}")
+    # limit_concurrency: la puerta mas externa. Por encima de este numero de
+    # tareas, uvicorn corta antes de que el request toque la app, y asi una
+    # avalancha no se traduce en miles de conexiones abiertas comiendo memoria.
+    # Ojo con bajarlo: los SSE de progreso son conexiones abiertas y cuentan.
+    limite = cfg.http_limit_concurrency
+    if limite > 0:
+        typer.echo(f"  techo de concurrencia HTTP: {limite} tareas | "
+                   f"imports en paralelo: {cfg.max_concurrent_normalize} "
+                   f"(cola de admision {cfg.max_normalize_queue})")
     uvicorn.run("smart_import.api:app", host=host, port=port, reload=reload,
-                workers=1)
+                workers=1, limit_concurrency=limite or None)
 
 
 
 
-@app.command()
-def worker() -> None:
-    """Consume smart-import-tasks de RabbitMQ (geocode async).
-
-    Requiere RABBITMQ_HOST o RABBITMQ_URL. El archivo viaja por object storage
-    (local o MinIO/S3); el mensaje solo lleva keys.
-    """
-    from .queue import SmartImportQueue
-    from .storage import build_storage_from_env
-
-    q = SmartImportQueue()
-    if not q.enabled:
-        typer.echo("  RabbitMQ no configurado. Setea RABBITMQ_URL o RABBITMQ_HOST.", err=True)
-        raise typer.Exit(1)
-
-    storage = build_storage_from_env()
-    typer.echo(f"  worker escuchando {q.queue_name}")
-
-    def handle(msg: dict) -> None:
-        kind = msg.get("type")
-        job_id = msg.get("job_id")
-        typer.echo(f"  → {kind} job={job_id}")
-        if kind == "smart_import.geocode":
-            from .geocoding.runner import run
-            from .config import Config
-            from pathlib import Path
-
-            opts = msg.get("options") or {}
-            inp_key = msg["input_object_key"]
-            out_key = msg["output_object_key"]
-            local_in = storage.local_path(inp_key)
-            if local_in is None or not local_in.exists():
-                raw = storage.get(inp_key)
-                local_in = Path(Config.from_env().work_dir) / job_id / "normalized.csv"
-                local_in.parent.mkdir(parents=True, exist_ok=True)
-                local_in.write_bytes(raw)
-            local_out = Path(Config.from_env().work_dir) / job_id / "geocoded.csv"
-            local_out.parent.mkdir(parents=True, exist_ok=True)
-            index = opts.get("index")
-            if not index:
-                raise RuntimeError("worker geocode necesita options.index (ruta sqlite)")
-            origin = None
-            if opts.get("origin_lat") is not None and opts.get("origin_lon") is not None:
-                origin = (float(opts["origin_lat"]), float(opts["origin_lon"]))
-            run(str(local_in), str(local_out), Path(index), origin=origin,
-                config=Config.from_env())
-            storage.put(out_key, local_out.read_bytes(), "text/csv")
-            typer.echo(f"  ✓ geocode {job_id} → {out_key}")
-        else:
-            typer.echo(f"  aviso: tipo desconocido {kind}", err=True)
-
-    q.consume(handle)

@@ -15,6 +15,19 @@ api_module = importlib.import_module("smart_import.api.app")
 from tests.conftest import FIXTURES
 
 
+@pytest.fixture(autouse=True)
+def _health_sin_cache():
+    """Invalida el snapshot de /health entre tests.
+
+    En produccion CFG se lee una sola vez y el cache dura 30 s, pero aca cada
+    test arma su propia config: sin esto, un test que apaga una capacidad puede
+    leer el snapshot que dejo el anterior y pasar (o fallar) segun el orden.
+    """
+    api_module._health_scan = None
+    yield
+    api_module._health_scan = None
+
+
 @pytest.fixture
 def capabilities(monkeypatch):
     """Enciende las capacidades opcionales para el resto de los tests.
@@ -130,7 +143,39 @@ def test_geocode_requiere_saber_que_region_usar(client):
     job_id = _upload(client, "es_sin_coords.csv").json()["job_id"]
     r = client.post(f"/imports/{job_id}/geocode")
     assert r.status_code == 400
-    assert "depot" in r.json()["detail"]
+    detail = r.json()["detail"]
+    assert "depot" in detail
+    # El mensaje tiene que decirle a la UI que con la ciudad alcanza.
+    assert "depot_city" in detail
+
+
+def test_la_ciudad_alcanza_para_geocodificar_sin_depot(client):
+    """El usuario no tiene depot seteado: confirma la ciudad y se importa igual."""
+    from smart_import.geocoding.city_lookup import lookup_city_centroid
+    if lookup_city_centroid("Tandil", "Argentina") is None:
+        pytest.skip("falta data/geonames/cities15000.txt")
+
+    job_id = _upload(client, "es_sin_coords.csv").json()["job_id"]
+    r = client.post(f"/imports/{job_id}/geocode",
+                    params={"depot_city": "Tandil", "depot_country": "Argentina"})
+    # 202 (arranco) o 503 si el despliegue no tiene PBFs; lo que NO puede es 400
+    assert r.status_code != 400
+
+
+def test_una_ciudad_que_no_existe_se_rechaza_con_mensaje_claro(client):
+    job_id = _upload(client, "es_sin_coords.csv").json()["job_id"]
+    r = client.post(f"/imports/{job_id}/geocode",
+                    params={"depot_city": "Ciudad Inventada Que No Existe"})
+    assert r.status_code == 400
+    assert "no pude ubicar" in r.json()["detail"]
+
+
+def test_el_report_dice_de_que_ciudad_habla_el_archivo(client):
+    """report.locality: la UI pre-carga el selector o pide la ciudad."""
+    body = _upload(client, "es_sin_coords.csv").json()
+    locality = body["report"]["locality"]
+    assert set(locality) >= {"best", "candidates", "needs_user_input", "reason"}
+    assert isinstance(locality["needs_user_input"], bool)
 
 
 def test_no_se_puede_geocodificar_sin_normalizar(client):
@@ -372,6 +417,172 @@ def test_el_normalize_no_corre_en_el_event_loop(capabilities, monkeypatch):
             "/health, los SSE y el polling mientras dura el import")
     finally:
         store.delete(respuesta.json()["job_id"])
+
+
+def _correr_normalizes_en_paralelo(monkeypatch, capabilities, cupo, espera_s,
+                                   cantidad, sondear_health=False, admision=64):
+    """Ocupa los turnos de normalize y dispara `cantidad` uploads a la vez.
+
+    Devuelve (respuestas, health). El primer normalize queda bloqueado hasta que
+    todos los pedidos llegaron, asi que la saturacion es real y no una carrera.
+    """
+    import asyncio
+    import threading
+
+    import anyio
+    import httpx
+
+    capabilities(geocoding_enabled=True, pbf_dir="/tmp/pbf",
+                 max_concurrent_normalize=cupo, normalize_queue_wait_s=espera_s,
+                 max_normalize_queue=admision)
+    monkeypatch.setattr(api_module, "_normalize_slots", anyio.Semaphore(cupo))
+    monkeypatch.setattr(api_module, "_admission", anyio.Semaphore(admision))
+
+    soltar = threading.Event()
+    real = api_module._run_normalize
+
+    def spy(*args, **kwargs):
+        soltar.wait(timeout=10)
+        return real(*args, **kwargs)
+
+    monkeypatch.setattr(api_module, "_run_normalize", spy)
+
+    async def subir(cli):
+        with open(FIXTURES / "es_sin_coords.csv", "rb") as fh:
+            return await cli.post("/imports",
+                                  files={"file": ("es_sin_coords.csv", fh.read())})
+
+    async def escenario():
+        transport = httpx.ASGITransport(app=app)
+        async with httpx.AsyncClient(transport=transport, base_url="http://t",
+                                     timeout=30) as cli:
+            ocupados = [asyncio.create_task(subir(cli)) for _ in range(cupo)]
+            await asyncio.sleep(0.3)          # que tomen los turnos y se traben
+            health = None
+            if sondear_health:
+                health = (await cli.get("/health")).json()
+            sobrantes = [asyncio.create_task(subir(cli))
+                         for _ in range(cantidad - cupo)]
+            respuestas = list(await asyncio.gather(*sobrantes))
+            soltar.set()
+            return [*await asyncio.gather(*ocupados), *respuestas], health
+
+    try:
+        return asyncio.run(escenario())
+    finally:
+        soltar.set()
+
+
+def test_saturado_contesta_429_en_vez_de_degradar_a_todos(capabilities, monkeypatch):
+    """Con el cupo lleno, el que sobra recibe un 429 con Retry-After.
+
+    El normalize es CPU-bound y el GIL lo serializa: medido, 8 uploads de 5k
+    filas tardan 8x lo que uno solo, con la CPU en 1 core aunque el container
+    tenga 4. Dejar entrar a todos no reparte el servicio, lo multiplica por N y
+    ademas se come los 40 hilos del threadpool, que es lo que despues hace que
+    /health tarde mas que el timeout del healthcheck.
+    """
+    antes = len(store)
+    respuestas, _ = _correr_normalizes_en_paralelo(
+        monkeypatch, capabilities, cupo=1, espera_s=0.1, cantidad=3)
+
+    codigos = sorted(r.status_code for r in respuestas)
+    assert codigos == [201, 429, 429], f"esperaba 1 aceptado y 2 rechazados: {codigos}"
+
+    rechazada = next(r for r in respuestas if r.status_code == 429)
+    assert rechazada.headers.get("Retry-After") == "1", (
+        "sin Retry-After el front no sabe cuando reintentar y machaca el servicio")
+
+    aceptada = next(r for r in respuestas if r.status_code == 201)
+    store.delete(aceptada.json()["job_id"])
+    assert len(store) == antes, (
+        "un upload rechazado dejo el job y su archivo en disco: cada reintento "
+        "del front acumula una copia mas hasta que pase el TTL")
+
+
+def test_la_avalancha_se_rechaza_sin_tocar_disco(capabilities, monkeypatch):
+    """Con la admision llena, el 429 sale ANTES de leer el archivo.
+
+    El archivo se recibe antes de pedir turno de CPU, a proposito: esperar con
+    el upload a medio camino deja el socket abierto sin hacer nada. Pero eso
+    solo es seguro si hay un techo mas afuera. Sin el, 1000 uploads simultaneos
+    escriben hasta 1000 x SMART_IMPORT_MAX_FILE_MB (10 GB con los defaults) en
+    el disco que compartimos con el cutter antes de rechazar a uno solo.
+    """
+    creados = []
+    real_create = store.create
+    monkeypatch.setattr(store, "create",
+                        lambda *a, **k: (creados.append(1), real_create(*a, **k))[1])
+
+    # espera_s alto: si el rechazo viniera del techo de CPU, el Retry-After
+    # seria 9 y no RETRY_AFTER_FULL_S.
+    respuestas, _ = _correr_normalizes_en_paralelo(
+        monkeypatch, capabilities, cupo=1, espera_s=9, cantidad=3, admision=1)
+
+    codigos = sorted(r.status_code for r in respuestas)
+    assert codigos == [201, 429, 429], f"esperaba 1 aceptado y 2 rechazados: {codigos}"
+    assert len(creados) == 1, (
+        f"se crearon {len(creados)} jobs para 1 lugar de admision: los rechazados "
+        "escribieron en disco antes de que se los rechazara")
+
+    rechazada = next(r for r in respuestas if r.status_code == 429)
+    assert rechazada.headers.get("Retry-After") == str(api_module.RETRY_AFTER_FULL_S), (
+        "el rechazo no vino de la puerta de admision sino del techo de CPU, "
+        "o sea despues de haber recibido el archivo")
+
+    store.delete(next(r for r in respuestas if r.status_code == 201).json()["job_id"])
+
+
+def test_health_responde_con_el_cupo_lleno_y_reporta_la_carga(capabilities, monkeypatch):
+    """El probe tiene que contestar aunque el servicio este saturado.
+
+    Medido antes del cambio: /health tardaba 10.8 s bajo 12 uploads simultaneos,
+    contra un timeout de 5 s en el probe. Tres seguidos marcan el container
+    unhealthy y el reinicio se lleva todos los jobs, que viven en memoria. O sea
+    que el healthcheck leia la carga como una falla y despues la causaba.
+    """
+    _, health = _correr_normalizes_en_paralelo(
+        monkeypatch, capabilities, cupo=2, espera_s=0.1, cantidad=2,
+        sondear_health=True)
+
+    assert health["status"] == "ok"
+    assert health["load"] == {
+        "normalize_in_flight": 2, "normalize_slots": 2,
+        "normalize_queue_wait_s": 0.1, "geocode_slots": 1,
+        "admitted": 2, "admission_slots": 64,
+    }, "el /health no refleja que el servicio esta lleno"
+
+
+def test_health_no_toca_disco_en_cada_probe(client, monkeypatch):
+    """El healthcheck pega cada 30 s: recorrer PBFs, indexes y schemas por probe
+    es trabajo repetido sobre datos que solo cambian con un deploy.
+
+    El refresco tampoco puede caer dentro de un request: medido bajo carga, el
+    probe al que le tocaba escanear se comia entero el timeout de 5 s. Lo hace
+    `_environment_loop` de fondo; el request solo lee.
+    """
+    escaneos = []
+    real = api_module._scan_environment
+    monkeypatch.setattr(api_module, "_scan_environment",
+                        lambda: (escaneos.append(1), real())[1])
+    monkeypatch.setattr(api_module, "HEALTH_SCAN_TTL_S", 0.0)   # vencido siempre
+
+    cuerpos = [client.get("/health").json() for _ in range(5)]
+
+    assert len(escaneos) == 1, (
+        f"el snapshot se recalculo {len(escaneos)} veces: el escaneo volvio al "
+        "camino del request y el probe puede quedarse esperando disco")
+    sin_edad = [{k: v for k, v in c.items() if k != "environment_age_s"} for c in cuerpos]
+    assert all(c == sin_edad[0] for c in sin_edad)
+
+
+def test_health_es_async_para_no_competir_con_el_normalize(client):
+    """Como `def` sync, Starlette lo manda al mismo threadpool que el normalize
+    y el probe queda haciendo cola detras de los imports."""
+    import inspect
+
+    assert inspect.iscoroutinefunction(api_module.health)
+    assert client.get("/health").status_code == 200
 
 
 def test_solo_un_request_puede_reservar_el_geocode():

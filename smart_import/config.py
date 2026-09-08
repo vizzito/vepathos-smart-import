@@ -28,6 +28,17 @@ def _float(name: str, default: float) -> float:
         return default
 
 
+def _float_opt(name: str) -> float | None:
+    """`None` cuando la env no esta: el que lee decide como derivar el default."""
+    raw = os.getenv(name)
+    if raw is None or not raw.strip():
+        return None
+    try:
+        return float(raw)
+    except ValueError:
+        return None
+
+
 def _int(name: str, default: int) -> int:
     raw = os.getenv(name)
     if raw is None or not raw.strip():
@@ -104,6 +115,15 @@ class Config:
     # ---------------- deteccion de schema ----------------
     auto_accept_threshold: float = 0.90
     review_threshold: float = 0.70
+    #: Piso de evidencia para reclamar una columna, POR NIVEL del schema.
+    #: Equivocarse no cuesta lo mismo en todos lados: un `address` mal mapeado
+    #: manda el camion a otra direccion; un `weight_kg` mal mapeado es un numero
+    #: mal en un reporte, que se ve y se corrige. Un solo piso para los tres
+    #: obliga a elegir entre perder pesos o arriesgar destinos.
+    #: `None` = derivar de `review_threshold` con el margen del nivel.
+    mapping_min_delivery: float | None = None
+    mapping_min_package: float | None = None
+    mapping_min_timewindow: float | None = None
     sample_rows: int = 20
     schema_dir: str = "schemas"
     default_schema: str = "vepathos_flat_v1"
@@ -117,6 +137,34 @@ class Config:
     #: Horas que sobrevive un job terminado antes de que se borre su carpeta.
     #: 0 = no barrer (el disco crece sin techo).
     job_ttl_hours: float = 24.0
+    #: Cuantos `normalize` pueden correr a la vez. El resto espera y, si no
+    #: consigue turno, se va con 429 en vez de degradar a todos.
+    #:
+    #: El normalize es Python CPU-bound, asi que el GIL lo serializa: medido con
+    #: 5k filas, 1 cliente tarda 1.3 s y 8 clientes simultaneos tardan 10.5 s
+    #: (8x, cero paralelismo) con la CPU del container clavada en 1 core aunque
+    #: tenga 4 asignados. Sin techo, N usuarios no se reparten el servicio: lo
+    #: multiplican por N, se comen los 40 hilos del threadpool y el /health
+    #: empieza a tardar mas que el timeout del healthcheck.
+    max_concurrent_normalize: int = 4
+    #: Cuanto espera un request por un turno antes de rendirse con 429. Que no
+    #: sea 0 es lo que evita que dos clicks simultaneos se lleven un error.
+    normalize_queue_wait_s: float = 20.0
+    #: Cuantos imports pueden estar en el sistema a la vez, contando el que
+    #: todavia esta subiendo. Es la puerta de admision: se pide ANTES de leer el
+    #: body, asi que el rechazo no toca disco.
+    #:
+    #: Acota el peor caso de una avalancha. Sin esta puerta, 1000 uploads
+    #: simultaneos escriben hasta 1000 x `max_file_mb` (10 GB con los defaults)
+    #: en el disco que comparte con el cutter antes de que el techo de CPU
+    #: rechace a uno solo, porque el archivo se recibe antes de pedir turno.
+    max_normalize_queue: int = 32
+    #: Techo de tareas concurrentes de uvicorn (conexiones + requests). Por
+    #: encima, uvicorn corta con 503 antes de que el request llegue a la app.
+    #: Generoso a proposito: los SSE de `/imports/{id}/events` son conexiones
+    #: ABIERTAS, y una por usuario mirando su import cuenta para este limite.
+    #: 0 = sin techo (el default de uvicorn).
+    http_limit_concurrency: int = 512
 
     # ---------------- extraccion determinística ----------------
     #: region ISO por defecto para telefonos; el job puede sobrescribirla
@@ -152,13 +200,13 @@ class Config:
     cache_path: str = "data/cache/geocode_cache.sqlite"
     geocoder_fallback: str = "none"
     match_threshold: float = 0.81
-    # Acepta coords desde este score (UI: Review 70–80%, Valid ≥81%).
+    # Acepta coords desde este score (UI: Review 70–79%, Valid ≥80%).
     low_confidence_threshold: float = 0.70
     # ---- bandas que consume la UI (una sola fuente de verdad) ----
     #: >= esto: verde, la coordenada se usa tal cual (GEOCODE_VALID_BAND / _MIN_PCT)
-    geocode_valid_band: float = 0.85
+    geocode_valid_band: float = 0.80
     #: >= esto y < valid: ambar Review (GEOCODE_REVIEW_BAND / _MIN_PCT)
-    geocode_review_band: float = 0.75
+    geocode_review_band: float = 0.70
     #: score crudo minimo para dar pin a un match A NIVEL CALLE (sin altura)
     geocode_street_level_floor: float = 0.60
     #: cuan fuerte tiene que matchear la CALLE para aceptar cualquier coordenada.
@@ -181,6 +229,22 @@ class Config:
     extract_max_km: float = 80.0
     osmium_bin: str = ""
 
+    #: Cuanto se corre el piso segun el costo de equivocarse en ese nivel.
+    #: Es relativo a `review_threshold` a proposito: mover el knob global sigue
+    #: moviendo los tres, y la escalera entre ellos no cambia.
+    LEVEL_MARGIN = {"delivery": 0.0, "timewindow": -0.05, "package": -0.10}
+
+    def mapping_floor(self, level: str) -> float:
+        """Evidencia minima para asignar una columna a un campo de ese nivel."""
+        explicit = {
+            "delivery": self.mapping_min_delivery,
+            "package": self.mapping_min_package,
+            "timewindow": self.mapping_min_timewindow,
+        }.get(level)
+        if explicit is not None:
+            return float(explicit)
+        return max(0.0, self.review_threshold + self.LEVEL_MARGIN.get(level, 0.0))
+
     @classmethod
     def from_env(cls) -> "Config":
         return cls(
@@ -189,6 +253,9 @@ class Config:
 
             auto_accept_threshold=_float("AUTO_ACCEPT_THRESHOLD", 0.90),
             review_threshold=_float("REVIEW_THRESHOLD", 0.70),
+            mapping_min_delivery=_float_opt("MAPPING_MIN_DELIVERY"),
+            mapping_min_package=_float_opt("MAPPING_MIN_PACKAGE"),
+            mapping_min_timewindow=_float_opt("MAPPING_MIN_TIMEWINDOW"),
             sample_rows=_int("SMART_IMPORT_SAMPLE_ROWS", 20),
             schema_dir=_str("SMART_IMPORT_SCHEMA_DIR", "schemas"),
             default_schema=_str("SMART_IMPORT_DEFAULT_SCHEMA", "vepathos_flat_v1"),
@@ -199,6 +266,10 @@ class Config:
             work_dir=_str("SMART_IMPORT_WORK_DIR", "data/jobs"),
             verbose=_bool("SMART_IMPORT_VERBOSE", False),
             job_ttl_hours=_float("SMART_IMPORT_JOB_TTL_HOURS", 24.0),
+            max_concurrent_normalize=_int("SMART_IMPORT_MAX_CONCURRENT_NORMALIZE", 4),
+            normalize_queue_wait_s=_float("SMART_IMPORT_NORMALIZE_QUEUE_WAIT_S", 20.0),
+            max_normalize_queue=_int("SMART_IMPORT_MAX_NORMALIZE_QUEUE", 32),
+            http_limit_concurrency=_int("SMART_IMPORT_HTTP_LIMIT_CONCURRENCY", 512),
 
             default_phone_region=_str("SMART_IMPORT_DEFAULT_PHONE_REGION", ""),
             delivery_accept_threshold=_float("SMART_IMPORT_DELIVERY_ACCEPT_THRESHOLD", 0.55),
@@ -224,8 +295,8 @@ class Config:
             match_threshold=_float("GEOCODE_MATCH_THRESHOLD", 0.81),
             low_confidence_threshold=_float("GEOCODE_LOW_CONFIDENCE_THRESHOLD", 0.70),
             # UI bands (0–1 o 0–100). Fuente unica — la web NO redefine cortes.
-            geocode_valid_band=_band("GEOCODE_VALID_BAND", "GEOCODE_VALID_MIN_PCT", 0.85),
-            geocode_review_band=_band("GEOCODE_REVIEW_BAND", "GEOCODE_REVIEW_MIN_PCT", 0.75),
+            geocode_valid_band=_band("GEOCODE_VALID_BAND", "GEOCODE_VALID_MIN_PCT", 0.80),
+            geocode_review_band=_band("GEOCODE_REVIEW_BAND", "GEOCODE_REVIEW_MIN_PCT", 0.70),
             geocode_street_level_floor=_float("GEOCODE_STREET_LEVEL_FLOOR", 0.60),
             geocode_street_match_min=_float("GEOCODE_STREET_MATCH_MIN", 0.70),
             geocode_soft_reject=_bool("GEOCODE_SOFT_REJECT", True),

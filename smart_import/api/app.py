@@ -4,13 +4,17 @@ Diseno:
   - `normalize` es SINCRONO: 50k filas tardan ~1.5 s, no justifica una cola.
   - `geocode` es ASINCRONO y SIEMPRE explicito: nunca se dispara solo.
   - el archivo subido no viaja mas alla de esta capa; se guarda en disco y el
-    resto del pipeline trabaja con rutas (misma forma que tendra con RabbitMQ).
+    resto del pipeline trabaja con rutas.
+  - todo el trabajo pesado pasa por un techo de concurrencia (`_normalize_slot`)
+    y la puerta de entrada rechaza antes de leer el body si la cola esta llena:
+    bajo avalancha el servicio se defiende con 429, no reventando la VM.
 """
 from __future__ import annotations
 
 import asyncio
 import json
 import logging
+import math
 import shutil
 import time
 from contextlib import asynccontextmanager
@@ -19,6 +23,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+import anyio
 from fastapi import Body, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
@@ -49,6 +54,94 @@ if not SCHEMA_DIR.is_absolute() and not SCHEMA_DIR.exists():
 _geocode_pool = ThreadPoolExecutor(max_workers=max(1, CFG.geocode_workers),
                                    thread_name_prefix="geocode")
 
+# El servicio se defiende en dos puertas, porque protegen recursos distintos.
+#
+#   1. ADMISION (`_admission`): cuantos imports pueden estar en el sistema a la
+#      vez, contando el que todavia esta subiendo. Se pide ANTES de leer el
+#      body, y si esta llena el 429 sale sin tocar disco. Es lo que acota la
+#      avalancha: sin esta puerta, 1000 uploads simultaneos escriben hasta
+#      1000 x SMART_IMPORT_MAX_FILE_MB en el disco que compartimos con el
+#      cutter antes de que el techo de CPU rechace a uno solo.
+#
+#   2. CPU (`_normalize_slots`): cuantos normalize corren en paralelo. Es un
+#      techo, no un acelerador: el normalize es Python CPU-bound y el GIL lo
+#      serializa igual (medido: 8 uploads de 5k filas tardan 8x lo que uno,
+#      con la CPU en 1 core de 4). Sirve para que sobren hilos del threadpool
+#      para /health, el polling y las descargas.
+#
+# Chequear un contador en vez de tomar un token no alcanzaria para la puerta 1:
+# con 1000 requests llegando juntos, los 1000 leen "cola vacia" antes de que el
+# primero se encole y pasan todos. El token se toma o no se toma.
+_admission = anyio.Semaphore(max(1, CFG.max_normalize_queue))
+_normalize_slots = anyio.Semaphore(max(1, CFG.max_concurrent_normalize))
+_normalize_in_flight = 0
+_normalize_admitted = 0
+
+#: Segundos de Retry-After cuando la admision esta llena. Corto a proposito: el
+#: cliente reintenta con backoff, no espera a que se vacie toda la cola.
+RETRY_AFTER_FULL_S = 5
+
+
+@asynccontextmanager
+async def _admitted():
+    """Reserva un lugar en el sistema, o 429 inmediato sin tocar disco."""
+    global _normalize_admitted
+    try:
+        _admission.acquire_nowait()
+    except anyio.WouldBlock:
+        stage(logger, "HTTP", "429 admision llena (rechazado antes de leer el archivo)",
+              admitidos=_normalize_admitted, cupo=CFG.max_normalize_queue)
+        # 429 y no 503 a proposito: 503 le dice al balanceador "esta instancia
+        # esta caida" y hay balanceadores que la sacan del pool por eso. 429 es
+        # "aflojá", que es exactamente lo que queremos comunicar.
+        raise HTTPException(
+            429,
+            f"el servicio ya tiene {CFG.max_normalize_queue} imports en curso. "
+            f"Reintenta en unos segundos.",
+            headers={"Retry-After": str(RETRY_AFTER_FULL_S)},
+        ) from None
+    _normalize_admitted += 1
+    try:
+        yield
+    finally:
+        _normalize_admitted -= 1
+        _admission.release()
+
+
+@asynccontextmanager
+async def _normalize_slot(job_id: str):
+    """Reserva un turno de CPU para normalizar, o 429 si no se libera a tiempo."""
+    global _normalize_in_flight
+    espera = max(0.0, float(CFG.normalize_queue_wait_s))
+    # `move_on_after` no lanza: si vencio el plazo, sale del bloque sin token.
+    # El `acquire` de anyio es cancel-safe (si lo despiertan justo al vencer,
+    # devuelve el token), asi que no se filtran turnos.
+    with anyio.move_on_after(espera) as scope:
+        await _normalize_slots.acquire()
+    if scope.cancel_called:
+        reintento = max(1, math.ceil(espera))
+        stage(logger, "HTTP", "429 servicio saturado", job=job_id,
+              en_curso=_normalize_in_flight, cupo=CFG.max_concurrent_normalize,
+              espero_s=espera)
+        raise HTTPException(
+            429,
+            f"el servicio esta procesando {CFG.max_concurrent_normalize} archivos y no "
+            f"se libero un turno en {espera:.0f}s. Reintenta en unos segundos.",
+            headers={"Retry-After": str(reintento)},
+        )
+    _normalize_in_flight += 1
+    try:
+        yield
+    finally:
+        _normalize_in_flight -= 1
+        _normalize_slots.release()
+
+
+def _city_centroids_ready() -> bool:
+    """True si cities15000 esta disponible (centroide + pais por ciudad)."""
+    from ..geocoding.city_lookup import lookup_city_centroid
+    return lookup_city_centroid("Buenos Aires", "AR") is not None
+
 
 def _capability_guard(enabled: bool, name: str, hint: str) -> None:
     """503 con una explicacion util, en vez de un error raro mas adentro."""
@@ -70,11 +163,18 @@ async def lifespan(_app: FastAPI):
                               "no va a poder resolver ninguna direccion",
               level=logging.WARNING)
 
-    barrendero = asyncio.create_task(_purge_loop())
+    # Se precalienta el snapshot de /health mientras corre el start_period del
+    # healthcheck: la primera lectura parsea cities15000 entero, y no conviene
+    # que ese costo lo pague el primer probe (o el primer usuario).
+    await _environment()
+
+    tareas = [asyncio.create_task(_purge_loop()),
+              asyncio.create_task(_environment_loop())]
     try:
         yield
     finally:
-        barrendero.cancel()
+        for tarea in tareas:
+            tarea.cancel()
 
 
 #: Cada cuanto se barren los jobs vencidos. Una hora alcanza: el TTL se mide en
@@ -142,38 +242,117 @@ def _job_or_404(job_id: str) -> Job:
 
 # --------------------------------------------------------------- salud
 
-@app.get("/health", tags=["meta"])
-def health() -> dict[str, Any]:
-    """Que puede hacer este servicio ahora mismo."""
+#: Cada cuanto se vuelve a mirar el disco para /health. Lo que describe cambia
+#: con un deploy o cuando termina de construirse un indice, no entre probes.
+HEALTH_SCAN_TTL_S = 30.0
+_health_scan: tuple[float, dict[str, Any]] | None = None
+_health_scan_lock = anyio.Lock()
+
+
+def _scan_environment() -> dict[str, Any]:
+    """La parte de /health que toca disco (se cachea, ver `_environment`)."""
+    from ..addresses import describe_parsers
     from ..geocoding.extract import scan_registry
     from ..geocoding.pbf_registry import PbfRegistry
 
     cfg = CFG
     registry = (scan_registry(cfg.pbf_dir, cfg.extract_dir)
                 if cfg.geocoding_enabled and cfg.pbf_dir else PbfRegistry([]))
-    indexes = sorted(p.name for p in Path(cfg.index_dir).glob("*.sqlite")) \
-        if Path(cfg.index_dir).exists() else []
-
     try:
         import phonenumbers                     # noqa: F401
         phones_ready = True
     except ImportError:
         phones_ready = False
 
-    from ..addresses import describe_parsers
-    parsers = describe_parsers(cfg)
+    return {
+        "schemas": sorted(p.stem for p in SCHEMA_DIR.glob("*.json")),
+        "pbf_available": len(registry.entries),
+        "indexes": (sorted(p.name for p in Path(cfg.index_dir).glob("*.sqlite"))
+                    if Path(cfg.index_dir).exists() else []),
+        "phonenumbers": phones_ready,
+        "parsers": describe_parsers(cfg),
+        "city_centroids": _city_centroids_ready(),
+    }
 
+
+async def _refresh_environment() -> dict[str, Any]:
+    global _health_scan
+    data = await run_in_threadpool(_scan_environment)
+    _health_scan = (time.monotonic(), data)
+    return data
+
+
+async def _environment() -> dict[str, Any]:
+    """El ultimo snapshot conocido. No escanea si ya hay uno.
+
+    Refrescar dentro del request era el ultimo lugar donde /health se podia
+    trabar: medido bajo 12 uploads, el probe daba p50 30 ms pero cada vez que
+    vencia el TTL uno se comia entero el timeout de 5 s, porque el escaneo
+    peleaba el GIL contra los normalize. Del refresco se encarga
+    `_environment_loop`; aca solo se lee lo que haya.
+    """
+    snap = _health_scan
+    if snap is not None:
+        return snap[1]
+    async with _health_scan_lock:
+        if _health_scan is not None:     # otro probe lo cargo mientras esperaba
+            return _health_scan[1]
+        return await _refresh_environment()
+
+
+async def _environment_loop() -> None:
+    """Mantiene fresco el snapshot de /health fuera del camino del request."""
+    while True:
+        try:
+            await asyncio.sleep(HEALTH_SCAN_TTL_S)
+            await _refresh_environment()
+        except asyncio.CancelledError:
+            raise
+        except Exception:
+            # Se sigue sirviendo el snapshot anterior; `environment_age_s` en
+            # /health delata que quedo viejo.
+            logger.exception("fallo el refresco del snapshot de /health")
+
+
+@app.get("/health", tags=["meta"])
+async def health() -> dict[str, Any]:
+    """Que puede hacer este servicio ahora mismo.
+
+    `async` y cacheado a proposito. Este es el probe del healthcheck de Docker,
+    y como `def` sync competia por el mismo threadpool que el normalize: medido,
+    bajo 12 uploads simultaneos tardaba 10.8 s, muy por encima del timeout de 5 s
+    del probe. Tres de esos seguidos marcan el container unhealthy, lo reinician
+    y se pierden todos los jobs (el store vive en memoria). O sea: el healthcheck
+    reportaba la carga como si fuera una falla, y la convertia en una.
+    """
+    cfg = CFG
+    env = await _environment()
+    parsers = env["parsers"]
     return {
         "status": "ok",
         "version": app.version,
         "limits": {"max_file_mb": cfg.max_file_mb, "max_rows": cfg.max_rows},
-        "schemas": sorted(p.stem for p in SCHEMA_DIR.glob("*.json")),
+        "schemas": env["schemas"],
+        # Que tan lleno esta el servicio ahora. `normalize_in_flight` pegado al
+        # cupo significa que los clientes nuevos estan esperando turno o
+        # recibiendo 429: es la senal para subir el cupo o agregar una instancia.
+        "load": {
+            "normalize_in_flight": _normalize_in_flight,
+            "normalize_slots": cfg.max_concurrent_normalize,
+            "normalize_queue_wait_s": cfg.normalize_queue_wait_s,
+            # Admitidos = subiendo + esperando turno + normalizando. Cuando
+            # toca el cupo, los imports nuevos se rechazan antes de leer el
+            # archivo: es la senal de que hace falta otra instancia.
+            "admitted": _normalize_admitted,
+            "admission_slots": cfg.max_normalize_queue,
+            "geocode_slots": max(1, cfg.geocode_workers),
+        },
         "capabilities": {
             "normalize": True,                        # siempre; es el nucleo
             "geocoding": cfg.geocoding_enabled,
             # el motor real de extraccion: reglas + librerias, sin modelo
             "rules": True,
-            "phonenumbers": phones_ready,
+            "phonenumbers": env["phonenumbers"],
             "libpostal": parsers["libpostal_installed"] and parsers["libpostal_enabled"],
         },
         "extraction": {
@@ -189,19 +368,32 @@ def health() -> dict[str, Any]:
                 "delivery_review": cfg.delivery_review_threshold,
                 "address_accept": cfg.address_accept_threshold,
             },
+            # Cuanta evidencia hace falta para reclamar una columna, por nivel
+            # del schema: el destino pide mas que el bulto.
+            "mapping_floor": {
+                level: round(cfg.mapping_floor(level), 3)
+                for level in ("delivery", "timewindow", "package")
+            },
         },
         "geocoding": {
             "enabled": cfg.geocoding_enabled,
             "pbf_dir": cfg.pbf_dir or None,
-            "pbf_available": len(registry.entries),
-            "indexes_built": indexes,
+            "pbf_available": env["pbf_available"],
+            "indexes_built": env["indexes"],
             "autobuild_index": cfg.autobuild_index,
             "autoextract": cfg.autoextract,
             "extract_dir": cfg.extract_dir or None,
             "fallback": cfg.geocoder_fallback,
             "automatic": False,        # NUNCA se dispara solo
+            # cities15000 de GeoNames. Si es false, "la ciudad manda sobre el
+            # pin del depot" y la deteccion por encabezado quedan APAGADAS en
+            # silencio: el build lo baja en una cache que no queda en la imagen.
+            "city_centroids": env["city_centroids"],
         },
-        "jobs": len(store.list(limit=10_000)),
+        "jobs": len(store),
+        # Antiguedad del snapshot de disco. Si crece mucho por encima de
+        # HEALTH_SCAN_TTL_S, el refresco de fondo murio y lo de arriba es viejo.
+        "environment_age_s": round(time.monotonic() - _health_scan[0], 1),
     }
 
 
@@ -264,43 +456,58 @@ async def create_import(
         raise HTTPException(415, f"extension '{suffix}' no soportada. "
                                  f"Permitidas: {sorted(ALLOWED_SUFFIXES)}")
 
-    schema_path = _schema_path(schema)
-    job = store.create(name, schema)
-    job.capabilities = {"geocoding": CFG.geocoding_enabled and bool(CFG.pbf_dir),
-                        }
-    raw_path = store.dir_for(job.id) / "raw" / name
+    # Primero la admision, ANTES de leer una sola linea del body: recien
+    # despues se crea el job y se escribe en disco. Al reves, una avalancha de
+    # 1000 uploads deja hasta 1000 x max_file_mb en el disco que compartimos con
+    # el cutter antes de que alguien rechace nada.
+    async with _admitted():
+        schema_path = _schema_path(schema)
+        job = store.create(name, schema)
+        job.capabilities = {"geocoding": CFG.geocoding_enabled and bool(CFG.pbf_dir),
+                            }
+        raw_path = store.dir_for(job.id) / "raw" / name
 
-    size = 0
-    limit = int(cfg.max_file_mb * 1024 * 1024)
-    try:
-        with open(raw_path, "wb") as fh:
-            while chunk := await file.read(1024 * 1024):
-                size += len(chunk)
-                if size > limit:                 # se corta al vuelo, no se lee entero
-                    raise HTTPException(413, f"el archivo supera {cfg.max_file_mb} MB")
-                fh.write(chunk)
-    except HTTPException:
-        store.delete(job.id)
-        raise
-    finally:
-        await file.close()
+        size = 0
+        limit = int(cfg.max_file_mb * 1024 * 1024)
+        try:
+            with open(raw_path, "wb") as fh:
+                while chunk := await file.read(1024 * 1024):
+                    size += len(chunk)
+                    if size > limit:             # se corta al vuelo, no se lee entero
+                        raise HTTPException(413, f"el archivo supera {cfg.max_file_mb} MB")
+                    fh.write(chunk)
+        except HTTPException:
+            store.delete(job.id)
+            raise
+        finally:
+            await file.close()
 
-    job.raw_path = str(raw_path)
-    stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
-          tamano=f"{size / 1024:.1f}KB", schema=schema)
-    # El normalize es CPU-bound (lectura, mapping, extraccion, libpostal) y este
-    # endpoint es una corrutina: ejecutarlo inline bloquea el event loop y con el
-    # loop bloqueado no se atiende NADA — ni /health (el healthcheck marca el
-    # container unhealthy) ni los SSE de progreso ni el polling del front.
-    # El upload de arriba si es async de verdad: `await file.read()` cede.
-    response = await run_in_threadpool(
-        _run_normalize,
-        job, schema_path, phone_region, diagnostics,
-        timezone=timezone, depot_timezone=depot_timezone,
-        service_date=service_date,
-        depot_city=depot_city, depot_region=depot_region,
-        depot_country=depot_country,
-    )
+        job.raw_path = str(raw_path)
+        stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
+              tamano=f"{size / 1024:.1f}KB", schema=schema)
+        # El normalize es CPU-bound (lectura, mapping, extraccion, libpostal) y
+        # este endpoint es una corrutina: ejecutarlo inline bloquea el event loop
+        # y con el loop bloqueado no se atiende NADA — ni /health (el healthcheck
+        # marca el container unhealthy) ni los SSE de progreso ni el polling.
+        # El upload de arriba si es async de verdad: `await file.read()` cede.
+        try:
+            async with _normalize_slot(job.id):
+                response = await run_in_threadpool(
+                    _run_normalize,
+                    job, schema_path, phone_region, diagnostics,
+                    timezone=timezone, depot_timezone=depot_timezone,
+                    service_date=service_date,
+                    depot_city=depot_city, depot_region=depot_region,
+                    depot_country=depot_country,
+                )
+        except HTTPException as exc:
+            # Un job rechazado por saturacion no lo va a ver nadie: si se queda,
+            # cada reintento del front deja otra copia del archivo en disco hasta
+            # que pase el TTL. Un normalize que falla (422) si se conserva: el
+            # usuario necesita leer el error.
+            if exc.status_code == 429:
+                store.delete(job.id)
+            raise
     stage(logger, "HTTP", "201 creado", job=job.id, estado=job.status,
           acciones=",".join(a["action"] for a in job.next_actions()))
     return response
@@ -571,7 +778,7 @@ def issues(job_id: str, limit: int = Query(500, le=2000)) -> dict[str, Any]:
 
 
 @app.put("/imports/{job_id}/mapping", tags=["import"])
-def confirm_mapping(
+async def confirm_mapping(
     job_id: str,
     mapping: dict[str, str | None] = Body(..., examples=[{"Dest.": "address", "Obs": None}]),
     phone_region: str | None = Query(None),
@@ -590,11 +797,15 @@ def confirm_mapping(
     job = _job_or_404(job_id)
     if not job.raw_path or not Path(job.raw_path).exists():
         raise HTTPException(409, "el archivo original ya no esta disponible")
-    return _run_normalize(job, _schema_path(job.schema), phone_region, diagnostics,
-                          manual_mapping=mapping, timezone=timezone,
-                          depot_timezone=depot_timezone, service_date=service_date,
-                          depot_city=depot_city, depot_region=depot_region,
-                          depot_country=depot_country)
+    # Re-normalizar cuesta lo mismo que la primera vez, asi que pide turno igual:
+    # si no, este endpoint es una puerta lateral que saltea el techo.
+    async with _normalize_slot(job.id):
+        return await run_in_threadpool(
+            _run_normalize, job, _schema_path(job.schema), phone_region, diagnostics,
+            manual_mapping=mapping, timezone=timezone,
+            depot_timezone=depot_timezone, service_date=service_date,
+            depot_city=depot_city, depot_region=depot_region,
+            depot_country=depot_country)
 
 
 def _flat_path(job: Job) -> str | None:
@@ -692,8 +903,22 @@ def start_geocode(
 
     origin = (origin_lat, origin_lon) if origin_lat is not None and origin_lon is not None else None
     if origin is None and box is None and index is None:
-        raise HTTPException(400, "indica --origin (depot), un bbox o un indice: sin eso no se "
-                                 "puede elegir que region de OSM usar")
+        # Sin depot todavia se puede geocodificar: basta la ciudad que el
+        # usuario confirmo (o que se detecto en el archivo, ver
+        # report.locality). El centroide de la ciudad hace de origin y elige
+        # la region de OSM; `align_depot_to_geolocator` lo aplica en el worker.
+        from ..geocoding.city_lookup import lookup_city_centroid
+        ciudad = (depot_city or "").strip()
+        if not ciudad:
+            raise HTTPException(400, "indica la ciudad (depot_city), el depot (origin_lat/lon), "
+                                     "un bbox o un indice: sin eso no se puede elegir que "
+                                     "region de OSM usar")
+        if lookup_city_centroid(ciudad, depot_country) is None:
+            raise HTTPException(
+                400,
+                f"no pude ubicar '{ciudad}'"
+                + (f" en {depot_country}" if depot_country else "")
+                + ": mandá el depot (origin_lat/lon) o corregí la ciudad")
 
     from ..geocoding.depot_context import depot_from_params
     depot = depot_from_params(
@@ -767,6 +992,9 @@ def _geocode_worker(job_id: str, origin, box, index_name: str | None,
             lon = origin[1] if origin else None
             zone_hint = None
             if depot is not None:
+                # Preferí ciudad/región; country ISO-2 ("AR") solo como fallback.
+                # El registry expande ISO-2 → nombre y NUNCA hace substring corto
+                # ("ar" ∈ "ashmore-cartier" era el bug de Tandil).
                 zone_hint = (depot.city or depot.region or depot.country or None)
                 if zone_hint:
                     zone_hint = str(zone_hint).strip() or None
