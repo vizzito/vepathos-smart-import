@@ -46,13 +46,12 @@ HEALTH=$(curl -sf "http://$HOST/health") || {
 echo "$HEALTH" | "$PY" -c '
 import json, sys
 d = json.load(sys.stdin)
-a, g = d["ai"], d["geocoding"]
+c, g = d["capabilities"], d["geocoding"]
 print("  status=%s  schemas=%s" % (d["status"], d["schemas"]))
-print("  IA: enabled=%s installed=%s model=%s device=%s" % (
-    a["enabled"], a["dependencies_installed"], a["model"], a["device"]))
+print("  caps: normalize=%s geocoding=%s libpostal=%s rules=%s" % (
+    c.get("normalize"), c.get("geocoding"), c.get("libpostal"), c.get("rules")))
 print("  GEO: pbf_available=%s indexes=%s automatic=%s fallback=%s" % (
     g["pbf_available"], len(g["indexes_built"]), g["automatic"], g["fallback"]))
-print("  <- el modelo SOLO corre en POST /extract; normalize usa reglas (report.ai_used)")
 '
 
 echo
@@ -61,11 +60,10 @@ RESP=$(curl -sf -X POST "http://$HOST/imports?phone_region=AR" -F "file=@${FILE}
 echo "$RESP" | json | head -40
 JOB=$(echo "$RESP" | "$PY" -c 'import json,sys; print(json.load(sys.stdin)["job_id"])')
 STATUS=$(echo "$RESP" | "$PY" -c 'import json,sys; print(json.load(sys.stdin)["status"])')
-AI_USED=$(echo "$RESP" | "$PY" -c 'import json,sys; print(json.load(sys.stdin)["report"].get("ai_used"))')
 NEEDS=$(echo "$RESP" | "$PY" -c 'import json,sys; print(json.load(sys.stdin)["report"].get("needs_geocode", 0))')
 ACTIONS=$(echo "$RESP" | "$PY" -c 'import json,sys; d=json.load(sys.stdin); print(", ".join(a["action"] for a in d["next_actions"]))')
 echo
-echo "  JOB=$JOB  status=$STATUS  ai_used=$AI_USED  needs_geocode=$NEEDS"
+echo "  JOB=$JOB  status=$STATUS  needs_geocode=$NEEDS"
 echo "  next_actions: $ACTIONS"
 
 echo

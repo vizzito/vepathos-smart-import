@@ -2,22 +2,23 @@
 # ---------------------------------------------------------------------------
 # Recorrido completo del stack, con logs de cada etapa. NO necesita la web.
 #
-#   ./scripts/demo.sh              solo reglas (sin IA, sin PBF)
+#   ./scripts/demo.sh              solo reglas (sin PBF)
 #   ./scripts/demo.sh --geocode    + geocoding contra un PBF real
-#   ./scripts/demo.sh --ai         + separacion de columna compuesta con el modelo
-#   ./scripts/demo.sh --all        todo
+#   ./scripts/demo.sh --all        alias de --geocode
 # ---------------------------------------------------------------------------
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 PY=".venv/bin/python"
 OUT="out/demo"
-WITH_GEOCODE=0; WITH_AI=0
+WITH_GEOCODE=0
 for arg in "$@"; do
   case "$arg" in
-    --geocode) WITH_GEOCODE=1 ;;
-    --ai)      WITH_AI=1 ;;
-    --all)     WITH_GEOCODE=1; WITH_AI=1 ;;
+    --geocode|--all) WITH_GEOCODE=1 ;;
+    --ai)
+      echo "aviso: --ai ya no existe (el pipeline de IA se elimino)."
+      echo "  La columna mezclada se separa en normalize con reglas."
+      ;;
     *) echo "opcion desconocida: $arg"; exit 2 ;;
   esac
 done
@@ -76,24 +77,23 @@ print(f"  anidado: {multi['delivery_id']} -> {len(multi['packages'])} bultos, "
       f"dimensiones={multi['packages'][0].get('dimensions')}")
 EOF
 
-step "5. Columna compuesta — el sistema avisa que no le alcanza"
+step "5. Columna compuesta — mapping + aviso"
 $PY -m smart_import detect -i fixtures/merged_field.csv 2>/dev/null | $PY -c "
 import json,sys; d=json.load(sys.stdin)
 for c,m in d['mapping'].items():
     print(f\"  {c:<16} -> {m['target']:<14} {m['confidence']:.2f}\")
 for w in d['warnings']: print(f'  aviso: {w}')"
 
-if [ "$WITH_AI" = "1" ]; then
-  step "6. EXTRACT — separar la columna compuesta con el modelo"
-  $PY -m smart_import normalize -i fixtures/merged_field.csv -o "$OUT/merged.csv" >/dev/null 2>&1
-  echo "  antes:"; head -3 "$OUT/merged.csv" | sed 's/^/    /'
-  SMART_IMPORT_AI_ENABLED=true $PY -m smart_import -v extract \
-    -i "$OUT/merged.csv" -o "$OUT/merged_split.csv" --max-rows 6 2>&1 | grep -v "Loading weights\|HF_TOKEN"
-  echo "  despues:"; head -4 "$OUT/merged_split.csv" | sed 's/^/    /'
-else
-  step "6. EXTRACT (omitido)"
-  echo "  Corre con --ai para probarlo. Requiere: pip install -e '.[ai]' (~2,5 GB)"
-fi
+step "6. Columna mezclada — normalize separa con reglas (sin modelo)"
+$PY -m smart_import normalize \
+  -i examples/columna-mezclada/01_dash_name_address_phone.csv \
+  -o "$OUT/mezclada.csv" --phone-region AR >/dev/null 2>&1
+echo "  salida:"; head -4 "$OUT/mezclada.csv" | sed 's/^/    /'
+$PY - <<'EOF'
+import json
+r = json.load(open("out/demo/mezclada.report.json"))
+print(f"  {r['deliveries']} entregas, invalid={r.get('invalid_rows', 0)}")
+EOF
 
 if [ "$WITH_GEOCODE" = "1" ]; then
   step "7. PBF disponibles"
@@ -142,8 +142,9 @@ echo "  GET /health"
 curl -s "localhost:$PORT/health" | "$PY" -c '
 import json, sys
 d = json.load(sys.stdin)
-a, g = d["ai"], d["geocoding"]
-print("    IA instalada=%s habilitada=%s" % (a["dependencies_installed"], a["enabled"]))
+c, g = d["capabilities"], d["geocoding"]
+print("    capabilities: normalize=%s geocoding=%s libpostal=%s" % (
+    c.get("normalize"), c.get("geocoding"), c.get("libpostal")))
 print("    PBFs visibles=%s indices=%s" % (g["pbf_available"], len(g["indexes_built"])))
 print("    geocoding_automatico=%s  <- nunca se dispara solo" % g["automatic"])
 '

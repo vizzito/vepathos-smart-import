@@ -2,7 +2,7 @@
 
 - **Geocode vs coords reales (CABA ML 13 + orders 13 + Miami 6 + 2907 + Tandil 326):** [`geocode-truth/`](geocode-truth/README.md)
 - **Entradas que la web ya acepta** (completas o mínimas): [`vepathos-golden/`](vepathos-golden/README.md)
-- **Forzar IA (`extract`)**: [`force-ai/`](force-ai/README.md) — nombre+dir+tel en una columna + textos pegables
+- **Columna mezclada / paste hostil**: [`columna-mezclada/`](columna-mezclada/README.md) — nombre+dir+tel en una columna + textos pegables
 - **Entradas sintéticas hostiles** (headers raros, latin1, sin coords, etc.): los archivos de esta carpeta
 
 Casos variables listos para CLI / curl. Se regeneran (no editar a mano):
@@ -24,7 +24,7 @@ Los `ref_*` de `fixtures/` son archivos “ya bien formados” (round-trip). El 
 | `preamble_dirty.xlsx` | Título + 4 filas basura + 3 hojas | elige hoja `Datos`, salta preámbulo |
 | `swapped_coords.csv` | lat/lng invertidas | **aviso**, no corrige solo |
 | `one_row_per_delivery.xlsx` | `cantidad de bultos` sin `package_id` | expande a N bultos |
-| `merged_field.csv` | Nombre+dir+tel en una columna | aviso; `extract` si IA on |
+| `merged_field.csv` | Nombre+dir+tel en una columna | se separa en el normalize (reglas) |
 | `no_headers.csv` | `Campo 1..6` | solo heurísticas de contenido |
 | `mixed_locale.xlsx` | AR + US mezclados | ambas locales |
 | `legacy.xls` | Excel BIFF viejo | lectura OK |

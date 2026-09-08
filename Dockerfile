@@ -83,9 +83,9 @@ FROM base AS app-base
 # nombrado sobre una ruta que NO existe en la imagen lo crea Docker como root,
 # y el proceso (uid 10001) no puede escribir.
 RUN mkdir -p /data/input /data/output /data/pbf /data/indexes /data/extracts /data/cache \
-             /data/tmp /data/jobs /data/vocab /model-cache \
+             /data/tmp /data/jobs /data/vocab \
     && useradd -r -u 10001 -d /app smartimport \
-    && chown -R smartimport /app /data /model-cache
+    && chown -R smartimport /app /data
 
 ENV SMART_IMPORT_PBF_DIR=/data/pbf \
     SMART_IMPORT_INDEX_DIR=/data/indexes \
@@ -94,8 +94,7 @@ ENV SMART_IMPORT_PBF_DIR=/data/pbf \
     SMART_IMPORT_WORK_DIR=/data/jobs \
     SMART_IMPORT_VOCAB_PATH=/data/vocab/smart_import_vocab.sqlite \
     SMART_IMPORT_LOCALITY_GEONAMES_PATH=/data/vocab/locality_expand_geonames.json \
-    SMART_IMPORT_DEVICE=cpu \
-    HF_HOME=/model-cache
+    SMART_IMPORT_GEONAMES_CITIES=/data/vocab/cities15000.txt
 
 EXPOSE 8100
 ENTRYPOINT ["/app/scripts/docker-entrypoint.sh"]
