@@ -15,6 +15,10 @@ from .base import ColumnMapping, MappingResult
 # cuando el nombre y el contenido coinciden en el mismo target, la evidencia es
 # mucho mas fuerte que cualquiera de los dos por separado
 AGREEMENT_BONUS = 0.08
+#: Cuanto se castiga un match por PARECIDO cuando el contenido de la columna
+#: apunta a otro campo con evidencia propia. No se descarta: se manda abajo del
+#: piso de asignacion, y sigue visible en el reporte con su motivo.
+FUZZY_CONTRADICTED = 0.6
 METHOD_RANK = {"manual": 5, "alias": 4, "normalized": 3, "ai": 2, "fuzzy": 1, "heuristic": 0}
 
 
@@ -54,6 +58,25 @@ class RuleSchemaMapper:
             score, method, why = scored[key]
             scored[key] = (min(0.995, score + AGREEMENT_BONUS), method,
                            f"{why} + confirmado por contenido")
+
+        # El nombre se PARECE a X pero el contenido dice Y con evidencia propia:
+        # gana el contenido. 'Ontvanger' (destinatario, en neerlandes) se parece
+        # 0.82 a 'container' y se llevaba la columna de nombres a `packaging`.
+        # Un parecido de string entre dos idiomas es la evidencia mas floja que
+        # hay; lo que la columna efectivamente contiene es mas fuerte.
+        for (col, target), (score, method, why) in list(scored.items()):
+            if method != "fuzzy" or content_hits.get((col, target), 0.0) > 0.0:
+                continue
+            # el rival cuenta solo si por si mismo alcanzaria para asignarse
+            rival = max((s for (c, t), s in content_hits.items()
+                         if c == col and t != target
+                         and s >= cfg.mapping_floor(
+                             schema.fields[t].level if t in schema.fields else "delivery")),
+                        default=0.0)
+            if rival:
+                scored[(col, target)] = (
+                    score * FUZZY_CONTRADICTED, method,
+                    f"{why} pero el contenido de la columna dice otra cosa")
 
         # el nombre dice X pero el contenido lo contradice fuerte -> bajar
         for (col, target), name_score in name_hits.items():
@@ -102,7 +125,10 @@ def _assign(scored: dict, table: Table, schema: TargetSchema, cfg: Config) -> Ma
     for (col, target), (score, method, why) in ranked:
         if col in used_cols or target in used_targets:
             continue
-        if score < cfg.review_threshold:
+        # El piso depende del NIVEL del campo, no es uno solo para todo el
+        # schema: reclamar el destino pide mas evidencia que reclamar el peso.
+        field = schema.fields.get(target)
+        if score < cfg.mapping_floor(field.level if field else "delivery"):
             continue
         result.mapping[col] = ColumnMapping(col, target, score, method, why)
         used_cols.add(col)

@@ -434,6 +434,46 @@
         "numero",
         "nº"
       ]
+    },
+    "fr": {
+      "_comment": "Pack parcial: solo lo que hace falta para reconocer una direccion. Un pack no tiene que traer todos los grupos.",
+      "street_tokens": [
+        "rue", "avenue", "av", "av.", "boulevard", "bd", "bd.", "bvd",
+        "place", "impasse", "chemin", "allee", "allée", "quai", "route",
+        "voie", "cours"
+      ]
+    },
+    "it": {
+      "street_tokens": [
+        "via", "viale", "v.le", "corso", "c.so", "piazza", "p.za", "piazzale",
+        "vicolo", "strada", "largo", "lungomare", "contrada"
+      ]
+    },
+    "de": {
+      "_comment": "En aleman el tipo de via va PEGADO al nombre (Hauptstrasse), no separado. Por eso los sufijos, que se buscan al final de la palabra.",
+      "street_tokens": [
+        "strasse", "straße", "str", "str.", "weg", "allee", "gasse", "platz",
+        "ring", "damm", "ufer", "chaussee"
+      ],
+      "street_suffixes": [
+        "strasse", "straße", "str", "weg", "allee", "gasse", "platz", "damm",
+        "ufer", "chaussee", "steig"
+      ]
+    },
+    "nl": {
+      "street_tokens": [
+        "straat", "gracht", "laan", "plein", "weg", "kade", "dijk", "singel",
+        "steeg"
+      ],
+      "street_suffixes": [
+        "straat", "gracht", "laan", "plein", "weg", "kade", "dijk", "singel",
+        "steeg"
+      ]
+    },
+    "pl": {
+      "street_tokens": [
+        "ulica", "ul", "ul.", "aleja", "aleje", "plac", "osiedle", "rondo"
+      ]
     }
   }
 }

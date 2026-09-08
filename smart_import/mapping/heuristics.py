@@ -12,12 +12,24 @@ from __future__ import annotations
 
 import math
 import re
+from functools import lru_cache
 from typing import Any
 
 from ..resources import fold, packaging_codes, packaging_words, status_words
 
 CAP = 0.93                      # techo general: nunca le gana a un alias exacto
 CAP_STRONG = 0.95               # solo para evidencia dura (rango de coordenadas)
+
+#: Evidencia promedio para declarar que una columna ES la direccion. El margen
+#: es comodo a proposito: las direcciones dan 0.70+, lo demas no pasa de 0.20.
+ADDRESS_MIN_MEAN = 0.50
+
+#: Estos scores dicen CUANTA EVIDENCIA HAY, no si alcanza. El piso lo pone
+#: `Config.mapping_floor(level)` y depende del nivel del campo: reclamar el
+#: destino (`delivery`) pide mas que reclamar un bulto (`package`). Al escribir
+#: una regla nueva hay que estimar la evidencia con honestidad y dejar que el
+#: piso decida — subir el score para "pasar el corte" es mentirle al reporte,
+#: que es donde el operador lee por que el sistema creyo lo que creyo.
 
 _PHONE_RE = re.compile(r"^[+()\d][\d\s\-().]{5,}$")
 _TZ_RE = re.compile(r"^[A-Za-z]+/[A-Za-z_+\-0-9]+$|^(UTC|GMT)([+-]\d{1,2})?$", re.I)
@@ -59,13 +71,90 @@ def _to_float(value: Any) -> float | None:
     return f if math.isfinite(f) else None
 
 
+#: 'Mobile: 1199887766' — el export trae la etiqueta adentro de cada celda.
+#: Pasa en cualquier contacto exportado de Outlook/Google y en las planillas que
+#: alguien "arregló" a mano. La etiqueta no cambia lo que el valor ES.
+_CELL_LABEL = re.compile(r"^[^\d+(]{1,24}[:\-]\s*")
+
+
+def _strip_cell_label(text: str) -> str:
+    return _CELL_LABEL.sub("", text, count=1).strip()
+
+
 def _is_phone(text: str) -> bool:
-    digits = sum(c.isdigit() for c in text)
+    candidate = text if text[:1].isdigit() or text[:1] in "+(" else _strip_cell_label(text)
+    digits = sum(c.isdigit() for c in candidate)
     if not (7 <= digits <= 15):
         return False
-    if not _PHONE_RE.match(text):
+    if not _PHONE_RE.match(candidate):
         return False
-    return "." not in text                      # 0.5 no es un telefono
+    return "." not in candidate                 # 0.5 no es un telefono
+
+
+@lru_cache(maxsize=1)
+def _address_scorer():
+    """El MISMO scorer que usan el geocoder, el extractor y el clasificador.
+
+    Antes esto era un regex de vias en castellano embebido acá. Duplicar la
+    lista es como se desincronizan dos modulos que creen tener la misma regla:
+    el extractor aprendia 'Hauptstrasse' y el mapper seguia sin entenderla.
+    """
+    from ..addresses.scoring import AddressCandidateScorer
+    return AddressCandidateScorer()
+
+
+@lru_cache(maxsize=1)
+def _street_words() -> frozenset[str]:
+    from ..resources import label_set
+    return label_set("street_tokens", None) | label_set("street_suffixes", None)
+
+
+def _has_street_token(text: str) -> bool:
+    """Tipo de via suelto ('Av. Corrientes') o pegado ('Hauptstrasse')."""
+    words = _street_words()
+    for raw in text.split():
+        token = fold(raw.strip(".,;:"))
+        if token in words:
+            return True
+        if len(token) > 4 and any(token.endswith(w) for w in words if len(w) >= 3):
+            return True
+    return False
+
+
+def _address_evidence(p: "ColumnProfile", sample: int = 40) -> float:
+    """Evidencia promedio de direccion de la columna, 0..0.99.
+
+    Una direccion real puntua 0.70-0.95; un nombre, un telefono o una zona
+    puntuan 0.00-0.20. El margen entre los dos grupos es lo que permite decidir
+    sin mirar el nombre de la columna, que es justo lo que hace falta cuando el
+    header viene en un idioma que el schema no lista.
+    """
+    texts = [t for t in p.texts[:sample] if len(t) >= 6]
+    if not texts:
+        return 0.0
+    scorer = _address_scorer()
+    return sum(scorer.score(t).score for t in texts) / len(texts)
+
+
+def _weight_unit_frac(p: "ColumnProfile", sample: int = 40) -> float:
+    """Fraccion de celdas que traen la unidad de peso escrita: '2,75 kg', '10 lb'.
+
+    Es la unica señal de peso que cruza idiomas sin depender del header: `kg`,
+    `lb`, `grs` y `quilos` se escriben igual en el archivo aleman y en el
+    brasileño. Sale del mismo lexico de paqueteria que lee el texto libre.
+    """
+    texts = [t for t in p.texts[:sample] if t]
+    if not texts:
+        return 0.0
+    from ..packages import get_package_lexicon
+    pattern = get_package_lexicon().weight_re
+    hits = 0
+    for text in texts:
+        match = pattern.search(text)
+        # el patron acepta la unidad sola ('kg'); acá hace falta el numero
+        if match and (match.group("n") or match.group("nword")):
+            hits += 1
+    return hits / len(texts)
 
 
 def _is_identifier(text: str) -> bool:
@@ -165,13 +254,14 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
             # una parte sustancial excede |90| => imposible que sea latitud
             add("lng", 0.95, f"{1 - frac_lat:.0%} de los valores fuera de [-90,90]", CAP_STRONG)
         elif precise and in_lng and spread < 40:
-            add("lng", 0.84, f"en [-180,180] con >=3 decimales")
+            add("lng", 0.84, "en [-180,180] con >=3 decimales")
 
         if p.all_int and 0 < p.lo and p.hi <= 200 and p.distinct <= 30:
             add("quantity", 0.72, f"enteros chicos {int(p.lo)}..{int(p.hi)}")
         # Altura tipica: enteros/cortos, NO secuencia de orden (1,2,3… o 1001,1002…).
         if (
             p.numeric_frac >= 0.9
+            and p.all_int                    # 2.75 no es la altura de una calle
             and p.avg_len <= 6
             and p.hi <= 30_000
             and p.cardinality >= 0.5
@@ -182,11 +272,28 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
         if p.all_int and 1 <= p.lo and p.hi <= 10 and p.distinct <= 10:
             add("priority", 0.70, f"enteros 1..10, {p.distinct} valores distintos")
         if p.has_decimals and 0 <= p.lo and p.hi <= 2000:
-            add("weight_kg", 0.62, f"decimales en 0..2000 ({p.lo:g}..{p.hi:g})")
+            # Decimales chicos y variados: la forma de una columna de peso. Un
+            # importe suele ser mas grande o entero y una duracion suele
+            # repetirse, pero ninguna de las tres es distinguible con certeza.
+            # El score dice cuanta evidencia HAY; que alcance o no para
+            # asignarse lo decide el piso del nivel `package`, no este numero.
+            if p.hi <= 500 and p.cardinality >= 0.5 and not _is_monotonic_ids(p.nums):
+                add("weight_kg", 0.66,
+                    f"decimales chicos y variados ({p.lo:g}..{p.hi:g}, "
+                    f"{p.cardinality:.0%} distintos)")
+            else:
+                add("weight_kg", 0.62, f"decimales en 0..2000 ({p.lo:g}..{p.hi:g})")
         if 0 <= p.lo and p.hi <= 480 and p.distinct <= 40:
             add("service_time_min", 0.55, f"0..480, {p.distinct} distintos")
         if p.all_int and p.lo >= 0 and p.hi > 1000:
             add("value_cents", 0.55, f"enteros grandes hasta {int(p.hi)}")
+
+    # La unidad escrita en la celda gana sobre cualquier heuristica de forma, y
+    # no depende del idioma del header: '2,75 kg' dice lo que es en cualquier
+    # archivo. Va antes que lo textual porque '10 lb' tambien parece texto.
+    unit_frac = _weight_unit_frac(p)
+    if unit_frac >= 0.6:
+        add("weight_kg", 0.90, f"{unit_frac:.0%} de las celdas traen unidad de peso")
 
     # --- textuales ---
     if p.numeric_frac < 0.5:
@@ -196,37 +303,30 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
             add("tw_start", 0.55, "parseable como fecha/hora")
             add("tw_end", 0.55, "parseable como fecha/hora")
 
-        has_num_and_word = p.frac(
-            lambda t: any(c.isdigit() for c in t) and any(c.isalpha() for c in t)
-        )
         # Intersecciones tipicas AR/LatAm: "Alsina y Pelegrini", "Maipu e Yrigoyen"
         has_intersection = p.frac(
             lambda t: bool(re.search(r"\s+[ye]\s+", t, re.I)) and len(t.split()) >= 3
         )
-        has_street_token = p.frac(
-            lambda t: bool(
-                re.search(
-                    r"\b(av\.?|avenida|calle|pasaje|ruta|camino|diag\.?|diagonal|"
-                    r"boulevard|bvd\.?|bv\.?)\b",
-                    t,
-                    re.I,
-                )
-            )
-        )
-        if p.avg_len >= 12 and has_num_and_word >= 0.6 and p.cardinality >= 0.4:
-            add("address", 0.84, f"texto largo ({p.avg_len:.0f} chars) con numero y palabras")
+        has_street_token = p.frac(_has_street_token)
+        address_mean = _address_evidence(p)
+        if address_mean >= ADDRESS_MIN_MEAN and p.cardinality >= 0.4:
+            add("address", 0.55 + address_mean * 0.45,
+                f"evidencia de direccion {address_mean:.2f} promedio "
+                f"(mismo scorer que usa el geocoder)")
         elif (
             p.avg_len >= 10
             and p.cardinality >= 0.5
             and p.numeric_frac < 0.25
-            and (has_num_and_word >= 0.35 or has_intersection >= 0.12 or has_street_token >= 0.2)
+            and (has_intersection >= 0.12 or has_street_token >= 0.2)
         ):
-            # Planillas de reparto local: muchas calles sin altura o "X y Y"
+            # Planillas de reparto local: muchas calles SIN altura ("Alsina y
+            # Pelegrini"). El scorer las puntua bajo a proposito —no son una
+            # direccion precisa— pero como columna siguen siendo el destino.
             add(
                 "address",
                 0.80,
-                f"texto de lugar ({p.avg_len:.0f} chars; "
-                f"num+palabra={has_num_and_word:.0%} interseccion={has_intersection:.0%})",
+                f"texto de lugar sin altura ({p.avg_len:.0f} chars; "
+                f"interseccion={has_intersection:.0%} via={has_street_token:.0%})",
             )
 
         idish = p.frac(_is_identifier)
