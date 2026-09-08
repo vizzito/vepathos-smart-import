@@ -48,7 +48,12 @@ class Segment:
     @property
     def body(self) -> str:
         """El contenido sin la marca de lista. `text` sigue siendo el original."""
-        return _BULLET_PREFIX.sub("", self.text)
+        stripped = _BULLET_PREFIX.sub("", self.text)
+        if stripped != self.text:
+            return stripped
+        if self.list_number and _BARE_NEXT.match(self.text):
+            return _BARE_NEXT.sub("", self.text, count=1)
+        return self.text
 
     def as_dict(self) -> dict:
         return {"text": self.text, "span": [self.start, self.end], "kind": self.kind,
@@ -79,11 +84,31 @@ class SegmentedDocument:
 
 _LIST_NUMBER = re.compile(r"^\s*(?:[-*•·–—]\s*)?(\d{1,3})[)\.\-:]\s+")
 _BULLET_PREFIX = re.compile(r"^\s*(?:\d{1,3}[)\.\-:]|[-*•·–—])\s+")
+#: item siguiente sin puntuacion: '6 nombre' (no '6.' / '6)'). Solo si N == ultimo+1.
+_BARE_NEXT = re.compile(r"^\s*(\d{1,3})\s+(?=[^\W\d_])", re.UNICODE)
 
 
 def _list_number(text: str) -> str | None:
     match = _LIST_NUMBER.match(text)
     return match.group(1) if match else None
+
+
+def _last_list_number(document: str, groups: list[tuple[int, int]]) -> int | None:
+    """Numero del ultimo item de la lista (5. / 5) / 6 nombre)."""
+    if not groups:
+        return None
+    start, end = groups[-1]
+    first = document[start:end].splitlines()[0]
+    raw = _list_number(first)
+    if raw is None:
+        bare = _BARE_NEXT.match(first)
+        raw = bare.group(1) if bare else None
+    if raw is None:
+        return None
+    try:
+        return int(raw)
+    except ValueError:
+        return None
 
 
 def _physical_lines(document: str) -> list[tuple[int, int, str]]:
@@ -97,15 +122,18 @@ def _physical_lines(document: str) -> list[tuple[int, int, str]]:
     return out
 
 
-def _segment(document: str, start: int, end: int, kind: str) -> Segment:
+def _segment(document: str, start: int, end: int, kind: str,
+             list_number: str | None = None) -> Segment:
     text = document[start:end]
     lead = len(text) - len(text.lstrip())
     trail = len(text) - len(text.rstrip())
     start += lead
     end -= trail
     body = document[start:end]
+    if list_number is None:
+        list_number = _list_number(body)
     return Segment(text=body, start=start, end=end, kind=kind,
-                   list_number=_list_number(body))
+                   list_number=list_number)
 
 
 class FreeTextSegmenter:
@@ -152,13 +180,26 @@ class FreeTextSegmenter:
                 continue
             if not text.strip():
                 continue
+            # '6 martin…' despues de '5.' es el item 6, no una nota de Lucia.
+            prev = _last_list_number(document, groups)
+            nxt = _BARE_NEXT.match(text)
+            if nxt and prev is not None and int(nxt.group(1)) == prev + 1:
+                groups.append((start, end))
+                continue
             if i > last and self._closes(i, lines, last):
                 out.footer.append(_segment(document, start, end, FOOTER))
                 continue
             if groups:                              # continuacion del registro abierto
                 groups[-1] = (groups[-1][0], end)
 
-        out.segments = [_segment(document, s, e, RECORD) for s, e in groups]
+        out.segments = []
+        for s, e in groups:
+            first = document[s:e].splitlines()[0]
+            n = _list_number(first)
+            if n is None:
+                bare = _BARE_NEXT.match(first)
+                n = bare.group(1) if bare else None
+            out.segments.append(_segment(document, s, e, RECORD, list_number=n))
         return out
 
     @staticmethod

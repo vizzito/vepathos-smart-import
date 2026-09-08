@@ -51,6 +51,26 @@ def test_el_numero_de_lista_queda_disponible_como_id():
     assert segments[0].text.startswith("1)")            # el original no se toca
 
 
+def test_el_ultimo_item_sin_punto_es_otra_entrega():
+    """'6 martin…' despues de '5.' no es nota de Lucia: es el item 6."""
+    doc = (
+        "1. Ana Perez | Av. Corrientes 100\n"
+        "2. Juan Lopez | Av. Santa Fe 137\n"
+        "3. Maria Gomez | Av. Cabildo 174\n"
+        "4. Carlos Ruiz | Av. Rivadavia 211\n"
+        "5. Lucia Fernandez | Av. Cordoba 248\n"
+        "6 martin vizzolini, av santa fe 890, palermo, ba\n"
+    )
+    result = FreeTextSegmenter().split(doc)
+    assert result.strategy == "bullet"
+    assert len(result.segments) == 6
+    last = result.segments[-1]
+    assert last.list_number == "6"
+    assert last.body.lower().startswith("martin")
+    assert "santa fe 890" in last.body.lower()
+    assert "lucia" not in last.body.lower()
+
+
 def test_documento_vacio_no_rompe():
     result = FreeTextSegmenter().split("")
     assert result.segments == [] and result.strategy == "empty"

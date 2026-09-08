@@ -29,6 +29,17 @@ from .result import IGNORED, INVALID, NEEDS_REVIEW, VALID, ExtractedRecord
 #: campos que el extractor produce pero que no son columnas del schema Vepathos
 NON_SCHEMA_FIELDS = ("delivery_time_text", "email")
 
+#: metodos del mapper que se apoyan en el NOMBRE de la columna. Un bloque
+#: embebido se acepta como tabla solo si su primera linea NOMBRA campos: la
+#: forma sola no distingue un header de la primera entrega de una lista
+#: ('Ana Perez | Av. Corrientes 100 | 11 4000-1000' tambien tiene 3 celdas).
+HEADER_METHODS = frozenset({"alias", "normalized", "fuzzy"})
+#: columnas nombradas minimas, en absoluto y en proporcion
+MIN_TABLE_NAMED_COLUMNS = 2
+MIN_TABLE_NAMED_RATIO = 0.5
+#: un bloque sin ninguna senal de destino no es una tabla de entregas
+TABLE_DESTINATION_FIELDS = ("address", "lat", "lng", "customer_name", "phone")
+
 
 @dataclass
 class DocumentExtraction:
@@ -40,6 +51,8 @@ class DocumentExtraction:
     elapsed_s: float = 0.0
     ai_calls: int = 0                                   # 0 por diseño
     warnings: list[str] = field(default_factory=list)
+    #: bloques tabulares embebidos que se leyeron como tabla, con su header
+    tables: list[dict] = field(default_factory=list)
 
     def counts(self) -> dict[str, int]:
         out = {VALID: 0, NEEDS_REVIEW: 0, INVALID: 0, IGNORED: len(self.ignored)}
@@ -68,6 +81,7 @@ class DocumentExtraction:
             "invalid": counts.get(INVALID, 0),
             "ignored": len(self.ignored),
             "ignored_samples": self.ignored[:20],
+            "embedded_tables": list(self.tables),
             "fields": self.field_stats(),
             "processing_time_ms": round(self.elapsed_s * 1000, 1),
             "ai_calls": self.ai_calls,
@@ -90,11 +104,15 @@ class FreeTextExtractor:
 
     def __init__(self, config=None, context: ExtractionContext | None = None,
                  service_date: date | None = None,
-                 timezone: str | None = None):
+                 timezone: str | None = None, schema=None):
         self.config = config
         self.context = context or ExtractionContext.from_config(config)
         self.service_date = service_date
         self.timezone = timezone
+        # Sin schema no hay con que confirmar un header, y un bloque embebido
+        # sin confirmar es exactamente el falso positivo que se quiere evitar:
+        # la capa se apaga sola y el documento se lee como siempre.
+        self.schema = schema
         parser = build_address_parser(config, self.context.locales)
         scorer = AddressCandidateScorer(self.context.locales)
         self.segmenter = FreeTextSegmenter()
@@ -106,17 +124,26 @@ class FreeTextExtractor:
 
     def run_document(self, document: str) -> DocumentExtraction:
         started = time.perf_counter()
+        from ..detection.blocks import blank_spans
         from .text_preprocess import preprocess_free_text_document
         document, prep_notes = preprocess_free_text_document(document or "")
         self._doc_locality = infer_locality_tokens(document)
-        segmented = self.segmenter.split(document)
+
+        # 1. Los bloques que SON una tabla se leen como tabla y salen de la
+        #    vista del segmentador (en blanco, sin mover un solo offset).
+        tables = self._confirmed_tables(document)
+        remaining = blank_spans(document, [b.span for b, _, _ in tables])
+
+        segmented = self.segmenter.split(remaining)
         out = DocumentExtraction(strategy=segmented.strategy)
         out.warnings.extend(prep_notes)
         segments = segmented.all_segments
         out.segments = len(segments)
 
-        # Una sola pasada del clasificador: lo aceptado se extrae, lo descartado
-        # se guarda con su motivo. Nada se pierde en silencio.
+        # 2. El resto es texto libre, igual que siempre. Una sola pasada del
+        #    clasificador: lo aceptado se extrae, lo descartado se guarda con su
+        #    motivo. Nada se pierde en silencio.
+        produced: list[tuple[int, ExtractedRecord, Segment | None]] = []
         for segment in segments:
             verdict = self.classifier.classify(segment.body)
             if not verdict.is_delivery:
@@ -138,11 +165,108 @@ class FreeTextExtractor:
                     "score": round(record.score, 3),
                 })
                 continue
-            self._assign_id(record, segment, len(out.records) + 1)
+            produced.append((segment.start, record, segment))
+
+        for block, mapping, columns in tables:
+            out.tables.append({**block.as_dict(),
+                               "mapped": {c: m.target for c, m in mapping.mapping.items()}})
+            out.warnings.append(
+                f"bloque tabular embebido: {len(block.rows)} fila(s) con header "
+                f"{', '.join(block.header)!r} se leyeron como tabla, no como texto.")
+            for span, record in self._table_records(document, block, mapping, columns):
+                if not self._has_actionable_destination(record):
+                    out.ignored.append({
+                        "text": document[span[0]:span[1]][:200],
+                        "reasons": ["fila del bloque tabular sin destino utilizable"],
+                        "score": round(record.score, 3)})
+                    continue
+                produced.append((span[0], record, None))
+            out.segments += len(block.rows)
+
+        # 3. Un solo orden: el del documento. El id se asigna recien aca, para
+        #    que la numeracion siga leyendose de arriba hacia abajo aunque una
+        #    parte haya venido de una tabla y otra de una lista escrita a mano.
+        for position, (_, record, segment) in enumerate(sorted(
+                produced, key=lambda item: item[0]), start=1):
+            self._assign_id(record, segment, position)
             out.records.append(record)
 
+        if tables:
+            out.strategy = f"{segmented.strategy}+tabla({len(tables)})"
         out.elapsed_s = time.perf_counter() - started
         return out
+
+    # ---------- bloques tabulares embebidos ----------
+
+    def _confirmed_tables(self, document: str):
+        """Candidatos estructurales que el SCHEMA confirma como tabla.
+
+        La forma la decide `find_table_blocks`; el significado, el mapper. Un
+        bloque pasa solo si su header NOMBRA campos —no alcanza con que el
+        contenido se parezca— y si entre esos campos hay alguno de destino.
+        """
+        if self.schema is None:
+            return []
+        from ..detection.blocks import find_table_blocks
+        from ..mapping import build_mapper
+        from ..readers.base import FileMeta, Table, dedupe_columns
+
+        confirmed = []
+        for block in find_table_blocks(document, self.context.locales):
+            columns = dedupe_columns(list(block.header))
+            meta = FileMeta(path="<bloque embebido>", format="txt",
+                            delimiter=block.delimiter, text_mode="tabular")
+            table = Table(meta=meta, columns=columns,
+                          rows=[tuple(r) for r in block.rows])
+            mapping = build_mapper(self.config).detect(table, self.schema)
+            named = [m for m in mapping.mapping.values() if m.method in HEADER_METHODS]
+            if len(named) < MIN_TABLE_NAMED_COLUMNS:
+                continue
+            if len(named) / max(1, len(columns)) < MIN_TABLE_NAMED_RATIO:
+                continue
+            if not any(m.target in TABLE_DESTINATION_FIELDS for m in named):
+                continue
+            mapping.mapping = {c: m for c, m in mapping.mapping.items()
+                               if m.method in HEADER_METHODS}
+            confirmed.append((block, mapping, columns))
+        return confirmed
+
+    def _table_records(self, document: str, block, mapping, columns):
+        """Una fila del bloque -> un registro, con los campos que el header dijo."""
+        from .result import FieldValue
+        index = {name: i for i, name in enumerate(columns)}
+
+        for cells, span in zip(block.rows, block.row_spans):
+            record = ExtractedRecord(source=document[span[0]:span[1]], span=span)
+            for column, column_mapping in mapping.mapping.items():
+                position = index.get(column)
+                value = cells[position] if position is not None and position < len(cells) else None
+                if value is None or not str(value).strip():
+                    continue
+                clean = self._table_value(column_mapping.target, str(value).strip())
+                if not clean:
+                    continue
+                record.set(FieldValue(
+                    column_mapping.target, clean, str(value),
+                    column_mapping.confidence, "embedded_table", span,
+                    (f"columna '{column}' del bloque tabular embebido",)))
+            self.fields._finalize(record)
+            self._normalize(record)
+            yield span, record
+
+    def _table_value(self, target: str, value: str) -> str:
+        """El mismo tratamiento que le daria el texto libre a ese campo.
+
+        Un telefono que sale de una celda tiene que quedar igual que uno que
+        sale de una frase: si no, el mismo documento emite dos formatos segun
+        de que mitad vino la fila.
+        """
+        if target != "phone":
+            return value
+        from ..normalization.phone import normalize
+        normalized, _ = normalize(value, self.context.phone_region)
+        return normalized or value
+
 
     # ---------- una columna free-text ----------
 
@@ -158,12 +282,21 @@ class FreeTextExtractor:
     # ---------- post-extraccion ----------
 
     @staticmethod
-    def _assign_id(record: ExtractedRecord, segment: Segment, position: int) -> None:
-        """El id lo genera el codigo, no el extractor: nunca se inventa un id del texto."""
-        record.fields.pop("delivery_id", None)
+    def _assign_id(record: ExtractedRecord, segment: Segment | None,
+                   position: int) -> None:
+        """El id lo genera el codigo, no el extractor: nunca se inventa un id del texto.
+
+        La excepcion es una COLUMNA de id en un bloque tabular embebido: ahi el
+        header dijo que eso es el id, y pisarlo seria tirar el dato del cliente.
+        """
         from .result import FieldValue
-        value = segment.list_number or f"{position:03d}"
-        source = "numero de la lista" if segment.list_number else "posicion en el documento"
+        existing = record.fields.get("delivery_id")
+        if existing is not None and existing.method == "embedded_table":
+            return
+        record.fields.pop("delivery_id", None)
+        list_number = segment.list_number if segment else None
+        value = list_number or f"{position:03d}"
+        source = "numero de la lista" if list_number else "posicion en el documento"
         record.fields["delivery_id"] = FieldValue(
             "delivery_id", str(value), "", 1.0, "generated", None, (source,))
 
