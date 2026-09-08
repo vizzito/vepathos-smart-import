@@ -20,6 +20,10 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 > **¿Cómo lo instalo / deployo?** Ver [SETUP.md](SETUP.md) — Docker local y prod,
 > concurrencia y escala, prune de imágenes, web, variables y cheatsheet.
 >
+> **¿Cómo funciona por dentro?** Ver [docs/pipelines.md](docs/pipelines.md) — el
+> camino de una entrega a nivel de código, etapa por etapa, con foco en cómo se
+> aísla, parsea y enriquece la dirección antes de geocodificar.
+>
 > **¿Cómo lo pruebo?** Ver [RUNBOOK.md](RUNBOOK.md) — cinco niveles, de `pytest`
 > (30 s, sin dependencias) hasta la integración con la web. Casos variables en
 > [`examples/`](examples/README.md). Smoke HTTP: `./scripts/http-smoke.sh`.

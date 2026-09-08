@@ -130,6 +130,11 @@ ahí lo usa el servicio sin copiar nada.
 
 ## 4. El flujo, paso a paso
 
+> Esta sección es el flujo a nivel integración: qué request va cuándo y qué ve
+> el usuario. Para el nivel de código —qué hace cada etapa por dentro, con qué
+> lógica decide y por qué está escrita así, sobre todo el camino de la
+> dirección— está [docs/pipelines.md](docs/pipelines.md).
+
 ```
 1. El usuario arrastra "entregas-septiembre.xlsx"
        │
