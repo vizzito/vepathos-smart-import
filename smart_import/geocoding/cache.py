@@ -4,8 +4,8 @@ Los clientes de logistica repiten destinos: la misma direccion aparece semana a
 semana. La clave es la direccion NORMALIZADA + el contexto regional, para que
 'Av. Corrientes 1234' y 'AV CORRIENTES 1234' compartan entrada.
 
-Es SQLite a proposito: sin dependencias nuevas y portable. La interfaz permite
-cambiarlo por Redis/Postgres mas adelante sin tocar el geocoder.
+Es SQLite a proposito: sin dependencias nuevas, portable, y el acceso queda
+detras de esta interfaz por si alguna vez hay que cambiar el motor.
 """
 from __future__ import annotations
 
