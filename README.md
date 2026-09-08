@@ -18,7 +18,7 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 ---
 
 > **¿Cómo lo instalo / deployo?** Ver [SETUP.md](SETUP.md) — Docker local y prod,
-> qué son Rabbit/MinIO, prune de imágenes, web, variables y cheatsheet.
+> concurrencia y escala, prune de imágenes, web, variables y cheatsheet.
 >
 > **¿Cómo lo pruebo?** Ver [RUNBOOK.md](RUNBOOK.md) — cinco niveles, de `pytest`
 > (30 s, sin dependencias) hasta la integración con la web. Casos variables en
@@ -133,8 +133,8 @@ python -m smart_import normalize -i archivo.xlsx -o out/x.csv --mapping mapping.
   entregas a otro país.
 - **Una fila corrupta no reclasifica la columna entera** (rangos con estadística robusta).
 - **`weight_kg = 0` es cero, no null.** Una entrega sin bultos sigue siendo válida.
-- **Sin IA el sistema funciona completo.** Si el modelo no carga, se degrada a reglas
-  con un aviso; nunca rompe un import.
+- **Sin modelo externo el sistema funciona completo.** Extracción = reglas +
+  librerías (`phonenumbers`, libpostal opcional).
 - **`GEOCODER_FALLBACK=none` por defecto**: jamás llama a un servicio externo solo.
 
 ---
@@ -230,13 +230,13 @@ python -m smart_import serve --port 8100
 | `GET` | `/imports/{id}/preview` | muestra de filas para pintar en la UI |
 | `PUT` | `/imports/{id}/mapping` | corrige el mapping y re-normaliza |
 | `GET` | `/imports/{id}/download?format=flat\|nested\|geocoded` | descarga el resultado |
-| `POST` | `/imports/{id}/extract` | separa una columna compuesta **con el modelo** (async) |
 | `POST` | `/imports/{id}/geocode` | geolocaliza (async). **Nunca automático** |
 | `GET` | `/geocoding/coverage?lat&lon` | ¿hay PBF para esta zona? Consultalo antes de ofrecer el botón |
 | `DELETE` | `/imports/{id}` | borra job y archivos |
 
-`normalize` es síncrono porque 50k filas tardan ~1,5 s. `extract` y `geocode` son
-asíncronos (un worker cada uno) y se consultan con `GET /imports/{id}`.
+`normalize` es síncrono porque 50k filas tardan ~1,5 s. `geocode` es asíncrono
+(un worker) y se consulta con `GET /imports/{id}`. La columna mezclada se separa
+en el mismo normalize (reglas); no hay endpoint `extract`.
 
 Cada respuesta trae **`next_actions`**: qué puede hacer el usuario ahora y con qué link.
 La UI no necesita conocer la máquina de estados.
@@ -294,8 +294,8 @@ Dos invariantes que el cliente puede asumir:
 ```
 
 > El almacén de jobs vive **en memoria del proceso**: con `--workers > 1` cada worker
-> vería jobs distintos. Para escalar hace falta el store compartido, que es la etapa
-> siguiente junto con RabbitMQ.
+> vería jobs distintos, así que el arranque falla a propósito. Para escalar se agregan
+> instancias con balanceo **sticky**, no procesos.
 
 ---
 
@@ -333,23 +333,23 @@ nunca se modifica — se enmascara lo consumido y los spans siguen siendo válid
 
 ### Medido sobre el mismo documento de 12 entregas
 
-| | reglas | NuExtract 0.5B por fila |
-|---|---|---|
-| tiempo | **5 ms** | 18 100 ms |
-| CPU | **5 ms** | 100 600 ms (~550 % sostenido) |
-| RAM (Δ RSS) | **0,1 MB** | 955 MB |
-| llamadas al modelo | **0** | 12 |
-| `address` correcta | **12/12** | 11/12 |
-| `phone` correcto | **12/12** | 11/12 |
-| falsos positivos | **0** | 0 |
-| "Salutos"/"Despacho" ignorados | **3/3** | no los detecta |
+| | reglas (actual) |
+|---|---|
+| tiempo | **~5 ms** |
+| CPU | bajo, sin modelo |
+| entregas detectadas | 12/12 |
+| teléfonos E.164 | 12/12 |
+| direcciones con calle+altura | 12/12 |
+
+El modelo NuExtract se midió en su momento (~18 s / fila en CPU) y se eliminó:
+no aportaba sobre el heurístico y costaba ~2,5 GB de imagen.
 
 ```bash
 python -m smart_import benchmark-extraction --repeats 5
 ```
 
-Las reglas son ~3 500× más rápidas en tiempo de pared y ~20 000× en CPU, **y aciertan
-más**. Por eso no hay modelo de IA en el camino.
+Las reglas son el camino de producción: rápidas, sin modelo y con mejor acierto
+en el corpus medido.
 
 ### Qué garantiza el pipeline
 
@@ -457,7 +457,6 @@ Todo por environment variable, todo con default razonable — ver `.env.example`
 | `SMART_IMPORT_ADDRESS_PARSER` | `heuristic` | solo benchmarks: `libpostal` / `enhanced` / `hybrid` |
 | `SMART_IMPORT_PBF_DIR` | — | los `_extracts` del cutter |
 | `GEOCODER_FALLBACK` | `none` | nunca llama afuera solo |
-| `SMART_IMPORT_EXTRACT_MAX_ROWS` | `2000` | tope de filas para `extract` (solo con IA) |
 
 ---
 
@@ -467,19 +466,18 @@ PDF, imágenes, OCR, Nominatim, Pelias, Elasticsearch, PostGIS, GPU, fine-tuning
 proveedores de geocoding pagos. Y ninguna modificación al cutter, al optimizador, a
 routehub-fastapi o al router-client.
 
-### Siguiente etapa (diseñada, no implementada)
+### Tampoco hay cola ni object storage, y es a propósito
 
-Consumer de RabbitMQ con colas `smart-import-tasks` + `-dlq` + `-delay` (misma
-topología DLX que el optimizador). El archivo **nunca** viaja por la cola: va a object
-storage y el mensaje lleva referencias.
+Un normalize de 50k filas tarda ~1,5 s. Eso no justifica la infraestructura ni la
+operación de un trabajo asincrónico, así que la API hace todo en proceso: jobs en
+memoria, archivos en un volumen local, y tres puertas de concurrencia que evitan
+que una avalancha tumbe la VM (`SMART_IMPORT_HTTP_LIMIT_CONCURRENCY` →
+`MAX_NORMALIZE_QUEUE` → `MAX_CONCURRENT_NORMALIZE`).
 
-```json
-{"version": 1, "type": "smart_import.normalize", "job_id": "imp_123",
- "input_object_key":  "smart-import/{user}/{job}/raw/original.xlsx",
- "output_object_key": "smart-import/{user}/{job}/normalized/result.csv",
- "schema": "vepathos_flat_v1"}
-```
+Para dar más capacidad se agregan **instancias** con balanceo sticky, no procesos
+ni colas. El detalle medido está en
+[SETUP.md §3](SETUP.md#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez).
 
-Estados: `uploaded → queued → analyzing → needs_mapping_review → normalizing →
+Estados: `uploaded → analyzing → needs_mapping_review → normalizing →
 normalized` … `→ geocode_queued → geocoding → completed | failed`.
 **`normalized` es un estado final válido** aunque nunca se geocodifique.

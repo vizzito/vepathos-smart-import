@@ -17,7 +17,7 @@ Cómo correrlo local y en producción, y cómo probarlo **sin tocar la web**.
 9. [Producción](#8-producción)
 10. [Diagnóstico](#9-diagnóstico)
 
-> **Install / Docker / Rabbit / prune / prod:** guía operativa completa en
+> **Install / Docker / concurrencia / prune / prod:** guía operativa completa en
 > **[SETUP.md](SETUP.md)**. Este runbook se centra en **cómo probar** el pipeline.
 
 ---
@@ -48,12 +48,8 @@ python3.12 -m venv .venv
 ```
 
 `[dev]` trae tests y el servicio HTTP. `[geo]` trae pyosmium (el geocoder).
-El modelo de IA es aparte y **opcional**:
-
-```bash
-.venv/bin/pip install -e ".[ai]"      # ~2,5 GB (torch + transformers)
-```
-
+La extracción de columnas mezcladas y texto libre es **determinística** (reglas);
+no hay extra `[ai]` ni torch.
 Para el geocoder, apuntá a la **raíz** `data/` del route-optimizer (PBF de país
 por región + `_extracts` chicos). No solo a `_extracts`:
 
@@ -217,7 +213,7 @@ Importante:
 ```bash
 # 1. ¿Qué puede hacer el servicio ahora?
 curl -sf localhost:8100/health | .venv/bin/python -m json.tool
-# Mirá: ai.enabled / ai.dependencies_installed / geocoding.pbf_available
+# Mirá: capabilities.geocoding / geocoding.pbf_available / extraction.engine
 
 # 2. Subir y normalizar — GUARDÁ la respuesta
 FILE=examples/es_sin_coords.csv
@@ -294,28 +290,25 @@ Un archivo que ya viene en formato Vepathos sale idéntico (round-trip).
 curl -sf localhost:8100/schemas | .venv/bin/python -m json.tool
 ```
 
-### ¿Está corriendo el modelo?
+### ¿Hay modelo de IA?
 
-**No en `normalize`.** El mapeo de columnas es 100 % reglas. El modelo
-(NuExtract-1.5-tiny) **solo** corre en `extract` (separar una columna compuesta).
+**No.** El mapeo y la extracción de columnas mezcladas / texto libre son
+determinísticos (reglas + `phonenumbers` + libpostal opcional). El endpoint
+`POST /extract` y el extra `[ai]` se eliminaron.
 
-Cómo saberlo:
+Cómo verificar el stack real:
 
 ```bash
 curl -sf localhost:8100/health | .venv/bin/python -m json.tool
 ```
 
-| Campo en `/health` o en el job | Significado |
+| Campo en `/health` | Significado |
 |---|---|
-| `ai.enabled` | Flag `SMART_IMPORT_AI_ENABLED` |
-| `ai.dependencies_installed` | torch/transformers instalados |
-| `ai.model` / `ai.device` | Qué cargaría y dónde (`cpu` / `mps` / `cuda`) |
-| `report.ai_used == false` | Normal en imports: el mapping **no** usó IA |
-| `extract` en `next_actions` | El servicio ofrece separación con modelo |
-| Logs `POST /extract` / stage EXTRACT | Ahí sí se cargó/usó el modelo |
-
-Tu `/health` con `enabled=true` + `dependencies_installed=true` significa “listo para
-`extract`”, **no** que el modelo esté corriendo en cada import.
+| `capabilities.normalize` | Siempre true: núcleo del servicio |
+| `capabilities.geocoding` | Flag / PBF disponibles |
+| `capabilities.libpostal` | Enhancer de direcciones instalado y habilitado |
+| `extraction.engine` | `rules` (sin modelo) |
+| `geocoding.automatic` | Debe ser `false`: el geocode nunca se dispara solo |
 
 ### ¿Cómo funciona la geocodificación y dónde corre?
 
@@ -418,11 +411,10 @@ PUT  /imports/{id}/mapping     el usuario corrige un dropdown
 GET  /imports/{id}/download?format=flat|nested|geocoded
 
 POST /imports/{id}/geocode     → 202 + busy=true  (async; 1000 dirs OK)
-POST /imports/{id}/extract     → 202 + busy=true  (async; modelo ~1.4s/fila)
 ```
 
-`normalize` es síncrono (50k filas ~1.5 s). Lo que tarda de verdad — **geocode** y
-**extract** — es async: la web arranca, se suscribe a `events` / pollea, y cuando
+`normalize` es síncrono (50k filas ~1.5 s). Lo que tarda de verdad — **geocode** —
+es async: la web arranca, se suscribe a `events` / pollea, y cuando
 `busy=false` pinta `next_actions`.
 
 **`next_actions` es el contrato de botones.** Cada respuesta te dice qué puede hacer el
@@ -499,8 +491,8 @@ ROUTE_OPTIMIZER_DATA=/home/martin/route-optimizer-app/data
 El compose lo monta read-only en `/data/pbf`. Las rutas internas del container las fija
 el compose, no el `.env`: no las toques.
 
-> **Espacio en disco.** La imagen `ai` pesa **3,34 GB** (torch) contra 370 MB la
-> `runtime`. Sumale ~1 GB del modelo en el volumen. Verificá antes de construir:
+> **Espacio en disco.** La imagen `runtime-libpostal` suma ~2 GB de datos CRF
+> frente a la `runtime` chica. Verificá antes de construir:
 >
 > ```bash
 > df -h /System/Volumes/Data     # macOS
@@ -528,15 +520,7 @@ Los logs de arranque te dicen qué quedó activo:
 
 ```
 0.023s  HTTP   arrancando Smart Import version=0.1.0 puerto=8100 work_dir=/data/jobs
-0.023s  HTTP   capacidades normalize=on geocoding=on ia=off
-```
-
-Con la imagen `ai`, conviene bajar el modelo **antes** de empezar a servir, para que el
-primer usuario no espere ~60 s:
-
-```bash
-docker compose --profile warmup up warmup      # baja el modelo al volumen
-docker compose up -d                           # después levanta el servicio
+0.023s  HTTP   capacidades normalize=on geocoding=on libpostal=off
 ```
 
 ### 8.3 Verificar
@@ -568,7 +552,6 @@ Otros comandos útiles:
 
 ```bash
 docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4
-docker compose --profile tools run --rm tools warmup
 ```
 
 ### 8.4.1 Medir recall por zona (no bajar umbrales)
@@ -624,11 +607,10 @@ Arranca conservador — comparte la VM con el cutter:
 SMART_IMPORT_MEMORY_LIMIT=4g
 SMART_IMPORT_CPUS=2
 SMART_IMPORT_GEOCODE_WORKERS=1
-SMART_IMPORT_EXTRACT_WORKERS=1
 ```
 
-`normalize` usa 82 MB para 50k filas. Lo que consume memoria de verdad es construir un
-índice de un PBF grande, y cargar el modelo (~1 GB residente). Subí los workers cuando
+`normalize` usa ~82 MB para 50k filas. Lo que consume memoria de verdad es construir un
+índice de un PBF grande (y libpostal ~2,6 GB RSS si está habilitado). Subí workers cuando
 tengas medición, no antes.
 
 ## 9. Diagnóstico
@@ -644,9 +626,6 @@ tengas medición, no antes.
 | geocode tarda mucho la 1ª vez | está construyendo el índice | normal, ~10 s por 25 MB; queda cacheado |
 | `needs_review` siempre | headers muy raros | mirá `detect`; corregí con `PUT /mapping` |
 | todo `not_found` | falta el depot | pasá `--origin-lat/--origin-lon`: sin eso no hay desempate |
-| `dependencies_installed: false` | falta torch | `pip install -e ".[ai]"` (solo si querés `extract`) |
-| `ai.enabled=true` pero `ai_used=false` | esperado en normalize | el modelo solo corre en `extract` |
-| `extract` tarda muchísimo | 1,4 s por fila en CPU | bajá `SMART_IMPORT_EXTRACT_MAX_ROWS` |
 | jobs que desaparecen | el store es en memoria | no uses `--workers > 1` todavía |
 | mejoré el geocoder y sigue fallando igual | el cache guarda también los `not_found` | `rm data/cache/geocode_cache.sqlite` (o el volumen `smart_import_cache`) |
 | `503` al geocodificar | capacidad apagada | el mensaje dice qué env var prender |

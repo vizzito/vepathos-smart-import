@@ -7,10 +7,10 @@ Documentos relacionados:
 
 | Doc | Para qué |
 |---|---|
-| **Este archivo (`SETUP.md`)** | Install, Docker, Rabbit/MinIO, local, prod, prune, comandos |
+| **Este archivo (`SETUP.md`)** | Install, Docker, concurrencia y escala, local, prod, prune, comandos |
 | [RUNBOOK.md](RUNBOOK.md) | Cómo **probar** el pipeline (pytest → demo → curl → web) |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Diseño interno y gaps de producción |
-| [examples/](examples/README.md) | Archivos de ejemplo (incl. force-ai) |
+| [examples/](examples/README.md) | Archivos de ejemplo (incl. columna-mezclada) |
 
 ---
 
@@ -18,7 +18,7 @@ Documentos relacionados:
 
 1. [Qué es este servicio (en una frase)](#1-qué-es-este-servicio-en-una-frase)
 2. [Arquitectura de containers](#2-arquitectura-de-containers)
-3. [RabbitMQ y MinIO: ¿para qué? ¿son necesarios?](#3-rabbitmq-y-minio-para-qué-son-necesarios)
+3. [Concurrencia: qué pasa con muchos usuarios a la vez](#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez)
 4. [Requisitos](#4-requisitos)
 5. [Setup local — opción A: Docker (recomendado)](#5-setup-local--opción-a-docker-recomendado)
 6. [Setup local — opción B: venv + CLI](#6-setup-local--opción-b-venv--cli)
@@ -26,7 +26,7 @@ Documentos relacionados:
 8. [Flujo que ejecuta la web](#8-flujo-que-ejecuta-la-web)
 9. [Comandos útiles (cheatsheet)](#9-comandos-útiles-cheatsheet)
 10. [Tests](#10-tests)
-11. [Docker: build, cache, prune (no reinstalar torch)](#11-docker-build-cache-prune-no-reinstalar-torch)
+11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
 12. [Deploy en producción](#12-deploy-en-producción)
 13. [Variables de entorno](#13-variables-de-entorno)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
@@ -53,95 +53,106 @@ upload clásico de la web sigue igual.
 │                                                              │
 │  smart-import (:8100)     ←── LO ÚNICO que usa la web hoy    │
 │       │                                                      │
-│       ├── volume: jobs, indexes, cache, model-cache          │
+│       ├── volume: jobs, indexes, cache, extracts             │
 │       └── bind: ROUTE_OPTIMIZER_DATA → /data/pbf (PBF OSM) │
 │                                                              │
-│  ── profile infra (OPCIONAL) ─────────────────────────────  │
-│  rabbitmq (:5672, UI :15672)   cola async (futuro/escala)    │
-│  minio (:9000, UI :9001)       S3 local (futuro/escala)      │
-│  minio-init                    crea el bucket una vez        │
-│                                                              │
-│  ── profile worker (OPCIONAL, necesita infra) ────────────  │
-│  worker                        consume cola Rabbit           │
-│                                                              │
-│  ── profile tools / warmup (OPCIONAL) ────────────────────  │
+│  ── profile tools (OPCIONAL) ─────────────────────────────  │
 │  tools                         CLI one-shot (list-pbf, …)    │
-│  warmup                        precarga pesos del modelo     │
 └─────────────────────────────────────────────────────────────┘
 
 Browser → Next (/api/optimization/smart-import) → :8100
          (opcional) → RouteHub /imports/smart → :8100
 ```
 
+Un solo container hace todo. No hay cola, ni Redis, ni object storage: ver
+[§3](#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez).
+
 | Container | Puerto | ¿Lo necesitás para la web local? |
 |---|---|---|
 | `vepathos-smart-import` | 8100 | **Sí** |
-| `…-rabbit` | 5672 / 15672 | No |
-| `…-minio` | 9000 / 9001 | No |
-| `…-minio-init` | — | No (one-shot) |
-| `…-worker` | — | No |
-| `…-warmup` / `…-tools` | — | No |
+| `…-tools` | — | No |
 
 ---
 
-## 3. RabbitMQ y MinIO: ¿para qué? ¿son necesarios?
+## 3. Concurrencia: qué pasa con muchos usuarios a la vez
 
-### Hoy (MVP / web local)
+No hay cola, ni Redis, ni object storage. La API hace todo **en el mismo
+proceso**: `POST /imports` → normalize → (geocode explícito) → download, con
+jobs en memoria y archivos en un volumen Docker.
 
-La API procesa **en el mismo proceso** (threads):
+Es una decisión, no una deuda: un normalize de 50k filas tarda ~1,5 s, que no
+justifica la infraestructura ni la operación de un trabajo asincrónico.
 
-`POST /imports` → extract → geocode → download  
+### Lo que hay que saber: una instancia rinde ~1 core
 
-Jobs en memoria + archivos en volumen Docker. **Rabbit y MinIO no intervienen.**
+El normalize es Python CPU-bound, así que el **GIL lo serializa**. Medido con
+archivos de 5k filas:
 
-Por eso están detrás de `--profile infra`: no se levantan con un `compose up` simple.
-
-### Para qué existen
-
-| Pieza | Problema que resuelve cuando se cablee de punta a punta |
+| Clientes simultáneos | Tiempo total |
 |---|---|
-| **RabbitMQ** | No colgar HTTP con geocode/extract largos; worker aparte; reintentos; no perder trabajo si cae el pod a mitad |
-| **MinIO / S3** | Artefactos (CSV) fuera del disco del container; varias réplicas de la API pueden leer el mismo job |
-| **worker** | Consume la cola y corre geocode/extract offline |
+| 1 | 1,3 s |
+| 4 | 5,2 s |
+| 8 | 10,5 s |
 
-Código de soporte: `smart_import/queue/`, `smart_import/storage/`. La API HTTP
-**aún no encola** por defecto: es infra “prod-shaped” lista para cuando duela la
-escala.
+Crece lineal: 8 clientes tardan 8× lo que uno, con la CPU del container clavada
+en **1 core aunque tenga 4 asignados**. Por eso subir `SMART_IMPORT_CPUS` o
+`MAX_CONCURRENT_NORMALIZE` no da capacidad — solo reparte la misma CPU.
 
-### ¿Son necesarios en prod?
+### Las tres puertas que evitan que la VM reviente
 
-| Escenario | Rabbit + S3 |
-|---|---|
-| 1 VM, 1 container, poco tráfico | **No** |
-| Varias réplicas de la API | **Sí S3** (+ store compartido) |
-| Imports grandes / no bloquear la web | **Sí Rabbit + worker** |
-| Redeploys sin perder jobs a mitad | **Sí ambos** |
+De afuera hacia adentro:
 
-En prod real MinIO suele reemplazarse por **S3/GCS**; Rabbit por la cola que ya
-usen (o se queda Rabbit).
+| Puerta | Variable | Qué protege |
+|---|---|---|
+| Concurrencia HTTP | `SMART_IMPORT_HTTP_LIMIT_CONCURRENCY` (512) | uvicorn corta con 503 antes de que el request toque la app: una avalancha no se vuelve miles de conexiones abiertas |
+| **Admisión** | `SMART_IMPORT_MAX_NORMALIZE_QUEUE` (32) | Imports en el sistema a la vez. Se pide **antes de leer el body**, así que el 429 no toca disco |
+| Techo de CPU | `SMART_IMPORT_MAX_CONCURRENT_NORMALIZE` (4) | Normalizes en paralelo. Deja hilos libres para `/health`, el polling y las descargas |
 
-### Cómo levantarlos (solo si querés probar infra)
+La del medio es la clave. El archivo se recibe antes de pedir turno de CPU (a
+propósito: esperar con el upload a medio camino deja el socket abierto sin hacer
+nada), y eso solo es seguro si hay un techo más afuera. Sin la admisión, 1000
+uploads simultáneos escribirían hasta `1000 × MAX_FILE_MB` = **10 GB** en el
+disco que compartimos con el cutter antes de rechazar a uno solo.
 
-```bash
-docker compose --profile infra up -d          # rabbit + minio
-docker compose --profile infra --profile worker up -d worker
-```
+### Medición real de la avalancha
 
-UIs:
+Clientes free (400 stops cada uno) subiendo **todos al mismo tiempo**, defaults
+de fábrica:
 
-- Rabbit management: http://localhost:15672 (guest/guest)
-- MinIO console: http://localhost:9001 (minioadmin/minioadmin)
+| Clientes | Aceptados | 429 | Latencia del aceptado (p50) | `/health` | RAM |
+|---|---|---|---|---|---|
+| 50 | 32 | 18 | 2,1 s | 0 fallos, máx 48 ms | 61 MB |
+| 200 | 34 | 166 | 2,2 s | 0 fallos, máx 203 ms | 61 MB |
+| 500 | 37 | 463 | 2,7 s | 0 fallos, máx 490 ms | 61 MB |
 
-Apagar:
+El servicio no se cae, no se llena la RAM y `/health` nunca falla. Todo se
+resuelve en menos de 5 s.
 
-```bash
-docker compose --profile infra --profile worker stop
-# o:
-docker stop vepathos-smart-import-rabbit \
-            vepathos-smart-import-minio \
-            vepathos-smart-import-minio-init \
-            vepathos-smart-import-worker 2>/dev/null
-```
+**El precio es explícito: con 500 simultáneos, 463 reciben 429.** Es la decisión
+de diseño — un "reintentá en 5 s" inmediato es mejor que 500 personas esperando
+un minuto. Requiere una cosa del cliente:
+
+> El front **tiene que respetar `Retry-After`** y reintentar con backoff + jitter.
+> Sin eso, el usuario ve un error en vez de una demora.
+
+Subir la cola de admisión sirve poco. Con `MAX_NORMALIZE_QUEUE=200` y los mismos
+500 clientes: 155 aceptados en vez de 37, pero la latencia del que entra salta
+de 2,7 s a **11,4 s (máx 22 s)**. Se atiende 4× más gente y todos esperan 4× más.
+
+### Cómo se agrega capacidad de verdad
+
+Otra **instancia** (otra VM, mismo compose), no más procesos ni una cola. Dos
+condiciones:
+
+1. **Balanceo sticky** (por IP o cookie). Cada instancia solo conoce sus propios
+   jobs: con round-robin, el `POST /imports` cae en una y el `POST /geocode` en
+   otra, que responde 404. Por la misma razón `serve --workers 4` falla a
+   propósito.
+2. Dado el GIL, **2 instancias de 2 cores rinden más que 1 de 4**.
+
+Lo que no sobrevive: un reinicio se lleva los jobs en vuelo (viven en memoria).
+Los archivos ya descargados no se pierden; los imports a medio camino hay que
+volver a subirlos.
 
 ---
 
@@ -228,8 +239,6 @@ docker logs -f vepathos-smart-import
 ### 5.4 Profiles opcionales
 
 ```bash
-docker compose --profile infra up -d                 # rabbit + minio
-docker compose --profile warmup up                   # precarga modelo a volumen
 docker compose --profile tools run --rm tools list-pbf --lat -34.6 --lon -58.4
 docker compose --profile tools run --rm tools build-geocoder-index \
   --origin-lat -34.6 --origin-lon -58.4
@@ -338,31 +347,25 @@ geocode automático; todo va a `pending_geocode` (pin manual en el mapa).
 
 ## 8. Flujo que ejecuta la web
 
-El proxy Next orquesta (no hace falta llamar extract a mano):
+El proxy Next orquesta:
 
 ```
-1. POST /imports?phone_region=AR          # normalize (sync)
-2. Si columna mezclada / next_actions extract:
-     POST /imports/{id}/extract           # reglas i18n primero; modelo solo si falla
-     poll /progress hasta idle
-3. Si needs_geocode + depot lat/lng:
+1. POST /imports?phone_region=AR          # normalize (sync; separa columna mezclada)
+2. Si needs_geocode + depot lat/lng:
      POST /imports/{id}/geocode?origin_lat&origin_lon
      poll hasta idle
-4. download geocoded/flat + issues
-5. JSON a la UI: { stops, pending_geocode, extract, geocode, warnings, summary }
+3. download geocoded/flat + issues
+4. JSON a la UI: { stops, pending_geocode, geocode, warnings, summary }
 ```
 
 En logs sanos de un paste estructurado (`Nombre <tel> → calle`):
 
 ```
-DETECT   ia=no
-EXTRACT  reglas primero…
-DONE     por_reglas=N por_modelo=0
-GEOCODE  …
+DETECT   text_mode=free_text
+NORMALIZE …
+DONE
+GEOCODE  …          # solo si el usuario / la web lo dispara
 ```
-
-Si ves 56 filas al modelo sin `por_reglas`, la imagen está vieja: restart con el
-código montado o rebuild.
 
 ---
 
@@ -385,7 +388,7 @@ curl -sf http://localhost:8100/config | python3 -m json.tool
 ./scripts/http-smoke.sh          # si existe
 
 # --- import rápido ---
-FILE=examples/force-ai/04_marketplace_whatsapp.csv
+FILE=examples/columna-mezclada/04_marketplace_whatsapp.csv
 curl -sf -X POST "localhost:8100/imports?phone_region=AR" -F "file=@$FILE" | python3 -m json.tool
 
 # --- CLI (venv) ---
@@ -393,9 +396,6 @@ curl -sf -X POST "localhost:8100/imports?phone_region=AR" -F "file=@$FILE" | pyt
 .venv/bin/python -m smart_import normalize --input "$FILE" --output out/n.csv --emit flat,nested
 .venv/bin/python -m smart_import list-pbf --lat -34.6 --lon -58.4
 
-# --- infra opcional ---
-docker compose --profile infra up -d
-docker compose --profile infra --profile worker up -d
 ```
 
 ---
@@ -423,13 +423,13 @@ pytest -q -m real_geo tests/test_geocode_accuracy.py   # CABA 13 + 2907; ver exa
 
 ---
 
-## 11. Docker: build, cache, prune (no reinstalar torch)
+## 11. Docker: build, cache, prune (capas libpostal)
 
-### Por qué a veces “reinstala PyTorch siempre”
+### Por qué a veces “recompila libpostal siempre”
 
-Antes, la capa de torch dependía de `pyproject.toml`. Cualquier cambio ahí
-invalidaba ~400 s de download. **Ya está separado**: etapa `torch` aislada en el
-`Dockerfile`. Cambiar código / pyproject **no** debe reinstalar torch.
+libpostal vive en la etapa `libpostal-build` del `Dockerfile` (casi nunca se
+invalida). Cambiar código Python o `pyproject.toml` **no** debe recompilarla:
+el `COPY` del código es la última capa.
 
 ### Día a dia
 
@@ -440,7 +440,7 @@ docker compose up -d smart-import     # sin --build
 ### Cuándo sí rebuild
 
 - Cambió el `Dockerfile`
-- Cambió el `RUN` de torch/transformers
+- Cambió la etapa `libpostal-build` / deps C
 - Querés imagen limpia tras prune
 
 ```bash
@@ -448,11 +448,7 @@ DOCKER_BUILDKIT=1 docker compose build smart-import
 docker compose up -d smart-import
 ```
 
-En un rebuild bueno deberías ver:
-
-```
-CACHED [torch 1/1] RUN pip install ... torch ...
-```
+En un rebuild bueno deberías ver capas `CACHED` para libpostal.
 
 ### Limpiar imágenes viejas y rebuild limpio
 
@@ -466,7 +462,7 @@ docker images 'vepathos/smart-import*' -q | xargs docker rmi -f 2>/dev/null
 # Cache de build huérfano (no borra imágenes en uso de otros proyectos)
 docker builder prune -f
 
-# Build fresco (torch se baja UNA vez) + up
+# Build fresco + up
 DOCKER_BUILDKIT=1 docker compose build smart-import
 docker compose up -d smart-import
 curl -sf http://localhost:8100/health | python3 -m json.tool
@@ -507,80 +503,261 @@ No hay container de vocabulario. En cada **rebuild / redeploy**:
 No corras `vocab setup` a mano en prod. Si el build no tiene red, fallá el
 deploy o usá `SMART_IMPORT_VOCAB_GEONAMES=0` (solo ciudades curadas).
 
-### 12.1 Mínimo viable (1 VM, mismo host que cutter/PBFs)
+### 12.1 ¿Cuántos procesos / workers? — **uno, y no es negociable**
 
-1. Clonar repo + `.env` de prod (CORS cerrado, secrets).
-2. Montar `ROUTE_OPTIMIZER_DATA` (o sincronizar PBFs).
-3. Elegir target:
+Es la primera pregunta que aparece y la respuesta es contraintuitiva, así que va
+antes que los pasos.
 
-   | | Prod (libpostal) | Sin libpostal |
-   |---|---|---|
-   | `SMART_IMPORT_TARGET` | `runtime-libpostal` | `runtime` |
-   | `SMART_IMPORT_LIBPOSTAL_ENABLED` | `true` | `false` |
-   | RAM tipica | 4–8g | 1–2g |
-   | Extract libre | reglas + enhancer on-demand | solo heurístico |
+**Un solo proceso uvicorn por instancia.** No hay variable de entorno para
+subirlo: `serve --workers 4` **falla con exit 2 y no arranca el servidor**, a
+propósito. El almacén de jobs vive en memoria del proceso, así que con dos
+workers el `POST /imports` cae en uno y el `POST /geocode` en el otro, que
+responde **404 porque no conoce ese job**. Y falla de forma intermitente, que es
+peor: con round-robin funciona la mitad de las veces.
 
-4. Build + arrancar **solo** la API (el build genera sqlite + GeoNames):
+Subir procesos tampoco daría capacidad. El normalize es Python CPU-bound y el
+GIL lo serializa: **una instancia rinde ~1 core haga lo que haga** (medido en
+[§3](#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez): 8 clientes tardan
+8× lo que uno, con la CPU clavada en 1 core de 4).
+
+Lo que sí se configura por instancia:
+
+| Variable | Valor prod | Qué es |
+|---|---|---|
+| — (fijo en 1) | 1 | procesos uvicorn. No hay knob |
+| `SMART_IMPORT_CPUS` | `2` | cores del container. Más de 2 no rinde por el GIL |
+| `SMART_IMPORT_MAX_CONCURRENT_NORMALIZE` | `2` | normalizes en paralelo. **Bajalo a 2 si comparte VM con el cutter** |
+| `SMART_IMPORT_MAX_NORMALIZE_QUEUE` | `32` | imports admitidos a la vez (cota de disco: 32 × `MAX_FILE_MB`) |
+| `SMART_IMPORT_HTTP_LIMIT_CONCURRENCY` | `512` | techo de uvicorn. Cuenta los SSE de progreso, que son conexiones abiertas |
+| `SMART_IMPORT_GEOCODE_WORKERS` | `1` | imports geocodificando a la vez. En la VM del cutter, 1 |
+
+Para **más capacidad se agregan instancias**, no procesos: otra VM con este
+mismo compose y el balanceador adelante con **routing sticky** (por IP o
+cookie), porque cada instancia solo conoce sus propios jobs. Dado el GIL,
+**2 instancias de 2 cores rinden más que 1 de 4.**
+
+### 12.2 Paso a paso
+
+#### Paso 1 — Preparar la VM
+
+```bash
+# Docker + compose v2 (el compose file usa `profiles` y anchors YAML)
+docker --version && docker compose version
+
+git clone <repo> /srv/vepathos-smart-import
+cd /srv/vepathos-smart-import
+```
+
+#### Paso 2 — El `.env` de prod
+
+Partí de la plantilla de prod, **no** de `.env.example` (esa es la local):
+
+```bash
+cp .env.prod.example .env
+```
+
+Estas son las que **hay que corregir para tu VM**; el resto ya viene con el
+valor medido y documentado:
+
+| Variable | Cambiar a | Por qué |
+|---|---|---|
+| `ROUTE_OPTIMIZER_DATA` | ruta real de los PBFs en la VM | sin esto el geocoder no tiene datos |
+| `SMART_IMPORT_CORS_ORIGINS` | tu dominio real | **nunca `*` en prod** |
+| `SMART_IMPORT_BIND` | `127.0.0.1` | ver la nota de abajo |
+| `SMART_IMPORT_CPUS` | cores reales asignados | 2 si comparte con el cutter |
+| `SMART_IMPORT_MEMORY_LIMIT` | `4g` sin libpostal, `8g` con | libpostal suma ~2,6 GB al primer uso |
+| `SMART_IMPORT_MAX_CONCURRENT_NORMALIZE` | `2` si comparte VM | no competirle CPU al cutter |
+| `IMAGE_TAG` | la versión que deployás | permite rollback (`docker compose up -d` con el tag viejo) |
+
+> **`SMART_IMPORT_BIND=127.0.0.1` no es opcional.** El servicio **no tiene
+> autenticación propia**: quien lo protege es la red. Y Docker escribe sus
+> reglas en la cadena `DOCKER-USER`, que **puentea ufw**: publicado en `0.0.0.0`
+> queda accesible desde internet aunque el firewall diga lo contrario. Entra
+> solo por RouteHub.
+
+Elegir imagen:
+
+| | Prod (recomendado) | Imagen chica |
+|---|---|---|
+| `SMART_IMPORT_TARGET` | `runtime-libpostal` | `runtime` |
+| `SMART_IMPORT_LIBPOSTAL_ENABLED` | `true` | `false` |
+| Disco / RAM | +~2 GB / 4–8g | ~370 MB / 1–2g |
+| Direcciones raras (parcela, manzana, India) | enhancer on-demand | solo heurístico |
+
+#### Paso 3 — Build y arranque
 
 ```bash
 DOCKER_BUILDKIT=1 docker compose build smart-import
+docker compose up -d --remove-orphans smart-import
+```
+
+`--remove-orphans` limpia containers de servicios que ya no existen en el
+compose. Si venís de una versión con RabbitMQ/MinIO, sin este flag Docker tira
+un `WARN` en cada `up` y esos containers muertos quedan ocupando disco.
+
+Lo que **`--remove-orphans` no borra son los volúmenes**, y ahí es donde queda
+el disco de verdad (un `smart_import_models` de una versión vieja pesa ~1 GB).
+Revisalos y borralos a mano, porque el comando es destructivo y conviene leer la
+lista antes:
+
+```bash
+docker volume ls --filter name=smart_import
+docker system df -v | grep smart_import      # tamaño de cada uno
+# Los que siguen en uso: indexes, extracts, cache, jobs, vocab.
+docker volume rm vepathos-smart-import_smart_import_models    # ejemplo
+```
+
+En los logs tienen que aparecer, en este orden:
+
+```
+vocab: sqlite ← catalog → /data/vocab/smart_import_vocab.sqlite
+  Smart Import escuchando en http://0.0.0.0:8100
+  parser: heuristic | libpostal: on | PBF dir: /data/pbf
+  techo de concurrencia HTTP: 512 tareas | imports en paralelo: 2 (cola de admision 32)
+INFO:     Application startup complete.
+```
+
+La última línea de config es la verificación de que el `.env` se aplicó. Si dice
+otros números, el `.env` no se leyó (ver Paso 4).
+
+#### Paso 4 — Verificar que el `.env` se aplicó
+
+Es el paso que más se saltea y el que más cuesta después.
+
+```bash
+# 1) El container está sano (el healthcheck da margen por el vocab del arranque)
+docker compose ps          # esperado: (healthy)
+
+# 2) Config EFECTIVA del proceso, no la del archivo
+curl -s localhost:8100/config | python3 -m json.tool | head -40
+
+# 3) Capacidades y carga
+curl -s localhost:8100/health | python3 -m json.tool
+#   capabilities.geocoding: true
+#   geocoding.pbf_available: 447       <-- es un CONTEO. En 0, ROUTE_OPTIMIZER_DATA está mal
+#   geocoding.city_centroids: true     <-- en false, falta GeoNames (y falla en silencio)
+#   load.normalize_slots / admission_slots: tus valores
+```
+
+> **Ojo con dos trampas de configuración.**
+> El `.env` lo lee **docker-compose, no Python**: correr `pytest` o un script con
+> el venv **no aplica nada** de ese archivo. Y una variable **exportada en el
+> shell le gana al `.env`**, así que si cambiás un valor y no toma:
+> `unset SMART_IMPORT_CPUS SMART_IMPORT_MEMORY_LIMIT`.
+
+#### Paso 5 — Smoke real, sin la web
+
+No hace falta subir un archivo por la UI para saber si anda:
+
+```bash
+./scripts/http-smoke.sh                    # end-to-end contra :8100
+
+# o a mano, con un paste de WhatsApp:
+printf 'Av Cabildo 900 1A, Belgrano, CABA | 11-5555-0100\n' > /tmp/t.txt
+JOB=$(curl -s -F "file=@/tmp/t.txt" "localhost:8100/imports?phone_region=AR" \
+      | python3 -c 'import json,sys; print(json.load(sys.stdin)["job_id"])')
+curl -s "localhost:8100/imports/$JOB/download?format=flat"
+curl -s -X DELETE "localhost:8100/imports/$JOB"
+```
+
+#### Paso 6 — Ponerlo detrás de RouteHub
+
+```bash
+# RouteHub
+SMART_IMPORT_ENABLED=true
+SMART_IMPORT_URL=http://smart-import:8100        # red Docker interna
+# UI
+ROUTEHUB_SMART_IMPORT_URL=https://api.tudominio.com/imports/smart
+```
+
+**El front tiene que respetar `Retry-After` en los 429**, con backoff + jitter.
+No es un detalle: es lo que convierte la protección de sobrecarga en una demora
+en vez de un error en la cara del usuario ([§3](#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez)).
+
+### 12.3 Operación
+
+```bash
+# Logs (ya rotan: json-file, 10 MB × 3)
+docker logs -f vepathos-smart-import
+
+# Actualizar
+git pull
+DOCKER_BUILDKIT=1 docker compose build smart-import
+docker compose up -d --remove-orphans smart-import
+
+# Rollback: poner el IMAGE_TAG anterior en .env y
 docker compose up -d smart-import
-# en logs: "vocab: sqlite ← catalog" y (1ª vez) "vocab: GeoNames cities15000"
 ```
 
-5. Delante: RouteHub con `SMART_IMPORT_ENABLED=true` y
-   `SMART_IMPORT_URL=http://smart-import:8100` (red Docker interna).
-6. UI: `ROUTEHUB_SMART_IMPORT_URL=https://api…/imports/smart` + API key.
+**Qué mirar en `/health`:**
 
-**No hace falta Rabbit/MinIO** en este modo.
+| Señal | Significa |
+|---|---|
+| `load.normalize_in_flight` pegado a `normalize_slots` | los clientes nuevos esperan o reciben 429. **No subas el cupo — agregá una instancia** |
+| `load.admitted` pegado a `admission_slots` | se rechaza antes de leer el archivo. Misma conclusión |
+| `environment_age_s` mucho mayor a 30 | murió el refresco de fondo y lo que reporta es viejo |
+| `geocoding.pbf_available: false` | el mount de PBFs se cayó; el geocode va a fallar |
 
-Límites recomendados (compartiendo VM 8 CPU / 16 GB con cutter):
-
-```bash
-SMART_IMPORT_MEMORY_LIMIT=4g
-SMART_IMPORT_CPUS=2
-SMART_IMPORT_GEOCODE_WORKERS=1
-SMART_IMPORT_EXTRACT_WORKERS=1
-SMART_IMPORT_EXTRACT_MAX_ROWS=100   # o 500; extract es lento en CPU
-SMART_IMPORT_MAX_ROWS=20000         # soft; hard en config 50k
-SMART_IMPORT_CORS_ORIGINS=https://app.tudominio.com
-```
-
-### 12.2 Prod con escala (cuando duela)
-
-1. Object storage real (S3) en lugar de MinIO.
-2. Rabbit (o SQS) + `worker` para geocode/extract.
-3. Store de jobs compartido (hoy sigue en memoria del proceso — gap documentado
-   en ARCHITECTURE.md).
-4. Auth solo vía RouteHub (no exponer `:8100` a Internet).
-
-### 12.3 Healthchecks / monitoreo
-
-```bash
-curl -sf https://smart-import.internal/health
-# capabilities, pbf_available, jobs
-```
-
-Logs: `docker logs -f vepathos-smart-import`
+**Lo que un reinicio se lleva:** los jobs en vuelo, porque viven en memoria. Los
+archivos ya descargados no se pierden; los imports a medio camino hay que
+volver a subirlos. Es el gap #1 de ARCHITECTURE.md y la razón por la que varias
+instancias necesitan balanceo sticky.
 
 ---
 
 ## 13. Variables de entorno
 
-Ver `.env.example` completo. Resumen:
+**La fuente de verdad son los dos `.env`**, y no por comodidad: ahí cada valor
+lleva escrito de dónde sale (medición y script, o "sin medir" con el default del
+código, para que se distinga un valor elegido de uno heredado).
 
-| Variable | Rol |
-|---|---|
-| `SMART_IMPORT_TARGET` | `runtime` \| `runtime-libpostal` (build stage Docker) |
-| `SMART_IMPORT_LIBPOSTAL_ENABLED` | enhancer on-demand (requiere imagen libpostal) |
-| `SMART_IMPORT_GEOCODING_ENABLED` | prende geocode OSM |
-| `ROUTE_OPTIMIZER_DATA` | raíz de PBFs en el host |
-| `SMART_IMPORT_PORT` | host port (default 8100) |
-| `SMART_IMPORT_CORS_ORIGINS` | en prod: dominio real, no `*` |
-| `SMART_IMPORT_VOCAB_PATH` | SQLite (Docker: `/data/vocab/…`; lo genera el build/entrypoint) |
-| `SMART_IMPORT_VOCAB_GEONAMES` | `1` (default) baja cities15000 en el build; `0` lo saltea |
-| `GEOCODE_MAX_LOW_CONFIDENCE_KM` | descarta low_confidence lejos del depot (default 15) |
-| `RABBITMQ_*` / `S3_*` | solo con profile infra / worker |
+- **`.env.example`** — local. `cp .env.example .env`
+- **`.env.prod.example`** — producción. `cp .env.prod.example .env`
+
+Resumen de las que más se toca. La config **efectiva** de un proceso corriendo
+se lee siempre en `GET /config`, que es lo único que no miente:
+
+| Variable | Default | Rol |
+|---|---|---|
+| **Imagen y datos** | | |
+| `SMART_IMPORT_TARGET` | `runtime-libpostal` | build stage: `runtime` (~370 MB) o con libpostal (+~2 GB) |
+| `ROUTE_OPTIMIZER_DATA` | — | raíz de PBFs en el host. Sin esto no hay geocode |
+| `SMART_IMPORT_GEONAMES_DIR` | `./data/geonames` | cities15000. Sin esto, centroides de ciudad y detección de localidad quedan apagados **en silencio** |
+| **Red y seguridad** | | |
+| `SMART_IMPORT_BIND` | `127.0.0.1` | interfaz donde se publica. **En prod, loopback**: no hay auth propia y Docker puentea ufw |
+| `SMART_IMPORT_PORT` | `8100` | puerto del host |
+| `SMART_IMPORT_CORS_ORIGINS` | `*` | en prod: el dominio real |
+| **Concurrencia** ([§12.1](#121-cuántos-procesos--workers--uno-y-no-es-negociable)) | | |
+| `SMART_IMPORT_HTTP_LIMIT_CONCURRENCY` | `512` | techo de uvicorn (503 por encima). Cuenta los SSE abiertos |
+| `SMART_IMPORT_MAX_NORMALIZE_QUEUE` | `32` | admisión: 429 **antes de leer el body**. Cota de disco = esto × `MAX_FILE_MB` |
+| `SMART_IMPORT_MAX_CONCURRENT_NORMALIZE` | `4` | normalizes en paralelo. Techo, no acelerador (GIL) |
+| `SMART_IMPORT_NORMALIZE_QUEUE_WAIT_S` | `20` | espera por un turno antes del 429 |
+| `SMART_IMPORT_GEOCODE_WORKERS` | `1` | imports geocodificando a la vez |
+| `SMART_IMPORT_CPUS` / `_MEMORY_LIMIT` | `4` / `8g` | recursos del container |
+| `SMART_IMPORT_JOB_TTL_HOURS` | `24` | horas antes de borrar un job terminado. `0` = el disco crece sin techo |
+| **Límites de entrada** | | |
+| `SMART_IMPORT_MAX_FILE_MB` | `10` | ~50k filas de CSV |
+| `SMART_IMPORT_MAX_ROWS` | `50000` | filas por archivo |
+| **Extracción** | | |
+| `SMART_IMPORT_LIBPOSTAL_ENABLED` | `true` | enhancer on-demand (requiere imagen libpostal) |
+| `SMART_IMPORT_DEFAULT_PHONE_REGION` | — | ISO para teléfonos (`AR`, `US`, `IN`). El job la pisa |
+| `SMART_IMPORT_DELIVERY_ACCEPT_THRESHOLD` | `0.55` | cuándo una línea del paste es una parada. **Medido**: ruido tope 0,05 vs mediana 0,83 |
+| `SMART_IMPORT_ADDRESS_ACCEPT_THRESHOLD` | `0.50` | piso para aceptar una dirección. **Medido: subirlo no sirve** — ver el comentario en el `.env` antes de tocarlo |
+| **Geocoding** | | |
+| `SMART_IMPORT_GEOCODING_ENABLED` | `true` | prende geocode OSM (nunca es automático) |
+| `GEOCODER_FALLBACK` | `none` | lo que OSM no encuentra queda `not_found` para ubicación manual |
+| `GEOCODE_MATCH_THRESHOLD` / `GEOCODE_VALID_BAND` | `0.85` | status `matched` y color verde. **Tienen que ser iguales** o la UI pinta verde algo que el geocoder marcó dudoso |
+| `GEOCODE_LOW_CONFIDENCE_THRESHOLD` / `GEOCODE_REVIEW_BAND` | `0.70` | piso para devolver coordenada y para mostrarla. **Iguales** |
+| `GEOCODE_SOFT_REJECT_MIN` | `0.75` | pin de respaldo. **≥ `REVIEW_BAND`** o la banda le saca el pin igual |
+| `GEOCODE_STREET_MATCH_MIN` | `0.70` | cuánto tiene que matchear la calle. Guardián del falso positivo más caro |
+| `GEOCODE_MAX_DISTANCE_KM` / `_MAX_LOW_CONFIDENCE_KM` | `500` / `15` | geofences: atrapan la calle homónima en otra provincia |
+| **Vocabulario** | | |
+| `SMART_IMPORT_VOCAB_PATH` | `/data/vocab/…` | SQLite; lo genera el build/entrypoint |
+| `SMART_IMPORT_VOCAB_GEONAMES` | `1` | `0` saltea cities15000 en el build (útil sin red) |
+
+Las tres reglas de alineación de las bandas de geocode están explicadas en los
+`.env`: romperlas no da error, solo hace que el operador vea un color y el
+sistema haya decidido otra cosa.
 
 ---
 
@@ -591,10 +768,10 @@ Ver `.env.example` completo. Resumen:
 | Web 503 “unavailable :8100” | `docker compose ps`, `curl /health`, `SMART_IMPORT_URL` |
 | `pbf_available: 0` | `ROUTE_OPTIMIZER_DATA` mal montado |
 | Todo a pending_geocode | falta `depotLat`/`depotLng` en el request |
-| Extract lento + `por_modelo=N` alto | paste libre o imagen vieja sin heurísticas |
-| Geocode basura (nombre+tel en address) | no corrió extract; proxy desactualizado |
+| Columna mezclada mal separada | fixtures en `examples/columna-mezclada/`; mirá `test_placeholders` |
+| Geocode basura (nombre+tel en address) | faltó contexto de depot en geocode / query enrich |
 | `python-multipart` en pytest | venv equivocado; usá `.venv` de este repo |
-| Rebuild baja torch otra vez | usaste `docker builder prune -a` o cambió el `RUN` de torch; o cache BuildKit off |
+| Rebuild recompila libpostal | usaste `docker builder prune -a` o cambió la etapa `libpostal-build` |
 
 ```bash
 # Cobertura OSM para un depot
@@ -610,7 +787,7 @@ curl -sf "localhost:8100/geocoding/coverage?lat=-34.60&lon=-58.38" | python3 -m 
 - [ ] `pbf_available > 0` si querés geocode
 - [ ] `.env.local` del client: `SMART_IMPORT_URL=http://localhost:8100`
 - [ ] Depot con coordenadas en la UI
-- [ ] Pegar `examples/force-ai/06_paste_ready.txt` o subir un CSV force-ai
+- [ ] Pegar `examples/columna-mezclada/06_paste_ready.txt` o subir un CSV de columna mezclada
 - [ ] Logs: `EXTRACT` con `por_reglas` (o modelo solo en filas libres) → `GEOCODE`
 - [ ] Mapa: stops con coords y/o diálogo de geolocalización manual
 
@@ -624,9 +801,6 @@ cp .env.example .env          # ROUTE_OPTIMIZER_DATA=...
 DOCKER_BUILDKIT=1 docker compose build smart-import   # 1 vez: imagen + vocab + GeoNames
 docker compose up -d smart-import                     # día a día SIN --build (entrypoint refresca sqlite)
 curl -sf localhost:8100/health
-
-# Rabbit/MinIO: NO hace falta para la web
-# docker compose --profile infra up -d
 
 # Limpiar y rebuild limpio
 docker compose down
