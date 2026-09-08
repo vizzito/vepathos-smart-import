@@ -13,9 +13,14 @@ import shutil
 import threading
 import time
 import uuid
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields
 from pathlib import Path
 from typing import Any
+
+#: Version del formato de `as_state()`. No se usa para migrar (el estado es
+#: efimero: dura horas y se regenera solo), pero queda escrito para poder
+#: reconocer de que version viene un job al mirar Redis a mano.
+STATE_VERSION = 1
 
 # estados del job (los mismos que va a usar la integracion con routehub)
 UPLOADED = "uploaded"
@@ -253,6 +258,34 @@ class Job:
             "mapping": f"{base}/mapping",
         }
 
+    def as_state(self) -> dict[str, Any]:
+        """El estado COMPLETO del job, para guardarlo fuera del proceso.
+
+        No es `as_dict()`: eso es el contrato con la web (trae `next_actions`,
+        `urls`, `progress` — todo derivado) y le FALTAN campos internos que
+        ningun cliente mira pero de los que depende el trabajo, como
+        `phone_region`, `op_started_at` o `capabilities`. Serializar la vista de
+        la API y reconstruir desde ahi pierde justamente eso, en silencio.
+
+        Se derivan de los campos del dataclass a proposito: agregar un campo
+        nuevo queda guardado sin que haya que acordarse de tocar este metodo.
+        """
+        estado = {f.name: getattr(self, f.name) for f in fields(self)}
+        estado["_version"] = STATE_VERSION
+        return estado
+
+    @classmethod
+    def from_state(cls, estado: dict[str, Any]) -> "Job":
+        """Reconstruye un job guardado.
+
+        Tolerante en las dos direcciones, porque durante un deploy conviven dos
+        versiones del codigo leyendo el mismo Redis: una clave que no conocemos
+        se ignora (la escribio una version mas nueva) y una que falta toma el
+        default del dataclass (la escribio una mas vieja).
+        """
+        validos = {f.name for f in fields(cls)}
+        return cls(**{k: v for k, v in estado.items() if k in validos})
+
     def as_dict(self) -> dict[str, Any]:
         return {
             "job_id": self.id,
@@ -380,13 +413,25 @@ class JobStore:
         return [jid for jid in vencidos if self.delete(jid)]
 
 
-def make_job_store(cfg, artifacts=None) -> JobStore:
-    """El almacen de estado de este proceso.
+def make_job_store(cfg, artifacts=None):
+    """El almacen de estado de este proceso, segun el rol.
 
-    Hoy hay uno solo y vive en memoria. Existe como factory para que el dia que
-    el estado se mude a un store compartido el cambio sea una linea de
-    configuracion y no una cirugia en `app.py`: quien llama ya no nombra la
-    implementacion. `artifacts` se acepta por la misma razon — un store que no
-    tiene los archivos al lado va a necesitar quien los borre.
+    `embedded` (el default) sigue siendo el dict en memoria: un solo proceso, sin
+    infraestructura, exactamente el comportamiento de siempre. Los roles `api` y
+    `worker` existen para repartirse el trabajo, y eso solo funciona si comparten
+    el estado: un job creado por la api tiene que ser visible para el worker que
+    lo procesa, y su avance para la api que lo sirve.
+
+    Sin Redis no arranca, en vez de degradar a memoria: un rol `api` con un store
+    local responde 404 para jobs que existen y que otro proceso esta procesando
+    ahora mismo. Fallar al arrancar es mucho mas barato que ese sintoma.
     """
-    return JobStore(cfg.work_dir)
+    if cfg.role == "embedded":
+        return JobStore(cfg.work_dir)
+    if not cfg.redis_host:
+        raise ValueError(
+            f"SMART_IMPORT_ROLE={cfg.role} reparte el trabajo entre procesos y "
+            "necesita el estado compartido, pero REDIS_HOST esta vacio. "
+            "Configuralo, o volve a SMART_IMPORT_ROLE=embedded.")
+    from .job_store_redis import make_redis_job_store
+    return make_redis_job_store(cfg, artifacts)

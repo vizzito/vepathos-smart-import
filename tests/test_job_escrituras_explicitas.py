@@ -19,8 +19,10 @@ import pytest
 from fastapi.testclient import TestClient
 
 from smart_import.api.app import app
+from smart_import.job_store_redis import RedisJobStore
 from smart_import.jobs import Job, JobStore
 from tests.conftest import FIXTURES
+from tests.fake_redis import FakeRedis
 
 api_module = importlib.import_module("smart_import.api.app")
 
@@ -41,15 +43,25 @@ class StoreQueCopia(JobStore):
         return copy.deepcopy(job) if job is not None else None
 
 
-@pytest.fixture
-def client_con_copias(tmp_path, monkeypatch):
-    """La API completa, contra un store que NO comparte objetos con ella."""
+@pytest.fixture(params=["copias", "redis"])
+def client_con_copias(request, tmp_path, monkeypatch):
+    """La API completa, contra un store que NO comparte objetos con ella.
+
+    `copias` es el minimo indispensable (la semantica, sin nada mas) y `redis`
+    es la implementacion de verdad contra un Redis de mentira. Los mismos
+    asserts contra los dos: si divergen, se ve cual de los dos falla.
+    """
     cfg = api_module.CFG.replace(geocoding_enabled=True, pbf_dir="/tmp/pbf",
                                  work_dir=str(tmp_path))
     artefactos = api_module.make_artifact_store(cfg)
+    if request.param == "copias":
+        store = StoreQueCopia(tmp_path)
+    else:
+        store = RedisJobStore(FakeRedis(), prefix="test:", ttl_s=3600,
+                              artifacts=artefactos)
 
     monkeypatch.setattr(api_module, "CFG", cfg)
-    monkeypatch.setattr(api_module, "store", StoreQueCopia(tmp_path))
+    monkeypatch.setattr(api_module, "store", store)
     monkeypatch.setattr(api_module, "artifacts", artefactos)
     return TestClient(app)
 

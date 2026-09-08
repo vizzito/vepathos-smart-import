@@ -65,6 +65,37 @@ def test_el_endpoint_config_tampoco(monkeypatch):
     assert "token-del-worker" not in str(cuerpo)
 
 
+def test_health_dice_donde_vive_el_estado(monkeypatch):
+    """Lo que se mira despues de un deploy para saber si el .env se aplico."""
+    import importlib
+
+    from smart_import.job_store_redis import RedisJobStore
+    from tests.fake_redis import FakeRedis
+
+    api_module = importlib.import_module("smart_import.api.app")
+    cliente = TestClient(app)
+
+    api_module._health_scan = None
+    assert cliente.get("/health").json()["deployment"] == {
+        "role": "embedded", "state": "memory"}
+
+    monkeypatch.setattr(api_module, "CFG", api_module.CFG.replace(role="api"))
+    monkeypatch.setattr(api_module, "store", RedisJobStore(FakeRedis()))
+    api_module._health_scan = None
+    assert cliente.get("/health").json()["deployment"] == {
+        "role": "api", "state": "redis"}
+    api_module._health_scan = None
+
+
+def test_un_rol_que_reparte_trabajo_no_arranca_sin_estado_compartido():
+    """Degradar a memoria seria peor que no arrancar: la api responderia 404
+    para jobs que existen y que otro proceso esta procesando ahora mismo."""
+    from smart_import.jobs import make_job_store
+
+    with pytest.raises(ValueError, match="REDIS_HOST"):
+        make_job_store(Config().replace(role="worker", redis_host=""))
+
+
 def test_todos_los_secretos_declarados_existen_en_el_config():
     """Un nombre mal escrito en `SECRET_FIELDS` no redacta nada y no falla."""
     campos = set(Config().describe())

@@ -398,6 +398,15 @@ async def health() -> dict[str, Any]:
             "city_centroids": env["city_centroids"],
         },
         "jobs": len(store),
+        # Que rol quedo aplicado y donde vive el estado. Es lo que se mira
+        # despues de un deploy para confirmar que el .env se leyo: `embedded`
+        # con memoria es un solo proceso, `api` con redis es el estado
+        # compartido con los workers. Sale del store REAL, no de la config, que
+        # es la diferencia entre verificar y creerle al archivo.
+        "deployment": {
+            "role": cfg.role,
+            "state": "redis" if type(store).__name__ == "RedisJobStore" else "memory",
+        },
         # Antiguedad del snapshot de disco. Si crece mucho por encima de
         # HEALTH_SCAN_TTL_S, el refresco de fondo murio y lo de arriba es viejo.
         "environment_age_s": round(time.monotonic() - _health_scan[0], 1),
