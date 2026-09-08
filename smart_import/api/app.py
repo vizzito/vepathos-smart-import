@@ -42,6 +42,7 @@ from ..worker.handlers import (
     NormalizeFailed, WorkerContext, refresh_nested, run_geocode_job,
     run_normalize_job,
 )
+from .internal import internal_router
 
 CFG = Config.from_env()
 setup_logging(verbose=CFG.verbose)
@@ -231,6 +232,13 @@ artifacts = make_artifact_store(CFG)
 #: El estado de los jobs: en memoria con `ROLE=embedded`, en Redis si no. El
 #: store necesita los artefactos para que borrar un job se lleve sus archivos.
 store = make_job_store(CFG, artifacts)
+
+#: El puerto por el que los workers buscan y devuelven archivos. Se monta
+#: siempre, pero solo responde con `SMART_IMPORT_WORKER_TOKEN` puesto: sin token
+#: cada ruta contesta 404, igual que si no existiera. Montarlo segun el token de
+#: arranque daria la misma superficie y ademas dejaria al router fuera del
+#: alcance de los tests, que reemplazan la config despues de importar el modulo.
+app.include_router(internal_router(lambda: _worker_ctx()))
 
 
 def _schema_path(name: str) -> Path:

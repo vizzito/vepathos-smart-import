@@ -55,6 +55,36 @@ LAYOUT: dict[str, tuple[str, str]] = {
 }
 
 
+#: Prefijo de las referencias que NO son rutas de este disco.
+#:
+#: Cuando el trabajo corre en otra maquina, la ruta que conoce el worker
+#: (`/data/tmp/imp_ab12/normalized/normalized.csv`) no significa nada donde se
+#: sirve la descarga. La referencia que queda guardada en el `Job` pasa a
+#: nombrar el ARTEFACTO, no el archivo: quien lo lea lo resuelve con su propio
+#: layout. Es una URI y no `None` porque el `Job` distingue "todavia no existe"
+#: de "existe": con `normalized_path=None`, `next_actions` no ofrece la descarga.
+URI_SCHEME = "artifact://"
+
+
+def artifact_uri(job_id: str, kind: str) -> str:
+    return f"{URI_SCHEME}{job_id}/{kind}"
+
+
+def local_path(ref: str | Path | None) -> Path | None:
+    """La ruta de este disco que nombra `ref`, si es que nombra alguna."""
+    if not ref:
+        return None
+    if isinstance(ref, str) and ref.startswith(URI_SCHEME):
+        return None
+    return Path(ref)
+
+
+#: Sufijo de un archivo en vuelo. Un artefacto se escribe al lado y se renombra
+#: al terminar: a medio escribir, con el nombre del bueno, parece un resultado
+#: valido y se sirve como tal. Lo respetan los dos lados del canal.
+PARCIAL = ".enviando"
+
+
 class UnknownKind(KeyError):
     """Se pidio un artefacto que no existe en el layout."""
 

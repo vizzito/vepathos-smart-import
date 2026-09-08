@@ -28,7 +28,7 @@ Documentos relacionados:
 10. [Tests](#10-tests)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
 12. [Deploy en producción](#12-deploy-en-producción)
-13. [Variables de entorno](#13-variables-de-entorno)
+13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
 15. [Checklist “¿anda?”](#15-checklist-anda)
 
@@ -754,10 +754,51 @@ se lee siempre en `GET /config`, que es lo único que no miente:
 | **Vocabulario** | | |
 | `SMART_IMPORT_VOCAB_PATH` | `/data/vocab/…` | SQLite; lo genera el build/entrypoint |
 | `SMART_IMPORT_VOCAB_GEONAMES` | `1` | `0` saltea cities15000 en el build (útil sin red) |
+| **Modo distribuido** ([§13.1](#131-modo-distribuido-varios-nodos)) | | |
+| `SMART_IMPORT_ROLE` | `embedded` | `embedded` (todo en un proceso, lo de siempre), `api` o `worker` |
+| `REDIS_HOST` / `REDIS_PORT` | — / `6379` | estado de los jobs. **Obligatorio** con rol `api` o `worker` |
+| `SMART_IMPORT_WORKER_TOKEN` | — | credencial compartida del canal api↔worker. **Vacío = `/internal` cerrado** |
+| `SMART_IMPORT_API_URL` | — | de dónde baja el worker los archivos. Obligatorio en rol `worker` |
+| `SMART_IMPORT_SCRATCH_DIR` | temp del sistema | espacio de trabajo del worker. Se borra al terminar cada tarea |
 
 Las tres reglas de alineación de las bandas de geocode están explicadas en los
 `.env`: romperlas no da error, solo hace que el operador vea un color y el
 sistema haya decidido otra cosa.
+
+### 13.1 Modo distribuido (varios nodos)
+
+Con `SMART_IMPORT_ROLE=embedded` —el default— **no cambia nada**: un proceso,
+estado en memoria, archivos en su disco. Las variables de arriba no se leen.
+
+Con roles, el servicio se parte en dos y aparecen dos canales entre ellos:
+
+- **estado** — los jobs viven en Redis, así que cualquier nodo contesta
+  `GET /imports/{id}` aunque el trabajo lo haya hecho otro;
+- **archivos** — el rol `api` guarda el archivo del usuario y sirve las
+  descargas; el `worker` no tiene ninguno de los dos. Se los pide por
+  `/internal/…`, trabaja en su scratch y devuelve el resultado.
+
+Todas las conexiones las abre el worker: no necesita IP entrante ni volumen
+compartido, y por eso puede correr en cualquier máquina.
+
+`/internal` no es API pública (no está en `/docs`) y **exige
+`SMART_IMPORT_WORKER_TOKEN`**: sin token configurado, o con uno que no coincide,
+cada ruta responde 404 — quien no lo tenga no se entera ni de que existe. El
+token viaja en texto plano, así que el enlace api↔worker va por red privada o
+TLS, igual que Redis.
+
+```bash
+# nodo api
+SMART_IMPORT_ROLE=api  REDIS_HOST=10.0.0.5  SMART_IMPORT_WORKER_TOKEN=$TOKEN
+
+# nodo worker (otra máquina, sin volúmenes)
+SMART_IMPORT_ROLE=worker  REDIS_HOST=10.0.0.5  SMART_IMPORT_WORKER_TOKEN=$TOKEN \
+SMART_IMPORT_API_URL=http://10.0.0.4:8100  SMART_IMPORT_SCRATCH_DIR=/var/tmp/si
+```
+
+Que un nodo esté en modo distribuido se ve en `GET /health` →
+`deployment: {role, state}`. Un worker al que le falta `API_URL` o el token no
+arranca: es preferible a que falle la primera tarea media hora después.
 
 ---
 
