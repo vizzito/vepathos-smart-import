@@ -79,3 +79,37 @@ class TargetSchema:
             for alias in (normalize_key(f.name), *f.normalized_aliases):
                 idx.setdefault(alias, f.name)
         return idx
+
+
+class SchemaNotFound(LookupError):
+    """El schema pedido no existe en el directorio de schemas.
+
+    Es un error de dominio, no de transporte: la API lo traduce a 404 y el worker
+    a una falla permanente. Sin esto, resolver un schema obligaria a importar
+    fastapi desde el worker solo para levantar una HTTPException.
+    """
+
+    def __init__(self, name: str) -> None:
+        super().__init__(f"schema '{name}' inexistente")
+        self.name = name
+
+
+def resolve_schema_dir(schema_dir: str | Path) -> Path:
+    """El directorio efectivo de schemas.
+
+    En el container vive en /app/schemas, en desarrollo en ./schemas, y un
+    cliente puede montar los suyos. Una ruta relativa que no existe desde el cwd
+    se resuelve contra la raiz del repo, que es de donde salen los del paquete.
+    """
+    path = Path(schema_dir)
+    if not path.is_absolute() and not path.exists():
+        path = Path(__file__).resolve().parent.parent / schema_dir
+    return path
+
+
+def resolve_schema_path(schema_dir: str | Path, name: str) -> Path:
+    """Ruta del JSON de un schema por nombre. `SchemaNotFound` si no esta."""
+    path = resolve_schema_dir(schema_dir) / f"{name}.json"
+    if not path.exists():
+        raise SchemaNotFound(name)
+    return path
