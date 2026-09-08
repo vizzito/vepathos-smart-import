@@ -202,6 +202,13 @@ class Job:
         elif self.status == NORMALIZED:
             phase = "normalized"
             message = "Normalizado"
+        elif self.status in (UPLOADED, ANALYZING):
+            # Con el trabajo repartido, esta ventana dura lo que tarde un worker
+            # en tomar la tarea. Sin mensaje, la UI muestra una barra sin texto y
+            # el usuario no sabe si esta pasando algo.
+            phase = "queued" if self.status == UPLOADED else "analyzing"
+            message = ("En cola" if self.status == UPLOADED
+                       else "Procesando el archivo")
 
         pct = round(100.0 * done / total, 1) if total > 0 else None
         eta_s = None
@@ -313,6 +320,8 @@ class JobStore:
         self.work_dir = Path(work_dir)
         self.work_dir.mkdir(parents=True, exist_ok=True)
         self._jobs: dict[str, Job] = {}
+        #: job_id → (quien lo ejecuta, cuando vence). Ver `claim_run`.
+        self._corriendo: dict[str, tuple[str, float]] = {}
         self._lock = threading.Lock()
 
     def create(self, filename: str, schema: str) -> Job:
@@ -373,6 +382,40 @@ class JobStore:
                 return False
             job.touch(GEOCODE_QUEUED)
             return True
+
+    def claim_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
+        """Toma el derecho a EJECUTAR una tarea de este job. False si lo tiene otro.
+
+        Es distinto de `claim_geocode`, que es una reserva de negocio ("el
+        usuario ya pidio geocodificar") y dura hasta que el job termina. Esta es
+        de ejecucion y dura lo que dura la tarea: existe porque una cola
+        at-least-once redeliverea, y dos workers normalizando el mismo job se
+        pisan el archivo de salida a medio escribir.
+
+        Vence sola y hay que renovarla mientras se trabaja: un worker que muere
+        no deja el job trabado, y por eso `kill -9` termina con otro nodo
+        retomando en vez de un job clavado hasta el TTL largo.
+        """
+        with self._lock:
+            duenio, vence = self._corriendo.get(job_id, (None, 0.0))
+            if duenio is not None and duenio != holder and vence > time.monotonic():
+                return False
+            self._corriendo[job_id] = (holder, time.monotonic() + ttl_s)
+            return True
+
+    def renew_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
+        with self._lock:
+            duenio, _ = self._corriendo.get(job_id, (None, 0.0))
+            if duenio != holder:
+                return False
+            self._corriendo[job_id] = (holder, time.monotonic() + ttl_s)
+            return True
+
+    def release_run(self, job_id: str, holder: str) -> None:
+        with self._lock:
+            duenio, _ = self._corriendo.get(job_id, (None, 0.0))
+            if duenio == holder:
+                self._corriendo.pop(job_id, None)
 
     def list(self, limit: int = 50) -> list[Job]:
         return sorted(self._jobs.values(), key=lambda j: -j.created_at)[:limit]

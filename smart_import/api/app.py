@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Any
 
 import anyio
-from fastapi import Body, FastAPI, File, HTTPException, Query, UploadFile
+from fastapi import Body, FastAPI, File, HTTPException, Query, Response, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from starlette.concurrency import run_in_threadpool
@@ -35,7 +35,10 @@ from ..config import Config
 from ..schemas import (
     SchemaNotFound, TargetSchema, resolve_schema_dir, resolve_schema_path,
 )
-from ..jobs import ALLOWED_SUFFIXES, Job, safe_filename, make_job_store
+from ..jobs import (
+    ALLOWED_SUFFIXES, ANALYZING, FAILED, Job, make_job_store, safe_filename,
+)
+from ..queue import geocode_task, make_broker, normalize_task
 
 from ..logging_setup import get_logger, setup as setup_logging, stage
 from ..worker.handlers import (
@@ -232,6 +235,10 @@ artifacts = make_artifact_store(CFG)
 #: El estado de los jobs: en memoria con `ROLE=embedded`, en Redis si no. El
 #: store necesita los artefactos para que borrar un job se lleve sus archivos.
 store = make_job_store(CFG, artifacts)
+#: A quien se le encarga el trabajo pesado. `None` en modo `embedded`: lo hace
+#: este mismo proceso, como siempre. Con roles, la API deja de ejecutar nada
+#: pesado y solo publica tareas.
+broker = make_broker(CFG, logger)
 
 #: El puerto por el que los workers buscan y devuelven archivos. Se monta
 #: siempre, pero solo responde con `SMART_IMPORT_WORKER_TOKEN` puesto: sin token
@@ -467,11 +474,23 @@ async def create_import(
         None, description="Pais del depot. Gana sobre phone_region para el pais de las direcciones.",
     ),
     diagnostics: bool = Query(False, description="Agregar columnas row_status/row_issues"),
+    wait: float | None = Query(
+        None, ge=0, le=300,
+        description="Segundos a esperar el resultado antes de responder 202 con el "
+                    "job_id. Solo aplica cuando el trabajo lo hace otro nodo.",
+    ),
+    response: Response = None,
 ) -> dict[str, Any]:
     """Sube un archivo y lo normaliza al formato Vepathos.
 
     NO geocodifica. Si faltan coordenadas, la respuesta lo dice en
     `report.needs_geocode` y ofrece la accion `geocode` en `next_actions`.
+
+    Con el trabajo repartido entre nodos, el archivo se encola y este endpoint
+    espera hasta `wait` segundos: si el resultado llega a tiempo responde 201
+    con el job completo —identico al modo de un solo proceso, para que ningun
+    cliente tenga que cambiar— y si no, 202 con el `job_id` para seguirlo por
+    `/imports/{id}` o por SSE.
     """
     cfg = Config.from_env()
     name = safe_filename(file.filename)
@@ -510,32 +529,106 @@ async def create_import(
         store.save(job)
         stage(logger, "HTTP", "POST /imports", job=job.id, archivo=name,
               tamano=f"{size / 1024:.1f}KB", schema=schema)
+
+        if broker is not None:
+            # El trabajo lo hace otro nodo. Se encola DENTRO de la admision
+            # (el archivo ya esta en disco) y se espera afuera: retener el cupo
+            # durante la espera convertiria 32 uploads lentos en un 429 para el
+            # resto, cuando en realidad no se esta escribiendo nada.
+            _encolar(job, normalize_task(
+                job.id, phone_region=phone_region, diagnostics=diagnostics,
+                timezone=timezone, depot_timezone=depot_timezone,
+                service_date=service_date.isoformat() if service_date else None,
+                depot_city=depot_city, depot_region=depot_region,
+                depot_country=depot_country))
+
         # El normalize es CPU-bound (lectura, mapping, extraccion, libpostal) y
         # este endpoint es una corrutina: ejecutarlo inline bloquea el event loop
         # y con el loop bloqueado no se atiende NADA — ni /health (el healthcheck
         # marca el container unhealthy) ni los SSE de progreso ni el polling.
         # El upload de arriba si es async de verdad: `await file.read()` cede.
-        try:
-            async with _normalize_slot(job.id):
-                response = await run_in_threadpool(
-                    _run_normalize,
-                    job, schema_path, phone_region, diagnostics,
-                    timezone=timezone, depot_timezone=depot_timezone,
-                    service_date=service_date,
-                    depot_city=depot_city, depot_region=depot_region,
-                    depot_country=depot_country,
-                )
-        except HTTPException as exc:
-            # Un job rechazado por saturacion no lo va a ver nadie: si se queda,
-            # cada reintento del front deja otra copia del archivo en disco hasta
-            # que pase el TTL. Un normalize que falla (422) si se conserva: el
-            # usuario necesita leer el error.
-            if exc.status_code == 429:
-                store.delete(job.id)
-            raise
-    stage(logger, "HTTP", "201 creado", job=job.id, estado=job.status,
-          acciones=",".join(a["action"] for a in job.next_actions()))
-    return response
+        if broker is None:
+            try:
+                async with _normalize_slot(job.id):
+                    resultado = await run_in_threadpool(
+                        _run_normalize,
+                        job, schema_path, phone_region, diagnostics,
+                        timezone=timezone, depot_timezone=depot_timezone,
+                        service_date=service_date,
+                        depot_city=depot_city, depot_region=depot_region,
+                        depot_country=depot_country,
+                    )
+            except HTTPException as exc:
+                # Un job rechazado por saturacion no lo va a ver nadie: si se
+                # queda, cada reintento del front deja otra copia del archivo en
+                # disco hasta que pase el TTL. Un normalize que falla (422) si se
+                # conserva: el usuario necesita leer el error.
+                if exc.status_code == 429:
+                    store.delete(job.id)
+                raise
+
+    if broker is not None:
+        resultado = await _esperar_resultado(job.id, wait, response)
+    stage(logger, "HTTP", "202 encolado" if resultado.get("busy") else "201 creado",
+          job=job.id, estado=resultado.get("status"),
+          acciones=",".join(a["action"] for a in resultado.get("next_actions", [])))
+    return resultado
+
+
+def _encolar(job: Job, task) -> None:
+    """Deja la tarea en la cola y el job marcado como ocupado.
+
+    El orden importa: primero el estado, despues el mensaje. Al reves, un worker
+    rapido puede tomar la tarea, terminarla y escribir el resultado ANTES de que
+    esta linea marque el job como ocupado — y ese `analyzing` tardio pisaria el
+    `normalized` que ya estaba, dejando un job eternamente en proceso.
+    """
+    job.touch(ANALYZING)
+    store.save(job)
+    try:
+        broker.publish(task)
+    except Exception as exc:
+        # Sin cola no hay quien haga el trabajo. Decirlo ahora es mucho mejor
+        # que aceptar el archivo y dejar un job ocupado que nadie va a terminar:
+        # el cliente reintenta, y el operador ve el 503 en vez de un embudo.
+        job.error = "no se pudo encolar el trabajo"
+        job.touch(FAILED)
+        store.save(job)
+        logger.error("no se pudo encolar %s de %s: %s", task.type, job.id, exc)
+        raise HTTPException(
+            503, "el servicio no puede tomar trabajo ahora mismo (cola de tareas "
+                 "inalcanzable). Reintentá en un momento.") from exc
+    stage(logger, "QUEUE", "encolado", job=job.id, tarea=task.type)
+
+
+async def _esperar_resultado(job_id: str, wait_s: float | None,
+                             response: Response) -> dict[str, Any]:
+    """Espera un rato el resultado; si no llega, devuelve 202 con el job_id.
+
+    Preserva el contrato de un solo proceso para el caso comun: un archivo
+    chico se normaliza en menos de dos segundos y el cliente recibe el 201 con
+    todo adentro, igual que antes de que existieran los workers. La espera es un
+    lujo, no la garantia: quien no la quiera manda `wait=0` y sigue por SSE.
+    """
+    limite = float(CFG.default_wait_s if wait_s is None else wait_s)
+    fin = time.monotonic() + limite
+    job = store.get(job_id)
+    while job is not None and job.busy and time.monotonic() < fin:
+        await asyncio.sleep(0.2)
+        job = store.get(job_id)
+
+    if job is None:
+        # Se lo llevo un DELETE o el barrido mientras esperabamos.
+        raise HTTPException(404, f"job '{job_id}' inexistente")
+    if job.status == FAILED:
+        # Mismo 422 que da el modo de un solo proceso: para el cliente, que el
+        # archivo lo haya rechazado otra maquina no cambia nada.
+        raise HTTPException(422, f"no se pudo procesar el archivo: {job.error}")
+    if job.busy:
+        response.status_code = 202
+        return {**job.as_dict(), "poll": f"/imports/{job_id}",
+                "events": f"/imports/{job_id}/events"}
+    return job.as_dict()
 
 
 def _worker_ctx() -> WorkerContext:
@@ -803,6 +896,8 @@ async def confirm_mapping(
     depot_region: str | None = Query(None),
     depot_country: str | None = Query(None),
     diagnostics: bool = Query(False),
+    wait: float | None = Query(None, ge=0, le=300),
+    response: Response = None,
 ) -> dict[str, Any]:
     """Corrige el mapping sugerido y vuelve a normalizar.
 
@@ -811,6 +906,17 @@ async def confirm_mapping(
     job = _job_or_404(job_id)
     if not artifacts.exists(job.id, RAW, job.raw_path):
         raise HTTPException(409, "el archivo original ya no esta disponible")
+
+    if broker is not None:
+        _encolar(job, normalize_task(
+            job.id, phone_region=phone_region, diagnostics=diagnostics,
+            manual_mapping=mapping, timezone=timezone,
+            depot_timezone=depot_timezone,
+            service_date=service_date.isoformat() if service_date else None,
+            depot_city=depot_city, depot_region=depot_region,
+            depot_country=depot_country))
+        return await _esperar_resultado(job.id, wait, response)
+
     # Re-normalizar cuesta lo mismo que la primera vez, asi que pide turno igual:
     # si no, este endpoint es una puerta lateral que saltea el techo.
     async with _normalize_slot(job.id):
@@ -980,8 +1086,21 @@ def start_geocode(
     job.geocode_progress = {"phase": "queued", "done": 0, "total": total}
     job.geocode_report = {}
     store.save(job)
-    _geocode_pool.submit(
-        _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
+    if broker is not None:
+        # Los parametros viajan crudos y el `DepotContext` se rearma del otro
+        # lado: mandar el objeto ya construido ataria el formato del mensaje a
+        # la forma interna de una clase.
+        broker.publish(geocode_task(
+            job.id, origin_lat=origin_lat, origin_lon=origin_lon,
+            bbox=list(box) if box else None, index=index,
+            enhance_addresses=bool(enhance_addresses),
+            depot_city=depot_city, depot_region=depot_region,
+            depot_postcode=depot_postcode, depot_country=depot_country,
+            depot_address=depot_address, max_distance_km=max_distance_km))
+        stage(logger, "QUEUE", "encolado", job=job.id, tarea="geocode")
+    else:
+        _geocode_pool.submit(
+            _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
     return {**job.as_dict(),
             "poll": f"/imports/{job_id}",
             "events": f"/imports/{job_id}/events",

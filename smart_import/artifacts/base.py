@@ -22,7 +22,9 @@ se enteran.
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
+from contextlib import contextmanager
 from pathlib import Path
+from typing import Iterator
 
 #: El archivo tal cual lo subio el usuario. Es el unico que hay que conservar
 #: mientras el job viva: `PUT /mapping` re-normaliza desde el.
@@ -134,3 +136,14 @@ class ArtifactStore(ABC):
 
     def exists(self, job_id: str, kind: str, ref: str | Path | None) -> bool:
         return self.resolve(job_id, kind, ref) is not None
+
+    @contextmanager
+    def trabajando_en(self, job_id: str) -> Iterator[Path]:
+        """Delimita el trabajo sobre un job, para poder limpiar despues.
+
+        En el rol api no hay nada que limpiar: los archivos SON el resultado y
+        viven hasta que el barrido se los lleve. En un worker, en cambio, todo
+        lo que toco es una copia de paso, y el store la borra al salir de aca.
+        El consumidor no tiene que saber cual de los dos le toco.
+        """
+        yield self.dir_for(job_id)

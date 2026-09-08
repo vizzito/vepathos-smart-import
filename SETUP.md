@@ -28,7 +28,7 @@ Documentos relacionados:
 10. [Tests](#10-tests)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
 12. [Deploy en producción](#12-deploy-en-producción)
-13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos)
+13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos) · [13.3 Cuando algo se cae](#133-qué-pasa-cuando-algo-se-cae)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
 15. [Checklist “¿anda?”](#15-checklist-anda)
 
@@ -757,9 +757,17 @@ se lee siempre en `GET /config`, que es lo único que no miente:
 | **Modo distribuido** ([§13.1](#131-modo-distribuido-varios-nodos)) | | |
 | `SMART_IMPORT_ROLE` | `embedded` | `embedded` (todo en un proceso, lo de siempre), `api` o `worker` |
 | `REDIS_HOST` / `REDIS_PORT` | — / `6379` | estado de los jobs. **Obligatorio** con rol `api` o `worker` |
+| `RABBITMQ_HOST` / `_PORT` / `_USER` / `_PASSWORD` / `_VHOST` | — / `5672` / — / — / `/` | la cola de tareas. **Obligatorio** con rol `api` o `worker` |
+| `SMART_IMPORT_QUEUE_PREFIX` | `smart-import` | prefijo de las colas. Dos despliegues contra el mismo broker necesitan prefijos distintos |
 | `SMART_IMPORT_WORKER_TOKEN` | — | credencial compartida del canal api↔worker. **Vacío = `/internal` cerrado** |
 | `SMART_IMPORT_API_URL` | — | de dónde baja el worker los archivos. Obligatorio en rol `worker` |
 | `SMART_IMPORT_SCRATCH_DIR` | temp del sistema | espacio de trabajo del worker. Se borra al terminar cada tarea |
+| `SMART_IMPORT_CONSUME_NORMALIZE` / `_CONSUME_GEOCODE` | `true` / `false` | de qué colas come este worker. Geocode **solo** donde hay PBF montado |
+| `SMART_IMPORT_WORKER_SLOTS` | `2` | tareas en paralelo por worker. De acá sale el prefetch |
+| `SMART_IMPORT_MAX_REQUEUE_ATTEMPTS` | `10` | intentos antes de apartar una tarea a la DLQ |
+| `SMART_IMPORT_TASK_TIMEOUT_NORMALIZE_S` / `_GEOCODE_S` | `300` / `1800` | pasado esto la tarea se aparta y el job queda fallido, en vez de girar para siempre |
+| `SMART_IMPORT_SHUTDOWN_DRAIN_S` | `60` | cuánto espera un worker que baja a lo que está en vuelo |
+| `SMART_IMPORT_DEFAULT_WAIT_S` | `30` | cuánto espera `POST /imports` el resultado antes de responder 202. `0` = siempre 202 |
 
 Las tres reglas de alineación de las bandas de geocode están explicadas en los
 `.env`: romperlas no da error, solo hace que el operador vea un color y el
@@ -770,13 +778,16 @@ sistema haya decidido otra cosa.
 Con `SMART_IMPORT_ROLE=embedded` —el default— **no cambia nada**: un proceso,
 estado en memoria, archivos en su disco. Las variables de arriba no se leen.
 
-Con roles, el servicio se parte en dos y aparecen dos canales entre ellos:
+Con roles, el servicio se parte en dos y aparecen tres canales entre ellos:
 
 - **estado** — los jobs viven en Redis, así que cualquier nodo contesta
   `GET /imports/{id}` aunque el trabajo lo haya hecho otro;
 - **archivos** — el rol `api` guarda el archivo del usuario y sirve las
   descargas; el `worker` no tiene ninguno de los dos. Se los pide por
-  `/internal/…`, trabaja en su scratch y devuelve el resultado.
+  `/internal/…`, trabaja en su scratch y devuelve el resultado;
+- **trabajo** — la api no normaliza ni geocodifica: publica una tarea en
+  RabbitMQ y el worker la toma. Por la cola viajan referencias (`job_id` y los
+  parámetros del pedido), nunca archivos.
 
 Todas las conexiones las abre el worker: no necesita IP entrante ni volumen
 compartido, y por eso puede correr en cualquier máquina.
@@ -788,17 +799,55 @@ token viaja en texto plano, así que el enlace api↔worker va por red privada o
 TLS, igual que Redis.
 
 ```bash
-# nodo api
-SMART_IMPORT_ROLE=api  REDIS_HOST=10.0.0.5  SMART_IMPORT_WORKER_TOKEN=$TOKEN
+# nodo api  (sirve HTTP, no procesa)
+SMART_IMPORT_ROLE=api  REDIS_HOST=10.0.0.5  RABBITMQ_HOST=10.0.0.5 \
+SMART_IMPORT_WORKER_TOKEN=$TOKEN
+smart-import serve
 
-# nodo worker (otra máquina, sin volúmenes)
-SMART_IMPORT_ROLE=worker  REDIS_HOST=10.0.0.5  SMART_IMPORT_WORKER_TOKEN=$TOKEN \
-SMART_IMPORT_API_URL=http://10.0.0.4:8100  SMART_IMPORT_SCRATCH_DIR=/var/tmp/si
+# nodo worker (otra máquina, sin volúmenes; no sirve HTTP)
+SMART_IMPORT_ROLE=worker  REDIS_HOST=10.0.0.5  RABBITMQ_HOST=10.0.0.5 \
+SMART_IMPORT_WORKER_TOKEN=$TOKEN  SMART_IMPORT_API_URL=http://10.0.0.4:8100 \
+SMART_IMPORT_SCRATCH_DIR=/var/tmp/si
+smart-import worker
 ```
 
 Que un nodo esté en modo distribuido se ve en `GET /health` →
-`deployment: {role, state}`. Un worker al que le falta `API_URL` o el token no
-arranca: es preferible a que falle la primera tarea media hora después.
+`deployment: {role, state}`. Un worker al que le falta `API_URL`, el token, el
+broker o los PBF que dice consumir **no arranca**: imprime todo lo que falta y
+sale con código 2. Es preferible a que falle la primera tarea media hora después.
+
+### 13.2 Qué cambia para quien consume la API
+
+Casi nada, y a propósito. `POST /imports` encola y **espera** hasta
+`SMART_IMPORT_DEFAULT_WAIT_S` (o el `?wait=` del request):
+
+- si el resultado llega a tiempo → **201 con el job entero**, byte por byte lo
+  mismo que devuelve un despliegue de un solo proceso;
+- si no llega → **202** con el `job_id`, `poll` y `events`. El trabajo sigue; el
+  cliente lo mira por `GET /imports/{id}` o por SSE, que es lo que la web ya
+  hace para el geocode;
+- si la cola está caída → **503** al toque, en vez de aceptar un archivo que
+  nadie va a procesar.
+
+`?wait=0` responde 202 siempre, para un cliente que prefiera seguirlo por SSE.
+
+### 13.3 Qué pasa cuando algo se cae
+
+| Situación | Qué hace el sistema |
+|---|---|
+| El worker muere a mitad de una tarea | Nadie ackeó: el broker la redeliverea. Otro nodo la retoma cuando vence la reserva de ejecución, ~1-2 min |
+| Dos entregas del mismo job a la vez | El segundo ve la reserva tomada y difiere la tarea con demora. Nunca dos nodos escribiendo la misma salida |
+| Falla pasajera (Redis, la api reiniciándose) | Se reintenta con demora creciente, hasta `MAX_REQUEUE_ATTEMPTS`; después va a la DLQ y el job queda `failed` con el motivo |
+| Archivo corrupto | No se reintenta: el job queda `failed` con el error y la tarea se confirma. Reintentar un `.xlsx` roto solo ocupa un slot |
+| Tarea colgada | Pasado `TASK_TIMEOUT_*_S` se aparta a la DLQ y el job deja de estar ocupado: el usuario ve el error en vez de un spinner eterno |
+| `docker compose stop` de un worker | SIGTERM: deja de tomar tareas, termina lo que tiene en vuelo (hasta `SHUTDOWN_DRAIN_S`) y sale. Lo que no llegó a empezar lo toma otro |
+
+Las tareas apartadas quedan en `{prefijo}-dlq` con el motivo escrito adentro y
+un TTL de 24 h. Para mirarlas:
+
+```bash
+rabbitmqctl list_queues name messages | grep smart-import
+```
 
 ---
 

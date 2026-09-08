@@ -606,5 +606,18 @@ def serve(
                 workers=1, limit_concurrency=limite or None)
 
 
+@app.command()
+def worker() -> None:
+    """Consume tareas de la cola. No sirve HTTP.
+
+    Es el otro lado de `SMART_IMPORT_ROLE=api`: la API recibe los archivos y
+    encola, este proceso hace el trabajo pesado y devuelve los resultados. Toda
+    la configuracion sale del entorno; si falta algo, no arranca y dice que.
+    """
+    from .worker.main import main
+
+    raise typer.Exit(main())
+
+
 
 

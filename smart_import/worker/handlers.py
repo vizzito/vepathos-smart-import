@@ -22,8 +22,8 @@ from ..artifacts import (
 )
 from ..config import Config
 from ..jobs import (
-    COMPLETED, FAILED, GEOCODE_FAILED, GEOCODING, NEEDS_REVIEW, NORMALIZED,
-    Job, JobStore,
+    ANALYZING, COMPLETED, FAILED, GEOCODE_FAILED, GEOCODING, NEEDS_REVIEW,
+    NORMALIZED, Job, JobStore,
 )
 from ..logging_setup import stage
 from ..schemas import resolve_schema_path
@@ -79,7 +79,11 @@ def run_normalize_job(ctx: WorkerContext, job: Job, schema_path: Path,
     output = ctx.artifacts.reserve(job.id, FLAT)
     resolved_tz = resolve_timezone(timezone, depot_timezone, job.timezone)
 
-    job.touch(NORMALIZED)
+    # OCUPADO mientras se trabaja, no `normalized`. Cuando el normalize corria
+    # inline nadie podia ver este estado intermedio; con el trabajo en otro nodo,
+    # `busy` es lo UNICO que mira la API para saber si ya hay resultado, y
+    # anunciar el final al empezar le hace devolver un job con el report vacio.
+    job.touch(ANALYZING)
     ctx.store.save(job)
     try:
         result = run_normalize(

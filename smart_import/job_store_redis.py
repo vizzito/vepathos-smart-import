@@ -12,7 +12,8 @@ Tres claves por job, todas bajo el prefijo configurable:
 
     {prefijo}job:{job_id}            el estado completo, con TTL
     {prefijo}jobs                    ZSET por created_at, para `list()`
-    {prefijo}lock:geocode:{job_id}   la reserva del geocode
+    {prefijo}lock:geocode:{job_id}   la reserva del geocode (la pide el usuario)
+    {prefijo}lock:run:{job_id}       quien lo esta ejecutando AHORA (entre workers)
 
 El lock es la version distribuida de `claim_geocode`: en memoria alcanzaba con
 mirar y escribir el estado bajo el mismo `threading.Lock`, pero entre dos
@@ -79,6 +80,9 @@ class RedisJobStore:
 
     def _lock_key(self, job_id: str) -> str:
         return f"{self._prefix}lock:geocode:{job_id}"
+
+    def _run_key(self, job_id: str) -> str:
+        return f"{self._prefix}lock:run:{job_id}"
 
     @property
     def _index(self) -> str:
@@ -170,6 +174,42 @@ class RedisJobStore:
         job.touch(GEOCODE_QUEUED)
         self.save(job)
         return True
+
+    def claim_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
+        """Toma el derecho a EJECUTAR una tarea de este job. False si lo tiene otro.
+
+        Es la exclusion entre WORKERS, distinta de `claim_geocode`, que es la
+        reserva de negocio del usuario. La cola es at-least-once: un mensaje se
+        redeliverea porque se corto un canal, no solo porque el nodo murio, y
+        dos workers escribiendo la misma salida la dejan a medias.
+
+        El TTL corto es lo que hace que un `kill -9` no clave el job: el que
+        trabaja renueva, el que murio deja de renovar y en un minuto otro lo
+        toma. Reclamar lo propio de nuevo (reintento en el mismo nodo) se
+        permite, o un worker se bloquearia a si mismo.
+        """
+        clave = self._run_key(job_id)
+        if self._client.set(clave, holder, nx=True, ex=max(1, int(ttl_s))):
+            return True
+        return _text(self._client.get(clave)) == holder and self.renew_run(
+            job_id, holder, ttl_s)
+
+    def renew_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
+        """Estira la reserva mientras se trabaja. False si ya no es nuestra.
+
+        Leer y escribir son dos pasos: entre medio la clave puede vencer y
+        tomarla otro, y esta renovacion se la robaria. La ventana es de
+        microsegundos contra un TTL de minutos, y el costo de perderla es que
+        dos nodos hagan el mismo trabajo idempotente — no vale un script Lua.
+        """
+        if _text(self._client.get(self._run_key(job_id))) != holder:
+            return False
+        return bool(self._client.set(self._run_key(job_id), holder,
+                                     ex=max(1, int(ttl_s)), xx=True))
+
+    def release_run(self, job_id: str, holder: str) -> None:
+        if _text(self._client.get(self._run_key(job_id))) == holder:
+            self._client.delete(self._run_key(job_id))
 
     def delete(self, job_id: str) -> bool:
         existia = bool(self._client.delete(self._key(job_id)))
