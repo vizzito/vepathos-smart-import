@@ -765,10 +765,15 @@ Host vepathos-tunnel
   User <usuario>
   LocalForward 16379 10.0.0.2:6379     # Redis
   LocalForward 5673  10.0.0.2:5672     # RabbitMQ
-  LocalForward 8110  10.0.0.2:8100     # la api de smart-import
+  LocalForward 8110  127.0.0.1:8100    # la api de smart-import
   ServerAliveInterval 30
   ExitOnForwardFailure yes
 ```
+
+La dirección de la derecha **la resuelve el servidor**, no tu máquina: por eso
+Redis y RabbitMQ se piden por su IP en la red privada, y la api —que corre en
+la misma VM a la que entrás y publica en loopback— se pide como `127.0.0.1`. Si
+la movés a otra VM, ahí va su IP privada.
 
 ```bash
 ssh -N vepathos-tunnel &

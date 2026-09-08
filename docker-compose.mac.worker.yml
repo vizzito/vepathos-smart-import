@@ -17,11 +17,15 @@
 #   Host vepathos-tunnel
 #     HostName <ip-publica-del-server>
 #     User <usuario>
-#         LocalForward 16379 10.0.0.2:6379     # Redis
+#     LocalForward 16379 10.0.0.2:6379     # Redis
 #     LocalForward 5673  10.0.0.2:5672     # RabbitMQ
-#     LocalForward 8110  10.0.0.2:8100     # la api de smart-import
+#     LocalForward 8110  127.0.0.1:8100    # la api de smart-import
 #     ServerAliveInterval 30
 #     ExitOnForwardFailure yes
+#
+# La direccion de la derecha la resuelve EL SERVIDOR, no tu maquina: Redis y
+# RabbitMQ por su IP privada, y la api —que corre en la VM a la que entras y
+# publica en loopback— como 127.0.0.1.
 #
 # Si el tunel se cae, el worker no pierde nada: deja de consumir, reintenta la
 # conexion sola y las tareas quedan en la cola para el que pueda tomarlas.
