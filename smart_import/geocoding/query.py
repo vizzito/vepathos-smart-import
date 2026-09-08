@@ -147,8 +147,16 @@ def is_weak_result(result: GeocodeResult | None, *, review_band: float) -> bool:
 
 
 def pick_better(*results: GeocodeResult | None) -> GeocodeResult | None:
+    """Elige el mejor resultado. Nunca descarta un GeocodeResult a favor de None.
+
+    Regresión Tandil: dos `not_found` (sin coords) empataban con el rank de
+    `None` → `pick_better` devolvía None y el runner hacía
+    `result = better` → AttributeError en `result.status`.
+    """
     best = None
     for result in results:
-        if result_rank(result) > result_rank(best):
+        if result is None:
+            continue
+        if best is None or result_rank(result) > result_rank(best):
             best = result
     return best

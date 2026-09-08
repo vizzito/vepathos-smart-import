@@ -536,7 +536,8 @@ def test_precision_paste_miami_whatsapp_6():
     assert d["overall"]["total"] == 6
     con = d["with_house_number"]
     assert con["total"] == 6
-    assert con["pin_pct"] >= 50, f"pin Miami cayo a {con['pin_pct']}%"
+    assert con["pin_pct"] == 100, f"el placeholder Miami tiene que pinnear las 6: {con['pin_pct']}%"
+    assert con["hit_pct"] >= 80, f"acierto Miami cayo a {con['hit_pct']}%"
     for row in reporte.rows:
         sent = row.get("sent") or ""
         assert "Argentina" not in sent, sent

@@ -11,10 +11,12 @@ cero necesidad de abrir PBFs de 300 MB para saber que contienen. Los PBF de pais
 Prioridad al resolver (depot / bbox):
   1. extract con bbox en el nombre que cubra el punto  → el MAS CHICO
   2. extract que cubra un bbox pedido                  → el MAS CHICO
-  3. zone_hint por nombre de carpeta/archivo
-  4. PBF de pais (sin bbox en el nombre) cuyo bbox
-     en pbf_country_bounds.json cubre el punto
-     → mayor margen interior (nunca el mas chico en disco)
+  3. PBF de pais cuyo bbox en pbf_country_bounds.json
+     cubre el punto (mayor margen interior). zone_hint
+     solo puede REFINAR entre candidatos que ya cubren;
+     nunca gana un PBF que no cubre el punto.
+  4. zone_hint estricto (sin coordenadas) — slug/zona exactos
+     o ISO-2 expandido; NUNCA substring corto ("AR" ∈ "cartier")
   5. None  (nunca inventa ni llama afuera)
 
 Los PBF viven en la raíz data/ del route-optimizer, separados por continente:
@@ -34,13 +36,100 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from ..resources import coverage_bounds_for
+from ..resources import coverage_bounds_for, phone_region_country_map
 
 PBF_SUFFIX = "-pyrosm.osm.pbf"
 _BBOX_RE = re.compile(
     r"n(?P<north>-?\d+(?:\.\d+)?)_s(?P<south>-?\d+(?:\.\d+)?)"
     r"_e(?P<east>-?\d+(?:\.\d+)?)_w(?P<west>-?\d+(?:\.\d+)?)"
 )
+_HINT_SPLIT = re.compile(r"[^a-z0-9]+")
+
+
+def _norm_hint(value: str) -> str:
+    return (value or "").strip().lower().replace("_", "-")
+
+
+def _hint_tokens(hint: str) -> tuple[str, ...]:
+    """Tokens de match para zone_hint: original + expansión ISO-2 → slug/nombre.
+
+    "AR" → ("ar", "argentina"). "BR" → ("br", "brasil", "brazil") vía aliases
+    del JSON de bounds. Nunca substring corto suelto ("ar" ∈ "cartier").
+    """
+    from collections import defaultdict
+
+    from ..resources import country_bounds, country_label_from_slug
+
+    raw = (hint or "").strip()
+    if not raw:
+        return ()
+    tokens: list[str] = []
+    seen: set[str] = set()
+
+    def _add(value: str) -> None:
+        norm = _norm_hint(value)
+        if norm and norm not in seen:
+            seen.add(norm)
+            tokens.append(norm)
+
+    _add(raw)
+    if len(raw) == 2 and raw.isalpha():
+        name = phone_region_country_map().get(raw.upper())
+        if name:
+            _add(name)
+
+    bounds = country_bounds()
+    by_bounds: dict[tuple[float, float, float, float], list[str]] = defaultdict(list)
+    for key, box in bounds.items():
+        by_bounds[box].append(key)
+    # Label → slug (United States → usa / united-states si están en bounds).
+    for slug, label in country_label_from_slug().items():
+        label_n = _norm_hint(label)
+        if label_n in seen or slug in seen:
+            _add(slug)
+            _add(label_n)
+    # Alias hermanos con el mismo bbox (brasil ↔ brazil).
+    for token in list(seen):
+        box = bounds.get(token)
+        if box:
+            for key in by_bounds[box]:
+                _add(key)
+    return tuple(tokens)
+
+
+def _stem_parts(slug: str) -> set[str]:
+    return {p for p in _HINT_SPLIT.split(slug) if p}
+
+
+def _hint_matches_entry(entry: "PbfEntry", tokens: tuple[str, ...]) -> bool:
+    """Match estricto: slug/zona exactos o parte de slug (nunca substring corto).
+
+    Regresión Tandil: zone_hint="AR" matcheaba `ashmore-cartier` porque
+    "ar" ∈ "cartier", y al ser el PBF más chico ganaba sobre Argentina.
+    """
+    if not tokens:
+        return False
+    slug = entry.country_slug or ""
+    zone = _norm_hint(entry.zone)
+    stem = _norm_hint(entry.key)
+    parts = _stem_parts(stem) | _stem_parts(zone) | ({slug} if slug else set())
+    for token in tokens:
+        if not token:
+            continue
+        # ISO-2 / hints cortos: solo igualdad exacta de slug/zona/parte.
+        if len(token) <= 3:
+            if token in parts or token == slug or token == zone or token == stem:
+                return True
+            continue
+        if token == slug or token == zone or token == stem:
+            return True
+        if token in parts:
+            return True
+        if slug and (slug == token or stem == token):
+            return True
+        if stem.startswith(f"{token}-") or stem.endswith(f"-{token}"):
+            return True
+    return False
 
 
 def _coverage_for(entry: "PbfEntry") -> tuple[float, float, float, float] | None:
@@ -191,10 +280,16 @@ class PbfRegistry:
             key=lambda e: (e.country_interior_margin(lat, lon), -e.size_bytes),
         )
 
+    def entries_matching_hint(self, zone_hint: str) -> list[PbfEntry]:
+        tokens = _hint_tokens(zone_hint)
+        if not tokens:
+            return []
+        return [e for e in self.entries if _hint_matches_entry(e, tokens)]
+
     def resolve(self, lat: float | None = None, lon: float | None = None,
                 bbox: tuple[float, float, float, float] | None = None,
                 zone_hint: str | None = None) -> PbfEntry | None:
-        """Prioridad: extract bbox > punto > zone_hint > pais. Nunca adivina fuera."""
+        """Prioridad: extract bbox > punto > pais (geo) > hint estricto."""
         if bbox:
             if found := self.find_for_bbox(*bbox):
                 return found
@@ -204,12 +299,34 @@ class PbfRegistry:
         if lat is not None and lon is not None:
             if found := self.find_for_point(lat, lon):
                 return found
+            country = self.find_country_for_point(lat, lon)
+            if country is not None:
+                # Hint solo refina entre PBFs que YA cubren el punto.
+                if zone_hint:
+                    hinted = [
+                        e for e in self.entries_matching_hint(zone_hint)
+                        if (e.has_bbox and e.covers(lat, lon))
+                        or (not e.has_bbox and e.country_covers(lat, lon))
+                    ]
+                    if hinted:
+                        return max(
+                            hinted,
+                            key=lambda e: (
+                                e.country_interior_margin(lat, lon)
+                                if not e.has_bbox else float("inf"),
+                                -e.size_bytes if not e.has_bbox else -e.area,
+                            ),
+                        )
+                return country
+            # Sin cobertura geo: hint estricto como último recurso (ISO→slug),
+            # nunca el substring corto que elegía ashmore-cartier.
+            if zone_hint:
+                matches = self.entries_matching_hint(zone_hint)
+                if matches:
+                    return min(matches, key=lambda e: (0 if e.has_bbox else 1, e.size_bytes))
+            return None
         if zone_hint:
-            matches = [e for e in self.entries if zone_hint.lower() in e.zone.lower()
-                       or zone_hint.lower() in e.path.name.lower()]
+            matches = self.entries_matching_hint(zone_hint)
             if matches:
                 return min(matches, key=lambda e: (0 if e.has_bbox else 1, e.size_bytes))
-        if lat is not None and lon is not None:
-            if found := self.find_country_for_point(lat, lon):
-                return found
         return None

@@ -232,10 +232,17 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                     alt_result = _lookup(
                         cache, geocoder, alt, context, effective_origin, bbox)
                     better = pick_better(result, alt_result)
-                    if better is not result:
+                    if better is not None and better is not result:
                         retries += 1
                         result = better
                         query = alt
+
+            # Defensa: _lookup / pick_better nunca deberían dejar None acá.
+            if result is None:
+                result = GeocodeResult(
+                    status=STATUS_NOT_FOUND,
+                    detail={"reason": "geocode_returned_none"},
+                )
 
             if result.status in (STATUS_MATCHED, STATUS_LOW) and result.has_coords:
                 result = _apply_depot_guards(

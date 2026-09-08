@@ -1,14 +1,15 @@
 """La banda de confianza se calcula UNA sola vez, y aca.
 
 Contrato del producto (env):
-  score >= GEOCODE_VALID_BAND   → valid (verde)
-  score >= GEOCODE_REVIEW_BAND  → review (ambar)
+  score >= GEOCODE_VALID_BAND   → valid (verde)   # default 0.80
+  score >= GEOCODE_REVIEW_BAND  → review (ambar)  # default 0.70
   score <  GEOCODE_REVIEW_BAND  → sin pin (needs_geocoding)
 
 `geocode_confidence` es el score textual REAL. El color sigue ese numero
 cuando hay pin (already/manual siempre verdes).
 
-Precision (`street`, `street_mismatch`, …) es diagnostico: NO redefine la banda.
+Precision (`street`, `street_mismatch`, …) es diagnostico en la UI: NO redefine
+la banda. Soft-reject (`force_review`) si mantiene el techo ambar.
 """
 from __future__ import annotations
 
@@ -22,8 +23,8 @@ BAND_REVIEW = "review"
 BAND_NEEDS_GEOCODING = "needs_geocoding"
 
 #: cortes por defecto; el despliegue los mueve por Config / .env
-DEFAULT_VALID_AT = 0.85
-DEFAULT_REVIEW_AT = 0.75
+DEFAULT_VALID_AT = 0.80
+DEFAULT_REVIEW_AT = 0.70
 
 _HARD_MISS = frozenset({
     STATUS_NOT_FOUND, STATUS_ERROR, "a_geocodificar", "needs_geocode", "failed",
@@ -38,16 +39,13 @@ def band_for(status: str | None, confidence: float | None, *, has_coords: bool =
              force_review: bool = False) -> str:
     """Banda de una fila. Sin coordenadas → needs_geocoding.
 
-    Con pin: already/manual → valid; el resto usa el score contra `valid_at` /
-    `review_at` (GEOCODE_VALID_BAND / GEOCODE_REVIEW_BAND), con UN techo:
+    Con pin: already/manual → valid (coordenadas del archivo / operador).
+    El resto usa el score contra `valid_at` / `review_at`
+    (GEOCODE_VALID_BAND / GEOCODE_REVIEW_BAND).
 
-    **una precision que no resolvio la puerta nunca puede ser verde.** Un match a
-    nivel calle puede sacar 0.87 de parecido TEXTUAL y aun asi ser el centroide de
-    una avenida de 6 km. Verde le dice al operador "usalo tal cual"; eso es lo que
-    hay que evitar. `confidence` sigue siendo el score real (mide el texto) y la
-    banda mide cuanto se puede confiar en el PUNTO: son dos preguntas distintas.
-
-    El log del runner imprime esta misma banda, asi que log y UI no se separan.
+    Soft-reject (`force_review`) puede bajar un verde a ambar. La precision OSM
+    queda como diagnostico y no cambia el color (el % en la UI y la banda deben
+    coincidir: 97% no puede ser ambar solo por ser `street`).
     """
     if not has_coords:
         return BAND_NEEDS_GEOCODING
@@ -66,13 +64,13 @@ def band_for(status: str | None, confidence: float | None, *, has_coords: bool =
     else:
         return BAND_NEEDS_GEOCODING
 
-    # Techo: sin altura resuelta —o con soft-reject— el pin es aproximado.
-    if banda == BAND_VALID and (force_review or _is_approximate(precision)):
+    # Soft-reject: pin de respaldo — no afirmar "usalo tal cual".
+    if banda == BAND_VALID and force_review:
         return BAND_REVIEW
     return banda
 
 
-#: precisiones que NO resolvieron el numero de puerta: el pin es aproximado
+#: precisiones aproximadas (diagnostico UI / logs; ya no redefinen la banda)
 APPROXIMATE_PRECISIONS = frozenset({
     "street", "street_mismatch", "street_weak", "suspect", "below_threshold",
     "locality", "poi",

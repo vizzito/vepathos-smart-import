@@ -165,6 +165,69 @@ def test_caba_no_elige_uruguay_aunque_sea_mas_chico():
     assert chosen.country_slug == "argentina"
 
 
+def test_zone_hint_ar_no_elige_ashmore_cartier():
+    """Regresión Tandil: zone_hint='AR' matcheaba 'ashmore-cARtier' por substring.
+
+    El depot manda country=AR; el resolve viejo hacía `'ar' in filename` y
+    elegía el PBF más chico (islas Ashmore y Cartier, Océano Índico). osmium
+    cortaba 92 bytes y el geocode fallaba con 'extract inútil'.
+    """
+    from smart_import.geocoding.pbf_registry import PbfEntry
+
+    ar = PbfEntry(
+        path=Path("/data/south-america/argentina-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=427_000_000,
+    )
+    ashmore = PbfEntry(
+        path=Path("/data/australia/ashmore-cartier-pyrosm.osm.pbf"),
+        zone="australia", size_bytes=120_000,
+    )
+    registry = PbfRegistry([ar, ashmore])
+    tandil = (-37.3004059, -59.0876735)
+    chosen = registry.resolve(lat=tandil[0], lon=tandil[1], zone_hint="AR")
+    assert chosen is ar
+    assert chosen.country_slug == "argentina"
+    # Sin coordenadas, el ISO-2 expandido sigue apuntando a Argentina, no a ashmore.
+    by_hint = registry.resolve(zone_hint="AR")
+    assert by_hint is ar
+
+
+def test_zone_hint_br_resuelve_brazil_no_substring():
+    """BR → Brasil/brazil; no debe caer en un PBF chico por substring."""
+    from smart_import.geocoding.pbf_registry import PbfEntry
+
+    br = PbfEntry(
+        path=Path("/data/south-america/brazil-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=800_000_000,
+    )
+    tiny = PbfEntry(
+        path=Path("/data/other/barbados-pyrosm.osm.pbf"),
+        zone="other", size_bytes=50_000,
+    )
+    registry = PbfRegistry([br, tiny])
+    assert registry.resolve(lat=-23.55, lon=-46.63, zone_hint="BR") is br
+    assert registry.resolve(zone_hint="BR") is br
+
+
+def test_zone_hint_florida_refina_sobre_usa():
+    """Con coords en Miami, hint 'florida' debe preferir la subdivisión."""
+    from smart_import.geocoding.pbf_registry import PbfEntry
+
+    usa = PbfEntry(
+        path=Path("/data/north-america/united-states-pyrosm.osm.pbf"),
+        zone="north-america", size_bytes=9_000_000_000,
+    )
+    florida = PbfEntry(
+        path=Path("/data/north-america/us_tile/florida-pyrosm.osm.pbf"),
+        zone="us_tile", size_bytes=400_000_000,
+    )
+    registry = PbfRegistry([usa, florida])
+    miami = (25.7617, -80.1918)
+    # Sin hint gana el de mayor margen interior (florida suele ganar por bbox chico).
+    chosen = registry.resolve(lat=miami[0], lon=miami[1], zone_hint="florida")
+    assert chosen is florida
+
+
 def test_extract_chico_gana_sobre_pais():
     extract = _parse(Path("/d/_extracts/ba/n-34.58_s-34.92_e-58.15_w-58.62-pyrosm.osm.pbf"))
     pais = _parse(Path("/data/south-america/argentina-pyrosm.osm.pbf"))

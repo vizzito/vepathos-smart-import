@@ -57,16 +57,19 @@ def test_un_pin_flojo_pide_ubicacion_manual():
                     review_at=CFG.geocode_review_band) == BAND_NEEDS_GEOCODING
 
 
-def test_un_pin_aproximado_nunca_es_verde():
-    """`confidence` mide el TEXTO; la banda mide cuanto se confia en el PUNTO.
+def test_un_pin_aproximado_sigue_el_score():
+    """Precision OSM es diagnostico: el color lo marca el % vs GEOCODE_*_BAND.
 
-    Un match a nivel calle puede sacar 0.90 de parecido textual y ser igual el
-    centroide de una avenida de 6 km. Verde le dice al operador "usalo tal cual",
-    y eso es justo lo que no se puede afirmar sin la altura resuelta.
+    Un match a nivel calle con 0.90 (>= valid) es verde; uno en el rango ambar
+    sigue ambar. Las coords del archivo (`already`/`manual`) no se discuten.
     """
     for precision in ("street", "street_mismatch", "street_weak", "suspect",
                       "locality", "poi"):
         assert band_for("low_confidence", 0.90, precision=precision,
+                        valid_at=CFG.geocode_valid_band,
+                        review_at=CFG.geocode_review_band) == BAND_VALID, precision
+        mid = (CFG.geocode_review_band + CFG.geocode_valid_band) / 2
+        assert band_for("low_confidence", mid, precision=precision,
                         valid_at=CFG.geocode_valid_band,
                         review_at=CFG.geocode_review_band) == BAND_REVIEW, precision
 

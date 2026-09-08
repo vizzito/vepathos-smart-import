@@ -1,5 +1,7 @@
 """Query de geocode: no muta address; compose + clean + enhance opt-in."""
-from smart_import.geocoding.base import STATUS_LOW, STATUS_MATCHED, GeocodeResult
+from smart_import.geocoding.base import (
+    STATUS_LOW, STATUS_MATCHED, STATUS_NOT_FOUND, GeocodeResult,
+)
 from smart_import.geocoding.depot_context import DepotContext
 from smart_import.geocoding.query import (
     build_geocode_query, cleaned_query, is_weak_result, locality_tokens_from_row,
@@ -87,6 +89,19 @@ def test_pick_better_prefiere_housenumber():
         lat=-34.55, lon=-58.46)
     assert result_rank(house)[0] > result_rank(street)[0]  # precision primero
     assert pick_better(street, house).precision == "housenumber"
+
+
+def test_pick_better_dos_not_found_no_devuelve_none():
+    """Regresión: empate de rank con None rompía el runner (Tandil 160 filas)."""
+    a = GeocodeResult(status=STATUS_NOT_FOUND, detail={"reason": "sin candidatos"})
+    b = GeocodeResult(status=STATUS_NOT_FOUND, detail={"reason": "sin candidatos"})
+    assert result_rank(a) == result_rank(None)
+    chosen = pick_better(a, b)
+    assert chosen is a
+    assert chosen.status == STATUS_NOT_FOUND
+    assert pick_better(None, a) is a
+    assert pick_better(a, None) is a
+    assert pick_better(None, None) is None
 
 
 def test_is_weak_street_match():
