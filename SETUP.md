@@ -734,7 +734,28 @@ deja de tener efecto y el techo real pasa a ser cuántos workers hay prendidos.
 Y como el estado vive en Redis, el balanceo **ya no necesita ser sticky**:
 cualquier nodo api contesta por cualquier job.
 
-#### Paso 2 — Prender un worker
+#### Paso 2 — Prender el worker de la misma VM
+
+**Antes que ninguna máquina de afuera.** Desde el paso anterior, la VM no
+procesa nada por su cuenta: si no hay un solo worker, los archivos se aceptan y
+se encolan sin que nadie los haga. Este worker es el piso del servicio; los de
+afuera suman capacidad y se pueden ir sin que se note.
+
+```bash
+cp .env.worker.example .env.worker
+# el token del Paso 1, el broker y Redis por su IP privada, y —como esta
+# maquina tiene los PBF montados— SMART_IMPORT_CONSUME_GEOCODE=true
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml -f docker-compose.samevm.worker.yml up -d
+```
+
+El overlay `samevm` resuelve un detalle que muerde: la api publica en
+`127.0.0.1:8100` del host, así que desde un container esa dirección no existe.
+El worker entra a la red del compose de la api y le pide por su nombre de
+servicio, igual que hace RouteHub.
+
+#### Paso 3 — Sumar workers de otras máquinas
 
 En la otra máquina, con el repo clonado:
 
@@ -753,7 +774,7 @@ docker compose --env-file .env.worker -f docker-compose.worker.yml up -d
 Redis y la api por separado, así el que falla se ve solo en vez de aparecer
 como «el import no avanza» media hora después.
 
-#### Paso 3 — El caso de la Mac (o cualquier máquina detrás de NAT)
+#### Paso 4 — El caso de la Mac (o cualquier máquina detrás de NAT)
 
 La Mac no tiene IP pública ni está en la red privada del servidor. No hace
 falta: **todas las conexiones las abre el worker**. Un túnel SSH alcanza.
@@ -790,7 +811,7 @@ corre en la Mac — un Redis local en 6379 se llevaría los jobs de otro lado.
 Si el túnel se cae, no se pierde nada: el worker deja de consumir, reintenta la
 conexión solo, y las tareas quedan en la cola para el que pueda tomarlas.
 
-#### Paso 4 — RouteHub y la web: nada que tocar
+#### Paso 5 — RouteHub y la web: nada que tocar
 
 El contrato HTTP no cambió. `POST /imports` sigue devolviendo 201 con el job
 entero cuando el resultado llega dentro de `SMART_IMPORT_DEFAULT_WAIT_S`, y
@@ -798,7 +819,7 @@ entero cuando el resultado llega dentro de `SMART_IMPORT_DEFAULT_WAIT_S`, y
 Lo único que conviene revisar es que el cliente siga el `job_id` por
 `GET /imports/{id}` o por SSE, que es lo que la UI ya hace para el geocode.
 
-#### Paso 5 — La verificación que importa
+#### Paso 6 — La verificación que importa
 
 No es «el container está arriba», es **ver un import resolviéndose en la otra
 máquina sin haber tocado el `.env` del servidor**:

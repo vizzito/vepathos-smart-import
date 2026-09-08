@@ -1,0 +1,34 @@
+# ===========================================================================
+# Overlay: worker en la MISMA VM que la api. Va JUNTO a docker-compose.worker.yml
+#
+#   docker compose --env-file .env.worker \
+#     -f docker-compose.worker.yml -f docker-compose.samevm.worker.yml up -d
+#
+# Este es el worker que conviene tener SIEMPRE prendido. Un nodo api sin
+# ningun worker acepta archivos y los encola sin que nadie los haga: si el
+# unico worker es una laptop, cerrar la laptop deja el servicio sin quien
+# trabaje. Este cubre el piso; los de afuera suman capacidad.
+#
+# El problema que resuelve: la api publica en 127.0.0.1:8100 del host (no puede
+# hacer otra cosa, no tiene autenticacion propia), asi que desde un container
+# esa direccion no existe. La solucion es la misma que usa RouteHub: entrar a
+# la red del compose de la api y pedirle por su nombre de servicio.
+#
+# La red la crea el otro compose, por eso es `external`. Si tu proyecto no se
+# llama `vepathos-smart-import` (el nombre sale de la carpeta), pasale el
+# nombre real:  docker network ls | grep smart-import
+# ===========================================================================
+
+services:
+
+  worker:
+    environment:
+      SMART_IMPORT_API_URL: http://smart-import:8100
+    networks:
+      - default
+      - api
+
+networks:
+  api:
+    external: true
+    name: ${SMART_IMPORT_API_NETWORK:-vepathos-smart-import_default}
