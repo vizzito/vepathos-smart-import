@@ -98,7 +98,63 @@ def describir(cfg: Config) -> list[str]:
     return lineas
 
 
-def main() -> int:
+def verificar_conexiones(cfg: Config) -> list[tuple[str, str | None]]:
+    """Toca las tres piezas de las que depende un worker. `None` = anduvo.
+
+    Dar de alta un nodo es, en la practica, adivinar si el tunel esta bien
+    armado. Esto lo convierte en una respuesta: cada dependencia se prueba por
+    separado, asi el que falla se ve solo, y nada de esto arranca el consumo.
+    """
+    return [
+        ("cola", _probar(lambda: _ping_broker(cfg))),
+        ("estado", _probar(lambda: _ping_redis(cfg))),
+        ("archivos", _probar(lambda: _ping_api(cfg))),
+    ]
+
+
+def _probar(fn) -> str | None:
+    try:
+        fn()
+        return None
+    except Exception as exc:
+        # pika levanta excepciones sin texto: "AMQPConnectionError: " no le
+        # dice nada a nadie. El tipo solo ya es mas informacion que el vacio.
+        return f"{type(exc).__name__}: {exc}" if str(exc) else type(exc).__name__
+
+
+def _ping_broker(cfg: Config) -> None:
+    from ..queue.broker import RabbitBroker
+
+    # Un intento y listo: esto es un diagnostico interactivo, no el arranque
+    # del servicio. Los 15 s de reintentos que le sirven a un worker que
+    # arranca junto al broker aca son solo espera.
+    broker = RabbitBroker(cfg, intentos_conexion=1)
+    try:
+        # Declarar la topologia es la prueba util: verifica credenciales,
+        # vhost y permisos, no solo que el puerto conteste.
+        broker._conectar()
+    finally:
+        broker.close()
+
+
+def _ping_redis(cfg: Config) -> None:
+    store = make_job_store(cfg)
+    store._client.ping()
+
+
+def _ping_api(cfg: Config) -> None:
+    import httpx
+
+    r = httpx.get(f"{cfg.api_url.rstrip('/')}/internal/health",
+                  headers={"X-Smart-Import-Token": cfg.worker_token}, timeout=10)
+    if r.status_code == 404:
+        # 404 es la respuesta de `/internal` a quien no trae el token bueno:
+        # no confirma ni que la ruta existe. Desde aca, es el token.
+        raise RuntimeError("la api respondio 404: el token no coincide con el suyo")
+    r.raise_for_status()
+
+
+def main(solo_verificar: bool = False) -> int:
     cfg = Config.from_env()
     setup_logging(verbose=cfg.verbose)
     logger = get_logger()
@@ -114,6 +170,13 @@ def main() -> int:
 
     for linea in describir(cfg):
         print(f"  {linea}")
+
+    if solo_verificar:
+        fallas = 0
+        for pieza, error in verificar_conexiones(cfg):
+            print(f"  {pieza:<14} {'ok' if error is None else error}")
+            fallas += error is not None
+        return 1 if fallas else 0
 
     artifacts = make_artifact_store(cfg)
     store = make_job_store(cfg, artifacts)

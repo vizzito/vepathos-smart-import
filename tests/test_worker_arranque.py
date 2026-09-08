@@ -119,3 +119,35 @@ def test_el_catalogo_dice_contra_que_habla_este_nodo(cfg_worker):
 def test_el_catalogo_no_publica_el_token(cfg_worker):
     """Los logs de un deploy se pegan en un chat: el token no puede estar ahi."""
     assert "secreto" not in "\n".join(describir(cfg_worker))
+
+
+# --------------------------------------------------------------- --check
+
+def test_el_chequeo_prueba_las_tres_piezas_por_separado(cfg_worker, monkeypatch):
+    """Dar de alta un nodo es adivinar si el tunel quedo bien: esto lo responde."""
+    from smart_import.worker import main as modulo
+
+    monkeypatch.setattr(modulo, "_ping_broker", lambda cfg: None)
+    monkeypatch.setattr(modulo, "_ping_redis", lambda cfg: None)
+    monkeypatch.setattr(modulo, "_ping_api", lambda cfg: (_ for _ in ()).throw(
+        ConnectionRefusedError("nadie escucha en 8110")))
+
+    resultado = dict(modulo.verificar_conexiones(cfg_worker))
+
+    assert resultado["cola"] is None and resultado["estado"] is None
+    assert "8110" in resultado["archivos"], "hay que poder ver CUAL falla"
+
+
+def test_una_excepcion_sin_texto_igual_dice_algo(cfg_worker, monkeypatch):
+    """pika levanta errores vacios: 'AMQPConnectionError: ' no ayuda a nadie."""
+    from smart_import.worker import main as modulo
+
+    class ErrorMudo(Exception):
+        pass
+
+    monkeypatch.setattr(modulo, "_ping_broker", lambda cfg: (_ for _ in ()).throw(
+        ErrorMudo()))
+    monkeypatch.setattr(modulo, "_ping_redis", lambda cfg: None)
+    monkeypatch.setattr(modulo, "_ping_api", lambda cfg: None)
+
+    assert dict(modulo.verificar_conexiones(cfg_worker))["cola"] == "ErrorMudo"

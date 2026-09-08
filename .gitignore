@@ -10,6 +10,8 @@ benchmarks/results.*
 benchmarks/extraction.json
 .env
 .env.prod
+# El de un nodo worker: lleva la password del broker y el token de /internal.
+.env.worker
 # Override de desarrollo (monta el codigo del host). Se copia del .example y
 # NUNCA se versiona: si viajara al servidor, prod dejaria de correr la imagen.
 docker-compose.override.yml

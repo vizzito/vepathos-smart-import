@@ -27,7 +27,7 @@ Documentos relacionados:
 9. [Comandos útiles (cheatsheet)](#9-comandos-útiles-cheatsheet)
 10. [Tests](#10-tests)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
-12. [Deploy en producción](#12-deploy-en-producción)
+12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo entre máquinas](#124-repartir-el-trabajo-entre-máquinas)
 13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos) · [13.3 Cuando algo se cae](#133-qué-pasa-cuando-algo-se-cae)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
 15. [Checklist “¿anda?”](#15-checklist-anda)
@@ -698,6 +698,150 @@ docker compose up -d smart-import
 | `environment_age_s` mucho mayor a 30 | murió el refresco de fondo y lo que reporta es viejo |
 | `geocoding.pbf_available: false` | el mount de PBFs se cayó; el geocode va a fallar |
 
+### 12.4 Repartir el trabajo entre máquinas
+
+Todo lo anterior describe **una** VM que hace todo. Esta sección es la otra
+forma: la VM sigue recibiendo los archivos y sirviendo las descargas, pero el
+trabajo pesado lo hacen otras máquinas —incluida una Mac de escritorio— que se
+prenden y se apagan sin coordinar nada.
+
+**Cuándo vale la pena.** Cuando el techo de la VM se nota (imports esperando
+turno o 429 en horario pico), o cuando hay CPU ociosa en otra máquina que no se
+puede exponer a internet. Si con una instancia alcanza, no lo hagas: son tres
+piezas más de infraestructura para operar.
+
+**Lo que tiene que existir antes:** un RabbitMQ y un Redis alcanzables desde
+los dos lados. Son los mismos que ya usa el optimizer; lo único que separa a
+los dos servicios es el prefijo de las colas y la DB de Redis.
+
+#### Paso 1 — Convertir la VM en el nodo `api`
+
+En su `.env`, descomentar el bloque *«COMO SE ESCALA — opción 2»* de
+`.env.prod.example`: el rol, el broker, Redis y el token. Después:
+
+```bash
+openssl rand -hex 32                        # el token, el MISMO en los dos lados
+docker compose up -d smart-import
+curl -s localhost:8100/health | python3 -m json.tool | grep -A3 deployment
+```
+
+Si falta el broker o Redis, **el proceso no arranca**. Es a propósito: una API
+que acepta archivos sin tener a quién encargarle el trabajo deja jobs colgados
+que nadie va a terminar.
+
+Desde acá, esta VM no normaliza ni geocodifica nada: `MAX_CONCURRENT_NORMALIZE`
+deja de tener efecto y el techo real pasa a ser cuántos workers hay prendidos.
+Y como el estado vive en Redis, el balanceo **ya no necesita ser sticky**:
+cualquier nodo api contesta por cualquier job.
+
+#### Paso 2 — Prender un worker
+
+En la otra máquina, con el repo clonado:
+
+```bash
+cp .env.worker.example .env.worker
+# editar: RABBITMQ_HOST, REDIS_HOST, SMART_IMPORT_API_URL y el token del Paso 1
+
+# ¿llega a las tres piezas? Esto no consume nada: prueba y sale.
+docker compose --env-file .env.worker -f docker-compose.worker.yml \
+  run --rm worker worker --check
+
+docker compose --env-file .env.worker -f docker-compose.worker.yml up -d
+```
+
+`--check` es el primer comando a correr en una máquina nueva. Prueba la cola,
+Redis y la api por separado, así el que falla se ve solo en vez de aparecer
+como «el import no avanza» media hora después.
+
+#### Paso 3 — El caso de la Mac (o cualquier máquina detrás de NAT)
+
+La Mac no tiene IP pública ni está en la red privada del servidor. No hace
+falta: **todas las conexiones las abre el worker**. Un túnel SSH alcanza.
+
+```bash
+# ~/.ssh/config
+Host vepathos-tunnel
+  HostName <ip-publica-del-server>
+  User <usuario>
+  LocalForward 16379 10.0.0.2:6379     # Redis
+  LocalForward 5673  10.0.0.2:5672     # RabbitMQ
+  LocalForward 8110  10.0.0.2:8100     # la api de smart-import
+  ServerAliveInterval 30
+  ExitOnForwardFailure yes
+```
+
+```bash
+ssh -N vepathos-tunnel &
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml -f docker-compose.mac.worker.yml up -d
+```
+
+El overlay es el mismo patrón que `docker-compose.mac.cutter.yml` del
+optimizer: reemplaza los hosts por `host.docker.internal` y los puertos por los
+del túnel. Los puertos altos (16379/5673/8110) evitan chocar con lo que ya
+corre en la Mac — un Redis local en 6379 se llevaría los jobs de otro lado.
+
+Si el túnel se cae, no se pierde nada: el worker deja de consumir, reintenta la
+conexión solo, y las tareas quedan en la cola para el que pueda tomarlas.
+
+#### Paso 4 — RouteHub y la web: nada que tocar
+
+El contrato HTTP no cambió. `POST /imports` sigue devolviendo 201 con el job
+entero cuando el resultado llega dentro de `SMART_IMPORT_DEFAULT_WAIT_S`, y
+`202` con el `job_id` cuando tarda más ([§13.2](#132-qué-cambia-para-quien-consume-la-api)).
+Lo único que conviene revisar es que el cliente siga el `job_id` por
+`GET /imports/{id}` o por SSE, que es lo que la UI ya hace para el geocode.
+
+#### Paso 5 — La verificación que importa
+
+No es «el container está arriba», es **ver un import resolviéndose en la otra
+máquina sin haber tocado el `.env` del servidor**:
+
+```bash
+# en el server
+JOB=$(curl -s -F "file=@fixtures/es_sin_coords.csv" localhost:8100/imports \
+      | python3 -c 'import json,sys; print(json.load(sys.stdin)["job_id"])')
+
+# en la Mac: el trabajo aparece acá
+docker logs -f vepathos-smart-import-worker
+
+# en el server: el resultado lo sirve la api, no el worker
+curl -s "localhost:8100/imports/$JOB/download?format=flat" | head -3
+```
+
+Y la prueba que de verdad justifica todo esto: **bajar la Mac a mitad de un
+job** (`docker compose stop`, o directamente cerrar la laptop) y ver que otro
+nodo lo termina. Un `stop` drena lo que tiene en vuelo; un corte seco deja la
+tarea sin confirmar y otro worker la retoma en 1-2 minutos.
+
+#### Operar los nodos
+
+```bash
+# más capacidad: prender otro worker (misma imagen, otro nombre)
+SMART_IMPORT_WORKER_NAME=worker-2 docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml up -d
+
+# sacar uno de circulación: SIGTERM, termina lo que está haciendo y sale
+docker compose --env-file .env.worker -f docker-compose.worker.yml stop
+
+# qué hay pendiente y qué fracasó
+rabbitmqctl list_queues name messages | grep smart-import
+```
+
+**Volver atrás** es una variable: `SMART_IMPORT_ROLE=embedded` en el `.env` del
+servidor y `docker compose up -d`. La VM vuelve a hacer todo en su proceso, como
+antes. Lo que se pierde son los jobs que estaban en Redis (la API vuelve a su
+almacén en memoria); las tareas que quedaron en la cola siguen ahí, esperando a
+un worker que ya no va a existir — conviene purgarlas.
+
+**Una trampa a tener presente:** en el nodo api, `GEOCODING_ENABLED=true`
+significa «este despliegue ofrece geocodificar», no «esta máquina puede». Quien
+puede es un worker con `CONSUME_GEOCODE=true` y los PBF montados. Si no hay
+ninguno prendido, los geocodes se encolan y esperan sin que nada avise. Hasta
+que exista el latido de nodos, la forma de verlo es la profundidad de
+`smart-import-geocode`.
+
 **Lo que un reinicio se lleva:** los jobs en vuelo, porque viven en memoria. Los
 archivos ya descargados no se pierden; los imports a medio camino hay que
 volver a subirlos. Es el gap #1 de ARCHITECTURE.md y la razón por la que varias
@@ -815,6 +959,13 @@ Que un nodo esté en modo distribuido se ve en `GET /health` →
 `deployment: {role, state}`. Un worker al que le falta `API_URL`, el token, el
 broker o los PBF que dice consumir **no arranca**: imprime todo lo que falta y
 sale con código 2. Es preferible a que falle la primera tarea media hora después.
+Para probar las tres conexiones sin consumir nada —lo primero a correr en una
+máquina nueva— está `smart-import worker --check`.
+
+Los comandos de arriba son el modo desnudo, para entender qué es cada pieza. El
+despliegue con Docker, el overlay para una máquina detrás de NAT y la puesta en
+marcha paso a paso están en
+[§12.4](#124-repartir-el-trabajo-entre-máquinas).
 
 ### 13.2 Qué cambia para quien consume la API
 

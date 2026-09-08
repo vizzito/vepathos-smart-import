@@ -1,0 +1,42 @@
+# ===========================================================================
+# Overlay: worker en la Mac. Se usa JUNTO a docker-compose.worker.yml
+#
+#   ssh -N vepathos-tunnel            # el tunel tiene que estar arriba
+#   docker compose --env-file .env.worker \
+#     -f docker-compose.worker.yml -f docker-compose.mac.worker.yml up -d
+#
+# Es el mismo patron que docker-compose.mac.cutter.yml del optimizer: la Mac no
+# tiene IP publica ni esta en la red privada del servidor, asi que llega a la
+#    # cola, a Redis y a la api por un tunel SSH que abre ELLA. Desde adentro del
+# container, el otro extremo del tunel es `host.docker.internal`.
+#
+# Los puertos altos (16379/5673/8110) son para no chocar con los servicios que
+# ya corren en la Mac: un Redis local en 6379 se llevaria los jobs de otro lado.
+#
+# ~/.ssh/config
+#   Host vepathos-tunnel
+#     HostName <ip-publica-del-server>
+#     User <usuario>
+#         LocalForward 16379 10.0.0.2:6379     # Redis
+#     LocalForward 5673  10.0.0.2:5672     # RabbitMQ
+#     LocalForward 8110  10.0.0.2:8100     # la api de smart-import
+#     ServerAliveInterval 30
+#     ExitOnForwardFailure yes
+#
+# Si el tunel se cae, el worker no pierde nada: deja de consumir, reintenta la
+# conexion sola y las tareas quedan en la cola para el que pueda tomarlas.
+# ===========================================================================
+
+services:
+
+  worker:
+    environment:
+      REDIS_HOST: host.docker.internal
+      REDIS_PORT: 16379
+      RABBITMQ_HOST: host.docker.internal
+      RABBITMQ_PORT: 5673
+      SMART_IMPORT_API_URL: http://host.docker.internal:8110
+    extra_hosts:
+      # En Docker Desktop ya existe; explicitarlo hace que el mismo overlay
+      # ande en una Linux con `--add-host`.
+      - "host.docker.internal:host-gateway"

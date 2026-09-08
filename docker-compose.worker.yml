@@ -1,0 +1,82 @@
+# ===========================================================================
+# Smart Import — nodo WORKER
+#
+# Este compose NO sirve HTTP. Levanta un proceso que consume tareas de la cola,
+# le pide los archivos a la api por HTTP y devuelve los resultados. Es la
+# MISMA imagen que el nodo api: lo unico que cambia es el comando y el entorno.
+#
+#   cp .env.worker.example .env.worker
+#   # editar: RABBITMQ_HOST, REDIS_HOST, SMART_IMPORT_API_URL, el token
+#   docker compose --env-file .env.worker -f docker-compose.worker.yml \
+#     run --rm worker worker --check          # ¿llego a las tres piezas?
+#   docker compose --env-file .env.worker -f docker-compose.worker.yml up -d
+#
+# En una Mac detras de NAT, sumale el overlay: ver docker-compose.mac.worker.yml
+#
+# Un worker NO tiene estado propio. Se puede matar, mover o duplicar sin
+# coordinar nada: lo que estaba haciendo vuelve a la cola y lo toma otro. Para
+# darle mas capacidad al servicio, prendé otro; para sacarlo, `stop` (SIGTERM
+# termina lo que tiene en vuelo antes de salir).
+#    # ===========================================================================
+
+# Proyecto propio: si compartiera nombre con el compose de la api, un
+# `docker compose down` en este mismo repo se llevaria puesto el worker.
+name: ${COMPOSE_PROJECT_NAME:-smart-import-worker}
+
+services:
+
+  worker:
+    build:
+      context: .
+      target: ${SMART_IMPORT_TARGET:-runtime}
+      args:
+        SMART_IMPORT_VOCAB_GEONAMES: ${SMART_IMPORT_VOCAB_GEONAMES:-1}
+    image: vepathos/smart-import:${SMART_IMPORT_TARGET:-runtime}-${IMAGE_TAG:-latest}
+    container_name: ${SMART_IMPORT_WORKER_NAME:-vepathos-smart-import-worker}
+    command: ["worker"]
+    env_file:
+      - ${SMART_IMPORT_ENV_FILE:-.env.worker}
+    environment:
+      # El rol no sale del .env: este archivo ES el rol. Ponerlo aca evita el
+      # accidente clasico de copiar el .env del nodo api a un worker y que el
+      # proceso arranque creyendo que tiene que servir HTTP.
+      SMART_IMPORT_ROLE: worker
+      # Rutas DENTRO del container (existen en la imagen con el owner correcto).
+      # El scratch es lo unico que este proceso escribe, y se borra solo al
+      # terminar cada tarea: si esta carpeta crece, es un bug.
+      SMART_IMPORT_SCRATCH_DIR: /data/tmp
+      SMART_IMPORT_WORK_DIR: /data/jobs
+      SMART_IMPORT_SCHEMA_DIR: /app/schemas
+      SMART_IMPORT_PBF_DIR: /data/pbf
+      SMART_IMPORT_INDEX_DIR: /data/indexes
+      SMART_IMPORT_EXTRACT_DIR: /data/extracts
+      SMART_IMPORT_CACHE_PATH: /data/cache/geocode_cache.sqlite
+    volumes:
+      # Los PBF solo hacen falta si este nodo consume geocode. Con
+      # SMART_IMPORT_CONSUME_GEOCODE=false el mount queda vacio y no molesta:
+      # el worker ni se suscribe a esa cola.
+      - ${ROUTE_OPTIMIZER_DATA:-./data}:/data/pbf:ro
+      # Los indices SI son locales y caros de construir: sobreviven al
+      # container para no volver a cortar el extract en cada deploy.
+      - smart_import_worker_indexes:/data/indexes
+      - smart_import_worker_extracts:/data/extracts
+      - smart_import_worker_cache:/data/cache
+      - ./schemas:/app/schemas:ro
+    restart: unless-stopped
+    # Sin healthcheck a proposito: el proceso del worker ES el PID 1 del
+    # container, asi que si muere, muere el container y `restart` lo levanta.
+    # Un healthcheck que solo mira que el proceso exista no agrega informacion;
+    # el estado real ("¿esta consumiendo?") se ve en la profundidad de la cola.
+    stop_grace_period: ${SMART_IMPORT_STOP_GRACE:-90s}
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    mem_limit: ${SMART_IMPORT_MEMORY_LIMIT:-8g}
+    cpus: ${SMART_IMPORT_CPUS:-4}
+
+volumes:
+  smart_import_worker_indexes:
+  smart_import_worker_extracts:
+  smart_import_worker_cache:

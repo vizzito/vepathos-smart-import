@@ -237,7 +237,10 @@ def test_los_defaults_del_dataclass_y_de_from_env_no_pueden_divergir(monkeypatch
     """
     for name in list(os.environ):
         if name.startswith(("SMART_IMPORT_", "GEOCODE", "AUTO_ACCEPT",
-                            "REVIEW_THRESHOLD", "MAPPING_MIN", "ROUTE_OPTIMIZER")):
+                            "REVIEW_THRESHOLD", "MAPPING_MIN", "ROUTE_OPTIMIZER",
+                            # sin prefijo propio: las comparte con el optimizer,
+                            # y quedan exportadas en el shell del que operó un nodo
+                            "RABBITMQ_", "REDIS_")):
             monkeypatch.delenv(name, raising=False)
 
     quieto = Config()

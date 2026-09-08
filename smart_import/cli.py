@@ -607,16 +607,25 @@ def serve(
 
 
 @app.command()
-def worker() -> None:
+def worker(
+    check: bool = typer.Option(
+        False, "--check",
+        help="Prueba cola, estado y archivos, y sale. Para dar de alta un nodo.",
+    ),
+) -> None:
     """Consume tareas de la cola. No sirve HTTP.
 
     Es el otro lado de `SMART_IMPORT_ROLE=api`: la API recibe los archivos y
     encola, este proceso hace el trabajo pesado y devuelve los resultados. Toda
     la configuracion sale del entorno; si falta algo, no arranca y dice que.
+
+    Con `--check` no consume nada: toca las tres dependencias y reporta cual
+    falla. Es lo primero que conviene correr en una maquina nueva, antes de
+    dejar el servicio prendido.
     """
     from .worker.main import main
 
-    raise typer.Exit(main())
+    raise typer.Exit(main(solo_verificar=check))
 
 
 

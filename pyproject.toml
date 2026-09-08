@@ -26,9 +26,12 @@ geo = ["osmium>=4.0"]
 libpostal = ["postal>=1.1"]
 api = ["fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9"]
 # Reparto del trabajo entre nodos: cola de tareas, estado compartido y el
-# cliente con el que un worker busca los archivos en la api. Aparte porque el
-# modo `embedded` (el default) no los necesita, y la imagen runtime no tiene por
-# que cargar clientes que nadie va a abrir.
+# cliente con el que un worker busca los archivos en la api. Es un extra para
+# que `pip install .` en una laptop no arrastre clientes de infraestructura,
+# pero la imagen de Docker SI lo instala: son tres paquetes puros de ~4 MB que
+# nadie importa en modo `embedded`, y tenerlos evita decidir en tiempo de build
+# que rol va a cumplir esa maquina — que es justo lo que este reparto busca
+# poder cambiar con una variable de entorno.
 queue = ["pika>=1.3", "redis>=5.0", "httpx>=0.27"]
 dev = ["pytest>=8.0", "psutil>=5.9", "xlwt>=1.3", "pandas>=2.2",
        "fastapi>=0.110", "uvicorn[standard]>=0.29", "python-multipart>=0.0.9",

@@ -44,7 +44,7 @@ COPY pyproject.toml README.md ./
 # Stub del paquete: pip necesita que exista; el codigo real se copia despues.
 RUN --mount=type=cache,target=/root/.cache/pip \
     mkdir -p smart_import && touch smart_import/__init__.py \
-    && pip install --prefix=/install ".[geo,api]"
+    && pip install --prefix=/install ".[geo,api,queue]"
 
 
 # --- libpostal C + datos (~2 GB). Capa pesada; casi nunca se invalida --------
