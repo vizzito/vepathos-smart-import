@@ -47,7 +47,8 @@ def test_address_no_queda_con_qty_ni_dimensions(ar_context):
     assert "dimensions" not in addr2
     assert "weight" not in addr2
     assert rec2.get("quantity") == 2
-    assert rec2.get("weight_kg") == 22.0
+    # 22 kg declarados para 2 volumes -> 11 kg por bulto en el schema
+    assert rec2.get("weight_kg") == 11.0
     assert rec2.get("length_cm") == 60.0
 
 
@@ -99,6 +100,44 @@ def test_assemble_peso_total_se_reparte_en_free_text(schema):
     assert pkgs[1]["weight_kg"] == 4.0
     assert sum(p["weight_kg"] for p in pkgs) == 8.0
     assert any("peso en texto libre" in w for w in warnings)
+
+
+def test_round_trip_no_multiplica_el_peso(tmp_path):
+    """El flat se relee como tabular (despues de geocodificar, o al reimportar).
+
+    Lo que se emite tiene que significar lo mismo que lo que se lee: si el
+    archivo dijera el peso TOTAL de la entrega, cada vuelta lo multiplicaria por
+    la cantidad de bultos. '4 paquetes de 4 kilos cada uno' daba 16 kg la
+    primera vez y 64 la segunda.
+    """
+    import json
+
+    from smart_import.pipeline import run_normalize
+    from tests.conftest import SCHEMA
+
+    source = tmp_path / "paste.txt"
+    source.write_text(
+        "Lista de hoy:\n\n"
+        "1. Ana Perez, Av Corrientes 100 CABA, 11 4000-1000, "
+        "4 paquetes de 4 kilos cada uno\n"
+        "2. Juan Lopez, Av Santa Fe 200 CABA, 11 4000-1001, 3 cajas de 2 kg\n"
+        "3. Maria Gomez, Av Cabildo 300 CABA, 11 4000-1002, 1 sobre 500 g\n",
+        encoding="utf-8")
+
+    def weights(path):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        addresses = data["addresses"] if isinstance(data, dict) else data
+        return [[p.get("weight_kg") for p in d["packages"]] for d in addresses]
+
+    first = tmp_path / "out1.csv"
+    run_normalize(source, SCHEMA, first, emit=("flat", "nested"))
+    second = tmp_path / "out2.csv"
+    run_normalize(first, SCHEMA, second, emit=("flat", "nested"))
+
+    original = weights(tmp_path / "out1.nested.json")
+    reread = weights(tmp_path / "out2.nested.json")
+    assert original == [[4.0, 4.0, 4.0, 4.0], [2.0, 2.0, 2.0], [0.5]]
+    assert reread == original, "releer el flat no puede cambiar el peso"
 
 
 def test_assemble_tabular_sigue_clonando_peso_unitario(schema):

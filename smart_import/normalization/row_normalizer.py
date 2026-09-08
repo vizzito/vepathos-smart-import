@@ -1,6 +1,7 @@
 """Aplica el mapping a TODAS las filas y valida. Aca no hay IA ni geocoding."""
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -29,6 +30,13 @@ IDENTITY_FIELDS = ("address", "lat", "lng", "customer_name", "phone")
 #: Sin esto, regenerar el nested despues de geocodificar tira `geocode_band` y
 #: la UI se queda sin con que colorear.
 PASSTHROUGH_PREFIX = "geocode_"
+
+#: Campos de bulto que una celda escrita a mano puede traer mezclados.
+#: `coerce` sobre "3 cajas de 10 lb c/u" devuelve 310 —concatena los digitos—,
+#: asi que cuando la celda tiene palabras manda el parser de paqueteria.
+PACKAGE_TEXT_FIELDS = ("quantity", "weight_kg", "packaging",
+                       "length_cm", "width_cm", "height_cm", "volume_cm3")
+_HAS_LETTER = re.compile(r"[^\W\d_]", re.UNICODE)
 
 
 @dataclass
@@ -124,6 +132,7 @@ class RowNormalizer:
         weight_src = by_target.get("weight_kg")
         convert_lb = bool(weight_src and column_declares_pounds(weight_src))
         converted_lb_rows = 0
+        package_sources = [t for t in PACKAGE_TEXT_FIELDS if t in by_target]
 
         for i, raw_row in enumerate(table.rows, start=1):
             values: dict[str, Any] = {}
@@ -142,6 +151,10 @@ class RowNormalizer:
                 values["weight_kg"] = pounds_to_kg(values["weight_kg"])
                 converted_lb_rows += 1
 
+            row = NormalizedRow(index=i, values=values)
+            self._read_package_text(row, raw_row, col_index, by_target,
+                                    package_sources, warn)
+
             # Partes mapeadas (house_number/city/…) → address unica para UI + geocode.
             apply_composed_address(values)
 
@@ -151,7 +164,6 @@ class RowNormalizer:
                 if not is_blank(raw):
                     values[column] = str(raw).strip()
 
-            row = NormalizedRow(index=i, values=values)
             self._validate_coordinates(row, warn)
             self._validate_time_window(row, warn)
             self._apply_timezone(row)
@@ -171,6 +183,62 @@ class RowNormalizer:
                 out.targets_present.append(name)
         out.targets_present = [t for t in self.schema.column_order if t in set(out.targets_present)]
         return out
+
+    # ---------- celdas de bulto escritas a mano ----------
+
+    def _read_package_text(self, row: NormalizedRow, raw_row, col_index,
+                           by_target, package_sources, warn) -> None:
+        """Una celda de bulto con palabras la lee el parser de paqueteria.
+
+        Solo entra si la celda TIENE letras: una columna 'Bultos' con 2 sigue el
+        camino de siempre y ni toca esta capa. Cuando si entra, el parser manda
+        sobre `coerce`, porque "3 cajas de 10 lb c/u" coercionado da 310.
+
+        En tabular el peso de la columna es UNITARIO (`assemble` lo clona), asi
+        que de la frase se toma el peso por bulto, no el total. Es la misma
+        lectura que en texto libre, con la convencion del otro lado.
+        """
+        if not package_sources:
+            return
+        from ..packages import parse_packages
+
+        for target in package_sources:
+            index = col_index.get(by_target[target])
+            raw = raw_row[index] if index is not None and index < len(raw_row) else None
+            if not isinstance(raw, str) or not _HAS_LETTER.search(raw):
+                continue
+            parse = parse_packages(raw)
+            if parse.is_empty:
+                continue
+            self._apply_package_parse(row, parse, raw, by_target, warn)
+
+    def _apply_package_parse(self, row: NormalizedRow, parse, raw: str,
+                             by_target, warn) -> None:
+        """Pisa lo que la frase dice; completa lo que la fila no traia."""
+        wanted = {
+            "quantity": parse.quantity,
+            "weight_kg": parse.weight_per_unit_kg,
+            "packaging": parse.packaging,
+            "length_cm": parse.length_cm,
+            "width_cm": parse.width_cm,
+            "height_cm": parse.height_cm,
+            "volume_cm3": parse.volume_cm3,
+        }
+        for target, value in wanted.items():
+            # No se inventan columnas: si el archivo no mapeo `packaging`, el
+            # tipo de bulto no aparece de la nada en la salida.
+            if value is None or target not in by_target:
+                continue
+            current = row.values.get(target)
+            if current == value:
+                continue
+            if not is_blank(current):
+                row.flag(target,
+                         f"la celda decia {raw.strip()!r}: se leyo {value!r} en vez "
+                         f"de {current!r}", severity="warning")
+                warn("Hay celdas de bulto escritas en texto ('3 cajas de 10 lb c/u'). "
+                     "Se leyeron con el parser de paqueteria; revisar las filas marcadas.")
+            row.values[target] = value
 
     # ---------- validaciones ----------
 

@@ -9,6 +9,7 @@ Overrides de despliegue:
   SMART_IMPORT_OVERRIDES_PATH       → vepathos_overrides.json
   SMART_IMPORT_VOCAB_PATH           → smart_import_vocab.sqlite
   SMART_IMPORT_LOCALITY_EXPAND_PATH → locality_expand.json
+  SMART_IMPORT_PACKAGE_LEXICON_PATH → package_lexicon.json
   SMART_IMPORT_PBF_BOUNDS_PATH      → pbf_country_bounds.json
   SMART_IMPORT_RESOURCES_DIR        → directorio que reemplaza todos los JSON
                                       por nombre de archivo
@@ -33,6 +34,7 @@ LABEL_GROUPS = (
     "name_labels", "address_labels", "phone_labels", "time_labels",
     "reference_labels", "package_labels", "deliver_prefixes", "deliver_linkers",
     "name_prefixes", "greetings", "closings", "street_tokens",
+    "street_suffixes",
 )
 
 
@@ -199,6 +201,27 @@ def _store():
 
 def packaging_words() -> frozenset[str]:
     return _store().aliases("packaging")
+
+
+_PKG_ENV = "SMART_IMPORT_PACKAGE_LEXICON_PATH"
+_PKG_FILE = "package_lexicon.json"
+
+
+def package_lexicon() -> dict[str, Any]:
+    """Numeros en letras, abreviaturas de despacho, unidades y pistas cada-uno/total.
+
+    Los SUSTANTIVOS de bulto no estan aca: salen del catalogo (`packaging_alias_map`).
+    """
+    return load_json(_PKG_FILE, _PKG_ENV)
+
+
+def packaging_alias_map() -> dict[str, dict]:
+    """alias foldeado → {canonical, code, key} del dominio packaging.
+
+    Es el MISMO catalogo que usa el mapper de columnas; el lector de texto libre
+    lo usa para reconocer 'cajas' / 'boxes' / 'caixas' como el concepto `box`.
+    """
+    return _store().alias_map("packaging", words_only=True)
 
 
 def packaging_codes() -> frozenset[str]:

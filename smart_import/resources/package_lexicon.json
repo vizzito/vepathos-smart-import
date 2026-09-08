@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "_comment": "Lenguaje natural de paqueteria. Los SUSTANTIVOS de bulto NO estan aca: salen del catalogo de vocabulario (dominio 'packaging', 269 alias en 9 idiomas) igual que el mapper de columnas. Aca vive lo que el catalogo no puede tener: numeros escritos con letras, abreviaturas de despacho, unidades de peso/medida con su factor al canonico (kg/cm/cm3), y las pistas de 'cada uno' vs 'en total'. Override de despliegue: SMART_IMPORT_PACKAGE_LEXICON_PATH.",
+
+  "number_words": {
+    "un": 1, "uno": 1, "una": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5,
+    "seis": 6, "siete": 7, "ocho": 8, "nueve": 9, "diez": 10, "once": 11,
+    "doce": 12, "trece": 13, "catorce": 14, "quince": 15, "veinte": 20,
+    "docena": 12, "docenas": 12, "media docena": 6, "par": 2,
+
+    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+    "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
+    "thirteen": 13, "fourteen": 14, "fifteen": 15, "twenty": 20,
+    "dozen": 12, "half dozen": 6, "couple": 2, "pair": 2,
+
+    "um": 1, "uma": 1, "duas": 2, "quatro": 4, "sete": 7, "oito": 8, "nove": 9,
+    "dez": 10, "onze": 11, "duzia": 12, "meia duzia": 6,
+
+    "une": 1, "deux": 2, "trois": 3, "quatre": 4, "cinq": 5, "sept": 7,
+    "huit": 8, "neuf": 9, "dix": 10, "douzaine": 12,
+
+    "ein": 1, "eine": 1, "zwei": 2, "drei": 3, "vier": 4, "funf": 5, "sechs": 6,
+    "sieben": 7, "acht": 8, "neun": 9, "zehn": 10, "dutzend": 12,
+
+    "due": 2, "tre": 3, "quattro": 4, "cinque": 5, "otto": 8, "dieci": 10,
+    "dozzina": 12,
+
+    "een": 1, "twee": 2, "drie": 3, "vijf": 5, "zes": 6, "zeven": 7,
+    "negen": 9, "tien": 10, "veertien": 14
+  },
+
+  "_comment_fraction_words": "Medios escritos con palabras. Van aparte de number_words porque no son enteros y solo tienen sentido con una unidad de peso: 'medio kilo', '2 kilos y medio', 'half a kilo'.",
+  "fraction_words": {
+    "medio": 0.5, "media": 0.5, "half": 0.5, "meio": 0.5, "meia": 0.5,
+    "demi": 0.5, "mezzo": 0.5, "halb": 0.5
+  },
+  "_comment_half_joiners": "Lo que une la unidad con el medio: 'kilo Y medio'.",
+  "half_joiners": ["y", "e", "and", "et", "und"],
+  "_comment_number_articles": "Articulo opcional entre el numero y la unidad: 'half A kilo', 'medio DE kilo'.",
+  "number_articles": ["a", "an", "de", "of", "d", "da", "di"],
+
+  "_comment_group_words": "Agrupadores: multiplican al sustantivo que viene despues. 'una docena de cajas' son 12 cajas, no una docena.",
+  "group_words": {
+    "docena": 12, "docenas": 12, "decena": 10, "decenas": 10, "par": 2,
+    "pares": 2, "dozen": 12, "dozens": 12, "pair": 2, "pairs": 2, "couple": 2,
+    "duzia": 12, "duzias": 12, "dozzina": 12, "dozzine": 12, "douzaine": 12,
+    "douzaines": 12, "dutzend": 12
+  },
+
+  "_comment_abbreviations": "Abreviaturas de despacho -> concepto canonico del catalogo. Solo las que un humano escribe en una lista de entregas; nada de codigos UNECE (esos no se buscan en texto libre porque 'BG' aparece en cualquier lado).",
+  "abbreviations": {
+    "pkg": "parcel", "pkgs": "parcel", "pkt": "parcel", "pkts": "parcel",
+    "pck": "parcel", "pcks": "parcel", "pk": "package", "pks": "package",
+    "paq": "parcel", "paqs": "parcel", "pqt": "parcel", "pqts": "parcel",
+    "bto": "package", "btos": "package", "blt": "package", "blts": "package",
+    "blto": "package", "bltos": "package",
+    "cj": "box", "cjs": "box", "cja": "box", "cjas": "box", "cx": "box",
+    "cxs": "box", "ctn": "carton", "ctns": "carton",
+    "vol": "parcel", "vols": "parcel",
+    "plt": "pallet", "plts": "pallet", "pal": "pallet", "pals": "pallet",
+    "pz": "unit", "pza": "unit", "pzas": "unit", "pzs": "unit",
+    "pc": "unit", "pcs": "unit", "ea": "unit",
+    "ud": "unit", "uds": "unit", "unid": "unit", "unids": "unit",
+    "un": "unit", "u": "unit", "stk": "unit"
+  },
+
+  "_comment_weight_units": "alias -> factor a KILOGRAMOS. El schema Vepathos es siempre kg. No agregar unidades que no se usan para despachar: 'mg' costaba '23 MG Road' (una de las calles mas comunes de la India) leida como 23 miligramos.",
+  "weight_units": {
+    "kg": 1.0, "kgs": 1.0, "kg.": 1.0, "kgrs": 1.0, "k": 1.0, "ks": 1.0,
+    "kilo": 1.0, "kilos": 1.0, "kilogramo": 1.0, "kilogramos": 1.0,
+    "kilogram": 1.0, "kilograms": 1.0, "kilogramme": 1.0, "kilogrammes": 1.0,
+    "quilo": 1.0, "quilos": 1.0, "quilograma": 1.0, "quilogramas": 1.0,
+    "chilo": 1.0, "chili": 1.0,
+
+    "g": 0.001, "gr": 0.001, "grs": 0.001, "grms": 0.001, "grm": 0.001,
+    "gramo": 0.001, "gramos": 0.001, "grama": 0.001, "gramas": 0.001,
+    "gram": 0.001, "grams": 0.001, "gramme": 0.001, "grammes": 0.001,
+
+    "lb": 0.45359237, "lbs": 0.45359237, "lb.": 0.45359237,
+    "libra": 0.45359237, "libras": 0.45359237,
+    "pound": 0.45359237, "pounds": 0.45359237,
+
+    "oz": 0.028349523125, "onza": 0.028349523125, "onzas": 0.028349523125,
+    "ounce": 0.028349523125, "ounces": 0.028349523125,
+
+    "tn": 1000.0, "ton": 1000.0, "tons": 1000.0, "tonne": 1000.0,
+    "tonnes": 1000.0, "tonelada": 1000.0, "toneladas": 1000.0
+  },
+
+  "_comment_dimension_units": "alias -> factor a CENTIMETROS.",
+  "dimension_units": {
+    "cm": 1.0, "cms": 1.0, "centimetro": 1.0, "centimetros": 1.0,
+    "centimeter": 1.0, "centimeters": 1.0,
+    "mm": 0.1, "milimetro": 0.1, "milimetros": 0.1,
+    "m": 100.0, "mt": 100.0, "mts": 100.0, "metro": 100.0, "metros": 100.0,
+    "meter": 100.0, "meters": 100.0,
+    "in": 2.54, "inch": 2.54, "inches": 2.54, "\"": 2.54, "pulgada": 2.54,
+    "pulgadas": 2.54,
+    "ft": 30.48, "feet": 30.48
+  },
+
+  "_comment_volume_units": "alias -> factor a CENTIMETROS CUBICOS.",
+  "volume_units": {
+    "cm3": 1.0, "cm³": 1.0,
+    "dm3": 1000.0, "lt": 1000.0, "lts": 1000.0, "litro": 1000.0,
+    "litros": 1000.0, "liter": 1000.0, "liters": 1000.0, "litre": 1000.0,
+    "litres": 1000.0,
+    "m3": 1000000.0, "m³": 1000000.0, "cbm": 1000000.0
+  },
+
+  "_comment_cues": "Como leer el peso escrito al lado de una cantidad. 'cada uno' -> el numero es POR BULTO; 'en total' -> es de toda la entrega. El schema guarda el TOTAL, asi que un per-unit se multiplica por la cantidad.",
+  "per_unit_cues": [
+    "cada uno", "cada una", "c/u", "c/u.", "cu", "c u", "cada bulto",
+    "cada paquete", "cada caja", "cada pieza", "cada unidad", "por bulto",
+    "por paquete", "por caja", "por unidad", "por pieza", "unitario",
+    "unitaria", "peso unitario", "c/bulto", "x bulto", "x unidad",
+    "each", "apiece", "per unit", "per package", "per parcel", "per box",
+    "per piece", "per item", "unit weight", "a piece",
+    "cada um", "cada uma", "por volume", "por unidade", "por caixa",
+    "chacun", "chacune", "par colis", "je", "jeweils", "pro stuck",
+    "ciascuno", "cadauno", "elk", "per stuk"
+  ],
+  "total_cues": [
+    "en total", "total", "peso total", "total de peso", "todo junto",
+    "en conjunto", "combinado", "sumando", "entre todos",
+    "in total", "total weight", "combined", "altogether", "overall",
+    "gross weight", "all together",
+    "no total", "peso total", "ao todo", "au total", "poids total",
+    "insgesamt", "gesamtgewicht", "in totale", "peso totale"
+  ],
+
+  "_comment_labels": "Etiquetas que preceden al valor. Se consumen junto con el valor para que no lleguen al extractor de direccion.",
+  "quantity_labels": [
+    "qty", "quantity", "cantidad", "cant", "cant.", "nro bultos",
+    "nro de bultos", "numero de bultos", "cantidad de bultos", "cant bultos",
+    "quantidade", "menge", "quantite", "quantita", "aantal"
+  ],
+  "weight_labels": [
+    "peso", "peso bruto", "peso neto", "weight", "wt", "gross weight",
+    "net weight", "poids", "gewicht", "peso lordo"
+  ],
+  "dimension_labels": [
+    "medidas", "medida", "dimensiones", "dimension", "dimensions", "dims",
+    "dim", "size", "tamano", "tamaño", "medidas cm", "abmessungen",
+    "dimensoes", "misure"
+  ],
+  "volume_labels": ["volumen", "volume", "vol", "cubicaje", "cubagem"],
+
+  "_comment_guards": "Sustantivos del catalogo que en algunos idiomas son otra cosa. Si despues del sustantivo viene una de estas palabras, NO es un bulto.",
+  "noun_guards": {
+    "sobre": ["la", "el", "los", "las", "un", "una", "mi", "su", "mesa",
+              "escritorio", "el mostrador", "todo", "las", "eso", "esto",
+              "the", "a", "an"],
+    "case": ["of", "de"],
+    "unit": ["number", "no", "nro"],
+    "unidad": ["funcional", "n", "nro", "numero"],
+    "bin": ["number", "no"],
+    "wrap": ["it", "up"],
+    "pot": ["de", "of"]
+  },
+
+  "_comment_connectors": "Conectores que unen 'N bultos' con su peso: '3 cajas DE 10 kilos'. Si el unico texto entre la cantidad y el peso es uno de estos, el peso se lee POR BULTO (asi lo dice un despachante).",
+  "per_unit_connectors": ["de", "of", "a", "da", "di", "von", "van", "d",
+                          "x", "×", "je", "da", "von"],
+
+  "_comment_dimension_joiners": "Separadores de medidas escritos con palabras: '40 POR 30 POR 20 cm'.",
+  "dimension_joiners": ["por", "by", "per", "x", "×", "*"]
+}

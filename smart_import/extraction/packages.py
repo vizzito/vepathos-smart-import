@@ -1,101 +1,102 @@
-"""Bultos, peso y medidas. Siempre con unidad o sustantivo de contexto.
+"""Adaptador entre el parser de paqueteria y el pipeline de campos.
 
-Un numero suelto no es una cantidad: '11 de Septiembre 1913' tiene dos numeros y
-ningun bulto. Se exige la palabra (bultos/paquetes/kg) o la forma inequivoca
-(20x30x40) para no convertir direcciones y telefonos en cantidades.
+La inteligencia no vive aca: vive en `smart_import.packages`, que lee la frase
+con un vocabulario de datos y devuelve bultos con evidencia. Este modulo hace
+tres cosas y ninguna mas:
 
-Los spans se ensanchan a la izquierda para consumir etiquetas (`qty:`, `peso`,
-`dimensions`, …) antes de que el extractor de address las trate como calle.
+  1. traduce ese resultado a `FieldValue` del schema Vepathos,
+  2. saca del canvas TODO lo que el parser leyo —etiquetas y pistas incluidas—
+     para que 'entrega 4 paketed de 4 kilos cada uno' no le llegue al extractor
+     de direcciones,
+  3. mantiene en pie la API que ya existia (`extract_packages`,
+     `widen_package_span`, `has_package_signal`).
+
+Convencion de peso: `weight_kg` del schema es SIEMPRE el peso de UN bulto, venga
+de una celda de Excel o de una frase de WhatsApp. Una sola convencion, y la
+misma que ya tenia el camino tabular.
+
+No es un detalle de estilo. El CSV plano se vuelve a leer —despues de
+geocodificar, o porque el usuario lo reimporta— y esa relectura es tabular
+siempre. Si el archivo dijera el total, cada round-trip multiplicaria el peso
+por la cantidad: "4 paquetes de 4 kilos" salia 16 kg la primera vez y 64 la
+segunda. Lo que se emite tiene que significar lo mismo que lo que se lee.
 """
 from __future__ import annotations
 
-import re
-
+from ..packages import PackageParse, get_package_lexicon, parse_packages
 from .result import FieldValue
 
-# 2 bultos | 3 paquetes | 5 volumes | qty: 4
-_QUANTITY = re.compile(
-    r"(?<!\d)(?P<n>\d{1,3})\s*(?P<word>bultos?|paquetes?|cajas?|piezas?|unidades?|"
-    r"packages?|parcels?|boxes|pieces|volumes?|pacotes?)\b",
-    re.IGNORECASE)
-# 8 kg | 8,5 kg | 800 g | 2 lb
-_WEIGHT = re.compile(
-    r"(?<!\d)(?P<n>\d{1,4}(?:[.,]\d{1,3})?)\s*(?P<unit>kgs?|kilos?|kg\.|g|grs?|gramos?|lbs?)\b",
-    re.IGNORECASE)
-# 20x30x40 | 20 x 30 x 40 cm | 20 X 30 X 40
-_DIMENSIONS = re.compile(
-    r"(?<!\d)(?P<l>\d{1,4}(?:[.,]\d{1,2})?)\s*[x×]\s*(?P<w>\d{1,4}(?:[.,]\d{1,2})?)"
-    r"\s*[x×]\s*(?P<h>\d{1,4}(?:[.,]\d{1,2})?)\s*(?P<unit>cm|mm|m|in|\")?",
-    re.IGNORECASE)
-
-# Etiquetas sueltas a la izquierda del match (no forman parte del valor).
-_LABEL_LEFT = re.compile(
-    r"(?:qty|quantity|cantidad|cant\.?|peso|weight|wt|"
-    r"medidas?|dimensions?|dims?|size|tama[ñn]o)\s*[:=]?\s*$",
-    re.IGNORECASE)
-
-_TO_KG = {"kg": 1.0, "kgs": 1.0, "kilo": 1.0, "kilos": 1.0, "kg.": 1.0,
-          "g": 0.001, "gr": 0.001, "grs": 0.001, "gramo": 0.001, "gramos": 0.001,
-          "lb": 0.45359237, "lbs": 0.45359237}
-_TO_CM = {"cm": 1.0, "mm": 0.1, "m": 100.0, "in": 2.54, '"': 2.54, None: 1.0}
-
-
-def _number(text: str) -> float | None:
-    try:
-        return float(text.replace(",", "."))
-    except (TypeError, ValueError):
-        return None
+#: campos del schema que este paso puede llenar, y de donde salen del parse
+_DIMENSIONS = (("length_cm", "length_cm"), ("width_cm", "width_cm"),
+               ("height_cm", "height_cm"))
 
 
 def widen_package_span(text: str, start: int, end: int) -> tuple[int, int]:
     """Incluye etiquetas `qty:` / `peso` / `dimensions` a la izquierda del match."""
+    lexicon = get_package_lexicon()
     while start > 0:
         left = start
         while left > 0 and text[left - 1].isspace():
             left -= 1
-        match = _LABEL_LEFT.search(text[:left])
+        match = lexicon.label_left_re.search(text[:left])
         if not match:
             break
         start = match.start()
     return start, end
 
 
+def _raw(text: str, parse: PackageParse) -> str:
+    """Lo que el parser leyo, en orden. Un campo agregado ('2 cajas y 1 sobre'
+    -> quantity 3) no tiene UN span: tiene varios, y el span del FieldValue se
+    deja en None a proposito en vez de mentir con un rango que tapa el medio."""
+    return " ".join(text[start:end].strip()
+                    for start, end in sorted(parse.spans) if text[start:end].strip())
+
+
+def _field(name: str, value, parse: PackageParse, raw: str, method: str,
+           extra: tuple[str, ...] = ()) -> FieldValue:
+    return FieldValue(name, value, raw, parse.confidence, method, None,
+                      (*parse.evidence, *extra))
+
+
 def extract_packages(canvas, context) -> list[FieldValue]:
+    """Bultos, peso, medidas y tipo de embalaje de lo que queda del texto."""
     text = canvas.remaining()
+    parse = parse_packages(text, getattr(context, "locales", None))
+    if parse.is_empty:
+        return []
+    raw = _raw(text, parse)
+
+    # El paso consume su propio rastro: un solo FieldValue por campo no alcanza
+    # para tapar dos frases de bultos ('2 cajas de 3kg y 1 sobre'), y lo que no
+    # se tapa termina dentro de la direccion.
+    for span in parse.spans:
+        canvas.consume(span)
+
     out: list[FieldValue] = []
-
-    if match := _DIMENSIONS.search(text):
-        factor = _TO_CM.get((match.group("unit") or "").lower() or None, 1.0)
-        dims = [_number(match.group(k)) for k in ("l", "w", "h")]
-        if all(d is not None for d in dims):
-            raw = match.group(0)
-            span = widen_package_span(text, *match.span())
-            for name, value in zip(("length_cm", "width_cm", "height_cm"), dims):
-                out.append(FieldValue(name, round(value * factor, 2), raw, 0.92,
-                                      "dimensions", span,
-                                      (f"medidas '{raw}'",)))
-
-    if match := _WEIGHT.search(text):
-        value = _number(match.group("n"))
-        factor = _TO_KG.get(match.group("unit").lower())
-        if value is not None and factor:
-            span = widen_package_span(text, *match.span())
-            out.append(FieldValue("weight_kg", round(value * factor, 3), match.group(0),
-                                  0.92, "weight", span,
-                                  (f"peso con unidad '{match.group('unit')}'",
-                                   "en texto libre el peso es TOTAL de la entrega")))
-
-    if match := _QUANTITY.search(text):
-        value = _number(match.group("n"))
-        if value is not None:
-            span = widen_package_span(text, *match.span())
-            out.append(FieldValue("quantity", int(value), match.group(0), 0.90,
-                                  "quantity", span,
-                                  (f"cantidad con sustantivo '{match.group('word')}'",)))
+    if parse.dimensions:
+        for name, attribute in _DIMENSIONS:
+            out.append(_field(name, getattr(parse, attribute), parse, raw, "dimensions"))
+    if parse.volume_cm3 is not None:
+        out.append(_field("volume_cm3", parse.volume_cm3, parse, raw, "volume"))
+    if parse.weight_per_unit_kg is not None:
+        note = (f"peso por bulto ({parse.weight_total_kg:g} kg entre "
+                f"{parse.quantity} bulto(s))",) if parse.quantity and parse.quantity > 1 \
+            else ("peso de la entrega",)
+        if parse.weight_declared_per_unit:
+            note = (f"el texto declara {parse.weight_per_unit_kg:g} kg por bulto "
+                    f"({parse.weight_total_kg:g} kg en total)",)
+        out.append(_field("weight_kg", parse.weight_per_unit_kg, parse, raw,
+                          "weight", note))
+    if parse.quantity is not None:
+        out.append(_field("quantity", int(parse.quantity), parse, raw, "quantity"))
+    if parse.packaging:
+        out.append(_field("packaging", parse.packaging, parse, raw, "packaging",
+                          (f"tipo de bulto del catalogo ({parse.packaging_code})",)
+                          if parse.packaging_code else ()))
     return out
 
 
 def has_package_signal(text: str) -> bool:
     """Evidencia logistica para el clasificador de candidatos."""
-    return bool(_QUANTITY.search(text or "") or _WEIGHT.search(text or "")
-                or _DIMENSIONS.search(text or ""))
+    return not parse_packages(text or "").is_empty
