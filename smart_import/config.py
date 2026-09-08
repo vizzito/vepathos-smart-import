@@ -10,6 +10,21 @@ import os
 from dataclasses import dataclass, fields
 from pathlib import Path
 
+#: Los tres roles del mismo binario. `embedded` es el default y significa
+#: EXACTAMENTE el comportamiento de siempre: estado en memoria, archivos en el
+#: disco local y el trabajo pesado adentro del proceso que sirve HTTP. Es el modo
+#: de desarrollo, el de la suite de tests y el de un despliegue de un solo nodo:
+#: `docker compose up` levanta un Smart Import completo sin infraestructura.
+#:
+#:   api    → recibe, encola y sirve; no procesa.
+#:   worker → consume y procesa; no expone puerto.
+ROLES = ("embedded", "api", "worker")
+
+#: Campos que NO se muestran en `/config`. Ese endpoint no pide credenciales
+#: (es justamente la forma de verificar que el .env se aplico), asi que
+#: cualquier secreto que entre al `Config` se publica a quien alcance el puerto.
+SECRET_FIELDS = frozenset({"rabbitmq_password", "redis_password", "worker_token"})
+
 
 def _bool(name: str, default: bool) -> bool:
     raw = os.getenv(name)
@@ -63,6 +78,18 @@ def parse_csv_list(raw: str | None, default: list[str] | None = None) -> list[st
 
 def _list(name: str, default: list[str]) -> list[str]:
     return parse_csv_list(os.getenv(name), default)
+
+
+def _role(name: str) -> str:
+    """El rol del proceso, validado al leerlo.
+
+    Un typo (`wroker`) no puede degradar en silencio a `embedded`: seria un nodo
+    que arranca contento, no consume ninguna cola y nadie nota que falta.
+    """
+    raw = _str(name, "embedded").lower()
+    if raw not in ROLES:
+        raise ValueError(f"{name}='{raw}' no es un rol valido; validos: {list(ROLES)}")
+    return raw
 
 
 def _band(primary: str, alias_pct: str, default: float) -> float:
@@ -238,6 +265,55 @@ class Config:
     extract_max_km: float = 80.0
     osmium_bin: str = ""
 
+    # ---------------- reparto entre nodos ----------------
+    #: Que hace este proceso. Ver `ROLES`. Todo lo de esta seccion tiene default
+    #: inerte: con `embedded` nada de esto se lee, y el servicio no necesita ni
+    #: broker ni Redis para arrancar.
+    role: str = "embedded"
+
+    #: Broker de tareas. Mismos nombres de env que usa el optimizer, para que la
+    #: operacion sea una sola. Host vacio = no hay cola (modo embebido).
+    rabbitmq_host: str = ""
+    rabbitmq_port: int = 5672
+    rabbitmq_user: str = ""
+    rabbitmq_password: str = ""
+    rabbitmq_vhost: str = "/"
+    queue_prefix: str = "smart-import"
+
+    #: Estado compartido de los jobs. DB propia: el optimizer corre todo en la 0
+    #: y mezclar keyspaces hace que un `FLUSHDB` de uno se lleve al otro.
+    redis_host: str = ""
+    redis_port: int = 6379
+    redis_password: str = ""
+    redis_db: int = 1
+    redis_prefix: str = "smartimport:"
+
+    #: Que colas consume este worker. Un nodo sin PBF NO se suscribe a geocode,
+    #: asi que no puede recibir una tarea que no sabe hacer: no hay rebote.
+    consume_normalize: bool = True
+    consume_geocode: bool = False
+    #: Tareas en paralelo por worker. Es el mismo techo que hoy impone
+    #: `max_concurrent_normalize` en la API, pero repartido y sin 429.
+    worker_slots: int = 2
+    max_requeue_attempts: int = 10
+    shutdown_drain_s: float = 60.0
+    task_timeout_normalize_s: float = 300.0
+    task_timeout_geocode_s: float = 1800.0
+    node_heartbeat_ttl_s: float = 90.0
+
+    #: De donde baja el worker los archivos del job y adonde devuelve el
+    #: resultado. Es el rol api, alcanzado por HTTP saliente con token.
+    api_url: str = ""
+    worker_token: str = ""
+    #: Espacio de trabajo del worker. Se borra SIEMPRE al terminar la tarea
+    #: (exito, error o timeout): un worker no acumula nada.
+    scratch_dir: str = ""
+
+    #: Cuanto espera `POST /imports` a que el resultado este listo antes de
+    #: responder 202 con el job_id. Preserva el 201 sincrono de hoy para el caso
+    #: rapido, que es el que el webclient consume del cuerpo. 0 = siempre 202.
+    default_wait_s: float = 30.0
+
     #: Cuanto se corre el piso segun el costo de equivocarse en ese nivel.
     #: Es relativo a `review_threshold` a proposito: mover el knob global sigue
     #: moviendo los tres, y la escalera entre ellos no cambia.
@@ -319,6 +395,31 @@ class Config:
             extract_round_deg=_float("SMART_IMPORT_EXTRACT_ROUND_DEG", 0.1),
             extract_max_km=_float("SMART_IMPORT_EXTRACT_MAX_KM", 80.0),
             osmium_bin=_str("OSMIUM_BIN", ""),
+
+            role=_role("SMART_IMPORT_ROLE"),
+            rabbitmq_host=_str("RABBITMQ_HOST", ""),
+            rabbitmq_port=_int("RABBITMQ_PORT", 5672),
+            rabbitmq_user=_str("RABBITMQ_USER", ""),
+            rabbitmq_password=_str("RABBITMQ_PASSWORD", ""),
+            rabbitmq_vhost=_str("RABBITMQ_VHOST", "/"),
+            queue_prefix=_str("SMART_IMPORT_QUEUE_PREFIX", "smart-import"),
+            redis_host=_str("REDIS_HOST", ""),
+            redis_port=_int("REDIS_PORT", 6379),
+            redis_password=_str("REDIS_PASSWORD", ""),
+            redis_db=_int("SMART_IMPORT_REDIS_DB", 1),
+            redis_prefix=_str("SMART_IMPORT_REDIS_PREFIX", "smartimport:"),
+            consume_normalize=_bool("SMART_IMPORT_CONSUME_NORMALIZE", True),
+            consume_geocode=_bool("SMART_IMPORT_CONSUME_GEOCODE", False),
+            worker_slots=_int("SMART_IMPORT_WORKER_SLOTS", 2),
+            max_requeue_attempts=_int("SMART_IMPORT_MAX_REQUEUE_ATTEMPTS", 10),
+            shutdown_drain_s=_float("SMART_IMPORT_SHUTDOWN_DRAIN_S", 60.0),
+            task_timeout_normalize_s=_float("SMART_IMPORT_TASK_TIMEOUT_NORMALIZE_S", 300.0),
+            task_timeout_geocode_s=_float("SMART_IMPORT_TASK_TIMEOUT_GEOCODE_S", 1800.0),
+            node_heartbeat_ttl_s=_float("SMART_IMPORT_NODE_HEARTBEAT_TTL_S", 90.0),
+            api_url=_str("SMART_IMPORT_API_URL", ""),
+            worker_token=_str("SMART_IMPORT_WORKER_TOKEN", ""),
+            scratch_dir=_str("SMART_IMPORT_SCRATCH_DIR", ""),
+            default_wait_s=_float("SMART_IMPORT_DEFAULT_WAIT_S", 30.0),
         )
 
     def replace(self, **changes) -> "Config":
@@ -327,5 +428,11 @@ class Config:
         return Config(**current)
 
     def describe(self) -> dict:
-        """Config efectiva, para /health y para el log de arranque."""
-        return {f.name: getattr(self, f.name) for f in fields(self)}
+        """Config efectiva, para /config y para el log de arranque.
+
+        Los secretos salen como `"***"` si estan puestos y como `""` si no: se
+        sigue pudiendo verificar que el .env se aplico sin publicar el valor.
+        """
+        return {f.name: ("***" if (f.name in SECRET_FIELDS and getattr(self, f.name))
+                         else getattr(self, f.name))
+                for f in fields(self)}
