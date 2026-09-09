@@ -1,0 +1,54 @@
+# ===========================================================================
+# Overlay: nodo API en api-prod, al lado de RouteHub. Va JUNTO al compose base:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.apiprod.yml up -d smart-import
+#
+# Hace dos cosas:
+#
+# 1. Publica el puerto TAMBIEN en la IP privada del host. El compose base lo
+#    deja solo en loopback, porque el servicio no tiene auth propia y Docker
+#    escribe sus reglas en DOCKER-USER puenteando ufw. Loopback alcanza para
+#    el tunel SSH de las Mac y los chequeos locales; los workers de otras VMs
+#    le pegan por la red privada. Nunca en la IP publica.
+#
+# 2. Lo suma a vepathos-net, la red de RouteHub, que asi lo alcanza por nombre
+#    de container (SMART_IMPORT_URL=http://vepathos-smart-import:8100) sin
+#    salir al host ni tocar el puerto publicado. Es el mismo patron que el
+#    overlay samevm, pero al reves: aca es la api la que entra a la red ajena.
+# ===========================================================================
+
+services:
+
+  smart-import:
+    ports:
+      # Se SUMAN al bind de loopback del compose base (compose concatena los
+      # `ports` de los overlays, no los reemplaza).
+      # - BIND_PRIV: la IP privada del host, para chequeos locales y futuras
+      #   VMs de la misma red (OJO: la VM de PBFs NO ve esta red; verificado).
+      # - BIND_PUB: la IP publica, SOLO alcanzable desde las IPs whitelisteadas
+      #   en DOCKER-USER (mismo patron que 6379/5672). Sin esa regla de
+      #   firewall esto queda abierto a internet: no publicar sin ella.
+      - "${SMART_IMPORT_BIND_PRIV:-10.0.0.2}:${SMART_IMPORT_PORT:-8100}:8100"
+      - "${SMART_IMPORT_BIND_PUB:-178.105.42.199}:${SMART_IMPORT_PORT:-8100}:8100"
+    extra_hosts:
+      # Utilidad para llegar al host (mismo patron que RouteHub -> optimizer).
+      # OJO: para Redis/RabbitMQ NO alcanza con esto — ver abajo.
+      - "host.docker.internal:host-gateway"
+    networks:
+      - default
+      - vepathos-net
+      - optimizer
+
+networks:
+  vepathos-net:
+    # La crea el deploy de RouteHub; por eso es external. Si no existe, hay
+    # que levantar primero ese stack (docker network ls | grep vepathos-net).
+    external: true
+  optimizer:
+    # Redis y RabbitMQ (los del optimizer) corren en ESTE host, pero la cadena
+    # DOCKER-USER solo acepta 6379/5672 desde IPs conocidas (la red privada y
+    # las VMs de workers): el trafico de un container hacia el puerto publicado
+    # del host cae en el DROP. La via es container-a-container, por nombre:
+    # REDIS_HOST=route-optimizer-redis, RABBITMQ_HOST=route-optimizer-rabbitmq.
+    external: true
+    name: route-optimizer-app_api-network

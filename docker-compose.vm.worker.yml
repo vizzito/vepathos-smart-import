@@ -1,0 +1,21 @@
+# ===========================================================================
+# Overlay: worker en la VM de PBFs cuando la API vive en api-prod.
+# Va JUNTO a docker-compose.worker.yml:
+#
+#   autossh -M 0 -N -L 18100:127.0.0.1:8100 deploy@178.105.42.199
+#   docker compose --env-file .env.worker \
+#     -f docker-compose.worker.yml -f docker-compose.vm.worker.yml up -d
+#
+# Redis y RabbitMQ entran DIRECTO a 178.105.42.199 (whitelist DOCKER-USER).
+# El puerto 8100 publico NO llega desde esta VM (firewall Hetzner / red):
+# el tunel SSH abre 18100 en el host local y lo lleva al loopback de api-prod,
+# mismo patron que docker-compose.mac.worker.yml pero solo para la API.
+# ===========================================================================
+
+services:
+
+  worker:
+    environment:
+      SMART_IMPORT_API_URL: http://host.docker.internal:${SMART_IMPORT_API_TUNNEL_PORT:-18100}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
