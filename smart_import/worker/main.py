@@ -208,12 +208,19 @@ def main(solo_verificar: bool = False) -> int:
 
     for linea in describir(cfg):
         print(f"  {linea}")
+    # Sin esto el catalogo no se ve en `docker logs`: con la salida en un pipe
+    # Python la buffea por bloques, y este proceso no vuelve a escribir en
+    # stdout nunca mas (loguea a stderr). O sea que lo primero que hay que
+    # mirar cuando un nodo no toma trabajo aparecia recien cuando el proceso
+    # moria, que es exactamente cuando ya no sirve.
+    sys.stdout.flush()
 
     if solo_verificar:
         fallas = 0
         for pieza, error in verificar_conexiones(cfg):
             print(f"  {pieza:<14} {'ok' if error is None else error}")
             fallas += error is not None
+        sys.stdout.flush()
         return 1 if fallas else 0
 
     artifacts = make_artifact_store(cfg)

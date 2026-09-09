@@ -864,9 +864,20 @@ un worker que ya no va a existir — conviene purgarlas.
 **Una trampa a tener presente:** en el nodo api, `GEOCODING_ENABLED=true`
 significa «este despliegue ofrece geocodificar», no «esta máquina puede». Quien
 puede es un worker con `CONSUME_GEOCODE=true` y los PBF montados. Si no hay
-ninguno prendido, los geocodes se encolan y esperan sin que nada avise. Hasta
-que exista el latido de nodos, la forma de verlo es la profundidad de
-`smart-import-geocode`.
+ninguno prendido, los geocodes se encolan y esperan. Quién está consumiendo qué
+se ve en `GET /health` → `fleet`:
+
+```json
+"fleet": {
+  "workers": [{"node": "mac-de-martin:4116", "queues": ["smart-import-normalize",
+               "smart-import-geocode"], "slots": 2, "geocoding": true}],
+  "queues": {"smart-import-normalize": 0, "smart-import-geocode": 0, "smart-import-dlq": 0},
+  "config_drift": []
+}
+```
+
+Una cola de geocode que crece con `workers` vacío de `geocoding: true` es
+exactamente ese caso.
 
 **Lo que un reinicio se lleva:** los jobs en vuelo, porque viven en memoria. Los
 archivos ya descargados no se pierden; los imports a medio camino hay que

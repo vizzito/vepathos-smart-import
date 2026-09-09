@@ -102,6 +102,12 @@ def run_normalize_job(ctx: WorkerContext, job: Job, schema_path: Path,
         raise NormalizeFailed(str(exc)) from exc
 
     job.report = result.report
+    # El pipeline reporta el path del que leyo, que en un worker es su scratch
+    # y deja de existir apenas termina. Quien mire el report desde la api veria
+    # una ruta que no esta en ningun disco de los que puede tocar; la
+    # referencia del artefacto, en cambio, es cierta en los dos modos.
+    if isinstance(job.report.get("input"), dict):
+        job.report["input"]["path"] = job.raw_path
     job.normalized_path = _publish(ctx, job.id, FLAT, result.outputs.get("flat"))
     job.nested_path = _publish(ctx, job.id, NESTED, result.outputs.get("nested"))
     # El report en disco no lo lee ningun endpoint (el `Job` ya lo tiene en
