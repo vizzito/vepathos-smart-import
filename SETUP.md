@@ -714,6 +714,52 @@ piezas más de infraestructura para operar.
 los dos lados. Son los mismos que ya usa el optimizer; lo único que separa a
 los dos servicios es el prefijo de las colas y la DB de Redis.
 
+#### El orden importa, y hay un bloqueo
+
+**No se puede sumar un worker a un stack que todavía no encola.** Mientras la VM
+corra en `embedded`, no existe ninguna cola: una máquina nueva se conectaría a un
+broker sin nada que consumir y se quedaría mirando. Así que el orden no es
+negociable — primero la VM pasa a `api`, después se le suman nodos.
+
+Lo que hace que eso no dé miedo: **la VM sigue siendo la misma, en la misma IP y
+el mismo puerto**, y RouteHub no se toca. Lo único que cambia es quién hace el
+trabajo adentro. La vuelta atrás es una variable y diez segundos.
+
+#### Paso 0 — El ensayo, sin tocar producción
+
+Antes de tocar la VM conviene correr el flujo entero en local, contra un broker
+y un Redis de juguete que no chocan con nada:
+
+```bash
+docker run -d --name si-local-rabbit -p 5674:5672 -p 15674:15672 rabbitmq:3-management
+docker run -d --name si-local-redis  -p 6399:6379 redis:7-alpine
+
+cp .env .env.local-api        # partí del .env que ya usás
+cat >> .env.local-api <<'EOF'
+SMART_IMPORT_ROLE=api
+RABBITMQ_HOST=host.docker.internal
+RABBITMQ_PORT=5674
+REDIS_HOST=host.docker.internal
+REDIS_PORT=6399
+SMART_IMPORT_REDIS_DB=1
+SMART_IMPORT_QUEUE_PREFIX=local
+SMART_IMPORT_WORKER_TOKEN=un-token-de-prueba
+EOF
+
+docker compose --env-file .env.local-api up -d smart-import
+# y el worker, con el overlay de la misma máquina
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml -f docker-compose.samevm.worker.yml up -d
+```
+
+Subí un archivo por el 8100 de siempre y seguilo. Si `POST /imports` devuelve
+201 con el reporte adentro y el geocode termina, el contrato no cambió y lo que
+sigue es repetirlo apuntando a la infraestructura de verdad.
+
+Para volver a como estaba: `docker compose down` del worker y
+`docker compose up -d smart-import` **sin** `--env-file` (vuelve a leer tu `.env`
+y el rol vuelve a `embedded`).
+
 #### Paso 1 — Convertir la VM en el nodo `api`
 
 En su `.env`, descomentar el bloque *«COMO SE ESCALA — opción 2»* de
@@ -820,6 +866,26 @@ corre en la Mac — un Redis local en 6379 se llevaría los jobs de otro lado.
 
 Si el túnel se cae, no se pierde nada: el worker deja de consumir, reintenta la
 conexión solo, y las tareas quedan en la cola para el que pueda tomarlas.
+
+#### La vuelta atrás
+
+En cualquier punto, y sin tocar RouteHub:
+
+```bash
+# 1. bajar los workers (las tareas en vuelo vuelven a la cola)
+docker compose --env-file .env.worker -f docker-compose.worker.yml down
+
+# 2. el nodo api vuelve a hacer el trabajo él mismo
+#    comentar SMART_IMPORT_ROLE=api en el .env  (o ponerlo en embedded)
+docker compose up -d smart-import
+curl -s localhost:8100/health | python3 -c \
+  "import json,sys; print(json.load(sys.stdin)['deployment'])"
+```
+
+Lo que se pierde: los jobs que estaban en vuelo en ese momento, porque su estado
+vivía en Redis y el modo `embedded` no lo lee. Son minutos de trabajo, no datos
+del usuario — el archivo original lo tiene él. Por eso conviene hacer el cambio
+en una ventana tranquila, aunque no requiera una.
 
 #### Paso 5 — RouteHub y la web: nada que tocar
 
