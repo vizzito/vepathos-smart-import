@@ -116,7 +116,12 @@ class Consumer:
         self._en_vuelo: dict[str, EnVuelo] = {}
         self._candado = threading.Lock()
         self._drenando = threading.Event()
-        self._perdidos = 0
+        #: Receipts de tareas que se pasaron del tope y cuyo thread SIGUE
+        #: corriendo. Es un conjunto y no un contador porque lo que se quiere
+        #: saber es cuantos slots estan tomados ahora: una tarea que se paso de
+        #: tiempo pero despues termina devuelve su slot, y no puede seguir
+        #: contando para siempre contra la salud del nodo.
+        self._colgadas: set[str] = set()
 
     # ---------------------------------------------------------- colas
 
@@ -246,6 +251,11 @@ class Consumer:
         finally:
             renovador.stop()
             ctx.store.release_run(task.job_id, self.holder)
+            # Si esta tarea habia vencido y aun asi termino, su slot vuelve a
+            # estar libre: dejarla contada haria que el nodo se apagara solo
+            # despues de unas pocas tareas lentas repartidas en horas.
+            with self._candado:
+                self._colgadas.discard(vuelo.receipt)
 
     def _diferir(self, vuelo: EnVuelo) -> None:
         """Vuelve a la cola con demora en vez de correr en paralelo.
@@ -291,9 +301,21 @@ class Consumer:
                          siguiente.attempt, motivo)
 
     def _a_la_dlq(self, vuelo: EnVuelo, motivo: str) -> None:
+        """Aparta la tarea. El orden no es casual.
+
+        Primero se marca el job y recien despues se ackea. Al reves —que era
+        como estaba— si marcar fallaba (Redis con un hipo, justo cuando la
+        tarea agoto los reintentos) el mensaje ya estaba ackeado y en la DLQ,
+        que no tiene consumidor: nadie iba a volver a intentarlo y el job
+        quedaba `busy` para siempre, con el usuario mirando un spinner.
+
+        Marcando primero, si eso falla tampoco se ackea, y el broker redeliverea
+        la tarea: se reintenta el apartado entero, que es lo unico que puede
+        destrabar al job.
+        """
+        self._marcar_fallido(vuelo.task, motivo)
         self.broker.send_to_dlq(vuelo.task, motivo)
         self._resolver(vuelo, self.broker.ack, vuelo.receipt)
-        self._marcar_fallido(vuelo.task, motivo)
 
     def _marcar_fallido(self, task: Task, motivo: str) -> None:
         """Que el usuario vea el fracaso, en vez de un job ocupado para siempre."""
@@ -309,8 +331,12 @@ class Consumer:
             # siendo descargable y la UI ofrece ubicar a mano.
             job.touch(GEOCODE_FAILED if task.type == GEOCODE else FAILED)
             ctx.store.save(job)
-        except Exception:                                       # pragma: no cover
+        except Exception:
+            # NO se traga: sin esta marca el job queda ocupado para siempre, y
+            # dejar que suba es lo que evita el ack y deja que el broker lo
+            # redeliverea para reintentar el apartado.
             self.log.exception("no se pudo marcar %s como fallido", task.job_id)
+            raise
 
     def _resolver(self, vuelo: EnVuelo, acuse: Callable, receipt: str) -> None:
         """Acusa una sola vez. El vigia y el thread de la tarea compiten por esto."""
@@ -354,8 +380,11 @@ class Consumer:
             self.log.error("%s supero los %ss y sigue corriendo: se aparta",
                            vuelo.task, limite)
             self._a_la_dlq(vuelo, f"la tarea supero los {limite:.0f}s")
-            self._perdidos += 1
-        if vencidas and self._perdidos >= self.slots:
+            with self._candado:
+                self._colgadas.add(vuelo.receipt)
+        with self._candado:
+            colgadas = len(self._colgadas)
+        if vencidas and colgadas >= self.slots:
             self.log.error("los %s slots quedaron colgados; se corta el "
                            "consumo para que reinicien este nodo", self.slots)
             self.stop()

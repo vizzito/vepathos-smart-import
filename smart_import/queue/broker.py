@@ -145,7 +145,12 @@ class RabbitBroker(Broker):
         #: publican desde los threads que ejecutan las tareas.
         self._pub_conn = None
         self._pub_channel = None
-        self._pub_lock = threading.Lock()
+        #: Serializa TODO acceso a un canal de pika. `BlockingConnection` no es
+        #: thread-safe y en el rol api conviven dos escritores en el mismo
+        #: canal: los publish de los endpoints y el `queue_declare(passive)` con
+        #: el que la flota mide las colas. Sin esto, sus frames AMQP se
+        #: entrelazan y el canal se cae sola cada tanto, sin patron aparente.
+        self._pub_lock = threading.RLock()
         #: (medido_en, {cola: profundidad}) — ver DEPTH_CACHE_S
         self._depths_cache: tuple[float, dict[str, int]] | None = None
 
@@ -189,18 +194,23 @@ class RabbitBroker(Broker):
                        self._cfg.rabbitmq_port)
 
     def _canal_publicacion(self):
-        """El canal por el que se publica, que no es el del consumidor."""
+        """El canal por el que se publica. El caller YA tiene `_pub_lock`.
+
+        Consumiendo, es una conexion aparte: pika prohibe tocar el canal del
+        consumidor desde otro thread. Sin consumir —el rol api— es el canal
+        principal, que no tiene a nadie mas escribiendo... salvo la medicion de
+        colas, y por eso ese caso tambien entra por aca con el lock tomado.
+        """
         if not self._consuming:
             self._conectar()
             return self._channel
         import pika
 
-        with self._pub_lock:
-            if self._pub_conn is None or not self._pub_conn.is_open:
-                self._pub_conn = pika.BlockingConnection(self._params())
-                self._pub_channel = self._pub_conn.channel()
-                self._pub_channel.confirm_delivery()
-            return self._pub_channel
+        if self._pub_conn is None or not self._pub_conn.is_open:
+            self._pub_conn = pika.BlockingConnection(self._params())
+            self._pub_channel = self._pub_conn.channel()
+            self._pub_channel.confirm_delivery()
+        return self._pub_channel
 
     # ---------------------------------------------------------- topologia
 
@@ -246,9 +256,11 @@ class RabbitBroker(Broker):
         ultimo = None
         for intento in range(self._reintentos_publicacion):
             try:
-                canal = self._canal_publicacion()
-                canal.basic_publish(exchange="", routing_key=cola, body=cuerpo,
-                                    properties=pika.BasicProperties(**propiedades))
+                with self._pub_lock:
+                    canal = self._canal_publicacion()
+                    canal.basic_publish(
+                        exchange="", routing_key=cola, body=cuerpo,
+                        properties=pika.BasicProperties(**propiedades))
                 return
             except Exception as exc:                            # pragma: no cover
                 ultimo = exc
@@ -259,13 +271,14 @@ class RabbitBroker(Broker):
         raise RuntimeError(f"no se pudo publicar en {cola}: {ultimo}")
 
     def _reset_publicacion(self) -> None:                       # pragma: no cover
-        if self._consuming:
-            with self._pub_lock:
+        """Tira la conexion para que la proxima reconecte. Con `_pub_lock` tomado."""
+        with self._pub_lock:
+            if self._consuming:
                 self._pub_conn = None
                 self._pub_channel = None
-        else:
-            self._conn = None
-            self._channel = None
+            else:
+                self._conn = None
+                self._channel = None
 
     # ---------------------------------------------------------- consumir
 
@@ -362,25 +375,45 @@ class RabbitBroker(Broker):
     #: agregue trafico a RabbitMQ.
     DEPTH_CACHE_S = 1.0
 
+    #: Cuanto espera la medicion por el canal antes de rendirse.
+    #:
+    #: Es lo que garantiza que la telemetria NUNCA le haga esperar a un publish.
+    #: Medir comparte el canal con quien publica —pika no deja usarlo desde dos
+    #: threads— y si el broker se pone lento, el que tiene que ceder es el que
+    #: solo estaba mirando: un import encolandose no puede quedar atras de tres
+    #: `queue_declare` de un /health. Si no consigue el turno, se devuelve la
+    #: ultima medicion conocida y `age_s` en /health delata que quedo vieja.
+    DEPTH_LOCK_WAIT_S = 0.25
+
     def depths(self) -> dict[str, int]:
         ahora = time.monotonic()
         cacheado = self._depths_cache
         if cacheado is not None and (ahora - cacheado[0]) < self.DEPTH_CACHE_S:
             return cacheado[1]
 
-        medidas: dict[str, int] = {}
-        for cola in (*self.names.all_work, self.names.dlq):
-            try:
-                # `passive` no crea nada: pregunta por una cola que ya declaramos
-                # al arrancar. Si el broker no esta, se devuelve lo que se pudo
-                # medir en vez de romper /health.
-                resultado = self._canal_publicacion().queue_declare(
-                    queue=cola, passive=True)
-                medidas[cola] = int(resultado.method.message_count)
-            except Exception as exc:
-                self._log.debug("no pude medir la cola %s: %s", cola, exc)
-                self._reset_publicacion()
-                break
+        if not self._pub_lock.acquire(timeout=self.DEPTH_LOCK_WAIT_S):
+            self._log.debug("no consegui el canal para medir las colas; "
+                            "devuelvo la ultima medicion")
+            return cacheado[1] if cacheado is not None else {}
+        try:
+            medidas: dict[str, int] = {}
+            for cola in (*self.names.all_work, self.names.dlq):
+                try:
+                    # `passive` no crea nada: pregunta por una cola que ya
+                    # declaramos al arrancar. Si el broker no esta, se devuelve
+                    # lo que se pudo medir en vez de romper /health.
+                    resultado = self._canal_publicacion().queue_declare(
+                        queue=cola, passive=True)
+                    medidas[cola] = int(resultado.method.message_count)
+                except Exception as exc:
+                    # Un passive declare que falla CIERRA el canal, asi que hay
+                    # que tirarlo: si no, el proximo publish sale por un canal
+                    # muerto y recien ahi se entera.
+                    self._log.debug("no pude medir la cola %s: %s", cola, exc)
+                    self._reset_publicacion()
+                    break
+        finally:
+            self._pub_lock.release()
         self._depths_cache = (ahora, medidas)
         return medidas
 

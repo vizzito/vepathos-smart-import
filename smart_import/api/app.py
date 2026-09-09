@@ -22,6 +22,7 @@ import asyncio
 import json
 import logging
 import math
+import threading
 import time
 from contextlib import asynccontextmanager
 from concurrent.futures import ThreadPoolExecutor
@@ -43,7 +44,8 @@ from ..schemas import (
     SchemaNotFound, TargetSchema, resolve_schema_dir, resolve_schema_path,
 )
 from ..jobs import (
-    ALLOWED_SUFFIXES, ANALYZING, FAILED, Job, make_job_store, safe_filename,
+    ALLOWED_SUFFIXES, ANALYZING, FAILED, GEOCODE_FAILED, Job, make_job_store,
+    safe_filename,
 )
 from ..queue import (
     NORMALIZE, QueueNames, geocode_task, make_broker, normalize_task,
@@ -308,6 +310,65 @@ def _schema_path(name: str) -> Path:
         return resolve_schema_path(SCHEMA_DIR, name)
     except SchemaNotFound as exc:
         raise HTTPException(404, str(exc)) from exc
+
+
+#: Cuanto vale una lectura de job para los caminos ASYNC (`wait=` y los SSE).
+#:
+#: Los dos preguntan por el mismo job muchas veces por segundo, y con el estado
+#: en Redis cada pregunta es una llamada de red. Sin esto habia dos problemas
+#: encadenados: la llamada era sincrona y se hacia DESDE el event loop —el mismo
+#: pecado que el docstring de `health` documenta como ya sufrido— y ademas se
+#: repetia por cada cliente mirando el mismo import.
+#:
+#: 100 ms es corto contra los intervalos que la usan (200 ms el `wait`, 500 ms
+#: el SSE), asi que no agrega demora perceptible, y colapsa a los N espectadores
+#: de un job en una sola lectura por tick.
+JOB_READ_CACHE_S = 0.1
+#: Techo del cache. Entradas de 100 ms no crecen, pero un pico de jobs
+#: distintos no puede dejar el dict grande para siempre.
+JOB_READ_CACHE_MAX = 512
+_job_read_cache: dict[str, tuple[float, Job | None]] = {}
+_job_read_lock = threading.Lock()
+#: Lecturas EN VUELO, por job. Sin esto el cache solo sirve para lecturas
+#: seguidas: diez SSE que tickean juntos fallan el cache los diez a la vez y
+#: mandan diez lecturas identicas: exactamente el caso que hay que evitar.
+_job_read_en_vuelo: dict[str, tuple[Any, Any]] = {}
+
+
+def _cachear(job_id: str, job: Job | None) -> Job | None:
+    with _job_read_lock:
+        if len(_job_read_cache) >= JOB_READ_CACHE_MAX:
+            corte = time.monotonic() - JOB_READ_CACHE_S
+            for jid in [k for k, (t, _) in _job_read_cache.items() if t < corte]:
+                _job_read_cache.pop(jid, None)
+            if len(_job_read_cache) >= JOB_READ_CACHE_MAX:
+                _job_read_cache.clear()
+        _job_read_cache[job_id] = (time.monotonic(), job)
+    return job
+
+
+async def _leer_job(job_id: str) -> Job | None:
+    """El job para un camino async: fuera del loop y una sola lectura por tick."""
+    ahora = time.monotonic()
+    with _job_read_lock:
+        entrada = _job_read_cache.get(job_id)
+        if entrada is not None and (ahora - entrada[0]) < JOB_READ_CACHE_S:
+            return entrada[1]
+
+    loop = asyncio.get_running_loop()
+    en_vuelo = _job_read_en_vuelo.get(job_id)
+    # El loop se compara porque los tests corren varios `asyncio.run`: una
+    # tarea de un loop ya cerrado no se puede esperar desde otro.
+    if en_vuelo is not None and en_vuelo[0] is loop and not en_vuelo[1].done():
+        return await asyncio.shield(en_vuelo[1])
+
+    tarea = loop.create_task(run_in_threadpool(store.get, job_id))
+    _job_read_en_vuelo[job_id] = (loop, tarea)
+    try:
+        return _cachear(job_id, await tarea)
+    finally:
+        if _job_read_en_vuelo.get(job_id, (None, None))[1] is tarea:
+            _job_read_en_vuelo.pop(job_id, None)
 
 
 def _job_or_404(job_id: str) -> Job:
@@ -653,7 +714,11 @@ async def create_import(
             # (el archivo ya esta en disco) y se espera afuera: retener el cupo
             # durante la espera convertiria 32 uploads lentos en un 429 para el
             # resto, cuando en realidad no se esta escribiendo nada.
-            _encolar(job, normalize_task(
+            # En un threadpool y no inline: `_encolar` escribe en Redis y
+            # publica en RabbitMQ, dos llamadas de red sincronas. Desde la
+            # corrutina bloquearian el event loop, y con el loop trabado no se
+            # atiende NADA — ni /health, ni los SSE, ni el polling.
+            await run_in_threadpool(_encolar, job, normalize_task(
                 job.id, phone_region=phone_region, diagnostics=diagnostics,
                 timezone=timezone, depot_timezone=depot_timezone,
                 service_date=service_date.isoformat() if service_date else None,
@@ -703,15 +768,28 @@ def _encolar(job: Job, task) -> None:
     """
     job.touch(ANALYZING)
     store.save(job)
+    _publicar_o_liberar(job, task, FAILED)
+
+
+def _publicar_o_liberar(job: Job, task, estado_si_falla: str) -> None:
+    """Publica la tarea, y si no se puede, saca al job de `busy`.
+
+    Un job marcado ocupado cuyo mensaje nunca llego a la cola es la peor
+    combinacion posible: `next_actions` viene vacio, la UI muestra un spinner,
+    el barrido no lo toca por estar ocupado y su estado tiene el piso de TTL de
+    los jobs en vuelo. Nadie lo va a destrabar, porque no hay mensaje que
+    reintentar. Por eso el estado se revierte ANTES de contestar el error: el
+    503 es recuperable, un job trabado un dia entero no.
+    """
     try:
         broker.publish(task)
     except Exception as exc:
-        # Sin cola no hay quien haga el trabajo. Decirlo ahora es mucho mejor
-        # que aceptar el archivo y dejar un job ocupado que nadie va a terminar:
-        # el cliente reintenta, y el operador ve el 503 en vez de un embudo.
         job.error = "no se pudo encolar el trabajo"
-        job.touch(FAILED)
+        job.touch(estado_si_falla)
         store.save(job)
+        # La reserva se suelta sola: `save` con un estado que no es `busy`
+        # borra la clave del claim. Sin eso, el reintento del usuario chocaria
+        # con un 409 "ya hay una geolocalizacion en curso" que no es cierto.
         logger.error("no se pudo encolar %s de %s: %s", task.type, job.id, exc)
         raise HTTPException(
             503, "el servicio no puede tomar trabajo ahora mismo (cola de tareas "
@@ -730,10 +808,10 @@ async def _esperar_resultado(job_id: str, wait_s: float | None,
     """
     limite = float(CFG.default_wait_s if wait_s is None else wait_s)
     fin = time.monotonic() + limite
-    job = store.get(job_id)
+    job = await _leer_job(job_id)
     while job is not None and job.busy and time.monotonic() < fin:
         await asyncio.sleep(0.2)
-        job = store.get(job_id)
+        job = await _leer_job(job_id)
 
     if job is None:
         # Se lo llevo un DELETE o el barrido mientras esperabamos.
@@ -821,7 +899,7 @@ async def import_events(
         last: str | None = None
         # primer evento inmediato
         while True:
-            job = store.get(job_id)
+            job = await _leer_job(job_id)
             if job is None:
                 yield f"event: error\ndata: {json.dumps({'error': 'job inexistente'})}\n\n"
                 return
@@ -1026,7 +1104,7 @@ async def confirm_mapping(
         raise HTTPException(409, "el archivo original ya no esta disponible")
 
     if broker is not None:
-        _encolar(job, normalize_task(
+        await run_in_threadpool(_encolar, job, normalize_task(
             job.id, phone_region=phone_region, diagnostics=diagnostics,
             manual_mapping=mapping, timezone=timezone,
             depot_timezone=depot_timezone,
@@ -1208,14 +1286,16 @@ def start_geocode(
         # Los parametros viajan crudos y el `DepotContext` se rearma del otro
         # lado: mandar el objeto ya construido ataria el formato del mensaje a
         # la forma interna de una clase.
-        broker.publish(geocode_task(
+        # GEOCODE_FAILED y no FAILED si la cola no responde: el normalize
+        # sigue siendo valido y descargable, que es la invariante de siempre.
+        _publicar_o_liberar(job, geocode_task(
             job.id, origin_lat=origin_lat, origin_lon=origin_lon,
             bbox=list(box) if box else None, index=index,
             enhance_addresses=bool(enhance_addresses),
             depot_city=depot_city, depot_region=depot_region,
             depot_postcode=depot_postcode, depot_country=depot_country,
-            depot_address=depot_address, max_distance_km=max_distance_km))
-        stage(logger, "QUEUE", "encolado", job=job.id, tarea="geocode")
+            depot_address=depot_address, max_distance_km=max_distance_km),
+            GEOCODE_FAILED)
     else:
         _geocode_pool.submit(
             _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)

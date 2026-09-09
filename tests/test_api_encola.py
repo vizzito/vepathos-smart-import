@@ -294,3 +294,52 @@ def test_dos_geocodes_seguidos_encolan_uno_solo(api):
 
     assert primero.status_code == 202 and segundo.status_code == 409
     assert [p.task.type for p in broker.publicadas].count(GEOCODE) == 1
+
+
+# ------------------------------------- si la cola no responde, nada queda trabado
+
+class BrokerCaido(FakeBroker):
+    """El broker se cayo justo entre reservar el job y publicar la tarea."""
+
+    def publish(self, task, *, delay_s: float = 0.0) -> None:
+        raise ConnectionError("RabbitMQ no responde")
+
+
+def test_si_no_se_puede_encolar_el_normalize_el_job_no_queda_ocupado(api):
+    _, store, _ = api
+    api_module.broker = BrokerCaido()
+    client = TestClient(api_module.app)
+
+    res = _subir(client)
+
+    assert res.status_code == 503
+    jobs = store.list(10)
+    assert jobs, "no se creo el job"
+    assert not jobs[0].busy, "quedo ocupado con la tarea nunca encolada"
+
+
+def test_si_no_se_puede_encolar_el_geocode_se_puede_reintentar(api):
+    """El caso que dejaba un job trabado un dia entero.
+
+    `claim_geocode` ya habia reservado y guardado el job como ocupado cuando el
+    publish fallaba. Sin revertir eso: `next_actions` vacio, spinner eterno, el
+    barrido no lo toca por estar ocupado, y el reintento del usuario rebotando
+    contra un 409 «ya hay una geolocalizacion en curso» que no era cierto.
+    """
+    cfg, store, ctx = api
+    client, _ = _con_broker(api)
+    res = _subir(client)
+    job_id = res.json()["job_id"]
+    assert store.get(job_id).needs_geocode > 0
+
+    api_module.broker = BrokerCaido()
+    falla = client.post(f"/imports/{job_id}/geocode",
+                        params={"depot_city": "Buenos Aires", "depot_country": "AR"})
+    assert falla.status_code == 503
+
+    job = store.get(job_id)
+    assert not job.busy, "quedo ocupado sin tarea en la cola"
+    assert job.status == "geocode_failed", job.status
+    # Y sobre todo: el normalize sigue sirviendo y se puede volver a intentar.
+    assert job.normalized_path
+    assert "geocode" in {a["action"] for a in job.next_actions()}

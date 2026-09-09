@@ -320,6 +320,17 @@ class Config:
     #: se refresca cada FLEET_SCAN_TTL_S: es una valvula gruesa, no un limitador
     #: exacto, y no cuesta una llamada de red por request.
     max_queue_depth: int = 500
+    #: Techo de un artefacto que un worker devuelve por `/internal`.
+    #:
+    #: La puerta publica ya acota lo que ENTRA (`max_file_mb`), pero lo que sale
+    #: del pipeline puede ser mucho mas grande que su entrada: 50k filas con
+    #: `diagnostics=true` son varias veces el .xlsx original. Sin techo, un
+    #: worker con un bug escribe hasta llenar el disco de la api, que es el
+    #: mismo disco donde vive routehub.
+    #:
+    #: Generoso a proposito: rechazar un resultado legitimo obliga a rehacer
+    #: todo el trabajo. 0 = sin techo.
+    max_artifact_mb: float = 100.0
 
     #: De donde baja el worker los archivos del job y adonde devuelve el
     #: resultado. Es el rol api, alcanzado por HTTP saliente con token.
@@ -432,6 +443,7 @@ class Config:
             consume_geocode=_bool("SMART_IMPORT_CONSUME_GEOCODE", False),
             worker_slots=_int("SMART_IMPORT_WORKER_SLOTS", 2),
             max_queue_depth=_int("SMART_IMPORT_MAX_QUEUE_DEPTH", 500),
+            max_artifact_mb=_float("SMART_IMPORT_MAX_ARTIFACT_MB", 100.0),
             max_requeue_attempts=_int("SMART_IMPORT_MAX_REQUEUE_ATTEMPTS", 10),
             shutdown_drain_s=_float("SMART_IMPORT_SHUTDOWN_DRAIN_S", 60.0),
             task_timeout_normalize_s=_float("SMART_IMPORT_TASK_TIMEOUT_NORMALIZE_S", 300.0),

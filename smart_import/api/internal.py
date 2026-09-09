@@ -111,11 +111,19 @@ def internal_router(ctx_factory: Callable) -> APIRouter:
         # no puede encontrar un archivo a medio subir, que es peor que no
         # encontrar nada porque parece un resultado valido.
         parcial = destino.with_suffix(destino.suffix + PARCIAL)
+        # Se corta al vuelo y no al final: el punto del techo es no escribir
+        # los bytes, no descubrir despues que se escribieron. El disco de la
+        # api es el mismo donde corre routehub.
+        techo = int(float(ctx.cfg.max_artifact_mb) * 1024 * 1024)
         tamano = 0
         try:
             with open(parcial, "wb") as fh:
                 async for chunk in request.stream():
                     tamano += len(chunk)
+                    if techo and tamano > techo:
+                        raise HTTPException(
+                            413, f"el {kind} supera {ctx.cfg.max_artifact_mb:g} MB "
+                                 f"(SMART_IMPORT_MAX_ARTIFACT_MB)")
                     fh.write(chunk)
             os.replace(parcial, destino)
         except Exception:

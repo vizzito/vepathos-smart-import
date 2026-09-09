@@ -411,3 +411,86 @@ def test_el_prefetch_no_supera_los_slots(tmp_path):
     consumer.broker.consume(consumer.colas, consumer.slots, consumer.on_message)
 
     assert broker.prefetch == 3
+
+
+# ---------------------------------------------- slots colgados, no historicos
+
+def test_una_tarea_lenta_que_igual_termina_devuelve_su_slot(escenario_cfg):
+    """El nodo no se puede apagar por tareas viejas que terminaron bien.
+
+    El vigia aparta lo que se paso del tope, pero un thread de Python no se
+    puede matar: puede seguir y terminar un segundo despues. Cuando eso pasa el
+    slot vuelve a estar libre. Contarlo para siempre hacia que un worker de dos
+    slots se apagara solo despues de dos geocodes lentos repartidos en horas
+    —por ejemplo dos zonas nuevas que tuvieron que construir su indice— aunque
+    en ese momento no tuviera nada corriendo.
+    """
+    consumer, broker, store, _, _ = escenario_cfg(task_timeout_normalize_s=0)
+    job = store.create("x.csv", "vepathos")
+
+    for _ in range(consumer.slots + 2):
+        entrega = broker.entregar(normalize_task(job.id))
+        consumer.on_message(entrega)             # PoolSincrono: corre y termina
+        assert consumer.revisar_vencidas() == 0, "no deberia quedar nada en vuelo"
+
+    assert consumer._colgadas == set()
+    assert not consumer._drenando.is_set(), "se apago por tareas que terminaron"
+
+
+def test_con_todos_los_slots_realmente_colgados_se_corta_el_consumo(escenario_cfg):
+    """Un nodo sin slots utiles miente si sigue tomando trabajo: mejor bajar."""
+    consumer, broker, store, _, _ = escenario_cfg(task_timeout_normalize_s=0)
+    job = store.create("x.csv", "vepathos")
+
+    # Tareas que quedan EN VUELO: se registran y nunca se resuelven.
+    for i in range(consumer.slots):
+        entrega = broker.entregar(normalize_task(job.id))
+        vuelo = __import__("smart_import.queue.consumer", fromlist=["EnVuelo"]).EnVuelo(
+            task=Task.from_bytes(entrega.body), receipt=entrega.receipt,
+            vence_en=time.monotonic() - 1)
+        with consumer._candado:
+            consumer._en_vuelo[entrega.receipt] = vuelo
+
+    assert consumer.revisar_vencidas() == consumer.slots
+    assert len(consumer._colgadas) == consumer.slots
+    assert consumer._drenando.is_set(), "no corto el consumo con todo colgado"
+
+
+# ------------------------------------------- el job se marca antes del acuse
+
+def test_si_no_se_puede_marcar_el_job_no_se_ackea(escenario, monkeypatch):
+    """Sin la marca, el job queda ocupado para siempre y nadie lo destraba.
+
+    El mensaje ya esta en la DLQ, que no tiene consumidor: si ademas se ackea,
+    no queda nada que pueda volver a intentar marcarlo. Fallar antes del acuse
+    deja que el broker redeliverea y se reintente el apartado entero.
+    """
+    consumer, broker, store, _, resultado = escenario
+    job = store.create("x.csv", "vepathos")
+    resultado["excepcion"] = RuntimeError("se cayo algo")
+
+    def store_roto(*_a, **_k):
+        raise ConnectionError("Redis no responde")
+
+    monkeypatch.setattr(store, "get", store_roto)
+
+    tarea = Task(type=NORMALIZE, job_id=job.id,
+                 attempt=int(consumer.cfg.max_requeue_attempts))
+    consumer.on_message(broker.entregar(tarea))
+
+    assert broker.ackeadas == [], "ackeo sin haber podido marcar el job"
+
+
+def test_el_job_se_marca_fallido_antes_de_ackear(escenario):
+    """El orden correcto: primero la marca, despues la DLQ, despues el acuse."""
+    consumer, broker, store, _, resultado = escenario
+    job = store.create("x.csv", "vepathos")
+    resultado["excepcion"] = RuntimeError("se cayo algo")
+
+    tarea = Task(type=NORMALIZE, job_id=job.id,
+                 attempt=int(consumer.cfg.max_requeue_attempts))
+    consumer.on_message(broker.entregar(tarea))
+
+    assert store.get(job.id).status == FAILED
+    assert len(broker.dlq) == 1
+    assert broker.ackeadas, "no ackeo despues de dejar todo consistente"

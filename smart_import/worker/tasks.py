@@ -14,6 +14,7 @@ from __future__ import annotations
 from datetime import date
 from typing import Any
 
+from ..jobs import HAS_NORMALIZE
 from ..queue.envelope import GEOCODE, NORMALIZE, InvalidTask, Task
 from ..schemas import resolve_schema_path
 from .handlers import WorkerContext, run_geocode_job, run_normalize_job
@@ -39,6 +40,14 @@ def _normalizar(ctx: WorkerContext, task: Task) -> None:
     job = ctx.store.get(task.job_id)
     if job is None:
         raise JobDesaparecido(task.job_id)
+    if _ya_esta_hecho(job.normalize_task_id, task, job.status in HAS_NORMALIZE):
+        ctx.logger.info("%s ya estaba hecho: se perdio el acuse, no el trabajo",
+                        task)
+        return
+    # Se marca ANTES de trabajar y la guarda exige ademas un estado terminal:
+    # asi una tarea que muere a la mitad (queda en `analyzing` o `failed`) se
+    # vuelve a hacer, y solo se saltea la que llego hasta el final.
+    job.normalize_task_id = task.task_id
     p = task.params
     run_normalize_job(
         ctx, job,
@@ -57,8 +66,15 @@ def _normalizar(ctx: WorkerContext, task: Task) -> None:
 def _geocodificar(ctx: WorkerContext, task: Task) -> None:
     from ..geocoding.depot_context import depot_from_params
 
-    if ctx.store.get(task.job_id) is None:
+    job = ctx.store.get(task.job_id)
+    if job is None:
         raise JobDesaparecido(task.job_id)
+    if _ya_esta_hecho(job.geocode_task_id, task, bool(job.geocoded_path)):
+        ctx.logger.info("%s ya estaba hecho: se perdio el acuse, no el trabajo",
+                        task)
+        return
+    job.geocode_task_id = task.task_id
+    ctx.store.save(job)
     p = task.params
     lat, lon = p.get("origin_lat"), p.get("origin_lon")
     origin = (lat, lon) if lat is not None and lon is not None else None
@@ -73,6 +89,19 @@ def _geocodificar(ctx: WorkerContext, task: Task) -> None:
     )
     run_geocode_job(ctx, task.job_id, origin, bbox, p.get("index"), depot=depot,
                     enhance_addresses=bool(p.get("enhance_addresses")))
+
+
+def _ya_esta_hecho(task_id_guardado: str | None, task: Task,
+                   hay_resultado: bool) -> bool:
+    """Si ESTA tarea ya produjo el resultado que el job tiene ahora.
+
+    Las dos condiciones son necesarias. Solo el id no alcanza: se marca antes
+    de trabajar, asi que una tarea que murio a la mitad lo tiene igual y hay que
+    rehacerla. Solo el resultado tampoco: un reintento legitimo (que trae otro
+    `task_id`) tiene que poder rehacer el trabajo sobre un job que ya tenia
+    salida, que es justo lo que hace `PUT /mapping`.
+    """
+    return bool(task_id_guardado) and task_id_guardado == task.task_id and hay_resultado
 
 
 def _fecha(valor: Any) -> date | None:

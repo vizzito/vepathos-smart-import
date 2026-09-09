@@ -364,3 +364,47 @@ def test_el_worker_usa_http_y_el_resto_disco(api, tmp_path):
     for rol in ("embedded", "api"):
         assert isinstance(make_artifact_store(cfg.replace(role=rol)),
                           LocalArtifactStore)
+
+
+# ------------------------------------------------------- techo de un artefacto
+
+def test_un_artefacto_gigante_se_corta_al_vuelo(api, http_crudo, monkeypatch):
+    """El disco de la api es el mismo donde corre routehub.
+
+    La puerta publica ya acota lo que ENTRA, pero la salida del pipeline puede
+    ser mucho mas grande que su entrada: 50k filas con `diagnostics=true` son
+    varias veces el .xlsx original. Sin techo, un worker con un bug escribe
+    hasta llenar la particion, y el error lo termina dando el filesystem cuando
+    ya es tarde para todo lo demas que corre en esa VM.
+    """
+    cfg, store, artefactos = api
+    monkeypatch.setattr(api_module, "CFG", cfg.replace(max_artifact_mb=0.001))
+    job = _job_con_raw(api)
+
+    res = http_crudo.put(f"/internal/jobs/{job.id}/artifacts/{FLAT}",
+                         content=b"x" * 5000, headers={TOKEN_HEADER: TOKEN})
+
+    assert res.status_code == 413
+    assert "MAX_ARTIFACT_MB" in res.json()["detail"]
+
+
+def test_el_artefacto_rechazado_no_deja_nada_en_disco(api, http_crudo, monkeypatch):
+    """Ni el archivo bueno ni el parcial: cortar y dejar basura es peor."""
+    cfg, store, artefactos = api
+    monkeypatch.setattr(api_module, "CFG", cfg.replace(max_artifact_mb=0.001))
+    job = _job_con_raw(api)
+
+    http_crudo.put(f"/internal/jobs/{job.id}/artifacts/{FLAT}",
+                   content=b"x" * 5000, headers={TOKEN_HEADER: TOKEN})
+
+    quedaron = [p for p in artefactos.dir_for(job.id).rglob("*")
+                if p.is_file() and p.name != "entregas.csv"]
+    assert quedaron == [], quedaron
+
+
+def test_un_artefacto_normal_pasa(api, http_crudo):
+    """El techo es generoso: rechazar un resultado legitimo obliga a rehacerlo."""
+    job = _job_con_raw(api)
+    res = http_crudo.put(f"/internal/jobs/{job.id}/artifacts/{FLAT}",
+                         content=CONTENIDO, headers={TOKEN_HEADER: TOKEN})
+    assert res.status_code == 204

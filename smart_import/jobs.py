@@ -77,6 +77,18 @@ class Job:
     error: str | None = None
     # marca de tiempo del inicio de la operacion async actual (para eta)
     op_started_at: float | None = None
+    #: Que tarea produjo el resultado que hoy tiene el job.
+    #:
+    #: La cola es at-least-once: un mensaje se redeliverea si se corta el canal
+    #: antes del acuse, aunque el trabajo haya terminado perfecto. Sin esto, ese
+    #: mensaje repetido vuelve a normalizar y PISA lo que ya estaba — incluido
+    #: el resultado de un geocode posterior, porque el normalize reescribe
+    #: `report` entero y devuelve el estado a `normalized`.
+    #:
+    #: Guardar el id de la tarea que ya termino deja distinguir "esto hay que
+    #: hacerlo" de "esto ya se hizo y lo que se perdio fue el acuse".
+    normalize_task_id: str | None = None
+    geocode_task_id: str | None = None
 
     def touch(self, status: str | None = None) -> None:
         if status:
