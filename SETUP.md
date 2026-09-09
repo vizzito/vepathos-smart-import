@@ -750,6 +750,13 @@ docker compose --env-file .env.worker \
   -f docker-compose.worker.yml -f docker-compose.samevm.worker.yml up -d
 ```
 
+`.env.worker` es un **overlay**, no la config completa del nodo: el compose lee
+primero el `.env` del despliegue (el mismo del nodo api) y después este, que
+gana. Los umbrales tienen que ser los mismos en los dos lados o el resultado
+depende de qué nodo agarre el archivo — medido acá con el mismo CSV: con
+`GEOCODE_VALID_BAND=0.81` da 20 pines verdes, con `0.85` da 4. La prueba de que
+están alineados es `fleet.config_drift` vacío en `/health`.
+
 El overlay `samevm` resuelve un detalle que muerde: la api publica en
 `127.0.0.1:8100` del host, así que desde un container esa dirección no existe.
 El worker entra a la red del compose de la api y le pide por su nombre de
@@ -757,9 +764,12 @@ servicio, igual que hace RouteHub.
 
 #### Paso 3 — Sumar workers de otras máquinas
 
-En la otra máquina, con el repo clonado:
+En la otra máquina, con el repo clonado. Copiá también el `.env` del nodo api
+—de ahí salen los umbrales compartidos— y dejá `.env.worker` solo para lo que
+cambia:
 
 ```bash
+scp api-prod:/srv/vepathos-smart-import/.env .env
 cp .env.worker.example .env.worker
 # editar: RABBITMQ_HOST, REDIS_HOST, SMART_IMPORT_API_URL y el token del Paso 1
 

@@ -8,10 +8,13 @@ data/
 smart_import/resources/locality_expand_geonames.json
 benchmarks/results.*
 benchmarks/extraction.json
-.env
-.env.prod
-# El de un nodo worker: lleva la password del broker y el token de /internal.
-.env.worker
+# Ningun .env se versiona: llevan credenciales (password del broker, token de
+# /internal). Se ignoran TODOS y se listan las plantillas de a una, para que
+# inventar un `.env.loquesea` mañana no lo publique por olvido.
+.env*
+!.env.example
+!.env.prod.example
+!.env.worker.example
 # Override de desarrollo (monta el codigo del host). Se copia del .example y
 # NUNCA se versiona: si viajara al servidor, prod dejaria de correr la imagen.
 docker-compose.override.yml

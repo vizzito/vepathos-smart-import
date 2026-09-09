@@ -34,7 +34,15 @@ services:
     image: vepathos/smart-import:${SMART_IMPORT_TARGET:-runtime}-${IMAGE_TAG:-latest}
     container_name: ${SMART_IMPORT_WORKER_NAME:-vepathos-smart-import-worker}
     command: ["worker"]
+    # Dos archivos, como el cutter del optimizer. El BASE trae los umbrales del
+    # despliegue —bandas de geocode, límites, schema— que tienen que ser los
+    # mismos que los del nodo api: si no, el mismo archivo da distinto según
+    # qué nodo lo agarre. El overlay va último y gana, porque define el rol.
+    # `/health` compara las dos huellas y lista en `fleet.config_drift` al que
+    # no coincide, pero eso avisa tarde; esto lo evita.
     env_file:
+      - path: ${SMART_IMPORT_BASE_ENV:-.env}
+        required: false
       - ${SMART_IMPORT_ENV_FILE:-.env.worker}
     environment:
       # El rol no sale del .env: este archivo ES el rol. Ponerlo aca evita el
