@@ -937,6 +937,7 @@ se lee siempre en `GET /config`, que es lo único que no miente:
 | `SMART_IMPORT_MAX_REQUEUE_ATTEMPTS` | `10` | intentos antes de apartar una tarea a la DLQ |
 | `SMART_IMPORT_TASK_TIMEOUT_NORMALIZE_S` / `_GEOCODE_S` | `300` / `1800` | pasado esto la tarea se aparta y el job queda fallido, en vez de girar para siempre |
 | `SMART_IMPORT_SHUTDOWN_DRAIN_S` | `60` | cuánto espera un worker que baja a lo que está en vuelo |
+| `SMART_IMPORT_RUN_LOCK_TTL_S` | `30` | cuánto se espera antes de dar por muerto a un nodo callado. **No** es cuánto puede durar una tarea (ver abajo). Piso: 10 |
 | `SMART_IMPORT_DEFAULT_WAIT_S` | `30` | cuánto espera `POST /imports` el resultado antes de responder 202. `0` = siempre 202 |
 
 Las tres reglas de alineación de las bandas de geocode están explicadas en los
@@ -1012,7 +1013,7 @@ Casi nada, y a propósito. `POST /imports` encola y **espera** hasta
 
 | Situación | Qué hace el sistema |
 |---|---|
-| El worker muere a mitad de una tarea | Nadie ackeó: el broker la redeliverea. Otro nodo la retoma cuando vence la reserva de ejecución, ~1-2 min |
+| El worker muere a mitad de una tarea | Nadie ackeó: el broker la redeliverea. Otro nodo la retoma cuando vence la reserva de ejecución (con el default, hasta ~40 s) |
 | Dos entregas del mismo job a la vez | El segundo ve la reserva tomada y difiere la tarea con demora. Nunca dos nodos escribiendo la misma salida |
 | Falla pasajera (Redis, la api reiniciándose) | Se reintenta con demora creciente, hasta `MAX_REQUEUE_ATTEMPTS`; después va a la DLQ y el job queda `failed` con el motivo |
 | Archivo corrupto | No se reintenta: el job queda `failed` con el error y la tarea se confirma. Reintentar un `.xlsx` roto solo ocupa un slot |
@@ -1025,6 +1026,31 @@ un TTL de 24 h. Para mirarlas:
 ```bash
 rabbitmqctl list_queues name messages | grep smart-import
 ```
+
+**La reserva de ejecución y por qué no conviene bajarla a cualquier cosa.**
+`SMART_IMPORT_RUN_LOCK_TTL_S` no es cuánto puede durar una tarea: mientras el
+worker vive la renueva cada un tercio de ese tiempo, así que un geocode de una
+hora la sostiene sin problema. Lo que mide es **cuánto se espera antes de dar
+por muerto a un nodo que dejó de dar señales**, y de ahí sale cuánto tarda otro
+en retomar su trabajo: el TTL más un tercio más, que es lo que tarda el que
+espera en volver a preguntar.
+
+Bajarlo acelera el failover y sube el riesgo de una muerte falsa. Si una pausa
+de GC, un hipo de Redis o una laptop que se suspende dejan al worker sin
+renovar más que el TTL, otro toma el job y **el mismo archivo se procesa dos
+veces**: no se corrompe nada —gana el que termina último y la salida es la
+misma— pero es trabajo tirado, y en un geocode largo se nota. Cuando pasa queda
+en el log del que perdió, con el nombre de la variable adentro:
+
+```
+se perdio el lock de imp_abc123: otro nodo lo dio por muerto (sin renovar por
+mas de 30s). Se va a procesar dos veces. Si se repite, subi SMART_IMPORT_RUN_LOCK_TTL_S
+```
+
+El piso es 10 s y el arranque avisa si pusiste menos, en vez de aplicarlo en
+silencio. Como referencia: `15` con nodos estables en red local, el default
+`30` para el caso normal, `45`–`60` si los workers son laptops o están detrás
+de un túnel casero.
 
 ---
 

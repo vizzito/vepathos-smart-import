@@ -15,6 +15,7 @@ import sys
 
 from ..artifacts import make_artifact_store
 from ..config import Config
+from ..fleet import Heartbeat
 from ..jobs import make_job_store
 from ..logging_setup import get_logger, setup as setup_logging
 from ..queue import Consumer, make_broker
@@ -43,7 +44,26 @@ def revisar_configuracion(cfg: Config) -> list[str]:
         problemas.append("SMART_IMPORT_CONSUME_NORMALIZE y _CONSUME_GEOCODE en "
                          "false: este worker no consumiria ninguna cola")
     problemas.extend(_revisar_geocode(cfg))
+    problemas.extend(_revisar_lock(cfg))
     return problemas
+
+
+def _revisar_lock(cfg: Config) -> list[str]:
+    """Un TTL de ejecucion por debajo del piso no acelera nada.
+
+    Es un numero que invita a bajarlo —«esperar para retomar un job es mucho»—
+    y lo que pasa debajo del piso no es un failover mas rapido: es que el
+    jitter normal de red alcanza para que un nodo VIVO pierda el lock y otro
+    empiece el mismo archivo. Se avisa al arrancar en vez de aplicar el piso en
+    silencio, para que el que puso el numero sepa que no es el que corre.
+    """
+    from ..queue.consumer import RUN_LOCK_TTL_MIN_S
+
+    if cfg.run_lock_ttl_s < RUN_LOCK_TTL_MIN_S:
+        return [f"SMART_IMPORT_RUN_LOCK_TTL_S={cfg.run_lock_ttl_s:g} esta debajo del "
+                f"piso de {RUN_LOCK_TTL_MIN_S:g}s, asi que corre el piso. Mas abajo "
+                "no se retoma antes: se duplica trabajo de nodos vivos"]
+    return []
 
 
 def _revisar_geocode(cfg: Config) -> list[str]:
@@ -72,6 +92,20 @@ def _revisar_geocode(cfg: Config) -> list[str]:
     return []
 
 
+def _retoma_en(cfg: Config) -> float:
+    """Peor caso para que otro nodo tome el trabajo de este si muere.
+
+    Son dos esperas encadenadas: que venza el lock del muerto, y que el que
+    espera vuelva a preguntar. Sumarlas es lo unico que responde la pregunta
+    real —«¿cuanto tarda un import si se cae un worker?»— y ninguno de los dos
+    numeros la contesta solo.
+    """
+    from ..queue.consumer import DEMORA_OCUPADO_MIN_S, DIVISOR_RENOVACION, RUN_LOCK_TTL_MIN_S
+
+    ttl = max(RUN_LOCK_TTL_MIN_S, cfg.run_lock_ttl_s)
+    return ttl + max(DEMORA_OCUPADO_MIN_S, ttl / DIVISOR_RENOVACION)
+
+
 def describir(cfg: Config) -> list[str]:
     """El catalogo que este nodo imprime al arrancar.
 
@@ -87,6 +121,10 @@ def describir(cfg: Config) -> list[str]:
         f"estado         redis {cfg.redis_host}:{cfg.redis_port} db {cfg.redis_db}",
         f"archivos       {cfg.api_url}",
         f"scratch        {cfg.scratch_dir or '(temporal del sistema)'}",
+        # Cuanto tarda otro nodo en retomar lo de este si se muere callado. Es
+        # el numero que explica un job que "no avanza" justo despues de una
+        # caida, asi que va en el catalogo y no escondido en la config.
+        f"retoma en      hasta {_retoma_en(cfg):.0f}s si este nodo muere",
     ]
     if cfg.consume_geocode:
         try:
@@ -185,7 +223,22 @@ def main(solo_verificar: bool = False) -> int:
     def contexto() -> WorkerContext:
         return WorkerContext(cfg=cfg, store=store, artifacts=artifacts, logger=logger)
 
-    Consumer(cfg, broker, contexto, logger).run()
+    consumer = Consumer(cfg, broker, contexto, logger)
+
+    # El latido es lo que hace que este worker APAREZCA en /health y desaparezca
+    # solo si se cae. Es telemetria: si Redis no contesta, el worker igual
+    # consume. Necesita el mismo cliente que el estado, no una conexion propia.
+    latido = None
+    client = getattr(store, "client", None)
+    if client is not None:
+        latido = Heartbeat(client, cfg, colas=consumer.colas, logger=logger).start()
+
+    try:
+        consumer.run()
+    finally:
+        if latido is not None:
+            # Un apagado limpio no deja un fantasma 90 s en /health.
+            latido.stop()
     return 0
 
 

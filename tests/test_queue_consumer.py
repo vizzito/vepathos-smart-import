@@ -14,7 +14,7 @@ import pytest
 from smart_import.artifacts.local import LocalArtifactStore
 from smart_import.config import Config
 from smart_import.jobs import FAILED, GEOCODE_FAILED, GEOCODING, JobStore
-from smart_import.queue.consumer import Consumer, demora_para
+from smart_import.queue.consumer import RUN_LOCK_TTL_MIN_S, Consumer, demora_para
 from smart_import.queue.envelope import (
     GEOCODE, NORMALIZE, InvalidTask, Task, geocode_task, normalize_task,
 )
@@ -24,29 +24,38 @@ from tests.fake_broker import FakeBroker, PoolSincrono
 
 
 @pytest.fixture
-def escenario(tmp_path, monkeypatch):
+def escenario_cfg(tmp_path, monkeypatch):
+    """Arma el consumidor, con la config que le pida cada test."""
+    def armar(**overrides):
+        cfg = Config.from_env().replace(role="worker", worker_slots=2,
+                                        max_requeue_attempts=3,
+                                        work_dir=str(tmp_path), **overrides)
+        store = JobStore(tmp_path)
+        ctx = WorkerContext(cfg=cfg, store=store,
+                            artifacts=LocalArtifactStore(tmp_path),
+                            logger=__import__("logging").getLogger("test"))
+        hechas: list[Task] = []
+        resultado: dict = {"excepcion": None, "antes": None}
+
+        def falso_run_task(_ctx, task):
+            hechas.append(task)
+            if resultado["antes"] is not None:
+                resultado["antes"](task)
+            if resultado["excepcion"] is not None:
+                raise resultado["excepcion"]
+
+        monkeypatch.setattr("smart_import.queue.consumer.run_task", falso_run_task)
+        broker = FakeBroker()
+        consumer = Consumer(cfg, broker, lambda: ctx, pool=PoolSincrono())
+        return consumer, broker, store, hechas, resultado
+
+    return armar
+
+
+@pytest.fixture
+def escenario(escenario_cfg):
     """Un consumidor con un handler de mentira, para dictar como termina cada tarea."""
-    cfg = Config.from_env().replace(role="worker", worker_slots=2,
-                                    max_requeue_attempts=3,
-                                    work_dir=str(tmp_path))
-    store = JobStore(tmp_path)
-    ctx = WorkerContext(cfg=cfg, store=store,
-                        artifacts=LocalArtifactStore(tmp_path),
-                        logger=__import__("logging").getLogger("test"))
-    hechas: list[Task] = []
-    resultado: dict = {"excepcion": None, "antes": None}
-
-    def falso_run_task(_ctx, task):
-        hechas.append(task)
-        if resultado["antes"] is not None:
-            resultado["antes"](task)
-        if resultado["excepcion"] is not None:
-            raise resultado["excepcion"]
-
-    monkeypatch.setattr("smart_import.queue.consumer.run_task", falso_run_task)
-    broker = FakeBroker()
-    consumer = Consumer(cfg, broker, lambda: ctx, pool=PoolSincrono())
-    return consumer, broker, store, hechas, resultado
+    return escenario_cfg()
 
 
 def _job(store, status=None):
@@ -230,6 +239,36 @@ def test_el_lock_se_suelta_aunque_la_tarea_falle(escenario):
     consumer.on_message(broker.entregar(normalize_task(job.id)))
 
     assert store.claim_run(job.id, "otro-nodo:1", ttl_s=60)
+
+
+def test_el_ttl_del_lock_sale_de_la_config(escenario_cfg):
+    """Cuanto se tarda en retomar el trabajo de un nodo muerto es una decision
+    de despliegue: en una LAN 15 s alcanzan, con workers en casas ajenas no."""
+    consumer, _, store, _, _ = escenario_cfg(run_lock_ttl_s=15)
+    job = _job(store)
+
+    consumer.on_message(consumer.broker.entregar(normalize_task(job.id)))
+
+    assert consumer.run_lock_ttl == 15
+    assert consumer.demora_ocupado == 5, "no se pregunta mas seguido que el piso"
+
+
+def test_un_ttl_ridiculo_no_se_aplica(escenario_cfg):
+    """Debajo del piso no se retoma antes: se duplica trabajo de nodos VIVOS.
+
+    Un TTL de 2 s significa que cualquier pausa de GC o hipo de red convierte a
+    un worker sano en un muerto a los ojos del resto, y el archivo se procesa
+    dos veces. El piso lo impide, y el arranque lo dice en vez de callarselo.
+    """
+    from smart_import.worker.main import revisar_configuracion
+
+    consumer, *_ = escenario_cfg(run_lock_ttl_s=2)
+
+    assert consumer.run_lock_ttl == RUN_LOCK_TTL_MIN_S
+    avisos = revisar_configuracion(consumer.cfg.replace(
+        role="worker", rabbitmq_host="r", redis_host="r",
+        api_url="http://x", worker_token="t"))
+    assert any("RUN_LOCK_TTL_S" in a for a in avisos)
 
 
 def test_el_mismo_nodo_puede_retomar_su_propia_tarea(escenario):

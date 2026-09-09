@@ -1,10 +1,17 @@
-"""Almacen de jobs: metadata en memoria, archivos en disco.
+"""Almacen de jobs: metadata y archivos, con dos backends posibles.
 
-Un proceso, sin base de datos ni cola: el normalize de 50k filas tarda ~1.5 s,
-que no justifica la infraestructura de un trabajo asincronico. La consecuencia a
-tener presente es que el estado no sobrevive a un reinicio, y que cada instancia
-solo conoce sus propios jobs (ver `serve`: para escalar se agregan instancias
-con balanceo sticky, no procesos).
+Este modulo es el de MEMORIA: un dict con un candado, que es el despliegue de un
+solo proceso (`SMART_IMPORT_ROLE=embedded`). Sigue siendo el default y sigue sin
+necesitar infraestructura, con la consecuencia de siempre — el estado no
+sobrevive a un reinicio, y cada instancia solo conoce sus propios jobs.
+
+Con el trabajo repartido entre maquinas ese dict no alcanza, y el estado se
+guarda en Redis (`job_store_redis.py`) detras de esta misma interfaz. La
+diferencia que importa al leer el codigo de arriba: alla `get()` devuelve una
+COPIA, asi que mutar el `Job` NO alcanza para que el cambio se vea. Toda
+escritura tiene que terminar en `save()` o `save_progress()`, incluso aca donde
+hoy es casi un no-op — es lo unico que hace que cambiar de backend sea
+configuracion y no una caceria de estados que no avanzan.
 """
 from __future__ import annotations
 

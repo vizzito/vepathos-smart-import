@@ -90,6 +90,15 @@ class Broker(ABC):
         """Devuelve (`requeue=True`) o descarta hacia la DLQ. Desde otro thread."""
 
     @abstractmethod
+    def depths(self) -> dict[str, int]:
+        """Cuantos mensajes esperan en cada cola. `{}` si no se pudo averiguar.
+
+        Es la unica senal de saturacion que queda cuando el trabajo se va a la
+        cola: sin esto, una sobrecarga deja de verse como un 429 y pasa a ser
+        latencia invisible, que es peor de diagnosticar.
+        """
+        return {}
+
     def stop(self) -> None:
         """Corta el consumo. `consume()` retorna. Se llama desde una señal."""
 
@@ -137,6 +146,8 @@ class RabbitBroker(Broker):
         self._pub_conn = None
         self._pub_channel = None
         self._pub_lock = threading.Lock()
+        #: (medido_en, {cola: profundidad}) — ver DEPTH_CACHE_S
+        self._depths_cache: tuple[float, dict[str, int]] | None = None
 
         self._consuming = False
         self._stop = threading.Event()
@@ -344,6 +355,34 @@ class RabbitBroker(Broker):
         conexion.add_callback_threadsafe(_hacerlo)
 
     # ---------------------------------------------------------- cierre
+
+    #: Segundos que vale una medicion de profundidad. Cada cola es un round
+    #: trip al broker y `/health` lo puede pedir seguido; un segundo alcanza
+    #: para que la lectura sea util y para que un refresh compulsivo no le
+    #: agregue trafico a RabbitMQ.
+    DEPTH_CACHE_S = 1.0
+
+    def depths(self) -> dict[str, int]:
+        ahora = time.monotonic()
+        cacheado = self._depths_cache
+        if cacheado is not None and (ahora - cacheado[0]) < self.DEPTH_CACHE_S:
+            return cacheado[1]
+
+        medidas: dict[str, int] = {}
+        for cola in (*self.names.all_work, self.names.dlq):
+            try:
+                # `passive` no crea nada: pregunta por una cola que ya declaramos
+                # al arrancar. Si el broker no esta, se devuelve lo que se pudo
+                # medir en vez de romper /health.
+                resultado = self._canal_publicacion().queue_declare(
+                    queue=cola, passive=True)
+                medidas[cola] = int(resultado.method.message_count)
+            except Exception as exc:
+                self._log.debug("no pude medir la cola %s: %s", cola, exc)
+                self._reset_publicacion()
+                break
+        self._depths_cache = (ahora, medidas)
+        return medidas
 
     def stop(self) -> None:
         self._stop.set()

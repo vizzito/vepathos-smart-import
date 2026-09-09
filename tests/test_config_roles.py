@@ -42,10 +42,6 @@ def test_config_no_publica_los_secretos(monkeypatch):
     """`/config` no pide credenciales: lo que entra ahi es publico."""
     monkeypatch.setenv("SMART_IMPORT_WORKER_TOKEN", "s3cr3to-de-verdad")
     monkeypatch.setenv("REDIS_PASSWORD", "otra-cosa-secreta")
-    # El que hace `--check` contra un broker real tiene esta variable exportada
-    # en su shell: sin esto, el test pasa o falla segun quien lo corra.
-    monkeypatch.delenv("RABBITMQ_PASSWORD", raising=False)
-
     descripcion = Config.from_env().describe()
 
     assert descripcion["worker_token"] == "***"

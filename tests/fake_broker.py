@@ -46,6 +46,20 @@ class FakeBroker(Broker):
     def send_to_dlq(self, task: Task, motivo: str) -> None:
         self.dlq.append((task, motivo))
 
+    def depths(self) -> dict[str, int]:
+        """Lo que este broker sabe de verdad: lo publicado y todavia no ackeado.
+
+        El fake puede contar exacto, asi que los tests de contrapresion no
+        dependen de simular a RabbitMQ: preguntan lo mismo que preguntaria la
+        api en produccion.
+        """
+        colas: dict[str, int] = {"smart-import-dlq": len(self.dlq)}
+        for publicada in self.publicadas:
+            tipo = publicada.task.type
+            cola = f"smart-import-{tipo}" if publicada.delay_s <= 0 else f"smart-import-{tipo}-delay"
+            colas[cola] = colas.get(cola, 0) + 1
+        return colas
+
     def consume(self, colas, prefetch, on_message) -> None:
         self.colas = list(colas)
         self.prefetch = prefetch

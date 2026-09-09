@@ -46,6 +46,11 @@ LOCK_TTL_S = 30 * 60
 PROGRESS_INTERVAL_S = 1.0
 
 
+#: Cuanto sobrevive el estado de un job que todavia esta encolado o
+#: procesandose, por corta que sea la retencion configurada.
+BUSY_TTL_FLOOR_S = 24 * 3600
+
+
 def _text(raw: Any) -> str | None:
     """redis-py devuelve bytes salvo con `decode_responses`. Aceptamos los dos."""
     if raw is None:
@@ -64,6 +69,18 @@ class RedisJobStore:
         # barrido es quien borra los archivos del disco, y si la metadata se
         # vence antes, esos archivos quedan huerfanos sin nadie que los nombre.
         self._ttl_s = max(1, int(ttl_s * 2))
+        # Piso para los jobs EN VUELO. La retencion corta es para los
+        # terminados: el usuario ya se llevo el resultado y el disco no tiene
+        # por que seguir ocupado. Pero un job encolado no controla cuando lo
+        # toman — depende de cuanta cola haya adelante y de cuantos workers esten
+        # prendidos —, y si su estado vence mientras espera, el worker lo levanta
+        # y no encuentra el job: desde afuera se ve como un import que
+        # desaparecio sin que nadie lo borrara.
+        #
+        # Con esto, `SMART_IMPORT_JOB_TTL_HOURS=4` significa lo que uno espera
+        # que signifique (los resultados no se acumulan) sin poner en riesgo lo
+        # que todavia no se proceso.
+        self._ttl_busy_s = max(self._ttl_s, BUSY_TTL_FLOOR_S)
         self._artifacts = artifacts
         self._lock_ttl_s = int(lock_ttl_s)
         self._progress_interval_s = float(progress_interval_s)
@@ -74,6 +91,16 @@ class RedisJobStore:
         self._holder = f"{socket.gethostname()}:{os.getpid()}"
 
     # ---------------------------------------------------------- claves
+
+    @property
+    def client(self):
+        """El cliente Redis, para quien necesite el MISMO destino que el estado.
+
+        Lo usa el latido de flota: abrir una segunda conexion para escribir una
+        clave cada 30 s solo agregaria otra cosa que se puede desconfigurar
+        distinto (otro host, otra db) y fallar en silencio.
+        """
+        return self._client
 
     def _key(self, job_id: str) -> str:
         return f"{self._prefix}job:{job_id}"
@@ -117,10 +144,20 @@ class RedisJobStore:
 
     # ---------------------------------------------------------- escritura
 
+    def _ttl_para(self, job: Job) -> int:
+        """Cuanto vive el estado de este job.
+
+        En vuelo, el piso; terminado, la retencion configurada. Como `save` se
+        llama en cada cambio de estado, la transicion a terminal acorta el TTL
+        sola: no hace falta barrer nada para que el job empiece a caducar.
+        """
+        return self._ttl_busy_s if job.busy else self._ttl_s
+
     def create(self, filename: str, schema: str) -> Job:
         job = Job(id=f"imp_{uuid.uuid4().hex[:12]}",
                   filename=safe_filename(filename), schema=schema)
-        self._client.set(self._key(job.id), json.dumps(job.as_state()), ex=self._ttl_s)
+        self._client.set(self._key(job.id), json.dumps(job.as_state()),
+                         ex=self._ttl_para(job))
         self._client.zadd(self._index, {job.id: job.created_at})
         return job
 
@@ -133,7 +170,7 @@ class RedisJobStore:
         botones de descarga que devuelven 409.
         """
         escrito = self._client.set(self._key(job.id), json.dumps(job.as_state()),
-                                   ex=self._ttl_s, xx=True)
+                                   ex=self._ttl_para(job), xx=True)
         if not escrito:
             return job
         self._client.zadd(self._index, {job.id: job.created_at})

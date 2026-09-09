@@ -50,11 +50,18 @@ from ..worker.tasks import JobDesaparecido, run_task
 from .broker import Broker, Delivery, QueueNames
 from .envelope import GEOCODE, NORMALIZE, InvalidTask, Task
 
-#: Cuanto dura el lock de ejecucion y cada cuanto se renueva. Corto para que un
-#: nodo muerto libere rapido; renovado en un tercio para que una pausa de GC o
-#: un pico de latencia no lo suelten estando vivo.
-RUN_LOCK_TTL_S = 90.0
-RENOVACION_S = RUN_LOCK_TTL_S / 3
+#: El lock de ejecucion NO mide cuanto puede tardar un job: mientras el nodo
+#: respira lo renueva cada `TTL/3`, asi que una tarea de una hora lo sostiene
+#: sin problema. Lo que mide es **cuanto se espera antes de dar por muerto a un
+#: nodo callado**, y por lo tanto cuanto tarda otro en retomar su trabajo.
+#:
+#: Bajarlo acelera el failover y sube el riesgo de una muerte falsa: si una
+#: pausa de GC, un hipo de Redis o una laptop que se suspende dejan al nodo sin
+#: renovar mas de un TTL, otro toma el job y el mismo archivo se procesa dos
+#: veces. Por eso el piso: debajo de esto el jitter normal de red alcanza para
+#: perder el lock estando vivo.
+RUN_LOCK_TTL_MIN_S = 10.0
+DIVISOR_RENOVACION = 3
 
 #: Espera antes de reintentar, por numero de intento: 5 s, 10 s, 20 s… hasta un
 #: minuto. Da tiempo a que se reinicie lo que se cayo sin dejar la tarea
@@ -62,8 +69,12 @@ RENOVACION_S = RUN_LOCK_TTL_S / 3
 DEMORA_BASE_S = 5.0
 DEMORA_MAX_S = 60.0
 
-#: Cuanto espera una tarea diferida porque otro nodo tiene el job.
-DEMORA_OCUPADO_S = 15.0
+#: Cuanto espera una tarea diferida porque otro nodo tiene el job. Se deriva
+#: del TTL del lock —no tiene sentido volver a preguntar mucho mas seguido de
+#: lo que el lock puede tardar en vencer— con un piso para no encuestar en
+#: vano. Es el sumando que se le agrega al TTL para saber cuanto tarda, en el
+#: peor caso, otro nodo en retomar el trabajo de uno muerto.
+DEMORA_OCUPADO_MIN_S = 5.0
 
 
 def demora_para(intento: int) -> float:
@@ -94,6 +105,11 @@ class Consumer:
         #: quede trabado, `redis-cli get …lock:run:<job>` diga a que maquina
         #: mirarle el log.
         self.holder = f"{socket.gethostname()}:{os.getpid()}"
+        #: El piso no se negocia desde el entorno: un TTL de 2 s no acelera
+        #: nada, solo hace que los nodos se roben el trabajo entre si.
+        self.run_lock_ttl = max(RUN_LOCK_TTL_MIN_S, float(cfg.run_lock_ttl_s))
+        self.demora_ocupado = max(DEMORA_OCUPADO_MIN_S,
+                                  self.run_lock_ttl / DIVISOR_RENOVACION)
 
         self._pool = pool or ThreadPoolExecutor(max_workers=self.slots,
                                                 thread_name_prefix="tarea")
@@ -200,12 +216,13 @@ class Consumer:
     def _ejecutar(self, vuelo: EnVuelo) -> None:
         task = vuelo.task
         ctx = self._ctx_factory()
-        if not ctx.store.claim_run(task.job_id, self.holder, RUN_LOCK_TTL_S):
+        if not ctx.store.claim_run(task.job_id, self.holder, self.run_lock_ttl):
             self.log.info("%s lo esta ejecutando otro nodo; se difiere", task)
             self._diferir(vuelo)
             return
 
-        renovador = _Renovador(ctx.store, task.job_id, self.holder, self.log)
+        renovador = _Renovador(ctx.store, task.job_id, self.holder, self.log,
+                               self.run_lock_ttl)
         renovador.start()
         try:
             # Todo lo que el worker baje o escriba es una copia de paso: al
@@ -246,14 +263,14 @@ class Consumer:
         """
         task = vuelo.task
         edad = time.time() - task.created_at
-        if edad > self.timeout_de(task.type) + RUN_LOCK_TTL_S:
+        if edad > self.timeout_de(task.type) + self.run_lock_ttl:
             # A la DLQ SIN tocar el job: lo esta haciendo otro, y marcarlo
             # fallido desde aca seria pisar trabajo bueno con un error falso.
             self.log.error("%s lleva %.0fs esperando su turno: se aparta", task, edad)
             self.broker.send_to_dlq(task, f"esperando el turno hace {edad:.0f}s")
             self._resolver(vuelo, self.broker.ack, vuelo.receipt)
             return
-        self.broker.publish(task, delay_s=DEMORA_OCUPADO_S)
+        self.broker.publish(task, delay_s=self.demora_ocupado)
         self._resolver(vuelo, self.broker.ack, vuelo.receipt)
 
     def _reintentar(self, vuelo: EnVuelo, motivo: str,
@@ -348,24 +365,31 @@ class Consumer:
 class _Renovador(threading.Thread):
     """Mantiene vivo el lock de ejecucion mientras la tarea trabaja."""
 
-    def __init__(self, store, job_id: str, holder: str, log: logging.Logger):
+    def __init__(self, store, job_id: str, holder: str, log: logging.Logger,
+                 ttl: float):
         super().__init__(name=f"renueva-{job_id}", daemon=True)
         self._store = store
         self._job_id = job_id
         self._holder = holder
         self._log = log
+        self._ttl = ttl
         self._fin = threading.Event()
 
     def run(self) -> None:
-        while not self._fin.wait(RENOVACION_S):
+        while not self._fin.wait(self._ttl / DIVISOR_RENOVACION):
             try:
                 if not self._store.renew_run(self._job_id, self._holder,
-                                             RUN_LOCK_TTL_S):
-                    # Perdimos el lock (se vencio y lo tomo otro). No se aborta
-                    # la tarea —no se puede— pero queda dicho en el log, que es
-                    # la unica pista de por que un job se hizo dos veces.
-                    self._log.warning("se perdio el lock de ejecucion de %s",
-                                      self._job_id)
+                                             self._ttl):
+                    # Nos dieron por muertos estando vivos: no llegamos a
+                    # renovar en un TTL y otro nodo tomo el job. No se aborta
+                    # la tarea —un thread de Python no se puede matar— asi que
+                    # el archivo se va a procesar dos veces. Es la unica pista
+                    # de por que paso, y dice que hacer al respecto.
+                    self._log.warning(
+                        "se perdio el lock de %s: otro nodo lo dio por muerto "
+                        "(sin renovar por mas de %.0fs). Se va a procesar dos "
+                        "veces. Si se repite, subi SMART_IMPORT_RUN_LOCK_TTL_S",
+                        self._job_id, self._ttl)
                     return
             except Exception as exc:                            # pragma: no cover
                 self._log.warning("no se pudo renovar el lock de %s: %s",

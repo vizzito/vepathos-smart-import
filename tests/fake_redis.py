@@ -70,6 +70,27 @@ class FakeRedis:
                 self._valores.pop(key, None)
             return borradas
 
+    def mget(self, keys):
+        """Varias claves de un saque, como las lee el escaneo de la flota."""
+        with self._candado:
+            return [self._valores[k][0] if self._vivo(k) else None for k in keys]
+
+    def scan_iter(self, match: str = "*", count: int = 100):
+        """Solo el patron `prefijo*`, que es el unico que usa la flota.
+
+        Recorre una copia de las claves: `_vivo` borra las vencidas al pasar, y
+        mutar el dict mientras se itera revienta.
+        """
+        prefijo = match[:-1] if match.endswith("*") else match
+        with self._candado:
+            claves = list(self._valores)
+        for key in claves:
+            if not key.startswith(prefijo):
+                continue
+            with self._candado:
+                if self._vivo(key):
+                    yield key
+
     # ------------------------------------------------------------ zsets
 
     def zadd(self, key: str, mapping: dict[str, float]) -> int:

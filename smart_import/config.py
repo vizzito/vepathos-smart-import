@@ -300,6 +300,26 @@ class Config:
     task_timeout_normalize_s: float = 300.0
     task_timeout_geocode_s: float = 1800.0
     node_heartbeat_ttl_s: float = 90.0
+    #: Cuanto se espera antes de dar por muerto a un nodo que dejo de dar
+    #: senales, y por lo tanto cuanto tarda otro en retomar su trabajo. NO es
+    #: cuanto puede durar una tarea: mientras el nodo vive, renueva el lock
+    #: cada `ttl/3`. Bajarlo acelera el failover; demasiado bajo hace que una
+    #: pausa larga se confunda con una muerte y el archivo se haga dos veces.
+    #: El consumer le aplica un piso de 10 s.
+    run_lock_ttl_s: float = 30.0
+    #: Cuantas tareas pueden estar esperando en la cola antes de que la api
+    #: empiece a rechazar imports nuevos con 429.
+    #:
+    #: Repone la contrapresion que se perdio al mandar el trabajo a la cola. Con
+    #: todo en proceso, un servicio saturado contestaba "reintenta en 20 s" y el
+    #: operador lo veia. Encolando, la misma sobrecarga se acepta y se convierte
+    #: en latencia: nadie recibe un error, los imports simplemente tardan cada
+    #: vez mas y no hay ninguna senal de que el sistema esta al limite.
+    #:
+    #: 0 = sin techo (aceptar siempre). Se mide contra la foto de la flota, que
+    #: se refresca cada FLEET_SCAN_TTL_S: es una valvula gruesa, no un limitador
+    #: exacto, y no cuesta una llamada de red por request.
+    max_queue_depth: int = 500
 
     #: De donde baja el worker los archivos del job y adonde devuelve el
     #: resultado. Es el rol api, alcanzado por HTTP saliente con token.
@@ -411,10 +431,12 @@ class Config:
             consume_normalize=_bool("SMART_IMPORT_CONSUME_NORMALIZE", True),
             consume_geocode=_bool("SMART_IMPORT_CONSUME_GEOCODE", False),
             worker_slots=_int("SMART_IMPORT_WORKER_SLOTS", 2),
+            max_queue_depth=_int("SMART_IMPORT_MAX_QUEUE_DEPTH", 500),
             max_requeue_attempts=_int("SMART_IMPORT_MAX_REQUEUE_ATTEMPTS", 10),
             shutdown_drain_s=_float("SMART_IMPORT_SHUTDOWN_DRAIN_S", 60.0),
             task_timeout_normalize_s=_float("SMART_IMPORT_TASK_TIMEOUT_NORMALIZE_S", 300.0),
             task_timeout_geocode_s=_float("SMART_IMPORT_TASK_TIMEOUT_GEOCODE_S", 1800.0),
+            run_lock_ttl_s=_float("SMART_IMPORT_RUN_LOCK_TTL_S", 30.0),
             node_heartbeat_ttl_s=_float("SMART_IMPORT_NODE_HEARTBEAT_TTL_S", 90.0),
             api_url=_str("SMART_IMPORT_API_URL", ""),
             worker_token=_str("SMART_IMPORT_WORKER_TOKEN", ""),

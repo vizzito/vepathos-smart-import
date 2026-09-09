@@ -559,15 +559,25 @@ def serve(
     host: str = typer.Option("0.0.0.0", help="0.0.0.0 para exponerlo al host."),
     port: int = typer.Option(8100, help="Puerto HTTP."),
     reload: bool = typer.Option(False, help="Auto-reload (desarrollo)."),
-    workers: int = typer.Option(1, help="Procesos uvicorn. Con 1 el store en memoria es consistente."),
+    workers: int = typer.Option(
+        1, help="Procesos uvicorn. Mas de 1 requiere SMART_IMPORT_ROLE=api "
+                "(estado compartido); en embedded solo vale 1."),
 ) -> None:
     """Levanta la API HTTP.
 
-    OJO: el almacen de jobs vive en memoria del proceso, asi que este servicio
-    escala agregando INSTANCIAS, no procesos. Y cada instancia solo conoce sus
-    propios jobs: el balanceador tiene que mandar todos los requests de un job
-    a la misma (sticky por IP o por cookie). Con round-robin, el POST /imports
-    cae en una y el POST /geocode en otra, que responde 404.
+    Cuantos procesos se pueden levantar depende de DONDE vive el estado, y eso
+    lo decide `SMART_IMPORT_ROLE`:
+
+      · `embedded` (default): los jobs viven en la memoria de ESTE proceso, asi
+        que `--workers` tiene que ser 1. Para dar mas capacidad se agregan
+        INSTANCIAS con balanceo sticky, de modo que cada job vuelva siempre a la
+        suya; con round-robin el POST /imports cae en una y el POST /geocode en
+        otra, que responde 404.
+
+      · `api`: el estado esta en Redis y los archivos se sirven por rutas
+        compartidas, asi que cualquier proceso puede atender cualquier job.
+        Varios workers de uvicorn son validos, y el balanceo NO necesita ser
+        sticky.
     """
     import uvicorn
 
@@ -575,18 +585,24 @@ def serve(
     # El guard va ANTES del banner. Al revés, el log dice "escuchando en :8100"
     # y despues falla: alguien mirando `docker logs` lee que el servicio arranco
     # cuando en realidad salio con exit 2 y no hay nadie atendiendo el puerto.
-    if workers > 1:
+    if workers > 1 and cfg.role == "embedded":
         # Era un aviso, y un aviso no impide nada: quien levantaba el servicio
         # con --workers 4 para "escalar" rompia el flujo de forma intermitente.
         # El POST /imports cae en un worker y el POST /geocode en otro, que
         # responde 404 porque no conoce ese job.
+        #
+        # El guard es sobre `embedded`, no sobre `--workers`: en rol `api` el
+        # estado esta en Redis y varios procesos son exactamente lo que se
+        # quiere. Dejarlo como un no-negociable seria pedirle al operador que
+        # levante N containers para algo que uvicorn ya sabe hacer.
         typer.echo(
-            f"  ERROR: --workers {workers} no es una configuracion valida.\n"
+            f"  ERROR: --workers {workers} no es valido con "
+            f"SMART_IMPORT_ROLE=embedded.\n"
             "  El almacen de jobs vive en memoria del proceso: con mas de un\n"
             "  worker, el import y su geocode caen en procesos distintos y el\n"
             "  segundo responde 404. Usa --workers 1.\n"
-            "  Para escalar, levanta otra INSTANCIA (otra VM o otro puerto) y\n"
-            "  balancea sticky, de modo que cada job vuelva siempre a la suya.",
+            "  Para varios procesos, pone SMART_IMPORT_ROLE=api con Redis: ahi\n"
+            "  el estado es compartido y el balanceo no necesita ser sticky.",
             err=True)
         raise typer.Exit(2)
     typer.echo(f"  Smart Import escuchando en http://{host}:{port}")
@@ -603,7 +619,7 @@ def serve(
                    f"imports en paralelo: {cfg.max_concurrent_normalize} "
                    f"(cola de admision {cfg.max_normalize_queue})")
     uvicorn.run("smart_import.api:app", host=host, port=port, reload=reload,
-                workers=1, limit_concurrency=limite or None)
+                workers=workers, limit_concurrency=limite or None)
 
 
 @app.command()

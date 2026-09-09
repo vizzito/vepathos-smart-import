@@ -15,7 +15,7 @@ import pytest
 from smart_import.artifacts import LocalArtifactStore
 from smart_import.job_store_redis import RedisJobStore
 from smart_import.jobs import (
-    COMPLETED, GEOCODE_QUEUED, GEOCODING, NORMALIZED, JobStore,
+    ANALYZING, COMPLETED, GEOCODE_QUEUED, GEOCODING, NORMALIZED, JobStore,
 )
 from tests.fake_redis import FakeRedis
 
@@ -310,3 +310,49 @@ def test_lo_guardado_es_json_plano(store_redis, redis_falso):
 
     assert estado["id"] == job.id
     assert estado["_version"] == 1
+
+
+# ------------------------------------------------ retencion segun el estado
+
+def test_un_job_en_vuelo_no_se_evapora_con_retencion_corta():
+    """Retencion corta es para los RESULTADOS, no para lo que falta procesar.
+
+    Un job encolado no controla cuando lo toman: depende de cuanta cola haya
+    adelante y de cuantos workers esten prendidos. Si su estado vence mientras
+    espera, el worker lo levanta, no lo encuentra, y desde afuera se ve como un
+    import que desaparecio sin que nadie lo borrara.
+    """
+    from smart_import.job_store_redis import BUSY_TTL_FLOOR_S
+
+    redis = FakeRedis()
+    # 1 hora de retencion: mucho mas corta que lo que puede esperar en la cola
+    store = RedisJobStore(redis, prefix="t:", ttl_s=3600)
+
+    job = store.create("entregas.xlsx", "vepathos_flat_v1")
+    job.status = ANALYZING                       # encolado, esperando un worker
+    store.save(job)
+    assert job.busy is True
+    _, vence_en_vuelo = redis._valores[f"t:job:{job.id}"]
+
+    job.status = NORMALIZED                      # ya esta el resultado
+    store.save(job)
+    assert job.busy is False
+    _, vence_terminado = redis._valores[f"t:job:{job.id}"]
+
+    # En vuelo aguanta el piso; terminado, la retencion corta que se configuro.
+    assert vence_en_vuelo - time.time() >= BUSY_TTL_FLOOR_S - 5
+    assert vence_terminado - time.time() < BUSY_TTL_FLOOR_S
+
+
+def test_terminar_acorta_el_ttl_sin_que_nadie_barra_nada():
+    """La transicion a terminal es la que empieza a caducar el job."""
+    redis = FakeRedis()
+    store = RedisJobStore(redis, prefix="t:", ttl_s=3600)
+    job = store.create("x.csv", "vepathos_flat_v1")
+    job.status = GEOCODING
+    store.save(job)
+    largo = redis._valores[f"t:job:{job.id}"][1]
+
+    job.status = COMPLETED
+    store.save(job)
+    assert redis._valores[f"t:job:{job.id}"][1] < largo

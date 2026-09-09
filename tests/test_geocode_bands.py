@@ -15,6 +15,7 @@ from smart_import.geocoding.bands import (
     BAND_NEEDS_GEOCODING, BAND_REVIEW, BAND_VALID, band_for, band_from_row, percent,
 )
 from smart_import.geocoding.osm_geocoder import LocalOSMGeocoder
+from tests.conftest import PREFIJOS_DE_CONFIG
 
 CFG = Config.from_env()
 
@@ -236,11 +237,7 @@ def test_los_defaults_del_dataclass_y_de_from_env_no_pueden_divergir(monkeypatch
     soft-reject calculaba un pin de respaldo para que lo tirara la banda.
     """
     for name in list(os.environ):
-        if name.startswith(("SMART_IMPORT_", "GEOCODE", "AUTO_ACCEPT",
-                            "REVIEW_THRESHOLD", "MAPPING_MIN", "ROUTE_OPTIMIZER",
-                            # sin prefijo propio: las comparte con el optimizer,
-                            # y quedan exportadas en el shell del que operó un nodo
-                            "RABBITMQ_", "REDIS_")):
+        if name.startswith(PREFIJOS_DE_CONFIG):
             monkeypatch.delenv(name, raising=False)
 
     quieto = Config()

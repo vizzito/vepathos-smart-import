@@ -1,13 +1,20 @@
 """API HTTP de Smart Import.
 
 Diseno:
-  - `normalize` es SINCRONO: 50k filas tardan ~1.5 s, no justifica una cola.
-  - `geocode` es ASINCRONO y SIEMPRE explicito: nunca se dispara solo.
-  - el archivo subido no viaja mas alla de esta capa; se guarda en disco y el
-    resto del pipeline trabaja con rutas.
-  - todo el trabajo pesado pasa por un techo de concurrencia (`_normalize_slot`)
-    y la puerta de entrada rechaza antes de leer el body si la cola esta llena:
-    bajo avalancha el servicio se defiende con 429, no reventando la VM.
+  - `geocode` es SIEMPRE explicito: nunca se dispara solo. Esto no cambia con
+    ningun rol ni backend; es contrato de producto.
+  - el archivo subido no viaja mas alla de esta capa: se guarda una vez y el
+    resto del pipeline trabaja con rutas o lo baja del rol api.
+  - `normalize` se resuelve de dos maneras segun quien haga el trabajo:
+      · `embedded` (default) lo corre en proceso, sincrono — 50k filas ~1.5 s —
+        con el techo de concurrencia de `_normalize_slot`;
+      · con un broker configurado lo ENCOLA y espera hasta `wait` segundos. Si
+        llega a tiempo responde el mismo 201 de siempre, para que ningun cliente
+        tenga que cambiar; si no, 202 con el `job_id`.
+  - tres puertas defienden al servicio, y protegen cosas distintas: admision
+    (disco de este nodo), `_normalize_slot` (su CPU, solo en embedded) y
+    profundidad de cola (el tiempo de espera, solo con broker). Bajo avalancha
+    se contesta 429 con `Retry-After`, no se revienta la VM.
 """
 from __future__ import annotations
 
@@ -38,7 +45,9 @@ from ..schemas import (
 from ..jobs import (
     ALLOWED_SUFFIXES, ANALYZING, FAILED, Job, make_job_store, safe_filename,
 )
-from ..queue import geocode_task, make_broker, normalize_task
+from ..queue import (
+    NORMALIZE, QueueNames, geocode_task, make_broker, normalize_task,
+)
 
 from ..logging_setup import get_logger, setup as setup_logging, stage
 from ..worker.handlers import (
@@ -143,6 +152,43 @@ async def _normalize_slot(job_id: str):
         _normalize_slots.release()
 
 
+def _rechazar_si_la_cola_esta_llena() -> None:
+    """Tercera puerta: cuanto trabajo hay esperando que alguien lo tome.
+
+    Las otras dos protegen a ESTE proceso (su disco y su CPU). Esta protege algo
+    que antes no existia: el tiempo de espera. Con el trabajo en la cola, la api
+    puede aceptar imports mucho mas rapido de lo que la flota los consume, y sin
+    techo eso no falla — se acumula. El usuario no recibe ningun error, solo un
+    import que tarda diez minutos, y del lado del servidor no hay nada raro que
+    mirar salvo una cola larga que nadie esta mirando.
+
+    Se mide contra la foto de la flota (`_fleet_scan`), no preguntandole al
+    broker: es una valvula gruesa y no vale una llamada de red por request. La
+    foto puede tener hasta FLEET_SCAN_TTL_S de atraso, que sobre una cola de
+    cientos de mensajes no cambia la decision.
+    """
+    # `CFG` y no `Config.from_env()`: el techo se compara contra la foto de
+    # la flota y contra el broker, que son de este proceso. Mezclar la config
+    # del arranque con la del entorno hace que la puerta mida una cosa y
+    # decida con otra.
+    techo = int(CFG.max_queue_depth or 0)
+    if techo <= 0 or broker is None or _fleet_scan is None:
+        return
+    colas = _fleet_scan[1].get("queues") or {}
+    esperando = int(colas.get(queue_names.work(NORMALIZE), 0) or 0)
+    if esperando <= techo:
+        return
+    stage(logger, "HTTP", "429 cola llena (la flota no da abasto)",
+          esperando=esperando, techo=techo,
+          workers=len(_fleet_scan[1].get("workers") or []))
+    raise HTTPException(
+        429,
+        f"hay {esperando} imports esperando en la cola y el limite es {techo}. "
+        f"Reintenta en unos segundos, o sumá un worker.",
+        headers={"Retry-After": str(RETRY_AFTER_FULL_S)},
+    )
+
+
 def _city_centroids_ready() -> bool:
     """True si cities15000 esta disponible (centroide + pais por ciudad)."""
     from ..geocoding.city_lookup import lookup_city_centroid
@@ -176,6 +222,12 @@ async def lifespan(_app: FastAPI):
 
     tareas = [asyncio.create_task(_purge_loop()),
               asyncio.create_task(_environment_loop())]
+    # En `embedded` no hay flota: no hay workers que listar ni colas que medir,
+    # y el bloque entero se omite de /health en vez de mostrar ceros que se leen
+    # como "se cayo todo".
+    if CFG.role != "embedded":
+        await _refresh_fleet()
+        tareas.append(asyncio.create_task(_fleet_loop()))
     try:
         yield
     finally:
@@ -239,6 +291,9 @@ store = make_job_store(CFG, artifacts)
 #: este mismo proceso, como siempre. Con roles, la API deja de ejecutar nada
 #: pesado y solo publica tareas.
 broker = make_broker(CFG, logger)
+#: Los nombres de las colas de este despliegue. La api solo los usa para leer
+#: profundidades; quien publica ya los resuelve adentro del broker.
+queue_names = QueueNames(CFG.queue_prefix)
 
 #: El puerto por el que los workers buscan y devuelven archivos. Se monta
 #: siempre, pero solo responde con `SMART_IMPORT_WORKER_TOKEN` puesto: sin token
@@ -320,6 +375,57 @@ async def _environment() -> dict[str, Any]:
         if _health_scan is not None:     # otro probe lo cargo mientras esperaba
             return _health_scan[1]
         return await _refresh_environment()
+
+
+#: Cada cuanto se vuelve a mirar la flota. Mas seguido que el disco: los workers
+#: se prenden y apagan a mano, y una lista vieja se lee como "no hay nadie
+#: trabajando", que es justo la conclusion que uno NO quiere sacar de un cache.
+FLEET_SCAN_TTL_S = 10.0
+_fleet_scan: tuple[float, dict[str, Any]] | None = None
+
+
+def _scan_fleet() -> dict[str, Any]:
+    """Quien trabaja y cuanto hay encolado.
+
+    Toca Redis y el broker, asi que NO se llama desde el request: se refresca en
+    `_fleet_loop` por la misma razon por la que el escaneo de disco tampoco se
+    hace inline (ver el docstring de `health`).
+    """
+    from ..fleet import config_digest, drift, read_fleet
+
+    digest = config_digest(CFG)
+    nodos: list[dict[str, Any]] = []
+    client = getattr(store, "client", None)
+    if client is not None:
+        nodos = read_fleet(client, CFG.redis_prefix)
+    return {
+        "role": CFG.role,
+        "config_digest": digest,
+        "workers": nodos,
+        "queues": broker.depths() if broker is not None else {},
+        # Vacio es lo normal. Con algo adentro, ese worker esta estampando las
+        # bandas con otros umbrales que los que esta api usa para pintarlas.
+        "config_drift": drift(nodos, digest),
+    }
+
+
+async def _refresh_fleet() -> dict[str, Any]:
+    global _fleet_scan
+    data = await run_in_threadpool(_scan_fleet)
+    _fleet_scan = (time.monotonic(), data)
+    return data
+
+
+async def _fleet_loop() -> None:
+    """Mantiene fresca la foto de la flota, fuera del camino del request."""
+    while True:
+        try:
+            await asyncio.sleep(FLEET_SCAN_TTL_S)
+            await _refresh_fleet()
+        except asyncio.CancelledError:
+            raise
+        except Exception:
+            logger.exception("fallo el refresco de la flota")
 
 
 async def _environment_loop() -> None:
@@ -425,6 +531,16 @@ async def health() -> dict[str, Any]:
         # Antiguedad del snapshot de disco. Si crece mucho por encima de
         # HEALTH_SCAN_TTL_S, el refresco de fondo murio y lo de arriba es viejo.
         "environment_age_s": round(time.monotonic() - _health_scan[0], 1),
+        # La flota. En `embedded` no aparece: no hay nada que repartir.
+        #
+        # `workers` vacio con la cola creciendo es EL sintoma a mirar: la api
+        # esta encolando y no hay nadie del otro lado. `config_drift` con algo
+        # adentro es peor, porque no se nota en ningun otro lado: ese worker
+        # estampa bandas con umbrales distintos de los que esta api usa para
+        # pintarlas, y el operador ve verde donde el archivo dice ambar.
+        **({"fleet": {**_fleet_scan[1],
+                      "age_s": round(time.monotonic() - _fleet_scan[0], 1)}}
+           if _fleet_scan is not None else {}),
     }
 
 
@@ -498,6 +614,8 @@ async def create_import(
     if suffix not in ALLOWED_SUFFIXES:
         raise HTTPException(415, f"extension '{suffix}' no soportada. "
                                  f"Permitidas: {sorted(ALLOWED_SUFFIXES)}")
+
+    _rechazar_si_la_cola_esta_llena()
 
     # Primero la admision, ANTES de leer una sola linea del body: recien
     # despues se crea el job y se escribe en disco. Al reves, una avalancha de
