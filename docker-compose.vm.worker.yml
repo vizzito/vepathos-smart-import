@@ -7,9 +7,14 @@
 #     -f docker-compose.worker.yml -f docker-compose.vm.worker.yml up -d
 #
 # Redis y RabbitMQ entran DIRECTO a 178.105.42.199 (whitelist DOCKER-USER).
-# El puerto 8100 publico NO llega desde esta VM (firewall Hetzner / red):
-# el tunel SSH abre 18100 en el host local y lo lleva al loopback de api-prod,
-# mismo patron que docker-compose.mac.worker.yml pero solo para la API.
+#
+# PLAN A (recomendado): abrir TCP 8100 en Hetzner para las IPs de la VM y usar
+# solo docker-compose.worker.yml con SMART_IMPORT_API_URL=http://178.105.42.199:8100
+# — ver DEPLOY-PRODUCTION.md §3.1.
+#
+# PLAN B (este overlay): si 8100 no se puede abrir, tunel SSH en la VM:
+#   ssh -f -N -L 18100:127.0.0.1:8100 <host-ssh-api-prod>
+# Mismo patron que mac.worker.yml pero solo para la API (Redis/Rabbit van directo).
 # ===========================================================================
 
 services:

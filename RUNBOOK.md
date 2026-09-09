@@ -456,7 +456,7 @@ para el diagrama completo y qué falta resolver.
 ### 8.1 Elegir qué corre
 
 ```bash
-cp .env.example .env
+cp deploy/templates/local-dev.env.template .env
 ```
 
 El núcleo (`normalize`) siempre está. Las otras dos se prenden y apagan solas:

@@ -17,7 +17,8 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 
 ---
 
-> **¿Cómo lo instalo / deployo?** Ver [SETUP.md](SETUP.md) — Docker local y prod,
+> **¿Cómo lo instalo / deployo?** Ver [SETUP.md](SETUP.md) — Docker local y prod.
+> **Prod distribuido** (api-prod + workers): [DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md).
 > concurrencia y escala, prune de imágenes, web, variables y cheatsheet.
 >
 > **¿Cómo funciona por dentro?** Ver [docs/pipelines.md](docs/pipelines.md) — el
@@ -425,7 +426,7 @@ diseño — el archivo puede crecer sin que crezca el costo de entenderlo.
 ## Docker: como container independiente en la VM del cutter
 
 ```bash
-cp .env.example .env.prod
+cp deploy/templates/local-dev.env.template .env
 export ROUTE_OPTIMIZER_DATA=/home/martin/route-optimizer-app/data
 docker compose -f docker-compose.prod.yml build
 docker compose -f docker-compose.prod.yml run --rm smart-import list-pbf
@@ -446,7 +447,7 @@ Target `runtime` (por defecto) o `runtime-libpostal` si querés el parser C.
 
 ## Configuración
 
-Todo por environment variable, todo con default razonable — ver `.env.example`.
+Todo por environment variable, todo con default razonable — ver [deploy/templates/](deploy/templates/) y `GET /config`.
 
 | Variable | Default | |
 |---|---|---|

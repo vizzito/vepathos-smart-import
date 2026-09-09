@@ -3,8 +3,9 @@
 Con el modo por defecto de sqlite y un unico commit al final del archivo, la
 primera fila tomaba el lock RESERVED de la base y no lo soltaba hasta terminar:
 un segundo job concurrente esperaba el timeout y moria con "database is
-locked", que subia hasta dejar el job en GEOCODE_FAILED. El .env.example ya
-traia SMART_IMPORT_GEOCODE_WORKERS=2, o sea la config de referencia estaba en
+locked", que subia hasta dejar el job en GEOCODE_FAILED. La plantilla local
+(local-dev.env.template) ya traia SMART_IMPORT_GEOCODE_WORKERS=2, o sea la
+config de referencia estaba en
 la condicion de falla.
 """
 import sqlite3

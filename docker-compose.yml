@@ -1,7 +1,7 @@
 # ===========================================================================
 # Smart Import — un compose para local y para produccion.
 #
-#   cp .env.example .env
+#   cp deploy/templates/local-dev.env.template .env
 #   docker compose up -d                    normalize + geocoding (+ libpostal si el target)
 #   docker compose --profile tools run --rm tools <comando>
 #

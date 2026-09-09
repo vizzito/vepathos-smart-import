@@ -5,7 +5,8 @@
 # le pide los archivos a la api por HTTP y devuelve los resultados. Es la
 # MISMA imagen que el nodo api: lo unico que cambia es el comando y el entorno.
 #
-#   cp .env.worker.example .env.worker
+#   cp deploy/templates/worker-vm.env.template .env.worker   # VM
+#   cp deploy/templates/worker-mac.env.template .env.prod.smart.local   # Mac
 #   # editar: RABBITMQ_HOST, REDIS_HOST, SMART_IMPORT_API_URL, el token
 #   docker compose --env-file .env.worker -f docker-compose.worker.yml \
 #     run --rm worker worker --check          # ¿llego a las tres piezas?

@@ -9,12 +9,8 @@ smart_import/resources/locality_expand_geonames.json
 benchmarks/results.*
 benchmarks/extraction.json
 # Ningun .env se versiona: llevan credenciales (password del broker, token de
-# /internal). Se ignoran TODOS y se listan las plantillas de a una, para que
-# inventar un `.env.loquesea` mañana no lo publique por olvido.
+# /internal). Plantillas versionadas en deploy/templates/*.env.template
 .env*
-!.env.example
-!.env.prod.example
-!.env.worker.example
 # Override de desarrollo (monta el codigo del host). Se copia del .example y
 # NUNCA se versiona: si viajara al servidor, prod dejaria de correr la imagen.
 docker-compose.override.yml

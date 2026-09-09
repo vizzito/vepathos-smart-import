@@ -8,6 +8,7 @@ Documentos relacionados:
 | Doc | Para qué |
 |---|---|
 | **Este archivo (`SETUP.md`)** | Install, Docker, concurrencia y escala, local, prod, prune, comandos |
+| **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)** | **Prod distribuido** (api-prod + VM worker + Mac libpostal): deploy, firewall, túneles, cheatsheet |
 | [RUNBOOK.md](RUNBOOK.md) | Cómo **probar** el pipeline (pytest → demo → curl → web) |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Diseño interno y gaps de producción |
 | [examples/](examples/README.md) | Archivos de ejemplo (incl. columna-mezclada) |
@@ -27,7 +28,7 @@ Documentos relacionados:
 9. [Comandos útiles (cheatsheet)](#9-comandos-útiles-cheatsheet)
 10. [Tests](#10-tests)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
-12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo entre máquinas](#124-repartir-el-trabajo-entre-máquinas)
+12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo](#124-repartir-el-trabajo-entre-máquinas) · **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)** (topología actual)
 13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos) · [13.3 Cuando algo se cae](#133-qué-pasa-cuando-algo-se-cae)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
 15. [Checklist “¿anda?”](#15-checklist-anda)
@@ -174,7 +175,7 @@ volver a subirlos.
 
 ```bash
 cd ~/workspace/vepathos-smart-import
-cp .env.example .env
+cp deploy/templates/local-dev.env.template .env
 # Editá al menos:
 #   ROUTE_OPTIMIZER_DATA=/ruta/absoluta/a/route-optimizer-app/data
 ```
@@ -550,10 +551,10 @@ cd /srv/vepathos-smart-import
 
 #### Paso 2 — El `.env` de prod
 
-Partí de la plantilla de prod, **no** de `.env.example` (esa es la local):
+Partí de la plantilla de api-prod (ver también [DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)):
 
 ```bash
-cp .env.prod.example .env
+cp deploy/templates/api-prod.env.template .env
 ```
 
 Estas son las que **hay que corregir para tu VM**; el resto ya viene con el
@@ -700,6 +701,11 @@ docker compose up -d smart-import
 
 ### 12.4 Repartir el trabajo entre máquinas
 
+> **Topología en prod hoy (api-prod + VM worker + Mac libpostal):** guía paso a paso,
+> firewall Hetzner, overlays y troubleshooting en **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)**.
+> Los pasos con `samevm` más abajo son la arquitectura **anterior** (API y worker en
+> la misma VM de PBFs).
+
 Todo lo anterior describe **una** VM que hace todo. Esta sección es la otra
 forma: la VM sigue recibiendo los archivos y sirviendo las descargas, pero el
 trabajo pesado lo hacen otras máquinas —incluida una Mac de escritorio— que se
@@ -762,8 +768,8 @@ y el rol vuelve a `embedded`).
 
 #### Paso 1 — Convertir la VM en el nodo `api`
 
-En su `.env`, descomentar el bloque *«COMO SE ESCALA — opción 2»* de
-`.env.prod.example`: el rol, el broker, Redis y el token. Después:
+En su `.env`, usar la plantilla `deploy/templates/api-prod.env.template` (rol
+`api`, broker, Redis y token). Después:
 
 ```bash
 openssl rand -hex 32                        # el token, el MISMO en los dos lados
@@ -788,13 +794,17 @@ se encolan sin que nadie los haga. Este worker es el piso del servicio; los de
 afuera suman capacidad y se pueden ir sin que se note.
 
 ```bash
-cp .env.worker.example .env.worker
+cp deploy/templates/worker-vm.env.template .env.worker
 # el token del Paso 1, el broker y Redis por su IP privada, y —como esta
 # maquina tiene los PBF montados— SMART_IMPORT_CONSUME_GEOCODE=true
 
 docker compose --env-file .env.worker \
   -f docker-compose.worker.yml -f docker-compose.samevm.worker.yml up -d
 ```
+
+> **Prod actual:** API en api-prod y worker en VM separada — ver
+> [DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md). El overlay `samevm` quedó
+> obsoleto en esa topología.
 
 `.env.worker` es un **overlay**, no la config completa del nodo: el compose lee
 primero el `.env` del despliegue (el mismo del nodo api) y después este, que
@@ -815,8 +825,8 @@ En la otra máquina, con el repo clonado. Copiá también el `.env` del nodo api
 cambia:
 
 ```bash
-scp api-prod:/srv/vepathos-smart-import/.env .env
-cp .env.worker.example .env.worker
+scp deploy@178.105.42.199:~/vepathos-smart-import/.env .env
+cp deploy/templates/worker-vm.env.template .env.worker
 # editar: RABBITMQ_HOST, REDIS_HOST, SMART_IMPORT_API_URL y el token del Paso 1
 
 # ¿llega a las tres piezas? Esto no consume nada: prueba y sale.
@@ -964,12 +974,18 @@ instancias necesitan balanceo sticky.
 
 ## 13. Variables de entorno
 
-**La fuente de verdad son los dos `.env`**, y no por comodidad: ahí cada valor
-lleva escrito de dónde sale (medición y script, o "sin medir" con el default del
-código, para que se distinga un valor elegido de uno heredado).
+**La fuente de verdad son las plantillas en `deploy/templates/`** y el `.env`
+real de cada máquina (gitignored). Copiá la plantilla que corresponda:
 
-- **`.env.example`** — local. `cp .env.example .env`
-- **`.env.prod.example`** — producción. `cp .env.prod.example .env`
+| Plantilla | Destino | Uso |
+|-----------|---------|-----|
+| `local-dev.env.template` | `.env` | Desarrollo local (monolito) |
+| `api-prod.env.template` | `.env` | Nodo API en api-prod |
+| `worker-vm.env.template` | `.env.worker` | Worker en VM PBFs |
+| `worker-mac.env.template` | `.env.prod.smart.local` | Worker Mac + libpostal |
+
+Ver [deploy/templates/README.md](deploy/templates/README.md) y
+[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md).
 
 Resumen de las que más se toca. La config **efectiva** de un proceso corriendo
 se lee siempre en `GET /config`, que es lo único que no miente:
@@ -1177,7 +1193,7 @@ curl -sf "localhost:8100/geocoding/coverage?lat=-34.60&lon=-58.38" | python3 -m 
 
 ```bash
 # Local que importa
-cp .env.example .env          # ROUTE_OPTIMIZER_DATA=...
+cp deploy/templates/local-dev.env.template .env   # ROUTE_OPTIMIZER_DATA=...
 DOCKER_BUILDKIT=1 docker compose build smart-import   # 1 vez: imagen + vocab + GeoNames
 docker compose up -d smart-import                     # día a día SIN --build (entrypoint refresca sqlite)
 curl -sf localhost:8100/health

@@ -23,9 +23,9 @@
 #     ServerAliveInterval 30
 #     ExitOnForwardFailure yes
 #
-# La direccion de la derecha la resuelve EL SERVIDOR, no tu maquina: Redis y
-# RabbitMQ por su IP privada, y la api —que corre en la VM a la que entras y
-# publica en loopback— como 127.0.0.1.
+# La direccion de la derecha la resuelve EL SERVIDOR (api-prod), no tu maquina:
+# Redis/Rabbit por IP privada del host (10.0.0.2), Smart Import API en loopback
+# (127.0.0.1:8100). Ver DEPLOY-PRODUCTION.md §6.
 #
 # Si el tunel se cae, el worker no pierde nada: deja de consumir, reintenta la
 # conexion sola y las tareas quedan en la cola para el que pueda tomarlas.

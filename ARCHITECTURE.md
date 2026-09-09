@@ -95,7 +95,7 @@ está y no necesita modelo. Lo demás se prende y apaga sin tocar código.
 | + libpostal | `LIBPOSTAL_ENABLED=true` `TARGET=runtime-libpostal` | ~2 GB extra de datos |
 
 ```bash
-cp .env.example .env
+cp deploy/templates/local-dev.env.template .env
 docker compose up -d               # lo que diga el .env
 curl -s localhost:8100/health      # verifica qué quedó activo
 curl -s localhost:8100/config      # la config efectiva del proceso
