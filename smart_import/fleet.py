@@ -45,6 +45,15 @@ CAMPOS_COMPARTIDOS = (
     "max_file_mb",
     "max_rows",
     "default_schema",
+    #: libpostal cambia COMO se parsea una direccion, no que puede hacer el
+    #: nodo. Un worker con libpostal y otro sin el resuelven la misma fila a
+    #: pines distintos, y eso no se nota por ningun otro lado: no hay error, no
+    #: hay log, el archivo simplemente sale distinto segun quien lo agarro.
+    #:
+    #: Es distinto de `pbf_dir`, que si es legitimamente propio de cada maquina:
+    #: ese decide QUE regiones puede servir un nodo (capacidad), no que resultado
+    #: da para una region que ya puede servir.
+    "libpostal_enabled",
 )
 
 

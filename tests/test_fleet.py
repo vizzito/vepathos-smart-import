@@ -233,3 +233,18 @@ def test_en_rol_api_varios_workers_son_validos(monkeypatch):
                         lambda *a, **k: llamadas.update(k), raising=False)
     cli.serve(host="127.0.0.1", port=8100, reload=False, workers=4)
     assert llamadas["workers"] == 4
+
+
+def test_libpostal_cuenta_como_desalineacion(cfg):
+    """Un nodo con libpostal y otro sin el dan resultados distintos.
+
+    No es capacidad, es comportamiento: libpostal reescribe la query con la que
+    se geocodifica, asi que la misma fila puede resolver a otro pin. Una flota
+    mixta es no determinista, y lo correcto es que se VEA en /health en vez de
+    que el operador lo descubra comparando dos corridas del mismo archivo.
+    """
+    con = cfg.replace(libpostal_enabled=True)
+    sin = cfg.replace(libpostal_enabled=False)
+    assert config_digest(con) != config_digest(sin)
+    assert drift([{"node": "mac", "config_digest": config_digest(con)}],
+                 config_digest(sin)) == ["mac"]
