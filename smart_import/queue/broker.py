@@ -43,10 +43,10 @@ from .envelope import GEOCODE, NORMALIZE, Task
 #: crece para siempre y termina siendo el problema en vez del sintoma.
 DLQ_TTL_MS = 24 * 3600 * 1000
 
-#: Parametros de conexion, calcados de los que ya usa el optimizer contra este
-#: mismo RabbitMQ: un heartbeat largo tolera una tarea que no cede el thread, y
-#: los reintentos de conexion cubren el arranque simultaneo con el broker.
-HEARTBEAT_S = 600
+#: Parametros de conexion. Los reintentos cubren el arranque simultaneo con el
+#: broker. El heartbeat sale de la config (`RABBITMQ_HEARTBEAT`): es lo que
+#: mantiene viva la conexion a traves de un NAT o un tunel SSH, y por eso no
+#: puede ser una constante — ver el comentario en config.py.
 BLOCKED_TIMEOUT_S = 300
 CONNECTION_ATTEMPTS = 3
 RETRY_DELAY_S = 5
@@ -171,7 +171,7 @@ class RabbitBroker(Broker):
             virtual_host=self._cfg.rabbitmq_vhost,
             credentials=pika.PlainCredentials(self._cfg.rabbitmq_user,
                                               self._cfg.rabbitmq_password),
-            heartbeat=HEARTBEAT_S,
+            heartbeat=max(0, int(self._cfg.rabbitmq_heartbeat_s)),
             blocked_connection_timeout=BLOCKED_TIMEOUT_S,
             connection_attempts=self._intentos_conexion,
             retry_delay=RETRY_DELAY_S,

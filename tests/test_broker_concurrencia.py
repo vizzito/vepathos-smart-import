@@ -171,3 +171,24 @@ def test_el_prefijo_es_configurable_y_aisla_dos_despliegues():
     prod = set(QueueNames("smart-import").all_work)
     staging = set(QueueNames("smart-import-staging").all_work)
     assert prod.isdisjoint(staging), (prod, staging)
+
+
+# ------------------------------------------------------- heartbeat AMQP
+
+def test_el_heartbeat_sale_de_la_config_y_no_de_una_constante():
+    """Un worker remoto habla por NAT o por un tunel SSH.
+
+    Esas rutas cortan las conexiones ociosas entre 5 y 15 minutos. Con el
+    default de pika (600) el trafico va cada 300 s, justo en ese borde, y cuando
+    la entrada de NAT se borra el consumidor queda "conectado" sobre un socket
+    muerto: la cola crece y no hay un error en el log. El sintoma real fue un
+    worker reconectando cada pocos minutos con "Transport indicated EOF".
+    """
+    cfg = Config.from_env().replace(rabbitmq_heartbeat_s=45)
+    assert RabbitBroker(cfg)._params().heartbeat == 45
+
+
+def test_el_default_es_corto_a_proposito():
+    """30 s: trafico cada 15, deteccion de caida en ~60. Mismo valor que el
+    optimizer, que aprendio esto antes contra este mismo RabbitMQ."""
+    assert Config.from_env().rabbitmq_heartbeat_s == 30

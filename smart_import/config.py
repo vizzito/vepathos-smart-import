@@ -300,6 +300,20 @@ class Config:
     task_timeout_normalize_s: float = 300.0
     task_timeout_geocode_s: float = 1800.0
     node_heartbeat_ttl_s: float = 90.0
+    #: Heartbeat AMQP, en segundos. pika manda trafico cada mitad de esto.
+    #:
+    #: 30 y no el default de pika (600) porque un worker remoto habla con el
+    #: broker por NAT o por un tunel SSH, y esos cortan las conexiones ociosas
+    #: entre 5 y 15 minutos. Con 600, pika manda algo cada 300 s —pegado a ese
+    #: borde— y cuando la entrada se borra el consumidor queda "conectado"
+    #: sobre un socket muerto: la cola crece y no hay un solo error en el log.
+    #:
+    #: El valor largo que traiamos venia de suponer que un heartbeat corto se
+    #: pierde si una tarea no cede el thread. Aca no pasa: las tareas corren en
+    #: un pool y el IO loop queda libre en el thread principal.
+    #:
+    #: Mismo nombre de variable que el optimizer, que aprendio esto antes.
+    rabbitmq_heartbeat_s: int = 30
     #: Cuanto se espera antes de dar por muerto a un nodo que dejo de dar
     #: senales, y por lo tanto cuanto tarda otro en retomar su trabajo. NO es
     #: cuanto puede durar una tarea: mientras el nodo vive, renueva el lock
@@ -450,6 +464,7 @@ class Config:
             task_timeout_geocode_s=_float("SMART_IMPORT_TASK_TIMEOUT_GEOCODE_S", 1800.0),
             run_lock_ttl_s=_float("SMART_IMPORT_RUN_LOCK_TTL_S", 30.0),
             node_heartbeat_ttl_s=_float("SMART_IMPORT_NODE_HEARTBEAT_TTL_S", 90.0),
+            rabbitmq_heartbeat_s=_int("RABBITMQ_HEARTBEAT", 30),
             api_url=_str("SMART_IMPORT_API_URL", ""),
             worker_token=_str("SMART_IMPORT_WORKER_TOKEN", ""),
             scratch_dir=_str("SMART_IMPORT_SCRATCH_DIR", ""),
