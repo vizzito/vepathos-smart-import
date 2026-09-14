@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import typer
@@ -12,6 +13,51 @@ from .readers import read_any
 from .schemas import TargetSchema
 
 app = typer.Typer(add_completion=False, help="Vepathos Smart Import - normaliza archivos de entregas.")
+
+#: El shell parte 'San Francisco' en dos argv; Typer/Click solo toma el primero.
+_SPACED_OPTIONS = (
+    "--depot-city",
+    "--depot-region",
+    "--depot-country",
+    "--depot-address",
+)
+
+
+def join_spaced_option_values(argv: list[str]) -> list[str]:
+    """Une palabras de un option hasta el próximo flag.
+
+    `--depot-city san francisco --origin-lat 37` → city='san francisco'.
+    Las comillas siguen funcionando (`--depot-city "San Francisco"`).
+    """
+    flags = set(_SPACED_OPTIONS)
+    out: list[str] = []
+    i = 0
+    n = len(argv)
+    while i < n:
+        token = argv[i]
+        eq = next((flag for flag in flags if token.startswith(f"{flag}=")), None)
+        if eq is not None:
+            first = token[len(eq) + 1 :]
+            i += 1
+            parts = [first] if first else []
+            while i < n and not argv[i].startswith("-"):
+                parts.append(argv[i])
+                i += 1
+            out.append(f"{eq}={' '.join(parts)}" if parts else token)
+            continue
+        if token in flags:
+            out.append(token)
+            i += 1
+            parts: list[str] = []
+            while i < n and not argv[i].startswith("-"):
+                parts.append(argv[i])
+                i += 1
+            if parts:
+                out.append(" ".join(parts))
+            continue
+        out.append(token)
+        i += 1
+    return out
 
 DEFAULT_SCHEMA = "schemas/vepathos_flat_v1.json"
 
@@ -120,6 +166,7 @@ def normalize(
 
 
 def main() -> None:
+    sys.argv = [sys.argv[0], *join_spaced_option_values(sys.argv[1:])]
     app()
 
 
@@ -293,12 +340,17 @@ def geocode(
     index: Path = typer.Option(None, "--index", help="Indice .sqlite a usar."),
     origin_lat: float = typer.Option(None, "--origin-lat", help="Depot: sesga y desempata."),
     origin_lon: float = typer.Option(None, "--origin-lon"),
-    depot_city: str = typer.Option(None, "--depot-city", help="Ciudad del depot (enrichment)."),
+    depot_city: str = typer.Option(
+        None, "--depot-city",
+        help="Ciudad del depot (enrichment). Varias palabras: San Francisco."),
     depot_region: str = typer.Option(None, "--depot-region"),
     depot_postcode: str = typer.Option(None, "--depot-postcode"),
-    depot_country: str = typer.Option(None, "--depot-country"),
-    depot_address: str = typer.Option(None, "--depot-address",
-                                      help="Direccion libre del depot."),
+    depot_country: str = typer.Option(
+        None, "--depot-country",
+        help="Pais del depot. Varias palabras: United States."),
+    depot_address: str = typer.Option(
+        None, "--depot-address",
+        help="Direccion libre del depot (NO se parsea para enrichment)."),
     max_distance_km: float = typer.Option(
         None, "--max-distance-km",
         help="Geofence duro en km (default GEOCODE_MAX_DISTANCE_KM)."),
@@ -376,19 +428,180 @@ def geocode(
     typer.echo(f"  report: {report_path}")
 
 
+def _accuracy_run_slice(
+    *,
+    truth_path: Path,
+    filas: list[dict],
+    columnas: dict[str, str],
+    cfg: Config,
+    index: Path | None,
+    pbf_dir: Path | None,
+    index_dir: Path | None,
+    origin_lat: float | None,
+    origin_lon: float | None,
+    depot_city: str | None,
+    depot_region: str | None,
+    depot_postcode: str | None,
+    depot_country: str | None,
+    depot_address: str | None,
+    fence_km: float,
+    enhance: bool,
+    zone_hint: str | None = None,
+):
+    """Elige índice por bbox del slice y corre accuracy. None = sin cobertura."""
+    from .geocoding.accuracy import data_bbox, resolve_accuracy_origin, run
+    from .geocoding.coord_check import audit_truth_coords
+    from .geocoding.depot_context import depot_from_params
+    from .geocoding.extract import ExtractError, ensure_geocode_index_from_config
+
+    bbox = data_bbox(filas, columnas)
+    if bbox is None:
+        return None, "sin coordenadas validas"
+    audit = audit_truth_coords(
+        filas, columnas, " ".join(
+            p for p in (depot_country, zone_hint) if p
+        ) or None,
+    )
+    if audit.skip_reason:
+        return None, audit.skip_reason
+    try:
+        chosen = resolve_accuracy_origin(
+            filas, columnas,
+            origin_lat=origin_lat, origin_lon=origin_lon,
+            max_distance_km=fence_km,
+        )
+    except ValueError as exc:
+        return None, str(exc)
+
+    ns = bbox[0] - bbox[1]
+    ew = abs(bbox[2] - bbox[3])
+    if ns > 1.5 or ew > 1.5:
+        typer.echo(
+            "  aviso: el corpus cubre más de ~150 km "
+            f"(N{bbox[0]:.2f} S{bbox[1]:.2f} E{bbox[2]:.2f} W{bbox[3]:.2f}); "
+            "el extract se recorta a ~80 km del depot. "
+            "Filas de otra región no están en el índice — no es el scorer.",
+            err=True,
+        )
+
+    local_index = index
+    extra = ""
+    if local_index is None:
+        raiz = pbf_dir or cfg.pbf_dir
+        if not raiz:
+            raise typer.BadParameter("indica --index, o --pbf-dir/SMART_IMPORT_PBF_DIR")
+        try:
+            ready = ensure_geocode_index_from_config(
+                cfg, lat=chosen.lat, lon=chosen.lon, bbox=bbox,
+                zone_hint=zone_hint,
+                pbf_dir=raiz, index_dir=index_dir or cfg.index_dir,
+            )
+        except (FileNotFoundError, ExtractError) as exc:
+            return None, str(exc)
+        local_index = ready.path
+        extra = " (extract generado)" if ready.cut_extract else ""
+
+    depot = depot_from_params(
+        origin_lat=chosen.lat, origin_lon=chosen.lon,
+        depot_city=depot_city, depot_region=depot_region,
+        depot_postcode=depot_postcode, depot_country=depot_country,
+        depot_address=depot_address,
+        max_distance_km=fence_km,
+    )
+    reporte = run(
+        truth_path, local_index, origin=(chosen.lat, chosen.lon),
+        config=cfg, limit=None, depot=depot, enhance=enhance,
+        filas=filas, columnas=columnas,
+    )
+    return {
+        "report": reporte,
+        "index": local_index,
+        "chosen": chosen,
+        "bbox": bbox,
+        "extra": extra,
+    }, None
+
+
+def _emit_accuracy_report(
+    reporte,
+    *,
+    dump: bool,
+    dump_only: str,
+    dump_out: Path | None,
+    out: Path | None,
+    split_by_housenumber: bool,
+    fail_under: float | None,
+) -> None:
+    from .geocoding.accuracy import (
+        format_report, format_rows_table, table_data_row_count,
+    )
+
+    if reporte.depot_warning:
+        typer.echo(f"  aviso: {reporte.depot_warning}", err=True)
+    if reporte.depot_tokens:
+        typer.echo(f"  depot enrich (como la UI): {', '.join(reporte.depot_tokens)}")
+    typer.echo("")
+    if dump:
+        tabla = format_rows_table(reporte.rows, only=dump_only)
+        n_filas = table_data_row_count(tabla)
+        typer.echo(
+            f"tabla ({n_filas} filas, filtro={dump_only}, "
+            f"orden=cerca→lejos, sin pin al final):")
+        typer.echo(tabla)
+        typer.echo("")
+    if reporte.regions:
+        typer.echo("totales del mix (países medidos juntos; no es un solo país):")
+    typer.echo(format_report(reporte, split=split_by_housenumber))
+    if dump_out:
+        dump_out.write_text(
+            json.dumps(reporte.rows, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        typer.echo(f"\n  filas: {dump_out}")
+
+    d = reporte.as_dict()
+    typer.echo("\n  peores 5:")
+    for w in d["worst"][:5]:
+        where = w.get("country") or w.get("preset") or ""
+        tag = f"{where}  " if where else ""
+        typer.echo(f"    {w['error_m']:8.0f} m  [{w['band']}] {tag}{w['address'][:44]}")
+
+    if out:
+        Path(out).write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n",
+                             encoding="utf-8")
+        typer.echo(f"\n  reporte: {out}")
+
+    if fail_under is not None:
+        clave = d["with_house_number"] if split_by_housenumber else d["overall"]
+        logrado = clave["within_100m_pct"]
+        typer.echo(f"\n  gate: {logrado}% dentro de 100 m (minimo {fail_under}%)")
+        if logrado < fail_under:
+            raise typer.Exit(1)
+
+
 @app.command("geocode-accuracy")
 def geocode_accuracy(
-    truth: Path = typer.Option(..., "--truth", exists=True,
-                               help="CSV/JSON/XLSX con direcciones Y coordenadas verificadas."),
+    truth: Path = typer.Option(..., "--truth",
+                               help="CSV/JSON/XLSX con direcciones Y coordenadas verificadas. "
+                               "Si no existe y el nombre es {preset}[_fixture]_n{N}.json, "
+                               "se genera automáticamente."),
+    generate_truth: bool = typer.Option(
+        True, "--generate-truth/--no-generate-truth",
+        help="Si --truth no existe, generarlo (fixture local o OpenAddresses Batch)."),
     index: Path = typer.Option(None, "--index", help="Indice .sqlite. Por defecto se elige por bbox."),
-    origin_lat: float = typer.Option(None, "--origin-lat", help="Depot: sesga y desempata."),
+    origin_lat: float = typer.Option(
+        None, "--origin-lat",
+        help="Depot (desempate). Opcional: default = 1er address del truth. "
+             "Si queda lejos del corpus, se ignora."),
     origin_lon: float = typer.Option(None, "--origin-lon"),
     depot_city: str = typer.Option(
         None, "--depot-city",
-        help="Geolocalizador de la UI (Near CABA). Misma query que POST /geocode."),
+        help="Geolocalizador (Near CABA). Si queda lejos del corpus, no se inyecta."),
     depot_region: str = typer.Option(None, "--depot-region"),
     depot_postcode: str = typer.Option(None, "--depot-postcode"),
-    depot_country: str = typer.Option(None, "--depot-country"),
+    depot_country: str = typer.Option(
+        None, "--depot-country",
+        help="Pais del depot. Varias palabras: United States."),
     depot_address: str = typer.Option(
         None, "--depot-address",
         help="Dirección libre del depot (NO se parsea para enrichment)."),
@@ -406,6 +619,9 @@ def geocode_accuracy(
     split_by_housenumber: bool = typer.Option(
         True, "--split-by-housenumber/--no-split",
         help="Separar direcciones con altura de las que no la tienen."),
+    by_country: bool | None = typer.Option(
+        None, "--by-country/--no-by-country",
+        help="Un índice+depot por país (mix mundial). Default: auto si hay varios country/preset."),
     limit: int = typer.Option(None, help="Evaluar solo las primeras N."),
     fail_under: float = typer.Option(
         None, "--fail-under",
@@ -425,12 +641,30 @@ def geocode_accuracy(
 
     Es la medicion que decide si esto se puede ofrecer como servicio. El indice se
     elige por el bbox de los DATOS: medir con el indice equivocado da kilometros de
-    error y parece un problema de scoring cuando es de cobertura.
+    error y parece un problema de scoring cuando es de cobertura. Un mix de
+    varios países parte por preset/country (un PBF no cubre el bbox mundial).
     """
     from .geocoding.accuracy import (
-        data_bbox, format_report, format_rows_table, load_truth, run,
+        RegionOutcome, compact_region_summary, data_bbox,
+        format_regions_table, group_truth_rows, is_multi_region_truth,
+        load_truth, merge_accuracy_reports,
     )
-    from .geocoding.extract import ExtractError, ensure_geocode_index_from_config
+    from .tools.address_corpus import (
+        OpenAddressesError, ensure_truth_corpus, preset_for_group,
+    )
+
+    truth_path = truth.expanduser()
+    if not truth_path.is_file():
+        if not generate_truth:
+            raise typer.BadParameter(f"Path '{truth}' does not exist.")
+        try:
+            truth_path = ensure_truth_corpus(truth_path)
+        except OpenAddressesError as exc:
+            typer.echo(f"  {exc}", err=True)
+            raise typer.Exit(1) from exc
+        typer.echo(f"  truth generado: {truth_path}")
+        if truth_path.with_suffix(".csv").is_file():
+            typer.echo(f"  csv:            {truth_path.with_suffix('.csv')}")
 
     cfg = Config.from_env()
     from .addresses.libpostal_parser import is_installed
@@ -449,84 +683,139 @@ def geocode_accuracy(
     parser = build_address_parser(cfg)
     typer.echo(f"  parser={parser.name}  libpostal="
                f"{'on-demand' if cfg.libpostal_enabled and is_installed() else 'off'}")
-    filas, columnas = load_truth(truth)
+    filas, columnas = load_truth(truth_path)
     typer.echo(f"  {len(filas)} filas | columnas detectadas: "
                f"address={columnas['address']!r} lat={columnas['lat']!r} lng={columnas['lng']!r}")
 
-    bbox = data_bbox(filas, columnas)
+    work = filas[:limit] if limit else filas
+    if limit:
+        typer.echo(f"  limit={limit}: {len(work)} filas")
+
+    fence_km = (
+        float(max_distance_km)
+        if max_distance_km is not None
+        else float(cfg.max_geocode_distance_km)
+    )
+    if by_country is False:
+        multi = False
+    elif by_country is True:
+        multi = True
+    else:
+        multi = is_multi_region_truth(work)
+
+    if multi:
+        if index is not None:
+            typer.echo("  aviso: --index ignorado en mix (un índice por país)", err=True)
+        if depot_city or depot_country or origin_lat is not None:
+            typer.echo(
+                "  aviso: --depot-city/--origin-* ignorados en mix "
+                "(cada país usa el del preset)",
+                err=True,
+            )
+        groups = group_truth_rows(work)
+        real_keys = [k for k, _ in groups if k != "_unknown"]
+        typer.echo(
+            f"  mix de {len(real_keys)} regiones: un índice + depot por país "
+            "(un PBF no cubre el bbox mundial)")
+        if limit:
+            typer.echo(
+                f"  aviso: --limit {limit} sobre {len(real_keys)} países ≈ "
+                f"{len(work) // max(len(real_keys), 1)} filas c/u "
+                "(humo, no medición). Quitá --limit para el corpus entero.",
+                err=True,
+            )
+        reports = []
+        outcomes: list[RegionOutcome] = []
+        for key, group_rows in groups:
+            if key == "_unknown":
+                typer.echo(f"  {key:<22} SKIP  {len(group_rows)} filas sin country/preset")
+                outcomes.append(RegionOutcome(
+                    key=key, n_input=len(group_rows), skip="sin country/preset"))
+                continue
+            preset = preset_for_group(key)
+            zone_parts = [key]
+            if preset:
+                if preset.country:
+                    zone_parts.append(preset.country)
+                if preset.depot_country:
+                    zone_parts.append(preset.depot_country)
+                if preset.depot_city:
+                    zone_parts.append(preset.depot_city)
+            zone = " ".join(zone_parts)
+            packed, reason = _accuracy_run_slice(
+                truth_path=truth_path, filas=group_rows, columnas=columnas,
+                cfg=cfg, index=None, pbf_dir=pbf_dir, index_dir=index_dir,
+                origin_lat=preset.depot_lat if preset else None,
+                origin_lon=preset.depot_lon if preset else None,
+                depot_city=preset.depot_city if preset else None,
+                depot_region=None, depot_postcode=None,
+                depot_country=preset.depot_country if preset else None,
+                depot_address=None, fence_km=fence_km, enhance=enhance,
+                zone_hint=zone,
+            )
+            if packed is None:
+                typer.echo(f"  {key:<22} SKIP  {reason}")
+                outcomes.append(RegionOutcome(
+                    key=key, n_input=len(group_rows), skip=str(reason)))
+                continue
+            reporte = packed["report"]
+            reports.append(reporte)
+            outcomes.append(RegionOutcome(
+                key=key, n_input=len(group_rows), report=reporte,
+                index_name=packed["index"].name + packed["extra"],
+            ))
+            typer.echo(
+                compact_region_summary(key, reporte)
+                + f"  [{packed['index'].name}{packed['extra']}]")
+        if not reports:
+            typer.echo("  ningún país tuvo cobertura PBF", err=True)
+            raise typer.Exit(1)
+        typer.echo("")
+        typer.echo(format_regions_table(outcomes))
+        merged = merge_accuracy_reports(str(truth_path), reports)
+        merged.regions = [o.as_dict() for o in outcomes]
+        _emit_accuracy_report(
+            merged, dump=dump, dump_only=dump_only, dump_out=dump_out,
+            out=out, split_by_housenumber=split_by_housenumber,
+            fail_under=fail_under,
+        )
+        return
+
+    bbox = data_bbox(work, columnas)
     if bbox is None:
         typer.echo("  el archivo no tiene ninguna coordenada valida", err=True)
         raise typer.Exit(1)
-    centro = ((bbox[0] + bbox[1]) / 2, (bbox[2] + bbox[3]) / 2)
     typer.echo(f"  bbox de los datos: N{bbox[0]:.3f} S{bbox[1]:.3f} E{bbox[2]:.3f} W{bbox[3]:.3f}")
 
-    if index is None:
-        raiz = pbf_dir or cfg.pbf_dir
-        if not raiz:
-            raise typer.BadParameter("indica --index, o --pbf-dir/SMART_IMPORT_PBF_DIR")
-        try:
-            ready = ensure_geocode_index_from_config(
-                cfg, lat=centro[0], lon=centro[1], bbox=bbox,
-                pbf_dir=raiz, index_dir=index_dir or cfg.index_dir,
-            )
-        except (FileNotFoundError, ExtractError) as exc:
-            typer.echo(f"  {exc}", err=True)
-            raise typer.Exit(1)
-        index = ready.path
-        extra = " (extract generado)" if ready.cut_extract else ""
-        typer.echo(f"  indice elegido por bbox: {index.name}{extra}")
-
-    origen = ((origin_lat, origin_lon)
-              if origin_lat is not None and origin_lon is not None else centro)
-    from .geocoding.depot_context import depot_from_params
-    depot = depot_from_params(
-        origin_lat=origen[0], origin_lon=origen[1],
+    packed, reason = _accuracy_run_slice(
+        truth_path=truth_path, filas=work, columnas=columnas, cfg=cfg,
+        index=index, pbf_dir=pbf_dir, index_dir=index_dir,
+        origin_lat=origin_lat, origin_lon=origin_lon,
         depot_city=depot_city, depot_region=depot_region,
         depot_postcode=depot_postcode, depot_country=depot_country,
-        depot_address=depot_address,
-        max_distance_km=(
-            float(max_distance_km)
-            if max_distance_km is not None
-            else float(cfg.max_geocode_distance_km)
-        ),
+        depot_address=depot_address, fence_km=fence_km, enhance=enhance,
+        zone_hint=" ".join(
+            p for p in (depot_country, depot_city, depot_region) if p) or None,
     )
-    typer.echo(f"  origen (desempate): {origen[0]:.4f},{origen[1]:.4f}")
+    if packed is None:
+        typer.echo(f"  {reason}", err=True)
+        raise typer.Exit(1)
+    chosen = packed["chosen"]
+    if chosen.warning:
+        typer.echo(f"  aviso: {chosen.warning}", err=True)
+    if chosen.source == "first-address":
+        clip = (chosen.address[:44] + "…") if len(chosen.address) > 44 else chosen.address
+        extra = f"  [1er address: {clip}]" if clip else "  [1er address del truth]"
+    else:
+        extra = "  [--origin-lat/lon]"
+    typer.echo(f"  indice elegido por bbox: {packed['index'].name}{packed['extra']}")
+    typer.echo(f"  origen (desempate): {chosen.lat:.4f},{chosen.lon:.4f}{extra}")
 
-    reporte = run(truth, index, origin=origen, config=cfg, limit=limit,
-                  depot=depot, enhance=enhance)
-    if reporte.depot_tokens:
-        typer.echo(f"  depot enrich (como la UI): {', '.join(reporte.depot_tokens)}")
-    typer.echo("")
-    if dump:
-        tabla = format_rows_table(reporte.rows, only=dump_only)
-        n_filas = max(0, len(tabla.splitlines()) - 2)
-        typer.echo(f"tabla ({n_filas} filas, filtro={dump_only}):")
-        typer.echo(tabla)
-        typer.echo("")
-    typer.echo(format_report(reporte, split=split_by_housenumber))
-    if dump_out:
-        dump_out.write_text(
-            json.dumps(reporte.rows, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
-        typer.echo(f"\n  filas: {dump_out}")
-
-    d = reporte.as_dict()
-    typer.echo("\n  peores 5:")
-    for w in d["worst"][:5]:
-        typer.echo(f"    {w['error_m']:8.0f} m  [{w['band']}] {w['address'][:44]}")
-
-    if out:
-        Path(out).write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n",
-                             encoding="utf-8")
-        typer.echo(f"\n  reporte: {out}")
-
-    if fail_under is not None:
-        clave = d["with_house_number"] if split_by_housenumber else d["overall"]
-        logrado = clave["within_100m_pct"]
-        typer.echo(f"\n  gate: {logrado}% dentro de 100 m (minimo {fail_under}%)")
-        if logrado < fail_under:
-            raise typer.Exit(1)
+    _emit_accuracy_report(
+        packed["report"], dump=dump, dump_only=dump_only, dump_out=dump_out,
+        out=out, split_by_housenumber=split_by_housenumber,
+        fail_under=fail_under,
+    )
 
 
 @app.command("geocode-eval")

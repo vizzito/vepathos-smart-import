@@ -1,0 +1,37 @@
+{
+  "pattern": "oa_compound_street_comma",
+  "depot": {
+    "lat": -34.598,
+    "lon": -58.416,
+    "city": "CABA",
+    "country": "Argentina",
+    "address": "Av. Cordoba 3500"
+  },
+  "note": "OpenAddresses CABA: APELLIDO, NOMBRE, (Gral.), ALTURA. Regresión enhance/parser.",
+  "cases": [
+    {
+      "id": "calderon_pedro_3645",
+      "address": "CALDERON DE LA BARCA, PEDRO, 3645",
+      "truth": {"lat": -34.6103206, "lng": -58.5266464},
+      "max_error_m": 500,
+      "max_depot_km": 20,
+      "expect_road_contains": ["CALDERON", "PEDRO"]
+    },
+    {
+      "id": "flores_venancio_185",
+      "address": "FLORES, VENANCIO, Gral., 185",
+      "truth": {"lat": -34.6145718, "lng": -58.4334119},
+      "max_error_m": 500,
+      "max_depot_km": 20,
+      "expect_road_contains": ["FLORES", "VENANCIO"]
+    },
+    {
+      "id": "pena_david_dr_4256",
+      "address": "PENA, DAVID, DR., 4256",
+      "truth": {"lat": -34.59137, "lng": -58.42922},
+      "max_error_m": 500,
+      "max_depot_km": 20,
+      "expect_road_contains": ["PENA", "DAVID"]
+    }
+  ]
+}

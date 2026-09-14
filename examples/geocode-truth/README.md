@@ -5,6 +5,8 @@ Sin esto, “geocodifica bien” es una opinión.
 
 Documentación de **cómo correr** la medición (CLI + pytest) y cómo agregar otra zona.
 
+**Generación por país, ruido humano y casos de test:** [TEST-CORPUS.md](./TEST-CORPUS.md)
+
 ## 1. Apuntar a los PBF (una vez por terminal)
 
 Los extracts **no** están sueltos en `data/*.osm.pbf`. Viven en
@@ -182,7 +184,40 @@ recall”: en CABA eso infló pines a kilómetros.
 
 Otras zonas no reemplazan CABA: el techo es cobertura OSM de **esa** ciudad.
 
-## 6. Vocabulario (no es geocode)
+## 6. Generador de corpus (OpenAddresses Batch / fixture)
+
+OpenAddresses migró a **batch.openaddresses.io** (2026). Las URLs
+`data.openaddresses.io/runs/…/countrywide.zip` **dan 404**.
+
+```bash
+python scripts/generate_address_corpus.py --list-presets
+
+# Con token (gratis: login → Profile → API token)
+export OPENADDRESSES_TOKEN=oa.xxxx
+python scripts/generate_address_corpus.py --preset argentina -n 50 --country AR
+
+# Sin token: fixture local CABA (15 dirs con coords)
+python scripts/generate_address_corpus.py --preset argentina --fixture -n 50
+
+# Medir error en metros
+.venv/bin/python -m smart_import geocode-accuracy \
+  --truth examples/geocode-truth/generated/argentina_fixture_n50.json \
+  --depot-city CABA --origin-lat -34.598 --origin-lon -58.416
+
+# Solo texto — parser/normalize, SIN geocode-accuracy
+python scripts/generate_address_corpus.py --source parser_text
+```
+
+Salida por defecto: `examples/geocode-truth/generated/<preset>_n<N>.json` + CSV.
+Muestreo **reservoir** sobre el CSV dentro del ZIP (no carga todo en RAM).
+
+Flujo recomendado:
+
+1. Generar muestra → `geocode-accuracy --truth …`
+2. Curar fallos interesantes → mover a `traps/` (próximo paso)
+3. Fix en geocoder → trampas + corpus grande siguen verdes
+
+## 7. Vocabulario (no es geocode — antes §6)
 
 ```bash
 .venv/bin/python -m smart_import.vocab setup

@@ -1,0 +1,42 @@
+{
+  "pattern": "caba_province_homonym",
+  "depot": {
+    "lat": -34.598,
+    "lon": -58.416,
+    "city": "CABA",
+    "country": "Argentina",
+    "address": "Av. Cordoba 3500"
+  },
+  "note": "Homónimos calle+altura en provincia BA vs CABA. Regresión Santa Fe 2500 / Caseros 1800.",
+  "cases": [
+    {
+      "id": "santa_fe_2500",
+      "address": "Av. Santa Fe 2500, Ciudad Autónoma de Buenos Aires, C1425",
+      "truth": {"lat": -34.5945841, "lng": -58.4022543},
+      "max_error_m": 500,
+      "max_depot_km": 15
+    },
+    {
+      "id": "caseros_1800",
+      "address": "Av. Caseros 1800, Ciudad Autónoma de Buenos Aires, C1264",
+      "truth": {"lat": -34.6372, "lng": -58.3918},
+      "max_error_m": 650,
+      "max_depot_km": 15,
+      "note": "OSM CABA no tiene 1800; interpola 1799/1801 (~600 m del truth OA)"
+    },
+    {
+      "id": "corrientes_1234",
+      "address": "Av. Corrientes 1234, Ciudad Autónoma de Buenos Aires",
+      "truth": {"lat": -34.6040186, "lng": -58.3844481},
+      "max_error_m": 500,
+      "max_depot_km": 15
+    },
+    {
+      "id": "defensa_800",
+      "address": "Defensa 800, Ciudad Autónoma de Buenos Aires",
+      "truth": {"lat": -34.6170623, "lng": -58.3716318},
+      "max_error_m": 500,
+      "max_depot_km": 15
+    }
+  ]
+}

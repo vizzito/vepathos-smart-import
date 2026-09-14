@@ -35,4 +35,6 @@ examples/*.txt
 examples/*.csv
 !examples/README.md
 !examples/vepathos-golden/
+# Corpus OA regenerable (scripts/generate_address_corpus.py); no versionar dumps
+examples/geocode-truth/generated/
 *.egg-info/

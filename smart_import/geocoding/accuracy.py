@@ -26,6 +26,7 @@ from ..normalization.values import to_float
 from ..readers import read_any
 from ..schemas import normalize_key
 from .bands import BAND_NEEDS_GEOCODING, BAND_VALID, DEFAULT_VALID_AT, band_for
+from .coord_check import usable_truth_coord
 from .osm_geocoder import LocalOSMGeocoder
 from .scoring import haversine_km
 
@@ -194,13 +195,16 @@ class AccuracyReport:
     worst: list[dict] = field(default_factory=list)
     rows: list[dict] = field(default_factory=list)
     depot_tokens: list[str] = field(default_factory=list)
+    depot_warning: str | None = None
     libpostal: dict = field(default_factory=dict)
+    regions: list[dict] = field(default_factory=list)
 
     def as_dict(self) -> dict:
-        return {
+        out = {
             "source": self.source, "index": self.index,
             "rows_read": self.rows_read, "rows_usable": self.rows_usable,
             "depot_tokens": list(self.depot_tokens),
+            "depot_warning": self.depot_warning,
             "libpostal": dict(self.libpostal),
             "calibration": calibration(self.rows),
             "overall": self.overall.as_dict(),
@@ -208,6 +212,9 @@ class AccuracyReport:
             "without_house_number": self.without_number.as_dict(),
             "worst": sorted(self.worst, key=lambda w: -w["error_m"])[:15],
         }
+        if self.regions:
+            out["regions"] = list(self.regions)
+        return out
 
 
 def load_truth(path: str | Path) -> tuple[list[dict], dict[str, str]]:
@@ -242,7 +249,7 @@ def data_bbox(filas: list[dict], columnas: dict[str, str]
     lats, lons = [], []
     for fila in filas:
         la, lo = to_float(fila.get(columnas["lat"])), to_float(fila.get(columnas["lng"]))
-        if la is None or lo is None or not (-90 <= la <= 90 and -180 <= lo <= 180):
+        if not usable_truth_coord(la, lo):
             continue
         lats.append(la)
         lons.append(lo)
@@ -251,10 +258,220 @@ def data_bbox(filas: list[dict], columnas: dict[str, str]
     return (max(lats), min(lats), max(lons), min(lons))
 
 
+@dataclass(frozen=True)
+class OriginChoice:
+    """Origen del depot para geocode-accuracy."""
+
+    lat: float
+    lon: float
+    source: str
+    address: str = ""
+    warning: str | None = None
+
+
+def first_truth_origin(filas: list[dict], columnas: dict[str, str]
+                       ) -> OriginChoice | None:
+    """Lat/lng (y address) de la primera fila usable del corpus."""
+    addr_col, lat_col, lng_col = columnas["address"], columnas["lat"], columnas["lng"]
+    for fila in filas:
+        lat = to_float(fila.get(lat_col))
+        lon = to_float(fila.get(lng_col))
+        if not usable_truth_coord(lat, lon):
+            continue
+        address = str(fila.get(addr_col) or "").strip()
+        return OriginChoice(lat=lat, lon=lon, source="first-address",
+                            address=address)
+    return None
+
+
+def resolve_accuracy_origin(
+    filas: list[dict],
+    columnas: dict[str, str],
+    *,
+    origin_lat: float | None = None,
+    origin_lon: float | None = None,
+    max_distance_km: float = 500.0,
+) -> OriginChoice:
+    """Origen del depot: 1er address, salvo que --origin-lat/lon estén cerca.
+
+    Si el flag queda más lejos que `max_distance_km` del corpus, se ignora
+    (el caso típico: coords de otra ciudad pegadas al corpus local).
+    """
+    fallback = first_truth_origin(filas, columnas)
+    if fallback is None:
+        raise ValueError("el archivo no tiene ninguna coordenada valida")
+
+    if (origin_lat is None) != (origin_lon is None):
+        raise ValueError("pasa --origin-lat y --origin-lon juntos, o ninguno")
+
+    if origin_lat is None:
+        return fallback
+
+    far_km = haversine_km(origin_lat, origin_lon, fallback.lat, fallback.lon)
+    if far_km > float(max_distance_km):
+        return OriginChoice(
+            lat=fallback.lat, lon=fallback.lon, source="first-address",
+            address=fallback.address,
+            warning=(
+                f"--origin-lat/lon {origin_lat:.4f},{origin_lon:.4f} queda a "
+                f"{far_km:.0f} km del corpus; uso el 1er address"
+            ),
+        )
+    return OriginChoice(
+        lat=float(origin_lat), lon=float(origin_lon), source="flag",
+        address=fallback.address,
+    )
+
+
+def group_truth_rows(filas: list[dict]) -> list[tuple[str, list[dict]]]:
+    """Agrupa un mix por `preset` o, si falta, `country`. Orden de primera aparición."""
+    buckets: dict[str, list[dict]] = {}
+    order: list[str] = []
+    for fila in filas:
+        key = (
+            str(fila.get("preset") or "").strip()
+            or str(fila.get("country") or "").strip()
+            or "_unknown"
+        )
+        if key not in buckets:
+            order.append(key)
+            buckets[key] = []
+        buckets[key].append(fila)
+    return [(key, buckets[key]) for key in order]
+
+
+def is_multi_region_truth(filas: list[dict]) -> bool:
+    """True si el corpus mezcla 2+ países/presets (un PBF mundial no existe)."""
+    keys = {k for k, _ in group_truth_rows(filas) if k != "_unknown"}
+    return len(keys) >= 2
+
+
+def _merge_group(into: Group, src: Group) -> None:
+    into.total += src.total
+    into.with_pin += src.with_pin
+    into.errors_m.extend(src.errors_m)
+    into.confidences.extend(src.confidences)
+    into.confidences_pin.extend(src.confidences_pin)
+    for banda, n in src.by_band.items():
+        into.by_band[banda] = into.by_band.get(banda, 0) + n
+    for banda, errs in src.errors_by_band.items():
+        into.errors_by_band.setdefault(banda, []).extend(errs)
+
+
+def _merge_libpostal(stats: list[dict]) -> dict:
+    if not stats:
+        return {}
+    out = dict(stats[0])
+    reasons: dict[str, int] = dict(out.get("by_reason") or {})
+    for extra in stats[1:]:
+        for key in ("enhancer_calls", "enhancer_skips", "helped", "noop"):
+            if key in extra or key in out:
+                out[key] = int(out.get(key) or 0) + int(extra.get(key) or 0)
+        for key, n in (extra.get("by_reason") or {}).items():
+            reasons[key] = reasons.get(key, 0) + int(n)
+    if reasons:
+        out["by_reason"] = reasons
+    return out
+
+
+def merge_accuracy_reports(
+    source: str, reports: list[AccuracyReport],
+) -> AccuracyReport:
+    """Junta corridas por país en un reporte (dump / gate / totales)."""
+    merged = AccuracyReport(source=source, index="(multi-region)")
+    for reporte in reports:
+        merged.rows_read += reporte.rows_read
+        merged.rows_usable += reporte.rows_usable
+        merged.rows.extend(reporte.rows)
+        merged.worst.extend(reporte.worst)
+        _merge_group(merged.overall, reporte.overall)
+        _merge_group(merged.with_number, reporte.with_number)
+        _merge_group(merged.without_number, reporte.without_number)
+    merged.libpostal = _merge_libpostal([r.libpostal for r in reports if r.libpostal])
+    return merged
+
+
+def compact_region_summary(key: str, reporte: AccuracyReport) -> str:
+    """Una línea por país: n, acierto ≤100 m, mediana."""
+    grupo = reporte.overall
+    hit = _pct(grupo.within(HIT_M), grupo.total)
+    mediana = (
+        f"{round(statistics.median(grupo.errors_m)):.0f} m"
+        if grupo.errors_m else "—"
+    )
+    return f"  {key:<22} n={grupo.total:<5} ≤100m {hit:5.1f}%  mediana {mediana}"
+
+
+@dataclass
+class RegionOutcome:
+    """Resultado de un país en un mix (o skip si no hubo índice)."""
+
+    key: str
+    n_input: int
+    report: AccuracyReport | None = None
+    skip: str | None = None
+    index_name: str = ""
+
+    def as_dict(self) -> dict:
+        if self.skip or self.report is None:
+            return {
+                "region": self.key, "n": self.n_input, "skip": self.skip or "sin reporte",
+            }
+        d = self.report.overall.as_dict()
+        return {
+            "region": self.key,
+            "n": d["total"],
+            "pin_pct": d["pin_pct"],
+            "within_100m_pct": d["within_100m_pct"],
+            "median_m": d["median_m"],
+            "index": self.index_name,
+        }
+
+
+def format_regions_table(outcomes: list[RegionOutcome]) -> str:
+    """Tabla por país al final del mix (no se pierde entre logs de índice)."""
+    header = (f"{'país':22} {'n':>5} {'pin':>7} {'≤100m':>7} {'mediana':>10}  nota")
+    lines = [
+        "por país (después de elegir índice; SKIP = sin PBF / extract vacío):",
+        header,
+        "-" * len(header),
+    ]
+    measured = [o for o in outcomes if o.report is not None]
+    skipped = [o for o in outcomes if o.report is None]
+    measured.sort(key=lambda o: (
+        -o.report.overall.within(HIT_M) / o.report.overall.total
+        if o.report and o.report.overall.total else 0.0,
+        o.key,
+    ))
+    for outcome in measured + skipped:
+        if outcome.skip or outcome.report is None:
+            reason = (outcome.skip or "sin reporte").split(";")[0]
+            if len(reason) > 56:
+                reason = reason[:53] + "…"
+            lines.append(
+                f"{outcome.key:22} {outcome.n_input:>5} {'—':>7} {'—':>7} {'—':>10}  "
+                f"SKIP {reason}")
+            continue
+        d = outcome.report.overall.as_dict()
+        mediana = f"{d['median_m']:.0f} m" if d["median_m"] is not None else "—"
+        lines.append(
+            f"{outcome.key:22} {d['total']:>5} {d['pin_pct']:>6.0f}% "
+            f"{d['within_100m_pct']:>6.0f}% {mediana:>10}  {outcome.index_name}")
+    n_ok = sum(o.report.overall.total for o in measured if o.report)
+    n_skip = sum(o.n_input for o in skipped)
+    lines.append("")
+    lines.append(
+        f"{len(measured)} países medidos ({n_ok} filas)  ·  "
+        f"{len(skipped)} omitidos ({n_skip} filas)")
+    return "\n".join(lines)
+
+
 def run(truth: str | Path, index_path: str | Path,
         origin: tuple[float, float] | None = None,
         config: Config | None = None, limit: int | None = None,
-        depot=None, enhance: bool = False) -> AccuracyReport:
+        depot=None, enhance: bool = False,
+        filas: list[dict] | None = None,
+        columnas: dict[str, str] | None = None) -> AccuracyReport:
     """Geocodifica cada direccion y compara contra su coordenada verificada.
 
     Mismo compose que la UI: `build_geocode_query` + depot (city/CABA) +
@@ -270,7 +487,8 @@ def run(truth: str | Path, index_path: str | Path,
     cfg = config or Config.from_env()
     bind_parser_config(cfg)
     parser = _address_parser()
-    filas, columnas = load_truth(truth)
+    if filas is None or columnas is None:
+        filas, columnas = load_truth(truth)
     reporte = AccuracyReport(source=str(truth), index=str(index_path),
                              rows_read=len(filas))
 
@@ -280,7 +498,21 @@ def run(truth: str | Path, index_path: str | Path,
             max_distance_km=float(cfg.max_geocode_distance_km),
         )
     if depot is not None:
-        from .depot_context import align_depot_to_geolocator
+        from .depot_context import align_depot_to_geolocator, strip_conflicting_depot_city
+        from .locality import resolve_locality_near
+
+        check_origin = origin or depot.origin
+        near_city = None
+        if check_origin is not None:
+            near_city = resolve_locality_near(
+                index_path, check_origin[0], check_origin[1],
+            ).get("city")
+        depot, conflict = strip_conflicting_depot_city(
+            depot, check_origin,
+            near_city=near_city,
+            max_distance_km=float(depot.max_distance_km),
+        )
+        reporte.depot_warning = conflict
         depot = align_depot_to_geolocator(depot)
         depot = fill_depot_from_index(depot, index_path)
         reporte.depot_tokens = depot.enrichment_tokens() if depot else []
@@ -298,10 +530,8 @@ def run(truth: str | Path, index_path: str | Path,
             direccion = str(fila.get(columnas["address"]) or "").strip()
             lat = to_float(fila.get(columnas["lat"]))
             lon = to_float(fila.get(columnas["lng"]))
-            if not direccion or lat is None or lon is None:
-                continue
-            if not (-90 <= lat <= 90 and -180 <= lon <= 180):
-                continue          # filas corruptas del export: no son un fallo nuestro
+            if not direccion or not usable_truth_coord(lat, lon):
+                continue          # 0,0 / fuera de WGS84: basura OA, no un fallo nuestro
             reporte.rows_usable += 1
 
             sent = build_geocode_query(
@@ -330,6 +560,8 @@ def run(truth: str | Path, index_path: str | Path,
                      else reporte.without_number)
             grupo.add(banda, error, confidence=conf)
 
+            country = str(fila.get("country") or "").strip()
+            preset = str(fila.get("preset") or "").strip()
             fila_out = {
                 "address": direccion,
                 "sent": sent,
@@ -348,6 +580,8 @@ def run(truth: str | Path, index_path: str | Path,
                 "precision": resultado.precision or "",
                 "libpostal": lp,
                 "osm": (resultado.matched_text or "")[:80],
+                "country": country,
+                "preset": preset,
             }
             reporte.rows.append(fila_out)
 
@@ -361,6 +595,7 @@ def run(truth: str | Path, index_path: str | Path,
                     "truth_lat": lat, "truth_lng": lon,
                     "pin_lat": resultado.lat, "pin_lng": resultado.lon,
                     "query": sent,
+                    "country": country, "preset": preset,
                 })
     finally:
         stats_fn = getattr(parser, "stats", None)
@@ -543,6 +778,33 @@ def _filter_rows(rows: list[dict], only: str) -> list[dict]:
     return out
 
 
+def _row_dump_section(row: dict) -> str:
+    """ok | far | miss — para ordenar y separar el dump."""
+    if row.get("pin_lat") is None or _error_m(row) is None:
+        return "miss"
+    if _error_m(row) > OVERCONFIDENT_M:
+        return "far"
+    return "ok"
+
+
+def _sort_rows_for_dump(rows: list[dict]) -> list[dict]:
+    """Cerca primero; al final las más lejos y, después, las sin pin."""
+    rank = {"ok": 0, "far": 1, "miss": 2}
+
+    def key(row: dict) -> tuple:
+        section = _row_dump_section(row)
+        err = _error_m(row)
+        return (rank[section], err if err is not None else 0.0)
+
+    return sorted(rows, key=key)
+
+
+def table_data_row_count(tabla: str) -> int:
+    """Filas de datos (sin cabecera, separador ni banners ---)."""
+    lines = tabla.splitlines()
+    return sum(1 for ln in lines[2:] if ln and not ln.startswith("---"))
+
+
 def format_row_line(row: dict) -> str:
     """Una fila de la tabla (sin cabecera)."""
     tlat, tlng = _coord(row.get("truth_lat"), row.get("truth_lng"))
@@ -562,15 +824,29 @@ def format_row_line(row: dict) -> str:
 
 
 def format_rows_table(rows: list[dict], *, only: str = "all") -> str:
-    """Tabla: coord original, pin, metros, address in, address enviado al geo."""
-    filtradas = _filter_rows(rows, only)
+    """Tabla: coord original, pin, metros, address in, address enviado al geo.
+
+    Orden: aciertos cerca → lejos (>250 m) → sin pin. Así el final del log
+    es justo lo que hay que curar.
+    """
+    filtradas = _sort_rows_for_dump(_filter_rows(rows, only))
     w = _ADDR_W
     cabecera = (
         f"{'truth_lat':>10} {'truth_lng':>10} {'pin_lat':>10} {'pin_lng':>10} "
         f"{'m':>7} {'conf':>5} {'prec':>4} {'lp':>5} {'address':<{w}} sent"
     )
     lineas = [cabecera, "-" * max(len(cabecera), 110)]
-    lineas.extend(format_row_line(row) for row in filtradas)
+    banners = {
+        "far": f"--- lejos (>{OVERCONFIDENT_M:.0f} m), peor al final ---",
+        "miss": "--- sin pin ---",
+    }
+    prev = None
+    for row in filtradas:
+        section = _row_dump_section(row)
+        if section != prev and section in banners:
+            lineas.append(banners[section])
+        prev = section
+        lineas.append(format_row_line(row))
     return "\n".join(lineas)
 
 

@@ -9,9 +9,12 @@ Los tests que necesitan un índice OSM real se saltan solos si no está.
 import pytest
 
 from smart_import.geocoding.accuracy import (
-    Group, calibration, compose_street_and_number, dump_rows, find_column,
-    find_house_column, format_calibration, format_libpostal_report,
-    format_rows_table, has_house_number, load_truth,
+    AccuracyReport, Group, RegionOutcome, calibration,
+    compact_region_summary, compose_street_and_number, dump_rows,
+    find_column, find_house_column, format_calibration,
+    format_libpostal_report, format_regions_table, format_rows_table,
+    group_truth_rows, has_house_number, is_multi_region_truth,
+    load_truth, merge_accuracy_reports, table_data_row_count,
 )
 from tests.conftest import ROOT
 
@@ -50,6 +53,50 @@ def test_accuracy_prende_libpostal_si_esta_instalado():
         unbind_parser_config()
 
 
+def test_group_truth_rows_preset_luego_country():
+    filas = [
+        {"address": "a", "preset": "france", "country": "FR"},
+        {"address": "b", "country": "AR"},
+        {"address": "c", "preset": "france", "country": "FR"},
+        {"address": "d"},
+    ]
+    groups = group_truth_rows(filas)
+    assert [k for k, _ in groups] == ["france", "AR", "_unknown"]
+    assert len(groups[0][1]) == 2
+    assert is_multi_region_truth(filas)
+    assert not is_multi_region_truth([{"preset": "france"}, {"preset": "france"}])
+    assert not is_multi_region_truth([{"address": "x"}])
+
+
+def test_merge_accuracy_reports_suma_totales():
+    a = AccuracyReport(source="mix")
+    a.overall.add("valid", 40.0, confidence=0.9)
+    a.with_number.add("valid", 40.0, confidence=0.9)
+    a.rows_usable = 1
+    a.rows = [{"address": "Rue 1"}]
+    b = AccuracyReport(source="mix")
+    b.overall.add("valid", 80.0, confidence=0.8)
+    b.with_number.add("valid", 80.0, confidence=0.8)
+    b.rows_usable = 1
+    b.rows = [{"address": "Calle 2"}]
+    merged = merge_accuracy_reports("mix.json", [a, b])
+    assert merged.rows_usable == 2
+    assert merged.overall.total == 2
+    assert merged.overall.within(100) == 2
+    line = compact_region_summary("france", a)
+    assert "france" in line
+    assert "100.0%" in line
+    table = format_regions_table([
+        RegionOutcome("france", 1, report=a, index_name="paris.sqlite"),
+        RegionOutcome("czechia", 8, skip="sin cobertura PBF"),
+    ])
+    assert "france" in table and "100" in table
+    assert "SKIP" in table and "czechia" in table
+    assert "2 países medidos" not in table
+    assert "1 países medidos" in table
+    assert "1 omitidos" in table
+
+
 def test_caba_prefiere_indice_de_extract_no_argentina():
     """Sin PBF de extract, CABA debe usar n-34.48…sqlite, no argentina.sqlite."""
     from smart_import.geocoding.osm_index import prefer_index
@@ -78,6 +125,51 @@ def test_detecta_las_columnas_del_json_nested():
     filas, columnas = load_truth(TRUTH / "caba_stops_2907.json")
     assert columnas == {"address": "address", "lat": "lat", "lng": "lng"}
     assert len(filas) == 2907
+
+
+def test_origen_default_es_el_primer_address():
+    from smart_import.geocoding.accuracy import resolve_accuracy_origin
+
+    filas = [
+        {"address": "CHENAUT 1726", "lat": -34.570094, "lng": -58.4306614},
+        {"address": "otra", "lat": -34.62, "lng": -58.40},
+    ]
+    columnas = {"address": "address", "lat": "lat", "lng": "lng"}
+    chosen = resolve_accuracy_origin(filas, columnas)
+    assert chosen.source == "first-address"
+    assert chosen.lat == -34.570094
+    assert chosen.lon == -58.4306614
+    assert "CHENAUT" in chosen.address
+
+
+def test_origen_lejos_del_corpus_se_ignora():
+    from smart_import.geocoding.accuracy import resolve_accuracy_origin
+
+    filas = [{"address": "CHENAUT 1726", "lat": -34.570094, "lng": -58.4306614}]
+    columnas = {"address": "address", "lat": "lat", "lng": "lng"}
+    chosen = resolve_accuracy_origin(
+        filas, columnas,
+        origin_lat=37.750828, origin_lon=-122.4544334,
+        max_distance_km=500,
+    )
+    assert chosen.source == "first-address"
+    assert chosen.lat == -34.570094
+    assert chosen.warning and "km del corpus" in chosen.warning
+
+
+def test_origen_cerca_del_corpus_se_respeta():
+    from smart_import.geocoding.accuracy import resolve_accuracy_origin
+
+    filas = [{"address": "CHENAUT 1726", "lat": -34.570094, "lng": -58.4306614}]
+    columnas = {"address": "address", "lat": "lat", "lng": "lng"}
+    chosen = resolve_accuracy_origin(
+        filas, columnas,
+        origin_lat=-34.598, origin_lon=-58.416,
+        max_distance_km=500,
+    )
+    assert chosen.source == "flag"
+    assert chosen.lat == -34.598
+    assert chosen.warning is None
 
 
 def test_detecta_las_columnas_del_json_tandil():
@@ -214,6 +306,43 @@ def test_tabla_muestra_coords_address_y_metros():
     assert len(solo_house) == 3
 
 
+def test_tabla_ordena_cerca_luego_lejos_luego_sin_pin():
+    cerca = {
+        "address": "CERCA 1", "sent": "cerca 1", "house": "1",
+        "truth_lat": -34.6, "truth_lng": -58.4,
+        "pin_lat": -34.6, "pin_lng": -58.4,
+        "error_m": 12.0, "confidence": 0.99, "band": "valid",
+        "precision": "housenumber", "libpostal": "skip",
+    }
+    medio = {**cerca, "address": "MEDIO 2", "sent": "medio 2", "error_m": 80.0}
+    lejos = {
+        **cerca, "address": "LEJOS 3", "sent": "lejos 3",
+        "error_m": 4500.0, "band": "valid", "confidence": 0.81,
+        "precision": "street",
+    }
+    peor = {
+        **lejos, "address": "PEOR 4", "sent": "peor 4",
+        "error_m": 11000.0, "band": "review",
+    }
+    miss = {
+        **cerca, "address": "SIN PIN 5", "sent": "sin pin 5",
+        "pin_lat": None, "pin_lng": None, "error_m": None,
+        "confidence": 0.10, "band": "needs_geocoding", "precision": "",
+    }
+    tabla = format_rows_table([peor, miss, lejos, medio, cerca])
+    lineas = [ln for ln in tabla.splitlines()[2:] if ln]
+    datos = [ln for ln in lineas if not ln.startswith("---")]
+    assert "CERCA 1" in datos[0]
+    assert "MEDIO 2" in datos[1]
+    assert "LEJOS 3" in datos[2]
+    assert "PEOR 4" in datos[3]
+    assert "SIN PIN 5" in datos[4]
+    assert any("lejos (>250 m)" in ln for ln in lineas)
+    assert any(ln.startswith("--- sin pin ---") for ln in lineas)
+    banners = [i for i, ln in enumerate(lineas) if ln.startswith("---")]
+    assert banners == [2, 5]
+
+
 def test_metricas_incluyen_acierto_y_confianza():
     g = Group("test")
     g.add("valid", 50.0, confidence=0.9)
@@ -273,7 +402,8 @@ def test_calibracion_marca_verde_lejos_como_falso_positivo():
     assert "falso positivo" in texto
     assert "centroide de calle" in texto
     lejos = dump_rows(rows, only="over")
-    assert len(lejos) == 3   # cabecera + sep + 1 verde lejos
+    assert table_data_row_count("\n".join(lejos)) == 1
+    assert any("1800" in ln for ln in lejos)
 
 
 # ---------- precision real contra el indice ----------
