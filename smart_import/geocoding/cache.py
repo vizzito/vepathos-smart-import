@@ -29,7 +29,8 @@ from .base import GeocodeResult
 #: v9: query con ciudad + OSM sin addr:city = mismatch (Punta Arenas).
 #: v10: vacío no veta (Toronto); distancia al destino (Radom/Holstebro).
 #: v11: esponente 15/B ≡ 15B / 15 (no exigir token B en FTS).
-GEOCODER_VERSION = 12
+#: v13: alias name:fr/nl (Avenue Mozart ≡ Mozartstraat) + FTS bilingue.
+GEOCODER_VERSION = 13
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (

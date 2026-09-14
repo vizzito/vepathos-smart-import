@@ -258,14 +258,20 @@ def _postcodes_compatible(a: str | None, b: str | None) -> bool:
 
 
 def score(parsed: ParsedAddress, cand: Candidate,
-          origin: tuple[float, float] | None = None) -> tuple[float, dict]:
+          origin: tuple[float, float] | None = None,
+          aliases: frozenset[str] | None = None) -> tuple[float, dict]:
     parts: dict[str, float] = {}
     text = parsed.normalized
 
     cand_street = normalize_text(cand.street or "")
     cand_name = normalize_text(cand.name or "")
 
-    parts["street"] = _street_score(parsed, cand_street, text)
+    parts["street"] = _street_score(parsed, cand_street, text, aliases=aliases)
+    if parts["street"] < 1.0 and cand_name and cand_name != cand_street:
+        parts["street"] = max(
+            parts["street"],
+            _street_score(parsed, cand_name, text, aliases=aliases),
+        )
 
     if parsed.postcode and cand.postcode:
         parts["postcode"] = 1.0 if _postcodes_compatible(parsed.postcode, cand.postcode) else 0.0
@@ -316,16 +322,35 @@ def _strip_way_type(nombre: str) -> str:
     token 'avenida' domina el fuzzy — y el geocoder elige la calle equivocada a
     5 km desempatando por cercania al depot. Comparar los NOMBRES es lo que
     distingue 'Las Heras' de 'Caseros'.
+
+    En neerlandes/aleman el tipo va PEGADO: 'Mozartstraat' -> 'mozart', igual
+    que 'Avenue Mozart' -> 'mozart'. Los sufijos se prueban del mas largo al
+    mas corto para no cortar 'straat' como si fuera 'str'.
     """
     from ..resources import label_set
 
     tokens = label_set("street_tokens", None)
-    palabras = [w for w in nombre.split() if w and fold(w.strip(".,;:")) not in tokens]
-    # Si la calle SE LLAMA como el tipo ('Avenida de Mayo'), no dejarla vacia.
+    suffixes = sorted(label_set("street_suffixes", None), key=len, reverse=True)
+    palabras: list[str] = []
+    for w in nombre.split():
+        if not w:
+            continue
+        folded = fold(w.strip(".,;:"))
+        if folded in tokens:
+            continue
+        stem = folded
+        for suf in suffixes:
+            if len(stem) > len(suf) + 2 and stem.endswith(suf):
+                cut = stem[:-len(suf)]
+                if len(cut) >= 3:
+                    stem = cut
+                    break
+        palabras.append(stem)
     return " ".join(palabras) if palabras else nombre
 
 
-def _street_score(parsed: ParsedAddress, cand_street: str, text: str) -> float:
+def _street_score(parsed: ParsedAddress, cand_street: str, text: str,
+                  aliases: frozenset[str] | None = None) -> float:
     """Calle contra calle cuando se pudo aislar; contra el texto entero si no.
 
     Comparar la calle candidata contra la frase completa produce falsos positivos
@@ -335,9 +360,15 @@ def _street_score(parsed: ParsedAddress, cand_street: str, text: str) -> float:
 
     Sin calle aislada —POIs, direcciones de India sin calle+altura— se conserva
     el comportamiento anterior: ahi el texto completo es la mejor evidencia que hay.
+
+    `aliases` son grafias OSM de la MISMA via (name:fr ↔ name:nl). Sin esto
+    'Avenue Mozart' vs 'Mozartstraat' pierde en fuzzy aunque el barrido las
+    haya emparejado.
     """
     if not cand_street:
         return 0.0
+    if aliases and normalize_text(cand_street) in aliases:
+        return 1.0
     if parsed.road:
         road = _fold_grid_tokens(normalize_text(parsed.road))
         cand_street = _fold_grid_tokens(cand_street)

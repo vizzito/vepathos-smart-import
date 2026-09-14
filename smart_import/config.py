@@ -228,6 +228,8 @@ class Config:
     #: Extracts propios (escribible). No es `_extracts` del cutter (:ro).
     extract_dir: str = "data/extracts"
     cache_path: str = "data/cache/geocode_cache.sqlite"
+    #: Pares name↔name:xx barridos de los PBF. Vacio / archivo ausente = no-op.
+    street_aliases_path: str = "data/street_aliases.sqlite"
     geocoder_fallback: str = "none"
     match_threshold: float = 0.81
     # Acepta coords desde este score (UI: Review 70–79%, Valid ≥80%).
@@ -429,6 +431,8 @@ class Config:
             index_dir=_str("SMART_IMPORT_INDEX_DIR", "data/indexes"),
             extract_dir=_str("SMART_IMPORT_EXTRACT_DIR", "data/extracts"),
             cache_path=_str("SMART_IMPORT_CACHE_PATH", "data/cache/geocode_cache.sqlite"),
+            street_aliases_path=_str(
+                "SMART_IMPORT_STREET_ALIASES", "data/street_aliases.sqlite"),
             geocoder_fallback=_str("GEOCODER_FALLBACK", "none"),
             match_threshold=_float("GEOCODE_MATCH_THRESHOLD", 0.81),
             low_confidence_threshold=_float("GEOCODE_LOW_CONFIDENCE_THRESHOLD", 0.70),

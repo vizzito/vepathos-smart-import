@@ -50,6 +50,8 @@ pytestmark = pytest.mark.geocoding
     ("1445 68 ST, 11219", "168th Street", False),
     ("AVE U, 737, 11223", "Avenue U", True),
     ("W END AVE, 675, 10025", "West End Avenue", True),
+    ("Avenue Mozart 12, Bruxelles", "Mozartstraat", True),
+    ("Str. Mihai Viteazul 10", "Strada Mihai Viteazul", True),
 ])
 def test_street_score_acepta_o_rechaza(query, cand, ok):
     parsed = parse(query)

@@ -10,6 +10,7 @@ from .base import (
     STATUS_ERROR, STATUS_LOW, STATUS_MATCHED, STATUS_NOT_FOUND, GeocodeResult,
 )
 from .interpolate import HousePoint, interpolate_house, parse_polyline, MAX_SPAN
+from .name_aliases import StreetAliasStore, open_alias_store
 from .osm_index import touch_index
 from .scoring import (
     Candidate, _house_int, _house_number_match, place_conflict,
@@ -24,6 +25,8 @@ NEAR_HOUSE_PER_STREET = 12
 _STREET_PREFIXES = (
     "", "Avenida ", "Av. ", "Av ", "Calle ", "Paseo ", "Pasaje ",
     "Boulevard ", "Diagonal ",
+    "Avenue ", "Ave. ", "Ave ", "Rue ", "Boulevard ", "Bd ", "Bd. ",
+    "Strada ", "Str. ", "Str ", "Calea ", "Via ", "Ulica ", "Ul. ",
 )
 _FTS_UNSAFE = re.compile(r"[^\w\s]", re.UNICODE)
 _HOUSE_SPLIT = re.compile(r"[-/]")
@@ -143,7 +146,8 @@ class LocalOSMGeocoder:
                  low_threshold: float = 0.70, street_level_floor: float = 0.60,
                  street_match_min: float = 0.80, review_band: float = 0.70,
                  valid_band: float = 0.80, soft_reject: bool = True,
-                 soft_reject_min: float = 0.50):
+                 soft_reject_min: float = 0.50,
+                 aliases_path: str | Path | None = None):
         self.index_path = Path(index_path).expanduser()
         if not self.index_path.exists():
             raise FileNotFoundError(f"no existe el indice {self.index_path}. "
@@ -156,12 +160,92 @@ class LocalOSMGeocoder:
         self.valid_band = valid_band
         self.soft_reject = soft_reject
         self.soft_reject_min = soft_reject_min
+        self._aliases: StreetAliasStore | None = open_alias_store(aliases_path)
         self._conn = sqlite3.connect(f"file:{self.index_path}?mode=ro", uri=True)
         self._conn.execute("PRAGMA query_only = ON")
         touch_index(self.index_path)
 
     def close(self) -> None:
         self._conn.close()
+        if self._aliases is not None:
+            self._aliases.close()
+            self._aliases = None
+
+    def _prefix_street_variants(self, parsed: ParsedAddress) -> list[str]:
+        """'AV CORRIENTES' → 'Avenida Corrientes' (nombre OSM, lookup por indice)."""
+        if not parsed.road:
+            return []
+        raw = parsed.road.strip()
+        nombre = _strip_way_type(normalize_text(raw)) or normalize_text(raw)
+        titled = " ".join(w.capitalize() if not w.isdigit() else w
+                          for w in nombre.split())
+        titled_de = titled.replace(" De ", " de ")
+        seen: set[str] = set()
+        out: list[str] = []
+        for seed in (nombre, titled, titled_de, raw, raw.title()):
+            for pref in _STREET_PREFIXES:
+                cand = f"{pref}{seed}".strip()
+                if cand and cand not in seen:
+                    seen.add(cand)
+                    out.append(cand)
+        compass = next((compass_key(w) for w in nombre.split() if compass_key(w)), None)
+        ordinal = next((w for w in nombre.split() if ordinal_key(w)), None)
+        if ordinal:
+            key = ordinal_key(ordinal)
+            forms = [ordinal]
+            if key:
+                nth = en_ordinal(key)
+                if nth.casefold() != ordinal.casefold():
+                    forms.append(nth)
+            heads: list[str] = []
+            if compass:
+                if title := _US_COMPASS_TITLE.get(compass):
+                    heads.append(title)
+                heads.append(compass.upper())
+            else:
+                heads.append("")
+            for way in _US_WAY_TITLES:
+                for head in heads:
+                    for form in forms:
+                        cand = f"{head} {form} {way}".strip()
+                        if cand and cand not in seen:
+                            seen.add(cand)
+                            out.append(cand)
+        return out
+
+    def _alias_variants(self, parsed: ParsedAddress) -> list[str]:
+        if getattr(self, "_aliases", None) is None or not parsed.road:
+            return []
+        keys = [parsed.road, *self._prefix_street_variants(parsed)]
+        return self._aliases.expand_many(keys)
+
+    def _alias_norm_set(self, parsed: ParsedAddress) -> frozenset[str]:
+        road = parsed.road or ""
+        cached = getattr(self, "_alias_set_cache", None)
+        if cached is not None and cached[0] == road:
+            return cached[1]
+        val = frozenset(normalize_text(v) for v in self._alias_variants(parsed) if v)
+        self._alias_set_cache = (road, val)
+        return val
+
+    def _alias_fts_tokens(self, parsed: ParsedAddress) -> list[str]:
+        """Tokens FTS de las grafias OSM emparejadas (Mozartstraat)."""
+        from ..resources import fold, label_set, name_glue_words
+
+        skip = label_set("street_tokens") | name_glue_words()
+        out: list[str] = []
+        seen: set[str] = set()
+        for variant in self._alias_variants(parsed):
+            for token in normalize_text(variant).split():
+                clean = _FTS_UNSAFE.sub("", token)
+                if not clean or fold(clean) in skip:
+                    continue
+                key = clean.casefold()
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append(clean)
+        return out[:8]
 
     # ---------- busqueda ----------
 
@@ -283,7 +367,8 @@ class LocalOSMGeocoder:
             return f'"{uniq[0]}"'
         return "(" + " OR ".join(f'"{w}"' for w in uniq) + ")"
 
-    def _street_fts(self, words: list[str], *, strict: bool = True) -> str:
+    def _street_fts(self, words: list[str], *, parsed: ParsedAddress | None = None,
+                    strict: bool = True) -> str:
         """Nombre de calle para FTS.
 
         Sinónimos (este/east, 55/55th) van en OR; grupos distintos en AND.
@@ -292,6 +377,9 @@ class LocalOSMGeocoder:
         entre grupos, tambien en el fallback.
         strict=False: OR de los tokens de nombre. Solo cuando AND no encontro
         calle. Nunca afloja compass/ordinal/fecha.
+
+        Alias bilingues (Avenue Mozart → Mozartstraat) van en OR con el nombre
+        pedido: AND los romperia en indices viejos que solo indexaron `name`.
         """
         if not words:
             return ""
@@ -316,6 +404,7 @@ class LocalOSMGeocoder:
             parts.append(self._or_group(ordinals))
         if ways:
             parts.append(self._or_group(ways))
+        alias_toks = self._alias_fts_tokens(parsed) if parsed is not None else []
         if rest:
             uniq_rest: list[str] = []
             seen: set[str] = set()
@@ -325,13 +414,20 @@ class LocalOSMGeocoder:
                     seen.add(key)
                     uniq_rest.append(token)
             if len(uniq_rest) == 1:
-                parts.append(f'"{uniq_rest[0]}"')
+                rest_clause = f'"{uniq_rest[0]}"'
             elif compass or ordinals:
                 # 'West End': west AND end. No aflojar a OR.
-                parts.append(" AND ".join(f'"{w}"' for w in uniq_rest))
+                rest_clause = " AND ".join(f'"{w}"' for w in uniq_rest)
             else:
                 joiner = " AND " if strict else " OR "
-                parts.append(joiner.join(f'"{w}"' for w in uniq_rest))
+                rest_clause = joiner.join(f'"{w}"' for w in uniq_rest)
+            if alias_toks:
+                alias_clause = self._or_group(alias_toks)
+                parts.append(f"({rest_clause} OR {alias_clause})")
+            else:
+                parts.append(rest_clause)
+        elif alias_toks:
+            parts.append(self._or_group(alias_toks))
 
         if not parts:
             return ""
@@ -349,7 +445,7 @@ class LocalOSMGeocoder:
         num = self._house_fts_clause(number)
         if not num:
             return None
-        calle = self._street_fts(words, strict=strict)
+        calle = self._street_fts(words, parsed=parsed, strict=strict)
         if not calle:
             return None
         if " AND " in calle or calle.startswith("("):
@@ -359,7 +455,7 @@ class LocalOSMGeocoder:
     def _fts_query(self, parsed: ParsedAddress, *, strict: bool = True) -> str:
         """Consulta amplia: tokens de calle (sin país / avenida)."""
         words = self._search_words(parsed)
-        return self._street_fts(words, strict=strict) if words else ""
+        return self._street_fts(words, parsed=parsed, strict=strict) if words else ""
 
     def _run(self, query: str, bbox, limit: int) -> list[Candidate]:
         sql = (f"SELECT {SELECT_COLUMNS} FROM places_fts f"
@@ -395,7 +491,8 @@ class LocalOSMGeocoder:
             return True
         for cand in found.values():
             street = normalize_text(cand.street or "")
-            if _street_score(parsed, street, parsed.normalized) >= self.street_match_min:
+            if _street_score(parsed, street, parsed.normalized,
+                             aliases=self._alias_norm_set(parsed)) >= self.street_match_min:
                 return True
         return False
 
@@ -440,46 +537,13 @@ class LocalOSMGeocoder:
         return list(found.values())
 
     def _street_name_variants(self, parsed: ParsedAddress) -> list[str]:
-        """'AV CORRIENTES' → 'Avenida Corrientes' (nombre OSM, lookup por indice)."""
-        if not parsed.road:
-            return []
-        raw = parsed.road.strip()
-        nombre = _strip_way_type(normalize_text(raw)) or normalize_text(raw)
-        titled = " ".join(w.capitalize() if not w.isdigit() else w
-                          for w in nombre.split())
-        titled_de = titled.replace(" De ", " de ")
-        seen: set[str] = set()
-        out: list[str] = []
-        for seed in (nombre, titled, titled_de, raw, raw.title()):
-            for pref in _STREET_PREFIXES:
-                cand = f"{pref}{seed}".strip()
-                if cand and cand not in seen:
-                    seen.add(cand)
-                    out.append(cand)
-        # OSM US: 'East 55th Street' / 'Northeast 1st Avenue', no 'Este 55'.
-        compass = next((compass_key(w) for w in nombre.split() if compass_key(w)), None)
-        ordinal = next((w for w in nombre.split() if ordinal_key(w)), None)
-        if ordinal:
-            key = ordinal_key(ordinal)
-            forms = [ordinal]
-            if key:
-                nth = en_ordinal(key)
-                if nth.casefold() != ordinal.casefold():
-                    forms.append(nth)
-            heads: list[str] = []
-            if compass:
-                if title := _US_COMPASS_TITLE.get(compass):
-                    heads.append(title)
-                heads.append(compass.upper())
-            else:
-                heads.append("")
-            for way in _US_WAY_TITLES:
-                for head in heads:
-                    for form in forms:
-                        cand = f"{head} {form} {way}".strip()
-                        if cand and cand not in seen:
-                            seen.add(cand)
-                            out.append(cand)
+        """Prefijos locales + grafias OSM bilingues del mapa de alias."""
+        out = self._prefix_street_variants(parsed)
+        seen = {v.casefold() for v in out}
+        for alias in self._alias_variants(parsed):
+            if alias.casefold() not in seen:
+                seen.add(alias.casefold())
+                out.append(alias)
         return out
 
     def _known_streets(self, names: list[str]) -> list[str]:
@@ -532,16 +596,17 @@ class LocalOSMGeocoder:
                     exact=parsed.house_number))
             return out
         extras: list[tuple[int, str]] = []
-        fts_queries = [self._street_fts(words, strict=True)]
+        fts_queries = [self._street_fts(words, parsed=parsed, strict=True)]
         # Si AND no listo ninguna calle, OR (mismo filtro de score).
-        fts_queries.append(self._street_fts(words, strict=False))
+        fts_queries.append(self._street_fts(words, parsed=parsed, strict=False))
         for query in fts_queries:
             batch: list[tuple[int, str]] = []
             for name in self._fts_streets(query):
                 if name in seen:
                     continue
                 if _street_score(parsed, normalize_text(name),
-                                 parsed.normalized) < self.street_match_min:
+                                 parsed.normalized,
+                                 aliases=self._alias_norm_set(parsed)) < self.street_match_min:
                     continue
                 hits = sum(1 for w in words if w.casefold() in name.casefold())
                 batch.append((hits, name))
@@ -662,10 +727,11 @@ class LocalOSMGeocoder:
         streets = self._interp_streets(parsed)
         if not streets:
             words = self._search_words(parsed)
-            query = self._street_fts(words, strict=True) if words else ""
+            query = self._street_fts(words, parsed=parsed, strict=True) if words else ""
             for name in self._fts_streets(query) if query else []:
                 if _street_score(parsed, normalize_text(name),
-                                 parsed.normalized) < self.street_match_min:
+                                 parsed.normalized,
+                                 aliases=self._alias_norm_set(parsed)) < self.street_match_min:
                     continue
                 streets.append(name)
                 if len(streets) >= NEAR_HOUSE_STREETS:
@@ -720,7 +786,8 @@ class LocalOSMGeocoder:
                                  normalized_address=parsed.normalized,
                                  detail={"candidates": 0})
 
-        scored = [(score(parsed, c, origin), c) for c in candidates]
+        scored = [(score(parsed, c, origin, aliases=self._alias_norm_set(parsed)), c)
+                  for c in candidates]
         compatible = [item for item in scored if not item[0][1].get("place_mismatch")]
 
         def _rank_key(sc: tuple[tuple[float, dict], Candidate]) -> tuple:

@@ -525,7 +525,8 @@ def run(truth: str | Path, index_path: str | Path,
             low_threshold=cfg.low_confidence_threshold,
             street_level_floor=cfg.geocode_street_level_floor,
             street_match_min=cfg.geocode_street_match_min,
-            review_band=cfg.geocode_review_band, valid_band=cfg.geocode_valid_band)
+            review_band=cfg.geocode_review_band, valid_band=cfg.geocode_valid_band,
+            aliases_path=cfg.street_aliases_path)
         for fila in (filas[:limit] if limit else filas):
             direccion = str(fila.get(columnas["address"]) or "").strip()
             lat = to_float(fila.get(columnas["lat"]))

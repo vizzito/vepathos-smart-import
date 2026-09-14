@@ -18,6 +18,7 @@ from pathlib import Path
 
 from ..logging_setup import get_logger, stage
 from .address import normalize_text
+from .name_aliases import names_from_tags
 
 logger = get_logger("index")
 
@@ -86,12 +87,20 @@ class BuildStats:
 
 
 def _record(tags, lat: float, lon: float, osm_type: str, osm_id: int) -> tuple | None:
+    from .name_aliases import _iter_tags
+
     fields = {v: None for v in set(ADDR_TAGS.values())}
     for tag, field in ADDR_TAGS.items():
         if tag in tags:
             fields[field] = tags[tag].strip() or None
+    if not fields["street"]:
+        for key, val in _iter_tags(tags):
+            if key.startswith("addr:street:") and val.strip():
+                fields["street"] = val.strip()
+                break
 
-    name = (tags.get("name") or "").strip() or None
+    names = names_from_tags(tags)
+    name = (tags.get("name") or "").strip() or (names[0] if names else None)
     has_address = bool(fields["street"] or fields["postcode"])
     kind = next((k for k in NAMED_KINDS if k in tags), None)
 
@@ -99,9 +108,18 @@ def _record(tags, lat: float, lon: float, osm_type: str, osm_id: int) -> tuple |
     if not has_address and not (name and kind):
         return None
 
+    from .scoring import _strip_way_type
+
+    cores: list[str] = []
+    for raw in names:
+        core = _strip_way_type(normalize_text(raw))
+        if core and len(core) >= 3:
+            cores.append(core)
+
     searchable = " ".join(p for p in (
-        fields["house_number"], fields["street"], name, fields["district"],
-        fields["city"], fields["state"], fields["postcode"], fields["country"],
+        fields["house_number"], fields["street"], name, *names, *cores,
+        fields["district"], fields["city"], fields["state"],
+        fields["postcode"], fields["country"],
     ) if p)
     normalized = normalize_text(searchable)
     if not normalized:

@@ -494,6 +494,13 @@
       "street_tokens": [
         "ulica", "ul", "ul.", "aleja", "aleje", "plac", "osiedle", "rondo"
       ]
+    },
+    "ro": {
+      "_comment": "Str./Strada/Calea van separados del nombre. Sin este pack el FTS busca el token 'str' como si fuera parte de la calle.",
+      "street_tokens": [
+        "strada", "str", "str.", "strd", "calea", "bulevardul", "bulevard",
+        "bd", "bd.", "splaiul", "aleea", "soseaua", "șoseaua", "piata", "piața"
+      ]
     }
   }
 }

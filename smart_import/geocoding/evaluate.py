@@ -59,7 +59,8 @@ def run(truth_csv: str | Path, index_path: str | Path,
         rows = list(csv.DictReader(fh))
 
     geocoder = LocalOSMGeocoder(index_path, match_threshold=cfg.match_threshold,
-                                low_threshold=cfg.low_confidence_threshold)
+                                low_threshold=cfg.low_confidence_threshold,
+                                aliases_path=cfg.street_aliases_path)
     ev = Evaluation()
     try:
         for row in rows[:limit] if limit else rows:

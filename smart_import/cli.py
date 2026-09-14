@@ -170,10 +170,6 @@ def main() -> None:
     app()
 
 
-if __name__ == "__main__":
-    main()
-
-
 @app.command("make-fixtures")
 def make_fixtures(
     out: Path = typer.Option("fixtures", "--out", "-o"),
@@ -331,6 +327,68 @@ def list_pbf(
         for e in registry.entries[:40]:
             bbox = (f"n{e.north} s{e.south} e{e.east} w{e.west}" if e.has_bbox else "sin bbox")
             typer.echo(f"    {e.zone:20} {e.path.name:44} {e.size_bytes / 1e6:8.1f} MB  {bbox}")
+
+
+@app.command("build-street-aliases")
+def build_street_aliases(
+    pbf_dir: Path = typer.Option(None, "--pbf-dir", help="Raiz de PBFs (o SMART_IMPORT_PBF_DIR)."),
+    output: Path = typer.Option(None, "--output", "-o", help="SQLite de alias."),
+    only: str = typer.Option(
+        "", "--only",
+        help="Filtrar por substring del path, separado por comas (belgium,luxembourg)."),
+    include_extracts: bool = typer.Option(
+        False, "--include-extracts",
+        help="Incluir recortes n.._s.. (por defecto solo pais/region)."),
+    force: bool = typer.Option(False, "--force", help="Re-barrer aunque el PBF no haya cambiado."),
+    max_files: int = typer.Option(None, "--max-files", help="Tope de archivos (pruebas)."),
+    replace: bool = typer.Option(
+        False, "--replace", help="Borra el sqlite y barre de cero (si no, INSERT OR IGNORE)."),
+) -> None:
+    """Barre los PBF locales y arma el mapa name ↔ name:fr/nl/de.
+
+    No abre geometria: solo tags. El geocoder usa el sqlite como expansion de
+    query, asi un indice viejo que solo guardo `name` encuentra Avenue Mozart
+    cuando OSM tiene Mozartstraat.
+    """
+    from .geocoding.name_aliases import StreetAliasStore, harvest_pbf_dir
+
+    cfg = Config.from_env()
+    root = pbf_dir or (Path(cfg.pbf_dir) if cfg.pbf_dir else None)
+    if not root:
+        raise typer.BadParameter("indica --pbf-dir o SMART_IMPORT_PBF_DIR")
+    dest = output or Path(cfg.street_aliases_path)
+    if replace:
+        dest.unlink(missing_ok=True)
+        Path(str(dest) + "-wal").unlink(missing_ok=True)
+        Path(str(dest) + "-shm").unlink(missing_ok=True)
+    only_tuple = tuple(p.strip() for p in only.split(",") if p.strip())
+    store = StreetAliasStore(dest, readonly=False)
+    try:
+        typer.echo(f"  barrido {root} → {dest}", err=True)
+
+        def progress(kind: str, path: Path, added: int) -> None:
+            mark = {"ok": "+", "skip": ".", "error": "!"}[kind]
+            extra = f" +{added} pares" if kind == "ok" else ""
+            typer.echo(f"  {mark} {path.name}{extra}", err=True)
+
+        stats = harvest_pbf_dir(
+            root, store,
+            include_extracts=include_extracts,
+            only=only_tuple,
+            force=force,
+            max_files=max_files,
+            progress=progress,
+        )
+    finally:
+        store.close()
+    typer.echo(
+        f"  listo: {stats.files} PBF nuevos, {stats.skipped} ya barridos, "
+        f"{stats.pairs} pares insertados, {len(stats.errors)} errores"
+    )
+    if stats.errors:
+        for err in stats.errors[:8]:
+            typer.echo(f"    {err}", err=True)
+        raise typer.Exit(code=1)
 
 
 @app.command()
@@ -931,6 +989,10 @@ def worker(
     from .worker.main import main
 
     raise typer.Exit(main(solo_verificar=check))
+
+
+if __name__ == "__main__":
+    main()
 
 
 

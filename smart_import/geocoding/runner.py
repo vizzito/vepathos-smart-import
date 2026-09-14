@@ -156,7 +156,8 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         street_match_min=cfg.geocode_street_match_min,
         review_band=cfg.geocode_review_band, valid_band=cfg.geocode_valid_band,
         soft_reject=cfg.geocode_soft_reject,
-        soft_reject_min=cfg.geocode_soft_reject_min)
+        soft_reject_min=cfg.geocode_soft_reject_min,
+        aliases_path=cfg.street_aliases_path)
     try:
         cache = GeocodeCache(cache_path or cfg.cache_path)
     except BaseException:
