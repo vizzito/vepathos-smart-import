@@ -408,3 +408,27 @@ def test_un_artefacto_normal_pasa(api, http_crudo):
     res = http_crudo.put(f"/internal/jobs/{job.id}/artifacts/{FLAT}",
                          content=CONTENIDO, headers={TOKEN_HEADER: TOKEN})
     assert res.status_code == 204
+
+
+def test_intentos_publican_artefactos_aislados_y_rechazan_lease_vencido(api, worker):
+    from smart_import.execution import Execution, executing
+    _, store, local = api
+    job = _job_con_raw(api)
+    first, second = 'a'*32, 'b'*32
+    assert store.claim_run(job.id, first, 60)
+    with executing(Execution(job.id, first)):
+        path = worker.reserve(job.id, FLAT)
+        path.write_bytes(b'first')
+        first_ref = worker.publish(job.id, FLAT, path)
+        store.release_run(job.id, first)
+        assert store.claim_run(job.id, second, 60)
+        path.write_bytes(b'late')
+        with pytest.raises(ArtifactRejected):
+            worker.publish(job.id, FLAT, path)
+    with executing(Execution(job.id, second)):
+        path = worker.reserve(job.id, FLAT)
+        path.write_bytes(b'second')
+        second_ref = worker.publish(job.id, FLAT, path)
+    assert first_ref != second_ref
+    assert local.resolve(job.id, FLAT, first_ref).read_bytes() == b'first'
+    assert local.resolve(job.id, FLAT, second_ref).read_bytes() == b'second'

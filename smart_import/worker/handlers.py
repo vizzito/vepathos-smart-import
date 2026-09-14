@@ -21,6 +21,9 @@ from ..artifacts import (
     FLAT, GEOCODED, GEOCODED_NESTED, NESTED, RAW, REPORT, ArtifactStore,
 )
 from ..config import Config
+from ..execution import ExecutionLost
+from ..artifacts import ArtifactRejected, ArtifactTransferError
+from ..geocoding.validation import resolve_allowed_index, validate_geo
 from ..jobs import (
     ANALYZING, COMPLETED, FAILED, GEOCODE_FAILED, GEOCODING, NEEDS_REVIEW,
     NORMALIZED, Job, JobStore,
@@ -95,12 +98,18 @@ def run_normalize_job(ctx: WorkerContext, job: Job, schema_path: Path,
             depot_country=depot_country,
         )
     except Exception as exc:
-        job.error = str(exc)
+        job.error = "NORMALIZE_FAILED"
         job.touch(FAILED)
         ctx.store.save(job)
-        ctx.logger.exception("normalize fallo en %s", job.id)
-        raise NormalizeFailed(str(exc)) from exc
+        ctx.logger.error("normalize fallo en %s: %s", job.id, type(exc).__name__)
+        raise NormalizeFailed("No se pudo normalizar el archivo") from exc
 
+    job.normalized_revision += 1
+    job.geocoded_revision = None
+    job.geocoded_path = None
+    job.geocode_report = {}
+    job.geocode_progress = {}
+    job.error = None
     job.report = result.report
     # El pipeline reporta el path del que leyo, que en un worker es su scratch
     # y deja de existir apenas termina. Quien mire el report desde la api veria
@@ -137,6 +146,7 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
     ctx.store.save(job)
 
     try:
+        validate_geo(origin, box, depot.max_distance_km if depot else None)
         from ..geocoding.depot_context import align_depot_to_geolocator
         depot = align_depot_to_geolocator(depot)
         if depot is not None and depot.origin is not None:
@@ -144,9 +154,7 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
 
         country_slug = None
         if index_name:
-            index_path = Path(cfg.index_dir) / index_name
-            if not index_path.exists():
-                raise FileNotFoundError(f"no existe el indice {index_path}")
+            index_path = resolve_allowed_index(cfg.index_dir, index_name)
         else:
             lat = origin[0] if origin else None
             lon = origin[1] if origin else None
@@ -212,6 +220,8 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
                      config=cfg, progress=progress, depot=depot,
                      enhance_addresses=bool(enhance_addresses))
         job.geocoded_path = ctx.artifacts.publish(job_id, GEOCODED, output)
+        job.geocoded_revision = job.normalized_revision
+        job.error = None
         job.geocode_report = report.as_dict()
 
         # Actualizar needs_geocode residual: las not_found siguen pendientes
@@ -229,10 +239,21 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
         # Si quedaron sin coords, COMPLETED igual — la UI las pide a mano.
         job.touch(COMPLETED)
         ctx.store.save(job)
+    except ExecutionLost:
+        raise
+    except ArtifactTransferError as exc:
+        if not isinstance(exc, ArtifactRejected):
+            # Let the queue apply its retry budget, without announcing a terminal job.
+            if ctx.cfg.role == "worker":
+                raise
+        job.error = "GEOCODE_TRANSFER_FAILED"
+        job.op_started_at = None
+        job.touch(GEOCODE_FAILED)
+        ctx.store.save(job)
     except Exception as exc:
         # Normalize NO se pierde: el job vuelve a un estado descargable y la UI
         # puede pedir geolocalizacion manual para las filas sin coords.
-        job.error = str(exc)
+        job.error = "GEOCODE_FAILED"
         job.geocode_progress = {"phase": "failed",
                                 "done": (job.geocode_progress or {}).get("done", 0),
                                 "total": (job.geocode_progress or {}).get("total", 0)}
@@ -240,7 +261,7 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
         # GEOCODE_FAILED (no FAILED): el normalize sigue descargable / usable
         job.touch(GEOCODE_FAILED)
         ctx.store.save(job)
-        ctx.logger.exception("geocode fallo en %s (normalize conservado)", job_id)
+        ctx.logger.error("geocode fallo en %s: %s (normalize conservado)", job_id, type(exc).__name__)
 
 
 def refresh_nested(ctx: WorkerContext, job: Job, geocoded_csv: Path) -> None:
@@ -268,7 +289,11 @@ def refresh_nested(ctx: WorkerContext, job: Job, geocoded_csv: Path) -> None:
             ctx.store.save(job)
             stage(ctx.logger, "EMIT", "nested regenerado con las coordenadas nuevas",
                   entregas=len(resultado.deliveries))
-    except Exception as exc:
+    except (ExecutionLost, ArtifactTransferError):
+        raise
+    except Exception:
+        job.nested_path = None
+        ctx.store.save(job)
         # que falle el refresco no puede invalidar un geocoding que salio bien
-        stage(ctx.logger, "WARN", f"no se pudo regenerar el nested tras geocodificar: {exc}",
+        stage(ctx.logger, "WARN", "no se pudo regenerar el nested tras geocodificar",
               level=logging.WARNING)

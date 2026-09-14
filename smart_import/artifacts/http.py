@@ -23,6 +23,11 @@ import os
 import shutil
 import tempfile
 import time
+import random
+import threading
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from ..execution import token_for, ExecutionLost
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterator
@@ -65,18 +70,24 @@ def default_scratch() -> Path:
 
 class HttpArtifactStore(ArtifactStore):
     def __init__(self, base_url: str, token: str, scratch_dir: str | Path,
-                 *, client=None, reintentos: int = REINTENTOS):
+                 *, client=None, reintentos: int = REINTENTOS, max_bytes: int = 100 * 1024 * 1024):
         self._base_url = base_url.rstrip("/")
         self._token = token
         self._scratch = Path(scratch_dir)
         self._reintentos = max(1, reintentos)
+        self._max_bytes = max_bytes
         self._cliente = client
         self._propio = client is None
+        self._client_lock = threading.Lock()
 
     # ---------------------------------------------------------- scratch
 
     def dir_for(self, job_id: str) -> Path:
-        return self._scratch / job_id
+        root = self._scratch / job_id
+        from ..execution import current
+        execution = current.get()
+        token = execution.token if execution and execution.job_id == job_id else None
+        return root / "attempts" / token if token else root
 
     def reserve(self, job_id: str, kind: str, *, filename: str | None = None) -> Path:
         path = self.dir_for(job_id) / relative_path(kind, filename)
@@ -103,22 +114,28 @@ class HttpArtifactStore(ArtifactStore):
     # ---------------------------------------------------------- transporte
 
     def _http(self):
-        if self._cliente is None:
-            try:
-                import httpx
-            except ImportError as exc:                          # pragma: no cover
-                raise RuntimeError(
-                    "el rol worker intercambia archivos con la api por HTTP y "
-                    "necesita httpx. Instalalo con: pip install -e '.[queue]'") from exc
-            self._cliente = httpx.Client(base_url=self._base_url, timeout=TIMEOUT_S)
-        return self._cliente
+        with self._client_lock:
+            if self._cliente is None:
+                try:
+                    import httpx
+                except ImportError as exc:                          # pragma: no cover
+                    raise RuntimeError(
+                        "el rol worker intercambia archivos con la api por HTTP y "
+                        "necesita httpx. Instalalo con: pip install -e '.[queue]'") from exc
+                self._cliente = httpx.Client(base_url=self._base_url, timeout=TIMEOUT_S)
+            return self._cliente
 
     def _url(self, job_id: str, kind: str) -> str:
         return f"{self._base_url}/internal/jobs/{job_id}/artifacts/{kind}"
 
     @property
     def _headers(self) -> dict[str, str]:
-        return {"X-Smart-Import-Token": self._token}
+        from ..execution import current
+        headers = {"X-Smart-Import-Token": self._token}
+        execution = current.get()
+        if execution is not None:
+            headers["X-Smart-Import-Execution"] = token_for(execution.job_id)
+        return headers
 
     def _con_reintentos(self, que: str, hacer):
         """Reintenta con backoff. El ultimo error se propaga con contexto."""
@@ -126,12 +143,14 @@ class HttpArtifactStore(ArtifactStore):
         for intento in range(self._reintentos):
             try:
                 return hacer()
-            except ArtifactRejected:
+            except (ArtifactRejected, ExecutionLost):
                 raise                       # insistir da lo mismo
             except Exception as exc:        # timeouts, conexion, DNS, 5xx
                 ultimo = exc
                 if intento + 1 < self._reintentos:
-                    time.sleep(ESPERA_BASE_S * (2 ** intento))
+                    wait = getattr(exc, "retry_after_s", None)
+                    time.sleep(min(30., wait if wait is not None else
+                                   ESPERA_BASE_S * (2 ** intento) * random.uniform(.8, 1.2)))
         raise ArtifactTransferError(f"{que}: {ultimo}") from ultimo
 
     # ---------------------------------------------------------- verbos
@@ -157,18 +176,25 @@ class HttpArtifactStore(ArtifactStore):
             return ya
 
         def bajar():
-            r = self._http().get(self._url(job_id, kind), headers=self._headers)
-            if r.status_code == 404:
-                return None                 # no existe todavia: no es un error
-            _fallar_si(r, f"la api nego el {kind} de {job_id}")
-            destino = self.reserve(job_id, kind,
-                                   filename=_nombre_servido(r) or _nombre_de(ref, kind))
-            # Se escribe al lado y se renombra: un archivo a medio bajar que se
-            # llama como el bueno es peor que no tenerlo, porque parece valido.
-            parcial = destino.with_suffix(destino.suffix + PARCIAL)
-            parcial.write_bytes(r.content)
-            os.replace(parcial, destino)
-            return destino
+            from ..atomic import output_path
+            deadline = time.monotonic() + TIMEOUT_S
+            with self._http().stream("GET", self._url(job_id, kind), headers=self._headers) as r:
+                if r.status_code == 404:
+                    return None
+                _fallar_si(r, f"la api nego el {kind} de {job_id}")
+                destino = self.reserve(job_id, kind,
+                                       filename=_nombre_servido(r) or _nombre_de(ref, kind))
+                size = 0
+                with output_path(destino) as partial, open(partial, "wb") as fh:
+                    for chunk in r.iter_bytes(chunk_size=65536):
+                        token_for(job_id)
+                        size += len(chunk)
+                        if self._max_bytes and size > self._max_bytes:
+                            raise ArtifactRejected("Artifact exceeds transfer limit")
+                        if time.monotonic() > deadline:
+                            raise ArtifactTransferError("Artifact transfer deadline exceeded")
+                        fh.write(chunk)
+                return destino
 
         return self._con_reintentos(f"no se pudo traer {kind} de {job_id}", bajar)
 
@@ -206,8 +232,20 @@ def _fallar_si(respuesta, que: str) -> None:
     codigo = respuesta.status_code
     if codigo < 400:
         return
-    error = ArtifactRejected if codigo < 500 else ArtifactTransferError
-    raise error(f"{que}: HTTP {codigo}")
+    transient = codigo in (408, 429) or codigo >= 500
+    exc = (ArtifactTransferError if transient else ArtifactRejected)(f"{que}: HTTP {codigo}")
+    raw = getattr(respuesta, "headers", {}).get("retry-after", "")
+    if transient and raw:
+        try:
+            delay = float(raw)
+        except ValueError:
+            try:
+                delay = (parsedate_to_datetime(raw) - datetime.now(timezone.utc)).total_seconds()
+            except (ValueError, TypeError, OverflowError):
+                delay = 0.
+        if __import__("math").isfinite(delay):
+            exc.retry_after_s = max(0., min(30., delay))
+    raise exc
 
 
 def _nombre_de(ref: str | Path | None, kind: str) -> str | None:

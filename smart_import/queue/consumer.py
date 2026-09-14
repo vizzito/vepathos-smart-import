@@ -39,6 +39,8 @@ import os
 import signal
 import socket
 import threading
+import uuid
+from ..execution import Execution, ExecutionLost, executing
 import time
 from concurrent.futures import Future, ThreadPoolExecutor
 from concurrent.futures import wait as esperar_futures
@@ -90,6 +92,7 @@ class EnVuelo:
     vence_en: float
     resuelta: bool = False
     future: Future | None = field(default=None, compare=False)
+    execution: Execution | None = field(default=None, compare=False)
 
 
 class Consumer:
@@ -221,36 +224,45 @@ class Consumer:
     def _ejecutar(self, vuelo: EnVuelo) -> None:
         task = vuelo.task
         ctx = self._ctx_factory()
-        if not ctx.store.claim_run(task.job_id, self.holder, self.run_lock_ttl):
+        execution = Execution(task.job_id, uuid.uuid4().hex)
+        vuelo.execution = execution
+        if not ctx.store.claim_run(task.job_id, execution.token, self.run_lock_ttl):
             self.log.info("%s lo esta ejecutando otro nodo; se difiere", task)
             self._diferir(vuelo)
             return
 
-        renovador = _Renovador(ctx.store, task.job_id, self.holder, self.log,
-                               self.run_lock_ttl)
+        renovador = _Renovador(ctx.store, task.job_id, execution.token, self.log,
+                               self.run_lock_ttl, execution.cancelled)
         renovador.start()
         try:
             # Todo lo que el worker baje o escriba es una copia de paso: al
             # salir de aca se borra, salga bien o mal. Sin esto, un nodo de
             # larga vida acumula el disco de todos los jobs que proceso.
-            with ctx.artifacts.trabajando_en(task.job_id):
+            with executing(execution), ctx.artifacts.trabajando_en(task.job_id):
                 run_task(ctx, task)
             self._resolver(vuelo, self.broker.ack, vuelo.receipt)
             self.log.info("listo: %s", task)
+        except ExecutionLost:
+            self.log.warning("execution lost for %s", task.job_id)
+            if not vuelo.resuelta:
+                self._diferir(vuelo)
         except JobDesaparecido:
             self.log.info("%s: el job ya no existe, nada que hacer", task)
             self._resolver(vuelo, self.broker.ack, vuelo.receipt)
         except (NormalizeFailed, InvalidTask) as exc:
             # Falla de dominio: el handler ya dejo el job en `failed` con el
             # motivo. Reintentar el mismo archivo roto no cambia nada.
-            self.log.warning("%s no se puede hacer: %s", task, exc)
+            self.log.warning("%s no se puede hacer: %s", task, type(exc).__name__)
+            if isinstance(exc, InvalidTask):
+                self._marcar_fallido(task, "INVALID_TASK", execution)
             self._resolver(vuelo, self.broker.ack, vuelo.receipt)
         except Exception as exc:
-            self.log.exception("%s fallo: %s", task, exc)
-            self._reintentar(vuelo, str(exc))
+            self.log.error("%s fallo: %s", task, type(exc).__name__)
+            if not vuelo.resuelta:
+                self._reintentar(vuelo, type(exc).__name__)
         finally:
             renovador.stop()
-            ctx.store.release_run(task.job_id, self.holder)
+            ctx.store.release_run(task.job_id, execution.token)
             # Si esta tarea habia vencido y aun asi termino, su slot vuelve a
             # estar libre: dejarla contada haria que el nodo se apagara solo
             # despues de unas pocas tareas lentas repartidas en horas.
@@ -313,24 +325,34 @@ class Consumer:
         la tarea: se reintenta el apartado entero, que es lo unico que puede
         destrabar al job.
         """
-        self._marcar_fallido(vuelo.task, motivo)
+        self._marcar_fallido(vuelo.task, motivo, vuelo.execution)
         self.broker.send_to_dlq(vuelo.task, motivo)
         self._resolver(vuelo, self.broker.ack, vuelo.receipt)
 
-    def _marcar_fallido(self, task: Task, motivo: str) -> None:
+    def _marcar_fallido(self, task: Task, motivo: str, execution=None) -> None:
         """Que el usuario vea el fracaso, en vez de un job ocupado para siempre."""
         from ..jobs import FAILED, GEOCODE_FAILED
+
+        if execution is not None:
+            # Also fence watchdog/error writes; never fail a newer attempt.
+            try:
+                with executing(Execution(task.job_id, execution.token)):
+                    return self._marcar_fallido(task, motivo)
+            except ExecutionLost:
+                return
 
         try:
             ctx = self._ctx_factory()
             job = ctx.store.get(task.job_id)
-            if job is None or not job.busy:
+            if job is None or not job.busy or (job.operation_task_id and job.operation_task_id != task.task_id):
                 return
             job.error = motivo
             # Un geocode que fracasa no invalida el normalize: el archivo sigue
             # siendo descargable y la UI ofrece ubicar a mano.
             job.touch(GEOCODE_FAILED if task.type == GEOCODE else FAILED)
             ctx.store.save(job)
+        except ExecutionLost:
+            raise
         except Exception:
             # NO se traga: sin esta marca el job queda ocupado para siempre, y
             # dejar que suba es lo que evita el ack y deja que el broker lo
@@ -376,6 +398,8 @@ class Consumer:
             vencidas = [v for v in self._en_vuelo.values()
                         if not v.resuelta and v.vence_en <= ahora]
         for vuelo in vencidas:
+            if vuelo.execution:
+                vuelo.execution.cancelled.set()
             limite = self.timeout_de(vuelo.task.type)
             self.log.error("%s supero los %ss y sigue corriendo: se aparta",
                            vuelo.task, limite)
@@ -395,13 +419,14 @@ class _Renovador(threading.Thread):
     """Mantiene vivo el lock de ejecucion mientras la tarea trabaja."""
 
     def __init__(self, store, job_id: str, holder: str, log: logging.Logger,
-                 ttl: float):
+                 ttl: float, cancelled: threading.Event | None = None):
         super().__init__(name=f"renueva-{job_id}", daemon=True)
         self._store = store
         self._job_id = job_id
         self._holder = holder
         self._log = log
         self._ttl = ttl
+        self._cancelled = cancelled or threading.Event()
         self._fin = threading.Event()
 
     def run(self) -> None:
@@ -409,15 +434,12 @@ class _Renovador(threading.Thread):
             try:
                 if not self._store.renew_run(self._job_id, self._holder,
                                              self._ttl):
-                    # Nos dieron por muertos estando vivos: no llegamos a
-                    # renovar en un TTL y otro nodo tomo el job. No se aborta
-                    # la tarea —un thread de Python no se puede matar— asi que
-                    # el archivo se va a procesar dos veces. Es la unica pista
-                    # de por que paso, y dice que hacer al respecto.
+                    # El hilo puede seguir calculando; la barrera de estado y
+                    # los artefactos por intento impiden que publique tarde.
+                    self._cancelled.set()
                     self._log.warning(
                         "se perdio el lock de %s: otro nodo lo dio por muerto "
-                        "(sin renovar por mas de %.0fs). Se va a procesar dos "
-                        "veces. Si se repite, subi SMART_IMPORT_RUN_LOCK_TTL_S",
+                        "(sin renovar por mas de %.0fs). Se descartan sus escrituras tardias",
                         self._job_id, self._ttl)
                     return
             except Exception as exc:                            # pragma: no cover

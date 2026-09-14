@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from ..atomic import output_path
 from ..normalization.row_normalizer import NormalizedRow
 from ..normalization.values import render
 
@@ -17,7 +18,7 @@ def write_flat_csv(path: str | Path, columns: list[str], rows: list[NormalizedRo
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     header = list(columns) + (list(DIAGNOSTIC_COLUMNS) if diagnostics else [])
-    with open(p, "w", encoding="utf-8", newline="") as fh:
+    with output_path(p) as temp, open(temp, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(header)
         for row in rows:
@@ -42,7 +43,8 @@ def write_flat_xlsx(path: str | Path, columns: list[str], rows: list[NormalizedR
         if diagnostics:
             line += [row.status, " | ".join(row.messages)]
         ws.append(line)
-    wb.save(p)
+    with output_path(p) as temp:
+        wb.save(temp)
     return p
 
 
@@ -66,5 +68,6 @@ def write_nested_json(path: str | Path, deliveries: list[dict],
 def write_report(path: str | Path, report: dict) -> Path:
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    with output_path(p) as temp:
+        temp.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return p

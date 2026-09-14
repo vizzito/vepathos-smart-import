@@ -7,7 +7,8 @@ y para produccion cambiando unicamente el archivo .env.
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, fields
+import json
+from dataclasses import dataclass, fields, field
 from pathlib import Path
 
 #: Los tres roles del mismo binario. `embedded` es el default y significa
@@ -23,7 +24,7 @@ ROLES = ("embedded", "api", "worker")
 #: Campos que NO se muestran en `/config`. Ese endpoint no pide credenciales
 #: (es justamente la forma de verificar que el .env se aplico), asi que
 #: cualquier secreto que entre al `Config` se publica a quien alcance el puerto.
-SECRET_FIELDS = frozenset({"rabbitmq_password", "redis_password", "worker_token"})
+SECRET_FIELDS = frozenset({"rabbitmq_password", "redis_password", "worker_token", "api_keys"})
 
 
 def _bool(name: str, default: bool) -> bool:
@@ -158,6 +159,8 @@ class Config:
     # ---------------- servicio HTTP ----------------
     host: str = "0.0.0.0"
     port: int = 8100
+    api_keys: dict[str, str] = field(default_factory=dict)
+    upload_idle_timeout_s: float = 30.0
     cors_origins: tuple[str, ...] = ("*",)
     work_dir: str = "data/jobs"
     verbose: bool = False
@@ -392,6 +395,8 @@ class Config:
 
             host=_str("SMART_IMPORT_HOST", "0.0.0.0"),
             port=_int("SMART_IMPORT_PORT", 8100),
+            api_keys=_api_keys(),
+            upload_idle_timeout_s=_float("SMART_IMPORT_UPLOAD_IDLE_TIMEOUT_S", 30.0),
             cors_origins=tuple(_list("SMART_IMPORT_CORS_ORIGINS", ["*"])),
             work_dir=_str("SMART_IMPORT_WORK_DIR", "data/jobs"),
             verbose=_bool("SMART_IMPORT_VERBOSE", False),
@@ -485,3 +490,19 @@ class Config:
         return {f.name: ("***" if (f.name in SECRET_FIELDS and getattr(self, f.name))
                          else getattr(self, f.name))
                 for f in fields(self)}
+
+
+def _api_keys() -> dict[str, str]:
+    raw = os.getenv("SMART_IMPORT_API_KEYS", "")
+    if not raw:
+        return {}
+    try:
+        keys = json.loads(raw)
+        if not isinstance(keys, dict) or not keys or any(
+            not isinstance(k, str) or len(k) < 32 or not k.isascii()
+            or not isinstance(v, str) or not v.strip() for k, v in keys.items()
+        ):
+            raise ValueError
+        return keys
+    except (ValueError, TypeError):
+        raise ValueError("SMART_IMPORT_API_KEYS debe mapear tokens ASCII de 32+ caracteres a tenants") from None

@@ -145,3 +145,14 @@ def test_un_job_borrado_no_revive(ctx, espia):
     with pytest.raises(JobDesaparecido):
         run_task(ctx, tarea)
     assert espia["normalize"] == 0
+
+
+def test_una_operacion_antigua_no_pisa_un_mapping_posterior(ctx, espia):
+    job = ctx.store.create('entregas.csv', 'vepathos_flat_v1')
+    old, latest = normalize_task(job.id), normalize_task(job.id)
+    job.operation_task_id = latest.task_id
+    ctx.store.save(job)
+    run_task(ctx, latest)
+    run_task(ctx, old)
+    assert espia['normalize'] == 1
+    assert ctx.store.get(job.id).normalize_task_id == latest.task_id

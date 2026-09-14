@@ -32,7 +32,9 @@ import time
 import uuid
 from typing import Any
 
-from .jobs import GEOCODE_QUEUED, Job, safe_filename
+from .jobs import ANALYZING, BUSY_STATUSES, GEOCODE_QUEUED, Job, safe_filename
+from .execution import token_for, ExecutionLost
+from .identity import owns
 
 #: Cuanto dura la reserva del geocode si nadie la libera. Es la red de seguridad
 #: para un worker que muere sin escribir el estado final: pasado este plazo el
@@ -129,9 +131,22 @@ class RedisJobStore:
             return None
 
     def list(self, limit: int = 50) -> list[Job]:
-        ids = [_text(i) for i in self._client.zrevrange(self._index, 0, max(0, limit - 1))]
-        jobs = [self.get(job_id) for job_id in ids if job_id]
-        return [job for job in jobs if job is not None]
+        if limit <= 0:
+            return []
+        jobs = []
+        offset = 0
+        while len(jobs) < limit:
+            ids = self._client.zrevrange(self._index, offset, offset + 99)
+            if not ids:
+                break
+            for raw in ids:
+                job = self.get(_text(raw))
+                if job is not None and owns(job):
+                    jobs.append(job)
+                    if len(jobs) == limit:
+                        break
+            offset += len(ids)
+        return jobs
 
     def __len__(self) -> int:
         """Cuantos jobs conoce el indice.
@@ -169,14 +184,18 @@ class RedisJobStore:
         crea la clave de nuevo — que seria un job sin archivos, ofreciendo
         botones de descarga que devuelven 409.
         """
-        escrito = self._client.set(self._key(job.id), json.dumps(job.as_state()),
-                                   ex=self._ttl_para(job), xx=True)
+        token = token_for(job.id)
+        escrito = self._client.eval(SAVE_STATE, 3, self._key(job.id),
+                                    self._run_key(job.id), self._lock_key(job.id),
+                                    token or "", json.dumps(job.as_state()),
+                                    self._ttl_para(job), int(not job.busy))
+        if escrito == -1:
+            raise ExecutionLost("execution lease lost")
         if not escrito:
             return job
         self._client.zadd(self._index, {job.id: job.created_at})
         if not job.busy:
             # Termino: se libera la reserva para que se pueda reintentar.
-            self._client.delete(self._lock_key(job.id))
             with self._candado:
                 self._ultimo_progreso.pop(job.id, None)
         return job
@@ -196,57 +215,30 @@ class RedisJobStore:
             self._ultimo_progreso[job.id] = ahora
         return self.save(job)
 
-    def claim_geocode(self, job_id: str) -> bool:
-        """Reserva el job para geocodificar. False si ya esta ocupado.
+    def claim_normalize(self, job_id: str) -> bool:
+        return self._claim_operation(job_id, ANALYZING)
 
-        El chequeo de `busy` es el atajo barato; el que decide es el `SET NX`,
-        que es la unica parte atomica entre procesos.
-        """
-        job = self.get(job_id)
-        if job is None or job.busy:
-            return False
-        if not self._client.set(self._lock_key(job_id), self._holder,
-                                nx=True, ex=self._lock_ttl_s):
-            return False
-        job.touch(GEOCODE_QUEUED)
-        self.save(job)
-        return True
+    def claim_geocode(self, job_id: str) -> bool:
+        return self._claim_operation(job_id, GEOCODE_QUEUED)
+
+    def _claim_operation(self, job_id: str, status: str) -> bool:
+        return bool(self._client.eval(CLAIM_OPERATION, 2, self._key(job_id),
+            self._lock_key(job_id), json.dumps(list(BUSY_STATUSES)), status,
+            time.time(), self._ttl_busy_s, self._holder, self._lock_ttl_s))
 
     def claim_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
-        """Toma el derecho a EJECUTAR una tarea de este job. False si lo tiene otro.
+        return bool(self._client.set(self._run_key(job_id), holder,
+                                     nx=True, ex=max(1, int(ttl_s))))
 
-        Es la exclusion entre WORKERS, distinta de `claim_geocode`, que es la
-        reserva de negocio del usuario. La cola es at-least-once: un mensaje se
-        redeliverea porque se corto un canal, no solo porque el nodo murio, y
-        dos workers escribiendo la misma salida la dejan a medias.
-
-        El TTL corto es lo que hace que un `kill -9` no clave el job: el que
-        trabaja renueva, el que murio deja de renovar y en un minuto otro lo
-        toma. Reclamar lo propio de nuevo (reintento en el mismo nodo) se
-        permite, o un worker se bloquearia a si mismo.
-        """
-        clave = self._run_key(job_id)
-        if self._client.set(clave, holder, nx=True, ex=max(1, int(ttl_s))):
-            return True
-        return _text(self._client.get(clave)) == holder and self.renew_run(
-            job_id, holder, ttl_s)
+    def owns_run(self, job_id: str, holder: str) -> bool:
+        return _text(self._client.get(self._run_key(job_id))) == holder
 
     def renew_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
-        """Estira la reserva mientras se trabaja. False si ya no es nuestra.
-
-        Leer y escribir son dos pasos: entre medio la clave puede vencer y
-        tomarla otro, y esta renovacion se la robaria. La ventana es de
-        microsegundos contra un TTL de minutos, y el costo de perderla es que
-        dos nodos hagan el mismo trabajo idempotente — no vale un script Lua.
-        """
-        if _text(self._client.get(self._run_key(job_id))) != holder:
-            return False
-        return bool(self._client.set(self._run_key(job_id), holder,
-                                     ex=max(1, int(ttl_s)), xx=True))
+        return bool(self._client.eval(RENEW_RUN, 1, self._run_key(job_id),
+                                     holder, max(1, int(ttl_s))))
 
     def release_run(self, job_id: str, holder: str) -> None:
-        if _text(self._client.get(self._run_key(job_id))) == holder:
-            self._client.delete(self._run_key(job_id))
+        self._client.eval(RELEASE_RUN, 1, self._run_key(job_id), holder)
 
     def delete(self, job_id: str) -> bool:
         existia = bool(self._client.delete(self._key(job_id)))
@@ -308,3 +300,35 @@ def make_redis_job_store(cfg, artifacts=None) -> RedisJobStore:
     return RedisJobStore(client, prefix=cfg.redis_prefix,
                          ttl_s=float(cfg.job_ttl_hours) * 3600,
                          artifacts=artifacts)
+
+
+SAVE_STATE = """-- smart-import:save-state
+if not redis.call('GET', KEYS[1]) then return 0 end
+if ARGV[1] ~= '' and redis.call('GET', KEYS[2]) ~= ARGV[1] then return -1 end
+redis.call('SET', KEYS[1], ARGV[2], 'EX', ARGV[3])
+if ARGV[4] == '1' then redis.call('DEL', KEYS[3]) end
+return 1
+"""
+CLAIM_OPERATION = """-- smart-import:claim-operation
+local raw = redis.call('GET', KEYS[1])
+if not raw then return 0 end
+local job = cjson.decode(raw)
+for _, status in ipairs(cjson.decode(ARGV[1])) do
+  if job.status == status then return 0 end
+end
+if not redis.call('SET', KEYS[2], ARGV[5], 'NX', 'EX', ARGV[6]) then return 0 end
+job.status = ARGV[2]
+job.updated_at = tonumber(ARGV[3])
+redis.call('SET', KEYS[1], cjson.encode(job), 'EX', ARGV[4])
+return 1
+"""
+RENEW_RUN = """-- smart-import:renew-run
+if redis.call('GET', KEYS[1]) == ARGV[1] then
+  return redis.call('EXPIRE', KEYS[1], ARGV[2])
+end
+return 0
+"""
+RELEASE_RUN = """-- smart-import:release-run
+if redis.call('GET', KEYS[1]) == ARGV[1] then return redis.call('DEL', KEYS[1]) end
+return 0
+"""

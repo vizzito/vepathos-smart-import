@@ -50,4 +50,5 @@ def make_artifact_store(cfg: "Config") -> ArtifactStore:
             f"el rol worker busca los archivos en la api y le falta: "
             f"{', '.join(faltan)}")
     return HttpArtifactStore(cfg.api_url, cfg.worker_token,
-                             cfg.scratch_dir or default_scratch())
+                             cfg.scratch_dir or default_scratch(),
+                             max_bytes=int(cfg.max_artifact_mb * 1024 * 1024))

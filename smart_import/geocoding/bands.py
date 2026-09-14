@@ -97,6 +97,8 @@ def band_from_row(row: dict, *, valid_at: float = DEFAULT_VALID_AT,
         row.get("geocode_status"), confidence, has_coords=has_coords,
         valid_at=valid_at, review_at=review_at,
         precision=row.get("geocode_precision"),
+        force_review=(str(row.get("geocode_requires_review", "")).lower() == "true"
+                      or row.get("geocode_precision") == "street_mismatch"),
     )
 
 

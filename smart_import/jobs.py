@@ -15,6 +15,10 @@ configuracion y no una caceria de estados que no avanzan.
 """
 from __future__ import annotations
 
+import copy
+from .execution import token_for, ExecutionLost
+from .identity import tenant, owns
+
 import re
 import shutil
 import threading
@@ -61,6 +65,7 @@ def safe_filename(name: str | None) -> str:
 class Job:
     id: str
     filename: str
+    tenant_id: str = field(default_factory=lambda: tenant.get() or "")
     status: str = UPLOADED
     created_at: float = field(default_factory=time.time)
     updated_at: float = field(default_factory=time.time)
@@ -71,6 +76,8 @@ class Job:
     normalized_path: str | None = None
     nested_path: str | None = None
     geocoded_path: str | None = None
+    normalized_revision: int = 0
+    geocoded_revision: int | None = 0
     report: dict = field(default_factory=dict)
     geocode_report: dict = field(default_factory=dict)
     geocode_progress: dict = field(default_factory=dict)
@@ -87,8 +94,13 @@ class Job:
     #:
     #: Guardar el id de la tarea que ya termino deja distinguir "esto hay que
     #: hacerlo" de "esto ya se hizo y lo que se perdio fue el acuse".
+    operation_task_id: str | None = None
     normalize_task_id: str | None = None
     geocode_task_id: str | None = None
+
+    @property
+    def has_current_geocode(self) -> bool:
+        return bool(self.geocoded_path) and self.geocoded_revision == self.normalized_revision
 
     def touch(self, status: str | None = None) -> None:
         if status:
@@ -128,7 +140,7 @@ class Job:
                     "href": f"/imports/{self.id}/download?format=nested",
                     "description": "Descargar JSON nested (optimizador)",
                 })
-            if self.geocoded_path:
+            if self.has_current_geocode:
                 actions.append({
                     "action": "download_geocoded",
                     "href": f"/imports/{self.id}/download?format=geocoded",
@@ -352,7 +364,8 @@ class JobStore:
         return job
 
     def get(self, job_id: str) -> Job | None:
-        return self._jobs.get(job_id)
+        job = self._jobs.get(job_id)
+        return copy.deepcopy(job) if token_for(job_id) else job
 
     def save(self, job: Job) -> Job:
         """Deja asentado el estado del job.
@@ -371,8 +384,11 @@ class JobStore:
         mientras el worker trabajaba, la escritura tardia se descarta.
         """
         with self._lock:
+            token = token_for(job.id)
+            if token and not self._owns_run(job.id, token):
+                raise ExecutionLost("execution lease lost")
             if job.id in self._jobs:
-                self._jobs[job.id] = job
+                self._jobs[job.id] = copy.deepcopy(job) if token else job
         return job
 
     def save_progress(self, job: Job) -> Job:
@@ -386,7 +402,13 @@ class JobStore:
         """
         return self.save(job)
 
+    def claim_normalize(self, job_id: str) -> bool:
+        return self._claim_operation(job_id, ANALYZING)
+
     def claim_geocode(self, job_id: str) -> bool:
+        return self._claim_operation(job_id, GEOCODE_QUEUED)
+
+    def _claim_operation(self, job_id: str, status: str) -> bool:
         """Reserva el job para geocodificar. False si ya esta ocupado.
 
         Mirar el estado y despues escribirlo son dos pasos: separados, dos POST
@@ -399,7 +421,7 @@ class JobStore:
             job = self._jobs.get(job_id)
             if job is None or job.status in BUSY_STATUSES:
                 return False
-            job.touch(GEOCODE_QUEUED)
+            job.touch(status)
             return True
 
     def claim_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
@@ -417,15 +439,22 @@ class JobStore:
         """
         with self._lock:
             duenio, vence = self._corriendo.get(job_id, (None, 0.0))
-            if duenio is not None and duenio != holder and vence > time.monotonic():
+            if duenio is not None and vence > time.monotonic():
                 return False
             self._corriendo[job_id] = (holder, time.monotonic() + ttl_s)
             return True
 
+    def _owns_run(self, job_id: str, holder: str) -> bool:
+        owner, expires = self._corriendo.get(job_id, (None, 0.0))
+        return owner == holder and expires > time.monotonic()
+
+    def owns_run(self, job_id: str, holder: str) -> bool:
+        with self._lock:
+            return self._owns_run(job_id, holder)
+
     def renew_run(self, job_id: str, holder: str, ttl_s: float) -> bool:
         with self._lock:
-            duenio, _ = self._corriendo.get(job_id, (None, 0.0))
-            if duenio != holder:
+            if not self._owns_run(job_id, holder):
                 return False
             self._corriendo[job_id] = (holder, time.monotonic() + ttl_s)
             return True
@@ -437,7 +466,8 @@ class JobStore:
                 self._corriendo.pop(job_id, None)
 
     def list(self, limit: int = 50) -> list[Job]:
-        return sorted(self._jobs.values(), key=lambda j: -j.created_at)[:limit]
+        return sorted((j for j in self._jobs.values() if owns(j)),
+                      key=lambda j: -j.created_at)[:limit]
 
     def __len__(self) -> int:
         """Cuantos jobs vivos hay. Para /health, que solo quiere el numero:

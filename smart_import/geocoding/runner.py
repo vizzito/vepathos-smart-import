@@ -9,11 +9,14 @@ Es deliberadamente una operacion aparte de `normalize`:
 from __future__ import annotations
 
 import csv
+import json
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..config import Config
+from ..atomic import output_path as atomic_output
+from .validation import validate_geo
 from ..logging_setup import detail, get_logger, stage
 from ..normalization.values import render, to_float
 from .base import (
@@ -36,6 +39,7 @@ logger = get_logger("geocode")
 DIAGNOSTIC_COLUMNS = (
     "geocode_status", "geocode_confidence", "geocode_band",
     "geocode_precision", "geocode_source", "geocode_raw_score", "geocode_reason",
+    "geocode_requires_review",
 )
 
 
@@ -109,6 +113,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         depot: DepotContext | None = None,
         enhance_addresses: bool = False) -> GeocodeReport:
     cfg = config or Config.from_env()
+    validate_geo(origin, bbox)
     started = time.perf_counter()
 
     # Retrocompat: origin=(lat,lon) sigue siendo valido; depot lo subsume.
@@ -125,6 +130,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         )
 
     effective_origin = depot.origin if depot else origin
+    validate_geo(effective_origin, bbox, depot.max_distance_km if depot else None)
 
     src, dst = Path(input_path), Path(output_path)
     with open(src, "r", encoding="utf-8", newline="") as fh:
@@ -139,7 +145,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
 
     stage(logger, "GEOCODE", "abriendo indice", indice=Path(index_path).name,
           filas=len(rows),
-          depot=f"{effective_origin[0]},{effective_origin[1]}" if effective_origin else None,
+          has_origin=effective_origin is not None,
           bbox="si" if bbox else None,
           enrich=",".join(depot.enrichment_tokens()) if depot else None,
           enhance_addresses=bool(enhance_addresses) or None)
@@ -151,134 +157,145 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         review_band=cfg.geocode_review_band, valid_band=cfg.geocode_valid_band,
         soft_reject=cfg.geocode_soft_reject,
         soft_reject_min=cfg.geocode_soft_reject_min)
-    cache = GeocodeCache(cache_path or cfg.cache_path)
-    stage(logger, "GEOCODE", "umbrales", matched=f">={cfg.match_threshold}",
-          low_confidence=f">={cfg.low_confidence_threshold}",
-          banda_verde=f">={cfg.geocode_valid_band}",
-          banda_ambar=f">={cfg.geocode_review_band}",
-          piso_nivel_calle=cfg.geocode_street_level_floor,
-          calle_minima=cfg.geocode_street_match_min,
-          soft_reject=("on" if cfg.geocode_soft_reject else "off")
-                       + f">={cfg.geocode_soft_reject_min}",
-          geofence_km=depot.max_distance_km if depot else None,
-          low_conf_km=cfg.max_low_confidence_km,
-          fallback_externo=cfg.geocoder_fallback)
-    # Incluir umbrales + enhance en la clave: no reusar cache de otra semantica.
-    context = (
-        f"{Path(index_path).stem}"
-        f"|m{cfg.match_threshold:.3f}"
-        f"|l{cfg.low_confidence_threshold:.3f}"
-        f"|v{cfg.geocode_valid_band:.3f}"
-        f"|r{cfg.geocode_review_band:.3f}"
-        f"|s{cfg.geocode_street_level_floor:.3f}"
-        f"|c{cfg.geocode_street_match_min:.3f}"
-        f"|sr{int(cfg.geocode_soft_reject)}{cfg.geocode_soft_reject_min:.3f}"
-        f"|e{int(bool(enhance_addresses))}"
-        f"|q2"  # query-only enrich (no muta address)
-    )
-    report = GeocodeReport(rows=len(rows), index=str(index_path))
-    if effective_origin:
-        report.origin = {"lat": effective_origin[0], "lon": effective_origin[1]}
-    if bbox:
-        report.bbox = dict(zip(("north", "south", "east", "west"), bbox))
-    if depot:
-        report.depot = depot.as_dict()
+    try:
+        cache = GeocodeCache(cache_path or cfg.cache_path)
+    except BaseException:
+        geocoder.close()
+        raise
+    try:
+        stage(logger, "GEOCODE", "umbrales", matched=f">={cfg.match_threshold}",
+              low_confidence=f">={cfg.low_confidence_threshold}",
+              banda_verde=f">={cfg.geocode_valid_band}",
+              banda_ambar=f">={cfg.geocode_review_band}",
+              piso_nivel_calle=cfg.geocode_street_level_floor,
+              calle_minima=cfg.geocode_street_match_min,
+              soft_reject=("on" if cfg.geocode_soft_reject else "off")
+                           + f">={cfg.geocode_soft_reject_min}",
+              geofence_km=depot.max_distance_km if depot else None,
+              low_conf_km=cfg.max_low_confidence_km,
+              fallback_externo=cfg.geocoder_fallback)
+        # Incluir umbrales + enhance en la clave: no reusar cache de otra semantica.
+        index_file = Path(index_path).resolve()
+        stat = index_file.stat()
+        context = json.dumps({
+            "index": str(index_file), "mtime_ns": stat.st_mtime_ns,
+            "size": stat.st_size, "inode": stat.st_ino,
+            "origin": effective_origin, "bbox": bbox,
+            "settings": {name: getattr(cfg, name) for name in (
+                "match_threshold", "low_confidence_threshold", "geocode_valid_band",
+                "geocode_review_band", "geocode_street_level_floor", "geocode_street_match_min",
+                "geocode_soft_reject", "geocode_soft_reject_min", "address_parser", "libpostal_enabled")},
+            "enhance": bool(enhance_addresses), "query_version": 2,
+        }, sort_keys=True, separators=(",", ":"), allow_nan=False)
+        report = GeocodeReport(rows=len(rows), index=str(index_path))
+        if effective_origin:
+            report.origin = {"lat": effective_origin[0], "lon": effective_origin[1]}
+        if bbox:
+            report.bbox = dict(zip(("north", "south", "east", "west"), bbox))
+        if depot:
+            report.depot = depot.as_dict()
 
-    scorer = AddressCandidateScorer()
-    address_min = float(getattr(cfg, "address_accept_threshold", 0.50))
-    bands = (cfg.geocode_valid_band, cfg.geocode_review_band)
-    retries = 0
+        scorer = AddressCandidateScorer()
+        address_min = float(getattr(cfg, "address_accept_threshold", 0.50))
+        bands = (cfg.geocode_valid_band, cfg.geocode_review_band)
+        retries = 0
+
+    except BaseException:
+        cache.close()
+        geocoder.close()
+        raise
 
     try:
         for i, row in enumerate(rows, start=1):
-            display = (row.get("address") or "").strip()
+            try:
+                display = (row.get("address") or "").strip()
 
-            # Query interna: address + localidad de fila + depot. NUNCA pisa display.
-            query = build_geocode_query(
-                display, row=row, depot=depot, enhance=enhance_addresses)
-            if query != display:
-                report.enriched += 1
+                # Query interna: address + localidad de fila + depot. NUNCA pisa display.
+                query = build_geocode_query(
+                    display, row=row, depot=depot, enhance=enhance_addresses)
+                if query != display:
+                    report.enriched += 1
 
-            if _valid_coords(row.get("lat"), row.get("lng")):
-                _stamp(row, GeocodeResult(status=STATUS_ALREADY), bands, has_coords=True)
-                report.already_geocoded += 1
-                continue
+                if _valid_coords(row.get("lat"), row.get("lng")):
+                    _stamp(row, GeocodeResult(status=STATUS_ALREADY), bands, has_coords=True)
+                    report.already_geocoded += 1
+                    continue
 
-            if not display:
-                _stamp(row, GeocodeResult(status=STATUS_NOT_FOUND,
-                                          detail={"reason": "sin direccion"}), bands)
-                report.not_found += 1
-                continue
+                if not display:
+                    _stamp(row, GeocodeResult(status=STATUS_NOT_FOUND,
+                                              detail={"reason": "sin direccion"}), bands)
+                    report.not_found += 1
+                    continue
 
-            evidence = scorer.score(display)
-            if evidence.score < address_min:
-                _stamp(row, GeocodeResult(
-                    status=STATUS_NOT_FOUND,
-                    detail={"reason": "sin evidencia suficiente de direccion",
-                            "address_score": round(evidence.score, 3),
-                            "evidence": list(evidence.evidence)}), bands)
-                report.skipped_low_confidence += 1
-                _sample(report, row, display,
-                        GeocodeResult(status=STATUS_NOT_FOUND,
-                                      detail={"address_score": round(evidence.score, 3)}))
-                continue
+                evidence = scorer.score(display)
+                if evidence.score < address_min:
+                    _stamp(row, GeocodeResult(
+                        status=STATUS_NOT_FOUND,
+                        detail={"reason": "sin evidencia suficiente de direccion",
+                                "address_score": round(evidence.score, 3),
+                                "evidence": list(evidence.evidence)}), bands)
+                    report.skipped_low_confidence += 1
+                    report.not_found += 1
+                    _sample(report, row, display,
+                            GeocodeResult(status=STATUS_NOT_FOUND,
+                                          detail={"address_score": round(evidence.score, 3)}))
+                    continue
 
-            result = _lookup(cache, geocoder, query, context, effective_origin, bbox)
+                result = _lookup(cache, geocoder, query, context, effective_origin, bbox)
 
-            # Reintento limpio (sin piso/depto) si el primero es flojo.
-            if is_weak_result(result, review_band=cfg.geocode_review_band):
-                alt = cleaned_query(query)
-                if alt and alt.casefold() != query.casefold():
-                    alt_result = _lookup(
-                        cache, geocoder, alt, context, effective_origin, bbox)
-                    better = pick_better(result, alt_result)
-                    if better is not None and better is not result:
-                        retries += 1
-                        result = better
-                        query = alt
+                # Reintento limpio (sin piso/depto) si el primero es flojo.
+                if is_weak_result(result, review_band=cfg.geocode_review_band):
+                    alt = cleaned_query(query)
+                    if alt and alt.casefold() != query.casefold():
+                        alt_result = _lookup(
+                            cache, geocoder, alt, context, effective_origin, bbox)
+                        better = pick_better(result, alt_result)
+                        if better is not None and better is not result:
+                            retries += 1
+                            result = better
+                            query = alt
 
-            # Defensa: _lookup / pick_better nunca deberían dejar None acá.
-            if result is None:
-                result = GeocodeResult(
-                    status=STATUS_NOT_FOUND,
-                    detail={"reason": "geocode_returned_none"},
-                )
+                # Defensa: _lookup / pick_better nunca deberían dejar None acá.
+                if result is None:
+                    result = GeocodeResult(
+                        status=STATUS_NOT_FOUND,
+                        detail={"reason": "geocode_returned_none"},
+                    )
 
-            if result.status in (STATUS_MATCHED, STATUS_LOW) and result.has_coords:
-                result = _apply_depot_guards(
-                    result, depot=depot, cfg=cfg, report=report,
-                )
-                if result.status == STATUS_NOT_FOUND:
-                    _stamp(row, result, bands)
+                if result.status in (STATUS_MATCHED, STATUS_LOW) and result.has_coords:
+                    result = _apply_depot_guards(
+                        result, depot=depot, cfg=cfg, report=report,
+                    )
+                    if result.status == STATUS_NOT_FOUND:
+                        _stamp(row, result, bands)
+                        report.not_found += 1
+                        _sample(report, row, display, result, query=query)
+                        if i <= 12:
+                            _log_row(display, row, cached=False, query=query)
+                        continue
+                    row["lat"] = render(result.lat)
+                    row["lng"] = render(result.lon)
+                _stamp(row, result, bands)
+
+                band = row.get("geocode_band") or BAND_NEEDS_GEOCODING
+                if band == BAND_VALID:
+                    report.matched += 1
+                elif band == BAND_REVIEW:
+                    report.low_confidence += 1
+                    _sample(report, row, display, result, query=query)
+                elif result.status == STATUS_ERROR:
+                    report.errors += 1
+                    _sample(report, row, display, result, query=query)
+                else:
                     report.not_found += 1
                     _sample(report, row, display, result, query=query)
-                    if i <= 12:
-                        _log_row(display, row, cached=False, query=query)
-                    if progress and (i == 1 or i % 25 == 0 or i == len(rows)):
-                        progress(i, report)
-                    continue
-                row["lat"] = render(result.lat)
-                row["lng"] = render(result.lon)
-            _stamp(row, result, bands)
 
-            band = row.get("geocode_band") or BAND_NEEDS_GEOCODING
-            if band == BAND_VALID:
-                report.matched += 1
-            elif band == BAND_REVIEW:
-                report.low_confidence += 1
-                _sample(report, row, display, result, query=query)
-            elif result.status == STATUS_ERROR:
-                report.errors += 1
-                _sample(report, row, display, result, query=query)
-            else:
-                report.not_found += 1
-                _sample(report, row, display, result, query=query)
+                if i <= 12:
+                    _log_row(display, row, cached=False, query=query)
 
-            if i <= 12:
-                _log_row(display, row, cached=False, query=query)
-
-            if progress and (i == 1 or i % 25 == 0 or i == len(rows)):
-                progress(i, report)
+            finally:
+                if progress and (i == 1 or i % 25 == 0 or i == len(rows)):
+                    progress(i, report)
         cache.commit()
     finally:
         cache_stats = cache.stats()
@@ -286,7 +303,7 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         geocoder.close()
 
     dst.parent.mkdir(parents=True, exist_ok=True)
-    with open(dst, "w", encoding="utf-8", newline="") as fh:
+    with atomic_output(dst) as temp, open(temp, "w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         for row in rows:
@@ -389,6 +406,7 @@ def _stamp(row: dict, result: GeocodeResult, bands: tuple[float, float] = (0.80,
     row["geocode_confidence"] = (
         f"{result.confidence:.3f}" if (con_pin and result.confidence) else "")
     soft = bool(result.detail.get("soft_reject"))
+    row["geocode_requires_review"] = "true" if soft else "false"
     row["geocode_band"] = band_for(
         result.status, result.confidence,
         has_coords=con_pin,
@@ -428,4 +446,5 @@ def _sample(report: GeocodeReport, row: dict, address: str, result: GeocodeResul
     }
     if query and query != address:
         sample["enriched_query"] = query
-    report.samples.append(sample)
+    if len(report.samples) < 50:
+        report.samples.append(sample)

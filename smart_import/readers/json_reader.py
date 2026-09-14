@@ -62,10 +62,10 @@ def _find_records(doc: Any) -> tuple[list[dict], str | None]:
     if isinstance(doc, dict):
         for key in LIST_KEYS:
             val = doc.get(key)
-            if isinstance(val, list) and val and isinstance(val[0], dict):
+            if isinstance(val, list) and any(isinstance(item, dict) for item in val):
                 return val, key
         for key, val in doc.items():                     # cualquier lista de objetos
-            if isinstance(val, list) and val and isinstance(val[0], dict):
+            if isinstance(val, list) and any(isinstance(item, dict) for item in val):
                 return val, key
         return [doc], None
     return [], None
@@ -106,7 +106,9 @@ def read(path: str | Path, max_rows: int | None = None) -> Table:
     expanded: list[dict[str, Any]] = []
     child_key_used: str | None = None
     synthesized_ids = 0
+    truncated = False
     for index, rec in enumerate(records, start=1):
+        child_key_used = None
         if not isinstance(rec, dict):
             continue
         child: list[dict] = []
@@ -129,16 +131,22 @@ def read(path: str | Path, max_rows: int | None = None) -> Table:
             expanded.append(parent)
         else:
             for item in child:
+                if max_rows and len(expanded) >= max_rows:
+                    truncated = True
+                    break
                 row = dict(parent)
                 row.update(_flatten(item))
                 expanded.append(row)
         if max_rows and len(expanded) >= max_rows:
+            truncated = truncated or index < len(records)
             break
 
     paths: list[str] = []
+    seen_paths: set[str] = set()
     for row in expanded:
         for k in row:
-            if k not in paths:
+            if k not in seen_paths:
+                seen_paths.add(k)
                 paths.append(k)
     rename = _leaf_names(paths)
     columns = dedupe_columns([rename[p] for p in paths])
@@ -147,6 +155,8 @@ def read(path: str | Path, max_rows: int | None = None) -> Table:
 
     meta = FileMeta(path=str(p), format="json", size_bytes=p.stat().st_size)
     meta.notes.extend(load_notes)
+    if truncated:
+        meta.notes.append(f"JSON truncado al límite de {max_rows} filas expandidas")
     if container:
         meta.notes.append(f"registros tomados de '{container}'")
     if child_key_used:
@@ -168,8 +178,9 @@ def loads_resilient(text: str) -> tuple[Any, list[str]]:
       3. salvar objetos de la lista principal uno a uno; descartar los irrecuperables
     """
     notes: list[str] = []
+    _validate_depth(text)
     try:
-        return json.loads(text), notes
+        return json.loads(text, parse_constant=lambda _: None), notes
     except json.JSONDecodeError as first:
         first_err = first
 
@@ -196,7 +207,20 @@ def loads_resilient(text: str) -> tuple[Any, list[str]]:
 def repair_json_text(text: str) -> tuple[str, list[str]]:
     """Arreglos locales que no cambian la semantica de un float bien formado."""
     fixes: list[str] = []
-    out = text
+    # Hide string values (and unrelated keys) before applying repair rules.
+    # Restoration is one pass: user-provided sentinel-looking text stays data.
+    strings = []
+    repair_keys = {"lat", "lng", "lon", "longitude", "latitude", "length", "width",
+                   "height", "packaging", "status", "time_window", "value_cents",
+                   "value_currency", "weight_kg"}
+    def protect(match):
+        token = match.group()
+        tail = text[match.end():match.end() + 128].lstrip()
+        if token[1:-1] in repair_keys and tail.startswith(":"):
+            return token
+        strings.append(token)
+        return '"\ue000' + str(len(strings) - 1) + '\ue001"'
+    out = re.sub(r'"(?:[^"\\]|\\.)*"', protect, text)
 
     n_dot = len(_TRAILING_DOT.findall(out))
     if n_dot:
@@ -233,6 +257,7 @@ def repair_json_text(text: str) -> tuple[str, list[str]]:
         out = _NONFINITE.sub("null", out)
         fixes.append(f"{n_nf} NaN/Infinity → null")
 
+    out = re.sub(r'"\ue000(\d+)\ue001"', lambda m: strings[int(m[1])], out)
     return out, fixes
 
 
@@ -304,11 +329,15 @@ def _salvage_addresses(text: str, array_start: int) -> tuple[list[dict], list[st
     used_until = array_start
     skipped = 0
     discarded = 0
+    budget = [4 * len(text)]
     for match in _ADDRESS_START.finditer(text, array_start):
+        if budget[0] <= 0:
+            notes.append("salvamento interrumpido: presupuesto de análisis agotado")
+            break
         start = match.start()
         if start < used_until:
             continue
-        end = _matching_brace(text, start)
+        end = _matching_brace(text, start, budget=budget)
         if end < 0 or (end - start) > _MAX_ADDRESS_CHARS:
             skipped += 1
             used_until = start + 1
@@ -322,8 +351,7 @@ def _salvage_addresses(text: str, array_start: int) -> tuple[list[dict], list[st
         # span sospechoso: no consumirlo entero
         discarded += 1
         if discarded <= 5:
-            preview = re.sub(r"\s+", " ", chunk.strip())[:80]
-            notes.append(f"address descartada (JSON irrecuperable): {preview}…")
+            notes.append("address descartada (JSON irrecuperable)")
         used_until = start + 1
     if discarded > 5:
         notes.append(f"… y {discarded - 5} address(es) irrecuperable(s) mas")
@@ -352,11 +380,15 @@ def _looks_like_address(obj: dict) -> bool:
     return bool(_ADDRESS_KEYS & obj.keys())
 
 
-def _matching_brace(text: str, start: int) -> int:
+def _matching_brace(text: str, start: int, *, budget: list[int] | None = None) -> int:
     depth = 0
     in_str = False
     escape = False
-    for i in range(start, len(text)):
+    for i in range(start, min(len(text), start + _MAX_ADDRESS_CHARS)):
+        if budget is not None:
+            if budget[0] <= 0:
+                return -1
+            budget[0] -= 1
         ch = text[i]
         if in_str:
             if escape:
@@ -393,3 +425,24 @@ def _parse_object_chunk(chunk: str) -> dict | None:
 
 def _blank(value: Any) -> bool:
     return value is None or (isinstance(value, str) and not value.strip())
+
+
+def _validate_depth(text: str, maximum: int = 100) -> None:
+    depth = 0
+    quoted = escaped = False
+    for char in text:
+        if quoted:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                quoted = False
+        elif char == '"':
+            quoted = True
+        elif char in "[{":
+            depth += 1
+            if depth > maximum:
+                raise ValueError("JSON supera la profundidad máxima permitida")
+        elif char in "]}":
+            depth = max(0, depth - 1)

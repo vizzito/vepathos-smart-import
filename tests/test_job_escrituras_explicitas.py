@@ -63,7 +63,8 @@ def client_con_copias(request, tmp_path, monkeypatch):
     monkeypatch.setattr(api_module, "CFG", cfg)
     monkeypatch.setattr(api_module, "store", store)
     monkeypatch.setattr(api_module, "artifacts", artefactos)
-    return TestClient(app)
+    with TestClient(app) as client:
+        yield client
 
 
 def _subir(client, nombre="es_sin_coords.csv", **params):

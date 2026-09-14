@@ -16,6 +16,7 @@ Prefijos / glue: `resources/geo_keywords.json` (no hardcodear listas aca).
 from __future__ import annotations
 
 import re
+import unicodedata
 from functools import lru_cache
 
 from ..resources import (
@@ -208,10 +209,14 @@ def _street_candidates(haystack: str, tokens: frozenset[str]
                        ) -> list[tuple[int, int, int, str, str, str]]:
     """Candidatos (prioridad, begin, end, road, num, order) sobre TODO el texto."""
     out: list[tuple[int, int, int, str, str, str]] = []
+    unit_spans = [m.span() for pattern in (_unit_re(), _LEVEL)
+                  for m in pattern.finditer(haystack)]
     for pattern, order_name, do_trim in _STREET_PATTERNS:
         position = 0
         while (match := pattern.search(haystack, position)) is not None:
             position = max(match.start("num"), position + 1)
+            if any(_overlaps(match.span(), span) for span in unit_spans):
+                continue
             whole = _ROAD_TAIL.sub("", match.group("road").strip(" .,;:-"))
             road = _trim_road(whole, tokens) if do_trim else whole
             number = match.group("num").strip()
@@ -260,7 +265,7 @@ class HeuristicAddressParser(AddressParser):
         self.locales = locales
 
     def parse(self, text: str, context=None) -> ParsedAddress:
-        raw = (text or "").strip()
+        raw = unicodedata.normalize("NFC", text or "").strip()
         if not raw:
             return ParsedAddress(text=raw, parser=self.name)
 

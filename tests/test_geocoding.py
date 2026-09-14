@@ -759,7 +759,7 @@ def test_una_entrada_de_version_anterior_se_ignora(tmp_path):
     try:
         nuevo = cache_mod.GeocodeCache(ruta)
         assert nuevo.get("Florida 500", "ar") is None      # se ignora, se reconsulta
-        assert nuevo.stats()["stale"] == 1
+        assert nuevo.stats()["misses"] == 1  # obsolete versions are purged at open
         nuevo.close()
     finally:
         cache_mod.GEOCODER_VERSION = original

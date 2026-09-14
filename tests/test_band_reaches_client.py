@@ -56,6 +56,7 @@ def test_preview_sin_source_devuelve_el_resultado_vigente(client, monkeypatch, t
         w.writerow(["002", "Av. Cabildo 174", "-34.56", "-58.45",
                     "low_confidence", "0.822", "review", "street", "osm", "0.71", ""])
     job.geocoded_path = str(salida)
+    job.geocoded_revision = job.normalized_revision
 
     body = client.get(f"/imports/{job_id}/preview", params={"limit": 5}).json()
     assert body["source"] == "geocoded"
@@ -76,6 +77,7 @@ def test_download_flat_sirve_el_csv_vigente(client, tmp_path):
         "001,Av. Corrientes 100,-34.6,-58.37,matched,1.000,valid,housenumber,osm,1.0,\n",
         encoding="utf-8")
     job.geocoded_path = str(salida)
+    job.geocoded_revision = job.normalized_revision
 
     flat = client.get(f"/imports/{job_id}/download", params={"format": "flat"}).text
     assert "geocode_band" in flat.splitlines()[0]
@@ -97,6 +99,7 @@ def test_el_csv_geocodificado_es_superset_del_normalizado(client, tmp_path):
     columnas = [*sorted(normalizado), "lat", "lng", *DIAGNOSTIC_COLUMNS]
     salida.write_text(",".join(columnas) + "\n", encoding="utf-8")
     job.geocoded_path = str(salida)
+    job.geocoded_revision = job.normalized_revision
 
     flat = client.get(f"/imports/{job_id}/download", params={"format": "flat"}).text
     servidas = set(next(csv.reader(io.StringIO(flat))))

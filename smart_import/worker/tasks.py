@@ -29,6 +29,11 @@ class JobDesaparecido(Exception):
 
 
 def run_task(ctx: WorkerContext, task: Task) -> None:
+    job = ctx.store.get(task.job_id)
+    if job is not None and job.operation_task_id and job.operation_task_id != task.task_id:
+        # An older delivery must not overwrite a subsequent user operation.
+        ctx.logger.info("discarding superseded operation for %s", task.job_id)
+        return
     if task.type == NORMALIZE:
         return _normalizar(ctx, task)
     if task.type == GEOCODE:
@@ -69,24 +74,32 @@ def _geocodificar(ctx: WorkerContext, task: Task) -> None:
     job = ctx.store.get(task.job_id)
     if job is None:
         raise JobDesaparecido(task.job_id)
-    if _ya_esta_hecho(job.geocode_task_id, task, bool(job.geocoded_path)):
+    if _ya_esta_hecho(job.geocode_task_id, task, job.has_current_geocode and job.status == "completed"):
         ctx.logger.info("%s ya estaba hecho: se perdio el acuse, no el trabajo",
                         task)
         return
     job.geocode_task_id = task.task_id
+    job.touch("geocoding")
     ctx.store.save(job)
     p = task.params
-    lat, lon = p.get("origin_lat"), p.get("origin_lon")
-    origin = (lat, lon) if lat is not None and lon is not None else None
-    bbox = tuple(p["bbox"]) if p.get("bbox") else None
-    depot = depot_from_params(
-        origin_lat=lat, origin_lon=lon,
-        depot_city=p.get("depot_city"), depot_region=p.get("depot_region"),
-        depot_postcode=p.get("depot_postcode"), depot_country=p.get("depot_country"),
-        depot_address=p.get("depot_address"),
-        max_distance_km=float(p.get("max_distance_km")
-                              or ctx.cfg.max_geocode_distance_km),
-    )
+    from ..geocoding.validation import validate_geo
+    try:
+        lat, lon = p.get("origin_lat"), p.get("origin_lon")
+        if (lat is None) != (lon is None):
+            raise ValueError("incomplete origin")
+        origin = (lat, lon) if lat is not None else None
+        bbox = tuple(p["bbox"]) if p.get("bbox") else None
+        distance = p.get("max_distance_km")
+        distance = ctx.cfg.max_geocode_distance_km if distance is None else float(distance)
+        validate_geo(origin, bbox, distance)
+        depot = depot_from_params(
+            origin_lat=lat, origin_lon=lon,
+            depot_city=p.get("depot_city"), depot_region=p.get("depot_region"),
+            depot_postcode=p.get("depot_postcode"), depot_country=p.get("depot_country"),
+            depot_address=p.get("depot_address"), max_distance_km=distance,
+        )
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise InvalidTask("Parámetros geográficos inválidos") from exc
     run_geocode_job(ctx, task.job_id, origin, bbox, p.get("index"), depot=depot,
                     enhance_addresses=bool(p.get("enhance_addresses")))
 

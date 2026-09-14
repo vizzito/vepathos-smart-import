@@ -24,6 +24,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from contextlib import contextmanager
 from pathlib import Path
+import re
+from ..execution import token_for
 from typing import Iterator
 
 #: El archivo tal cual lo subio el usuario. Es el unico que hay que conservar
@@ -69,7 +71,18 @@ URI_SCHEME = "artifact://"
 
 
 def artifact_uri(job_id: str, kind: str) -> str:
-    return f"{URI_SCHEME}{job_id}/{kind}"
+    token = token_for(job_id)
+    suffix = f"?run={token}" if token else ""
+    return f"{URI_SCHEME}{job_id}/{kind}{suffix}"
+
+
+def artifact_run(ref) -> str | None:
+    if isinstance(ref, str) and ref.startswith(URI_SCHEME) and "?run=" in ref:
+        token = ref.rsplit("?run=", 1)[1]
+        if not re.fullmatch(r"[0-9a-f]{32}", token):
+            raise ValueError("invalid artifact execution")
+        return token
+    return None
 
 
 def local_path(ref: str | Path | None) -> Path | None:

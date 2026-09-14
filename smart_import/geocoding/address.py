@@ -110,7 +110,7 @@ def parse(address: str) -> ParsedAddress:
 
     parsed = {}
     try:
-        parsed = _address_parser().parse(original)
+        parsed = _address_parser().parse(unicodedata.normalize("NFC", original))
     except Exception:
         parsed = {}
     road = (parsed.get("road") or "").strip() or None

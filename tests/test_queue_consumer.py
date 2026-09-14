@@ -105,7 +105,7 @@ def test_una_falla_pasajera_vuelve_a_la_cola_con_demora(escenario):
     reintento = broker.publicadas[0]
     assert reintento.task.attempt == 2
     assert reintento.delay_s == demora_para(1)
-    assert "redis" in reintento.task.error
+    assert reintento.task.error == "ConnectionError"
     assert len(broker.ackeadas) == 1, "el original se confirma tras republicar"
     assert broker.nackeadas == [], "nackear con requeue lo devolveria al instante"
 
@@ -271,11 +271,12 @@ def test_un_ttl_ridiculo_no_se_aplica(escenario_cfg):
     assert any("RUN_LOCK_TTL_S" in a for a in avisos)
 
 
-def test_el_mismo_nodo_puede_retomar_su_propia_tarea(escenario):
-    """Un reintento en el mismo worker no se puede bloquear a si mismo."""
+def test_el_mismo_nodo_puede_retomar_tras_liberar_el_intento(escenario):
+    """Un nuevo intento puede entrar cuando el anterior libero su lease."""
     consumer, broker, store, hechas, _ = escenario
     job = _job(store)
     store.claim_run(job.id, consumer.holder, ttl_s=60)
+    store.release_run(job.id, consumer.holder)
 
     consumer.on_message(broker.entregar(normalize_task(job.id)))
 

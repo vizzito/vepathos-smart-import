@@ -10,6 +10,7 @@ detras de esta interfaz por si alguna vez hay que cambiar el motor.
 from __future__ import annotations
 
 import hashlib
+import json
 import sqlite3
 import time
 from pathlib import Path
@@ -24,7 +25,7 @@ from .base import GeocodeResult
 #: reportando como perdida aunque ahora si se encuentre.
 #: Bump cuando cambia enrichment / geofence / scoring (invalida cache vieja).
 #: v4: la clave de cache tambien incluye umbrales (ver runner context).
-GEOCODER_VERSION = 5
+GEOCODER_VERSION = 6
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (
@@ -36,7 +37,8 @@ CREATE TABLE IF NOT EXISTS geocode_cache (
     precision TEXT,
     source TEXT,
     created_at REAL NOT NULL,
-    version INTEGER NOT NULL DEFAULT 0
+    version INTEGER NOT NULL DEFAULT 0,
+    detail_json TEXT NOT NULL DEFAULT '{}'
 );
 """
 
@@ -67,63 +69,102 @@ class GeocodeCache:
       tiempo.
     """
 
-    def __init__(self, path: str | Path):
+    def __init__(self, path: str | Path, *, ttl_s: float = 30 * 86400,
+                 negative_ttl_s: float = 86400, max_entries: int = 500_000):
+        self.ttl_s = ttl_s
+        self.negative_ttl_s = negative_ttl_s
+        self.max_entries = max_entries
+        self._writes = 0
         self.path = Path(path).expanduser()
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self._conn = sqlite3.connect(
             self.path, timeout=BUSY_TIMEOUT_S, isolation_level=None)
         try:
-            self._conn.execute("PRAGMA journal_mode = WAL")
-        except sqlite3.DatabaseError:
-            # Algunos filesystems de red no soportan WAL. La cache es un
-            # acelerador: si no se puede, se sigue con el modo por defecto.
-            pass
-        # Con WAL, NORMAL no hace fsync por transaccion: el costo de escribir
-        # fila a fila queda en el orden de los microsegundos.
-        self._conn.execute("PRAGMA synchronous = NORMAL")
-        self._conn.executescript(SCHEMA)
-        self._migrate()
+            try:
+                self._conn.execute("PRAGMA journal_mode = WAL")
+            except sqlite3.DatabaseError:
+                pass
+            self._conn.execute("PRAGMA synchronous = NORMAL")
+            self._conn.executescript(SCHEMA)
+            self._migrate()
+            self._conn.execute("CREATE INDEX IF NOT EXISTS cache_age ON geocode_cache(created_at)")
+            self.purge()
+        except BaseException:
+            self._conn.close()
+            raise
         self.hits = 0
         self.misses = 0
         self.stale = 0
 
     def _migrate(self) -> None:
         """Agrega `version` a un cache creado antes de que existiera la columna."""
-        columnas = {row[1] for row in self._conn.execute("PRAGMA table_info(geocode_cache)")}
-        if "version" not in columnas:
-            self._conn.execute(
-                "ALTER TABLE geocode_cache ADD COLUMN version INTEGER NOT NULL DEFAULT 0")
+        self._conn.execute("BEGIN IMMEDIATE")
+        try:
+            columns = {r[1] for r in self._conn.execute("PRAGMA table_info(geocode_cache)")}
+            for name, declaration in (("version", "INTEGER NOT NULL DEFAULT 0"),
+                                      ("detail_json", "TEXT NOT NULL DEFAULT '{}'")):
+                if name not in columns:
+                    self._conn.execute(f"ALTER TABLE geocode_cache ADD COLUMN {name} {declaration}")
+            self._conn.execute("COMMIT")
+        except BaseException:
+            self._conn.execute("ROLLBACK")
+            raise
+
+    def purge(self) -> None:
+        now = time.time()
+        self._conn.execute(
+            "DELETE FROM geocode_cache WHERE version != ? OR created_at < ? "
+            "OR (status = 'not_found' AND created_at < ?)",
+            (GEOCODER_VERSION, now - self.ttl_s, now - self.negative_ttl_s))
+        self._conn.execute(
+            "DELETE FROM geocode_cache WHERE key IN (SELECT key FROM geocode_cache "
+            "ORDER BY created_at DESC LIMIT -1 OFFSET ?)", (self.max_entries,))
 
     def get(self, address: str, context: str = "") -> GeocodeResult | None:
         row = self._conn.execute(
             "SELECT lat, lon, status, confidence, precision, source, normalized_address,"
-            " version FROM geocode_cache WHERE key = ?", (make_key(address, context),)
+            " version, created_at, detail_json FROM geocode_cache WHERE key = ?", (make_key(address, context),)
         ).fetchone()
         if not row:
             self.misses += 1
             return None
-        if row[7] != GEOCODER_VERSION:
+        ttl = self.negative_ttl_s if row[2] == "not_found" else self.ttl_s
+        if row[7] != GEOCODER_VERSION or time.time() - row[8] >= ttl:
             # entrada de una version anterior del geocoder: se ignora y se
             # vuelve a consultar; el resultado nuevo la pisa
             self.stale += 1
+            self.misses += 1
+            return None
+        try:
+            detail = json.loads(row[9])
+            if not isinstance(detail, dict):
+                raise ValueError("Invalid cached detail")
+        except (ValueError, TypeError):
             self.misses += 1
             return None
         self.hits += 1
         return GeocodeResult(
             status=row[2], lat=row[0], lon=row[1], confidence=row[3] or 0.0,
             precision=row[4], source=row[5], normalized_address=row[6],
-            detail={"from_cache": True},
+            detail={**detail, "from_cache": True},
         )
 
     def put(self, address: str, result: GeocodeResult, context: str = "") -> None:
+        if result is None or result.status == "error":
+            return
+        self._writes += 1
+        if self._writes % 1000 == 0:
+            self.purge()
         self._conn.execute(
             "INSERT OR REPLACE INTO geocode_cache"
             " (key, normalized_address, lat, lon, status, confidence, precision, source,"
-            "  created_at, version)"
-            " VALUES (?,?,?,?,?,?,?,?,?,?)",
+            "  created_at, version, detail_json)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?)",
             (make_key(address, context), result.normalized_address or normalize_text(address),
              result.lat, result.lon, result.status, result.confidence,
-             result.precision, result.source, time.time(), GEOCODER_VERSION),
+             result.precision, result.source, time.time(), GEOCODER_VERSION,
+             json.dumps({k: v for k, v in (result.detail or {}).items()
+                         if k in {"soft_reject", "raw_score", "reason"}}, allow_nan=False)),
         )
     def commit(self) -> None:
         """No-op: en autocommit cada `put` ya quedo escrito.

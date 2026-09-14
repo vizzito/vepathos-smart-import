@@ -37,12 +37,16 @@ Referencias: OWASP API1 (Broken Object Level Authorization), API7 (SSRF/path).
 from __future__ import annotations
 
 import os
+import re
+import uuid
+from ..execution import Execution, executing
 import secrets
 from pathlib import Path
 from typing import Callable
 
 from fastapi import APIRouter, Depends, Header, HTTPException, Request
 from fastapi.responses import FileResponse
+from starlette.concurrency import run_in_threadpool
 
 from ..artifacts import (
     FLAT, GEOCODED, GEOCODED_NESTED, KINDS, NESTED, PARCIAL, RAW,
@@ -79,7 +83,7 @@ def internal_router(ctx_factory: Callable) -> APIRouter:
     def autorizado(ctx=Depends(ctx_factory),
                    token: str | None = Header(None, alias=TOKEN_HEADER)):
         esperado = ctx.cfg.worker_token
-        if not esperado or not token or not secrets.compare_digest(token, esperado):
+        if not esperado or not token or not secrets.compare_digest(token.encode("utf-8"), esperado.encode("utf-8")):
             # 404 y no 401: para el que no tiene el token, este router no existe.
             raise HTTPException(404, "Not Found")
         return ctx
@@ -105,12 +109,19 @@ def internal_router(ctx_factory: Callable) -> APIRouter:
             # regenerar: `PUT /mapping` re-normaliza desde el. Un worker que lo
             # pise cambia en silencio el resultado de todo lo que venga despues.
             raise HTTPException(409, "el archivo original no se sobrescribe")
-        destino = ctx.artifacts.reserve(job.id, kind)
+        token = request.headers.get("X-Smart-Import-Execution")
+        if token:
+            if not re.fullmatch(r"[0-9a-f]{32}", token) or not await run_in_threadpool(ctx.store.owns_run, job.id, token):
+                raise HTTPException(409, "Execution lease lost")
+            with executing(Execution(job.id, token)):
+                destino = ctx.artifacts.reserve(job.id, kind)
+        else:
+            destino = ctx.artifacts.reserve(job.id, kind)
 
         # Se escribe al lado y se renombra al final: `resolve` de otro request
         # no puede encontrar un archivo a medio subir, que es peor que no
         # encontrar nada porque parece un resultado valido.
-        parcial = destino.with_suffix(destino.suffix + PARCIAL)
+        parcial = destino.with_name(destino.name + "." + uuid.uuid4().hex + PARCIAL)
         # Se corta al vuelo y no al final: el punto del techo es no escribir
         # los bytes, no descubrir despues que se escribieron. El disco de la
         # api es el mismo donde corre routehub.
@@ -125,8 +136,10 @@ def internal_router(ctx_factory: Callable) -> APIRouter:
                             413, f"el {kind} supera {ctx.cfg.max_artifact_mb:g} MB "
                                  f"(SMART_IMPORT_MAX_ARTIFACT_MB)")
                     fh.write(chunk)
+            if token and not await run_in_threadpool(ctx.store.owns_run, job.id, token):
+                raise HTTPException(409, "Execution lease lost")
             os.replace(parcial, destino)
-        except Exception:
+        except BaseException:
             parcial.unlink(missing_ok=True)
             raise
         stage(ctx.logger, "INTERNAL", "artefacto recibido", job=job.id, tipo=kind,

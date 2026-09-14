@@ -61,6 +61,39 @@ class FakeRedis:
             self.escrituras[key] = self.escrituras.get(key, 0) + 1
             return True
 
+    def eval(self, script, numkeys, *values):
+        import json
+        keys, args = values[:numkeys], values[numkeys:]
+        with self._candado:
+            if "smart-import:save-state" in script:
+                if self.get(keys[0]) is None:
+                    return 0
+                if args[0] and self.get(keys[1]) != args[0]:
+                    return -1
+                self.set(keys[0], args[1], ex=float(args[2]))
+                if int(args[3]):
+                    self.delete(keys[2])
+                return 1
+            if "smart-import:claim-operation" in script:
+                raw = self.get(keys[0])
+                if raw is None:
+                    return 0
+                job = json.loads(raw)
+                if job["status"] in json.loads(args[0]):
+                    return 0
+                if not self.set(keys[1], args[4], nx=True, ex=float(args[5])):
+                    return 0
+                job.update(status=args[1], updated_at=float(args[2]))
+                self.set(keys[0], json.dumps(job), ex=float(args[3]))
+                return 1
+            if self.get(keys[0]) != args[0]:
+                return 0
+            if "smart-import:renew-run" in script:
+                return int(bool(self.set(keys[0], args[0], xx=True, ex=float(args[1]))))
+            if "smart-import:release-run" in script:
+                return self.delete(keys[0])
+            raise NotImplementedError(script)
+
     def delete(self, *keys: str) -> int:
         with self._candado:
             borradas = 0

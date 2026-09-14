@@ -237,10 +237,10 @@ def run_osmium_extract(
     ]
     stage(logger, "GEOCODE", "cortando extract con osmium",
           fuente=Path(source_path).name, destino=dest.name,
-          bbox=f"{west:.4f},{south:.4f},{east:.4f},{north:.4f}")
+          has_bbox=True)
     t0 = time.time()
     try:
-        proc = subprocess.run(cmd, check=False, capture_output=True, text=True)
+        proc = subprocess.run(cmd, check=False, capture_output=True, text=True, timeout=900)
         if proc.returncode != 0:
             err = (proc.stderr or proc.stdout or "").strip()
             raise ExtractError(f"osmium exit {proc.returncode}: {err[:500]}")

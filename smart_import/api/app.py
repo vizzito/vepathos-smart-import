@@ -25,7 +25,7 @@ import math
 import threading
 import time
 from contextlib import asynccontextmanager
-from concurrent.futures import ThreadPoolExecutor
+from .executor import BoundedExecutor, QueueFull
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -40,6 +40,7 @@ from ..artifacts import (
     FLAT, GEOCODED, GEOCODED_NESTED, NESTED, RAW, make_artifact_store,
 )
 from ..config import Config
+from ..geocoding.validation import resolve_allowed_index, validate_geo
 from ..schemas import (
     SchemaNotFound, TargetSchema, resolve_schema_dir, resolve_schema_path,
 )
@@ -57,6 +58,9 @@ from ..worker.handlers import (
     run_normalize_job,
 )
 from .internal import internal_router
+from .guards import RequestGuards, existing_admission
+from fastapi.exceptions import RequestValidationError
+from ..identity import owns
 
 CFG = Config.from_env()
 setup_logging(verbose=CFG.verbose)
@@ -68,7 +72,8 @@ SCHEMA_DIR = resolve_schema_dir(CFG.schema_dir)
 
 # Un worker por defecto para cada tarea pesada: este container comparte la VM con
 # el cutter y no tiene que competirle CPU. Configurable cuando haya medicion.
-_geocode_pool = ThreadPoolExecutor(max_workers=max(1, CFG.geocode_workers),
+_geocode_pool = BoundedExecutor(max_workers=max(1, CFG.geocode_workers),
+                                   max_pending=max(1, CFG.max_normalize_queue),
                                    thread_name_prefix="geocode")
 
 # El servicio se defiende en dos puertas, porque protegen recursos distintos.
@@ -205,6 +210,11 @@ def _capability_guard(enabled: bool, name: str, hint: str) -> None:
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
+    global _geocode_pool
+    if _geocode_pool._shutdown:
+        _geocode_pool = BoundedExecutor(max_workers=max(1, CFG.geocode_workers),
+                                       max_pending=max(1, CFG.max_normalize_queue))
+    lifespan_pool = _geocode_pool
     stage(logger, "HTTP", "arrancando Smart Import", version="0.1.0",
           puerto=CFG.port, work_dir=CFG.work_dir)
     stage(logger, "HTTP", "capacidades",
@@ -235,6 +245,10 @@ async def lifespan(_app: FastAPI):
     finally:
         for tarea in tareas:
             tarea.cancel()
+        await asyncio.gather(*tareas, return_exceptions=True)
+        await asyncio.to_thread(lifespan_pool.shutdown, wait=True)
+        if hasattr(artifacts, "close"):
+            artifacts.close()
 
 
 #: Cada cuanto se barren los jobs vencidos. Una hora alcanza: el TTL se mide en
@@ -303,6 +317,17 @@ queue_names = QueueNames(CFG.queue_prefix)
 #: arranque daria la misma superficie y ademas dejaria al router fuera del
 #: alcance de los tests, que reemplazan la config despues de importar el modulo.
 app.include_router(internal_router(lambda: _worker_ctx()))
+app.add_middleware(RequestGuards, config=lambda: Config.from_env().replace(api_keys=CFG.api_keys),
+                   admission=lambda: _admitted())
+
+@app.exception_handler(RequestValidationError)
+async def invalid_request(_request, exc):
+    from fastapi.responses import JSONResponse
+    # Pydantic errors may include entire input values, addresses and NaN.
+    errors = [{"type": error["type"], "loc": error["loc"], "msg": "Invalid value"}
+              for error in exc.errors()]
+    return JSONResponse({"detail": errors}, status_code=422)
+
 
 
 def _schema_path(name: str) -> Path:
@@ -344,7 +369,7 @@ def _cachear(job_id: str, job: Job | None) -> Job | None:
             if len(_job_read_cache) >= JOB_READ_CACHE_MAX:
                 _job_read_cache.clear()
         _job_read_cache[job_id] = (time.monotonic(), job)
-    return job
+    return job if job is None or owns(job) else None
 
 
 async def _leer_job(job_id: str) -> Job | None:
@@ -353,14 +378,15 @@ async def _leer_job(job_id: str) -> Job | None:
     with _job_read_lock:
         entrada = _job_read_cache.get(job_id)
         if entrada is not None and (ahora - entrada[0]) < JOB_READ_CACHE_S:
-            return entrada[1]
+            return entrada[1] if entrada[1] is None or owns(entrada[1]) else None
 
     loop = asyncio.get_running_loop()
     en_vuelo = _job_read_en_vuelo.get(job_id)
     # El loop se compara porque los tests corren varios `asyncio.run`: una
     # tarea de un loop ya cerrado no se puede esperar desde otro.
     if en_vuelo is not None and en_vuelo[0] is loop and not en_vuelo[1].done():
-        return await asyncio.shield(en_vuelo[1])
+        shared_job = await asyncio.shield(en_vuelo[1])
+        return shared_job if shared_job is None or owns(shared_job) else None
 
     tarea = loop.create_task(run_in_threadpool(store.get, job_id))
     _job_read_en_vuelo[job_id] = (loop, tarea)
@@ -373,7 +399,7 @@ async def _leer_job(job_id: str) -> Job | None:
 
 def _job_or_404(job_id: str) -> Job:
     job = store.get(job_id)
-    if job is None:
+    if job is None or not owns(job):
         raise HTTPException(404, f"job '{job_id}' inexistente")
     return job
 
@@ -682,7 +708,7 @@ async def create_import(
     # despues se crea el job y se escribe en disco. Al reves, una avalancha de
     # 1000 uploads deja hasta 1000 x max_file_mb en el disco que compartimos con
     # el cutter antes de que alguien rechace nada.
-    async with _admitted():
+    async with existing_admission(_admitted):
         schema_path = _schema_path(schema)
         job = store.create(name, schema)
         job.capabilities = {"geocoding": CFG.geocoding_enabled and bool(CFG.pbf_dir),
@@ -781,6 +807,8 @@ def _publicar_o_liberar(job: Job, task, estado_si_falla: str) -> None:
     reintentar. Por eso el estado se revierte ANTES de contestar el error: el
     503 es recuperable, un job trabado un dia entero no.
     """
+    job.operation_task_id = task.task_id
+    store.save(job)
     try:
         broker.publish(task)
     except Exception as exc:
@@ -790,7 +818,7 @@ def _publicar_o_liberar(job: Job, task, estado_si_falla: str) -> None:
         # La reserva se suelta sola: `save` con un estado que no es `busy`
         # borra la clave del claim. Sin eso, el reintento del usuario chocaria
         # con un 409 "ya hay una geolocalizacion en curso" que no es cierto.
-        logger.error("no se pudo encolar %s de %s: %s", task.type, job.id, exc)
+        logger.error("no se pudo encolar %s de %s: %s", task.type, job.id, type(exc).__name__)
         raise HTTPException(
             503, "el servicio no puede tomar trabajo ahora mismo (cola de tareas "
                  "inalcanzable). Reintentá en un momento.") from exc
@@ -941,6 +969,8 @@ def preview(job_id: str, limit: int = Query(20, le=200),
         kind, ref = _flat_artifact(job)
         source = "geocoded" if kind == GEOCODED else "normalized"
     elif source == "geocoded":
+        if not job.has_current_geocode:
+            raise HTTPException(409, "El job no tiene geocoding vigente")
         kind, ref = GEOCODED, job.geocoded_path
     else:
         kind, ref = FLAT, job.normalized_path
@@ -977,7 +1007,7 @@ def issues(job_id: str, limit: int = Query(500, le=2000)) -> dict[str, Any]:
         raise HTTPException(409, "el job todavia no fue normalizado")
 
     filas = list(report.get("row_issues", []) or [])
-    geo = job.geocode_report or {}
+    geo = (job.geocode_report or {}) if job.has_current_geocode else {}
 
     # Despues del geocode se listan las filas que el operador tiene que TOCAR:
     # las que no tienen pin (ubicar a mano) y las de la banda de revision (hay
@@ -1103,25 +1133,37 @@ async def confirm_mapping(
     if not artifacts.exists(job.id, RAW, job.raw_path):
         raise HTTPException(409, "el archivo original ya no esta disponible")
 
-    if broker is not None:
-        await run_in_threadpool(_encolar, job, normalize_task(
-            job.id, phone_region=phone_region, diagnostics=diagnostics,
-            manual_mapping=mapping, timezone=timezone,
-            depot_timezone=depot_timezone,
-            service_date=service_date.isoformat() if service_date else None,
-            depot_city=depot_city, depot_region=depot_region,
-            depot_country=depot_country))
-        return await _esperar_resultado(job.id, wait, response)
+    _rechazar_si_la_cola_esta_llena()
+    previous_status = job.status
+    if not store.claim_normalize(job_id):
+        raise HTTPException(409, "El job ya tiene una operación en curso")
+    job = _job_or_404(job_id)
+    try:
+        if broker is not None:
+            await run_in_threadpool(_encolar, job, normalize_task(
+                job.id, phone_region=phone_region, diagnostics=diagnostics,
+                manual_mapping=mapping, timezone=timezone,
+                depot_timezone=depot_timezone,
+                service_date=service_date.isoformat() if service_date else None,
+                depot_city=depot_city, depot_region=depot_region,
+                depot_country=depot_country))
+            return await _esperar_resultado(job.id, wait, response)
 
-    # Re-normalizar cuesta lo mismo que la primera vez, asi que pide turno igual:
-    # si no, este endpoint es una puerta lateral que saltea el techo.
-    async with _normalize_slot(job.id):
-        return await run_in_threadpool(
-            _run_normalize, job, _schema_path(job.schema), phone_region, diagnostics,
-            manual_mapping=mapping, timezone=timezone,
-            depot_timezone=depot_timezone, service_date=service_date,
-            depot_city=depot_city, depot_region=depot_region,
-            depot_country=depot_country)
+        # Re-normalizar cuesta lo mismo que la primera vez, asi que pide turno igual:
+        # si no, este endpoint es una puerta lateral que saltea el techo.
+        async with _normalize_slot(job.id):
+            return await run_in_threadpool(
+                _run_normalize, job, _schema_path(job.schema), phone_region, diagnostics,
+                manual_mapping=mapping, timezone=timezone,
+                depot_timezone=depot_timezone, service_date=service_date,
+                depot_city=depot_city, depot_region=depot_region,
+                depot_country=depot_country)
+    except BaseException:
+        current_job = store.get(job_id)
+        if current_job is not None and current_job.status == ANALYZING and broker is None:
+            current_job.touch(previous_status)
+            store.save(current_job)
+        raise
 
 
 def _flat_artifact(job: Job) -> tuple[str, str | None]:
@@ -1132,7 +1174,7 @@ def _flat_artifact(job: Job) -> tuple[str, str | None]:
     el de antes del geocode deja al cliente sin `geocode_band` ni confianza y le
     hace pintar todo igual — que es exactamente el sintoma que trajo este arreglo.
     """
-    if artifacts.exists(job.id, GEOCODED, job.geocoded_path):
+    if job.has_current_geocode and artifacts.exists(job.id, GEOCODED, job.geocoded_path):
         return GEOCODED, job.geocoded_path
     return FLAT, job.normalized_path
 
@@ -1143,7 +1185,7 @@ def _nested_artifact(job: Job) -> tuple[str, str | None]:
     Tras el geocode, `refresh_nested` lo regenera dentro de `geocoded/`: es otro
     artefacto, aunque el `Job` lo guarde en el mismo campo.
     """
-    kind = (GEOCODED_NESTED if artifacts.exists(job.id, GEOCODED, job.geocoded_path)
+    kind = (GEOCODED_NESTED if job.has_current_geocode and artifacts.exists(job.id, GEOCODED, job.geocoded_path)
             else NESTED)
     return kind, job.nested_path
 
@@ -1158,6 +1200,10 @@ def download(job_id: str,
     `normalized` fuerza el previo al geocode; `geocoded` exige que exista.
     """
     job = _job_or_404(job_id)
+    if format == "geocoded" and not job.has_current_geocode:
+        raise HTTPException(409, "El job no tiene geocoding vigente")
+    if format == "nested" and not job.nested_path:
+        raise HTTPException(409, "El job no tiene nested vigente")
     kind, ref = {"flat": _flat_artifact(job),
                  "nested": _nested_artifact(job),
                  "normalized": (FLAT, job.normalized_path),
@@ -1171,6 +1217,9 @@ def download(job_id: str,
 
 @app.delete("/imports/{job_id}", tags=["import"], status_code=204)
 def delete_import(job_id: str) -> None:
+    job = _job_or_404(job_id)
+    if job.busy:
+        raise HTTPException(409, "El job está ocupado")
     if not store.delete(job_id):
         raise HTTPException(404, f"job '{job_id}' inexistente")
 
@@ -1180,8 +1229,8 @@ def delete_import(job_id: str) -> None:
 @app.post("/imports/{job_id}/geocode", tags=["geocode"], status_code=202)
 def start_geocode(
     job_id: str,
-    origin_lat: float | None = Query(None, description="Depot: sesga y desempata homonimos"),
-    origin_lon: float | None = Query(None),
+    origin_lat: float | None = Query(None, ge=-90, le=90, allow_inf_nan=False, description="Depot: sesga y desempata homonimos"),
+    origin_lon: float | None = Query(None, ge=-180, le=180, allow_inf_nan=False),
     bbox: str | None = Query(None, description="north,south,east,west"),
     index: str | None = Query(None, description="Nombre del indice .sqlite a forzar"),
     depot_city: str | None = Query(None, description="Ciudad/comuna del depot (enrichment)"),
@@ -1191,7 +1240,7 @@ def start_geocode(
     depot_address: str | None = Query(
         None, description="Direccion libre del depot (se parte por comas)"),
     max_distance_km: float | None = Query(
-        None, description="Geofence duro en km (default GEOCODE_MAX_DISTANCE_KM=500)"),
+        None, gt=0, allow_inf_nan=False, description="Geofence duro en km (default GEOCODE_MAX_DISTANCE_KM=500)"),
     enhance_addresses: bool = Query(
         False,
         description=(
@@ -1222,14 +1271,17 @@ def start_geocode(
     if not artifacts.exists(job.id, FLAT, job.normalized_path):
         raise HTTPException(409, "hay que normalizar el archivo antes de geocodificar")
 
-    box = None
-    if bbox:
-        parts = [p.strip() for p in bbox.split(",")]
-        if len(parts) != 4:
-            raise HTTPException(400, "bbox espera north,south,east,west")
-        box = tuple(float(p) for p in parts)
+    try:
+        if (origin_lat is None) != (origin_lon is None):
+            raise ValueError("Indica ambas coordenadas del depot")
+        box = tuple(float(p.strip()) for p in bbox.split(",")) if bbox else None
+        origin = (origin_lat, origin_lon) if origin_lat is not None else None
+        validate_geo(origin, box, max_distance_km)
+        if index is not None:
+            resolve_allowed_index(CFG.index_dir, index, must_exist=False)
+    except (ValueError, TypeError):
+        raise HTTPException(422, "Parámetros geográficos inválidos") from None
 
-    origin = (origin_lat, origin_lon) if origin_lat is not None and origin_lon is not None else None
     if origin is None and box is None and index is None:
         # Sin depot todavia se puede geocodificar: basta la ciudad que el
         # usuario confirmo (o que se detecto en el archivo, ver
@@ -1274,7 +1326,7 @@ def start_geocode(
     # job volveria a estar libre para un segundo worker.
     job = _job_or_404(job_id)
     stage(logger, "HTTP", "POST /imports/{id}/geocode  (accion EXPLICITA del usuario)",
-          job=job_id, depot=f"{origin_lat},{origin_lon}" if origin else None,
+          job=job_id, has_origin=origin is not None,
           enrich=depot.enrichment_tokens() if depot else None,
           enhance_addresses=bool(enhance_addresses) or None,
           filas_a_geocodificar=job.needs_geocode)
@@ -1297,8 +1349,14 @@ def start_geocode(
             depot_address=depot_address, max_distance_km=max_distance_km),
             GEOCODE_FAILED)
     else:
-        _geocode_pool.submit(
-            _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
+        try:
+            _geocode_pool.submit(
+                _geocode_worker, job.id, origin, box, index, depot, enhance_addresses)
+        except QueueFull:
+            job.touch(GEOCODE_FAILED)
+            job.error = "GEOCODE_QUEUE_FULL"
+            store.save(job)
+            raise HTTPException(429, "Cola geográfica llena", headers={"Retry-After": "5"}) from None
     return {**job.as_dict(),
             "poll": f"/imports/{job_id}",
             "events": f"/imports/{job_id}/events",
@@ -1320,7 +1378,8 @@ def _refresh_nested(job: Job, geocoded_csv: Path) -> None:
     refresh_nested(_worker_ctx(), job, geocoded_csv)
 
 @app.get("/geocoding/coverage", tags=["geocode"])
-def coverage(lat: float = Query(...), lon: float = Query(...)) -> dict[str, Any]:
+def coverage(lat: float = Query(..., ge=-90, le=90, allow_inf_nan=False),
+             lon: float = Query(..., ge=-180, le=180, allow_inf_nan=False)) -> dict[str, Any]:
     """Hay cobertura OSM para este punto? Sirve para decidir ANTES de ofrecer el boton."""
     from ..geocoding.extract import scan_registry
     from ..geocoding.osm_index import covering_extract_index, index_path_for
