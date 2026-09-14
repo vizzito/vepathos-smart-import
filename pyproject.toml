@@ -21,6 +21,8 @@ dependencies = [
 # El geocoder necesita leer PBFs. Se separa para que la imagen base no lo cargue
 # si el despliegue solo normaliza.
 geo = ["osmium>=4.0"]
+# Optional, separate stdio process; never mounted on the existing HTTP API.
+mcp = ["mcp>=2.2,<3"]
 # libpostal: parser internacional de direcciones. Requiere la libreria C + ~2 GB
 # de datos, ver docs/libpostal.md. Opcional y apagado por defecto.
 libpostal = ["postal>=1.1"]
@@ -39,6 +41,7 @@ dev = ["pytest>=8.0", "psutil>=5.9", "xlwt>=1.3", "pandas>=2.2",
 
 [project.scripts]
 smart-import = "smart_import.cli:main"
+smart-import-mcp = "smart_import.mcp_service:main"
 
 [tool.setuptools.packages.find]
 include = ["smart_import*"]
@@ -52,6 +55,7 @@ testpaths = ["tests"]
 pythonpath = ["."]
 markers = [
     "geocoding: geocoding unit tests (synthetic OSM index)",
+    "geo_trap: homonym / geofence trap regressions (synthetic index)",
     "real_geo: needs local PBF extracts under SMART_IMPORT_PBF_DIR / ROUTE_OPTIMIZER_DATA",
     "libpostal: needs brew libpostal + pip postal (SMART_IMPORT_LIBPOSTAL_ENABLED para factory)",
 ]

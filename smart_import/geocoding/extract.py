@@ -2,11 +2,11 @@
 
 Smart Import no escribe en `_extracts` del cutter (en Docker va :ro). El
 recorte vive en `SMART_IMPORT_EXTRACT_DIR` (default `data/extracts`) con el
-mismo nombre `n…_s…_e…_w…-pyrosm.osm.pbf` para que el índice se llame igual.
+mismo nombre `n…_s…_e…_w…[-pais]-pyrosm.osm.pbf` para armar el índice.
 
-Si ya hay extract o índice que cubre el área, no se corta nada. Si solo hay
-PBF de país, se llama a `osmium extract` y se indexa el recorte — nunca el
-archivo de 400 MB.
+Si el sqlite ya es usable, el PBF propio se borra: el geocode no lo vuelve a
+abrir. Si más tarde falta el índice, osmium recorta otra vez desde el PBF de
+país.
 """
 from __future__ import annotations
 
@@ -25,7 +25,10 @@ from .osm_index import (
     build,
     covering_extract_index,
     index_is_complete,
+    index_is_usable,
     index_path_for,
+    maintain_geocode_disk,
+    touch_index,
 )
 from .pbf_registry import PbfEntry, PbfRegistry, _parse
 
@@ -137,11 +140,19 @@ def filename_decimals(round_deg: float = 0.1) -> int:
 def bbox_filename(
     west: float, south: float, east: float, north: float,
     round_deg: float = 0.1,
+    country_slug: str | None = None,
 ) -> str:
+    """n…_s…_e…_w…[-pais]-pyrosm.osm.pbf
+
+    El país en el nombre evita reusar el recorte de Argentina sobre el bbox
+    de Montevideo como si fuera Uruguay (la carpeta no entra en el sqlite).
+    """
     d = filename_decimals(round_deg)
-    return (
-        f"n{north:.{d}f}_s{south:.{d}f}_e{east:.{d}f}_w{west:.{d}f}-pyrosm.osm.pbf"
-    )
+    base = f"n{north:.{d}f}_s{south:.{d}f}_e{east:.{d}f}_w{west:.{d}f}"
+    slug = _ZONE_UNSAFE.sub("-", (country_slug or "")).strip(".-").lower()
+    if slug and slug not in _RESERVED_ZONE:
+        return f"{base}-{slug}-pyrosm.osm.pbf"
+    return f"{base}-pyrosm.osm.pbf"
 
 
 def extract_zone(source_path: str | Path, country_slug: str | None = None) -> str:
@@ -275,7 +286,7 @@ def ensure_extract(
     """Garantiza el .osm.pbf del bbox en extract_dir/<zona>/ (con file lock)."""
     zone = extract_zone(source_path, country_slug)
     dest = Path(extract_dir).expanduser() / zone / bbox_filename(
-        west, south, east, north, round_deg,
+        west, south, east, north, round_deg, country_slug=country_slug,
     )
     if is_useful_pbf(dest):
         stage(logger, "GEOCODE", "extract reutilizado", archivo=dest.name)
@@ -322,22 +333,74 @@ def ensure_geocode_index(
     round_deg: float = 0.1,
     osmium_bin: str | None = None,
     progress=None,
+    index_ttl_days: float = 14.0,
 ) -> ReadyIndex:
-    """Elige (o corta + indexa) el extract. Nunca construye argentina.sqlite."""
+    """Elige (o corta + indexa) el extract. Nunca construye argentina.sqlite.
+
+    Si el PBF ganador no tiene calles en el bbox (recorte de Argentina sobre
+    Montevideo), se excluye y se prueba el siguiente país que cubra el punto.
+    """
     extracts = extract_dir or (Path(index_dir).expanduser().parent / "extracts")
     registry = scan_registry(pbf_dir, extracts)
-    entry = registry.resolve(lat=lat, lon=lon, bbox=bbox, zone_hint=zone_hint)
-    if entry is None:
-        raise FileNotFoundError(
-            f"sin cobertura PBF para el area pedida en {pbf_dir} "
-            f"({len(registry.entries)} PBF disponibles)"
-        )
-
     lat_i = lat if lat is not None else (bbox[0] + bbox[1]) / 2 if bbox else None
     lon_i = lon if lon is not None else (bbox[2] + bbox[3]) / 2 if bbox else None
+    exclude: set[str] = set()
+    last_miss = "sin cobertura PBF"
+    for _ in range(8):
+        entry = registry.resolve(
+            lat=lat, lon=lon, bbox=bbox, zone_hint=zone_hint, exclude=exclude)
+        if entry is None:
+            raise FileNotFoundError(
+                f"{last_miss} para el area pedida en {pbf_dir} "
+                f"({len(registry.entries)} PBF disponibles)"
+            )
+        ready = _index_from_entry(
+            entry, index_dir=index_dir, extracts=extracts,
+            lat_i=lat_i, lon_i=lon_i, bbox=bbox, zone_hint=zone_hint,
+            autobuild=autobuild, autoextract=autoextract,
+            margin_km=margin_km, max_km=max_km, round_deg=round_deg,
+            osmium_bin=osmium_bin, progress=progress,
+        )
+        if index_is_usable(ready.path):
+            touch_index(ready.path)
+            maintain_geocode_disk(
+                index_dir, extracts, index_ttl_days, keep=ready.path)
+            return ready
+        last_miss = (
+            f"{entry.path.name} no tiene direcciones OSM en este bbox"
+        )
+        stage(logger, "GEOCODE", "extract sin calles, pruebo otro PBF",
+              pbf=entry.path.name, pais=entry.country_slug, indice=ready.path.name)
+        exclude.add(entry.key)
+        if entry.country_slug:
+            exclude.add(entry.country_slug)
+        try:
+            ready.path.unlink(missing_ok=True)
+        except OSError:
+            pass
+    raise FileNotFoundError(last_miss)
 
+
+def _index_from_entry(
+    entry: PbfEntry,
+    *,
+    index_dir: str | Path,
+    extracts: str | Path,
+    lat_i: float | None,
+    lon_i: float | None,
+    bbox: tuple[float, float, float, float] | None,
+    zone_hint: str | None = None,
+    autobuild: bool,
+    autoextract: bool,
+    margin_km: float,
+    max_km: float,
+    round_deg: float,
+    osmium_bin: str | None,
+    progress,
+) -> ReadyIndex:
     if lat_i is not None and lon_i is not None:
-        leftover = covering_extract_index(index_dir, lat_i, lon_i, bbox)
+        leftover = covering_extract_index(
+            index_dir, lat_i, lon_i, bbox, zone_hint=zone_hint)
         if leftover is not None:
             stage(logger, "GEOCODE", "indice de extract reutilizado",
                   indice=leftover.name)
@@ -349,8 +412,6 @@ def ensure_geocode_index(
     if entry.has_bbox:
         index = index_path_for(entry, index_dir)
         built = False
-        # `exists()` no alcanza: un build interrumpido dejaba un sqlite truncado
-        # en la ruta final y se usaba en silencio.
         if not index_is_complete(index):
             if not autobuild:
                 raise FileNotFoundError(
@@ -366,7 +427,6 @@ def ensure_geocode_index(
             country_slug=entry.country_slug, built_index=built,
         )
 
-    # PBF de país/región: cortar extract. No indexar el archivo entero.
     if not autoextract:
         raise FileNotFoundError(
             f"sin extract que cubra el area y SMART_IMPORT_AUTOEXTRACT=false. "
@@ -434,4 +494,5 @@ def ensure_geocode_index_from_config(
         round_deg=cfg.extract_round_deg,
         osmium_bin=cfg.osmium_bin,
         progress=progress,
+        index_ttl_days=cfg.index_ttl_days,
     )

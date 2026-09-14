@@ -163,9 +163,11 @@ def run_geocode_job(ctx: WorkerContext, job_id: str, origin, box,
                 # Preferí ciudad/región; country ISO-2 ("AR") solo como fallback.
                 # El registry expande ISO-2 → nombre y NUNCA hace substring corto
                 # ("ar" ∈ "ashmore-cartier" era el bug de Tandil).
-                zone_hint = (depot.city or depot.region or depot.country or None)
-                if zone_hint:
-                    zone_hint = str(zone_hint).strip() or None
+                zone_hint = " ".join(
+                    str(p).strip()
+                    for p in (depot.country, depot.region, depot.city)
+                    if p and str(p).strip()
+                ) or None
 
             def _index_progress(phase: str, pbf: str = "", **_kw) -> None:
                 job.geocode_progress = {

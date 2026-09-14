@@ -353,11 +353,14 @@ def _apply_depot_guards(result: GeocodeResult, *, depot: DepotContext | None,
         report.rejected_far += 1
         return _reject_far(result, far_km, hard_max, "outside_operating_radius")
 
-    # low_confidence lejos del depot (pero dentro del hard max) = falso positivo tipico
+    # Lejos del depot (pero dentro del hard max) = falso positivo tipico.
+    # Aplica a matched y low_confidence: un verde a 15 km es peor que sin pin.
     soft_max = float(cfg.max_low_confidence_km)
-    if result.status == STATUS_LOW and far_km > soft_max:
+    if far_km > soft_max and result.status in (STATUS_LOW, STATUS_MATCHED):
         report.rejected_far += 1
-        return _reject_far(result, far_km, soft_max, "low_confidence_far_from_depot")
+        reason = ("matched_far_from_depot" if result.status == STATUS_MATCHED
+                  else "low_confidence_far_from_depot")
+        return _reject_far(result, far_km, soft_max, reason)
 
     return result
 

@@ -92,25 +92,46 @@ if [ "$DO_GEOCODE" = 1 ]; then
     echo "  este archivo ya tiene coords (needs_geocode=0); geocode no aplica."
   else
     echo
-    echo "━━━ 6. POST geocode (async) ━━━"
+    echo "━━━ 6. POST geocode (async) + SSE (como la web) ━━━"
     curl -sf -X POST "http://$HOST/imports/$JOB/geocode?origin_lat=-34.60&origin_lon=-58.38" | json | head -20
     echo
-    echo "  polling (sin watch; Ctrl-C para salir)…"
-    for _ in $(seq 1 60); do
-      LINE=$(curl -sf "http://$HOST/imports/$JOB" | "$PY" -c '
+    echo "  GET /imports/$JOB/events (Server-Sent Events, no polling)…"
+    curl -sfN "http://$HOST/imports/$JOB/events?interval_ms=500" | "$PY" -c '
 import json, sys
-d = json.load(sys.stdin)
-g = d.get("geocode") or {}
-p = g.get("progress") or {}
-print("%s phase=%s %s/%s" % (
-    d["status"], p.get("phase", "-"), p.get("done", "-"), p.get("total", "-")))
-')
-      echo "    $LINE"
-      case "$LINE" in
-        geocoded*|completed*|failed*|*"phase=done"*|*"phase=failed"*) break ;;
-      esac
-      sleep 2
-    done
+
+def events():
+    kind = None
+    data = None
+    for raw in sys.stdin:
+        line = raw.rstrip("\r\n")
+        if line.startswith("event: "):
+            kind = line[7:].strip()
+        elif line.startswith("data: "):
+            data = line[6:]
+        elif line == "" and kind and data is not None:
+            yield kind, json.loads(data)
+            kind = data = None
+
+for kind, snap in events():
+    if kind == "progress":
+        print("    %s phase=%s %s/%s" % (
+            snap.get("status", "?"), snap.get("phase", "-"),
+            snap.get("done", "-"), snap.get("total", "-")))
+    elif kind == "done":
+        g = (snap.get("geocode") or {}).get("progress") or {}
+        done = g.get("done", "-")
+        total = g.get("total", snap.get("report", {}).get("rows_output", "-"))
+        print("    %s phase=done %s/%s" % (snap.get("status", "?"), done, total))
+        if snap.get("status") in ("failed", "geocode_failed"):
+            sys.exit(1)
+        break
+    elif kind == "error":
+        print("    error:", snap)
+        sys.exit(1)
+else:
+    print("    SSE cerrado sin evento done", file=sys.stderr)
+    sys.exit(1)
+'
   fi
 fi
 

@@ -141,11 +141,22 @@ class DepotContext:
         return tokens
 
     def enrich_address(self, address: str) -> str:
-        """Inyecta ciudad/provincia/pais del depot cuando faltan; sin duplicar CABA."""
+        """Inyecta ciudad/provincia/pais del depot cuando faltan; sin duplicar CABA.
+
+        Si la dirección ya nombra OTRA ciudad (Fredericia, Coquimbo, Ploiești),
+        no se pega la del depot: eso convierte un homónimo en la capital en
+        un verde a 100+ km.
+        """
         raw = dedupe_address_segments((address or "").strip())
         if not raw:
             return raw
-        extras = [t for t in self.enrichment_tokens() if not already_present(raw, t)]
+        extras: list[str] = []
+        for token in self.enrichment_tokens():
+            if already_present(raw, token):
+                continue
+            if self.city and token == self.city and _address_names_other_city(raw, token):
+                continue
+            extras.append(token)
         if not extras:
             return raw
         return dedupe_address_segments(f"{raw}, {', '.join(extras)}")
@@ -205,6 +216,73 @@ def align_depot_to_geolocator(depot: DepotContext | None) -> DepotContext | None
         lat=centroid[0], lon=centroid[1],
         city=depot.city, region=depot.region, postcode=depot.postcode,
         country=depot.country, address=depot.address,
+        max_distance_km=depot.max_distance_km, timezone=depot.timezone,
+    )
+
+
+def strip_conflicting_depot_city(
+    depot: DepotContext | None,
+    origin: tuple[float, float] | None,
+    *,
+    near_city: str | None = None,
+    max_distance_km: float = 500.0,
+) -> tuple[DepotContext | None, str | None]:
+    """Saca city/país del enrich si no coinciden con el punto del corpus.
+
+    `--depot-city San Francisco` sobre un JSON de CABA ensucia cada query
+    (`…, san francisco, Argentina`) y tumba pines que el índice sí tiene.
+    San Francisco (Córdoba) puede quedar < 500 km de CABA: el nombre del
+    índice manda, no el geofence.
+    """
+    if depot is None or not (depot.city or "").strip():
+        return depot, None
+
+    city = depot.city.strip()
+    if near_city:
+        # NYC vs Jamaica (barrio/USPS Queens): mismo metro, no San Francisco vs CABA.
+        if already_present(near_city, city) or already_present(city, near_city):
+            return depot, None
+        warning = (
+            f"--depot-city {city!r} no coincide con el índice ({near_city}); "
+            "no la inyecto"
+        )
+        return _depot_without_locality(depot), warning
+
+    if origin is None:
+        return depot, None
+
+    from .city_lookup import lookup_city_centroid
+    centroid = lookup_city_centroid(city, depot.country)
+    if centroid is None:
+        return depot, None
+    far_km = haversine_km(origin[0], origin[1], centroid[0], centroid[1])
+    if far_km <= float(max_distance_km):
+        return depot, None
+    warning = (
+        f"--depot-city {city!r} queda a {far_km:.0f} km del corpus; "
+        "no la inyecto (uso localidad del índice)"
+    )
+    return _depot_without_locality(depot), warning
+
+
+def _address_names_other_city(address: str, depot_city: str) -> bool:
+    """True si el address ya nombra una ciudad que no es la del depot."""
+    from .scoring import _comma_place_labels, _place_labels_overlap
+    from ..resources import fold
+    from .address import normalize_text
+
+    places = _comma_place_labels(address)
+    if not places:
+        return False
+    depot = {fold(normalize_text(depot_city))}
+    return not _place_labels_overlap(places, depot)
+
+
+def _depot_without_locality(depot: DepotContext) -> DepotContext:
+    return DepotContext(
+        lat=depot.lat, lon=depot.lon,
+        city=None, region=None, postcode=None, country=None,
+        address=depot.address,
         max_distance_km=depot.max_distance_km, timezone=depot.timezone,
     )
 

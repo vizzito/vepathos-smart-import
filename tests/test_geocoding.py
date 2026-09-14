@@ -147,6 +147,36 @@ def test_fallback_a_pbf_de_pais_cuando_no_hay_extract():
     assert chosen.country_slug == "argentina"
 
 
+def test_montevideo_con_hint_uruguay_no_elige_argentina():
+    """MVD cae en los dos bboxes; sin hint gana AR (más margen). El país del
+    depot tiene que poder desempatar."""
+    from smart_import.geocoding.pbf_registry import PbfEntry
+
+    ar = PbfEntry(
+        path=Path("/data/south-america/argentina-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=427_000_000,
+    )
+    uy = PbfEntry(
+        path=Path("/data/south-america/uruguay-pyrosm.osm.pbf"),
+        zone="south-america", size_bytes=56_000_000,
+    )
+    registry = PbfRegistry([ar, uy])
+    mvd = (-34.9011, -56.1645)
+    assert registry.resolve(lat=mvd[0], lon=mvd[1]) is ar
+    chosen = registry.resolve(lat=mvd[0], lon=mvd[1], zone_hint="Montevideo Uruguay")
+    assert chosen is uy
+    skipped = registry.resolve(lat=mvd[0], lon=mvd[1], exclude={"argentina"})
+    assert skipped is uy
+
+
+def test_hint_parte_el_pais_aunque_mande_la_ciudad():
+    from smart_import.geocoding.pbf_registry import _hint_tokens
+
+    tokens = _hint_tokens("Montevideo Uruguay")
+    assert "uruguay" in tokens
+    assert "montevideo" in tokens
+
+
 def test_caba_no_elige_uruguay_aunque_sea_mas_chico():
     """Regresión: bbox flojo de UY + 'más chico gana' geocodificaba BA en Uruguay."""
     from smart_import.geocoding.pbf_registry import PbfEntry
@@ -641,6 +671,73 @@ def test_caba_cuenta_como_ciudad_autonoma():
     )
     _, pba_parts = score(parsed, pba)
     assert pba_parts["locality"] == 0.0
+
+
+def test_ciudad_nombrada_en_el_address_veta_la_capital():
+    from smart_import.geocoding.scoring import Candidate, place_conflict
+
+    parsed = parse("Dronningensgade, 20, Fredericia, 7000")
+    capital = Candidate(
+        1, 55.67, 12.59, "building", None, "20", "Dronningensgade",
+        "Copenhagen", None, None, None, "DK", "20 dronningensgade copenhagen",
+    )
+    local = Candidate(
+        2, 55.57, 9.76, "building", None, "20", "Dronningensgade",
+        "Fredericia", None, None, "7000", "DK", "20 dronningensgade fredericia",
+    )
+    assert place_conflict(parsed, capital) is True
+    assert place_conflict(parsed, local) is False
+
+
+def test_cp_incompatible_marca_place_mismatch():
+    from smart_import.geocoding.scoring import Candidate, place_conflict, score
+
+    parsed = parse("Rue Madame, 10, Paris 6e Arrondissement, 75006")
+    versailles = Candidate(
+        1, 48.80, 2.13, "building", None, "10", "Rue Madame",
+        "Versailles", None, "Île-de-France", "78000", "FR",
+        "10 rue madame versailles",
+    )
+    paris = Candidate(
+        2, 48.85, 2.33, "building", None, "10", "Rue Madame",
+        "Paris", None, "Île-de-France", "75006", "FR",
+        "10 rue madame paris",
+    )
+    assert place_conflict(parsed, versailles) is True
+    assert place_conflict(parsed, paris) is False
+    v, vparts = score(parsed, versailles)
+    p, pparts = score(parsed, paris)
+    assert vparts["place_mismatch"] == 1.0
+    assert pparts["place_mismatch"] == 0.0
+    assert v < 0.50
+    assert p > v
+
+
+def test_caba_sigue_en_conflicto_con_martinez():
+    from smart_import.geocoding.scoring import Candidate, place_conflict
+
+    parsed = parse("Av. Santa Fe 2500, Ciudad Autónoma de Buenos Aires, C1425")
+    caba = Candidate(
+        1, -34.59, -58.40, "node", None, "2500", "Avenida Santa Fe",
+        "Ciudad Autónoma de Buenos Aires", None, "Buenos Aires", None, "AR", "x")
+    mtz = Candidate(
+        2, -34.49, -58.49, "node", None, "2500", "Avenida Santa Fe",
+        "Martínez", None, "Buenos Aires", None, "AR", "y")
+    assert place_conflict(parsed, caba) is False
+    assert place_conflict(parsed, mtz) is True
+
+
+def test_4t_no_es_altura_exacta_de_4():
+    from smart_import.geocoding.scoring import Candidate, score
+
+    parsed = parse("Rue des Écoles, 4T, Paris 5e Arrondissement, 75005")
+    cand = Candidate(
+        1, 48.85, 2.35, "building", None, "4", "Rue des Écoles",
+        "Paris", None, None, "75005", "FR", "4 rue des ecoles",
+    )
+    _, parts = score(parsed, cand)
+    assert parts["house_number"] == 0.5
+    assert parts["place_mismatch"] == 0.0
 
 
 def test_altura_ignora_ceros_a_la_izquierda():

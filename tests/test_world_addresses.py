@@ -38,6 +38,14 @@ WORLD_CASES = [
      {"road": "Calle 50", "house_number": "1234"}, False),
     ("CO", "Carrera 7 # 45, Bogota",
      {"road": "Carrera 7", "house_number": "45"}, False),
+    ("CO", "CR 55, 93F-07",
+     {"road": "CR 55", "house_number": "93F-07"}, False),
+    ("CO", "CL 3 SUR, 50F-39",
+     {"road": "CL 3 SUR", "house_number": "50F-39"}, False),
+    ("CO", "CL 70B, 27-87",
+     {"road": "CL 70B", "house_number": "27-87"}, False),
+    ("CO", "CR 24BC, 69D-174",
+     {"road": "CR 24BC", "house_number": "69D-174"}, False),
 
     # ----- Brasil: coma entre calle y altura -----
     ("BR", "Av. Paulista, 1578, Sao Paulo",
@@ -58,6 +66,16 @@ WORLD_CASES = [
      {"road": "5th Ave", "house_number": "350", "unit": "4B"}, False),
     ("US", "857 Yesler Way, Seattle",
      {"road": "Yesler Way", "house_number": "857"}, False),
+    ("US", "68 ST, 1445, Brooklyn",
+     {"road": "68 ST", "house_number": "1445"}, False),
+    ("US", "2114 E 2 ST, Brooklyn",
+     {"road": "E 2 ST", "house_number": "2114"}, False),
+    ("US", "108-15 JAMAICA AVE, 11418",
+     {"road": "JAMAICA AVE", "house_number": "108-15"}, False),
+    ("US", "united states 219 ST 116-41",
+     {"road": "219 ST", "house_number": "116-41"}, False),
+    ("US", "BRIGHTON 7 ST, 2918, Brooklyn",
+     {"road": "BRIGHTON 7 ST", "house_number": "2918"}, False),
 
     # ----- India: mixtas (algunas con calle, otras no) -----
     ("IN", "23 MG Road, Bengaluru 560001",
@@ -76,10 +94,42 @@ WORLD_CASES = [
     # ----- Chile -----
     ("CL", "Av. Providencia 2124, Santiago",
      {"road": "Av. Providencia", "house_number": "2124"}, False),
+    ("CL", "CIRCUNVALACION, 1133, PUNTA ARENAS",
+     {"road": "CIRCUNVALACION", "house_number": "1133", "suburb": "PUNTA ARENAS"},
+     False),
+
+    # ----- Japon OA: chome + manzana-lote + ward (CJK) -----
+    ("JP", "京浜島二丁目, 11-9, 大田区",
+     {"road": "京浜島二丁目", "house_number": "11-9", "city": "大田区"}, False),
+    ("JP", "西大泉一丁目, 26-9, 練馬区",
+     {"road": "西大泉一丁目", "house_number": "26-9", "city": "練馬区"}, False),
+
+    # ----- Uruguay: BIS y CNO (camino) -----
+    ("UY", "LANCASTER, 3922BIS",
+     {"road": "LANCASTER", "house_number": "3922BIS"}, False),
+    ("UY", "CNO GIGANTES, 3493",
+     {"road": "CNO GIGANTES", "house_number": "3493"}, False),
+
+    # ----- EAU: via numerada con letra + plot, no la letra como altura -----
+    ("AE", "30a Street, 21039 84888",
+     {"road": "30a Street", "house_number": "21039"}, False),
+    ("AE", "12 Street, 39942 91302",
+     {"road": "12 Street", "house_number": "39942"}, False),
 
     # ----- Espania -----
     ("ES", "Calle Gran Via 28, Madrid",
      {"road": "Calle Gran Via", "house_number": "28"}, False),
+
+    # ----- Esponente (IT OA, misma forma en otros paises): 15/B no es el CP -----
+    ("IT", "VIALE DODICI GIUGNO, 15/B, Galvani, 40124",
+     {"road": "VIALE DODICI GIUGNO", "house_number": "15/B", "postcode": "40124"},
+     False),
+    ("IT", "VIA SANTO STEFANO, 33/A, Galvani, 40125",
+     {"road": "VIA SANTO STEFANO", "house_number": "33/A", "postcode": "40125"},
+     False),
+    ("IT", "VIA DE' TOSCHI, 2/F, Galvani, 40124",
+     {"road": "VIA DE' TOSCHI", "house_number": "2/F", "postcode": "40124"},
+     False),
 
     # ----- LatAm sin calle clara (manzana/lote): gate SI -----
     ("AR", "Manzana 12 Casa 5, Barrio Norte",

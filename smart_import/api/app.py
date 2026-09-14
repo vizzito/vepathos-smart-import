@@ -257,21 +257,32 @@ PURGE_EVERY_S = 3600
 
 
 async def _purge_loop() -> None:
-    """Borra periodicamente los jobs terminados que ya nadie va a mirar.
+    """Borra jobs vencidos, PBF propios ya indexados e índices sin uso.
 
     Sin esto el disco crece sin techo, y en este host lo comparte con el cutter.
     """
+    from ..geocoding.osm_index import maintain_geocode_disk
+
     ttl_s = float(CFG.job_ttl_hours) * 3600
+    index_ttl = float(CFG.index_ttl_days)
+    if ttl_s <= 0 and index_ttl <= 0:
+        stage(logger, "HTTP", "barrido de jobs e indices desactivado")
+        return
     if ttl_s <= 0:
         stage(logger, "HTTP", "barrido de jobs desactivado (SMART_IMPORT_JOB_TTL_HOURS=0)")
-        return
     while True:
         try:
             await asyncio.sleep(PURGE_EVERY_S)
-            borrados = await run_in_threadpool(store.purge_older_than, ttl_s)
-            if borrados:
-                stage(logger, "HTTP", "jobs vencidos borrados",
-                      cantidad=len(borrados), ttl_h=CFG.job_ttl_hours)
+            if ttl_s > 0:
+                borrados = await run_in_threadpool(store.purge_older_than, ttl_s)
+                if borrados:
+                    stage(logger, "HTTP", "jobs vencidos borrados",
+                          cantidad=len(borrados), ttl_h=CFG.job_ttl_hours)
+            if CFG.geocoding_enabled:
+                await run_in_threadpool(
+                    maintain_geocode_disk,
+                    CFG.index_dir, CFG.extract_dir, index_ttl, None,
+                )
         except asyncio.CancelledError:
             raise
         except Exception:

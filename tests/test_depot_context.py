@@ -7,7 +7,19 @@ from smart_import.geocoding.depot_context import DepotContext, depot_from_params
 from smart_import.geocoding.runner import _apply_depot_guards
 
 
-def test_enrich_inyecta_ciudad_y_provincia_faltantes():
+def test_enrich_no_inyecta_capital_si_ya_hay_otra_ciudad():
+    """Fredericia/Coquimbo no pueden heredar Copenhagen/Santiago del depot."""
+    dk = DepotContext(city="Copenhagen", country="Denmark")
+    out = dk.enrich_address("Dronningensgade, 20, Apt 1, Fredericia, 7000")
+    assert "Copenhagen" not in out
+    assert "Denmark" in out
+    assert "Fredericia" in out
+
+    cl = DepotContext(city="Santiago", country="Chile")
+    out = cl.enrich_address("CALLE 1, 2092, COQUIMBO")
+    assert "Santiago" not in out
+    assert "Chile" in out
+    assert "COQUIMBO" in out
     depot = DepotContext(
         lat=-34.60, lon=-58.38,
         city="CABA", region="Buenos Aires", country="Argentina",
@@ -189,11 +201,93 @@ def test_align_no_mueve_pin_si_ya_esta_en_la_ciudad():
     assert aligned.origin == depot.origin
 
 
+def test_strip_depot_city_si_queda_en_otro_continente():
+    from smart_import.geocoding.depot_context import strip_conflicting_depot_city
+
+    depot = DepotContext(
+        lat=-34.57, lon=-58.43,
+        city="San Francisco", country="Argentina",
+        max_distance_km=500.0,
+    )
+    cleaned, warning = strip_conflicting_depot_city(
+        depot, (-34.57, -58.43),
+        near_city="Ciudad Autónoma de Buenos Aires",
+        max_distance_km=500.0,
+    )
+    assert warning
+    assert cleaned is not None
+    assert cleaned.city is None
+    assert cleaned.country is None
+    assert cleaned.origin == (-34.57, -58.43)
+    assert "San Francisco" in warning
+
+
+def test_strip_depot_city_desconocida_si_no_es_la_del_indice():
+    from smart_import.geocoding.depot_context import strip_conflicting_depot_city
+
+    depot = DepotContext(lat=-34.57, lon=-58.43, city="sanfrancisco")
+    cleaned, warning = strip_conflicting_depot_city(
+        depot, (-34.57, -58.43),
+        near_city="Buenos Aires",
+        max_distance_km=500.0,
+    )
+    assert warning and "sanfrancisco" in warning
+    assert cleaned is not None and cleaned.city is None
+
+
+def test_strip_no_toca_caba_sobre_corpus_caba():
+    from smart_import.geocoding.depot_context import strip_conflicting_depot_city
+
+    depot = DepotContext(
+        lat=-34.60, lon=-58.38, city="CABA", country="Argentina",
+    )
+    cleaned, warning = strip_conflicting_depot_city(
+        depot, (-34.60, -58.38),
+        near_city="Ciudad Autónoma de Buenos Aires",
+        max_distance_km=500.0,
+    )
+    assert warning is None
+    assert cleaned is depot
+
+
+def test_strip_no_toca_nyc_sobre_jamaica_queens():
+    """OSM Queens etiqueta addr:city=Jamaica; --depot-city NYC es el padre."""
+    from smart_import.geocoding.depot_context import strip_conflicting_depot_city
+
+    depot = DepotContext(
+        lat=40.76, lon=-73.80, city="NYC", country="United States",
+    )
+    cleaned, warning = strip_conflicting_depot_city(
+        depot, (40.76, -73.80),
+        near_city="Jamaica",
+        max_distance_km=500.0,
+    )
+    assert warning is None
+    assert cleaned is depot
+    assert cleaned.city == "NYC"
+
+
 def test_depot_from_params_retrocompatible_solo_origin():
     d = depot_from_params(origin_lat=-34.6, origin_lon=-58.38, max_distance_km=500)
     assert d is not None
     assert d.origin == (-34.6, -58.38)
     assert d.enrichment_tokens() == []  # sin fill / sin city
+
+
+def test_apply_guards_matched_lejos_usa_geofence_blando():
+    from smart_import.geocoding.runner import GeocodeReport
+
+    cfg = Config.from_env().replace(max_geocode_distance_km=500.0, max_low_confidence_km=10.0)
+    depot = DepotContext(lat=-34.598, lon=-58.416, max_distance_km=500.0)
+    result = GeocodeResult(
+        status=STATUS_MATCHED, lat=-34.4938614, lon=-58.4980751,
+        confidence=1.0, precision="housenumber", source="osm",
+    )
+    report = GeocodeReport()
+    out = _apply_depot_guards(result, depot=depot, cfg=cfg, report=report)
+    assert out.status == STATUS_NOT_FOUND
+    assert report.rejected_far == 1
+    assert out.detail["reject_reason"] == "matched_far_from_depot"
 
 
 def test_apply_guards_matched_fuera_de_radio():

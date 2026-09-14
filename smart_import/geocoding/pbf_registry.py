@@ -72,11 +72,16 @@ def _hint_tokens(hint: str) -> tuple[str, ...]:
             seen.add(norm)
             tokens.append(norm)
 
-    _add(raw)
-    if len(raw) == 2 and raw.isalpha():
-        name = phone_region_country_map().get(raw.upper())
-        if name:
-            _add(name)
+    folded = raw.lower()
+    _add(folded)
+    for part in _HINT_SPLIT.split(folded):
+        if not part:
+            continue
+        _add(part)
+        if len(part) == 2 and part.isalpha():
+            name = phone_region_country_map().get(part.upper())
+            if name:
+                _add(name)
 
     bounds = country_bounds()
     by_bounds: dict[tuple[float, float, float, float], list[str]] = defaultdict(list)
@@ -157,11 +162,12 @@ class PbfEntry:
 
     @property
     def country_slug(self) -> str | None:
-        """'argentina' desde 'argentina-pyrosm.osm.pbf'."""
-        if self.has_bbox:
-            return None
+        """'argentina' desde el PBF de país o el sufijo del extract."""
         name = self.path.name.lower()
         stem = name.replace(PBF_SUFFIX, "").replace(".osm.pbf", "")
+        if self.has_bbox:
+            rest = _BBOX_RE.sub("", stem).strip("-_.")
+            return rest or None
         return stem or None
 
     @property
@@ -251,28 +257,49 @@ class PbfRegistry:
         """PBF sin bbox en el nombre (paises enteros): cobertura de ultimo recurso."""
         return [e for e in self.entries if not e.has_bbox]
 
-    def find_for_point(self, lat: float, lon: float, margin: float = 0.0) -> PbfEntry | None:
+    @staticmethod
+    def _excluded(entry: PbfEntry, exclude: set[str] | None) -> bool:
+        if not exclude:
+            return False
+        if entry.key in exclude:
+            return True
+        slug = entry.country_slug
+        return bool(slug and slug in exclude)
+
+    def find_for_point(self, lat: float, lon: float, margin: float = 0.0,
+                       exclude: set[str] | None = None) -> PbfEntry | None:
         """El extract MAS CHICO que cubra el punto: menos parseo, mas precision."""
-        covering = [e for e in self.with_bbox() if e.covers(lat, lon, margin)]
+        covering = [
+            e for e in self.with_bbox()
+            if e.covers(lat, lon, margin) and not self._excluded(e, exclude)
+        ]
         if covering:
             return min(covering, key=lambda e: (e.area, e.size_bytes))
         return None
 
     def find_for_bbox(self, north: float, south: float, east: float,
-                      west: float) -> PbfEntry | None:
-        covering = [e for e in self.with_bbox() if e.covers_bbox(north, south, east, west)]
+                      west: float, exclude: set[str] | None = None) -> PbfEntry | None:
+        covering = [
+            e for e in self.with_bbox()
+            if e.covers_bbox(north, south, east, west) and not self._excluded(e, exclude)
+        ]
         if covering:
             return min(covering, key=lambda e: (e.area, e.size_bytes))
         return None
 
-    def find_country_for_point(self, lat: float, lon: float) -> PbfEntry | None:
+    def find_country_for_point(self, lat: float, lon: float,
+                               exclude: set[str] | None = None) -> PbfEntry | None:
         """PBF de pais cuyo bbox aproximado cubre el punto.
 
         Si varios paises solapan (Rio de la Plata: AR vs UY), gana el de mayor
         margen interior — NO el mas chico en disco (Uruguay ~56 MB ganaba mal
         sobre Argentina ~400 MB y geocodificaba CABA contra calles uruguayas).
+        Un extract vacio (sin calles) se excluye y se prueba el siguiente.
         """
-        covering = [e for e in self.broad() if e.country_covers(lat, lon)]
+        covering = [
+            e for e in self.broad()
+            if e.country_covers(lat, lon) and not self._excluded(e, exclude)
+        ]
         if not covering:
             return None
         return max(
@@ -288,25 +315,27 @@ class PbfRegistry:
 
     def resolve(self, lat: float | None = None, lon: float | None = None,
                 bbox: tuple[float, float, float, float] | None = None,
-                zone_hint: str | None = None) -> PbfEntry | None:
+                zone_hint: str | None = None,
+                exclude: set[str] | None = None) -> PbfEntry | None:
         """Prioridad: extract bbox > punto > pais (geo) > hint estricto."""
         if bbox:
-            if found := self.find_for_bbox(*bbox):
+            if found := self.find_for_bbox(*bbox, exclude=exclude):
                 return found
             north, south, east, west = bbox
             lat = lat if lat is not None else (north + south) / 2
             lon = lon if lon is not None else (east + west) / 2
         if lat is not None and lon is not None:
-            if found := self.find_for_point(lat, lon):
+            if found := self.find_for_point(lat, lon, exclude=exclude):
                 return found
-            country = self.find_country_for_point(lat, lon)
+            country = self.find_country_for_point(lat, lon, exclude=exclude)
             if country is not None:
                 # Hint solo refina entre PBFs que YA cubren el punto.
                 if zone_hint:
                     hinted = [
                         e for e in self.entries_matching_hint(zone_hint)
-                        if (e.has_bbox and e.covers(lat, lon))
-                        or (not e.has_bbox and e.country_covers(lat, lon))
+                        if not self._excluded(e, exclude)
+                        and ((e.has_bbox and e.covers(lat, lon))
+                             or (not e.has_bbox and e.country_covers(lat, lon)))
                     ]
                     if hinted:
                         return max(
@@ -321,12 +350,18 @@ class PbfRegistry:
             # Sin cobertura geo: hint estricto como último recurso (ISO→slug),
             # nunca el substring corto que elegía ashmore-cartier.
             if zone_hint:
-                matches = self.entries_matching_hint(zone_hint)
+                matches = [
+                    e for e in self.entries_matching_hint(zone_hint)
+                    if not self._excluded(e, exclude)
+                ]
                 if matches:
                     return min(matches, key=lambda e: (0 if e.has_bbox else 1, e.size_bytes))
             return None
         if zone_hint:
-            matches = self.entries_matching_hint(zone_hint)
+            matches = [
+                e for e in self.entries_matching_hint(zone_hint)
+                if not self._excluded(e, exclude)
+            ]
             if matches:
                 return min(matches, key=lambda e: (0 if e.has_bbox else 1, e.size_bytes))
         return None

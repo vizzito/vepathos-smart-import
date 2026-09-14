@@ -25,7 +25,11 @@ from .base import GeocodeResult
 #: reportando como perdida aunque ahora si se encuentre.
 #: Bump cuando cambia enrichment / geofence / scoring (invalida cache vieja).
 #: v4: la clave de cache tambien incluye umbrales (ver runner context).
-GEOCODER_VERSION = 6
+#: v7: veto de CP/localidad (homónimos en otra ciudad no pintan verde).
+#: v9: query con ciudad + OSM sin addr:city = mismatch (Punta Arenas).
+#: v10: vacío no veta (Toronto); distancia al destino (Radom/Holstebro).
+#: v11: esponente 15/B ≡ 15B / 15 (no exigir token B en FTS).
+GEOCODER_VERSION = 12
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (

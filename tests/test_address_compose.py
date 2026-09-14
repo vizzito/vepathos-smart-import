@@ -43,6 +43,15 @@ def test_compose_us_altura_va_adelante():
     assert out.endswith("United States")
 
 
+def test_compose_us_via_numerada_altura_adelante():
+    out = compose_address_from_parts({
+        "address": "68 ST",
+        "house_number": "1445",
+        "country": "United States",
+    })
+    assert out.startswith("1445 68 ST")
+
+
 def test_compose_no_duplica_altura_ya_en_calle():
     assert house_number_already_in_street("Av. Nazca 400", "400")
     out = compose_address_from_parts({

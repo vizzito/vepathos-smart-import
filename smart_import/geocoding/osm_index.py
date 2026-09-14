@@ -12,6 +12,7 @@ import fcntl
 import os
 import re
 import sqlite3
+import time
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -46,7 +47,8 @@ CREATE TABLE IF NOT EXISTS places (
     state         TEXT,
     postcode      TEXT,
     country       TEXT,
-    normalized_text TEXT NOT NULL
+    normalized_text TEXT NOT NULL,
+    geom          TEXT
 );
 
 CREATE VIRTUAL TABLE IF NOT EXISTS places_fts
@@ -131,6 +133,21 @@ def _way_centroid(way) -> tuple[float, float] | None:
     return sum(lats) / len(lats), sum(lons) / len(lons)
 
 
+def _way_polyline(way) -> str | None:
+    """Polilínea del highway para interpolar alturas a lo largo del way."""
+    from .interpolate import encode_polyline
+
+    pts: list[tuple[float, float]] = []
+    for node in way.nodes:
+        try:
+            loc = node.location
+            if loc.valid():
+                pts.append((loc.lat, loc.lon))
+        except Exception:
+            continue
+    return encode_polyline(pts)
+
+
 def index_is_complete(path: str | Path) -> bool:
     """True si el indice existe y esta ENTERO.
 
@@ -175,6 +192,39 @@ def index_is_complete(path: str | Path) -> bool:
         return False                      # truncado, corrupto o sin esquema
     finally:
         conn.close()
+
+
+def index_address_rows(path: str | Path) -> int:
+    """Filas con calle o altura: un extract del país equivocado puede 'completar'
+    el build con 5 nodos sin addr y parecer cobertura."""
+    p = Path(path).expanduser()
+    try:
+        conn = sqlite3.connect(f"file:{p}?mode=ro", uri=True)
+    except sqlite3.Error:
+        return 0
+    try:
+        meta = conn.execute(
+            "SELECT value FROM meta WHERE key = 'with_address'").fetchone()
+        if meta is not None:
+            try:
+                return int(meta[0])
+            except (TypeError, ValueError):
+                pass
+        row = conn.execute(
+            "SELECT COUNT(*) FROM places WHERE"
+            " COALESCE(street, '') <> '' OR COALESCE(house_number, '') <> ''"
+        ).fetchone()
+        return int(row[0]) if row else 0
+    except sqlite3.DatabaseError:
+        return 0
+    finally:
+        conn.close()
+
+
+def index_is_usable(path: str | Path) -> bool:
+    """Completo Y con alguna dirección. El sqlite de 5 nodos de Montevideo
+    cortado desde Argentina no debe reutilizarse."""
+    return index_is_complete(path) and index_address_rows(path) > 0
 
 
 def build(pbf_path: str | Path, output: str | Path,
@@ -262,8 +312,8 @@ def _fill(conn: sqlite3.Connection, src: Path, location_index: str,
             return
         conn.executemany(
             "INSERT INTO places (osm_type, osm_id, lat, lon, kind, name, house_number,"
-            " street, city, district, state, postcode, country, normalized_text)"
-            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)", batch)
+            " street, city, district, state, postcode, country, normalized_text, geom)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", batch)
         batch.clear()
 
     processor = osmium.FileProcessor(str(src)).with_locations(location_index)
@@ -274,6 +324,7 @@ def _fill(conn: sqlite3.Connection, src: Path, location_index: str,
 
         if obj.is_node():
             rec = _record(tags, obj.location.lat, obj.location.lon, "node", obj.id)
+            geom = None
             if rec:
                 stats.nodes += 1
         elif obj.is_way():
@@ -282,8 +333,11 @@ def _fill(conn: sqlite3.Connection, src: Path, location_index: str,
                 stats.skipped += 1
                 continue
             rec = _record(tags, point[0], point[1], "way", obj.id)
+            geom = None
             if rec:
                 stats.ways += 1
+                if rec[4] == "highway":
+                    geom = _way_polyline(obj)
         else:
             continue
 
@@ -293,7 +347,7 @@ def _fill(conn: sqlite3.Connection, src: Path, location_index: str,
             stats.with_address += 1
         if rec[5]:
             stats.named += 1
-        batch.append(rec)
+        batch.append((*rec, geom))
         if len(batch) >= BATCH:
             flush()
             if progress:
@@ -335,21 +389,24 @@ def covering_extract_index(
     lat: float,
     lon: float,
     bbox: tuple[float, float, float, float] | None = None,
+    zone_hint: str | None = None,
 ) -> Path | None:
-    """Indice de extract (n…_s…_e…_w….sqlite) que cubre el punto, el más chico.
+    """Indice de extract (n…_s…_e…_w…[-pais].sqlite) que cubre el punto.
 
-    Si desapareció el PBF del extract, el país (argentina.sqlite) no debe
-    sustituirlo: CABA ya tiene índice y no hay que reconstruir 400 MB.
+    Prefiere el sufijo de país del hint (uruguay vs argentina, mismo bbox).
+    Ignora sqlite completo pero SIN calles (recorte del país vecino).
     """
     root = Path(index_dir).expanduser()
     if not root.is_dir():
         return None
-    covering: list[tuple[float, Path]] = []
+    prefer: set[str] = set()
+    if zone_hint:
+        from .pbf_registry import _hint_tokens
+        prefer = {t for t in _hint_tokens(zone_hint) if len(t) >= 3}
+    covering: list[tuple[int, float, Path]] = []
     for path in root.glob("n*.sqlite"):
         match = _INDEX_BBOX_RE.search(path.name)
-        # Un indice truncado por un build interrumpido no puede sustituir al
-        # del pais: daria menos resultados sin que nadie se entere.
-        if not match or not index_is_complete(path):
+        if not match or not index_is_usable(path):
             continue
         north = float(match.group("north"))
         south = float(match.group("south"))
@@ -361,17 +418,21 @@ def covering_extract_index(
             bn, bs, be, bw = bbox
             if not (south <= bs and north >= bn and west <= bw and east >= be):
                 continue
-        covering.append((abs(north - south) * abs(east - west), path))
+        slug = path.name[match.end():].removesuffix(".sqlite").strip("-_.")
+        hinted = 0 if (slug and slug in prefer) else 1
+        area = abs(north - south) * abs(east - west)
+        covering.append((hinted, area, path))
     if not covering:
         return None
-    covering.sort(key=lambda item: item[0])
-    return covering[0][1]
+    covering.sort(key=lambda item: (item[0], item[1]))
+    return covering[0][2]
 
 
 def prefer_index(resolved: Path, index_dir: str | Path, lat: float, lon: float,
-                 bbox: tuple[float, float, float, float] | None = None) -> Path:
+                 bbox: tuple[float, float, float, float] | None = None,
+                 zone_hint: str | None = None) -> Path:
     """Extract local gana sobre índice de país (argentina.sqlite / florida.sqlite)."""
-    extract = covering_extract_index(index_dir, lat, lon, bbox)
+    extract = covering_extract_index(index_dir, lat, lon, bbox, zone_hint=zone_hint)
     if extract is None:
         return resolved
     name = resolved.name.lower()
@@ -379,3 +440,85 @@ def prefer_index(resolved: Path, index_dir: str | Path, lat: float, lon: float,
     if looks_country or not resolved.exists():
         return extract
     return resolved
+
+
+def touch_index(path: str | Path) -> None:
+    """Marca el sqlite como usado ahora. El TTL mira mtime, no atime (noatime)."""
+    p = Path(path)
+    if p.is_file():
+        os.utime(p, None)
+
+
+def drop_indexed_extracts(extract_dir: str | Path, index_dir: str | Path) -> list[Path]:
+    """Borra PBF propios cuyo sqlite ya está usable. No toca `_extracts` del cutter."""
+    root = Path(extract_dir).expanduser()
+    idx = Path(index_dir).expanduser()
+    if not root.is_dir():
+        return []
+    deleted: list[Path] = []
+    for pbf in root.rglob("*.osm.pbf"):
+        if ".locks" in pbf.parts:
+            continue
+        key = pbf.name.replace("-pyrosm.osm.pbf", "").replace(".osm.pbf", "")
+        sqlite = idx / f"{key}.sqlite"
+        if not index_is_usable(sqlite):
+            continue
+        try:
+            pbf.unlink()
+        except OSError:
+            continue
+        deleted.append(pbf)
+    if deleted:
+        stage(logger, "INDEX", "extracts propios borrados (el sqlite alcanza)",
+              cantidad=len(deleted))
+    return deleted
+
+
+def purge_unused_indexes(
+    index_dir: str | Path,
+    ttl_days: float,
+    keep: str | Path | None = None,
+) -> list[Path]:
+    """Borra sqlite sin uso reciente. `keep` es el de este job (CABA ahora)."""
+    if ttl_days <= 0:
+        return []
+    root = Path(index_dir).expanduser()
+    if not root.is_dir():
+        return []
+    cutoff = time.time() - ttl_days * 86400
+    keep_res: Path | None = None
+    if keep is not None:
+        try:
+            keep_res = Path(keep).expanduser().resolve()
+        except OSError:
+            keep_res = None
+    deleted: list[Path] = []
+    for path in root.glob("*.sqlite"):
+        if ".tmp." in path.name:
+            continue
+        try:
+            resolved = path.resolve()
+            if keep_res is not None and resolved == keep_res:
+                continue
+            if path.stat().st_mtime >= cutoff:
+                continue
+            path.unlink()
+        except OSError:
+            continue
+        deleted.append(path)
+    if deleted:
+        stage(logger, "INDEX", "indices sin uso borrados",
+              cantidad=len(deleted), ttl_dias=ttl_days)
+    return deleted
+
+
+def maintain_geocode_disk(
+    index_dir: str | Path,
+    extract_dir: str | Path | None,
+    ttl_days: float,
+    keep: str | Path | None = None,
+) -> None:
+    """Tras un geocode: tirar PBF propios ya indexados + sqlite viejos."""
+    if extract_dir:
+        drop_indexed_extracts(extract_dir, index_dir)
+    purge_unused_indexes(index_dir, ttl_days, keep=keep)

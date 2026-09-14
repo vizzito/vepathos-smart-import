@@ -263,6 +263,9 @@ class Config:
     geocode_workers: int = 1
     autobuild_index: bool = True      # construir el indice si falta
     autoextract: bool = True          # cortar extract de ciudad si no hay
+    #: Dias sin USO (mtime al abrir el sqlite) para borrar un indice.
+    #: 0 = no barrer. CABA/NYC se tocan en cada geocode y no caducan.
+    index_ttl_days: float = 14.0
     extract_margin_km: float = 15.0
     extract_round_deg: float = 0.1
     extract_max_km: float = 80.0
@@ -441,6 +444,7 @@ class Config:
             geocode_workers=_int("SMART_IMPORT_GEOCODE_WORKERS", 1),
             autobuild_index=_bool("SMART_IMPORT_AUTOBUILD_INDEX", True),
             autoextract=_bool("SMART_IMPORT_AUTOEXTRACT", True),
+            index_ttl_days=_float("SMART_IMPORT_INDEX_TTL_DAYS", 14.0),
             extract_margin_km=_float("SMART_IMPORT_EXTRACT_MARGIN_KM", 15.0),
             extract_round_deg=_float("SMART_IMPORT_EXTRACT_ROUND_DEG", 0.1),
             extract_max_km=_float("SMART_IMPORT_EXTRACT_MAX_KM", 80.0),

@@ -53,6 +53,19 @@ def test_bbox_filename_estable_y_parseable():
     entry = _parse(Path("/data/extracts/argentina") / name)
     assert entry.has_bbox
     assert entry.key == "n-34.40_s-34.80_e-58.20_w-58.60"
+    assert entry.country_slug is None
+
+
+def test_bbox_filename_incluye_pais():
+    west, south, east, north = -56.4, -35.1, -55.9, -34.6
+    name = bbox_filename(west, south, east, north, 0.1, country_slug="uruguay")
+    assert name == "n-34.60_s-35.10_e-55.90_w-56.40-uruguay-pyrosm.osm.pbf"
+    entry = _parse(Path("/data/extracts/uruguay") / name)
+    assert entry.has_bbox
+    assert entry.key == "n-34.60_s-35.10_e-55.90_w-56.40-uruguay"
+    assert entry.country_slug == "uruguay"
+    ar = bbox_filename(west, south, east, north, 0.1, country_slug="argentina")
+    assert ar != name
 
 
 def test_prepare_bbox_desde_punto_caba():
@@ -71,7 +84,20 @@ def test_prepare_bbox_redondea_hacia_afuera():
     assert e == -58.3
 
 
-def test_zona_usa_slug_de_pais():
+def test_covering_prefiere_extract_del_pais_del_hint(tmp_path):
+    from smart_import.geocoding.osm_index import covering_extract_index
+
+    idx = tmp_path / "indexes"
+    idx.mkdir()
+    mvd = (-34.80, -56.20)
+    ar = idx / "n-34.60_s-35.10_e-55.90_w-56.40-argentina.sqlite"
+    uy = idx / "n-34.60_s-35.10_e-55.90_w-56.40-uruguay.sqlite"
+    _fake_index(ar)
+    _fake_index(uy)
+    hit = covering_extract_index(idx, *mvd, zone_hint="Montevideo Uruguay")
+    assert hit == uy
+    other = covering_extract_index(idx, *mvd, zone_hint="argentina")
+    assert other == ar
     assert extract_zone("/data/south-america_tile_x/argentina-pyrosm.osm.pbf", "argentina") == "argentina"
     assert extract_zone("/data/north-america/florida-pyrosm.osm.pbf", "florida") == "florida"
 
@@ -114,10 +140,12 @@ def test_sin_extract_corta_y_no_indexa_el_pais(tmp_path, monkeypatch):
     assert cuts, "tenia que cortar un extract"
     assert ready.cut_extract
     assert ready.path.name.startswith("n-34.")
-    assert "argentina" not in ready.path.name
-    assert all("argentina-pyrosm" not in src for src, _ in builds)
-    assert all(not name.startswith("argentina") for _, name in builds)
+    assert ready.path.name != "argentina.sqlite"
+    assert all(src.startswith("n-") for src, _ in builds)
+    assert all(name != "argentina.sqlite" for _, name in builds)
     assert ready.entry.has_bbox
+    assert not cuts[0].is_file()
+    assert ready.path.is_file()
 
 
 def test_si_ya_hay_indice_de_extract_no_corta(tmp_path, monkeypatch):
@@ -172,6 +200,7 @@ def test_si_ya_hay_extract_pbf_indexa_ese(tmp_path, monkeypatch):
     assert ready.entry.has_bbox
     assert builds == [dest.name]
     assert ready.path.name == "n-34.50_s-34.80_e-58.20_w-58.60.sqlite"
+    assert not dest.is_file()
 
 
 def test_sin_osmium_no_cae_al_indice_de_pais(tmp_path, monkeypatch):
@@ -205,3 +234,67 @@ def test_autoextract_off_no_indexa_el_pais(tmp_path):
             pbf_dir, index_dir, lat=CABA[0], lon=CABA[1],
             extract_dir=tmp_path / "extracts", autoextract=False,
         )
+
+
+def test_no_borra_extract_del_cutter(tmp_path, monkeypatch):
+    pbf_dir = tmp_path / "pbf"
+    index_dir = tmp_path / "indexes"
+    extract_dir = tmp_path / "extracts"
+    index_dir.mkdir()
+    extract_dir.mkdir()
+    dest = pbf_dir / "_extracts" / "sa" / "n-34.50_s-34.80_e-58.20_w-58.60-pyrosm.osm.pbf"
+    dest.parent.mkdir(parents=True)
+    dest.write_bytes(b"\0" * 40_000)
+
+    def fake_build(pbf, output, location_index="flex_mem", progress=None):
+        _fake_index(output)
+
+    monkeypatch.setattr(
+        "smart_import.geocoding.extract.run_osmium_extract",
+        lambda *_a, **_k: (_ for _ in ()).throw(AssertionError("no cortar")),
+    )
+    monkeypatch.setattr("smart_import.geocoding.extract.build", fake_build)
+
+    ready = ensure_geocode_index(
+        pbf_dir, index_dir, lat=CABA[0], lon=CABA[1],
+        extract_dir=extract_dir,
+    )
+    assert dest.is_file()
+    assert ready.path.is_file()
+
+
+def test_indice_en_uso_no_caduca_y_el_viejo_si(tmp_path):
+    from smart_import.geocoding.osm_index import (
+        purge_unused_indexes, touch_index,
+    )
+
+    idx = tmp_path / "indexes"
+    idx.mkdir()
+    hot = idx / "n-34.60_s-35.10_e-55.80_w-56.60-uruguay.sqlite"
+    cold = idx / "n41.10_s40.30_e-73.50_w-74.50.sqlite"
+    _fake_index(hot)
+    _fake_index(cold)
+    import os
+    import time
+    old = time.time() - 20 * 86400
+    os.utime(cold, (old, old))
+    touch_index(hot)
+    deleted = purge_unused_indexes(idx, ttl_days=14, keep=hot)
+    assert cold in deleted
+    assert not cold.is_file()
+    assert hot.is_file()
+
+
+def test_ttl_cero_no_borra_indices(tmp_path):
+    from smart_import.geocoding.osm_index import purge_unused_indexes
+
+    idx = tmp_path / "indexes"
+    idx.mkdir()
+    cold = idx / "n41.10_s40.30_e-73.50_w-74.50.sqlite"
+    _fake_index(cold)
+    import os
+    import time
+    old = time.time() - 40 * 86400
+    os.utime(cold, (old, old))
+    assert purge_unused_indexes(idx, ttl_days=0) == []
+    assert cold.is_file()

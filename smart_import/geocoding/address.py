@@ -20,7 +20,8 @@ from ..resources import address_abbreviations, landmark_hints, unit_hints
 _PINCODE_IN = re.compile(r"(?<!\d)(\d{6})(?!\d)")
 _ZIP_US = re.compile(r"(?<!\d)(\d{5})(?:-\d{4})?(?!\d)")
 _CP_AR = re.compile(r"\b([A-Z]\d{4}[A-Z]{3})\b|(?<!\d)(\d{4})(?!\d)")
-_HOUSE_NUMBER = re.compile(r"(?<!\w)(\d{1,5})(?:\s*[-/]\s*\d{1,4})?(?:[a-zA-Z](?!\w))?(?!\d)")
+_HOUSE_NUMBER = re.compile(
+    r"(?<!\w)(\d{1,5})(?:\s*[-/]\s*(?:\d{1,4}|[A-Za-z]{1,3}))?(?:[a-zA-Z](?!\w))?(?!\d)")
 #: '1st' / '7th' no son altura (si no, 'NE 1st Ave 350' → house=1)
 _ORDINAL = re.compile(r"^\d{1,3}(?:st|nd|rd|th)$", re.IGNORECASE)
 

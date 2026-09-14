@@ -24,11 +24,12 @@ _CUE_MIN_LEN = 3
 #: orden de localidad al componer el string visible / query
 _LOCALITY_PART_KEYS = ("zone", "city", "region", "postcode", "country")
 
-#: 'NE 1st Ave' / '1st Ave' — en US la altura va DELANTE; al revés el parser
-#: come el ordinal ('1st' → house=1) y no geocodifica.
+#: 'NE 1st Ave' / '1st Ave' / 'E 65 ST' / '68 ST' — en US la altura va DELANTE.
 _US_STYLE_ROAD = re.compile(
     r"^(?:[NS][EW]\.?|[NS]\.?|[EW]\.?)\s+\d{1,3}(?:st|nd|rd|th)\b"
-    r"|^\d{1,3}(?:st|nd|rd|th)\b",
+    r"|^\d{1,3}(?:st|nd|rd|th)\b"
+    r"|^(?:(?:bch|beach|plumb)\s+)?(?:[NS][EW]\.?|[NS]\.?|[EW]\.)?\s*\d{1,3}\s+"
+    r"(?:st|street|ave|avenue|rd|road|pl|place|ct|court|blvd|dr|ln|pkwy|expy)\b",
     re.IGNORECASE,
 )
 

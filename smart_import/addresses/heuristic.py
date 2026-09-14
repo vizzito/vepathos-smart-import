@@ -7,6 +7,11 @@ Cubre las dos formas dominantes sin privilegiar ninguna:
     EN ordinal   `1171 1st Ave`            house_number + ordinal road
     BR           `Av. Paulista, 1578`      road + coma + altura
     LatAm num.   `Calle 50 nro 1234`       via numerada + altura
+    LatAm abbr.  `CR 55, 93F-07` / `CL 3 SUR`
+    EN grid     `68 ST` / `E 2 ST` / `BCH 26 ST`  via numerada EN + altura
+    EN hyphen   `108-15 Jamaica Ave`              altura Queens / Bronx
+    Esponente    `Viale X, 15/B`                  altura + / + letra (no es Italia-only)
+    JP OA        `京浜島二丁目, 11-9, 大田区`       chome + manzana-lote + ward
 
 Lo que no entiende lo deja en `landmark`/`neighbourhood` en vez de descartarlo:
 perder "Near Hanuman Temple" empeora el geocoding mas que conservarlo.
@@ -32,6 +37,7 @@ from ..resources import (
     suspicious_road_words,
     unit_prefixes,
 )
+from ..text_script import has_cjk
 from .base import AddressParser, ParsedAddress
 from .gate import road_is_suspicious
 
@@ -45,12 +51,29 @@ _POSTCODE_TRAILING = re.compile(r"(?<![\w])(?P<pc>\d{4})\s*$")
 _LEVEL = re.compile(r"(?<![\w])(?P<v>\d{1,2}(?:st|nd|rd|th|do|ro|to|er|°|º)?)\s+"
                     r"(?:floor|andar|piso)\b", re.IGNORECASE)
 
-# 'Calle 50 nro 1234' / 'Carrera 7 # 45-10' — la via LLEVA un numero en el nombre.
+# Altura: 100 / 100A / 3922BIS / Queens 108-15 / Bronx 4601-B21 / placa 93F-07
+# / esponente 15/B (slash + letra; no 15/2 ni 11-9).
+# No comerse '7th'/'1st' (ordinales EN) como si fueran sufijo de puerta.
+_HOUSE_NUM_CORE = (
+    r"\d{1,5}"
+    r"(?:(?!(?:st|nd|rd|th)\b)[A-Za-z]{1,3})?"
+    r"(?:-\d{1,4}|-[A-Za-z]\d{1,3}|/[A-Za-z]{1,3})?"
+    r"[A-Za-z]?"
+)
+_HOUSE_NUM = rf"(?P<num>{_HOUSE_NUM_CORE})"
+
+# 'Calle 50 nro 1234' / 'CR 55, 93F-07' / 'CL 3 SUR' — la via LLEVA un numero.
+# Alternation izquierda-primero: cra antes de cr, calle antes de cl.
+# `(?<!\w)` evita que `r` (rua) se coma la R de `CR 55` → road='R 55'.
+_VIA_NUMBERED = (
+    r"calle|carrera|diagonal|transversal|avenida|"
+    r"cra|cr|cl|dg|diag|tv|av|rua|r"
+)
 _NUMBERED_STREET = re.compile(
-    r"(?P<road>(?:calle|carrera|cl\.?|cra\.?|diagonal|diag\.?|"
-    r"transversal|tv\.?|avenida|av\.?|rua|r\.?)\s+\d{1,4})"
-    r"[\s,]+(?:nro\.?|n[°º]?|num\.?|núm\.?|#)?\s*(?P<num>\d{1,5}[A-Za-z]?)"
-    r"(?:-\d{1,4})?(?![\d])",
+    r"(?P<road>(?<!\w)(?:" + _VIA_NUMBERED + r")\.?\s+"
+    r"\d{1,4}[A-Za-z]{0,3}"
+    r"(?:\s+(?:sur|norte|este|oeste)\b)?)"
+    r"[\s,]+(?:nro\.?|n[°º]?|num\.?|núm\.?|#)?\s*" + _HOUSE_NUM + r"(?![\d])",
     re.IGNORECASE | re.UNICODE)
 
 # 'Corrientes 100' / 'Santa Fe al 137' / 'Av. Paulista, 1578'
@@ -60,8 +83,7 @@ _NUMBERED_STREET = re.compile(
 _ROAD_THEN_NUMBER = re.compile(
     r"(?P<road>(?:\d{1,3}\s+(?:de|of)\s+)?"
     r"(?:[^\W\d_][\w'’.\-]*\s+){0,4}[^\W\d_][\w'’.\-]*)"
-    r"[\s,]+(?:al\s+|n[°º]?\s*|nro\.?\s*|num\.?\s*|#\s*)?(?P<num>\d{1,5}[A-Za-z]?)"
-    r"(?![\d/])",
+    r"[\s,]+(?:al\s+|n[°º]?\s*|nro\.?\s*|num\.?\s*|#\s*)?" + _HOUSE_NUM + r"(?![\d])",
     re.IGNORECASE | re.UNICODE)
 #: conectores que quedan pegados al final de la calle y no son parte del nombre
 _ROAD_TAIL = re.compile(r"[\s,]+(?:al|nro|nro\.|n[°º]|num|num\.|numero|número|#)$",
@@ -93,35 +115,92 @@ _NUM_START = r"(?:(?<!\w)|(?<=[nN][ºª°]))"
 
 # '1171 1st Ave' / '350 5th Avenue' — ordinales EN que empiezan con digito.
 _NUMBER_THEN_ORDINAL_ROAD = re.compile(
-    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+"
+    _NUM_START + _HOUSE_NUM + r"\s+"
     r"(?P<road>\d{1,3}(?:st|nd|rd|th)\.?\s+"
     r"[^\W\d_][\w'’.\-]*(?:\s+[^\W\d_][\w'’.\-]*){0,2})",
     re.IGNORECASE | re.UNICODE)
 
 # '350 NE 1st Ave' / '1200 NW 7th Ave' — cardinal US + ordinal (NE/NW no es la calle).
-_CARDINAL = r"(?:N|S|E|W|NE|NW|SE|SW|N\.|S\.|E\.|W\.)"
+# Palabra entera: sin \b, la 's' de 'united states 219 ST' y la 'N' de
+# 'BRIGHTON 7 ST' se comen como S/N y el geocoder busca South 219th / North 7th.
+_CARDINAL = r"(?:\b(?:NE|NW|SE|SW|N|S|E|W)\b|\b(?:N|S|E|W)\.)"
 _NUMBER_THEN_CARDINAL_ORDINAL = re.compile(
-    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+"
+    _NUM_START + _HOUSE_NUM + r"\s+"
     r"(?P<road>" + _CARDINAL + r"\s+"
     r"\d{1,3}(?:st|nd|rd|th)\.?\s+"
     r"[^\W\d_][\w'’.\-]*)",
     re.IGNORECASE | re.UNICODE)
 
-# '23 MG Road' / '507 Broadway' — solo whitespace: la coma separa segmentos
-# ('3, Ciudad de la Costa' NO es number+road).
+# '23 MG Road' / '507 Broadway' / '108-15 Jamaica Ave'
+# Solo whitespace: la coma separa segmentos ('3, Ciudad de la Costa' NO es number+road).
 _NUMBER_THEN_ROAD = re.compile(
-    _NUM_START + r"(?P<num>\d{1,5}[A-Za-z]?)\s+(?P<road>[^\W\d_][\w'’.\-]*"
+    _NUM_START + _HOUSE_NUM + r"\s+(?P<road>[^\W\d_][\w'’.\-]*"
     r"(?:\s+[^\W\d_][\w'’.\-]*){0,3})", re.IGNORECASE | re.UNICODE)
 
+# '68 ST' / '5 AVE' / 'E 2 ST' / 'BCH 26 ST' / '150 PL' — la via LLEVA el numero.
+# OA NYC escribe 'E 65 ST', no 'E 65th St'; sin esto road+number come el 65.
+_EN_WAY = (
+    r"(?:st|street|ave|avenue|rd|road|pl|place|ct|court|blvd|boulevard|"
+    r"dr|drive|ln|lane|pkwy|parkway|expy|expressway|hwy|highway|"
+    r"ter|terrace|cir|circle|pk)"
+)
+_EN_NUMBERED_ROAD = (
+    r"(?:(?:bch|beach|plumb)\s+)?"
+    r"(?:" + _CARDINAL + r"\s+)?"
+    r"(?:[^\W\d_][\w'’.\-]{2,}\s+)?"
+    r"\d{1,3}[A-Za-z]?\s+" + _EN_WAY + r"\.?"
+)
+#: 'united states 219 ST' (noise 3, país pegado sin coma).
+_LEADING_COUNTRY = re.compile(
+    r"^(?:(?:united(?:\s+states)?|states|usa|u\.s\.a?\.?|"
+    r"estados(?:\s+unidos)?|argentina|españa|espana|france|"
+    r"méxico|mexico)\s+)+",
+    re.IGNORECASE,
+)
+_EN_NUMBERED_THEN_HOUSE = re.compile(
+    r"(?P<road>" + _EN_NUMBERED_ROAD + r")"
+    r"[\s,]+(?:nro\.?|n[°º]?|num\.?|#)?\s*" + _HOUSE_NUM + r"(?![\d])",
+    re.IGNORECASE | re.UNICODE)
+_HOUSE_THEN_EN_NUMBERED = re.compile(
+    _NUM_START + _HOUSE_NUM + r"\s+(?P<road>" + _EN_NUMBERED_ROAD + r")",
+    re.IGNORECASE | re.UNICODE)
+
 _SPLIT = re.compile(r"\s*[,;|]\s*")
+
+#: OpenAddresses CABA: 'APELLIDO, NOMBRE, 3645' / 'FLORES, VENANCIO, Gral., 185'.
+#: La coma separa partes del nombre de via, no barrio/ciudad.
+_HOUSE_ONLY_SEGMENT = re.compile(rf"^{_HOUSE_NUM_CORE}$")
+_OA_LEADING_NUMBER_COMMA = re.compile(
+    rf"^\s*{_HOUSE_NUM}\s+(?P<tail>.+)$",
+    re.UNICODE)
+_LOCALITY_SEGMENT = re.compile(
+    r"\b(?:ciudad autonoma|capital federal|caba|buenos aires|argentina|"
+    r"autonomous city|republica argentina)\b",
+    re.IGNORECASE)
+#: Titulos / tipos de via en nombres OA CABA ('PENA, DAVID, DR., 4256').
+#: Sin esto 'DR.'/'AV.'/'Pr' caen en la regla de codigo pais de 2 letras.
+_OA_STREET_SUFFIX = re.compile(
+    r"^(?:dr|gral|general|coronel|ing|arq|prof|av|pte|pres|pr|cap|"
+    r"virrey|cmdte|ten|sgto|sarg|brig|alm|min)\.?$",
+    re.IGNORECASE)
 
 # Orden: patrones especificos primero (numbered, ordinal), luego los generales.
 _STREET_PATTERNS: tuple[tuple[re.Pattern[str], str, bool], ...] = (
     (_NUMBERED_STREET, "numbered-street", True),       # trim road
+    (_EN_NUMBERED_THEN_HOUSE, "en-numbered-street", True),
+    (_HOUSE_THEN_EN_NUMBERED, "number+en-numbered", False),
     (_NUMBER_THEN_CARDINAL_ORDINAL, "number+cardinal-ordinal", False),
     (_NUMBER_THEN_ORDINAL_ROAD, "number+ordinal", False),
     (_ROAD_THEN_NUMBER, "road+number", True),
     (_NUMBER_THEN_ROAD, "number+road", False),
+)
+_NUMBER_FIRST_PATTERNS = (
+    _NUMBER_THEN_ROAD, _NUMBER_THEN_ORDINAL_ROAD, _NUMBER_THEN_CARDINAL_ORDINAL,
+    _HOUSE_THEN_EN_NUMBERED,
+)
+_NUMBERED_ROAD_PATTERNS = (
+    _NUMBERED_STREET, _EN_NUMBERED_THEN_HOUSE, _HOUSE_THEN_EN_NUMBERED,
+    _NUMBER_THEN_CARDINAL_ORDINAL,
 )
 
 
@@ -219,6 +298,7 @@ def _street_candidates(haystack: str, tokens: frozenset[str]
                 continue
             whole = _ROAD_TAIL.sub("", match.group("road").strip(" .,;:-"))
             road = _trim_road(whole, tokens) if do_trim else whole
+            road = _LEADING_COUNTRY.sub("", road).strip()
             number = match.group("num").strip()
             if not road or (fold(road) in tokens and len(road.split()) == 1):
                 continue
@@ -227,12 +307,11 @@ def _street_candidates(haystack: str, tokens: frozenset[str]
                 continue
             has_token = any(fold(w.strip(".,;:")) in tokens for w in road.split())
             # Ordinales y vias numeradas siempre ganan sobre el generico.
-            boost = -4 if pattern is _NUMBERED_STREET else (
-                -4 if pattern is _NUMBER_THEN_CARDINAL_ORDINAL else (
-                -3 if pattern is _NUMBER_THEN_ORDINAL_ROAD else (-2 if has_token else 0)))
+            boost = -4 if pattern in _NUMBERED_ROAD_PATTERNS else (
+                -3 if pattern is _NUMBER_THEN_ORDINAL_ROAD else (
+                    -2 if has_token else 0))
             road_start = match.start("road") + max(match.group("road").find(road), 0)
-            if pattern in (_NUMBER_THEN_ROAD, _NUMBER_THEN_ORDINAL_ROAD,
-                           _NUMBER_THEN_CARDINAL_ORDINAL):
+            if pattern in _NUMBER_FIRST_PATTERNS:
                 begin, end = match.start("num"), match.end("road")
             else:
                 begin, end = road_start, match.end("num")
@@ -310,6 +389,16 @@ class HeuristicAddressParser(AddressParser):
 
         Asi 'Apt 4B, 350 5th Ave' y 'Near X, Av. Paulista, 1578' resuelven bien.
         """
+        oa = _try_oa_compound_street(raw, self.locales)
+        if oa is not None:
+            begin, end, road, number, order = oa
+            if not any(_overlaps((begin, end), span) for span in consumed):
+                components["road"] = road
+                components["house_number"] = number
+                consumed.append((begin, end))
+                evidence.append(f"'{road}' + numero '{number}' ({order})")
+                return
+
         tokens = label_set("street_tokens", self.locales)
         candidates = [
             c for c in _street_candidates(raw, tokens)
@@ -414,9 +503,170 @@ class HeuristicAddressParser(AddressParser):
             rest.append(cleaned)
 
         slots = [name for name in ("suburb", "city") if not components.get(name)]
+        # Un resto CJK es el ward/municipio (大田区), no un barrio latino.
+        if len(rest) == 1 and has_cjk(rest[0]) and "city" in slots:
+            slots = ["city"] + [s for s in slots if s != "city"]
         for name, value in zip(slots, rest):
             components[name] = value
             evidence.append(f"{name} '{value}' (segmento posicional)")
+
+
+def _segment_is_locality(segment: str) -> bool:
+    """True si el segmento comma-separated es ciudad/pais/CP, no parte de calle."""
+    cleaned = (segment or "").strip(" .,;:-()")
+    if not cleaned:
+        return True
+    folded = fold(cleaned)
+    if folded in _locality_blocklist():
+        return True
+    if re.fullmatch(r"\d{4}", cleaned):
+        return True
+    if _POSTCODE.fullmatch(cleaned.replace(" ", "")):
+        return True
+    if _LOCALITY_SEGMENT.search(cleaned):
+        return True
+    for group in locality_alias_groups():
+        if any(folded == fold(item) for item in group):
+            return True
+    return False
+
+
+def _segment_is_oa_street_suffix(segment: str) -> bool:
+    """Titulo o abreviatura de tipo de via dentro del nombre OA, no localidad."""
+    cleaned = (segment or "").strip(" .,;:-()")
+    if not cleaned:
+        return False
+    return bool(_OA_STREET_SUFFIX.match(cleaned))
+
+
+def _segment_already_has_housenumber(segment: str) -> bool:
+    """'Av. Pueyrredon 359' ya es calle+altura; no es un token de nombre OA."""
+    cleaned = (segment or "").strip()
+    if not cleaned:
+        return False
+    return bool(
+        _ROAD_THEN_NUMBER.search(cleaned)
+        or _NUMBERED_STREET.search(cleaned)
+        or _EN_NUMBERED_THEN_HOUSE.search(cleaned)
+        or _HOUSE_THEN_EN_NUMBERED.search(cleaned)
+    )
+
+
+def _segment_is_admin_locality(segment: str) -> bool:
+    """Ciudad/pais/CP en compuestos OA — no barrios de una palabra (Flores, Palermo).
+
+    En 'FLORES, VENANCIO, Gral., 185' el apellido FLORES no es el barrio.
+    """
+    cleaned = (segment or "").strip(" .,;:-()")
+    if not cleaned:
+        return True
+    if _segment_is_oa_street_suffix(cleaned):
+        return False
+    if fold(cleaned) in name_glue_words():
+        return False
+    if re.fullmatch(r"\d{4}", cleaned):
+        return True
+    if _POSTCODE.fullmatch(cleaned.replace(" ", "")):
+        return True
+    if _LOCALITY_SEGMENT.search(cleaned):
+        return True
+    folded = fold(cleaned)
+    if len(cleaned) == 2 and cleaned.isalpha():
+        return True
+    if len(cleaned.split()) >= 2:
+        for group in locality_alias_groups():
+            if any(folded == fold(item) for item in group):
+                return True
+    return False
+
+
+def _join_oa_road_parts(parts: list[str]) -> str:
+    return re.sub(r"\s+", " ", " ".join(p.strip(" .,;:-") for p in parts)).strip()
+
+
+def _span_covering(raw: str, *fragments: str) -> tuple[int, int] | None:
+    """(begin, end) en raw que cubre todos los fragmentos en orden."""
+    if not fragments:
+        return None
+    start = raw.find(fragments[0])
+    if start < 0:
+        return None
+    end = start + len(fragments[0])
+    for frag in fragments[1:]:
+        idx = raw.find(frag, end)
+        if idx < 0:
+            return None
+        end = idx + len(frag)
+    return start, end
+
+
+def _try_oa_compound_street(raw: str, locales: tuple[str, ...] | None
+                            ) -> tuple[int, int, str, str, str] | None:
+    """Nombre de via OA con comas internas + altura al final o al inicio.
+
+    'CALDERON DE LA BARCA, PEDRO, 3645' → road='CALDERON DE LA BARCA PEDRO', num=3645
+    '3645, CALDERON DE LA BARCA, PEDRO' → idem
+    '185 FLORES, VENANCIO, Gral.' → road='FLORES VENANCIO Gral.', num=185
+    """
+    text = (raw or "").strip()
+    if not text or "," not in text:
+        return None
+
+    parts = [p.strip() for p in _SPLIT.split(text) if p.strip()]
+    if len(parts) < 2:
+        return None
+
+    # 'JAMAICA AVE, 108-15, 11418' / 'BROADWAY, 366, 11211' — calle, altura, ZIP.
+    # El compuesto CABA toma el ultimo numero como altura; un CP de 5-6 digitos
+    # detras de otra altura no es 'PEDRO, 3645'.
+    def _street_house_zip() -> bool:
+        if len(parts) < 3:
+            return False
+        tail = parts[-1].replace(" ", "")
+        if not _POSTCODE.fullmatch(tail):
+            return False
+        return any(_HOUSE_ONLY_SEGMENT.match(p) for p in parts[:-1])
+
+    # Altura al final: '…, …, 3645' (>=2 segmentos de nombre antes del numero)
+    if _HOUSE_ONLY_SEGMENT.match(parts[-1]) and not _street_house_zip():
+        name_parts = parts[:-1]
+        number = parts[-1]
+        if (len(name_parts) >= 2
+                and not any(_segment_already_has_housenumber(p) for p in name_parts)
+                and not any(_segment_is_admin_locality(p) for p in name_parts)):
+            road = _join_oa_road_parts(name_parts)
+            if road and not road_is_suspicious(road, locales):
+                span = _span_covering(text, *name_parts, number)
+                if span:
+                    return (*span, road, number, "oa-compound-trailing")
+
+    # Altura al inicio: '3645, SURNAME, GIVEN' (primera coma tras el numero)
+    if _HOUSE_ONLY_SEGMENT.match(parts[0]) and len(parts) >= 3:
+        number = parts[0]
+        name_parts = parts[1:]
+        if (not any(_segment_already_has_housenumber(p) for p in name_parts)
+                and not any(_segment_is_admin_locality(p) for p in name_parts)):
+            road = _join_oa_road_parts(name_parts)
+            if road and not road_is_suspicious(road, locales):
+                span = _span_covering(text, number, *name_parts)
+                if span:
+                    return (*span, road, number, "oa-compound-leading-comma")
+
+    # '185 FLORES, VENANCIO, Gral.' — altura pegada al 1er segmento, >=3 partes de calle
+    lead = _OA_LEADING_NUMBER_COMMA.match(text)
+    if lead and "," in lead.group("tail"):
+        number = lead.group("num").strip()
+        tail_parts = [p.strip() for p in _SPLIT.split(lead.group("tail")) if p.strip()]
+        if (len(tail_parts) >= 3
+                and not any(_segment_already_has_housenumber(p) for p in tail_parts)
+                and not any(_segment_is_admin_locality(p) for p in tail_parts)):
+            road = _join_oa_road_parts(tail_parts)
+            if road and not road_is_suspicious(road, locales):
+                span = _span_covering(text, number, *tail_parts)
+                if span:
+                    return (*span, road, number, "oa-compound-leading")
+
+    return None
 
 
 def _trailing_postcode(raw: str) -> re.Match | None:
