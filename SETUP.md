@@ -26,7 +26,7 @@ Documentos relacionados:
 7. [Conectar la web (`vepathos-router-client`)](#7-conectar-la-web-vepathos-router-client)
 8. [Flujo que ejecuta la web](#8-flujo-que-ejecuta-la-web)
 9. [Comandos útiles (cheatsheet)](#9-comandos-útiles-cheatsheet)
-10. [Tests](#10-tests)
+10. [Tests](#10-tests) · [10.0 Levantar `.venv`](#100-levantar-venv-recordatorio)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
 12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo](#124-repartir-el-trabajo-entre-máquinas) · **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)** (topología actual)
 13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos) · [13.3 Cuando algo se cae](#133-qué-pasa-cuando-algo-se-cae)
@@ -402,6 +402,48 @@ curl -sf -X POST "localhost:8100/imports?phone_region=AR" -F "file=@$FILE" | pyt
 ---
 
 ## 10. Tests
+
+### 10.0 Levantar `.venv` (recordatorio)
+
+Los tests y la CLI corren con el venv **de este repo**, en la carpeta **`.venv`**
+(con punto), en la raíz de `vepathos-smart-import`.
+
+| | |
+|---|---|
+| **Sí** | `~/workspace/vepathos-smart-import/.venv` |
+| **No** | `route-optimizer-env` (es del optimizer, otro proyecto) |
+| **No** | `/usr/bin/python3` del sistema (3.9 en Mac; el repo pide 3.11+) |
+
+**Primera vez** (crear venv + dependencias):
+
+```bash
+cd ~/workspace/vepathos-smart-import
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev,geo,api,queue]"   # tests + HTTP + cola (modo distribuido)
+# opcional: pip install -e ".[libpostal]"
+```
+
+**Cada vez que abrís una terminal** para pytest o CLI:
+
+```bash
+cd ~/workspace/vepathos-smart-import
+source .venv/bin/activate
+# el prompt suele mostrar (.venv)
+python --version    # → Python 3.12.x
+```
+
+Sin `activate`, usá la ruta explícita (evita confundir venvs):
+
+```bash
+cd ~/workspace/vepathos-smart-import
+.venv/bin/python -m pytest tests -q --tb=line
+```
+
+> El `.env` / `.env.prod.smart.local` lo lee **Docker Compose**, no el venv.
+> `pytest` no carga esas variables salvo que las exportes a mano.
+
+### 10.1 Correr tests
 
 Usá **siempre** el venv del repo (no el de route-optimizer):
 
@@ -1192,7 +1234,12 @@ curl -sf "localhost:8100/geocoding/coverage?lat=-34.60&lon=-58.38" | python3 -m 
 ## Resumen de oro
 
 ```bash
-# Local que importa
+# Tests / CLI (venv de ESTE repo — no route-optimizer-env)
+cd ~/workspace/vepathos-smart-import
+source .venv/bin/activate
+pytest -q
+
+# Local Docker
 cp deploy/templates/local-dev.env.template .env   # ROUTE_OPTIMIZER_DATA=...
 DOCKER_BUILDKIT=1 docker compose build smart-import   # 1 vez: imagen + vocab + GeoNames
 docker compose up -d smart-import                     # día a día SIN --build (entrypoint refresca sqlite)

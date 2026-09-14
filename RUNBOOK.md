@@ -44,10 +44,13 @@ la web es el último, no el primero.
 ```bash
 cd ~/workspace/vepathos-smart-import
 python3.12 -m venv .venv
-.venv/bin/pip install -e ".[dev,geo]"
+source .venv/bin/activate          # recordatorio: .venv ACÁ, no route-optimizer-env
+pip install -e ".[dev,geo,api,queue]"
 ```
 
 `[dev]` trae tests y el servicio HTTP. `[geo]` trae pyosmium (el geocoder).
+`[queue]` trae pika/redis para tests del modo distribuido. Detalle:
+[SETUP.md §10.0](SETUP.md#100-levantar-venv-recordatorio).
 La extracción de columnas mezcladas y texto libre es **determinística** (reglas);
 no hay extra `[ai]` ni torch.
 Para el geocoder, apuntá a la **raíz** `data/` del route-optimizer (PBF de país

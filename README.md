@@ -33,14 +33,16 @@ archivo del cliente          →  normalize  →  archivo Vepathos
 ## Instalación
 
 ```bash
+cd ~/workspace/vepathos-smart-import
 python3.12 -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"        # normalización + tests
-pip install -e ".[geo]"        # + geocoder (pyosmium)
-pip install -e ".[api]"        # + servicio HTTP (FastAPI)
-pip install -e ".[libpostal]"  # + parser libpostal (opcional, ver docs/libpostal.md)
+pip install -e ".[dev,geo,api,queue]"   # tests + geocoder + HTTP + cola
+# opcional: pip install -e ".[libpostal]"
 python -m smart_import.vocab setup            # sqlite; en Docker lo hace el build
 python -m smart_import.vocab setup --geonames # ciudades mundiales (opcional)
 ```
+
+**Tests / CLI:** el venv es **`.venv` en este repo** — no uses `route-optimizer-env`.
+Ver [SETUP.md §10.0](SETUP.md#100-levantar-venv-recordatorio).
 
 Deploy (local y prod): [SETUP.md](SETUP.md). El `docker compose build` ya corre el setup.
 

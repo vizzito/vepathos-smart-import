@@ -15,7 +15,7 @@ Documentos relacionados: [SETUP.md](SETUP.md) (general), [RUNBOOK.md](RUNBOOK.md
 2. [Qué compose va en cada máquina](#2-qué-compose-va-en-cada-máquina)
 3. [Firewall y red](#3-firewall-y-red)
 4. [Deploy desde cero — api-prod (API)](#4-deploy-desde-cero--api-prod-api)
-5. [Deploy desde cero — VM worker (PBFs)](#5-deploy-desde-cero--vm-worker-pbfs)
+5. [Deploy desde cero — VM worker (PBFs)](#5-deploy-desde-cero--vm-worker-pbfs) · [5.6 VM worker #2+](#56-agregar-worker-vm-2-o-más)
 6. [Agregar una Mac como worker (libpostal)](#6-agregar-una-mac-como-worker-libpostal)
 7. [Cómo reparte la cola (¿quién procesa?)](#7-cómo-reparte-la-cola-quién-procesa)
 8. [config_drift y libpostal](#8-config_drift-y-libpostal)
@@ -23,6 +23,7 @@ Documentos relacionados: [SETUP.md](SETUP.md) (general), [RUNBOOK.md](RUNBOOK.md
 10. [Verificación y checklist](#10-verificación-y-checklist)
 11. [Troubleshooting](#11-troubleshooting)
 12. [Rollback](#12-rollback)
+13. [Actualizar prod — rollout de código](#13-actualizar-prod--rollout-de-código)
 
 ---
 
@@ -259,6 +260,161 @@ docker stop vepathos-smart-import   # API monolítica vieja en la VM de PBFs
 ```
 
 Solo debe quedar `vepathos-smart-import-worker`.
+
+### 5.6 Agregar worker VM #2 (o más)
+
+Sumar **capacidad** a la flota existente: misma API, misma cola, mismo Redis.
+**No** es un Smart Import aislado — el worker nuevo entra al pool round-robin con
+w1 y la Mac.
+
+#### Qué necesita la VM nueva
+
+| Requisito | Detalle |
+|-----------|---------|
+| Docker + compose v2 | Igual que w1 |
+| PBFs montados | `ROUTE_OPTIMIZER_DATA` apuntando a la raíz `data/` del optimizer |
+| Cobertura OSM | Idealmente **los mismos extracts/PBFs** que w1; si w2 solo tiene Miami y un job es de CABA, puede fallar o dar peor resultado |
+| Repo | `git clone` + branch `feat/smart-import-produccion` |
+| Credenciales | Mismo `SMART_IMPORT_WORKER_TOKEN` que api-prod; mismos `GEOCODE_*` que api y w1 |
+| Nombre único | `SMART_IMPORT_WORKER_NAME=vepathos-smart-import-worker-w2` (evita choque en logs y fleet) |
+
+#### Paso 1 — Descubrir IP(s) de salida de la VM nueva
+
+Hetzner y DOCKER-USER whitelistean **IPs de origen**, no el hostname. Una VM
+puede tener **más de una** IP de egress (w1 usa `46.224.217.160` y
+`46.224.84.34`). Hay que abrir **todas** las que use la VM nueva.
+
+Desde la **VM nueva** (antes de levantar el worker):
+
+```bash
+curl -s ifconfig.me && echo
+curl -s icanhazip.com && echo
+# Anotar cada IP distinta
+```
+
+Si ya levantaste el worker y `--check` falla solo en **archivos** pero cola y
+estado van bien, casi seguro falta whitelistear la IP de salida real (no la
+IP “principal” del panel de Hetzner).
+
+#### Paso 2 — Hetzner Cloud Firewall (`fw-api-prod`)
+
+En [Hetzner Console](https://console.hetzner.cloud/) → Firewalls →
+`fw-api-prod` → Inbound rules, **por cada IP** `<IP_W2>/32` de la VM nueva,
+agregar las mismas tres reglas que tiene w1:
+
+| Source IP | Protocol | Port | Uso |
+|-----------|----------|------|-----|
+| `<IP_W2>/32` | TCP | 6379 | Redis |
+| `<IP_W2>/32` | TCP | 5672 | RabbitMQ |
+| `<IP_W2>/32` | TCP | **8100** | API — descarga de archivos (`/internal/...`) |
+
+Si la VM tiene **dos** IPs de salida, repetir las 6 reglas (3 × 2).
+
+Sin **8100**: `--check` puede marcar cola/estado ok y **archivos** timeout;
+jobs quedan en `analyzing`.
+
+#### Paso 3 — DOCKER-USER en api-prod (iptables)
+
+Además del firewall de Hetzner, el host api-prod filtra el puerto publicado.
+Agregar reglas **antes** del DROP final (mismo criterio que §3.2):
+
+```bash
+ssh deploy@178.105.42.199
+
+# Ver reglas actuales (modelo w1)
+sudo iptables -L DOCKER-USER -n -v | grep -E '8100|6379|5672'
+
+# Por cada IP de la VM nueva (<IP_W2>):
+sudo iptables -I DOCKER-USER 1 -s <IP_W2> -p tcp -m tcp --dport 8100 -j ACCEPT
+# Si Redis/Rabbit también están filtrados por IP (como w1), repetir:
+sudo iptables -I DOCKER-USER 1 -s <IP_W2> -p tcp -m tcp --dport 6379 -j ACCEPT
+sudo iptables -I DOCKER-USER 1 -s <IP_W2> -p tcp -m tcp --dport 5672 -j ACCEPT
+```
+
+Verificar contadores suben cuando w2 hace `--check`:
+
+```bash
+sudo iptables -L DOCKER-USER -n -v | grep <IP_W2>
+```
+
+> Persistencia: si api-prod reinicia y pierde reglas manuales, re-aplicarlas o
+> integrarlas al script de firewall del host (mismo lugar donde están las de w1).
+
+#### Paso 4 — Config en la VM nueva
+
+```bash
+ssh <usuario>@<ip-vm-nueva>
+git clone git@github.com:vizzito/vepathos-smart-import.git ~/vepathos-smart-import
+cd ~/vepathos-smart-import
+git checkout feat/smart-import-produccion
+
+cp deploy/templates/worker-vm.env.template .env.worker
+# Editar:
+#   SMART_IMPORT_WORKER_NAME=vepathos-smart-import-worker-w2
+#   SMART_IMPORT_WORKER_TOKEN=<mismo que api-prod>
+#   ROUTE_OPTIMIZER_DATA=/ruta/real/a/route-optimizer-app/data
+#   IMAGE_TAG=<mismo tag que w1 y api-prod>
+#   RABBITMQ_* / REDIS_* → passwords del optimizer
+#   GEOCODE_* → copiar del .env de api-prod (§8 config_drift)
+
+# Opcional: heredar umbrales del despliegue
+scp deploy@178.105.42.199:~/vepathos-smart-import/.env .env
+# .env.worker queda como overlay (compose lee los dos)
+```
+
+#### Paso 5 — Conectividad desde el host (antes del container)
+
+```bash
+curl -s --max-time 5 http://178.105.42.199:8100/health | python3 -c \
+  "import json,sys; print(json.load(sys.stdin)['status'])"
+# → ok   (si timeout → revisar pasos 2 y 3)
+```
+
+#### Paso 6 — Build, preflight y arranque
+
+```bash
+DOCKER_BUILDKIT=1 docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  build worker
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  run --rm worker worker --check
+# → cola ok | estado ok | archivos ok
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  up -d
+
+docker logs vepathos-smart-import-worker-w2 --tail 10
+```
+
+**No** usar `docker-compose.samevm.worker.yml` ni `docker-compose.mac.worker.yml`
+en una VM Linux con IP pública.
+
+#### Paso 7 — Verificar en flota
+
+Desde api-prod o Mac (túnel `:8110`):
+
+```bash
+curl -s http://127.0.0.1:8100/health | python3 -m json.tool | grep -A40 '"fleet"'
+```
+
+Checklist w2:
+
+- [ ] Aparece `vepathos-smart-import-worker-w2` (o el nombre que elegiste)
+- [ ] `config_drift: []` respecto a api y w1 (mismos `GEOCODE_*`, sin libpostal)
+- [ ] Upload de prueba → logs en w2 con `listo: normalize/...` o `geocode/...`
+- [ ] Contadores iptables en api-prod suben para `<IP_W2>`
+
+#### Bajar w2 sin afectar prod
+
+```bash
+docker compose --env-file .env.worker -f docker-compose.worker.yml down
+```
+
+La cola sigue; w1 y Mac absorben el tráfico. Opcional: quitar reglas Hetzner/iptables
+de `<IP_W2>` si la VM se da de baja permanentemente.
 
 ---
 
@@ -557,6 +713,188 @@ Volver a API+worker monolito en la VM de PBFs (ventana de mantenimiento):
 4. RouteHub → URL anterior
 
 Los jobs en Redis de la API distribuida no migran automáticamente.
+
+---
+
+## 13. Actualizar prod — rollout de código
+
+Para pasar de una versión ya corriendo a código nuevo (mismo layout api-prod +
+VM + Mac). **No es lo mismo que “deploy desde cero”** (§4–§6): acá asumís que
+`.env`, firewall y RouteHub ya están bien.
+
+### 13.0 Antes de tocar prod (en tu Mac / repo)
+
+1. **Decidir qué sube:** solo lo commiteado en git. Los cambios locales sin
+   commit **no llegan** a api-prod ni a la VM con `git pull`.
+2. **Tests mínimos** (repo local, venv **`.venv`** de este repo — ver
+   [SETUP.md §10.0](SETUP.md#100-levantar-venv-recordatorio)):
+
+```bash
+cd ~/workspace/vepathos-smart-import
+source .venv/bin/activate   # o: .venv/bin/python -m pytest ...
+.venv/bin/python -m pytest tests/test_broker_concurrencia.py \
+  tests/test_queue_consumer.py tests/test_config_roles.py tests/test_fleet.py -q
+```
+
+3. **Commit + push** del branch (ej. `feat/smart-import-produccion`):
+
+```bash
+git push -u origin feat/smart-import-produccion
+```
+
+4. **Elegir `IMAGE_TAG`** — piná la misma fecha en los tres nodos para poder
+   rollback. Ejemplo: `IMAGE_TAG=2026.09.14`. Actualizalo en:
+   - api-prod → `.env`
+   - VM → `.env.worker` (y el `.env` base si hereda umbrales)
+   - Mac → `.env.prod.smart.local` (sección worker, `SMART_IMPORT_TARGET=runtime-libpostal`)
+
+   Imagen resultante: `vepathos/smart-import:runtime-2026.09.14` (api/VM) y
+   `vepathos/smart-import:runtime-libpostal-2026.09.14` (Mac).
+
+> **`up -d` solo no alcanza.** Si el container ya existía, Docker lo deja
+> corriendo con la imagen vieja. Siempre: **`build` + `up -d --force-recreate`**.
+
+### 13.1 Orden de rollout (obligatorio)
+
+```
+1. api-prod (API)     ← primero: sigue encolando mientras actualizás workers
+2. VM worker          ← el piso de prod (PBFs)
+3. Mac worker         ← opcional; podés dejarlo para el final o bajarlo antes
+```
+
+Los jobs en vuelo en un worker que recreás **vuelven a la cola** (grace period
+90 s). No hace falta ventana de mantenimiento si actualizás de a un nodo.
+
+### 13.2 Paso 1 — api-prod
+
+```bash
+ssh deploy@178.105.42.199
+cd ~/vepathos-smart-import
+
+git fetch origin
+git checkout feat/smart-import-produccion
+git pull origin feat/smart-import-produccion
+
+# Opcional: IMAGE_TAG=2026.09.14 en .env (runtime, sin libpostal)
+
+DOCKER_BUILDKIT=1 docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.apiprod.yml \
+  build smart-import
+
+docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.apiprod.yml \
+  up -d --force-recreate smart-import
+
+curl -sf http://127.0.0.1:8100/health | python3 -m json.tool | grep -E '"(status|role|state)"'
+docker ps --filter name=vepathos-smart-import --format '{{.Names}} {{.Image}} {{.Status}}'
+```
+
+Esperado: `"role": "api"`, `"state": "redis"`, container healthy.
+
+**Comprobar heartbeat nuevo** (commit `19bee4f` en adelante):
+
+```bash
+docker exec vepathos-smart-import grep -n heartbeat /app/smart_import/queue/broker.py | head -3
+# NO debe aparecer "HEARTBEAT_S = 600"
+```
+
+### 13.3 Paso 2 — VM worker (PBFs)
+
+```bash
+ssh martin@46.224.217.160
+cd ~/vepathos-worker/vepathos-smart-import   # ajustar path si difiere
+
+git fetch origin
+git checkout feat/smart-import-produccion
+git pull origin feat/smart-import-produccion
+
+# Mismo IMAGE_TAG que api-prod en .env.worker (runtime, no libpostal)
+
+DOCKER_BUILDKIT=1 docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  build worker
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  up -d --force-recreate
+
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml \
+  run --rm worker worker --check
+# → cola ok | estado ok | archivos ok
+
+docker logs vepathos-smart-import-worker --tail 15
+```
+
+Desde la VM:
+
+```bash
+curl -s --max-time 5 http://178.105.42.199:8100/health | python3 -c \
+  "import json,sys; d=json.load(sys.stdin); print(d['status'], len(d.get('fleet',{}).get('nodes',[])), 'workers')"
+```
+
+### 13.4 Paso 3 — Mac worker (libpostal, opcional)
+
+```bash
+# Túnel (si no está)
+pkill -f 'autossh.*vepathos-tunnel' 2>/dev/null
+autossh -M 0 -o ServerAliveInterval=30 -o ServerAliveCountMax=3 \
+  -o ExitOnForwardFailure=yes -N vepathos-tunnel &
+nc -z 127.0.0.1 8110 && echo 'tunel OK'
+
+cd ~/workspace/vepathos-smart-import
+git pull origin feat/smart-import-produccion
+
+# IMAGE_TAG=2026.09.14 en .env.prod.smart.local (runtime-libpostal)
+
+DOCKER_BUILDKIT=1 docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  build worker
+
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  up -d --force-recreate worker
+
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  run --rm worker worker --check
+
+docker exec si-worker-prod-mac grep -n heartbeat /app/smart_import/queue/broker.py | head -3
+docker logs si-worker-prod-mac --tail 10
+```
+
+### 13.5 Verificación E2E en prod
+
+Con túnel Mac (`curl :8110`) o desde api-prod (`curl :8100`):
+
+```bash
+curl -s http://127.0.0.1:8110/health | python3 -m json.tool | grep -A30 '"fleet"'
+```
+
+Checklist rápido:
+
+- [ ] `deployment.role` = `api`, `state` = `redis`
+- [ ] Flota: ≥1 worker (VM); 2 si Mac arriba
+- [ ] `config_drift`: vacío sin Mac; **solo nodo Mac** si libpostal
+- [ ] Subir CSV de prueba por RouteHub → logs VM/Mac con `listo: normalize/...`
+- [ ] Geocode termina → descarga nested con coords
+- [ ] Sin `Transport indicated EOF` en logs worker (heartbeat 30 s)
+
+### 13.6 Rollback de una versión (solo código)
+
+Mismo procedimiento con el `IMAGE_TAG` anterior (ej. `2026.09.07`):
+
+1. Cambiar `IMAGE_TAG` en `.env` / `.env.worker` / Mac
+2. `docker compose ... up -d` **sin rebuild** — Docker usa la imagen ya buildeada
+3. Si borraste la imagen vieja: `git checkout <tag-anterior>` + `build` + recreate
+
+Los jobs en Redis sobreviven un rollback de API/workers si no cambiás
+`SMART_IMPORT_QUEUE_PREFIX` ni el token.
 
 ---
 
