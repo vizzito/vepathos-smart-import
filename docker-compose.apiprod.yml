@@ -25,11 +25,9 @@ services:
       # `ports` de los overlays, no los reemplaza).
       # - BIND_PRIV: la IP privada del host, para chequeos locales y futuras
       #   VMs de la misma red (OJO: la VM de PBFs NO ve esta red; verificado).
-      # - BIND_PUB: la IP publica, SOLO alcanzable desde las IPs whitelisteadas
-      #   en DOCKER-USER (mismo patron que 6379/5672). Sin esa regla de
-      #   firewall esto queda abierto a internet: no publicar sin ella.
+      # El acceso remoto usa la red privada o un proxy autenticado.
+      # No publicar una IP pública sin autenticación y control de tamaño de request.
       - "${SMART_IMPORT_BIND_PRIV:-10.0.0.2}:${SMART_IMPORT_PORT:-8100}:8100"
-      - "${SMART_IMPORT_BIND_PUB:-178.105.42.199}:${SMART_IMPORT_PORT:-8100}:8100"
     extra_hosts:
       # Utilidad para llegar al host (mismo patron que RouteHub -> optimizer).
       # OJO: para Redis/RabbitMQ NO alcanza con esto — ver abajo.
