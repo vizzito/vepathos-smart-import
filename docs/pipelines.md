@@ -617,8 +617,10 @@ guarda las alturas de CABA bajo `Avenida Juan Bautista Justo` y la gente escribe
 `Juan B Justo`. La `b` exacta no entraba al MATCH (ahora se busca `"b"*`) y quedaba
 como token que el candidato no tiene (calle 0.0): la avenida entera salía sin
 pin, o en la homónima `Juan B. Justo` de otro partido. Solo se alinea con el mismo
-número de palabras y todas las demás iguales; una letra sola como nombre entero
-(`AVE U`) sigue exacta.
+número de palabras y todas las demás iguales, y solo si la letra está **entre dos
+palabras** (`is_name_initial`): la `B` de `16 Avenida B 0-26` (Guatemala), la `C`
+de `95 C Este` (Panamá) o la `I` de `Tebet Utara I` son el nombre, y tratarlas
+como inicial pintó ámbar a 4-8 km en la primera versión de la regresión.
 
 **El mejor candidato se elige por `(street, house_number, score_total)`** — el
 total es el **último** criterio de desempate. Antes, ordenando por total,

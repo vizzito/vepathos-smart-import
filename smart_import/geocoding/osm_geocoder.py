@@ -17,7 +17,8 @@ from .name_aliases import StreetAliasStore, open_alias_store
 from .osm_index import touch_index
 from .scoring import (
     Candidate, _house_int, _house_number_match, place_conflict,
-    _street_score, _strip_way_type, compass_key, en_ordinal, ordinal_key, score,
+    _street_score, _strip_way_type, compass_key, en_ordinal, is_name_initial,
+    ordinal_key, score,
 )
 from .street_resolver import StreetVocabulary, name_tokens
 
@@ -108,17 +109,27 @@ def _is_numbered_grid(words: list[str]) -> bool:
     )
 
 
-def _fts_name_term(word: str) -> str:
-    """Termino FTS de una palabra del nombre de calle, dentro de un nombre de 2+ palabras.
+def _fts_name_term(word: str, initials: frozenset[str]) -> str:
+    """Termino FTS de una palabra del nombre de calle.
 
     Una inicial ('Juan B Justo', 'Marcelo T de Alvear') busca por prefijo: OSM
     guarda las alturas de CABA bajo 'Avenida Juan Bautista Justo' y el token
-    exacto 'b' dejaba afuera justo las filas con puerta. Una letra sola como
-    nombre entero ('AVE U') no pasa por aca y sigue exacta.
+    exacto 'b' dejaba afuera justo las filas con puerta. Solo si es inicial de
+    verdad (`is_name_initial`): la 'B' de '16 Avenida B' o la 'I' de 'Tebet Utara I'
+    son el nombre y por prefijo traian calles de otro lado.
     """
-    if len(word) == 1 and word.isalpha():
+    if word.casefold() in initials:
         return f'"{word}"*'
     return f'"{word}"'
+
+
+def _road_initials(parsed: ParsedAddress | None) -> frozenset[str]:
+    """Letras de la calle pedida que son iniciales de un nombre (ver `is_name_initial`)."""
+    if parsed is None or not parsed.road:
+        return frozenset()
+    words = [_FTS_UNSAFE.sub("", w).casefold() for w in normalize_text(parsed.road).split()]
+    words = [w for w in words if w]
+    return frozenset(w for i, w in enumerate(words) if is_name_initial(words, i))
 
 
 def _expand_fts_words(words: list[str]) -> list[str]:
@@ -479,7 +490,8 @@ class LocalOSMGeocoder:
                 rest_clause = " AND ".join(f'"{w}"' for w in uniq_rest)
             else:
                 joiner = " AND " if strict else " OR "
-                rest_clause = joiner.join(_fts_name_term(w) for w in uniq_rest)
+                initials = _road_initials(parsed)
+                rest_clause = joiner.join(_fts_name_term(w, initials) for w in uniq_rest)
             if alias_toks:
                 alias_clause = self._or_group(alias_toks)
                 parts.append(f"({rest_clause} OR {alias_clause})")

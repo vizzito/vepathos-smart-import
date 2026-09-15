@@ -349,25 +349,41 @@ def _strip_way_type(nombre: str) -> str:
     return " ".join(palabras) if palabras else nombre
 
 
+def is_name_initial(words: list[str], index: int) -> bool:
+    """True si la letra suelta es la inicial de un nombre: 'juan B justo'.
+
+    Tiene que estar ENTRE dos palabras. Una letra pegada a un numero es parte de
+    una via numerada ('16 Avenida B 0-26' en Guatemala, '95 C Este' en Panama) y
+    una al final es un ordinal romano ('Tebet Utara I'): tratarlas como inicial
+    las emparejaba con cualquier palabra que empiece con esa letra.
+    """
+    if not 0 < index < len(words) - 1:
+        return False
+    word, before, after = words[index], words[index - 1], words[index + 1]
+    return (len(word) == 1 and word.isalpha()
+            and len(before) >= 3 and before.isalpha() and after.isalpha())
+
+
 def _align_initials(query_name: str, cand_name: str) -> str:
     """El nombre pedido con sus iniciales completadas, si es la misma calle.
 
     'juan b justo' y 'juan bautista justo' (asi guarda OSM las alturas de CABA)
     tienen las mismas palabras salvo una inicial: son la misma via. Sin esto la
     'b' quedaba como token de la calle pedida que el candidato no tiene y la
-    calle puntuaba 0. Se exige el mismo largo y que TODA otra palabra coincida:
-    'juan b justo' no se alinea con 'juan bautista alberdi'. Las letras de brujula
-    ('n miami' vs 's miami') ya se vetan antes, en `_street_score`.
+    calle puntuaba 0. Se exige el mismo largo, que TODA otra palabra coincida
+    ('juan b justo' no se alinea con 'juan bautista alberdi') y que la letra sea
+    una inicial de verdad (`is_name_initial`).
     """
     a, b = query_name.split(), cand_name.split()
     if len(a) != len(b) or a == b:
         return query_name
     initials = 0
-    for x, y in zip(a, b):
+    for index, (x, y) in enumerate(zip(a, b)):
         if x == y:
             continue
-        short, full = (x, y) if len(x) < len(y) else (y, x)
-        if len(short) == 1 and short.isalpha() and len(full) >= 3 and full.startswith(short):
+        short, full, words = (x, y, a) if len(x) < len(y) else (y, x, b)
+        if (is_name_initial(words, index) and len(full) >= 3
+                and full.startswith(short)):
             initials += 1
             continue
         return query_name

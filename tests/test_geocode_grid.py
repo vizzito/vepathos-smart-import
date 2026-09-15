@@ -206,6 +206,18 @@ def test_fts_la_inicial_busca_por_prefijo_y_una_letra_sola_no():
     assert grid is not None and '"u"*' not in grid
 
 
+@pytest.mark.parametrize("query", [
+    "16 Avenida B 0-26, Guatemala",   # via numerada: la B es el nombre
+    "95 C Este 93, Panama",           # 'C' de calle pegada al numero
+    "Jalan Tebet Utara I No.23",      # ordinal romano al final
+])
+def test_una_letra_que_no_es_inicial_sigue_exacta(query):
+    """La regresion completa (2026-09-15) mostro que tratar TODA letra suelta como
+    inicial pintaba ambar a 4-8 km en Guatemala, Panama y Yakarta."""
+    from smart_import.geocoding.osm_geocoder import _road_initials
+    assert _road_initials(parse(query)) == frozenset()
+
+
 def test_juan_b_justo_encuentra_la_puerta_en_juan_bautista_justo(tmp_path):
     """Antes: sin pin (nivel calle 0.66) y 'Juan B Justo 2500' caia en la homonima
     'Juan B. Justo' de otro partido. Ahora la puerta de CABA."""

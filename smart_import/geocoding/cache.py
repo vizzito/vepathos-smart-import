@@ -43,7 +43,9 @@ from .base import GeocodeResult
 #:      indice sin mtime, que cambiaba en cada apertura (0 hits entre imports).
 #: v17: una inicial busca y puntua contra el nombre completo ('Juan B Justo 4500' ≡
 #:      'Avenida Juan Bautista Justo'): los not_found de v16 envenenan.
-GEOCODER_VERSION = 17
+#: v18: solo la letra ENTRE dos palabras es inicial: v17 pintaba ambar a 4-8 km
+#:      '16 Avenida B 0-26' (Guatemala) y dejaba sin pin 'Tebet Utara I'.
+GEOCODER_VERSION = 18
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (
