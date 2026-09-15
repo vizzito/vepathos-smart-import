@@ -467,6 +467,35 @@ def touch_index(path: str | Path) -> None:
         os.utime(p, None)
 
 
+def index_identity(path: str | Path) -> dict:
+    """Que indice es, para la clave de la cache de geocode.
+
+    Nunca mtime ni atime: `touch_index` corre en cada apertura del geocoder, y
+    con el mtime en la clave ningun import encontraba lo que dejo el anterior
+    (0 hits, 2026-09-15). Un rebuild si la cambia: `build` escribe un temporal y
+    hace `os.replace`, asi que el indice nuevo es otro inodo, y `meta` agrega de
+    que PBF salio y cuanto trae, que no dependen del filesystem.
+    """
+    p = Path(path).expanduser()
+    try:
+        st = p.stat()
+    except OSError:
+        return {}
+    identity: dict = {"inode": st.st_ino, "size": st.st_size}
+    try:
+        conn = sqlite3.connect(f"file:{p}?mode=ro", uri=True)
+    except sqlite3.Error:
+        return identity
+    try:
+        identity["meta"] = {str(k): str(v) for k, v in
+                            conn.execute("SELECT key, value FROM meta")}
+    except sqlite3.DatabaseError:
+        pass                              # sin tabla meta: alcanza con inodo + tamano
+    finally:
+        conn.close()
+    return identity
+
+
 def drop_indexed_extracts(extract_dir: str | Path, index_dir: str | Path) -> list[Path]:
     """Borra PBF propios cuyo sqlite ya está usable. No toca `_extracts` del cutter."""
     root = Path(extract_dir).expanduser()

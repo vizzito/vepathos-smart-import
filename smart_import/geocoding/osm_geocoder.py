@@ -1,23 +1,32 @@
 """Geocoder local contra el indice SQLite construido desde un .osm.pbf."""
 from __future__ import annotations
 
+import dataclasses
 import re
 import sqlite3
 from pathlib import Path
 
+from ..resources import fold
 from .address import ParsedAddress, normalize_text, parse
 from .base import (
     STATUS_ERROR, STATUS_LOW, STATUS_MATCHED, STATUS_NOT_FOUND, GeocodeResult,
 )
-from .interpolate import HousePoint, interpolate_house, parse_polyline, MAX_SPAN
+from .interpolate import HousePoint, haversine_m, interpolate_house, parse_polyline, pick_brackets, MAX_SPAN
+from .intersection import INTERSECTION_CONFIDENCE, find_crossing, intersection_candidates
 from .name_aliases import StreetAliasStore, open_alias_store
 from .osm_index import touch_index
 from .scoring import (
     Candidate, _house_int, _house_number_match, place_conflict,
     _street_score, _strip_way_type, compass_key, en_ordinal, ordinal_key, score,
 )
+from .street_resolver import StreetVocabulary, name_tokens
 
 CANDIDATE_LIMIT = 40
+#: 'Crisantemos1904': calle (3+ letras) con la altura pegada. No toca 'B7000GKN'
+#: (el numero no cierra el token) ni '1st'.
+_GLUED_NUMBER = re.compile(r"(?<![\w])([^\W\d_]{3,})(\d{1,5})(?![\w])", re.UNICODE)
+#: '32 Flinders Street, Melbourne': altura adelante, calle en el primer segmento
+_NUMBER_FIRST = re.compile(r"^\s*(?P<num>\d{1,5}[A-Za-z]?)\s+(?P<street>[^,\d][^,]*?)\s*(?P<rest>,.*)?$")
 #: Si OSM no tiene la altura exacta, se piden mas filas de ESA calle (no el
 #: top-N de bm25, que en avenidas largas son las alturas 1-200).
 NEAR_HOUSE_STREETS = 12
@@ -99,6 +108,19 @@ def _is_numbered_grid(words: list[str]) -> bool:
     )
 
 
+def _fts_name_term(word: str) -> str:
+    """Termino FTS de una palabra del nombre de calle, dentro de un nombre de 2+ palabras.
+
+    Una inicial ('Juan B Justo', 'Marcelo T de Alvear') busca por prefijo: OSM
+    guarda las alturas de CABA bajo 'Avenida Juan Bautista Justo' y el token
+    exacto 'b' dejaba afuera justo las filas con puerta. Una letra sola como
+    nombre entero ('AVE U') no pasa por aca y sigue exacta.
+    """
+    if len(word) == 1 and word.isalpha():
+        return f'"{word}"*'
+    return f'"{word}"'
+
+
 def _expand_fts_words(words: list[str]) -> list[str]:
     expanded: list[str] = []
     seen: set[str] = set()
@@ -125,6 +147,41 @@ def _expand_fts_words(words: list[str]) -> list[str]:
     return expanded
 
 
+#: una ciudad de GeoNames con ese nombre mas cerca que esto del depot es una localidad
+NEARBY_LOCALITY_KM = 60.0
+
+
+def _is_nearby_locality(text: str, origin: tuple[float, float] | None) -> bool:
+    """True si el texto es un barrio/localidad conocido o una ciudad cercana.
+
+    'Uccle' (comuna de Bruselas) no es el apellido de 'Chaussée d'Uccle'. Pero
+    'alvarado' en Tandil si es una calle: el Alvarado de GeoNames esta en Mexico.
+    """
+    from ..resources import load_json
+    from .city_lookup import city_matches
+    from .scoring import haversine_km
+
+    key = fold(normalize_text(text or "")).strip()
+    if not key:
+        return False
+    # solo el archivo curado (barrios): el derivado de GeoNames trae ciudades de
+    # todo el mundo y 'alvarado' es Heroica Alvarado, Mexico
+    curated = load_json("locality_expand.json", "SMART_IMPORT_LOCALITY_EXPAND_PATH")
+    for row in curated.get("expansions") or ():
+        if isinstance(row, dict) and key in {fold(str(c)) for c in row.get("cues") or ()}:
+            return True
+    if origin is None:
+        return False
+    return any(haversine_km(origin[0], origin[1], h.lat, h.lon) <= NEARBY_LOCALITY_KM
+               for h in city_matches(text))
+
+
+def _stray_digits(side: str, street_name: str) -> bool:
+    """Numeros del texto que no son parte del nombre de la calle resuelta."""
+    wanted = set(re.findall(r"\d+", side or ""))
+    return bool(wanted - set(re.findall(r"\d+", street_name or "")))
+
+
 def _house_sort_int(number: str) -> int | None:
     """Ancla para interpolar. '61-30' ≈ 61, no 6130 (CAST de SQLite)."""
     raw = (number or "").strip()
@@ -147,7 +204,8 @@ class LocalOSMGeocoder:
                  street_match_min: float = 0.80, review_band: float = 0.70,
                  valid_band: float = 0.80, soft_reject: bool = True,
                  soft_reject_min: float = 0.50,
-                 aliases_path: str | Path | None = None):
+                 aliases_path: str | Path | None = None,
+                 street_level_review: bool = True):
         self.index_path = Path(index_path).expanduser()
         if not self.index_path.exists():
             raise FileNotFoundError(f"no existe el indice {self.index_path}. "
@@ -160,6 +218,7 @@ class LocalOSMGeocoder:
         self.valid_band = valid_band
         self.soft_reject = soft_reject
         self.soft_reject_min = soft_reject_min
+        self.street_level_review = street_level_review
         self._aliases: StreetAliasStore | None = open_alias_store(aliases_path)
         self._conn = sqlite3.connect(f"file:{self.index_path}?mode=ro", uri=True)
         self._conn.execute("PRAGMA query_only = ON")
@@ -420,7 +479,7 @@ class LocalOSMGeocoder:
                 rest_clause = " AND ".join(f'"{w}"' for w in uniq_rest)
             else:
                 joiner = " AND " if strict else " OR "
-                rest_clause = joiner.join(f'"{w}"' for w in uniq_rest)
+                rest_clause = joiner.join(_fts_name_term(w) for w in uniq_rest)
             if alias_toks:
                 alias_clause = self._or_group(alias_toks)
                 parts.append(f"({rest_clause} OR {alias_clause})")
@@ -506,7 +565,88 @@ class LocalOSMGeocoder:
             return False
         # Homónimo con altura exacta en otra ciudad no bloquea interpolar
         # la altura cercana en la localidad pedida (Caseros 1800 PBA vs 1799 CABA).
-        return not place_conflict(parsed, cand)
+        if place_conflict(parsed, cand):
+            return False
+        # OSM suele dejar esa altura SIN addr:city: la ciudad de los vecinos decide
+        # si bloquea. Solo para esta decision; el candidato no se modifica, asi que
+        # el scoring no cambia (medido: mutarlo rechazaba 'Kensington' contra
+        # 'Melbourne' y 'Vienna' contra 'Wien').
+        inferred = self._inferred_city(parsed, cand)
+        if inferred is None:
+            return True
+        return not place_conflict(parsed, dataclasses.replace(cand, city=inferred))
+
+    #: radio para leer la localidad de los vecinos de un candidato sin addr:city
+    NEIGHBOUR_LOCALITY_M = 250.0
+
+    def _inferred_city(self, parsed: ParsedAddress, cand: Candidate) -> str | None:
+        """Ciudad de los vecinos para una altura exacta que OSM dejo sin ciudad.
+
+        'Av. Caseros 1800, Ciudad Autónoma de Buenos Aires': el indice tiene un
+        Caseros 1800 en Florida (provincia) SIN addr:city, y bloqueaba interpolar
+        1799/1801 en CABA. Solo si la consulta nombra un lugar y los vecinos
+        coinciden (>= 3 etiquetados, >= 60% la misma ciudad).
+        """
+        from ..resources import load_json
+        from .scoring import _query_place_labels
+
+        if cand.city or cand.district or cand.postcode or cand.id < 0:
+            return None
+        labels = _query_place_labels(parsed.original or parsed.normalized)
+        if not labels:
+            return None
+        # Solo con una localidad CURADA en la consulta (CABA y sus alias): con
+        # cualquier etiqueta, 'Sofia' chocaba contra vecinos 'София'.
+        curated = load_json("locality_expand.json", "SMART_IMPORT_LOCALITY_EXPAND_PATH")
+        groups = [{fold(str(x)) for x in g} for g in curated.get("alias_groups") or ()
+                  if isinstance(g, (list, tuple))]
+        if not any(labels & g for g in groups):
+            return None
+        cache = getattr(self, "_neighbour_city_cache", None)
+        if cache is None:
+            cache = self._neighbour_city_cache = {}
+        key = (round(cand.lat, 4), round(cand.lon, 4))
+        if key not in cache:
+            cache[key] = self._neighbour_city(cand.lat, cand.lon)
+        return cache[key]
+
+    #: dos nodos con la misma calle y altura a mas de esto son direcciones distintas
+    #: (medido: duplicados reales de OSM a 130-560 m en Dublin, Riga y Seul; un
+    #: edificio y su entrada quedan por debajo)
+    HOMONYM_KM = 0.15
+
+    def _far_same_house_km(self, best: Candidate, scored) -> float | None:
+        if not best.house_number or best.id < 0:
+            return None
+        from .scoring import haversine_km
+
+        name = normalize_text(best.street or "")
+        number = (best.house_number or "").strip().lower()
+        far = [haversine_km(best.lat, best.lon, c.lat, c.lon)
+               for (_, br), c in scored
+               if c is not best and c.id >= 0 and br.get("street", 0.0) >= 1.0
+               and (c.house_number or "").strip().lower() == number
+               and normalize_text(c.street or "") == name]
+        far = [km for km in far if km > self.HOMONYM_KM]
+        return min(far) if far else None
+
+    def _neighbour_city(self, lat: float, lon: float) -> str | None:
+        import math
+        from collections import Counter
+
+        dlat = self.NEIGHBOUR_LOCALITY_M / 111_000.0
+        dlon = dlat / max(0.2, math.cos(math.radians(lat)))
+        rows = self._conn.execute(
+            "SELECT p.city FROM places p JOIN places_rtree r ON r.id = p.id"
+            " WHERE r.max_lat >= ? AND r.min_lat <= ? AND r.max_lon >= ? AND r.min_lon <= ?"
+            " AND p.city IS NOT NULL AND p.city <> '' LIMIT 400",
+            (lat - dlat, lat + dlat, lon - dlon, lon + dlon)).fetchall()
+        if len(rows) < 3:
+            return None
+        city, count = Counter(normalize_text(c) for (c,) in rows).most_common(1)[0]
+        if count / len(rows) < 0.6:
+            return None
+        return next(c for (c,) in rows if normalize_text(c) == city)
 
     def _add_nearby(self, found: dict[int, Candidate], parsed: ParsedAddress,
                     bbox: tuple[float, float, float, float] | None) -> None:
@@ -738,19 +878,10 @@ class LocalOSMGeocoder:
                     break
         for street in streets:
             rows = self._houses_for_interp(street, want, bbox)
-            points: list[HousePoint] = []
-            for row in rows:
-                n = _house_sort_int(row.house_number or "")
-                if n is None:
-                    continue
-                points.append(HousePoint(n, row.lat, row.lon))
-            if len(points) < 2:
+            found = self._interpolate_on_stretch(parsed, street, want, rows)
+            if found is None:
                 continue
-            poly = self._street_polyline(street)
-            pt = interpolate_house(want, points, poly or None)
-            if pt is None:
-                continue
-            template = rows[0]
+            pt, template = found
             return Candidate(
                 id=-abs(template.id) or -1,
                 lat=pt[0], lon=pt[1],
@@ -767,9 +898,468 @@ class LocalOSMGeocoder:
             )
         return None
 
+    #: dos anclas mas lejos que esto son de tramos distintos (calles homonimas). Una
+    #: avenida con alturas salteadas en OSM da 7-10 m por numero (Via Emilia en
+    #: Bolonia, Reyes Heroles en Guadalajara); dos homonimas en pueblos distintos,
+    #: 160-250 m por numero (Condarco CABA-Lanus, Hector Barrueto en Santiago).
+    INTERP_GAP_M = 400.0
+    INTERP_M_PER_NUMBER = 40.0
+
+    def _plausible_anchors(self, pair: tuple[HousePoint, HousePoint]) -> bool:
+        left, right = pair
+        span = right.number - left.number
+        return haversine_m(left.lat, left.lon, right.lat, right.lon) <= (
+            self.INTERP_GAP_M + self.INTERP_M_PER_NUMBER * span)
+
+    def _interpolate_on_stretch(self, parsed: ParsedAddress, street: str, want: int,
+                                rows: list[Candidate]
+                                ) -> tuple[tuple[float, float], Candidate] | None:
+        """(punto, fila modelo) interpolando entre dos alturas del MISMO tramo.
+
+        Dos calles homonimas comparten `street` ('Condarco' en CABA y en Lanus): con
+        las alturas juntas, el 501 de una y el 549 de la otra quedaban como anclas y
+        el pin caia entre los dos pueblos, a 7,9 km. Si las anclas de siempre son
+        plausibles (cerca para lo que separa su numeracion) la cuenta no cambia. Si
+        no, se interpola solo dentro de un tramo que nombre la consulta; sin
+        localidad que elija, no se interpola.
+        """
+        from .scoring import _candidate_place_labels, _place_labels_overlap, _query_place_labels
+
+        points = [HousePoint(n, r.lat, r.lon) for r in rows
+                  if (n := _house_sort_int(r.house_number or "")) is not None]
+        if len(points) < 2:
+            return None
+        pair = (pick_brackets(want, points, same_parity=True)
+                or pick_brackets(want, points, same_parity=False))
+        if pair is None:
+            return None
+        if self._plausible_anchors(pair):
+            pt = interpolate_house(want, points, self._street_polyline(street) or None)
+            return None if pt is None else (pt, rows[0])
+
+        labels = _query_place_labels(parsed.original or parsed.normalized)
+        if not labels:
+            return None
+        cell = self.STREET_CELL_DEG
+        cells: dict[tuple[int, int], list[Candidate]] = {}
+        for row in rows:
+            if _house_sort_int(row.house_number or "") is not None:
+                cells.setdefault((int(row.lat // cell), int(row.lon // cell)), []).append(row)
+        parent = {c: c for c in cells}
+
+        def find(c):
+            while parent[c] != c:
+                parent[c] = parent[parent[c]]
+                c = parent[c]
+            return c
+
+        for ci, cj in cells:
+            for di in (-1, 0, 1):
+                for dj in (-1, 0, 1):
+                    other = (ci + di, cj + dj)
+                    if other in cells and find(other) != find((ci, cj)):
+                        parent[find(other)] = find((ci, cj))
+        grouped: dict[tuple[int, int], list[Candidate]] = {}
+        for c, members in cells.items():
+            grouped.setdefault(find(c), []).extend(members)
+        order = {row.id: i for i, row in enumerate(rows)}
+        poly: list[tuple[float, float]] | None = None
+        best: tuple[tuple, tuple[float, float], Candidate] | None = None
+        for members in grouped.values():
+            group = sorted(members, key=lambda r: order[r.id])
+            if not any(_place_labels_overlap(labels, _candidate_place_labels(r)) for r in group):
+                continue
+            group_points = [HousePoint(n, r.lat, r.lon) for r in group
+                            if (n := _house_sort_int(r.house_number or "")) is not None]
+            inner = (pick_brackets(want, group_points, same_parity=True)
+                     or pick_brackets(want, group_points, same_parity=False))
+            if inner is None or not self._plausible_anchors(inner):
+                continue
+            if poly is None:
+                poly = self._street_polyline(street)
+            pt = interpolate_house(want, group_points, poly or None)
+            if pt is None:
+                continue
+            key = (-(inner[1].number - inner[0].number), -order[group[0].id])
+            if best is None or key > best[0]:
+                best = (key, pt, group[0])
+        return None if best is None else (best[1], best[2])
+
+    # ---------- cascada de rescate ----------
+
+    @property
+    def _vocab(self) -> StreetVocabulary:
+        vocab = getattr(self, "_street_vocab", None)
+        if vocab is None:
+            vocab = self._street_vocab = StreetVocabulary(self._conn)
+        return vocab
+
+    def _publishable(self, result: GeocodeResult) -> bool:
+        """El pin que el runner va a mostrar (no uno que `_stamp` borra por flojo)."""
+        return (result.has_coords and result.status in (STATUS_MATCHED, STATUS_LOW)
+                and float(result.confidence or 0.0) >= float(self.review_band))
+
     def geocode(self, address: str, origin: tuple[float, float] | None = None,
                 bbox: tuple[float, float, float, float] | None = None,
                 parsed: ParsedAddress | None = None) -> GeocodeResult:
+        """Busqueda normal y, SOLO si no dio un pin publicable, tres rescates.
+
+        La condicion de entrada es lo que hace a estos cambios locales: una fila
+        que hoy geocodifica no pasa por aca, asi que no puede cambiar de pin.
+
+          1. numero pegado a la calle ('Crisantemos1904')
+          2. calle resuelta contra el indice (apellido, truncada, iniciales,
+             ruido, typo) → siempre ambar
+          3. esquina ('Garibaldi y Montiel') → siempre ambar
+        """
+        # Una esquina clara se resuelve ANTES que la busqueda normal: si no, la
+        # busqueda encuentra una de las dos calles sola ('Montiel', nivel calle)
+        # y el pin cae en el centroide, a cuadras de la esquina.
+        corner = self._retry_intersection(address, origin, bbox, strict=True)
+        if corner is not None and self._publishable(corner):
+            clusters = corner.detail.pop("_rescue_clusters", None)
+            if self.rescue_plausible(corner, address, clusters=clusters, origin=origin)[0]:
+                return corner
+        result = self._geocode_core(address, origin=origin, bbox=bbox, parsed=parsed)
+        if self._publishable(result) or result.status == STATUS_ERROR:
+            return result
+        try:
+            for attempt in (self._retry_glued_number, self._retry_number_first,
+                            self._retry_resolved_street, self._retry_intersection):
+                alt = attempt(address, origin, bbox)
+                if alt is None or not self._publishable(alt):
+                    continue
+                names = alt.detail.pop("_rescue_names", None)
+                clusters = alt.detail.pop("_rescue_clusters", None)
+                ok, _why = self.rescue_plausible(alt, address, names=names,
+                                                 clusters=clusters, origin=origin)
+                if ok:
+                    if names:
+                        # El runner re-valida las filas que rescato el gate: con la
+                        # calle del texto crudo ('Los crisantelmos1904' → 'los') la
+                        # descartaba. Viaja la calle con la que se valido.
+                        alt.detail["rescue_names"] = list(names)
+                    return alt
+        except sqlite3.OperationalError:
+            return result
+        return result
+
+    #: dos celdas de ~900 m que se tocan son la misma calle; separadas, homonimas
+    STREET_CELL_DEG = 0.008
+
+    def _outside_named_city(self, result: GeocodeResult, address: str,
+                            origin: tuple[float, float] | None) -> str | None:
+        """Nombre de la ciudad que pide la consulta si el pin cae fuera de su radio.
+
+        El radio sale de la poblacion de GeoNames (sqrt(pob)/100 km, minimo 3) + 2 km:
+        Tandil ~5 km, Bnei Brak ~6,5 km, Vilna ~9 km. Solo ciudades a menos de 60
+        km del depot: un 'Palermo' de Sicilia no opina sobre CABA.
+        """
+        import math
+
+        from .city_lookup import city_matches
+        from .scoring import _query_place_labels, haversine_km
+
+        if origin is None:
+            return None
+        for label in _query_place_labels(address):
+            near = [h for h in city_matches(label)
+                    if haversine_km(origin[0], origin[1], h.lat, h.lon) <= NEARBY_LOCALITY_KM]
+            if not near:
+                continue
+            hit = min(near, key=lambda h: haversine_km(h.lat, h.lon, result.lat, result.lon))
+            radius = max(3.0, math.sqrt(max(hit.population, 0)) / 100.0) + 2.0
+            if haversine_km(hit.lat, hit.lon, result.lat, result.lon) > radius:
+                return hit.name
+        return None
+
+    def rescue_plausible(self, result: GeocodeResult, address: str, *,
+                         names: list[str] | None = None,
+                         clusters: int | None = None,
+                         origin: tuple[float, float] | None = None) -> tuple[bool, str]:
+        """Un pin RESCATADO necesita evidencia de que es ESE lugar.
+
+        Medido 2026-09-15 (regresion por el camino de produccion): sin guarda,
+        los rescates caian en homonimos de otro partido o comuna — 'CONDARCO 525'
+        a 8 km, 'Marie du marché 16' a 12 km, '21 Bruce Street' a 7,7 km — justo
+        donde OSM no trae addr:city para verificar. Reglas, en orden:
+
+          1. un rescate no termina en el centroide de una calle (no ubica la
+             puerta) ni en una altura que se repite en una calle homonima;
+          2. la calle del pin tiene que conocerse en el indice;
+          3. si esa calle es una sola en el extract, alcanza;
+          4. si hay homonimos, la localidad que nombra la consulta tiene que
+             elegir UNO: la ciudad de los vecinos del pin coincide y la de los
+             otros grupos no.
+        """
+        if not result.has_coords:
+            return True, ""
+        detail = result.detail or {}
+        core_reason = str(detail.get("core_reason") or detail.get("reason") or "")
+        if core_reason == "street_level_match":
+            return False, "un rescate a nivel calle no ubica la puerta"
+        if core_reason.startswith("misma altura en una calle homonima"):
+            return False, core_reason
+        outside = self._outside_named_city(result, address, origin)
+        if outside:
+            return False, f"el pin cae fuera de {outside}"
+        if clusters is None and isinstance(detail.get("intersection"), dict):
+            # Una esquina que ya valido `geocode` vuelve a pasar por aca desde el
+            # runner (fila rescatada por el gate). Sin sus cruces se le buscaba una
+            # calle a 'Garibaldi y Montiel' entero y se descartaba.
+            clusters = detail["intersection"].get("clusters")
+        if clusters is not None:
+            if clusters <= 1:
+                return True, ""
+            return False, "esquina homonima en otro lugar"
+        if names is None and detail.get("rescue_names"):
+            names = list(detail["rescue_names"])
+        if names is None:
+            road = (parse(address).road or "").strip()
+            _, names = self._vocab.canonical(road) if road else (None, [])
+        if not names:
+            return False, "la calle no se reconoce en el indice"
+        # El pin tiene que estar SOBRE esa calle: la busqueda normal con el texto
+        # original ('wauters 1') puede caer en otra que la contiene ('Rue Joseph
+        # Wauters', en otra comuna).
+        pin_street = str(detail.get("street") or "")
+        if pin_street:
+            pin_key = tuple(name_tokens(pin_street)[1])
+            if not any(tuple(name_tokens(n)[1]) == pin_key for n in names):
+                return False, "el pin no esta sobre la calle reconocida"
+        else:
+            matched = set(normalize_text(result.matched_text or "").split())
+            if matched and not any(
+                    set(name_tokens(n)[1]) <= {fold(t) for t in matched} for n in names):
+                return False, "el pin no esta sobre la calle reconocida"
+        groups = self._street_groups(tuple(sorted(set(names))))
+        if len(groups) <= 1:
+            return True, ""
+        return self._locality_picks_group(result, address, groups)
+
+    def _locality_picks_group(self, result: GeocodeResult, address: str,
+                              groups: list[tuple[float, float, float]]) -> tuple[bool, str]:
+        from .intersection import haversine_m
+        from .scoring import (
+            Candidate as _Cand, _candidate_place_labels, _place_labels_overlap,
+            _query_place_labels,
+        )
+
+        labels = _query_place_labels(address)
+        if not labels:
+            return False, f"calle homonima en {len(groups)} lugares y la consulta no dice cual"
+
+        def matches(lat: float, lon: float) -> bool | None:
+            city = self._neighbour_city(lat, lon)
+            if not city:
+                return None
+            probe = _Cand(id=0, lat=lat, lon=lon, kind=None, name=None, house_number=None,
+                          street=None, city=city, district=None, state=None, postcode=None,
+                          country=None, normalized_text="")
+            return _place_labels_overlap(labels, _candidate_place_labels(probe))
+
+        if matches(result.lat, result.lon) is not True:
+            return False, "calle homonima y la localidad del pin no coincide"
+        own = min(groups, key=lambda g: haversine_m(result.lat, result.lon, g[0], g[1]))
+        for g in groups:
+            if g is own:
+                continue
+            if matches(g[0], g[1]) is not False:
+                return False, "calle homonima tambien en la localidad pedida"
+        return True, ""
+
+    def _street_groups(self, names: tuple[str, ...]) -> list[tuple[float, float, float]]:
+        """(lat, lon, extension km) de cada grupo de nodos de esa calle en el extract.
+
+        Una avenida larga con nodos seguidos es un grupo; la misma calle en otro
+        pueblo, separada por mas de una celda (~900 m) sin nodos, es otro.
+        """
+        cache = getattr(self, "_extent_cache", None)
+        if cache is None:
+            cache = self._extent_cache = {}
+        if names in cache:
+            return cache[names]
+        from .intersection import _points, haversine_m
+
+        cell = self.STREET_CELL_DEG
+        cells: dict[tuple[int, int], list[tuple[float, float]]] = {}
+        for lat, lon in _points(self._conn, list(names)):
+            cells.setdefault((int(lat // cell), int(lon // cell)), []).append((lat, lon))
+        parent = {c: c for c in cells}
+
+        def find(c):
+            while parent[c] != c:
+                parent[c] = parent[parent[c]]
+                c = parent[c]
+            return c
+
+        for (ci, cj) in cells:
+            for di in (-1, 0, 1):
+                for dj in (-1, 0, 1):
+                    n = (ci + di, cj + dj)
+                    if n in cells:
+                        a, b = find((ci, cj)), find(n)
+                        if a != b:
+                            parent[a] = b
+        groups: dict[tuple[int, int], list[tuple[float, float]]] = {}
+        for c, pts in cells.items():
+            groups.setdefault(find(c), []).extend(pts)
+        out: list[tuple[float, float, float]] = []
+        for pts in groups.values():
+            lats = [p[0] for p in pts]
+            lons = [p[1] for p in pts]
+            out.append((sum(lats) / len(lats), sum(lons) / len(lons),
+                        haversine_m(min(lats), min(lons), max(lats), max(lons)) / 1000.0))
+        cache[names] = out
+        return out
+
+    def street_evidence(self, address: str) -> str | None:
+        """Por que una direccion sin forma de direccion igual vale la busqueda.
+
+        El gate del runner descarta 'MORENO 245' (0.45: una palabra y 3 digitos)
+        sin buscarla, y deja pasar 'Remito 5561' porque confunde los 4 digitos con
+        un codigo postal. La evidencia que falta la tiene el indice: 'Moreno' es
+        una calle del extract y 'Remito' no. Solo se consulta para filas que el
+        gate ya iba a descartar.
+        """
+        text = address or ""
+        fixed = _GLUED_NUMBER.sub(r"\1 \2", text)
+        m = _NUMBER_FIRST.match(fixed)
+        if m:
+            fixed = f"{m.group('street').strip()} {m.group('num')}{m.group('rest') or ''}"
+        parsed = parse(fixed)
+        if parsed.road and parsed.house_number:
+            if self._vocab.exists(parsed.road):
+                return "calle del indice"
+            if self._vocab.resolve(parsed.road) is not None:
+                return "calle del indice (corregida)"
+        for side_a, side_b in intersection_candidates(text):
+            res_a, _ = self._vocab.canonical(side_a)
+            res_b, _ = self._vocab.canonical(side_b)
+            if res_a is not None and res_b is not None and res_a.name != res_b.name:
+                return "esquina de calles del indice"
+        return None
+
+    def _retry_glued_number(self, address: str, origin, bbox) -> GeocodeResult | None:
+        fixed = _GLUED_NUMBER.sub(r"\1 \2", address or "")
+        if fixed == address:
+            return None
+        alt = self._geocode_core(fixed, origin=origin, bbox=bbox)
+        if not self._publishable(alt):
+            alt = self._retry_resolved_street(fixed, origin, bbox) or alt
+        if not alt.has_coords:
+            return None
+        # Separar el numero cambia el texto: como toda correccion, pide confirmacion.
+        alt.status = STATUS_LOW
+        road = (parse(fixed).road or "").strip()
+        _, names = self._vocab.canonical(road) if road else (None, [])
+        resolved = (alt.detail or {}).get("street_resolved")
+        if resolved:
+            _, names = self._vocab.canonical(resolved.get("to") or "")
+        alt.detail = {**(alt.detail or {}), "soft_reject": True,
+                      "glued_number": {"from": address, "to": fixed},
+                      "_rescue_names": names or None}
+        return alt
+
+    def _retry_number_first(self, address: str, origin, bbox) -> GeocodeResult | None:
+        """'32 Flinders Street, Melbourne, VIC, Australia' → 'Flinders Street 32, …'.
+
+        Con 3+ segmentos despues del numero, el parser lee el orden ingles como un
+        compuesto OA invertido ('185 FLORES, VENANCIO, Gral.') y la calle queda
+        'Flinders Street Melbourne VIC Australia'. El depot agrega justamente esos
+        segmentos. Se reordena solo si el primer segmento ya es una calle completa
+        (tipo de via al principio o al final).
+        """
+        from ..resources import fold, label_set
+
+        m = _NUMBER_FIRST.match(address or "")
+        if not m:
+            return None
+        street = m.group("street").strip()
+        words = [fold(w.strip(".,;:")) for w in street.split() if w.strip(".,;:")]
+        tokens = label_set("street_tokens", None)
+        if len(words) < 2 or not (words[0] in tokens or words[-1] in tokens):
+            return None
+        rewritten = f"{street} {m.group('num')}{m.group('rest') or ''}"
+        if parse(rewritten).road == parse(address).road:
+            return None
+        alt = self._geocode_core(rewritten, origin=origin, bbox=bbox)
+        if not alt.has_coords:
+            return None
+        _, names = self._vocab.canonical(street)
+        alt.detail = {**(alt.detail or {}), "number_first": {"from": address, "to": rewritten},
+                      "_rescue_names": names or None}
+        return alt
+
+    def _retry_resolved_street(self, address: str, origin, bbox) -> GeocodeResult | None:
+        parsed = parse(address)
+        road = (parsed.road or "").strip()
+        if not road or self._vocab.exists(road):
+            return None
+        # 'Uccle', 'Palermo': una localidad cercana no se resuelve como apellido de calle
+        if _is_nearby_locality(road, origin):
+            return None
+        resolution = self._vocab.resolve(road)
+        if resolution is None:
+            return None
+        pattern = r"\s+".join(re.escape(tok) for tok in road.split())
+        rewritten, count = re.subn(pattern, resolution.name, address, count=1,
+                                   flags=re.IGNORECASE)
+        if not count:
+            return None
+        alt = self._geocode_core(rewritten, origin=origin, bbox=bbox)
+        if not alt.has_coords:
+            return None
+        # Corregir el nombre no puede pintar verde: el operador confirma la calle.
+        alt.status = STATUS_LOW
+        _, names = self._vocab.canonical(resolution.name)
+        core_reason = (alt.detail or {}).get("reason")
+        alt.detail = {**(alt.detail or {}), "soft_reject": True,
+                      "core_reason": core_reason,
+                      "reason": f"calle corregida ({resolution.kind}): {road} → {resolution.name}",
+                      "street_resolved": resolution.as_detail(),
+                      "_rescue_names": names or [resolution.name]}
+        return alt
+
+    def _retry_intersection(self, address: str, origin, bbox, *,
+                            strict: bool = False) -> GeocodeResult | None:
+        """`strict`: solo si ningun numero del texto queda afuera de los nombres.
+
+        'Montiel y 25 de mayo' es esquina ('25' es parte del nombre); 'San Martin
+        1322 y Moreno' trae una altura, y ahi primero manda la busqueda normal.
+        """
+        for side_a, side_b in intersection_candidates(address):
+            res_a, names_a = self._vocab.canonical(side_a)
+            res_b, names_b = self._vocab.canonical(side_b)
+            if res_a is None or res_b is None or set(names_a) & set(names_b):
+                continue
+            if strict and (_stray_digits(side_a, res_a.name) or _stray_digits(side_b, res_b.name)):
+                continue
+            crossing = find_crossing(self._conn, names_a, names_b, origin)
+            if crossing is None:
+                continue
+            if bbox:
+                north, south, east, west = bbox
+                if not (south <= crossing.lat <= north and west <= crossing.lon <= east):
+                    continue
+            return GeocodeResult(
+                status=STATUS_LOW, lat=crossing.lat, lon=crossing.lon,
+                confidence=INTERSECTION_CONFIDENCE, precision="intersection",
+                source=self.name, normalized_address=normalize_text(address),
+                matched_text=f"{res_a.name} y {res_b.name}",
+                detail={"reason": f"esquina: {res_a.name} y {res_b.name}",
+                        "soft_reject": True, "raw_score": INTERSECTION_CONFIDENCE,
+                        "intersection": {"a": res_a.as_detail(), "b": res_b.as_detail(),
+                                         "gap_m": crossing.gap_m,
+                                         "clusters": crossing.clusters,
+                                         "method": crossing.method},
+                        "_rescue_clusters": crossing.clusters},
+            )
+        return None
+
+    def _geocode_core(self, address: str, origin: tuple[float, float] | None = None,
+                      bbox: tuple[float, float, float, float] | None = None,
+                      parsed: ParsedAddress | None = None) -> GeocodeResult:
         parsed = parsed or parse(address)
         if not parsed.normalized:
             return GeocodeResult(status=STATUS_NOT_FOUND, source=self.name,
@@ -810,7 +1400,7 @@ class LocalOSMGeocoder:
                 detail={"candidates": len(candidates), "reason": "place_mismatch",
                         "best_score": best_score, "raw_score": best_score,
                         "breakdown": breakdown,
-                        "osm": f"{best.kind or ''}:{best.id}"},
+                        "osm": f"{best.kind or ''}:{best.id}", "street": best.street or best.name},
             )
         scored = compatible
         (best_score, breakdown), best = max(scored, key=_rank_key)
@@ -836,7 +1426,7 @@ class LocalOSMGeocoder:
                                  detail={"candidates": len(candidates), "reason": reason,
                                          "best_score": best_score, "raw_score": best_score,
                                          "breakdown": breakdown,
-                                         "osm": f"{best.kind or ''}:{best.id}"})
+                                         "osm": f"{best.kind or ''}:{best.id}", "street": best.street or best.name})
 
         def revisar(reason: str, *, precision: str) -> GeocodeResult:
             """Soft-reject: pin del mejor candidato + Review (score REAL)."""
@@ -848,7 +1438,7 @@ class LocalOSMGeocoder:
                 detail={"candidates": len(candidates), "reason": reason,
                         "best_score": best_score, "raw_score": best_score,
                         "breakdown": breakdown, "soft_reject": True,
-                        "osm": f"{best.kind or ''}:{best.id}"},
+                        "osm": f"{best.kind or ''}:{best.id}", "street": best.street or best.name},
             )
 
         def soft_or_drop(reason: str, *, precision: str = "suspect") -> GeocodeResult:
@@ -870,7 +1460,9 @@ class LocalOSMGeocoder:
 
         if street_only:
             # Nivel calle o altura interpolada: pin util, no puerta OSM.
-            # Interpolado siempre Review (soft_reject): no afirmar verde.
+            # Interpolado siempre Review (soft_reject): no afirmar verde. Nivel
+            # calle tambien, salvo GEOCODE_STREET_LEVEL_REVIEW=false: el score
+            # confirma la calle, no la puerta (ver config).
             if best_score < self.street_level_floor:
                 return soft_or_drop("match a nivel calle demasiado debil",
                                     precision="street_weak")
@@ -882,9 +1474,17 @@ class LocalOSMGeocoder:
                 matched_text=best.normalized_text,
                 detail={"candidates": len(candidates), "breakdown": breakdown,
                         "raw_score": best_score, "reason": reason,
-                        "soft_reject": interpolated,
-                        "osm": f"{best.kind or ''}:{best.id}"},
+                        "soft_reject": interpolated or self.street_level_review,
+                        "osm": f"{best.kind or ''}:{best.id}", "street": best.street or best.name},
             )
+
+        # La misma altura en una calle homonima a kilometros: una calle no repite
+        # su numeracion, asi que son dos calles distintas y el depot desempato a
+        # ciegas ('21 Bruce Street' sin suburbio, Melbourne: el otro estaba a 7,7 km).
+        homonym_km = self._far_same_house_km(best, scored)
+        if homonym_km is not None:
+            return revisar(f"misma altura en una calle homonima a {homonym_km * 1000:.0f} m",
+                           precision=best.precision)
 
         if best_score >= self.match_threshold and best_score >= self.valid_band:
             status = STATUS_MATCHED
@@ -901,5 +1501,5 @@ class LocalOSMGeocoder:
             matched_text=best.normalized_text,
             detail={"candidates": len(candidates), "breakdown": breakdown,
                     "raw_score": best_score,
-                    "osm": f"{best.kind or ''}:{best.id}"},
+                    "osm": f"{best.kind or ''}:{best.id}", "street": best.street or best.name},
         )

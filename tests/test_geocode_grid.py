@@ -173,6 +173,54 @@ def test_fragata_sarmiento_no_es_sarmiento():
                          collins.normalized) == 1.0
 
 
+@pytest.mark.parametrize("query,cand,esperado", [
+    ("Juan B Justo 4500, CABA", "Avenida Juan Bautista Justo", 1.0),
+    ("Av. Juan B. Justo 4500, CABA", "Avenida Juan Bautista Justo", 1.0),
+    ("Marcelo T de Alvear 1200, CABA", "Marcelo Torcuato de Alvear", 1.0),
+    ("Juan Bautista Justo 4500, CABA", "Juan B. Justo", 1.0),
+])
+def test_una_inicial_es_la_misma_calle_que_el_nombre_completo(query, cand, esperado):
+    """OSM guarda las alturas de CABA bajo 'Avenida Juan Bautista Justo'; la gente
+    escribe 'Juan B Justo'. La 'b' quedaba como token de la calle pedida que el
+    candidato no tiene y la calle puntuaba 0: sin pin para una avenida entera."""
+    parsed = parse(query)
+    assert _street_score(parsed, normalize_text(cand), parsed.normalized) == esperado
+
+
+@pytest.mark.parametrize("query,cand", [
+    ("Juan B Justo 4500, CABA", "Juan Bautista Alberdi"),   # otra palabra distinta
+    ("Juan B Justo 4500, CABA", "Juan Justo"),              # distinto largo
+    ("Juan B Justo 4500, CABA", "Juan Carlos Justo"),       # la inicial no es el prefijo
+])
+def test_la_inicial_no_alinea_calles_distintas(query, cand):
+    parsed = parse(query)
+    assert _street_score(parsed, normalize_text(cand), parsed.normalized) < 1.0
+
+
+def test_fts_la_inicial_busca_por_prefijo_y_una_letra_sola_no():
+    g = LocalOSMGeocoder.__new__(LocalOSMGeocoder)
+    q = LocalOSMGeocoder._precise_query(g, parse("Juan B Justo 4500, CABA"))
+    assert q is not None and '"b"*' in q and '"juan"' in q and '"justo"' in q
+    # 'AVE U': la letra ES el nombre; por prefijo traeria Union, University…
+    grid = LocalOSMGeocoder._precise_query(g, parse("AVE U, 737, 11223"))
+    assert grid is not None and '"u"*' not in grid
+
+
+def test_juan_b_justo_encuentra_la_puerta_en_juan_bautista_justo(tmp_path):
+    """Antes: sin pin (nivel calle 0.66) y 'Juan B Justo 2500' caia en la homonima
+    'Juan B. Justo' de otro partido. Ahora la puerta de CABA."""
+    g = _index(tmp_path / "jbj.sqlite", [
+        (-34.6082, -58.4637, "4500", "Avenida Juan Bautista Justo", "Buenos Aires",
+         "4500 avenida juan bautista justo"),
+        (-34.5194, -58.5021, "4500", "Juan B. Justo", "Florida",
+         "4500 juan b justo florida"),
+    ])
+    r = g.geocode("Juan B Justo 4500, CABA, Argentina", origin=(-34.598, -58.416))
+    assert r.has_coords
+    assert r.lat == pytest.approx(-34.6082, abs=1e-4)
+    assert r.precision == "housenumber"
+
+
 def test_fts_fragata_sarmiento_exige_ambos_tokens():
     g = LocalOSMGeocoder.__new__(LocalOSMGeocoder)
     p = parse("Fragata Sarmiento 1572, Tandil")

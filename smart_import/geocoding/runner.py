@@ -10,7 +10,9 @@ from __future__ import annotations
 
 import csv
 import json
+import logging
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -28,6 +30,7 @@ from .bands import BAND_NEEDS_GEOCODING, BAND_REVIEW, BAND_VALID, band_for
 from .cache import GeocodeCache
 from .depot_context import DepotContext
 from .osm_geocoder import LocalOSMGeocoder
+from .osm_index import index_identity
 from .query import (
     build_geocode_query, cleaned_query, is_weak_result, pick_better,
 )
@@ -53,7 +56,11 @@ class GeocodeReport:
     errors: int = 0
     rejected_far: int = 0
     skipped_low_confidence: int = 0
+    #: filas que el gate de forma iba a descartar y el indice rescato
+    rescued_by_index: int = 0
     enriched: int = 0
+    #: 'banda:motivo' → filas. Sin direcciones: es lo que va al log INFO.
+    reasons: Counter = field(default_factory=Counter)
     cache: dict = field(default_factory=dict)
     elapsed_s: float = 0.0
     index: str = ""
@@ -72,6 +79,8 @@ class GeocodeReport:
             "errors": self.errors,
             "rejected_far": self.rejected_far,
             "skipped_low_confidence": self.skipped_low_confidence,
+            "rescued_by_index": self.rescued_by_index,
+            "reasons": dict(self.reasons),
             "enriched": self.enriched,
             "needs_review": self.low_confidence + self.not_found,
             "cache": self.cache,
@@ -157,7 +166,8 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
         review_band=cfg.geocode_review_band, valid_band=cfg.geocode_valid_band,
         soft_reject=cfg.geocode_soft_reject,
         soft_reject_min=cfg.geocode_soft_reject_min,
-        aliases_path=cfg.street_aliases_path)
+        aliases_path=cfg.street_aliases_path,
+        street_level_review=cfg.geocode_street_level_review)
     try:
         cache = GeocodeCache(cache_path or cfg.cache_path)
     except BaseException:
@@ -176,16 +186,16 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
               low_conf_km=cfg.max_low_confidence_km,
               fallback_externo=cfg.geocoder_fallback)
         # Incluir umbrales + enhance en la clave: no reusar cache de otra semantica.
+        # El indice va por identidad y no por mtime: el geocoder lo toca al abrirlo.
         index_file = Path(index_path).resolve()
-        stat = index_file.stat()
         context = json.dumps({
-            "index": str(index_file), "mtime_ns": stat.st_mtime_ns,
-            "size": stat.st_size, "inode": stat.st_ino,
+            "index": str(index_file), "index_id": index_identity(index_file),
             "origin": effective_origin, "bbox": bbox,
             "settings": {name: getattr(cfg, name) for name in (
                 "match_threshold", "low_confidence_threshold", "geocode_valid_band",
                 "geocode_review_band", "geocode_street_level_floor", "geocode_street_match_min",
-                "geocode_soft_reject", "geocode_soft_reject_min", "address_parser", "libpostal_enabled")},
+                "geocode_soft_reject", "geocode_soft_reject_min", "geocode_street_level_review",
+                "address_parser", "libpostal_enabled")},
             "enhance": bool(enhance_addresses), "query_version": 2,
         }, sort_keys=True, separators=(",", ":"), allow_nan=False)
         report = GeocodeReport(rows=len(rows), index=str(index_path))
@@ -229,7 +239,15 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                     continue
 
                 evidence = scorer.score(display)
-                if evidence.score < address_min:
+                # El score mira la FORMA del texto: 'MORENO 245' (0.45) no la tiene y
+                # 'Remito 5561' (0.65, 4 digitos leidos como CP) si. Antes de
+                # descartar se le pregunta al indice si la calle o la esquina
+                # existen: solo cambia filas que hoy se tiraban sin buscar.
+                rescue = (geocoder.street_evidence(query)
+                          if evidence.score < address_min else None)
+                if rescue is not None:
+                    report.rescued_by_index += 1
+                if evidence.score < address_min and rescue is None:
                     _stamp(row, GeocodeResult(
                         status=STATUS_NOT_FOUND,
                         detail={"reason": "sin evidencia suficiente de direccion",
@@ -237,9 +255,13 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                                 "evidence": list(evidence.evidence)}), bands)
                     report.skipped_low_confidence += 1
                     report.not_found += 1
+                    _count_reason(report, row)
                     _sample(report, row, display,
                             GeocodeResult(status=STATUS_NOT_FOUND,
                                           detail={"address_score": round(evidence.score, 3)}))
+                    _log_row(display, row, cached=False, query=query,
+                             why=f"gate {evidence.score:.2f} < {address_min:.2f}: "
+                                 + "; ".join(evidence.evidence))
                     continue
 
                 result = _lookup(cache, geocoder, query, context, effective_origin, bbox)
@@ -263,6 +285,19 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                         detail={"reason": "geocode_returned_none"},
                     )
 
+                # Una fila que entro por evidencia del indice (el gate la iba a
+                # tirar) no puede terminar en OTRA localidad: 'CONDARCO 525' en
+                # un Condarco de otro partido a 8 km es peor que sin pin.
+                if rescue is not None and result.has_coords:
+                    plausible, why = geocoder.rescue_plausible(result, query,
+                                                               origin=effective_origin)
+                    if not plausible:
+                        result = GeocodeResult(
+                            status=STATUS_NOT_FOUND, confidence=result.confidence,
+                            precision=result.precision, source=result.source,
+                            detail={"reason": f"rescate descartado: {why}",
+                                    "raw_score": result.confidence})
+
                 if result.status in (STATUS_MATCHED, STATUS_LOW) and result.has_coords:
                     result = _apply_depot_guards(
                         result, depot=depot, cfg=cfg, report=report,
@@ -270,9 +305,10 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                     if result.status == STATUS_NOT_FOUND:
                         _stamp(row, result, bands)
                         report.not_found += 1
+                        _count_reason(report, row)
                         _sample(report, row, display, result, query=query)
-                        if i <= 12:
-                            _log_row(display, row, cached=False, query=query)
+                        _log_row(display, row, cached=False, query=query, result=result,
+                                 rescue=rescue)
                         continue
                     row["lat"] = render(result.lat)
                     row["lng"] = render(result.lon)
@@ -290,9 +326,9 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
                 else:
                     report.not_found += 1
                     _sample(report, row, display, result, query=query)
-
-                if i <= 12:
-                    _log_row(display, row, cached=False, query=query)
+                _count_reason(report, row)
+                _log_row(display, row, cached=False, query=query, result=result,
+                         rescue=rescue)
 
             finally:
                 if progress and (i == 1 or i % 25 == 0 or i == len(rows)):
@@ -322,6 +358,15 @@ def run(input_path: str | Path, output_path: str | Path, index_path: str | Path,
           reintentos_limpios=retries or None,
           enhance=bool(enhance_addresses) or None,
           errores=report.errors or None)
+    for band in (BAND_NEEDS_GEOCODING, BAND_REVIEW, BAND_VALID):
+        motivos = sorted(((k.split(":", 1)[1], v) for k, v in report.reasons.items()
+                          if k.startswith(f"{band}:")), key=lambda kv: -kv[1])
+        if motivos:
+            stage(logger, "GEOCODE", f"motivos {band}",
+                  **{k: v for k, v in motivos})
+    if report.rescued_by_index:
+        stage(logger, "GEOCODE", "gate rescatado por el indice",
+              filas=report.rescued_by_index)
     stage(logger, "GEOCODE", "cache", hits=cache_stats["hits"],
           misses=cache_stats["misses"], hit_rate=f"{cache_stats['hit_rate']:.0%}")
     stage(logger, "DONE", "geocode terminado", salida=str(dst),
@@ -366,13 +411,69 @@ def _apply_depot_guards(result: GeocodeResult, *, depot: DepotContext | None,
     return result
 
 
-def _log_row(address: str, row: dict, *, cached: bool, query: str | None = None) -> None:
-    """Log post-stamp: banda + coords finales (lo mismo que ve la UI)."""
+def _reason_key(row: dict) -> str:
+    """Motivo corto y SIN datos del cliente, para contar en el log INFO."""
+    band = row.get("geocode_band") or BAND_NEEDS_GEOCODING
+    reason = (row.get("geocode_reason") or "").lower()
+    precision = (row.get("geocode_precision") or "").lower()
+    status = (row.get("geocode_status") or "").lower()
+    if band == BAND_NEEDS_GEOCODING:
+        if "sin evidencia" in reason:
+            key = "sin_evidencia"
+        elif "no coincide" in reason:
+            key = "calle_no_coincide"
+        elif "far_from_depot" in reason or "outside_operating" in reason:
+            key = "lejos_del_depot"
+        elif "place_mismatch" in reason:
+            key = "otra_ciudad"
+        elif "debil" in reason or "umbral" in reason or "below" in reason:
+            key = "match_debil"
+        elif status == "error":
+            key = "error"
+        else:
+            key = "sin_candidato"
+    elif band == BAND_REVIEW:
+        if precision == "intersection":
+            key = "esquina"
+        elif "calle corregida" in reason:
+            key = "calle_corregida"
+        elif "interpolated" in reason:
+            key = "altura_interpolada"
+        elif "street_level" in reason:
+            key = "nivel_calle"
+        elif precision == "street_mismatch":
+            key = "calle_distinta"
+        else:
+            key = "confianza_media"
+    else:
+        if status == "already_geocoded" or status == "manual":
+            key = "ya_tenia_coordenadas"
+        elif precision == "housenumber":
+            key = "puerta_exacta"
+        elif "street_level" in reason:
+            key = "nivel_calle"
+        else:
+            key = "otro"
+    return f"{band}:{key}"
+
+
+def _count_reason(report: "GeocodeReport", row: dict) -> None:
+    report.reasons[_reason_key(row)] += 1
+
+
+def _log_row(address: str, row: dict, *, cached: bool, query: str | None = None,
+             result: GeocodeResult | None = None, rescue: str | None = None,
+             why: str | None = None) -> None:
+    """Una linea por fila en DEBUG (SMART_IMPORT_VERBOSE=true): que salio y POR QUE.
+
+    Lleva la direccion del cliente, por eso no va en INFO (ver logging_setup.detail).
+    """
+    if not logger.isEnabledFor(logging.DEBUG):
+        return
     band = row.get("geocode_band") or "-"
     conf = row.get("geocode_confidence") or row.get("geocode_raw_score") or "0"
     try:
-        conf_f = float(conf)
-        conf_s = f"{conf_f:.2f}"
+        conf_s = f"{float(conf):.2f}"
     except (TypeError, ValueError):
         conf_s = "0.00"
     lat, lng = row.get("lat") or "", row.get("lng") or ""
@@ -382,8 +483,13 @@ def _log_row(address: str, row: dict, *, cached: bool, query: str | None = None)
     label = address[:40]
     if query and query != address:
         label = f"{address[:28]}→{query[:20]}"
+    motivo = why or row.get("geocode_reason") or ""
+    osm = (result.matched_text or "")[:40] if result is not None else ""
+    extra = f" osm='{osm}'" if osm else ""
+    if rescue:
+        extra += f" gate:{rescue}"
     detail(logger, f"{label:<40} {band:<16} {conf_s} {prec:<11} "
-                   f"{coords:<22} ({origen})")
+                   f"{coords:<22} ({origen}) {motivo[:70]}{extra}")
 
 
 def _stamp(row: dict, result: GeocodeResult, bands: tuple[float, float] = (0.80, 0.70),
@@ -394,7 +500,10 @@ def _stamp(row: dict, result: GeocodeResult, bands: tuple[float, float] = (0.80,
     las trae en el `GeocodeResult`: sin esto quedaria marcada como si hubiera que
     ubicarla a mano.
 
-    `geocode_confidence` = score REAL cuando hay pin.
+    `geocode_confidence` = el % que ve el operador. En ambar se recorta debajo del
+    piso verde: un 'Review 99%' al lado de un 'Valid 98%' (Tandil, 2026-09-15)
+    decia que el ambar era mas seguro que el verde. El score textual real queda
+    siempre en `geocode_raw_score`.
     Sin pin se publica `geocode_raw_score` / `geocode_reason` para diagnosticar
     candidatos descartados (p.ej. Callao 0.90 sin calle).
     """
@@ -422,6 +531,9 @@ def _stamp(row: dict, result: GeocodeResult, bands: tuple[float, float] = (0.80,
         # que si no saldria verde por tener el score alto.
         force_review=soft,
     )
+    if row["geocode_band"] == BAND_REVIEW and con_pin and result.confidence:
+        shown = min(float(result.confidence), round(valid_at - 0.01, 3))
+        row["geocode_confidence"] = f"{shown:.3f}"
     # Soft pin debajo del corte ambar: no dejar lat/lng colgados como "listos".
     if row["geocode_band"] == BAND_NEEDS_GEOCODING and con_pin and result.status != STATUS_ALREADY:
         row["lat"] = ""

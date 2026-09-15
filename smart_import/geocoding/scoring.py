@@ -349,6 +349,31 @@ def _strip_way_type(nombre: str) -> str:
     return " ".join(palabras) if palabras else nombre
 
 
+def _align_initials(query_name: str, cand_name: str) -> str:
+    """El nombre pedido con sus iniciales completadas, si es la misma calle.
+
+    'juan b justo' y 'juan bautista justo' (asi guarda OSM las alturas de CABA)
+    tienen las mismas palabras salvo una inicial: son la misma via. Sin esto la
+    'b' quedaba como token de la calle pedida que el candidato no tiene y la
+    calle puntuaba 0. Se exige el mismo largo y que TODA otra palabra coincida:
+    'juan b justo' no se alinea con 'juan bautista alberdi'. Las letras de brujula
+    ('n miami' vs 's miami') ya se vetan antes, en `_street_score`.
+    """
+    a, b = query_name.split(), cand_name.split()
+    if len(a) != len(b) or a == b:
+        return query_name
+    initials = 0
+    for x, y in zip(a, b):
+        if x == y:
+            continue
+        short, full = (x, y) if len(x) < len(y) else (y, x)
+        if len(short) == 1 and short.isalpha() and len(full) >= 3 and full.startswith(short):
+            initials += 1
+            continue
+        return query_name
+    return cand_name if initials else query_name
+
+
 def _street_score(parsed: ParsedAddress, cand_street: str, text: str,
                   aliases: frozenset[str] | None = None) -> float:
     """Calle contra calle cuando se pudo aislar; contra el texto entero si no.
@@ -373,6 +398,7 @@ def _street_score(parsed: ParsedAddress, cand_street: str, text: str,
         road = _fold_grid_tokens(normalize_text(parsed.road))
         cand_street = _fold_grid_tokens(cand_street)
         nombre_a, nombre_b = _strip_way_type(road), _strip_way_type(cand_street)
+        nombre_a = _align_initials(nombre_a, nombre_b)
         compass_a, ord_a = _token_sets(nombre_a)
         compass_b, ord_b = _token_sets(nombre_b)
         # Grilla US: NE ≠ NW y 1st ≠ 71st. Fuzzy 0.80 acá es un pin a 7 km.
@@ -651,6 +677,16 @@ def _named_place_far_from_candidate(parsed: ParsedAddress, cand: Candidate) -> b
 
     places = _ordered_comma_places(parsed.original or parsed.normalized)
     if not places:
+        return False
+    # Un barrio conocido de la ciudad del candidato no es otra ciudad. Sin esto
+    # 'Av. Santa Fe 3200, Palermo, Buenos Aires' (export de Mercado Libre) se
+    # vetaba contra Palermo de Sicilia, y 'Flores' contra Brasil.
+    # (Medido 2026-09-15: relajar a "lejos de TODOS los homonimos" tambien
+    # destrababa 'San José' de Costa Rica — vetado hoy contra San Jose de
+    # California — pero exponia matches flojos de calles numeradas. Queda
+    # propuesto, no aplicado: ver examples/geocode-truth/regression.)
+    cand_labels = _candidate_place_labels(cand)
+    if cand_labels and _expansion_place_overlap({places[0]}, cand_labels):
         return False
     for name in _place_lookup_names(places[0]):
         centroid = lookup_city_centroid(name)

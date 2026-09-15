@@ -124,10 +124,15 @@ def test_geocode_avenue_mozart_con_indice_solo_neerlandes(tmp_path):
 
     blind = LocalOSMGeocoder(idx)
     try:
-        miss = blind.geocode("Avenue Mozart 12, 1050 Ixelles")
+        miss = blind._geocode_core("Avenue Mozart 12, 1050 Ixelles")
+        rescued = blind.geocode("Avenue Mozart 12, 1050 Ixelles")
     finally:
         blind.close()
     assert not miss.has_coords or miss.confidence < 0.70
+    # Sin mapa de alias, el rescate por calle resuelta ('mozart' + 'straat' pegado)
+    # encuentra la calle, pero en ambar: no afirma verde sin la grafia oficial.
+    assert rescued.detail.get("street_resolved", {}).get("to") == "Mozartstraat"
+    assert rescued.detail.get("soft_reject") is True
 
     geo = LocalOSMGeocoder(idx, aliases_path=aliases)
     try:

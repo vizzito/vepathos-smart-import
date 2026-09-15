@@ -21,7 +21,7 @@ import os
 import unicodedata
 from functools import lru_cache
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 _DIR = Path(__file__).resolve().parent
 
@@ -153,6 +153,16 @@ def unit_hints() -> tuple[str, ...]:
     return string_list(_GEO_FILE, "unit_hints", env_var=_GEO_ENV)
 
 
+def summary_row_cues() -> tuple[str, ...]:
+    """Frases de pie de planilla ('totales', 'kilos cargados'), plegadas."""
+    return tuple(fold(c) for c in string_list(_GEO_FILE, "summary_row_cues", env_var=_GEO_ENV))
+
+
+def summary_row_filler() -> frozenset[str]:
+    """Palabras que pueden acompañar al cue sin convertirlo en direccion (bolsas, kg)."""
+    return string_set(_GEO_FILE, "summary_row_filler", env_var=_GEO_ENV, fold_words=True)
+
+
 def building_tokens() -> frozenset[str]:
     """Palabras que delatan el nombre de un edificio ('Towers', 'Bhavan', 'Plaza').
 
@@ -282,13 +292,23 @@ def locality_alias_groups() -> tuple[frozenset[str], ...]:
     )
 
 
+class LocalityExpansion(NamedTuple):
+    """Una fila de expansion: pistas foldeadas → tokens que se agregan a la query."""
+    cues: tuple[str, ...]
+    tokens: tuple[str, ...]
+    #: False = fila de GeoNames. Sus pistas son 32 mil ciudades de 15k+ habitantes
+    #: y muchas son apellidos o calles en otro pais (Lopez, Castro, Cabildo): el
+    #: normalizador solo las cree en posicion de localidad, no en cualquier palabra.
+    curated: bool
+
+
 @lru_cache(maxsize=1)
-def locality_expansions() -> tuple[tuple[tuple[str, ...], tuple[str, ...]], ...]:
-    """(cues_folded, tokens). Curado primero, luego GeoNames si el archivo existe."""
-    out: list[tuple[tuple[str, ...], tuple[str, ...]]] = []
+def locality_expansion_rows() -> tuple[LocalityExpansion, ...]:
+    """Curado primero, luego GeoNames si el archivo existe. Cada pista vive en una sola fila."""
+    out: list[LocalityExpansion] = []
     seen_cue: set[str] = set()
 
-    def _ingest(rows) -> None:
+    def _ingest(rows, *, curated: bool) -> None:
         for row in rows or ():
             if not isinstance(row, dict):
                 continue
@@ -304,20 +324,50 @@ def locality_expansions() -> tuple[tuple[tuple[str, ...], tuple[str, ...]], ...]
                 seen_cue.add(fc)
                 cues.append(fc)
             if cues:
-                out.append((tuple(cues), tokens))
+                out.append(LocalityExpansion(tuple(cues), tokens, curated))
 
     # 1) curado (aliases finos: CABA, barrios, CDMX…)
-    _ingest(load_json(_LOC_FILE, _LOC_ENV).get("expansions"))
+    _ingest(load_json(_LOC_FILE, _LOC_ENV).get("expansions"), curated=True)
     # 2) GeoNames opcional (cities15000) — no falla si falta el archivo
+    _ingest(_geonames_expansions(), curated=False)
+    return tuple(out)
+
+
+def _geonames_expansions() -> list:
+    """Filas crudas de locality_expand_geonames.json; vacio si falta o esta roto."""
     geonames = _resolve("locality_expand_geonames.json", "SMART_IMPORT_LOCALITY_GEONAMES_PATH")
     if not geonames.exists():
         geonames = _DIR / "locality_expand_geonames.json"
-    if geonames.exists():
-        try:
-            _ingest(json.loads(geonames.read_text(encoding="utf-8")).get("expansions"))
-        except (OSError, json.JSONDecodeError):
-            pass
-    return tuple(out)
+    if not geonames.exists():
+        return []
+    try:
+        return json.loads(geonames.read_text(encoding="utf-8")).get("expansions") or []
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+@lru_cache(maxsize=1)
+def geonames_cue_countries() -> dict[str, frozenset[str]]:
+    """Pista foldeada → todos los paises donde GeoNames tiene una ciudad con ese nombre.
+
+    `locality_expansion_rows` deja cada pista en la fila mas poblada; aca estan las
+    homonimas: 'lincoln' es Estados Unidos, Reino Unido, Argentina y Nueva Zelanda.
+    """
+    out: dict[str, set[str]] = {}
+    for row in _geonames_expansions():
+        if not isinstance(row, dict):
+            continue
+        tokens = [str(t).strip() for t in (row.get("tokens") or ()) if str(t).strip()]
+        for cue in row.get("cues") or ():
+            if str(cue).strip():
+                out.setdefault(fold(str(cue)), set()).update(tokens)
+    return {cue: frozenset(countries) for cue, countries in out.items()}
+
+
+@lru_cache(maxsize=1)
+def locality_expansions() -> tuple[tuple[tuple[str, ...], tuple[str, ...]], ...]:
+    """(cues_folded, tokens) de `locality_expansion_rows`, sin distinguir el origen."""
+    return tuple((row.cues, row.tokens) for row in locality_expansion_rows())
 
 
 # --------------------------------------------------------------------------- PBF coverage bounds (qué archivo abrir, no calles)

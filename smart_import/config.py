@@ -258,6 +258,11 @@ class Config:
     #: descarta. Estaba en 0.50 y violaba eso — pero solo cuando alguien
     #: construia `Config()` a mano, porque `from_env` ya usaba 0.70.
     geocode_soft_reject_min: float = 0.70
+    #: Un match A NIVEL CALLE (sin la puerta: centroide o tramo) sale ambar aunque
+    #: el score textual sea 0.99. Medido 2026-09-15 por el camino del producto: en
+    #: CABA 258 de esos verdes caian a mas de 500 m de la puerta y 61 entre 100 y
+    #: 500 m. El score dice que la CALLE es esa, no que el pin sea la entrega.
+    geocode_street_level_review: bool = True
     # low_confidence mas lejos que esto del depot se trata como not_found
     max_low_confidence_km: float = 15.0
     # hard geofence: cualquier match (matched|low) fuera de este radio = not_found
@@ -443,6 +448,7 @@ class Config:
             geocode_street_match_min=_float("GEOCODE_STREET_MATCH_MIN", 0.70),
             geocode_soft_reject=_bool("GEOCODE_SOFT_REJECT", True),
             geocode_soft_reject_min=_float("GEOCODE_SOFT_REJECT_MIN", 0.70),
+            geocode_street_level_review=_bool("GEOCODE_STREET_LEVEL_REVIEW", True),
             max_low_confidence_km=_float("GEOCODE_MAX_LOW_CONFIDENCE_KM", 15.0),
             max_geocode_distance_km=_float("GEOCODE_MAX_DISTANCE_KM", 500.0),
             geocode_workers=_int("SMART_IMPORT_GEOCODE_WORKERS", 1),

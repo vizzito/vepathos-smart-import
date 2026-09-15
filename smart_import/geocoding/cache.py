@@ -1,8 +1,9 @@
 """Cache persistente de geocoding.
 
 Los clientes de logistica repiten destinos: la misma direccion aparece semana a
-semana. La clave es la direccion NORMALIZADA + el contexto regional, para que
-'Av. Corrientes 1234' y 'AV CORRIENTES 1234' compartan entrada.
+semana. La clave es la direccion con lo que el geocoder no distingue plegado
+(ver `key_text`) + el contexto regional, para que 'Av. Corrientes 1234' y
+'AV CORRIENTES 1234' compartan entrada.
 
 Es SQLite a proposito: sin dependencias nuevas, portable, y el acceso queda
 detras de esta interfaz por si alguna vez hay que cambiar el motor.
@@ -11,8 +12,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sqlite3
 import time
+import unicodedata
 from pathlib import Path
 
 from .address import normalize_text
@@ -30,7 +33,17 @@ from .base import GeocodeResult
 #: v10: vacío no veta (Toronto); distancia al destino (Radom/Holstebro).
 #: v11: esponente 15/B ≡ 15B / 15 (no exigir token B en FTS).
 #: v13: alias name:fr/nl (Avenue Mozart ≡ Mozartstraat) + FTS bilingue.
-GEOCODER_VERSION = 13
+#: v14: rescates cuando no hay pin (numero pegado, calle resuelta contra el indice,
+#:      esquinas) + gate con evidencia del indice. Los not_found de v13 envenenan.
+#: v15: el rescate guarda con que se valido (cruces de la esquina, calle resuelta):
+#:      el runner lo re-valida con eso y no con la calle del texto crudo. La
+#:      interpolacion no mezcla alturas de dos calles homonimas.
+#: v16: la clave ya no junta consultas que el geocoder lee distinto ('4 Стрелча Sofia'
+#:      heredaba el not_found de '4 Стрелча, Sofia') y el contexto identifica el
+#:      indice sin mtime, que cambiaba en cada apertura (0 hits entre imports).
+#: v17: una inicial busca y puntua contra el nombre completo ('Juan B Justo 4500' ≡
+#:      'Avenida Juan Bautista Justo'): los not_found de v16 envenenan.
+GEOCODER_VERSION = 17
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS geocode_cache (
@@ -48,8 +61,43 @@ CREATE TABLE IF NOT EXISTS geocode_cache (
 """
 
 
+#: Punto que cierra una abreviatura ('Av. Corrientes'). El que queda pegado a lo
+#: que sigue arma otra lectura: 'AV.1733' no encuentra lo que 'AV. 1733' si.
+_CLOSING_PERIOD = re.compile(r"\.(?=\s|$)")
+#: Hasta aca las letras latinas en las que NFD separa la tilde (Latin Extended-B).
+_LATIN_END = chr(0x0250)
+
+
+def key_text(address: str) -> str:
+    """Texto de la clave: pliega SOLO lo que no cambia lo que lee el geocoder.
+
+    Mayusculas, tildes, espacios repetidos y el punto de una abreviatura. El resto
+    de la puntuacion queda tal cual porque el parser la usa: corta segmentos en
+    ',' ';' '|' y arma alturas con '-', '/', '#', 'º'. `normalize_text` la borraba
+    y juntaba consultas distintas en una entrada: '4 Стрелча Sofia' heredaba el
+    not_found de '4 Стрелча, Sofia' y 'Ossington Ave - 38' el pin de 'Ossington
+    Ave 38', o sea el resultado de una fila dependia de las filas anteriores.
+
+    Tildes solo sobre letras latinas: en otras escrituras la marca combinante es
+    parte de la letra ('が' sin ella es 'か'; en tailandes es la vocal). Y NFD, no
+    el NFKD de `strip_accents`, que convierte 'Nº' en 'No': el parser reconoce la
+    altura pegada a 'Nº' pero no a 'No'.
+
+    Medido en las 82 suites de geocode-regression (cada consulta geocodificada
+    sola, 2026-09-15): con `normalize_text` 215 consultas heredaban otro resultado;
+    con esta clave 3, pins ambar a nivel calle en Guadalajara donde el propio
+    geocoder elige otra calle homonima segun mayusculas o tildes.
+    """
+    kept: list[str] = []
+    for ch in unicodedata.normalize("NFD", str(address)):
+        if unicodedata.combining(ch) and kept and kept[-1] < _LATIN_END:
+            continue
+        kept.append(ch)
+    return " ".join(_CLOSING_PERIOD.sub(" ", "".join(kept).lower()).split())
+
+
 def make_key(address: str, context: str = "") -> str:
-    payload = f"{normalize_text(address)}|{context}".encode("utf-8")
+    payload = json.dumps([key_text(address), context]).encode("utf-8")
     return hashlib.sha256(payload).hexdigest()
 
 
@@ -169,7 +217,8 @@ class GeocodeCache:
              result.lat, result.lon, result.status, result.confidence,
              result.precision, result.source, time.time(), GEOCODER_VERSION,
              json.dumps({k: v for k, v in (result.detail or {}).items()
-                         if k in {"soft_reject", "raw_score", "reason"}}, allow_nan=False)),
+                         if k in {"soft_reject", "raw_score", "reason", "street",
+                                  "intersection", "rescue_names"}}, allow_nan=False)),
         )
     def commit(self) -> None:
         """No-op: en autocommit cada `put` ya quedo escrito.
