@@ -241,18 +241,19 @@ docker logs -f vepathos-smart-import
 **No uses `--build`** salvo que cambien `Dockerfile`, deps de sistema o
 `pyproject.toml` de forma que afecte paquetes instalados.
 
-El mapa de calles bilingües (`data/street_aliases.sqlite` en el host) **no**
-está en git. El container lo lee de `/data/cache/street_aliases.sqlite`
-(volume persistente). Después de un barrido local, copialo y reiniciá:
+El mapa de calles bilingües va en git
+(`smart_import/resources/street_aliases.sqlite`). Países cubiertos: ver
+[DEPLOY §13.0a](DEPLOY-PRODUCTION.md#130a-mapa-de-alias-osm). En Docker el
+entrypoint lo copia a `/data/cache/street_aliases.sqlite` si el volume está
+vacío. Rebuild con imagen nueva + cache vacío = no hace falta `docker cp`.
+
+Si el volume **ya** tiene un sqlite viejo, no se pisa. Para forzar el de la
+imagen:
 
 ```bash
-docker cp data/street_aliases.sqlite vepathos-smart-import:/data/cache/street_aliases.sqlite
+docker exec vepathos-smart-import rm -f /data/cache/street_aliases.sqlite
 docker compose restart smart-import
 ```
-
-Sin ese archivo el geocoder arranca igual (no-op). Los índices **nuevos** ya
-indexan `name:fr`/`name:nl`; los índices viejos del volume necesitan el sqlite
-para `Avenue Mozart` → `Mozartlaan`.
 
 ### 5.3.1 Tres procesos en la misma Mac (no confundirlos)
 
@@ -419,7 +420,6 @@ cd ~/workspace/vepathos-smart-import
 docker compose stop smart-import          # bajarlo (prod Mac no lo necesita)
 docker compose up -d smart-import         # solo si querés probar en :8100
 docker compose restart smart-import
-docker cp data/street_aliases.sqlite vepathos-smart-import:/data/cache/street_aliases.sqlite
 docker logs -f vepathos-smart-import
 
 # --- Mac worker apuntando a prod (si-worker-prod-mac) ---
@@ -586,8 +586,7 @@ El layout actual (api-prod + VM + Mac) está en
 | Dónde | Qué actualizar | Doc |
 |---|---|---|
 | Mac, API `:8100` | `docker compose restart smart-import` (+ sqlite de alias) | [§5.3](#53-día-a-día-sin-reinstalar-librerías) |
-| api-prod + VM worker | `git pull` + `build` + `up -d --force-recreate` | [DEPLOY §13](DEPLOY-PRODUCTION.md#13-actualizar-prod--rollout-de-código) |
-| Mac worker → cola de prod | mismo, con `worker.yml` + `mac.worker.yml` | [DEPLOY §6](DEPLOY-PRODUCTION.md#6-agregar-una-mac-como-worker-libpostal) y [§13.4](DEPLOY-PRODUCTION.md#134-paso-3--mac-worker-libpostal-opcional) |
+| api-prod + VM + Mac worker | receta oficial API → VM → Mac | **[DEPLOY §13.0 SMART IMPORT DEPLOY](DEPLOY-PRODUCTION.md#130-smart-import-deploy--receta-oficial)** |
 
 ### 12.0 Lexicons (automático, no es un servicio)
 
@@ -1115,7 +1114,7 @@ se lee siempre en `GET /config`, que es lo único que no miente:
 | `SMART_IMPORT_ADDRESS_ACCEPT_THRESHOLD` | `0.50` | piso para aceptar una dirección. **Medido: subirlo no sirve** — ver el comentario en el `.env` antes de tocarlo |
 | **Geocoding** | | |
 | `SMART_IMPORT_GEOCODING_ENABLED` | `true` | prende geocode OSM (nunca es automático) |
-| `SMART_IMPORT_STREET_ALIASES` | `/data/cache/street_aliases.sqlite` | mapa name↔name:fr/nl (Docker). En venv: `data/street_aliases.sqlite`. Ausente = no-op |
+| `SMART_IMPORT_STREET_ALIASES` | `/data/cache/street_aliases.sqlite` | mapa name↔name:xx (Docker). En venv: `smart_import/resources/street_aliases.sqlite`. Ausente = no-op |
 | `GEOCODER_FALLBACK` | `none` | lo que OSM no encuentra queda `not_found` para ubicación manual |
 | `GEOCODE_MATCH_THRESHOLD` / `GEOCODE_VALID_BAND` | `0.85` | status `matched` y color verde. **Tienen que ser iguales** o la UI pinta verde algo que el geocoder marcó dudoso |
 | `GEOCODE_LOW_CONFIDENCE_THRESHOLD` / `GEOCODE_REVIEW_BAND` | `0.70` | piso para devolver coordenada y para mostrarla. **Iguales** |

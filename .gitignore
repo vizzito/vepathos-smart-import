@@ -38,3 +38,7 @@ examples/*.csv
 # Corpus OA regenerable (scripts/generate_address_corpus.py); no versionar dumps
 examples/geocode-truth/generated/
 *.egg-info/
+# Sidecar SQLite; el .sqlite de aliases SÍ se versiona en resources/
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal

@@ -142,3 +142,21 @@ def test_geocode_avenue_mozart_con_indice_solo_neerlandes(tmp_path):
     assert hit.has_coords
     assert abs(hit.lat - 50.827) < 0.001
     assert abs(hit.lon - 4.379) < 0.001
+
+
+def test_packaged_street_aliases_abre_y_expande_mozart():
+    from smart_import.config import packaged_street_aliases_path
+
+    path = packaged_street_aliases_path()
+    if not path.is_file():
+        raise AssertionError(
+            "falta smart_import/resources/street_aliases.sqlite "
+            "(build-street-aliases y commitear el sqlite)"
+        )
+    store = StreetAliasStore(path, readonly=True)
+    try:
+        assert store.pair_count() > 100_000
+        variants = {normalize_text(v) for v in store.expand("Avenue Mozart")}
+        assert "mozartlaan" in variants or "mozartstraat" in variants
+    finally:
+        store.close()

@@ -65,6 +65,11 @@ def _int(name: str, default: int) -> int:
         return default
 
 
+def packaged_street_aliases_path() -> Path:
+    """SQLite versionado (name↔name:xx). El compose de Docker lo copia al volume."""
+    return Path(__file__).resolve().parent / "resources" / "street_aliases.sqlite"
+
+
 def _str(name: str, default: str) -> str:
     raw = os.getenv(name)
     return raw.strip() if raw and raw.strip() else default
@@ -84,7 +89,7 @@ def _list(name: str, default: list[str]) -> list[str]:
 def _role(name: str) -> str:
     """El rol del proceso, validado al leerlo.
 
-    Un typo (`wroker`) no puede degradar en silencio a `embedded`: seria un nodo
+    Un typo (`worker`) no puede degradar en silencio a `embedded`: seria un nodo
     que arranca contento, no consume ninguna cola y nadie nota que falta.
     """
     raw = _str(name, "embedded").lower()
@@ -228,8 +233,9 @@ class Config:
     #: Extracts propios (escribible). No es `_extracts` del cutter (:ro).
     extract_dir: str = "data/extracts"
     cache_path: str = "data/cache/geocode_cache.sqlite"
-    #: Pares name↔name:xx barridos de los PBF. Vacio / archivo ausente = no-op.
-    street_aliases_path: str = "data/street_aliases.sqlite"
+    #: Pares name↔name:xx. Default: recurso versionado. Ausente = no-op.
+    street_aliases_path: str = field(
+        default_factory=lambda: str(packaged_street_aliases_path()))
     geocoder_fallback: str = "none"
     match_threshold: float = 0.81
     # Acepta coords desde este score (UI: Review 70–79%, Valid ≥80%).
@@ -437,7 +443,8 @@ class Config:
             extract_dir=_str("SMART_IMPORT_EXTRACT_DIR", "data/extracts"),
             cache_path=_str("SMART_IMPORT_CACHE_PATH", "data/cache/geocode_cache.sqlite"),
             street_aliases_path=_str(
-                "SMART_IMPORT_STREET_ALIASES", "data/street_aliases.sqlite"),
+                "SMART_IMPORT_STREET_ALIASES",
+                str(packaged_street_aliases_path())),
             geocoder_fallback=_str("GEOCODER_FALLBACK", "none"),
             match_threshold=_float("GEOCODE_MATCH_THRESHOLD", 0.81),
             low_confidence_threshold=_float("GEOCODE_LOW_CONFIDENCE_THRESHOLD", 0.70),

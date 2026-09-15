@@ -4,6 +4,9 @@ El indice historico solo metia `name` y `addr:street`. En Bruselas eso deja
 `Mozartstraat` y la query francesa `Avenue Mozart` no se encuentran. El mapa
 se arma UNA vez recorriendo los PBF locales (tags, sin geometria) y se usa
 como expansion de la query: no hace falta reconstruir cada sqlite de ciudad.
+
+Cobertura del sqlite versionado: DEPLOY-PRODUCTION.md §13.0a (tabla +
+`SELECT source, pairs FROM harvested`). No es el indice OSM por zona.
 """
 from __future__ import annotations
 
