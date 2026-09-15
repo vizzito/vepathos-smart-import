@@ -210,7 +210,7 @@ texto crudo
 
 `find_street_span` (`heuristic.py:238`) corre **cinco patrones** sobre todo el
 texto y acumula candidatos. Desde el ancla, `_expand_left` / `_expand_right`
-(`extraction/address_extract.py:82`, `:96`) estiran el span hacia los lados
+(`extraction/address_extract.py:88`, `:102`) estiran el span hacia los lados
 mientras lo que encuentran siga pareciendo dirección.
 
 Los cinco patrones, con su **boost** (más negativo gana):
@@ -248,6 +248,15 @@ alfabética salvo un conjunto chico y cerrado de palabras de narración. Antes
 exigía que la palabra fuera capitalizada o token de vía, y los exports reales no
 cumplen eso —`Av cabildo 834`, `Av. Ramos mejia 1358`—: **una sola minúscula
 tiraba la dirección entera, y era el 19% de las que sí tenían altura.**
+
+El precio de esa regla es que el nombre del cliente pegado adelante también es
+"toda palabra alfabética". Por eso `extract_address` busca el ancla con **lo ya
+consumido como corte**, no como blanco (`canvas.remaining(fill=CONSUMED)`): en
+`"Juan Lopez 1133334444 Gorriti 4500"` el teléfono ya salió del texto y la calle
+no puede cruzarlo, así que queda `Gorriti 4500` y `Juan Lopez` le llega a
+`extract_customer_name`. Vale igual para un email o unos bultos en el medio. Sin
+nada consumido entre los dos (`"Juan Lopez Gorriti 4500"`) sigue siendo ambiguo
+—se escribe igual que `Juan B Justo 4500`— y no se parte.
 
 ### 5.2 Parsear: el primero en reclamar, gana
 
@@ -340,7 +349,7 @@ propósito, para que no se desincronicen (`heuristics.py:95`).
 
 ### 5.5 El `address` visible
 
-`compose_address_from_parts` (`normalization/address.py:116`) es donde tabular y
+`compose_address_from_parts` (`normalization/address.py:119`) es donde tabular y
 texto libre convergen: cualquier formato de entrada termina en el mismo string.
 
 - **Sin calle no compone nada**, ni con ciudad y CP: no es geocodificable como
@@ -356,7 +365,7 @@ Solo escribe si el resultado es **más rico** que lo que había (`:152`).
 
 ### 5.6 Enriquecer con contexto geográfico
 
-`maximize_address_for_geocode` (`normalization/address.py:295`) agrega
+`maximize_address_for_geocode` (`normalization/address.py:386`) agrega
 provincia/país cuando faltan. Las fuentes, en orden de prioridad:
 
 1. el `address` ya deduplicado;
@@ -371,11 +380,54 @@ Las dos protecciones son el corazón de la función:
 motivo está en el docstring: *un paste de Miami no puede terminar en Argentina
 solo porque RouteHub mandó `phone_region=AR`*.
 
-**`_cue_is_street`** (`:189`): una pista de localidad **pegada a una altura** es
+**`_cue_is_street`** (`:192`): una pista de localidad **pegada a una altura** es
 el nombre de la calle, no la ciudad. Sin esto, `"Av Callao 1219"` se enriquecía
 con `Peru` y la query salía a buscar la dirección al país equivocado. Media
 ciudad del mundo comparte nombre con una calle de otra —Callao, Asunción,
 Córdoba— y el gazetteer no puede distinguirlas; **la posición sí.**
+
+**Las pistas de GeoNames solo cuentan en posición de localidad**
+(`_geonames_cue_position`, `:234`). El JSON curado son ~70 grupos elegidos a mano; GeoNames
+son 32 mil ciudades de 15k+ habitantes, y muchas se llaman como un apellido o
+una calle de otro país: Lopez y Rodriguez (Filipinas), Castro (Brasil), Medina
+(Irak), Cabildo (Chile). Con el nombre pegado a la calle,
+`"Juan Lopez Gorriti 4500, 3B"` salía con `Philippines` y el geocoder vetaba los
+candidatos argentinos. Ahora una pista de GeoNames:
+
+- en **su propio segmento** (no el primero, que es la calle; se admiten CP y
+  sigla: `Campinas SP 13010`, pero no un tipo de vía: `Elgin Rd 114` es calle)
+  cuenta, y puede pisar el país del depot o de `phone_region` **salvo que ese
+  país también tenga una ciudad con el mismo nombre**: `Av Massey 100, Lincoln`
+  con AR es Lincoln (Buenos Aires), no Nebraska;
+- **cerrando la dirección sin coma**, después de la altura
+  (`123 Main St Springfield`), es evidencia débil: completa el país solo si ni
+  el depot ni `phone_region` dicen otro;
+- **en cualquier otro lugar** (adentro del nombre o de la calle) no cuenta;
+- si la pista **es un nombre de país** (`Mexico` también es un pueblo de
+  Filipinas) no cuenta nunca: el segmento es el país.
+
+Las pistas curadas siguen con la regla de siempre. Medido sobre las 49.748
+direcciones de los corpus con su país verdadero y `phone_region` = ese país, las
+salidas con un país equivocado bajaron de 5.740 a 647. El costo está en el caso
+contrario —direcciones extranjeras con `phone_region=AR`—: 1.313 (10%) dejan de
+recibir su país, casi todas porque la "ciudad" era el nombre de la calle
+(`Rue de Lausanne`) o venía primera (`OSLO, 37, Heimdalsgata`).
+
+**Un solo país por query.** Antes salían `Campinas, Brazil, Argentina` o
+`Carrera 7 45, Colombia, Argentina`: dos países y el geocoder vetando a uno de los
+dos. Ahora el país de `phone_region` no se agrega si ya lo implica un país de
+GeoNames (`Brazil`, aunque el nombre preferido sea `Brasil`) o uno **escrito** en
+su propio segmento (`Colombia`; no `Georgia`, que es un estado, ni `NICARAGUA,
+4824`, que es la calle). Un país escrito además le gana a cualquier pista, y el
+mismo país con dos nombres (`Czech Republic` / `Czechia`) va una vez. Las pistas
+curadas tampoco pisan una homónima del país explícito: `San Isidro` con AR es el
+partido y con PE sigue siendo Lima; `Paris, TX` con US no es Francia. Con
+direcciones extranjeras y `phone_region=AR`, las queries con 2+ países bajaron de
+6.413 a 203.
+
+El recorrido de las ~32 mil filas no se hace entero: `_candidate_rows` indexa cada
+pista por su primer token y solo evalúa las filas que pueden aparecer, en el
+mismo orden (35 ms → 0,8 ms por dirección; idéntico sobre 149.244 llamadas).
 
 Todo el matcheo es **por token, no por substring**: `ne` no puede pegar en
 `biscayne`, y `Argentina` no está presente en `Avenida Patricias Argentinas`.
@@ -395,8 +447,17 @@ Los tokens del depot salen únicamente de campos **estructurados**
 porque eso trae calle y barrio y ensucia la query de cada entrega.
 
 Un detalle que cierra el diseño: **el gate del scorer se aplica sobre el
-`address` visible, no sobre la query enriquecida** (`runner.py:213`).
-Enriquecer no puede hacer pasar una dirección que no tenía evidencia propia.
+`address` visible, no sobre la query enriquecida**. Enriquecer no puede hacer
+pasar una dirección que no tenía evidencia propia.
+
+**Pero la forma del texto no es la única evidencia** (2026-09-15). El scorer
+mira forma: `MORENO 245` (una palabra + 3 dígitos) da 0.45 y se descartaba sin
+buscar, mientras `Remito 5561` da 0.65 porque los 4 dígitos se leen como código
+postal. Antes de descartar, el runner le pregunta al índice
+(`LocalOSMGeocoder.street_evidence`): si la calle existe, se resuelve contra una
+calle real (ver 9.3 bis) o el texto es una esquina de dos calles del extract, la
+fila se busca. Solo cambia filas que el gate iba a tirar; `Gonzalo` o `Caja 12`
+siguen afuera porque el índice no tiene nada que las explique.
 
 ---
 
@@ -551,6 +612,14 @@ Belgrano al 1.00 y el pin quedaba a 5 km), saca el tipo de vía antes de compara
 `avenida` dominaba), y si la calle pedida tiene tokens que el candidato no
 tiene, es 0.0.
 
+**Una inicial es el nombre completo** (`_align_initials`, `_fts_name_term`): OSM
+guarda las alturas de CABA bajo `Avenida Juan Bautista Justo` y la gente escribe
+`Juan B Justo`. La `b` exacta no entraba al MATCH (ahora se busca `"b"*`) y quedaba
+como token que el candidato no tiene (calle 0.0): la avenida entera salía sin
+pin, o en la homónima `Juan B. Justo` de otro partido. Solo se alinea con el mismo
+número de palabras y todas las demás iguales; una letra sola como nombre entero
+(`AVE U`) sigue exacta.
+
 **El mejor candidato se elige por `(street, house_number, score_total)`** — el
 total es el **último** criterio de desempate. Antes, ordenando por total,
 `"350 NE 71st"` (altura exacta, calle 0.80) le ganaba a `"300 NE 1st"` (calle
@@ -575,6 +644,72 @@ En orden estricto:
 Después el status todavía puede cambiar dos veces: por los geofences, y por la
 guarda de banda.
 
+### 9.3 bis Rescates cuando no hubo pin
+
+`LocalOSMGeocoder.geocode` corre la búsqueda de arriba y, **solo si no dio un
+pin publicable**, prueba cuatro rescates. Esa condición de entrada es lo que los
+hace locales: una fila que hoy geocodifica no pasa por acá.
+
+1. **Número pegado** (`Crisantemos1904` → `Crisantemos 1904`). Ámbar.
+2. **Orden inglés con localidad** (`172 Avenue Charles Michiels, Bruxelles, Belgium`
+   → `Avenue Charles Michiels 172, …`). Con 3+ segmentos detrás del número, el parser lo
+   lee como un compuesto invertido de OpenAddresses CABA; el enrich del depot
+   agrega justo esos segmentos.
+3. **Calle resuelta contra el índice** (`street_resolver.py`): título abreviado
+   (`Gral San Martin`), apellido (`dufau` → `Intendente Dufau`), truncada
+   (`Trabajadores Mun`), iniciales (`Lisandro dlt`), nombres salteados
+   (`jose artigas` → `General José Gervasio Artigas`), ruido adelante/atrás
+   (`Mariela entre rios`; una palabra casi igual a una de calle no cuenta como ruido:
+`Sladanha` es `Saldanha`) y typo fonético (`Lungui` → `Avenida Lunghi`). Guardas:
+   **unicidad** (si dos calles explican igual, no se elige), **nunca pisar una
+   calle que existe** (`Sarmiento` no pasa a `Fragata Sarmiento`) y **no resolver
+   una localidad cercana** como apellido (`Uccle`). Siempre ámbar.
+4. **Esquinas** (`intersection.py`): `Garibaldi y Montiel`, `X esq. Y`, `X & Y`,
+   también entre paréntesis. El cruce sale de las polilíneas si el índice las
+   tiene; si no, del par de nodos más cercano (≤ 40 m). Ámbar. Una esquina clara
+   se prueba **antes** de la búsqueda normal: si no, la búsqueda encuentra una de
+   las dos calles sola y el pin cae en su centroide.
+
+**Todo pin rescatado pasa por `rescue_plausible`** (y también las filas que el
+gate dejó entrar por evidencia del índice). Medido el 2026-09-15: sin esta guarda
+los rescates caían en homónimos de otro partido o comuna (`CONDARCO 525` a 8 km,
+`Marie du marché 16` a 12 km). Reglas, en orden:
+
+- un rescate no termina en un centroide de calle ni en una altura que se repite
+  en una calle homónima;
+- el pin cae dentro del radio de la ciudad que nombra la consulta (GeoNames,
+  `sqrt(población)/100` km + 2, solo ciudades a menos de 60 km del depot);
+- la calle tiene que reconocerse en el índice y el pin tiene que estar sobre ella;
+- si la calle es un solo grupo de nodos en el extract, alcanza;
+- si hay homónimos, la localidad que nombra la consulta tiene que elegir uno: la
+  ciudad de los vecinos del pin coincide y la de los otros grupos no.
+
+El runner vuelve a pasar por la guarda las filas que entraron por evidencia del
+índice. Para un rescate usa **lo que ya validó el geocoder** (los cruces de la
+esquina, la calle resuelta), que viaja en el detalle y en la caché. Con la calle
+leída del texto crudo se descartaban rescates correctos: `Garibaldi y Montiel`
+buscaba una calle llamada así entera y `Los crisantelmos1904` buscaba `los`.
+
+Tres cambios más en la búsqueda normal, los tres acotados:
+
+- **Interpolación dentro de un tramo.** Las alturas de dos calles homónimas
+  comparten `street` (`Condarco` en CABA y en Lanús). Juntas, el 501 de una y el
+  549 de la otra quedaban como anclas y el pin caía entre los dos pueblos, a
+  7,9 km. Si las anclas de siempre están a más de 400 m + 40 m por número de
+  diferencia, no son el mismo tramo: se interpola solo dentro de un grupo de
+  alturas (celdas de ~900 m) que nombre la consulta, y sin localidad que elija no
+  se interpola. Por debajo del tope la cuenta es la de siempre: una avenida con
+  huecos en OSM da 7–10 m por número (Via Emilia en Bolonia, anclas a 1,5 km)
+  y agrupar por cercanía le cortaba la interpolación.
+
+- **Misma calle y altura en otro nodo a más de 150 m** → ámbar. Una calle no
+  repite su numeración: son dos direcciones (homónimo en otro suburbio o
+  duplicado de OSM) y el depot desempataba a ciegas.
+- **Localidad de los vecinos para una altura exacta sin `addr:city`**, solo para
+  decidir si esa altura bloquea la interpolación en la ciudad pedida
+  (`Av. Caseros 1800, CABA`). El candidato no se modifica: medido, mutarlo
+  rechazaba `Kensington` contra vecinos `Melbourne`.
+
 ### 9.4 Geofences
 
 Se miden contra el origin del depot, que **puede no ser el pin real**: si la
@@ -593,10 +728,19 @@ los pines por estar a ~7000 km.
 Tres: **verde** (usable tal cual), **ámbar** (que lo mire un humano), **sin pin**
 (ubicar a mano).
 
-**El color sigue el número, no la precisión** (`bands.py:47`): el porcentaje que
-muestra la UI y la banda tienen que coincidir — 97% no puede ser ámbar solo por
-ser `street`. La excepción es `force_review`, que baja un verde a ámbar y es lo
-que traduce el techo del caso 2 del árbol al color.
+**El color sigue el número, no la precisión** (`bands.py:47`), con
+`force_review` como excepción: baja un verde a ámbar y es lo que traduce los
+techos del árbol al color.
+
+**Un match a nivel calle es ámbar aunque puntúe 0.99**
+(`GEOCODE_STREET_LEVEL_REVIEW`, default `true`). Medido por el camino del
+producto el 2026-09-15: en CABA 258 de esos verdes caían a más de 500 m de la
+puerta. El score confirma la calle, no la entrega.
+
+**El % de un ámbar nunca supera el piso verde** (`runner._stamp`): se recorta a
+`GEOCODE_VALID_BAND - 0.01`. Un `Review 99%` al lado de un `Valid 98%` le decía
+al operador que el ámbar era más seguro. El score textual real queda en
+`geocode_raw_score`.
 
 **El circuito de coherencia**: si la banda dio "sin pin" pero el resultado traía
 coordenadas, se **borran** y el status se alinea (`runner.py:400`). Sin eso, un
@@ -675,6 +819,7 @@ proceso.
 | `GEOCODE_STREET_MATCH_MIN` | 0.70 | 0.70 | cuánto tiene que matchear la calle |
 | `GEOCODE_STREET_LEVEL_FLOOR` | 0.60 | 0.60 | piso para pin a nivel calle |
 | `GEOCODE_SOFT_REJECT_MIN` | 0.70 | 0.75 | piso para dar pin de respaldo |
+| `GEOCODE_STREET_LEVEL_REVIEW` | `true` | — | un match a nivel calle (sin puerta) sale ámbar aunque puntúe alto |
 | `GEOCODE_MAX_DISTANCE_KM` | 500 | 500 | geofence duro |
 | `GEOCODE_MAX_LOW_CONFIDENCE_KM` | 15 | 15 | geofence blando |
 

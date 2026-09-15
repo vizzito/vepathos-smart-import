@@ -16,14 +16,14 @@ Documentos relacionados: [SETUP.md](SETUP.md) (general), [RUNBOOK.md](RUNBOOK.md
 3. [Firewall y red](#3-firewall-y-red)
 4. [Deploy desde cero — api-prod (API)](#4-deploy-desde-cero--api-prod-api)
 5. [Deploy desde cero — VM worker (PBFs)](#5-deploy-desde-cero--vm-worker-pbfs) · [5.6 VM worker #2+](#56-agregar-worker-vm-2-o-más)
-6. [Agregar una Mac como worker (libpostal)](#6-agregar-una-mac-como-worker-libpostal)
+6. [Agregar una Mac como worker (libpostal)](#6-agregar-una-mac-como-worker-libpostal) · [6.7 Actualizar código en la Mac](#67-actualizar-código-en-la-mac-apunta-a-prod)
 7. [Cómo reparte la cola (¿quién procesa?)](#7-cómo-reparte-la-cola-quién-procesa)
 8. [config_drift y libpostal](#8-config_drift-y-libpostal)
 9. [Comandos útiles](#9-comandos-útiles)
 10. [Verificación y checklist](#10-verificación-y-checklist)
 11. [Troubleshooting](#11-troubleshooting)
 12. [Rollback](#12-rollback)
-13. [Actualizar prod — rollout de código](#13-actualizar-prod--rollout-de-código)
+13. [Actualizar prod — rollout de código](#13-actualizar-prod--rollout-de-código) · **[receta cada vez](#130-receta--cada-vez-que-cambiás-código)** · [alias OSM](#130a-mapa-de-alias-osm-no-va-en-git)
 
 ---
 
@@ -528,7 +528,48 @@ El túnel puede seguir corriendo para probar la API desde la Mac (`curl :8110`).
 4. Probar túnel (`8110/health`)
 5. `worker --check` → tres `ok`
 6. `up -d` con `mac.worker.yml`
-7. `/health` → 2 workers, `config_drift` solo con el nodo Mac
+7. Copiar `street_aliases.sqlite` al volume de cache ([§13.0a](#130a-mapa-de-alias-osm-no-va-en-git))
+8. `/health` → 2 workers, `config_drift` solo con el nodo Mac
+
+### 6.7 Actualizar código en la Mac (apunta a prod)
+
+Esto **no** es `docker compose restart smart-import`. Ese comando es la API
+local en `:8100` (override de desarrollo). El worker de flota es
+`si-worker-prod-mac`: corre la **imagen**, sin bind del working tree.
+
+```bash
+# Túnel (si no está)
+nc -z 127.0.0.1 8110 || autossh -M 0 \
+  -o ServerAliveInterval=30 -o ServerAliveCountMax=3 \
+  -o ExitOnForwardFailure=yes -N vepathos-tunnel &
+
+cd ~/workspace/vepathos-smart-import
+# Sin commit+push, git pull en api-prod/VM no trae nada.
+# En ESTA Mac el build usa el working tree: podés buildear cambios locales.
+
+DOCKER_BUILDKIT=1 docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  build worker
+
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  up -d --force-recreate worker
+
+docker cp data/street_aliases.sqlite si-worker-prod-mac:/data/cache/street_aliases.sqlite
+
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml \
+  -f docker-compose.mac.worker.yml \
+  run --rm worker worker --check
+docker logs si-worker-prod-mac --tail 10
+```
+
+`up -d` sin `--force-recreate` deja el container con la imagen vieja.
+
+Jobs en vuelo vuelven a la cola (grace 90 s). El lab `:8100`
+(`vepathos-smart-import`) no entra: puede estar parado.
 
 ---
 
@@ -635,6 +676,8 @@ docker compose --env-file .env.prod.smart.local \
 ```
 
 `restart` no recrea el container si no existe — usar `up -d` si lo bajaste con `down`.
+`restart` **tampoco** trae código nuevo al worker Mac: no hay bind de `./smart_import`.
+Para código: [§6.7](#67-actualizar-código-en-la-mac-apunta-a-prod) o [§13.4](#134-paso-3--mac-worker-libpostal-opcional).
 
 ### 9.7 Túnel Mac — recuperación
 
@@ -663,6 +706,7 @@ nc -z 127.0.0.1 8110 && curl -s http://127.0.0.1:8110/health | head -c 60
 
 - [ ] Túnel Mac: 16379, 5673, 8110 responden
 - [ ] Mac: `worker --check` → tres ok
+- [ ] `/data/cache/street_aliases.sqlite` en VM y Mac si el rollout usa alias OSM ([§13.0a](#130a-mapa-de-alias-osm-no-va-en-git))
 - [ ] `/health` → 2 workers
 - [ ] `config_drift` solo nodo Mac
 - [ ] Bajar Mac → prod sigue (VM sola procesa)
@@ -721,6 +765,166 @@ Los jobs en Redis de la API distribuida no migran automáticamente.
 Para pasar de una versión ya corriendo a código nuevo (mismo layout api-prod +
 VM + Mac). **No es lo mismo que “deploy desde cero”** (§4–§6): acá asumís que
 `.env`, firewall y RouteHub ya están bien.
+
+En `docker ps` de esta Mac:
+
+| Container | Puertos | Rol |
+|---|---|---|
+| `vepathos-smart-import` | `127.0.0.1:8100` | Lab. **Opcional.** `docker stop vepathos-smart-import`. |
+| `si-worker-prod-mac` | `8100/tcp` sin bind | Worker de la flota. Este es el que hay que rebuildar. |
+
+api-prod y la VM no aparecen acá (son SSH). El lab no entra en el rollout.
+
+Igual que el cutter: **una API + N workers**. Cada nodo tiene su imagen.
+`git pull` solo no alcanza; hay que **build + `up -d --force-recreate`** en
+cada uno. Orden: API primero, después workers.
+
+### 13.0 Receta — cada vez que cambiás código
+
+Copiar y pegar. Detalle y rollback: §13.2–§13.6.
+
+**Qué tocar**
+
+| Cambio | api-prod | VM worker | Mac `si-worker-prod-mac` |
+|---|---|---|---|
+| Python / compose / schemas | sí | sí | sí |
+| Solo docs | no | no | no |
+| `street_aliases.sqlite` (no va en git) | no | `docker cp` | `docker cp` |
+
+**0 — esta Mac (repo)**
+
+```bash
+cd ~/workspace/vepathos-smart-import
+git status
+git push origin feat/smart-import-produccion
+```
+
+Sin push, `git pull` en los servers no trae nada. El lab `:8100` no hace falta.
+
+**1 — API (api-prod). Primero, para que siga encolando.**
+
+```bash
+ssh deploy@178.105.42.199
+cd ~/vepathos-smart-import
+git fetch origin && git checkout feat/smart-import-produccion
+git pull origin feat/smart-import-produccion
+
+DOCKER_BUILDKIT=1 docker compose \
+  -f docker-compose.yml -f docker-compose.apiprod.yml \
+  build smart-import
+docker compose \
+  -f docker-compose.yml -f docker-compose.apiprod.yml \
+  up -d --force-recreate smart-import
+
+curl -sf http://127.0.0.1:8100/health | python3 -m json.tool | grep -E '"(status|role|state)"'
+# esperado: role api, state redis
+exit
+```
+
+**2 — Worker VM (PBFs). El piso de prod.**
+
+```bash
+ssh martin@46.224.217.160
+cd ~/vepathos-worker/vepathos-smart-import
+git fetch origin && git checkout feat/smart-import-produccion
+git pull origin feat/smart-import-produccion
+
+DOCKER_BUILDKIT=1 docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml build worker
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml up -d --force-recreate
+docker compose --env-file .env.worker \
+  -f docker-compose.worker.yml run --rm worker worker --check
+docker logs vepathos-smart-import-worker --tail 15
+exit
+```
+
+Si este rollout usa alias OSM, copiá el sqlite **después** del recreate
+(el volume `cache` no se borra):
+
+```bash
+scp data/street_aliases.sqlite martin@46.224.217.160:/tmp/street_aliases.sqlite
+ssh martin@46.224.217.160 \
+  'docker cp /tmp/street_aliases.sqlite vepathos-smart-import-worker:/data/cache/street_aliases.sqlite
+   docker restart vepathos-smart-import-worker'
+```
+
+**3 — Worker Mac (libpostal). Esta máquina, no SSH.**
+
+```bash
+# túnel, si nc falla
+nc -z 127.0.0.1 8110 || autossh -M 0 \
+  -o ServerAliveInterval=30 -o ServerAliveCountMax=3 \
+  -o ExitOnForwardFailure=yes -N vepathos-tunnel &
+
+cd ~/workspace/vepathos-smart-import
+git pull origin feat/smart-import-produccion   # si buildeaste antes del push, igual recrear
+
+DOCKER_BUILDKIT=1 docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml -f docker-compose.mac.worker.yml \
+  build worker
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml -f docker-compose.mac.worker.yml \
+  up -d --force-recreate worker
+
+docker cp data/street_aliases.sqlite si-worker-prod-mac:/data/cache/street_aliases.sqlite
+
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml -f docker-compose.mac.worker.yml \
+  run --rm worker worker --check
+docker logs si-worker-prod-mac --tail 15
+```
+
+No uses `docker compose` a secas acá: eso es el lab `:8100`.
+
+**4 — ¿quedó la flota?**
+
+```bash
+curl -s http://127.0.0.1:8110/health | python3 -m json.tool | grep -A30 '"fleet"'
+docker logs -f si-worker-prod-mac    # y mandá un import por RouteHub
+```
+
+Esperado: `role: api`, ≥2 workers (VM + Mac), colas en 0 si idle,
+`config_drift` **solo** el nodo Mac (libpostal).
+
+Jobs en vuelo de un worker que recreás vuelven a la cola (grace 90 s).
+
+### 13.0a Mapa de alias OSM (no va en git)
+
+`data/street_aliases.sqlite` está en `.gitignore`. El geocoder lo lee de
+`SMART_IMPORT_STREET_ALIASES` = `/data/cache/street_aliases.sqlite` (volume
+`cache`, sobrevive recreate). Sin el archivo, el geocoder arranca; Bélgica
+`Avenue Mozart` no encuentra `Mozartlaan` en **índices viejos**.
+
+No hace falta recrear PBF ni índices. El cache de geocode se invalida solo
+cuando sube `GEOCODER_VERSION` en el código.
+
+**Copiar el sqlite ya barrido** (desde la Mac que lo generó):
+
+```bash
+# VM worker
+scp data/street_aliases.sqlite martin@46.224.217.160:/tmp/street_aliases.sqlite
+ssh martin@46.224.217.160 \
+  'docker cp /tmp/street_aliases.sqlite vepathos-smart-import-worker:/data/cache/street_aliases.sqlite'
+
+# Mac worker (esta máquina)
+docker cp data/street_aliases.sqlite si-worker-prod-mac:/data/cache/street_aliases.sqlite
+
+# API local :8100
+docker cp data/street_aliases.sqlite vepathos-smart-import:/data/cache/street_aliases.sqlite
+docker compose restart smart-import
+```
+
+**O barrer en el worker** (tiene los PBF montados; horas si es el mundo entero):
+
+```bash
+docker compose --env-file .env.worker -f docker-compose.worker.yml run --rm worker \
+  build-street-aliases --only belgium,luxembourg,romania,switzerland \
+  -o /data/cache/street_aliases.sqlite
+```
+
+Después de copiar/barrer, un restart del worker alcanza (el geocoder abre el
+sqlite al instanciarse). `--force-recreate` no borra el volume de cache.
 
 ### 13.0 Antes de tocar prod (en tu Mac / repo)
 
@@ -828,6 +1032,9 @@ docker compose --env-file .env.worker \
 docker logs vepathos-smart-import-worker --tail 15
 ```
 
+Copiar alias OSM ([§13.0a](#130a-mapa-de-alias-osm-no-va-en-git)) si este
+rollout los necesita y el volume aún no los tiene.
+
 Desde la VM:
 
 ```bash
@@ -858,6 +1065,8 @@ docker compose --env-file .env.prod.smart.local \
   -f docker-compose.worker.yml \
   -f docker-compose.mac.worker.yml \
   up -d --force-recreate worker
+
+docker cp data/street_aliases.sqlite si-worker-prod-mac:/data/cache/street_aliases.sqlite
 
 docker compose --env-file .env.prod.smart.local \
   -f docker-compose.worker.yml \

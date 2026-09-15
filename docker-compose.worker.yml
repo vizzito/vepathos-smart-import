@@ -60,6 +60,8 @@ services:
       SMART_IMPORT_INDEX_DIR: /data/indexes
       SMART_IMPORT_EXTRACT_DIR: /data/extracts
       SMART_IMPORT_CACHE_PATH: /data/cache/geocode_cache.sqlite
+      # Pares name↔name:fr/nl. Volume de cache: sobrevive --force-recreate.
+      SMART_IMPORT_STREET_ALIASES: /data/cache/street_aliases.sqlite
     volumes:
       # Los PBF solo hacen falta si este nodo consume geocode. Con
       # SMART_IMPORT_CONSUME_GEOCODE=false el mount queda vacio y no molesta:

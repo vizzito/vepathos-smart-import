@@ -21,14 +21,14 @@ Documentos relacionados:
 2. [Arquitectura de containers](#2-arquitectura-de-containers)
 3. [Concurrencia: qué pasa con muchos usuarios a la vez](#3-concurrencia-qué-pasa-con-muchos-usuarios-a-la-vez)
 4. [Requisitos](#4-requisitos)
-5. [Setup local — opción A: Docker (recomendado)](#5-setup-local--opción-a-docker-recomendado)
+5. [Setup local — opción A: Docker (recomendado)](#5-setup-local--opción-a-docker-recomendado) · [5.3 Día a día](#53-día-a-día-sin-reinstalar-librerías) · [5.3.1 Tres procesos en la misma Mac](#531-tres-procesos-en-la-misma-mac-no-confundirlos)
 6. [Setup local — opción B: venv + CLI](#6-setup-local--opción-b-venv--cli)
 7. [Conectar la web (`vepathos-router-client`)](#7-conectar-la-web-vepathos-router-client)
 8. [Flujo que ejecuta la web](#8-flujo-que-ejecuta-la-web)
 9. [Comandos útiles (cheatsheet)](#9-comandos-útiles-cheatsheet)
 10. [Tests](#10-tests) · [10.0 Levantar `.venv`](#100-levantar-venv-recordatorio)
 11. [Docker: build, cache, prune (capas libpostal)](#11-docker-build-cache-prune-capas-libpostal)
-12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo](#124-repartir-el-trabajo-entre-máquinas) · **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)** (topología actual)
+12. [Deploy en producción](#12-deploy-en-producción) · [12.4 Repartir el trabajo](#124-repartir-el-trabajo-entre-máquinas) · **[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)** (rollout api-prod + VM + Mac)
 13. [Variables de entorno](#13-variables-de-entorno) · [13.1 Modo distribuido](#131-modo-distribuido-varios-nodos) · [13.3 Cuando algo se cae](#133-qué-pasa-cuando-algo-se-cae)
 14. [Diagnóstico rápido](#14-diagnóstico-rápido)
 15. [Checklist “¿anda?”](#15-checklist-anda)
@@ -224,10 +224,14 @@ en `.env` y rebuild.
 
 ### 5.3 Día a día (sin reinstalar librerías)
 
-El compose monta `./smart_import` y `./schemas` en el container. Cambios de
-código Python = **restart**, no rebuild:
+El bind de `./smart_import` **no** está en `docker-compose.yml`. Vive en
+`docker-compose.override.yml` (copiado del `.example`). Compose lo toma solo
+si el archivo existe: en esta Mac de desarrollo sí; en api-prod **no** se crea.
+
+Con override: cambios de Python = **restart**, no rebuild.
 
 ```bash
+cd ~/workspace/vepathos-smart-import
 docker compose up -d smart-import          # SIN --build
 # o
 docker compose restart smart-import
@@ -236,6 +240,42 @@ docker logs -f vepathos-smart-import
 
 **No uses `--build`** salvo que cambien `Dockerfile`, deps de sistema o
 `pyproject.toml` de forma que afecte paquetes instalados.
+
+El mapa de calles bilingües (`data/street_aliases.sqlite` en el host) **no**
+está en git. El container lo lee de `/data/cache/street_aliases.sqlite`
+(volume persistente). Después de un barrido local, copialo y reiniciá:
+
+```bash
+docker cp data/street_aliases.sqlite vepathos-smart-import:/data/cache/street_aliases.sqlite
+docker compose restart smart-import
+```
+
+Sin ese archivo el geocoder arranca igual (no-op). Los índices **nuevos** ya
+indexan `name:fr`/`name:nl`; los índices viejos del volume necesitan el sqlite
+para `Avenue Mozart` → `Mozartlaan`.
+
+### 5.3.1 Tres procesos en la misma Mac (no confundirlos)
+
+En `docker ps` hay **dos** containers de smart-import. El que apunta a prod
+**no publica puerto** en el host. El lab local sí (`127.0.0.1:8100`).
+
+| Qué | Container | Cómo lo reconocés en `docker ps` | ¿Es prod? |
+|---|---|---|---|
+| **Lab local** (podés tenerlo **parado**) | `vepathos-smart-import` | `127.0.0.1:8100->8100` + imagen `runtime-libpostal` | No. API aislada. |
+| **Mac → cola de api-prod** | `si-worker-prod-mac` | `8100/tcp` **sin** bind al host; env `.env.prod.smart.local` | Sí. Jobs reales. |
+| **CLI / accuracy** | ningún container | `.venv` | No. |
+
+El lab **no hace falta** para que esta Mac procese prod. Para bajarlo:
+
+```bash
+docker compose stop smart-import
+# o: docker stop vepathos-smart-import
+```
+
+Para **actualizar el worker que apunta a prod** no uses `docker compose`
+a secas (eso es el lab). Usá [DEPLOY-PRODUCTION.md §6.7](DEPLOY-PRODUCTION.md#67-actualizar-código-en-la-mac-apunta-a-prod)
+o [§13.4](DEPLOY-PRODUCTION.md#134-paso-3--mac-worker-libpostal-opcional).
+Un `restart` de `vepathos-smart-import` **no** toca `si-worker-prod-mac`.
 
 ### 5.4 Profiles opcionales
 
@@ -375,13 +415,18 @@ GEOCODE  …          # solo si el usuario / la web lo dispara
 ```bash
 cd ~/workspace/vepathos-smart-import
 
-# --- ciclo local ---
-docker compose up -d smart-import
+# --- lab local (:8100). Opcional. NO es la flota prod. ---
+docker compose stop smart-import          # bajarlo (prod Mac no lo necesita)
+docker compose up -d smart-import         # solo si querés probar en :8100
 docker compose restart smart-import
-docker compose stop smart-import
-docker compose down
+docker cp data/street_aliases.sqlite vepathos-smart-import:/data/cache/street_aliases.sqlite
 docker logs -f vepathos-smart-import
-docker compose ps
+
+# --- Mac worker apuntando a prod (si-worker-prod-mac) ---
+# ver DEPLOY-PRODUCTION.md §6 (alta) y §13.4 (rollout de código)
+docker compose --env-file .env.prod.smart.local \
+  -f docker-compose.worker.yml -f docker-compose.mac.worker.yml ps
+docker logs si-worker-prod-mac --tail 20
 
 # --- health / smoke ---
 curl -sf http://localhost:8100/health | python3 -m json.tool
@@ -533,6 +578,16 @@ docker compose up -d smart-import
 ---
 
 ## 12. Deploy en producción
+
+Hay **tres rollouts** distintos. Este capítulo cubre el monolito y el GIL.
+El layout actual (api-prod + VM + Mac) está en
+**[DEPLOY-PRODUCTION.md](DEPLOY-PRODUCTION.md)**:
+
+| Dónde | Qué actualizar | Doc |
+|---|---|---|
+| Mac, API `:8100` | `docker compose restart smart-import` (+ sqlite de alias) | [§5.3](#53-día-a-día-sin-reinstalar-librerías) |
+| api-prod + VM worker | `git pull` + `build` + `up -d --force-recreate` | [DEPLOY §13](DEPLOY-PRODUCTION.md#13-actualizar-prod--rollout-de-código) |
+| Mac worker → cola de prod | mismo, con `worker.yml` + `mac.worker.yml` | [DEPLOY §6](DEPLOY-PRODUCTION.md#6-agregar-una-mac-como-worker-libpostal) y [§13.4](DEPLOY-PRODUCTION.md#134-paso-3--mac-worker-libpostal-opcional) |
 
 ### 12.0 Lexicons (automático, no es un servicio)
 
@@ -1060,6 +1115,7 @@ se lee siempre en `GET /config`, que es lo único que no miente:
 | `SMART_IMPORT_ADDRESS_ACCEPT_THRESHOLD` | `0.50` | piso para aceptar una dirección. **Medido: subirlo no sirve** — ver el comentario en el `.env` antes de tocarlo |
 | **Geocoding** | | |
 | `SMART_IMPORT_GEOCODING_ENABLED` | `true` | prende geocode OSM (nunca es automático) |
+| `SMART_IMPORT_STREET_ALIASES` | `/data/cache/street_aliases.sqlite` | mapa name↔name:fr/nl (Docker). En venv: `data/street_aliases.sqlite`. Ausente = no-op |
 | `GEOCODER_FALLBACK` | `none` | lo que OSM no encuentra queda `not_found` para ubicación manual |
 | `GEOCODE_MATCH_THRESHOLD` / `GEOCODE_VALID_BAND` | `0.85` | status `matched` y color verde. **Tienen que ser iguales** o la UI pinta verde algo que el geocoder marcó dudoso |
 | `GEOCODE_LOW_CONFIDENCE_THRESHOLD` / `GEOCODE_REVIEW_BAND` | `0.70` | piso para devolver coordenada y para mostrarla. **Iguales** |

@@ -12,6 +12,13 @@ fuente de verdad para crear cada archivo en su máquina.
 
 Guía operativa completa: [DEPLOY-PRODUCTION.md](../../DEPLOY-PRODUCTION.md).
 
+En la Mac de desarrollo conviven **dos compose distintos**:
+
+| Archivo env | Compose | Container | ¿Prod? |
+|-------------|---------|-----------|--------|
+| `.env` | `docker compose` (+ override) | `vepathos-smart-import` | No (`:8100` local) |
+| `.env.prod.smart.local` | `worker.yml` + `mac.worker.yml` | `si-worker-prod-mac` | Sí (cola de api-prod) |
+
 ```bash
 # Ejemplo Mac worker prod
 cp deploy/templates/worker-mac.env.template .env.prod.smart.local

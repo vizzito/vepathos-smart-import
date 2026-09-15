@@ -30,6 +30,8 @@ x-common: &common
     SMART_IMPORT_INDEX_DIR: /data/indexes
     SMART_IMPORT_EXTRACT_DIR: /data/extracts
     SMART_IMPORT_CACHE_PATH: /data/cache/geocode_cache.sqlite
+    # Pares name↔name:fr/nl. Vive en el volume de cache (sobrevive recreate).
+    SMART_IMPORT_STREET_ALIASES: /data/cache/street_aliases.sqlite
     SMART_IMPORT_WORK_DIR: /data/jobs
     SMART_IMPORT_SCHEMA_DIR: /app/schemas
     SMART_IMPORT_VOCAB_PATH: /data/vocab/smart_import_vocab.sqlite
