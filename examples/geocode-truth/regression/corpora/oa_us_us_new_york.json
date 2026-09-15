@@ -1,0 +1,3838 @@
+{
+ "source": "openaddresses",
+ "country": "US",
+ "city": "New York",
+ "country_label": "United States",
+ "depot": {
+  "lat": 40.7128,
+  "lon": -74.006,
+  "city": "New York",
+  "country": "United States"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 382,
+ "note": "OpenAddresses us/ny/city_of_new_york, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "99 PAIDGE AVE, 11222 New York",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 PAIDGE AVE",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "PAIDGE AVE 99, 11222",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "New York, united states, PAIDGE AVE 99",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "New York, united states, PAIDGE AVE 99",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 PAIDGE AVE New York",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 paidge ave",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 PIADGE AVE",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 PAIDGE AVE apt 4b",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "99 PAIDGE AVE",
+   "lat": 40.7360883,
+   "lng": -73.9481825,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "99 PAIDGE AVE, 11222 New York",
+   "base": 0
+  },
+  {
+   "address": "58 2 ST, 11231 New York",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "2 ST, 58",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "2 ST 58, 11231",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "2 ST 58, united states, New York",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "united states, New York, 2 2 ST 58",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "58, 11231, 2 ST, New York",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "58 2 ST (green door)",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "58 2 st",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "58 2 ST",
+   "lat": 40.6784975,
+   "lng": -73.9936754,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "58 2 ST, 11231 New York",
+   "base": 1
+  },
+  {
+   "address": "4 BLUE SLIP, 11222 New York",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 BLUE SLIP",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "BLUE SLIP 4, 11222",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "united states New York BLUE SLIP 4",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "united states, New York, BLUE SLIP 4",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 New York 11222",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 slip",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 BLUE SLIP",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 BLUE SLIP back entrance",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "4 blue slip",
+   "lat": 40.7365495,
+   "lng": -73.9599895,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4 BLUE SLIP, 11222 New York",
+   "base": 2
+  },
+  {
+   "address": "149 W 4 ST, 10012 New York",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "149 W 4 ST",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "W 4 ST 149, 10012",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "W 4 ST 149 united states New York",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "New York, W 4 ST 149, united states",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "149 New York 10012",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "149 W 4 ST",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "149 W 4 ST apt 4b",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "149 w 4 st",
+   "lat": 40.7315996,
+   "lng": -74.0004936,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "149 W 4 ST, 10012 New York",
+   "base": 3
+  },
+  {
+   "address": "156 WAVERLY PL, 10014 New York",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "WAVERLY PL 156",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "WAVERLY PL 156 10014",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "New York WAVERLY PL 156 united states",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "new york united states waverly pl 156",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "New York, 10014, 156, WAVERLY PL",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "156 WAVERLY PL john",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "156 waverly pl",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "156 WAVERLY PL",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "156 WAVELRY PL",
+   "lat": 40.7333741,
+   "lng": -74.001186,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "156 WAVERLY PL, 10014 New York",
+   "base": 4
+  },
+  {
+   "address": "48 W 27 ST, 10001 New York",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "W 27 ST, 48",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "W 27 ST 48, 10001",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "united states New York W 27 ST 48",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "New York united states W 27 ST 48",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "48, 10001, W 27 ST, New York",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "48 w 27 st",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "48 W 27 ST",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "48 W 27 ST (green door)",
+   "lat": 40.7450478,
+   "lng": -73.9903273,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "48 W 27 ST, 10001 New York",
+   "base": 5
+  },
+  {
+   "address": "176 DEAN ST, 11217 New York",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "DEAN ST, 176",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "DEAN ST 176, 11217",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "DEAN ST 176 New York united states",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "united united states New York DEAN ST 176",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "176, New York, 11217",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "176 DEAN ST (green door)",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "176 DEAN ST",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "176 dean st",
+   "lat": 40.6858026,
+   "lng": -73.9863294,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "176 DEAN ST, 11217 New York",
+   "base": 6
+  },
+  {
+   "address": "336 E 30 ST, 10016 New York",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "336 E 30 ST",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "E 30 ST 336, 10016",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "New York, united states, E 30 ST 336",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "E 30 ST 336 New York united states",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "336, New York, 10016, E 30 ST",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "336 E 30 ST john",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "336 e 30 st",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "336 E 30 ST",
+   "lat": 40.741501,
+   "lng": -73.9762373,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "336 E 30 ST, 10016 New York",
+   "base": 7
+  },
+  {
+   "address": "102 THOMPSON ST, 10012 New York",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "102 THOMPSON ST",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "THOMPSON ST 102, 10012",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "New York THOMPSON ST 102 united states",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "New York THOMPSON ST 102 united states",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "10012 - 102 - THOMPSON ST - New York",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "102 THOMPSON ST",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "102 thompson st",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "102 THOMPSON ST back entrance",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "102 THMOPSON ST",
+   "lat": 40.7255304,
+   "lng": -74.0019593,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "102 THOMPSON ST, 10012 New York",
+   "base": 8
+  },
+  {
+   "address": "118 E 38 ST, 10016 New York",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "E 38 ST 118",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "E 38 ST 118, 10016",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "E 38 ST 118 New York united states",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "united states, New York, E 38 ST 118",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "New York, E 38 ST, 10016",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "118 E 38 ST (green door)",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "118 E 38 ST",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "118 e 38 st",
+   "lat": 40.7491171,
+   "lng": -73.9786265,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "118 E 38 ST, 10016 New York",
+   "base": 9
+  },
+  {
+   "address": "41 CANAL ST, 10002 New York",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "CANAL ST, 41",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "CANAL ST 41 10002",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "united states CANAL ST 41 New York",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "united states, CANAL ST 41, New York",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "41 - 10002 - CANAL ST",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "41 canal st",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "41 CANAL ST john",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "41 CANNAL ST",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "41 CANAL ST",
+   "lat": 40.7148442,
+   "lng": -73.9912731,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "41 CANAL ST, 10002 New York",
+   "base": 10
+  },
+  {
+   "address": "160 E 36 ST, 10016 New York",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "160 E 36 ST",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "E 36 ST 160 10016",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "united states New York E 36 ST 160",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "united states New York E 36 ST 160",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "160 - 10016 - E 36 ST - New York",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "160 E 36 ST",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "160 e 36 st",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "160 E 36 ST apt 4b",
+   "lat": 40.7471241,
+   "lng": -73.9776882,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "160 E 36 ST, 10016 New York",
+   "base": 11
+  },
+  {
+   "address": "162 PRESIDENT ST, 11231 New York",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "PRESIDENT ST, 162",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "PRESIDENT ST 162 11231",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "PRESIDENT ST 162 united states New York",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "united states, PRESIDENT ST 162, New York",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "11231 162 New York PRESIDENT ST",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "162 PRESIDENT ST (green door)",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "162 PRESDIENT ST",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "162 PRESIDENT ST",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "162 president st",
+   "lat": 40.6828812,
+   "lng": -74.0007399,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "162 PRESIDENT ST, 11231 New York",
+   "base": 12
+  },
+  {
+   "address": "235 E 43 ST, 10017 New York",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "E 43 ST 235",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "E 43 ST 235 10017",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "E 43 ST 235 New York united states",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "united states, New York, E 43 ST 235",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "10017 - E 43 ST - 235",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "235 E 43 ST",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "235 e 43 st",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "235 E 43 ST (green door)",
+   "lat": 40.7507882,
+   "lng": -73.9721298,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "235 E 43 ST, 10017 New York",
+   "base": 13
+  },
+  {
+   "address": "299 COURT ST, 11231 New York",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "COURT ST 299",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "COURT ST 299 11231",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "COURT ST 299, New York, united states",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "COURT ST 299, New York, united states",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "COURT ST - 299 - New York - 11231",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "299 CuRT ST",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "299 COURT ST john",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "299 court st",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "299 COURT ST",
+   "lat": 40.6838897,
+   "lng": -73.9950187,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "299 COURT ST, 11231 New York",
+   "base": 14
+  },
+  {
+   "address": "982 MANHATTAN AVE, 11222 New York",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "MANHATTAN AVE 982",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "MANHATTAN AVE 982, 11222",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "MANHATTAN AVE 982 New York united states",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "united states MANHATTAN AVE 982 New York",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "11222 New York 982 MANHATTAN AVE",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "982 manhattan ave",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "982 MANHATTAN AVE",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "982 MANHATTAN AVE apt 4b",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "982 MANHAtAN AVE",
+   "lat": 40.7326673,
+   "lng": -73.9545114,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "982 MANHATTAN AVE, 11222 New York",
+   "base": 15
+  },
+  {
+   "address": "104 S OXFORD ST, 11217 New York",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "S OXFORD ST 104",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "S OXFORD ST 104 dto A",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "New York, united states, S OXFORD ST 104",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "S OXFORD ST 104 united states New York",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "New York, 11217, Apt A, 104",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "104 s oxford st",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "104 S OXOFRD ST",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "104 S OXFORD ST apt 4b",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "104 S OXFORD ST",
+   "lat": 40.686436,
+   "lng": -73.9736158,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "104 S OXFORD ST, 11217 New York",
+   "base": 16
+  },
+  {
+   "address": "180 MAIDEN LN, 10005 New York",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "MAIDEN LN 180",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "MAIDEN LN 180, 10005",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "New York MAIDEN LN 180 united states",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "united states, new york, maiden ln 180",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "MAIDEN LN, 180, 10005",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "180 MAIDEN LN (green door)",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "180 MADIEN LN",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "180 maiden ln",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "180 MAIDEN LN",
+   "lat": 40.7052802,
+   "lng": -74.0050658,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "180 MAIDEN LN, 10005 New York",
+   "base": 17
+  },
+  {
+   "address": "456 W 49 ST, 10019 New York",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "W 49 ST, 456",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "W 49 ST 456 10019",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "united states, New York, W 49 ST 456",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "New York W 49 ST 456 united states",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "New York, W 49 ST, 456, 10019",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "456 W 49 ST",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "456 w 49 st",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "456 W 49 ST (green door)",
+   "lat": 40.7637459,
+   "lng": -73.9917261,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "456 W 49 ST, 10019 New York",
+   "base": 18
+  },
+  {
+   "address": "131 THOMPSON ST, 10012 New York",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "THOMPSON ST, 131",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "THOMPSON ST 131, 10012",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "New York, THOMPSON ST 131, united states",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "united states, thompson st st 131, new york",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "10012 New York 131",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "131 THOMPSON ST",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "131 THOMPSON ST back entrance",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "131 thompson st",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "131 THMOPSON ST",
+   "lat": 40.7265742,
+   "lng": -74.0013575,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "131 THOMPSON ST, 10012 New York",
+   "base": 19
+  },
+  {
+   "address": "370 S 2 ST, 11211 New York",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "S 2 ST 370",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "S 2 ST 370, 11211",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "New York united states S 2 ST 370",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "s 2 st 370 new york united united states",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "S 2 ST New York 370 11211",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "370 S 2 ST back entrance",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "370 s 2 st",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "370 S 2 ST",
+   "lat": 40.7098254,
+   "lng": -73.9529195,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "370 S 2 ST, 11211 New York",
+   "base": 20
+  },
+  {
+   "address": "103 GRAHAM AVE, 11206 New York",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "GRAHAM AVE 103",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "GRAHAM AVE 103 11206",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "GRAHAM AVE 103, united states, New York",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "new york united states graham ave 103",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "103 - GRAHAM AVE - New York",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "103 GRAAHM AVE",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "103 GRAHAM AVE john",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "103 graham ave",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "103 GRAHAM AVE",
+   "lat": 40.7052879,
+   "lng": -73.9430251,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "103 GRAHAM AVE, 11206 New York",
+   "base": 21
+  },
+  {
+   "address": "254 HENRY ST, 11201 New York",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "HENRY ST, 254",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "HENRY ST 254, 11201",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "united states, New York, HENRY ST 254",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "HENRY ST 254, New York, united states",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "254 11201 New York HENRY ST",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "254 HENRY ST back entrance",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "254 HENRY ST",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "254 henry st",
+   "lat": 40.6926469,
+   "lng": -73.9954651,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "254 HENRY ST, 11201 New York",
+   "base": 22
+  },
+  {
+   "address": "132 N 10 ST, 11249 New York",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "N 10 ST 132",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "N 10 ST 132, 11249",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "New York, N 10 ST 132, united states",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "united states, New York, N 10 ST 132",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "132 - 11249 - New York",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "132 N 10 ST john",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "132 n 10 st",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "132 N 10 ST",
+   "lat": 40.7200707,
+   "lng": -73.9570583,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "132 N 10 ST, 11249 New York",
+   "base": 23
+  },
+  {
+   "address": "272 DRIGGS AVE, 11222 New York",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "DRIGGS AVE, 272",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "DRIGGS AVE 272, 11222",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "DRIGGS AVE 272, New York, united states",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "new york driggs ave 272 united states",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "New York 11222 DRIGGS AVE",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "272 DRIGGS AVE",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "272 driggs ave",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "272 DRGIGS AVE",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "272 DRIGGS AVE back entrance",
+   "lat": 40.7227133,
+   "lng": -73.9486203,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "272 DRIGGS AVE, 11222 New York",
+   "base": 24
+  },
+  {
+   "address": "97 S 9 ST, 11249 New York",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "S 9 ST, 97",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "S 9 ST 97 11249",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "New York, S 9 ST 97, united states",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "united states New York S 9 ST 97",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "11249, 97, New York, S 9 ST",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "97 s 9 st",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "97 S 9 ST",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "97 S 9 ST apt 4b",
+   "lat": 40.7089478,
+   "lng": -73.9652172,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "97 S 9 ST, 11249 New York",
+   "base": 25
+  },
+  {
+   "address": "294 S 5 ST, 11211 New York",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "294 S 5 ST",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "S 5 ST 294, 11211",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "united states, S 5 ST 294, New York",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "S 5 ST 294 united states New York",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "11211, New York, S 5 ST",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "294 s 5 st",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "294 S 5 ST (green door)",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "294 S 5 ST",
+   "lat": 40.7090613,
+   "lng": -73.9577467,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "294 S 5 ST, 11211 New York",
+   "base": 26
+  },
+  {
+   "address": "153 SUFFOLK ST, 10002 New York",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "153 SUFFOLK ST",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "SUFFOLK ST 153, 10002",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "united states, New York, SUFFOLK ST 153",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "united states New York SUFFOLK ST 153 153",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "SUFFOLK ST - 153 - New York - 10002",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "153 SUFFOLK ST",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "153 suffolk st",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "153 SUFFOLK ST apt 4b",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "153 SUFFLOK ST",
+   "lat": 40.7207444,
+   "lng": -73.9852999,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "153 SUFFOLK ST, 10002 New York",
+   "base": 27
+  },
+  {
+   "address": "620 LAFAYETTE AVE, 11216 New York",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "LAFAYETTE AVE 620",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "LAFAYETTE AVE 620, 11216",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "LAFAYETTE AVE 620 united states New York",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "united united states, LAFAYETTE AVE 620, New York",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "11216, LAFAYETTE AVE, New York",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "620 LAFAYEtE AVE",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "620 LAFAYETTE AVE back entrance",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "620 LAFAYETTE AVE",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "620 lafayette ave",
+   "lat": 40.6898803,
+   "lng": -73.9501899,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "620 LAFAYETTE AVE, 11216 New York",
+   "base": 28
+  },
+  {
+   "address": "145 HEYWARD ST, 11206 New York",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "HEYWARD ST 145",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "HEYWARD ST 145, 11206",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "New York, HEYWARD ST 145, united states",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "HEYWARD ST 145 New York united states",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "11206 - 145 - New York - HEYWARD ST",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "145 HEiWARD ST",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "145 heyward st",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "145 HEYWARD ST john",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "145 HEYWARD ST",
+   "lat": 40.7023285,
+   "lng": -73.9553764,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "145 HEYWARD ST, 11206 New York",
+   "base": 29
+  },
+  {
+   "address": "278 CARROLL ST, 11231 New York",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "CARROLL ST 278",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "CARROLL ST 278, 11231",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "CARROLL ST 278 New York united states",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "new new york united states carroll st 278",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "New York, CARROLL ST, 278",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "278 CARROLL ST",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "278 carroll st",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "278 CArOLL ST",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "278 CARROLL ST john",
+   "lat": 40.6795825,
+   "lng": -73.9939416,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "278 CARROLL ST, 11231 New York",
+   "base": 30
+  },
+  {
+   "address": "192 WASHINGTON AVE, 11205 New York",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "WASHINGTON AVE 192",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "WASHINGTON AVE 192, 11205",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "WASHINGTON AVE 192 united states New York",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "New York WASHINGTON AVE 192 united states",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "11205 - New York - 192 - WASHINGTON AVE",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "192 washington ave",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "192 WAHSINGTON AVE",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "192 WASHINGTON AVE (green door)",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "192 WASHINGTON AVE",
+   "lat": 40.6928129,
+   "lng": -73.9669978,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "192 WASHINGTON AVE, 11205 New York",
+   "base": 31
+  },
+  {
+   "address": "100 WALL ST, 10005 New York",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "100 WALL ST",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "WALL ST 100 10005",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "united states WALL ST 100 New York",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "WALL ST 100, united states, New York York",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "New York - 10005 - 100 - WALL ST",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "100 WALL ST",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "100 WALL ST john",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "100 wall st",
+   "lat": 40.7052069,
+   "lng": -74.0070877,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "100 WALL ST, 10005 New York",
+   "base": 32
+  },
+  {
+   "address": "113 CLIFTON PL, 11238 New York",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "CLIFTON PL, 113",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "CLIFTON PL 113, 11238",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "New York united states CLIFTON PL 113",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "New York, united states, CLIFTON PL 113",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "CLIFTON PL, 113, 11238",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "113 CLITFON PL",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "113 CLIFTON PL",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "113 CLIFTON PL john",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "113 clifton pl",
+   "lat": 40.6883133,
+   "lng": -73.9594379,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "113 CLIFTON PL, 11238 New York",
+   "base": 33
+  },
+  {
+   "address": "250 PARK AVE S, 10003 New York",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "PARK AVE S 250",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "PARK AVE S 250, 10003",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "united states, New York, PARK AVE S 250",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "PARK AVE S 250, New York, united states",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "New York - 10003 - PARK AVE S - 250",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "250 park ave s",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "250 PARK AVE S john",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "250 PARK AVE S",
+   "lat": 40.7382077,
+   "lng": -73.9880441,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "250 PARK AVE S, 10003 New York",
+   "base": 34
+  },
+  {
+   "address": "22 ELIZABETH ST, 10013 New York",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "22 ELIZABETH ST",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "ELIZABETH ST 22, 10013",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "united states ELIZABETH ST 22 New York",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "united states New York ELIZABETH ST 22",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "ELIZABETH ST, New York, 22",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "22 ELIZABETH ST john",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "22 ELIZABETH ST",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "22 elizabeth st",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "22 ELIsABETH ST",
+   "lat": 40.7161182,
+   "lng": -73.9971316,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "22 ELIZABETH ST, 10013 New York",
+   "base": 35
+  },
+  {
+   "address": "616 2 ST, 11215 New York",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "2 ST 616",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "2 ST 616, 11215",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "2 ST 616 New York united states",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "New York 2 ST 616 united states",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "616 - 11215 - 2 ST",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "616 2 st",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "616 2 ST",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "616 2 ST apt 4b",
+   "lat": 40.6693324,
+   "lng": -73.974641,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "616 2 ST, 11215 New York",
+   "base": 36
+  },
+  {
+   "address": "129 E 26 ST, 10010 New York",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "129 E 26 ST",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "E 26 ST 129 10010",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "E 26 ST 129 New York united states",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "united states E 26 ST 129 New York",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "129 New York 10010 E 26 ST",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "129 e 26 st",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "129 E 26 ST back entrance",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "129 E 26 ST",
+   "lat": 40.7416176,
+   "lng": -73.9836028,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "129 E 26 ST, 10010 New York",
+   "base": 37
+  },
+  {
+   "address": "85 CHAMBERS ST, 10007 New York",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "CHAMBERS ST 85",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "CHAMBERS ST 85 10007",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "CHAMBERS ST 85, New York, united states",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "united states CHAMBERS ST 85 New York",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "New York - 85 - CHAMBERS ST",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "85 CHAMBERS ST",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "85 CHAMvERS ST",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "85 chambers st",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "85 CHAMBERS ST apt 4b",
+   "lat": 40.7146553,
+   "lng": -74.0070796,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "85 CHAMBERS ST, 10007 New York",
+   "base": 38
+  },
+  {
+   "address": "83 LUQUER ST, 11231 New York",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "LUQUER ST 83",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "LUQUER ST 83, 11231",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "united states, LUQUER ST 83, New York",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "New York LUQUER ST 83 united united states",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "11231 - LUQUER ST - New York",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "83 LUQUER ST (green door)",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "83 luquer st",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "83 LUkER ST",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  },
+  {
+   "address": "83 LUQUER ST",
+   "lat": 40.6782204,
+   "lng": -74.0019632,
+   "country": "US",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "83 LUQUER ST, 11231 New York",
+   "base": 39
+  }
+ ]
+}

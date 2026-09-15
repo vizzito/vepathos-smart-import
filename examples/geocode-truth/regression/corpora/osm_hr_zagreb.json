@@ -1,0 +1,3748 @@
+{
+ "source": "osm-addr",
+ "country": "HR",
+ "city": "Zagreb",
+ "country_label": "Croatia",
+ "depot": {
+  "lat": 45.815,
+  "lon": 15.9819,
+  "city": "Zagreb",
+  "country": "Croatia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 373,
+ "note": "Nodos addr:* del indice n45.90_s45.70_e16.10_w15.90-croatia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Poljana Jurja Andrassyja 12, Zagreb",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "12 Poljana Jurja Andrassyja",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Poljana Jurja Andrassyja 12, hr, Zagreb",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Zagreb, hr, Poljana Jurja Andrassyja 12",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Zagreb, Poljana Jurja Andrassyja",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "andrassyja 12",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Deli poljana jurja andrassyja 12",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Poljana Jurja Andrassyja12",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Poljana Jurja Andrassija 12",
+   "lat": 45.7889314,
+   "lng": 15.9474732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Poljana Jurja Andrassyja 12, Zagreb",
+   "base": 0
+  },
+  {
+   "address": "Ulica Ivana Lepušića 14, Zagreb",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "14 Ulica Ivana Lepušića",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Zagreb Ulica Ivana Lepušića 14 hr",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "ulica ivana lepušića 14 hr zagreb",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Ulica Ivana Lepušića, Zagreb, 14",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Ivana Lepušića 14 apt 4b",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Deli ivana lepušića 14",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Ivana Lepušića14",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "ivana lepušića 14",
+   "lat": 45.8070593,
+   "lng": 15.9930712,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Ivana Lepušića 14, Zagreb",
+   "base": 1
+  },
+  {
+   "address": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Ulica Gjure Čanića, 2",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Ulica Gjure Čanića 2, 10000",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Zagreb Ulica Gjure Čanića 2 hr",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "ulica gjure gjure čanića 2, hr, zagreb",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Ulica Gjure Čanića Zagreb 10000 2",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "čanića 2",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Gjure Čanića 2 apt 4b",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Mary gjure čanića 2",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "GJURE ČANIĆA 2",
+   "lat": 45.81242967142857,
+   "lng": 15.953554628571428,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Gjure Čanića 2, 10000 Zagreb",
+   "base": 2
+  },
+  {
+   "address": "Viljevski put 2, Zagreb",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "2 Viljevski put",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Zagreb hr Viljevski put 2",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Zagreb, hr, Viljevski put 2",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "2 - Viljevski put - Zagreb",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Viljebski put 2",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "VILJEVSKI PUT 2",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Viljevski put2",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Viljevski put 2 back entrance",
+   "lat": 45.80191926,
+   "lng": 15.914335099999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Viljevski put 2, Zagreb",
+   "base": 3
+  },
+  {
+   "address": "Selska 116, 10000 Zagreb",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "116 Selska",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Selska 116, 10000",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Zagreb hr Selska 116",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Selska 116, Zagreb, hr",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Selska, 116, 10000, Zagreb",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Seslka 116",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "SELSKA 116",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "selska 116",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Selska 116 john",
+   "lat": 45.7979005,
+   "lng": 15.942972716666667,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Selska 116, 10000 Zagreb",
+   "base": 4
+  },
+  {
+   "address": "Trg Luke Botića 1, 10000 Zagreb",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Trg Luke Botića 1",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Trg Luke Botića 1 10000",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Trg Luke Botića 1, hr, Zagreb",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "hr Trg Luke Botića 1 1 Zagreb",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Zagreb 1 Trg Luke Botića 10000",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "trg luke botića 1",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "TRG LUKE BOTIĆA 1",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Trg Luke Botića 1 back entrance",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Trg Luke Btoića 1",
+   "lat": 45.8042963,
+   "lng": 15.9943039,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Trg Luke Botića 1, 10000 Zagreb",
+   "base": 5
+  },
+  {
+   "address": "Slavonska ulica 35, Zagreb",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Slavonska ulica, 35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Zagreb hr Slavonska ulica 35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "zagreb slavonska ulica 35 hr",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Slavonska ulica 35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Slavonska ulica 35 back entrance",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "SLAVONSKA ULICA 35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Slavonska ulica35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "slavonska ulica 35",
+   "lat": 45.82038043913043,
+   "lng": 16.051257230434782,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Slavonska ulica 35, Zagreb",
+   "base": 6
+  },
+  {
+   "address": "Potok 34, Zagreb",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "34 Potok",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "hr, Zagreb, Potok 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "Zagreb Zagreb Potok 34 hr",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "Zagreb Potok 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "Pottok 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "Mary potok 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "potok 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "POTOK 34",
+   "lat": 45.8185296,
+   "lng": 15.907203939999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Potok 34, Zagreb",
+   "base": 7
+  },
+  {
+   "address": "Martićeva ulica 14A, 10000 Zagreb",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Martićeva ulica, 14A",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Martićeva ulica 14A 10000",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "hr Martićeva ulica 14A Zagreb",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "hr Zagreb Marticeva ulica 14A 14A",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Martićeva ulica - 14A - Zagreb - 10000",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "MARTIĆEVA ULICA 14A",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Martićeba ulica 14A",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "martićeva ulica 14a",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Martićeva ulica14A",
+   "lat": 45.8121819,
+   "lng": 15.9877455,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Martićeva ulica 14A, 10000 Zagreb",
+   "base": 8
+  },
+  {
+   "address": "Strohalov prilaz 29, 10010 Zagreb",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "29 Strohalov prilaz",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Strohalov prilaz 29 10010",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Strohalov prilaz 29, hr, Zagreb",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Strohalov prilaz 29, Zagreb, hr",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "10010, Zagreb, 29",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "strohalov prilaz 29",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Mary strohalov prilaz 29",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Strohalob prilaz 29",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Strohalov prilaz 29 john",
+   "lat": 45.7742237,
+   "lng": 15.9945195,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Strohalov prilaz 29, 10010 Zagreb",
+   "base": 9
+  },
+  {
+   "address": "Ninska ulica 17, Zagreb",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Ninska ulica 17",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Zagreb, Ninska ulica 17, hr",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Ninska ulica 17, hr, Zagreb",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Ninska ulica Zagreb",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "ulica 17",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "NINSKA ULICA 17",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Ninska ulica 17 apt 4b",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Deli ninska ulica 17",
+   "lat": 45.79312094444444,
+   "lng": 15.948151033333334,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ninska ulica 17, Zagreb",
+   "base": 10
+  },
+  {
+   "address": "Dužice 18, Zagreb",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Dužice 18",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "hr Dužice 18 Zagreb",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "hr, Duzice 18, Zagreb",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Dužice, 18, Zagreb",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Dužice 18 john",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Mary dužice 18",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Dužice18",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Dužise 18",
+   "lat": 45.79555868,
+   "lng": 15.953438019999998,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dužice 18, Zagreb",
+   "base": 11
+  },
+  {
+   "address": "Zeleni trg 6A, Zagreb",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Zeleni trg 6A",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Zagreb, Zeleni trg 6A, hr",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Zeleni trg 6A Zagreb hr",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Zeleni trg - 6A",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Zeelni trg 6A",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "ZELENI TRG 6A",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "zeleni trg 6a",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Mary zeleni trg 6A",
+   "lat": 45.79557159130435,
+   "lng": 15.961114034782609,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zeleni trg 6A, Zagreb",
+   "base": 12
+  },
+  {
+   "address": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "30B Ulica Lavoslava Ružičke",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "Ulica Lavoslava Ružičke 30B 10000",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "hr Ulica Lavoslava Ružičke 30B Zagreb",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "hr Zagreb Ulica Lavoslava Ruzicke 30B",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "Zagreb, Ulica Lavoslava Ružičke, 30B, 10000",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "lavoslava ružičke 30b",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "Lavoslava Ruž 30B",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "Lavoslava Ružičke30B",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "LAVOSLAVA RUŽIČKE 30B",
+   "lat": 45.79684134,
+   "lng": 15.96799446,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Lavoslava Ružičke 30B, 10000 Zagreb",
+   "base": 13
+  },
+  {
+   "address": "Vrisnička ulica 16, Zagreb",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Vrisnička ulica 16",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Vrisnička ulica 16 hr Zagreb",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Zagreb, hr, Vrisnicka ulica 16",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "16 - Zagreb",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Vrisnička ulica 16 john",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "ulica 16",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "vrisnička ulica 16",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Virsnička ulica 16",
+   "lat": 45.7881258,
+   "lng": 15.9240204,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vrisnička ulica 16, Zagreb",
+   "base": 14
+  },
+  {
+   "address": "Tihi dol 1, Zagreb",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Tihi dol, 1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "hr Zagreb Tihi dol 1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "zagreb, hr, tihi dol 1 1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Tihi dol, Zagreb",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Tihi dol1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Mary tihi dol 1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Tihi dol 1 (green door)",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "TIHI DOL 1",
+   "lat": 45.85517536,
+   "lng": 15.98188396,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tihi dol 1, Zagreb",
+   "base": 15
+  },
+  {
+   "address": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Ulica kneza Domagoja 8",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Ulica kneza Domagoja 8, 10000",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Ulica kneza Domagoja 8 hr Zagreb",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "zagreb ulica kneza domagoja 8 hr",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Ulica kneza Domagoja, 8, Zagreb",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "kneza Dom 8",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "kneza Domagoja 8 (green door)",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "KNEZA DOMAGOJA 8",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Deli kneza domagoja 8",
+   "lat": 45.8080372,
+   "lng": 15.9861011,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica kneza Domagoja 8, 10000 Zagreb",
+   "base": 16
+  },
+  {
+   "address": "Apatinska ulica 24, Zagreb",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Apatinska ulica, 24",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Apatinska ulica 24, Zagreb, hr",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "zagreb, hr, apatinska ulica 24",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Zagreb - Apatinska ulica",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Apatinska ulica24",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "ulica 24",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Apatinska ulica 24 back entrance",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "apatinska ulica 24",
+   "lat": 45.8124855,
+   "lng": 16.0525665,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Apatinska ulica 24, Zagreb",
+   "base": 17
+  },
+  {
+   "address": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Ulica Josipa Račića 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Ulica Josipa Račića 1 10000",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Zagreb hr Ulica Josipa Račića 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "zagreb ulica josipa račića 1 hr",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Ulica Josipa Račića 1 Zagreb 10000",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "JOSIPA RAČIĆA 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "josipa račića 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Deli josipa račića 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Jsoipa Račića 1",
+   "lat": 45.817798,
+   "lng": 16.0022363,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Josipa Račića 1, 10000 Zagreb",
+   "base": 18
+  },
+  {
+   "address": "Opatička ulica 15, Zagreb",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Opatička ulica 15",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Zagreb Opatička ulica 15 hr",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Opatička ulica 15 Zagreb hr hr",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Opatička ulica, Zagreb, 15",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Opatička ulica 15 john",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Oaptička ulica 15",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "opatička ulica 15",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "OPATIČKA ULICA 15",
+   "lat": 45.8172603875,
+   "lng": 15.974646725,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Opatička ulica 15, Zagreb",
+   "base": 19
+  },
+  {
+   "address": "Ulica Ive Hergešića 3, Zagreb",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Ulica Ive Hergešića, 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Zagreb hr Ulica Ive Hergešića 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "hr, Zagreb, Ulica Ive Hergesica 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Zagreb Ulica Ive Hergešića",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Ive Hegrešića 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Ive Hergešića3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Deli ive hergešića 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "ive hergešića 3",
+   "lat": 45.7931219,
+   "lng": 15.9830732,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Ive Hergešića 3, Zagreb",
+   "base": 20
+  },
+  {
+   "address": "Javorinska ulica 1, 10040 Zagreb",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Javorinska ulica 1",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Javorinska ulica 1, 10040",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "hr Javorinska ulica 1 Zagreb",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Zagreb Javorinska ulica 1 hr",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "10040 1 Javorinska ulica",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Javorinska ulica1",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "JAVORINSKA ULICA 1",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Javorniska ulica 1",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Mary javorinska ulica 1",
+   "lat": 45.82613983846154,
+   "lng": 16.05029813846154,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Javorinska ulica 1, 10040 Zagreb",
+   "base": 21
+  },
+  {
+   "address": "Ulica Ante Mike Tripala 1, Zagreb",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Ulica Ante Mike Tripala 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Zagreb, hr, Ulica Ante Mike Tripala 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "hr Zagreb Ulica Ante Mike Tripala 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Zagreb, Ulica Ante Mike Tripala",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Ante Mike Tripala1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Ante Mike Triapla 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Ante Mike Tri 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Mary ante mike tripala 1",
+   "lat": 45.7980495,
+   "lng": 15.9085974,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Ante Mike Tripala 1, Zagreb",
+   "base": 22
+  },
+  {
+   "address": "Kuševačka ulica 9D, Zagreb",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "9D Kuševačka ulica",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Zagreb hr Kuševačka ulica 9D",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Kusevacka ulica 9D, 9D, hr, Zagreb",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Zagreb, Kuševačka ulica",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Kuševačka ulica9D",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "ulica 9D",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "KUŠEVAČKA ULICA 9D",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Kuševačka ulica 9D back entrance",
+   "lat": 45.78435062,
+   "lng": 16.0154767,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kuševačka ulica 9D, Zagreb",
+   "base": 23
+  },
+  {
+   "address": "Ulica Jurja Biankinija 7, Zagreb",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Ulica Jurja Biankinija, 7",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Zagreb, Ulica Jurja Biankinija 7, hr",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Ulica Jurja Biankinija 7 hr Zagreb",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Ulica Jurja Biankinija, 7",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Jurja Bia 7",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Mary jurja biankinija 7",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "jurja biankinija 7",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Jurja Biankinija 7 john",
+   "lat": 45.81147756,
+   "lng": 15.992725720000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Jurja Biankinija 7, Zagreb",
+   "base": 24
+  },
+  {
+   "address": "Ulica Stjepana Širole 6, Zagreb",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "Ulica Stjepana Širole, 6",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "hr, Zagreb, Ulica Stjepana Širole 6",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "Zagreb, Ulica Stjepana Širole 6, hr hr",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "6, Ulica Stjepana Širole",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "širole 6",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "Mary stjepana širole 6",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "STJEPANA ŠIROLE 6",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "Stjepana Širole 6 apt 4b",
+   "lat": 45.8070801,
+   "lng": 15.9943559,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Stjepana Širole 6, Zagreb",
+   "base": 25
+  },
+  {
+   "address": "Ulica Đure Basaričeka 9, Zagreb",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Ulica Đure Basaričeka 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Zagreb hr Ulica Đure Basaričeka 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Zagreb, hr, Ulica Đure Basaričeka 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "9, Zagreb",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Đure Basaričeka 9 apt 4b",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "basaričeka 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "ĐURE BASARIČEKA 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Đure Baasričeka 9",
+   "lat": 45.817427522222225,
+   "lng": 15.973906533333333,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Đure Basaričeka 9, Zagreb",
+   "base": 26
+  },
+  {
+   "address": "Južna obala III. 9, 10020 Zagreb",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "9 Južna obala III.",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Južna obala III. 9 10020",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Južna obala III. 9, Zagreb, hr",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Zagreb, hr, Južna obala III. 9",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Zagreb 10020 Južna obala III. 9",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "JUŽNA OBALA III. 9",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Južna obala III.9",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "iii. 9",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Južna obala III. 9 (green door)",
+   "lat": 45.7841094,
+   "lng": 15.960533618181818,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Južna obala III. 9, 10020 Zagreb",
+   "base": 27
+  },
+  {
+   "address": "Sigetečka ulica 16, Zagreb",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "Sigetečka ulica, 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "hr Sigetečka ulica 16 Zagreb",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "Zagreb hr Sigetecka Sigetecka ulica 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "Zagreb, Sigetečka ulica, 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "Mary sigetečka ulica 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "Sigetečka ulica 16 john",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "sigetečka ulica 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "SIGETEČKA ULICA 16",
+   "lat": 45.793532119999995,
+   "lng": 15.93225764,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sigetečka ulica 16, Zagreb",
+   "base": 28
+  },
+  {
+   "address": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "II. Crikvenička ulica 5",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "II. Crikvenička ulica 5 10000",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "hr II. Crikvenička ulica 5 Zagreb",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "II. Crikvenička ulica 5, Zagreb, hr",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "Zagreb, 5, 10000, II. Crikvenička ulica",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "Deli ii. crikvenička ulica 5",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "II. Crikvenička ulica5",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "II. Crikvenička ulica 5 (green door)",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "ulica 5",
+   "lat": 45.796450199999995,
+   "lng": 15.946923340000001,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "II. Crikvenička ulica 5, 10000 Zagreb",
+   "base": 29
+  },
+  {
+   "address": "Ulica Margarete Froman 12, Zagreb",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "Ulica Margarete Froman 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "hr, Zagreb, Ulica Margarete Froman 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "hr Ulica Margarete Margarete Froman 12 Zagreb",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "Ulica Margarete Froman - 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "MARGARETE FROMAN 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "froman 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "Magrarete Froman 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "Mary margarete froman 12",
+   "lat": 45.79919526,
+   "lng": 15.925444279999999,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Margarete Froman 12, Zagreb",
+   "base": 30
+  },
+  {
+   "address": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "13 Ulica Ivana Šibla",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Ulica Ivana Šibla 13, 10010",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Zagreb hr Ulica Ivana Šibla 13",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "hr, Ulica Ivana Šibla 13, Zagreb",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Ulica Ivana Šibla 13 10010 Zagreb",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "IVANA ŠIBLA 13",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Ivana Šibla 13 (green door)",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "ivana šibla 13",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Mary ivana šibla 13",
+   "lat": 45.7785217,
+   "lng": 15.9872398,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Ivana Šibla 13, 10010 Zagreb",
+   "base": 31
+  },
+  {
+   "address": "Cvjetno naselje IV. 18, Zagreb",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Cvjetno naselje IV., 18",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "hr Cvjetno naselje IV. 18 Zagreb",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Zagreb hr Cvjetno naselje IV. 18",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Cvjetno naselje IV., Zagreb",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Cvjetno naselje IV.18",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Cvjetno naselje IV. 18 apt 4b",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Cbjetno naselje IV. 18",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "cvjetno naselje iv. 18",
+   "lat": 45.79239024,
+   "lng": 15.96773002,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cvjetno naselje IV. 18, Zagreb",
+   "base": 32
+  },
+  {
+   "address": "Ulica doktora Ante Šercera 90, Zagreb",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "Ulica doktora Ante Šercera 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "Zagreb, Ulica doktora Ante Šercera 90, hr",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "hr Zagreb Ulica doktora Ante Šercera 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "Zagreb Ulica doktora Ante Šercera",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "DOKTORA ANTE ŠERCERA 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "šercera 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "doktora ante šercera 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "Deli doktora ante šercera 90",
+   "lat": 45.83013016428571,
+   "lng": 15.953146335714285,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica doktora Ante Šercera 90, Zagreb",
+   "base": 33
+  },
+  {
+   "address": "Zrmanjska ulica 8, Zagreb",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "8 Zrmanjska ulica",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "Zrmanjska ulica 8 Zagreb hr",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "Zrmanjska ulica 8, hr, Zagreb",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "Zagreb Zrmanjska ulica",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "Zrmanjska ulica 8 (green door)",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "zrmanjska ulica 8",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "ZRMANJSKA ULICA 8",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "ulica 8",
+   "lat": 45.79498202,
+   "lng": 15.9759695,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Zrmanjska ulica 8, Zagreb",
+   "base": 34
+  },
+  {
+   "address": "Ulica Željka Maričića 1, Zagreb",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Ulica Željka Maričića 1",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Ulica Željka Maričića 1, hr, Zagreb",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "ulica željka maričića 1, hr, zagreb",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "1 Zagreb Ulica Željka Maričića",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Željka Mar 1",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Željka Maričića 1 john",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Mary željka maričića 1",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "željka maričića 1",
+   "lat": 45.81223163333333,
+   "lng": 15.944135183333335,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Željka Maričića 1, Zagreb",
+   "base": 35
+  },
+  {
+   "address": "Dekanovečka ulica 6, Zagreb",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "6 Dekanovečka ulica",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "Dekanovečka ulica 6 hr Zagreb",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "hr Dekanovecka ulica 6 Zagreb Zagreb",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "6 Dekanovečka ulica Zagreb",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "DEKANOVEČKA ULICA 6",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "Mary dekanovečka ulica 6",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "ulica 6",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "Dekanobečka ulica 6",
+   "lat": 45.8223478,
+   "lng": 15.91597696,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dekanovečka ulica 6, Zagreb",
+   "base": 36
+  },
+  {
+   "address": "Miljanska ulica 1, Zagreb",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Miljanska ulica, 1",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Miljanska ulica 1 Zagreb hr",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "hr, Zagreb, Miljanska ulica 1 1",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "1 - Miljanska ulica - Zagreb",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "MILJANSKA ULICA 1",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Miljanska ulica 1 (green door)",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Mary miljanska ulica 1",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Miljanska ulica1",
+   "lat": 45.8077746,
+   "lng": 15.9355917,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Miljanska ulica 1, Zagreb",
+   "base": 37
+  },
+  {
+   "address": "Ulica Vilka Šefera 6, Zagreb",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "Ulica Vilka Šefera, 6",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "hr Ulica Vilka Šefera 6 Zagreb",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "hr Ulica Ulica Vilka Šefera 6 Zagreb",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "6 Ulica Vilka Šefera Zagreb",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "vilka šefera 6",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "šefera 6",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "Vilka Šeefra 6",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "Vilka Šefera 6 (green door)",
+   "lat": 45.8196739,
+   "lng": 16.0256908,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Vilka Šefera 6, Zagreb",
+   "base": 38
+  },
+  {
+   "address": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Ulica Sunčane Škrinjarić, 3",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Ulica Sunčane Škrinjarić 3, 10110",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Ulica Sunčane Škrinjarić 3, hr, Zagreb",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Ulica Suncane Skrinjaric 3 hr Zagreb",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Ulica Sunčane Škrinjarić Zagreb 3",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "sunčane škrinjarić 3",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Deli sunčane škrinjarić 3",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "škrinjarić 3",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  },
+  {
+   "address": "Sunčane Škrinjarić 3 (green door)",
+   "lat": 45.8020369,
+   "lng": 15.9415253,
+   "country": "HR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Sunčane Škrinjarić 3, 10110 Zagreb",
+   "base": 39
+  }
+ ]
+}

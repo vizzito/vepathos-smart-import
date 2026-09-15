@@ -1,0 +1,3938 @@
+{
+ "source": "osm-addr",
+ "country": "TW",
+ "city": "Taipei",
+ "country_label": "Taiwan",
+ "depot": {
+  "lat": 25.033,
+  "lon": 121.5654,
+  "city": "Taipei",
+  "country": "Taiwan"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 392,
+ "note": "Nodos addr:* del indice n25.10_s24.90_e121.70_w121.50-taiwan.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "龍江路124巷 2號, 104 臺北市",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "2號 龍江路124巷",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "龍江路124巷 2號, 104",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "臺北市, tw, 龍江路124巷 2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "臺北市, tw, 龍江路124巷 2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "2號 龍江路124巷 臺北市",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "Mary 龍江路124巷 2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "龍江路124巷 2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "龍路江124巷 2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "龍江路124巷2號",
+   "lat": 25.0537096,
+   "lng": 121.5402102,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "龍江路124巷 2號, 104 臺北市",
+   "base": 0
+  },
+  {
+   "address": "大安路一段196巷 4號, 106 臺北市",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "4號 大安路一段196巷",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路一段196巷 4號, 106",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "tw, 大安路一段196巷 4號, 臺北市",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路一段196巷 4號, 臺北市, tw",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路一段196巷 4號 臺北市 106",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路段一196巷 4號",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路一段196巷 4號",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "Mary 大安路一段196巷 4號",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "大安路一段196巷 4號 (green door)",
+   "lat": 25.0353832,
+   "lng": 121.5457298,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "大安路一段196巷 4號, 106 臺北市",
+   "base": 1
+  },
+  {
+   "address": "八德路三段12巷66弄 15號, 105 臺北市",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "八德路三段12巷66弄 15號",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "八德路三段12巷66弄 15號, 105",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "tw 八德路三段12巷66弄 15號 臺北市",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "臺北市, 八德路三段12巷66弄 15號, tw",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "15號 - 105 - 臺北市",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "八德路三段12巷66弄 15號",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "八德路三段12巷66弄 15號 (green door)",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "Deli 八德路三段12巷66弄 15號",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "八德路三段21巷66弄 15號",
+   "lat": 25.0455037,
+   "lng": 121.5500877,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "八德路三段12巷66弄 15號, 105 臺北市",
+   "base": 2
+  },
+  {
+   "address": "林口街80巷 32號, 110 臺北市",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街80巷 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街80巷 32號, 110",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街80巷 32號, 臺北市, tw",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "臺北市 tw 林口街80巷 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "臺北市 - 110 - 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街08巷 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街80巷32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "林口街80巷 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "Deli 林口街80巷 32號",
+   "lat": 25.0394542,
+   "lng": 121.5803321,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "林口街80巷 32號, 110 臺北市",
+   "base": 3
+  },
+  {
+   "address": "興隆路四段115巷 1號, 116 臺北市",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "興隆路四段115巷, 1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "興隆路四段115巷 1號 116",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "tw 臺北市 興隆路四段115巷 1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "臺北市, 興隆路四段115巷 1號, tw",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "臺北市 - 1號 - 興隆路四段115巷",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "興隆路四段115巷 1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "興隆路四1段15巷 1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "Deli 興隆路四段115巷 1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "興隆路四段115巷1號",
+   "lat": 24.9862194,
+   "lng": 121.561363,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "興隆路四段115巷 1號, 116 臺北市",
+   "base": 4
+  },
+  {
+   "address": "太原路28巷 11, 103015 臺北市",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "11 太原路28巷",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "太原路28巷 11, 103015",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "tw 太原路28巷 11 臺北市",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "太原路28巷 11 臺北市 tw",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "11, 臺北市, 103015, 太原路28巷",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "太原路28巷 11",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "太原路82巷 11",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "太原路28巷 11 john",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "Deli 太原路28巷 11",
+   "lat": 25.050135,
+   "lng": 121.514756,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "太原路28巷 11, 103015 臺北市",
+   "base": 5
+  },
+  {
+   "address": "臨沂街65巷 7之1號, 100 臺北市",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨沂街65巷, 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨沂街65巷 7之1號 100",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨沂街65巷 7之1號, tw, 臺北市",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臺北市, tw, 臨沂街65巷 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "100 - 臨沂街65巷 - 臺北市 - 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨沂街65巷7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨街沂65巷 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "臨沂街65巷 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "Mary 臨沂街65巷 7之1號",
+   "lat": 25.0359336,
+   "lng": 121.5293826,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "臨沂街65巷 7之1號, 100 臺北市",
+   "base": 6
+  },
+  {
+   "address": "中山路一段91巷 27號, 新北市",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段91巷 27號",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段91巷 27號 tw 新北市",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "tw 新北市 中山路一段91巷 27號",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段91巷 27號 新北市",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段19巷 27號",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段91巷 27號",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "Deli 中山路一段91巷 27號",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "中山路一段91巷 27號 (green door)",
+   "lat": 25.0101148,
+   "lng": 121.5117792,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中山路一段91巷 27號, 新北市",
+   "base": 7
+  },
+  {
+   "address": "重慶南路三段124巷 2號, 100 臺北市",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "重慶南路三段124巷 2號",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "重慶南路三段124巷 2號 100",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "臺北市, 重慶南路三段124巷 2號, tw",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "tw, 重慶南路三段124巷 2號, 臺北市",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "100 - 2號 - 重慶南路三段124巷 - 臺北市",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "重慶南路三段124巷2號",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "重慶南路三段124巷 2號",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "重慶南路三段124巷 2號 (green door)",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "Mary 重慶南路三段124巷 2號",
+   "lat": 25.0246301,
+   "lng": 121.5163314,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "重慶南路三段124巷 2號, 100 臺北市",
+   "base": 8
+  },
+  {
+   "address": "吳興街600巷96弄 3號, 110 臺北市",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄 3號",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄 3號, 110",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄 3號 臺北市 tw",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "tw, 臺北市, 吳興街600巷96弄 3號",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "臺北市, 吳興街600巷96弄, 110",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄 3號 (green door)",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄 3號",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "吳興街600巷96弄3號",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "Mary 吳興街600巷96弄 3號",
+   "lat": 25.0181478,
+   "lng": 121.5710914,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "吳興街600巷96弄 3號, 110 臺北市",
+   "base": 9
+  },
+  {
+   "address": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛路三段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛路三段118巷3弄 2號 106",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "tw 臺北市 仁愛路三段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "tw 臺北市 仁愛路三段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛路三段118巷3弄 臺北市 106 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛三路段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "Mary 仁愛路三段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛路三段118巷3弄2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "仁愛路三段118巷3弄 2號",
+   "lat": 25.0370933,
+   "lng": 121.5402735,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "仁愛路三段118巷3弄 2號, 106 臺北市",
+   "base": 10
+  },
+  {
+   "address": "和平西路二段16巷 2號, 100 臺北市",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平西路二段16巷, 2號",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平西路二段16巷 2號 100",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "tw, 和平西路二段16巷 2號, 臺北市",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "tw 和平西路二段16巷 2號 臺北市",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "臺北市 - 100 - 2號",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平路西二段16巷 2號",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平西路二段16巷2號",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平西路二段16巷 2號",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "和平西路二段16巷 2號 john",
+   "lat": 25.0279704,
+   "lng": 121.51348,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "和平西路二段16巷 2號, 100 臺北市",
+   "base": 11
+  },
+  {
+   "address": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "仁愛路三段5巷1弄 14號",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "仁愛路三段5巷1弄 14號, 106",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "臺北市 仁愛路三段5巷1弄 14號 tw",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "臺北市 臺北市 tw 仁愛路三段5巷1弄 14號",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "臺北市 - 106 - 14號 - 仁愛路三段5巷1弄",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "仁愛路三段5巷1弄14號",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "仁愛路三段5巷1弄 14號 back entrance",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "仁愛路段三5巷1弄 14號",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "Mary 仁愛路三段5巷1弄 14號",
+   "lat": 25.0388135,
+   "lng": 121.5342808,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "仁愛路三段5巷1弄 14號, 106 臺北市",
+   "base": 12
+  },
+  {
+   "address": "中華路二段467巷62弄 2號, 100 臺北市",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄 2號",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄 2號 100",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄 2號 臺北市 tw",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "tw, 中華路二段467巷62弄 2號, 臺北市",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "2號 臺北市 100",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄2號",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路段二467巷62弄 2號",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄 2號 john",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "中華路二段467巷62弄 2號",
+   "lat": 25.0262679,
+   "lng": 121.5110009,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中華路二段467巷62弄 2號, 100 臺北市",
+   "base": 13
+  },
+  {
+   "address": "汀州路三段24巷 1號, 100 臺北市",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷, 1號",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷 1號, 100",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "tw, 臺北市, 汀州路三段24巷 1號",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "臺北市 汀州路三段24巷 1號 tw",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷 1號 臺北市 100",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷1號",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷 1號",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州三路段24巷 1號",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "汀州路三段24巷 1號 back entrance",
+   "lat": 25.0168552,
+   "lng": 121.5277883,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "汀州路三段24巷 1號, 100 臺北市",
+   "base": 14
+  },
+  {
+   "address": "中正路468巷 17號, 新北市",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中正路468巷, 17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "新北市 中正路468巷 17號 tw",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "新北市, tw, 中正路468巷 17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中正路468巷, 新北市, 17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中正路468巷 17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中正路468巷17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "Deli 中正路468巷 17號",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中正路468巷 17號 john",
+   "lat": 25.0032952,
+   "lng": 121.5178929,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中正路468巷 17號, 新北市",
+   "base": 15
+  },
+  {
+   "address": "中興街65巷 4號, 新北市",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "中興街65巷, 4號",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "新北市 中興街65巷 4號 tw",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "tw, 新北市, 中興街65巷 4號",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "新北市 - 中興街65巷",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "中興街65巷4號",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "Deli 中興街65巷 4號",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "中興街56巷 4號",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "中興街65巷 4號 john",
+   "lat": 25.0119082,
+   "lng": 121.5167558,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中興街65巷 4號, 新北市",
+   "base": 16
+  },
+  {
+   "address": "秀朗路三段10巷35弄 7號, 新北市",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "秀朗路三段10巷35弄, 7號",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "tw, 秀朗路三段10巷35弄 7號, 新北市",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "tw, 秀朗路三段10巷35弄 7號, 新北市",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "7號 秀朗路三段10巷35弄",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "秀朗路三段10巷35弄 7號",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "秀朗路三段10巷53弄 7號",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "Mary 秀朗路三段10巷35弄 7號",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "秀朗路三段10巷35弄 7號 (green door)",
+   "lat": 24.995638,
+   "lng": 121.5245957,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "秀朗路三段10巷35弄 7號, 新北市",
+   "base": 17
+  },
+  {
+   "address": "環山路一段28巷 15號, 114 臺北市",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "15號 環山路一段28巷",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山路一段28巷 15號 114",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山路一段28巷 15號 tw 臺北市",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "臺北市, 環山路一段28巷 15號, tw",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山路一段28巷 15號 114",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "Deli 環山路一段28巷 15號",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山路一段28巷 15號",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山一路段28巷 15號",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "環山路一段28巷 15號 apt 4b",
+   "lat": 25.0856439,
+   "lng": 121.5641262,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "環山路一段28巷 15號, 114 臺北市",
+   "base": 18
+  },
+  {
+   "address": "新生南路一段157巷 10號, 106 臺北市",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新生南路一段157巷, 10號",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新生南路一段157巷 10號 106",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "tw, 臺北市, 新生南路一段157巷 10號",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "tw 新生南路一段157巷 10號 臺北市",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "10號, 106, 臺北市, 新生南路一段157巷",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新生南路一段157巷 10號 back entrance",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新南生路一段157巷 10號",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新生南路一段157巷 10號",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "新生南路一段157巷10號",
+   "lat": 25.0349127,
+   "lng": 121.5344411,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "新生南路一段157巷 10號, 106 臺北市",
+   "base": 19
+  },
+  {
+   "address": "林森北路119巷 52號, 104 臺北市",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷, 52號",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷 52號 104",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "臺北市, tw, 林森北路119巷 52號",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷 52號, tw, 臺北市",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "52號, 104, 林森北路119巷",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷 52號 apt 4b",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "Deli 林森北路119巷 52號",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷 52號",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "林森北路119巷52號",
+   "lat": 25.0501582,
+   "lng": 121.5268444,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "林森北路119巷 52號, 104 臺北市",
+   "base": 20
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號 114",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號 臺北市 tw",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號, tw, 臺北市 臺北市",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "114, 臺北市, 內湖路一段1巷11弄",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄4號",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號 back entrance",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "內湖路一段1巷11弄 4號",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "Deli 內湖路一段1巷11弄 4號",
+   "lat": 25.0858397,
+   "lng": 121.5577539,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "內湖路一段1巷11弄 4號, 114 臺北市",
+   "base": 21
+  },
+  {
+   "address": "安東街40巷 3號, 106 臺北市",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "3號 安東街40巷",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安東街40巷 3號 106",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安東街40巷 3號, tw, 臺北市",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安東街40巷 3號, tw, 臺北市",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "臺北市 106 3號",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "Deli 安東街40巷 3號",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安街東40巷 3號",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安東街40巷 3號",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "安東街40巷 3號 back entrance",
+   "lat": 25.0440977,
+   "lng": 121.5420912,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "安東街40巷 3號, 106 臺北市",
+   "base": 22
+  },
+  {
+   "address": "文化路73巷 12號, 新北市",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "12號 文化路73巷",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "tw, 文化路73巷 12號, 新北市",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "文化路73巷 12號 新北市 tw tw",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "12號, 文化路73巷",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "Deli 文化路73巷 12號",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "文化路73巷12號",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "文化路73巷 12號 apt 4b",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "文化路73巷 12號",
+   "lat": 24.9825595,
+   "lng": 121.5442989,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "文化路73巷 12號, 新北市",
+   "base": 23
+  },
+  {
+   "address": "信義路五段8巷 19號, 110 臺北市",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "19號 信義路五段8巷",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "信義路五段8巷 19號 110",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "臺北市, tw, 信義路五段8巷 19號",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "臺北市, 信義路五段8巷 19號, tw",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "19號 - 信義路五段8巷 - 臺北市 - 110",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "信義路段五8巷 19號",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "信義路五段8巷 19號",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "信義路五段8巷19號",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "信義路五段8巷 19號 back entrance",
+   "lat": 25.0323042,
+   "lng": 121.5605253,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "信義路五段8巷 19號, 110 臺北市",
+   "base": 24
+  },
+  {
+   "address": "八德路三段99巷 12之9號, 105 臺北市",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德路三段99巷, 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德路三段99巷 12之9號 105",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "tw 臺北市 八德路三段99巷 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "臺北市 tw 八德路三段99巷 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德路三段99巷 臺北市 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德路三段99巷 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "Mary 八德路三段99巷 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德三路段99巷 12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "八德路三段99巷12之9號",
+   "lat": 25.049064,
+   "lng": 121.5535325,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "八德路三段99巷 12之9號, 105 臺北市",
+   "base": 25
+  },
+  {
+   "address": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄, 1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄 1號, 105",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "臺北市, tw, 復興南路一段47巷9弄 1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄 1號 tw 臺北市",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄 - 105 - 臺北市 - 1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄 1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄 1號 john",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "復興南路一段47巷9弄1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "Deli 復興南路一段47巷9弄 1號",
+   "lat": 25.0453065,
+   "lng": 121.5445052,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "復興南路一段47巷9弄 1號, 105 臺北市",
+   "base": 26
+  },
+  {
+   "address": "八德路三段199巷1弄 2號, 105 臺北市",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段199巷1弄, 2號",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段199巷1弄 2號 105",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "tw, 八德路三段199巷1弄 2號, 臺北市",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段199巷1弄 2號, tw, 臺北市",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "105, 八德路三段199巷1弄, 臺北市",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "Mary 八德路三段199巷1弄 2號",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段1991巷弄 2號",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段199巷1弄 2號 (green door)",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "八德路三段199巷1弄2號",
+   "lat": 25.0487874,
+   "lng": 121.5564324,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "八德路三段199巷1弄 2號, 105 臺北市",
+   "base": 27
+  },
+  {
+   "address": "永和路一段151巷 14號, 新北市",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "永和路一段151巷 14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "新北市 tw 永和路一段151巷 14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "新北市 tw 永和路一段151巷 14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "14號 - 永和路一段151巷",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "永和路一段151巷 14號 (green door)",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "永和路一段151巷14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "永和路一段151巷 14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "永路和一段151巷 14號",
+   "lat": 25.0094548,
+   "lng": 121.5137417,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "永和路一段151巷 14號, 新北市",
+   "base": 28
+  },
+  {
+   "address": "連雲街 5號, 100 臺北市",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "5號 連雲街",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街 5號, 100",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街 5號 tw 臺北市",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街 5號 臺北市 tw",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "100 - 連雲街 - 5號 - 臺北市",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街 5號",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街5號",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "連雲街 5號 john",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "Deli 連雲街 5號",
+   "lat": 25.0375388,
+   "lng": 121.5322776,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "連雲街 5號, 100 臺北市",
+   "base": 29
+  },
+  {
+   "address": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "12號 忠孝東路五段423巷6弄",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段423巷6弄 12號 110",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "臺北市, 忠孝東路五段423巷6弄 12號, tw",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段423巷6弄 12號 tw 臺北市",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "110 - 12號 - 臺北市 - 忠孝東路五段423巷6弄",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段423巷6弄 12號",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段4236巷弄 12號",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段423巷6弄 12號 apt 4b",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "忠孝東路五段423巷6弄12號",
+   "lat": 25.041679,
+   "lng": 121.5758302,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "忠孝東路五段423巷6弄 12號, 110 臺北市",
+   "base": 30
+  },
+  {
+   "address": "竹林路91巷40弄 3號, 新北市",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "3號 竹林路91巷40弄",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "竹林路91巷40弄 3號 tw 新北市",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "tw, 新北市, 竹林路91巷40弄 3號",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "竹林路91巷40弄, 新北市",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "竹林路91巷40弄 3號",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "Mary 竹林路91巷40弄 3號",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "竹林路91巷40弄 3號 john",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "竹林路91巷40弄3號",
+   "lat": 25.0124914,
+   "lng": 121.521369,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "竹林路91巷40弄 3號, 新北市",
+   "base": 31
+  },
+  {
+   "address": "復興北路430巷 40號, 104 臺北市",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷, 40號",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷 40號, 104",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷 40號, 臺北市, tw",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "tw 臺北市 復興北路430巷 40號",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "104 - 40號 - 臺北市 - 復興北路430巷",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷 40號 back entrance",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷40號",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北4路30巷 40號",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "復興北路430巷 40號",
+   "lat": 25.0632853,
+   "lng": 121.5421277,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "復興北路430巷 40號, 104 臺北市",
+   "base": 32
+  },
+  {
+   "address": "長安東路一段37巷 9號, 104 臺北市",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "9號 長安東路一段37巷",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "長安東路一段37巷 9號 104",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "長安東路一段37巷 9號, 臺北市, tw",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "tw 長安東路一段37巷 9號 臺北市",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "104 - 9號 - 臺北市 - 長安東路一段37巷",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "長安路東一段37巷 9號",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "Mary 長安東路一段37巷 9號",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "長安東路一段37巷9號",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "長安東路一段37巷 9號",
+   "lat": 25.049573,
+   "lng": 121.5252754,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "長安東路一段37巷 9號, 104 臺北市",
+   "base": 33
+  },
+  {
+   "address": "永吉路200巷81弄 7號, 110 臺北市",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路200巷81弄, 7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路200巷81弄 7號 110",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路200巷81弄 7號 tw 臺北市",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "臺北市 臺北市 tw 永吉路200巷81弄 7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "7號, 110, 臺北市",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路200巷81弄 7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路20巷081弄 7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "永吉路200巷81弄7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "Mary 永吉路200巷81弄 7號",
+   "lat": 25.0435265,
+   "lng": 121.5729698,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "永吉路200巷81弄 7號, 110 臺北市",
+   "base": 34
+  },
+  {
+   "address": "南昌路一段31巷 16號, 100 臺北市",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷, 16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷 16號, 100",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷 16號, 臺北市, tw",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "tw, tw, 臺北市, 南昌路一段31巷 16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷 臺北市 100 16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "Mary 南昌路一段31巷 16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷 16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷 16號 john",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "南昌路一段31巷16號",
+   "lat": 25.0322705,
+   "lng": 121.5177037,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "南昌路一段31巷 16號, 100 臺北市",
+   "base": 35
+  },
+  {
+   "address": "木新路三段310巷 8號, 116 臺北市",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "8號 木新路三段310巷",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "木新路三段310巷 8號 116",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "tw 臺北市 木新路三段310巷 8號",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "臺北市, 木新路三段310巷 木新路三段310巷 8號, tw",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "116 - 木新路三段310巷 - 8號 - 臺北市",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "Mary 木新路三段310巷 8號",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "木新三路段310巷 8號",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "木新路三段310巷8號",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "木新路三段310巷 8號 john",
+   "lat": 24.9817931,
+   "lng": 121.556939,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "木新路三段310巷 8號, 116 臺北市",
+   "base": 36
+  },
+  {
+   "address": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四段56巷3弄, 22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四段56巷3弄 22號, 105",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "臺北市, tw, 民生東路四段56巷3弄 22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "tw, 臺北市, 民生東路四段56巷3弄 22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "臺北市, 105, 22號, 民生東路四段56巷3弄",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四段56巷3弄22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四5段6巷3弄 22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四段56巷3弄 22號 apt 4b",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "民生東路四段56巷3弄 22號",
+   "lat": 25.0571031,
+   "lng": 121.552828,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "民生東路四段56巷3弄 22號, 105 臺北市",
+   "base": 37
+  },
+  {
+   "address": "博愛街49巷 2號, 新北市",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "2號 博愛街49巷",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "tw, 新北市, 博愛街49巷 2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "新北市 tw 博愛街49巷 2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "博愛街49巷, 2號, 新北市",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "Mary 博愛街49巷 2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "博愛街49巷 2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "博愛街49巷2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "博愛街94巷 2號",
+   "lat": 25.0161466,
+   "lng": 121.5196501,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "博愛街49巷 2號, 新北市",
+   "base": 38
+  },
+  {
+   "address": "木新路三段95巷3弄 1號, 116 臺北市",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "1號 木新路三段95巷3弄",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段95巷3弄 1號 116",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段95巷3弄 1號 tw 臺北市",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "tw, 臺北市, 木新路三段95巷3弄 1號",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "116, 木新路三段95巷3弄, 1號, 臺北市",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段953巷弄 1號",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段95巷3弄1號",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段95巷3弄 1號",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  },
+  {
+   "address": "木新路三段95巷3弄 1號 john",
+   "lat": 24.9817706,
+   "lng": 121.5630723,
+   "country": "TW",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "木新路三段95巷3弄 1號, 116 臺北市",
+   "base": 39
+  }
+ ]
+}

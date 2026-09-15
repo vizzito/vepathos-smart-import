@@ -1,0 +1,3788 @@
+{
+ "source": "osm-addr",
+ "country": "PE",
+ "city": "Lima",
+ "country_label": "Peru",
+ "depot": {
+  "lat": -12.0464,
+  "lon": -77.0428,
+  "city": "Lima",
+  "country": "Peru"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 377,
+ "note": "Nodos addr:* del indice n-11.90_s-12.20_e-76.90_w-77.10-peru.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Río Chepen 285, El Agustino",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "285 Río Chepen",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "Río Chepen 285, pe, El Agustino",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "El Agustino, pe, Río Chepen 285",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "El Agustino, Río Chepen",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "Kiosco río chepen 285",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "río chepen 285",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "chepen 285",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "Río Chepen285",
+   "lat": -12.0429077525,
+   "lng": -76.99127982,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Río Chepen 285, El Agustino",
+   "base": 0
+  },
+  {
+   "address": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "390 Enrique Canaval y Moreyra",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Enrique Canaval y Moreyra 390 15047",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Enrique Canaval y Moreyra 390, San Isidro, pe",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "San Isidro Enrique Canaval y Moreyra 390 pe",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Avenida Enrique Canaval y Moreyra, San Isidro, 390, 15047",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Enirque Canaval y Moreyra 390",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Kiosco enrique canaval y moreyra 390",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Enrique Canaval y Moreyra 390 (porton verde)",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "moreyra 390",
+   "lat": -12.0960111,
+   "lng": -77.0222799,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Enrique Canaval y Moreyra 390, 15047 San Isidro",
+   "base": 1
+  },
+  {
+   "address": "Libertad 108, Pueblo Libre",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Libertad, 108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Libertad 108 pe Pueblo Libre",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "pe, Pueblo Libre, Libre, Libertad 108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Pueblo Libre 108 Libertad",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "LIBERTAD 108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Libertad108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "libertad 108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Lbiertad 108",
+   "lat": -12.0822329,
+   "lng": -77.0660855,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Libertad 108, Pueblo Libre",
+   "base": 2
+  },
+  {
+   "address": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Jirón Sanchez Pinillos, 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Cercado de Lima, pe, Jirón Sanchez Pinillos 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "pe Cercado de Lima Jirón Sanchez Pinillos 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Cercado de Lima 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "jirón sanchez pinillos 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Jirón Sanchez Piinllos 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Jirón Sanchez Pinillos189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Jirón Sanchez Pin 189",
+   "lat": -12.0483223,
+   "lng": -77.0438027,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jirón Sanchez Pinillos 189, Cercado de Lima",
+   "base": 3
+  },
+  {
+   "address": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Jirón Jozé Pezet y Monel, 1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Jirón Jozé Pezet y Monel 1715 Lima pe",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "pe, lima, jirón jozé pezet y monel 1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Lima, 1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Jirón Jozé Pezet y Monel1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Jirón Jozé Pezet y Monel 1715 timbre 2",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "JIRÓN JOZÉ PEZET Y MONEL 1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "jirón jozé pezet y monel 1715",
+   "lat": -12.0831819,
+   "lng": -77.0427165,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Jozé Pezet y Monel 1715, Lima",
+   "base": 4
+  },
+  {
+   "address": "Avenida Pablo Carriquirry 174, San Isidro",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "174 Pablo Carriquirry",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "Pablo Carriquirry 174, San Isidro",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "San Isidro, Pablo Carriquirry 174, pe",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "pe, Pablo Carriquirry 174, San Isidro",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "San Isidro, 174, Avenida Pablo Carriquirry",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "Marcela pablo carriquirry 174",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "Pablo Car 174",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "pablo carriquirry 174",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "PABLO CARRIQUIRRY 174",
+   "lat": -12.091908771428573,
+   "lng": -77.01927512857142,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Pablo Carriquirry 174, San Isidro",
+   "base": 5
+  },
+  {
+   "address": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "Jirón Jose de la Torre Ugarte, 264-268",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "Lima Jirón Jose de la Torre Ugarte 264-268 pe",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "Lima, Jiron Jose de la Torre Ugarte 264-268, pe",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "264-268 - Jirón Jose de la Torre Ugarte",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "ugarte 264-268",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "JIRÓN JOSE DE LA TORRE UGARTE 264-268",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "Jirón Jose de la Torre Ugrate 264-268",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "jirón jose de la torre ugarte 264-268",
+   "lat": -12.0892323,
+   "lng": -77.0332373,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Jose de la Torre Ugarte 264-268, Lima",
+   "base": 6
+  },
+  {
+   "address": "Via de Evitamiento 2.5, Rímac",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "Via de Evitamiento, 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "pe, Via de Evitamiento 2.5, Rímac",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "pe Rimac Via Via de Evitamiento 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "Via de Evitamiento Rímac 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "Marcela de evitamiento 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "de Evi 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "de Ebitamiento 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "DE EVITAMIENTO 2.5",
+   "lat": -12.0397657,
+   "lng": -77.03552695714286,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Via de Evitamiento 2.5, Rímac",
+   "base": 7
+  },
+  {
+   "address": "Avenida Industrial 3458, 15311 Lima",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Industrial, 3458",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Industrial 3458 15311",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Lima Industrial 3458 pe",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Industrial 3458 Lima pe",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Lima - Avenida Industrial - 3458 - 15311",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "INDUSTRIAL 3458",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Industrail 3458",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Industrial 3458 martin",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Juan industrial 3458",
+   "lat": -11.9962713,
+   "lng": -77.0580806125,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Industrial 3458, 15311 Lima",
+   "base": 8
+  },
+  {
+   "address": "Avenida Independencia 1797, Lima",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "Independencia, 1797",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "Independencia 1797, Lima",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "pe Independencia 1797 Lima",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "pe Independencia 1797 Lima",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "1797 - Avenida Independencia",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "independencia 1797",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "Independencia 1797 timbre 2",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "INDEPENDENCIA 1797",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "Independencia1797",
+   "lat": -12.0305539,
+   "lng": -76.9928601,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Independencia 1797, Lima",
+   "base": 9
+  },
+  {
+   "address": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mastuerzos 1701",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "San Juan de Lurigancho, Jirón Los Mastuerzos 1701, pe",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "jirón los mastuerzos 1701, pe, san juan de lurigancho",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mastuerzos - 1701",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mastuerzos 1701 frente a la plaza",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mastuerozs 1701",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mas 1701",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jirón Los Mastuerzos1701",
+   "lat": -12.0029757,
+   "lng": -77.0143811,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Los Mastuerzos 1701, San Juan de Lurigancho",
+   "base": 10
+  },
+  {
+   "address": "Jiron Azangaro 161, Lima",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "161 Jiron Azangaro",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Lima pe Jiron Azangaro 161",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "lima, pe, jiron azangaro 161",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "161, Jiron Azangaro, Lima",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Juan jiron azangaro 161",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Jiron Azangaro161",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Jiron Asangaro 161",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Jiron Azangaro 161 frente a la plaza",
+   "lat": -12.0466864,
+   "lng": -77.0272279,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jiron Azangaro 161, Lima",
+   "base": 11
+  },
+  {
+   "address": "Avenida José de la Rivaguero 1758, El Agustino",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "José de la Rivaguero 1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "José de la Rivaguero 1758, El Agustino",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "pe, José de la Rivaguero 1758, El Agustino",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "El Agustino, pe, Jose de la Rivaguero 1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "El Agustino 1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "José de la Rivaguero 1758 martin",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "rivaguero 1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "José de la Rivaguero1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "José de la Riv 1758",
+   "lat": -12.042619350877192,
+   "lng": -76.99672059649123,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenida José de la Rivaguero 1758, El Agustino",
+   "base": 12
+  },
+  {
+   "address": "Huanacaure 890, Lima",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Huanacaure 890",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "pe Lima Huanacaure 890",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "pe, Huanacaure 890, Lima",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "890 Lima Huanacaure",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Juan huanacaure 890",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Huanacaure890",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Huanacaure 890 casa 18",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Huanacarue 890",
+   "lat": -12.02185,
+   "lng": -76.99814,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Huanacaure 890, Lima",
+   "base": 13
+  },
+  {
+   "address": "Eduardo Salgado 150, 15101 Lima",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "150 Eduardo Salgado",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "Eduardo Salgado 150, 15101",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "pe, Lima, Eduardo Salgado 150",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "pe Eduardo Salgado 150 Lima",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "Lima - Eduardo Salgado - 150 - 15101",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "Edurado Salgado 150",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "EDUARDO SALGADO 150",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "salgado 150",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "Eduardo Salgado 150 (porton verde)",
+   "lat": -12.0355171,
+   "lng": -77.0531719,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Eduardo Salgado 150, 15101 Lima",
+   "base": 14
+  },
+  {
+   "address": "Camilo Carrillo 299, Jesús María",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Camilo Carrillo, 299",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Camilo Carrillo 299 Jesús María pe",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Jesús María pe Camilo Carrillo 299",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Jesús María - Camilo Carrillo",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Marcela camilo carrillo 299",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Camilo Carrillo 299 martin",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Camilo Carillo 299",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "CAMILO CARRILLO 299",
+   "lat": -12.0736876,
+   "lng": -77.0388046,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Camilo Carrillo 299, Jesús María",
+   "base": 15
+  },
+  {
+   "address": "Pasaje Quilla 1877, Lima",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Quilla, 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Quilla 1877, Lima",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Lima, pe, Quilla 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Lima, Quilla 1877, pe",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Pasaje Quilla, 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Quila 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "quilla 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Marcela quilla 1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Quilla1877",
+   "lat": -12.0844098,
+   "lng": -77.0431037,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pasaje Quilla 1877, Lima",
+   "base": 16
+  },
+  {
+   "address": "Trujillo 353, Rímac",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "353 Trujillo",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "pe Trujillo 353 Rímac",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Rimac, Trujillo 353, pe pe",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Trujillo 353 Rímac",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Truijllo 353",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Trujillo353",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Kiosco trujillo 353",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "trujillo 353",
+   "lat": -12.0413321,
+   "lng": -77.0295337,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Trujillo 353, Rímac",
+   "base": 17
+  },
+  {
+   "address": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "3201 Juan Crespo y Castillo",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Juan Crespo y Castillo 3201, Mirones Bajo",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Juan Crespo y Castillo 3201 Mirones Bajo pe",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Juan Crespo y Castillo 3201, Mirones Bajo, pe",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "3201, Mirones Bajo",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "juan crespo y castillo 3201",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Juan Crespo y Castilo 3201",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "JUAN CRESPO Y CASTILLO 3201",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Juan Crespo y Castillo 3201 (porton verde)",
+   "lat": -12.0384649,
+   "lng": -77.081666,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Juan Crespo y Castillo 3201, Mirones Bajo",
+   "base": 18
+  },
+  {
+   "address": "Los Tusilagos Oeste 281, Lima",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "281 Los Tusilagos Oeste",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Los Tusilagos Oeste 281 pe Lima",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Los Tusilagos Oeste 281, pe, Lima Lima",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "281, Lima",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Los Tusilagos Oeste 281 frente a la plaza",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Juan los tusilagos oeste 281",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Los Tusialgos Oeste 281",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "LOS TUSILAGOS OESTE 281",
+   "lat": -12.013481973333334,
+   "lng": -77.00537381333334,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Los Tusilagos Oeste 281, Lima",
+   "base": 19
+  },
+  {
+   "address": "Jirón Loreto 601, Lima",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "Jirón Loreto, 601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "Lima, Jirón Loreto 601, pe",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "Lima pe pe Jirón Loreto 601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "601, Jirón Loreto",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "Jirón Lroeto 601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "Jirón Loreto601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "jirón loreto 601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "JIRÓN LORETO 601",
+   "lat": -12.056051,
+   "lng": -77.0493407,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jirón Loreto 601, Lima",
+   "base": 20
+  },
+  {
+   "address": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Barrenechea 200",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Barrenechea 200 13",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Barrenechea 200 La Victoria pe",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Barrenechea 200, La Victoria, pe",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "200 La Victoria José Gálvez Barrenechea 13",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Barenechea 200",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "José Gálvez Bar 200",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "Marcela josé gálvez barrenechea 200",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "josé gálvez barrenechea 200",
+   "lat": -12.088546375,
+   "lng": -77.014197075,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "José Gálvez Barrenechea 200, 13 La Victoria",
+   "base": 21
+  },
+  {
+   "address": "Calle Las Palmeras 305, San Isidro",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "305 Las Palmeras",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "Las Palmeras 305, San Isidro",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "San Isidro pe Las Palmeras 305",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "Las Palmeras 305, pe, San Isidro",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "San Isidro - Calle Las Palmeras",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "LAS PALMERAS 305",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "Las Pal 305",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "las palmeras 305",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "Las Palmeras 305 martin",
+   "lat": -12.093405218181818,
+   "lng": -77.03840713636363,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Las Palmeras 305, San Isidro",
+   "base": 22
+  },
+  {
+   "address": "Mariano Arce 474, Lima",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "474 Mariano Arce",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "Lima pe Mariano Arce 474",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "lima pe mariano arce 474",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "Mariano Arce 474 Lima",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "Mariano Arce 474 frente a la plaza",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "MARIANO ARCE 474",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "Mariano Arce474",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "arce 474",
+   "lat": -12.06982,
+   "lng": -77.06658,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Mariano Arce 474, Lima",
+   "base": 23
+  },
+  {
+   "address": "Calle Los Geranios 130, Lima",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "130 Los Geranios",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Los Geranios 130, Lima",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Los Geranios 130 Lima pe",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Los Geranios 130 pe Lima",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Calle Los Geranios - Lima - 130",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "los geranios 130",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Los Gearnios 130",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Los Ger 130",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "LOS GERANIOS 130",
+   "lat": -12.090843979999999,
+   "lng": -77.02915302,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Los Geranios 130, Lima",
+   "base": 24
+  },
+  {
+   "address": "Jirón Aija 360, Breña",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "360 Jirón Aija",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "Breña Jirón Aija 360 pe",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "pe Brena Jiron Aija 360",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "360 - Breña - Jirón Aija",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "Jiróón Aija 360",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "jirón aija 360",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "Jirón Aija 360 casa 18",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "JIRÓN AIJA 360",
+   "lat": -12.052618933333333,
+   "lng": -77.0550482,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jirón Aija 360, Breña",
+   "base": 25
+  },
+  {
+   "address": "Avenida Iquitos 1012, Lima",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "1012 Iquitos",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "Iquitos 1012, Lima",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "pe, Lima, Iquitos 1012",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "pe, Lima, Iquitos 1012",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "1012, Lima",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "Marcela iquitos 1012",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "IQUITOS 1012",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "Ikitos 1012",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "Iquitos 1012 martin",
+   "lat": -12.0706405,
+   "lng": -77.03010454,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Iquitos 1012, Lima",
+   "base": 26
+  },
+  {
+   "address": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Jirón Carlos Alayzay Roel, 2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Jirón Carlos Alayzay Roel 2307, pe, Lima",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "pe Jiron Carlos Alayzay Roel 2307 Lima",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Jirón Carlos Alayzay Roel, 2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "jirón carlos alayzay roel 2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Jirón Carlos Alayzay Roel2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Juan jirón carlos alayzay roel 2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "roel 2307",
+   "lat": -12.08737248,
+   "lng": -77.03597128,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jirón Carlos Alayzay Roel 2307, Lima",
+   "base": 27
+  },
+  {
+   "address": "Mitimaes 112, 15101 Lima",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Mitimaes, 112",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Mitimaes 112 15101",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Lima, pe, Mitimaes 112",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Lima, Mitimaes 112, pe pe",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "112, Mitimaes, Lima, 15101",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Mitimaes 112 frente a la plaza",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Mitimaes112",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "MITIMAES 112",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Miitmaes 112",
+   "lat": -12.0347521,
+   "lng": -77.0511368,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mitimaes 112, 15101 Lima",
+   "base": 28
+  },
+  {
+   "address": "Enrique Gongora 107, 15102 Lima",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Enrique Gongora, 107",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Enrique Gongora 107, 15102",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "pe Lima Enrique Gongora 107",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Lima, Enrique Gongora 107, pe",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "15102 107 Enrique Gongora Lima",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "gongora 107",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Enrique Gongora107",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "enrique gongora 107",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Enrique Gongora 107 (porton verde)",
+   "lat": -12.0290776,
+   "lng": -77.0517756,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Enrique Gongora 107, 15102 Lima",
+   "base": 29
+  },
+  {
+   "address": "Nicolás de Piérola 767, 01 Lima",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "767 Nicolás de Piérola",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Nicolás de Piérola 767 01",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "pe, Lima, Nicolás de Piérola 767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Lima pe Nicolás Nicolás de Piérola 767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "767, Lima, Nicolás de Piérola, 01",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "piérola 767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Nicolás de Pié 767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Nicolás de Piérola767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Nicloás de Piérola 767",
+   "lat": -12.0504367,
+   "lng": -77.0362387,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nicolás de Piérola 767, 01 Lima",
+   "base": 30
+  },
+  {
+   "address": "Jirón Pilcomayo 602, Breña",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Jirón Pilcomayo 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Breña, pe, Jirón Pilcomayo 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Breña Breña pe Jirón Pilcomayo 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "602 - Breña - Jirón Pilcomayo",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Jirón Pilcomaio 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Jirón Pil 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Juan jirón pilcomayo 602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Jirón Pilcomayo602",
+   "lat": -12.05888594,
+   "lng": -77.05562918000001,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Pilcomayo 602, Breña",
+   "base": 31
+  },
+  {
+   "address": "Brigadier Mateo Pumacahua 2601, Lima",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Brigadier Mateo Pumacahua, 2601",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Lima pe Brigadier Mateo Pumacahua 2601",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Brigadier Mateo Pumacahua 2601, pe, Lima",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "2601, Lima",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Brigadier Mateo Pumacahua 2601 frente a la plaza",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Brigadier Mateo Pumacahua2601",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "brigadier mateo pumacahua 2601",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "pumacahua 2601",
+   "lat": -12.08975,
+   "lng": -77.04238,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Brigadier Mateo Pumacahua 2601, Lima",
+   "base": 32
+  },
+  {
+   "address": "Jirón Santa Clorinda 1101, Lima",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Jirón Santa Clorinda 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Lima, pe, Jirón Santa Clorinda 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Lima Jirón Santa Clorinda 1101 pe",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "1101 Jirón Santa Clorinda",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Jirón Santa Clo 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "jirón santa clorinda 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Jirón Santa Cloirnda 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Kiosco jirón santa clorinda 1101",
+   "lat": -12.017402252941178,
+   "lng": -77.06090544117647,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jirón Santa Clorinda 1101, Lima",
+   "base": 33
+  },
+  {
+   "address": "Jirón Manuel Gomez 651, Lince",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "Jirón Manuel Gomez 651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "pe, Lince, Jirón Manuel Gomez 651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "pe Jiron Manuel Manuel Gomez 651 Lince",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "651 Jirón Manuel Gomez",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "jirón manuel gomez 651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "gomez 651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "Jirón Manuel Gomez651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "Kiosco jirón manuel gomez 651",
+   "lat": -12.08203977142857,
+   "lng": -77.0415818857143,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jirón Manuel Gomez 651, Lince",
+   "base": 34
+  },
+  {
+   "address": "Julio C. Tello 221, Lima",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Julio C. Tello 221",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Julio C. Tello 221, pe, Lima",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Julio C. Tello 221 pe Lima",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "221, Julio C. Tello, Lima",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Jullio C. Tello 221",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Julio C. Tello 221 martin",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Marcela julio c. tello 221",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "julio c. tello 221",
+   "lat": -12.0793862,
+   "lng": -77.0583653,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Julio C. Tello 221, Lima",
+   "base": 35
+  },
+  {
+   "address": "Jirón Cabo Alarcón 199, Lima",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "199 Jirón Cabo Alarcón",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "pe, Lima, Jirón Cabo Alarcón 199",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "pe Jirón Cabo Alarcón 199 Lima",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "Jirón Cabo Alarcón, 199, Lima",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "Jirón Cabo Alarócn 199",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "alarcón 199",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "Jirón Cabo Alarcón 199 casa 18",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "jirón cabo alarcón 199",
+   "lat": -12.0603925,
+   "lng": -77.0339321,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Cabo Alarcón 199, Lima",
+   "base": 36
+  },
+  {
+   "address": "Calle Pachacutec 368, Lima",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "368 Pachacutec",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Pachacutec 368, Lima",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Pachacutec 368, pe, Lima",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Pachacutec 368, pe, Lima",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Calle Pachacutec 368",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Juan pachacutec 368",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Pachacutec368",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "PACHACUTEC 368",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Pachacutec 368 timbre 2",
+   "lat": -12.00325,
+   "lng": -77.06565,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Pachacutec 368, Lima",
+   "base": 37
+  },
+  {
+   "address": "Jirón Jorge Chavez 71A, Lima",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Jirón Jorge Chavez, 71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Jirón Jorge Chavez 71A, Lima, pe",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Lima, pe, Jirón Jorge Chavez 71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Lima - Jirón Jorge Chavez - 71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Jirón Jorge Chavez71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "jirón jorge chavez 71a",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Juan jirón jorge chavez 71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "chavez 71A",
+   "lat": -12.0498516,
+   "lng": -77.0471168,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jirón Jorge Chavez 71A, Lima",
+   "base": 38
+  },
+  {
+   "address": "Manuel Pineda 194, 15102 Lima",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "194 Manuel Pineda",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "Manuel Pineda 194, 15102",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "Manuel Pineda 194 pe Lima",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "Manuel Pineda 194 Lima pe",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "15102 - Manuel Pineda - 194 - Lima",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "Juan manuel pineda 194",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "MANUEL PINEDA 194",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "pineda 194",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  },
+  {
+   "address": "Manuel Pineda 194 martin",
+   "lat": -12.0279246,
+   "lng": -77.0485472,
+   "country": "PE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Manuel Pineda 194, 15102 Lima",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,3888 @@
+{
+ "source": "osm-addr",
+ "country": "ID",
+ "city": "Jakarta",
+ "country_label": "Indonesia",
+ "depot": {
+  "lat": -6.2088,
+  "lon": 106.8456,
+  "city": "Jakarta",
+  "country": "Indonesia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 387,
+ "note": "Nodos addr:* del indice n-6.10_s-6.30_e106.90_w106.70-java.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Jalan Tanah Abang V 37, Jakarta",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "37 Jalan Tanah Abang V",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jalan Tanah Abang V 37, id, Jakarta",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jakarta, id, Jalan Tanah Abang V 37",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jakarta, Jalan Tanah Abang V",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jalan Tanah Abang V 37 john",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "abang 37",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "JALAN TANAH ABANG V 37",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jalan Tanah Abang V37",
+   "lat": -6.1794326,
+   "lng": 106.8144981,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Tanah Abang V 37, Jakarta",
+   "base": 0
+  },
+  {
+   "address": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara I, No.23",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara I No.23 12820",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara I No.23, Jakarta Selatan, id",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jakarta Selatan Jalan Tebet Utara I No.23 id",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara I, Jakarta Selatan, No.23, 12820",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara I No.23 (green door)",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "utara No.23",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "JALAN TEBET UTARA I NO.23",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jalan Tebet Utara INo.23",
+   "lat": -6.22891444,
+   "lng": 106.85281512000002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Tebet Utara I No.23, 12820 Jakarta Selatan",
+   "base": 1
+  },
+  {
+   "address": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar, RT.5/RW.8",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8 10710",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8 id Central Jakarta",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "id, Central Jakarta, Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Central Jakarta, Jl. Kh Samanhudi, Ps. Baru, Sawah Besar, RT.5/RW.8, 10710",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "sawah besar ps. baru jl. kh samanhudi rt.5/rw.8",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Sawah Besar Ps. Baru Jl. Kh SamanhudiRT.5/RW.8",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Sawah Besar Ps. Baru Jl. Kh Samanhudi RT.5/RW.8 back entrance",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Sawah Besar Ps. Baru Jl. Kh Sam RT.5/RW.8",
+   "lat": -6.161636025,
+   "lng": 106.832422975,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jl. Kh Samanhudi, Ps. Baru, Sawah Besar RT.5/RW.8, 10710 Central Jakarta",
+   "base": 2
+  },
+  {
+   "address": "Jalan Brigjen Katamso 35A, Jakarta",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jalan Brigjen Katamso, 35A",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jakarta Jalan Brigjen Katamso 35A id",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "jalan brigjen katamso 35a id jakarta",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jakarta - 35A - Jalan Brigjen Katamso",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Mary jalan brigjen katamso 35A",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "katamso 35A",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jalan Brigjen Katamso 35A (green door)",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jalan Brigjen Katamso35A",
+   "lat": -6.188962,
+   "lng": 106.7998165,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Brigjen Katamso 35A, Jakarta",
+   "base": 3
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam VI M 19",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam VI M 19 12820",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "id, Jalan Tebet Timur Dalam VI M 19, Jakarta Selatan",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "jalan tebet timur dalam vi m 19 19 jakarta selatan id",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam VI M 12820 19",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "dalam 19",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam VI M 19 (green door)",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "jalan tebet timur dalam vi m 19",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Mary jalan tebet timur dalam vi m 19",
+   "lat": -6.23647412,
+   "lng": 106.85756414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Tebet Timur Dalam VI M 19, 12820 Jakarta Selatan",
+   "base": 4
+  },
+  {
+   "address": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "No. 83 Jl. Jend. A. Yani",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "Jl. Jend. A. Yani No. 83, 10510",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "id DKI Jakarta Jl. Jend. A. Yani No. 83",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "jl. jend. a. yani no. 83 dki jakarta id",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "10510 No. 83 Jl. Jend. A. Yani DKI Jakarta",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "yani No. 83",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "Jl. Jendd. A. Yani No. 83",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "Deli jl. jend. a. yani No. 83",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "jl. jend. a. yani no. 83",
+   "lat": -6.168776910526316,
+   "lng": 106.87639078421053,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Jend. A. Yani No. 83, 10510 DKI Jakarta",
+   "base": 5
+  },
+  {
+   "address": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Kav. 53b Jalan Gatot Subroto",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Jalan Gatot Subroto Kav. 53b, 10260",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Jalan Gatot Subroto Kav. 53b id Petamburan, Tanah Abang, Central Jakarta",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "id, Jalan Gatot Subroto Kav. 53b, Petamburan, Tanah Abang, Central Jakarta",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Jalan Gatot Subroto Petamburan, Tanah Abang, Central Jakarta Kav. 53b",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "subroto Kav. 53b",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "JALAN GATOT SUBROTO KAV. 53B",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Jalan Gatot Sub Kav. 53b",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "jalan gatot subroto kav. 53b",
+   "lat": -6.2021466,
+   "lng": 106.8016477,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Gatot Subroto Kav. 53b, 10260 Petamburan, Tanah Abang, Central Jakarta",
+   "base": 6
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati, 3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati 3 13220",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "East Jakarta id Jalan Sunan Gunung Jati 3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "id Jalan Sunan Gunung Jati 3 East Jakarta",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati, East Jakarta, 3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Mary jalan sunan gunung jati 3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati 3 apt 4b",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "jati 3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jalan Sunan Gunung Jati3",
+   "lat": -6.19572536,
+   "lng": 106.88463024,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Sunan Gunung Jati 3, 13220 East Jakarta",
+   "base": 7
+  },
+  {
+   "address": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "No.35, RT.6/RW.6 Jl. Cideng Timur",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Central Jakarta id Jl. Cideng Timur No.35, RT.6/RW.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Central Jakarta, id, Jl. Cideng Timur No.35, RT.6/RW.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Central Jakarta No.35, RT.6/RW.6 10130 Jl. Cideng Timur",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "JL. CIDENG TIMUR NO.35, RT.6/RW.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Jl. Cideng TimurNo.35, RT.6/RW.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Mary jl. cideng timur No.35, RT.6/RW.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "jl. cideng timur no.35, rt.6/rw.6",
+   "lat": -6.16884884,
+   "lng": 106.81112002,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Cideng Timur No.35, RT.6/RW.6, 10130 Central Jakarta",
+   "base": 8
+  },
+  {
+   "address": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Dokter Kusuma Atmaja 50",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jakarta, id, Jalan Dokter Kusuma Atmaja 50",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "id Jalan Dokter Kusuma Atmaja 50 Jakarta",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Dokter Kusuma Atmaja, 50, Jakarta",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Dokter Kusuma Atmaja50",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "jalan dokter kusuma atmaja 50",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Dotker Kusuma Atmaja 50",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Dokter Kusuma Atmaja 50 back entrance",
+   "lat": -6.1998879,
+   "lng": 106.8267414,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Dokter Kusuma Atmaja 50, Jakarta",
+   "base": 9
+  },
+  {
+   "address": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Lontar 8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Lontar 8, 12960",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Lontar 8, DKI Jakarta, id",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "DKI Jakarta id Jalan Lontar 8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "12960, DKI Jakarta, Jalan Lontar, 8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Lontar8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "JALAN LONTAR 8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "lontar 8",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Lontar 8 back entrance",
+   "lat": -6.21798054,
+   "lng": 106.84342941999998,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Lontar 8, 12960 DKI Jakarta",
+   "base": 10
+  },
+  {
+   "address": "Jalan Akri 134, 12930 Setiabudi",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Jalan Akri, 134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Jalan Akri 134 12930",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Setiabudi, Jalan Akri 134, id",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Setiabudi id Jalan Akri 134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Setiabudi - Jalan Akri - 134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "jalan akri 134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Mary jalan akri 134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Jalan Akri134",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Jalan Akri 134 john",
+   "lat": -6.2264261,
+   "lng": 106.8192742,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Akri 134, 12930 Setiabudi",
+   "base": 11
+  },
+  {
+   "address": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "Jl. Tebet Raya No.72, RT.2/RW.4,, 72",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "Jl. Tebet Raya No.72, RT.2/RW.4, 72 12820",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "id, Jl. Tebet Raya No.72, RT.2/RW.4, 72, Tebet, South Jakarta",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "Jl. Tebet Raya No.72, RT.2/RW.4, 72 72 Tebet, South Jakarta id",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "12820 Jl. Tebet Raya No.72, RT.2/RW.4, 72 Tebet, South Jakarta",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "RT.2/RW.4 Jl. Tebet Raya No.7272",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "RT.2R/W.4 Jl. Tebet Raya No.72 72",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "rt.2/rw.4 jl. tebet raya no.72 72",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "RT.2/RW.4 Jl. Tebet Raya No.72 72 john",
+   "lat": -6.227783733333333,
+   "lng": 106.85567175,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jl. Tebet Raya No.72, RT.2/RW.4, 72, 12820 Tebet, South Jakarta",
+   "base": 12
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "91 Jalan Tebet Timur Dalam Raya",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam Raya 91 12820",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "id, Jalan Tebet Timur Dalam Raya 91, Jakarta Selatan",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "jalan tebet timur dalam raya 91 id jakarta selatan",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Jakarta Selatan - 91 - Jalan Tebet Timur Dalam Raya - 12820",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam Raya 91 back entrance",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Jalan Tebet Timur Dalam Raya91",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "jalan tebet timur dalam raya 91",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Jallan Tebet Timur Dalam Raya 91",
+   "lat": -6.23552808,
+   "lng": 106.85719798,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Tebet Timur Dalam Raya 91, 12820 Jakarta Selatan",
+   "base": 13
+  },
+  {
+   "address": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "1 Duren Tiga Raya",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Duren Tiga Raya 1, 12760",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "DKI Jakarta, Duren Tiga Raya 1, id",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Duren Tiga Raya 1, DKI Jakarta, id",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "1, 12760, Duren Tiga Raya",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "duren tiga raya 1",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Duren Tiga Raya1",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Duren Tiga Raya 1 john",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Mary duren tiga raya 1",
+   "lat": -6.2530028875,
+   "lng": 106.83345051250001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Duren Tiga Raya 1, 12760 DKI Jakarta",
+   "base": 14
+  },
+  {
+   "address": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Blok A1 Jalan Benyamin Sueb",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Jalan Benyamin Sueb Blok A1, 10630",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Jalan Benyamin Sueb Blok A1, id, Central Jakarta",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Central Jakarta, Jalan Benyamin Sueb Blok A1, id",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "10630 - Blok A1 - Jalan Benyamin Sueb",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "sueb Blok A1",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "jalan benyamin sueb blok a1",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "JALAN BENYAMIN SUEB BLOK A1",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Jalan Benyamin SuebBlok A1",
+   "lat": -6.1556153,
+   "lng": 106.8519177,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Benyamin Sueb Blok A1, 10630 Central Jakarta",
+   "base": 15
+  },
+  {
+   "address": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "Jl. Tebet Utara I No.40, RT.8/RW.2,",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "Jl. Tebet Utara I No.40, RT.8/RW.2, 12810",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "tebet , South Jakarta Jl. Tebet Utara I No.40, RT.8/RW.2, id",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "id, Jl. Tebet Utara I No.40, RT.8/RW.2,, tebet , South Jakarta",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "tebet , South Jakarta, No.40, RT.8/RW.2,, 12810, Jl. Tebet Utara I",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "jl. tebet utara i no.40, rt.8/rw.2,",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "Mary jl. tebet utara i No.40, RT.8/RW.2,",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "Jl. Tebet Utara INo.40, RT.8/RW.2,",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "utara No.40, RT.8/RW.2,",
+   "lat": -6.2256674,
+   "lng": 106.8527446,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jl. Tebet Utara I No.40, RT.8/RW.2,, 12810 tebet , South Jakarta",
+   "base": 16
+  },
+  {
+   "address": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Jalan Tanah Abang 2, RT.1",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Jalan Tanah Abang 2 RT.1, 10160",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Central Jakarta, Jalan Tanah Abang 2 RT.1, id",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Central Jakarta Jalan Tanah Tanah Abang 2 RT.1 id",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Central Jakarta, 10160, RT.1, Jalan Tanah Abang 2",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "JALAN TANAH ABANG 2 RT.1",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Jalan Tanah Abang 2RT.1",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "abang RT.1",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Mary jalan tanah abang 2 RT.1",
+   "lat": -6.17560932,
+   "lng": 106.81351676,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Tanah Abang 2 RT.1, 10160 Central Jakarta",
+   "base": 17
+  },
+  {
+   "address": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Jl. Cempaka Putih Raya No. 102",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Jl. Cempaka Putih Raya No. 102 15412",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Cempaka Putih, Central Jakarta, Jl. Cempaka Putih Raya No. 102, id",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "id Cempaka Putih, Central Jakarta Jl. Cempaka Cempaka Putih Raya No. 102",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Cempaka Putih, Central Jakarta, 15412, No. 102, Jl. Cempaka Putih Raya",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "raya No. 102",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Jl. Cempaka Putih Raya No. 102 (green door)",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Deli jl. cempaka putih raya No. 102",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "JL. CEMPAKA PUTIH RAYA NO. 102",
+   "lat": -6.1763764,
+   "lng": 106.8726097,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jl. Cempaka Putih Raya No. 102, 15412 Cempaka Putih, Central Jakarta",
+   "base": 18
+  },
+  {
+   "address": "Jl Cideng Barat 117C, Jakarta",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Jl Cideng Barat 117C",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "id Jl Cideng Barat 117C Jakarta",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Jl Cideng Barat 117C, Jakarta, Jakarta, id",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Jakarta - 117C",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Jl Cideng Barat117C",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "jl cideng barat 117c",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "JL CIDENG BARAT 117C",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Deli jl cideng barat 117C",
+   "lat": -6.1809752,
+   "lng": 106.8130358,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl Cideng Barat 117C, Jakarta",
+   "base": 19
+  },
+  {
+   "address": "Jalan Cianjur 17, Jakarta",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jalan Cianjur 17",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jakarta id Jalan Cianjur 17",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jakarta Jalan Cianjur 17 17 id",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "17, Jalan Cianjur, Jakarta",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "jalan cianjur 17",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jalan Cianjur 17 apt 4b",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jalan Cianjur17",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Mary jalan cianjur 17",
+   "lat": -6.2020606,
+   "lng": 106.8288487,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Cianjur 17, Jakarta",
+   "base": 20
+  },
+  {
+   "address": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. Jend. Sudirman Kav 52-53 Lot 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. Jend. Sudirman Kav 52-53 Lot 9 12190",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "South Jakarta id Jl. Jend. Sudirman Kav 52-53 Lot 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. Jend. Sudirman Kav 52-53 Lot Lot 9, id, South Jakarta",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "South Jakarta, Jl. Jend. Sudirman Kav 52-53, 12190",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "jl. jend. sudirman kav 52-53 lot 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "JL. JEND. SUDIRMAN KAV 52-53 LOT 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. Jend. Sduirman Kav 52-53 Lot 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. Jend. Sudirman Kav 52-53Lot 9",
+   "lat": -6.22629589047619,
+   "lng": 106.80848766190476,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jl. Jend. Sudirman Kav 52-53 Lot 9, 12190 South Jakarta",
+   "base": 21
+  },
+  {
+   "address": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia, Level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2 10350",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "id, DKI Jakarta, Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "DKI Jakarta, Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, id",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "10350 DKI Jakarta Level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "indonesia dki jakarta kota jakarta pusat menteng gondangdia jl. m. h. thamrin no.28-30 level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "Indonesia DKI Jakarta Kota Jakarta Pusat Menteng Gondangdia Jl. M. H. Thamrin No.28-30 Level 2 back entrance",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "Deli indonesia dki jakarta kota jakarta pusat menteng gondangdia jl. m. h. thamrin no.28-30 Level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "no.28-30 Level 2",
+   "lat": -6.1932495,
+   "lng": 106.8219995,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jl. M. H. Thamrin No.28-30, Gondangdia, Menteng, Kota Jakarta Pusat, DKI Jakarta, Indonesia Level 2, 10350 DKI Jakarta",
+   "base": 22
+  },
+  {
+   "address": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Pangkalan Asem 73B",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Pangkalan Asem 73B, 10550",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "DKI Jakarta, id, Jalan Pangkalan Asem 73B",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Pangkalan Asem 73B DKI Jakarta id",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "10550, DKI Jakarta, 73B",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Pangkalan Asem 73B (green door)",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "jalan pangkalan asem 73b",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Pangkaaln Asem 73B",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Mary jalan pangkalan asem 73B",
+   "lat": -6.17943082,
+   "lng": 106.85915038,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Pangkalan Asem 73B, 10550 DKI Jakarta",
+   "base": 23
+  },
+  {
+   "address": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "77 Jalan Letjen. S. Parman",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "id, Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "Jalan Letjen. S. Parman 77 id Jakarta Barat",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "77, Jakarta Barat",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "JALAN LETJEN. S. PARMAN 77",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "parman 77",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "jalan letjen. s. parman 77",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "Jalan Letjen. S. Parman77",
+   "lat": -6.18995156,
+   "lng": 106.79874762,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Letjen. S. Parman 77, Jakarta Barat",
+   "base": 24
+  },
+  {
+   "address": "Jalan Kramat Kwitang 31A, Jakarta",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwitang 31A",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwitang 31A, id, Jakarta",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwitang 31A, id, Jakarta",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwitang - 31A",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "kwitang 31A",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwitang 31A (green door)",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kramat Kwi 31A",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "JALAN KRAMAT KWITANG 31A",
+   "lat": -6.181675688888889,
+   "lng": 106.83819402222223,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Kramat Kwitang 31A, Jakarta",
+   "base": 25
+  },
+  {
+   "address": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "No. 5 Galuh (II)",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "Galuh (II) No. 5 12110",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "id Kebayoran Baru Galuh (II) No. 5",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "id Kebayoran Baru Galuh (II) No. 5",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "12110, Kebayoran Baru, No. 5, Galuh (II)",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "(ii) No. 5",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "Deli galuh (ii) No. 5",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "GALUH (II) NO. 5",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "Galuh (II) No. 5 apt 4b",
+   "lat": -6.23083874,
+   "lng": 106.80400893999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Galuh (II) No. 5, 12110 Kebayoran Baru",
+   "base": 26
+  },
+  {
+   "address": "Jalan Karang Asem Tengah 21, Jakarta",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "21 Jalan Karang Asem Tengah",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Jakarta Jalan Karang Asem Tengah 21 id",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Jakarta Jalan Karang Asem Tengah 21 id",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "21 - Jakarta - Jalan Karang Asem Tengah",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Mary jalan karang asem tengah 21",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Jalan Karang Asem Tengah21",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "JALAN KARANG ASEM TENGAH 21",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Jalan Karang Asem Tengah 21 john",
+   "lat": -6.22638606,
+   "lng": 106.82926663999999,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Karang Asem Tengah 21, Jakarta",
+   "base": 27
+  },
+  {
+   "address": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Pisangan Baru Timur, 2A",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Pisangan Baru Timur 2A 13110",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "id, Jalan Pisangan Baru Timur 2A, DKI Jakarta",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Pisangan Baru Timur 2A, id, DKI Jakarta",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "13110, Jalan Pisangan Baru Timur, DKI Jakarta",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Pisangan Baru Timur 2A john",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "timur 2A",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Deli jalan pisangan baru timur 2A",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Pisanagn Baru Timur 2A",
+   "lat": -6.214270627272728,
+   "lng": 106.87231440000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Pisangan Baru Timur 2A, 13110 DKI Jakarta",
+   "base": 28
+  },
+  {
+   "address": "Jalan Karang Asem Raya 19, Jakarta",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jalan Karang Asem Raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jakarta id Jalan Karang Asem Raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jakarta id Jalan Karang Asem Raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "19 - Jalan Karang Asem Raya",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jalan Karang Asem Raya19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jalan Kraang Asem Raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Deli jalan karang asem raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "raya 19",
+   "lat": -6.2280979,
+   "lng": 106.8315644,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Karang Asem Raya 19, Jakarta",
+   "base": 29
+  },
+  {
+   "address": "Jalan Suwiryo 49, Jakarta",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "49 Jalan Suwiryo",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "Jalan Suwiryo 49 id Jakarta",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "Jalan Suwiryo 49 Jakarta id",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "Jakarta, 49",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "jalan suwiryo 49",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "Jalan Suwiryo49",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "Jalan Suwiryo 49 back entrance",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "suwiryo 49",
+   "lat": -6.1947445,
+   "lng": 106.8302071,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Suwiryo 49, Jakarta",
+   "base": 30
+  },
+  {
+   "address": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "MNC Tower, Jl. Kebon Sirih, No.17 - 19, RT.15/RW.7",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7 11840",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7 Central Jakarta id",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "id, Central Jakarta, MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "No.17 - 19, RT.15/RW.7, MNC Tower, Jl. Kebon Sirih, Central Jakarta, 11840",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "Deli jl. kebon sirih mnc tower No.17 - 19, RT.15/RW.7",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "Jl. Kevon Sirih MNC Tower No.17 - 19, RT.15/RW.7",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "Jl. Kebon Sirih MNC Tower No.17 - 19, RT.15/RW.7 john",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "tower No.17 - 19, RT.15/RW.7",
+   "lat": -6.1846306,
+   "lng": 106.8317067,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "MNC Tower, Jl. Kebon Sirih No.17 - 19, RT.15/RW.7, 11840 Central Jakarta",
+   "base": 31
+  },
+  {
+   "address": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "135-137 Jalan Senen Raya",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Jalan Senen Raya 135-137 10710",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "id Jakarta Jalan Senen Raya 135-137",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Jakarta, Jalan Senen Raya 135-137, id",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Jakarta, Jalan Senen Raya, 135-137",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "JALAN SENEN RAYA 135-137",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Mary jalan senen raya 135-137",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "jalan senen raya 135-137",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Jalan Senen Raya 135-137 john",
+   "lat": -6.172671327272727,
+   "lng": 106.84034546363637,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Senen Raya 135-137, 10710 Jakarta",
+   "base": 32
+  },
+  {
+   "address": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "63 - 64 Jalan Pramuka Raya",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Jalan Pramuka Raya 63 - 64, 10570",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Central Jakarta id Jalan Pramuka Raya 63 - 64",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Central Jakarta Jalan Pramuka Raya 63 - 64 id",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "63 - 64 Central Jakarta 10570",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "raya 63 - 64",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Mary jalan pramuka raya 63 - 64",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Jalan Pramkua Raya 63 - 64",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Jalan Pramuka Raya 63 - 64 (green door)",
+   "lat": -6.1921696,
+   "lng": 106.8647274,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Pramuka Raya 63 - 64, 10570 Central Jakarta",
+   "base": 33
+  },
+  {
+   "address": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "Jalan Raya Pasar Minggu, 3A",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "DKI Jakarta, id, Jalan Raya Pasar Minggu 3A",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "Jalan Raya Pasar Minggu 3A DKI Jakarta id",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "3A, Jalan Raya Pasar Minggu, DKI Jakarta",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "Jalan Raya Pasar Minggu 3A apt 4b",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "JALAN RAYA PASAR MINGGU 3A",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "jalan raya pasar minggu 3a",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "minggu 3A",
+   "lat": -6.25081104,
+   "lng": 106.84195638000001,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Raya Pasar Minggu 3A, DKI Jakarta",
+   "base": 34
+  },
+  {
+   "address": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jalan Sunan Sedayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jalan Sunan Sedayu 4, 13220",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jakarta id Jalan Sunan Sedayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jalan Sunan Sedayu 4 Jakarta id",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jakarta, 4, Jalan Sunan Sedayu, 13220",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Deli jalan sunan sedayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jalan Sunan Sdeayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "jalan sunan sedayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "sedayu 4",
+   "lat": -6.1970146,
+   "lng": 106.8917587,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Sunan Sedayu 4, 13220 Jakarta",
+   "base": 35
+  },
+  {
+   "address": "Jalan Sumenep 6, Jakarta",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "6 Jalan Sumenep",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jakarta, Jalan Sumenep 6, id",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "id, Jalan Sumenep 6, Jakarta",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jalan Sumenep, Jakarta, 6",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jalan Sumenep 6 john",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jalan Sum 6",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jalan Sumenep6",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jalan Suemnep 6",
+   "lat": -6.2005335,
+   "lng": 106.8264043,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jalan Sumenep 6, Jakarta",
+   "base": 36
+  },
+  {
+   "address": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jenderal Sudirman 10 -11",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jenderal Sudirman 10 -11, 10250",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jenderal Sudirman 10 -11, id, Kota Jakarta Pusat",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jenderal Sudirman 10 -11 Kota Jakarta Pusat id",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "10 -11 - Kota Jakarta Pusat - 10250 - Jl. Jenderal Sudirman",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "jl. jenderal sudirman 10 -11",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jedneral Sudirman 10 -11",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "sudirman 10 -11",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jl. Jenderal Sud 10 -11",
+   "lat": -6.2092862,
+   "lng": 106.8210437,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Jl. Jenderal Sudirman 10 -11, 10250 Kota Jakarta Pusat",
+   "base": 37
+  },
+  {
+   "address": "Jalan Imam Bonjol 13, Jakarta",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "Jalan Imam Bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "id Jakarta Jalan Imam Bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "Jakarta, id, Jalan Imam Bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "Jakarta - Jalan Imam Bonjol - 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "jalan imam bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "Jalan Imam Bonjol13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "Mary jalan imam bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "bonjol 13",
+   "lat": -6.200207,
+   "lng": 106.8297598,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jalan Imam Bonjol 13, Jakarta",
+   "base": 38
+  },
+  {
+   "address": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20 12520",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20 id South Jakarta",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "id, RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, South Jakarta",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "South Jakarta RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "RT.4/RW.1 Jl. Gg. Duren Tiga RS. Asri No. 2020",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "rt.4/rw.1 jl. gg. duren tiga rs. asri no. 20 20",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "Mary rt.4/rw.1 jl. gg. duren tiga rs. asri no. 20 20",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  },
+  {
+   "address": "RT.4/RW.1 JL. GG. DUREN TIGA RS. ASRI NO. 20 20",
+   "lat": -6.2544798,
+   "lng": 106.8322992,
+   "country": "ID",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "RS. Asri No. 20, Jl. Gg. Duren Tiga, RT.4/RW.1 20, 12520 South Jakarta",
+   "base": 39
+  }
+ ]
+}

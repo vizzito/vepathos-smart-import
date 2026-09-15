@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "FR",
+ "city": "Paris",
+ "country_label": "France",
+ "depot": {
+  "lat": 48.8566,
+  "lon": 2.3522,
+  "city": "Paris",
+  "country": "France"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses fr/75/statewide, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "19 Rue Pelée",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Rue Pelée 19, 75011",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Paris 11e Arrondissement, france, Rue Pelée 19",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Paris 11e Arrondissement, france, Rue Pelée 19",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "19 Rue Pelée Paris 11e Arrondissement",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "PELÉE 19",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "pelée 19",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Pelée19",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Pelée 19 bat b",
+   "lat": 48.859994,
+   "lng": 2.370651,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Pelée 19, 75011 Paris 11e Arrondissement",
+   "base": 0
+  },
+  {
+   "address": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "24 Rue Tiquetonne",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Rue Tiquetonne 24, 75002",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "france, Rue Tiquetonne 24, Paris 2e Arrondissement",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Rue Tiquetonne 24, Paris 2e Arrondissement, france",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Rue Tiquetonne 24 Paris 2e Arrondissement 75002",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "TIQUETONNE 24",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Tiquetone 24",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Tiquetonne24",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Chez Paul tiquetonne 24",
+   "lat": 48.8647,
+   "lng": 2.348554,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Tiquetonne 24, 75002 Paris 2e Arrondissement",
+   "base": 1
+  },
+  {
+   "address": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Morland, 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Morland 19 75004",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Paris 4e Arrondissement france Morland 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Paris 4e Arrondissement, Morland 19, france",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Boulevard Morland, Paris 4e Arrondissement, 75004, 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "MORLAND 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Morland 19 2e etage",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Chez Paul morland 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Molrand 19",
+   "lat": 48.850532,
+   "lng": 2.362584,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Boulevard Morland 19, 75004 Paris 4e Arrondissement",
+   "base": 2
+  },
+  {
+   "address": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Rue Charles Le Goffic 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Rue Charles Le Goffic 3, 75014",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Rue Charles Le Goffic 3, Paris 14e Arrondissement, france",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Paris 14e Arrondissement Rue Charles Le Goffic Goffic 3 france",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Paris 14e Arrondissement - 75014 - 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "CHARLES LE GOFFIC 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Cahrles Le Goffic 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "charles le goffic 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "goffic 3",
+   "lat": 48.8238,
+   "lng": 2.320152,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Charles Le Goffic 3, 75014 Paris 14e Arrondissement",
+   "base": 3
+  },
+  {
+   "address": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "Rue de l'Amiral Mouchez, 80",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "Rue de l'Amiral Mouchez 80 75014",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "france Rue de l'Amiral Mouchez 80 Paris 14e Arrondissement",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "Rue de l'Amiral Mouchez 80, Paris 14e Arrondissement, france",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "Paris 14e Arrondissement - 80 - Rue de l'Amiral Mouchez",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "de l'Amrial Mouchez 80",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "mouchez 80",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "de l'Amiral Mouchez80",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "de l'Amiral Mou 80",
+   "lat": 48.821005,
+   "lng": 2.342826,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de l'Amiral Mouchez 80, 75014 Paris 14e Arrondissement",
+   "base": 4
+  },
+  {
+   "address": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "4B Rue Émile Pierre Casel",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "Rue Émile Pierre Casel 4B, 75020",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "france Rue Émile Pierre Casel 4B Paris 20e Arrondissement",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "Rue Émile Pierre Casel 4B Paris 20e Arrondissement france",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "4B, Paris 20e Arrondissement, 75020, Rue Émile Pierre Casel",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "émile pierre casel 4b",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "Émile Pierre Casel4B",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "Chez Paul émile pierre casel 4B",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "casel 4B",
+   "lat": 48.864903,
+   "lng": 2.405917,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Émile Pierre Casel 4B, 75020 Paris 20e Arrondissement",
+   "base": 5
+  },
+  {
+   "address": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Avenue Myron Herrick 12",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Avenue Myron Herrick 12 75008",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Avenue Myron Herrick 12, france, Paris 8e Arrondissement",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "avenue myron herrick 12, paris 8e arrondissement, france",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "75008 - Avenue Myron Herrick - Paris 8e Arrondissement - 12",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Myron Herrick 12 2e etage",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Myron Her 12",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "myron herrick 12",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "MYRON HERRICK 12",
+   "lat": 48.873939,
+   "lng": 2.31018,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenue Myron Herrick 12, 75008 Paris 8e Arrondissement",
+   "base": 6
+  },
+  {
+   "address": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Rue de Bercy 61Z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Rue de Bercy 61Z, 75012",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Paris 12e Arrondissement france Rue de Bercy 61Z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "france Paris 12e Arrondissement Rue de Bercy Bercy 61Z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Rue de Bercy, 61Z, Paris 12e Arrondissement, 75012",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "de bercy 61z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Marie de bercy 61Z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "de Bercy 61Z 2e etage",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "DE BERCY 61Z",
+   "lat": 48.838177,
+   "lng": 2.381697,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Bercy 61Z, 75012 Paris 12e Arrondissement",
+   "base": 7
+  },
+  {
+   "address": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Rue de Rennes, 99",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Rue de Rennes 99, 75006",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Paris 6e Arrondissement Rue de Rennes 99 france",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "france, Rue de Rennes 99, Paris 6e Arrondissement",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Paris 6e Arrondissement Rue de Rennes 99 75006",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Marie de rennes 99",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "de Rennes99",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "de rennes 99",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "de Renes 99",
+   "lat": 48.849215,
+   "lng": 2.329141,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Rennes 99, 75006 Paris 6e Arrondissement",
+   "base": 8
+  },
+  {
+   "address": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Avenue Hoche, 60",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Avenue Hoche 60 75008",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Paris 8e Arrondissement, Avenue Hoche 60, france",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Avenue Hoche 60 Paris 8e Arrondissement france",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "75008 60 Avenue Hoche Paris 8e Arrondissement",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "hoche 60",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Hoche 60 bat b",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Hocche 60",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Marie hoche 60",
+   "lat": 48.874847,
+   "lng": 2.297116,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenue Hoche 60, 75008 Paris 8e Arrondissement",
+   "base": 9
+  },
+  {
+   "address": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "11 Rue Tandou",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Rue Tandou 11 75019",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "france Rue Tandou 11 Paris 19e Arrondissement",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Paris 19e Arrondissement france Rue Tandou 11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Rue Tandou, 75019, 11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Marie tandou 11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Tandou11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "TANDOU 11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Tadnou 11",
+   "lat": 48.886104,
+   "lng": 2.379479,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Tandou 11, 75019 Paris 19e Arrondissement",
+   "base": 10
+  },
+  {
+   "address": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Rue d'Avron 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Rue d'Avron 36, 75020",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "france, Rue d'Avron 36, Paris 20e Arrondissement",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Paris 20e Arrondissement, france, Rue d'Avron 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Paris 20e Arrondissement, 75020, Rue d'Avron, 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "d'Avron36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "d'avron 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "D'AVRON 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Marie d'avron 36",
+   "lat": 48.851852,
+   "lng": 2.401876,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue d'Avron 36, 75020 Paris 20e Arrondissement",
+   "base": 11
+  },
+  {
+   "address": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Rue Trolley de Prévaux 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Rue Trolley de Prévaux 8 75013",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Paris 13e Arrondissement Rue Trolley de Prévaux 8 france",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "paris 13e arrondissement, france, rue trolley de prévaux 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Paris 13e Arrondissement, 75013, 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "trolley de prévaux 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Trolley de Prévaux 8 (porte verte)",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Chez Paul trolley de prévaux 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "prévaux 8",
+   "lat": 48.826139,
+   "lng": 2.372648,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Trolley de Prévaux 8, 75013 Paris 13e Arrondissement",
+   "base": 12
+  },
+  {
+   "address": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Rue de Chazelles, 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Rue de Chazelles 14, 75017",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Rue de Chazelles 14, france, Paris 17e Arrondissement",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "paris 17e arrondissement, france, rue de chazelles 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Paris 17e Arrondissement - 75017 - 14 - Rue de Chazelles",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "de Cha 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "DE CHAZELLES 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "de chazelles 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Chez Paul de chazelles 14",
+   "lat": 48.880175,
+   "lng": 2.305012,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Chazelles 14, 75017 Paris 17e Arrondissement",
+   "base": 13
+  },
+  {
+   "address": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Rue Madame de Sévigné 13",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Rue Madame de Sévigné 13 75004",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Paris 4e Arrondissement, Rue Madame de Sévigné 13, france",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "france, rue madame de sevigne 13, paris 4e 4e arrondissement",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Rue Madame de Sévigné - 13 - 75004 - Paris 4e Arrondissement",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Madame de Sévigné13",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Madame de Sévigné 13 bat b",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "sévigné 13",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "madame de sévigné 13",
+   "lat": 48.85627,
+   "lng": 2.362406,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Madame de Sévigné 13, 75004 Paris 4e Arrondissement",
+   "base": 14
+  },
+  {
+   "address": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "34 de Reims",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "de Reims 34, 75017",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "france, Paris 17e Arrondissement, de Reims 34",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "france, Paris 17e Arrondissement, de Reims 34",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "Paris 17e Arrondissement Boulevard de Reims 75017",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "de Reims 34 2e etage",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "de reims 34",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "Marie de reims 34",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "de Reims34",
+   "lat": 48.888725,
+   "lng": 2.296156,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard de Reims 34, 75017 Paris 17e Arrondissement",
+   "base": 15
+  },
+  {
+   "address": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "2 Rue Léon Cosnard",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Rue Léon Cosnard 2, 75017",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "france, Rue Léon Cosnard 2, Paris 17e Arrondissement",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Rue Léon Cosnard 2 france Paris 17e Arrondissement",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Paris 17e Arrondissement 2 75017 Rue Léon Cosnard",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Léon Cosnrad 2",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "cosnard 2",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Léon Cosnard 2 pierre",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Léon Cosnard2",
+   "lat": 48.883596,
+   "lng": 2.312934,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Léon Cosnard 2, 75017 Paris 17e Arrondissement",
+   "base": 16
+  },
+  {
+   "address": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "21 Rue de Verneuil",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "Rue de Verneuil 21, 75007",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "Paris 7e Arrondissement, Rue de Verneuil 21, france",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "france rue de verneuil 21 paris 7e arrondissement",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "Rue de Verneuil 21 75007",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "de Verneiul 21",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "DE VERNEUIL 21",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "Marie de verneuil 21",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "de Ver 21",
+   "lat": 48.857671,
+   "lng": 2.330038,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de Verneuil 21, 75007 Paris 7e Arrondissement",
+   "base": 17
+  },
+  {
+   "address": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "43 Rue Pascal",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Rue Pascal 43 75013",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Rue Pascal 43 Paris 13e Arrondissement france",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Rue Pascal 43 france Paris 13e Arrondissement",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "75013, Rue Pascal, 43",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "pascal 43",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Pascal43",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Marie pascal 43",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Pascal 43 2e etage",
+   "lat": 48.835395,
+   "lng": 2.348302,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Pascal 43, 75013 Paris 13e Arrondissement",
+   "base": 18
+  },
+  {
+   "address": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "14B Rue Michal",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Rue Michal 14B, 75013",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Paris 13e Arrondissement, Rue Michal 14B, france",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "france, Rue Michal Michal 14B, Paris 13e Arrondissement",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Rue Michal 75013 Paris 13e Arrondissement 14B",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "MICHAL 14B",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "michal 14b",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Chez Paul michal 14B",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Michal 14B 2e etage",
+   "lat": 48.82685,
+   "lng": 2.348271,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Michal 14B, 75013 Paris 13e Arrondissement",
+   "base": 19
+  },
+  {
+   "address": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Rue de Verneuil, 34",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Rue de Verneuil 34 75007",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "france, Rue de Verneuil 34, Paris 7e Arrondissement",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Paris 7e Arrondissement Rue de Verneuil 34 france",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Paris 7e Arrondissement, 75007, Rue de Verneuil",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Marie de verneuil 34",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "de Verneuil 34 pierre",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "de Ver 34",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "de verneuil 34",
+   "lat": 48.857874,
+   "lng": 2.329665,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Verneuil 34, 75007 Paris 7e Arrondissement",
+   "base": 20
+  },
+  {
+   "address": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "Avenue Mac-Mahon 23",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "Avenue Mac-Mahon 23 75017",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "france, Avenue Mac-Mahon 23, Paris 17e Arrondissement",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "avenue mac-mahon 23 23 paris 17e arrondissement france",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "23 - 75017 - Avenue Mac-Mahon - Paris 17e Arrondissement",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "Mac-Mahon23",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "MAC-MAHON 23",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "Mac-Mahon 23 pierre",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "mac-mahon 23",
+   "lat": 48.877064,
+   "lng": 2.29422,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenue Mac-Mahon 23, 75017 Paris 17e Arrondissement",
+   "base": 21
+  },
+  {
+   "address": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "Rue de Lancry, 67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "Rue de Lancry 67 75010",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "Paris 10e Arrondissement, Rue de Lancry 67, france",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "france Paris 10e Arrondissement Rue de Lancry 67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "67 - Rue de Lancry - Paris 10e Arrondissement - 75010",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "DE LANCRY 67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "de Lacnry 67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "de Lancry67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "de lancry 67",
+   "lat": 48.872833,
+   "lng": 2.363516,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Lancry 67, 75010 Paris 10e Arrondissement",
+   "base": 22
+  },
+  {
+   "address": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie 15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie 15 75012",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "france Paris 12e Arrondissement Passage du Génie 15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie 15 Paris 12e Arrondissement france",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie Paris 12e Arrondissement 15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Marie passage du génie 15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "génie 15",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Passage du Génie 15 pierre",
+   "lat": 48.848194,
+   "lng": 2.389064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Passage du Génie 15, 75012 Paris 12e Arrondissement",
+   "base": 23
+  },
+  {
+   "address": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Rue de Terre Neuve, 26",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Rue de Terre Neuve 26, 75020",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Paris 20e Arrondissement, Rue de Terre Neuve 26, france",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "rue de terre neuve 26, france, paris 20e arrondissement",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Paris 20e Arrondissement, 26, 75020, Rue de Terre Neuve",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "de Terre Neuve26",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Marie de terre neuve 26",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "DE TERRE NEUVE 26",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "de Terre Neuve 26 pierre",
+   "lat": 48.854443,
+   "lng": 2.398366,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Terre Neuve 26, 75020 Paris 20e Arrondissement",
+   "base": 24
+  },
+  {
+   "address": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Rue Compans 128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Rue Compans 128 75019",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Paris 19e Arrondissement Rue Compans 128 france",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "france, Paris 19e Arrondissement, Rue Compans 128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Rue Compans 128 75019 Paris 19e Arrondissement",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Chez Paul compans 128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Comapns 128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "COMPANS 128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Compans128",
+   "lat": 48.88166,
+   "lng": 2.388649,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Compans 128, 75019 Paris 19e Arrondissement",
+   "base": 25
+  },
+  {
+   "address": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Rue de Tolbiac 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Rue de Tolbiac 144 75013",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Rue de Tolbiac 144 Paris 13e Arrondissement france",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Paris 13e Arrondissement france Rue de Tolbiac 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Rue de Tolbiac 75013 Paris 13e Arrondissement 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "de Tolviac 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Marie de tolbiac 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "de tolbiac 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "DE TOLBIAC 144",
+   "lat": 48.82623,
+   "lng": 2.356212,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Tolbiac 144, 75013 Paris 13e Arrondissement",
+   "base": 26
+  },
+  {
+   "address": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "41 Rue des Francs Bourgeois",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "Rue des Francs Bourgeois 41, 75004",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "Rue des Francs Bourgeois 41, france, Paris 4e Arrondissement",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "france, Paris 4e Arrondissement, Rue des Francs Bourgeois 41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "75004 - Rue des Francs Bourgeois - Paris 4e Arrondissement - 41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "des francs bourgeois 41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "bourgeois 41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "Chez Paul des francs bourgeois 41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "des Francs Bourgeois41",
+   "lat": 48.857977,
+   "lng": 2.359938,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue des Francs Bourgeois 41, 75004 Paris 4e Arrondissement",
+   "base": 27
+  },
+  {
+   "address": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Cité d'Angoulême, 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Cité d'Angoulême 2 75011",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Paris 11e Arrondissement france Cité d'Angoulême 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Paris 11e Arrondissement, france, Cité d'Angoulême 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Cité d'Angoulême, 2, Paris 11e Arrondissement, 75011",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "d'angoulême 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "cité d'angoulême 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "CITÉ D'ANGOULÊME 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Cité d'A 2",
+   "lat": 48.866793,
+   "lng": 2.374549,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Cité d'Angoulême 2, 75011 Paris 11e Arrondissement",
+   "base": 28
+  },
+  {
+   "address": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "Villa Croix Nivert, 14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "Villa Croix Nivert 14 75015",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "Villa Croix Nivert 14, Paris 15e Arrondissement, france",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "france, Villa Croix Nivert 14, Paris 15e Arrondissement",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "75015 Paris 15e Arrondissement 14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "villa croix nivert 14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "nivert 14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "VILLA CROIX NIVERT 14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "Villa Croix Nivert14",
+   "lat": 48.845694,
+   "lng": 2.300043,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Villa Croix Nivert 14, 75015 Paris 15e Arrondissement",
+   "base": 29
+  },
+  {
+   "address": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "1 Rue Cépré",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Rue Cépré 1, 75015",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Rue Cépré 1 Paris 15e Arrondissement france",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "france, Paris 15e 15e Arrondissement, Rue Cepre 1",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Rue Cépré 75015 1 Paris 15e Arrondissement",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "cépré 1",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Céppré 1",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Cépré 1 pierre",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Cépré1",
+   "lat": 48.846049,
+   "lng": 2.304064,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Cépré 1, 75015 Paris 15e Arrondissement",
+   "base": 30
+  },
+  {
+   "address": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "87 Rue de Reuilly",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "Rue de Reuilly 87 75012",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "france Paris 12e Arrondissement Rue de Reuilly 87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "Rue de Reuilly 87, france, Paris 12e Arrondissement",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "Paris 12e Arrondissement, Rue de Reuilly, 87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "de Reuilli 87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "de reuilly 87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "Chez Paul de reuilly 87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "de Reuilly87",
+   "lat": 48.844622,
+   "lng": 2.389952,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Reuilly 87, 75012 Paris 12e Arrondissement",
+   "base": 31
+  },
+  {
+   "address": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Rue Auguste Perret 23",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Rue Auguste Perret 23, 75013",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Rue Auguste Perret 23 Paris 13e Arrondissement france",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "france Paris Paris 13e Arrondissement Rue Auguste Perret 23",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "75013 - Paris 13e Arrondissement - 23 - Rue Auguste Perret",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Auugste Perret 23",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Marie auguste perret 23",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "AUGUSTE PERRET 23",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Auguste Perret 23 (porte verte)",
+   "lat": 48.824496,
+   "lng": 2.358359,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Auguste Perret 23, 75013 Paris 13e Arrondissement",
+   "base": 32
+  },
+  {
+   "address": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "5 Rue Clapeyron",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Rue Clapeyron 5, 75008",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "france, Rue Clapeyron 5, Paris 8e Arrondissement",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Rue Clapeyron 5, france, Paris 8e Arrondissement Arrondissement",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Paris 8e Arrondissement - 75008 - 5 - Rue Clapeyron",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Claperyon 5",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Chez Paul clapeyron 5",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "clapeyron 5",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Clapeyron 5 bat b",
+   "lat": 48.881238,
+   "lng": 2.324221,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Clapeyron 5, 75008 Paris 8e Arrondissement",
+   "base": 33
+  },
+  {
+   "address": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Avenue de la Porte Brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Avenue de la Porte Brunet 2, 75019",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "france Paris 19e Arrondissement Avenue de la Porte Brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Paris 19e Arrondissement, france, Avenue de la Porte Brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Paris 19e Arrondissement Avenue de la Porte Brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "de la Porte Brunet 2 (porte verte)",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "de la porte brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Marie de la porte brunet 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "de la Porte Bruent 2",
+   "lat": 48.883232,
+   "lng": 2.395447,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenue de la Porte Brunet 2, 75019 Paris 19e Arrondissement",
+   "base": 34
+  },
+  {
+   "address": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Rue Moreau, 5",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Rue Moreau 5, 75012",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "france, Rue Moreau 5, Paris 12e Arrondissement",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "france, rue moreau 5, paris 12e arrondissement",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Paris 12e Arrondissement, 5, Rue Moreau",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Marie moreau 5",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "MOREAU 5",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "moreau 5",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Moreau 5 2e etage",
+   "lat": 48.849367,
+   "lng": 2.372206,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Moreau 5, 75012 Paris 12e Arrondissement",
+   "base": 35
+  },
+  {
+   "address": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Doudeauville 53",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Doudeauville 53, 75018",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Doudeauville 53, france, Paris 18e Arrondissement",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Doudeauville 53, Paris 18e Arrondissement, france",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Doudeauville 53 75018",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Doudeauville53",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "doudeauville 53",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Doudeauville 53 2e etage",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Chez Paul doudeauville 53",
+   "lat": 48.888311,
+   "lng": 2.352556,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Doudeauville 53, 75018 Paris 18e Arrondissement",
+   "base": 36
+  },
+  {
+   "address": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Rue Plumet 27",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Rue Plumet 27, 75015",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Rue Plumet 27 Paris 15e Arrondissement france",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Rue Plumet Plumet 27, france, Paris 15e Arrondissement",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "27 - Rue Plumet - Paris 15e Arrondissement",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Plumet27",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "plumet 27",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Marie plumet 27",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Plumet 27 bat b",
+   "lat": 48.838631,
+   "lng": 2.306961,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Plumet 27, 75015 Paris 15e Arrondissement",
+   "base": 37
+  },
+  {
+   "address": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Parvis Alan Turing 7P",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Parvis Alan Turing 7P 75013",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "france Parvis Alan Turing 7P Paris 13e Arrondissement",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "france Parvis Alan Turing 7P Paris 13e Arrondissement",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "7P 75013 Paris 13e Arrondissement Parvis Alan Turing",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Marie parvis alan turing 7P",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "parvis alan turing 7p",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Parvis Alan Turing 7P pierre",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Pavris Alan Turing 7P",
+   "lat": 48.834429,
+   "lng": 2.370294,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Parvis Alan Turing 7P, 75013 Paris 13e Arrondissement",
+   "base": 38
+  },
+  {
+   "address": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "Rue de Clignancourt 81B",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "Rue de Clignancourt 81B, 75018",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "Paris 18e Arrondissement Rue de Clignancourt 81B france",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "france, Rue de Clignancourt 81B, Paris 18e Arrondissement",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "75018, 81B, Rue de Clignancourt, Paris 18e Arrondissement",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "de Cli 81B",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "Chez Paul de clignancourt 81B",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "de clignancourt 81b",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  },
+  {
+   "address": "DE CLIGNANCOURT 81B",
+   "lat": 48.889843,
+   "lng": 2.348135,
+   "country": "FR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Clignancourt 81B, 75018 Paris 18e Arrondissement",
+   "base": 39
+  }
+ ]
+}

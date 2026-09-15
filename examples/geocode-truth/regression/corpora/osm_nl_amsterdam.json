@@ -1,0 +1,4008 @@
+{
+ "source": "osm-addr",
+ "country": "NL",
+ "city": "Amsterdam",
+ "country_label": "Netherlands",
+ "depot": {
+  "lat": 52.3676,
+  "lon": 4.9041,
+  "city": "Amsterdam",
+  "country": "Netherlands"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 399,
+ "note": "Nodos addr:* del indice n52.50_s52.30_e5.00_w4.80-noord-holland.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "14-2 Johannes Vermeerplein",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Johannes Vermeerplein 14-2, 1071DV",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Amsterdam, netherlands, Johannes Vermeerplein 14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Amsterdam, netherlands, Johannes Vermeerplein 14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "14-2 Johannes Vermeerplein Amsterdam",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Johannes Vremeerplein 14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "johannes vermeerplein 14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Johannes Vermeerplein14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Mary johannes vermeerplein 14-2",
+   "lat": 52.3552289,
+   "lng": 4.8834378,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Johannes Vermeerplein 14-2, 1071DV Amsterdam",
+   "base": 0
+  },
+  {
+   "address": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Palmdwarsstraat, 37",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Palmdwarsstraat 37, 1015HV",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Amsterdam netherlands Palmdwarsstraat 37",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Palmdwarsstraat 37, Amsterdam, netherlands",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "37, 1015HV, Palmdwarsstraat, Amsterdam",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Mary palmdwarsstraat 37",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "palmdwarsstraat 37",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Paldmwarsstraat 37",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "Palmdwarsstraat 37 back entrance",
+   "lat": 52.3817348,
+   "lng": 4.8836816,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Palmdwarsstraat 37, 1015HV Amsterdam",
+   "base": 1
+  },
+  {
+   "address": "De Wittenstraat 156, 1052BC Amsterdam",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "156 De Wittenstraat",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "De Wittenstraat 156 1052BC",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "netherlands Amsterdam De Wittenstraat 156",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "De Wittenstraat 156, Amsterdam, netherlands",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "De Wittenstraat 156 Amsterdam",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "De Wittenstraat156",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "Mary de wittenstraat 156",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "de wittenstraat 156",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "De Wit 156",
+   "lat": 52.3821364,
+   "lng": 4.8767431,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "De Wittenstraat 156, 1052BC Amsterdam",
+   "base": 2
+  },
+  {
+   "address": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Raphaëlplein, 33-H",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Raphaëlplein 33-H, 1077PX",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Amsterdam Raphaëlplein 33-H netherlands",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "raphaëlplein 33-h amsterdam netherlands",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Amsterdam - 1077PX - 33-H",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "raphaëlplein 33-h",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Raphaëlplein33-H",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Rafaëlplein 33-H",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Raphaëlplein 33-H apt 4b",
+   "lat": 52.3476049,
+   "lng": 4.8703453,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Raphaëlplein 33-H, 1077PX Amsterdam",
+   "base": 3
+  },
+  {
+   "address": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwarthof, 23",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwarthof 23 1087AX",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "netherlands Piet Zwarthof 23 Amsterdam",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwarthof 23, Amsterdam, netherlands",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Amsterdam - 23 - Piet Zwarthof",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwarhtof 23",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "zwarthof 23",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwarthof23",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Piet Zwa 23",
+   "lat": 52.3596022,
+   "lng": 4.9912427,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Piet Zwarthof 23, 1087AX Amsterdam",
+   "base": 4
+  },
+  {
+   "address": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "11 Nieuwe Schermerstraat",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "Nieuwe Schermerstraat 11, 1023AL",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "netherlands Nieuwe Schermerstraat 11 Amsterdam",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "Nieuwe Schermerstraat 11 Amsterdam netherlands",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "11, Amsterdam, 1023AL, Nieuwe Schermerstraat",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "NIEUWE SCHERMERSTRAAT 11",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "nieuwe schermerstraat 11",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "Nieuwe Schermerstraat 11 john",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "schermerstraat 11",
+   "lat": 52.3921807,
+   "lng": 4.9426482,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nieuwe Schermerstraat 11, 1023AL Amsterdam",
+   "base": 5
+  },
+  {
+   "address": "Mezquitalaan 118, 1064NS Amsterdam",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mezquitalaan 118",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mezquitalaan 118 1064NS",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mezquitalaan 118, netherlands, Amsterdam",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "mezquitalaan 118, amsterdam, netherlands",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "1064NS - Mezquitalaan - Amsterdam - 118",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "mezquitalaan 118",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mezkitalaan 118",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mezquitalaan 118 back entrance",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Mary mezquitalaan 118",
+   "lat": 52.3695911,
+   "lng": 4.8312223,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mezquitalaan 118, 1064NS Amsterdam",
+   "base": 6
+  },
+  {
+   "address": "Voltastraat 10, 1098NT Amsterdam",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Voltastraat 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Voltastraat 10 1098NT",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "netherlands Amsterdam Voltastraat 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "netherlands Amsterdam Voltastraat 10 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Voltastraat, 10, Amsterdam, 1098NT",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Voltastraat10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "VOLTASTRAAT 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Mary voltastraat 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Volatstraat 10",
+   "lat": 52.3533821,
+   "lng": 4.9429488,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Voltastraat 10, 1098NT Amsterdam",
+   "base": 7
+  },
+  {
+   "address": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "84-3 Rombout Hogerbeetsstraat",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Rombout Hogerbeetsstraat 84-3 1052XJ",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Amsterdam Rombout Hogerbeetsstraat 84-3 netherlands",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "netherlands, Rombout Hogerbeetsstraat 84-3, Amsterdam",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Amsterdam Rombout Hogerbeetsstraat 84-3 1052XJ",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Rombout Hogerbeetsstraat84-3",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Rombout Hog 84-3",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "ROMBOUT HOGERBEETSSTRAAT 84-3",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Rombout Hogerveetsstraat 84-3",
+   "lat": 52.3761765,
+   "lng": 4.8724058,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rombout Hogerbeetsstraat 84-3, 1052XJ Amsterdam",
+   "base": 8
+  },
+  {
+   "address": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Piet Laroostraat, 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Piet Laroostraat 6 1063VP",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Piet Laroostraat 6, Amsterdam, netherlands",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "amsterdam netherlands piet laroostraat 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "1063VP 6 Piet Laroostraat Amsterdam",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Mary piet laroostraat 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "PIET LAROOSTRAAT 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Piet Laroostarat 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "laroostraat 6",
+   "lat": 52.3817831,
+   "lng": 4.8283518,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Piet Laroostraat 6, 1063VP Amsterdam",
+   "base": 9
+  },
+  {
+   "address": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Arie Biemondstraat, 148",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Arie Biemondstraat 148, 1054PG",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "netherlands Arie Biemondstraat 148 Amsterdam",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "netherlands, Amsterdam, Amsterdam, Arie Biemondstraat 148",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "148 - Arie Biemondstraat - Amsterdam - 1054PG",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Arie Bimeondstraat 148",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "biemondstraat 148",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Arie Bie 148",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Arie Biemondstraat 148 apt 4b",
+   "lat": 52.3633033,
+   "lng": 4.867593,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Arie Biemondstraat 148, 1054PG Amsterdam",
+   "base": 10
+  },
+  {
+   "address": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Marco Polostraat, 85-2",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Marco Polostraat 85-2 1057WG",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "netherlands, Marco Polostraat 85-2, Amsterdam",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Amsterdam, Marco Polostraat 85-2, netherlands",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Marco Polostraat, 85-2, Amsterdam",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "polostraat 85-2",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "MARCO POLOSTRAAT 85-2",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "marco polostraat 85-2",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Marco Polosrtaat 85-2",
+   "lat": 52.367504,
+   "lng": 4.8562085,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Marco Polostraat 85-2, 1057WG Amsterdam",
+   "base": 11
+  },
+  {
+   "address": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "16 Sneeuwbalstraat",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Sneeuwbalstraat 16 1032HA",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Amsterdam, netherlands, Sneeuwbalstraat 16",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Sneeuwbalstraat 16, Amsterdam, netherlands",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "16 - 1032HA - Sneeuwbalstraat",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "sneeuwbalstraat 16",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Mary sneeuwbalstraat 16",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Sneeuwvalstraat 16",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Sneeuwbalstraat16",
+   "lat": 52.3970346,
+   "lng": 4.9149042,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sneeuwbalstraat 16, 1032HA Amsterdam",
+   "base": 12
+  },
+  {
+   "address": "Waagdragerhof 168, 1019HB Amsterdam",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Waagdragerhof 168",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Waagdragerhof 168 1019HB",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "netherlands Amsterdam Waagdragerhof 168",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "netherlands, Waagdragerhof 168, Amsterdam",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "1019HB 168 Waagdragerhof",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Waagdragerhof 168 apt 4b",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "WAAGDRAGERHOF 168",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Waagdragerhof168",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Deli waagdragerhof 168",
+   "lat": 52.3755964,
+   "lng": 4.9277764,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Waagdragerhof 168, 1019HB Amsterdam",
+   "base": 13
+  },
+  {
+   "address": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "86 Ariana Nozemanstraat",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Ariana Nozemanstraat 86, 1065TS",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "netherlands, Ariana Nozemanstraat 86, Amsterdam",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Amsterdam netherlands Ariana Nozemanstraat 86 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Ariana Nozemanstraat - Amsterdam - 1065TS - 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Ariana Nosemanstraat 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Ariana Noz 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Deli ariana nozemanstraat 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "ariana nozemanstraat 86",
+   "lat": 52.3559931,
+   "lng": 4.8307539,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ariana Nozemanstraat 86, 1065TS Amsterdam",
+   "base": 14
+  },
+  {
+   "address": "Vierhuysen 18, 1111SC Diemen",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "18 Vierhuysen",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Vierhuysen 18 1111SC",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Diemen netherlands Vierhuysen 18",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Vierhuysen 18 Diemen netherlands",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Diemen 18 1111SC",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "VIERHUYSEN 18",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Vierhuysen18",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Vierhuisen 18",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "vierhuysen 18",
+   "lat": 52.3537937,
+   "lng": 4.9695343,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vierhuysen 18, 1111SC Diemen",
+   "base": 15
+  },
+  {
+   "address": "Telescoophof 10, 1033AK Amsterdam",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoophof 10",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoophof 10, 1033AK",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "netherlands Telescoophof 10 Amsterdam",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "netherlands Telescoophof 10 10 Amsterdam",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoophof Amsterdam 1033AK",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "telescoophof 10",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoophof 10 back entrance",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoophof10",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Telescoofof 10",
+   "lat": 52.4172279,
+   "lng": 4.8796755,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Telescoophof 10, 1033AK Amsterdam",
+   "base": 16
+  },
+  {
+   "address": "Barentszstraat 240, 1013NT Amsterdam",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Barentszstraat 240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Barentszstraat 240, 1013NT",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Amsterdam, netherlands, Barentszstraat 240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "netherlands, amsterdam, amsterdam, barentszstraat 240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "240 Barentszstraat 1013NT Amsterdam",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Barentszstraat240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Barentszstraat 240 apt 4b",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "BARENTSZSTRAAT 240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Braentszstraat 240",
+   "lat": 52.3888733,
+   "lng": 4.8863461,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Barentszstraat 240, 1013NT Amsterdam",
+   "base": 17
+  },
+  {
+   "address": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Kattenburgerkruisstraat 32",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Kattenburgerkruisstraat 32 1018JR",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "netherlands Kattenburgerkruisstraat 32 Amsterdam",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "netherlands, kattenburgerkruisstraat 32, amsterdam",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Kattenburgerkruisstraat, 32, 1018JR",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "KATTENBURGERKRUISSTRAAT 32",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "kattenburgerkruisstraat 32",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Kattenburgerkruisstraat32",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Deli kattenburgerkruisstraat 32",
+   "lat": 52.37214,
+   "lng": 4.9197508,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kattenburgerkruisstraat 32, 1018JR Amsterdam",
+   "base": 18
+  },
+  {
+   "address": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Henk Curièrekade 54",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Henk Curièrekade 54, 1013CH",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "netherlands, Henk Curièrekade 54, Amsterdam",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "amsterdam netherlands henk curièrekade 54",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "1013CH, Amsterdam, 54, Henk Curièrekade",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "henk curièrekade 54",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Henk Curèirekade 54",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Henk Curièrekade54",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Henk Curièrekade 54 apt 4b",
+   "lat": 52.3899499,
+   "lng": 4.8816771,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Henk Curièrekade 54, 1013CH Amsterdam",
+   "base": 19
+  },
+  {
+   "address": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "10-H Johan de Meesterstraat",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "Johan de Meesterstraat 10-H, 1064SG",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "netherlands Johan de Meesterstraat 10-H Amsterdam",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "Amsterdam, Johan de Meesterstraat 10-H, netherlands",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "1064SG Amsterdam 10-H",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "johan de meesterstraat 10-h",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "Johan de Meesterstraat 10-H back entrance",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "Deli johan de meesterstraat 10-H",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "meesterstraat 10-H",
+   "lat": 52.3757878,
+   "lng": 4.8225383,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Johan de Meesterstraat 10-H, 1064SG Amsterdam",
+   "base": 20
+  },
+  {
+   "address": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Jozef Israëlskade 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Jozef Israëlskade 68-2, 1073PZ",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Amsterdam, netherlands, Jozef Israëlskade 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Jozef Israëlskade 68-2 Amsterdam netherlands",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "1073PZ, Amsterdam, 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "JOZEF ISRAËLSKADE 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "jozef israëlskade 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Jozef Isrëalskade 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Mary jozef israëlskade 68-2",
+   "lat": 52.3485131,
+   "lng": 4.8979117,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jozef Israëlskade 68-2, 1073PZ Amsterdam",
+   "base": 21
+  },
+  {
+   "address": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Vossiusstraat 32-2",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Vossiusstraat 32-2 1071AH",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "netherlands Vossiusstraat 32-2 Amsterdam",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Vossiusstraat 32-2, Amsterdam, Amsterdam, netherlands",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "32-2 - Vossiusstraat - 1071AH",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Vosiusstraat 32-2",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "VOSSIUSSTRAAT 32-2",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Vossiusstraat32-2",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Mary vossiusstraat 32-2",
+   "lat": 52.3605589,
+   "lng": 4.8792815,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vossiusstraat 32-2, 1071AH Amsterdam",
+   "base": 22
+  },
+  {
+   "address": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "23A Goudreinetstraat",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Goudreinetstraat 23A, 1033KX",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Goudreinetstraat 23A Amsterdam netherlands",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Goudreinetstraat 23A Amsterdam netherlands netherlands",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Goudreinetstraat 23A 1033KX Amsterdam",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "GOUDREINETSTRAAT 23A",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "goudreinetstraat 23a",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Mary goudreinetstraat 23A",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Gudreinetstraat 23A",
+   "lat": 52.4111157,
+   "lng": 4.9009682,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Goudreinetstraat 23A, 1033KX Amsterdam",
+   "base": 23
+  },
+  {
+   "address": "Elskamp 2-TRAF, Diemen",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Elskamp, 2-TRAF",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "netherlands Elskamp 2-TRAF Diemen",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Diemen netherlands Elskamp 2-TRAF",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Elskamp, Diemen",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Elskamp 2-TRAF back entrance",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Elsakmp 2-TRAF",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "elskamp 2-traf",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Deli elskamp 2-TRAF",
+   "lat": 52.3354414,
+   "lng": 4.9543295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Elskamp 2-TRAF, Diemen",
+   "base": 24
+  },
+  {
+   "address": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Tweede Schinkelstraat, 11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Tweede Schinkelstraat 11-3 1075TN",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Amsterdam, Tweede Schinkelstraat 11-3, netherlands",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "netherlands Amsterdam Tweede Schinkelstraat 11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "11-3, Tweede Schinkelstraat, 1075TN",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Tweede Schinkelstraat11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "schinkelstraat 11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Tweede Schinkelstarat 11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Tweede Sch 11-3",
+   "lat": 52.353388,
+   "lng": 4.8551155,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Tweede Schinkelstraat 11-3, 1075TN Amsterdam",
+   "base": 25
+  },
+  {
+   "address": "Zeedijk 136B, 1012BC Amsterdam",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Zeedijk 136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Zeedijk 136B 1012BC",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Amsterdam, Zeedijk 136B, netherlands",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "netherlands zeedijk 136b amsterdam",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Amsterdam - Zeedijk - 1012BC - 136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Zeedijk136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Mary zeedijk 136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "ZEEDIJK 136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Zeeidjk 136B",
+   "lat": 52.3731214,
+   "lng": 4.9001364,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Zeedijk 136B, 1012BC Amsterdam",
+   "base": 26
+  },
+  {
+   "address": "Makassarplein 1, 1095RP Amsterdam",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "Makassarplein, 1",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "Makassarplein 1, 1095RP",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "netherlands, Amsterdam, Makassarplein 1",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "netherlands netherlands Makassarplein 1 Amsterdam",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "1, Amsterdam, 1095RP",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "Makassarplein 1 back entrance",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "Makasarplein 1",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "MAKASSARPLEIN 1",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "Deli makassarplein 1",
+   "lat": 52.364776538461534,
+   "lng": 4.941533723076923,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Makassarplein 1, 1095RP Amsterdam",
+   "base": 27
+  },
+  {
+   "address": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. Sarlemijnstraat 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. Sarlemijnstraat 29 1064DK",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "netherlands, Amsterdam, G.J.M. Sarlemijnstraat 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "Amsterdam netherlands G.J.M. Sarlemijnstraat 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "Amsterdam - G.J.M. Sarlemijnstraat - 1064DK - 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. SARLEMIJNSTRAAT 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. Sarlemijnstraat29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. Sralemijnstraat 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "G.J.M. Sar 29",
+   "lat": 52.3728234,
+   "lng": 4.8210295,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "G.J.M. Sarlemijnstraat 29, 1064DK Amsterdam",
+   "base": 28
+  },
+  {
+   "address": "Vlasdonk 51, 1112JE Diemen",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "Vlasdonk 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "Vlasdonk 51, 1112JE",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "netherlands, Diemen, Vlasdonk 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "netherlands, Diemen, Vlasdonk 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "1112JE, Vlasdonk, Diemen",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "VLASDONK 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "Vlasdnok 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "Vlasdonk51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "vlasdonk 51",
+   "lat": 52.3362214,
+   "lng": 4.9501152,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vlasdonk 51, 1112JE Diemen",
+   "base": 29
+  },
+  {
+   "address": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Seinwachterstraat 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Seinwachterstraat 38 1019TE",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "netherlands, Seinwachterstraat 38, Amsterdam",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Amsterdam, netherlands, Seinwachterstraat 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "1019TE Seinwachterstraat Amsterdam 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "seinwachterstraat 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "SEINWACHTERSTRAAT 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Mary seinwachterstraat 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Seinwahcterstraat 38",
+   "lat": 52.3741606,
+   "lng": 4.947484,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Seinwachterstraat 38, 1019TE Amsterdam",
+   "base": 30
+  },
+  {
+   "address": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Kuipersstraat 147A-12",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Kuipersstraat 147A-12 1073ER",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Kuipersstraat 147A-12, netherlands, Amsterdam",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "kuipersstraat 147a-12, netherlands, amsterdam",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "147A-12, Amsterdam, Kuipersstraat, 1073ER",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "kuipersstraat 147a-12",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Kuipersstraat147A-12",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Kuiperstraat 147A-12",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Mary kuipersstraat 147A-12",
+   "lat": 52.3529614,
+   "lng": 4.9000794,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kuipersstraat 147A-12, 1073ER Amsterdam",
+   "base": 31
+  },
+  {
+   "address": "Spuistraat 257D, 1012VR Amsterdam",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "257D Spuistraat",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Spuistraat 257D, 1012VR",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "netherlands, Amsterdam, Spuistraat 257D",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Amsterdam, netherlands, netherlands, Spuistraat 257D",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Spuistraat Amsterdam 1012VR 257D",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Mary spuistraat 257D",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "SPUISTRAAT 257D",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Spuistraat 257D john",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "spuistraat 257d",
+   "lat": 52.3704335,
+   "lng": 4.8892709,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Spuistraat 257D, 1012VR Amsterdam",
+   "base": 32
+  },
+  {
+   "address": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Hildegard von Bingenstraat, 2C",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Hildegard von Bingenstraat 2C 1081LH",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "netherlands Amsterdam Hildegard von Bingenstraat 2C",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Hildegard von Bingenstraat 2C, netherlands, Amsterdam",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "1081LH, Amsterdam, 2C, Hildegard von Bingenstraat",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Deli hildegard von bingenstraat 2C",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "bingenstraat 2C",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "hildegard von bingenstraat 2c",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Hildegard von Bingenstraat2C",
+   "lat": 52.337597,
+   "lng": 4.8662892,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hildegard von Bingenstraat 2C, 1081LH Amsterdam",
+   "base": 33
+  },
+  {
+   "address": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Nicolaas Lublinkstraat, 16-I",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Nicolaas Lublinkstraat 16-I 1111EN",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Diemen Nicolaas Lublinkstraat 16-I netherlands",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Diemen netherlands Nicolaas Lublinkstraat 16-I",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "16-I 1111EN Diemen Nicolaas Lublinkstraat",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "NICOLAAS LUBLINKSTRAAT 16-I",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "nicolaas lublinkstraat 16-i",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Nicolaas Lublinkstraat 16-I apt 4b",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "lublinkstraat 16-I",
+   "lat": 52.3382349,
+   "lng": 4.9671367,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nicolaas Lublinkstraat 16-I, 1111EN Diemen",
+   "base": 34
+  },
+  {
+   "address": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "161 Wittenburgergracht",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Wittenburgergracht 161, 1018MX",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Amsterdam, Wittenburgergracht 161, netherlands",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Amsterdam, Wittenburgergracht 161, netherlands",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Wittenburgergracht Amsterdam 1018MX 161",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Wittenburgergracht 161 john",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "WITTENBURGERGRACHT 161",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "wittenburgergracht 161",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Mary wittenburgergracht 161",
+   "lat": 52.3700134,
+   "lng": 4.9186901,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Wittenburgergracht 161, 1018MX Amsterdam",
+   "base": 35
+  },
+  {
+   "address": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "1 Kees Abspoelstraat",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Kees Abspoelstraat 1 1022LG",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "netherlands Amsterdam Kees Abspoelstraat 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Amsterdam, netherlands, Kees Abspoelstraat 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Kees Abspoelstraat, Amsterdam, 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "abspoelstraat 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Kees Abspoelstraat 1 back entrance",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "kees abspoelstraat 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Mary kees abspoelstraat 1",
+   "lat": 52.4041703,
+   "lng": 4.9322525,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kees Abspoelstraat 1, 1022LG Amsterdam",
+   "base": 36
+  },
+  {
+   "address": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Van Limburg Stirumplein, 1",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Van Limburg Stirumplein 1, 1051BD",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "netherlands, Van Limburg Stirumplein 1, Amsterdam",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "netherlands, Van Limburg Stirumplein 1, Amsterdam",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "1 - 1051BD - Van Limburg Stirumplein - Amsterdam",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Van Limburg Stirumplein1",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "VAN LIMBURG STIRUMPLEIN 1",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Van Limburg Stirumplein 1 back entrance",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Van Limburg Stirumplien 1",
+   "lat": 52.3843148,
+   "lng": 4.8754254,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Van Limburg Stirumplein 1, 1051BD Amsterdam",
+   "base": 37
+  },
+  {
+   "address": "Groote Peel 35, 1112KD Diemen",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "35 Groote Peel",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Groote Peel 35, 1112KD",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "netherlands Diemen Groote Peel 35",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Groote Peel 35, netherlands, Diemen",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Groote Peel, 35, 1112KD, Diemen",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Groote Peel 35 john",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Grroote Peel 35",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "GROOTE PEEL 35",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Mary groote peel 35",
+   "lat": 52.3292607,
+   "lng": 4.94313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Groote Peel 35, 1112KD Diemen",
+   "base": 38
+  },
+  {
+   "address": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "Elisabeth Wolffstraat, 35-1",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "Elisabeth Wolffstraat 35-1 1053TR",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "Amsterdam Elisabeth Wolffstraat 35-1 netherlands",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "netherlands, Elisabeth Wolffstraat 35-1, Amsterdam",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "1053TR, 35-1, Elisabeth Wolffstraat, Amsterdam",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "elisabeth wolffstraat 35-1",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "wolffstraat 35-1",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "Deli elisabeth wolffstraat 35-1",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  },
+  {
+   "address": "Elisabeth Wolffsttraat 35-1",
+   "lat": 52.3698281,
+   "lng": 4.8675313,
+   "country": "NL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Elisabeth Wolffstraat 35-1, 1053TR Amsterdam",
+   "base": 39
+  }
+ ]
+}

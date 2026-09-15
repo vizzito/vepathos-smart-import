@@ -1,0 +1,3728 @@
+{
+ "source": "osm-addr",
+ "country": "BG",
+ "city": "Sofia",
+ "country_label": "Bulgaria",
+ "depot": {
+  "lat": 42.6977,
+  "lon": 23.3219,
+  "city": "Sofia",
+  "country": "Bulgaria"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 371,
+ "note": "Nodos addr:* del indice n42.80_s42.60_e23.40_w23.20-bulgaria.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Харалампи Карастоянов 21, София",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "21 Харалампи Карастоянов",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "Харалампи Карастоянов 21, bg, София",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "София, bg, Харалампи Карастоянов 21",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "София, Харалампи Карастоянов",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "карастоянов 21",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "Харалампи Карастоянов 21 john",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "Харалампи Карастоянов21",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "ХАРАЛАМПИ КАРАСТОЯНОВ 21",
+   "lat": 42.71074952,
+   "lng": 23.3138159,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Харалампи Карастоянов 21, София",
+   "base": 0
+  },
+  {
+   "address": "Граф Игнатиев 2, Sofia",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "2 Граф Игнатиев",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Sofia Граф Игнатиев 2 bg",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "bg, sofia, граф игнатиев игнатиев 2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Sofia, Граф Игнатиев, 2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Граф Игнатиев2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "ГРАФ ИГНАТИЕВ 2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Граф Игантиев 2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Граф Игн 2",
+   "lat": 42.6946836,
+   "lng": 23.3219713,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Граф Игнатиев 2, Sofia",
+   "base": 1
+  },
+  {
+   "address": "Голям Братан 2, Sofia",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Голям Братан, 2",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Sofia, Голям Братан 2, bg",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Sofia, Голям Братан 2, bg",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Sofia - 2 - Голям Братан",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "голям братан 2",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "братан 2",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Голям Браатн 2",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Голям Братан2",
+   "lat": 42.6658391,
+   "lng": 23.27085348,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Голям Братан 2, Sofia",
+   "base": 2
+  },
+  {
+   "address": "Златен клас 4, 1231 София",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "4 Златен клас",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "Златен клас 4 1231",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "bg, Златен клас 4, София",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "София, bg, Златен клас 4",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "4, Златен клас, София, 1231",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "златен клас 4",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "Злаетн клас 4",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "Златен клас 4 back entrance",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "Mary златен клас 4",
+   "lat": 42.73885841111112,
+   "lng": 23.295070955555556,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Златен клас 4, 1231 София",
+   "base": 3
+  },
+  {
+   "address": "Илия Цанов 2А, София",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "Илия Цанов 2А",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "bg Илия Цанов 2А София",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "Илия Цанов 2А София bg",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "2А, Илия Цанов",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "Илия Цанов2А",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "Илия Цанов 2А back entrance",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "ИЛИЯ ЦАНОВ 2А",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "илия цанов 2а",
+   "lat": 42.72098881428571,
+   "lng": 23.268351192857143,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Илия Цанов 2А, София",
+   "base": 4
+  },
+  {
+   "address": "Сан Стефано 15, 1504 София",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "15 Сан Стефано",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "Сан Стефано 15, 1504",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "София, Сан Стефано 15, bg",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "bg, Сан Стефано 15, София",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "1504 Сан Стефано 15",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "стефано 15",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "Сан Стефано 15 apt 4b",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "САН СТЕФАНО 15",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "Сан Сетфано 15",
+   "lat": 42.6941227,
+   "lng": 23.339662,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Сан Стефано 15, 1504 София",
+   "base": 5
+  },
+  {
+   "address": "Фредерик Жолио Кюри 17, София",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "Фредерик Жолио Кюри 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "София, bg, Фредерик Жолио Кюри 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "София Фредерик Фредерик Жолио Кюри 17 bg",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "Фредерик Жолио Кюри, 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "фредерик жолио кюри 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "Mary фредерик жолио кюри 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "Фреедрик Жолио Кюри 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "ФРЕДЕРИК ЖОЛИО КЮРИ 17",
+   "lat": 42.6719713,
+   "lng": 23.3528566,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Фредерик Жолио Кюри 17, София",
+   "base": 6
+  },
+  {
+   "address": "Александър Македонски 3, Sofia",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "Александър Македонски 3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "Sofia, bg, Александър Македонски 3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "bg, Александър Македонски 3, Sofia",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "3 Sofia",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "АЛЕКСАНДЪР МАКЕДОНСКИ 3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "Александър Мак 3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "македонски 3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "Александър Македонски3",
+   "lat": 42.68041572,
+   "lng": 23.30138412,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Александър Македонски 3, Sofia",
+   "base": 7
+  },
+  {
+   "address": "Сашо Николов - Сладура 23A, Sofia",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "23A Сашо Николов - Сладура",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Сашо Николов - Сладура 23A Sofia bg",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "bg, сашо николов - сладура 23a, sofia",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Сашо Николов - Сладура Sofia",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "сладура 23A",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Сашо Николов - Сла 23A",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Deli сашо николов - сладура 23A",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Сашо Николов - Сладура23A",
+   "lat": 42.65196592,
+   "lng": 23.31895664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Сашо Николов - Сладура 23A, Sofia",
+   "base": 8
+  },
+  {
+   "address": "Славище 13, Sofia",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Славище 13",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Славище 13 Sofia bg",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Славище 13, bg, Sofia",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "13 - Sofia - Славище",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Славище13",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Слваище 13",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "славище 13",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Mary славище 13",
+   "lat": 42.67121098571429,
+   "lng": 23.3133815,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Славище 13, Sofia",
+   "base": 9
+  },
+  {
+   "address": "Бойчо Огнянов 12, Sofia",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огнянов 12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огнянов 12 bg Sofia",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "bg Sofia Боичо Огнянов 12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огнянов 12 Sofia",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "огнянов 12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огнянов12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огн 12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Бойчо Огяннов 12",
+   "lat": 42.676820400000004,
+   "lng": 23.263932399999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Бойчо Огнянов 12, Sofia",
+   "base": 10
+  },
+  {
+   "address": "Софийски герой 3, София",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "Софийски герой 3",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "София, Софийски герой 3, bg",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "bg, софийски герой 3, софия",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "София 3",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "софийски герой 3",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "герой 3",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "Софийски герой 3 john",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "Mary софийски герой 3",
+   "lat": 42.6848693,
+   "lng": 23.2976978,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Софийски герой 3, София",
+   "base": 11
+  },
+  {
+   "address": "Майор Томпсън 40, 1407 София",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "Майор Томпсън, 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "Майор Томпсън 40, 1407",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "bg София Майор Томпсън 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "София, bg, Маиор Томпсън 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "1407 - Майор Томпсън - София",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "Deli майор томпсън 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "томпсън 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "МАЙОР ТОМПСЪН 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "Майор Том 40",
+   "lat": 42.66877604285714,
+   "lng": 23.323268557142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Майор Томпсън 40, 1407 София",
+   "base": 12
+  },
+  {
+   "address": "Лозенец 10, София",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "10 Лозенец",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Лозенец 10, bg, София",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "София, Лозенец Лозенец 10, bg",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Лозенец, 10",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Deli лозенец 10",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "ЛОЗЕНЕЦ 10",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Лзоенец 10",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Лозенец10",
+   "lat": 42.681425,
+   "lng": 23.32265368571429,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Лозенец 10, София",
+   "base": 13
+  },
+  {
+   "address": "Екзарх Стефан 78, Sofia",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Екзарх Стефан 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Sofia bg Екзарх Стефан 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "bg Екзарх Екзарх Стефан 78 Sofia",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Екзарх Стефан Sofia 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Екзрах Стефан 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Deli екзарх стефан 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Екзарх Стефан78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "екзарх стефан 78",
+   "lat": 42.73051052857143,
+   "lng": 23.30039417142857,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Екзарх Стефан 78, Sofia",
+   "base": 14
+  },
+  {
+   "address": "Димитър Бояджиев 16, Sofia",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "16 Димитър Бояджиев",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "Димитър Бояджиев 16, bg, Sofia",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "Димитър Бояджиев 16 Sofia bg",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "16 Sofia",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "ДИМИТЪР БОЯДЖИЕВ 16",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "бояджиев 16",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "димитър бояджиев 16",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "Димитър Бояджиев 16 (green door)",
+   "lat": 42.65897521666667,
+   "lng": 23.320254116666664,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Димитър Бояджиев 16, Sofia",
+   "base": 15
+  },
+  {
+   "address": "Крали Марко 2, Sofia",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Крали Марко, 2",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "bg, Крали Марко 2, Sofia",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Sofia, Крали Марко 2, bg",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Крали Марко, Sofia",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "КРАЛИ МАРКО 2",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Кррали Марко 2",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Mary крали марко 2",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "марко 2",
+   "lat": 42.687758179999996,
+   "lng": 23.347477259999998,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Крали Марко 2, Sofia",
+   "base": 16
+  },
+  {
+   "address": "Прелом 8А, Sofia",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "8А Прелом",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "bg Прелом 8А Sofia",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Прелом 8А Sofia bg",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Sofia 8А",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Прелом8А",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Перлом 8А",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Прелом 8А john",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "прелом 8а",
+   "lat": 42.67556644,
+   "lng": 23.3609347,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Прелом 8А, Sofia",
+   "base": 17
+  },
+  {
+   "address": "Майор Агов 5, Sofia",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "5 Майор Агов",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Майор Агов 5 Sofia bg",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Маиор Агов 5, bg, Sofia",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Майор Агов - Sofia",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Майор Агов 5 apt 4b",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "майор агов 5",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Маййор Агов 5",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "агов 5",
+   "lat": 42.70144038,
+   "lng": 23.337603719999997,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Майор Агов 5, Sofia",
+   "base": 18
+  },
+  {
+   "address": "Калиакра 25, София",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "Калиакра 25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "София bg Калиакра 25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "София bg Калиакра 25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "Калиакра, 25, София",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "Калиакра 25 john",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "калиакра 25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "Калиакра25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "Каилакра 25",
+   "lat": 42.682151780000005,
+   "lng": 23.32245372,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Калиакра 25, София",
+   "base": 19
+  },
+  {
+   "address": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "42 бул. Д-р Петър Дертлиев",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "бул. Д-р Петър Дертлиев 42 1324",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "bg, София, бул. Д-р Петър Дертлиев 42",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "bg, бул. Д-р Петър Дертлиев Дертлиев 42, София",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "42 1324 бул. Д-р Петър Дертлиев",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "дертлиев 42",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "бул. д-р петър дертлиев 42",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "бул. Д-р Петър Дер 42",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "Mary бул. д-р петър дертлиев 42",
+   "lat": 42.70987798,
+   "lng": 23.262657060000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "бул. Д-р Петър Дертлиев 42, 1324 София",
+   "base": 20
+  },
+  {
+   "address": "Златен рог 18, София",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "18 Златен рог",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "bg, Златен рог 18, София",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "Златен рог 18 София bg",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "Златен рог София 18",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "Златен рог18",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "Злтаен рог 18",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "златен рог 18",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "ЗЛАТЕН РОГ 18",
+   "lat": 42.6710102,
+   "lng": 23.31953602,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Златен рог 18, София",
+   "base": 21
+  },
+  {
+   "address": "598 1, Sofia",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "1 598",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "bg, Sofia, 598 1",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "bg Sofia 598 1",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "598, Sofia",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "5981",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "Deli 598 1",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "598 1 john",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "598 1",
+   "lat": 42.68916044,
+   "lng": 23.373173,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "598 1, Sofia",
+   "base": 22
+  },
+  {
+   "address": "Христаки Павлович 223, Sofia",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "Христаки Павлович, 223",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "bg Sofia Христаки Павлович 223",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "Sofia, Христаки Павлович 223, bg",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "223 Христаки Павлович",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "ХРИСТАКИ ПАВЛОВИЧ 223",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "павлович 223",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "Христаки Павлович 223 (green door)",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "христаки павлович 223",
+   "lat": 42.701228400000005,
+   "lng": 23.35901724,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Христаки Павлович 223, Sofia",
+   "base": 23
+  },
+  {
+   "address": "Знаме 2, София",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Знаме 2",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Знаме 2, София, bg",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Знаме 2 София bg",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "София - 2 - Знаме",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "знаме 2",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "ЗНАМЕ 2",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Зннаме 2",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Mary знаме 2",
+   "lat": 42.69913806,
+   "lng": 23.34356632,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Знаме 2, София",
+   "base": 24
+  },
+  {
+   "address": "Локорска 1, 1225 София",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "1 Локорска",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Локорска 1 1225",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Локорска 1, bg, София",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "bg Локорска 1 София",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "1225, София, Локорска",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Mary локорска 1",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Локосрка 1",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Локорска1",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "ЛОКОРСКА 1",
+   "lat": 42.7191321,
+   "lng": 23.3380136,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Локорска 1, 1225 София",
+   "base": 25
+  },
+  {
+   "address": "Хаджи Мано Стоянов 171А, 1220 София",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "171А Хаджи Мано Стоянов",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Хаджи Мано Стоянов 171А 1220",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "bg, София, Хаджи Мано Стоянов 171А",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "bg, софия, хаджи мано стоянов 171а",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Хаджи Мано Стоянов - София - 171А",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Хаджи Мано Стяонов 171А",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Хаджи Мано Стоянов 171А apt 4b",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "хаджи мано стоянов 171а",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Deli хаджи мано стоянов 171А",
+   "lat": 42.72549111666667,
+   "lng": 23.3023979,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Хаджи Мано Стоянов 171А, 1220 София",
+   "base": 26
+  },
+  {
+   "address": "Камчия 1, 1574 София",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Камчия, 1",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Камчия 1, 1574",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "bg, Камчия 1, София",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Камчия 1, bg, София",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "София, Камчия, 1574",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "камчия 1",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Камчия1",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Камчия 1 (green door)",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Кмачия 1",
+   "lat": 42.68182853333334,
+   "lng": 23.376701155555555,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Камчия 1, 1574 София",
+   "base": 27
+  },
+  {
+   "address": "Александър Жендов 5, 1113 София",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Александър Жендов 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Александър Жендов 5, 1113",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Александър Жендов 5, bg, София",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "София bg Александър Жендов Жендов 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "1113 София 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Александър Жендов 5 back entrance",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "жендов 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Deli александър жендов 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "александър жендов 5",
+   "lat": 42.67955658,
+   "lng": 23.35595114,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Александър Жендов 5, 1113 София",
+   "base": 28
+  },
+  {
+   "address": "Войводово 4, София",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "4 Войводово",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "bg, Войводово 4, София",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "войводово 4 софия bg bg",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "4, Войводово",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "Deli войводово 4",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "Войводово4",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "Войводово 4 apt 4b",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "ВОЙВОДОВО 4",
+   "lat": 42.72260258,
+   "lng": 23.273720700000002,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Войводово 4, София",
+   "base": 29
+  },
+  {
+   "address": "Ген. Иван Чернаев 4, София",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "4 Ген. Иван Чернаев",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "Ген. Иван Чернаев 4, София, bg",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "софия bg ген. иван чернаев 4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "София Ген. Иван Чернаев 4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "Ген. Иван Чернеав 4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "ген. иван чернаев 4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "Ген. Иван Чернаев4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "Ген. Иван Чер 4",
+   "lat": 42.71066072857143,
+   "lng": 23.311720871428573,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ген. Иван Чернаев 4, София",
+   "base": 30
+  },
+  {
+   "address": "Георги С. Раковски 145, 1000 София",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Раковски 145",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Раковски 145 1000",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "София, bg, Георги С. Раковски 145",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "bg Георги С. Раковски 145 София София",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Раковски 145 София 1000",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Раковски145",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Ракосвки 145",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Георги С. Раковски 145 john",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "раковски 145",
+   "lat": 42.692191341176475,
+   "lng": 23.3267576,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Георги С. Раковски 145, 1000 София",
+   "base": 31
+  },
+  {
+   "address": "Вили Казасян 1, Sofia",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "1 Вили Казасян",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Вили Казасян 1 Sofia bg",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Вили Казасян 1 1 Sofia bg",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Sofia 1",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Вили Казасян 1 apt 4b",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Mary вили казасян 1",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Вили Кзаасян 1",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "вили казасян 1",
+   "lat": 42.6549776,
+   "lng": 23.3120905,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Вили Казасян 1, Sofia",
+   "base": 32
+  },
+  {
+   "address": "Удово 5, София",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удово 5",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "bg, София, Удово 5",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удово 5, bg, bg, София",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удово, 5, София",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удово 5 (green door)",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Mary удово 5",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удово5",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Удовво 5",
+   "lat": 42.684979,
+   "lng": 23.3152346,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Удово 5, София",
+   "base": 33
+  },
+  {
+   "address": "Жасмин 1, 1271 Sofia",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Жасмин 1",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Жасмин 1 1271",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "bg, Жасмин 1, Sofia",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "sofia bg жасмин 1",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "1, Sofia, Жасмин",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Жасимн 1",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Жасмин1",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Жасмин 1 back entrance",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "ЖАСМИН 1",
+   "lat": 42.751367,
+   "lng": 23.318287,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Жасмин 1, 1271 Sofia",
+   "base": 34
+  },
+  {
+   "address": "Стрелча 4, Sofia",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "4 Стрелча",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Sofia bg Стрелча 4",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "bg, Стрелча 4, Sofia",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "4 Стрелча Sofia",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Стрелча4",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Deli стрелча 4",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Стрелча 4 apt 4b",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Сртелча 4",
+   "lat": 42.67909608,
+   "lng": 23.328346259999996,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Стрелча 4, Sofia",
+   "base": 35
+  },
+  {
+   "address": "Ради Радев 18, 1700 София",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "Ради Радев, 18",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "Ради Радев 18, 1700",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "София Ради Радев 18 bg",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "Ради Радев 18, bg, София",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "1700 - Ради Радев - 18 - София",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "РАДИ РАДЕВ 18",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "Deli ради радев 18",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "радев 18",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "ради радев 18",
+   "lat": 42.65332224545455,
+   "lng": 23.329402136363637,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ради Радев 18, 1700 София",
+   "base": 36
+  },
+  {
+   "address": "Годеч 1, Sofia",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "1 Годеч",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Годеч 1 Sofia bg",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "bg Sofia Годеч 1",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Sofia, Годеч, 1",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "годеч 1",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Годеч1",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Годеч 1 back entrance",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Гоодеч 1",
+   "lat": 42.7186655875,
+   "lng": 23.2583504875,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Годеч 1, Sofia",
+   "base": 37
+  },
+  {
+   "address": "Рила 10, Sofia",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "Рила, 10",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "bg Рила 10 Sofia",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "Sofia Рила 10 bg",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "10 Рила",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "Deli рила 10",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "Рила10",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "рила 10",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "РИЛА 10",
+   "lat": 42.707749039999996,
+   "lng": 23.32559456,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Рила 10, Sofia",
+   "base": 38
+  },
+  {
+   "address": "Кочани 2А, Sofia",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "Кочани, 2А",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "Кочани 2А, bg, Sofia",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "Sofia, bg, Кочани 2А",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "2А - Кочани",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "кочани 2а",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "Кочани2А",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "КОЧАНИ 2А",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  },
+  {
+   "address": "Кочнаи 2А",
+   "lat": 42.68674925714286,
+   "lng": 23.356413028571428,
+   "country": "BG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Кочани 2А, Sofia",
+   "base": 39
+  }
+ ]
+}

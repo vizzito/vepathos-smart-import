@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "ES",
+ "city": "Madrid",
+ "country_label": "España",
+ "depot": {
+  "lat": 40.4168,
+  "lon": -3.7038,
+  "city": "Madrid",
+  "country": "España"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n40.50_s40.30_e-3.60_w-3.80-madrid.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Pasaje Escudo 5, 28007 Madrid",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "5 Escudo",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Escudo 5, 28007",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Madrid, españa, Escudo 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Madrid, españa, Escudo 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "5 Pasaje Escudo Madrid",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "ESCUDO 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "escudo 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Kiosco escudo 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Ecsudo 5",
+   "lat": 40.40942887999999,
+   "lng": -3.6676830799999998,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pasaje Escudo 5, 28007 Madrid",
+   "base": 0
+  },
+  {
+   "address": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Serafín Ramírez, 1",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Serafín Ramírez 1 28039",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Madrid, españa, Serafín Ramírez 1",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Serafin Ramirez 1, Madrid, espana",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Calle Serafín Ramírez 1 Madrid 28039",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Serafín Ramírez 1 frente a la plaza",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "ramírez 1",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "SERAFÍN RAMÍREZ 1",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Serafín Ramírez1",
+   "lat": 40.46530992857142,
+   "lng": -3.7140051714285716,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Serafín Ramírez 1, 28039 Madrid",
+   "base": 1
+  },
+  {
+   "address": "Calle de Amado Nervo 4, 28007 Madrid",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "de Amado Nervo, 4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "de Amado Nervo 4 28007",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "Madrid españa de Amado Nervo 4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "Madrid, de Amado Nervo 4, españa",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "Calle de Amado Nervo, Madrid, 28007, 4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "Marcela de amado nervo 4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "de Amado Nervo4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "de Amado Nervo 4 timbre 2",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "nervo 4",
+   "lat": 40.4099259,
+   "lng": -3.6762611,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle de Amado Nervo 4, 28007 Madrid",
+   "base": 2
+  },
+  {
+   "address": "Calle Mallorca 9, 28012 Madrid",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Mallorca 9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Mallorca 9, 28012",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Mallorca 9, Madrid, españa",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Madrid Mallorca 9 españa españa",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Madrid - 28012 - 9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Malorca 9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Mallorca9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "mallorca 9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Marcela mallorca 9",
+   "lat": 40.4067441,
+   "lng": -3.697856,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Mallorca 9, 28012 Madrid",
+   "base": 3
+  },
+  {
+   "address": "Calle Andrés Bello 6, 28028 Madrid",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Andrés Bello, 6",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Andrés Bello 6 28028",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "españa Madrid Andrés Bello 6",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Madrid, Andres Bello 6, espana",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Madrid - 6 - Calle Andrés Bello",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "ANDRÉS BELLO 6",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "bello 6",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Andrés Bello 6 casa 18",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "andrés bello 6",
+   "lat": 40.42235288,
+   "lng": -3.6637891,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Andrés Bello 6, 28028 Madrid",
+   "base": 4
+  },
+  {
+   "address": "Callejón de Murcia 1, 28017 Madrid",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "1 Callejón de Murcia",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "Callejón de Murcia 1, 28017",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "españa Callejón de Murcia 1 Madrid",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "Callejón de Murcia 1 Madrid españa",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "1, Madrid, 28017, Callejón de Murcia",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "CALLEJÓN DE MURCIA 1",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "Callejón de Murcia1",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "Juan callejón de murcia 1",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "murcia 1",
+   "lat": 40.4304585,
+   "lng": -3.6468476,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Callejón de Murcia 1, 28017 Madrid",
+   "base": 5
+  },
+  {
+   "address": "Calle de Cidamón 17 y 15, Madrid",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cidamón 17 y 15",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cidamón 17 y 15, Madrid",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cidamón 17 y 15, españa, Madrid",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cidamon 17 y 15, Madrid, espana",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "17 y 15 Madrid Calle de Cidamón",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cidamón 17 y 15 (porton verde)",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de cidamón 17 y 15",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "de Cid 17 y 15",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "DE CIDAMÓN 17 Y 15",
+   "lat": 40.45152168,
+   "lng": -3.6563600199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Cidamón 17 y 15, Madrid",
+   "base": 6
+  },
+  {
+   "address": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Calledel Obispo Trejo 8",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Calledel Obispo Trejo 8 28040",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "españa, Calledel Obispo Trejo 8, Madrid",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Calledel Obispo Trejo 8, espana, espana, Madrid",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "8, 28040, Calledel Obispo Trejo",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "calledel obispo trejo 8",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Kiosco calledel obispo trejo 8",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Caledel Obispo Trejo 8",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Calledel Obispo Trejo 8 martin",
+   "lat": 40.4372247,
+   "lng": -3.73139588,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calledel Obispo Trejo 8, 28040 Madrid",
+   "base": 7
+  },
+  {
+   "address": "Calle Seco 10, 28007 Madrid",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Seco 10",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Seco 10, 28007",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Madrid, Seco 10, españa",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Seco 10, españa, Madrid",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Madrid, 28007, Calle Seco, 10",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "seco 10",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Juan seco 10",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "SECO 10",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Seco 10 frente a la plaza",
+   "lat": 40.399262066666665,
+   "lng": -3.6729994444444447,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Seco 10, 28007 Madrid",
+   "base": 8
+  },
+  {
+   "address": "Calle del Padre Claret 24, 28002 Madrid",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "24 del Padre Claret",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "del Padre Claret 24, 28002",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "españa, del Padre Claret 24, Madrid",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "del Padre Claret 24, Madrid, españa",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "28002 - Calle del Padre Claret - 24 - Madrid",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "del Padre Calret 24",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "del padre claret 24",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "Marcela del padre claret 24",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "claret 24",
+   "lat": 40.4508686,
+   "lng": -3.664071,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle del Padre Claret 24, 28002 Madrid",
+   "base": 9
+  },
+  {
+   "address": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Corredera Alta de San Pablo 8",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Corredera Alta de San Pablo 8, 28004",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "españa, Madrid, Corredera Alta de San Pablo 8",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "espana Corredera Alta de San Pablo 8 Madrid",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "28004 8 Corredera Alta de San Pablo Madrid",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Corredera Alta de San Pablo 8 frente a la plaza",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Coredera Alta de San Pablo 8",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "corredera alta de san pablo 8",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Kiosco corredera alta de san pablo 8",
+   "lat": 40.4249117,
+   "lng": -3.7019474,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Corredera Alta de San Pablo 8, 28004 Madrid",
+   "base": 10
+  },
+  {
+   "address": "Calle de Anzuola 2, 28002 Madrid",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "de Anzuola 2",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "de Anzuola 2, 28002",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "españa, de Anzuola 2, Madrid",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "madrid, de anzuola 2, españa españa",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "Madrid - Calle de Anzuola - 2",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "DE ANZUOLA 2",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "de Anzuola 2 martin",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "de Anzoula 2",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "de Anz 2",
+   "lat": 40.4429599,
+   "lng": -3.6709571,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Anzuola 2, 28002 Madrid",
+   "base": 11
+  },
+  {
+   "address": "Calle de Guatemala 2, Madrid",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de Guatemala 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de Guatemala 2, Madrid",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "españa, Madrid, de Guatemala 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de Guatemala 2 Madrid españa",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "Madrid - Calle de Guatemala",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de guatemala 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de Gua 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "DE GUATEMALA 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "de Guatemlaa 2",
+   "lat": 40.459443,
+   "lng": -3.6753508,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Guatemala 2, Madrid",
+   "base": 12
+  },
+  {
+   "address": "Calle de Sequillo 14, 28017 Madrid",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "14 de Sequillo",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "de Sequillo 14 28017",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "Madrid de Sequillo 14 españa",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "de Sequillo 14 españa Madrid",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "14 - 28017 - Calle de Sequillo",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "DE SEQUILLO 14",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "de Sequillo 14 casa 18",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "de Seq 14",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "de Sequilo 14",
+   "lat": 40.42988301538461,
+   "lng": -3.6366410384615384,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Sequillo 14, 28017 Madrid",
+   "base": 13
+  },
+  {
+   "address": "Calle del Cinca 9, Madrid",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "del Cinca 9",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "del Cinca 9, Madrid",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "españa Madrid del Cinca 9",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "españa, del Cinca 9, Madrid",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "9 - Calle del Cinca",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "DEL CINCA 9",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "del cinca 9",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "Kiosco del cinca 9",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "del Cinca 9 martin",
+   "lat": 40.44992011666667,
+   "lng": -3.6809096333333335,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle del Cinca 9, Madrid",
+   "base": 14
+  },
+  {
+   "address": "Calle de San Simón 8, 28012 Madrid",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "de San Simón, 8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "de San Simón 8 28012",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "españa de San Simón 8 Madrid",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "españa, madrid, de san simón 8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "8 28012 Calle de San Simón",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "simón 8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "de San Simón8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "de san simón 8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "DE SAN SIMÓN 8",
+   "lat": 40.4111045,
+   "lng": -3.6998144,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de San Simón 8, 28012 Madrid",
+   "base": 15
+  },
+  {
+   "address": "Plaza de los Carros 4, 28005 Madrid",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Plaza de los Carros 4",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Plaza de los Carros 4 28005",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "españa Plaza de los Carros 4 Madrid",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "españa Madrid Plaza de los Carros 4",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "4 - 28005 - Madrid - Plaza de los Carros",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "plaza de los carros 4",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Plaza de los Carros 4 martin",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Juan plaza de los carros 4",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Plaza de los Carros4",
+   "lat": 40.4119383,
+   "lng": -3.7116197,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Plaza de los Carros 4, 28005 Madrid",
+   "base": 16
+  },
+  {
+   "address": "Calle de Berlanas 8, 28047 Madrid",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "de Berlanas 8",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "de Berlanas 8, 28047",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "españa de Berlanas 8 Madrid",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "de Berlanas 8 españa Madrid",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "Madrid 8 Calle de Berlanas 28047",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "de berlanas 8",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "DE BERLANAS 8",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "de Berlanas 8 casa 18",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "Marcela de berlanas 8",
+   "lat": 40.40113721666666,
+   "lng": -3.7527641833333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Berlanas 8, 28047 Madrid",
+   "base": 17
+  },
+  {
+   "address": "Plaza de Setúbal 4, 28025 Madrid",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Plaza de Setúbal 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Plaza de Setúbal 4 28025",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Madrid, Plaza de Setúbal 4, españa",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Madrid, espana, Plaza de Setubal 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "28025 Madrid 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Plaza de Set 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Plaza de Steúbal 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "setúbal 4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Plaza de Setúbal4",
+   "lat": 40.3838041,
+   "lng": -3.723954,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Plaza de Setúbal 4, 28025 Madrid",
+   "base": 18
+  },
+  {
+   "address": "Calle de Eraso 14, 28028 Madrid",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de Eraso, 14",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de Eraso 14, 28028",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de Eraso 14 Madrid españa",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de Eraso 14, españa, Madrid",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "14 - Madrid - 28028",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de eraso 14",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "Juan de eraso 14",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "DE ERASO 14",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "de Eraso 14 timbre 2",
+   "lat": 40.4340895,
+   "lng": -3.6709507,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Eraso 14, 28028 Madrid",
+   "base": 19
+  },
+  {
+   "address": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de Ricardo Beltrán y Rózpide, 16",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de Ricardo Beltrán y Rózpide 16, 28026",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de Ricardo Beltrán y Rózpide 16 Madrid españa",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "madrid de ricardo beltrán y rózpide 16 españa",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "16, Calle de Ricardo Beltrán y Rózpide, Madrid, 28026",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de Ricardo Beltrán y Rózpide 16 frente a la plaza",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de ricardo beltrán y rózpide 16",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "Marcela de ricardo beltrán y rózpide 16",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "de Riacrdo Beltrán y Rózpide 16",
+   "lat": 40.38010568,
+   "lng": -3.7182375199999997,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Ricardo Beltrán y Rózpide 16, 28026 Madrid",
+   "base": 20
+  },
+  {
+   "address": "Calle de la Primavera 13, Madrid",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "de la Primavera, 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "de la Primavera 13, Madrid",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "de la Primavera 13, españa, Madrid",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "Madrid, de la Primavera 13, espana",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "Madrid - 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "Juan de la primavera 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "de la primavera 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "de la Pri 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "DE LA PRIMAVERA 13",
+   "lat": 40.4092378,
+   "lng": -3.7004283,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de la Primavera 13, Madrid",
+   "base": 21
+  },
+  {
+   "address": "Calle de la Isla de Oza 14, Madrid",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "de la Isla de Oza 14",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "de la Isla de Oza 14, Madrid",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "de la Isla de Oza 14 españa Madrid",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "Madrid, de la Isla de Oza 14, españa",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "Calle de la Isla de Oza, 14, Madrid",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "de la Isla de Oza 14 frente a la plaza",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "de la isla de oza 14",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "DE LA ISLA DE OZA 14",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "Kiosco de la isla de oza 14",
+   "lat": 40.4649937,
+   "lng": -3.7288131,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de la Isla de Oza 14, Madrid",
+   "base": 22
+  },
+  {
+   "address": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "de Sánchez Bustillo, 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "de Sánchez Bustillo 3 28012",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "españa, de Sánchez Bustillo 3, Madrid",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "españa, Madrid, de Sánchez Bustillo 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "28012 Madrid 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "de Sánchez Bustillo 3 casa 18",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "de sánchez bustillo 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "bustillo 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "Juan de sánchez bustillo 3",
+   "lat": 40.4092,
+   "lng": -3.6937223,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Sánchez Bustillo 3, 28012 Madrid",
+   "base": 23
+  },
+  {
+   "address": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "de Enrique Ruano, 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "de Enrique Ruano 2 28001",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "españa, de Enrique Ruano 2, Madrid",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "de Enrique Ruano 2 españa Madrid",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "28001 - Madrid - Pasaje de Enrique Ruano - 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "de enrique ruano 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "de Enrike Ruano 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "ruano 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "DE ENRIQUE RUANO 2",
+   "lat": 40.4242755,
+   "lng": -3.6797532,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pasaje de Enrique Ruano 2, 28001 Madrid",
+   "base": 24
+  },
+  {
+   "address": "Calle de Moratines 10, 28005 Madrid",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "10 de Moratines",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "de Moratines 10 28005",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "de Moratines 10, Madrid, españa",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "Madrid españa de Moratines 10",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "10, Calle de Moratines, 28005",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "de Moratines10",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "de Mor 10",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "de Moratnies 10",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "Juan de moratines 10",
+   "lat": 40.4034644,
+   "lng": -3.7026444,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Moratines 10, 28005 Madrid",
+   "base": 25
+  },
+  {
+   "address": "Calle Soria 5, 28005 Madrid",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Soria, 5",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Soria 5, 28005",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Madrid Soria 5 españa",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "españa, Soria Soria 5, Madrid",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Calle Soria, Madrid, 28005, 5",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Sorria 5",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Marcela soria 5",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Soria 5 timbre 2",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Soria5",
+   "lat": 40.40483737058824,
+   "lng": -3.7054307235294117,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Soria 5, 28005 Madrid",
+   "base": 26
+  },
+  {
+   "address": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "4 de San Isidoro de Sevilla",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "de San Isidoro de Sevilla 4, 28005",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "Madrid de San Isidoro de Sevilla 4 españa",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "espana, Madrid, de San Isidoro de Sevilla 4",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "Calle de San Isidoro de Sevilla 4 Madrid 28005",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "de San Isidoro de Sevilla4",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "Marcela de san isidoro de sevilla 4",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "DE SAN ISIDORO DE SEVILLA 4",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "de San Isiodro de Sevilla 4",
+   "lat": 40.4044667,
+   "lng": -3.7118264,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de San Isidoro de Sevilla 4, 28005 Madrid",
+   "base": 27
+  },
+  {
+   "address": "Calle de Sebastián Elcano 38, Madrid",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "38 de Sebastián Elcano",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "de Sebastián Elcano 38, Madrid",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "españa de Sebastián Elcano 38 Madrid",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "de Sebastián Sebastián Elcano 38, españa, Madrid",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "Calle de Sebastián Elcano Madrid",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "Juan de sebastián elcano 38",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "de Sebastián Elcano 38 timbre 2",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "de Sebastián Elcano38",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "DE SEBASTIÁN ELCANO 38",
+   "lat": 40.4051609,
+   "lng": -3.6963875,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Sebastián Elcano 38, Madrid",
+   "base": 28
+  },
+  {
+   "address": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "de Marcelo Usera, 25",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "de Marcelo Usera 25, 28026",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "Madrid de Marcelo Usera 25 españa",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "de Marcelo Usera 25, españa, Madrid",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "28026 - Calle de Marcelo Usera - 25 - Madrid",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "de marcelo usera 25",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "DE MARCELO USERA 25",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "usera 25",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "de Marcelo Usera25",
+   "lat": 40.386622,
+   "lng": -3.701647,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Marcelo Usera 25, 28026 Madrid",
+   "base": 29
+  },
+  {
+   "address": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "25 de la Poeta Ángela Figuera",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "de la Poeta Ángela Figuera 25, 28003",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "españa, Madrid, de la Poeta Ángela Figuera 25",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "Madrid, españa, de la Poeta Ángela Figuera Figuera 25",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "28003 Calle de la Poeta Ángela Figuera Madrid",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "Juan de la poeta ángela figuera 25",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "de la Poeta Ángela Figuera 25 frente a la plaza",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "figuera 25",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "DE LA POETA ÁNGELA FIGUERA 25",
+   "lat": 40.44485114,
+   "lng": -3.7171330600000005,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de la Poeta Ángela Figuera 25, 28003 Madrid",
+   "base": 30
+  },
+  {
+   "address": "Calle de Bretón de los Herreros 38, Madrid",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "de Bretón de los Herreros 38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "de Bretón de los Herreros 38, Madrid",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "Madrid españa de Bretón de los Herreros 38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "de Bretón de los Herreros 38, Madrid, españa",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "Calle de Bretón de los Herreros, 38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "DE BRETÓN DE LOS HERREROS 38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "de Bretón de los Herreros38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "de Bretón de los Herreros 38 frente a la plaza",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "Marcela de bretón de los herreros 38",
+   "lat": 40.4394001,
+   "lng": -3.6969246,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Bretón de los Herreros 38, Madrid",
+   "base": 31
+  },
+  {
+   "address": "Calle Flor de Lis 8, 28029 Madrid",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Flor de Lis 8",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Flor de Lis 8 28029",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Madrid Flor de Lis 8 españa",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Flor de Lis 8, Madrid, españa",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "8, 28029, Madrid, Calle Flor de Lis",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Marcela flor de lis 8",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Flor de Lis8",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Flor de Lis 8 timbre 2",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "FLOR DE LIS 8",
+   "lat": 40.4696144,
+   "lng": -3.6905904,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Flor de Lis 8, 28029 Madrid",
+   "base": 32
+  },
+  {
+   "address": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Plaza Gabriel Miró, 2",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Plaza Gabriel Miró 2, 28005",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Plaza Gabriel Miró 2 Madrid españa",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "espana Plaza Gabriel Gabriel Miro 2 Madrid",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "2, 28005, Madrid, Plaza Gabriel Miró",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "PLAZA GABRIEL MIRÓ 2",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Plaza Gabriel Miró2",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Plaza Gavriel Miró 2",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "plaza gabriel miró 2",
+   "lat": 40.4123827,
+   "lng": -3.7145798,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Plaza Gabriel Miró 2, 28005 Madrid",
+   "base": 33
+  },
+  {
+   "address": "Avenida de Filipinas 52, Madrid",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "de Filipinas, 52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "de Filipinas 52, Madrid",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "Madrid, españa, de Filipinas 52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "de de Filipinas 52, espana, Madrid",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "Avenida de Filipinas, 52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "de Filipinas52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "DE FILIPINAS 52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "Juan de filipinas 52",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "de Filipinas 52 casa 18",
+   "lat": 40.4415994,
+   "lng": -3.7055481,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida de Filipinas 52, Madrid",
+   "base": 34
+  },
+  {
+   "address": "Calle de Breña 4, 28017 Madrid",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña, 4",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña 4 28017",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña 4 españa Madrid",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña 4 españa Madrid Madrid",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "28017 - Calle de Breña - Madrid - 4",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña4",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "Juan de breña 4",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "de Breña 4 (porton verde)",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "DE BREÑA 4",
+   "lat": 40.431396528571426,
+   "lng": -3.6357445142857143,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle de Breña 4, 28017 Madrid",
+   "base": 35
+  },
+  {
+   "address": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "11 del Jardín de San Federico",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "del Jardín de San Federico 11 28009",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "del Jardín de San Federico 11 Madrid españa",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "Madrid, del Jardín de San Federico 11, españa",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "28009, Calle del Jardín de San Federico, Madrid",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "del Jardín de San Federico 11 (porton verde)",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "del Jardín de San Federico11",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "del Jardín de San Fed 11",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "DEL JARDÍN DE SAN FEDERICO 11",
+   "lat": 40.4249314,
+   "lng": -3.6696617,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle del Jardín de San Federico 11, 28009 Madrid",
+   "base": 36
+  },
+  {
+   "address": "Calle del Aviador Lindbergh 3, Madrid",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "del Aviador Lindbergh, 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "del Aviador Lindbergh 3, Madrid",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "del Aviador Lindbergh 3 Madrid españa",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "españa Madrid del Aviador Lindbergh Lindbergh 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "Calle del Aviador Lindbergh 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "del Aviador Lindbergh 3 (porton verde)",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "lindbergh 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "del aviador lindbergh 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "Juan del aviador lindbergh 3",
+   "lat": 40.4425146,
+   "lng": -3.6796083,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle del Aviador Lindbergh 3, Madrid",
+   "base": 37
+  },
+  {
+   "address": "Calle de Francisco García 5, Madrid",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "5 de Francisco García",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "de Francisco García 5, Madrid",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "españa de Francisco García 5 Madrid",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "españa de Francisco García 5 Madrid",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "Calle de Francisco García Madrid 5",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "de francisco garcía 5",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "de Francisco García5",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "de Francisco García 5 timbre 2",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "de Fransisco García 5",
+   "lat": 40.38670725555556,
+   "lng": -3.7354436333333334,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Francisco García 5, Madrid",
+   "base": 38
+  },
+  {
+   "address": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Villaespesa, 1",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Villaespesa 1, 28017",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "Madrid, de Francisco Villaespesa 1, españa",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "espana, de Francisco Villaespesa 1, Madrid",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "28017 - 1 - Calle de Francisco Villaespesa",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Villaespesa 1 timbre 2",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Villaespesa1",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Vil 1",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  },
+  {
+   "address": "de Francisco Vilaespesa 1",
+   "lat": 40.4289455,
+   "lng": -3.6492746,
+   "country": "ES",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle de Francisco Villaespesa 1, 28017 Madrid",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "MY",
+ "city": "Kuala Lumpur",
+ "country_label": "Malaysia",
+ "depot": {
+  "lat": 3.139,
+  "lon": 101.6869,
+  "city": "Kuala Lumpur",
+  "country": "Malaysia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n3.20_s3.00_e101.80_w101.60-malaysia-singapore-brunei.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "VO5-03A-01 Lingkaran SV",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "Lingkaran SV VO5-03A-01, 55100",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "Sunway Velocity, Kuala Lumpur, my, Lingkaran SV VO5-03A-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "Sunway Velocity, Kuala Lumpur, my, Lingkaran SV VO5-03A-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "VO5-03A-01 Lingkaran SV Sunway Velocity, Kuala Lumpur",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "LINGKARAN SV VO5-03A-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "lingkaran sv vo5-03a-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "Mary lingkaran sv VO5-03A-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "Lnigkaran SV VO5-03A-01",
+   "lat": 3.1298661,
+   "lng": 101.7226088,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VO5-03A-01 Lingkaran SV, 55100 Sunway Velocity, Kuala Lumpur",
+   "base": 0
+  },
+  {
+   "address": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdullah 1, 25, 23 & 21",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdullah 1 25, 23 & 21 50470",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan Thamby Abdullah 1 25, 23 & 21",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdullah 1 25, 23 & 21, Kuala Lumpur, my",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdullah 1 25, 23 & 21 Kuala Lumpur 50470",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Deli jalan thamby abdullah 1 25, 23 & 21",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "abdullah 25, 23 & 21",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdulah 1 25, 23 & 21",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "Jalan Thamby Abdullah 1 25, 23 & 21 back entrance",
+   "lat": 3.1273223,
+   "lng": 101.68154,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "25, 23 & 21 Jalan Thamby Abdullah 1, 50470 Kuala Lumpur",
+   "base": 1
+  },
+  {
+   "address": "3 Lorong 5/13I, Kuala Lumpur",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Lorong 5/13I, 3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Lorong 5/13I 3, Kuala Lumpur",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Kuala Lumpur my Lorong 5/13I 3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Kuala Lumpur, Lorong 5/13I 3, my",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Lorong 5/13I 3 Kuala Lumpur",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "lorong 5/13i 3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Lroong 5/13I 3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "LORONG 5/13I 3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Lorong 5/13I3",
+   "lat": 3.0990005199999997,
+   "lng": 101.65490196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 Lorong 5/13I, Kuala Lumpur",
+   "base": 2
+  },
+  {
+   "address": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "Jalan Mara, Chow Kit Kiosk 1",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "Jalan Mara, Chow Kit Kiosk 1, 50100",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "Jalan Mara, Chow Kit Kiosk 1 my Kuala Lumpur",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "my Jalan Mara, Chow Kit Kiosk 1 Kuala Lumpur",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "50100 Kiosk 1 Jalan Mara, Chow Kit",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "CHOW KIT JALAN MARA KIOSK 1",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "mara Kiosk 1",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "chow kit jalan mara kiosk 1",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "Mary chow kit jalan mara Kiosk 1",
+   "lat": 3.157675,
+   "lng": 101.6953426,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kiosk 1 Jalan Mara, Chow Kit, 50100 Kuala Lumpur",
+   "base": 3
+  },
+  {
+   "address": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Jalan Desa Jaya 1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Jalan Desa Jaya 1 58100",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Kuala Lumpur, Jalan Desa Jaya 1, my",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "my Kuala Lumpur Jalan Desa Jaya 1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Kuala Lumpur Jalan Desa Jaya 1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "jaya 1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Mary jalan desa jaya 1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Jalan Desa Jaya1",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "Jalan Desa Jaya 1 back entrance",
+   "lat": 3.1024089857142854,
+   "lng": 101.68229944285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Jalan Desa Jaya, 58100 Kuala Lumpur",
+   "base": 4
+  },
+  {
+   "address": "192 Jalan 10, Kuala Lumpur",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "Jalan 10 192",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "Jalan 10 192, Kuala Lumpur",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "my Kuala Lumpur Jalan 10 192",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "my jalan 10 192 kuala lumpur",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "Kuala Lumpur - Jalan 10",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "jalan 10 192",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "Jalan 10 192 back entrance",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "Jalan 10192",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "JALAN 10 192",
+   "lat": 3.0887942799999997,
+   "lng": 101.70515766,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "192 Jalan 10, Kuala Lumpur",
+   "base": 5
+  },
+  {
+   "address": "1 Jalan Union 1, Kuala Lumpur",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "1 Jalan Union 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "Jalan Union 1 1, Kuala Lumpur",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "Jalan Union 1 1 my Kuala Lumpur",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "my Kuala Lumpur Jalan Union 1 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "Kuala Lumpur, Jalan Union 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "union 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "jalan union 1 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "Jallan Union 1 1",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "Jalan Union 1 1 john",
+   "lat": 3.1760296,
+   "lng": 101.69214976,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Jalan Union 1, Kuala Lumpur",
+   "base": 6
+  },
+  {
+   "address": "2 Jalan 10/10C, Kuala Lumpur",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Jalan 10/10C, 2",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Jalan 10/10C 2, Kuala Lumpur",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Jalan 10/10C 2 Kuala Lumpur my",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan 10/10C 2",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Kuala Lumpur, Jalan 10/10C",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "jalan 10/10c 2",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Mary jalan 10/10c 2",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Jalan 101/0C 2",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "Jalan 10/10C 2 back entrance",
+   "lat": 3.1071634599999998,
+   "lng": 101.65045786,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Jalan 10/10C, Kuala Lumpur",
+   "base": 7
+  },
+  {
+   "address": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta, 8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta 8, Kuala Lumpur",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta 8 Kuala Lumpur my",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Lembah Duta 8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta - 8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lmebah Duta 8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "jalan lembah duta 8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta 8 (green door)",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "Jalan Lembah Duta8",
+   "lat": 3.1602509545454542,
+   "lng": 101.67458606363635,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 Jalan Lembah Duta, Kuala Lumpur",
+   "base": 8
+  },
+  {
+   "address": "56 Jalan Bintang, Kuala Lumpur",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "56 Jalan Bintang",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "Jalan Bintang 56, Kuala Lumpur",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "my Jalan Bintang 56 Kuala Lumpur",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "my, Jalan Bintang 56, Kuala Lumpur",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "56 - Jalan Bintang - Kuala Lumpur",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "Deli jalan bintang 56",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "jalan bintang 56",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "Jalan Binatng 56",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "JALAN BINTANG 56",
+   "lat": 3.14476598,
+   "lng": 101.70978434,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "56 Jalan Bintang, Kuala Lumpur",
+   "base": 9
+  },
+  {
+   "address": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Jalan 1/57A 1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Jalan 1/57A 1 51200",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "my, Kuala Lumpur, Jalan 1/57A 1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Kuala Lumpur Jalan 1/57A 1 my",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Kuala Lumpur 1 51200 Jalan 1/57A",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "JALAN 1/57A 1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Jalan 1/57A1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "Mary jalan 1/57a 1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "1/57a 1",
+   "lat": 3.180945,
+   "lng": 101.6815736,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Jalan 1/57A, 51200 Kuala Lumpur",
+   "base": 10
+  },
+  {
+   "address": "91 Jalan Perkasa, Kuala Lumpur",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "91 Jalan Perkasa",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "Jalan Perkasa 91, Kuala Lumpur",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "my, Jalan Perkasa 91, Kuala Lumpur",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "Jalan Perkasa 91 my Kuala Lumpur",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "Jalan Perkasa, 91, Kuala Lumpur",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "Jalan Peraksa 91",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "perkasa 91",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "jalan perkasa 91",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "Jalan Perkasa91",
+   "lat": 3.1336033999999997,
+   "lng": 101.73430134,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "91 Jalan Perkasa, Kuala Lumpur",
+   "base": 11
+  },
+  {
+   "address": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Jalan Bukit Keramat 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Jalan Bukit Keramat 121, Kuala Lumpur",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Jalan Bukit Keramat 121, Kuala Lumpur, my",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Bukit Keramat 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Jalan Bukit Keramat 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "keramat 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Jalan Bukit Keramat 121 john",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "Deli jalan bukit keramat 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "JALAN BUKIT KERAMAT 121",
+   "lat": 3.16694668,
+   "lng": 101.72368552,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "121 Jalan Bukit Keramat, Kuala Lumpur",
+   "base": 12
+  },
+  {
+   "address": "7 Jalan Bedara, Kuala Lumpur",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara 7",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara 7, Kuala Lumpur",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Bedara 7",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara 7 Kuala Lumpur my",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara - Kuala Lumpur",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara 7 john",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Mary jalan bedara 7",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "Jalan Bedara7",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "bedara 7",
+   "lat": 3.14764396,
+   "lng": 101.70961856,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 Jalan Bedara, Kuala Lumpur",
+   "base": 13
+  },
+  {
+   "address": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Jalan Tun Sambanthan, 225",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Jalan Tun Sambanthan 225, Kuala Lumpur",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Jalan Tun Sambanthan 225 Kuala Lumpur my",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Tun Sambanthan 225",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Kuala Lumpur - Jalan Tun Sambanthan",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Deli jalan tun sambanthan 225",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Jalan Tun Sambanthan 225 john",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "Jalan Tun Samvanthan 225",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "JALAN TUN SAMBANTHAN 225",
+   "lat": 3.12933944,
+   "lng": 101.68390322,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "225 Jalan Tun Sambanthan, Kuala Lumpur",
+   "base": 14
+  },
+  {
+   "address": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Jalan Tanjung 5/4, 50",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Jalan Tanjung 5/4 50, Kuala Lumpur",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan Tanjung 5/4 50",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Kuala Lumpur my my Jalan Tanjung 5/4 50",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "50, Jalan Tanjung 5/4, Kuala Lumpur",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Jalan Tanjung 5/4 50 (green door)",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Jalan Tanjung 5/450",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "Jalan Tnajung 5/4 50",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "JALAN TANJUNG 5/4 50",
+   "lat": 3.1041966444444444,
+   "lng": 101.65757962222223,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "50 Jalan Tanjung 5/4, Kuala Lumpur",
+   "base": 15
+  },
+  {
+   "address": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "33 Jalan Sri Hartamas 17",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "Jalan Sri Hartamas 17 33, 50480",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Sri Hartamas 17 33",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "my Jalan Sri Hartamas 17 33 Kuala Lumpur",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "33 - Kuala Lumpur - 50480",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "hartamas 33",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "jalan sri hartamas 17 33",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "JALAN SRI HARTAMAS 17 33",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "Jalan Sri Hartamas 1733",
+   "lat": 3.1648734142857142,
+   "lng": 101.65575972857143,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "33 Jalan Sri Hartamas 17, 50480 Kuala Lumpur",
+   "base": 16
+  },
+  {
+   "address": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "3 Jalan Sri Hartamas 22",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "Jalan Sri Hartamas 22 3 50480",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "my, Kuala Lumpur, Jalan Sri Hartamas 22 3",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "Jalan Jalan Sri Hartamas 22 3, Kuala Lumpur, my",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "3 Kuala Lumpur 50480",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "Jalan Sri Hatramas 22 3",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "hartamas 3",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "Jalan Sri Hartamas 223",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "jalan sri hartamas 22 3",
+   "lat": 3.164208742857143,
+   "lng": 101.65218891428572,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3 Jalan Sri Hartamas 22, 50480 Kuala Lumpur",
+   "base": 17
+  },
+  {
+   "address": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, Lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin Lot 108, 55200",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "my, Kuala Lumpur, Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin Lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "my, kuala lumpur, jalan utusan (jln enam), off jalan chan sow lin lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin Lot 108 Kuala Lumpur 55200",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "OFF JALAN CHAN SOW LIN JALAN UTUSAN (JLN ENAM) LOT 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "off jalan chan sow lin jalan utusan (jln enam) lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "Deli off jalan chan sow lin jalan utusan (jln enam) Lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "Off Jalan Chan Sow Lin Jalan Uutsan (Jln Enam) Lot 108",
+   "lat": 3.1160414,
+   "lng": 101.7099938,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lot 108 Jalan Utusan (Jln Enam), Off Jalan Chan Sow Lin, 55200 Kuala Lumpur",
+   "base": 18
+  },
+  {
+   "address": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Lorong Haji Taib 2 1",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Lorong Haji Taib 2 1, Kuala Lumpur",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Kuala Lumpur, Lorong Haji Taib 2 1, my",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "my Kuala Lumpur Lorong Haji Taib 2 1",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Kuala Lumpur, Lorong Haji Taib 2, 1",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "lorong haji taib 2 1",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Lroong Haji Taib 2 1",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Lorong Haji Taib 21",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "Lorong Haji Taib 2 1 john",
+   "lat": 3.1642692500000003,
+   "lng": 101.6966125,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Lorong Haji Taib 2, Kuala Lumpur",
+   "base": 19
+  },
+  {
+   "address": "67 Jalan Segambut, Kuala Lumpur",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Jalan Segambut, 67",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Jalan Segambut 67, Kuala Lumpur",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Kuala Lumpur, Jalan Segambut 67, my",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan Jalan Segambut 67",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "67 - Kuala Lumpur - Jalan Segambut",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Jalan Segambut 67 apt 4b",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Deli jalan segambut 67",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "jalan segambut 67",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "Jalan Segambut67",
+   "lat": 3.1818566,
+   "lng": 101.6788172,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "67 Jalan Segambut, Kuala Lumpur",
+   "base": 20
+  },
+  {
+   "address": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "1/77C Jalan Pelanduk",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Jalan Pelanduk 1/77C, Kuala Lumpur",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Kuala Lumpur, Jalan Pelanduk 1/77C, my",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan Pelanduk 1/77C",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Jalan Pelanduk 1/77C Kuala Lumpur",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Jalan Pleanduk 1/77C",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "jalan pelanduk 1/77c",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "Jalan Pelanduk 1/77C (green door)",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "JALAN PELANDUK 1/77C",
+   "lat": 3.1381261,
+   "lng": 101.7143677,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1/77C Jalan Pelanduk, Kuala Lumpur",
+   "base": 21
+  },
+  {
+   "address": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Jalan Sentul Manis 5",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Jalan Sentul Manis 5, Kuala Lumpur",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Jalan Sentul Manis 5 my Kuala Lumpur",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Jalan Sentul Manis 5, Kuala Lumpur, my",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Kuala Lumpur - 5 - Jalan Sentul Manis",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Mary jalan sentul manis 5",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "jalan sentul manis 5",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "JALAN SENTUL MANIS 5",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "manis 5",
+   "lat": 3.1743423,
+   "lng": 101.69323196,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "5 Jalan Sentul Manis, Kuala Lumpur",
+   "base": 22
+  },
+  {
+   "address": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "No. 10 Persiaran KLCC Level 48, Skyviews, Naza Tower, Platinum Park 50088",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "No. 10 Persiaran KLCC Level 48, Skyviews, Naza Tower, Platinum Park my Kuala Lumpur",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "my Kuala Lumpur No. 10 Persiaran KLCC Level 48, Skyviews, Naza Tower, Platinum Park",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "Kuala Lumpur - Level 48, Skyviews, Naza Tower, Platinum Park - No. 10 Persiaran KLCC",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "No. 10 Persiaran KLCCLevel 48, Skyviews, Naza Tower, Platinum Park",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "klcc Level 48, Skyviews, Naza Tower, Platinum Park",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "NO. 10 PERSIARAN KLCC LEVEL 48, SKYVIEWS, NAZA TOWER, PLATINUM PARK",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "No. 10 Persairan KLCC Level 48, Skyviews, Naza Tower, Platinum Park",
+   "lat": 3.1547191,
+   "lng": 101.7185049,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Level 48, Skyviews, Naza Tower, Platinum Park No. 10 Persiaran KLCC, 50088 Kuala Lumpur",
+   "base": 23
+  },
+  {
+   "address": "48 Jalan 5/58A, Kuala Lumpur",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A 48",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A 48, Kuala Lumpur",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A 48, my, Kuala Lumpur",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A 48, my, Kuala Lumpur",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Kuala Lumpur 48 Jalan 5/58A",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A 48 apt 4b",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "Jalan 5/58A48",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "JALAN 5/58A 48",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "5/58a 48",
+   "lat": 3.1905481,
+   "lng": 101.68631714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "48 Jalan 5/58A, Kuala Lumpur",
+   "base": 24
+  },
+  {
+   "address": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "6 Jalan Kampar",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kampar 6, 51200",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kampar 6 Kuala Lumpur my",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kampar 6, my, Kuala Lumpur",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Kuala Lumpur - Jalan Kampar - 51200",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kamapr 6",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Mary jalan kampar 6",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "jalan kampar 6",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "Jalan Kampar6",
+   "lat": 3.1733517,
+   "lng": 101.6928492,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Jalan Kampar, 51200 Kuala Lumpur",
+   "base": 25
+  },
+  {
+   "address": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "4 Jalan Abdul Manah Nordin",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "Jalan Abdul Manah Nordin 4, Kuala Lumpur",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "my Jalan Abdul Manah Nordin 4 Kuala Lumpur",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "my Jalan Abdul Manah Nordin 4 Kuala Lumpur",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "Kuala Lumpur - 4",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "JALAN ABDUL MANAH NORDIN 4",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "Jalan Abdul Manah Nordin 4 (green door)",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "Jalan Abdul Manah Nodrin 4",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "Deli jalan abdul manah nordin 4",
+   "lat": 3.1669316555555556,
+   "lng": 101.71064644444444,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 Jalan Abdul Manah Nordin, Kuala Lumpur",
+   "base": 26
+  },
+  {
+   "address": "28 Jalan Mempelam, Kuala Lumpur",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempelam, 28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempelam 28, Kuala Lumpur",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempelam 28, my, Kuala Lumpur",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempelam 28, my, Kuala Lumpur",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Kuala Lumpur, 28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempelam28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Deli jalan mempelam 28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "Jalan Mempleam 28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "jalan mempelam 28",
+   "lat": 3.1362547,
+   "lng": 101.7072114,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "28 Jalan Mempelam, Kuala Lumpur",
+   "base": 27
+  },
+  {
+   "address": "82 Jalan Putra, Kuala Lumpur",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Jalan Putra, 82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Jalan Putra 82, Kuala Lumpur",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Kuala Lumpur, Jalan Putra 82, my",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "my Kuala Lumpur Jalan Putra 82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Jalan Putra - Kuala Lumpur - 82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Jalan Putra 82 (green door)",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "jalan putra 82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "Jalan Putra82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "JALAN PUTRA 82",
+   "lat": 3.1668282333333333,
+   "lng": 101.69407313333333,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "82 Jalan Putra, Kuala Lumpur",
+   "base": 28
+  },
+  {
+   "address": "80 Jalan 4/91, Kuala Lumpur",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Jalan 4/91 80",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Jalan 4/91 80, Kuala Lumpur",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Kuala Lumpur, my, Jalan 4/91 80",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "my, jalan 4/91 80, kuala lumpur",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Jalan 4/91, 80, Kuala Lumpur",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Jalan 4/9180",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Jalan 4/91 80 (green door)",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "Deli jalan 4/91 80",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "4/91 80",
+   "lat": 3.1236974857142856,
+   "lng": 101.73675464285714,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "80 Jalan 4/91, Kuala Lumpur",
+   "base": 29
+  },
+  {
+   "address": "44 Jalan Dungun, 50490 Damansara Heights",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "44 Jalan Dungun",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "Jalan Dungun 44 50490",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "my Damansara Heights Jalan Dungun 44",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "my Jalan Dungun 44 Damansara Heights",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "Jalan Dungun Damansara Heights 50490 44",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "jalan dungun 44",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "Jalan Dungun 44 apt 4b",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "Jalan Dunugn 44",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "Mary jalan dungun 44",
+   "lat": 3.15326728,
+   "lng": 101.66579162000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "44 Jalan Dungun, 50490 Damansara Heights",
+   "base": 30
+  },
+  {
+   "address": "4 Lorong 10/14A, Kuala Lumpur",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "4 Lorong 10/14A",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Lorong 10/14A 4, Kuala Lumpur",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Lorong 10/14A 4 Kuala Lumpur my",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "my Lorong 10/14A 4 Kuala Lumpur Lumpur",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Lorong 10/14A - 4",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Loorng 10/14A 4",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "LORONG 10/14A 4",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Lorong 10/14A4",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "Mary lorong 10/14a 4",
+   "lat": 3.1041561399999997,
+   "lng": 101.65179726,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 Lorong 10/14A, Kuala Lumpur",
+   "base": 31
+  },
+  {
+   "address": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "7 Jalan Sultan Haji Ahmad Shah",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sultan Haji Ahmad Shah 7 50480",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sultan Haji Ahmad Shah 7 Kuala Lumpur my",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "my, Jalan Sultan Haji Haji Ahmad Shah 7, Kuala Lumpur",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sultan Haji Ahmad Shah, Kuala Lumpur, 50480, 7",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "shah 7",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sultan Haji Ahmad Shah 7 back entrance",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sultan Haji Ahmad Shah7",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "Jalan Sutlan Haji Ahmad Shah 7",
+   "lat": 3.176575790909091,
+   "lng": 101.66817819318182,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "base": 32
+  },
+  {
+   "address": "40 Jalan Vethavanam, Kuala Lumpur",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "40 Jalan Vethavanam",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "Jalan Vethavanam 40, Kuala Lumpur",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "Kuala Lumpur Jalan Vethavanam 40 my",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "my, Kuala Lumpur, Jalan Vethavanam 40",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "Kuala Lumpur - 40 - Jalan Vethavanam",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "vethavanam 40",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "jalan vethavanam 40",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "JALAN VETHAVANAM 40",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "Jalan Vehtavanam 40",
+   "lat": 3.1913849428571432,
+   "lng": 101.68506342857142,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "40 Jalan Vethavanam, Kuala Lumpur",
+   "base": 33
+  },
+  {
+   "address": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Jalan Medang Tanduk 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Jalan Medang Tanduk 9, 59100",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Jalan Medang Tanduk 9 Kuala Lumpur my",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "kuala lumpur, jalan medang tanduk 9, my",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Kuala Lumpur 59100 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Deli jalan medang tanduk 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "jalan medang tanduk 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "Jalan Mdeang Tanduk 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "tanduk 9",
+   "lat": 3.138261,
+   "lng": 101.65973672,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "9 Jalan Medang Tanduk, 59100 Kuala Lumpur",
+   "base": 34
+  },
+  {
+   "address": "32 J 1/116B, 58200 Kuala Lumpur",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "32 J 1/116B",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "J 1/116B 32 58200",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "J 1/116B 32 my Kuala Lumpur",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "my J 1/116B 32 Kuala Lumpur",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "58200 32 J 1/116B Kuala Lumpur",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "J 1/116B32",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "J 1/116B 32 (green door)",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "Mary j 1/116b 32",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "J 1/116B 32",
+   "lat": 3.0894659,
+   "lng": 101.6892957,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "32 J 1/116B, 58200 Kuala Lumpur",
+   "base": 35
+  },
+  {
+   "address": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "26 Lorong Medan Tuanku 1",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Lorong Medan Tuanku 1 26, Kuala Lumpur",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Lorong Medan Tuanku 1 26 my Kuala Lumpur",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Kuala Lumpur my Lorong Medan Tuanku 1 26",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Kuala Lumpur 26",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Mary lorong medan tuanku 1 26",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "tuanku 26",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Lorong Medan Tuanku 126",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "Loorng Medan Tuanku 1 26",
+   "lat": 3.15934602,
+   "lng": 101.69714036,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "26 Lorong Medan Tuanku 1, Kuala Lumpur",
+   "base": 36
+  },
+  {
+   "address": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "3 Jalan Setiamurni 7",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "Jalan Setiamurni 7 3, Kuala Lumpur",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "my, Jalan Setiamurni 7 3, Kuala Lumpur",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "Kuala Lumpur my Jalan Setiamurni 7 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "Kuala Lumpur - Jalan Setiamurni 7 - 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "Jalan Steiamurni 7 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "Deli jalan setiamurni 7 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "setiamurni 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "jalan setiamurni 7 3",
+   "lat": 3.1503642666666667,
+   "lng": 101.650155,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3 Jalan Setiamurni 7, Kuala Lumpur",
+   "base": 37
+  },
+  {
+   "address": "19 Jalan Tun Perak, Kuala Lumpur",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak 19",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak 19, Kuala Lumpur",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak 19 my Kuala Lumpur",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak 19 my Kuala Lumpur",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "19 - Kuala Lumpur - Jalan Tun Perak",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak 19 back entrance",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "Jalan Tun Perak19",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "perak 19",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "jalan tun perak 19",
+   "lat": 3.148741775,
+   "lng": 101.6967676375,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "19 Jalan Tun Perak, Kuala Lumpur",
+   "base": 38
+  },
+  {
+   "address": "911 Jalan Sukacita, Kuala Lumpur",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Jalan Sukacita 911",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Jalan Sukacita 911, Kuala Lumpur",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "my Jalan Sukacita 911 Kuala Lumpur",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "my Jalan Sukacita 911 Kuala Lumpur",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Jalan Sukacita Kuala Lumpur",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "sukacita 911",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Jalan Sukacita 911 back entrance",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Deli jalan sukacita 911",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  },
+  {
+   "address": "Jalan Sukcaita 911",
+   "lat": 3.0864699399999997,
+   "lng": 101.68397560000001,
+   "country": "MY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "911 Jalan Sukacita, Kuala Lumpur",
+   "base": 39
+  }
+ ]
+}

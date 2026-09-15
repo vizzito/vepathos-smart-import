@@ -1,0 +1,3998 @@
+{
+ "source": "osm-addr",
+ "country": "IE",
+ "city": "Dublin",
+ "country_label": "Ireland",
+ "depot": {
+  "lat": 53.3498,
+  "lon": -6.2603,
+  "city": "Dublin",
+  "country": "Ireland"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 398,
+ "note": "Nodos addr:* del indice n53.50_s53.20_e-6.10_w-6.40-ireland-and-northern-ireland.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "24 Church Gardens, Dublin",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "24 Church Gardens",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "Church Gardens 24, Dublin",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "Dublin, ie, Church Gardens 24",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "Dublin, ie, Church Gardens 24",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "Dublin, Church Gardens",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "24 Chucrh Gardens",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "24 Church Gardens john",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "24 CHURCH GARDENS",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "24 church gardens",
+   "lat": 53.3214269,
+   "lng": -6.2647457,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 Church Gardens, Dublin",
+   "base": 0
+  },
+  {
+   "address": "17 Fairways Green, Dublin",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "Fairways Green, 17",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "Fairways Green 17, Dublin",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "ie Dublin Fairways Green 17",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "Dublin Fairways Green 17 ie",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "17 Dublin Fairways Green",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "17 Fairwais Green",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "17 FAIRWAYS GREEN",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "17 Fairways Green (green door)",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "17 fairways green",
+   "lat": 53.38374888571428,
+   "lng": -6.287088928571428,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 Fairways Green, Dublin",
+   "base": 1
+  },
+  {
+   "address": "9 Rialto Street, Dublin",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "Rialto Street, 9",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "Rialto Street 9, Dublin",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "Rialto Street 9 Dublin ie",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "ie, Dublin, Rialto Street Street 9",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "9 - Rialto Street - Dublin",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "9 rialto street",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "9 Railto Street",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "9 Rialto Street john",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "9 RIALTO STREET",
+   "lat": 53.337166079999996,
+   "lng": -6.29587012,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 Rialto Street, Dublin",
+   "base": 2
+  },
+  {
+   "address": "5 Melrose Court, Dublin",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "5 Melrose Court",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "Melrose Court 5, Dublin",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "ie, Melrose Court 5, Dublin",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "Dublin, ie, Melrose Court 5",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "Melrose Court, Dublin",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "5 Melrose Court (green door)",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "5 MELROSE COURT",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "5 Merlose Court",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "5 melrose court",
+   "lat": 53.36519778,
+   "lng": -6.23882228,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5 Melrose Court, Dublin",
+   "base": 3
+  },
+  {
+   "address": "3 Black Street, Dublin",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3 Black Street",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "Black Street 3, Dublin",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "Dublin Black Street 3 ie",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "ie, Black Street 3, Dublin",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3, Black Street",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3 BLACK STREET",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3 Blak Street",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3 Black Street john",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "3 black street",
+   "lat": 53.351722800000005,
+   "lng": -6.29644756,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3 Black Street, Dublin",
+   "base": 4
+  },
+  {
+   "address": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "21-22 Wellington Quay",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "Wellington Quay 21-22 D02 YK79",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "Dublin, Wellington Quay 21-22, ie",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "Dublin, Wellington Quay 21-22, ie",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "Dublin - 21-22 - D02 YK79",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "21-22 Welington Quay",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "21-22 WELLINGTON QUAY",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "21-22 quay",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "21-22 wellington quay",
+   "lat": 53.3454708,
+   "lng": -6.2651166,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "21-22 Wellington Quay, D02 YK79 Dublin",
+   "base": 5
+  },
+  {
+   "address": "37 Slievebloom Park, Dublin",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "Slievebloom Park, 37",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "Slievebloom Park 37, Dublin",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "Dublin, ie, Slievebloom Park 37",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "Slievebloom Park 37 Dublin ie",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "Dublin Slievebloom Park 37",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "37 SLIEVEBLOOM PARK",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "37 slievebloom park",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "37 park",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "37 Slievebloom Park apt 4b",
+   "lat": 53.3249507,
+   "lng": -6.32926796,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "37 Slievebloom Park, Dublin",
+   "base": 6
+  },
+  {
+   "address": "14 St Audoen's Terrace, Dublin",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "St Audoen's Terrace, 14",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "St Audoen's Terrace 14, Dublin",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "ie Dublin St Audoen's Terrace 14",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "ie Dublin St Audoen's Terrace 14",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "Dublin St Audoen's Terrace 14",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "14 St Audoe'ns Terrace",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "14 st audoen's terrace",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "14 St Audoen's Terrace john",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "14 St Aud Terrace",
+   "lat": 53.343930560000004,
+   "lng": -6.27318968,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "14 St Audoen's Terrace, Dublin",
+   "base": 7
+  },
+  {
+   "address": "1 Cremore Heights, Dublin",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "Cremore Heights 1",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "Cremore Heights 1, Dublin",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "Cremore Heights 1, ie, Dublin",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "Cremore Heights 1, Dublin, ie",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "Dublin - Cremore Heights - 1",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "1 CREMORE HEIGHTS",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "1 Cremore Hei",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "1 cremore heights",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "1 Cremroe Heights",
+   "lat": 53.38445208,
+   "lng": -6.2771668599999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Cremore Heights, Dublin",
+   "base": 8
+  },
+  {
+   "address": "D08 DT63 Back Lane, Dublin",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "D08 DT63 Back Lane",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "Back Lane D08 DT63, Dublin",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "ie, Back Lane D08 DT63, Dublin",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "ie, Dublin, Back Lane D08 DT63",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "Back Lane - Dublin - D08 DT63",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "D08 DT63 Back Lane apt 4b",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "D08 DT63 BACK LANE",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "d08 dt63 back lane",
+   "lat": 53.3427062,
+   "lng": -6.2725626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "D08 DT63 Back Lane, Dublin",
+   "base": 9
+  },
+  {
+   "address": "5 Sackville Gardens, Dublin",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "Sackville Gardens 5",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "Sackville Gardens 5, Dublin",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "Dublin, ie, Sackville Gardens 5",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "Dublin ie Sackville Gardens 5",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "Dublin Sackville Gardens",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "5 sackville gardens",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "5 Sackville Gardens apt 4b",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "5 Sakville Gardens",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "5 SACKVILLE GARDENS",
+   "lat": 53.3587649,
+   "lng": -6.24769728,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5 Sackville Gardens, Dublin",
+   "base": 10
+  },
+  {
+   "address": "34 Annesley Avenue, Dublin",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "Annesley Avenue 34",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "Annesley Avenue 34, Dublin",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "ie Annesley Avenue 34 Dublin",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "ie, Annesley Avenue 34, 34, Dublin",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "34 Annesley Avenue Dublin",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "34 Annesley Avenue apt 4b",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "34 ANNESLEY AVENUE",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "34 annesley avenue",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "34 Annelsey Avenue",
+   "lat": 53.36026652,
+   "lng": -6.2416055,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "34 Annesley Avenue, Dublin",
+   "base": 11
+  },
+  {
+   "address": "183 Glasaree Road, Dublin",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "Glasaree Road 183",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "Glasaree Road 183, Dublin",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "Glasaree Road 183 Dublin ie",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "ie, Glasaree Road 183, Dublin",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "Glasaree Road Dublin",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "183 GLASAREE ROAD",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "183 Glasaree Road apt 4b",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "183 glasaree road",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "183 Glasaere Road",
+   "lat": 53.388239299999995,
+   "lng": -6.28881048,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "183 Glasaree Road, Dublin",
+   "base": 12
+  },
+  {
+   "address": "15 O'Donovan Road, Dublin",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "O'Donovan Road, 15",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "O'Donovan Road 15, Dublin",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "Dublin, ie, O'Donovan Road 15",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "O'Donovan Road 15, ie, Dublin",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "O'Donovan Road Dublin",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "15 O'Donoban Road",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "15 O'DONOVAN ROAD",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "15 o'donovan road",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "15 O'Donovan Road john",
+   "lat": 53.33475652,
+   "lng": -6.27929254,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 O'Donovan Road, Dublin",
+   "base": 13
+  },
+  {
+   "address": "1-96 Lymewood Mews, Dublin",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96 Lymewood Mews",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "Lymewood Mews 1-96, Dublin",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "ie Dublin Lymewood Mews 1-96",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "Lymewood Mews 1-96, Dublin, ie",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96, Dublin",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96 Limewood Mews",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96 LYMEWOOD MEWS",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96 lymewood mews",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "1-96 Lymewood Mews john",
+   "lat": 53.402645303999996,
+   "lng": -6.257730312,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1-96 Lymewood Mews, Dublin",
+   "base": 14
+  },
+  {
+   "address": "65 Larkhill Road, Dublin",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "Larkhill Road 65",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "Larkhill Road 65, Dublin",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "Dublin ie Larkhill Road 65",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "Larkhill Road 65 Dublin ie",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "Larkhill Road - Dublin",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "65 larkhill road",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "65 LARKHILL ROAD",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "65 Larkhil Road",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "65 Larkhill Road john",
+   "lat": 53.3869602,
+   "lng": -6.24507148,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "65 Larkhill Road, Dublin",
+   "base": 15
+  },
+  {
+   "address": "23 Abbotstown Avenue, Dublin",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "23 Abbotstown Avenue",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "Abbotstown Avenue 23, Dublin",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "Abbotstown Avenue 23 ie Dublin",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "Dublin ie Abbotstown Avenue 23",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "Dublin - Abbotstown Avenue",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "23 abbotstown avenue",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "23 ABBOTSTOWN AVENUE",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "23 Avbotstown Avenue",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "23 Abbotstown Avenue john",
+   "lat": 53.387788320000006,
+   "lng": -6.31434626,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "23 Abbotstown Avenue, Dublin",
+   "base": 16
+  },
+  {
+   "address": "10 Wainsfort Park, Dublin",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "Wainsfort Park, 10",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "Wainsfort Park 10, Dublin",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "Dublin ie Wainsfort Park 10",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "Dublin Wainsfort Park 10 ie",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "10, Wainsfort Park, Dublin",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "10 park",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "10 Wainsfort Park apt 4b",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "10 wainsfort park",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "10 WAINSFORT PARK",
+   "lat": 53.3085204,
+   "lng": -6.30409492,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 Wainsfort Park, Dublin",
+   "base": 17
+  },
+  {
+   "address": "84 Bushy Park Road, Dublin",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "Bushy Park Road 84",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "Bushy Park Road 84, Dublin",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "Bushy Park Road 84, Dublin, ie",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "ie Dublin Bushy Park Road 84",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "Bushy Park Road, 84",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "84 park road",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "84 Bushi Park Road",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "84 Bushy Park Road back entrance",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "84 BUSHY PARK ROAD",
+   "lat": 53.307538980000004,
+   "lng": -6.2812553,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "84 Bushy Park Road, Dublin",
+   "base": 18
+  },
+  {
+   "address": "8 Grand Canal Quay, Dublin",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "Grand Canal Quay 8",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "Grand Canal Quay 8, Dublin",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "Dublin, ie, Grand Canal Quay 8",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "Dublin ie Grand Canal Quay 8",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 - Grand Canal Quay",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 quay",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 grand canal quay",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 GRAND CANAL QUAY",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 Grand Canal Quay (green door)",
+   "lat": 53.33929121999999,
+   "lng": -6.23976882,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 Grand Canal Quay, Dublin",
+   "base": 19
+  },
+  {
+   "address": "8 Albany Road, Dublin",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 Albany Road",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "Albany Road 8, Dublin",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "Dublin, ie, Albany Road 8",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "Albany Road 8, ie, Dublin",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 Albany Road",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 Albany Road back entrance",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 Albani Road",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 albany road",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "8 ALBANY ROAD",
+   "lat": 53.318504299999994,
+   "lng": -6.24963242,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 Albany Road, Dublin",
+   "base": 20
+  },
+  {
+   "address": "6 Seafort Avenue, Dublin",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "Seafort Avenue 6",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "Seafort Avenue 6, Dublin",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "ie, Seafort Avenue 6, Dublin",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "Seafort Avenue 6, Dublin, ie",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "6, Seafort Avenue",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "6 Sefaort Avenue",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "6 seafort avenue",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "6 Seafort Avenue john",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "6 SEAFORT AVENUE",
+   "lat": 53.33272314,
+   "lng": -6.21501632,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Seafort Avenue, Dublin",
+   "base": 21
+  },
+  {
+   "address": "112-114 Ardilaun Court, Dublin",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "Ardilaun Court 112-114",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "Ardilaun Court 112-114, Dublin",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "Dublin, ie, Ardilaun Court 112-114",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "ie, Ardilaun Court 112-114, 112-114, Dublin",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "Dublin 112-114",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "112-114 ARDILAUN COURT",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "112-114 Aridlaun Court",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "112-114 ardilaun court",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "112-114 Ardilaun Court back entrance",
+   "lat": 53.340798,
+   "lng": -6.2725989,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "112-114 Ardilaun Court, Dublin",
+   "base": 22
+  },
+  {
+   "address": "20 Butterly Business Park, Dublin",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "Butterly Business Park 20",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "Butterly Business Park 20, Dublin",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "Dublin, ie, Butterly Business Park 20",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "Dublin ie Butterly Business Park 20",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "Dublin - Butterly Business Park - 20",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "20 BUTTERLY BUSINESS PARK",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "20 Butterli Business Park",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "20 Butterly Business Park john",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "20 butterly business park",
+   "lat": 53.3858171,
+   "lng": -6.2138828,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "20 Butterly Business Park, Dublin",
+   "base": 23
+  },
+  {
+   "address": "46 Cabra Drive, Dublin",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "Cabra Drive, 46",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "Cabra Drive 46, Dublin",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "Cabra Drive 46, ie, Dublin",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "ie Cabra Drive 46 Dublin",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "46 Dublin",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "46 CABRA DRIVE",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "46 Cabra Drive john",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "46 Cavra Drive",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "46 cabra drive",
+   "lat": 53.35897274,
+   "lng": -6.28908004,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "46 Cabra Drive, Dublin",
+   "base": 24
+  },
+  {
+   "address": "79 Raphoe Road, Dublin",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "Raphoe Road, 79",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "Raphoe Road 79, Dublin",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "Dublin, Raphoe Road 79, ie",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "dublin, ie, raphoe raphoe road 79",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "79 Raphoe Road",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "79 RAPHOE ROAD",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "79 Rafoe Road",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "79 raphoe road",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "79 Raphoe Road back entrance",
+   "lat": 53.32625932,
+   "lng": -6.3131589,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "79 Raphoe Road, Dublin",
+   "base": 25
+  },
+  {
+   "address": "8 Martin Street, Dublin",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "8 Martin Street",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "Martin Street 8, Dublin",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "Martin Street 8 ie Dublin",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "Martin Street 8 Dublin ie",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "Martin Street 8 Dublin",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "8 MARTIN STREET",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "8 Martin Street (green door)",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "8 Matrin Street",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "8 martin street",
+   "lat": 53.33088274000001,
+   "lng": -6.268221179999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 Martin Street, Dublin",
+   "base": 26
+  },
+  {
+   "address": "14-37 Bellevue Court, Dublin",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37 Bellevue Court",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "Bellevue Court 14-37, Dublin",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "Bellevue Court 14-37, ie, Dublin",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "ie Bellevue Court 14-37 Dublin",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37, Bellevue Court, Dublin",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37 Bellevue Court back entrance",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37 BELLEVUE COURT",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37 Belllevue Court",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "14-37 bellevue court",
+   "lat": 53.31174863809524,
+   "lng": -6.203347819047619,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "14-37 Bellevue Court, Dublin",
+   "base": 27
+  },
+  {
+   "address": "224 North Circular Road, Dublin",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "North Circular Road, 224",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "North Circular Road 224, Dublin",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "North Circular Road 224 Dublin ie",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "ie, Dublin, North Circular Road 224",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "224 North Circular Road Dublin",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "224 NORTH CIRCULAR ROAD",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "224 circular road",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "224 north circular road",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "224 North Cir Road",
+   "lat": 53.35739188235294,
+   "lng": -6.286443376470588,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "224 North Circular Road, Dublin",
+   "base": 28
+  },
+  {
+   "address": "9 Ard Righ Road, Dublin",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "9 Ard Righ Road",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "Ard Righ Road 9, Dublin",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "ie Dublin Ard Righ Road 9",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "ie ie dublin ard righ road 9",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "Ard Righ Road, 9",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "9 ARD RIGH ROAD",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "9 righ road",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "9 Ard Righ Road john",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "9 ard righ road",
+   "lat": 53.35015248,
+   "lng": -6.2853664,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 Ard Righ Road, Dublin",
+   "base": 29
+  },
+  {
+   "address": "7 Ravensdale Road, Dublin",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "Ravensdale Road 7",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "Ravensdale Road 7, Dublin",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "Dublin Ravensdale Road 7 ie",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "Ravensdale Road 7, ie, Dublin",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "Dublin - Ravensdale Road - 7",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "7 ravensdale road",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "7 Rabensdale Road",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "7 RAVENSDALE ROAD",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "7 Ravensdale Road (green door)",
+   "lat": 53.35398606,
+   "lng": -6.23113558,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Ravensdale Road, Dublin",
+   "base": 30
+  },
+  {
+   "address": "4 Meade's Terrace, Dublin",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "Meade's Terrace 4",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "Meade's Terrace 4, Dublin",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "Dublin Meade's Terrace 4 ie",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "ie Dublin Meade's Terrace 4",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "4 Dublin Meade's Terrace",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "4 Meade's Terrace back entrance",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "4 MEADE'S TERRACE",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "4 meade's terrace",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "4 Mead'es Terrace",
+   "lat": 53.3405072875,
+   "lng": -6.2450765624999995,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 Meade's Terrace, Dublin",
+   "base": 31
+  },
+  {
+   "address": "15 Greenmount Lawns, Dublin",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "15 Greenmount Lawns",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "Greenmount Lawns 15, Dublin",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "Dublin, Greenmount Lawns 15, ie",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "greenmount lawns 15, ie, dublin",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "Greenmount Lawns, Dublin",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "15 Greenmount Lawns back entrance",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "15 Greenmunt Lawns",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "15 GREENMOUNT LAWNS",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "15 lawns",
+   "lat": 53.30863726,
+   "lng": -6.2810862400000005,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "15 Greenmount Lawns, Dublin",
+   "base": 32
+  },
+  {
+   "address": "40 Kevin Street Lower, Dublin",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "Kevin Street Lower 40",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "Kevin Street Lower 40, Dublin",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "ie, Kevin Street Lower 40, Dublin",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "Kevin Street Lower 40 ie Dublin",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "Kevin Street Lower Dublin",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "40 KEVIN STREET LOWER",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "40 lower",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "40 Kevin Street Lower back entrance",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "40 kevin street lower",
+   "lat": 53.33776681538461,
+   "lng": -6.2674546307692305,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "40 Kevin Street Lower, Dublin",
+   "base": 33
+  },
+  {
+   "address": "24 Camden Row, Dublin",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "Camden Row 24",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "Camden Row 24, Dublin",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "Dublin Camden Row 24 ie",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "Camden Row 24, ie, Dublin",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "Dublin - 24 - Camden Row",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "24 Camedn Row",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "24 CAMDEN ROW",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "24 camden row",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "24 Camden Row john",
+   "lat": 53.33579655999999,
+   "lng": -6.26788568,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Camden Row, Dublin",
+   "base": 34
+  },
+  {
+   "address": "43 Coolatree Road, Dublin",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "Coolatree Road, 43",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "Coolatree Road 43, Dublin",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "Dublin, Coolatree Road 43, ie",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "Coolatree Road 43 Dublin ie",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "Dublin - 43",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "43 coolatree road",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "43 Coolartee Road",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "43 COOLATREE ROAD",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "43 Coolatree Road john",
+   "lat": 53.38433762857143,
+   "lng": -6.2285002714285715,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "43 Coolatree Road, Dublin",
+   "base": 35
+  },
+  {
+   "address": "44 West Road, Dublin",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "West Road, 44",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "West Road 44, Dublin",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "ie West Road 44 Dublin",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "West Road 44 Dublin ie",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "West Road - 44",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "44 WEST ROAD",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "44 West Road (green door)",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "44 west road",
+   "lat": 53.35629062,
+   "lng": -6.238167219999999,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "44 West Road, Dublin",
+   "base": 36
+  },
+  {
+   "address": "21 Gledswood Park, Dublin",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "21 Gledswood Park",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "Gledswood Park 21, Dublin",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "ie Gledswood Park 21 Dublin",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "Dublin, ie, Gledswood Park 21",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "Dublin, Gledswood Park",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "21 GLEDSWOOD PARK",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "21 Gledswood Park back entrance",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "21 gledswood park",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "21 park",
+   "lat": 53.303759879999994,
+   "lng": -6.23813412,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "21 Gledswood Park, Dublin",
+   "base": 37
+  },
+  {
+   "address": "19 Ben Edair Road, Dublin",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "Ben Edair Road, 19",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "Ben Edair Road 19, Dublin",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "Dublin, ie, Ben Edair Road 19",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "Dublin, Dublin, Ben Edair Road 19, ie",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "Dublin, Ben Edair Road, 19",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "19 ben edair road",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "19 edair road",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "19 Ben Edair Road back entrance",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "19 BEN EDAIR ROAD",
+   "lat": 53.353401139999995,
+   "lng": -6.2894819,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "19 Ben Edair Road, Dublin",
+   "base": 38
+  },
+  {
+   "address": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "CLAREMONT CRESCENT, 14",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "CLAREMONT CRESCENT 14, D11 A6Y2",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "CLAREMONT CRESCENT 14 ie Dublin 11",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "ie, Dublin 11, CLAREMONT CRESCENT 14 14",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "14 CLAREMONT CRESCENT D11 A6Y2",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "14 CLAREMONT CRESCENT (green door)",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "14 CLAREMONT CRESCENT",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "14 CLARMEONT CRESCENT",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  },
+  {
+   "address": "14 claremont crescent",
+   "lat": 53.370060290909095,
+   "lng": -6.282895672727273,
+   "country": "IE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "14 CLAREMONT CRESCENT, D11 A6Y2 Dublin 11",
+   "base": 39
+  }
+ ]
+}

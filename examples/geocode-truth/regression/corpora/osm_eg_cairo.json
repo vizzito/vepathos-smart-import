@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "EG",
+ "city": "Cairo",
+ "country_label": "Egypt",
+ "depot": {
+  "lat": 30.0444,
+  "lon": 31.2357,
+  "city": "Cairo",
+  "country": "Egypt"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n30.10_s29.90_e31.30_w31.10-egypt.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "34 شارع قبه الهواء, 11627 Cairo",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "34 شارع قبه الهواء",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "شارع قبه الهواء 34, 11627",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "Cairo, eg, شارع قبه الهواء 34",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "Cairo, eg, شارع قبه الهواء 34",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "34 شارع قبه الهواء Cairo",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "Mary شارع قبه الهواء 34",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "شارع قبه الهواء 34",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "شارع قبه الهواء 34 apt 4b",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "الهواء 34",
+   "lat": 30.0770029,
+   "lng": 31.2498996,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "34 شارع قبه الهواء, 11627 Cairo",
+   "base": 0
+  },
+  {
+   "address": "936 حارة ذاكر, Cairo",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر, 936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر 936, Cairo",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "Cairo, eg, حارة ذاكر 936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر 936, Cairo, eg",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر - Cairo - 936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر 936 john",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "Deli حارة ذاكر 936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "حارة ذاكر 936",
+   "lat": 30.04636,
+   "lng": 31.2825488,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "936 حارة ذاكر, Cairo",
+   "base": 1
+  },
+  {
+   "address": "13 شارع محمد حلمى, 12616 Cairo",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "13 شارع محمد حلمى",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "شارع محمد حلمى 13, 12616",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "Cairo eg شارع محمد حلمى 13",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "شارع محمد حلمى 13, Cairo, eg",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "13 شارع محمد حلمى Cairo",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "شارع محمد حلمى 13 apt 4b",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "حلمى 13",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "Mary شارع محمد حلمى 13",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "شارع محمد حلمى13",
+   "lat": 30.0460707,
+   "lng": 31.1812099,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "13 شارع محمد حلمى, 12616 Cairo",
+   "base": 2
+  },
+  {
+   "address": "10 شارع عمر سليم, 12549 Cairo",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "10 شارع عمر سليم",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم 10 12549",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم 10 eg Cairo",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم 10, Cairo, eg",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "12549, Cairo, شارع عمر سليم, 10",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم 10 john",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "سليم 10",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم 10",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "شارع عمر سليم10",
+   "lat": 30.0136462,
+   "lng": 31.1969438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "10 شارع عمر سليم, 12549 Cairo",
+   "base": 3
+  },
+  {
+   "address": "6 شارع احمد منصور, 12657 Cairo",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "6 شارع احمد منصور",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور 6, 12657",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "eg شارع احمد منصور 6 Cairo",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور 6, Cairo, eg",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور, 6, Cairo",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور 6 (green door)",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور6",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد منصور 6",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "شارع احمد مننصور 6",
+   "lat": 30.066044,
+   "lng": 31.1931798,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 شارع احمد منصور, 12657 Cairo",
+   "base": 4
+  },
+  {
+   "address": "18 حارة سيد عيد, Cairo",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "18 حارة سيد عيد",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "حارة سيد عيد 18, Cairo",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "حارة سيد عيد 18, eg, Cairo",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "Cairo, حارة سيد عيد عيد 18, eg",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "18 Cairo",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "Deli حارة سيد عيد 18",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "حارة سيد عيد18",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "حارة سيد عيد 18",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "حارة سيد عيد 18 apt 4b",
+   "lat": 30.0444219,
+   "lng": 31.2910272,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "18 حارة سيد عيد, Cairo",
+   "base": 5
+  },
+  {
+   "address": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "شارع توفيق عبد الله, 47",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "شارع توفيق عبد الله 47, 12616",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "eg شارع توفيق عبد الله 47 Cairo",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "Cairo, eg, شارع توفيق عبد الله 47",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "12616, شارع توفيق عبد الله, 47, Cairo",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "شارع توفيق عبد الله 47 (green door)",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "شارع توفيق عبد الله47",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "Mary شارع توفيق عبد الله 47",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "الله 47",
+   "lat": 30.0442675,
+   "lng": 31.1909463,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "47 شارع توفيق عبد الله, 12616 Cairo",
+   "base": 6
+  },
+  {
+   "address": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث 4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث 4 12621",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث 4, eg, Cairo",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد ابو الحارث 4, Cairo, eg",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث Cairo 4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث 4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحراث 4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "الحارث 4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "شارع سيد أبو الحارث4",
+   "lat": 30.020668,
+   "lng": 31.1817513,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 شارع سيد أبو الحارث, 12621 Cairo",
+   "base": 7
+  },
+  {
+   "address": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "شارع الشيخ زكريا سليم, 41",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "شارع الشيخ زكريا سليم 41 12517",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "eg, شارع الشيخ زكريا سليم 41, Cairo",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "Cairo شارع الشيخ زكريا سليم 41 eg",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "Cairo - 41 - 12517 - شارع الشيخ زكريا سليم",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "شارع الشيخ زكريا سليم 41",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "شارع اللشيخ زكريا سليم 41",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "شارع الشيخ زكريا سليم 41 john",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "سليم 41",
+   "lat": 29.9949183,
+   "lng": 31.211944,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "41 شارع الشيخ زكريا سليم, 12517 Cairo",
+   "base": 8
+  },
+  {
+   "address": "3 امتداد شارع قناوي, 12664 Cairo",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "3 امتداد شارع قناوي",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "امتداد شارع قناوي 3 12664",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "امتداد شارع قناوي 3, eg, Cairo",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "Cairo, امتداد شارع قناوي 3, eg",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "3 - 12664 - امتداد شارع قناوي - Cairo",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "امتداد شارع قناوي 3",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "قناوي 3",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "امتداد شارع قناوي3",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "Deli امتداد شارع قناوي 3",
+   "lat": 30.0917252,
+   "lng": 31.2081623,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 امتداد شارع قناوي, 12664 Cairo",
+   "base": 9
+  },
+  {
+   "address": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "شارع عابدين على حافظ 25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "شارع عابدين على حافظ 25 12616",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "Cairo eg شارع عابدين على حافظ 25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "Cairo eg شارع عابدين على حافظ 25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "شارع عابدين على حافظ 12616 Cairo",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "شارع عابدين على حافظ 25 apt 4b",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "حافظ 25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "Deli شارع عابدين على حافظ 25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "شارع عابدين على حافظ25",
+   "lat": 30.0367782,
+   "lng": 31.1878728,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "25 شارع عابدين على حافظ, 12616 Cairo",
+   "base": 10
+  },
+  {
+   "address": "1 حارة خميس البنا, 12616 Cairo",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "1 حارة خميس البنا",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "حارة خميس البنا 1 12616",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "Cairo eg حارة خميس البنا 1",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "eg, حارة خميس البنا 1, cairo",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "حارة خميس البنا, 12616, 1",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "حارة خميس البننا 1",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "البنا 1",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "حارة خميس البنا 1 john",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "Deli حارة خميس البنا 1",
+   "lat": 30.0358402,
+   "lng": 31.1908902,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 حارة خميس البنا, 12616 Cairo",
+   "base": 11
+  },
+  {
+   "address": "5R عطفه ادريس, 11659 Cairo",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "5R عطفه ادريس",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "عطفه ادريس 5R 11659",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "eg, Cairo, عطفه ادريس 5R",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "Cairo eg eg عطفه ادريس 5R",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "11659 5R عطفه ادريس",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "عطفه ادريس 5r",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "عطفه ادريس5R",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "عطفه ادريس 5R apt 4b",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "عطفه ادرريس 5R",
+   "lat": 30.0814929,
+   "lng": 31.2686012,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5R عطفه ادريس, 11659 Cairo",
+   "base": 12
+  },
+  {
+   "address": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن, 1",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن 1 12668",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "eg حارة أحمد محمد حسن 1 Cairo",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "eg, حارة أحمد محمد حسن 1, Cairo",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن, 12668, 1, Cairo",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن1",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "Deli حارة أحمد محمد حسن 1",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن 1",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "حارة أحمد محمد حسن 1 (green door)",
+   "lat": 30.0805359,
+   "lng": 31.2087116,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 حارة أحمد محمد حسن, 12668 Cairo",
+   "base": 13
+  },
+  {
+   "address": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "شارع الانشراح الصغير 11",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "شارع الانشراح الصغير 11, 12658",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "شارع الانشراح الصغير 11, Cairo, eg",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "Cairo, شارع الانشراح الصغير 11, eg",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "12658 - 11 - شارع الانشراح الصغير",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "الصغير 11",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "شارع الناشراح الصغير 11",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "شارع الانشراح الصغير 11",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "Deli شارع الانشراح الصغير 11",
+   "lat": 30.067989540000003,
+   "lng": 31.2070177,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 شارع الانشراح الصغير, 12658 Cairo",
+   "base": 14
+  },
+  {
+   "address": "3 حارة احمد عفيفى, 12616 Cairo",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عفيفى, 3",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عفيفى 3, 12616",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "eg, حارة احمد عفيفى 3, Cairo",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عفيفى 3 eg eg Cairo",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "3 - 12616 - Cairo - حارة احمد عفيفى",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "Deli حارة احمد عفيفى 3",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عفيفى 3",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عفيفى3",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "حارة احمد عففيفى 3",
+   "lat": 30.043218,
+   "lng": 31.1885031,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 حارة احمد عفيفى, 12616 Cairo",
+   "base": 15
+  },
+  {
+   "address": "30 حارة أحمد سالم, 12621 Cairo",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم, 30",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم 30, 12621",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "Cairo, حارة أحمد سالم 30, eg",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم 30, eg, Cairo",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "12621 30 Cairo",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم30",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم 30 apt 4b",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "سالم 30",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "حارة أحمد سالم 30",
+   "lat": 30.041508,
+   "lng": 31.1849834,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "30 حارة أحمد سالم, 12621 Cairo",
+   "base": 16
+  },
+  {
+   "address": "15 حارة الزهراء, 12652 Cairo",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "15 حارة الزهراء",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "حارة الزهراء 15, 12652",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "eg, حارة الزهراء 15, Cairo",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "حارة الزهراء 15 eg Cairo",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "Cairo 15 12652 حارة الزهراء",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "الزهراء 15",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "Deli حارة الزهراء 15",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "حارة الزهارء 15",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "حارة الزهراء 15 john",
+   "lat": 30.0866496,
+   "lng": 31.2227719,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 حارة الزهراء, 12652 Cairo",
+   "base": 17
+  },
+  {
+   "address": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القادر شعبان 7",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القادر شعبان 7, 11687",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القادر شعبان 7, Cairo, eg",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "eg عطفه عبد القادر شعبان 7 cairo",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القادر شعبان 7 11687",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القدار شعبان 7",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "شعبان 7",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "Mary عطفه عبد القادر شعبان 7",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "عطفه عبد القادر شعبان7",
+   "lat": 30.0748067,
+   "lng": 31.2387913,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7 عطفه عبد القادر شعبان, 11687 Cairo",
+   "base": 18
+  },
+  {
+   "address": "4 شارع حسن شطا, 11671 Cairo",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "4 شارع حسن شطا",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا 4, 11671",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا 4 Cairo eg",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا 4 eg Cairo",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "11671, شارع حسن شطا, 4",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا 4",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "Mary شارع حسن شطا 4",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا 4 back entrance",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "شارع حسن شطا4",
+   "lat": 30.0827973,
+   "lng": 31.2612544,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 شارع حسن شطا, 11671 Cairo",
+   "base": 19
+  },
+  {
+   "address": "1 شارع الخليج الناصري, 11523 Cairo",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "1 شارع الخليج الناصري",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "شارع الخليج الناصري 1, 11523",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "Cairo, شارع الخليج الناصري 1, eg",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "eg, شارع الخليج الخليج الناصري 1, Cairo",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "شارع الخليج الناصري 11523 Cairo 1",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "شارع الخليج الناصري 1 back entrance",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "Deli شارع الخليج الناصري 1",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "شارع الخليج الناصري1",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "شارع الخليج الناصري 1",
+   "lat": 30.0604609,
+   "lng": 31.2484351,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 شارع الخليج الناصري, 11523 Cairo",
+   "base": 20
+  },
+  {
+   "address": "5 شارع الفلاح, 12655 Cairo",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "شارع الفلاح, 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "شارع الفلاح 5, 12655",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "Cairo eg شارع الفلاح 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "eg, Cairo, شارع الفلاح الفلاح 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "12655 شارع الفلاح Cairo 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "Mary شارع الفلاح 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "شارع افللاح 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "الفلاح 5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "شارع الفلاح5",
+   "lat": 30.0563972,
+   "lng": 31.1987354,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "5 شارع الفلاح, 12655 Cairo",
+   "base": 21
+  },
+  {
+   "address": "19 شارع سليمان عطيه, 11659 Cairo",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سليمان عطيه, 19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سليمان عطيه 19, 11659",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "eg, Cairo, شارع سليمان عطيه 19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سليمان عطيه عطيه 19 cairo eg",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "19 - 11659 - شارع سليمان عطيه - Cairo",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سيلمان عطيه 19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "Mary شارع سليمان عطيه 19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سليمان عطيه19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "شارع سليمان عطيه 19",
+   "lat": 30.0806549,
+   "lng": 31.2630718,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "19 شارع سليمان عطيه, 11659 Cairo",
+   "base": 22
+  },
+  {
+   "address": "40 شارع الجمالي, 11633 Cairo",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "شارع الجمالي, 40",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "شارع الجمالي 40 11633",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "Cairo, شارع الجمالي 40, eg",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "eg Cairo شارع الجمالي 40",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "40 - شارع الجمالي - Cairo - 11633",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "شارع الجمالي 40 back entrance",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "شارع الج 40",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "الجمالي 40",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "Mary شارع الجمالي 40",
+   "lat": 30.0509541,
+   "lng": 31.2678811,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "40 شارع الجمالي, 11633 Cairo",
+   "base": 23
+  },
+  {
+   "address": "7 شارع حبيب, 11644 Cairo",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7 11644",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7 Cairo eg",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7 eg Cairo",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "Cairo شارع حبيب 11644",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "حبيب 7",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "Mary شارع حبيب 7",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "شارع حبيب 7 back entrance",
+   "lat": 30.0646082,
+   "lng": 31.2412056,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 شارع حبيب, 11644 Cairo",
+   "base": 24
+  },
+  {
+   "address": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا, 7",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا 7, 11622",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "eg, Cairo, حارة اسماعيل عاصم باشا 7",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا 7, eg, Cairo",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "Cairo, حارة اسماعيل عاصم باشا, 7, 11622",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا7",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "Mary حارة اسماعيل عاصم باشا 7",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا 7",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "حارة اسماعيل عاصم باشا 7 john",
+   "lat": 30.0337827,
+   "lng": 31.2479429,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 حارة اسماعيل عاصم باشا, 11622 Cairo",
+   "base": 25
+  },
+  {
+   "address": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري 40",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري 40 11674",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "Cairo شارع محمود فهمي المعماري 40 eg",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "eg, Cairo, شارع محمود فهمي المعماري 40",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري 40 11674 Cairo",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري40",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري 40",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "شارع محمود فهمي المعماري 40 (green door)",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "المعماري 40",
+   "lat": 30.0678846,
+   "lng": 31.2662047,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "40 شارع محمود فهمي المعماري, 11674 Cairo",
+   "base": 26
+  },
+  {
+   "address": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "شارع عادل عبد القادر, 14",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "شارع عادل عبد القادر 14, 12549",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "eg شارع عادل عبد القادر 14 Cairo",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "شارع عادل عادل عبد القادر 14, eg, Cairo",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "14 Cairo شارع عادل عبد القادر 12549",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "شارع عادل عبد القادر 14",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "القادر 14",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "شارع عادل عبد القدار 14",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "Deli شارع عادل عبد القادر 14",
+   "lat": 30.0183826,
+   "lng": 31.1882235,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "14 شارع عادل عبد القادر, 12549 Cairo",
+   "base": 27
+  },
+  {
+   "address": "2 شارع عشرى, 12616 Cairo",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى 2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى 2, 12616",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى 2, Cairo, eg",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "eg cairo شارع عشرى 2 2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى - 12616 - 2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "عشرى 2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "Deli شارع عشرى 2",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "شارع عشرى 2 back entrance",
+   "lat": 30.0397412,
+   "lng": 31.1934146,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 شارع عشرى, 12616 Cairo",
+   "base": 28
+  },
+  {
+   "address": "1 حاره كامل فاقوس, 11671 Cairo",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "1 حاره كامل فاقوس",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "حاره كامل فاقوس 1, 11671",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "eg Cairo حاره كامل فاقوس 1",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "Cairo حاره كامل فاقوس 1 eg",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "Cairo - 1 - 11671 - حاره كامل فاقوس",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "فاقوس 1",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "حاره كامل فاقوس 1",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "حاره كامل فاقووس 1",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "حاره كامل فاقوس 1 john",
+   "lat": 30.0798784,
+   "lng": 31.2563456,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 حاره كامل فاقوس, 11671 Cairo",
+   "base": 29
+  },
+  {
+   "address": "33 شارع الزناتى, 12616 Cairo",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "33 شارع الزناتى",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "شارع الزناتى 33 12616",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "eg, شارع الزناتى 33, Cairo",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "Cairo, شارع الزناتى 33, eg",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "Cairo - 12616 - شارع الزناتى - 33",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "الزناتى 33",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "شارع الز 33",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "Mary شارع الزناتى 33",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "شارع الزناتى33",
+   "lat": 30.0359422,
+   "lng": 31.1872654,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "33 شارع الزناتى, 12616 Cairo",
+   "base": 30
+  },
+  {
+   "address": "2 حارة محمد منصور, 12945 Cairo",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصور 2",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصور 2, 12945",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "Cairo حارة محمد منصور 2 eg",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "eg, حارة محمد محمد منصور 2, Cairo",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصور 12945 2 Cairo",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصور 2",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "منصور 2",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصور2",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "حارة محمد منصصور 2",
+   "lat": 30.0354732,
+   "lng": 31.1743338,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 حارة محمد منصور, 12945 Cairo",
+   "base": 31
+  },
+  {
+   "address": "7 زقاق الرباط, 11681 Cairo",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "7 زقاق الرباط",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "زقاق الرباط 7 11681",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "eg Cairo زقاق الرباط 7",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "زقاق الرباط 7, eg, Cairo",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "Cairo, زقاق الرباط, 7",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "زقاق الرباط 7 back entrance",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "Mary زقاق الرباط 7",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "زقاق الرباط7",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "الرباط 7",
+   "lat": 30.053153,
+   "lng": 31.2594013,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 زقاق الرباط, 11681 Cairo",
+   "base": 32
+  },
+  {
+   "address": "16 شارع حمزه بنيه, 11639 Cairo",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "شارع حمزه بنيه 16",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "شارع حمزه بنيه 16, 11639",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "شارع حمزه بنيه 16 eg Cairo",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "Cairo شارع حمزه بنيه 16 eg",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "11639 - Cairo - 16 - شارع حمزه بنيه",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "Deli شارع حمزه بنيه 16",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "شارع حمزه بنيه16",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "بنيه 16",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "شارع حمزه بنيه 16",
+   "lat": 30.0400359,
+   "lng": 31.2580723,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 شارع حمزه بنيه, 11639 Cairo",
+   "base": 33
+  },
+  {
+   "address": "1 حارة سليم صعب, 11653 Cairo",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "1 حارة سليم صعب",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "حارة سليم صعب 1, 11653",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "Cairo, eg, حارة سليم صعب 1",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "حارة سليم صعب 1, eg, Cairo Cairo",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "Cairo - 11653 - 1 - حارة سليم صعب",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "Deli حارة سليم صعب 1",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "حارة سليم صعب 1 john",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "حارة سليم صعب 1",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "حارة سليم صعب1",
+   "lat": 30.0708801,
+   "lng": 31.2572032,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 حارة سليم صعب, 11653 Cairo",
+   "base": 34
+  },
+  {
+   "address": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "شارع مسجد الفردوس 20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "شارع مسجد الفردوس 20 12664",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "eg, Cairo, شارع مسجد الفردوس 20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "شارع مسجد الفردوس 20 cairo eg",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "Cairo شارع مسجد الفردوس 20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "شارع مسجد الفردوس 20 john",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "Deli شارع مسجد الفردوس 20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "شارع مسجد الفردوس20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "الفردوس 20",
+   "lat": 30.0900251,
+   "lng": 31.207737,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "20 شارع مسجد الفردوس, 12664 Cairo",
+   "base": 35
+  },
+  {
+   "address": "1 شارع الزاهي, 11517 Cairo",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "1 شارع الزاهي",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "شارع الزاهي 1 11517",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "Cairo, eg, شارع الزاهي 1",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "eg, شارع الزاهي 1, cairo",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "Cairo, 1, شارع الزاهي",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "شارع الزاهي 1 back entrance",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "Mary شارع الزاهي 1",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "شارع الزاهي 1",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "شارع الزاهي1",
+   "lat": 30.0698112,
+   "lng": 31.2713438,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 شارع الزاهي, 11517 Cairo",
+   "base": 36
+  },
+  {
+   "address": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33, 11681",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33, eg, Cairo",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33, Cairo, eg",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33 11681",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللططيف 33",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف33",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "شارع الشيخ عبد اللطيف 33 back entrance",
+   "lat": 30.0516106,
+   "lng": 31.2654973,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "33 شارع الشيخ عبد اللطيف, 11681 Cairo",
+   "base": 37
+  },
+  {
+   "address": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم 1",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم 1, 11797",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم 1 Cairo eg",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى مستشفى المقطم 1, eg, Cairo",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "1 - طريق مستشفى المقطم - Cairo",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستفشى المقطم 1",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم 1",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم 1 apt 4b",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "طريق مستشفى المقطم1",
+   "lat": 30.0222042,
+   "lng": 31.2441355,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 طريق مستشفى المقطم, 11797 Cairo",
+   "base": 38
+  },
+  {
+   "address": "9 شارع 85, 11631 Cairo",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "شارع 85 9",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "شارع 85 9 11631",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "eg شارع 85 9 Cairo",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "eg شارع 85 9 Cairo",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "9 11631 Cairo شارع 85",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "Mary شارع 85 9",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "شارع 859",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "شارع 85 9 apt 4b",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  },
+  {
+   "address": "شارع 85 9",
+   "lat": 30.0773892,
+   "lng": 31.2309419,
+   "country": "EG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 شارع 85, 11631 Cairo",
+   "base": 39
+  }
+ ]
+}

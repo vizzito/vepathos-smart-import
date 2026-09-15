@@ -1,0 +1,3738 @@
+{
+ "source": "osm-addr",
+ "country": "EC",
+ "city": "Quito",
+ "country_label": "Ecuador",
+ "depot": {
+  "lat": -0.1807,
+  "lon": -78.4678,
+  "city": "Quito",
+  "country": "Ecuador"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 372,
+ "note": "Nodos addr:* del indice n-0.10_s-0.30_e-78.40_w-78.60-ecuador.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Bermejo N39-160, Quito",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "N39-160 Bermejo",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Bermejo N39-160, ec, Quito",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Quito, ec, Bermejo N39-160",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Quito, Bermejo",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "BERMEJO N39-160",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Mary bermejo N39-160",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Bermjeo N39-160",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "bermejo n39-160",
+   "lat": -0.16446352,
+   "lng": -78.46261799999999,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bermejo N39-160, Quito",
+   "base": 0
+  },
+  {
+   "address": "Miguel Angel 284, Quito",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "284 Miguel Angel",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "Quito, Miguel Angel 284, ec",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "miguel angel 284 quito ec",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "Miguel Angel, Quito, 284",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "Mgiuel Angel 284",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "Miguel Angel 284 apt 4b",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "Deli miguel angel 284",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "MIGUEL ANGEL 284",
+   "lat": -0.21290508,
+   "lng": -78.43174354,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Miguel Angel 284, Quito",
+   "base": 1
+  },
+  {
+   "address": "E16 N39-12, Quito",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "E16 N39-12",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "E16 N39-12 ec Quito",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "Quito, ec, E16 N39-12",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "N39-12 - E16 - Quito",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "E16 N39-12",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "E16N39-12",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "E16 N39-12 apt 4b",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "Mary e16 N39-12",
+   "lat": -0.17268783333333335,
+   "lng": -78.4686107,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "E16 N39-12, Quito",
+   "base": 2
+  },
+  {
+   "address": "Luis Cadena 099-916-9881, Quito",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "099-916-9881 Luis Cadena",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "Luis Cadena 099-916-9881, Quito, ec",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "ec Quito Luis Cadena 099-916-9881",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "099-916-9881, Quito",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "luis cadena 099-916-9881",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "cadena 099-916-9881",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "Deli luis cadena 099-916-9881",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "Luis Caedna 099-916-9881",
+   "lat": -0.1749506,
+   "lng": -78.4947955,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Luis Cadena 099-916-9881, Quito",
+   "base": 3
+  },
+  {
+   "address": "Del Platero 47-71, Quito",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "47-71 Del Platero",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "ec, Del Platero 47-71, Quito",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Quito, Del Platero 47-71, ec",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Del Platero, 47-71, Quito",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Deli del platero 47-71",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Del Platero47-71",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Del Platero 47-71 back entrance",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Del Pla 47-71",
+   "lat": -0.1554457,
+   "lng": -78.4586059,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Del Platero 47-71, Quito",
+   "base": 4
+  },
+  {
+   "address": "Avenida de la Prensa 949, Quito",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la Prensa 949",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la Prensa 949, Quito",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la Prensa 949, Quito, ec",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "Quito de la Prensa 949 949 ec",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "Avenida de la Prensa, Quito",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "DE LA PRENSA 949",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la Prensa949",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la Prnesa 949",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "de la prensa 949",
+   "lat": -0.1591083,
+   "lng": -78.4880512,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida de la Prensa 949, Quito",
+   "base": 5
+  },
+  {
+   "address": "De Las Capulies E10-46, 170505 Quito",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "De Las Capulies E10-46",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "De Las Capulies E10-46 170505",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "ec, De Las Capulies E10-46, Quito",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "De Las Capulies E10-46, ec, Quito",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "170505, De Las Capulies, E10-46, Quito",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "DE LAS CAPULIES E10-46",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "De Las Capulies E10-46 back entrance",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "Deli de las capulies E10-46",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "De Las Cap E10-46",
+   "lat": -0.14855290000000002,
+   "lng": -78.47374552,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "De Las Capulies E10-46, 170505 Quito",
+   "base": 6
+  },
+  {
+   "address": "Catalina Aldaz 34, Quito",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Catalina Aldaz 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Catalina Aldaz 34 ec Quito",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Catalina Aldaz 34 34 ec Quito",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Catalina Aldaz Quito 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "catalina aldaz 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Mary catalina aldaz 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Caatlina Aldaz 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "CATALINA ALDAZ 34",
+   "lat": -0.1839837,
+   "lng": -78.4772872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Catalina Aldaz 34, Quito",
+   "base": 7
+  },
+  {
+   "address": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "OE4-182 Pedro Sarmiento De Gamboa",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Pedro Sarmiento De Gamboa OE4-182, 170521",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "ec Quito Pedro Sarmiento De Gamboa OE4-182",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Pedro Sarmiento De Gamboa OE4-182 Quito ec",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Quito - Pedro Sarmiento De Gamboa - OE4-182 - 170521",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "gamboa OE4-182",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "pedro sarmiento de gamboa oe4-182",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Pedro Sarmiento De GamboaOE4-182",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Pedro Sarmiento De Gamboa OE4-182 (green door)",
+   "lat": -0.16767585999999998,
+   "lng": -78.49315048000001,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pedro Sarmiento De Gamboa OE4-182, 170521 Quito",
+   "base": 8
+  },
+  {
+   "address": "Av. America N21-37, Quito",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "America N21-37",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "America N21-37, Quito",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "America N21-37 ec Quito",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "America N21-37 ec ec Quito",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "Av. America - N21-37",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "AmericaN21-37",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "AMERICA N21-37",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "america n21-37",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "America N21-37 apt 4b",
+   "lat": -0.2034097,
+   "lng": -78.5018342,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. America N21-37, Quito",
+   "base": 9
+  },
+  {
+   "address": "Mariano Andrade N37-65, Quito",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "N37-65 Mariano Andrade",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "ec Mariano Andrade N37-65 Quito",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "ec, Mariano Andrade N37-65, Quito",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "N37-65 - Mariano Andrade - Quito",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "Deli mariano andrade N37-65",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "mariano andrade n37-65",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "Maraino Andrade N37-65",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "MARIANO ANDRADE N37-65",
+   "lat": -0.17257534000000002,
+   "lng": -78.49349556,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mariano Andrade N37-65, Quito",
+   "base": 10
+  },
+  {
+   "address": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Juan de Dios Martínez y Portugal N35-120",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Juan de Dios Martínez y Portugal N35-120 170504",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "ec, Quito, Juan de Dios Martínez y Portugal N35-120",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Quito Juan de Dios Martínez y Portugal N35-120 ec",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Quito N35-120 170504 Juan de Dios Martínez y Portugal",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Juan de Dios Martínez y Por N35-120",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Juan de Dios Matrínez y Portugal N35-120",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "juan de dios martínez y portugal n35-120",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Juan de Dios Martínez y Portugal N35-120 back entrance",
+   "lat": -0.18124732,
+   "lng": -78.47433294,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Juan de Dios Martínez y Portugal N35-120, 170504 Quito",
+   "base": 11
+  },
+  {
+   "address": "Buenos Aires Oe3-163, Quito",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Buenos Aires Oe3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Quito, ec, Buenos Aires Oe3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Buenos Aires Oe3-163, Quito, ec",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Quito, Oe3-163, Buenos Aires",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "BUENOS AIRES OE3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "buenos aires oe3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Buenos AiresOe3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "Deli buenos aires Oe3-163",
+   "lat": -0.209568,
+   "lng": -78.5044079,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Buenos Aires Oe3-163, Quito",
+   "base": 12
+  },
+  {
+   "address": "General Leonidas Plaza Gutierrez 287, Quito",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "General Leonidas Plaza Gutierrez 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "General Leonidas Plaza Gutierrez 287, Quito, ec",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "ec, Quito, General Leonidas Plaza Gutierrez 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "Quito General Leonidas Plaza Gutierrez 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "General Leonidas Plaza Gut 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "Mary general leonidas plaza gutierrez 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "gutierrez 287",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "General Leonidas Plaza Gutierrez 287 (green door)",
+   "lat": -0.20426673636363635,
+   "lng": -78.48806007272728,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "General Leonidas Plaza Gutierrez 287, Quito",
+   "base": 13
+  },
+  {
+   "address": "Mariana de Jesús E7-21, 170518 Quito",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "E7-21 Mariana de Jesús",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "Mariana de Jesús E7-21, 170518",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "ec, Mariana de Jesús E7-21, Quito",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "ec Quito Mariana de Jesus E7-21",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "170518 E7-21 Mariana de Jesús Quito",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "mariana de jesús e7-21",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "Marinaa de Jesús E7-21",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "MARIANA DE JESÚS E7-21",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "jesús E7-21",
+   "lat": -0.1935739,
+   "lng": -78.4861826,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Mariana de Jesús E7-21, 170518 Quito",
+   "base": 14
+  },
+  {
+   "address": "Leonardo Tejada E16-71, Quito",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Leonardo Tejada E16-71",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Quito Leonardo Tejada E16-71 ec",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Leonardo Tejada E16-71 Quito ec",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "E16-71 Leonardo Tejada",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Deli leonardo tejada E16-71",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "leonardo tejada e16-71",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Leonadro Tejada E16-71",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Leonardo Tejada E16-71 apt 4b",
+   "lat": -0.16186528,
+   "lng": -78.4611232,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Leonardo Tejada E16-71, Quito",
+   "base": 15
+  },
+  {
+   "address": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gonzalez, E16-72",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gonzalez E16-72 ec Quito",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gonzalez E16-72, Quito, ec",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gonzalez, Quito",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "alfonso rumazo gonzalez e16-72",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gon E16-72",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "Alfonso Rumazo Gonzlaez E16-72",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "ALFONSO RUMAZO GONZALEZ E16-72",
+   "lat": -0.17026407142857142,
+   "lng": -78.46780224285715,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alfonso Rumazo Gonzalez E16-72, Quito",
+   "base": 16
+  },
+  {
+   "address": "De los Perales N47-293, Quito",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "De los Perales, N47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "ec, Quito, De los Perales N47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "ec de los perales n47-293 quito",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "Quito N47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "De los Pearles N47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "De los Per N47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "De los PeralesN47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "de los perales n47-293",
+   "lat": -0.1551021,
+   "lng": -78.467698,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "De los Perales N47-293, Quito",
+   "base": 17
+  },
+  {
+   "address": "Gran Colombia N15-262, Quito",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "N15-262 Gran Colombia",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Gran Colombia N15-262 Quito ec",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Quito Gran Colombia N15-262 ec",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Gran Colombia - Quito",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Deli gran colombia N15-262",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Gran ColombiaN15-262",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Gran Col N15-262",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Gran Colmobia N15-262",
+   "lat": -0.21332689999999999,
+   "lng": -78.49664802,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gran Colombia N15-262, Quito",
+   "base": 18
+  },
+  {
+   "address": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "OE2-44 Alonso Mercadillo entre Jacinto Morán y Versalles",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44 170520",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "ec Quito Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Quito ec Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Alonso Mercadillo entre Jacinto Morán y Versalles 170520 Quito OE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Mary alonso mercadillo entre jacinto morán y versalles OE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Alonso Mercadillo entre Jacinto Morán y VersallesOE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Alonso Mercadilo entre Jacinto Morán y Versalles OE2-44",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44 apt 4b",
+   "lat": -0.1988071,
+   "lng": -78.4980071,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Alonso Mercadillo entre Jacinto Morán y Versalles OE2-44, 170520 Quito",
+   "base": 19
+  },
+  {
+   "address": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Shuaras (Eduardo Naula) OE3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Quito, ec, Shuaras (Eduardo Naula) OE3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Quito ec Shuaras (Eduardo Naula) OE3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Shuaras (Eduardo Naula), Quito",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "naula) OE3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Shuaras (Eduardo Naula) OE3-178 (green door)",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "shuaras (eduardo naula) oe3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "SHUARAS (EDUARDO NAULA) OE3-178",
+   "lat": -0.1411769,
+   "lng": -78.49294926666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Shuaras (Eduardo Naula) OE3-178, Quito",
+   "base": 20
+  },
+  {
+   "address": "Gaspar de Carvajal N30-53, Quito",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "N30-53 Gaspar de Carvajal",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Quito Gaspar de Carvajal N30-53 ec",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Quito, ec, ec, Gaspar de Carvajal N30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Gaspar de Carvajal - Quito - N30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Gaspar de Cravajal N30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Gaspar de CarvajalN30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "GASPAR DE CARVAJAL N30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Deli gaspar de carvajal N30-53",
+   "lat": -0.1883114,
+   "lng": -78.4986823,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gaspar de Carvajal N30-53, Quito",
+   "base": 21
+  },
+  {
+   "address": "Hernando Sarmiento N39-197, Quito",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Hernando Sarmiento N39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "ec Quito Hernando Sarmiento N39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Hernando Sarmiento N39-197 ec Quito",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Quito Hernando Sarmiento N39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Hernando Sar N39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Deli hernando sarmiento N39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "hernando sarmiento n39-197",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Hernando Sarmiento N39-197 apt 4b",
+   "lat": -0.1717137,
+   "lng": -78.475809,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hernando Sarmiento N39-197, Quito",
+   "base": 22
+  },
+  {
+   "address": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar Guapalo, Oe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar Guapalo Oe8-487, Quito",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar Guapalo Oe8-487 ec Quito",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar Guapalo Oe8-487 Quito ec",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Quito Oe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar Gua Oe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Mary simón bolívar guapalo Oe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "Simón Bolívar GuapaloOe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "simón bolívar guapalo oe8-487",
+   "lat": -0.19718804999999998,
+   "lng": -78.44749976666667,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Simón Bolívar Guapalo Oe8-487, Quito",
+   "base": 23
+  },
+  {
+   "address": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45-10 N45 Ricardo Sáenz Salas",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 Ricardo Sáenz Salas N45-10 170503",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 Ricardo Sáenz Salas N45-10 ec Quito",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "Quito N45 Ricardo Sáenz Salas N45-10 ec",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 Ricardo Sáenz Salas - Quito - 170503 - N45-10",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 Ricardo Sáenz Salas N45-10 apt 4b",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 Rciardo Sáenz Salas N45-10",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "N45 RICARDO SÁENZ SALAS N45-10",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "salas N45-10",
+   "lat": -0.15971348,
+   "lng": -78.4550024,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "N45 Ricardo Sáenz Salas N45-10, 170503 Quito",
+   "base": 24
+  },
+  {
+   "address": "6 de diciembre N34-143, Quito",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "N34-143 6 de diciembre",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "ec, Quito, 6 de diciembre N34-143",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "ec, Quito, 6 de diciembre N34-143",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "N34-143, Quito",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "Deli 6 de diciembre N34-143",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "6 de dic N34-143",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "6 de diciembre N34-143 john",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "6 de diciembre n34-143",
+   "lat": -0.1847618,
+   "lng": -78.4792536,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 de diciembre N34-143, Quito",
+   "base": 25
+  },
+  {
+   "address": "N45a 150, 170503 Quito",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "150 N45a",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "N45a 150 170503",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "ec Quito N45a 150",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "n45a 150, ec, quito",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "150 N45a 170503 Quito",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "n45a 150",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "N45a 150 apt 4b",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "N45a150",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "Mary n45a 150",
+   "lat": -0.159417675,
+   "lng": -78.4588758,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "N45a 150, 170503 Quito",
+   "base": 26
+  },
+  {
+   "address": "Cap. Rafael Ramos E2-16, Quito",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "E2-16 Cap. Rafael Ramos",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "ec, Cap. Rafael Ramos E2-16, Quito",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "Quito, ec, Cap. Rafael Ramos E2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "Quito E2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "CAP. RAFAEL RAMOS E2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "cap. rafael ramos e2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "Cap. Rafael RamosE2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "ramos E2-16",
+   "lat": -0.1503451,
+   "lng": -78.48339872,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cap. Rafael Ramos E2-16, Quito",
+   "base": 27
+  },
+  {
+   "address": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Gonzalo Endara Crown E18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Gonzalo Endara Crown E18-124, 170503",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Quito, ec, Gonzalo Endara Crown E18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Quito, ec, Gonzalo Endara Crown E18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "E18-124 170503 Quito Gonzalo Endara Crown",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Gonzalo Endara Crown E18-124 (green door)",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Goznalo Endara Crown E18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "gonzalo endara crown e18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "crown E18-124",
+   "lat": -0.15908546,
+   "lng": -78.45409122,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Gonzalo Endara Crown E18-124, 170503 Quito",
+   "base": 28
+  },
+  {
+   "address": "Inocencio Jácome N15-30, Quito",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "N15-30 Inocencio Jácome",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "Quito, Inocencio Jácome N15-30, ec",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "ec inocencio jácome n15-30 quito",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "N15-30 Quito Inocencio Jácome",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "jácome N15-30",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "Inocencio JácomeN15-30",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "Deli inocencio jácome N15-30",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "Inosencio Jácome N15-30",
+   "lat": -0.21945394000000001,
+   "lng": -78.48632252,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Inocencio Jácome N15-30, Quito",
+   "base": 29
+  },
+  {
+   "address": "Alejandro Valdez n24-33, quito",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "Alejandro Valdez n24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "ec, quito, Alejandro Valdez n24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "ec Alejandro Alejandro Valdez n24-33 quito",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "n24-33 - Alejandro Valdez - quito",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "ALEJANDRO VALDEZ N24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "Alejandro Valdezn24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "valdez n24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "Deli alejandro valdez n24-33",
+   "lat": -0.1960459,
+   "lng": -78.5028568,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Alejandro Valdez n24-33, quito",
+   "base": 30
+  },
+  {
+   "address": "Alemania e Italia E4-55, Quito",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Alemania e Italia, E4-55",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "ec, Alemania e Italia E4-55, Quito",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Alemania e Italia E4-55, ec, Quito",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Quito - E4-55",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Alemaina e Italia E4-55",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Alemania e ItaliaE4-55",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Alemania e Italia E4-55 john",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "italia E4-55",
+   "lat": -0.1866624,
+   "lng": -78.4890033,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Alemania e Italia E4-55, Quito",
+   "base": 31
+  },
+  {
+   "address": "Chuquiraguas N45-81, 170503 Quito",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Chuquiraguas, N45-81",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Chuquiraguas N45-81, 170503",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Quito ec Chuquiraguas N45-81",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "chuquiraguas n45-81 ec quito",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "N45-81, Chuquiraguas, 170503",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "ChuquiraguasN45-81",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Chuquiraguas N45-81 john",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "CHUQUIRAGUAS N45-81",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Chukiraguas N45-81",
+   "lat": -0.1605308,
+   "lng": -78.45996683333334,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Chuquiraguas N45-81, 170503 Quito",
+   "base": 32
+  },
+  {
+   "address": "Agustin Azkunaga Oe4-173, Quito",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Oe4-173 Agustin Azkunaga",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Quito Agustin Azkunaga Oe4-173 ec",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "ec, Quito, Agustin Azkunaga Oe4-173",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Oe4-173 Agustin Azkunaga Quito",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Agustin Azk Oe4-173",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "azkunaga Oe4-173",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "agustin azkunaga oe4-173",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Agustin AzkunagaOe4-173",
+   "lat": -0.16908444,
+   "lng": -78.49174226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Agustin Azkunaga Oe4-173, Quito",
+   "base": 33
+  },
+  {
+   "address": "Isla Santa Fe N43-79, Quito",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Isla Santa Fe, N43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Quito, ec, Isla Santa Fe N43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Quito, ec, Isla Santa Fe N43-79 N43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Isla Santa Fe Quito",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Isla Santa Fe N43-79 apt 4b",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Isla Santa FeN43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Isla Sannta Fe N43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Mary isla santa fe N43-79",
+   "lat": -0.16405252857142857,
+   "lng": -78.48024935714285,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Isla Santa Fe N43-79, Quito",
+   "base": 34
+  },
+  {
+   "address": "Oe7A N31-28, Quito",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Oe7A, N31-28",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Oe7A N31-28 Quito ec",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "ec, Oe7A N31-28, Quito",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Oe7A, Quito",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "OE7A N31-28",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Oe7AN31-28",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "oe7a n31-28",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Oe7A N31-28 (green door)",
+   "lat": -0.1852684,
+   "lng": -78.5027231,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Oe7A N31-28, Quito",
+   "base": 35
+  },
+  {
+   "address": "Juan Pablo Arenas 401, Quito",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "401 Juan Pablo Arenas",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "Juan Pablo Arenas 401 ec Quito",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "Juan Pablo Arenas 401, ec, Quito",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "Quito Juan Pablo Arenas",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "Juan Pablo Arenas 401 (green door)",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "juan pablo arenas 401",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "JUAN PABLO ARENAS 401",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "arenas 401",
+   "lat": -0.2128669,
+   "lng": -78.5040195,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Juan Pablo Arenas 401, Quito",
+   "base": 36
+  },
+  {
+   "address": "Nicolas Cortez E15-20, Quito",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "Nicolas Cortez E15-20",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "Nicolas Cortez E15-20, ec, Quito",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "nicolas cortez e15-20, ec, quito",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "E15-20 Quito Nicolas Cortez",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "Mary nicolas cortez E15-20",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "Nicoals Cortez E15-20",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "cortez E15-20",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "Nicolas CortezE15-20",
+   "lat": -0.21948240000000002,
+   "lng": -78.48729226,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Nicolas Cortez E15-20, Quito",
+   "base": 37
+  },
+  {
+   "address": "México N15-32, Quito",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "N15-32 México",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "México N15-32 ec Quito",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "México N15-32, ec, Quito",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "N15-32, Quito, México",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "Méixco N15-32",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "méxico n15-32",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "MéxicoN15-32",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "MÉXICO N15-32",
+   "lat": -0.2095077,
+   "lng": -78.506093,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "México N15-32, Quito",
+   "base": 38
+  },
+  {
+   "address": "Manabí e2 69, Quito",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "e2 69 Manabí",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "Quito ec Manabí e2 69",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "Quito Manabí e2 69 ec",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "Manabí - Quito - e2 69",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "manabí e2 69",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "Manabíe2 69",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "Manabí e2 69 john",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  },
+  {
+   "address": "MANABÍ E2 69",
+   "lat": -0.2021234,
+   "lng": -78.4305386,
+   "country": "EC",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Manabí e2 69, Quito",
+   "base": 39
+  }
+ ]
+}

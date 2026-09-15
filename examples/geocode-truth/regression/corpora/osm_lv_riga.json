@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "LV",
+ "city": "Riga",
+ "country_label": "Latvia",
+ "depot": {
+  "lat": 56.9496,
+  "lon": 24.1052,
+  "city": "Riga",
+  "country": "Latvia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n57.10_s56.80_e24.30_w24.00-latvia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Spulgas iela 27, LV-1058 Rīga",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "27 Spulgas iela",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Spulgas iela 27, LV-1058",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Rīga, lv, Spulgas iela 27",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Rīga, lv, Spulgas iela 27",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "27 Spulgas iela Rīga",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Mary spulgas iela 27",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "SPULGAS IELA 27",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Spulgas iela 27 apt 4b",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "iela 27",
+   "lat": 56.9023137,
+   "lng": 24.090935,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Spulgas iela 27, LV-1058 Rīga",
+   "base": 0
+  },
+  {
+   "address": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Džohara Dudajeva gatve, 9",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Džohara Dudajeva gatve 9 LV-1084",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Rīga, lv, Džohara Dudajeva gatve 9",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Dzohara Dudajeva gatve 9, Riga, lv",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Džohara Dudajeva gatve 9 Rīga LV-1084",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Deli džohara dudajeva gatve 9",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "gatve 9",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Džohara Dudajeba gatve 9",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Džohara Dudajeva gatve 9 back entrance",
+   "lat": 56.9576404,
+   "lng": 24.196671066666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Džohara Dudajeva gatve 9, LV-1084 Rīga",
+   "base": 1
+  },
+  {
+   "address": "Teteru iela 5, LV-1084 Rīga",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Teteru iela, 5",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Teteru iela 5 LV-1084",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Rīga lv Teteru iela 5",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Rīga, Teteru iela 5, lv",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "5 - LV-1084 - Rīga",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Teteru iela5",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Deli teteru iela 5",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Teteru iela 5 (green door)",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "teteru iela 5",
+   "lat": 56.96363228,
+   "lng": 24.181850880000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Teteru iela 5, LV-1084 Rīga",
+   "base": 2
+  },
+  {
+   "address": "Akotu iela 16, LV-1082 Rīga",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Akotu iela 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Akotu iela 16 LV-1082",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Akotu iela 16, Rīga, lv",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Rīga Akotu iela 16 lv lv",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Rīga - LV-1082 - 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "AKOTU IELA 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Akottu iela 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "iela 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "akotu iela 16",
+   "lat": 56.945402939999994,
+   "lng": 24.1896086,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Akotu iela 16, LV-1082 Rīga",
+   "base": 3
+  },
+  {
+   "address": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķērsiela, 1",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķērsiela 1 LV-1067",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "lv Mazā Šķērsiela 1 Rīga",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķērsiela 1, Rīga, lv",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Rīga - 1 - Mazā Šķērsiela",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķērisela 1",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "šķērsiela 1",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķērsiela1",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Mazā Šķē 1",
+   "lat": 56.963497000000004,
+   "lng": 24.040481800000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Mazā Šķērsiela 1, LV-1067 Rīga",
+   "base": 4
+  },
+  {
+   "address": "Loka iela 12, LV-1067 Rīga",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "12 Loka iela",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "Loka iela 12, LV-1067",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "lv Loka iela 12 Rīga",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "Loka iela 12 Rīga lv",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "12, Rīga, LV-1067, Loka iela",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "LOKA IELA 12",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "iela 12",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "Loka iela 12 john",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "Deli loka iela 12",
+   "lat": 56.96016658,
+   "lng": 24.02680564,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Loka iela 12, LV-1067 Rīga",
+   "base": 5
+  },
+  {
+   "address": "Nīcgales iela 31, LV-1035 Rīga",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Nīcgales iela, 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Nīcgales iela 31 LV-1035",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Nīcgales iela 31, lv, Rīga",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "rīga, lv, nīcgales iela 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "LV-1035 - Nīcgales iela - Rīga - 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Nīgcales iela 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "iela 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "nīcgales iela 31",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Nīcgales iela 31 john",
+   "lat": 56.952622985714285,
+   "lng": 24.17543237142857,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nīcgales iela 31, LV-1035 Rīga",
+   "base": 6
+  },
+  {
+   "address": "Krasta iela 78, LV-1019 Rīga",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela 78",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela 78, LV-1019",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela 78, Rīga, lv",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela 78 lv lv Rīga",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela, 78, Rīga, LV-1019",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "KRASTA IELA 78",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Krasta iela 78 back entrance",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Mary krasta iela 78",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Karsta iela 78",
+   "lat": 56.926211,
+   "lng": 24.1612383,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Krasta iela 78, LV-1019 Rīga",
+   "base": 7
+  },
+  {
+   "address": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Alksnāja iela, 10/12",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Alksnāja iela 10/12, LV-1050",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Rīga Alksnāja iela 10/12 lv",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "lv, Alksnaja iela 10/12, Riga",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Rīga Alksnāja iela 10/12 LV-1050",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "alksnāja iela 10/12",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Alknsāja iela 10/12",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "ALKSNĀJA IELA 10/12",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "iela 10/12",
+   "lat": 56.9461417,
+   "lng": 24.1114558,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Alksnāja iela 10/12, LV-1050 Rīga",
+   "base": 8
+  },
+  {
+   "address": "Hermaņa iela 9A, LV-1002 Rīga",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Hermaņa iela, 9A",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Hermaņa iela 9A LV-1002",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Rīga, Hermaņa iela 9A, lv",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Hermana iela 9A lv Riga",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Hermaņa iela LV-1002 Rīga",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "HERMAŅA IELA 9A",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Hremaņa iela 9A",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Deli hermaņa iela 9A",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "hermaņa iela 9a",
+   "lat": 56.934122200000004,
+   "lng": 24.082817979999998,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hermaņa iela 9A, LV-1002 Rīga",
+   "base": 9
+  },
+  {
+   "address": "Dzirciema iela 20, LV-1007 Rīga",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Dzirciema iela, 20",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Dzirciema iela 20, LV-1007",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "lv Dzirciema iela 20 Rīga",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Rīga, lv, Dzirciema iela 20",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "20 Dzirciema iela LV-1007 Rīga",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "dzirciema iela 20",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Dzirciema iela 20 john",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Dzirsiema iela 20",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Dzirciema iela20",
+   "lat": 56.95478523571428,
+   "lng": 24.053851814285714,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Dzirciema iela 20, LV-1007 Rīga",
+   "base": 10
+  },
+  {
+   "address": "Bikstu iela 6, LV-1058 Rīga",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "6 Bikstu iela",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Bikstu iela 6 LV-1058",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Bikstu iela 6, lv, Rīga",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Rīga, Bikstu iela 6, lv",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Bikstu iela - Rīga - 6 - LV-1058",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "BIKSTU IELA 6",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Bikstu iela 6 john",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Deli bikstu iela 6",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Bikstu iela6",
+   "lat": 56.908875912727275,
+   "lng": 24.079251878181818,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bikstu iela 6, LV-1058 Rīga",
+   "base": 11
+  },
+  {
+   "address": "Altonavas iela 24, LV-1004 Rīga",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Altonavas iela, 24",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Altonavas iela 24, LV-1004",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Altonavas iela 24 Rīga lv",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "lv, Altonavas iela 24, Rīga",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Rīga, 24, Altonavas iela, LV-1004",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Altonavas iela24",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Altonabas iela 24",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "iela 24",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "altonavas iela 24",
+   "lat": 56.9261946,
+   "lng": 24.08098431818182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Altonavas iela 24, LV-1004 Rīga",
+   "base": 12
+  },
+  {
+   "address": "Rudbāržu iela 9, LV-1002 Rīga",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rudbāržu iela 9",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rudbāržu iela 9, LV-1002",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "lv Rudbāržu iela 9 Rīga",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "rudbāržu iela 9, rīga, lv",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rudbāržu iela - Rīga - 9 - LV-1002",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rudbāržu iela9",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rudbāržu iela 9 (green door)",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Rdubāržu iela 9",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "RUDBĀRŽU IELA 9",
+   "lat": 56.929385999999994,
+   "lng": 24.055984477777777,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rudbāržu iela 9, LV-1002 Rīga",
+   "base": 13
+  },
+  {
+   "address": "Kurmales iela 51, LV-2167 Mārupe",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Kurmales iela, 51",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Kurmales iela 51, LV-2167",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Mārupe lv Kurmales iela 51",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Kurmales iela 51, Mārupe, lv",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "51 Mārupe Kurmales iela LV-2167",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Krumales iela 51",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Kurmales iela51",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "KURMALES IELA 51",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Kurmales iela 51 john",
+   "lat": 56.902403660000004,
+   "lng": 24.0640143,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kurmales iela 51, LV-2167 Mārupe",
+   "base": 14
+  },
+  {
+   "address": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "3 Pilskalnu iela",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Pilskalnu iela 3 LV-2167",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Pilskalnu iela 3, lv, Mārupe",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "lv Pilskalnu iela 3 Mārupe",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Mārupe 3 LV-2167",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Deli pilskalnu iela 3",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "iela 3",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Pislkalnu iela 3",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "PILSKALNU IELA 3",
+   "lat": 56.90454955714286,
+   "lng": 24.066439314285713,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pilskalnu iela 3, LV-2167 Mārupe",
+   "base": 15
+  },
+  {
+   "address": "Iecavas iela 6, LV-1083 Rīga",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Iecavas iela 6",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Iecavas iela 6 LV-1083",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "lv Iecavas iela 6 Rīga",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "lv Iecavas iela iela 6 Rīga",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Iecavas iela Rīga LV-1083",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "IECAVAS IELA 6",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Iecavas iela6",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Iecabas iela 6",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "iela 6",
+   "lat": 56.95596576666666,
+   "lng": 24.051145211111113,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Iecavas iela 6, LV-1083 Rīga",
+   "base": 16
+  },
+  {
+   "address": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Mazā Stacijas iela 1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Mazā Stacijas iela 1 k-1, LV-1083",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Rīga, lv, Mazā Stacijas iela 1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Mazā Stacijas iela 1 k-1 lv Rīga",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "1 k-1 Mazā Stacijas iela LV-1083 Rīga",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Mazā Stacijas iela1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Mazā Satcijas iela 1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "mazā stacijas iela 1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Deli mazā stacijas iela 1 k-1",
+   "lat": 56.9604319,
+   "lng": 24.0521461,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mazā Stacijas iela 1 k-1, LV-1083 Rīga",
+   "base": 17
+  },
+  {
+   "address": "Kaplavas iela 6A, LV-1058 Rīga",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Kaplavas iela 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Kaplavas iela 6A, LV-1058",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Rīga lv Kaplavas iela 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "lv, Kaplavas iela 6A, Riga",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Kaplavas iela, 6A, LV-1058",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Deli kaplavas iela 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "KAPLAVAS IELA 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Kaplabas iela 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "iela 6A",
+   "lat": 56.9078464,
+   "lng": 24.0792723,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kaplavas iela 6A, LV-1058 Rīga",
+   "base": 18
+  },
+  {
+   "address": "Liliju iela 112, LV-2167 Mārupe",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Liliju iela 112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Liliju iela 112 LV-2167",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Mārupe, lv, Liliju iela 112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Mārupe, Liliju iela 112, lv",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Mārupe - LV-2167 - Liliju iela",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Liliju iela112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Deli liliju iela 112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "liliju iela 112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Liilju iela 112",
+   "lat": 56.91664312,
+   "lng": 24.03728266,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Liliju iela 112, LV-2167 Mārupe",
+   "base": 19
+  },
+  {
+   "address": "Bajāru iela 57, LV-1006 Rīga",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Bajāru iela, 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Bajāru iela 57, LV-1006",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "lv Rīga Bajāru iela 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Riga lv lv Bajaru iela 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Rīga Bajāru iela 57 LV-1006",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Bajāru iela 57 apt 4b",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Deli bajāru iela 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "BAJĀRU IELA 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "iela 57",
+   "lat": 56.97112267999999,
+   "lng": 24.19153182,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bajāru iela 57, LV-1006 Rīga",
+   "base": 20
+  },
+  {
+   "address": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Annas Brigaderes iela 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Annas Brigaderes iela 7, LV-1082",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Rīga, lv, Annas Brigaderes iela 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Annas Brigaderes iela 7 Rīga lv",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "LV-1082, Rīga, 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Annas Brigaderes iela 7 (green door)",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "annas brigaderes iela 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Annas Brigadeers iela 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Mary annas brigaderes iela 7",
+   "lat": 56.9500527,
+   "lng": 24.1921135,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Annas Brigaderes iela 7, LV-1082 Rīga",
+   "base": 21
+  },
+  {
+   "address": "Cielavu iela 31, LV-1082 Rīga",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "31 Cielavu iela",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Cielavu iela 31 LV-1082",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "lv, Rīga, Cielavu iela 31",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Cielavu iela 31 lv Rīga",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Cielavu iela, 31, Rīga",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Cielavu iela 31 apt 4b",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Mary cielavu iela 31",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "cielavu iela 31",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "iela 31",
+   "lat": 56.9435844,
+   "lng": 24.1928194,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cielavu iela 31, LV-1082 Rīga",
+   "base": 22
+  },
+  {
+   "address": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Vecā Jūrmalas gatve 1B",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Vecā Jūrmalas gatve 1B LV-1083",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Vecā Jūrmalas gatve 1B Rīga lv",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Rīga, lv, Vecā Jūrmalas gatve 1B",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Rīga - LV-1083 - Vecā Jūrmalas gatve",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Vecā Jūrmalas gatve1B",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "vecā jūrmalas gatve 1b",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Vecā Jūrmaals gatve 1B",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "VECĀ JŪRMALAS GATVE 1B",
+   "lat": 56.95089693333333,
+   "lng": 24.049974966666667,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vecā Jūrmalas gatve 1B, LV-1083 Rīga",
+   "base": 23
+  },
+  {
+   "address": "Rītausmas iela 20B, LV-1058 Rīga",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "Rītausmas iela, 20B",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "Rītausmas iela 20B LV-1058",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "lv Rītausmas iela 20B Rīga",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "lv, Rīga, Rītausmas Rītausmas iela 20B",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "20B - LV-1058 - Rīga",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "RĪTAUSMAS IELA 20B",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "rītausmas iela 20b",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "Mary rītausmas iela 20B",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "Rītausmas iela 20B john",
+   "lat": 56.8970879,
+   "lng": 24.0990311,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rītausmas iela 20B, LV-1058 Rīga",
+   "base": 24
+  },
+  {
+   "address": "Terēzes iela 2A, LV-1012 Rīga",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "2A Terēzes iela",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "Terēzes iela 2A LV-1012",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "lv Rīga Terēzes iela 2A",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "lv Terēzes iela 2A Rīga",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "LV-1012 - Terēzes iela - 2A - Rīga",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "Terēzes iela2A",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "Mary terēzes iela 2A",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "Terēzes iela 2A back entrance",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "terēzes iela 2a",
+   "lat": 56.962362,
+   "lng": 24.14911608,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Terēzes iela 2A, LV-1012 Rīga",
+   "base": 25
+  },
+  {
+   "address": "Māras aleja 3, LV-1002 Rīga",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "3 Māras aleja",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Māras aleja 3 LV-1002",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Māras aleja 3, lv, Rīga",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "māras aleja 3, lv, rīga",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Māras aleja, 3, LV-1002",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Māras aleja 3 apt 4b",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Mary māras aleja 3",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Māras aleja3",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "aleja 3",
+   "lat": 56.93257297142857,
+   "lng": 24.079683742857146,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Māras aleja 3, LV-1002 Rīga",
+   "base": 26
+  },
+  {
+   "address": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Uzvaras bulvāris 10",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Uzvaras bulvāris 10, LV-1048",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Rīga, Uzvaras bulvāris 10, lv",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Rīga lv Uzvaras bulvāris 10",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "LV-1048, Rīga, Uzvaras bulvāris",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Uzvaras bulbāris 10",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "UZVARAS BULVĀRIS 10",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Uzvaras bul 10",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Uzvaras bulvāris 10 (green door)",
+   "lat": 56.9390754,
+   "lng": 24.0910719,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Uzvaras bulvāris 10, LV-1048 Rīga",
+   "base": 27
+  },
+  {
+   "address": "Zemaišu iela 11, LV-1002 Rīga",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "11 Zemaišu iela",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Zemaišu iela 11, LV-1002",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Rīga, Zemaišu iela 11, lv",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Rīga lv Zemaišu iela 11",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Zemaišu iela - 11 - Rīga - LV-1002",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "ZEMAIŠU IELA 11",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Zemaišu iela 11 apt 4b",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Deli zemaišu iela 11",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "iela 11",
+   "lat": 56.92894841578947,
+   "lng": 24.07203323157895,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Zemaišu iela 11, LV-1002 Rīga",
+   "base": 28
+  },
+  {
+   "address": "Šauļu iela 2D, LV-1055 Rīga",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "2D Šauļu iela",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "Šauļu iela 2D LV-1055",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "lv Rīga Šauļu iela 2D",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "šauļu iela 2d lv rīga",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "2D, Rīga, Šauļu iela",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "ŠAUĻU IELA 2D",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "iela 2D",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "Šauļļu iela 2D",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "šauļu iela 2d",
+   "lat": 56.966208699999996,
+   "lng": 24.0596359,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Šauļu iela 2D, LV-1055 Rīga",
+   "base": 29
+  },
+  {
+   "address": "Vecinku iela 1, LV-2167 Mārupe",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "Vecinku iela 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "Vecinku iela 1 LV-2167",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "lv, Vecinku iela 1, Mārupe",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "lv Marupe Vecinku iela 1 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "LV-2167 - 1 - Mārupe - Vecinku iela",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "Mary vecinku iela 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "iela 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "VECINKU IELA 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "Vesinku iela 1",
+   "lat": 56.92372777777777,
+   "lng": 24.018894644444444,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vecinku iela 1, LV-2167 Mārupe",
+   "base": 30
+  },
+  {
+   "address": "Vaiņodes iela 4, LV-1004 Rīga",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Vaiņodes iela, 4",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Vaiņodes iela 4, LV-1004",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Vaiņodes iela 4 Rīga lv",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Riga, lv, Vainodes iela 4",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Vaiņodes iela LV-1004 4 Rīga",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Viaņodes iela 4",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "VAIŅODES IELA 4",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "iela 4",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Vaiņodes iela 4 john",
+   "lat": 56.91840968,
+   "lng": 24.0925223,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vaiņodes iela 4, LV-1004 Rīga",
+   "base": 31
+  },
+  {
+   "address": "Sapņu iela 9, LV-1004 Rīga",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "9 Sapņu iela",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Sapņu iela 9 LV-1004",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "lv Rīga Sapņu iela 9",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Sapnu iela 9, lv, Riga",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Sapņu iela 9 Rīga LV-1004",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Deli sapņu iela 9",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "SAPŅU IELA 9",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Sapņu iela9",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Sapņu iela 9 john",
+   "lat": 56.90235233999999,
+   "lng": 24.127301120000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sapņu iela 9, LV-1004 Rīga",
+   "base": 32
+  },
+  {
+   "address": "Līves iela 5, LV-1002 Rīga",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Līves iela 5",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Līves iela 5, LV-1002",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Rīga lv Līves iela 5",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "lv Līves iela 5 Rīga",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "5, Rīga, Līves iela, LV-1002",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "LĪVES IELA 5",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "iela 5",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Mary līves iela 5",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Līves iela 5 apt 4b",
+   "lat": 56.9222818,
+   "lng": 24.057856792307692,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Līves iela 5, LV-1002 Rīga",
+   "base": 33
+  },
+  {
+   "address": "Sūnu iela 1, LV-1004 Rīga",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Sūnu iela, 1",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Sūnu iela 1 LV-1004",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Rīga Sūnu iela 1 lv",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Riga lv Sunu iela 1",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "1 LV-1004 Rīga Sūnu iela",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "SŪNU IELA 1",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Sūnu iela1",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Sūnu iela 1 (green door)",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Deli sūnu iela 1",
+   "lat": 56.92096348,
+   "lng": 24.09291726,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sūnu iela 1, LV-1004 Rīga",
+   "base": 34
+  },
+  {
+   "address": "Rātslaukums 5, LV-1050 Rīga",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rātslaukums, 5",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rātslaukums 5 LV-1050",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rīga, Rātslaukums 5, lv",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rātslaukums 5 Rīga Rīga lv",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rātslaukums Rīga LV-1050 5",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Rātslaukums 5 john",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "RĀTSLAUKUMS 5",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "rātslaukums 5",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Mary rātslaukums 5",
+   "lat": 56.9471768,
+   "lng": 24.1073634,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rātslaukums 5, LV-1050 Rīga",
+   "base": 35
+  },
+  {
+   "address": "Anglikāņu iela 5, LV-1050 Rīga",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "5 Anglikāņu iela",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "Anglikāņu iela 5 LV-1050",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "lv Rīga Anglikāņu iela 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "Rīga, lv, Anglikāņu iela 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "Anglikāņu iela, Rīga, 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "iela 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "anglikāņu iela 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "ANGLIKĀŅU IELA 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "Mary anglikāņu iela 5",
+   "lat": 56.9499683,
+   "lng": 24.10174138,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Anglikāņu iela 5, LV-1050 Rīga",
+   "base": 36
+  },
+  {
+   "address": "Aizpriežu iela 2, LV-1006 Rīga",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Aizpriežu iela, 2",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Aizpriežu iela 2, LV-1006",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "lv, Aizpriežu iela 2, Rīga",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "lv, Aizpriežu iela 2, Rīga",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "2 - LV-1006 - Aizpriežu iela - Rīga",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Aizpriežu iela 2 apt 4b",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "aizpriežu iela 2",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Mary aizpriežu iela 2",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Aizpriežu iela2",
+   "lat": 56.9744728,
+   "lng": 24.192598920000002,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Aizpriežu iela 2, LV-1006 Rīga",
+   "base": 37
+  },
+  {
+   "address": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "8/10 Minsterejas iela",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Minsterejas iela 8/10, LV-1050",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "lv Rīga Minsterejas iela 8/10",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Minsterejas iela 8/10, lv, Rīga",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Minsterejas iela, 8/10, LV-1050, Rīga",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "minsterejas iela 8/10",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Mary minsterejas iela 8/10",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Minstreejas iela 8/10",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "MINSTEREJAS IELA 8/10",
+   "lat": 56.94507734444445,
+   "lng": 24.109189207407407,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Minsterejas iela 8/10, LV-1050 Rīga",
+   "base": 38
+  },
+  {
+   "address": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Mazā Skolas iela 2",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Mazā Skolas iela 2, LV-1050",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Rīga Mazā Skolas iela 2 lv",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "lv, Mazā Skolas iela 2, Rīga",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "LV-1050, 2, Mazā Skolas iela, Rīga",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Mary mazā skolas iela 2",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "MAZĀ SKOLAS IELA 2",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Mazā Skolas iela 2 (green door)",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  },
+  {
+   "address": "Mazā Skoals iela 2",
+   "lat": 56.948436199999996,
+   "lng": 24.1047754625,
+   "country": "LV",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mazā Skolas iela 2, LV-1050 Rīga",
+   "base": 39
+  }
+ ]
+}

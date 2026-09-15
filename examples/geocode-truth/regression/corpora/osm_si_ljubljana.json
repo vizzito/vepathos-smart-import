@@ -1,0 +1,3978 @@
+{
+ "source": "osm-addr",
+ "country": "SI",
+ "city": "Ljubljana",
+ "country_label": "Slovenia",
+ "depot": {
+  "lat": 46.0569,
+  "lon": 14.5058,
+  "city": "Ljubljana",
+  "country": "Slovenia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 396,
+ "note": "Nodos addr:* del indice n46.20_s46.00_e14.60_w14.40-slovenia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "28 Ulica Konrada Babnika",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Ulica Konrada Babnika 28, 1210",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Ljubljana - Šentvid, si, Ulica Konrada Babnika 28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Ljubljana - Šentvid, si, Ulica Konrada Babnika 28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "28 Ulica Konrada Babnika Ljubljana - Šentvid",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Knorada Babnika 28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "konrada babnika 28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Konrada Babnika28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Mary konrada babnika 28",
+   "lat": 46.09113022857143,
+   "lng": 14.469401657142857,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulica Konrada Babnika 28, 1210 Ljubljana - Šentvid",
+   "base": 0
+  },
+  {
+   "address": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Torkarjeva ulica, 11",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Torkarjeva ulica 11, 1000",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Ljubljana si Torkarjeva ulica 11",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Torkarjeva ulica 11, Ljubljana, si",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "11, 1000, Torkarjeva ulica, Ljubljana",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "ulica 11",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Torkarjeva ulica 11 back entrance",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "torkarjeva ulica 11",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "TORKARJEVA ULICA 11",
+   "lat": 46.06581398095238,
+   "lng": 14.5326871,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Torkarjeva ulica 11, 1000 Ljubljana",
+   "base": 1
+  },
+  {
+   "address": "Pot čez gmajno 72, 1000 Ljubljana",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "72 Pot čez gmajno",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Pot čez gmajno 72 1000",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "si Ljubljana Pot čez gmajno 72",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Pot čez gmajno 72, Ljubljana, si",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Pot čez gmajno 72 Ljubljana",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "POT ČEZ GMAJNO 72",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "gmajno 72",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Pot čez gmajno72",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Mary pot čez gmajno 72",
+   "lat": 46.04264234,
+   "lng": 14.4344794,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pot čez gmajno 72, 1000 Ljubljana",
+   "base": 2
+  },
+  {
+   "address": "Rožanska ulica 8, 1000 Ljubljana",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Rožanska ulica, 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Rožanska ulica 8 1000",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Ljubljana Rožanska ulica 8 si",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "rožanska ulica 8 ljubljana si",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Ljubljana - 1000 - 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "ROŽANSKA ULICA 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Rožanksa ulica 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "ulica 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "rožanska ulica 8",
+   "lat": 46.073953180000004,
+   "lng": 14.5088505,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rožanska ulica 8, 1000 Ljubljana",
+   "base": 3
+  },
+  {
+   "address": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Omejčeva ulica, 9",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Omejčeva ulica 9 1210",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "si Omejčeva ulica 9 Ljubljana - Šentvid",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Omejčeva ulica 9, Ljubljana - Šentvid, si",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Ljubljana - Šentvid - 9 - Omejčeva ulica",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Omejčeva ulica9",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "ulica 9",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Omejčeva ulica 9 (green door)",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Oemjčeva ulica 9",
+   "lat": 46.09122953333333,
+   "lng": 14.470186566666667,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Omejčeva ulica 9, 1210 Ljubljana - Šentvid",
+   "base": 4
+  },
+  {
+   "address": "Volaričeva ulica 10, 1000 Ljubljana",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "10 Volaričeva ulica",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "Volaričeva ulica 10, 1000",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "si Volaričeva ulica 10 Ljubljana",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "Volaričeva ulica 10 Ljubljana si",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "10, Ljubljana, 1000, Volaričeva ulica",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "volaričeva ulica 10",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "Volaričeva ulica10",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "Deli volaričeva ulica 10",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "ulica 10",
+   "lat": 46.0432496,
+   "lng": 14.490014,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Volaričeva ulica 10, 1000 Ljubljana",
+   "base": 5
+  },
+  {
+   "address": "Pribinova ulica 2, 1000 Ljubljana",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Pribinova ulica 2",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Pribinova ulica 2 1000",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Pribinova ulica 2, si, Ljubljana",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "pribinova ulica 2, ljubljana, si",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "1000 - Pribinova ulica - Ljubljana - 2",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "pribinova ulica 2",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "ulica 2",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Pribinova ulica2",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Pribinova ulica 2 back entrance",
+   "lat": 46.07157671666667,
+   "lng": 14.506685899999999,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pribinova ulica 2, 1000 Ljubljana",
+   "base": 6
+  },
+  {
+   "address": "Makucova ulica 21, Ljubljana",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "Makucova ulica 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "si, Ljubljana, Makucova ulica 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "ljubljana, si, makucova ulica 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "Ljubljana, 21, Makucova ulica",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "ulica 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "Mary makucova ulica 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "MAKUCOVA ULICA 21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "Makucova ulica21",
+   "lat": 46.02921154,
+   "lng": 14.50490882,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Makucova ulica 21, Ljubljana",
+   "base": 7
+  },
+  {
+   "address": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Simonitijeva ulica 2",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Simonitijeva ulica 2, 1000",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Simonitijeva ulica 2, Ljubljana, si",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "si, Simonitijeva ulica 2, Ljubljana",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Ljubljana, 1000, Simonitijeva ulica, 2",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Simonitijeva ulica 2 (green door)",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "simonitijeva ulica 2",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "ulica 2",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Mary simonitijeva ulica 2",
+   "lat": 46.03844141538462,
+   "lng": 14.443327507692308,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Simonitijeva ulica 2, 1000 Ljubljana",
+   "base": 8
+  },
+  {
+   "address": "Trebinjska ulica 1, 1000 Ljubljana",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Trebinjska ulica 1",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Trebinjska ulica 1, 1000",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Trebinjska ulica 1 Ljubljana si",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "si, Trebinjska ulica 1, Ljubljana",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "1000 - Trebinjska ulica - 1 - Ljubljana",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Trevinjska ulica 1",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Trebinjska ulica 1 apt 4b",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "TREBINJSKA ULICA 1",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "ulica 1",
+   "lat": 46.07825338823529,
+   "lng": 14.518613105882352,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Trebinjska ulica 1, 1000 Ljubljana",
+   "base": 9
+  },
+  {
+   "address": "Cesta na Brdo 55, 1000 Ljubljana",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "Cesta na Brdo 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "Cesta na Brdo 55, 1000",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "si, Ljubljana, Cesta na Brdo 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "si Cesta na Brdo 55 Ljubljana",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "1000 55 Cesta na Brdo Ljubljana",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "cesta na brdo 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "Cessta na Brdo 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "CESTA NA BRDO 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "brdo 55",
+   "lat": 46.0447916,
+   "lng": 14.4694091,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cesta na Brdo 55, 1000 Ljubljana",
+   "base": 10
+  },
+  {
+   "address": "Beblerjev trg 8, 1000 Ljubljana",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Beblerjev trg 8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Beblerjev trg 8, 1000",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "si, Beblerjev trg 8, Ljubljana",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "si Beblerjev trg 8 Ljubljana",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Ljubljana - Beblerjev trg - 8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "beblerjev trg 8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Deli beblerjev trg 8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Beblerjev trg8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Bebelrjev trg 8",
+   "lat": 46.07235490357142,
+   "lng": 14.547056325,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Beblerjev trg 8, 1000 Ljubljana",
+   "base": 11
+  },
+  {
+   "address": "Tesarska ulica 18, 1000 Ljubljana",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesarska ulica 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesarska ulica 18, 1000",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "si, Ljubljana, Tesarska ulica 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesarska ulica 18 Ljubljana si",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesarska ulica, 1000, 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "ulica 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Deli tesarska ulica 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesraska ulica 18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Tesarska ulica18",
+   "lat": 46.044123660000004,
+   "lng": 14.510483540000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tesarska ulica 18, 1000 Ljubljana",
+   "base": 12
+  },
+  {
+   "address": "Gmajnice 10, 1000 Ljubljana",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "10 Gmajnice",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "Gmajnice 10 1000",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "si Gmajnice 10 Ljubljana",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "si, Gmajnice 10, Ljubljana",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "Ljubljana, Gmajnice, 1000, 10",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "gmajnice 10",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "GMAJNICE 10",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "Gmajncie 10",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "Deli gmajnice 10",
+   "lat": 46.03185254,
+   "lng": 14.448343740000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gmajnice 10, 1000 Ljubljana",
+   "base": 13
+  },
+  {
+   "address": "Medvedova cesta 13, 1000 Ljubljana",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "13 Medvedova cesta",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Medvedova cesta 13 1000",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Medvedova cesta 13 Ljubljana si",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "ljubljana, si, medvedova cesta cesta 13",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Medvedova cesta, 13, 1000",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Medvedova cesta13",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "cesta 13",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Medvedova cesta 13 apt 4b",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "medvedova cesta 13",
+   "lat": 46.061780014285716,
+   "lng": 14.49939612857143,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Medvedova cesta 13, 1000 Ljubljana",
+   "base": 14
+  },
+  {
+   "address": "Metelkova ulica 6, 1000 Ljubljana",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "6 Metelkova ulica",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "Metelkova ulica 6 1000",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "Metelkova ulica 6 si Ljubljana",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "si, metelkova ulica 6, ljubljana",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "1000 Metelkova ulica 6 Ljubljana",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "metelkova ulica 6",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "Metelkoba ulica 6",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "Metelkova ulica6",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "ulica 6",
+   "lat": 46.05621976,
+   "lng": 14.51647036,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Metelkova ulica 6, 1000 Ljubljana",
+   "base": 15
+  },
+  {
+   "address": "Pot na Fužine 4b, 1000 Ljubljana",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Pot na Fužine, 4b",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Pot na Fužine 4b, 1000",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "si, Pot na Fužine 4b, Ljubljana",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "si, Pot na Fužine 4b, Ljubljana",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "1000 4b Pot na Fužine",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Pot na Fužine4b",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "POT NA FUŽINE 4B",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Pot na Fžuine 4b",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Mary pot na fužine 4b",
+   "lat": 46.0555803,
+   "lng": 14.5501261,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pot na Fužine 4b, 1000 Ljubljana",
+   "base": 16
+  },
+  {
+   "address": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Ulica Lovre Klemenčiča 5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Ulica Lovre Klemenčiča 5, 1127",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Ljubljana, si, Ulica Lovre Klemenčiča 5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "si Ljubljana Ulica Lovre Klemencica 5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "1127 - Ulica Lovre Klemenčiča - Ljubljana",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "LOVRE KLEMENČIČA 5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "klemenčiča 5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Lovre Klemenčiča 5 (green door)",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Lovre Klemenčiča5",
+   "lat": 46.03382402,
+   "lng": 14.50296452,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulica Lovre Klemenčiča 5, 1127 Ljubljana",
+   "base": 17
+  },
+  {
+   "address": "Hacetova ulica 1, 1000 Ljubljana",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "1 Hacetova ulica",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "Hacetova ulica 1 1000",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "si Hacetova ulica 1 Ljubljana",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "hacetova ulica 1 si ljubljana",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "1000, Hacetova ulica, 1",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "Mary hacetova ulica 1",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "Hacetova ulica1",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "hacetova ulica 1",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "ulica 1",
+   "lat": 46.03330052222222,
+   "lng": 14.450223655555554,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Hacetova ulica 1, 1000 Ljubljana",
+   "base": 18
+  },
+  {
+   "address": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "Polje, cesta XVIII 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "Polje, cesta XVIII 22, 1260",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "si, Ljubljana - Polje, Polje, cesta XVIII 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "si Polje, cesta XVIII 22 Ljubljana - Polje",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "Polje, cesta XVIII Ljubljana - Polje 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "CESTA XVIII POLJE 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "polje 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "cesta XVIII Polje22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "cesta xviii polje 22",
+   "lat": 46.055139,
+   "lng": 14.5784866,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Polje, cesta XVIII 22, 1260 Ljubljana - Polje",
+   "base": 19
+  },
+  {
+   "address": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Trg Osvobodilne fronte, 13",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Trg Osvobodilne fronte 13, 1000",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "si, Trg Osvobodilne fronte 13, Ljubljana",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "trg osvobodilne fronte 13, si, ljubljana",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Ljubljana, 1000, Trg Osvobodilne fronte",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "trg osvobodilne fronte 13",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Trg Osvobodilne fronte 13 john",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "fronte 13",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Trg Osvobodilne fronte13",
+   "lat": 46.0574176,
+   "lng": 14.5095078,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trg Osvobodilne fronte 13, 1000 Ljubljana",
+   "base": 20
+  },
+  {
+   "address": "Linhartova cesta 49, 1000 Ljubljana",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Linhartova cesta 49",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Linhartova cesta 49 1000",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "si, Linhartova cesta 49, Ljubljana",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "si Linhartova cesta 49 Ljubljana",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Ljubljana 1000 Linhartova cesta",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Linhartoba cesta 49",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "cesta 49",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Linhartova cesta 49 (green door)",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "LINHARTOVA CESTA 49",
+   "lat": 46.066165739999995,
+   "lng": 14.52228088,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Linhartova cesta 49, 1000 Ljubljana",
+   "base": 21
+  },
+  {
+   "address": "Stantetova ulica 9, 1000 Ljubljana",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Stantetova ulica, 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Stantetova ulica 9 1000",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "si, Ljubljana, Stantetova ulica 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "si, Ljubljana, Stantetova ulica 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Stantetova ulica Ljubljana 1000 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "ulica 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Stantetova ulica 9 apt 4b",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Stantetoba ulica 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Mary stantetova ulica 9",
+   "lat": 46.04674748333334,
+   "lng": 14.452558783333332,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Stantetova ulica 9, 1000 Ljubljana",
+   "base": 22
+  },
+  {
+   "address": "Kerševanova ulica 20, 1000 Ljubljana",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Kerševanova ulica, 20",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Kerševanova ulica 20, 1000",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Kerševanova ulica 20 Ljubljana si",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "si Kersevanova ulica 20 20 Ljubljana",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Ljubljana, 1000, 20, Kerševanova ulica",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Keršebanova ulica 20",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "kerševanova ulica 20",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "KERŠEVANOVA ULICA 20",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Kerševanova ulica 20 john",
+   "lat": 46.09390014,
+   "lng": 14.505487980000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kerševanova ulica 20, 1000 Ljubljana",
+   "base": 23
+  },
+  {
+   "address": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Štularjeva ulica, 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Štularjeva ulica 10, 1210",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "si, Štularjeva ulica 10, Ljubljana - Šentvid",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "si Ljubljana - Sentvid Stularjeva ulica 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Ljubljana - Šentvid, 1210, Štularjeva ulica, 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Deli štularjeva ulica 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "ulica 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Štulajreva ulica 10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Štularjeva ulica10",
+   "lat": 46.095636819999996,
+   "lng": 14.469638660000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Štularjeva ulica 10, 1210 Ljubljana - Šentvid",
+   "base": 24
+  },
+  {
+   "address": "Friškovec 1, 1000 Ljubljana",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friškovec, 1",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friškovec 1 1000",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friškovec 1, Ljubljana, si",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friskovec 1 si Ljubljana",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Ljubljana 1000 Friškovec",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Deli friškovec 1",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "friškovec 1",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friškovec1",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Friškobec 1",
+   "lat": 46.05689842857142,
+   "lng": 14.5177461,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Friškovec 1, 1000 Ljubljana",
+   "base": 25
+  },
+  {
+   "address": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "15 Pri mostiščarjih",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "Pri mostiščarjih 15, 1000",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "si, Pri mostiščarjih 15, Ljubljana",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "si Ljubljana Pri mostiščarjih 15",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "1000, 15, Ljubljana, Pri mostiščarjih",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "Pri mostiščarjih 15 apt 4b",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "mostiščarjih 15",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "Pri mostiščarjih15",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "Mary pri mostiščarjih 15",
+   "lat": 46.02846428,
+   "lng": 14.529695720000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pri mostiščarjih 15, 1000 Ljubljana",
+   "base": 26
+  },
+  {
+   "address": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Ločnikarjeva ulica, 12",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Ločnikarjeva ulica 12, 1000",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "si, Ljubljana, Ločnikarjeva ulica 12",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Ločnikarjeva ulica 12, si, Ljubljana",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "12 Ločnikarjeva ulica 1000",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Deli ločnikarjeva ulica 12",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "ulica 12",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Ločnikarjeva ulica 12 back entrance",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Ločnikarjeva ulica12",
+   "lat": 46.042101284615384,
+   "lng": 14.48182236153846,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ločnikarjeva ulica 12, 1000 Ljubljana",
+   "base": 27
+  },
+  {
+   "address": "Belokranjska ulica 6, 1000 Ljubljana",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "6 Belokranjska ulica",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "Belokranjska ulica 6, 1000",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "si, Ljubljana, Belokranjska ulica 6",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "si Ljubljana Belokranjska ulica 6 6",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "Belokranjska ulica - 6 - Ljubljana - 1000",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "BELOKRANJSKA ULICA 6",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "Belokranjska ulica 6 apt 4b",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "Deli belokranjska ulica 6",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "ulica 6",
+   "lat": 46.0637954,
+   "lng": 14.5237535625,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Belokranjska ulica 6, 1000 Ljubljana",
+   "base": 28
+  },
+  {
+   "address": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "87 Prušnikova cesta",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "Prušnikova cesta 87 1210",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "si Ljubljana - Šentvid Prušnikova cesta 87",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "prušnikova cesta 87 si ljubljana - šentvid",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "87, Ljubljana - Šentvid, Prušnikova cesta",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "cesta 87",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "prušnikova cesta 87",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "Prušnikova cesta 87 back entrance",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "Prušnikoba cesta 87",
+   "lat": 46.096554909999995,
+   "lng": 14.466418580000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prušnikova cesta 87, 1210 Ljubljana - Šentvid",
+   "base": 29
+  },
+  {
+   "address": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Malnarjeva ulica, 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Malnarjeva ulica 15 1117",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Malnarjeva ulica 15, Ljubljana, si",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "si Ljubljana Malnarjeva ulica 15 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "1117 - 15 - Ljubljana - Malnarjeva ulica",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Mary malnarjeva ulica 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "ulica 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "MALNARJEVA ULICA 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Malnarjeba ulica 15",
+   "lat": 46.07667868,
+   "lng": 14.46875562,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Malnarjeva ulica 15, 1117 Ljubljana",
+   "base": 30
+  },
+  {
+   "address": "Proletarska cesta 12, 1000 Ljubljana",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Proletarska cesta, 12",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Proletarska cesta 12, 1000",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Proletarska cesta 12 Ljubljana si",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Ljubljana, si, Proletarska cesta 12",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Proletarska cesta 1000 12 Ljubljana",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Porletarska cesta 12",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "PROLETARSKA CESTA 12",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "cesta 12",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Proletarska cesta 12 john",
+   "lat": 46.05702876,
+   "lng": 14.53345975,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Proletarska cesta 12, 1000 Ljubljana",
+   "base": 31
+  },
+  {
+   "address": "Žigonova ulica 31, Ljubljana",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "31 Žigonova ulica",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "si Ljubljana Žigonova ulica 31",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "Zigonova ulica 31, si, Ljubljana",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "Žigonova ulica - 31",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "ulica 31",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "ŽIGONOVA ULICA 31",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "Žigonova ulica31",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "Žigonova ulica 31 apt 4b",
+   "lat": 46.0699396,
+   "lng": 14.469865066666665,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Žigonova ulica 31, Ljubljana",
+   "base": 32
+  },
+  {
+   "address": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "3 Zakotnikova ulica",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Zakotnikova ulica 3, 1000",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Zakotnikova ulica 3 Ljubljana si",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "si Ljubljana Zakotnikova ulica 3",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Ljubljana 3 1000 Zakotnikova ulica",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Mary zakotnikova ulica 3",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Zakotnikova ulica 3 (green door)",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "zakotnikova ulica 3",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Zakotnikova ulica3",
+   "lat": 46.05770584,
+   "lng": 14.539454372,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Zakotnikova ulica 3, 1000 Ljubljana",
+   "base": 33
+  },
+  {
+   "address": "Gornji Rudnik II 1, Ljubljana",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Gornji Rudnik II, 1",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Gornji Rudnik II 1 si Ljubljana",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Ljubljana, Gornji Rudnik II 1, si",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Ljubljana, Gornji Rudnik II, 1",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Gorjni Rudnik II 1",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Gornji Rudnik II 1 back entrance",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "GORNJI RUDNIK II 1",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Gornji Rudnik II1",
+   "lat": 46.02926626,
+   "lng": 14.536300840000001,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gornji Rudnik II 1, Ljubljana",
+   "base": 34
+  },
+  {
+   "address": "Privoz 3, 1000 Ljubljana",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Privoz 3",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Privoz 3 1000",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "si, Privoz 3, Ljubljana",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Ljubljana si Privoz 3",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "3 1000 Ljubljana Privoz",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "PRIVOZ 3",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Privoz3",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "privoz 3",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Privoz 3 apt 4b",
+   "lat": 46.04236151111112,
+   "lng": 14.512739244444443,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Privoz 3, 1000 Ljubljana",
+   "base": 35
+  },
+  {
+   "address": "Bizjanova ulica 2, Ljubljana",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "2 Bizjanova ulica",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Ljubljana, Bizjanova ulica 2, si",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Ljubljana, Bizjanova ulica 2, si",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Bizjanova ulica - 2",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "ulica 2",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "bizjanova ulica 2",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Bizjanoba ulica 2",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Bizjanova ulica2",
+   "lat": 46.06750807142857,
+   "lng": 14.480261271428573,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bizjanova ulica 2, Ljubljana",
+   "base": 36
+  },
+  {
+   "address": "Plečnikov trg 1, 1000 Ljubljana",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Plečnikov trg 1",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Plečnikov trg 1 1000",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "si, Ljubljana, Plečnikov trg 1",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Plečnikov trg 1 Ljubljana si",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Ljubljana, Plečnikov trg, 1000",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "plečnikov trg 1",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "PLEČNIKOV TRG 1",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Plečnikov trg 1 john",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Deli plečnikov trg 1",
+   "lat": 46.05023254166667,
+   "lng": 14.502466033333334,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Plečnikov trg 1, 1000 Ljubljana",
+   "base": 37
+  },
+  {
+   "address": "Gradnikova ulica 3, 1000 Ljubljana",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Gradnikova ulica, 3",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Gradnikova ulica 3 1000",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Gradnikova ulica 3 Ljubljana si",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Ljubljana Gradnikova ulica 3 si",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "3 - 1000 - Gradnikova ulica",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "gradnikova ulica 3",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "GRADNIKOVA ULICA 3",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Gradnikova ulica3",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Deli gradnikova ulica 3",
+   "lat": 46.07520858,
+   "lng": 14.448684320000002,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gradnikova ulica 3, 1000 Ljubljana",
+   "base": 38
+  },
+  {
+   "address": "Kolinska ulica 3, 1000 Ljubljana",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "3 Kolinska ulica",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "Kolinska ulica 3, 1000",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "Kolinska ulica 3, Ljubljana, si",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "kolinska ulica 3 si ljubljana",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "3 Kolinska ulica Ljubljana",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "Mary kolinska ulica 3",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "Kolinksa ulica 3",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "Kolinska ulica 3 back entrance",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  },
+  {
+   "address": "KOLINSKA ULICA 3",
+   "lat": 46.0598939625,
+   "lng": 14.5241908125,
+   "country": "SI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kolinska ulica 3, 1000 Ljubljana",
+   "base": 39
+  }
+ ]
+}

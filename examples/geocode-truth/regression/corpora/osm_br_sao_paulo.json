@@ -1,0 +1,3888 @@
+{
+ "source": "osm-addr",
+ "country": "BR",
+ "city": "São Paulo",
+ "country_label": "Brasil",
+ "depot": {
+  "lat": -23.5505,
+  "lon": -46.6333,
+  "city": "São Paulo",
+  "country": "Brasil"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 387,
+ "note": "Nodos addr:* del indice n-23.40_s-23.70_e-46.50_w-46.70-sudeste.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "13 Rua Euclides Pacheco",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "Rua Euclides Pacheco 13, 03321-000",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "São Paulo, brasil, Rua Euclides Pacheco 13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "São Paulo, brasil, Rua Euclides Pacheco 13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "13 Rua Euclides Pacheco São Paulo",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "Eculides Pacheco 13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "euclides pacheco 13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "Euclides Pacheco13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "Mercado euclides pacheco 13",
+   "lat": -23.5494664,
+   "lng": -46.5746539,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Euclides Pacheco 13, 03321-000 São Paulo",
+   "base": 0
+  },
+  {
+   "address": "Rua Urubupunga 36, São Paulo",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Rua Urubupunga, 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "São Paulo, brasil, Rua Urubupunga 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Rua Urubupunga 36, Sao Paulo, brasil",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Rua Urubupunga - São Paulo - 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "URUBUPUNGA 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Joao urubupunga 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Urubupunga 36 casa 2",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "urubupunga 36",
+   "lat": -23.5758059,
+   "lng": -46.6307204,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Urubupunga 36, São Paulo",
+   "base": 1
+  },
+  {
+   "address": "Rua Dona Carolina 84, São Paulo",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "84 Rua Dona Carolina",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "São Paulo brasil Rua Dona Carolina 84",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "Rua Dona Carolina 84, São Paulo, brasil",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "84 São Paulo Rua Dona Carolina",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "Dona Carolina 84 (portao azul)",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "Dona Carolina84",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "Dona Car 84",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "DONA CAROLINA 84",
+   "lat": -23.5839214,
+   "lng": -46.6312623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Dona Carolina 84, São Paulo",
+   "base": 2
+  },
+  {
+   "address": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "77 Rua Toledo Barbosa",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "Rua Toledo Barbosa 77, 03061-000",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "São Paulo Rua Toledo Barbosa 77 brasil",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "brasil, São Paulo, Rua Toledo Barbosa 77",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "São Paulo, 77, 03061-000, Rua Toledo Barbosa",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "Toledo Babrosa 77",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "Toledo Barbosa77",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "toledo barbosa 77",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "TOLEDO BARBOSA 77",
+   "lat": -23.5422224,
+   "lng": -46.5902578,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Toledo Barbosa 77, 03061-000 São Paulo",
+   "base": 3
+  },
+  {
+   "address": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "396 Praça Ragueb Chohfi",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "Praça Ragueb Chohfi 396, 01022-040",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "São Paulo, Praça Ragueb Chohfi 396, brasil",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "brasil, Praça Ragueb Chohfi 396, São Paulo",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "01022-040 Praça Ragueb Chohfi 396",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "chohfi 396",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "Maria praça ragueb chohfi 396",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "praça ragueb chohfi 396",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "Praça Ragueb Chohfi396",
+   "lat": -23.5447914,
+   "lng": -46.6318669,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Praça Ragueb Chohfi 396, 01022-040 São Paulo",
+   "base": 4
+  },
+  {
+   "address": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "São Paulo, brasil, Rua Martinho Prado, Bela Vista, São Paulo - SP 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "São Paulo, brasil, Rua Martinho Prado, Bela Vista, São Paulo - SP 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "165 São Paulo",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "Joao são paulo - sp bela vista rua martinho prado 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "SÃO PAULO - SP BELA VISTA RUA MARTINHO PRADO 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "São Paulo - SP Bela Vista Rua Martinho Prado 165 (portao azul)",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "prado 165",
+   "lat": -23.5505695,
+   "lng": -46.6460623,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Martinho Prado, Bela Vista, São Paulo - SP 165, São Paulo",
+   "base": 5
+  },
+  {
+   "address": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Rua Padre Antonio D'angelo 180",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Rua Padre Antonio D'angelo 180 02516-130",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Rua Padre Antonio D'angelo 180 brasil São Paulo",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "São Paulo, brasil, Rua Padre Antonio D'angelo 180",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "02516-130, Rua Padre Antonio D'angelo, 180, São Paulo",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "PADRE ANTONIO D'ANGELO 180",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Padre Antonio D'a 180",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Joao padre antonio d'angelo 180",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Padre Antonio D'angelo 180 joao",
+   "lat": -23.5089773,
+   "lng": -46.6613909,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Padre Antonio D'angelo 180, 02516-130 São Paulo",
+   "base": 6
+  },
+  {
+   "address": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "357 Rua dos Americanos",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "Rua dos Americanos 357, 01138-010",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "brasil, São Paulo, Rua dos Americanos 357",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "Rua dos Americanos 357, brasil, São Paulo",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "01138-010 - Rua dos Americanos - São Paulo - 357",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "dos Amreicanos 357",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "dos Ame 357",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "dos americanos 357",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "dos Americanos 357 joao",
+   "lat": -23.523402,
+   "lng": -46.6555212,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua dos Americanos 357, 01138-010 São Paulo",
+   "base": 7
+  },
+  {
+   "address": "Rua São Biagio 10, 03030-070 São Paulo",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua São Biagio 10",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua São Biagio 10, 03030-070",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua São Biagio 10, São Paulo, brasil",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua Sao Biagio 10 brasil Sao Sao Paulo",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua São Biagio, 10, São Paulo, 03030-070",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "São Baigio 10",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "São Biagio 10 fundos",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "biagio 10",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Joao são biagio 10",
+   "lat": -23.5271048,
+   "lng": -46.6168981,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua São Biagio 10, 03030-070 São Paulo",
+   "base": 8
+  },
+  {
+   "address": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "Rua Lagoa Panema, 334",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "Rua Lagoa Panema 334 02051-050",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "São Paulo Rua Lagoa Panema 334 brasil",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "brasil, Rua Lagoa Panema 334, Sao Paulo",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "São Paulo Rua Lagoa Panema 334 02051-050",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "lagoa panema 334",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "Lagoa Paenma 334",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "LAGOA PANEMA 334",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "panema 334",
+   "lat": -23.5053554,
+   "lng": -46.60561,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Lagoa Panema 334, 02051-050 São Paulo",
+   "base": 9
+  },
+  {
+   "address": "Largo do Brás 2, São Paulo",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Largo do Brás, 2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "brasil, São Paulo, Largo do Brás 2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Largo do Brás 2 São Paulo brasil",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Largo do Brás, São Paulo",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Joao largo do brás 2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Largo do Brás2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "LARGO DO BRÁS 2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "largo do brás 2",
+   "lat": -23.5452018,
+   "lng": -46.6205324,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Largo do Brás 2, São Paulo",
+   "base": 10
+  },
+  {
+   "address": "Rua Beco da Fabrica 25, São Paulo",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "Rua Beco da Fabrica, 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "brasil, Rua Beco da Fabrica 25, São Paulo",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "brasil São Paulo Rua Rua Beco da Fabrica 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "São Paulo, Rua Beco da Fabrica",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "Beco da Fab 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "Joao beco da fabrica 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "fabrica 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "Beco da Fabirca 25",
+   "lat": -23.538479,
+   "lng": -46.6327238,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Beco da Fabrica 25, São Paulo",
+   "base": 11
+  },
+  {
+   "address": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Rua Mário Sette 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Rua Mário Sette 38 05003-070",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Rua Mário Sette 38, brasil, São Paulo",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Rua Mario Sette 38, brasil, Sao Paulo",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "05003-070 Rua Mário Sette São Paulo 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Maria mário sette 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "MÁRIO SETTE 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "sette 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "mário sette 38",
+   "lat": -23.5264222,
+   "lng": -46.675599,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Mário Sette 38, 05003-070 São Paulo",
+   "base": 12
+  },
+  {
+   "address": "Rua Espirito Santo 40, São Paulo",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "40 Rua Espirito Santo",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "São Paulo, brasil, Rua Espirito Santo 40",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "São Paulo Rua Espirito Santo 40 brasil",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "40, Rua Espirito Santo, São Paulo",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "Mercado espirito santo 40",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "Espiirto Santo 40",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "santo 40",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "espirito santo 40",
+   "lat": -23.569259,
+   "lng": -46.6319914,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Espirito Santo 40, São Paulo",
+   "base": 13
+  },
+  {
+   "address": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Rua Doutor Diogo de Faria, 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Rua Doutor Diogo de Faria 561, 04037-001",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Rua Doutor Diogo de Faria 561, brasil, São Paulo",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "brasil, rua doutor diogo de faria 561, são paulo",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "São Paulo, 04037-001, 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Dutor Diogo de Faria 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Maria doutor diogo de faria 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "doutor diogo de faria 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "DOUTOR DIOGO DE FARIA 561",
+   "lat": -23.596145954838708,
+   "lng": -46.64208689354839,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Doutor Diogo de Faria 561, 04037-001 São Paulo",
+   "base": 14
+  },
+  {
+   "address": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Rua Newton Prado, 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Rua Newton Prado 748, 01127-000",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Rua Newton Prado 748, brasil, São Paulo",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "são paulo, brasil, rua newton prado 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "São Paulo - 01127-000 - 748 - Rua Newton Prado",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "NEWTON PRADO 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Mercado newton prado 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "newton prado 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Nweton Prado 748",
+   "lat": -23.5214911,
+   "lng": -46.6417655,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Newton Prado 748, 01127-000 São Paulo",
+   "base": 15
+  },
+  {
+   "address": "Rua Mauá 520, 01028-000 São Paulo",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Rua Mauá 520",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Rua Mauá 520 01028-000",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "São Paulo, Rua Mauá 520, brasil",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "brasil, rua maua 520, 520, sao paulo",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Rua Mauá - 520 - 01028-000 - São Paulo",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "MAUÁ 520",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Joao mauá 520",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "mauá 520",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Mauá520",
+   "lat": -23.5356046,
+   "lng": -46.6349175,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Mauá 520, 01028-000 São Paulo",
+   "base": 16
+  },
+  {
+   "address": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Rua Armando Penteado 44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Rua Armando Penteado 44, 01242-010",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "brasil São Paulo Rua Armando Penteado 44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "brasil, brasil, Rua Armando Penteado 44, São Paulo",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "01242-010 São Paulo 44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Armando Penteado 44 joao",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Armando Penteado44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Armando Pen 44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Armando Petneado 44",
+   "lat": -23.5447741,
+   "lng": -46.6615357,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Armando Penteado 44, 01242-010 São Paulo",
+   "base": 17
+  },
+  {
+   "address": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "Alameda Afonso Schmidt 138",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "Alameda Afonso Schmidt 138, 02450-000",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "brasil, Alameda Afonso Schmidt 138, São Paulo",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "brasil Alameda Afonso Schmidt 138 Sao Paulo",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "138 - Alameda Afonso Schmidt - 02450-000",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "ALAMEDA AFONSO SCHMIDT 138",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "schmidt 138",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "Joao alameda afonso schmidt 138",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "Alameda Afonso Schmidt138",
+   "lat": -23.499257266666667,
+   "lng": -46.63734848666666,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alameda Afonso Schmidt 138, 02450-000 São Paulo",
+   "base": 18
+  },
+  {
+   "address": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "Rua Padre Benedito Maria Cardoso 201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "São Paulo Rua Padre Benedito Maria Cardoso 201 brasil",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "brasil Sao Paulo Rua Padre Benedito Maria Cardoso 201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "201 - São Paulo - Rua Padre Benedito Maria Cardoso",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "Padre Benedito Maria Cardoso201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "padre benedito maria cardoso 201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "Joao padre benedito maria cardoso 201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "cardoso 201",
+   "lat": -23.5535787,
+   "lng": -46.5919498,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Padre Benedito Maria Cardoso 201, São Paulo",
+   "base": 19
+  },
+  {
+   "address": "Praça Farias Brito 18, São Paulo",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "18 Praça Farias Brito",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "brasil, São Paulo, Praça Farias Brito 18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "brasil, São Paulo, Praça Farias Brito 18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "18, São Paulo",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "praça farias brito 18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "Maria praça farias brito 18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "brito 18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "Praça Farias Brito18",
+   "lat": -23.5481692,
+   "lng": -46.6623365,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Praça Farias Brito 18, São Paulo",
+   "base": 20
+  },
+  {
+   "address": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "Rua Doutor Cesário Mota Júnior, 470",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "Rua Doutor Cesário Mota Júnior 470 01221-020",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "brasil São Paulo Rua Doutor Cesário Mota Júnior 470",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "rua doutor cesario mota junior 470, brasil, sao paulo",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "470 Rua Doutor Cesário Mota Júnior 01221-020 São Paulo",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "Doutor Cseário Mota Júnior 470",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "doutor cesário mota júnior 470",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "DOUTOR CESÁRIO MOTA JÚNIOR 470",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "Doutor Cesário Mota Júnior 470 joao",
+   "lat": -23.5460252,
+   "lng": -46.6490489,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Doutor Cesário Mota Júnior 470, 01221-020 São Paulo",
+   "base": 21
+  },
+  {
+   "address": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "R. Bom Pastor 2177",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "R. Bom Pastor 2177, 04203-052",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "São Paulo R. Bom Pastor 2177 brasil",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "R. Bom Pastor 2177 São Paulo brasil",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "2177, São Paulo, 04203-052, R. Bom Pastor",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "R. BOM PASTOR 2177",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "R. Bom Psator 2177",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "Maria r. bom pastor 2177",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "pastor 2177",
+   "lat": -23.595716714285714,
+   "lng": -46.60602741428571,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "R. Bom Pastor 2177, 04203-052 São Paulo",
+   "base": 22
+  },
+  {
+   "address": "Rua Flávio de Melo 239, São Paulo",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "Rua Flávio de Melo, 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "São Paulo brasil Rua Flávio de Melo 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "brasil, São Paulo, Rua Flávio de Melo 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "São Paulo, 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "Flávio de Melo239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "FLÁVIO DE MELO 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "flávio de melo 239",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "Flávio de Melo 239 casa 2",
+   "lat": -23.5892856,
+   "lng": -46.6256602,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Flávio de Melo 239, São Paulo",
+   "base": 23
+  },
+  {
+   "address": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "146 Rua Leocádia Cintra",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "Rua Leocádia Cintra 146, 03112-040",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "brasil, Rua Leocádia Cintra 146, São Paulo",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "brasil, São Paulo, Rua Leocádia Cintra 146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "03112-040 São Paulo 146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "cintra 146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "LEOCÁDIA CINTRA 146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "leocádia cintra 146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "Leocádia Cintra146",
+   "lat": -23.5571013,
+   "lng": -46.6020199,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Leocádia Cintra 146, 03112-040 São Paulo",
+   "base": 24
+  },
+  {
+   "address": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Rua Rodrigo Cláudio, 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Rua Rodrigo Cláudio 123 01532-020",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "brasil, São Paulo, Rua Rodrigo Cláudio 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Rua Rodrigo Cláudio 123 brasil São Paulo",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "01532-020 - São Paulo - Rua Rodrigo Cláudio - 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Joao rodrigo cláudio 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "RODRIGO CLÁUDIO 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "rodrigo cláudio 123",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Rodrigo Cláudio 123 casa 2",
+   "lat": -23.571556128571427,
+   "lng": -46.634820600000005,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Rodrigo Cláudio 123, 01532-020 São Paulo",
+   "base": 25
+  },
+  {
+   "address": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "390 Praça Marechal Deodoro",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Praça Marechal Deodoro 390 01150-010",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Praça Marechal Deodoro 390, São Paulo, brasil",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "São Paulo brasil Praça Marechal Deodoro 390",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "390, Praça Marechal Deodoro, 01150-010",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Praça Marechal Deo 390",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Praça Marecahl Deodoro 390",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "deodoro 390",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Praça Marechal Deodoro 390 joao",
+   "lat": -23.533196254545455,
+   "lng": -46.65608398636364,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Praça Marechal Deodoro 390, 01150-010 São Paulo",
+   "base": 26
+  },
+  {
+   "address": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "127 Rua Doutor Gabriel Piza",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Rua Doutor Gabriel Piza 127, 02036-060",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "São Paulo Rua Doutor Gabriel Piza 127 brasil",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "brasil, Rua Doutor Gabriel Gabriel Piza 127, São Paulo",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Rua Doutor Gabriel Piza, São Paulo, 02036-060, 127",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "piza 127",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Doutor Gabriel Piza 127 casa 2",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Doutor Gabriel Piza127",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Doutor Gavriel Piza 127",
+   "lat": -23.5019626,
+   "lng": -46.6251947,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Doutor Gabriel Piza 127, 02036-060 São Paulo",
+   "base": 27
+  },
+  {
+   "address": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "162 Praça Marechal Cordeiro de Farias",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "São Paulo, Praça Marechal Cordeiro de Farias 162, brasil",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "brasil Praça Marechal Cordeiro de Farias 162 São Paulo",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "Praça Marechal Cordeiro de Farias, 162, São Paulo",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "Praça Marechal Cordeiro de Farias 162 casa 2",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "Praça Marechal Cordeiro de Farias162",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "Praça Marehcal Cordeiro de Farias 162",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "farias 162",
+   "lat": -23.55414843,
+   "lng": -46.664316,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça Marechal Cordeiro de Farias 162, São Paulo",
+   "base": 28
+  },
+  {
+   "address": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "419 Rua Teodoro Sampaio",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Rua Teodoro Sampaio 419, 05405-000",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Rua Teodoro Sampaio 419, brasil, São Paulo",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Rua Teodoro Sampaio 419, brasil, São Paulo",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "São Paulo Rua Teodoro Sampaio 05405-000 419",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Teodoro Sampaio419",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Teodoro Sam 419",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Teoodro Sampaio 419",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "TEODORO SAMPAIO 419",
+   "lat": -23.5560992,
+   "lng": -46.6748717,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Teodoro Sampaio 419, 05405-000 São Paulo",
+   "base": 29
+  },
+  {
+   "address": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Rua Ribeiro do Amaral 565",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Rua Ribeiro do Amaral 565, 04268-000",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "São Paulo, Rua Ribeiro do Amaral 565, brasil",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "brasil, São Paulo, Rua Ribeiro do Amaral 565",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "565 Rua Ribeiro do Amaral São Paulo 04268-000",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Riebiro do Amaral 565",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Ribeiro do Amaral565",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Ribeiro do Amaral 565 (portao azul)",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Mercado ribeiro do amaral 565",
+   "lat": -23.59548498235294,
+   "lng": -46.60729663823529,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Ribeiro do Amaral 565, 04268-000 São Paulo",
+   "base": 30
+  },
+  {
+   "address": "Rua São Domingos 39, São Paulo",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "39 Rua São Domingos",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "Rua São Domingos 39 brasil São Paulo",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "Sao Paulo brasil Rua Sao Domingos 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "São Paulo 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "domingos 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "SÃO DOMINGOS 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "São Domnigos 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "Mercado são domingos 39",
+   "lat": -23.5526795,
+   "lng": -46.6422735,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua São Domingos 39, São Paulo",
+   "base": 31
+  },
+  {
+   "address": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Rua Tavares Bastos, 242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Rua Tavares Bastos 242, 05012-020",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "São Paulo, Rua Tavares Bastos 242, brasil",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "brasil São Paulo Rua Tavares Bastos 242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "São Paulo, Rua Tavares Bastos, 242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Tabares Bastos 242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Tavares Bastos 242 casa 2",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "bastos 242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Tavares Bastos242",
+   "lat": -23.5351043,
+   "lng": -46.6853629,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Tavares Bastos 242, 05012-020 São Paulo",
+   "base": 32
+  },
+  {
+   "address": "Avenida Mário de Andrade 252, São Paulo",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "252 Mário de Andrade",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Mário de Andrade 252, São Paulo",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "São Paulo brasil Mário de Andrade 252",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Mario de Andrade 252, Sao Paulo, brasil",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "252, São Paulo",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Mário de Andrade252",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "MÁRIO DE ANDRADE 252",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Mário de Anrdade 252",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Mário de Andrade 252 (portao azul)",
+   "lat": -23.527697603448278,
+   "lng": -46.66283778620689,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Mário de Andrade 252, São Paulo",
+   "base": 33
+  },
+  {
+   "address": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "205 Rua Jesuíno Arruda",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "Rua Jesuíno Arruda 205, 04532-080",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "brasil São Paulo Rua Jesuíno Arruda 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "brasil Sao Paulo Rua Jesuino Jesuino Arruda 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "205 - Rua Jesuíno Arruda - São Paulo - 04532-080",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "arruda 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "jesuíno arruda 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "JESUÍNO ARRUDA 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "Joao jesuíno arruda 205",
+   "lat": -23.5818499,
+   "lng": -46.6726356,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Jesuíno Arruda 205, 04532-080 São Paulo",
+   "base": 34
+  },
+  {
+   "address": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Rua Guaianases 1087",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Rua Guaianases 1087, 01202-000",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Rua Guaianases 1087 São Paulo brasil",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Rua Guaianases 1087 São Paulo brasil",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "1087, São Paulo, 01202-000, Rua Guaianases",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "guaianases 1087",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Joao guaianases 1087",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Guaiaanses 1087",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Guaianases 1087 joao",
+   "lat": -23.5329347,
+   "lng": -46.6463107,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Guaianases 1087, 01202-000 São Paulo",
+   "base": 35
+  },
+  {
+   "address": "Rua Leais Paulistanos 288, São Paulo",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "Rua Leais Paulistanos, 288",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "brasil, Rua Leais Paulistanos 288, São Paulo",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "brasil Rua Rua Leais Paulistanos 288 Sao Paulo",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "São Paulo - 288 - Rua Leais Paulistanos",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "LEAIS PAULISTANOS 288",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "Leais Paulistanos288",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "Leais Pualistanos 288",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "Mercado leais paulistanos 288",
+   "lat": -23.5785013,
+   "lng": -46.6063187,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Leais Paulistanos 288, São Paulo",
+   "base": 36
+  },
+  {
+   "address": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "53 Rua Coronel Joviniano Brandão",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Rua Coronel Joviniano Brandão 53 03127-175",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Rua Coronel Joviniano Brandão 53 brasil São Paulo",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "brasil São Paulo Rua Coronel Joviniano Brandão 53",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Rua Coronel Joviniano Brandão, 03127-175, São Paulo",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Coronel Jobiniano Brandão 53",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "brandão 53",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "coronel joviniano brandão 53",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Coronel Joviniano Bra 53",
+   "lat": -23.572848151282052,
+   "lng": -46.58711886923077,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Coronel Joviniano Brandão 53, 03127-175 São Paulo",
+   "base": 37
+  },
+  {
+   "address": "Rua Roque Victor Vasto 57, São Paulo",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "Rua Roque Victor Vasto, 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "São Paulo brasil Rua Roque Victor Vasto 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "São Paulo, brasil, Rua Roque Victor Vasto 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "57 São Paulo Rua Roque Victor Vasto",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "Roque Victor Vasto57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "vasto 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "roque victor vasto 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "Roque Vitcor Vasto 57",
+   "lat": -23.538321,
+   "lng": -46.6199434,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Roque Victor Vasto 57, São Paulo",
+   "base": 38
+  },
+  {
+   "address": "Rua Marambaia 467, 02513-000 São Paulo",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "467 Rua Marambaia",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "Rua Marambaia 467, 02513-000",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "Rua Marambaia 467, São Paulo, brasil",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "Rua Marambaia 467 brasil São Paulo Paulo",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "São Paulo - Rua Marambaia - 02513-000",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "Joao marambaia 467",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "Marambaia 467 fundos",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "MARAMBAIA 467",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  },
+  {
+   "address": "marambaia 467",
+   "lat": -23.5111268,
+   "lng": -46.6535969,
+   "country": "BR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Marambaia 467, 02513-000 São Paulo",
+   "base": 39
+  }
+ ]
+}

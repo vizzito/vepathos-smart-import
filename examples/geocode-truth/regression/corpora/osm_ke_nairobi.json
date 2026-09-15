@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "KE",
+ "city": "Nairobi",
+ "country_label": "Kenya",
+ "depot": {
+  "lat": -1.2921,
+  "lon": 36.8219,
+  "city": "Nairobi",
+  "country": "Kenya"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n-1.20_s-1.40_e36.90_w36.70-kenya.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "711 Galana Road, Nairobi",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "711 Galana Road",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Galana Road 711, Nairobi",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Nairobi, ke, Galana Road 711",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Nairobi, ke, Galana Road 711",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Nairobi, Galana Road",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Galana Road 711 john",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Galnaa Road 711",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "GALANA ROAD 711",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "Galana Road711",
+   "lat": -1.28985436,
+   "lng": 36.78277129,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "711 Galana Road, Nairobi",
+   "base": 0
+  },
+  {
+   "address": "15 Lokitaung Road, 00507 Nairobi",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road, 15",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road 15 00507",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road 15, Nairobi, ke",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Nairobi Lokitaung Road 15 ke",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road, Nairobi, 15, 00507",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road 15 (green door)",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Loiktaung Road 15",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "LOKITAUNG ROAD 15",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "Lokitaung Road15",
+   "lat": -1.3064236714285715,
+   "lng": 36.85941465714286,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15 Lokitaung Road, 00507 Nairobi",
+   "base": 1
+  },
+  {
+   "address": "01 funzi road, Nairobi",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road, 01",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road 01, Nairobi",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road 01 ke Nairobi",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "ke, Nairobi, funzi funzi road 01",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "Nairobi 01 funzi road",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road 01",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road 01 apt 4b",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "FUNZI ROAD 01",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "funzi road01",
+   "lat": -1.30483864,
+   "lng": 36.840210160000005,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "01 funzi road, Nairobi",
+   "base": 2
+  },
+  {
+   "address": "30175 Bishop Road, 00100 Nairobi",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Bishop Road, 30175",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Bishop Road 30175 00100",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Nairobi ke Bishop Road 30175",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Bishop Road 30175 ke Nairobi Nairobi",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Nairobi, 30175, 00100, Bishop Road",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Bisohp Road 30175",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "BISHOP ROAD 30175",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "Bishop Road 30175 (green door)",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "bishop road 30175",
+   "lat": -1.2905558,
+   "lng": 36.8129869,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "30175 Bishop Road, 00100 Nairobi",
+   "base": 3
+  },
+  {
+   "address": "45240 Utalii Street, 00100 Nairobi",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "Utalii Street 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "Utalii Street 45240 00100",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "ke Nairobi Utalii Street 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "Nairobi, ke, Utalii Street 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "45240 Nairobi Utalii Street",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "Mary utalii street 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "UTALII STREET 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "utalii street 45240",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "Utalii Street 45240 back entrance",
+   "lat": -1.2828404533333333,
+   "lng": 36.81607700666667,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "45240 Utalii Street, 00100 Nairobi",
+   "base": 4
+  },
+  {
+   "address": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road PQ7W+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road PQ7W+55 PQ7W+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road PQ7W+55 Nairobi ke",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road PQ7W+55, ke, Nairobi",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road - PQ7W+55 - Nairobi - PQ7W+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "denis pritt road pq7w+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt RoadPQ7W+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "DENIS PRITT ROAD PQ7W+55",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "Denis Pritt Road PQ7W+55 back entrance",
+   "lat": -1.2866589,
+   "lng": 36.7954378,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PQ7W+55 Denis Pritt Road, PQ7W+55 Nairobi",
+   "base": 5
+  },
+  {
+   "address": "11 Mogotio Road, Nairobi",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "Mogotio Road 11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "Mogotio Road 11, Nairobi",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "ke, Nairobi, Mogotio Road 11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "ke, Mogotio Road 11, Nairobi",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "11 Nairobi",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "MOGOTIO ROAD 11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "Mogotio Road11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "Mogtoio Road 11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "Deli mogotio road 11",
+   "lat": -1.2664122272727274,
+   "lng": 36.80994025454545,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 Mogotio Road, Nairobi",
+   "base": 6
+  },
+  {
+   "address": "68 Peponi Road, Nairobi",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "68 Peponi Road",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "Peponi Road 68, Nairobi",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "Peponi Road 68, Nairobi, ke",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "ke, Nairobi, Peponi Road 68",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "Nairobi, Peponi Road",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "peponi road 68",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "PEPONI ROAD 68",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "Peponi Road68",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "Mary peponi road 68",
+   "lat": -1.2467297,
+   "lng": 36.7953758,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "68 Peponi Road, Nairobi",
+   "base": 7
+  },
+  {
+   "address": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road, 12181 Muthaiti Rd off Mombasa Rd, Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road 12181 Muthaiti Rd off Mombasa Rd, Nairobi, Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road 12181 Muthaiti Rd off Mombasa Rd, Nairobi Nairobi ke",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road 12181 Muthaiti Rd off Mombasa Rd, Rd, Nairobi ke Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "12181 Muthaiti Rd off Mombasa Rd, Nairobi - Muthaiti Road",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road12181 Muthaiti Rd off Mombasa Rd, Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Muthaiti Road 12181 Muthaiti Rd off Mombasa Rd, Nairobi john",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "MUTHAITI ROAD 12181 MUTHAITI RD OFF MOMBASA RD, NAIROBI",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "Mtuhaiti Road 12181 Muthaiti Rd off Mombasa Rd, Nairobi",
+   "lat": -1.3060204384615386,
+   "lng": 36.82391155384615,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "12181 Muthaiti Rd off Mombasa Rd, Nairobi Muthaiti Road, Nairobi",
+   "base": 8
+  },
+  {
+   "address": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "Pramukh Swami Avenue, 5th Floor",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "Pramukh Swami Avenue 5th Floor 00606",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "Nairobi, Pramukh Swami Avenue 5th Floor, ke",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "pramukh swami avenue 5th floor, ke, nairobi",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "00606 5th Floor Nairobi",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "Praumkh Swami Avenue 5th Floor",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "Pramukh Swami Avenue 5th Floor john",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "swami avenue 5th Floor",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "PRAMUKH SWAMI AVENUE 5TH FLOOR",
+   "lat": -1.2580809,
+   "lng": 36.8179013,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5th Floor Pramukh Swami Avenue, 00606 Nairobi",
+   "base": 9
+  },
+  {
+   "address": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "3rd Avenue Ngong, 46021",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "3rd Avenue Ngong 46021 00100",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "ke 3rd Avenue Ngong 46021 Nairobi",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "ke, 3rd Avenue Ngong Ngong 46021, Nairobi",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "Nairobi - 3rd Avenue Ngong - 46021 - 00100",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "ngong 46021",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "3RD AVENUE NGONG 46021",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "3rd avenue ngong 46021",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "3rd Avenue Ngong46021",
+   "lat": -1.294277,
+   "lng": 36.810076,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "46021 3rd Avenue Ngong, 00100 Nairobi",
+   "base": 10
+  },
+  {
+   "address": "63 Westlands Road, Nairobi",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "63 Westlands Road",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "Westlands Road 63, Nairobi",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "ke Nairobi Westlands Road 63",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "Westlands Road 63, Nairobi, ke",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "63, Nairobi",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "Westlnads Road 63",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "WESTLANDS ROAD 63",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "westlands road 63",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "Westlands Road 63 (green door)",
+   "lat": -1.2711444428571428,
+   "lng": 36.81093024285714,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "63 Westlands Road, Nairobi",
+   "base": 11
+  },
+  {
+   "address": "25 Oldeani Crescent, Nairobi",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oldeani Crescent 25",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oldeani Crescent 25, Nairobi",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Nairobi ke Oldeani Crescent 25",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oldeani Crescent 25 Nairobi ke",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oldeani Crescent - Nairobi",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oldeani Crescent 25 john",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Mary oldeani crescent 25",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "Oledani Crescent 25",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "OLDEANI CRESCENT 25",
+   "lat": -1.3045638,
+   "lng": 36.8159802,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "25 Oldeani Crescent, Nairobi",
+   "base": 12
+  },
+  {
+   "address": "13 Olympic Estate, Nairobi",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Olympic Estate, 13",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Olympic Estate 13, Nairobi",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Olympic Estate 13 Nairobi ke",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Nairobi ke Olympic Estate 13",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Nairobi - Olympic Estate",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Olympic Estate13",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "OLYMPIC ESTATE 13",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Deli olympic estate 13",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "Olympic Estate 13 john",
+   "lat": -1.3128243,
+   "lng": 36.7786479,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "13 Olympic Estate, Nairobi",
+   "base": 13
+  },
+  {
+   "address": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Mama Ngina Street, 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Mama Ngina Street 1st Floor, 20TH Century Plaza,, Nairobi",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Nairobi, ke, Mama Ngina Street 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Nairobi ke Mama Ngina Street 1st 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "1st Floor, 20TH Century Plaza,, Mama Ngina Street, Nairobi",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Mama Ngina Street1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Mama Nginna Street 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "ngina street 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Deli mama ngina street 1st Floor, 20TH Century Plaza,",
+   "lat": -1.2856902,
+   "lng": 36.8227002,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1st Floor, 20TH Century Plaza, Mama Ngina Street, Nairobi",
+   "base": 14
+  },
+  {
+   "address": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Ngong Road Greenhouse Mall, 1st Floor, Suite 19, 00100",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Nairobi ke Ngong Road Greenhouse Mall, 1st Floor, Suite 19",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "ke Ngong Road Greenhouse Mall, 1st Floor, Suite 19 Nairobi",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Greenhouse Mall, 1st Floor, Suite 19 - Nairobi - 00100",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Ngong RoadGreenhouse Mall, 1st Floor, Suite 19",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "ngong road greenhouse mall, 1st floor, suite 19",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "Mary ngong road Greenhouse Mall, 1st Floor, Suite 19",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "NGONG ROAD GREENHOUSE MALL, 1ST FLOOR, SUITE 19",
+   "lat": -1.3005712,
+   "lng": 36.7820366,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Greenhouse Mall, 1st Floor, Suite 19 Ngong Road, 00100 Nairobi",
+   "base": 15
+  },
+  {
+   "address": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "00100 Ring Road Kilimani",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "Ring Road Kilimani 00100 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "Nairobi ke Ring Road Kilimani 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "Ring Road Kilimani 00100, Nairobi, ke",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "00100 Nairobi 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "ring road kilimani 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "Ring Road Kiilmani 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "kilimani 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "Ring Road Kil 00100",
+   "lat": -1.2930636,
+   "lng": 36.7876931,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "00100 Ring Road Kilimani, 00100 Nairobi",
+   "base": 16
+  },
+  {
+   "address": "2 Haile Selassie Lane, Nairobi",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "2 Haile Selassie Lane",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "Haile Selassie Lane 2, Nairobi",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "Nairobi, ke, Haile Selassie Lane 2",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "Nairobi Haile Selassie Lane 2 ke",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "2 - Haile Selassie Lane - Nairobi",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "haile selassie lane 2",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "Haile Selasie Lane 2",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "selassie lane 2",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "Deli haile selassie lane 2",
+   "lat": -1.29033142,
+   "lng": 36.82306652,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 Haile Selassie Lane, Nairobi",
+   "base": 17
+  },
+  {
+   "address": "1 Donyo Sabuk Avenue, Nairobi",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "1 Donyo Sabuk Avenue",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "Donyo Sabuk Avenue 1, Nairobi",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "Donyo Sabuk Avenue 1 Nairobi ke",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "donyo sabuk avenue 1, ke, nairobi",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "1 Nairobi Donyo Sabuk Avenue",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "donyo sabuk avenue 1",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "Donio Sabuk Avenue 1",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "sabuk avenue 1",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "DONYO SABUK AVENUE 1",
+   "lat": -1.251481644117647,
+   "lng": 36.795030835294114,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Donyo Sabuk Avenue, Nairobi",
+   "base": 18
+  },
+  {
+   "address": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Kilimani Road P. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Kilimani Road P. O Box 21200, Nairobi, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Nairobi ke Kilimani Road P. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Nairobi, ke, Kilimani Road P. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "P. O Box 21200, Nairobi Kilimani Road Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Kilimani Road P. O Box 21200, Nairobi apt 4b",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Kilimani RoadP. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Mary kilimani road P. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "Kliimani Road P. O Box 21200, Nairobi",
+   "lat": -1.2995886,
+   "lng": 36.7758214,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "P. O Box 21200, Nairobi Kilimani Road, Nairobi",
+   "base": 19
+  },
+  {
+   "address": "06 Elgon Road, Nairobi",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road, 06",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road 06, Nairobi",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road 06 Nairobi ke",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road 06 ke Nairobi",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road - Nairobi",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Deli elgon road 06",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road 06 john",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "elgon road 06",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "Elgon Road06",
+   "lat": -1.3013609,
+   "lng": 36.8194484,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "06 Elgon Road, Nairobi",
+   "base": 20
+  },
+  {
+   "address": "1/142 Ring Road, Nairobi",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "Ring Road, 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "Ring Road 1/142, Nairobi",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "ke, Nairobi, Ring Road 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "ke Nairobi Ring Road 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "Ring Road 1/142 Nairobi",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "ring road 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "Deli ring road 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "RING ROAD 1/142",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "Ring Road 1/142 john",
+   "lat": -1.2986876,
+   "lng": 36.7883465,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1/142 Ring Road, Nairobi",
+   "base": 21
+  },
+  {
+   "address": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Argwings Kodhek Road P. O. Box 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Argwings Kodhek Road P. O. Box 15000, Nairobi",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Nairobi Argwings Kodhek Road P. O. Box 15000 ke",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Nairobi, ke, Argwings Kodhek Road P. O. Box 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Argwings Kodhek Road, P. O. Box 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "argwings kodhek road p. o. box 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Argwings Kodhek Road P. O. Box 15000 back entrance",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "Arwgings Kodhek Road P. O. Box 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "ARGWINGS KODHEK ROAD P. O. BOX 15000",
+   "lat": -1.2958352176470587,
+   "lng": 36.80340128235294,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "P. O. Box 15000 Argwings Kodhek Road, Nairobi",
+   "base": 22
+  },
+  {
+   "address": "98 Jalaram Road, Nairobi",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Jalaram Road, 98",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Jalaram Road 98, Nairobi",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Jalaram Road 98, Nairobi, ke",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "ke, Jalaram Road 98, Nairobi",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Nairobi Jalaram Road",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Jalaram Road98",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "jalaram road 98",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "JALARAM ROAD 98",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "Jalraam Road 98",
+   "lat": -1.2590147,
+   "lng": 36.8066628,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "98 Jalaram Road, Nairobi",
+   "base": 23
+  },
+  {
+   "address": "12 Riara Road, Kilimani Nairobi",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "12 Riara Road",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Riara Road 12 Kilimani",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Riara Road 12 Nairobi ke",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Riara Road 12 ke Nairobi",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Kilimani, Riara Road, 12",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "riara road 12",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Riara Road12",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Mary riara road 12",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "Riara Road 12 back entrance",
+   "lat": -1.2988622,
+   "lng": 36.7733303,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "12 Riara Road, Kilimani Nairobi",
+   "base": 24
+  },
+  {
+   "address": "6 Kimathi Street, Nairobi",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "6 Kimathi Street",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Kimathi Street 6, Nairobi",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Nairobi, Kimathi Street 6, ke",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "ke, Kimathi Street Street 6, Nairobi",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Nairobi, 6",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Kimathi Street6",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "KIMATHI STREET 6",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "kimathi street 6",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Kimathi Street 6 apt 4b",
+   "lat": -1.2845383,
+   "lng": 36.82415146,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Kimathi Street, Nairobi",
+   "base": 25
+  },
+  {
+   "address": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Kabarnet Lane Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi, Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "ke Kabarnet Lane Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "ke Kabarnet Lane Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Nairobi - Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Kabarnet LaneKabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Kabarnet Lane Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi apt 4b",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "KABARNET LANE KABARNET LANE, OFF KABARNET ROAD AND OFF NGONG ROAD, 1411, JAMHURI CRES, NAIROBI",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "Mary kabarnet lane Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi",
+   "lat": -1.3013493,
+   "lng": 36.7890569,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kabarnet lane, Off Kabarnet Road and Off Ngong Road, 1411, Jamhuri Cres, Nairobi Kabarnet Lane, Nairobi",
+   "base": 26
+  },
+  {
+   "address": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "60000 Haile Selassie Avenue",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selassie Avenue 60000 00200",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selassie Avenue 60000, ke, Nairobi",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selassie Avenue 60000, ke, Nairobi",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Nairobi 00200 60000",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selassie Avenue60000",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selassie Avenue 60000 (green door)",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "HAILE SELASSIE AVENUE 60000",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Haile Selasie Avenue 60000",
+   "lat": -1.29002784,
+   "lng": 36.824895,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "60000 Haile Selassie Avenue, 00200 Nairobi",
+   "base": 27
+  },
+  {
+   "address": "Neno Plaza, 72 River Road, Nairobi",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "River Road Neno Plaza, 72",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "River Road Neno Plaza, 72, Nairobi",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "Nairobi River Road Neno Plaza, 72 ke",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "Nairobi River Road Road Neno Plaza, 72 ke",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "Neno Plaza, 72 - River Road - Nairobi",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "Mary river road Neno Plaza, 72",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "River Road Neno Plaza, 72 apt 4b",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "Riber Road Neno Plaza, 72",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "RIVER ROAD NENO PLAZA, 72",
+   "lat": -1.2829031,
+   "lng": 36.8277775,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Neno Plaza, 72 River Road, Nairobi",
+   "base": 28
+  },
+  {
+   "address": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "Kilimani RD, off elgeyo, 4519-00200",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "Kilimani RD, off elgeyo 4519-00200, Nairobi",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "ke, Kilimani RD, off elgeyo 4519-00200, Nairobi",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "Kilimani RD, off elgeyo 4519-00200, ke, Nairobi",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "Nairobi - 4519-00200",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "off elgeyo Kilimani RD 4519-00200 john",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "off elgeyo Kilimnai RD 4519-00200",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "off elgeyo Kilimani RD4519-00200",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "off elgeyo kilimani rd 4519-00200",
+   "lat": -1.2986781,
+   "lng": 36.7785346,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4519-00200 Kilimani RD, off elgeyo, Nairobi",
+   "base": 29
+  },
+  {
+   "address": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Harambee Avenue 3",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Harambee Avenue 3, PO Box 30074-00100 Nairobi",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Nairobi, ke, Harambee Avenue 3",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Harambee Avenue 3 3 Nairobi ke",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Harambee Avenue 3 Nairobi PO Box 30074-00100 Nairobi",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Mary harambee avenue 3",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Harambee Avenue 3 (green door)",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "HARAMBEE AVENUE 3",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "Haramvee Avenue 3",
+   "lat": -1.288451,
+   "lng": 36.8260058,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Harambee Avenue, PO Box 30074-00100 Nairobi Nairobi",
+   "base": 30
+  },
+  {
+   "address": "38 Muthithi Rd, Nairobi",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "38 Muthithi Rd",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Muthithi Rd 38, Nairobi",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "ke, Nairobi, Muthithi Rd 38",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "muthithi rd 38, nairobi, ke",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Muthithi Rd Nairobi 38",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Muthithi Rd 38 apt 4b",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Muthtihi Rd 38",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Mary muthithi rd 38",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "Muthithi Rd38",
+   "lat": -1.2675335,
+   "lng": 36.80803828,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "38 Muthithi Rd, Nairobi",
+   "base": 31
+  },
+  {
+   "address": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "P.O.Box 48868 Nairobi, Menengai Road",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "Menengai Road P.O.Box 48868 Nairobi,, Nairobi City",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "ke Nairobi City Menengai Road P.O.Box 48868 Nairobi,",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "Menengai Road P.O.Box 48868 Nairobi,, ke, Nairobi City",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "P.O.Box 48868 Nairobi,, Menengai Road, Nairobi City",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "menengai road p.o.box 48868 nairobi,",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "Mary menengai road P.O.Box 48868 Nairobi,",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "Menengai Road P.O.Box 48868 Nairobi, back entrance",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "Menengai RoadP.O.Box 48868 Nairobi,",
+   "lat": -1.299934,
+   "lng": 36.8111785,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "P.O.Box 48868 Nairobi, Menengai Road, Nairobi City",
+   "base": 32
+  },
+  {
+   "address": "536 Limuru Road, Nairobi",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "536 Limuru Road",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "Limuru Road 536, Nairobi",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "Nairobi Limuru Road 536 ke",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "ke, Nairobi, Limuru Road 536",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "Nairobi - 536 - Limuru Road",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "limuru road 536",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "Limuru Road536",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "LIMURU ROAD 536",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "Limuru Road 536 (green door)",
+   "lat": -1.2488507,
+   "lng": 36.8200261,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "536 Limuru Road, Nairobi",
+   "base": 33
+  },
+  {
+   "address": "19, Koinage Street, Nairobi",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street 19,",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street 19,, Nairobi",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street 19, Nairobi ke",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street 19, Nairobi ke ke",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street, Nairobi",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street 19, (green door)",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Deli koinage street 19,",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Koinage Street19,",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "Kionage Street 19,",
+   "lat": -1.2834322571428574,
+   "lng": 36.818287657142854,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "19, Koinage Street, Nairobi",
+   "base": 34
+  },
+  {
+   "address": "00800 Rose Avenue, 00800 Nairobi",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "Rose Avenue 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "Rose Avenue 00800 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "ke, Nairobi, Rose Avenue 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "ke Nairobi Rose Avenue 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "00800, 00800, Nairobi, Rose Avenue",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "Rose Avenue 00800 apt 4b",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "Rose Avenue00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "Deli rose avenue 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "ROSE AVENUE 00800",
+   "lat": -1.294176,
+   "lng": 36.7951606,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "00800 Rose Avenue, 00800 Nairobi",
+   "base": 35
+  },
+  {
+   "address": "13 Rumbi Road, Nairobi",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumbi Road 13",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumbi Road 13, Nairobi",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumbi Road 13, Nairobi, ke",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Nairobi ke Rumbi Road 13",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumbi Road Nairobi",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "rumbi road 13",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumbi Road 13 (green door)",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Rumvi Road 13",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "Deli rumbi road 13",
+   "lat": -1.31711,
+   "lng": 36.8286234,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13 Rumbi Road, Nairobi",
+   "base": 36
+  },
+  {
+   "address": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "1 Kolobot Drive",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "Kolobot Drive 1, 48706-00100",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "ke, Kolobot Drive 1, Nairobi",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "ke, Nairobi, Kolobot Drive 1",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "1 Kolobot Drive Nairobi",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "kolobot drive 1",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "KOLOBOT DRIVE 1",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "Kolovot Drive 1",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "Kolobot Drive1",
+   "lat": -1.2754929,
+   "lng": 36.8085165,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Kolobot Drive, 48706-00100 Nairobi",
+   "base": 37
+  },
+  {
+   "address": "#79 3rd Parklands Avenue, Nairobi",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "#79 3rd Parklands Avenue",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3rd Parklands Avenue #79, Nairobi",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "Nairobi ke 3rd Parklands Avenue #79",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3rd Parklands Avenue #79, Nairobi, ke",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3rd Parklands Avenue, #79",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3RD PARKLANDS AVENUE #79",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3rd Parklands Avenue#79",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "3rd Parklands Avenue #79 (green door)",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "Deli 3rd parklands avenue #79",
+   "lat": -1.2580865,
+   "lng": 36.8121937,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "#79 3rd Parklands Avenue, Nairobi",
+   "base": 38
+  },
+  {
+   "address": "197 Lenana Road, Nairobi",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Lenana Road 197",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Lenana Road 197, Nairobi",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Nairobi Lenana Road 197 ke",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Nairobi Lenana Road 197 ke",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "197 Nairobi",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "lenana road 197",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Lenana Road197",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Leanna Road 197",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  },
+  {
+   "address": "Mary lenana road 197",
+   "lat": -1.2890566,
+   "lng": 36.7855889,
+   "country": "KE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "197 Lenana Road, Nairobi",
+   "base": 39
+  }
+ ]
+}

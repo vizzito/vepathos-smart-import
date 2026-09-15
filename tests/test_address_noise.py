@@ -78,3 +78,42 @@ def test_noise_rate_invalido():
     rec = _defensa_record()
     with pytest.raises(ValueError):
         expand_records_with_noise([rec], level=1, rate=0.0)
+
+
+# ---------- nivel 6: planilla de despacho ----------
+
+def _rec6(street, number, country):
+    from smart_import.tools.address_corpus import CorpusRecord
+    return CorpusRecord(address=f"{street} {number}", lat=-37.3, lng=-59.1,
+                        street=street, number=number, country=country)
+
+
+def test_nivel6_produce_las_formas_de_una_planilla_real():
+    import random
+    from smart_import.tools.address_noise import _variants_level6
+
+    out = dict((kind, text) for text, kind in _variants_level6(
+        _rec6("General Rudecindo Alvarado", "471", "AR"), random.Random(3), max_permutations=2))
+    assert out["surname"] == "alvarado 471"
+    assert out["truncate"] == "General Rudecindo Alv 471"
+    assert out["glued"] == "General Rudecindo Alvarado471"
+    assert out["caps"] == "GENERAL RUDECINDO ALVARADO 471"
+    assert "typo" in out and out["typo"] != "General Rudecindo Alvarado 471"
+
+
+def test_nivel6_ingles_no_toma_el_tipo_de_via_como_apellido():
+    import random
+    from smart_import.tools.address_noise import _variants_level6
+
+    out = dict((kind, text) for text, kind in _variants_level6(
+        _rec6("Deer Park Drive", "34", "ZA"), random.Random(1), max_permutations=2))
+    assert out["surname"] == "34 park drive"
+    assert "glued" not in out                  # '34 Deer Park Drive' no se pega
+
+
+def test_nivel6_marca_el_tipo_de_ruido_en_cada_fila():
+    rec = _rec6("Trabajadores Municipales", "1723", "AR")
+    out = expand_records_with_noise([rec], level=6, seed=1)
+    kinds = {r.extra["noise_kind"] for r in out}
+    assert {"surname", "truncate", "typo"} <= kinds
+    assert all(r.lat == rec.lat for r in out)  # la verdad no se toca

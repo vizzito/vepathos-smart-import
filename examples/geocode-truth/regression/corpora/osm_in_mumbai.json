@@ -1,0 +1,3978 @@
+{
+ "source": "osm-addr",
+ "country": "IN",
+ "city": "Mumbai",
+ "country_label": "India",
+ "depot": {
+  "lat": 19.076,
+  "lon": 72.8777,
+  "city": "Mumbai",
+  "country": "India"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 396,
+ "note": "Nodos addr:* del indice n19.20_s19.00_e73.00_w72.80-western-zone.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 St. Alexius Road",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "St. Alexius Road C/549, 400050",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "Bandra, Mumbai, in, St. Alexius Road C/549",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "Bandra, Mumbai, in, St. Alexius Road C/549",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 St. Alexius Road Bandra, Mumbai",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 St. Alexius Road apt 4b",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 ST. ALEXIUS ROAD",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 alexius road",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "C/549 St. Ale Road",
+   "lat": 19.060291380000002,
+   "lng": 72.8289666,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "C/549 St. Alexius Road, 400050 Bandra, Mumbai",
+   "base": 0
+  },
+  {
+   "address": "14 Road No 5, 400050 Mumbai",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "14 Road No 5",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "Road No 5 14, 400050",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "in, Road No 5 14, Mumbai",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "Road No 5 14, Mumbai, in",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "Road No 5 14 Mumbai 400050",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "14 ROAD NO 5",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "14 Road No 5 back entrance",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "14 road no 5",
+   "lat": 19.070164770588235,
+   "lng": 72.82524271764706,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "14 Road No 5, 400050 Mumbai",
+   "base": 1
+  },
+  {
+   "address": "16 Mhada colony road, 400074 Mumbai",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "16 Mhada colony road",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "Mhada colony road 16 400074",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "Mhada colony road 16 in Mumbai",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "mhada colony road road 16, mumbai, in",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "Mhada colony road, Mumbai, 400074, 16",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "16 MHADA COLONY ROAD",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "16 Mhada colony road back entrance",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "16 colony road",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "16 mhada colony road",
+   "lat": 19.029057700000003,
+   "lng": 72.90366082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "16 Mhada colony road, 400074 Mumbai",
+   "base": 2
+  },
+  {
+   "address": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "Sainath Nagar Marg, 3WV5+PXR",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "Sainath Nagar Marg 3WV5+PXR, 400086",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "mumbai in Sainath Nagar Marg 3WV5+PXR",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "Sainath Nagar Marg 3WV5+PXR, mumbai, in",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "400086 mumbai Sainath Nagar Marg 3WV5+PXR",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "3wv5+pxr sainath nagar marg",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "3WV5+PXR SAINATH NAGAR MARG",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "3WV5+PXR marg",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "3WV5+PXR Sainath Nagar Marg apt 4b",
+   "lat": 19.094469306666667,
+   "lng": 72.91013423999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3WV5+PXR Sainath Nagar Marg, 400086 mumbai",
+   "base": 3
+  },
+  {
+   "address": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Ahinsa Marg Rham Bhavan 1",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Ahinsa Marg Rham Bhavan 1 400052",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Ahinsa Marg Rham Bhavan 1 in Mumbai",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Mumbai Ahinsa Ahinsa Marg Rham Bhavan 1 in",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "400052, Rham Bhavan 1, Mumbai",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Rham Bhavan 1 Aihnsa Marg",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Rham Bhavan 1 Ahinsa Marg (green door)",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "RHAM BHAVAN 1 AHINSA MARG",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "Rham Bhavan 1 marg",
+   "lat": 19.0732805,
+   "lng": 72.8326678,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rham Bhavan 1 Ahinsa Marg, 400052 Mumbai",
+   "base": 4
+  },
+  {
+   "address": "015 camp, 41101 pune",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "camp 015",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "camp 015 41101",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "pune, camp 015, in",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "in camp 015 pune",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "pune, 015, camp",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "015 camp",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "015 CAMP",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "015 camp john",
+   "lat": 19.07356876,
+   "lng": 72.82521848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "015 camp, 41101 pune",
+   "base": 5
+  },
+  {
+   "address": "1 railway Colony Road, 400024 mumbai",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 railway Colony Road",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "railway Colony Road 1 400024",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "railway Colony Road 1, in, mumbai",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "mumbai, railway Colony Road 1, in",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 - mumbai - 400024 - railway Colony Road",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 railwai Colony Road",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 railway colony road",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 colony road",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "1 RAILWAY COLONY ROAD",
+   "lat": 19.0672846,
+   "lng": 72.8827596,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 railway Colony Road, 400024 mumbai",
+   "base": 6
+  },
+  {
+   "address": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Pali Market Road, Bandra West, 213",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Pali Market Road, Bandra West 213, 400050",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Mumbai Pali Market Road, Bandra West 213 in",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Pali Market Road, Bandra West 213 213 Mumbai in",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Pali Market Road, Bandra West Mumbai 213 400050",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "213 bandra west pali market road",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "213 Bandra West Pali Market Road (green door)",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "213 market road",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "213 BANDRA WEST PALI MARKET ROAD",
+   "lat": 19.061903519999998,
+   "lng": 72.82786899999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "213 Pali Market Road, Bandra West, 400050 Mumbai",
+   "base": 7
+  },
+  {
+   "address": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Tata Colony,Chembur Type 3/5A,B",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Tata Colony,Chembur Type 3/5A,B 400074",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "in Mumbai Tata Colony,Chembur Type 3/5A,B",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "tata colony,chembur type 3/5a,b in mumbai",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Mumbai - Tata Colony,Chembur - Type 3/5A,B - 400074",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Type 3/5A,B Chembur Tata Colony john",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "TYPE 3/5A,B CHEMBUR TATA COLONY",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Type 3/5A,B Chemvur Tata Colony",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "Type 3/5A,B colony",
+   "lat": 19.03796048,
+   "lng": 72.90169498,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Type 3/5A,B Tata Colony,Chembur, 400074 Mumbai",
+   "base": 8
+  },
+  {
+   "address": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "Swami Vallabhdas Road 24",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "Swami Vallabhdas Road 24 400022",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "in Mumbai Swami Vallabhdas Road 24",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "Swami Vallabhdas Road 24, Mumbai, in",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "Mumbai, 400022, 24, Swami Vallabhdas Road",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "24 Swami Valabhdas Road",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "24 Swami Val Road",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "24 vallabhdas road",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "24 Swami Vallabhdas Road (green door)",
+   "lat": 19.04403102,
+   "lng": 72.8620043,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Swami Vallabhdas Road, 400022 Mumbai",
+   "base": 9
+  },
+  {
+   "address": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "Mavla Maratha Rd, 99",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "Mavla Maratha Rd 99 400024",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "Mumbai, Mavla Maratha Rd 99, in",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "Mumbai in Mavla Maratha Rd 99",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "Mumbai - Mavla Maratha Rd - 99",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "99 mavla maratha rd",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "99 Mavla Maartha Rd",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "99 Mavla Mar Rd",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "99 maratha rd",
+   "lat": 19.06348124,
+   "lng": 72.88300848,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "99 Mavla Maratha Rd, 400024 Mumbai",
+   "base": 10
+  },
+  {
+   "address": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "98 Dr Babasaheb Ambedkar Marg",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "Dr Babasaheb Ambedkar Marg 98 400022",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "in, Mumbai, Dr Babasaheb Ambedkar Marg 98",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "Mumbai in Dr Babasaheb Ambedkar Marg 98",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "400022 Dr Babasaheb Ambedkar Marg 98 Mumbai",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "98 Dr Babasaheb Ambedkar Marg back entrance",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "98 Dr Bavasaheb Ambedkar Marg",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "98 DR BABASAHEB AMBEDKAR MARG",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "98 marg",
+   "lat": 19.03297138,
+   "lng": 72.8594304,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "98 Dr Babasaheb Ambedkar Marg, 400022 Mumbai",
+   "base": 11
+  },
+  {
+   "address": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "R.C.F. Colony, Type 5, Bldg. No. 5",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "R.C.F. Colony Type 5, Bldg. No. 5 400074",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "in, R.C.F. Colony Type 5, Bldg. No. 5, Mumbai",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "r.c.f. colony type 5, bldg. no. 5 in mumbai",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "Mumbai - Type 5, Bldg. No. 5 - R.C.F. Colony - 400074",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "type 5, bldg. no. 5 r.c.f. colony",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "TYPE 5, BLDG. NO. 5 R.C.F. COLONY",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "Type 5, Bldg. No. 5 R.C.F. Colony back entrance",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "Type 5, Bldg. No. 5 colony",
+   "lat": 19.042621320000002,
+   "lng": 72.90813758,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Type 5, Bldg. No. 5 R.C.F. Colony, 400074 Mumbai",
+   "base": 12
+  },
+  {
+   "address": "363 Bhandarkar Road, 400019 Mumbai",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "Bhandarkar Road, 363",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "Bhandarkar Road 363, 400019",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "Mumbai, in, Bhandarkar Road 363",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "in, Bhandarkar Road 363, Mumbai",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "Bhandarkar Road - Mumbai - 363",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "363 Bhandarkar Road john",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "363 bhandarkar road",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "363 Bahndarkar Road",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "363 BHANDARKAR ROAD",
+   "lat": 19.0270114,
+   "lng": 72.8544232,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "363 Bhandarkar Road, 400019 Mumbai",
+   "base": 13
+  },
+  {
+   "address": "127-A Somnath Lane, Mumbai",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-A Somnath Lane",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "Somnath Lane 127-A, Mumbai",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "Mumbai Somnath Lane 127-A in",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "in Mumbai Somnath Somnath Lane 127-A",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-A - Somnath Lane",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-A Somntah Lane",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-A SOMNATH LANE",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-a somnath lane",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "127-A Somnath Lane john",
+   "lat": 19.05557898,
+   "lng": 72.82771982,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "127-A Somnath Lane, Mumbai",
+   "base": 14
+  },
+  {
+   "address": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "dashrathlal joshi rd, 5",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "dashrathlal joshi rd 5 400056",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "in dashrathlal joshi rd 5 MUMBAI",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "dashrathlal joshi rd 5 in MUMBAI",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "dashrathlal joshi rd, 5, MUMBAI, 400056",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "5 dashrathlal joshi rd",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "5 dashrathlal joshi rd (green door)",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "5 dsahrathlal joshi rd",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "5 DASHRATHLAL JOSHI RD",
+   "lat": 19.10641254,
+   "lng": 72.84371847999999,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5 dashrathlal joshi rd, 400056 MUMBAI",
+   "base": 15
+  },
+  {
+   "address": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "123 Chembur Market Bridge",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "Chembur Market Bridge 123, 400071",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "Chembur, Mumbai, Chembur Market Bridge 123, in",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "in, Chembur, Mumbai, Chembur Market Bridge 123",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "Chembur Market Bridge - Chembur, Mumbai - 400071",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "123 CHEMBUR MARKET BRIDGE",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "123 chembur market bridge",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "123 Chemvur Market Bridge",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "123 bridge",
+   "lat": 19.061047,
+   "lng": 72.89697558333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "123 Chembur Market Bridge, 400071 Chembur, Mumbai",
+   "base": 16
+  },
+  {
+   "address": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "G.N. Block, Plot no. R8 & R9",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "G.N. Block Plot no. R8 & R9, Mumbai",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "G.N. Block Plot no. R8 & R9 in Mumbai",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "G.N. Block Plot no. R8 & R9, Mumbai, in",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "Mumbai - Plot no. R8 & R9 - G.N. Block",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "plot no. r8 & r9 g.n. block",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "Plot no. R8 & R9 block",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "PLOT NO. R8 & R9 G.N. BLOCK",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "Plot no. R8 & R9 G.N. Blok",
+   "lat": 19.06593336666667,
+   "lng": 72.85774853333334,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Plot no. R8 & R9 G.N. Block, Mumbai",
+   "base": 17
+  },
+  {
+   "address": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052 Tanna Kutir 5, 6, 7, 1st & 17th",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052 Tanna Kutir 5, 6, 7, 1st & 17th 400052",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052 Tanna Kutir 5, 6, 7, 1st & 17th, in, Khar West, Mumbai",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "in Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052 Tanna Kutir 5, 6, 7, 1st & 17th Khar West, Mumbai",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "400052, Khar West, Mumbai, Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Tanna Kutir 5, 6, 7, 1st & 17th danda rd",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "tanna kutir 5, 6, 7, 1st & 17th maharashtra 400052 mumbai khar west khar - danda rd",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Tanna Kutir 5, 6, 7, 1st & 17th Maharasthra 400052 Mumbai Khar West Khar - Danda Rd",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "Tanna Kutir 5, 6, 7, 1st & 17th Maharashtra 400052 Mumbai Khar West Khar - Danda Rd (green door)",
+   "lat": 19.0733338,
+   "lng": 72.8300904,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Tanna Kutir 5, 6, 7, 1st & 17th Khar - Danda Rd, Khar West, Mumbai, Maharashtra 400052, 400052 Khar West, Mumbai",
+   "base": 18
+  },
+  {
+   "address": "169 Convent Road, 400050 Bandra, Mumbai",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "Convent Road 169",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "Convent Road 169, 400050",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "Convent Road 169, Bandra, Mumbai, in",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "Bandra, Mumbai, Convent Road 169, in",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "400050 169 Bandra, Mumbai",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "169 convent road",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "169 CONVENT ROAD",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "169 Conbent Road",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "169 Convent Road back entrance",
+   "lat": 19.060773863636364,
+   "lng": 72.82717008181818,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "169 Convent Road, 400050 Bandra, Mumbai",
+   "base": 19
+  },
+  {
+   "address": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "5AA St. Andrews Road Extension",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "St. Andrews Road Extension 5AA, 400050",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "Mumbai, St. Andrews Road Extension 5AA, in",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "St. Andrews Road Extension 5AA, in, Mumbai",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "Mumbai, St. Andrews Road Extension, 400050",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "5AA ST. ANDREWS ROAD EXTENSION",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "5AA St. Andrews Road Ext",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "5aa st. andrews road extension",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "5AA extension",
+   "lat": 19.0611919,
+   "lng": 72.826748,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "5AA St. Andrews Road Extension, 400050 Mumbai",
+   "base": 20
+  },
+  {
+   "address": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "Santacruz-Chembur Link Road (SCLR) 268",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "Santacruz-Chembur Link Road (SCLR) 268, 400070",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "Santacruz-Chembur Link Road (SCLR) 268, in, Mumbai",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "Mumbai, in, Santacruz-Chembur Santacruz-Chembur Link Road (SCLR) 268",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "400070, Mumbai, Santacruz-Chembur Link Road (SCLR)",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "268 Santacruz-Chemvur Link Road (SCLR)",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "268 SANTACRUZ-CHEMBUR LINK ROAD (SCLR)",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "268 (sclr)",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "268 santacruz-chembur link road (sclr)",
+   "lat": 19.07459368,
+   "lng": 72.88057682,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "268 Santacruz-Chembur Link Road (SCLR), 400070 Mumbai",
+   "base": 21
+  },
+  {
+   "address": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "151 Road No 6",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "Road No 6 151, 400055",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "Road No 6 151, in, Santacruz East, Mumbai",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "in, Road No 6 151, Santacruz East, Mumbai",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "151, Road No 6, 400055",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "151 road no 6",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "151 ROAD NO 6",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "151 Road No 6 (green door)",
+   "lat": 19.08385498,
+   "lng": 72.8426021,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "151 Road No 6, 400055 Santacruz East, Mumbai",
+   "base": 22
+  },
+  {
+   "address": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "Veronica Road, 7",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "Veronica Road 7 400050",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "in Bandra, Mumbai Veronica Road 7",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "in Veronica Road 7 Bandra, Mumbai",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "Veronica Road Bandra, Mumbai 400050 7",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "7 veronica road",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "7 VERONICA ROAD",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "7 Veronica Road john",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "7 Vreonica Road",
+   "lat": 19.0525677,
+   "lng": 72.8277465,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Veronica Road, 400050 Bandra, Mumbai",
+   "base": 23
+  },
+  {
+   "address": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Ventura Building, Central Ave, Hiranandani Gardens, Powai Unit 1, Ground Floor 400076",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Mumbai in Ventura Building, Central Ave, Hiranandani Gardens, Powai Unit 1, Ground Floor",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Ventura Building, Central Ave, Hiranandani Gardens, Powai Unit 1, Ground Floor Mumbai in",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Ventura Building, Central Ave, Hiranandani Gardens, Powai, Unit 1, Ground Floor, Mumbai",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Unit 1, Ground Floor Powai Hiranandani Gardens Central Ave Ventura Building john",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "unit 1, ground floor powai hiranandani gardens central ave ventura building",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "Unit 1, Ground Floor Powai Hirnaandani Gardens Central Ave Ventura Building",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "UNIT 1, GROUND FLOOR POWAI HIRANANDANI GARDENS CENTRAL AVE VENTURA BUILDING",
+   "lat": 19.1162038,
+   "lng": 72.9090668,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Unit 1, Ground Floor Ventura Building, Central Ave, Hiranandani Gardens, Powai, 400076 Mumbai",
+   "base": 24
+  },
+  {
+   "address": "2 Church pakadi rd, 400099 andheri",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "Church pakadi rd, 2",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "Church pakadi rd 2, 400099",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "andheri, Church pakadi rd 2, in",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "andheri, in, Church pakadi rd 2",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "400099, 2, Church pakadi rd",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "2 church pakadi rd",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "2 CHURCH PAKADI RD",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "2 Church pakadi rd back entrance",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "2 Chruch pakadi rd",
+   "lat": 19.09987576,
+   "lng": 72.86752198,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Church pakadi rd, 400099 andheri",
+   "base": 25
+  },
+  {
+   "address": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "23rd Road (St. Theresa's Road) 456",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "23rd Road (St. Theresa's Road) 456, 400050",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "in Mumbai 23rd Road (St. Theresa's Road) 456",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "23rd Road (St. Theresa's Road) 456 in Mumbai",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "456, Mumbai, 23rd Road (St. Theresa's Road)",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "456 23rd road (st. theresa's road)",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "456 23rd Road (St. Theresa's Road) back entrance",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "456 23rd Road (St. Thereas's Road)",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "456 23RD ROAD (ST. THERESA'S ROAD)",
+   "lat": 19.06469776,
+   "lng": 72.83293906,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "456 23rd Road (St. Theresa's Road), 400050 Mumbai",
+   "base": 26
+  },
+  {
+   "address": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "59 Thermal CHS Nehru Nagar Police Station Marg",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "Nehru Nagar Police Station Marg 59 Thermal CHS 400024",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "Nehru Nagar Police Station Marg 59 Thermal CHS, in, Mumbai",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "mumbai, in, nehru nagar police station marg 59 thermal chs",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "Mumbai 400024 59 Thermal CHS",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "59 Thermal CHS marg",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "59 thermal chs nehru nagar police station marg",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "59 Thermal CHS Nehru Nagar Police Station Marg (green door)",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "59 THERMAL CHS NEHRU NAGAR POLICE STATION MARG",
+   "lat": 19.06016921111111,
+   "lng": 72.88210693333333,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "59 Thermal CHS Nehru Nagar Police Station Marg, 400024 Mumbai",
+   "base": 27
+  },
+  {
+   "address": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "F-Block, T.P.S. Road, Behind Government Teachers Colony No. 12, 400051",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "F-Block, T.P.S. Road, Behind Government Teachers Colony No. 12, in, Bandra East, Mumbai",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "Bandra East, Mumbai in F-Block, T.P.S. Road, Behind Government Teachers Colony No. 12",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "Bandra East, Mumbai - 400051 - No. 12 - F-Block, T.P.S. Road, Behind Government Teachers Colony",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "No. 12 Behind Government Teachers Colony T.P.S. Road F-B",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "no. 12 behind government teachers colony t.p.s. road f-block",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "No. 12 Behind Gobernment Teachers Colony T.P.S. Road F-Block",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "No. 12 f-block",
+   "lat": 19.069868200000002,
+   "lng": 72.84980065652174,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "No. 12 F-Block, T.P.S. Road, Behind Government Teachers Colony, 400051 Bandra East, Mumbai",
+   "base": 28
+  },
+  {
+   "address": "262 Flank Road, 400022 Mumbai",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "Flank Road 262",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "Flank Road 262, 400022",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "Mumbai, in, Flank Road 262",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "in, Mumbai, Flank Road 262",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "Flank Road - 262 - Mumbai - 400022",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "262 flank road",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "262 FLANK ROAD",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "262 Flank Road apt 4b",
+   "lat": 19.03277204,
+   "lng": 72.86046374,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "262 Flank Road, 400022 Mumbai",
+   "base": 29
+  },
+  {
+   "address": "44 Mahakali Caves Road, 400093 Mumbai",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "Mahakali Caves Road, 44",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "Mahakali Caves Road 44 400093",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "Mahakali Caves Road 44, in, Mumbai",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "Mahakali Caves Road 44, in, Mumbai",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "Mahakali Caves Road 400093 44 Mumbai",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "44 MAHAKALI CAVES ROAD",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "44 mahakali caves road",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "44 caves road",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "44 Mahakali Caves Road back entrance",
+   "lat": 19.1193537,
+   "lng": 72.8625653,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "44 Mahakali Caves Road, 400093 Mumbai",
+   "base": 30
+  },
+  {
+   "address": "6 Koldongri 1, 400069 Mumbai",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "Koldongri 1 6",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "Koldongri 1 6 400069",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "in Mumbai Koldongri 1 6",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "in Mumbai Koldongri 1 6",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "400069 Koldongri 1 Mumbai 6",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "6 koldongri 1",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "6 Koldongri 1 john",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "6 Kolodngri 1",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "6 KOLDONGRI 1",
+   "lat": 19.1122189,
+   "lng": 72.8504226,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Koldongri 1, 400069 Mumbai",
+   "base": 31
+  },
+  {
+   "address": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Dharavi Main Road, Room No. 7, Pasco Patil Chawl, Koliwada",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Dharavi Main Road Room No. 7, Pasco Patil Chawl, Koliwada, 400017",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Dharavi Main Road Room No. 7, Pasco Patil Chawl, Koliwada, Mumbai, in",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "in, Mumbai, Dharavi Main Road Room No. 7, Pasco Patil Chawl, Koliwada",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Dharavi Main Road 400017 Room No. 7, Pasco Patil Chawl, Koliwada Mumbai",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Room No. 7, Pasco Patil Chawl, Koliwada main road",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Room No. 7, Pasco Patil Chawl, Koliwada Dharvai Main Road",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "ROOM NO. 7, PASCO PATIL CHAWL, KOLIWADA DHARAVI MAIN ROAD",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road john",
+   "lat": 19.0463179,
+   "lng": 72.8544577,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Room No. 7, Pasco Patil Chawl, Koliwada Dharavi Main Road, 400017 Mumbai",
+   "base": 32
+  },
+  {
+   "address": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "Sahar Road,Sambhaji Nagar, A-901,Kaledonia",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "Sahar Road,Sambhaji Nagar A-901,Kaledonia, 400069",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "in Mumbai Sahar Road,Sambhaji Nagar A-901,Kaledonia",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "Mumbai, in, Sahar Road,Sambhaji Nagar A-901,Kaledonia",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "Sahar Road,Sambhaji Nagar A-901,Kaledonia Mumbai 400069",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "A-901,KALEDONIA SAMBHAJI NAGAR SAHAR ROAD",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "a-901,kaledonia sambhaji nagar sahar road",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "A-901,Kaledonia Samvhaji Nagar Sahar Road",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "A-901,Kaledonia Sambhaji Nagar Sahar Road (green door)",
+   "lat": 19.113611419999998,
+   "lng": 72.84700082,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "A-901,Kaledonia Sahar Road,Sambhaji Nagar, 400069 Mumbai",
+   "base": 33
+  },
+  {
+   "address": "24 Hanuman Road, 400057 Mumbai",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "Hanuman Road 24",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "Hanuman Road 24, 400057",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "Mumbai in Hanuman Road 24",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "in Hanuman Road 24 Mumbai",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "24, Mumbai, Hanuman Road, 400057",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "24 hanuman road",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "24 Hanuman Road john",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "24 HANUMAN ROAD",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "24 Hanmuan Road",
+   "lat": 19.1036837,
+   "lng": 72.8498051,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 Hanuman Road, 400057 Mumbai",
+   "base": 34
+  },
+  {
+   "address": "2 golibar road, 400055 mumbai santacruz",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "golibar road, 2",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "golibar road 2, 400055",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "in, golibar road 2, mumbai santacruz",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "mumbai santacruz in golibar road 2",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "2 400055 mumbai santacruz golibar road",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "2 GOLIBAR ROAD",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "2 golibar road apt 4b",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "2 golibar road",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "2 golivar road",
+   "lat": 19.0726487,
+   "lng": 72.8443905,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 golibar road, 400055 mumbai santacruz",
+   "base": 35
+  },
+  {
+   "address": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "82 St. Andrew Road",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "St. Andrew Road 82 400050",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "St. Andrew Road 82 in Bandra, Mumbai",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "bandra, mumbai, st. andrew road 82, in",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "Bandra, Mumbai, 82, St. Andrew Road",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "82 st. andrew road",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "82 St. Anderw Road",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "82 ST. ANDREW ROAD",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "82 andrew road",
+   "lat": 19.058274779999998,
+   "lng": 72.82647442,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "82 St. Andrew Road, 400050 Bandra, Mumbai",
+   "base": 36
+  },
+  {
+   "address": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "Phoenix Marketcity, LG17-A",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "Phoenix Marketcity LG17-A 400070",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "Phoenix Marketcity LG17-A, Mumbai, in",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "in Phoenix Marketcity LG17-A Mumbai",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "Mumbai - 400070 - LG17-A - Phoenix Marketcity",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "lg17-a phoenix marketcity",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "LG17-A Phoenix Mar",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "LG17-A Phoenix Marketcity back entrance",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "LG17-A Phoenix Marketsity",
+   "lat": 19.0865347,
+   "lng": 72.8891454,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LG17-A Phoenix Marketcity, 400070 Mumbai",
+   "base": 37
+  },
+  {
+   "address": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West, 250",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West, 250 400070",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "in MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West, 250 Mumbai",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, WADI, New Mill Rd, beside MADINA HOTEL, Kurla West, 250, Mumbai, in",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "250 - MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West, - Mumbai",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "250 Kurla West beside MADINA HOTEL New Mill Rd 250 BHALEKAR WADI MEHBOOB E SUBHANI MASJID back entrance",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "250 KURLA WEST BESIDE MADINA HOTEL NEW MILL RD 250 BHALEKAR WADI MEHBOOB E SUBHANI MASJID",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "250 Kurla West beside MADINA HOTEL New Mill Rd 250 BAHLEKAR WADI MEHBOOB E SUBHANI MASJID",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "250 masjid",
+   "lat": 19.0765454,
+   "lng": 72.8802586,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "250 MEHBOOB E SUBHANI MASJID, 250 BHALEKAR WADI, New Mill Rd, beside MADINA HOTEL, Kurla West,, 400070 Mumbai",
+   "base": 38
+  },
+  {
+   "address": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "Manuel Gonsalves Road 240",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "Manuel Gonsalves Road 240 400050",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "in Manuel Gonsalves Road 240 Mumbai",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "in Manuel Gonsalves Road 240 Mumbai",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "240 400050 Mumbai Manuel Gonsalves Road",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "240 Manuel Gonsalves Road john",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "240 MANUEL GONSALVES ROAD",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "240 Manuel Gon Road",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  },
+  {
+   "address": "240 manuel gonsalves road",
+   "lat": 19.05899556,
+   "lng": 72.82881782,
+   "country": "IN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "240 Manuel Gonsalves Road, 400050 Mumbai",
+   "base": 39
+  }
+ ]
+}

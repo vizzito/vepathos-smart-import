@@ -1,0 +1,3968 @@
+{
+ "source": "osm-addr",
+ "country": "GB",
+ "city": "London",
+ "country_label": "United Kingdom",
+ "depot": {
+  "lat": 51.5074,
+  "lon": -0.1278,
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 395,
+ "note": "Nodos addr:* del indice n51.60_s51.40_e0.00_w-0.30-england.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "11 Parry Road, London",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "11 Parry Road",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "Parry Road 11, London",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "London, gb, Parry Road 11",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "London, gb, Parry Road 11",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "London, Parry Road",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "11 PARRY ROAD",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "11 Parri Road",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "11 parry road",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "11 Parry Road john",
+   "lat": 51.5290354,
+   "lng": -0.2069641,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "11 Parry Road, London",
+   "base": 0
+  },
+  {
+   "address": "6 Macclesfield Road, EC1V 8DJ London",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "Macclesfield Road, 6",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "Macclesfield Road 6 EC1V 8DJ",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "Macclesfield Road 6, London, gb",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "London Macclesfield Road 6 gb",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "Macclesfield Road, London, 6, EC1V 8DJ",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "6 Maccelsfield Road",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "6 MACCLESFIELD ROAD",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "6 Macclesfield Road (green door)",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "6 macclesfield road",
+   "lat": 51.5287069923077,
+   "lng": -0.09642882307692308,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Macclesfield Road, EC1V 8DJ London",
+   "base": 1
+  },
+  {
+   "address": "36 Greville Street, London",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "Greville Street, 36",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "Greville Street 36, London",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "gb, Greville Street 36, London",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "london, gb, gb, greville street 36",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "London, 36, Greville Street",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "36 greville street",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "36 Greville Street back entrance",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "36 GREVILLE STREET",
+   "lat": 51.5194746,
+   "lng": -0.1076848,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "36 Greville Street, London",
+   "base": 2
+  },
+  {
+   "address": "4 Belsize Park Gardens, NW3 4LD London",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "4 Belsize Park Gardens",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "Belsize Park Gardens 4 NW3 4LD",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "Belsize Park Gardens 4 gb London",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "belsize park gardens gardens 4, london, gb",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "Belsize Park Gardens, London, NW3 4LD, 4",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "4 BELSIZE PARK GARDENS",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "4 Belsize Park Gardens back entrance",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "4 park gardens",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "4 belsize park gardens",
+   "lat": 51.548466133333335,
+   "lng": -0.16924263333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4 Belsize Park Gardens, NW3 4LD London",
+   "base": 3
+  },
+  {
+   "address": "26 Elder Street, London",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "Elder Street, 26",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "Elder Street 26, London",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "London gb Elder Street 26",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "Elder Street 26, London, gb",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "Elder Street London",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "26 Ellder Street",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "26 elder street",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "26 Elder Street back entrance",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "26 ELDER STREET",
+   "lat": 51.52131772,
+   "lng": -0.07687948,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "26 Elder Street, London",
+   "base": 4
+  },
+  {
+   "address": "2-16 Cowling Close, London",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "2-16 Cowling Close",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "Cowling Close 2-16, London",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "gb, London, Cowling Close 2-16",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "London, Cowling Close 2-16, gb",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "Cowling Close 2-16",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "2-16 COWLING CLOSE",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "2-16 Cowilng Close",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "2-16 cowling close",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "2-16 Cowling Close john",
+   "lat": 51.5094186,
+   "lng": -0.2130144,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2-16 Cowling Close, London",
+   "base": 5
+  },
+  {
+   "address": "16 Airlie Gardens, London",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 Airlie Gardens",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "Airlie Gardens 16, London",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "Airlie Gardens 16, London, gb",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "gb, london, airlie gardens 16",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 - Airlie Gardens",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 airlie gardens",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 Airlie Gardens apt 4b",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 AIRLIE GARDENS",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "16 Ailrie Gardens",
+   "lat": 51.5054733,
+   "lng": -0.1992728,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "16 Airlie Gardens, London",
+   "base": 6
+  },
+  {
+   "address": "28 Pond Place, London",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "Pond Place 28",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "Pond Place 28, London",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "gb, Pond Place 28, London",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "London, London, gb, Pond Place 28",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "London - 28",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "28 POND PLACE",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "28 Pond Place back entrance",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "28 pond place",
+   "lat": 51.491024054545456,
+   "lng": -0.17061585454545455,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "28 Pond Place, London",
+   "base": 7
+  },
+  {
+   "address": "2 Oakford Road, London",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "Oakford Road, 2",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "Oakford Road 2, London",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "London Oakford Road 2 gb",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "Oakford Road 2 London gb",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "Oakford Road 2",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "2 OAKFORD ROAD",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "2 Oakford Road john",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "2 oakford road",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "2 Oafkord Road",
+   "lat": 51.5554932,
+   "lng": -0.1408031,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Oakford Road, London",
+   "base": 8
+  },
+  {
+   "address": "1 Moorhouse Road, W2 5DH London",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "Moorhouse Road, 1",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "Moorhouse Road 1 W2 5DH",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "gb London Moorhouse Road 1",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "gb moorhouse road 1 london",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "W2 5DH - Moorhouse Road - London - 1",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "1 Moorhouse Road back entrance",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "1 Moorhuse Road",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "1 MOORHOUSE ROAD",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "1 moorhouse road",
+   "lat": 51.51565684,
+   "lng": -0.19807812,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Moorhouse Road, W2 5DH London",
+   "base": 9
+  },
+  {
+   "address": "32 Bourdon Street, W1K 3PP London",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "Bourdon Street 32",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "Bourdon Street 32, W1K 3PP",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "Bourdon Street 32, London, gb",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "Bourdon Street 32 gb gb London",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "Bourdon Street, 32, London, W1K 3PP",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "32 Bourdon Street back entrance",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "32 bourdon street",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "32 Burdon Street",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "32 BOURDON STREET",
+   "lat": 51.51132602,
+   "lng": -0.14495306000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "32 Bourdon Street, W1K 3PP London",
+   "base": 10
+  },
+  {
+   "address": "35 Loraine Road, N7 6HB London",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "Loraine Road, 35",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "Loraine Road 35 N7 6HB",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "London Loraine Road 35 gb",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "gb, Loraine Road 35, London",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "London Loraine Road 35 N7 6HB",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "35 Loriane Road",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "35 LORAINE ROAD",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "35 Loraine Road back entrance",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "35 loraine road",
+   "lat": 51.55594336,
+   "lng": -0.11390879999999999,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "35 Loraine Road, N7 6HB London",
+   "base": 11
+  },
+  {
+   "address": "1 Catherine Wheel Yard, London",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "1 Catherine Wheel Yard",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "Catherine Wheel Yard 1, London",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "gb London Catherine Wheel Yard 1",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "gb, London, Catherine Wheel Yard 1",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "Catherine Wheel Yard, 1",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "1 CATHERINE WHEEL YARD",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "1 Cahterine Wheel Yard",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "1 catherine wheel yard",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "1 yard",
+   "lat": 51.5051664,
+   "lng": -0.1396091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Catherine Wheel Yard, London",
+   "base": 12
+  },
+  {
+   "address": "10 Burnell Walk, SE1 5RS London",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "Burnell Walk 10",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "Burnell Walk 10, SE1 5RS",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "Burnell Walk 10 London gb",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "gb Burnell Walk 10 10 London",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "Burnell Walk London SE1 5RS 10",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "10 Burnel Walk",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "10 burnell walk",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "10 Burnell Walk back entrance",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "10 BURNELL WALK",
+   "lat": 51.48955616666667,
+   "lng": -0.07246228333333334,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 Burnell Walk, SE1 5RS London",
+   "base": 13
+  },
+  {
+   "address": "40 Folgate Street, London",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "Folgate Street, 40",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "Folgate Street 40, London",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "gb, Folgate Street 40, London",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "gb Folgate Street 40 London",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "40 London",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "40 folgate street",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "40 FOLGATE STREET",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "40 Folgate Street apt 4b",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "40 Foglate Street",
+   "lat": 51.52067084,
+   "lng": -0.07598266000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "40 Folgate Street, London",
+   "base": 14
+  },
+  {
+   "address": "48 Goldman Close, London",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "48 Goldman Close",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "Goldman Close 48, London",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "London gb Goldman Close 48",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "London, gb, Goldman Close 48 48",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "Goldman Close, 48, London",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "48 Goldman Close john",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "48 GOLDMAN CLOSE",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "48 Golmdan Close",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "48 goldman close",
+   "lat": 51.5243133,
+   "lng": -0.0687897,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "48 Goldman Close, London",
+   "base": 15
+  },
+  {
+   "address": "6a Herbert Crescent, SW1X 0HA London",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "Herbert Crescent 6a",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "Herbert Crescent 6a SW1X 0HA",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "gb Herbert Crescent 6a London",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "gb, London, Herbert Crescent 6a",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "Herbert Crescent, London, SW1X 0HA",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "6A HERBERT CRESCENT",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "6a Herbert Crescent (green door)",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "6a herbert crescent",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "6a Hervert Crescent",
+   "lat": 51.498617442857146,
+   "lng": -0.16066248571428574,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6a Herbert Crescent, SW1X 0HA London",
+   "base": 16
+  },
+  {
+   "address": "6 Domingo Street, EC1Y 0TA London",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "Domingo Street 6",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "Domingo Street 6 EC1Y 0TA",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "Domingo Street 6 gb London",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "gb, gb, Domingo Street 6, London",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "Domingo Street EC1Y 0TA London 6",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "6 DOMINGO STREET",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "6 Domigno Street",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "6 Domingo Street john",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "6 domingo street",
+   "lat": 51.5236225625,
+   "lng": -0.0964776875,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Domingo Street, EC1Y 0TA London",
+   "base": 17
+  },
+  {
+   "address": "33 Gutter Lane, EC2V 8AS London",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "33 Gutter Lane",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "Gutter Lane 33, EC2V 8AS",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "London gb Gutter Lane 33",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "Gutter Lane 33, London, gb",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "Gutter Lane - 33 - EC2V 8AS - London",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "33 gutter lane",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "33 GUTTER LANE",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "33 Gutter Lane (green door)",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "33 Gutetr Lane",
+   "lat": 51.5151584,
+   "lng": -0.0955124,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "33 Gutter Lane, EC2V 8AS London",
+   "base": 18
+  },
+  {
+   "address": "156-158 Mile End Road, London",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "Mile End Road 156-158",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "Mile End Road 156-158, London",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "gb London Mile End Road 156-158",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "gb, gb, Mile End Road 156-158, London",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "156-158 Mile End Road London",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "156-158 mile end road",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "156-158 MILE END ROAD",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "156-158 Mile End Road apt 4b",
+   "lat": 51.5209964,
+   "lng": -0.0495727375,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "156-158 Mile End Road, London",
+   "base": 19
+  },
+  {
+   "address": "47 Blue Anchor Lane, SE16 3UL London",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "47 Blue Anchor Lane",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "Blue Anchor Lane 47, SE16 3UL",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "gb, Blue Anchor Lane 47, London",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "Blue Anchor Anchor Lane 47 gb London",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "SE16 3UL, 47, Blue Anchor Lane",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "47 blue anchor lane",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "47 anchor lane",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "47 BLUE ANCHOR LANE",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "47 Blue Anchor Lane back entrance",
+   "lat": 51.49270172,
+   "lng": -0.06287728000000001,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "47 Blue Anchor Lane, SE16 3UL London",
+   "base": 20
+  },
+  {
+   "address": "35-51 Trederwen Road, London",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "35-51 Trederwen Road",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "Trederwen Road 35-51, London",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "Trederwen Road 35-51 gb London",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "Trederwen Road 35-51 London gb",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "Trederwen Road 35-51 London",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "35-51 TREDERWEN ROAD",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "35-51 Trederwen Road (green door)",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "35-51 Treedrwen Road",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "35-51 trederwen road",
+   "lat": 51.53846945454546,
+   "lng": -0.06226829090909091,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "35-51 Trederwen Road, London",
+   "base": 21
+  },
+  {
+   "address": "71 Vicarage Crescent, London",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71 Vicarage Crescent",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "Vicarage Crescent 71, London",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "Vicarage Crescent 71, gb, London",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "gb Vicarage Crescent 71 London",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71, Vicarage Crescent, London",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71 Viacrage Crescent",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71 Vicarage Crescent (green door)",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71 vicarage crescent",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "71 VICARAGE CRESCENT",
+   "lat": 51.4744172,
+   "lng": -0.1766036,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "71 Vicarage Crescent, London",
+   "base": 22
+  },
+  {
+   "address": "15 St. Mary Abbot's Place, London",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "St. Mary Abbot's Place, 15",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "St. Mary Abbot's Place 15, London",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "St. Mary Abbot's Place 15 London gb",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "gb, London, St. Mary Abbot's Place 15",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "15 - London",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "15 St. Mary Abb Place",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "15 St. Mary Avbot's Place",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "15 St. Mary Abbot's Place john",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "15 ST. MARY ABBOT'S PLACE",
+   "lat": 51.49678778235294,
+   "lng": -0.20265137647058823,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 St. Mary Abbot's Place, London",
+   "base": 23
+  },
+  {
+   "address": "13 Camden passage, N1 8EA London",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "Camden passage 13",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "Camden passage 13, N1 8EA",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "London, gb, Camden passage 13",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "gb, Camden passage 13, London",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "13 Camden passage N1 8EA London",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "13 camden passage",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "13 Camden pas",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "13 passage",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "13 Camden psasage",
+   "lat": 51.534727266666664,
+   "lng": -0.1041218,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "13 Camden passage, N1 8EA London",
+   "base": 24
+  },
+  {
+   "address": "87 Leather Lane, London",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "87 Leather Lane",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "Leather Lane 87, London",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "London, gb, Leather Lane 87",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "gb, Leather Lane 87, London",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "London 87",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "87 Laether Lane",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "87 leather lane",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "87 LEATHER LANE",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "87 Leather Lane apt 4b",
+   "lat": 51.5214304,
+   "lng": -0.1102195,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "87 Leather Lane, London",
+   "base": 25
+  },
+  {
+   "address": "62 Sancroft Street, London",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "Sancroft Street, 62",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "Sancroft Street 62, London",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "Sancroft Street 62 London gb",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "London, gb, Sancroft Street 62",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "62 London",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "62 SANCROFT STREET",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "62 Sancroft Street john",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "62 Snacroft Street",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "62 sancroft street",
+   "lat": 51.4898376,
+   "lng": -0.1160186,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "62 Sancroft Street, London",
+   "base": 26
+  },
+  {
+   "address": "19 Harrington Square, London",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "Harrington Square, 19",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "Harrington Square 19, London",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "London gb Harrington Square 19",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "london, harrington square 19, gb",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "Harrington Square, London, 19",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "19 harrington square",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "19 Harrington Square (green door)",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "19 HARRINGTON SQUARE",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "19 Harington Square",
+   "lat": 51.53305637999999,
+   "lng": -0.13796702,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "19 Harrington Square, London",
+   "base": 27
+  },
+  {
+   "address": "24 Maresfield Gardens, NW3 5SX London",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "Maresfield Gardens, 24",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "Maresfield Gardens 24 NW3 5SX",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "London, Maresfield Gardens 24, gb",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "gb London Maresfield Gardens 24",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "NW3 5SX London 24",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "24 maresfield gardens",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "24 Maresfield Gardens back entrance",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "24 MARESFIELD GARDENS",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "24 Maresfeild Gardens",
+   "lat": 51.548699122222224,
+   "lng": -0.1774015111111111,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 Maresfield Gardens, NW3 5SX London",
+   "base": 28
+  },
+  {
+   "address": "2 Akenside Road, NW3 5BS London",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "Akenside Road, 2",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "Akenside Road 2 NW3 5BS",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "gb London Akenside Road 2",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "Akenside Road 2 gb London",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "NW3 5BS Akenside Road London",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "2 Aeknside Road",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "2 AKENSIDE ROAD",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "2 akenside road",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "2 Akenside Road back entrance",
+   "lat": 51.551371180000004,
+   "lng": -0.17481692,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Akenside Road, NW3 5BS London",
+   "base": 29
+  },
+  {
+   "address": "8 London Bridge Walk, London",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "London Bridge Walk 8",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "London Bridge Walk 8, London",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "London London Bridge Walk 8 gb",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "London Bridge Walk 8, London, gb",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "London - London Bridge Walk - 8",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "8 bridge walk",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "8 LONDON BRIDGE WALK",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "8 london bridge walk",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "8 Lonodn Bridge Walk",
+   "lat": 51.5060881,
+   "lng": -0.0868023,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8 London Bridge Walk, London",
+   "base": 30
+  },
+  {
+   "address": "21 Duchess Mews, W1G 9DY London",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "21 Duchess Mews",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "Duchess Mews 21 W1G 9DY",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "Duchess Mews 21, London, gb",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "duchess duchess mews 21 london gb",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "London - 21 - W1G 9DY - Duchess Mews",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "21 DUCHESS MEWS",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "21 Duchess Mews back entrance",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "21 duchess mews",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "21 Dcuhess Mews",
+   "lat": 51.51937353333333,
+   "lng": -0.14532433333333333,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "21 Duchess Mews, W1G 9DY London",
+   "base": 31
+  },
+  {
+   "address": "31 Harmood Street, NW1 8DW London",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "Harmood Street, 31",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "Harmood Street 31, NW1 8DW",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "gb, London, Harmood Street 31",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "Harmood Street 31, 31, gb, London",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "31 - NW1 8DW - London",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "31 HARMOOD STREET",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "31 Harmood Street back entrance",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "31 harmood street",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "31 Harmmood Street",
+   "lat": 51.54393866,
+   "lng": -0.14745622,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "31 Harmood Street, NW1 8DW London",
+   "base": 32
+  },
+  {
+   "address": "1 Cobham Mews, NW1 9SB London",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "Cobham Mews 1",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "Cobham Mews 1 NW1 9SB",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "London gb Cobham Mews 1",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "gb Cobham Mews 1 London",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "1 - Cobham Mews - NW1 9SB",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "1 Covham Mews",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "1 COBHAM MEWS",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "1 Cobham Mews apt 4b",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "1 cobham mews",
+   "lat": 51.5432845625,
+   "lng": -0.132806525,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Cobham Mews, NW1 9SB London",
+   "base": 33
+  },
+  {
+   "address": "7 Trebeck Street, London",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "Trebeck Street, 7",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "Trebeck Street 7, London",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "London, gb, Trebeck Street 7",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "gb Trebeck Street 7 London London",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "Trebeck Street London 7",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "7 Trebek Street",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "7 TREBECK STREET",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "7 Trebeck Street back entrance",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "7 trebeck street",
+   "lat": 51.50634744,
+   "lng": -0.14711846,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7 Trebeck Street, London",
+   "base": 34
+  },
+  {
+   "address": "1-40 Sherborne Street, London",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "1-40 Sherborne Street",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "Sherborne Street 1-40, London",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "gb, Sherborne Street 1-40, London",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "gb, London, Sherborne Street 1-40",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "London 1-40 Sherborne Street",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "1-40 Sherborne Street apt 4b",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "1-40 Shervorne Street",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "1-40 sherborne street",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "1-40 SHERBORNE STREET",
+   "lat": 51.5385225,
+   "lng": -0.08933322,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1-40 Sherborne Street, London",
+   "base": 35
+  },
+  {
+   "address": "44 De Laune Street, London",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "De Laune Street, 44",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "De Laune Street 44, London",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "De Laune Street 44 London gb",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "gb, London, De Laune Street 44",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "44 London",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "44 DE LAUNE STREET",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "44 de laune street",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "44 De Laune Street john",
+   "lat": 51.4866879,
+   "lng": -0.1055799,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "44 De Laune Street, London",
+   "base": 36
+  },
+  {
+   "address": "17 Southwell Road, SE5 9PF London",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "17 Southwell Road",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "Southwell Road 17 SE5 9PF",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "Southwell Road 17 London gb",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "Southwell Road 17 London gb",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "London - 17 - SE5 9PF - Southwell Road",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "17 Soutwhell Road",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "17 Southwell Road (green door)",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "17 southwell road",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "17 SOUTHWELL ROAD",
+   "lat": 51.46636831428572,
+   "lng": -0.09929048571428571,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "17 Southwell Road, SE5 9PF London",
+   "base": 37
+  },
+  {
+   "address": "12 Moor Street, W1D 5NG London",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "Moor Street 12",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "Moor Street 12 W1D 5NG",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "Moor Street 12, gb, London",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "London, Moor Street 12, gb",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "London - W1D 5NG - Moor Street - 12",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "12 MOOR STREET",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "12 Moor Street apt 4b",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "12 moor street",
+   "lat": 51.513578233333334,
+   "lng": -0.13005350000000002,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 Moor Street, W1D 5NG London",
+   "base": 38
+  },
+  {
+   "address": "20 Wilton Row, SW1X 7NS London",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "Wilton Row 20",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "Wilton Row 20 SW1X 7NS",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "Wilton Row 20, gb, London",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "Wilton Wilton Row 20 London gb",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "SW1X 7NS London Wilton Row 20",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "20 Witlon Row",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "20 Wilton Row john",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "20 wilton row",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  },
+  {
+   "address": "20 WILTON ROW",
+   "lat": 51.50143872857143,
+   "lng": -0.1545506285714286,
+   "country": "GB",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "20 Wilton Row, SW1X 7NS London",
+   "base": 39
+  }
+ ]
+}

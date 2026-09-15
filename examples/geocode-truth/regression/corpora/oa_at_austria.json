@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "AT",
+ "city": "Vienna",
+ "country_label": "Austria",
+ "depot": {
+  "lat": 48.2082,
+  "lon": 16.3738,
+  "city": "Vienna",
+  "country": "Austria"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses at/city_of_vienna, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Preysinggasse 36, 1150 Vienna",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "36 Preysinggasse",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Preysinggasse 36, 1150",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Vienna, austria, Preysinggasse 36",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Vienna, austria, Preysinggasse 36",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "36 Preysinggasse Vienna",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Preysinggasse 36 2 og",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "PREYSINGGASSE 36",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Kiosk preysinggasse 36",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "preysinggasse 36",
+   "lat": 48.198655,
+   "lng": 16.3259433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Preysinggasse 36, 1150 Vienna",
+   "base": 0
+  },
+  {
+   "address": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Luise-Montag-Gasse, 3",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Luise-Montag-Gasse 3, 1110",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Vienna austria Luise-Montag-Gasse 3",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Luise-Montag-Gasse 3, Vienna, austria",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "3, 1110, Luise-Montag-Gasse, Vienna",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Anna luise-montag-gasse 3",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "luise-montag-gasse 3",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Luies-Montag-Gasse 3",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Luise-Montag-Gasse 3 2 og",
+   "lat": 48.1670032,
+   "lng": 16.4160245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Luise-Montag-Gasse 3, 1110 Vienna",
+   "base": 1
+  },
+  {
+   "address": "Ameisbachzeile 18, 1140 Vienna",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "18 Ameisbachzeile",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Ameisbachzeile 18 1140",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "austria Vienna Ameisbachzeile 18",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Vienna austria Ameisbachzeile 18 18",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Vienna 18 Ameisbachzeile",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "ameisbachzeile 18",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Ameisvachzeile 18",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Ameisbachzeile 18 peter",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "AMEISBACHZEILE 18",
+   "lat": 48.1990542,
+   "lng": 16.2941328,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ameisbachzeile 18, 1140 Vienna",
+   "base": 2
+  },
+  {
+   "address": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Leonard-Bernstein-Straße, 4-6",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Leonard-Bernstein-Straße 4-6 1220",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Vienna Leonard-Bernstein-Straße 4-6 austria",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "leonard-bernstein-straße 4-6 vienna austria",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Vienna - 1220 - 4-6",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "leonard-bernstein-straße 4-6",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Leonard-Bernstein-Straße4-6",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Leonard-vernstein-Straße 4-6",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Leonard-Bernstein-Straße 4-6 hinterhaus",
+   "lat": 48.2350932,
+   "lng": 16.4105049,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Leonard-Bernstein-Straße 4-6, 1220 Vienna",
+   "base": 3
+  },
+  {
+   "address": "Kratzlgasse 6, 1190 Vienna",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Kratzlgasse, 6",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Kratzlgasse 6 1190",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "austria Kratzlgasse 6 Vienna",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Kratzlgasse 6, Vienna, austria",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Vienna - 6 - Kratzlgasse",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Kratzlgasse 6 (grune tur)",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Krtazlgasse 6",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Anna kratzlgasse 6",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Kratzlgasse6",
+   "lat": 48.2423491,
+   "lng": 16.3305039,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kratzlgasse 6, 1190 Vienna",
+   "base": 4
+  },
+  {
+   "address": "Hietzinger Kai 7-9, 1130 Vienna",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "7-9 Hietzinger Kai",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "Hietzinger Kai 7-9, 1130",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "austria Hietzinger Kai 7-9 Vienna",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "Hietzinger Kai 7-9 Vienna austria",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "7-9, Vienna, 1130, Hietzinger Kai",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "hietzinger kai 7-9",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "Hietzinger Kai 7-9 hinterhaus",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "HIETZINGER KAI 7-9",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "Hietsinger Kai 7-9",
+   "lat": 48.1886803,
+   "lng": 16.2984712,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hietzinger Kai 7-9, 1130 Vienna",
+   "base": 5
+  },
+  {
+   "address": "Elidagasse 6, 1220 Vienna",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Elidagasse 6",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Elidagasse 6 1220",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Elidagasse 6, austria, Vienna",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "elidagasse 6, vienna, austria",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "1220 - Elidagasse - Vienna - 6",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "elidagasse 6",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Elidagase 6",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Elidagasse 6 2 og",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Anna elidagasse 6",
+   "lat": 48.234738,
+   "lng": 16.4338629,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Elidagasse 6, 1220 Vienna",
+   "base": 6
+  },
+  {
+   "address": "Dettergasse 5, 1160 Vienna",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Dettergasse 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Dettergasse 5 1160",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "austria Vienna Dettergasse 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "austria Vienna Dettergasse 5 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Dettergasse, 5, Vienna, 1160",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "dettergasse 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Anna dettergasse 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Dettergasse 5 2 og",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "DETTERGASSE 5",
+   "lat": 48.2127674,
+   "lng": 16.3373465,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dettergasse 5, 1160 Vienna",
+   "base": 7
+  },
+  {
+   "address": "Minciostraße 15, 1150 Vienna",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Minciostraße, 15",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Minciostraße 15, 1150",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Vienna Minciostraße 15 austria",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "austria, Minciostraße 15, Vienna",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Vienna Minciostraße 15 1150",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Anna minciostraße 15",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Minciostraße15",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "minciostraße 15",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Minsiostraße 15",
+   "lat": 48.2035786,
+   "lng": 16.3131603,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Minciostraße 15, 1150 Vienna",
+   "base": 8
+  },
+  {
+   "address": "Nobilegasse 45, 1150 Vienna",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Nobilegasse, 45",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Nobilegasse 45 1150",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Vienna, Nobilegasse 45, austria",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Nobilegasse 45 45 Vienna austria",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "45 1150 Nobilegasse Vienna",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "nobilegasse 45",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Anna nobilegasse 45",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "NOBILEGASSE 45",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Nobilegasse 45 (grune tur)",
+   "lat": 48.1980866,
+   "lng": 16.3162356,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nobilegasse 45, 1150 Vienna",
+   "base": 9
+  },
+  {
+   "address": "Haidmannsgasse 6, 1150 Vienna",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmannsgasse 6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmannsgasse 6 1150",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmannsgasse 6 austria Vienna",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "austria, vienna, haidmannsgasse 6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "1150, Vienna, 6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Anna haidmannsgasse 6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmansgasse 6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmannsgasse6",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Haidmannsgasse 6 hinterhaus",
+   "lat": 48.1936036,
+   "lng": 16.3362752,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Haidmannsgasse 6, 1150 Vienna",
+   "base": 10
+  },
+  {
+   "address": "Wurlitzergasse 15, 1160 Vienna",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "15 Wurlitzergasse",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Wurlitzergasse 15, 1160",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Wurlitzergasse 15, austria, Vienna",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Vienna Wurlitzergasse 15 austria",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "15, 1160, Vienna",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "wurlitzergasse 15",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Kiosk wurlitzergasse 15",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "WURLITZERGASSE 15",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Wurlitzergasse 15 hinterhaus",
+   "lat": 48.2135168,
+   "lng": 16.3167994,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Wurlitzergasse 15, 1160 Vienna",
+   "base": 11
+  },
+  {
+   "address": "Am Platz 6, 1130 Vienna",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Platz, 6",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Platz 6, 1130",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Platz 6 Vienna austria",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "austria, Am Platz 6, Vienna",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Vienna, 6, Am Platz, 1130",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Platz 6 2 og",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Platz6",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Am Plats 6",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "am platz 6",
+   "lat": 48.1859437,
+   "lng": 16.3010961,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Am Platz 6, 1130 Vienna",
+   "base": 12
+  },
+  {
+   "address": "Mühlgasse 31, 1040 Vienna",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Mühlgasse 31",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Mühlgasse 31, 1040",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "austria Mühlgasse 31 Vienna",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "mühlgasse 31, vienna, austria",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Mühlgasse - Vienna - 31 - 1040",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Mühlgasse 31 (grune tur)",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Kiosk mühlgasse 31",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Mühlgasse31",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "MÜHLGASSE 31",
+   "lat": 48.1960794,
+   "lng": 16.3619783,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mühlgasse 31, 1040 Vienna",
+   "base": 13
+  },
+  {
+   "address": "Holochergasse 40, 1150 Vienna",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Holochergasse, 40",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Holochergasse 40, 1150",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Vienna austria Holochergasse 40",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Holochergasse 40, Vienna, austria",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "40 Vienna Holochergasse 1150",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Holochergasse40",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Holochergasse 40 peter",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "holochergasse 40",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Kiosk holochergasse 40",
+   "lat": 48.2004893,
+   "lng": 16.3243304,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Holochergasse 40, 1150 Vienna",
+   "base": 14
+  },
+  {
+   "address": "Tivoligasse 2, 1120 Vienna",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "2 Tivoligasse",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Tivoligasse 2 1120",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Tivoligasse 2, austria, Vienna",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "austria Tivoligasse 2 Vienna",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Vienna 2 1120",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "TIVOLIGASSE 2",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Tivoligasse2",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Tivoligase 2",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "tivoligasse 2",
+   "lat": 48.1802286,
+   "lng": 16.3294543,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tivoligasse 2, 1120 Vienna",
+   "base": 15
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse 36",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse 36, 1190",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "austria Gustav-Tschermak-Gasse 36 Vienna",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "austria Gustav-Tschermak-Gasse 36 36 Vienna",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse Vienna 1190",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse36",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustab-Tschermak-Gasse 36",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Gustav-Tschermak-Gasse 36 peter",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "gustav-tschermak-gasse 36",
+   "lat": 48.2356237,
+   "lng": 16.3395352,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gustav-Tschermak-Gasse 36, 1190 Vienna",
+   "base": 16
+  },
+  {
+   "address": "Herbststraße 94-102, 1160 Vienna",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße 94-102",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße 94-102 1160",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße 94-102 austria Vienna",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "austria, Herbststraße 94-102, Vienna",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße Vienna 1160 94-102",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße 94-102 peter",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Herbststraße94-102",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Anna herbststraße 94-102",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "HERBSTSTRASSE 94-102",
+   "lat": 48.2076751,
+   "lng": 16.3191245,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Herbststraße 94-102, 1160 Vienna",
+   "base": 17
+  },
+  {
+   "address": "Sahulkastraße 9, 1100 Vienna",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Sahulkastraße, 9",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Sahulkastraße 9, 1100",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Vienna, Sahulkastraße 9, austria",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "sahulkastraße 9, austria, vienna",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Sahulkastraße, 9, 1100",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Anna sahulkastraße 9",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Sahulkastraße 9 (grune tur)",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Sahulkastraße9",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "SAHULKASTRASSE 9",
+   "lat": 48.1639758,
+   "lng": 16.3590433,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sahulkastraße 9, 1100 Vienna",
+   "base": 18
+  },
+  {
+   "address": "Hermanngasse 30, 1070 Vienna",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Hermanngasse 30",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Hermanngasse 30, 1070",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "austria Vienna Hermanngasse 30",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Vienna Hermanngasse 30 austria",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Vienna, Hermanngasse, 30, 1070",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Hermanngasse 30 hinterhaus",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Kiosk hermanngasse 30",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "hermanngasse 30",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "HERMANNGASSE 30",
+   "lat": 48.2030999,
+   "lng": 16.3473984,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hermanngasse 30, 1070 Vienna",
+   "base": 19
+  },
+  {
+   "address": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Dampfschiffhaufen 1A",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Dampfschiffhaufen 1A, 1220",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "austria Dampfschiffhaufen 1A Vienna",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Vienna, Dampfschiffhaufen 1A, austria",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "1220 Vienna 1A",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Anna dampfschiffhaufen 1A",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "DAMPFSCHIFFHAUFEN 1A",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "dampfschiffhaufen 1a",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Dampfshiffhaufen 1A",
+   "lat": 48.2227603,
+   "lng": 16.4306164,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dampfschiffhaufen 1A, 1220 Vienna",
+   "base": 20
+  },
+  {
+   "address": "Troststraße 51, 1100 Vienna",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Troststraße 51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Troststraße 51, 1100",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Vienna, austria, Troststraße 51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Troststraße 51 Vienna austria",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "1100, Vienna, 51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Anna troststraße 51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Troststraße 51 2 og",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Troststraße51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "TROSTSTRASSE 51",
+   "lat": 48.1695031,
+   "lng": 16.3672284,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Troststraße 51, 1100 Vienna",
+   "base": 21
+  },
+  {
+   "address": "Penzinger Straße 50, 1140 Vienna",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "50 Penzinger Straße",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Penzinger Straße 50 1140",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "austria, Vienna, Penzinger Straße 50",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Penzinger Straße 50 austria Vienna",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Penzinger Straße, 50, Vienna",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Penzinger Straße 50 hinterhaus",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Anna penzinger straße 50",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "penzinger straße 50",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "straße 50",
+   "lat": 48.1896953,
+   "lng": 16.3082589,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Penzinger Straße 50, 1140 Vienna",
+   "base": 22
+  },
+  {
+   "address": "Ottakringer Straße 147, 1160 Vienna",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Ottakringer Straße 147",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Ottakringer Straße 147 1160",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Ottakringer Straße 147 Vienna austria",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Vienna, austria, Ottakringer Straße 147",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Vienna - 1160 - Ottakringer Straße",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Ottakringer Straße147",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Ottakringer Straße 147 peter",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Otakringer Straße 147",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "straße 147",
+   "lat": 48.2131158,
+   "lng": 16.3160276,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ottakringer Straße 147, 1160 Vienna",
+   "base": 23
+  },
+  {
+   "address": "Bernhardtstalgasse 36, 1100 Vienna",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "Bernhardtstalgasse, 36",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "Bernhardtstalgasse 36 1100",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "austria Bernhardtstalgasse 36 Vienna",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "austria, Vienna, Bernhardtstalgasse Bernhardtstalgasse 36",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "36 - 1100 - Vienna",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "Bernhardtstalgase 36",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "bernhardtstalgasse 36",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "BERNHARDTSTALGASSE 36",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "Bernhardtstalgasse 36 2 og",
+   "lat": 48.1724648,
+   "lng": 16.3610914,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bernhardtstalgasse 36, 1100 Vienna",
+   "base": 24
+  },
+  {
+   "address": "Zwölfergasse 3, 1150 Vienna",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "3 Zwölfergasse",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "Zwölfergasse 3 1150",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "austria Vienna Zwölfergasse 3",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "austria Zwölfergasse 3 Vienna",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "1150 - Zwölfergasse - 3 - Vienna",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "Zwölfergasse 3 2 og",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "ZWÖLFERGASSE 3",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "Anna zwölfergasse 3",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "Zöwlfergasse 3",
+   "lat": 48.1945964,
+   "lng": 16.3348952,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Zwölfergasse 3, 1150 Vienna",
+   "base": 25
+  },
+  {
+   "address": "Schüttaustraße 1-39, 1220 Vienna",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "1-39 Schüttaustraße",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Schüttaustraße 1-39, 1220",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Vienna, austria, Schüttaustraße 1-39",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "schüttaustraße 1-39, austria, vienna",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Schüttaustraße, 1-39, 1220",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Schüttaustraße1-39",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Kiosk schüttaustraße 1-39",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "SCHÜTTAUSTRASSE 1-39",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "schüttaustraße 1-39",
+   "lat": 48.2297552,
+   "lng": 16.419234,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Schüttaustraße 1-39, 1220 Vienna",
+   "base": 26
+  },
+  {
+   "address": "Ulrichgasse 1, 1020 Vienna",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "1 Ulrichgasse",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Ulrichgasse 1 1020",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Ulrichgasse 1 austria Vienna",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Vienna Vienna austria Ulrichgasse 1",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "1, Vienna, Ulrichgasse, 1020",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Ulrichgasse1",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Kiosk ulrichgasse 1",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Ulrichgasse 1 (grune tur)",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Ulrichgase 1",
+   "lat": 48.2133485,
+   "lng": 16.3859069,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ulrichgasse 1, 1020 Vienna",
+   "base": 27
+  },
+  {
+   "address": "Große-Bucht-Straße 51, 1220 Vienna",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-Bucht-Straße, 51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-Bucht-Straße 51, 1220",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-Bucht-Straße 51 austria Vienna",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "austria Vienna Große-Bucht-Straße 51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Vienna - Große-Bucht-Straße - 1220 - 51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-Bucht-Straße 51 peter",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-Bucht-Straße51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Anna große-bucht-straße 51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Große-vucht-Straße 51",
+   "lat": 48.2233499,
+   "lng": 16.4431457,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Große-Bucht-Straße 51, 1220 Vienna",
+   "base": 28
+  },
+  {
+   "address": "Karolinengasse 34, 1040 Vienna",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Karolinengasse 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Karolinengasse 34, 1040",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "austria, Vienna, Karolinengasse 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "austria, Vienna, Karolinengasse 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "1040, Karolinengasse, Vienna",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Anna karolinengasse 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Karolinengasse34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Karolinengase 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "karolinengasse 34",
+   "lat": 48.1898218,
+   "lng": 16.3727125,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Karolinengasse 34, 1040 Vienna",
+   "base": 29
+  },
+  {
+   "address": "Spaungasse 15, 1200 Vienna",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spaungasse 15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spaungasse 15, 1200",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spaungasse 15, Vienna, austria",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Vienna, austria, Spaungasse 15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "1200 Spaungasse Vienna 15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "SPAUNGASSE 15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spaungasse 15 (grune tur)",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Anna spaungasse 15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spaungasse15",
+   "lat": 48.2346682,
+   "lng": 16.3652637,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Spaungasse 15, 1200 Vienna",
+   "base": 30
+  },
+  {
+   "address": "Spallartgasse 1, 1140 Vienna",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Spallartgasse 1",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Spallartgasse 1, 1140",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Spallartgasse 1, Vienna, austria",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Vienna, Spallartgasse Spallartgasse 1, austria",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "1, Vienna, 1140, Spallartgasse",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "spallartgasse 1",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Spallartgasse1",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Spallartgase 1",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Anna spallartgasse 1",
+   "lat": 48.2001761,
+   "lng": 16.310475,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Spallartgasse 1, 1140 Vienna",
+   "base": 31
+  },
+  {
+   "address": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "32-34 Lorenz-Mandl-Gasse",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Lorenz-Mandl-Gasse 32-34, 1160",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "austria, Vienna, Lorenz-Mandl-Gasse 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Vienna, austria, austria, Lorenz-Mandl-Gasse 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Lorenz-Mandl-Gasse Vienna 1160 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Kiosk lorenz-mandl-gasse 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "lorenz-mandl-gasse 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Lorenz-Mandl-Gasse 32-34 peter",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Lorens-Mandl-Gasse 32-34",
+   "lat": 48.2100528,
+   "lng": 16.3067616,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lorenz-Mandl-Gasse 32-34, 1160 Vienna",
+   "base": 32
+  },
+  {
+   "address": "Krottenbachstraße 54, 1190 Vienna",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Krottenbachstraße, 54",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Krottenbachstraße 54 1190",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "austria Vienna Krottenbachstraße 54",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "vienna, krottenbachstraße krottenbachstraße 54, austria",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "1190 - Krottenbachstraße - 54 - Vienna",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Anna krottenbachstraße 54",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Krottenvachstraße 54",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Krottenbachstraße 54 2 og",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "krottenbachstraße 54",
+   "lat": 48.2407581,
+   "lng": 16.3362362,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Krottenbachstraße 54, 1190 Vienna",
+   "base": 33
+  },
+  {
+   "address": "Siebenbrunnengasse 16, 1050 Vienna",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "16 Siebenbrunnengasse",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "Siebenbrunnengasse 16, 1050",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "austria, Siebenbrunnengasse 16, Vienna",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "austria Vienna Siebenbrunnengasse 16 16",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "Vienna - Siebenbrunnengasse - 1050",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "Siebenbrunnengasse 16 2 og",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "Kiosk siebenbrunnengasse 16",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "siebenbrunnengasse 16",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "SIEBENBRUNNENGASSE 16",
+   "lat": 48.1877972,
+   "lng": 16.3594253,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Siebenbrunnengasse 16, 1050 Vienna",
+   "base": 34
+  },
+  {
+   "address": "Wallenberggasse 4, 1220 Vienna",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Wallenberggasse, 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Wallenberggasse 4 1220",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Vienna Wallenberggasse 4 austria",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Vienna austria Wallenberggasse 4 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "4 - Wallenberggasse - Vienna",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "WALLENBERGGASSE 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Wallenberggase 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "wallenberggasse 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Anna wallenberggasse 4",
+   "lat": 48.2357306,
+   "lng": 16.4083156,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Wallenberggasse 4, 1220 Vienna",
+   "base": 35
+  },
+  {
+   "address": "Rotensterngasse 16, 1020 Vienna",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "16 Rotensterngasse",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Rotensterngasse 16 1020",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Vienna, austria, Rotensterngasse 16",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "austria, Rotensterngasse 16, Vienna",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "1020 16 Vienna",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Rotensterngase 16",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Rotensterngasse 16 hinterhaus",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Rotensterngasse16",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Kiosk rotensterngasse 16",
+   "lat": 48.2175396,
+   "lng": 16.3829651,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rotensterngasse 16, 1020 Vienna",
+   "base": 36
+  },
+  {
+   "address": "Cervantesgasse 3, 1140 Vienna",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "3 Cervantesgasse",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Cervantesgasse 3, 1140",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "austria Cervantesgasse 3 Vienna",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Cervantesgasse 3 Vienna austria",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Cervantesgasse - 1140 - Vienna",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "cervantesgasse 3",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Cervantesgasse 3 hinterhaus",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Anna cervantesgasse 3",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "CERVANTESGASSE 3",
+   "lat": 48.1974009,
+   "lng": 16.3104059,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cervantesgasse 3, 1140 Vienna",
+   "base": 37
+  },
+  {
+   "address": "Lascygasse 30-34, 1170 Vienna",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascygasse 30-34",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascygasse 30-34, 1170",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "austria Lascygasse 30-34 Vienna",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Vienna Lascygasse 30-34 austria",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascygasse - 1170 - Vienna - 30-34",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascigasse 30-34",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Kiosk lascygasse 30-34",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascygasse30-34",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Lascygasse 30-34 peter",
+   "lat": 48.2245874,
+   "lng": 16.3073942,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lascygasse 30-34, 1170 Vienna",
+   "base": 38
+  },
+  {
+   "address": "Weißgasse 29, 1170 Vienna",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Weißgasse 29",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Weißgasse 29, 1170",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Weißgasse 29, austria, Vienna",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Weißgasse Weißgasse 29, austria, Vienna",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "1170 Weißgasse Vienna",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Weißgase 29",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "weißgasse 29",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "WEISSGASSE 29",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  },
+  {
+   "address": "Anna weißgasse 29",
+   "lat": 48.2166387,
+   "lng": 16.3280585,
+   "country": "AT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Weißgasse 29, 1170 Vienna",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "IT",
+ "city": "Bologna",
+ "country_label": "Italy",
+ "depot": {
+  "lat": 44.4949,
+  "lon": 11.3426,
+  "city": "Bologna",
+  "country": "Italy"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses it/45/bologna, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "28 VIA VALLE D'AOSTA",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "VIA VALLE D'AOSTA 28, 40139",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "Mazzini, italy, VIA VALLE D'AOSTA 28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "Mazzini, italy, VIA VALLE D'AOSTA 28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "28 VIA VALLE D'AOSTA Mazzini",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "VALLE DA'OSTA 28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "valle d'aosta 28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "VALLE D'AOSTA28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "Giulia valle d'aosta 28",
+   "lat": 44.4736383,
+   "lng": 11.3850523,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA VALLE D'AOSTA 28, 40139 Mazzini",
+   "base": 0
+  },
+  {
+   "address": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "VIA EMILIA PONENTE, 157/2C",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "VIA EMILIA PONENTE 157/2C, 40133",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "S. Viola italy VIA EMILIA PONENTE 157/2C",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "VIA EMILIA PONENTE 157/2C, S. Viola, italy",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "157/2C, 40133, VIA EMILIA PONENTE, S. Viola",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "ponente 157/2C",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "EMILIA PONENTE 157/2C scala b",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "emilia ponente 157/2c",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "EMILIA PONENTE 157/2C",
+   "lat": 44.5076913,
+   "lng": 11.3030194,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA EMILIA PONENTE 157/2C, 40133 S. Viola",
+   "base": 1
+  },
+  {
+   "address": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "VIA MONTEFIORINO 4/B",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "VIA MONTEFIORINO 4/B, 40134",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "italy VIA MONTEFIORINO 4/B Costa Saragozza",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "Costa Saragozza, VIA MONTEFIORINO 4/B, italy",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "VIA MONTEFIORINO, Costa Saragozza, 40134, 4/B",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "MONTEFIORINO 4/B",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "MONTEFIORINO 4/B scala b",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "Bar montefiorino 4/B",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "MONTFEIORINO 4/B",
+   "lat": 44.495143,
+   "lng": 11.3144507,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA MONTEFIORINO 4/B, 40134 Costa Saragozza",
+   "base": 2
+  },
+  {
+   "address": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "VIA DI CORTICELLA 90/D",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "VIA DI CORTICELLA 90/D, 40128",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "VIA DI CORTICELLA 90/D, Bolognina, italy",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "Bolognina VIA DI CORTICELLA 90/D 90/D italy",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "Bolognina - 40128 - 90/D",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "DI CORTICELLA 90/D",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "DI CORTICElA 90/D",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "di corticella 90/d",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "DI COR 90/D",
+   "lat": 44.5163048,
+   "lng": 11.3475434,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA DI CORTICELLA 90/D, 40128 Bolognina",
+   "base": 3
+  },
+  {
+   "address": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "VIALE PIETRO PIETRAMELLARA, 39/C",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "VIALE PIETRO PIETRAMELLARA 39/C 40121",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "italy VIALE PIETRO PIETRAMELLARA 39/C Marconi",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "VIALE PIETRO PIETRAMELLARA 39/C, Marconi, italy",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "Marconi - 39/C - VIALE PIETRO PIETRAMELLARA",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "PIETRO PIETRAMELLARA 39/C",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "Giulia pietro pietramellara 39/C",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "PIETRO PITERAMELLARA 39/C",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "PIETRO PIE 39/C",
+   "lat": 44.5051966,
+   "lng": 11.3416613,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIALE PIETRO PIETRAMELLARA 39/C, 40121 Marconi",
+   "base": 4
+  },
+  {
+   "address": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "VIA CARLO FRANCESCO DOTTI 6/1",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "VIA CARLO FRANCESCO DOTTI 6/1, 40135",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "VIA CARLO FRANCESCO DOTTI 6/1 italy Costa Saragozza",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "VIA CARLO FRANCESCO DOTTI 6/1, Costa Saragozza, italy",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "6/1 - Costa Saragozza - 40135",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "CARLO FRANseSCO DOTTI 6/1",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "Giulia carlo francesco dotti 6/1",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "CARLO FRANCESCO DOTTI6/1",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "dotti 6/1",
+   "lat": 44.4879901,
+   "lng": 11.3167809,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA CARLO FRANCESCO DOTTI 6/1, 40135 Costa Saragozza",
+   "base": 5
+  },
+  {
+   "address": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "VIA MAKSIM GORKIJ, 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "VIA MAKSIM GORKIJ 17 40128",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "italy VIA MAKSIM GORKIJ 17 Corticella",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "italy VIA MAKSIM GORKIJ 17 Corticella",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "VIA MAKSIM GORKIJ Corticella 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "MAKSIM GORKIJ 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "MAKISM GORKIJ 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "maksim gorkij 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "gorkij 17",
+   "lat": 44.5456622,
+   "lng": 11.3584756,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA MAKSIM GORKIJ 17, 40128 Corticella",
+   "base": 6
+  },
+  {
+   "address": "VIA DEGLI ORTI 27, 40137 Murri",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "VIA DEGLI ORTI, 27",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "VIA DEGLI ORTI 27 40137",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "italy, VIA DEGLI ORTI 27, Murri",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "VIA DEGLI ORTI 27 italy Murri Murri",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "27, 40137, Murri, VIA DEGLI ORTI",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "DEGLI ORTI 27",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "DEGLI ORTI 27 (portone verde)",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "Giulia degli orti 27",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "degli orti 27",
+   "lat": 44.4768492,
+   "lng": 11.3709359,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DEGLI ORTI 27, 40137 Murri",
+   "base": 7
+  },
+  {
+   "address": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "VIA DELL'OSSERVANZA 74",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "VIA DELL'OSSERVANZA 74 40136",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "italy, VIA DELL'OSSERVANZA 74, Colli",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "via dell'osservanza 74 italy colli",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "Colli VIA DELL'OSSERVANZA 74 40136",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "Giulia dell'osservanza 74",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "DELL'OSSERVANZA74",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "dell'osservanza 74",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "DELL'OSSERbANZA 74",
+   "lat": 44.4823621,
+   "lng": 11.3348151,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA DELL'OSSERVANZA 74, 40136 Colli",
+   "base": 8
+  },
+  {
+   "address": "VIA LARGA 34, 40138 S. Vitale",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "VIA LARGA, 34",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "VIA LARGA 34 40138",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "S. Vitale, VIA LARGA 34, italy",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "VIA LARGA 34 italy S. Vitale",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "VIA LARGA 40138 S. Vitale",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "Bar larga 34",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "LARGGA 34",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "LARGA 34",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "LARGA 34 int 4",
+   "lat": 44.5018505,
+   "lng": 11.3957619,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA LARGA 34, 40138 S. Vitale",
+   "base": 9
+  },
+  {
+   "address": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "11/6B VIA FIORITA",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "VIA FIORITA 11/6B 40139",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "Mazzini italy VIA FIORITA 11/6B",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "italy, via fiorita 11/6b, mazzini",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "11/6B VIA FIORITA 40139 Mazzini",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "Bar fiorita 11/6B",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "FIORITA 11/6B marco",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "FIORITA11/6B",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "fiorita 11/6b",
+   "lat": 44.4810321,
+   "lng": 11.3773231,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA FIORITA 11/6B, 40139 Mazzini",
+   "base": 10
+  },
+  {
+   "address": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "2/A PIAZZA TRENTO E TRIESTE",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "PIAZZA TRENTO E TRIESTE 2/A 40137",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "Murri italy PIAZZA TRENTO E TRIESTE 2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "Murri, italy, PIAZZA TRENTO E E TRIESTE 2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "40137 Murri 2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "TRENTO E TRIESTE 2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "trieste 2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "trento e trieste 2/a",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "TRENTO E TRIESTE2/A",
+   "lat": 44.4874882,
+   "lng": 11.3622737,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PIAZZA TRENTO E TRIESTE 2/A, 40137 Murri",
+   "base": 11
+  },
+  {
+   "address": "VIA DELLA LUNA 1, 40128 Corticella",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "VIA DELLA LUNA, 1",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "VIA DELLA LUNA 1, 40128",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "italy, Corticella, VIA DELLA LUNA 1",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "VIA DELLA LUNA 1, Corticella, italy",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "Corticella - 1 - 40128 - VIA DELLA LUNA",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "DELLA LUNA 1 (portone verde)",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "DELLA LUNA 1",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "della luna 1",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "Giulia della luna 1",
+   "lat": 44.5458316,
+   "lng": 11.3547504,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA DELLA LUNA 1, 40128 Corticella",
+   "base": 12
+  },
+  {
+   "address": "VIA DEL SOLE 2, 40128 Corticella",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "2 VIA DEL SOLE",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "VIA DEL SOLE 2 40128",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "italy, VIA DEL SOLE 2, Corticella",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "VIA DEL SOLE 2 Corticella italy",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "2 - VIA DEL SOLE - 40128",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "del sole 2",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "DEL SOLE 2",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "Giulia del sole 2",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "DEL SOLE 2 (portone verde)",
+   "lat": 44.5466666,
+   "lng": 11.3553187,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA DEL SOLE 2, 40128 Corticella",
+   "base": 13
+  },
+  {
+   "address": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "8 VIA VINCENZO VELA",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "VIA VINCENZO VELA 8, 40138",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "italy, VIA VINCENZO VELA 8, S. Vitale",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "S. Vitale italy VIA VINCENZO VELA 8",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "S. Vitale, 8, 40138",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "VINCENZO VELA8",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "VINCENZO VELA 8 int 4",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "VINCEZNO VELA 8",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "Bar vincenzo vela 8",
+   "lat": 44.4859692,
+   "lng": 11.3716312,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA VINCENZO VELA 8, 40138 S. Vitale",
+   "base": 14
+  },
+  {
+   "address": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "18/D VIA GIACOMO MATTEOTTI",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "VIA GIACOMO MATTEOTTI 18/D, 40129",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "Bolognina, VIA GIACOMO MATTEOTTI 18/D, italy",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "VIA GIACOMO MATTEOTTI 18/D, italy, Bolognina",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "40129 18/D Bolognina",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "Bar giacomo matteotti 18/D",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "GIACOMO MAtEOTTI 18/D",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "matteotti 18/D",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "giacomo matteotti 18/d",
+   "lat": 44.508409,
+   "lng": 11.3463759,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA GIACOMO MATTEOTTI 18/D, 40129 Bolognina",
+   "base": 15
+  },
+  {
+   "address": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "VIA CAMILLO PRAMPOLINI 3",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "VIA CAMILLO PRAMPOLINI 3 40135",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "italy, VIA CAMILLO PRAMPOLINI 3, Barca",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "VIA CAMILLO PRAMPOLINI 3 Barca italy italy",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "Barca 3 40135 VIA CAMILLO PRAMPOLINI",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "prampolini 3",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "Giulia camillo prampolini 3",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "CAMILLO PRAMPLOINI 3",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "CAMILLO PRAMPOLINI 3 marco",
+   "lat": 44.4900278,
+   "lng": 11.2967052,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA CAMILLO PRAMPOLINI 3, 40135 Barca",
+   "base": 16
+  },
+  {
+   "address": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "VIA STALINGRADO 65/14",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "VIA STALINGRADO 65/14, 40128",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "VIA STALINGRADO 65/14, San Donato, italy",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "italy via stalingrado 65/14 san donato",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "VIA STALINGRADO 65/14 40128",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "STALINGRADO65/14",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "stalingrado 65/14",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "STALINGRADO 65/14",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "STALIGNRADO 65/14",
+   "lat": 44.515324,
+   "lng": 11.366914,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA STALINGRADO 65/14, 40128 San Donato",
+   "base": 17
+  },
+  {
+   "address": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "34/E VIA TORLEONE",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "VIA TORLEONE 34/E 40125",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "VIA TORLEONE 34/E Irnerio italy",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "VIA TORLEONE 34/E italy Irnerio",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "40125, VIA TORLEONE, 34/E",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "torleone 34/e",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "TORLEONE34/E",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "Giulia torleone 34/E",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "TORLEONE 34/E scala b",
+   "lat": 44.4934171,
+   "lng": 11.3564119,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA TORLEONE 34/E, 40125 Irnerio",
+   "base": 18
+  },
+  {
+   "address": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "71 VIA DELL'ANGELO CUSTODE",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "VIA DELL'ANGELO CUSTODE 71, 40141",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "S. Ruffillo, VIA DELL'ANGELO CUSTODE 71, italy",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "italy, VIA DELL'ANGELO DELL'ANGELO CUSTODE 71, S. Ruffillo",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "VIA DELL'ANGELO CUSTODE 40141 S. Ruffillo 71",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "DEl'ANGELO CUSTODE 71",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "DELL'ANGELO CUS 71",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "DELL'ANGELO CUSTODE71",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "custode 71",
+   "lat": 44.4618573,
+   "lng": 11.3605646,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA DELL'ANGELO CUSTODE 71, 40141 S. Ruffillo",
+   "base": 19
+  },
+  {
+   "address": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "VIA SAN LEONARDO, 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "VIA SAN LEONARDO 3, 40125",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "Irnerio italy VIA SAN LEONARDO 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "italy, Irnerio, VIA SAN LEONARDO 3 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "40125 VIA SAN LEONARDO Irnerio 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "SAN LEONARDO 3 (portone verde)",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "SAN LEONARDO3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "leonardo 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "SAN LEONARDO 3",
+   "lat": 44.4944675,
+   "lng": 11.3550934,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA SAN LEONARDO 3, 40125 Irnerio",
+   "base": 20
+  },
+  {
+   "address": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "VIA LUIGI VESTRI 9/G",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "VIA LUIGI VESTRI 9/G 40128",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "italy, VIA LUIGI VESTRI 9/G, San Donato",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "via luigi vestri vestri 9/g san donato italy",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "9/G - 40128 - VIA LUIGI VESTRI - San Donato",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "LUIGI VESTRI9/G",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "LUIGI VESTRI 9/G",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "Giulia luigi vestri 9/G",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "LUIGI VSETRI 9/G",
+   "lat": 44.5048435,
+   "lng": 11.3557584,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA LUIGI VESTRI 9/G, 40128 San Donato",
+   "base": 21
+  },
+  {
+   "address": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "VIA DI RAVONE, 21/2",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "VIA DI RAVONE 21/2, 40135",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "italy VIA DI RAVONE 21/2 Costa Saragozza",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "VIA DI RAVONE 21/2 Costa Saragozza italy",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "40135 Costa Saragozza VIA DI RAVONE",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "DI RAOVNE 21/2",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "di ravone 21/2",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "DI RAVONE 21/2",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "DI RAVONE 21/2 marco",
+   "lat": 44.473482,
+   "lng": 11.3127369,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA DI RAVONE 21/2, 40135 Costa Saragozza",
+   "base": 22
+  },
+  {
+   "address": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "23 VIA ALFREDO CALZOLARI",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "VIA ALFREDO CALZOLARI 23, 40128",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "italy Bolognina VIA ALFREDO CALZOLARI 23",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "Bolognina italy VIA ALFREDO CALZOLARI 23",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "Bolognina - VIA ALFREDO CALZOLARI - 40128",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "ALFREDO CALZOLARI 23 int 4",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "alfredo calzolari 23",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "ALFREDO CALZOLARI 23",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "ALFREDO CALZOLARI23",
+   "lat": 44.5191457,
+   "lng": 11.3539841,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA ALFREDO CALZOLARI 23, 40128 Bolognina",
+   "base": 23
+  },
+  {
+   "address": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "74 VIA PAOLO FABBRI",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "VIA PAOLO FABBRI 74, 40138",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "VIA PAOLO FABBRI 74, italy, S. Vitale",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "VIA PAOLO FABBRI 74, italy, S. Vitale",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "S. Vitale, 40138, VIA PAOLO FABBRI, 74",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "PAOLO FAvBRI 74",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "fabbri 74",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "PAOLO FABBRI 74 int 4",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "PAOLO FABBRI74",
+   "lat": 44.4977327,
+   "lng": 11.3620281,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA PAOLO FABBRI 74, 40138 S. Vitale",
+   "base": 24
+  },
+  {
+   "address": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "8/A VIA SAN DONATO",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "VIA SAN DONATO 8/A 40127",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "VIA SAN DONATO 8/A italy S. Vitale",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "S. Vitale, italy, VIA SAN DONATO 8/A",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "VIA SAN DONATO - 8/A - 40127 - S. Vitale",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "Bar san donato 8/A",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "san donato 8/a",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "SAN DONATO 8/A",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "donato 8/A",
+   "lat": 44.4990568,
+   "lng": 11.3576307,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA SAN DONATO 8/A, 40127 S. Vitale",
+   "base": 25
+  },
+  {
+   "address": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "13 VIA LUIGI CAPUANA",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "VIA LUIGI CAPUANA 13, 40132",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "italy VIA LUIGI CAPUANA 13 Borgo Panigale",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "Borgo Panigale italy VIA LUIGI CAPUANA 13",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "40132, 13, Borgo Panigale, VIA LUIGI CAPUANA",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "LUIGI CAPUANA 13 int 4",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "capuana 13",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "LUIGI CAPUANA13",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "Giulia luigi capuana 13",
+   "lat": 44.5079431,
+   "lng": 11.2820122,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA LUIGI CAPUANA 13, 40132 Borgo Panigale",
+   "base": 26
+  },
+  {
+   "address": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VICOLO BORCHETTA, 1",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VICOLO BORCHETTA 1, 40125",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "italy, Irnerio, VICOLO BORCHETTA 1",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VICOLO BORCHETTA 1, italy, Irnerio",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "1 VICOLO BORCHETTA 40125",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "Bar vicolo borchetta 1",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VICOLO BORCHETTA1",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VICOLO BORCHETTA 1 scala b",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "borchetta 1",
+   "lat": 44.4912443,
+   "lng": 11.3548265,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VICOLO BORCHETTA 1, 40125 Irnerio",
+   "base": 27
+  },
+  {
+   "address": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "VIA NICOLO' DALL'ARCA 43/C",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "VIA NICOLO' DALL'ARCA 43/C 40129",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "italy, VIA NICOLO' DALL'ARCA 43/C, Bolognina",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "italy Bolognina VIA NICOLO' DALL'ARCA DALL'ARCA 43/C",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "VIA NICOLO' DALL'ARCA - 43/C - Bolognina - 40129",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "nicolo' dall'arca 43/c",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "NICOLO' DAl'ARCA 43/C",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "NICOLO' DAL 43/C",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "NICOLO' DALL'ARCA43/C",
+   "lat": 44.5116833,
+   "lng": 11.3433354,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA NICOLO' DALL'ARCA 43/C, 40129 Bolognina",
+   "base": 28
+  },
+  {
+   "address": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "4/E VIA MALCONTENTI",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "VIA MALCONTENTI 4/E, 40121",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "Irnerio, VIA MALCONTENTI 4/E, italy",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "irnerio, italy, via malcontenti 4/e",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "40121, VIA MALCONTENTI, Irnerio",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "malcontenti 4/e",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "MALCOTNENTI 4/E",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "MALCONTENTI4/E",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "MALCONTENTI 4/E (portone verde)",
+   "lat": 44.4988281,
+   "lng": 11.3439702,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA MALCONTENTI 4/E, 40121 Irnerio",
+   "base": 29
+  },
+  {
+   "address": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "VIA DON GIOVANNI FORNASINI 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "VIA DON GIOVANNI FORNASINI 29 40128",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "italy, VIA DON GIOVANNI FORNASINI 29, Bolognina",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "italy Bolognina VIA DON GIOVANNI FORNASINI 29 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "40128 - 29 - Bolognina - VIA DON GIOVANNI FORNASINI",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "don giovanni fornasini 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "fornasini 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "Giulia don giovanni fornasini 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "DON GIOVANNI FOR 29",
+   "lat": 44.5187761,
+   "lng": 11.3524822,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA DON GIOVANNI FORNASINI 29, 40128 Bolognina",
+   "base": 30
+  },
+  {
+   "address": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "VIALE DEL RISORGIMENTO, 10",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "VIALE DEL RISORGIMENTO 10, 40136",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "VIALE DEL RISORGIMENTO 10 Colli italy",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "Colli, italy, VIALE DEL RISORGIMENTO 10",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "VIALE DEL RISORGIMENTO 40136 10 Colli",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "DEL RSIORGIMENTO 10",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "DEL RISORGIMENTO 10",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "DEL RIS 10",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "DEL RISORGIMENTO 10 marco",
+   "lat": 44.4878356,
+   "lng": 11.327525,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIALE DEL RISORGIMENTO 10, 40136 Colli",
+   "base": 31
+  },
+  {
+   "address": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "40/C VIA AURELIO SAFFI",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "VIA AURELIO SAFFI 40/C 40131",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "italy Saffi VIA AURELIO SAFFI 40/C",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "Saffi italy VIA AURELIO SAFFI 40/C",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "VIA AURELIO SAFFI 40/C Saffi 40131",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "Bar aurelio saffi 40/C",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "ARUELIO SAFFI 40/C",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "aurelio saffi 40/c",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "AURELIO SAFFI 40/C marco",
+   "lat": 44.5016905,
+   "lng": 11.3198303,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA AURELIO SAFFI 40/C, 40131 Saffi",
+   "base": 32
+  },
+  {
+   "address": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "4/C VIA CA' SELVATICA",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "VIA CA' SELVATICA 4/C, 40123",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "Malpighi italy VIA CA' SELVATICA 4/C",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "italy VIA CA' SELVATICA 4/C Malpighi",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "4/C, Malpighi, VIA CA' SELVATICA, 40123",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "Giulia ca' selvatica 4/C",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "CA' SELVATICA 4/C int 4",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "selvatica 4/C",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "CA' SELVATICA 4/C",
+   "lat": 44.4920934,
+   "lng": 11.3341343,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA CA' SELVATICA 4/C, 40123 Malpighi",
+   "base": 33
+  },
+  {
+   "address": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "62 VIA ENRICO MATTEI",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "VIA ENRICO MATTEI 62, 40138",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "S. Vitale, VIA ENRICO MATTEI 62, italy",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "S. Vitale, italy, VIA ENRICO MATTEI 62",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "40138 VIA ENRICO MATTEI S. Vitale 62",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "ENRICO MATTEI 62 (portone verde)",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "ENRICO MATTEI62",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "Bar enrico mattei 62",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "mattei 62",
+   "lat": 44.4967242,
+   "lng": 11.4086216,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIA ENRICO MATTEI 62, 40138 S. Vitale",
+   "base": 34
+  },
+  {
+   "address": "VIA ARIENTI 39, 40124 Galvani",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA ARIENTI 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA ARIENTI 39 40124",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA ARIENTI 39 italy Galvani",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA ARIENTI 39 39 Galvani italy",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA ARIENTI, 40124, 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "Bar arienti 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "ARIENTI 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "arienti 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "ARINETI 39",
+   "lat": 44.4876787,
+   "lng": 11.3454829,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA ARIENTI 39, 40124 Galvani",
+   "base": 35
+  },
+  {
+   "address": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "29/2 VIA RODOLFO AUDINOT",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "VIA RODOLFO AUDINOT 29/2, 40134",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "VIA RODOLFO AUDINOT 29/2, italy, Costa Saragozza",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "VIA RODOLFO AUDINOT 29/2, Costa Saragozza, italy",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "VIA RODOLFO AUDINOT 29/2 40134",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "rodolfo audinot 29/2",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "RODOLFO AUDINOT 29/2",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "RODOLFO AUD 29/2",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "Giulia rodolfo audinot 29/2",
+   "lat": 44.4928411,
+   "lng": 11.3267131,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA RODOLFO AUDINOT 29/2, 40134 Costa Saragozza",
+   "base": 36
+  },
+  {
+   "address": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "VIA GIOVANNI FATTORI 28/B",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "VIA GIOVANNI FATTORI 28/B 40133",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "S. Viola VIA GIOVANNI FATTORI 28/B italy",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "S. Viola, VIA GIOVANNI FATTORI 28/B, italy",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "28/B - VIA GIOVANNI FATTORI - S. Viola",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "giovanni fattori 28/b",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "GIOVANNI FAT 28/B",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "GOIVANNI FATTORI 28/B",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "GIOVANNI FATTORI 28/B",
+   "lat": 44.5065092,
+   "lng": 11.294211,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA GIOVANNI FATTORI 28/B, 40133 S. Viola",
+   "base": 37
+  },
+  {
+   "address": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "1/E VIA GIACOMO LEOPARDI",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "VIA GIACOMO LEOPARDI 1/E 40122",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "italy, Marconi, VIA GIACOMO LEOPARDI 1/E",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "italy VIA GIACOMO LEOPARDI 1/E Marconi",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "1/E 40122 Marconi VIA GIACOMO LEOPARDI",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "GIACOMO LEOPARDI 1/E marco",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "GIACOMO LEOPARDI 1/E",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "GIACOMO LEOPARDI1/E",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "GIACOMO LEO 1/E",
+   "lat": 44.4996006,
+   "lng": 11.3392088,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "VIA GIACOMO LEOPARDI 1/E, 40122 Marconi",
+   "base": 38
+  },
+  {
+   "address": "VIA AGUCCHI 227, 40131 Lame",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "VIA AGUCCHI 227",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "VIA AGUCCHI 227, 40131",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "Lame VIA AGUCCHI 227 italy",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "italy, VIA AGUCCHI 227, Lame",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "40131, 227, VIA AGUCCHI, Lame",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "AGUCCHI 227",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "agucchi 227",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "Bar agucchi 227",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  },
+  {
+   "address": "AGUCCHI227",
+   "lat": 44.5234106,
+   "lng": 11.3164447,
+   "country": "IT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VIA AGUCCHI 227, 40131 Lame",
+   "base": 39
+  }
+ ]
+}

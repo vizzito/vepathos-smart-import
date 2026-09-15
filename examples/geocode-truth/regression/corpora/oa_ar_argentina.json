@@ -1,0 +1,3618 @@
+{
+ "source": "openaddresses",
+ "country": "AR",
+ "city": "CABA",
+ "country_label": "Argentina",
+ "depot": {
+  "lat": -34.598,
+  "lon": -58.416,
+  "city": "CABA",
+  "country": "Argentina"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 360,
+ "note": "OpenAddresses ar/c/city_of_buenos_aires, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "LAS HERAS, GENERAL 3756, CABA",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "3756 LAS HERAS, GENERAL",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "LAS HERAS, GENERAL 3756, argentina, CABA",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "CABA, argentina, LAS HERAS, GENERAL 3756",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "CABA, LAS HERAS, GENERAL",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "Juan general las heras 3756",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "general las heras 3756",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "heras 3756",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "GENERAL LAS HERAS 3756",
+   "lat": -34.5821468,
+   "lng": -58.4121288,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LAS HERAS, GENERAL 3756, CABA",
+   "base": 0
+  },
+  {
+   "address": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "3883 SUCRE, ANTONIO JOSE de, Mcal.",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "CABA, SUCRE, ANTONIO JOSE de, Mcal. 3883, argentina",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "sucre, antonio jose de, mcal. 3883 argentina caba",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "SUCRE, ANTONIO JOSE de, Mcal., CABA, 3883",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "sucre 3883",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "mcal. antonio jose de sucre 3883",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "Mcal. ANTONIO JOSE de SUCRE3883",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "MCAL. ANTONIO JOSE DE SUCRE 3883",
+   "lat": -34.5722887,
+   "lng": -58.4696552,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "SUCRE, ANTONIO JOSE de, Mcal. 3883, CABA",
+   "base": 1
+  },
+  {
+   "address": "VALLE 115, CABA",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "VALLE, 115",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "argentina VALLE 115 CABA",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "VALLE 115, argentina, CABA",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "VALLE - 115 - CABA",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "VALLE 115",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "valle 115",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "VALLE115",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "Juan valle 115",
+   "lat": -34.6236658,
+   "lng": -58.4292363,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VALLE 115, CABA",
+   "base": 2
+  },
+  {
+   "address": "CONDARCO 525, CABA",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "CONDARCO, 525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "CABA, argentina, CONDARCO 525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "argentina, CONDARCO 525, CABA",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "525, CONDARCO",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "Kiosco condarco 525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "CONDARCO 525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "CONDARCO525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "CNODARCO 525",
+   "lat": -34.6251245,
+   "lng": -58.4688561,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CONDARCO 525, CABA",
+   "base": 3
+  },
+  {
+   "address": "HORNOS, Gral. 530, CABA",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "530 HORNOS, Gral.",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "CABA argentina HORNOS, Gral. 530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "HORNOS, Gral. 530, CABA, argentina",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "HORNOS, Gral. - 530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "Gral. HORNOS530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "Kiosco gral. hornos 530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "gral. hornos 530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "hornos 530",
+   "lat": -34.6338741,
+   "lng": -58.3769198,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "HORNOS, Gral. 530, CABA",
+   "base": 4
+  },
+  {
+   "address": "RIVADAVIA AV. 2202, CABA",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "RIVADAVIA AV., 2202",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "CABA RIVADAVIA AV. 2202 argentina",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "rivadavia av. 2202 caba argentina",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "RIVADAVIA AV., CABA",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "RIAVDAVIA AV. 2202",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "RIVADAVIA AV. 2202",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "rivadavia av. 2202",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "RIVADAVIA AV.2202",
+   "lat": -34.6095897,
+   "lng": -58.395003,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "RIVADAVIA AV. 2202, CABA",
+   "base": 5
+  },
+  {
+   "address": "TACUARI 1744, CABA",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "TACUARI 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "argentina, TACUARI 1744, CABA",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "CABA TACUARI 1744 argentina",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "CABA 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "TACAURI 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "Kiosco tacuari 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "tacuari 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "TACUARI 1744",
+   "lat": -34.6282433,
+   "lng": -58.3758336,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "TACUARI 1744, CABA",
+   "base": 6
+  },
+  {
+   "address": "POTOSI 4279, CABA",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "4279 POTOSI",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "argentina CABA POTOSI 4279",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "POTOSI 4279, argentina, CABA",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "4279, CABA, POTOSI",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "PTOOSI 4279",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "potosi 4279",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "POTOSI 4279 casa 18",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "POTOSI4279",
+   "lat": -34.6070896,
+   "lng": -58.4272801,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "POTOSI 4279, CABA",
+   "base": 7
+  },
+  {
+   "address": "SAN MARTIN AV. 1738, CABA",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "SAN MARTIN AV. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "CABA argentina SAN MARTIN AV. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "CABA argentina SAN MARTIN AV. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "1738 SAN MARTIN AV. CABA",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "Juan san martin av. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "SAN MARTIN AV. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "SAN MARITN AV. 1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "SAN MARTIN AV.1738",
+   "lat": -34.606064,
+   "lng": -58.4535129,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "SAN MARTIN AV. 1738, CABA",
+   "base": 8
+  },
+  {
+   "address": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "SCALABRINI ORTIZ, RAUL, 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "argentina CABA SCALABRINI ORTIZ, RAUL 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "CABA, SCALABRINI ORTIZ, RAUL 1485, argentina argentina",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "1485, SCALABRINI ORTIZ, RAUL, CABA",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "RAUL SCALBARINI ORTIZ 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "ortiz 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "Marcela raul scalabrini ortiz 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "raul scalabrini ortiz 1485",
+   "lat": -34.5917751,
+   "lng": -58.4258816,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "SCALABRINI ORTIZ, RAUL 1485, CABA",
+   "base": 9
+  },
+  {
+   "address": "VIALE, LUIS 1828, CABA",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "VIALE, LUIS 1828",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "CABA, VIALE, LUIS 1828, argentina",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "VIALE, LUIS 1828, argentina, CABA",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "VIALE, LUIS, CABA, 1828",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "LUIS VIALE 1828 timbre 2",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "luis viale 1828",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "viale 1828",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "LUIS VIALE 1828",
+   "lat": -34.6129069,
+   "lng": -58.4621085,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIALE, LUIS 1828, CABA",
+   "base": 10
+  },
+  {
+   "address": "ARISMENDI 2986, CABA",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "2986 ARISMENDI",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "argentina, CABA, ARISMENDI 2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "argentina, CABA, ARISMENDI 2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "2986, CABA",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "ARISMENDI 2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "Juan arismendi 2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "arismendi 2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "ARISMENDI2986",
+   "lat": -34.5870345,
+   "lng": -58.4793811,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ARISMENDI 2986, CABA",
+   "base": 11
+  },
+  {
+   "address": "CORRIENTES AV. 2330, CABA",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "CORRIENTES AV., 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "argentina CABA CORRIENTES AV. 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "argentina, caba, corrientes av. av. 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "CORRIENTES AV. 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "CORRIENTES AV.2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "corrientes av. 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "Juan corrientes av. 2330",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "CORRIENTES AV. 2330 (porton verde)",
+   "lat": -34.60504,
+   "lng": -58.3998855,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "CORRIENTES AV. 2330, CABA",
+   "base": 12
+  },
+  {
+   "address": "CATAMARCA 1045, CABA",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "CATAMARCA 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "argentina, CABA, CATAMARCA 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "catamarca 1045 caba argentina",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "CATAMARCA CABA 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "CATAMARCA 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "Kiosco catamarca 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "CATAMARCA1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "CAATMARCA 1045",
+   "lat": -34.6221302,
+   "lng": -58.4047758,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CATAMARCA 1045, CABA",
+   "base": 13
+  },
+  {
+   "address": "PIEDRAS 1120, CABA",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "PIEDRAS, 1120",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "PIEDRAS 1120, CABA, argentina",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "argentina PIEDRAS 1120 CABA",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "PIEDRAS 1120 CABA",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "PIEDRAS 1120",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "piedras 1120",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "Marcela piedras 1120",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "PIEDRAS1120",
+   "lat": -34.6210996,
+   "lng": -58.3771096,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PIEDRAS 1120, CABA",
+   "base": 14
+  },
+  {
+   "address": "BACACAY 953, CABA",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "953 BACACAY",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "BACACAY 953, CABA, argentina",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "BACACAY 953, argentina, argentina, CABA",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "BACACAY - CABA",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "bacacay 953",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "BCAACAY 953",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "BACACAY 953",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "Marcela bacacay 953",
+   "lat": -34.6182951,
+   "lng": -58.4432379,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "BACACAY 953, CABA",
+   "base": 15
+  },
+  {
+   "address": "COCHABAMBA 1351, CABA",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "COCHABAMBA 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "argentina, CABA, COCHABAMBA 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "COCHABAMBA 1351 argentina CABA",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "CABA, 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "COCHABAMBA 1351 casa 18",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "Kiosco cochabamba 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "COCHABAMBA 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "cochabamba 1351",
+   "lat": -34.6233363,
+   "lng": -58.3852171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "COCHABAMBA 1351, CABA",
+   "base": 16
+  },
+  {
+   "address": "ALVEAR, MARCELO T. De 1640, CABA",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "ALVEAR, MARCELO T. De 1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "CABA argentina ALVEAR, MARCELO T. De 1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "CABA, argentina, ALVEAR, MARCELO T. De 1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "CABA - ALVEAR, MARCELO T. De",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "MARCELO T. De ALVEAR1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "MARCELO T. DE ALVEAR 1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "Marcela marcelo t. de alvear 1640",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "MARCELO T. De ALVEAR 1640 martin",
+   "lat": -34.597495,
+   "lng": -58.390345,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ALVEAR, MARCELO T. De 1640, CABA",
+   "base": 17
+  },
+  {
+   "address": "GARCIA, MANUEL 122, CABA",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "GARCIA, MANUEL, 122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "GARCIA, MANUEL 122, CABA, argentina",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "argentina, CABA, GARCIA, MANUEL 122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "122, GARCIA, MANUEL, CABA",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "MANUEL GARCIA122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "MANEUL GARCIA 122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "garcia 122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "Marcela manuel garcia 122",
+   "lat": -34.6372136,
+   "lng": -58.3963799,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "GARCIA, MANUEL 122, CABA",
+   "base": 18
+  },
+  {
+   "address": "CONSTITUCION 1358, CABA",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "1358 CONSTITUCION",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "argentina CONSTITUCION 1358 CABA",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "CABA CABA CONSTITUCION 1358 argentina",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "CONSTITUCION, 1358",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "CONSTITUsiON 1358",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "CONSTITUCION1358",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "CONSTITUCION 1358 frente a la plaza",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "Kiosco constitucion 1358",
+   "lat": -34.6250749,
+   "lng": -58.3851914,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CONSTITUCION 1358, CABA",
+   "base": 19
+  },
+  {
+   "address": "OLAYA 1785, CABA",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAYA 1785",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAYA 1785 CABA argentina",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAYA 1785, CABA, argentina",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "1785, CABA",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "Marcela olaya 1785",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAiA 1785",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAYA 1785 (porton verde)",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "OLAYA1785",
+   "lat": -34.6006842,
+   "lng": -58.4483189,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "OLAYA 1785, CABA",
+   "base": 20
+  },
+  {
+   "address": "DIAZ VELEZ AV. 3826, CABA",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "DIAZ VELEZ AV., 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "CABA argentina DIAZ VELEZ AV. 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "DIAZ VELEZ AV. 3826 argentina CABA",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "3826 DIAZ VELEZ AV. CABA",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "diaz velez av. 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "Juan diaz velez av. 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "DIAZ VELEZ AV. 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "DIAZ VELEs AV. 3826",
+   "lat": -34.6087945,
+   "lng": -58.4204355,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "DIAZ VELEZ AV. 3826, CABA",
+   "base": 21
+  },
+  {
+   "address": "LUCA, ESTEBAN de 1560, CABA",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "1560 LUCA, ESTEBAN de",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "CABA LUCA, ESTEBAN de 1560 argentina",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "argentina CABA LUCA, ESTEBAN de 1560",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "CABA, LUCA, ESTEBAN de",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "esteban de luca 1560",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "ESTEBAN DE LUCA 1560",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "ESTEBAN de LUCA1560",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "ESTEvAN de LUCA 1560",
+   "lat": -34.6284068,
+   "lng": -58.4033069,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LUCA, ESTEBAN de 1560, CABA",
+   "base": 22
+  },
+  {
+   "address": "CABILDO AV. 1860, CABA",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "CABILDO AV. 1860",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "CABILDO AV. 1860 CABA argentina",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "CABILDO AV. 1860, CABA, argentina",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "1860 CABA CABILDO AV.",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "cabildo av. 1860",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "CAvILDO AV. 1860",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "CABILDO AV.1860",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "Kiosco cabildo av. 1860",
+   "lat": -34.5640708,
+   "lng": -58.4540792,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CABILDO AV. 1860, CABA",
+   "base": 23
+  },
+  {
+   "address": "BONIFACIO, JOSE 1685, CABA",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "1685 BONIFACIO, JOSE",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "BONIFACIO, JOSE 1685, CABA, argentina",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "argentina, CABA, BONIFACIO, JOSE 1685",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "1685 CABA BONIFACIO, JOSE",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "JOSE BONIFACIO 1685",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "JOSE BON 1685",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "jose bonifacio 1685",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "JOSE BONIFACIO 1685 frente a la plaza",
+   "lat": -34.6292845,
+   "lng": -58.4518317,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "BONIFACIO, JOSE 1685, CABA",
+   "base": 24
+  },
+  {
+   "address": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "FREIRE, RAMON, CAP. GRAL. 1140",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "CABA argentina FREIRE, RAMON, CAP. GRAL. 1140",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "CABA, FREIRE, RAMON, CAP. GRAL. 1140, argentina",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "FREIRE, RAMON, CAP. GRAL., 1140, CABA",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "CAP. GRAL. RAMON FREIRE 1140",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "CAP. GRAL. RAMON FRIERE 1140",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "freire 1140",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "CAP. GRAL. RAMON FREIRE 1140 frente a la plaza",
+   "lat": -34.5744965,
+   "lng": -58.4548313,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "FREIRE, RAMON, CAP. GRAL. 1140, CABA",
+   "base": 25
+  },
+  {
+   "address": "AUSTRIA 2529, CABA",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "AUSTRIA 2529",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "CABA AUSTRIA 2529 argentina",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "argentina, CABA, AUSTRIA 2529",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "AUSTRIA CABA",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "ASUTRIA 2529",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "AUSTRIA2529",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "AUSTRIA 2529 martin",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "austria 2529",
+   "lat": -34.5849165,
+   "lng": -58.3992171,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "AUSTRIA 2529, CABA",
+   "base": 26
+  },
+  {
+   "address": "FLORIDA 833, CABA",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "833 FLORIDA",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "FLORIDA 833 CABA argentina",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "argentina, CABA, FLORIDA 833",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "FLORIDA - 833 - CABA",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "FLORIDA 833",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "Kiosco florida 833",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "florida 833",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "FLORIDA 833 (porton verde)",
+   "lat": -34.5982825,
+   "lng": -58.3749312,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "FLORIDA 833, CABA",
+   "base": 27
+  },
+  {
+   "address": "VIAMONTE 648, CABA",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "VIAMONTE 648",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "VIAMONTE 648, CABA, argentina",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "VIAMONTE VIAMONTE 648, CABA, argentina",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "648 - CABA - VIAMONTE",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "VIAOMNTE 648",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "Juan viamonte 648",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "viamonte 648",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "VIAMONTE 648",
+   "lat": -34.600234,
+   "lng": -58.3761229,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VIAMONTE 648, CABA",
+   "base": 28
+  },
+  {
+   "address": "PLAZA 1411, CABA",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "1411 PLAZA",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "CABA argentina PLAZA 1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "argentina, caba, plaza 1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "PLAZA, CABA",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "PLAZA 1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "PLAsA 1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "Kiosco plaza 1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "PLAZA1411",
+   "lat": -34.5786052,
+   "lng": -58.4671748,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PLAZA 1411, CABA",
+   "base": 29
+  },
+  {
+   "address": "GAONA AV. 2501, CABA",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "2501 GAONA AV.",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "CABA, argentina, GAONA AV. 2501",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "argentina argentina GAONA AV. 2501 CABA",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "CABA GAONA AV.",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "GAONA AV. 2501",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "gaona av. 2501",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "Marcela gaona av. 2501",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "GAONNA AV. 2501",
+   "lat": -34.6146922,
+   "lng": -58.462114,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "GAONA AV. 2501, CABA",
+   "base": 30
+  },
+  {
+   "address": "VIALE, LUIS 979, CABA",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "979 VIALE, LUIS",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "argentina, CABA, VIALE, LUIS 979",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "argentina, CABA, VIALE, LUIS 979",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "CABA - VIALE, LUIS",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "viale 979",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "LUIS VIALE 979 timbre 2",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "Marcela luis viale 979",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "luis viale 979",
+   "lat": -34.6073845,
+   "lng": -58.4525622,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "VIALE, LUIS 979, CABA",
+   "base": 31
+  },
+  {
+   "address": "VALLE 43, CABA",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "VALLE, 43",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "argentina, CABA, VALLE 43",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "CABA VALLE 43 argentina argentina",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "43 CABA",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "VAlE 43",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "Kiosco valle 43",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "VALLE 43",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "VALLE 43 (porton verde)",
+   "lat": -34.6234518,
+   "lng": -58.4281794,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "VALLE 43, CABA",
+   "base": 32
+  },
+  {
+   "address": "AVELLANEDA 111, CABA",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVELLANEDA, 111",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVELLANEDA 111 argentina CABA",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "CABA, AVELLANEDA 111, argentina",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVELLANEDA, 111, CABA",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVELLANEDA 111",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVElANEDA 111",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "Juan avellaneda 111",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVELLANEDA 111 timbre 2",
+   "lat": -34.6114688,
+   "lng": -58.4319664,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "AVELLANEDA 111, CABA",
+   "base": 33
+  },
+  {
+   "address": "AVALOS 123, CABA",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "AVALOS 123",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "AVALOS 123 argentina CABA",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "argentina argentina avalos 123 caba",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "CABA - AVALOS",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "AVALOS 123 frente a la plaza",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "Kiosco avalos 123",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "avalos 123",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "AVALOS 123",
+   "lat": -34.5948557,
+   "lng": -58.4653111,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "AVALOS 123, CABA",
+   "base": 34
+  },
+  {
+   "address": "LACROZE, FEDERICO 2466, CABA",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "LACROZE, FEDERICO, 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "argentina LACROZE, FEDERICO 2466 CABA",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "argentina LACROZE, FEDERICO 2466 CABA",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "LACROZE, FEDERICO - CABA - 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "FEDEIRCO LACROZE 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "FEDERICO LAC 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "FEDERICO LACROZE 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "Kiosco federico lacroze 2466",
+   "lat": -34.5712986,
+   "lng": -58.4452571,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LACROZE, FEDERICO 2466, CABA",
+   "base": 35
+  },
+  {
+   "address": "BULNES 2053, CABA",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "BULNES, 2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "CABA argentina BULNES 2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "BULNES 2053, argentina, CABA",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "2053, CABA",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "BULNES 2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "BUNLES 2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "Juan bulnes 2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "BULNES2053",
+   "lat": -34.5877584,
+   "lng": -58.4111352,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "BULNES 2053, CABA",
+   "base": 36
+  },
+  {
+   "address": "ALVAREZ, JULIAN 833, CABA",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "ALVAREZ, JULIAN 833",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "ALVAREZ, JULIAN 833, argentina, CABA",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "CABA ALVAREZ, JULIAN 833 argentina",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "833 CABA ALVAREZ, JULIAN",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "JULIAN ALVAREs 833",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "JULIAN ALVAREZ833",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "JULIAN ALV 833",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "JULIAN ALVAREZ 833",
+   "lat": -34.5979253,
+   "lng": -58.431276,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ALVAREZ, JULIAN 833, CABA",
+   "base": 37
+  },
+  {
+   "address": "SAN JUAN AV. 1733, CABA",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "1733 SAN JUAN AV.",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "CABA SAN JUAN AV. 1733 argentina",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "SAN JUAN AV. 1733 CABA argentina",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "1733 SAN JUAN AV.",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "SAN JUAN AV. 1733",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "san juan av. 1733",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "juan av. 1733",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "SAN JUAN AV.1733",
+   "lat": -34.6223986,
+   "lng": -58.3903999,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "SAN JUAN AV. 1733, CABA",
+   "base": 38
+  },
+  {
+   "address": "CEVALLOS, Virrey 756, CABA",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "CEVALLOS, Virrey 756",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "CEVALLOS, Virrey 756, argentina, CABA",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "CEVALLOS, Virrey 756 argentina CABA",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "756, CEVALLOS, Virrey, CABA",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "Kiosco virrey cevallos 756",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "Virrey CEVALLOS 756 casa 18",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "virrey cevallos 756",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  },
+  {
+   "address": "Virrey CEV 756",
+   "lat": -34.6174414,
+   "lng": -58.3888412,
+   "country": "AR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "CEVALLOS, Virrey 756, CABA",
+   "base": 39
+  }
+ ]
+}

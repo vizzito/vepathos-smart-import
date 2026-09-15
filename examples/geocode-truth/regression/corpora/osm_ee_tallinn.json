@@ -1,0 +1,3898 @@
+{
+ "source": "osm-addr",
+ "country": "EE",
+ "city": "Tallinn",
+ "country_label": "Estonia",
+ "depot": {
+  "lat": 59.437,
+  "lon": 24.7536,
+  "city": "Tallinn",
+  "country": "Estonia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 388,
+ "note": "Nodos addr:* del indice n59.50_s59.30_e24.90_w24.60-estonia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Ants Lauteri 7c, 10145 Tallinn",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "7c Ants Lauteri",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Ants Lauteri 7c, 10145",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Tallinn, ee, Ants Lauteri 7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Tallinn, ee, Ants Lauteri 7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "7c Ants Lauteri Tallinn",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Ants Luateri 7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "ants lauteri 7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Ants Lauteri7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Mary ants lauteri 7c",
+   "lat": 59.43114101111111,
+   "lng": 24.758496188888888,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ants Lauteri 7c, 10145 Tallinn",
+   "base": 0
+  },
+  {
+   "address": "Saku 11, 11314 Tallinn",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Saku, 11",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Saku 11, 11314",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Tallinn ee Saku 11",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Saku 11, Tallinn, ee",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "11, 11314, Saku, Tallinn",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Saku11",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "SAKU 11",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "saku 11",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Saku 11 (green door)",
+   "lat": 59.4100733,
+   "lng": 24.73973388,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Saku 11, 11314 Tallinn",
+   "base": 1
+  },
+  {
+   "address": "Õpetajate 4, 10135 Tallinn",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpetajate, 4",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpetajate 4 10135",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpetajate 4 ee Tallinn",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "õpetajate 4, tallinn, tallinn, ee",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpetajate, Tallinn, 10135, 4",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "ÕPETAJATE 4",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpetajate 4 back entrance",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Deli õpetajate 4",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Õpteajate 4",
+   "lat": 59.42415705,
+   "lng": 24.7507654875,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Õpetajate 4, 10135 Tallinn",
+   "base": 2
+  },
+  {
+   "address": "Suitsu 8a, 11313 Tallinn",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Suitsu 8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Suitsu 8a, 11313",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Suitsu 8a, Tallinn, ee",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Tallinn Suitsu 8a ee ee",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Tallinn - 11313 - 8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Suistu 8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Suitsu8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "suitsu 8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Deli suitsu 8a",
+   "lat": 59.4113586,
+   "lng": 24.7462526,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Suitsu 8a, 11313 Tallinn",
+   "base": 3
+  },
+  {
+   "address": "Vana-Liivamäe 3, 10132 Tallinn",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Vana-Liivamäe, 3",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Vana-Liivamäe 3 10132",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "ee Tallinn Vana-Liivamäe 3",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Tallinn, Vana-Liivamae 3, ee",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Tallinn - 3 - Vana-Liivamäe",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Vana-Liivamäe 3 (green door)",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Vaan-Liivamäe 3",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Mary vana-liivamäe 3",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Vana-Liivamäe3",
+   "lat": 59.42849038000001,
+   "lng": 24.762345500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vana-Liivamäe 3, 10132 Tallinn",
+   "base": 4
+  },
+  {
+   "address": "Söe põik 3, 11313 Tallinn",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "3 Söe põik",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "Söe põik 3, 11313",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "ee Söe põik 3 Tallinn",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "Söe põik 3 Tallinn ee",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "3, Tallinn, 11313, Söe põik",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "SÖE PÕIK 3",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "põik 3",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "Söe põik 3 john",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "Deli söe põik 3",
+   "lat": 59.4134562,
+   "lng": 24.750919500000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Söe põik 3, 11313 Tallinn",
+   "base": 5
+  },
+  {
+   "address": "Lagle pst 6a, Tallinn",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Lagle pst, 6a",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "ee Lagle pst 6a Tallinn",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Tallinn ee Lagle pst 6a",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Lagle pst 6a Tallinn",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "lagle pst 6a",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Lagle pst6a",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "LAGLE PST 6A",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Deli lagle pst 6a",
+   "lat": 59.419062,
+   "lng": 24.7269243,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lagle pst 6a, Tallinn",
+   "base": 6
+  },
+  {
+   "address": "Kuristiku 3, Tallinn",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "3 Kuristiku",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "ee Tallinn Kuristiku 3",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Kuristiku 3 ee Tallinn",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Tallinn 3 Kuristiku",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Kuristiku 3 back entrance",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Kruistiku 3",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "KURISTIKU 3",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Kuristiku3",
+   "lat": 59.442555000000006,
+   "lng": 24.8068472,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kuristiku 3, Tallinn",
+   "base": 7
+  },
+  {
+   "address": "Liivalao 10, 11216 Tallinn",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "10 Liivalao",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Liivalao 10 11216",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Tallinn, ee, Liivalao 10",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "ee, Liivalao 10, Tallinn",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Liivalao 11216 Tallinn",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Liivalao10",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Liivalao 10 back entrance",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Mary liivalao 10",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Liibalao 10",
+   "lat": 59.38585644,
+   "lng": 24.72534962,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Liivalao 10, 11216 Tallinn",
+   "base": 8
+  },
+  {
+   "address": "Tolli 5, 10133 Tallinn",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Tolli, 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Tolli 5, 10133",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Tallinn, ee, Tolli 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Tallinn, ee, Tolli 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "10133 - Tolli - Tallinn",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Toli 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Tolli5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "tolli 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Deli tolli 5",
+   "lat": 59.44174454,
+   "lng": 24.747935579999996,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tolli 5, 10133 Tallinn",
+   "base": 9
+  },
+  {
+   "address": "Pärnu mnt 238, Tallinn",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Pärnu mnt, 238",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Pärnu mnt 238, ee, Tallinn",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Tallinn ee Pärnu mnt 238",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Pärnu mnt Tallinn",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Pärnu mnt 238 (green door)",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "pärnu mnt 238",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "PÄRNU MNT 238",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Mary pärnu mnt 238",
+   "lat": 59.3940607,
+   "lng": 24.7195534,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pärnu mnt 238, Tallinn",
+   "base": 10
+  },
+  {
+   "address": "Vabaohumuuseumi tee 11, Tallinn",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Vabaohumuuseumi tee 11",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "ee, Vabaohumuuseumi tee 11, Tallinn",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Vabaohumuuseumi tee 11 Tallinn ee",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Tallinn, 11",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Vabaohumuuseumi tee 11 apt 4b",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Mary vabaohumuuseumi tee 11",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "VABAOHUMUUSEUMI TEE 11",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "vabaohumuuseumi tee 11",
+   "lat": 59.429858,
+   "lng": 24.6513649,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vabaohumuuseumi tee 11, Tallinn",
+   "base": 11
+  },
+  {
+   "address": "Raekoja plats 9, Tallinn",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "Raekoja plats 9",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "Tallinn ee Raekoja plats 9",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "ee, Raekoja plats plats 9, Tallinn",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "9, Raekoja plats, Tallinn",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "Raeokja plats 9",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "Raekoja plats 9 back entrance",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "plats 9",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "RAEKOJA PLATS 9",
+   "lat": 59.437709235294115,
+   "lng": 24.744967488235293,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Raekoja plats 9, Tallinn",
+   "base": 12
+  },
+  {
+   "address": "Risti 13a, 11214 Tallinn",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Risti 13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Risti 13a, 11214",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Tallinn, Risti 13a, ee",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "ee, Tallinn, Risti 13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Tallinn, 11214, Risti, 13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "RISTI 13A",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Rissti 13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Risti13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Mary risti 13a",
+   "lat": 59.39029442,
+   "lng": 24.722393599999997,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Risti 13a, 11214 Tallinn",
+   "base": 13
+  },
+  {
+   "address": "Västriku 3c, 11315 Tallinn",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Västriku 3c",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Västriku 3c, 11315",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Västriku 3c, Tallinn, ee",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Tallinn ee Västriku 3c",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Tallinn, 11315, 3c",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "VÄSTRIKU 3C",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Västriku 3c (green door)",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Västriku3c",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Deli västriku 3c",
+   "lat": 59.41477317142857,
+   "lng": 24.729582085714288,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Västriku 3c, 11315 Tallinn",
+   "base": 14
+  },
+  {
+   "address": "Kari 1, Tallinn",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Kari, 1",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Kari 1 ee Tallinn",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "ee, ee, Kari 1, Tallinn",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Tallinn Kari",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Kari1",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "KARI 1",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Kari 1 (green door)",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Mary kari 1",
+   "lat": 59.4483985,
+   "lng": 24.6981159,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kari 1, Tallinn",
+   "base": 15
+  },
+  {
+   "address": "Paasiku 1, 13916 Tallinn",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "1 Paasiku",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Paasiku 1, 13916",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Tallinn, ee, Paasiku 1",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Paasiku 1, Tallinn, ee",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "13916, 1, Paasiku, Tallinn",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Paasiku1",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Paasiku 1 apt 4b",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "paasiku 1",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Pasaiku 1",
+   "lat": 59.44943548,
+   "lng": 24.84660494,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paasiku 1, 13916 Tallinn",
+   "base": 16
+  },
+  {
+   "address": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "8 Carl Robert Jakobsoni",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Carl Robert Jakobsoni 8, 10128",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Carl Robert Jakobsoni 8, Tallinn, ee",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Tallinn, Carl Robert Jakobsoni 8, ee",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "10128, Carl Robert Jakobsoni, Tallinn, 8",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Carl Robert Jakobsoni8",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Carl Robert Jakobsoni 8 john",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Carl Robert Jakovsoni 8",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "jakobsoni 8",
+   "lat": 59.43232967777778,
+   "lng": 24.770018855555556,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Carl Robert Jakobsoni 8, 10128 Tallinn",
+   "base": 17
+  },
+  {
+   "address": "Rahe 9, 10618 Tallinn",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Rahe, 9",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Rahe 9, 10618",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Tallinn, Rahe 9, ee",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Tallinn Rahe Rahe 9 ee",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Tallinn, 10618, 9, Rahe",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Rahe9",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "RAHE 9",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Rahe 9 apt 4b",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "rahe 9",
+   "lat": 59.42423626666667,
+   "lng": 24.677025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rahe 9, 10618 Tallinn",
+   "base": 18
+  },
+  {
+   "address": "Saani 2/3, 10149 Tallinn",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Saani, 2/3",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Saani 2/3 10149",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "ee, Saani 2/3, Tallinn",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Tallinn Saani 2/3 ee ee",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Tallinn, 10149, 2/3, Saani",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Saani2/3",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "SAANI 2/3",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Deli saani 2/3",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "saani 2/3",
+   "lat": 59.43547187142857,
+   "lng": 24.727821671428575,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Saani 2/3, 10149 Tallinn",
+   "base": 19
+  },
+  {
+   "address": "Asfaldi 4, 11415 Tallinn",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Asfaldi, 4",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Asfaldi 4 11415",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "ee Asfaldi 4 Tallinn",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "asfaldi 4, tallinn, ee ee",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Asfaldi, Tallinn, 11415",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Afsaldi 4",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "asfaldi 4",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Asfaldi4",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Mary asfaldi 4",
+   "lat": 59.430711683333335,
+   "lng": 24.83187475,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Asfaldi 4, 11415 Tallinn",
+   "base": 20
+  },
+  {
+   "address": "Räitsaka 27, 10618 Tallinn",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Räitsaka, 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Räitsaka 27, 10618",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Tallinn ee Räitsaka 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "ee Raitsaka 27 Tallinn",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Räitsaka 10618 Tallinn 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "räitsaka 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "RÄITSAKA 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Räitaska 27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Räitsaka27",
+   "lat": 59.42330597777777,
+   "lng": 24.673451266666667,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Räitsaka 27, 10618 Tallinn",
+   "base": 21
+  },
+  {
+   "address": "Mäekalda 2, 10127 Tallinn",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Mäekalda, 2",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Mäekalda 2, 10127",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Tallinn, Mäekalda 2, ee",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Mäekalda Mäekalda 2, Tallinn, ee",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Tallinn - 10127 - 2",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Mäekalda 2 back entrance",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Deli mäekalda 2",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "mäekalda 2",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "MÄEKALDA 2",
+   "lat": 59.437650514285714,
+   "lng": 24.796248285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mäekalda 2, 10127 Tallinn",
+   "base": 22
+  },
+  {
+   "address": "Kantsi 4a, 11415 Tallinn",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Kantsi, 4a",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Kantsi 4a 11415",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Tallinn ee Kantsi 4a",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Kantsi 4a Tallinn ee",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "4a 11415 Kantsi",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "kantsi 4a",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "KANTSI 4A",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Kantsi4a",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Mary kantsi 4a",
+   "lat": 59.42438946,
+   "lng": 24.81956946,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kantsi 4a, 11415 Tallinn",
+   "base": 23
+  },
+  {
+   "address": "Uue Maailma 23, Tallinn",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maailma, 23",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maailma 23, ee, Tallinn",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maailma 23 Tallinn ee",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Tallinn, 23, Uue Maailma",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maailma23",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "uue maailma 23",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maa 23",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Uue Maailma 23 back entrance",
+   "lat": 59.42411128,
+   "lng": 24.74141148,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Uue Maailma 23, Tallinn",
+   "base": 24
+  },
+  {
+   "address": "Ida tee 18, 75304 Järveküla",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Ida tee, 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Ida tee 18, 75304",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "ee Järveküla Ida tee 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "ee Ida tee 18 Järveküla",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Järveküla Ida tee 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Mary ida tee 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "IDA TEE 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Ida tee 18 apt 4b",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "ida tee 18",
+   "lat": 59.38999791111111,
+   "lng": 24.796184733333334,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ida tee 18, 75304 Järveküla",
+   "base": 25
+  },
+  {
+   "address": "Sääse 12, 12918 Tallinn",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "12 Sääse",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Sääse 12, 12918",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Tallinn Sääse 12 ee",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Sääse 12 Tallinn ee",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "12918, Tallinn, 12, Sääse",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Säääse 12",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Deli sääse 12",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "SÄÄSE 12",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Sääse 12 apt 4b",
+   "lat": 59.40837630000001,
+   "lng": 24.69174633333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sääse 12, 12918 Tallinn",
+   "base": 26
+  },
+  {
+   "address": "Väike-Pääsukese 5, 10145 Tallinn",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "5 Väike-Pääsukese",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Väike-Pääsukese 5 10145",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Tallinn Väike-Pääsukese 5 ee",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Tallinn Väike-Pääsukese 5 ee",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Tallinn Väike-Pääsukese 5",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "VÄIKE-PÄÄSUKESE 5",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Deli väike-pääsukese 5",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Väike-Pääsukese5",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Väik-ePääsukese 5",
+   "lat": 59.43344373333334,
+   "lng": 24.760497766666663,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Väike-Pääsukese 5, 10145 Tallinn",
+   "base": 27
+  },
+  {
+   "address": "Oru 26, Tallinn",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "26 Oru",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Tallinn, ee, Oru 26",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Tallinn ee Oru 26",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "26 - Tallinn",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "ORU 26",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Deli oru 26",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Oru 26 back entrance",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Oru26",
+   "lat": 59.440973199999995,
+   "lng": 24.803433599999998,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Oru 26, Tallinn",
+   "base": 28
+  },
+  {
+   "address": "Häälinurme 26, 75312 Peetri alevik",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Häälinurme, 26",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Häälinurme 26, 75312",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "ee Häälinurme 26 Peetri alevik",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Häälinurme 26, 26, ee, Peetri alevik",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "26 Peetri alevik Häälinurme 75312",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "häälinurme 26",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Häälinumre 26",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Häälinurme26",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "HÄÄLINURME 26",
+   "lat": 59.40303469230769,
+   "lng": 24.801757000000002,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Häälinurme 26, 75312 Peetri alevik",
+   "base": 29
+  },
+  {
+   "address": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sõjamäe põik 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sõjamäe põik 11, 11415",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sõjamäe põik 11, Tallinn, ee",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "ee tallinn suur-sõjamäe põik 11 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sõjamäe põik - 11415 - 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "põik 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Mary suur-sõjamäe põik 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sõjamäe põik 11 apt 4b",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Suur-Sjõamäe põik 11",
+   "lat": 59.42018007142857,
+   "lng": 24.839541228571427,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Suur-Sõjamäe põik 11, 11415 Tallinn",
+   "base": 30
+  },
+  {
+   "address": "Ruunaoja 1, 11415 Tallinn",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Ruunaoja 1",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Ruunaoja 1, 11415",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Ruunaoja 1, ee, Tallinn",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Tallinn, Ruunaoja Ruunaoja 1, ee",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Tallinn, 1, Ruunaoja, 11415",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Ruunaoja 1 john",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Ruunaoja1",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Mary ruunaoja 1",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Runuaoja 1",
+   "lat": 59.41751228,
+   "lng": 24.84539968,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ruunaoja 1, 11415 Tallinn",
+   "base": 31
+  },
+  {
+   "address": "Vana turg 1, Tallinn",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "1 Vana turg",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "ee, Vana turg 1, Tallinn",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "Vana turg 1 ee Tallinn",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "Vana turg - Tallinn",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "VANA TURG 1",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "Vana turg1",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "vana turg 1",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "Deli vana turg 1",
+   "lat": 59.4366438375,
+   "lng": 24.745899025,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vana turg 1, Tallinn",
+   "base": 32
+  },
+  {
+   "address": "Paavli 8, Tallinn",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Paavli, 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Tallinn ee Paavli 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Tallinn ee Paavli 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "8, Tallinn",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Paavli 8 apt 4b",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Paabli 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "paavli 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Mary paavli 8",
+   "lat": 59.44674475555556,
+   "lng": 24.702994933333333,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Paavli 8, Tallinn",
+   "base": 33
+  },
+  {
+   "address": "Karl August Hermanni 3f, 10121 Tallinn",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Karl August Hermanni, 3f",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Karl August Hermanni 3f, 10121",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Karl August Hermanni 3f Tallinn ee",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "ee Karl August August Hermanni 3f Tallinn",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "3f, 10121, Tallinn, Karl August Hermanni",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Karl August Hermani 3f",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Mary karl august hermanni 3f",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Karl August Her 3f",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "KARL AUGUST HERMANNI 3F",
+   "lat": 59.430739159999995,
+   "lng": 24.775020660000003,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Karl August Hermanni 3f, 10121 Tallinn",
+   "base": 34
+  },
+  {
+   "address": "Rahukohtu 3, 15161 Tallinn",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Rahukohtu 3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Rahukohtu 3 15161",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "ee, Tallinn, Rahukohtu 3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Rahukohtu Rahukohtu 3, ee, Tallinn",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "3, Tallinn, 15161, Rahukohtu",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Mary rahukohtu 3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Rahukhotu 3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Rahukohtu3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "RAHUKOHTU 3",
+   "lat": 59.43813844047619,
+   "lng": 24.740379054761906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rahukohtu 3, 15161 Tallinn",
+   "base": 35
+  },
+  {
+   "address": "Paevälja pst 5, 13619 Tallinn",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "5 Paevälja pst",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Paevälja pst 5 13619",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Paevälja pst 5 Tallinn ee",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "paevalja pst 5 5 tallinn ee",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Paevälja pst Tallinn 13619 5",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Deli paevälja pst 5",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "paevälja pst 5",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Paevälja pst 5 john",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Paebälja pst 5",
+   "lat": 59.44639022,
+   "lng": 24.82770384,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paevälja pst 5, 13619 Tallinn",
+   "base": 36
+  },
+  {
+   "address": "Mehaanika 3, Tallinn",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "Mehaanika, 3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "ee Tallinn Mehaanika 3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "tallinn, mehaanika mehaanika 3, ee",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "3 - Tallinn",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "Mehaanika3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "Mary mehaanika 3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "Mheaanika 3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "MEHAANIKA 3",
+   "lat": 59.42537814285714,
+   "lng": 24.706203285714285,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mehaanika 3, Tallinn",
+   "base": 37
+  },
+  {
+   "address": "Kloostri tee 8, 11911 Tallinn",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Kloostri tee 8",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Kloostri tee 8 11911",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Tallinn Kloostri tee 8 ee",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Kloostri tee 8, ee, ee, Tallinn",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "11911, Kloostri tee, Tallinn",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "KLOOSTRI TEE 8",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Kloostri tee8",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Klosotri tee 8",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Mary kloostri tee 8",
+   "lat": 59.4655706,
+   "lng": 24.8339361,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kloostri tee 8, 11911 Tallinn",
+   "base": 38
+  },
+  {
+   "address": "Orava 9a, Tallinn",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Orava 9a",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Tallinn Orava 9a ee",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Orava 9a Tallinn ee",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "9a - Orava - Tallinn",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "ORAVA 9A",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Mary orava 9a",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Orava9a",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  },
+  {
+   "address": "Orava 9a john",
+   "lat": 59.3904772,
+   "lng": 24.7243906,
+   "country": "EE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Orava 9a, Tallinn",
+   "base": 39
+  }
+ ]
+}

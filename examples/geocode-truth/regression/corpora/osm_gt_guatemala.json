@@ -1,0 +1,3728 @@
+{
+ "source": "osm-addr",
+ "country": "GT",
+ "city": "Guatemala",
+ "country_label": "Guatemala",
+ "depot": {
+  "lat": 14.6349,
+  "lon": -90.5069,
+  "city": "Guatemala",
+  "country": "Guatemala"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 371,
+ "note": "Nodos addr:* del indice n14.70_s14.50_e-90.40_w-90.60-guatemala.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "19-76 16 Avenida",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "16 Avenida 19-76, gt, Zona 12, Guatemala City",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "Zona 12, Guatemala City, gt, 16 Avenida 19-76",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "Zona 12, Guatemala City, 16 Avenida",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "16 Ave 19-76",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "Deli 16 avenida 19-76",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "16 Avenida 19-76 john",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "16 avenida 19-76",
+   "lat": 14.59713616,
+   "lng": -90.54355228,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "16 Avenida 19-76, Zona 12, Guatemala City",
+   "base": 0
+  },
+  {
+   "address": "11 Calle A 11-42, Guatemala",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11-42 11 Calle A",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "Guatemala 11 Calle A 11-42 gt",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11 calle a 11-42 gt guatemala",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11 Calle A, Guatemala, 11-42",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11 Calle A11-42",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "Deli 11 calle a 11-42",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11 CALLE A 11-42",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "11 calle a 11-42",
+   "lat": 14.63576402,
+   "lng": -90.501856,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 Calle A 11-42, Guatemala",
+   "base": 1
+  },
+  {
+   "address": "Vía 4 1-71, Guatemala",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Vía 4 1-71",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Vía 4 1-71 gt Guatemala",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Guatemala, gt, Vía 4 1-71",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "1-71 - Vía 4 - Guatemala",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "VÍA 4 1-71",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Vía 41-71",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Vía 4 1-71 apt 4b",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "Mary vía 4 1-71",
+   "lat": 14.6217564,
+   "lng": -90.5144041,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vía 4 1-71, Guatemala",
+   "base": 2
+  },
+  {
+   "address": "7a Avenida 3-54, Ciudad de Guatemala",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "3-54 7a Avenida",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "7a Avenida 3-54, Ciudad de Guatemala, gt",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "gt Ciudad de Guatemala 7a Avenida 3-54",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "3-54, Ciudad de Guatemala",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "Mary 7a avenida 3-54",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "7A AVENIDA 3-54",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "7a Ave 3-54",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "7a Avenida3-54",
+   "lat": 14.64484324,
+   "lng": -90.51241774,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7a Avenida 3-54, Ciudad de Guatemala",
+   "base": 3
+  },
+  {
+   "address": "25 Avenida 18-10, Guatemala",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "25 Avenida 18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "gt, 25 Avenida 18-10, Guatemala",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "gt, guatemala, 25 avenida 18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "Guatemala, 25 Avenida",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "25 AVENIDA 18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "25 Avenida18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "25 avenida 18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "25 Ave 18-10",
+   "lat": 14.597364780000001,
+   "lng": -90.5396216,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "25 Avenida 18-10, Guatemala",
+   "base": 4
+  },
+  {
+   "address": "10a Avenida Zona 15 3-55, Guatemala",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "3-55 10a Avenida Zona 15",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "Guatemala, 10a Avenida Zona 15 3-55, gt",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "Guatemala 10a Avenida Zona 15 3-55 gt",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "Guatemala 10a Avenida Zona 15",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "10a Avenida Zona 153-55",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "10a avenida zona 15 3-55",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "Deli 10a avenida zona 15 3-55",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "10a Aevnida Zona 15 3-55",
+   "lat": 14.610693620000001,
+   "lng": -90.49891235999999,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "10a Avenida Zona 15 3-55, Guatemala",
+   "base": 5
+  },
+  {
+   "address": "26 Avenida A 18-03, Guatemala",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 Avenida A, 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 Avenida A 18-03 Guatemala gt",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "Guatemala gt gt 26 Avenida A 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 Avenida A, 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 Avenida A18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 Abenida A 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "Mary 26 avenida a 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "26 avenida a 18-03",
+   "lat": 14.597295740000002,
+   "lng": -90.53876554000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "26 Avenida A 18-03, Guatemala",
+   "base": 6
+  },
+  {
+   "address": "15 Avenida 3-80, Guatemala",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "3-80 15 Avenida",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "gt Guatemala 15 Avenida 3-80",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "15 avenida 3-80 guatemala gt",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "Guatemala 15 Avenida",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "15 avenida 3-80",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "Deli 15 avenida 3-80",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "15 Ave 3-80",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "15 Avenida 3-80 back entrance",
+   "lat": 14.6033903,
+   "lng": -90.5000503,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 Avenida 3-80, Guatemala",
+   "base": 7
+  },
+  {
+   "address": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avenida B 13-68",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avenida B 13-68, 01016",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "gt 2 Avenida B 13-68 Zona 16, Ciudad de Guatemala, Guatemala",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avenida B 13-68 Zona 16, Ciudad de Guatemala, Guatemala gt",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "Zona 16, Ciudad de Guatemala, Guatemala, 13-68, 2 Avenida B",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avenida B 13-68 apt 4b",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avendia B 13-68",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 Avenida B13-68",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "2 AVENIDA B 13-68",
+   "lat": 14.615021916666665,
+   "lng": -90.47941035000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Avenida B 13-68, 01016 Zona 16, Ciudad de Guatemala, Guatemala",
+   "base": 8
+  },
+  {
+   "address": "9a Avenida 10-38, Guatemala",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "9a Avenida 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "Guatemala 9a Avenida 10-38 gt",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "Guatemala, 9a Avenida 10-38, gt",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "Guatemala, 9a Avenida, 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "Mary 9a avenida 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "9a Abenida 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "9a Ave 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "9a avenida 10-38",
+   "lat": 14.60548744,
+   "lng": -90.54015978,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9a Avenida 10-38, Guatemala",
+   "base": 9
+  },
+  {
+   "address": "24 Calle 15-61, Guatemala",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "24 Calle 15-61",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "Guatemala gt 24 Calle 15-61",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "gt 24 Calle 15-61 Guatemala",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "15-61 - 24 Calle",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "24 Calle 15-61 back entrance",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "24 CALLE 15-61",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "Mary 24 calle 15-61",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "24 calle 15-61",
+   "lat": 14.624389159999998,
+   "lng": -90.50737484,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 Calle 15-61, Guatemala",
+   "base": 10
+  },
+  {
+   "address": "31 Avenida 4-22, Guatemala",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 Avenida 4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "gt, 31 Avenida 4-22, Guatemala",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 avenida 4-22, gt, guatemala",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 Avenida - 4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 Aveinda 4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 avenida 4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "31 Avenida4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "Deli 31 avenida 4-22",
+   "lat": 14.629455985714285,
+   "lng": -90.5549617857143,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "31 Avenida 4-22, Guatemala",
+   "base": 11
+  },
+  {
+   "address": "33 Avenida 10-83, Guatemala",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "33 Avenida 10-83",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "Guatemala 33 Avenida 10-83 gt",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "Guatemala 33 Avenida 10-83 gt",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "Guatemala 10-83",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "33 Abenida 10-83",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "Mary 33 avenida 10-83",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "33 Avenida 10-83 (green door)",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "33 Ave 10-83",
+   "lat": 14.637290116666668,
+   "lng": -90.55672563333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "33 Avenida 10-83, Guatemala",
+   "base": 12
+  },
+  {
+   "address": "Ruta 4 6-32, 01004 Guatemala",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Ruta 4, 6-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Ruta 4 6-32, 01004",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Guatemala, gt, Ruta 4 6-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Guatemala, gt, Ruta 4 6-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "01004 - Ruta 4 - Guatemala",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "RUTA 4 6-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Deli ruta 4 6-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Ruta 4 6-32 john",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "Ruta 46-32",
+   "lat": 14.6190178,
+   "lng": -90.5148794,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ruta 4 6-32, 01004 Guatemala",
+   "base": 13
+  },
+  {
+   "address": "16 Avenida B 0-26, Guatemala",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "0-26 16 Avenida B",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "gt, 16 Avenida B 0-26, Guatemala",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "Guatemala gt 16 Avenida B 0-26",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "16 Avenida B Guatemala",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "16 AVENIDA B 0-26",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "16 avenida b 0-26",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "16 Avneida B 0-26",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "16 Avenida B 0-26 john",
+   "lat": 14.5976664,
+   "lng": -90.4999436,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "16 Avenida B 0-26, Guatemala",
+   "base": 14
+  },
+  {
+   "address": "Calzada San Juan 8-23, Guatemala",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "Calzada San Juan, 8-23",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "gt, Guatemala, Calzada San Juan 8-23",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "gt Calzada San Juan 8-23 Guatemala Guatemala",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "Guatemala, Calzada San Juan",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "Calzada San Juan 8-23 apt 4b",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "Calzada San Juan8-23",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "Mary calzada san juan 8-23",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "CALZADA SAN JUAN 8-23",
+   "lat": 14.6195033,
+   "lng": -90.543327,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calzada San Juan 8-23, Guatemala",
+   "base": 15
+  },
+  {
+   "address": "4a Avenida 9-82, Guatemala",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "9-82 4a Avenida",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "Guatemala gt 4a Avenida 9-82",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "gt, 4a Avenida Avenida 9-82, Guatemala",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "9-82, 4a Avenida, Guatemala",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "4a Aveinda 9-82",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "4a Avenida 9-82 back entrance",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "4a Ave 9-82",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "4A AVENIDA 9-82",
+   "lat": 14.639574,
+   "lng": -90.5161607,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4a Avenida 9-82, Guatemala",
+   "base": 16
+  },
+  {
+   "address": "17 Calle A 12-25, Guatemala",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "17 Calle A 12-25",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "Guatemala 17 Calle A 12-25 gt",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "Guatemala, 17 Calle A 12-25, gt",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "12-25, 17 Calle A",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "17 Cale A 12-25",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "17 calle a 12-25",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "Deli 17 calle a 12-25",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "17 Calle A12-25",
+   "lat": 14.6074679,
+   "lng": -90.55315692,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "17 Calle A 12-25, Guatemala",
+   "base": 17
+  },
+  {
+   "address": "11 calle 15-01, Guatemala",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "15-01 11 calle",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "gt 11 calle 15-01 Guatemala",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "gt, 11 calle 15-01, Guatemala",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "11 calle - Guatemala - 15-01",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "11 calle15-01",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "11 calle 15-01",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "Mary 11 calle 15-01",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "11 CALLE 15-01",
+   "lat": 14.636734039999999,
+   "lng": -90.50417456,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 calle 15-01, Guatemala",
+   "base": 18
+  },
+  {
+   "address": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Vía 3 1-01",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Vía 3 1-01 01004",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "gt, Vía 3 1-01, Ciudad de Guatemala",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Ciudad de Guatemala Vía 3 1-01 1-01 gt",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "1-01 01004 Ciudad de Guatemala Vía 3",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Vía 31-01",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Deli vía 3 1-01",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "Vía 3 1-01 (green door)",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "VÍA 3 1-01",
+   "lat": 14.6228378,
+   "lng": -90.5144267,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vía 3 1-01, 01004 Ciudad de Guatemala",
+   "base": 19
+  },
+  {
+   "address": "0 Calle B 17-08, Guatemala",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "0 Calle B, 17-08",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "gt, Guatemala, 0 Calle B 17-08",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "gt 0 Calle B 17-08 Guatemala",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "17-08 - 0 Calle B - Guatemala",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "0 Calle B 17-08 john",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "0 calle b 17-08",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "0 Calle B17-08",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "0 CALLE B 17-08",
+   "lat": 14.5971647,
+   "lng": -90.4987131,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "0 Calle B 17-08, Guatemala",
+   "base": 20
+  },
+  {
+   "address": "Avenida Bolívar 40-16, Guatemala",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "40-16 Bolívar",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bolívar 40-16, Guatemala",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bolívar 40-16, Guatemala, gt",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bolivar 40-16, Guatemala, gt",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Avenida Bolívar 40-16",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "BOLÍVAR 40-16",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bolíbar 40-16",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Mary bolívar 40-16",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bolívar 40-16 (green door)",
+   "lat": 14.6145558,
+   "lng": -90.53359154,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Bolívar 40-16, Guatemala",
+   "base": 21
+  },
+  {
+   "address": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "Bulevar Ensenada de San Isidro 13-55",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "guatemala, Bulevar Ensenada de San Isidro 13-55, gt",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "Bulevar Ensenada de San Isidro 13-55 gt guatemala",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "Bulevar Ensenada de San Isidro, 13-55, guatemala",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "ENSENADA DE SAN ISIDRO 13-55",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "Enesnada de San Isidro 13-55",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "ensenada de san isidro 13-55",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "isidro 13-55",
+   "lat": 14.6214198,
+   "lng": -90.4683475,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bulevar Ensenada de San Isidro 13-55, guatemala",
+   "base": 22
+  },
+  {
+   "address": "17 Avenida B 72, 01015 Guatemala City",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "72 17 Avenida B",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "17 Avenida B 72 01015",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "Guatemala City, 17 Avenida B 72, gt",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "Guatemala City, gt, 17 17 Avenida B 72",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "01015 72 Guatemala City",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "Deli 17 avenida b 72",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "17 Abenida B 72",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "17 Avenida B 72 john",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "17 Avenida B72",
+   "lat": 14.595466,
+   "lng": -90.4975991,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "17 Avenida B 72, 01015 Guatemala City",
+   "base": 23
+  },
+  {
+   "address": "6a Calle A 5-57, Guatemala",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "5-57 6a Calle A",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "gt Guatemala 6a Calle A 5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "Guatemala gt 6a Calle A 5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "Guatemala - 6a Calle A - 5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "6a Calle A5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "6a Calle A 5-57 apt 4b",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "Mary 6a calle a 5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "6a Cale A 5-57",
+   "lat": 14.61794316,
+   "lng": -90.53911378000001,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6a Calle A 5-57, Guatemala",
+   "base": 24
+  },
+  {
+   "address": "Calzada Aguilar Batres 11-38, Zona 11",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "11-38 Calzada Aguilar Batres",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "Zona 11, gt, Calzada Aguilar Batres 11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "gt Calzada Aguilar Batres 11-38 Zona Zona 11",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "Calzada Aguilar Batres, 11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "batres 11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "calzada aguilar batres 11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "Calzada Aguilar Batres11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "Calsada Aguilar Batres 11-38",
+   "lat": 14.607216816666666,
+   "lng": -90.54278076666667,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calzada Aguilar Batres 11-38, Zona 11",
+   "base": 25
+  },
+  {
+   "address": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Centro Comercial Metronorte Anexo 1, Local 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Centro Comercial Metronorte Anexo 1, Local 2, 01017",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "gt Zona 17 Centro Comercial Metronorte Anexo 1, Local 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Zona 17, gt, Centro Comercial Metronorte Anexo 1, Local 2 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Anexo 1, Local 2 Centro Comercial Metronorte Zona 17 01017",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Centro Comercial Metronorte Anexo 1, Local 2 back entrance",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "centro comercial metronorte anexo 1, local 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "CENTRO COMERCIAL METRONORTE ANEXO 1, LOCAL 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Centro Comercial Met Anexo 1, Local 2",
+   "lat": 14.6466667,
+   "lng": -90.4758018,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Centro Comercial Metronorte Anexo 1, Local 2, 01017 Zona 17",
+   "base": 26
+  },
+  {
+   "address": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "22-69 Bulevar Tulam Tzu",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "Guatemala, Bulevar Tulam Tzu 22-69, gt",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "Guatemala, gt, Bulevar Tulam Tzu 22-69",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "22-69, Bulevar Tulam Tzu, Guatemala",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "tulam tzu 22-69",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "Tulam Tzu22-69",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "TULAM TZU 22-69",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "Tulam Tzu 22-69 (green door)",
+   "lat": 14.64563554,
+   "lng": -90.55832186,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bulevar Tulam Tzu 22-69, Guatemala",
+   "base": 27
+  },
+  {
+   "address": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "8a Calle 11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "gt, 8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "gt zona 12, ciudad de guatemala 8a calle 11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "Zona 12, Ciudad de Guatemala - 11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "Deli 8a calle 11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "8a Calle 11-38 back entrance",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "8a calle 11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "8a Calle11-38",
+   "lat": 14.606250979999999,
+   "lng": -90.53759354,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8a Calle 11-38, Zona 12, Ciudad de Guatemala",
+   "base": 28
+  },
+  {
+   "address": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "Ciudad de Guatemala Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01 gt",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "gt Ciudad de Guatemala Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "01010, 13-01, Ciudad de Guatemala",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "Deli fase nueva diag. 6 c.c. oakland mall 2do nivel 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "FASE NUEVA DIAG. 6 C.C. OAKLAND MALL 2DO NIVEL 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "nivel 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "fase nueva Diag. 6 C.C. Oakalnd Mall 2do Nivel 13-01",
+   "lat": 14.5999177,
+   "lng": -90.5068136,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Diag. 6 C.C. Oakland Mall 2do Nivel, fase nueva 13-01, 01010 Ciudad de Guatemala",
+   "base": 29
+  },
+  {
+   "address": "10a Avenida 28-53, Guatemala",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "28-53 10a Avenida",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "gt 10a Avenida 28-53 Guatemala",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "10a Avenida 28-53, Guatemala, gt",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "Guatemala, 28-53, 10a Avenida",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "10a Avenida 28-53 apt 4b",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "10A AVENIDA 28-53",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "10a avenida 28-53",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "avenida 28-53",
+   "lat": 14.620866,
+   "lng": -90.5121673,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "10a Avenida 28-53, Guatemala",
+   "base": 30
+  },
+  {
+   "address": "30 Calle 22-71, Guatemala",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 Calle 22-71",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "gt, 30 Calle 22-71, Guatemala",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 Calle 22-71, Guatemala, gt",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 Calle, 22-71, Guatemala",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 calle 22-71",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 Calle22-71",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "30 CALLE 22-71",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "Deli 30 calle 22-71",
+   "lat": 14.61857388,
+   "lng": -90.50499096,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "30 Calle 22-71, Guatemala",
+   "base": 31
+  },
+  {
+   "address": "Arco 3 94, Ciudad de Guatemala",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "94 Arco 3",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "Arco 3 94, gt, Ciudad de Guatemala",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "gt Ciudad de Guatemala Arco 3 94",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "Arco 3 94 Ciudad de Guatemala",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "Arco 394",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "Arco 3 94 back entrance",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "arco 3 94",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "ARCO 3 94",
+   "lat": 14.638610314285714,
+   "lng": -90.49405134285715,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Arco 3 94, Ciudad de Guatemala",
+   "base": 32
+  },
+  {
+   "address": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "3-61 2a Avenida",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "2a Avenida 3-61 01009",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "guatemala zona 9 2a Avenida 3-61 gt",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "guatemala zona 9 gt 2a avenida 3-61",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "3-61 - 2a Avenida - guatemala zona 9",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "2a Avenida3-61",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "2a Ave 3-61",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "2a Avenida 3-61 back entrance",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "2A AVENIDA 3-61",
+   "lat": 14.6119455,
+   "lng": -90.5229117,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2a Avenida 3-61, 01009 guatemala zona 9",
+   "base": 33
+  },
+  {
+   "address": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a Calle 2-50",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a Calle 2-50, 01001",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "Ciudad de Guatemala 3a Calle 2-50 gt",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a Calle 2-50, Ciudad de Guatemala, gt",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "2-50 01001 Ciudad de Guatemala 3a Calle",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a calle 2-50",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3A CALLE 2-50",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a Calle2-50",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "3a Calle 2-50 back entrance",
+   "lat": 14.6464284,
+   "lng": -90.5169836,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3a Calle 2-50, 01001 Ciudad de Guatemala",
+   "base": 34
+  },
+  {
+   "address": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "Hospital Militar, 24 calle 14-01 zona 16",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "Hospital Militar 24 calle 14-01 zona 16 01016",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "gt, Hospital Militar 24 calle 14-01 zona 16, Guatemala",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "gt Guatemala Hospital Militar 24 calle 14-01 zona zona 16",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "24 calle 14-01 zona 16 - 01016 - Guatemala",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "Hsopital Militar 24 calle 14-01 zona 16",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "Hospital Militar 24 calle 14-01 zona 16 apt 4b",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "HOSPITAL MILITAR 24 CALLE 14-01 ZONA 16",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "militar 24 calle 14-01 zona 16",
+   "lat": 14.6238152,
+   "lng": -90.468889,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Boulevard Hospital Militar 24 calle 14-01 zona 16, 01016 Guatemala",
+   "base": 35
+  },
+  {
+   "address": "30 Avenida 32-68, Guatemala",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "30 Avenida, 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "Guatemala, 30 Avenida 32-68, gt",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "Guatemala, 30 30 Avenida 32-68, gt",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "30 Avenida, 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "Deli 30 avenida 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "30 AVENIDA 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "30 avenida 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "30 Aveinda 32-68",
+   "lat": 14.615876879999998,
+   "lng": -90.50376946,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "30 Avenida 32-68, Guatemala",
+   "base": 36
+  },
+  {
+   "address": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Carretera al Atlántico ( Diagonal 7 ), Km 8",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Carretera al Atlántico ( Diagonal 7 ) Km 8 01018",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Zona 18, Carretera al Atlántico ( Diagonal 7 ) Km 8, gt",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "carretera al atlantico ( diagonal 7 ) km 8, 8, zona 18, gt",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Zona 18 01018 Km 8",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "diagonal Km 8",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "CARRETERA AL ATLÁNTICO ( DIAGONAL 7 ) KM 8",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Carretera al Atlántico ( Diagonal 7 ) Km 8 (green door)",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "Caretera al Atlántico ( Diagonal 7 ) Km 8",
+   "lat": 14.65316969117647,
+   "lng": -90.45594900294118,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Carretera al Atlántico ( Diagonal 7 ) Km 8, 01018 Zona 18",
+   "base": 37
+  },
+  {
+   "address": "entre 36 y 38 calle 33 av, Zona 7",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle, 33 av",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle 33 av gt Zona 7",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle 33 av, Zona 7, gt",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle, 33 av",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle 33 av apt 4b",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "ENTRE 36 Y 38 CALLE 33 AV",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "entre 36 y 38 calle 33 av",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "enttre 36 y 38 calle 33 av",
+   "lat": 14.657709433333332,
+   "lng": -90.52890353333333,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "entre 36 y 38 calle 33 av, Zona 7",
+   "base": 38
+  },
+  {
+   "address": "11 Avenida C 12-01, Guatemala",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "12-01 11 Avenida C",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "gt 11 Avenida C 12-01 Guatemala",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "gt Guatemala 11 Avenida C 12-01",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "Guatemala 12-01",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "11 AVENIDA C 12-01",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "11 Abenida C 12-01",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "11 Avenida C 12-01 john",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  },
+  {
+   "address": "11 avenida c 12-01",
+   "lat": 14.6459798,
+   "lng": -90.464102,
+   "country": "GT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 Avenida C 12-01, Guatemala",
+   "base": 39
+  }
+ ]
+}

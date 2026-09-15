@@ -1,0 +1,3958 @@
+{
+ "source": "osm-addr",
+ "country": "CR",
+ "city": "San José",
+ "country_label": "Costa Rica",
+ "depot": {
+  "lat": 9.9281,
+  "lon": -84.0907,
+  "city": "San José",
+  "country": "Costa Rica"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 394,
+ "note": "Nodos addr:* del indice n10.00_s9.80_e-84.00_w-84.20-costa-rica.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "0013 26 Moisés Vincenzi",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "26 Moisés Vincenzi 0013, 10103",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "San José, cr, 26 Moisés Vincenzi 0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "San José, cr, 26 Moisés Vincenzi 0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "0013 Calle 26 Moisés Vincenzi San José",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "26 Moisés Vincenzi0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "26 MOISÉS VINCENZI 0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "26 Moisés Vinsenzi 0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "Deli 26 moisés vincenzi 0013",
+   "lat": 9.932097588888888,
+   "lng": -84.09105744444444,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 26 Moisés Vincenzi 0013, 10103 San José",
+   "base": 0
+  },
+  {
+   "address": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 Miguel Obregón Lizano, 0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 Miguel Obregón Lizano 0038, San José",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "San José cr 37 Miguel Obregón Lizano 0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 Miguel Obregón Lizano 0038, San José, cr",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "0038, Calle 37 Miguel Obregón Lizano, San José",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 MIGUEL OBREGÓN LIZANO 0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 Miguel Obregón Lizano0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 miguel obregón lizano 0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "37 Miguel Ovregón Lizano 0038",
+   "lat": 9.93135552,
+   "lng": -84.0622345,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 37 Miguel Obregón Lizano 0038, San José",
+   "base": 1
+  },
+  {
+   "address": "Calle 56B 0003, 10110 San José",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B, 0003",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B 0003, 10110",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "San José cr 56B 0003",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B 0003, San José, cr",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "0003 Calle 56B San José",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "Mary 56b 0003",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B0003",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B 0003",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "56B 0003 apt 4b",
+   "lat": 9.922223666666666,
+   "lng": -84.1039902888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 56B 0003, 10110 San José",
+   "base": 2
+  },
+  {
+   "address": "Transversal 74 0003, San José",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "0003 Transversal 74",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transversal 74 0003 cr San José",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transversal 74 0003, San Jose, cr",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transversal 74, San José",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transvresal 74 0003",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "transversal 74 0003",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transversal 74 0003 john",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Transversal 740003",
+   "lat": 9.951329761111111,
+   "lng": -84.11474487083333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Transversal 74 0003, San José",
+   "base": 3
+  },
+  {
+   "address": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 Alvise Castegnaro 0015",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 Alvise Castegnaro 0015 10104",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 Alvise Castegnaro 0015, San José, cr",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 alvise castegnaro 0015, cr, san josé",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "0015 San José Calle 1 Alvise Castegnaro",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 Alvise Castegnaro 0015 back entrance",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 Alvise Cas 0015",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "Mary 1 alvise castegnaro 0015",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "1 alvise castegnaro 0015",
+   "lat": 9.9269441,
+   "lng": -84.0786032,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 1 Alvise Castegnaro 0015, 10104 San José",
+   "base": 4
+  },
+  {
+   "address": "Autopista General Cañas 0123, Mata Redonda",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "0123 Autopista General Cañas",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "cr Mata Redonda Autopista General Cañas 0123",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Autopista General Cañas 0123, cr, Mata Redonda",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Mata Redonda, 0123",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Autopista General Cañas 0123 (green door)",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Autopista General Cañas0123",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "autopista general cañas 0123",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Mary autopista general cañas 0123",
+   "lat": 9.939616095652173,
+   "lng": -84.09912832608696,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Autopista General Cañas 0123, Mata Redonda",
+   "base": 5
+  },
+  {
+   "address": "Montes de Oca 11501, 11501 San Pedro",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Montes de Oca, 11501",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Montes de Oca 11501, 11501",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "San Pedro, Montes de Oca 11501, cr",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "cr Montes de Oca 11501 San Pedro",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "San Pedro, 11501, Montes de Oca",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Montes de Oca 11501 apt 4b",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Motnes de Oca 11501",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Montes de Oca11501",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "MONTES DE OCA 11501",
+   "lat": 9.934808425,
+   "lng": -84.05262995,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Montes de Oca 11501, 11501 San Pedro",
+   "base": 6
+  },
+  {
+   "address": "Avenida 10A 0052, San José",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "10A 0052",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "10A 0052, San José",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "San José 10A 0052 cr",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "San José, 10A 0052, cr",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "San José, Avenida 10A, 0052",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "10A0052",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "10A 0052 john",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "10A 0052",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "Mary 10a 0052",
+   "lat": 9.92869812,
+   "lng": -84.07276522,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 10A 0052, San José",
+   "base": 7
+  },
+  {
+   "address": "Calle 48 0019, Mata Redonda",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "0019 48",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "48 0019, Mata Redonda",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "cr Mata Redonda 48 0019",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "48 0019, cr, Mata Redonda",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "Calle 48, Mata Redonda, 0019",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "48 0019 apt 4b",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "Mary 48 0019",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "480019",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "48 0019",
+   "lat": 9.93910704,
+   "lng": -84.10134128,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 48 0019, Mata Redonda",
+   "base": 8
+  },
+  {
+   "address": "Avenida 18B 0010, 10108 Mata Redonda",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18B, 0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18B 0010, 10108",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18B 0010 Mata Redonda cr",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "cr Mata Redonda 18B 0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "Avenida 18B Mata Redonda 0010 10108",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18b 0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "Deli 18b 0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18B0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "18B 0010",
+   "lat": 9.926680957142858,
+   "lng": -84.10011157142857,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 18B 0010, 10108 Mata Redonda",
+   "base": 9
+  },
+  {
+   "address": "Calle 25 César Valverde 0035, San José",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 César Valverde 0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 César Valverde 0035, San José",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "cr San José 25 César Valverde 0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 césar valverde 0035 cr san josé",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "0035 San José",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "Mary 25 césar valverde 0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 césar valverde 0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 César Valverde0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "25 César Val 0035",
+   "lat": 9.9370745,
+   "lng": -84.0661542,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 25 César Valverde 0035, San José",
+   "base": 10
+  },
+  {
+   "address": "Calle 35 0192, San José",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "0192 35",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "35 0192, San José",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "cr, 35 0192, San José",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "35 0192, San José, cr",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "Calle 35 - San José",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "35 0192",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "35 0192 back entrance",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "Deli 35 0192",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "350192",
+   "lat": 9.9332435375,
+   "lng": -84.0622632875,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 35 0192, San José",
+   "base": 11
+  },
+  {
+   "address": "Avenida 18 Cleto González Víquez 0067, San José",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "0067 18 Cleto González Víquez",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "18 Cleto González Víquez 0067, San José",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "San José, cr, 18 Cleto González Víquez 0067",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "18 Cleto González Víquez 0067, cr, San José",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "Avenida 18 Cleto González Víquez, 0067",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "18 cleto gonzález víquez 0067",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "18 CLETO GONZÁLEZ VÍQUEZ 0067",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "Deli 18 cleto gonzález víquez 0067",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "18 Cleto González Víquez 0067 back entrance",
+   "lat": 9.926005683333333,
+   "lng": -84.07365726666667,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 18 Cleto González Víquez 0067, San José",
+   "base": 12
+  },
+  {
+   "address": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "0062 19 José Joaquín Vargas Calvo",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 José Joaquín Vargas Calvo 0062, San José",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 José Joaquín Vargas Calvo 0062, cr, San José",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "San Jose 19 Jose Joaquin Vargas Calvo 0062 cr",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "Calle 19 José Joaquín Vargas Calvo San José 0062",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 josé joaquín vargas calvo 0062",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 JOSÉ JOAQUÍN VARGAS CALVO 0062",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 José Joaquín Vargas Calvo0062",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "19 José Joauqín Vargas Calvo 0062",
+   "lat": 9.937861000000002,
+   "lng": -84.06817926,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 19 José Joaquín Vargas Calvo 0062, San José",
+   "base": 13
+  },
+  {
+   "address": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 Julio Fonseca Gutiérrez 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 Julio Fonseca Gutiérrez 0047, San José",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 Julio Fonseca Gutiérrez 0047 San José cr",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "san josé cr 3 julio fonseca gutiérrez 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "0047 San José",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 Julio Fonseca Guttiérrez 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "gutiérrez 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 Julio Fonseca Gut 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "3 julio fonseca gutiérrez 0047",
+   "lat": 9.93694725,
+   "lng": -84.0774366625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 3 Julio Fonseca Gutiérrez 0047, San José",
+   "base": 14
+  },
+  {
+   "address": "Calle 11A 0004, 10101 San José",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "11A, 0004",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "11A 0004 10101",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "cr, 11A 0004, San José",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "San Jose, 11A 0004, cr",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "Calle 11A, 0004, San José",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "11A 0004",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "11A 0004 (green door)",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "11A0004",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "Mary 11a 0004",
+   "lat": 9.935903576923076,
+   "lng": -84.07303718461539,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 11A 0004, 10101 San José",
+   "base": 15
+  },
+  {
+   "address": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "153 Ofibodegas Centro Comercial El Pueblo",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "Ofibodegas Centro Comercial El Pueblo 153 10802",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "cr Ofibodegas Centro Comercial El Pueblo 153 San Francisco",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "Ofibodegas Centro Comercial Comercial El Pueblo 153, cr, San Francisco",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "10802 San Francisco 153",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "Ofiboedgas Centro Comercial El Pueblo 153",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "OFIBODEGAS CENTRO COMERCIAL EL PUEBLO 153",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "pueblo 153",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "Ofibodegas Centro Comercial El Pueblo153",
+   "lat": 9.9416673,
+   "lng": -84.0737742,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ofibodegas Centro Comercial El Pueblo 153, 10802 San Francisco",
+   "base": 16
+  },
+  {
+   "address": "Avenida 16B 0028, 10108 San José",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16B 0028",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16B 0028, 10108",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16B 0028, San José, cr",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "San José 16B 0028 cr",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "0028, San José, 10108",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16B 0028 apt 4b",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "Deli 16b 0028",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16b 0028",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "16B0028",
+   "lat": 9.929038023076924,
+   "lng": -84.10699042307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 16B 0028, 10108 San José",
+   "base": 17
+  },
+  {
+   "address": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "2A Centenario de la Campaña de 1856, 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "2A Centenario de la Campaña de 1856 0054, San José",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "cr, San José, 2A Centenario de la Campaña de 1856 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "San Jose cr 2A Centenario de la Campana de 1856 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "Avenida 2A Centenario de la Campaña de 1856, San José",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "campaña 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "2A Centenario de la Campaña de 1856 0054 (green door)",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "2a centenario de la campaña de 1856 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "2A CENTENARIO DE LA CAMPAÑA DE 1856 0054",
+   "lat": 9.931503666666666,
+   "lng": -84.06876343333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 2A Centenario de la Campaña de 1856 0054, San José",
+   "base": 18
+  },
+  {
+   "address": "Calle 19B 0023, 10104 San José",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "0023 19B",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "19B 0023 10104",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "San José 19B 0023 cr",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "cr, 19B 0023, San José",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "San José, 0023, 10104, Calle 19B",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "19B0023",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "19B 0023",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "Deli 19b 0023",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "19B 0023 back entrance",
+   "lat": 9.9212809,
+   "lng": -84.07032104,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 19B 0023, 10104 San José",
+   "base": 19
+  },
+  {
+   "address": "Avenida 10 0127, San José",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "0127 10",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "10 0127, San José",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "10 0127 cr San José",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "cr 10 0127 San Jose",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "San José Avenida 10",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "100127",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "Deli 10 0127",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "10 0127 back entrance",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "10 0127",
+   "lat": 9.929360666666666,
+   "lng": -84.0682379888889,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 10 0127, San José",
+   "base": 20
+  },
+  {
+   "address": "Transversal 29 Las Gemelas 0027, San José",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "0027 Transversal 29 Las Gemelas",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "San José, Transversal 29 Las Gemelas 0027, cr",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "Transversal 29 Las Gemelas 0027 San José cr",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "Transversal 29 Las Gemelas 0027 San José",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "gemelas 0027",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "Transversal 29 Las Gemelas 0027 apt 4b",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "transversal 29 las gemelas 0027",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "Transversal 29 Las Gem 0027",
+   "lat": 9.936766344444445,
+   "lng": -84.06508291111112,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Transversal 29 Las Gemelas 0027, San José",
+   "base": 21
+  },
+  {
+   "address": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Masís +506 2280-5479",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Masís +506 2280-5479 11503",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Mercedes, Masís +506 2280-5479, cr",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Masís +506 2280-5479 Mercedes cr",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Mercedes, 11503, +506 2280-5479, Calle Masís",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Deli masís +506 2280-5479",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "MASÍS +506 2280-5479",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Massís +506 2280-5479",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Masís +506 2280-5479 (green door)",
+   "lat": 9.939460583333334,
+   "lng": -84.05114063333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Masís +506 2280-5479, 11503 Mercedes",
+   "base": 22
+  },
+  {
+   "address": "Calle 17 0043, 10104 San José",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "17 0043",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "17 0043, 10104",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "cr 17 0043 San José",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "17 0043 cr san jose",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "10104, Calle 17, 0043",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "17 0043",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "Mary 17 0043",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "17 0043 back entrance",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "170043",
+   "lat": 9.917022059999999,
+   "lng": -84.07234625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 17 0043, 10104 San José",
+   "base": 23
+  },
+  {
+   "address": "Calle 62 0099, 10108 San José",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "0099 62",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "62 0099, 10108",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "San José, 62 0099, cr",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "62 0099 cr San Jose",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "Calle 62 10108 San José 0099",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "62 0099 john",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "Mary 62 0099",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "62 0099",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "620099",
+   "lat": 9.93039627,
+   "lng": -84.10670395,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 62 0099, 10108 San José",
+   "base": 24
+  },
+  {
+   "address": "Avenida 31B 0039, San José",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "0039 31B",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "31B 0039, San José",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "San José, 31B 0039, cr",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "31b 0039, cr, san jose",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "Avenida 31B, San José",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "31b 0039",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "31B0039",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "31B 0039",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "Deli 31b 0039",
+   "lat": 9.950126284615383,
+   "lng": -84.13370157307692,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 31B 0039, San José",
+   "base": 25
+  },
+  {
+   "address": "Avenida 9 Carlos Gagini 0069, San José",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "9 Carlos Gagini, 0069",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "9 Carlos Gagini 0069, San José",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "San José, cr, 9 Carlos Gagini 0069",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "San José 9 Carlos Gagini 0069 0069 cr",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "Avenida 9 Carlos Gagini San José",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "9 Carlos Gagini 0069 back entrance",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "Deli 9 carlos gagini 0069",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "9 carlos gagini 0069",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "9 Carlos Gagini0069",
+   "lat": 9.9380445625,
+   "lng": -84.0699616625,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 9 Carlos Gagini 0069, San José",
+   "base": 26
+  },
+  {
+   "address": "Transversal 76 0312, San José",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "0312 Transversal 76",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "San José Transversal 76 0312 cr",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "San Jose cr Transversal 76 0312",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "San José - 0312 - Transversal 76",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "Transversal 760312",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "TRANSVERSAL 76 0312",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "transversal 76 0312",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "Mary transversal 76 0312",
+   "lat": 9.957700466666667,
+   "lng": -84.11660428333333,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Transversal 76 0312, San José",
+   "base": 27
+  },
+  {
+   "address": "Calle 108 103, San José",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "103 108",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "108 103, San José",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "San José cr 108 103",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "cr San José 108 103",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "103, San José, Calle 108",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "108103",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "108 103 (green door)",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "108 103",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "Deli 108 103",
+   "lat": 9.95641212,
+   "lng": -84.1278823,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 108 103, San José",
+   "base": 28
+  },
+  {
+   "address": "Calle 64 0035, Mata Redonda",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "64, 0035",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "64 0035, Mata Redonda",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "Mata Redonda 64 0035 cr",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "mata redonda 64 0035 cr",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "0035, Calle 64, Mata Redonda",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "64 0035",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "640035",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "Mary 64 0035",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "64 0035 john",
+   "lat": 9.940226540000001,
+   "lng": -84.10797694,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 64 0035, Mata Redonda",
+   "base": 29
+  },
+  {
+   "address": "Avenida 31 0004, San José",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "0004 31",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "31 0004, San José",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "cr 31 0004 San José",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "San José, cr, 31 0004",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "San José, Avenida 31",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "Mary 31 0004",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "31 0004",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "310004",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "31 0004 back entrance",
+   "lat": 9.94848638,
+   "lng": -84.11440374,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 31 0004, San José",
+   "base": 30
+  },
+  {
+   "address": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "0004 130 Juan Fernández Ferráz",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "130 Juan Fernández Ferráz 0004, San José",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "cr San José 130 Juan Fernández Ferráz 0004",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "cr, San José, 130 Juan Fernández Ferráz 0004",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "0004 Calle 130 Juan Fernández Ferráz San José",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "130 Juan Fernández Ferráz 0004 back entrance",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "130 JUAN FERNÁNDEZ FERRÁZ 0004",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "Deli 130 juan fernández ferráz 0004",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "ferráz 0004",
+   "lat": 9.9443112,
+   "lng": -84.13793864166666,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle 130 Juan Fernández Ferráz 0004, San José",
+   "base": 31
+  },
+  {
+   "address": "Avenida Estado de Israel 0004, 10104 San José",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Estado de Israel 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Estado de Israel 0004 10104",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "San José Estado de Israel 0004 cr",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Estado de Israel 0004 cr San Jose",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "10104 - Avenida Estado de Israel - San José - 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "ESTADO DE ISRAEL 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "israel 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Esatdo de Israel 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Deli estado de israel 0004",
+   "lat": 9.924502457142856,
+   "lng": -84.07325901428571,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Estado de Israel 0004, 10104 San José",
+   "base": 32
+  },
+  {
+   "address": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "22 Constantino Láscaris, 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "22 Constantino Láscaris 0217 10102",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "San José cr 22 Constantino Láscaris 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "San José, cr, 22 Constantino Láscaris 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "0217 Calle 22 Constantino Láscaris San José 10102",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "22 Constantino Láscaris 0217 apt 4b",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "Mary 22 constantino láscaris 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "22 CONSTANTINO LÁSCARIS 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "22 Constantino Lás 0217",
+   "lat": 9.94146785,
+   "lng": -84.08802159999999,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 22 Constantino Láscaris 0217, 10102 San José",
+   "base": 33
+  },
+  {
+   "address": "Transversal 51 93, San José",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "Transversal 51, 93",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "San José Transversal 51 93 cr",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "Transversal 51 93 cr San José José",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "San José, 93",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "Transversal 5193",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "Deli transversal 51 93",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "TRANSVERSAL 51 93",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "transversal 51 93",
+   "lat": 9.92429208,
+   "lng": -84.05470174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Transversal 51 93, San José",
+   "base": 34
+  },
+  {
+   "address": "Avenida 22 0003, San José",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "0003 22",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "22 0003, San José",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "22 0003 cr San José",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "22 0003 San José cr",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "0003, San José, Avenida 22",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "22 0003",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "Mary 22 0003",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "220003",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "22 0003 back entrance",
+   "lat": 9.92430925,
+   "lng": -84.0787174,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 22 0003, San José",
+   "base": 35
+  },
+  {
+   "address": "Transversal 17 0072, San José",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "0072 Transversal 17",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "San José cr Transversal 17 0072",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "Transversal 17 0072 cr San José",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "0072 - Transversal 17 - San José",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "Mary transversal 17 0072",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "TRANSVERSAL 17 0072",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "Transversal 17 0072 apt 4b",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "Transbersal 17 0072",
+   "lat": 9.92513956,
+   "lng": -84.06930878,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Transversal 17 0072, San José",
+   "base": 36
+  },
+  {
+   "address": "Calle 35 Héctor Murillo 0097, San José",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "0097 35 Héctor Murillo",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "35 Héctor Murillo 0097, San José",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "cr 35 Héctor Murillo 0097 San José",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "San José, 35 Héctor Murillo 0097, cr",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "San José Calle 35 Héctor Murillo 0097",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "35 HÉCTOR MURILLO 0097",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "35 Héctor Murillo0097",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "35 héctor murillo 0097",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "Deli 35 héctor murillo 0097",
+   "lat": 9.9344799,
+   "lng": -84.0625342,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 35 Héctor Murillo 0097, San José",
+   "base": 37
+  },
+  {
+   "address": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 Álvarez, 0013",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 Álvarez 0013, 10108",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 Álvarez 0013 cr Mata Redonda",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 álvarez 0013 cr mata redonda",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "Calle 58 Álvarez 0013 Mata Redonda",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "Deli 58 álvarez 0013",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 ÁLVAREZ 0013",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 Álbarez 0013",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "58 Álv 0013",
+   "lat": 9.932564719999998,
+   "lng": -84.10471728,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 58 Álvarez 0013, 10108 Mata Redonda",
+   "base": 38
+  },
+  {
+   "address": "Calle 16 0003, 10102 San José",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003 10102",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003, San José, cr",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003, cr, San José",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "0003, San José, Calle 16",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "Mary 16 0003",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "160003",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  },
+  {
+   "address": "16 0003 john",
+   "lat": 9.93613256,
+   "lng": -84.08570736,
+   "country": "CR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 16 0003, 10102 San José",
+   "base": 39
+  }
+ ]
+}

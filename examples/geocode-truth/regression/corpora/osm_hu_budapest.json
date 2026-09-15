@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "HU",
+ "city": "Budapest",
+ "country_label": "Hungary",
+ "depot": {
+  "lat": 47.4979,
+  "lon": 19.0402,
+  "city": "Budapest",
+  "country": "Hungary"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n47.60_s47.40_e19.20_w18.90-hungary.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Bánát utca 24, 1117 Budapest",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "24 Bánát utca",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Bánát utca 24, 1117",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Budapest, hu, Bánát utca 24",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Budapest, hu, Bánát utca 24",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "24 Bánát utca Budapest",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Mary bánát utca 24",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "BÁNÁT UTCA 24",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Bánát utca 24 apt 4b",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "utca 24",
+   "lat": 47.46437745555555,
+   "lng": 19.04599882222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bánát utca 24, 1117 Budapest",
+   "base": 0
+  },
+  {
+   "address": "Zuhatag utca 9b, 1021 Budapest",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Zuhatag utca, 9b",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Zuhatag utca 9b 1021",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Budapest, hu, Zuhatag utca 9b",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Zuhatag utca 9b, Budapest, hu",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Zuhatag utca 9b Budapest 1021",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Mary zuhatag utca 9b",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "utca 9b",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "zuhatag utca 9b",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Zuhatag utca 9b (green door)",
+   "lat": 47.53051732,
+   "lng": 18.982467500000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zuhatag utca 9b, 1021 Budapest",
+   "base": 1
+  },
+  {
+   "address": "Bolyai utca 1/b, 1023 Budapest",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Bolyai utca, 1/b",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Bolyai utca 1/b 1023",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Budapest hu Bolyai utca 1/b",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Budapest, Bolyai utca 1/b, hu",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "1/b - 1023 - Budapest",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Deli bolyai utca 1/b",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Bolyai utca1/b",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "BOLYAI UTCA 1/B",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "bolyai utca 1/b",
+   "lat": 47.51726114,
+   "lng": 19.0325957,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bolyai utca 1/b, 1023 Budapest",
+   "base": 2
+  },
+  {
+   "address": "Kenderes utca 7, 1116 Budapest",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "7 Kenderes utca",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "Kenderes utca 7, 1116",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "Kenderes utca 7, Budapest, hu",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "Budapest Kenderes utca 7 hu",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "7, 1116, Kenderes utca, Budapest",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "KENDERES UTCA 7",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "Kenedres utca 7",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "utca 7",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "kenderes utca 7",
+   "lat": 47.447478000000004,
+   "lng": 19.034640380000003,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kenderes utca 7, 1116 Budapest",
+   "base": 3
+  },
+  {
+   "address": "Bakáts tér 12, 1092 Budapest",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Bakáts tér, 12",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Bakáts tér 12 1092",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "hu Bakáts tér 12 Budapest",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Bakáts tér 12, Budapest, hu",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Budapest - 12 - Bakáts tér",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "bakáts tér 12",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Baákts tér 12",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Deli bakáts tér 12",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Bakáts tér12",
+   "lat": 47.48404068461538,
+   "lng": 19.067005473076925,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bakáts tér 12, 1092 Budapest",
+   "base": 4
+  },
+  {
+   "address": "Branyiszkó út 15, 1026 Budapest",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "15 Branyiszkó út",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "Branyiszkó út 15, 1026",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "hu Branyiszkó út 15 Budapest",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "Branyiszkó út 15 Budapest hu",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "15, Budapest, 1026, Branyiszkó út",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "branyiszkó út 15",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "Branyiszkó út 15 apt 4b",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "BRANYISZKÓ ÚT 15",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "Braniiszkó út 15",
+   "lat": 47.519685,
+   "lng": 19.00255322222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Branyiszkó út 15, 1026 Budapest",
+   "base": 5
+  },
+  {
+   "address": "Dolgos utca 2, 1126 Budapest",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Dolgos utca 2",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Dolgos utca 2 1126",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Dolgos utca 2, hu, Budapest",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "dolgos utca 2, budapest, hu",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "1126 - Dolgos utca - Budapest - 2",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Dlogos utca 2",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "utca 2",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "dolgos utca 2",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Dolgos utca 2 john",
+   "lat": 47.4910934,
+   "lng": 19.0218218,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dolgos utca 2, 1126 Budapest",
+   "base": 6
+  },
+  {
+   "address": "Barsi utca 7, 1022 Budapest",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca 7",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca 7, 1022",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca 7, Budapest, hu",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca 7 hu hu Budapest",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca, 7, Budapest, 1022",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Barsi utca7",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "BARSI UTCA 7",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Mary barsi utca 7",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "utca 7",
+   "lat": 47.515187422222226,
+   "lng": 19.02566262222222,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Barsi utca 7, 1022 Budapest",
+   "base": 7
+  },
+  {
+   "address": "Lipótmezei út 2, 1021 Budapest",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "2 Lipótmezei út",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Lipótmezei út 2 1021",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Budapest Lipótmezei út 2 hu",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "hu, Lipotmezei ut 2, Budapest",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Budapest Lipótmezei út 2 1021",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Mary lipótmezei út 2",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Lipótmezei út2",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "lipótmezei út 2",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Lipótmesei út 2",
+   "lat": 47.5304337,
+   "lng": 18.9779712,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lipótmezei út 2, 1021 Budapest",
+   "base": 8
+  },
+  {
+   "address": "Koszorú utca 31, 1086 Budapest",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Koszorú utca, 31",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Koszorú utca 31 1086",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Budapest, Koszorú utca 31, hu",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Koszoru utca 31 hu Budapest",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Koszorú utca 1086 Budapest",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "KOSZORÚ UTCA 31",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Kossorú utca 31",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Deli koszorú utca 31",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "koszorú utca 31",
+   "lat": 47.4893956,
+   "lng": 19.0802131,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Koszorú utca 31, 1086 Budapest",
+   "base": 9
+  },
+  {
+   "address": "Abigél utca 14, 1121 Budapest",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Abigél utca, 14",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Abigél utca 14, 1121",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "hu Abigél utca 14 Budapest",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Budapest, hu, Abigél utca 14",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "14 Abigél utca 1121 Budapest",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "abigél utca 14",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Abigél utca 14 john",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Avigél utca 14",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Abigél utca14",
+   "lat": 47.4895782,
+   "lng": 18.9898877,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Abigél utca 14, 1121 Budapest",
+   "base": 10
+  },
+  {
+   "address": "Futrinka utca 1, 1121 Budapest",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "1 Futrinka utca",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Futrinka utca 1 1121",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Futrinka utca 1, hu, Budapest",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Budapest, hu, Futrinka utca 1 1",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Futrinka utca - Budapest - 1 - 1121",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "FUTRINKA UTCA 1",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Futrinka utca 1 john",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Deli futrinka utca 1",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Futrinka utca1",
+   "lat": 47.47918612727273,
+   "lng": 18.984843245454545,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Futrinka utca 1, 1121 Budapest",
+   "base": 11
+  },
+  {
+   "address": "Építész utca 8-12, 1116 Budapest",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Építész utca, 8-12",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Építész utca 8-12, 1116",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Építész utca 8-12 Budapest hu",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "hu, Építész utca 8-12, Budapest",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Budapest, 8-12, Építész utca, 1116",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Építész utca8-12",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Építéss utca 8-12",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "utca 8-12",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "építész utca 8-12",
+   "lat": 47.44824766000001,
+   "lng": 19.03912348,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Építész utca 8-12, 1116 Budapest",
+   "base": 12
+  },
+  {
+   "address": "Trefort utca 4, 1088 Budapest",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Trefort utca 4",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Trefort utca 4, 1088",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "hu Trefort utca 4 Budapest",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "trefort utca 4, budapest, hu",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Trefort utca - Budapest - 4 - 1088",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Trefort utca4",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Trefort utca 4 (green door)",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Terfort utca 4",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "TREFORT UTCA 4",
+   "lat": 47.493807858333334,
+   "lng": 19.06370025833333,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trefort utca 4, 1088 Budapest",
+   "base": 13
+  },
+  {
+   "address": "Klapka utca 6, 1134 Budapest",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Klapka utca, 6",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Klapka utca 6, 1134",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Budapest hu Klapka utca 6",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Klapka utca 6, Budapest, hu",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "6 Budapest Klapka utca 1134",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Kalpka utca 6",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Klapka utca6",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "KLAPKA UTCA 6",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Klapka utca 6 john",
+   "lat": 47.5270798,
+   "lng": 19.0667417,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Klapka utca 6, 1134 Budapest",
+   "base": 14
+  },
+  {
+   "address": "Városkúti út 3/A, 1125 Budapest",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "3/A Városkúti út",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Városkúti út 3/A 1125",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Városkúti út 3/A, hu, Budapest",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "hu Városkúti út 3/A Budapest",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Budapest 3/A 1125",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Váorskúti út 3/A",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "VÁROSKÚTI ÚT 3/A",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Városkúti út3/A",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "városkúti út 3/a",
+   "lat": 47.50590258,
+   "lng": 18.98601424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Városkúti út 3/A, 1125 Budapest",
+   "base": 15
+  },
+  {
+   "address": "Akác köz 7, 1033 Budapest",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Akác köz, 7",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Akác köz 7 1033",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "hu Akác köz 7 Budapest",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "hu Budapest Akác köz 7",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Akác köz Budapest 1033",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Akác köz7",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Akác köz 7 apt 4b",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "akác köz 7",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Mary akác köz 7",
+   "lat": 47.548358459999996,
+   "lng": 19.04461424,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Akác köz 7, 1033 Budapest",
+   "base": 16
+  },
+  {
+   "address": "Szabó József köz 1, 1146 Budapest",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "1 Szabó József köz",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Szabó József köz 1 1146",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Budapest, hu, Szabó József köz 1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Budapest hu Szabo Jozsef koz 1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "1146, Budapest, Szabó József köz",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Szabó József köz1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Szabó Jzósef köz 1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Mary szabó józsef köz 1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "SZABÓ JÓZSEF KÖZ 1",
+   "lat": 47.5059563,
+   "lng": 19.0968722,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Szabó József köz 1, 1146 Budapest",
+   "base": 17
+  },
+  {
+   "address": "Mártonfa utca 8, 1121 Budapest",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "8 Mártonfa utca",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Mártonfa utca 8 1121",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "hu, Budapest, Mártonfa utca 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "hu, budapest, martonfa utca 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Mártonfa utca - Budapest - 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Mátronfa utca 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Deli mártonfa utca 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Mártonfa utca8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "MÁRTONFA UTCA 8",
+   "lat": 47.49218891428571,
+   "lng": 18.999272171428572,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mártonfa utca 8, 1121 Budapest",
+   "base": 18
+  },
+  {
+   "address": "Alsó Törökvész út 9, 1022 Budapest",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Alsó Törökvész út 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Alsó Törökvész út 9, 1022",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "hu, Alsó Törökvész út 9, Budapest",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "hu Alsó Törökvész út 9 Budapest",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Alsó Törökvész út Budapest 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Alsó Törökvéss út 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Mary alsó törökvész út 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "ALSÓ TÖRÖKVÉSZ ÚT 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "törökvész 9",
+   "lat": 47.5184777,
+   "lng": 19.02066648,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Alsó Törökvész út 9, 1022 Budapest",
+   "base": 19
+  },
+  {
+   "address": "Irhás árok 7, 1121 Budapest",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "7 Irhás árok",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Irhás árok 7 1121",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Budapest, Irhás árok 7, hu",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "irhas arok 7, hu, budapest",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Budapest, 1121, Irhás árok",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Mary irhás árok 7",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Irhás árok 7 john",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "árok 7",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "irhás árok 7",
+   "lat": 47.477287360000005,
+   "lng": 18.985847720000002,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Irhás árok 7, 1121 Budapest",
+   "base": 20
+  },
+  {
+   "address": "Jászai Mari tér 5-6, 1137 Budapest",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "Jászai Mari tér 5-6",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "Jászai Mari tér 5-6 1137",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "hu, Jászai Mari tér 5-6, Budapest",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "jászai mari tér tér 5-6 budapest hu",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "5-6 - 1137 - Jászai Mari tér - Budapest",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "Jászai Mari tér 5-6 back entrance",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "jászai mari tér 5-6",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "JÁSZAI MARI TÉR 5-6",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "Jászai Mari tér5-6",
+   "lat": 47.514207,
+   "lng": 19.0478807,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jászai Mari tér 5-6, 1137 Budapest",
+   "base": 21
+  },
+  {
+   "address": "Sárkány utca 13, 1089 Budapest",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "Sárkány utca, 13",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "Sárkány utca 13, 1089",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "hu Sárkány utca 13 Budapest",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "Sárkány utca 13 Budapest hu",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "1089 Budapest Sárkány utca",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "sárkány utca 13",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "utca 13",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "Mary sárkány utca 13",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "SÁRKÁNY UTCA 13",
+   "lat": 47.485442660000004,
+   "lng": 19.0922291,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sárkány utca 13, 1089 Budapest",
+   "base": 22
+  },
+  {
+   "address": "Harcos utca 6, 1113 Budapest",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Harcos utca, 6",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Harcos utca 6 1113",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "hu Harcos utca 6 Budapest",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Budapest, hu, Harcos utca 6",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Budapest - Harcos utca - 1113",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Harcos utca6",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Harcos utca 6 (green door)",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "HARCOS UTCA 6",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "utca 6",
+   "lat": 47.47503982,
+   "lng": 19.0258951,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Harcos utca 6, 1113 Budapest",
+   "base": 23
+  },
+  {
+   "address": "Salétrom utca 2/C, 1085 Budapest",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Salétrom utca 2/C",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Salétrom utca 2/C 1085",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Budapest Salétrom utca 2/C hu",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "hu hu Budapest Saletrom utca 2/C",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "2/C - 1085 - Budapest",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Salétrom utca2/C",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Slaétrom utca 2/C",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "salétrom utca 2/c",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "SALÉTROM UTCA 2/C",
+   "lat": 47.49180254,
+   "lng": 19.07214376,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Salétrom utca 2/C, 1085 Budapest",
+   "base": 24
+  },
+  {
+   "address": "Libella köz 6, 1112 Budapest",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "6 Libella köz",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libella köz 6, 1112",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libella köz 6 Budapest hu",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libella köz 6 hu Budapest",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libella köz - 6 - 1112 - Budapest",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "LIBELLA KÖZ 6",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libella köz 6 (green door)",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "libella köz 6",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Libela köz 6",
+   "lat": 47.462946779999996,
+   "lng": 18.9989355,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Libella köz 6, 1112 Budapest",
+   "base": 25
+  },
+  {
+   "address": "Lóránt út 25, 1125 Budapest",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "25 Lóránt út",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Lóránt út 25, 1125",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "hu Lóránt út 25 Budapest",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Budapest hu Lóránt út 25",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "1125, 25, Budapest, Lóránt út",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Lóránt út 25 apt 4b",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Mary lóránt út 25",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Lóránt út25",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Lróánt út 25",
+   "lat": 47.49981391111111,
+   "lng": 18.999649844444445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lóránt út 25, 1125 Budapest",
+   "base": 26
+  },
+  {
+   "address": "Csalán út 43/b, 1025 Budapest",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "43/b Csalán út",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Csalán út 43/b 1025",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Budapest, Csalán út 43/b, hu",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Budapest hu Csalán út 43/b",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "43/b Csalán út 1025",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Deli csalán út 43/b",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "csalán út 43/b",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Caslán út 43/b",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Csalán út43/b",
+   "lat": 47.5297385,
+   "lng": 18.9894138,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Csalán út 43/b, 1025 Budapest",
+   "base": 27
+  },
+  {
+   "address": "Irhás köz 6/C, 1112 Budapest",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhás köz, 6/C",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhás köz 6/C 1112",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhás köz 6/C hu Budapest",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhas koz koz 6/C, Budapest, hu",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "6/C - Irhás köz - 1112",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhás köz6/C",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irhás köz 6/C apt 4b",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Irrhás köz 6/C",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "irhás köz 6/c",
+   "lat": 47.47824654,
+   "lng": 18.9823994,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Irhás köz 6/C, 1112 Budapest",
+   "base": 28
+  },
+  {
+   "address": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Tartsay Vilmos utca 22",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Tartsay Vilmos utca 22, 1126",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Tartsay Vilmos utca 22, hu, Budapest",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Tartsay Vilmos utca 22, hu, Budapest",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Tartsay Vilmos utca 1126 22 Budapest",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Mary tartsay vilmos utca 22",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "utca 22",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "tartsay vilmos utca 22",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "TARTSAY VILMOS UTCA 22",
+   "lat": 47.4919794,
+   "lng": 19.020519833333335,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tartsay Vilmos utca 22, 1126 Budapest",
+   "base": 29
+  },
+  {
+   "address": "Bence utca 3, 1138 Budapest",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "Bence utca 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "Bence utca 3 1138",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "hu, Bence utca 3, Budapest",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "hu Budapest Bence utca 3 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "1138 - 3 - Budapest - Bence utca",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "Mary bence utca 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "utca 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "BENCE UTCA 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "Bense utca 3",
+   "lat": 47.5448652,
+   "lng": 19.0730959,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bence utca 3, 1138 Budapest",
+   "base": 30
+  },
+  {
+   "address": "Hajóépítő sétány 4, 1138 Budapest",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hajóépítő sétány, 4",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hajóépítő sétány 4, 1138",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hajóépítő sétány 4 Budapest hu",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Budapest, hu, Hajoepito setany 4",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hajóépítő sétány 1138 4 Budapest",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hjaóépítő sétány 4",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "HAJÓÉPÍTŐ SÉTÁNY 4",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "sétány 4",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Hajóépítő sétány 4 john",
+   "lat": 47.542881352,
+   "lng": 19.064372876,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hajóépítő sétány 4, 1138 Budapest",
+   "base": 31
+  },
+  {
+   "address": "Násznagy utca 1, 1131 Budapest",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "1 Násznagy utca",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Násznagy utca 1 1131",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "hu Budapest Násznagy utca 1",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Nasznagy utca 1, hu, Budapest",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Násznagy utca 1 Budapest 1131",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "násznagy utca 1",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "utca 1",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Deli násznagy utca 1",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Násznagi utca 1",
+   "lat": 47.5429708,
+   "lng": 19.0821268,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Násznagy utca 1, 1131 Budapest",
+   "base": 32
+  },
+  {
+   "address": "Agyag utca 1, 1131 Budapest",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "1 Agyag utca",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "Agyag utca 1 1131",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "Budapest, Agyag utca 1, hu",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "hu Agyag utca 1 Budapest",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "1, Budapest, Agyag utca, 1131",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "AGYAG UTCA 1",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "utca 1",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "Mary agyag utca 1",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "Agyag utca 1 apt 4b",
+   "lat": 47.5455598,
+   "lng": 19.0769017,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Agyag utca 1, 1131 Budapest",
+   "base": 33
+  },
+  {
+   "address": "Forrás utca 2, 1115 Budapest",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Forrás utca, 2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Forrás utca 2 1115",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Budapest Forrás utca 2 hu",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Budapest hu Forras utca 2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "2 1115 Budapest Forrás utca",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Deli forrás utca 2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Forás utca 2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "forrás utca 2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Forrás utca2",
+   "lat": 47.4701547,
+   "lng": 19.0322616,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Forrás utca 2, 1115 Budapest",
+   "base": 34
+  },
+  {
+   "address": "Alíz utca 6/a, 1117 Budapest",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "6/a Alíz utca",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Alíz utca 6/a, 1117",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Budapest, Alíz utca 6/a, hu",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Alíz utca 6/a 6/a Budapest hu",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Alíz utca Budapest 1117 6/a",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Alíz utca 6/a back entrance",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "ALÍZ UTCA 6/A",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "alíz utca 6/a",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Alíz utca6/a",
+   "lat": 47.4592542,
+   "lng": 19.0488074,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alíz utca 6/a, 1117 Budapest",
+   "base": 35
+  },
+  {
+   "address": "Hamzsabégi út 18, 1117 Budapest",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "18 Hamzsabégi út",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Hamzsabégi út 18 1117",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Hamzsabégi út 18, Budapest, hu",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Budapest hu Hamzsabégi út 18",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Hamzsabégi út - Budapest - 1117",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Hamzsabégi út 18 back entrance",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "hamzsabégi út 18",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Hamzsabégi út18",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "HAMZSABÉGI ÚT 18",
+   "lat": 47.4712864,
+   "lng": 19.0474078,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hamzsabégi út 18, 1117 Budapest",
+   "base": 36
+  },
+  {
+   "address": "Csíksomlyó utca 9, 1118 Budapest",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Csíksomlyó utca 9",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Csíksomlyó utca 9 1118",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Csíksomlyó utca 9 hu Budapest",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Budapest Csiksomlyo utca 9 hu",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "9 - 1118 - Csíksomlyó utca - Budapest",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Csíksomlyó utca 9 apt 4b",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "csíksomlyó utca 9",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Mary csíksomlyó utca 9",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Csíksomlyó utca9",
+   "lat": 47.4716074,
+   "lng": 19.0025592,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Csíksomlyó utca 9, 1118 Budapest",
+   "base": 37
+  },
+  {
+   "address": "Kubikos utca 38, 1116 Budapest",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "38 Kubikos utca",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Kubikos utca 38, 1116",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "hu Budapest Kubikos utca 38",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Kubikos utca 38, hu, Budapest",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Kubikos utca, 38, 1116, Budapest",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Kubikos utca 38 john",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Kuvikos utca 38",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "KUBIKOS UTCA 38",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Mary kubikos utca 38",
+   "lat": 47.44725555714286,
+   "lng": 19.02131754285714,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kubikos utca 38, 1116 Budapest",
+   "base": 38
+  },
+  {
+   "address": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "Munkácsy Mihály utca, 7",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "Munkácsy Mihály utca 7 1063",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "Budapest Munkácsy Mihály utca 7 hu",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "hu, Munkácsy Mihály utca 7, Budapest",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "1063, 7, Munkácsy Mihály utca, Budapest",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "utca 7",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "Deli munkácsy mihály utca 7",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "munkácsy mihály utca 7",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  },
+  {
+   "address": "MUNKÁCSY MIHÁLY UTCA 7",
+   "lat": 47.51268,
+   "lng": 19.0734445,
+   "country": "HU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Munkácsy Mihály utca 7, 1063 Budapest",
+   "base": 39
+  }
+ ]
+}

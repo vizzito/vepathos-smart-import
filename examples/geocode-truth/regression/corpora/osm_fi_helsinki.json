@@ -1,0 +1,3788 @@
+{
+ "source": "osm-addr",
+ "country": "FI",
+ "city": "Helsinki",
+ "country_label": "Finland",
+ "depot": {
+  "lat": 60.1699,
+  "lon": 24.9384,
+  "city": "Helsinki",
+  "country": "Finland"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 377,
+ "note": "Nodos addr:* del indice n60.30_s60.10_e25.10_w24.80-finland.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Kumianpää 1, Helsinki",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "1 Kumianpää",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Kumianpää 1, finland, Helsinki",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Helsinki, finland, Kumianpää 1",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Helsinki, Kumianpää",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Kumianpää 1 john",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Kumianäpä 1",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "KUMIANPÄÄ 1",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Kumianpää1",
+   "lat": 60.176593275,
+   "lng": 25.038396685714286,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kumianpää 1, Helsinki",
+   "base": 0
+  },
+  {
+   "address": "Salamanterinkuja 2, 00590 Helsinki",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja, 2",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja 2 00590",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja 2, Helsinki, finland",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Helsinki Salamanterinkuja 2 finland",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja, Helsinki, 2, 00590",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja 2 (green door)",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkuja2",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Salamanterinkjua 2",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "SALAMANTERINKUJA 2",
+   "lat": 60.1704507,
+   "lng": 25.016254,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Salamanterinkuja 2, 00590 Helsinki",
+   "base": 1
+  },
+  {
+   "address": "Rullakkotori 3, Helsinki",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Rullakkotori, 3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Helsinki, Rullakkotori 3, finland",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "helsinki, finland, finland, rullakkotori 3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Helsinki, 3, Rullakkotori",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Rullakkotroi 3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Mary rullakkotori 3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "rullakkotori 3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Rullakkotori3",
+   "lat": 60.218906,
+   "lng": 24.9276486,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rullakkotori 3, Helsinki",
+   "base": 2
+  },
+  {
+   "address": "Opastinsilta 10, Helsinki",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Opastinsilta, 10",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Opastinsilta 10 finland Helsinki",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "opastinsilta 10, helsinki, helsinki, finland",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Opastinsilta 10 Helsinki",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "opastinsilta 10",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Opastinsilta 10 back entrance",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Opastinsilta10",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Deli opastinsilta 10",
+   "lat": 60.1991783,
+   "lng": 24.9379083,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Opastinsilta 10, Helsinki",
+   "base": 3
+  },
+  {
+   "address": "Selkämerenkuja 1, Helsinki",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Selkämerenkuja 1",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Selkämerenkuja 1 finland Helsinki",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "finland Selkamerenkuja 1 Helsinki",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Helsinki, 1",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Selkämerenkuja 1 john",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Deli selkämerenkuja 1",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "selkämerenkuja 1",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Seläkmerenkuja 1",
+   "lat": 60.1625265,
+   "lng": 24.9148308,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Selkämerenkuja 1, Helsinki",
+   "base": 4
+  },
+  {
+   "address": "Ruusutarhantie 3, Helsinki",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Ruusutarhantie 3",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "finland Helsinki Ruusutarhantie 3",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "finland, Ruusutarhantie 3, Helsinki",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "3 Ruusutarhantie Helsinki",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Ruusutarhantie 3 john",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Deli ruusutarhantie 3",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Ruusutarhantie3",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Rusuutarhantie 3",
+   "lat": 60.207351725,
+   "lng": 24.887750762499998,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ruusutarhantie 3, Helsinki",
+   "base": 5
+  },
+  {
+   "address": "Ullanlinnankatu 1, Helsinki",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "1 Ullanlinnankatu",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Helsinki Ullanlinnankatu 1 finland",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Helsinki, Ullanlinnankatu 1, finland",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Helsinki 1",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Ullnalinnankatu 1",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Deli ullanlinnankatu 1",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Ullanlinnankatu1",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "ULLANLINNANKATU 1",
+   "lat": 60.1634478,
+   "lng": 24.9477367,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ullanlinnankatu 1, Helsinki",
+   "base": 6
+  },
+  {
+   "address": "Svinhufvudinkuja 1, Helsinki",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "1 Svinhufvudinkuja",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Svinhufvudinkuja 1 Helsinki finland",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Svinhufvudinkuja 1, finland, Helsinki",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "1, Helsinki, Svinhufvudinkuja",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Svnihufvudinkuja 1",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Svinhufvudinkuja 1 john",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Svinhufvudinkuja1",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "svinhufvudinkuja 1",
+   "lat": 60.1869623,
+   "lng": 25.0064644,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Svinhufvudinkuja 1, Helsinki",
+   "base": 7
+  },
+  {
+   "address": "Kasuunikuja 1, Helsinki",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "1 Kasuunikuja",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "finland, Helsinki, Kasuunikuja 1",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "finland, Kasuunikuja 1, Helsinki",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "1 Helsinki",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "Kasuunikuja 1 back entrance",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "Kasuunikuja1",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "kasuunikuja 1",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "Mary kasuunikuja 1",
+   "lat": 60.1627361,
+   "lng": 24.9092872,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kasuunikuja 1, Helsinki",
+   "base": 8
+  },
+  {
+   "address": "Rantapolku 14, 00330 Helsinki",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Rantapolku 14",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Rantapolku 14 00330",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "finland Helsinki Rantapolku 14",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Helsinki, Helsinki, Rantapolku 14, finland",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "14 - 00330 - Helsinki",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "rantapolku 14",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Rantapolku 14 john",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Ranatpolku 14",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "RANTAPOLKU 14",
+   "lat": 60.19686986000001,
+   "lng": 24.86961502,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rantapolku 14, 00330 Helsinki",
+   "base": 9
+  },
+  {
+   "address": "Agricolankuja 4, Helsinki",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "Agricolankuja 4",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "finland Agricolankuja 4 Helsinki",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "finland, Agricolankuja 4, Helsinki",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "4 - Helsinki - Agricolankuja",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "Agricolankuja4",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "Agrciolankuja 4",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "agricolankuja 4",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "Mary agricolankuja 4",
+   "lat": 60.18470763333333,
+   "lng": 24.954271744444444,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Agricolankuja 4, Helsinki",
+   "base": 10
+  },
+  {
+   "address": "Veneentekijänkuja 6, 00210 Helsinki",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja 6",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja 6, 00210",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja 6, Helsinki, finland",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja 6 finland Helsinki Helsinki",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja, 6, Helsinki, 00210",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "veneentekijänkuja 6",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Mary veneentekijänkuja 6",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "VENEENTEKIJÄNKUJA 6",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Veneentekijänkuja6",
+   "lat": 60.15248770833333,
+   "lng": 24.888876908333334,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Veneentekijänkuja 6, 00210 Helsinki",
+   "base": 11
+  },
+  {
+   "address": "Kalervonkatu 5, Helsinki",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Kalervonkatu, 5",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Helsinki Kalervonkatu 5 finland",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "finland, Kalervonkatu 5, Helsinki",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Helsinki - 5",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Kalerbonkatu 5",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Kalervonkatu5",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Mary kalervonkatu 5",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Kalervonkatu 5 john",
+   "lat": 60.2104389,
+   "lng": 24.9473402,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kalervonkatu 5, Helsinki",
+   "base": 12
+  },
+  {
+   "address": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Verkkosaarenranta, 18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Verkkosaarenranta 18 B 00580",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "finland Helsinki Verkkosaarenranta 18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Helsinki finland Verkkosaarenranta 18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Verkkosaarenranta 18 B Helsinki",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "verkkosaarenranta 18 b",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Verkkosaarenranta18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "VERKKOSAARENRANTA 18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Mary verkkosaarenranta 18 B",
+   "lat": 60.1927452,
+   "lng": 24.9832313,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Verkkosaarenranta 18 B, 00580 Helsinki",
+   "base": 13
+  },
+  {
+   "address": "Tallbergin puistotie 14, 00200 Helsinki",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "14 Tallbergin puistotie",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Tallbergin puistotie 14 00200",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "finland, Tallbergin puistotie 14, Helsinki",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "tallbergin puistotie 14 finland finland helsinki",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "14 - Tallbergin puistotie - 00200 - Helsinki",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Mary tallbergin puistotie 14",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Tallbergin puistotie14",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Tallvergin puistotie 14",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Tallbergin pui 14",
+   "lat": 60.157684235,
+   "lng": 24.875996559999997,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Tallbergin puistotie 14, 00200 Helsinki",
+   "base": 14
+  },
+  {
+   "address": "Nousiaistentie 5, Helsinki",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Nousiaistentie 5",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Helsinki, finland, Nousiaistentie 5",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Helsinki Nousiaistentie 5 5 finland",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "5 - Helsinki - Nousiaistentie",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Nousiaistentie5",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Nousiaistentie 5 (green door)",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Mary nousiaistentie 5",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "nousiaistentie 5",
+   "lat": 60.1997457,
+   "lng": 24.90697,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nousiaistentie 5, Helsinki",
+   "base": 15
+  },
+  {
+   "address": "Seljatie 3, 00320 Helsinki",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "3 Seljatie",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Seljatie 3 00320",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Seljatie 3 finland Helsinki",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "finland, Seljatie 3, Helsinki",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "00320 3 Helsinki Seljatie",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Seljtaie 3",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "SELJATIE 3",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Seljatie 3 (green door)",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Mary seljatie 3",
+   "lat": 60.2183516,
+   "lng": 24.8908867,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Seljatie 3, 00320 Helsinki",
+   "base": 16
+  },
+  {
+   "address": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "3 Kaivoshuvilankuja",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Kaivoshuvilankuja 3, 00590",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Kaivoshuvilankuja 3 Helsinki finland",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Kaivoshuvilankuja 3, finland, Helsinki",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "3 - Kaivoshuvilankuja - 00590",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "kaivoshuvilankuja 3",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Kaiboshuvilankuja 3",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "KAIVOSHUVILANKUJA 3",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Kaivoshuvilankuja 3 john",
+   "lat": 60.1692412,
+   "lng": 25.0268139,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kaivoshuvilankuja 3, 00590 Helsinki",
+   "base": 17
+  },
+  {
+   "address": "Hietakannaksentie 13, 00100 Helsinki",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "13 Hietakannaksentie",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "Hietakannaksentie 13 00100",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "finland Hietakannaksentie 13 Helsinki",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "finland Helsinki Hietakannaksentie 13",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "Hietakannaksentie - 13 - Helsinki - 00100",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "HIETAKANNAKSENTIE 13",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "Hietakanaksentie 13",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "Mary hietakannaksentie 13",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "hietakannaksentie 13",
+   "lat": 60.1746838,
+   "lng": 24.915517,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hietakannaksentie 13, 00100 Helsinki",
+   "base": 18
+  },
+  {
+   "address": "Vesikuja 8, 00270 Helsinki",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Vesikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Vesikuja 8 00270",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Helsinki, finland, Vesikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Helsinki finland Vesikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "00270 - Helsinki - Vesikuja - 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Vesikuja 8 apt 4b",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Vseikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "vesikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Deli vesikuja 8",
+   "lat": 60.1965698,
+   "lng": 24.8931437,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vesikuja 8, 00270 Helsinki",
+   "base": 19
+  },
+  {
+   "address": "Aleksanterinkatu 16, 00170 Helsinki",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Aleksanterinkatu, 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Aleksanterinkatu 16 00170",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Helsinki, Aleksanterinkatu 16, finland",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "aleksanterinkatu 16 helsinki finland",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Helsinki, Aleksanterinkatu, 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "aleksanterinkatu 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Aleksanteriknatu 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "ALEKSANTERINKATU 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Deli aleksanterinkatu 16",
+   "lat": 60.1687584,
+   "lng": 24.9540256,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Aleksanterinkatu 16, 00170 Helsinki",
+   "base": 20
+  },
+  {
+   "address": "Messipojankuja 12, Helsinki",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Messipojankuja 12",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Messipojankuja 12, Helsinki, finland",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Messipojankuja 12 Helsinki finland",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Helsinki - 12 - Messipojankuja",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "MESSIPOJANKUJA 12",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Messipojankuja 12 back entrance",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "messipojankuja 12",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Mesipojankuja 12",
+   "lat": 60.1591214,
+   "lng": 24.9121144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Messipojankuja 12, Helsinki",
+   "base": 21
+  },
+  {
+   "address": "Capellanaukio 1, Helsinki",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "1 Capellanaukio",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "Capellanaukio 1, finland, Helsinki",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "finland Capellanaukio 1 Helsinki",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "1, Capellanaukio, Helsinki",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "Mary capellanaukio 1",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "Capellanaukio 1 back entrance",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "Capelllanaukio 1",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "capellanaukio 1",
+   "lat": 60.1840698,
+   "lng": 24.9832173,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Capellanaukio 1, Helsinki",
+   "base": 22
+  },
+  {
+   "address": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Lauri Mikonpojan tie, 16 D",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Lauri Mikonpojan tie 16 D, finland, Helsinki",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Helsinki, Lauri Mikonpojan tie 16 D, finland",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Helsinki, Lauri Mikonpojan tie, 16 D",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Lauri Mioknpojan tie 16 D",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Deli lauri mikonpojan tie 16 D",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Lauri Mikonpojan tie 16 D john",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "lauri mikonpojan tie 16 d",
+   "lat": 60.173870093333335,
+   "lng": 25.04402439,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lauri Mikonpojan tie 16 D, Helsinki",
+   "base": 23
+  },
+  {
+   "address": "Paviljonkikuja 4, Helsinki",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Paviljonkikuja, 4",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "finland, Paviljonkikuja 4, Helsinki",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Helsinki, finland, Paviljonkikuja 4",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "4 - Paviljonkikuja - Helsinki",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "paviljonkikuja 4",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Paviljonkikuja4",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Mary paviljonkikuja 4",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Paviljonkikuja 4 back entrance",
+   "lat": 60.21640056666667,
+   "lng": 24.96165661,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Paviljonkikuja 4, Helsinki",
+   "base": 24
+  },
+  {
+   "address": "Vesannontie 2, Helsinki",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "2 Vesannontie",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Helsinki, Vesannontie 2, finland",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Helsinki Helsinki finland Vesannontie 2",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Helsinki Vesannontie",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "VESANNONTIE 2",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Mary vesannontie 2",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Vesannontie 2 (green door)",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Vesannontie2",
+   "lat": 60.1941402,
+   "lng": 24.9540092,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vesannontie 2, Helsinki",
+   "base": 25
+  },
+  {
+   "address": "Kalliolanrinne 4, 00510 Helsinki",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "4 Kalliolanrinne",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "Kalliolanrinne 4 00510",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "finland Kalliolanrinne 4 Helsinki",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "Helsinki, Kalliolanrinne 4, 4, finland",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "00510 4 Kalliolanrinne Helsinki",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "kalliolanrinne 4",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "Mary kalliolanrinne 4",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "Kaliolanrinne 4",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "KALLIOLANRINNE 4",
+   "lat": 60.1881314,
+   "lng": 24.9470569,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kalliolanrinne 4, 00510 Helsinki",
+   "base": 26
+  },
+  {
+   "address": "Asema-aukio 2, 00100 Helsinki",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "2 Asema-aukio",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Asema-aukio 2 00100",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "finland, Helsinki, Asema-aukio 2",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Helsinki finland Asema-aukio Asema-aukio 2",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "2, Helsinki, Asema-aukio, 00100",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Asema-uakio 2",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Asema-aukio2",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "asema-aukio 2",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Asema-aukio 2 (green door)",
+   "lat": 60.170758,
+   "lng": 24.9390144,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Asema-aukio 2, 00100 Helsinki",
+   "base": 27
+  },
+  {
+   "address": "Gadolininkatu 4, 00560 Helsinki",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Gadolininkatu 4",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Gadolininkatu 4, 00560",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "finland, Gadolininkatu 4, Helsinki",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Helsinki Helsinki finland Gadolininkatu 4",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "00560 - Gadolininkatu - Helsinki",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Gadolinnikatu 4",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "GADOLININKATU 4",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Gadolininkatu 4 apt 4b",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "gadolininkatu 4",
+   "lat": 60.2063209,
+   "lng": 24.9652012,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gadolininkatu 4, 00560 Helsinki",
+   "base": 28
+  },
+  {
+   "address": "Veturitori 2, Helsinki",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "2 Veturitori",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Helsinki, finland, Veturitori 2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Veturitori 2 finland Helsinki",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Veturitori - 2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Veutritori 2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "VETURITORI 2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Veturitori2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Mary veturitori 2",
+   "lat": 60.1997227,
+   "lng": 24.93728,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Veturitori 2, Helsinki",
+   "base": 29
+  },
+  {
+   "address": "Lontoonkatu 5, 00560 Helsinki",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "5 Lontoonkatu",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lontoonkatu 5, 00560",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lontoonkatu 5 Helsinki finland",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lontoonkatu 5 Helsinki finland finland",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lontoonkatu 5 00560 Helsinki",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "lontoonkatu 5",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "LONTOONKATU 5",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lonotonkatu 5",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Lontoonkatu 5 apt 4b",
+   "lat": 60.203547694117646,
+   "lng": 24.97266302352941,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lontoonkatu 5, 00560 Helsinki",
+   "base": 30
+  },
+  {
+   "address": "Punanotkonkatu 4, Helsinki",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Punanotkonkatu, 4",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "finland Helsinki Punanotkonkatu 4",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "punanotkonkatu punanotkonkatu 4, helsinki, finland",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Punanotkonkatu - Helsinki",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Punanotkonkatu4",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Punanotkonkatu 4 john",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Deli punanotkonkatu 4",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Punanotkonktau 4",
+   "lat": 60.162739,
+   "lng": 24.9467401,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Punanotkonkatu 4, Helsinki",
+   "base": 31
+  },
+  {
+   "address": "Neitojenranta 1, 00810 Helsinki",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "1 Neitojenranta",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Neitojenranta 1 00810",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Helsinki finland Neitojenranta 1",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Helsinki Neitojenranta 1 finland",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "00810, Helsinki, Neitojenranta",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Nietojenranta 1",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "NEITOJENRANTA 1",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Deli neitojenranta 1",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "neitojenranta 1",
+   "lat": 60.18552752631579,
+   "lng": 25.03183672105263,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Neitojenranta 1, 00810 Helsinki",
+   "base": 32
+  },
+  {
+   "address": "Dunckerinkatu 4, Helsinki",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "Dunckerinkatu, 4",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "finland Dunckerinkatu 4 Helsinki",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "finland, Helsinki, Dunckerinkatu 4",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "Dunckerinkatu Helsinki",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "DUNCKERINKATU 4",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "Dunckerinkatu 4 apt 4b",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "Dunckerinkatu4",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "dunckerinkatu 4",
+   "lat": 60.1783127,
+   "lng": 24.9279235,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dunckerinkatu 4, Helsinki",
+   "base": 33
+  },
+  {
+   "address": "Lemuntie 7, Helsinki",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Lemuntie, 7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "finland, Helsinki, Lemuntie 7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "finland, Helsinki, Lemuntie 7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Lemuntie 7 Helsinki",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "lemuntie 7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Lemuntie 7 back entrance",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Leumntie 7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Lemuntie7",
+   "lat": 60.1965639,
+   "lng": 24.9499839,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lemuntie 7, Helsinki",
+   "base": 34
+  },
+  {
+   "address": "Insinöörinkatu 1, Helsinki",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Insinöörinkatu, 1",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Helsinki, finland, Insinöörinkatu 1",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Helsinki Insinoorinkatu 1 finland",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "1 - Insinöörinkatu",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "insinöörinkatu 1",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Insiönörinkatu 1",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Insinöörinkatu 1 (green door)",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "INSINÖÖRINKATU 1",
+   "lat": 60.1942204,
+   "lng": 25.0351113,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Insinöörinkatu 1, Helsinki",
+   "base": 35
+  },
+  {
+   "address": "Karibianranta 20, 00220 Helsinki",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "20 Karibianranta",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "Karibianranta 20 00220",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "finland, Karibianranta 20, Helsinki",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "finland, Helsinki, Karibianranta 20",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "00220, 20, Helsinki, Karibianranta",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "Karivianranta 20",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "Karibianranta20",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "Mary karibianranta 20",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "karibianranta 20",
+   "lat": 60.1535627,
+   "lng": 24.9052516,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Karibianranta 20, 00220 Helsinki",
+   "base": 36
+  },
+  {
+   "address": "Temppelikatu 12, Helsinki",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Temppelikatu, 12",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Temppelikatu 12 Helsinki finland",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "finland Temppelikatu Temppelikatu 12 Helsinki",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "12 - Temppelikatu - Helsinki",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Tempelikatu 12",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Temppelikatu12",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Deli temppelikatu 12",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "temppelikatu 12",
+   "lat": 60.173322033333335,
+   "lng": 24.927572825,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Temppelikatu 12, Helsinki",
+   "base": 37
+  },
+  {
+   "address": "Sinikaislankuja 2, Helsinki",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Sinikaislankuja 2",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Helsinki Sinikaislankuja 2 finland",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "finland, Helsinki, Sinikaislankuja 2",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Helsinki, 2, Sinikaislankuja",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "sinikaislankuja 2",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Mary sinikaislankuja 2",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Sinikaislankuja2",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Sinikaislankuja 2 (green door)",
+   "lat": 60.1625894,
+   "lng": 24.9203071,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sinikaislankuja 2, Helsinki",
+   "base": 38
+  },
+  {
+   "address": "Fortunanpolku 3, 00540 Helsinki",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku, 3",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku 3 00540",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku 3 Helsinki finland",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku 3 3 Helsinki finland",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "00540 - Helsinki - 3 - Fortunanpolku",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpoklu 3",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Mary fortunanpolku 3",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku3",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  },
+  {
+   "address": "Fortunanpolku 3 john",
+   "lat": 60.1820535,
+   "lng": 24.9770559,
+   "country": "FI",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Fortunanpolku 3, 00540 Helsinki",
+   "base": 39
+  }
+ ]
+}

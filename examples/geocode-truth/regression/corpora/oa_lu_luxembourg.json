@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "LU",
+ "city": "Luxembourg",
+ "country_label": "Luxembourg",
+ "depot": {
+  "lat": 49.6116,
+  "lon": 6.1319,
+  "city": "Luxembourg",
+  "country": "Luxembourg"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses lu/countrywide, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Val Ste Croix 102, 1370 Luxembourg",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "102 Val Ste Croix",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Val Ste Croix 102, 1370",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Luxembourg, luxembourg, Val Ste Croix 102",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Luxembourg, luxembourg, Val Ste Croix 102",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "102 Val Ste Croix Luxembourg",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Marie val ste croix 102",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "VAL STE CROIX 102",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Val Ste Croix 102 bat b",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "croix 102",
+   "lat": 49.6129276,
+   "lng": 6.1086471,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Val Ste Croix 102, 1370 Luxembourg",
+   "base": 0
+  },
+  {
+   "address": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Charles Simonis, 77",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Charles Simonis 77 2539",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Luxembourg, luxembourg, Charles Simonis 77",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Charles Simonis 77, Luxembourg, luxembourg",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Boulevard Charles Simonis 77 Luxembourg 2539",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Charles Simonis 77 (porte verte)",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "simonis 77",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Charles Sim 77",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "charles simonis 77",
+   "lat": 49.6187332,
+   "lng": 6.160472,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard Charles Simonis 77, 2539 Luxembourg",
+   "base": 1
+  },
+  {
+   "address": "Rue Henri Entringer 77, 1467 Howald",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Rue Henri Entringer, 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Rue Henri Entringer 77 1467",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Howald luxembourg Rue Henri Entringer 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Howald, Rue Henri Entringer 77, luxembourg",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Rue Henri Entringer, Howald, 1467, 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Henri Enrtinger 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Henri Entringer 77 2e etage",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "henri entringer 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "HENRI ENTRINGER 77",
+   "lat": 49.5779381,
+   "lng": 6.1482079,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Henri Entringer 77, 1467 Howald",
+   "base": 2
+  },
+  {
+   "address": "Route de Thionville 282A, 5884 Howald",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thionville 282A",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thionville 282A 5884",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thionville 282A, Howald, luxembourg",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Howald Route de Thionville 282A 282A luxembourg",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Howald - 5884 - 282A",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thionville282A",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thi 282A",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Route de Thionville 282A bat b",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "route de thionville 282a",
+   "lat": 49.5840889,
+   "lng": 6.1463935,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Route de Thionville 282A, 5884 Howald",
+   "base": 3
+  },
+  {
+   "address": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Rue Albert Calmes 3",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Rue Albert Calmes 3, 1310",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "luxembourg Rue Albert Calmes 3 Luxembourg",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Rue Albert Calmes 3, Luxembourg, luxembourg",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Luxembourg - 3 - Rue Albert Calmes",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Albert Calmes3",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "calmes 3",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Albert Calmes 3 (porte verte)",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Ablert Calmes 3",
+   "lat": 49.6137086,
+   "lng": 6.1484052,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Albert Calmes 3, 1310 Luxembourg",
+   "base": 4
+  },
+  {
+   "address": "Am Happgaart 4, 5239 Sandweiler",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "4 Am Happgaart",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Am Happgaart 4, 5239",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "luxembourg Am Happgaart 4 Sandweiler",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Am Happgaart 4 Sandweiler luxembourg",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "4, Sandweiler, 5239, Am Happgaart",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "am happgaart 4",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Am Happgaart4",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Chez Paul am happgaart 4",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Am Hap 4",
+   "lat": 49.6137231,
+   "lng": 6.2107162,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Am Happgaart 4, 5239 Sandweiler",
+   "base": 5
+  },
+  {
+   "address": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bons-Malades 208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bons-Malades 208 2121",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bons-Malades 208, luxembourg, Luxembourg",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "val des bons-malades 208, luxembourg, luxembourg",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "2121 - Val des Bons-Malades - Luxembourg - 208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bon 208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "bons-malades 208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bon-sMalades 208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Val des Bons-Malades208",
+   "lat": 49.6270637,
+   "lng": 6.1488211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Val des Bons-Malades 208, 2121 Luxembourg",
+   "base": 6
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement 9",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement 9, 2617",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement 9, Luxembourg, luxembourg",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement 9 9 luxembourg Luxembourg",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue Marguerite Thomas-Clement, 9, Luxembourg, 2617",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "marguerite thomas-clement 9",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Marguerite Thomas-Clement9",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "MARGUERITE THOMAS-CLEMENT 9",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Marguerite Thomas-Clement 9 2e etage",
+   "lat": 49.6107111,
+   "lng": 6.1067289,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Marguerite Thomas-Clement 9, 2617 Luxembourg",
+   "base": 7
+  },
+  {
+   "address": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "Rue de la Tour Jacob, 141A",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "Rue de la Tour Jacob 141A, 1831",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "Luxembourg Rue de la Tour Jacob 141A luxembourg",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "luxembourg, Rue de la Tour Jacob 141A, Luxembourg",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "Luxembourg Rue de la Tour Jacob 141A 1831",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "de la Tour Jacob 141A pierre",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "de la Tour Jacov 141A",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "DE LA TOUR JACOB 141A",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "jacob 141A",
+   "lat": 49.6112304,
+   "lng": 6.1420794,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue de la Tour Jacob 141A, 1831 Luxembourg",
+   "base": 8
+  },
+  {
+   "address": "Rue de la Gare 24, 5218 Sandweiler",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Rue de la Gare, 24",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Rue de la Gare 24 5218",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Sandweiler, Rue de la Gare 24, luxembourg",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Rue de la Gare 24 Sandweiler luxembourg",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "5218 24 Rue de la Gare Sandweiler",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "DE LA GARE 24",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "de la Gare 24 pierre",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "de la Gare24",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Chez Paul de la gare 24",
+   "lat": 49.6101472,
+   "lng": 6.2147036,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de la Gare 24, 5218 Sandweiler",
+   "base": 9
+  },
+  {
+   "address": "Rue Henri Dunant 60, 8024 Strassen",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Rue Henri Dunant, 60",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Rue Henri Dunant 60, 8024",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "luxembourg Rue Henri Dunant 60 Strassen",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Rue Henri Dunant 60, luxembourg, Strassen",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "8024, Strassen, 60",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Henri Dunant 60 pierre",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "dunant 60",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Henri Dnuant 60",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "henri dunant 60",
+   "lat": 49.6197306,
+   "lng": 6.0639232,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Henri Dunant 60, 8024 Strassen",
+   "base": 10
+  },
+  {
+   "address": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "21A Ceinture Um Schlass",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "Ceinture Um Schlass 21A, 5880",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "Ceinture Um Schlass 21A, luxembourg, Hesperange",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "luxembourg, Ceinture Um Schlass 21A, 21A, Hesperange",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "5880 Hesperange 21A",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "CEINTURE UM SCHLASS 21A",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "schlass 21A",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "ceinture um schlass 21a",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "Ceinture Um Schlass21A",
+   "lat": 49.5736638,
+   "lng": 6.1458827,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ceinture Um Schlass 21A, 5880 Hesperange",
+   "base": 11
+  },
+  {
+   "address": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Rue Friedrich Wilhelm Engelhardt, 12",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Rue Friedrich Wilhelm Engelhardt 12, 1464",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "luxembourg, Luxembourg, Rue Friedrich Wilhelm Engelhardt 12",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Rue Friedrich Wilhelm Engelhardt 12, Luxembourg, luxembourg",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Luxembourg - 12 - 1464 - Rue Friedrich Wilhelm Engelhardt",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Friedrich Wilhelm Engelhradt 12",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Friedrich Wilhelm Engelhardt 12 bat b",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Chez Paul friedrich wilhelm engelhardt 12",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Friedrich Wilhelm Engelhardt12",
+   "lat": 49.5882872,
+   "lng": 6.1095913,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Friedrich Wilhelm Engelhardt 12, 1464 Luxembourg",
+   "base": 12
+  },
+  {
+   "address": "Kohlenberg 148, 1870 Luxembourg",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "148 Kohlenberg",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "Kohlenberg 148 1870",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "luxembourg, Kohlenberg 148, Luxembourg",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "Kohlenberg 148 Luxembourg luxembourg",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "148 - Kohlenberg - 1870",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "KOHLENBERG 148",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "kohlenberg 148",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "Kohlenberg 148 (porte verte)",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "Marie kohlenberg 148",
+   "lat": 49.5825503,
+   "lng": 6.0976184,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kohlenberg 148, 1870 Luxembourg",
+   "base": 13
+  },
+  {
+   "address": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "21A Rue Alphonse Munchen",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Rue Alphonse Munchen 21A, 2172",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Luxembourg Rue Alphonse Munchen 21A luxembourg",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Rue Alphonse Munchen 21A, Luxembourg, luxembourg",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Luxembourg, 21A, 2172",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Alphosne Munchen 21A",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Alphonse Munchen21A",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "alphonse munchen 21a",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Alphonse Munchen 21A bat b",
+   "lat": 49.603842,
+   "lng": 6.1163228,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Alphonse Munchen 21A, 2172 Luxembourg",
+   "base": 14
+  },
+  {
+   "address": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "27 Rue de l'Hippodrome",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "Rue de l'Hippodrome 27, 1730",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "Luxembourg, Rue de l'Hippodrome 27, luxembourg",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "Rue de l'Hippodrome 27, luxembourg, Luxembourg",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "1730 27 Luxembourg",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "de l'H 27",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "de l'Hippodrome 27 pierre",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "de l'Hippodrome27",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "de l'hippodrome 27",
+   "lat": 49.5950538,
+   "lng": 6.1386665,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de l'Hippodrome 27, 1730 Luxembourg",
+   "base": 15
+  },
+  {
+   "address": "Rue des Capucins 11, 1313 Luxembourg",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Rue des Capucins, 11",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Rue des Capucins 11, 1313",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "luxembourg Luxembourg Rue des Capucins 11",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Rue des Capucins 11 Luxembourg luxembourg luxembourg",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Luxembourg 11 1313 Rue des Capucins",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "des Capucins11",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "des Cap 11",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Marie des capucins 11",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "des Capucins 11 (porte verte)",
+   "lat": 49.6123255,
+   "lng": 6.1295829,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue des Capucins 11, 1313 Luxembourg",
+   "base": 16
+  },
+  {
+   "address": "Rue des Romains 109, 8041 Strassen",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "109 Rue des Romains",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "Rue des Romains 109, 8041",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "Strassen, Rue des Romains 109, luxembourg",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "luxembourg rue des romains 109 strassen",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "Rue des Romains 109 8041",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "des Romians 109",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "des romains 109",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "DES ROMAINS 109",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "des Rom 109",
+   "lat": 49.6185359,
+   "lng": 6.0647539,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue des Romains 109, 8041 Strassen",
+   "base": 17
+  },
+  {
+   "address": "Rue des Pommiers 38, 2343 Luxembourg",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "38 Rue des Pommiers",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "Rue des Pommiers 38 2343",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "Rue des Pommiers 38 Luxembourg luxembourg",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "Rue des Pommiers 38 luxembourg Luxembourg",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "2343, Rue des Pommiers, 38",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "des pommiers 38",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "des Pommires 38",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "des Pommiers 38 2e etage",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "des Pommiers38",
+   "lat": 49.6114088,
+   "lng": 6.151632,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue des Pommiers 38, 2343 Luxembourg",
+   "base": 18
+  },
+  {
+   "address": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "3 Bd Grande-Duchesse Joséphine-Charlotte",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Luxembourg, Bd Grande-Duchesse Joséphine-Charlotte 3, luxembourg",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Bd Grande-Duchesse Josephine-Charlotte 3 luxembourg Luxembourg",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Bd Grande-Duchesse Joséphine-Charlotte 1845 Luxembourg 3",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Grande-Duchesse Joséphine-Charlote 3",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Grande-Duchesse Jos 3",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Grande-Duchesse Joséphine-Charlotte3",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "joséphine-charlotte 3",
+   "lat": 49.6100322,
+   "lng": 6.1054126,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bd Grande-Duchesse Joséphine-Charlotte 3, 1845 Luxembourg",
+   "base": 19
+  },
+  {
+   "address": "Rue du Grünewald 108, 1912 Luxembourg",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "Rue du Grünewald, 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "Rue du Grünewald 108, 1912",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "Luxembourg luxembourg Rue du Grünewald 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "luxembourg, Luxembourg, Rue du Grunewald 108 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "1912 Rue du Grünewald Luxembourg 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "Marie du grünewald 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "du Grnüewald 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "du Grü 108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "du Grünewald108",
+   "lat": 49.6300282,
+   "lng": 6.1805341,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue du Grünewald 108, 1912 Luxembourg",
+   "base": 20
+  },
+  {
+   "address": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "Rue N.S. Pierret, 27",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "Rue N.S. Pierret 27, 2335",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "luxembourg, Luxembourg, Rue N.S. Pierret 27",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "rue n.s. pierret pierret 27 luxembourg luxembourg",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "27 - 2335 - Rue N.S. Pierret - Luxembourg",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "N.S. Pierert 27",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "N.S. Pierret27",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "N.S. Pierret 27 2e etage",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "N.S. Pie 27",
+   "lat": 49.6205895,
+   "lng": 6.1169696,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue N.S. Pierret 27, 2335 Luxembourg",
+   "base": 21
+  },
+  {
+   "address": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "Rue Joseph Massarette, 8",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "Rue Joseph Massarette 8, 2137",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "luxembourg Rue Joseph Massarette 8 Luxembourg",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "Rue Joseph Massarette 8 Luxembourg luxembourg",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "2137 Luxembourg Rue Joseph Massarette",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "joseph massarette 8",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "massarette 8",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "Marie joseph massarette 8",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "JOSEPH MASSARETTE 8",
+   "lat": 49.6178313,
+   "lng": 6.1612695,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Joseph Massarette 8, 2137 Luxembourg",
+   "base": 22
+  },
+  {
+   "address": "Rue des Romains 74, 8041 Strassen",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "Rue des Romains, 74",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "Rue des Romains 74 8041",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "luxembourg Rue des Romains 74 Strassen",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "Strassen, luxembourg, Rue des Romains 74",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "Strassen - Rue des Romains - 8041",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "des Romains74",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "des Romains 74 (porte verte)",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "DES ROMAINS 74",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "des Rom 74",
+   "lat": 49.6191519,
+   "lng": 6.0709255,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue des Romains 74, 8041 Strassen",
+   "base": 23
+  },
+  {
+   "address": "Grand-Rue 7, 1661 Luxembourg",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Grand-Rue 7",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Grand-Rue 7 1661",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Luxembourg Grand-Rue 7 luxembourg",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "luxembourg, Grand-Rue 7, Luxembourg",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Grand-Rue - 1661 - Luxembourg - 7",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "GRAND-RUE 7",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Grand-Rue 7 pierre",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "grand-rue 7",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Marie grand-rue 7",
+   "lat": 49.6117789,
+   "lng": 6.1318893,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Grand-Rue 7, 1661 Luxembourg",
+   "base": 24
+  },
+  {
+   "address": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "Rue de Rollingergrund, 58",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "Rue de Rollingergrund 58 2440",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "luxembourg, Rue de Rollingergrund 58, Luxembourg",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "luxembourg Rue de Rollingergrund 58 Luxembourg",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "58, Rue de Rollingergrund, 2440",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "de Rollingergrund 58 (porte verte)",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "de Rol 58",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "de Rollingergrund58",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "de Rolingergrund 58",
+   "lat": 49.6153529,
+   "lng": 6.1160566,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de Rollingergrund 58, 2440 Luxembourg",
+   "base": 25
+  },
+  {
+   "address": "Rue de Beggen 54, 1220 Luxembourg",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Rue de Beggen 54",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Rue de Beggen 54 1220",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Luxembourg, Rue de Beggen 54, luxembourg",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "luxembourg rue de beggen 54 luxembourg",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Luxembourg - Rue de Beggen - 1220 - 54",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Marie de beggen 54",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "de Beggen 54 2e etage",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "de beggen 54",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "de Beggen54",
+   "lat": 49.6399979,
+   "lng": 6.131301,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue de Beggen 54, 1220 Luxembourg",
+   "base": 26
+  },
+  {
+   "address": "Route d'Arlon 379, 8011 Strassen",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Route d'Arlon, 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Route d'Arlon 379 8011",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Strassen, luxembourg, Route d'Arlon 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "luxembourg Strassen Route d'Arlon 379 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "8011, Strassen, Route d'Arlon",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Route d'Arlon 379 2e etage",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Route d'A 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Chez Paul route d'arlon 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "ROUTE D'ARLON 379",
+   "lat": 49.6219647,
+   "lng": 6.0544957,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Route d'Arlon 379, 8011 Strassen",
+   "base": 27
+  },
+  {
+   "address": "Rue d'Eich 77, 1461 Luxembourg",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Rue d'Eich 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Rue d'Eich 77, 1461",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Luxembourg, Rue d'Eich 77, luxembourg",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Luxembourg luxembourg Rue d'Eich 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Rue d'Eich - 77 - Luxembourg - 1461",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "D'EICH 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Chez Paul d'eich 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "d'iEch 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "d'eich 77",
+   "lat": 49.6312634,
+   "lng": 6.1336785,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue d'Eich 77, 1461 Luxembourg",
+   "base": 28
+  },
+  {
+   "address": "Avenue Pasteur 155, 2311 Luxembourg",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "155 Avenue Pasteur",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Avenue Pasteur 155 2311",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "luxembourg Luxembourg Avenue Pasteur 155",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Avenue Pasteur 155 luxembourg Luxembourg",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "155, Luxembourg, Avenue Pasteur",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "pasteur 155",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Pasetur 155",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Pasteur155",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Pasteur 155 (porte verte)",
+   "lat": 49.6237186,
+   "lng": 6.1151383,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue Pasteur 155, 2311 Luxembourg",
+   "base": 29
+  },
+  {
+   "address": "Route d'Esch 26, 1470 Luxembourg",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "Route d'Esch 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "Route d'Esch 26 1470",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "luxembourg, Route d'Esch 26, Luxembourg",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "luxembourg Luxembourg Route d'Esch 26 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "1470 - 26 - Luxembourg - Route d'Esch",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "Marie route d'esch 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "d'esch 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "ROUTE D'ESCH 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "Route d'Esh 26",
+   "lat": 49.6044456,
+   "lng": 6.1201743,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Route d'Esch 26, 1470 Luxembourg",
+   "base": 30
+  },
+  {
+   "address": "Rue Auguste Scholer 6, 2524 Howald",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Rue Auguste Scholer, 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Rue Auguste Scholer 6, 2524",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Rue Auguste Scholer 6 Howald luxembourg",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Howald, luxembourg, Rue Auguste Scholer 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Rue Auguste Scholer 2524 6 Howald",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "AUGUSTE SCHOLER 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "scholer 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Aguuste Scholer 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Auguste Sch 6",
+   "lat": 49.5838562,
+   "lng": 6.1379447,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Auguste Scholer 6, 2524 Howald",
+   "base": 31
+  },
+  {
+   "address": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "16 Rue Pierre Conrardy",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Rue Pierre Conrardy 16 7219",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "luxembourg Helmsange Rue Pierre Conrardy 16",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Helmsange luxembourg Rue Pierre Conrardy 16",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Rue Pierre Conrardy 16 Helmsange 7219",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Pierre Conrardy 16 (porte verte)",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "conrardy 16",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Pierre Conrardi 16",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "pierre conrardy 16",
+   "lat": 49.6584307,
+   "lng": 6.1408441,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Pierre Conrardy 16, 7219 Helmsange",
+   "base": 32
+  },
+  {
+   "address": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "20A Rue Jules Fischer",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "Rue Jules Fischer 20A 1522",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "Luxembourg, Rue Jules Fischer 20A, luxembourg",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "luxembourg Rue Jules Fischer 20A Luxembourg",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "20A, Luxembourg, Rue Jules Fischer, 1522",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "Marie jules fischer 20A",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "Jules Fischer 20A bat b",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "fischer 20A",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "JULES FISCHER 20A",
+   "lat": 49.5918219,
+   "lng": 6.1431726,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Jules Fischer 20A, 1522 Luxembourg",
+   "base": 33
+  },
+  {
+   "address": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "19 Rue Frantz Clément",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Rue Frantz Clément 19, 1345",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Luxembourg, Rue Frantz Clément 19, luxembourg",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "luxembourg, luxembourg, rue frantz clément 19",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "1345 Rue Frantz Clément Luxembourg 19",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Frantz Clément 19 (porte verte)",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "frantz clément 19",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Frantz Clé 19",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Frantz Clément19",
+   "lat": 49.6225689,
+   "lng": 6.1143058,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Frantz Clément 19, 1345 Luxembourg",
+   "base": 34
+  },
+  {
+   "address": "Rue de Beggen 152, 1220 Luxembourg",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "152 Rue de Beggen",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Rue de Beggen 152 1220",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Rue de Beggen 152 luxembourg Luxembourg",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Rue de Beggen 152 Luxembourg luxembourg luxembourg",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Luxembourg, 152, Rue de Beggen",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Marie de beggen 152",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "DE BEGGEN 152",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "de beggen 152",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "de Beggen 152 2e etage",
+   "lat": 49.6445721,
+   "lng": 6.1291401,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de Beggen 152, 1220 Luxembourg",
+   "base": 35
+  },
+  {
+   "address": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Marcel Cahen 58",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Marcel Cahen 58, 1311",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Marcel Cahen 58, luxembourg, Luxembourg",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Marcel Cahen 58, Luxembourg, luxembourg",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Boulevard Marcel Cahen 58 1311",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Marcel Cahen58",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "marcel cahen 58",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Macrel Cahen 58",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "MARCEL CAHEN 58",
+   "lat": 49.6031095,
+   "lng": 6.1011211,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Marcel Cahen 58, 1311 Luxembourg",
+   "base": 36
+  },
+  {
+   "address": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "Rue de l'Industrie 11A",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "Rue de l'Industrie 11A 1811",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "Luxembourg Rue de l'Industrie 11A luxembourg",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "Luxembourg, Rue de l'Industrie 11A, luxembourg",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "11A - Rue de l'Industrie - Luxembourg",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "DE L'INDUSTRIE 11A",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "de l'industrie 11a",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "de l'nIdustrie 11A",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "de l'Industrie 11A 2e etage",
+   "lat": 49.5957872,
+   "lng": 6.1247501,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue de l'Industrie 11A, 1811 Luxembourg",
+   "base": 37
+  },
+  {
+   "address": "Rue Pierre Krier 10, 7260 Bereldange",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "10 Rue Pierre Krier",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "Rue Pierre Krier 10 7260",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "luxembourg, Bereldange, Rue Pierre Krier 10",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "luxembourg Rue Pierre Krier 10 Bereldange",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "10 7260 Bereldange Rue Pierre Krier",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "Marie pierre krier 10",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "pierre krier 10",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "Pierre Krier 10 pierre",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "Pirere Krier 10",
+   "lat": 49.6622756,
+   "lng": 6.1246554,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Pierre Krier 10, 7260 Bereldange",
+   "base": 38
+  },
+  {
+   "address": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "Rue Wurth-Paquet 29",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "Rue Wurth-Paquet 29, 2737",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "Luxembourg Rue Wurth-Paquet 29 luxembourg",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "luxembourg, Rue Wurth-Paquet 29, Luxembourg",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "2737, 29, Rue Wurth-Paquet, Luxembourg",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "wurth-paquet 29",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "WURTH-PAQUET 29",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "Wurth-Paket 29",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  },
+  {
+   "address": "Chez Paul wurth-paquet 29",
+   "lat": 49.6072727,
+   "lng": 6.104109,
+   "country": "LU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Wurth-Paquet 29, 2737 Luxembourg",
+   "base": 39
+  }
+ ]
+}

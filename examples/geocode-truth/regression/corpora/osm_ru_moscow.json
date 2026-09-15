@@ -1,0 +1,3688 @@
+{
+ "source": "osm-addr",
+ "country": "RU",
+ "city": "Moscow",
+ "country_label": "Russia",
+ "depot": {
+  "lat": 55.7558,
+  "lon": 37.6173,
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 367,
+ "note": "Nodos addr:* del indice n55.90_s55.70_e37.80_w37.50-central-fed-district.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "16/15 с2 Спартаковская площадь",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Спартаковская площадь 16/15 с2, 105082",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Москва, ru, Спартаковская площадь 16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Москва, ru, Спартаковская площадь 16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "16/15 с2 Спартаковская площадь Москва",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Сапртаковская площадь 16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "спартаковская площадь 16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Спартаковская площадь16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Mary спартаковская площадь 16/15 с2",
+   "lat": 55.7761177,
+   "lng": 37.6790725,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Спартаковская площадь 16/15 с2, 105082 Москва",
+   "base": 0
+  },
+  {
+   "address": "Цветной бульвар 25 с7, Moscow",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветной бульвар, 25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Moscow, ru, Цветной бульвар 25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветнои бульвар 25 с7, Moscow, ru",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветной бульвар - Moscow - 25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Deli цветной бульвар 25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветной бульвар25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветонй бульвар 25 с7",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Цветной бульвар 25 с7 (green door)",
+   "lat": 55.7724978875,
+   "lng": 37.619606024999996,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Цветной бульвар 25 с7, Moscow",
+   "base": 1
+  },
+  {
+   "address": "Мишина улица 32 с2, Москва",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "Мишина улица 32 с2",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "ru Москва Мишина улица 32 с2",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "ru, Мишина улица 32 с2, Москва",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "Мишина улица, Москва",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "МИШИНА УЛИЦА 32 С2",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "мишина улица 32 с2",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "Mary мишина улица 32 с2",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "Мишина улица 32 с2 (green door)",
+   "lat": 55.79625874,
+   "lng": 37.56475524,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Мишина улица 32 с2, Москва",
+   "base": 2
+  },
+  {
+   "address": "Малая Пионерская улица 23-31 с1, Moscow",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Малая Пионерская улица 23-31 с1",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "ru, Moscow, Малая Пионерская улица 23-31 с1",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Moscow, Малая Пионерская улица 23-31 с1, ru",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Малая Пионерская улица, 23-31 с1, Moscow",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Mary малая пионерская улица 23-31 с1",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Малая Пионерская улица23-31 с1",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Малая Пионерская улица 23-31 с1 (green door)",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "улица 23-31 с1",
+   "lat": 55.72731854,
+   "lng": 37.63597422,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Малая Пионерская улица 23-31 с1, Moscow",
+   "base": 3
+  },
+  {
+   "address": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Малый Афанасьевский переулок 14/34 с2",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "ru, Moscow, Малый Афанасьевский переулок 14/34 с2",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Moscow Малый Афанасьевский переулок 14/34 с2 ru",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Moscow Малый Афанасьевский переулок",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Малый Афаансьевский переулок 14/34 с2",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "МАЛЫЙ АФАНАСЬЕВСКИЙ ПЕРЕУЛОК 14/34 С2",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Малый Афанасьевский переулок 14/34 с2 apt 4b",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "Малый Афанасьевский пер 14/34 с2",
+   "lat": 55.75073781428572,
+   "lng": 37.597469342857146,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Малый Афанасьевский переулок 14/34 с2, Moscow",
+   "base": 4
+  },
+  {
+   "address": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "1-й Кадашёвский переулок, 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "1-й Кадашёвский переулок 10 с3 Moscow ru",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "moscow ru 1-и кадашевскии переулок 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "1-й Кадашёвский переулок, 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "1-й Кадашёвский пер 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "переулок 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "1-й Кадашёвский переулок10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "Mary 1-й кадашёвский переулок 10 с3",
+   "lat": 55.74270688461539,
+   "lng": 37.62141635384615,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1-й Кадашёвский переулок 10 с3, Moscow",
+   "base": 5
+  },
+  {
+   "address": "Большой Чудов переулок 8 с12, Moscow",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "8 с12 Большой Чудов переулок",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "ru Moscow Большой Чудов переулок 8 с12",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "ru, moscow, большои чудов переулок переулок 8 с12",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "Moscow Большой Чудов переулок",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "БОЛЬШОЙ ЧУДОВ ПЕРЕУЛОК 8 С12",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "Большой Чудов переулок 8 с12 john",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "большой чудов переулок 8 с12",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "Большой Чудов переулок8 с12",
+   "lat": 55.73440471428571,
+   "lng": 37.592374171428574,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Большой Чудов переулок 8 с12, Moscow",
+   "base": 6
+  },
+  {
+   "address": "Якиманская набережная 4 с1, Moscow",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Якиманская набережная 4 с1",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Moscow, Якиманская набережная 4 с1, ru",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "якиманская набережная 4 с1 ru moscow",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Якиманская набережная, Moscow, 4 с1",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "набережная 4 с1",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "ЯКИМАНСКАЯ НАБЕРЕЖНАЯ 4 С1",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Якиманская набережная 4 с1 apt 4b",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Якмианская набережная 4 с1",
+   "lat": 55.73996292142857,
+   "lng": 37.61256552857143,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Якиманская набережная 4 с1, Moscow",
+   "base": 7
+  },
+  {
+   "address": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Пятницкий переулок 4 с1",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Пятницкий переулок 4 с1 115184",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "ru Moscow Пятницкий переулок 4 с1",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Пятницкий переулок 4 с1, ru, Moscow",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "115184, Пятницкий переулок, Moscow",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Mary пятницкий переулок 4 с1",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Пятницкий пер 4 с1",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "переулок 4 с1",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "Пятницкий переулок 4 с1 back entrance",
+   "lat": 55.743133539999995,
+   "lng": 37.62968795,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Пятницкий переулок 4 с1, 115184 Moscow",
+   "base": 8
+  },
+  {
+   "address": "улица Дунаевского 10, Moscow",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "улица Дунаевского, 10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "ru улица Дунаевского 10 Moscow",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "улица Дунаевского 10, Moscow, ru",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "Moscow - улица Дунаевского - 10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "Mary улица дунаевского 10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "улица Дунаевского10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "улица Дун 10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "дунаевского 10",
+   "lat": 55.740200348,
+   "lng": 37.548233052,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "улица Дунаевского 10, Moscow",
+   "base": 9
+  },
+  {
+   "address": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "9/13 с5 Малый Харитоньевский переулок",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "ru Moscow Малый Харитоньевский переулок 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "ru moscow малый харитоньевский переулок 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "Moscow, Малый Харитоньевский переулок, 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "Малый Харитоньевский переулок 9/13 с5 apt 4b",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "Малый Харитоньевский пер 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "переулок 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "Малый Хартионьевский переулок 9/13 с5",
+   "lat": 55.76572915,
+   "lng": 37.64652626666666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Малый Харитоньевский переулок 9/13 с5, Moscow",
+   "base": 10
+  },
+  {
+   "address": "Ольховская улица 29/32 с1, Moscow",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Ольховская улица 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "ru Moscow Ольховская улица 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Ольховская улица 29/32 с1, ru, ru, Moscow",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Moscow 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Mary ольховская улица 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "улица 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Ольховская улица 29/32 с1 john",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Ольховсакя улица 29/32 с1",
+   "lat": 55.7758358,
+   "lng": 37.67025358,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ольховская улица 29/32 с1, Moscow",
+   "base": 11
+  },
+  {
+   "address": "Анненский проезд 1 с16, Moscow",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "Анненский проезд 1 с16",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "ru Moscow Анненский проезд 1 с16",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "ru, Анненский проезд 1 с16, Moscow",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "1 с16 Moscow Анненский проезд",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "АННЕНСКИЙ ПРОЕЗД 1 С16",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "Анненский проезд1 с16",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "проезд 1 с16",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "Анненский проезд 1 с16 apt 4b",
+   "lat": 55.80209396,
+   "lng": 37.60654154,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Анненский проезд 1 с16, Moscow",
+   "base": 12
+  },
+  {
+   "address": "Гороховский переулок 14 с2, Moscow",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "Гороховский переулок, 14 с2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "ru Moscow Гороховский переулок 14 с2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "ru Moscow Гороховский переулок 14 с2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "Гороховский переулок, 14 с2, Moscow",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "Гороховский переулок 14 с2 john",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "ГОРОХОВСКИЙ ПЕРЕУЛОК 14 С2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "переулок 14 с2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "гороховский переулок 14 с2",
+   "lat": 55.764751242857145,
+   "lng": 37.66830434285714,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Гороховский переулок 14 с2, Moscow",
+   "base": 13
+  },
+  {
+   "address": "Резервный проезд 10, Moscow",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "Резервный проезд, 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "Moscow ru Резервный проезд 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "ru, резервный проезд 10, moscow",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "Moscow - Резервный проезд - 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "Рзеервный проезд 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "Mary резервный проезд 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "РЕЗЕРВНЫЙ ПРОЕЗД 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "проезд 10",
+   "lat": 55.74117290769231,
+   "lng": 37.55016606153846,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Резервный проезд 10, Moscow",
+   "base": 14
+  },
+  {
+   "address": "1-я Рыбинская улица 1 с5, Moscow",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1 с5 1-я Рыбинская улица",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "Moscow ru 1-я Рыбинская улица 1 с5",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1-я Рыбинская улица 1 с5 с5 Moscow ru",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1 с5 - Moscow - 1-я Рыбинская улица",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1-я рыбинская улица 1 с5",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "улица 1 с5",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1-я Рыбинская улица 1 с5 (green door)",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "1-я Рыбинская улица1 с5",
+   "lat": 55.789025300000006,
+   "lng": 37.65662426,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1-я Рыбинская улица 1 с5, Moscow",
+   "base": 15
+  },
+  {
+   "address": "Красногвардейский бульвар 9, 123317 Moscow",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "Красногвардейский бульвар, 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "Красногвардейский бульвар 9, 123317",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "ru Moscow Красногвардейский бульвар 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "Красногвардейский бульвар 9, Moscow, ru",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "123317 9 Moscow Красногвардейский бульвар",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "Красногвардейский бул 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "бульвар 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "Красногаврдейский бульвар 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "КРАСНОГВАРДЕЙСКИЙ БУЛЬВАР 9",
+   "lat": 55.76047073636364,
+   "lng": 37.54346239090909,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Красногвардейский бульвар 9, 123317 Moscow",
+   "base": 16
+  },
+  {
+   "address": "улица Знаменка 19 с10, Moscow",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "19 с10 улица Знаменка",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Знаменка 19 с10 Moscow ru",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Знаменка 19 с10, ru, Moscow",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Знаменка - Moscow",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "Deli улица знаменка 19 с10",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Знаменка19 с10",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Зна 19 с10",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "улица Знаемнка 19 с10",
+   "lat": 55.7508826,
+   "lng": 37.6010917,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "улица Знаменка 19 с10, Moscow",
+   "base": 17
+  },
+  {
+   "address": "Гончарная улица 4 с8, Moscow",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "4 с8 Гончарная улица",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Moscow ru Гончарная улица 4 с8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Moscow ru Гончарная улица 4 с8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Гончарная улица, 4 с8, Moscow",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Гончарная улица4 с8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "ГОНЧАРНАЯ УЛИЦА 4 С8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Гончараня улица 4 с8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "гончарная улица 4 с8",
+   "lat": 55.74591582727272,
+   "lng": 37.64442807272727,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Гончарная улица 4 с8, Moscow",
+   "base": 18
+  },
+  {
+   "address": "Никоновский переулок 3/1 с2, Moscow",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "3/1 с2 Никоновский переулок",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "ru, Никоновский переулок 3/1 с2, Moscow",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "ru, Никоновский переулок 3/1 с2, с2, Moscow",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "Никоновский переулок - Moscow - 3/1 с2",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "Mary никоновский переулок 3/1 с2",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "переулок 3/1 с2",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "Никоновский пер 3/1 с2",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "Никоновский переулок3/1 с2",
+   "lat": 55.77838978,
+   "lng": 37.61047494,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Никоновский переулок 3/1 с2, Moscow",
+   "base": 19
+  },
+  {
+   "address": "1-й Новый переулок 7, 107140 Москва",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-й Новый переулок 7",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-й Новый переулок 7 107140",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "ru 1-й Новый переулок 7 Москва",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-й Новый переулок 7 Москва ru",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "Москва 7 107140",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-Й НОВЫЙ ПЕРЕУЛОК 7",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "переулок 7",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-й Новый переулок7",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "1-й Новый прееулок 7",
+   "lat": 55.77976260833333,
+   "lng": 37.670162875,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1-й Новый переулок 7, 107140 Москва",
+   "base": 20
+  },
+  {
+   "address": "Лефортовская набережная 1, Москва",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "1 Лефортовская набережная",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Москва, Лефортовская набережная 1, ru",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "ru, Москва, Москва, Лефортовская набережная 1",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Москва, Лефортовская набережная",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Лефортовская набережная1",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "лефортовская набережная 1",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Лефортовская набережная 1 john",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Mary лефортовская набережная 1",
+   "lat": 55.76901203333333,
+   "lng": 37.68978053888889,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Лефортовская набережная 1, Москва",
+   "base": 21
+  },
+  {
+   "address": "Вятская улица 47 с21, Moscow",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Вятская улица 47 с21",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Вятская улица 47 с21 Moscow ru",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Moscow Вятская улица 47 с21 ru",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Moscow - Вятская улица - 47 с21",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Вятсакя улица 47 с21",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Вятская улица47 с21",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "Вятская улица 47 с21 apt 4b",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "улица 47 с21",
+   "lat": 55.803984719999995,
+   "lng": 37.5791872,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Вятская улица 47 с21, Moscow",
+   "base": 22
+  },
+  {
+   "address": "4-й Вятский переулок 24 к3, Москва",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "24 к3 4-й Вятский переулок",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "Москва, ru, 4-й Вятский переулок 24 к3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "ru 4-й Вятский переулок 24 к3 к3 Москва",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "4-й Вятский переулок, 24 к3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "4-й Вятский перуелок 24 к3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "переулок 24 к3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "4-Й ВЯТСКИЙ ПЕРЕУЛОК 24 К3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "4-й Вятский переулок24 к3",
+   "lat": 55.8014437125,
+   "lng": 37.5677698125,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4-й Вятский переулок 24 к3, Москва",
+   "base": 23
+  },
+  {
+   "address": "Подкопаевский переулок 9 с3, Moscow",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "9 с3 Подкопаевский переулок",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "Подкопаевский переулок 9 с3, Moscow, ru",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "ru, Moscow, Подкопаевский переулок 9 с3",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "Подкопаевский переулок - Moscow",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "Подокпаевский переулок 9 с3",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "подкопаевский переулок 9 с3",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "переулок 9 с3",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "Подкопаевский переулок 9 с3 (green door)",
+   "lat": 55.75349273333333,
+   "lng": 37.642467922222224,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Подкопаевский переулок 9 с3, Moscow",
+   "base": 24
+  },
+  {
+   "address": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "5 к3 Стрельбищенский переулок",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "Стрельбищенский переулок 5 к3 123317",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "Стрельбищенский переулок 5 к3 ru Moscow",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "стрельбищенский переулок 5 к3 ru moscow",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "123317 Moscow 5 к3 Стрельбищенский переулок",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "Стрельбищнеский переулок 5 к3",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "Стрельбищенский переулок5 к3",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "стрельбищенский переулок 5 к3",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "Mary стрельбищенский переулок 5 к3",
+   "lat": 55.75839691111111,
+   "lng": 37.53683616666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Стрельбищенский переулок 5 к3, 123317 Moscow",
+   "base": 25
+  },
+  {
+   "address": "5-я Сокольническая улица 1, Москва",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "5-я Сокольническая улица, 1",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "5-я Сокольническая улица 1 ru Москва",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "Москва ru 5-я Сокольническая Сокольническая улица 1",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "1 Москва 5-я Сокольническая улица",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "5-Я СОКОЛЬНИЧЕСКАЯ УЛИЦА 1",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "улица 1",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "5-я Сокольническая улица 1 john",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "Deli 5-я сокольническая улица 1",
+   "lat": 55.785672418749996,
+   "lng": 37.687574475,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "5-я Сокольническая улица 1, Москва",
+   "base": 26
+  },
+  {
+   "address": "Чертольский переулок 4, Moscow",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "Чертольский переулок 4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "ru Moscow Чертольский переулок 4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "ru Чертольский Чертольский переулок 4 Moscow",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "4 Чертольский переулок Moscow",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "Черотльский переулок 4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "Чертольский переулок4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "переулок 4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "Чертольский пер 4",
+   "lat": 55.744347828571435,
+   "lng": 37.59840758571429,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Чертольский переулок 4, Moscow",
+   "base": 27
+  },
+  {
+   "address": "Рыбинский переулок 6, Москва",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Рыбинский переулок, 6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Москва Рыбинский переулок 6 ru",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Москва ru ru Рыбинскии переулок 6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Москва, 6, Рыбинский переулок",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Deli рыбинский переулок 6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Рыбинский переулок6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "РЫБИНСКИЙ ПЕРЕУЛОК 6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Рыбинский пер 6",
+   "lat": 55.789870275,
+   "lng": 37.6643554625,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Рыбинский переулок 6, Москва",
+   "base": 28
+  },
+  {
+   "address": "Новокирочный переулок 5, Moscow",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "5 Новокирочный переулок",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "ru, Moscow, Новокирочный переулок 5",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "ru, Moscow, Новокирочный переулок 5",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "Новокирочный переулок - 5 - Moscow",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "Новокирчоный переулок 5",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "Mary новокирочный переулок 5",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "НОВОКИРОЧНЫЙ ПЕРЕУЛОК 5",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "Новокирочный переулок 5 apt 4b",
+   "lat": 55.76480322,
+   "lng": 37.67837666,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Новокирочный переулок 5, Moscow",
+   "base": 29
+  },
+  {
+   "address": "Камергерский переулок 3, 125009 Moscow",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Камергерский переулок 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Камергерский переулок 3 125009",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Moscow, ru, Камергерский переулок 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "ru, камергерский переулок 3, moscow",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "3 Камергерский переулок 125009 Moscow",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Камергерский пер 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Mary камергерский переулок 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "камергерский переулок 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "переулок 3",
+   "lat": 55.7599129,
+   "lng": 37.6127528,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Камергерский переулок 3, 125009 Moscow",
+   "base": 30
+  },
+  {
+   "address": "Армянский переулок 3/5 с4, Moscow",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Армянский переулок 3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "ru Moscow Армянский переулок 3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "ru Армянский переулок 3/5 с4 Moscow",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Армянский переулок 3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Армянский пер 3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Армянский переулок3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "переулок 3/5 с4",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Армянский переулок 3/5 с4 back entrance",
+   "lat": 55.760722220000005,
+   "lng": 37.63682865333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Армянский переулок 3/5 с4, Moscow",
+   "base": 31
+  },
+  {
+   "address": "Пожарский переулок 4 с1, Moscow",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "4 с1 Пожарский переулок",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Moscow ru Пожарский переулок 4 с1",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Пожарскии переулок 4 с1 Moscow ru ru",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Пожарский переулок - 4 с1",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Пожарский переулок 4 с1 john",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "ПОЖАРСКИЙ ПЕРЕУЛОК 4 С1",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Пожасркий переулок 4 с1",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Пожарский пер 4 с1",
+   "lat": 55.74084,
+   "lng": 37.60371756666667,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Пожарский переулок 4 с1, Moscow",
+   "base": 32
+  },
+  {
+   "address": "Новая Басманная улица 28 с2, 105066 Москва",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басманная улица, 28 с2",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басманная улица 28 с2 105066",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басманная улица 28 с2 Москва ru",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "ru, Москва, Новая Басманная улица 28 с2",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "105066, Москва, 28 с2, Новая Басманная улица",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "улица 28 с2",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басманная улица 28 с2 back entrance",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басманная улица28 с2",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "Новая Басамнная улица 28 с2",
+   "lat": 55.769153900000006,
+   "lng": 37.66680188,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Новая Басманная улица 28 с2, 105066 Москва",
+   "base": 33
+  },
+  {
+   "address": "1-й Боткинский проезд 7 с25, Moscow",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "7 с25 1-й Боткинский проезд",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "Moscow, 1-й Боткинский проезд 7 с25, ru",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "ru 1-й Боткинский проезд 7 с25 Moscow",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "1-й Боткинский проезд, 7 с25, Moscow",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "1-й Боткинский проезд 7 с25 john",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "1-й Боткинский проезд7 с25",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "1-й Боткинсикй проезд 7 с25",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "проезд 7 с25",
+   "lat": 55.7877045,
+   "lng": 37.5537105,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-й Боткинский проезд 7 с25, Moscow",
+   "base": 34
+  },
+  {
+   "address": "Восточная улица 13, Moscow",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "13 Восточная улица",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "Восточная улица 13, Moscow, ru",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "Восточная улица 13, Moscow, ru",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "Moscow - Восточная улица - 13",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "улица 13",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "ВОСТОЧНАЯ УЛИЦА 13",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "Восточная улица13",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "восточная улица 13",
+   "lat": 55.712205000000004,
+   "lng": 37.65899348333333,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Восточная улица 13, Moscow",
+   "base": 35
+  },
+  {
+   "address": "земляной вал 70, Moscow",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "70 земляной вал",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "земляной вал 70, Moscow, ru",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "Moscow, ru, земляной вал 70",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "Moscow - земляной вал - 70",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "ЗЕМЛЯНОЙ ВАЛ 70",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "земляной вал 70 apt 4b",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "земляонй вал 70",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "Deli земляной вал 70",
+   "lat": 55.744515160000006,
+   "lng": 37.6544301,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "земляной вал 70, Moscow",
+   "base": 36
+  },
+  {
+   "address": "улица Новый Арбат 34 с1, Moscow",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "34 с1 улица Новый Арбат",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "улица Новый Арбат 34 с1, ru, Moscow",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "ru, Moscow, улица Новый Арбат 34 с1",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "34 с1, Moscow",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "улица новый арбат 34 с1",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "улица Новый Арбат 34 с1 john",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "Mary улица новый арбат 34 с1",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "арбат 34 с1",
+   "lat": 55.75321204615385,
+   "lng": 37.57916839230769,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "улица Новый Арбат 34 с1, Moscow",
+   "base": 37
+  },
+  {
+   "address": "Сокольническая площадь 7, Moscow",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Сокольническая площадь, 7",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Сокольническая площадь 7 Moscow ru",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "ru, Moscow, Сокольническая площадь 7",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "7 Moscow",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Сокольническая площадь 7 john",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Сокольническая пло 7",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Сокольническая площадь7",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "СОКОЛЬНИЧЕСКАЯ ПЛОЩАДЬ 7",
+   "lat": 55.791624225,
+   "lng": 37.679828775000004,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Сокольническая площадь 7, Moscow",
+   "base": 38
+  },
+  {
+   "address": "Павелецкая площадь 3, Москва",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "3 Павелецкая площадь",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "Павелецкая площадь 3 ru Москва",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "ru Павелецкая площадь 3 Москва",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "3 - Павелецкая площадь - Москва",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "ПАВЕЛЕЦКАЯ ПЛОЩАДЬ 3",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "Павелецкая площадь 3 apt 4b",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "Павелцекая площадь 3",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  },
+  {
+   "address": "площадь 3",
+   "lat": 55.7304587,
+   "lng": 37.6391292,
+   "country": "RU",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Павелецкая площадь 3, Москва",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,3838 @@
+{
+ "source": "osm-addr",
+ "country": "KR",
+ "city": "Seoul",
+ "country_label": "South Korea",
+ "depot": {
+  "lat": 37.5665,
+  "lon": 126.978,
+  "city": "Seoul",
+  "country": "South Korea"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 382,
+ "note": "Nodos addr:* del indice n37.70_s37.50_e127.10_w126.90-south-korea.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "토정로32길 17, 서울특별시",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "17 토정로32길",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "토정로32길 17, kr, 서울특별시",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "서울특별시, kr, 토정로32길 17",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "서울특별시, 토정로32길",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "토정로32길 17 john",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "토정로23길 17",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "토정로32길 17",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "토정로32길17",
+   "lat": 37.5397785,
+   "lng": 126.9405816,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "토정로32길 17, 서울특별시",
+   "base": 0
+  },
+  {
+   "address": "안암로 145, 02841 서울특별시",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로, 145",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로 145 02841",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로 145, 서울특별시, kr",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "kr, 안암로 145, 서울특별시",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로, 서울특별시, 145, 02841",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로145",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "Deli 안암로 145",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로 145 (green door)",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "안암로 145",
+   "lat": 37.592594515,
+   "lng": 127.027602835,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "안암로 145, 02841 서울특별시",
+   "base": 1
+  },
+  {
+   "address": "창경궁로12길 26-1, 03195 서울특별시",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "창경궁로12길, 26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "창경궁로12길 26-1 03195",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "kr, 창경궁로12길 26-1, 서울특별시",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "서울특별시, kr, kr, 창경궁로12길 26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "서울특별시 03195 26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "창경궁로12길 26-1 back entrance",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "창경궁로12길26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "창경궁로12길 26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "Deli 창경궁로12길 26-1",
+   "lat": 37.56984862,
+   "lng": 126.99947067999999,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "창경궁로12길 26-1, 03195 서울특별시",
+   "base": 2
+  },
+  {
+   "address": "동숭4나길 16, 03085 서울특별시",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길, 16",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길 16, 03085",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길 16, kr, 서울특별시",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "서울특별시 kr 동숭4나길 16",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길 16 서울특별시",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길 16",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길 16 john",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "Mary 동숭4나길 16",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "동숭4나길16",
+   "lat": 37.5830027,
+   "lng": 127.0050635,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "동숭4나길 16, 03085 서울특별시",
+   "base": 3
+  },
+  {
+   "address": "퇴계로41길 39, 중구",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "39 퇴계로41길",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "퇴계로41길 39 중구 kr",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "kr, 퇴계로41길 39, 중구",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "퇴계로41길 - 중구",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "퇴계로41길 39 apt 4b",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "퇴계로41길 39",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "퇴계로41길39",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "Mary 퇴계로41길 39",
+   "lat": 37.5621199,
+   "lng": 126.9956191,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "퇴계로41길 39, 중구",
+   "base": 4
+  },
+  {
+   "address": "사직로 70, 03167 서울특별시",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70 03167",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70 kr 서울특별시",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70, 서울특별시, kr",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "서울특별시 - 70 - 사직로",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "Deli 사직로 70",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로70",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "사직로 70 john",
+   "lat": 37.574075900000004,
+   "lng": 126.96735824166666,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "사직로 70, 03167 서울특별시",
+   "base": 5
+  },
+  {
+   "address": "왕십리로31나길 18,, 04710 서울특별시",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "왕십리로31나길 18,",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "왕십리로31나길 18,, 04710",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "서울특별시 왕십리로31나길 18, kr",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "kr 서울특별시 왕십리로31나길 18,",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "18,, 서울특별시, 04710, 왕십리로31나길",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "왕십리로31나길 18,",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "왕십리로3나1길 18,",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "왕십리로31나길 18, john",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "Deli 왕십리로31나길 18,",
+   "lat": 37.563031,
+   "lng": 127.028087,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "왕십리로31나길 18,, 04710 서울특별시",
+   "base": 6
+  },
+  {
+   "address": "퇴계로 162-3, 중구",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "퇴계로, 162-3",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "kr 퇴계로 162-3 중구",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "퇴계로 162-3 중구 kr",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "162-3 - 퇴계로",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "Mary 퇴계로 162-3",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "퇴계로 162-3 apt 4b",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "퇴계로162-3",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "퇴계로 162-3",
+   "lat": 37.558694,
+   "lng": 126.9735603,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "퇴계로 162-3, 중구",
+   "base": 7
+  },
+  {
+   "address": "대흥로21길 4, 서울특별시",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "4 대흥로21길",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "대흥로21길 4 서울특별시 kr",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "서울특별시 대흥로21길 4 kr",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "4 서울특별시 대흥로21길",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "Mary 대흥로21길 4",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "대흥로21길 4",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "대흥로21길 4 apt 4b",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "대흥로21길4",
+   "lat": 37.553479,
+   "lng": 126.9456319,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "대흥로21길 4, 서울특별시",
+   "base": 8
+  },
+  {
+   "address": "하정로5길 1, 02582 서울특별시",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정로5길, 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정로5길 1 02582",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "서울특별시, kr, 하정로5길 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "kr 서울특별시 하정로5길 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "서울특별시 - 02582 - 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정정로5길 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정로5길1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정로5길 1 back entrance",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "하정로5길 1",
+   "lat": 37.57599222,
+   "lng": 127.02628786,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "하정로5길 1, 02582 서울특별시",
+   "base": 9
+  },
+  {
+   "address": "솔샘로6마길 1, 서울특별시",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로6마길 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "서울특별시, kr, 솔샘로6마길 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "kr 서울특별시 솔샘로6마길 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로6마길 서울특별시 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로6마길1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로6마길 1 apt 4b",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로마6길 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "솔샘로6마길 1",
+   "lat": 37.6095655,
+   "lng": 127.0079064,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "솔샘로6마길 1, 서울특별시",
+   "base": 10
+  },
+  {
+   "address": "살곶이4길 18, 04764 Seoul",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "살곶이4길 18",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "살곶이4길 18 04764",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "kr, 살곶이4길 18, Seoul",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "kr Seoul 살곶이4길 18",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "Seoul, 살곶이4길, 04764",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "살곶이4길 18 apt 4b",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "Mary 살곶이4길 18",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "살곶이4길 18",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "살곶이이4길 18",
+   "lat": 37.555954183333334,
+   "lng": 127.04297383333333,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "살곶이4길 18, 04764 Seoul",
+   "base": 11
+  },
+  {
+   "address": "대학로1길 37, 03129 서울특별시",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "37 대학로1길",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "대학로1길 37 03129",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "서울특별시, kr, 대학로1길 37",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "kr, 대학로1길 37, 서울특별시",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "37 - 대학로1길 - 03129 - 서울특별시",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "대학로1길37",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "대학로1길 37",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "대학학로1길 37",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "Mary 대학로1길 37",
+   "lat": 37.5717896,
+   "lng": 127.0003209,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "대학로1길 37, 03129 서울특별시",
+   "base": 12
+  },
+  {
+   "address": "명동9가길 14, 04534 서울특별시",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "14 명동9가길",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "명동9가길 14 04534",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "명동9가길 14, kr, 서울특별시",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "kr kr 명동9가길 14 서울특별시",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "서울특별시 명동9가길 14 04534",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "명동9가가길 14",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "명동9가길 14",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "명동9가길 14 back entrance",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "Deli 명동9가길 14",
+   "lat": 37.5651052,
+   "lng": 126.983621,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "명동9가길 14, 04534 서울특별시",
+   "base": 13
+  },
+  {
+   "address": "증가로21길 20-7, 03684 서울특별시",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로21길 20-7",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로21길 20-7 03684",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "kr 증가로21길 20-7 서울특별시",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "서울특별시 증가로21길 20-7 kr",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "서울특별시 03684 20-7 증가로21길",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로12길 20-7",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로21길20-7",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로21길 20-7",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "증가로21길 20-7 apt 4b",
+   "lat": 37.580382,
+   "lng": 126.914274,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "증가로21길 20-7, 03684 서울특별시",
+   "base": 14
+  },
+  {
+   "address": "송로 14, 서울특별시",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "송로, 14",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "kr, 서울특별시, 송로 14",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "kr, 송로 14, 서울특별시",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "14, 서울특별시, 송로",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "송로14",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "Mary 송로 14",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "송로 14",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "송로 14 back entrance",
+   "lat": 37.56982908,
+   "lng": 126.9787932,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "송로 14, 서울특별시",
+   "base": 15
+  },
+  {
+   "address": "녹사평대로26가길 14, 04391 서울특별시",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평대로26가길 14",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평대로26가길 14 04391",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "서울특별시 kr 녹사평대로26가길 14",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "kr 녹사평대로26가길 14 서울특별시",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "서울특별시, 14, 녹사평대로26가길",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평대로26가길 14",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평로대26가길 14",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평대로26가길14",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "녹사평대로26가길 14 (green door)",
+   "lat": 37.532305,
+   "lng": 126.9924288,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "녹사평대로26가길 14, 04391 서울특별시",
+   "base": 16
+  },
+  {
+   "address": "어울마당로2길 19, 서울특별시",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "19 어울마당로2길",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "어울마당로2길 19 kr 서울특별시",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "kr, 서울특별시, 어울마당로2길 19",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "어울마당로2길 - 서울특별시",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "Deli 어울마당로2길 19",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "어울마당2로길 19",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "어울마당로2길19",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "어울마당로2길 19",
+   "lat": 37.5461167,
+   "lng": 126.9203255,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "어울마당로2길 19, 서울특별시",
+   "base": 17
+  },
+  {
+   "address": "솔샘로15다길 34, 02708 서울특별시",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "34 솔샘로15다길",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "솔샘로15다길 34, 02708",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "솔샘로15다길 34 서울특별시 kr",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "kr kr 서울특별시 솔샘로15다길 34",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "02708 34 솔샘로15다길 서울특별시",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "솔로샘15다길 34",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "솔샘로15다길 34 (green door)",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "솔샘로15다길 34",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "Deli 솔샘로15다길 34",
+   "lat": 37.6106221,
+   "lng": 127.0038435,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "솔샘로15다길 34, 02708 서울특별시",
+   "base": 18
+  },
+  {
+   "address": "왕산로35길 6, 02573 서울특별시",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕산로35길, 6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕산로35길 6, 02573",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "서울특별시, kr, 왕산로35길 6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "서울특별시, kr, 왕산로35길 6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "6 - 왕산로35길 - 02573",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕산로35길6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕산로35길 6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕산로35길 6 (green door)",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "왕로산35길 6",
+   "lat": 37.5800116,
+   "lng": 127.0434347,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "왕산로35길 6, 02573 서울특별시",
+   "base": 19
+  },
+  {
+   "address": "인사동7길 33, 03149 서울특별시",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33 03149",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33 kr 서울특별시",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33 서울특별시 kr",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "03149 인사동7길 서울특별시",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동동7길 33",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길33",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "인사동7길 33 apt 4b",
+   "lat": 37.57274898,
+   "lng": 126.98461014,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "인사동7길 33, 03149 서울특별시",
+   "base": 20
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동)",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "kr, 동대문구, 천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동)",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구, kr",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동) 동대문구",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동)",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로52길 81, 용두랜드마크타워 1층 101,102호 (용두동)",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "Deli 천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동)",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동) back entrance",
+   "lat": 37.5778071,
+   "lng": 127.0339515,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "천호대로25길 81, 용두랜드마크타워 1층 101,102호 (용두동), 동대문구",
+   "base": 21
+  },
+  {
+   "address": "삼일대로26길 10, 03133 서울특별시",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "삼일대로26길, 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "삼일대로26길 10 03133",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "서울특별시, kr, 삼일대로26길 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "서울특별시 kr 삼일대로26길 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "03133, 10, 삼일대로26길, 서울특별시",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "삼일대로62길 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "삼일대로26길 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "Mary 삼일대로26길 10",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "삼일대로26길 10 apt 4b",
+   "lat": 37.5731967,
+   "lng": 126.988713,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "삼일대로26길 10, 03133 서울특별시",
+   "base": 22
+  },
+  {
+   "address": "홍제천로 190-9, 03660 서울특별시",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "190-9 홍제천로",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "홍제천로 190-9, 03660",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "kr 서울특별시 홍제천로 190-9",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "kr 홍제천로 홍제천로 190-9 서울특별시",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "서울특별시, 190-9, 홍제천로",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "홍제천로190-9",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "홍제천로 190-9 (green door)",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "Deli 홍제천로 190-9",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "홍제천로 190-9",
+   "lat": 37.57854812,
+   "lng": 126.93442916,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "홍제천로 190-9, 03660 서울특별시",
+   "base": 23
+  },
+  {
+   "address": "명륜길 53, 서울특별시",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "명륜길 53",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "명륜길 53, kr, 서울특별시",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "서울특별시, kr, kr, 명륜길 53",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "서울특별시 53 명륜길",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "명륜길53",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "명륜길 53 (green door)",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "Deli 명륜길 53",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "명륜길 53",
+   "lat": 37.589259,
+   "lng": 126.994289,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "명륜길 53, 서울특별시",
+   "base": 24
+  },
+  {
+   "address": "옥인1길 34, 03034 서울특별시",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "34 옥인1길",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "옥인1길 34 03034",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "kr, 서울특별시, 옥인1길 34",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "옥인1길 34 서울특별시 kr",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "서울특별시 03034 옥인1길",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "옥인1길 34",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "옥인1길34",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "Mary 옥인1길 34",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "옥인1길 34 apt 4b",
+   "lat": 37.5813125,
+   "lng": 126.966766,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "옥인1길 34, 03034 서울특별시",
+   "base": 25
+  },
+  {
+   "address": "숭인동길 46, 서울특별시",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "46 숭인동길",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "kr, 숭인동길 46, 서울특별시",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "서울특별시, 숭인동길 46, kr",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "46, 숭인동길",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "Mary 숭인동길 46",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "숭인동길 46",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "숭인동길 46 apt 4b",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "숭인동길46",
+   "lat": 37.577014,
+   "lng": 127.02218,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "숭인동길 46, 서울특별시",
+   "base": 26
+  },
+  {
+   "address": "자하문로28길 29, 03047 서울특별시",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로28길 29",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로28길 29 03047",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "서울특별시 자하문로28길 29 kr",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로28길 29 kr 서울특별시",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "29 서울특별시 03047",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "Mary 자하문로28길 29",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로28길 29 (green door)",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로28길 29",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "자하문로82길 29",
+   "lat": 37.58648301111111,
+   "lng": 126.97251926666667,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "자하문로28길 29, 03047 서울특별시",
+   "base": 27
+  },
+  {
+   "address": "연세로2라길 3, 서울특별시",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "3 연세로2라길",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "연세로2라길 3 서울특별시 kr",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "서울특별시 연세로2라길 3 kr",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "서울특별시 3",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "연세로2라길 3 apt 4b",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "Mary 연세로2라길 3",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "연세로2라길3",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "연세로2라길 3",
+   "lat": 37.55727288571428,
+   "lng": 126.9395376,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "연세로2라길 3, 서울특별시",
+   "base": 28
+  },
+  {
+   "address": "고려대로17길 46, 02843 서울특별시",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "46 고려대로17길",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "고려대로17길 46, 02843",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "kr, 서울특별시, 고려대로17길 46",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "고려대로17길 46, kr, kr, 서울특별시",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "46 - 02843 - 서울특별시",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "고려대로17길 46",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "고려대로17길 46 back entrance",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "Mary 고려대로17길 46",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "고려대로17길46",
+   "lat": 37.5887929,
+   "lng": 127.02444926000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "고려대로17길 46, 02843 서울특별시",
+   "base": 29
+  },
+  {
+   "address": "숭인동1길 8-1, Seoul",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "8-1 숭인동1길",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길 8-1, Seoul, kr",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길 8-1 kr Seoul",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길 - 8-1 - Seoul",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길8-1",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길 8-1",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동1길 8-1 john",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "숭인동11길 8-1",
+   "lat": 37.5766634,
+   "lng": 127.0214358,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "숭인동1길 8-1, Seoul",
+   "base": 30
+  },
+  {
+   "address": "필동로5길 7, 중구",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로5길, 7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "kr, 중구, 필동로5길 7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로5길 7 kr 중구",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로5길 중구",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로5길 7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "Deli 필동로5길 7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로55길 7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "필동로5길7",
+   "lat": 37.5562878,
+   "lng": 126.9694414,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "필동로5길 7, 중구",
+   "base": 31
+  },
+  {
+   "address": "Usadan-ro 39, 서울특별시",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Usadan-ro 39",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Usadan-ro 39 kr 서울특별시",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "kr Usadan-ro Usadan-ro 39 서울특별시",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Usadan-ro - 39",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Mary usadan-ro 39",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Usadan-ro 39 back entrance",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "usadan-ro 39",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "Usadan-ro39",
+   "lat": 37.53367,
+   "lng": 126.9955688,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Usadan-ro 39, 서울특별시",
+   "base": 32
+  },
+  {
+   "address": "청파동2가 100, Seoul",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동2가, 100",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동2가 100, Seoul, kr",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "kr 청파동2가 100 Seoul",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동2가 Seoul",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "Deli 청파동2가 100",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동동2가 100",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동2가 100 apt 4b",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "청파동2가100",
+   "lat": 37.54575429142857,
+   "lng": 126.96506113142857,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "청파동2가 100, Seoul",
+   "base": 33
+  },
+  {
+   "address": "삼선교로10길 23,, 02864 서울특별시",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길 23,",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길 23,, 02864",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길 23,, 서울특별시, kr",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길 23, 서울특별시 kr",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "02864 23, 서울특별시 삼선교로10길",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길23,",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "Deli 삼선교로10길 23,",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선교로10길 23, apt 4b",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "삼선로교10길 23,",
+   "lat": 37.587098,
+   "lng": 127.009472,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "삼선교로10길 23,, 02864 서울특별시",
+   "base": 34
+  },
+  {
+   "address": "경희궁길 36, 03175 서울특별시",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36, 03175",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36 서울특별시 kr",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36, 36, kr, 서울특별시",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 서울특별시 36",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "Deli 경희궁길 36",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길36",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "경희궁길 36 (green door)",
+   "lat": 37.5728998,
+   "lng": 126.969936,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "경희궁길 36, 03175 서울특별시",
+   "base": 35
+  },
+  {
+   "address": "남대문로7길 16, 중구",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "남대문로7길, 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "kr, 남대문로7길 16, 중구",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "kr, 중구, 남대문로7길 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "중구 남대문로7길 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "Deli 남대문로7길 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "남문대로7길 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "남대문로7길 16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "남대문로7길16",
+   "lat": 37.5641137,
+   "lng": 126.9811843,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "남대문로7길 16, 중구",
+   "base": 36
+  },
+  {
+   "address": "도화4길 27, 서울특별시",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27, kr, 서울특별시",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27, kr, 서울특별시 서울특별시",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27 back entrance",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길 27",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "도화4길27",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "Deli 도화4길 27",
+   "lat": 37.5407539,
+   "lng": 126.9513269,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "도화4길 27, 서울특별시",
+   "base": 37
+  },
+  {
+   "address": "소공로1길 10, 04633 서울특별시",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "10 소공로1길",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공로1길 10, 04633",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공로1길 10 서울특별시 kr",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "서울특별시, kr, 소공로1길 10",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공로1길 04633 10 서울특별시",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공공로1길 10",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공로1길10",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "Mary 소공로1길 10",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "소공로1길 10 john",
+   "lat": 37.55742004,
+   "lng": 126.98293120000001,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "소공로1길 10, 04633 서울특별시",
+   "base": 38
+  },
+  {
+   "address": "응암로30길 15, 은평구",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "응암로30길, 15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "kr 은평구 응암로30길 15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "은평구, kr, 응암로30길 15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "15, 응암로30길, 은평구",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "응암로30길15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "응로암30길 15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "Mary 응암로30길 15",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  },
+  {
+   "address": "응암로30길 15 (green door)",
+   "lat": 37.5961163,
+   "lng": 126.9220182,
+   "country": "KR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "응암로30길 15, 은평구",
+   "base": 39
+  }
+ ]
+}

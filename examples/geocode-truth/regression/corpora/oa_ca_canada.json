@@ -1,0 +1,3988 @@
+{
+ "source": "openaddresses",
+ "country": "CA",
+ "city": "Toronto",
+ "country_label": "Canada",
+ "depot": {
+  "lat": 43.6532,
+  "lon": -79.3832,
+  "city": "Toronto",
+  "country": "Canada"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 397,
+ "note": "OpenAddresses ca/on/city_of_toronto, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "42 Helena Ave, former Toronto",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "42 Helena Ave",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "Helena Ave 42, former Toronto",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "former Toronto, canada, Helena Ave 42",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "former Toronto, canada, Helena Ave 42",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "former Toronto, Helena Ave",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "42 Helnea Ave",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "42 Helena Ave john",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "42 HELENA AVE",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "42 helena ave",
+   "lat": 43.680819,
+   "lng": -79.4196419,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "42 Helena Ave, former Toronto",
+   "base": 0
+  },
+  {
+   "address": "65 Rogers Rd, York",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "Rogers Rd, 65",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "Rogers Rd 65, York",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "canada York Rogers Rd 65",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "York Rogers Rd 65 canada",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "65 York Rogers Rd",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "65 rogers rd",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "65 ROGERS RD",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "65 Rgoers Rd",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "65 Rogers Rd (green door)",
+   "lat": 43.686211,
+   "lng": -79.4421679,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "65 Rogers Rd, York",
+   "base": 1
+  },
+  {
+   "address": "122 Simpson Ave, former Toronto",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "122 Simpson Ave",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "Simpson Ave 122, former Toronto",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "former Toronto, canada, Simpson Ave 122",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "former Toronto, Simpson Ave 122, canada",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "former Toronto - 122 - Simpson Ave",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "122 Smipson Ave",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "122 Simpson Ave apt 4b",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "122 SIMPSON AVE",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "122 simpson ave",
+   "lat": 43.6677443,
+   "lng": -79.3468214,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "122 Simpson Ave, former Toronto",
+   "base": 2
+  },
+  {
+   "address": "257 Oriole Pkwy, former Toronto",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "Oriole Pkwy 257",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "Oriole Pkwy 257, former Toronto",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "Oriole Pkwy 257, former Toronto, canada",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "canada former Toronto Oriole Pkwy 257",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "257, former Toronto",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "257 Oroile Pkwy",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "257 oriole pkwy",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "257 ORIOLE PKWY",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "257 Oriole Pkwy apt 4b",
+   "lat": 43.6982352,
+   "lng": -79.4031378,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "257 Oriole Pkwy, former Toronto",
+   "base": 3
+  },
+  {
+   "address": "38 Ossington Ave, former Toronto",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "Ossington Ave 38",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "Ossington Ave 38, former Toronto",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "Ossington Ave 38 former Toronto canada",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "canada former Toronto Ossington Ossington Ave 38",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "Ossington Ave - 38",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "38 ossington ave",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "38 OSSINGTON AVE",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "38 Osington Ave",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "38 Ossington Ave john",
+   "lat": 43.6450563,
+   "lng": -79.419485,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "38 Ossington Ave, former Toronto",
+   "base": 4
+  },
+  {
+   "address": "325 Melita Ave, former Toronto",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "Melita Ave, 325",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "Melita Ave 325, former Toronto",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "former Toronto Melita Ave 325 canada",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "melita ave 325 former toronto canada",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "Melita Ave, former Toronto",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "325 melita ave",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "325 MELITA AVE",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "325 Melita Ave (green door)",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "325 Meilta Ave",
+   "lat": 43.6736997,
+   "lng": -79.425385,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "325 Melita Ave, former Toronto",
+   "base": 5
+  },
+  {
+   "address": "249 Forest Hill Rd, former Toronto",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "Forest Hill Rd 249",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "Forest Hill Rd 249, former Toronto",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "Forest Hill Rd 249, former Toronto, canada",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "canada, forest hill rd 249, former toronto",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "former Toronto Forest Hill Rd",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "249 Forest Hill Rd john",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "249 hill rd",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "249 Froest Hill Rd",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "249 FOREST HILL RD",
+   "lat": 43.699904,
+   "lng": -79.4120327,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "249 Forest Hill Rd, former Toronto",
+   "base": 6
+  },
+  {
+   "address": "270 North Beatrice St, former Toronto",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "North Beatrice St 270",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "North Beatrice St 270, former Toronto",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "former Toronto, North Beatrice St 270, canada",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "former Toronto, North Beatrice St 270, canada",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "former Toronto, 270",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "270 North Beatrice St apt 4b",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "270 beatrice st",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "270 North Beatrise St",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "270 NORTH BEATRICE ST",
+   "lat": 43.6579629,
+   "lng": -79.4185972,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "270 North Beatrice St, former Toronto",
+   "base": 7
+  },
+  {
+   "address": "230 Shaw St, former Toronto",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "Shaw St, 230",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "Shaw St 230, former Toronto",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "former Toronto, Shaw St 230, canada",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "canada Shaw St 230 former Toronto",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "Shaw St - 230",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "230 SHAW ST",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "230 shaw st",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "230 Shaw St john",
+   "lat": 43.6485915,
+   "lng": -79.418135,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "230 Shaw St, former Toronto",
+   "base": 8
+  },
+  {
+   "address": "346 Montrose Ave, former Toronto",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "Montrose Ave 346",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "Montrose Ave 346, former Toronto",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "former Toronto canada Montrose Ave 346",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "canada Montrose Montrose Ave 346 former Toronto",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "Montrose Ave former Toronto",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "346 MONTROSE AVE",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "346 Montrose Ave apt 4b",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "346 Mnotrose Ave",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "346 montrose ave",
+   "lat": 43.659095,
+   "lng": -79.419586,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "346 Montrose Ave, former Toronto",
+   "base": 9
+  },
+  {
+   "address": "175 Carlton St, former Toronto",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "Carlton St, 175",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "Carlton St 175, former Toronto",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "former Toronto, canada, Carlton St 175",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "canada, carlton st 175, former toronto",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "175, former Toronto",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "175 Cartlon St",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "175 Carlton St john",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "175 carlton st",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "175 CARLTON ST",
+   "lat": 43.6632897,
+   "lng": -79.3717625,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "175 Carlton St, former Toronto",
+   "base": 10
+  },
+  {
+   "address": "9 Minto St, former Toronto",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "Minto St, 9",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "Minto St 9, former Toronto",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "canada former Toronto Minto St 9",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "canada, former Toronto, Minto St 9",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "former Toronto - 9",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "9 minto st",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "9 MINTO ST",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "9 Minto St (green door)",
+   "lat": 43.6633252,
+   "lng": -79.3245537,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 Minto St, former Toronto",
+   "base": 11
+  },
+  {
+   "address": "737 Richmond St W, former Toronto",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "Richmond St W, 737",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "Richmond St W 737, former Toronto",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "canada Richmond St W 737 former Toronto",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "canada former Toronto Richmond St W 737",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "737 Richmond St W former Toronto",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "737 RICHMOND ST W",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "737 richmond st w",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "737 Richmond St W back entrance",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "737 Richmnod St W",
+   "lat": 43.6454217,
+   "lng": -79.4082671,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "737 Richmond St W, former Toronto",
+   "base": 12
+  },
+  {
+   "address": "216 Argyle St, former Toronto",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "Argyle St 216",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "Argyle St 216, former Toronto",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "Argyle St 216, canada, former Toronto",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "former Toronto, Argyle St 216, canada",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "216 - Argyle St - former Toronto",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "216 ARGYLE ST",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "216 Argile St",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "216 argyle st",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "216 Argyle St back entrance",
+   "lat": 43.6454591,
+   "lng": -79.4275373,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "216 Argyle St, former Toronto",
+   "base": 13
+  },
+  {
+   "address": "85 Dearbourne Ave, former Toronto",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "Dearbourne Ave, 85",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "Dearbourne Ave 85, former Toronto",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "former Toronto canada Dearbourne Ave 85",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "Dearbourne Ave 85 former Toronto canada",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "85, former Toronto",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "85 Dearvourne Ave",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "85 Dearbourne Ave back entrance",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "85 DEARBOURNE AVE",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "85 dearbourne ave",
+   "lat": 43.6759622,
+   "lng": -79.3542644,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "85 Dearbourne Ave, former Toronto",
+   "base": 14
+  },
+  {
+   "address": "113 Maplewood Ave, York",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "Maplewood Ave, 113",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "Maplewood Ave 113, York",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "Maplewood Ave 113, canada, York",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "York, canada, Maplewood Ave 113",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "Maplewood Ave - 113",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "113 Maplewood Ave john",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "113 MAPLEWOOD AVE",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "113 maplewood ave",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "113 Maplweood Ave",
+   "lat": 43.6856878,
+   "lng": -79.4255447,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "113 Maplewood Ave, York",
+   "base": 15
+  },
+  {
+   "address": "66A Wellesley St E, former Toronto",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "Wellesley St E 66A",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "Wellesley St E 66A, former Toronto",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "canada Wellesley St E 66A former Toronto",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "canada former former Toronto Wellesley St E 66A",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "Wellesley St E former Toronto 66A",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "66a wellesley st e",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "66A Wellesley St E back entrance",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "66A WELLESLEY ST E",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "66A Wellelsey St E",
+   "lat": 43.6657206,
+   "lng": -79.3813717,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "66A Wellesley St E, former Toronto",
+   "base": 16
+  },
+  {
+   "address": "22 Rolyat St, former Toronto",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "Rolyat St, 22",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "Rolyat St 22, former Toronto",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "former Toronto canada Rolyat St 22",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "Rolyat St 22 former Toronto canada",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "22 former Toronto",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "22 ROLYAT ST",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "22 Rolyat St (green door)",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "22 rolyat st",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "22 Rolayt St",
+   "lat": 43.6487706,
+   "lng": -79.4218936,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "22 Rolyat St, former Toronto",
+   "base": 17
+  },
+  {
+   "address": "103 Baldwin St, former Toronto",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "Baldwin St 103",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "Baldwin St 103, former Toronto",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "former Toronto canada Baldwin St 103",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "former Toronto, canada, Baldwin St St 103",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "former Toronto, Baldwin St",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "103 Bladwin St",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "103 baldwin st",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "103 Baldwin St apt 4b",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "103 BALDWIN ST",
+   "lat": 43.6551859,
+   "lng": -79.39661,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "103 Baldwin St, former Toronto",
+   "base": 18
+  },
+  {
+   "address": "317 Grace St, former Toronto",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "Grace St, 317",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "Grace St 317, former Toronto",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "former Toronto Grace St 317 canada",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "Grace St 317, canada, former Toronto",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "Grace St - 317 - former Toronto",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "317 grace st",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "317 GRACE ST",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "317 Grase St",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "317 Grace St (green door)",
+   "lat": 43.6598978,
+   "lng": -79.4171272,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "317 Grace St, former Toronto",
+   "base": 19
+  },
+  {
+   "address": "162 Wychwood Ave, York",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "Wychwood Ave, 162",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "Wychwood Ave 162, York",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "canada, Wychwood Ave 162, York",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "Wychwood Ave 162 York canada",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "York, Wychwood Ave, 162",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "162 Wichwood Ave",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "162 WYCHWOOD AVE",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "162 wychwood ave",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "162 Wychwood Ave apt 4b",
+   "lat": 43.6828923,
+   "lng": -79.4238698,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "162 Wychwood Ave, York",
+   "base": 20
+  },
+  {
+   "address": "77 Shanly St, former Toronto",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "Shanly St 77",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "Shanly St 77, former Toronto",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "Shanly St 77, former Toronto, canada",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "former Toronto, Shanly St 77, canada",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "former Toronto, 77, Shanly St",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "77 shanly st",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "77 Sahnly St",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "77 SHANLY ST",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "77 Shanly St apt 4b",
+   "lat": 43.6635309,
+   "lng": -79.433224,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "77 Shanly St, former Toronto",
+   "base": 21
+  },
+  {
+   "address": "274 Rhodes Ave, former Toronto",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "Rhodes Ave, 274",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "Rhodes Ave 274, former Toronto",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "Rhodes Ave 274, canada, former Toronto",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "former Toronto, Rhodes Rhodes Ave 274, canada",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "former Toronto - Rhodes Ave - 274",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "274 Rhdoes Ave",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "274 Rhodes Ave (green door)",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "274 rhodes ave",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "274 RHODES AVE",
+   "lat": 43.6730243,
+   "lng": -79.3207623,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "274 Rhodes Ave, former Toronto",
+   "base": 22
+  },
+  {
+   "address": "299 Euclid Ave, former Toronto",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "Euclid Ave, 299",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "Euclid Ave 299, former Toronto",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "former Toronto canada Euclid Ave 299",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "Euclid Ave 299, canada, canada, former Toronto",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "former Toronto - 299 - Euclid Ave",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "299 Euclid Ave john",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "299 euclid ave",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "299 Eucild Ave",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "299 EUCLID AVE",
+   "lat": 43.6536211,
+   "lng": -79.4102854,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "299 Euclid Ave, former Toronto",
+   "base": 23
+  },
+  {
+   "address": "683 Adelaide St W, former Toronto",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "Adelaide St W 683",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "Adelaide St W 683, former Toronto",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "canada former Toronto Adelaide St W 683",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "canada, Adelaide St W 683, former Toronto",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "former Toronto - 683 - Adelaide St W",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "683 Adelaide St W back entrance",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "683 Adeliade St W",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "683 ADELAIDE ST W",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "683 adelaide st w",
+   "lat": 43.6443998,
+   "lng": -79.4063257,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "683 Adelaide St W, former Toronto",
+   "base": 24
+  },
+  {
+   "address": "118 Morse St, former Toronto",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "118 Morse St",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "Morse St 118, former Toronto",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "canada Morse St 118 former Toronto",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "canada, morse st 118, former toronto",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "former Toronto 118 Morse St",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "118 Morrse St",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "118 MORSE ST",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "118 morse st",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "118 Morse St john",
+   "lat": 43.6586216,
+   "lng": -79.34069,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "118 Morse St, former Toronto",
+   "base": 25
+  },
+  {
+   "address": "1083 Queen St W, former Toronto",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "Queen St W 1083",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "Queen St W 1083, former Toronto",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "canada, Queen St W 1083, former Toronto",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "Queen St W 1083 former Toronto canada",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "former Toronto, Queen St W, 1083",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "1083 QUEEN ST W",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "1083 Queen St W apt 4b",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "1083 queen st w",
+   "lat": 43.6433098,
+   "lng": -79.4219012,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1083 Queen St W, former Toronto",
+   "base": 26
+  },
+  {
+   "address": "1202 Ossington Ave, former Toronto",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 Ossington Ave",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "Ossington Ave 1202, former Toronto",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "former Toronto, Ossington Ave 1202, canada",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "ossington ave 1202 1202 former toronto canada",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 - former Toronto - Ossington Ave",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 ossington ave",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 OSSINGTON AVE",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 Ossington Ave apt 4b",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "1202 Ossignton Ave",
+   "lat": 43.6737732,
+   "lng": -79.4309175,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1202 Ossington Ave, former Toronto",
+   "base": 27
+  },
+  {
+   "address": "40 High Park Blvd, former Toronto",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "40 High Park Blvd",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "High Park Blvd 40, former Toronto",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "former Toronto canada High Park Blvd 40",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "High Park Blvd Blvd 40, canada, former Toronto",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "former Toronto, High Park Blvd",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "40 park blvd",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "40 high park blvd",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "40 High Park Blvd john",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "40 HIGH PARK BLVD",
+   "lat": 43.6455748,
+   "lng": -79.4541119,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "40 High Park Blvd, former Toronto",
+   "base": 28
+  },
+  {
+   "address": "65 Brooklyn Ave, former Toronto",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "Brooklyn Ave 65",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "Brooklyn Ave 65, former Toronto",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "Brooklyn Ave 65, former Toronto, canada",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "former Toronto, Brooklyn Ave 65, canada",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "former Toronto 65 Brooklyn Ave",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "65 Brooklyn Ave john",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "65 BROOKLYN AVE",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "65 Brooklin Ave",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "65 brooklyn ave",
+   "lat": 43.6642807,
+   "lng": -79.3365736,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "65 Brooklyn Ave, former Toronto",
+   "base": 29
+  },
+  {
+   "address": "710 Adelaide St W, former Toronto",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "Adelaide St W 710",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "Adelaide St W 710, former Toronto",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "Adelaide St W 710 former Toronto canada",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "Adelaide St W 710, canada, former Toronto",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "former Toronto 710 Adelaide St W",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "710 Adelaide St W back entrance",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "710 adelaide st w",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "710 ADELAIDE ST W",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "710 Adleaide St W",
+   "lat": 43.6446126,
+   "lng": -79.4072793,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "710 Adelaide St W, former Toronto",
+   "base": 30
+  },
+  {
+   "address": "38 Longboat Ave, former Toronto",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "Longboat Ave, 38",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "Longboat Ave 38, former Toronto",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "canada former Toronto Longboat Ave 38",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "Longboat Ave 38, former former Toronto, canada",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "former Toronto 38",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "38 Lnogboat Ave",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "38 longboat ave",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "38 LONGBOAT AVE",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "38 Longboat Ave apt 4b",
+   "lat": 43.6483469,
+   "lng": -79.3643606,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "38 Longboat Ave, former Toronto",
+   "base": 31
+  },
+  {
+   "address": "399 Bathurst St, former Toronto",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "Bathurst St, 399",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "Bathurst St 399, former Toronto",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "Bathurst St 399 former Toronto canada",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "former Toronto, canada, Bathurst St 399",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "399 former Toronto",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "399 BATHURST ST",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "399 Bathurst St john",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "399 Btahurst St",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "399 bathurst st",
+   "lat": 43.6530948,
+   "lng": -79.4056885,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "399 Bathurst St, former Toronto",
+   "base": 32
+  },
+  {
+   "address": "1696 Dundas St E, former Toronto",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "Dundas St E, 1696",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "Dundas St E 1696, former Toronto",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "former Toronto canada Dundas St E 1696",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "former toronto, dundas st e 1696, canada",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "Dundas St E, former Toronto, 1696",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "1696 dundas st e",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "1696 Dnudas St E",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "1696 DUNDAS ST E",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "1696 Dundas St E apt 4b",
+   "lat": 43.6678917,
+   "lng": -79.3259245,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1696 Dundas St E, former Toronto",
+   "base": 33
+  },
+  {
+   "address": "30 Havelock St, former Toronto",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "Havelock St, 30",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "Havelock St 30, former Toronto",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "former Toronto, canada, Havelock St 30",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "Havelock St 30 30 canada former Toronto",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "Havelock St - former Toronto - 30",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "30 Havelock St (green door)",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "30 HAVELOCK ST",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "30 Havelok St",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "30 havelock st",
+   "lat": 43.6540683,
+   "lng": -79.4301194,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "30 Havelock St, former Toronto",
+   "base": 34
+  },
+  {
+   "address": "17 Douglas Cres, East York",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "Douglas Cres 17",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "Douglas Cres 17, East York",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "canada, Douglas Cres 17, East York",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "canada Douglas Cres 17 East York",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "Douglas Cres, East York",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "17 Douglas Cres back entrance",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "17 Dogulas Cres",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "17 douglas cres",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "17 DOUGLAS CRES",
+   "lat": 43.6902317,
+   "lng": -79.3667786,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "17 Douglas Cres, East York",
+   "base": 35
+  },
+  {
+   "address": "989 Bloor St W, former Toronto",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "Bloor St W, 989",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "Bloor St W 989, former Toronto",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "canada, former Toronto, Bloor St W 989",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "canada, former Toronto, Bloor St W 989",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "Bloor St W - former Toronto",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "989 Blloor St W",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "989 BLOOR ST W",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "989 bloor st w",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "989 Bloor St W apt 4b",
+   "lat": 43.6609043,
+   "lng": -79.4297226,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "989 Bloor St W, former Toronto",
+   "base": 36
+  },
+  {
+   "address": "235 Benson Ave, former Toronto",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "235 Benson Ave",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "Benson Ave 235, former Toronto",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "canada, Benson Ave 235, former Toronto",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "Benson Ave 235 former Toronto canada",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "former Toronto Benson Ave 235",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "235 Benosn Ave",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "235 Benson Ave (green door)",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "235 BENSON AVE",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "235 benson ave",
+   "lat": 43.6788402,
+   "lng": -79.4300784,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "235 Benson Ave, former Toronto",
+   "base": 37
+  },
+  {
+   "address": "74 St Nicholas St, former Toronto",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "74 St Nicholas St",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "St Nicholas St 74, former Toronto",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "canada St Nicholas St 74 former Toronto",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "former Toronto, St Nicholas St 74, canada",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "St Nicholas St former Toronto",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "74 St Nihcolas St",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "74 st nicholas st",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "74 St Nic St",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "74 St Nicholas St back entrance",
+   "lat": 43.6669569,
+   "lng": -79.3866115,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "74 St Nicholas St, former Toronto",
+   "base": 38
+  },
+  {
+   "address": "237 Brock Ave, former Toronto",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "Brock Ave 237",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "Brock Ave 237, former Toronto",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "former Toronto, canada, Brock Ave 237",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "Brock Ave 237, canada, former Toronto",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "237, former Toronto, Brock Ave",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "237 brock ave",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "237 Brrock Ave",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "237 BROCK AVE",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  },
+  {
+   "address": "237 Brock Ave apt 4b",
+   "lat": 43.6486052,
+   "lng": -79.4348363,
+   "country": "CA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "237 Brock Ave, former Toronto",
+   "base": 39
+  }
+ ]
+}

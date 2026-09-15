@@ -1,0 +1,3708 @@
+{
+ "source": "osm-addr",
+ "country": "CN",
+ "city": "Shanghai",
+ "country_label": "China",
+ "depot": {
+  "lat": 31.2304,
+  "lon": 121.4737,
+  "city": "Shanghai",
+  "country": "China"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 369,
+ "note": "Nodos addr:* del indice n31.30_s31.10_e121.60_w121.40-shanghai.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "延安西 961, Shanghai",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "961 延安西",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "延安西 961, cn, Shanghai",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "Shanghai, cn, 延安西 961",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "Shanghai, 延安西",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "Mary 延安西 961",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "延安西 961 john",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "延安西961",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "延安西 961",
+   "lat": 31.2154317,
+   "lng": 121.4266131,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "延安西 961, Shanghai",
+   "base": 0
+  },
+  {
+   "address": "自忠路 440号1层a室, 黄埔区",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "自忠路, 440号1层a室",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "cn 黄埔区 自忠路 440号1层a室",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "黄埔区, 自忠路 440号1层a室, cn",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "440号1层a室 - 黄埔区 - 自忠路",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "自忠路 440号1层a室 (green door)",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "Deli 自忠路 440号1层a室",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "自忠路 440号1层A室",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "自忠路 440号1层a室",
+   "lat": 31.2198638,
+   "lng": 121.4676773,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "自忠路 440号1层a室, 黄埔区",
+   "base": 1
+  },
+  {
+   "address": "枫林路 97号, Shanghai",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "枫林路, 97号",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "cn, Shanghai, 枫林路 97号",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "cn, 枫林路 97号, Shanghai Shanghai",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "97号 - 枫林路 - Shanghai",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "枫林路 97号",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "枫林路97号",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "枫林路 97号 apt 4b",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "Mary 枫林路 97号",
+   "lat": 31.2004416,
+   "lng": 121.449978,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "枫林路 97号, Shanghai",
+   "base": 2
+  },
+  {
+   "address": "宁波路 586, 上海",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "586 宁波路",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "宁波路 586, 上海, cn",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "cn 上海 宁波路 586",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "586, 上海",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "宁波路586",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "宁波路 586",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "Deli 宁波路 586",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "宁波路 586 john",
+   "lat": 31.2387627,
+   "lng": 121.4719834,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "宁波路 586, 上海",
+   "base": 3
+  },
+  {
+   "address": "幸福路 298, Shanghai",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "幸福路 298",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "Shanghai 幸福路 298 cn",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "cn, 幸福路 298, Shanghai",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "298, 幸福路",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "幸福路298",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "Mary 幸福路 298",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "幸福路 298 john",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "幸福路 298",
+   "lat": 31.209334,
+   "lng": 121.4268851,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "幸福路 298, Shanghai",
+   "base": 4
+  },
+  {
+   "address": "乌鲁木齐南路 121, 上海",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "121 乌鲁木齐南路",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "cn, 上海, 乌鲁木齐南路 121",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "cn 乌鲁木齐南路 121 上海",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "上海 121",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "乌鲁木齐南路 121",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "乌鲁木齐南路 121 john",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "Mary 乌鲁木齐南路 121",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "乌鲁木齐南路121",
+   "lat": 31.2068446,
+   "lng": 121.4443789,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "乌鲁木齐南路 121, 上海",
+   "base": 5
+  },
+  {
+   "address": "华山路 249, 上海市",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "249 华山路",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "华山路 249 上海市 cn",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "cn, 华山路 249, 上海市",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "华山路 - 上海市",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "华山路 249",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "华山路 249 back entrance",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "华山路249",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "Deli 华山路 249",
+   "lat": 31.2216432,
+   "lng": 121.4415208,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "华山路 249, 上海市",
+   "base": 6
+  },
+  {
+   "address": "四川北路 1350号, 上海",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "四川北路 1350号",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "cn 四川北路 1350号 上海",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "四川北路 1350号, 上海, cn",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "1350号 - 四川北路",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "四川北路 1350号",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "四川北路 1350号 john",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "Deli 四川北路 1350号",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "四川北路1350号",
+   "lat": 31.254913855555557,
+   "lng": 121.48013861111112,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "四川北路 1350号, 上海",
+   "base": 7
+  },
+  {
+   "address": "天津路 258, Shanghai",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路 258",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路 258 cn Shanghai",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路 258 cn Shanghai",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "Shanghai - 258",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路258",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "Deli 天津路 258",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路 258",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天津路 258 back entrance",
+   "lat": 31.2396849,
+   "lng": 121.4771258,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "天津路 258, Shanghai",
+   "base": 8
+  },
+  {
+   "address": "天目中路 428号30D, Shanghai",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30D",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "cn Shanghai 天目中路 428号30D",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30D Shanghai cn",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30D",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30d",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30D",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "Mary 天目中路 428号30D",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "天目中路 428号30D (green door)",
+   "lat": 31.245649980000003,
+   "lng": 121.46267192,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "天目中路 428号30D, Shanghai",
+   "base": 9
+  },
+  {
+   "address": "中山东二路 600, Shanghai",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二路, 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "cn Shanghai 中山东二路 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二路 600 cn shanghai",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二路 - Shanghai - 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二二路 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "Mary 中山东二路 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二路 600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "中山东二路600",
+   "lat": 31.2275229,
+   "lng": 121.4938224,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中山东二路 600, Shanghai",
+   "base": 10
+  },
+  {
+   "address": "蒲西路 158, Shanghai",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "蒲西路, 158",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "cn, 蒲西路 158, Shanghai",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "cn, Shanghai, 蒲西路 158",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "158 - 蒲西路 - Shanghai",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "蒲西路 158",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "Mary 蒲西路 158",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "蒲西路 158 (green door)",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "蒲西路158",
+   "lat": 31.19299280625,
+   "lng": 121.43153523125,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "蒲西路 158, Shanghai",
+   "base": 11
+  },
+  {
+   "address": "会文路 50, Shanghai",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "会文路 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "Shanghai cn 会文路 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "cn Shanghai 会文路 50 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "Shanghai - 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "Mary 会文路 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "会文路 50 (green door)",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "会文路50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "会文路 50",
+   "lat": 31.2542767,
+   "lng": 121.4680283,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "会文路 50, Shanghai",
+   "base": 12
+  },
+  {
+   "address": "霍山路 520, 200082 上海",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "霍山路 520",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "霍山路 520 200082",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "cn, 霍山路 520, 上海",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "上海, 霍山路 520, cn",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "520, 霍山路, 200082, 上海",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "霍山路520",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "Deli 霍山路 520",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "霍山路 520",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "霍山路 520 john",
+   "lat": 31.25952365,
+   "lng": 121.51283189444445,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "霍山路 520, 200082 上海",
+   "base": 13
+  },
+  {
+   "address": "常德路 1168, Shanghai",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "1168 常德路",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "常德路 1168, cn, Shanghai",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "Shanghai cn 常德路 1168",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "1168, 常德路, Shanghai",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "常德路 1168 john",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "常德路1168",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "常德路 1168",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "Mary 常德路 1168",
+   "lat": 31.2413462,
+   "lng": 121.4346047,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "常德路 1168, Shanghai",
+   "base": 14
+  },
+  {
+   "address": "天虹路 38, Shanghai",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "天虹路 38",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "cn 天虹路 38 Shanghai",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "cn, Shanghai, 天虹路 38",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "天虹路 - Shanghai",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "Mary 天虹路 38",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "天虹路 38 apt 4b",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "天虹路 38",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "天虹路38",
+   "lat": 31.262746,
+   "lng": 121.4974688,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "天虹路 38, Shanghai",
+   "base": 15
+  },
+  {
+   "address": "沪太路 129, 200070 Shanghai",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路 129",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路 129, 200070",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "Shanghai, 沪太路 129, cn",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路 129 cn Shanghai",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "129 200070 Shanghai 沪太路",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "Deli 沪太路 129",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路129",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路 129 apt 4b",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "沪太路 129",
+   "lat": 31.2555756,
+   "lng": 121.4520287,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "沪太路 129, 200070 Shanghai",
+   "base": 16
+  },
+  {
+   "address": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "世紀大道, 8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "世紀大道 8号上海IF商场LG1-19, 200120",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "陆家嘴街道, 世紀大道 8号上海IF商场LG1-19, cn",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "陆家嘴街道 cn 世紀大道 8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "陆家嘴街道 - 世紀大道 - 8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "世紀大道 8号上海if商场lg1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "世紀大道8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "世紀大道 8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "Mary 世紀大道 8号上海IF商场LG1-19",
+   "lat": 31.2391418,
+   "lng": 121.4977763,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "世紀大道 8号上海IF商场LG1-19, 200120 陆家嘴街道",
+   "base": 17
+  },
+  {
+   "address": "蒙自西路 2, Shanghai",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "蒙自西路 2",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "cn 蒙自西路 2 Shanghai",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "cn Shanghai 蒙自西路 2",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "2 - 蒙自西路 - Shanghai",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "蒙自西路2",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "蒙自西路 2 back entrance",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "Mary 蒙自西路 2",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "蒙自西路 2",
+   "lat": 31.2094594,
+   "lng": 121.4717912,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "蒙自西路 2, Shanghai",
+   "base": 18
+  },
+  {
+   "address": "滨江大道 2727, Shanghai",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道 2727",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道 2727 Shanghai cn",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道 2727, Shanghai, cn",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "2727, Shanghai",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道 2727",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "Deli 滨江大道 2727",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道2727",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "滨江大道 2727 apt 4b",
+   "lat": 31.241638094736842,
+   "lng": 121.49232093947369,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "滨江大道 2727, Shanghai",
+   "base": 19
+  },
+  {
+   "address": "武胜路 1, Shanghai",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "1 武胜路",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "Shanghai, cn, 武胜路 1",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "武胜路 1, Shanghai, cn",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "1 武胜路",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "武胜路1",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "武胜路 1",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "武胜路 1 (green door)",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "Mary 武胜路 1",
+   "lat": 31.231325523076922,
+   "lng": 121.47211774615386,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "武胜路 1, Shanghai",
+   "base": 20
+  },
+  {
+   "address": "yongfu lu 47, Shanghai",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "47 yongfu lu",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "Shanghai cn yongfu lu 47",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "cn yongfu lu 47 Shanghai",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "Shanghai, 47",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "yongfu lu 47 john",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "ynogfu lu 47",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "yongfu lu47",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "YONGFU LU 47",
+   "lat": 31.2132893,
+   "lng": 121.4394507,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "yongfu lu 47, Shanghai",
+   "base": 21
+  },
+  {
+   "address": "番禺路 190, Shanghai",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "190 番禺路",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "Shanghai, cn, 番禺路 190",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "cn, 番禺路 190, Shanghai Shanghai",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "Shanghai 190",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "Mary 番禺路 190",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "番禺路190",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "番禺路 190",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "番禺路 190 (green door)",
+   "lat": 31.2090335,
+   "lng": 121.4247469,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "番禺路 190, Shanghai",
+   "base": 22
+  },
+  {
+   "address": "陕西南路 141号5楼, Shanghai",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "陕西南路 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "Shanghai, cn, 陕西南路 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "Shanghai cn 陕西南路 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "Shanghai - 陕西南路 - 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "Mary 陕西南路 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "陕西南路 141号5楼 john",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "陕西南路 141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "陕西南路141号5楼",
+   "lat": 31.2177157,
+   "lng": 121.4551238,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "陕西南路 141号5楼, Shanghai",
+   "base": 23
+  },
+  {
+   "address": "株洲路 258弄, 广中路街道",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "株洲路, 258弄",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "cn, 广中路街道, 株洲路 258弄",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "广中路街道, 株洲路 258弄, cn",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "广中路街道 - 株洲路",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "Mary 株洲路 258弄",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "株洲路 258弄 back entrance",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "株洲路258弄",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "株洲路 258弄",
+   "lat": 31.278469180000002,
+   "lng": 121.46005968,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "株洲路 258弄, 广中路街道",
+   "base": 24
+  },
+  {
+   "address": "丽园路 333弄, 200020 Shanghai",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "333弄 丽园路",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "丽园路 333弄 200020",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "Shanghai cn 丽园路 333弄",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "shanghai cn 丽园路 333弄",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "丽园路, 333弄, Shanghai, 200020",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "丽园路333弄",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "丽园路 333弄",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "丽园路 333弄 apt 4b",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "Deli 丽园路 333弄",
+   "lat": 31.2110573,
+   "lng": 121.4796919,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "丽园路 333弄, 200020 Shanghai",
+   "base": 25
+  },
+  {
+   "address": "吴兴 215, Shanghai",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "吴兴 215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "Shanghai 吴兴 215 cn",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "Shanghai, cn, 吴兴 215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "吴兴, 215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "吴兴 215 (green door)",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "吴兴215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "Mary 吴兴 215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "吴兴 215",
+   "lat": 31.2034556,
+   "lng": 121.4402215,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "吴兴 215, Shanghai",
+   "base": 26
+  },
+  {
+   "address": "Yichang Road 179, Shanghai",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Yichang Road 179",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Shanghai Yichang Road 179 cn",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Shanghai, Yichang Road 179, cn",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Yichang Road - Shanghai",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Yihcang Road 179",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Deli yichang road 179",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "YICHANG ROAD 179",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "Yichang Road179",
+   "lat": 31.24617765714286,
+   "lng": 121.42967475714286,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Yichang Road 179, Shanghai",
+   "base": 27
+  },
+  {
+   "address": "武宁南路 448号, Shanghai",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "武宁南路 448号",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "cn 武宁南路 448号 Shanghai",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "武宁南路 448号, shanghai, cn cn",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "448号, Shanghai, 武宁南路",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "Deli 武宁南路 448号",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "武宁南路448号",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "武宁南路 448号 apt 4b",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "武宁南路 448号",
+   "lat": 31.2331354,
+   "lng": 121.4273639,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "武宁南路 448号, Shanghai",
+   "base": 28
+  },
+  {
+   "address": "晋元路 327号, Shanghai",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "327号 晋元路",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "Shanghai 晋元路 327号 cn",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "Shanghai cn 晋元路 327号",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "Shanghai 晋元路",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "晋元路 327号",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "Mary 晋元路 327号",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "晋元路327号",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "晋元路 327号 apt 4b",
+   "lat": 31.24697552,
+   "lng": 121.46505438,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "晋元路 327号, Shanghai",
+   "base": 29
+  },
+  {
+   "address": "中州路 102, Shanghai",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "102 中州路",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "Shanghai, 中州路 102, cn",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "中州路 102, cn, Shanghai",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "Shanghai - 中州路",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "中州路 102 john",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "Mary 中州路 102",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "中州路 102",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "中州路102",
+   "lat": 31.25478664,
+   "lng": 121.47694052,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中州路 102, Shanghai",
+   "base": 30
+  },
+  {
+   "address": "方浜中路 249, Shanghai",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "方浜中路 249",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "cn 方浜中路 249 Shanghai",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "cn 方浜中路 249 Shanghai",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "Shanghai - 249",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "Deli 方浜中路 249",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "方浜中路 249",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "方浜中路 249 john",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "方浜中路249",
+   "lat": 31.227866748484846,
+   "lng": 121.48812986666667,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "方浜中路 249, Shanghai",
+   "base": 31
+  },
+  {
+   "address": "安西路 67, 200052 上海市",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路, 67",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路 67 200052",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "cn, 安西路 67, 上海市",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路 67, 上海市, cn cn",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "上海市 200052 67",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "Mary 安西路 67",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路 67 (green door)",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路 67",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "安西路67",
+   "lat": 31.20987114,
+   "lng": 121.42089877999999,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "安西路 67, 200052 上海市",
+   "base": 32
+  },
+  {
+   "address": "小木桥路 360弄, 200032 上海市",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 360弄",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 360弄, 200032",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "上海市 cn 小木桥路 360弄",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 360弄 上海市 cn cn",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 上海市 360弄 200032",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路360弄",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 360弄",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "小木桥路 360弄 back entrance",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "Mary 小木桥路 360弄",
+   "lat": 31.1970751,
+   "lng": 121.45383769999998,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "小木桥路 360弄, 200032 上海市",
+   "base": 33
+  },
+  {
+   "address": "E-Shan Rd 26, Pudong",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "26 E-Shan Rd",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "Pudong E-Shan Rd 26 cn",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "pudong cn e-shan rd 26",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "26 - E-Shan Rd",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "E-Shan Rd 26 john",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "E-SHAN RD 26",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "Deli e-shan rd 26",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "ES-han Rd 26",
+   "lat": 31.216089083333333,
+   "lng": 121.52898015,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "E-Shan Rd 26, Pudong",
+   "base": 34
+  },
+  {
+   "address": "Yan'an Road 1155, 200050 Shanghai",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "1155 Yan'an Road",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "Yan'an Road 1155 200050",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "cn Yan'an Road 1155 Shanghai",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "Yan'an Road 1155, cn, Shanghai",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "200050, Shanghai, 1155",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "YAN'AN ROAD 1155",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "Yna'an Road 1155",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "Yan'an Road1155",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "yan'an road 1155",
+   "lat": 31.213392436363634,
+   "lng": 121.42421218181818,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Yan'an Road 1155, 200050 Shanghai",
+   "base": 35
+  },
+  {
+   "address": "泰安路115弄 9, 上海市",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "泰安路115弄 9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "cn, 上海市, 泰安路115弄 9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "cn 泰安路115弄 9 上海市",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "上海市, 泰安路115弄, 9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "泰安路115弄9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "泰安路115弄 9 back entrance",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "Mary 泰安路115弄 9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "泰安路115弄 9",
+   "lat": 31.2066962,
+   "lng": 121.4312924,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "泰安路115弄 9, 上海市",
+   "base": 36
+  },
+  {
+   "address": "中山北路2451弄 200, Shanghai",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄, 200",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "Shanghai, cn, 中山北路2451弄 200",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄 200 Shanghai cn",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄 Shanghai",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄 200 john",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2541弄 200",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄200",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "中山北路2451弄 200",
+   "lat": 31.2475063,
+   "lng": 121.4185179,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "中山北路2451弄 200, Shanghai",
+   "base": 37
+  },
+  {
+   "address": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "定西路 710 弄 83, 85, 87",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "定西路 710 弄 83, 85, 87, 200052",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "cn 上海市 定西路 710 弄 83, 85, 87",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "cn, 定西路 710 弄 83, 85, 87, 上海市",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "200052, 定西路 710 弄, 上海市",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "定西路 710 弄 83, 85, 87 john",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "定西路 710 弄83, 85, 87",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "定西路 710 弄 83, 85, 87",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "Deli 定西路 710 弄 83, 85, 87",
+   "lat": 31.208913919999997,
+   "lng": 121.4214195,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "定西路 710 弄 83, 85, 87, 200052 上海市",
+   "base": 38
+  },
+  {
+   "address": "Yu Yuan Road 1, 200040 Shanghai",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "1 Yu Yuan Road",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Yu Yuan Road 1, 200040",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Shanghai cn Yu Yuan Road 1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Shanghai cn Yu Yuan Road 1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Shanghai - Yu Yuan Road - 200040 - 1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Yu Yuan Road 1 back entrance",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "YU YUAN ROAD 1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "Yu Yuan Road1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  },
+  {
+   "address": "yu yuan road 1",
+   "lat": 31.226525875,
+   "lng": 121.44258295,
+   "country": "CN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Yu Yuan Road 1, 200040 Shanghai",
+   "base": 39
+  }
+ ]
+}

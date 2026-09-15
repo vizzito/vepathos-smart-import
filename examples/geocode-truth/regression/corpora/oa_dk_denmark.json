@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "DK",
+ "city": "Copenhagen",
+ "country_label": "Denmark",
+ "depot": {
+  "lat": 55.6761,
+  "lon": 12.5683,
+  "city": "Copenhagen",
+  "country": "Denmark"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses dk/countrywide, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Østerbrogade 167, 2100 København Ø",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "167 Østerbrogade",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "Østerbrogade 167, 2100",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "København Ø, denmark, Østerbrogade 167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "København Ø, denmark, Østerbrogade 167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "2100 - Apt 2 tv - 167 - København Ø",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "Østerbrogade167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "Østerrbogade 167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "ØSTERBROGADE 167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "østerbrogade 167",
+   "lat": 55.7154943,
+   "lng": 12.5772126,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Østerbrogade 167, 2100 København Ø",
+   "base": 0
+  },
+  {
+   "address": "Tagensvej 85D, 2200 København N",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Tagensvej, 85D",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Tagensvej 85D 2200",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "denmark, Tagensvej 85D, København N",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "denmark, København N, Tagensvej 85D 85D",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Tagensvej 2200 85D København N",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "TAGENSVEJ 85D",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Deli tagensvej 85D",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "tagensvej 85d",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Tagesnvej 85D",
+   "lat": 55.7022654,
+   "lng": 12.5481342,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tagensvej 85D, 2200 København N",
+   "base": 1
+  },
+  {
+   "address": "Godthåbsvej 158, 2000 Frederiksberg",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Godthåbsvej, 158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Godthåbsvej 158 2000",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "denmark Godthåbsvej 158 Frederiksberg",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "denmark, Frederiksberg, Godthåbsvej 158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Apt 3 4 - 2000 - Godthåbsvej - 158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Godthåbsvej 158 back entrance",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "godthåbsvej 158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Godthåbsvej158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Deli godthåbsvej 158",
+   "lat": 55.6908964,
+   "lng": 12.5183759,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Godthåbsvej 158, 2000 Frederiksberg",
+   "base": 2
+  },
+  {
+   "address": "Brorsonsgade 5, 1624 København V",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "5 Brorsonsgade",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "Brorsonsgade 5, depto 4",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "denmark, Brorsonsgade 5, København V",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "denmark, København V, Brorsonsgade 5",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "5 - 1624 - København V - Brorsonsgade",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "BRORSONSGADE 5",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "brorsonsgade 5",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "Brorsonsgade5",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "Deli brorsonsgade 5",
+   "lat": 55.6721169,
+   "lng": 12.5458203,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Brorsonsgade 5, 1624 København V",
+   "base": 3
+  },
+  {
+   "address": "Erik Ejegods Gade 2, 1731 København V",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "2 Erik Ejegods Gade",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "Erik Ejegods Gade 2 1731",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "denmark Erik Ejegods Gade 2 København V",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "denmark, København V, Erik Ejegods Gade 2",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "1731, København V, 2, Erik Ejegods Gade, Apt 3 tv",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "ERIK EJEGODS GADE 2",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "Erik Ejegods Gade 2 john",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "gade 2",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "Mary erik ejegods gade 2",
+   "lat": 55.6641818,
+   "lng": 12.5465108,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Erik Ejegods Gade 2, 1731 København V",
+   "base": 4
+  },
+  {
+   "address": "Gammel Køge Landevej 137B, 2500 Valby",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landevej 137B",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landevej 137B dto 2 406",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landevej 137B denmark Valby",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landevej 137B denmark Valby",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "137B Apt 2 406 Valby 2500 Gammel Køge Landevej",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landevej137B",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Gammel Køge Landebej 137B",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "GAMMEL KØGE LANDEVEJ 137B",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "landevej 137B",
+   "lat": 55.6436829,
+   "lng": 12.5029757,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Gammel Køge Landevej 137B, 2500 Valby",
+   "base": 5
+  },
+  {
+   "address": "Brofogedvej 17, 2400 København NV",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "17 Brofogedvej",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Brofogedvej 17, 2400",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "København NV, Brofogedvej 17, denmark",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "denmark København NV Brofogedvej 17",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Apt 4 tv 17 2400 København NV Brofogedvej",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Brofogedvej17",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Mary brofogedvej 17",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Brofogedvej 17 (green door)",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Brofogedbej 17",
+   "lat": 55.7041215,
+   "lng": 12.531963,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Brofogedvej 17, 2400 København NV",
+   "base": 6
+  },
+  {
+   "address": "Straussvej 17, 2450 København SV",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Straussvej 17",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Straussvej 17, 2450",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Straussvej 17 København SV denmark",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "straussvej 17, københavn sv, denmark",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Apt 2 tv, København SV, Straussvej, 17",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "straussvej 17",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Straussvej17",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "STRAUSSVEJ 17",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Straussvej 17 john",
+   "lat": 55.6482691,
+   "lng": 12.5308528,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Straussvej 17, 2450 København SV",
+   "base": 7
+  },
+  {
+   "address": "Arkonagade 12, 1726 København V",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Arkonagade 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Arkonagade 12 dto st tv",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Arkonagade 12, denmark, København V",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "københavn v denmark arkonagade 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Arkonagade København V Apt st tv 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Akronagade 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Arkonagade 12 (green door)",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Deli arkonagade 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "ARKONAGADE 12",
+   "lat": 55.6654079,
+   "lng": 12.5526673,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Arkonagade 12, 1726 København V",
+   "base": 8
+  },
+  {
+   "address": "Englandsvej 8C, 2300 København S",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "8C Englandsvej",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Englandsvej 8C, 2300",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "denmark København S Englandsvej 8C",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "denmark København S Englandsvej 8C",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "8C - 2300 - København S - Englandsvej - Apt 4 tv",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Deli englandsvej 8C",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Englandvsej 8C",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Englandsvej 8C john",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Englandsvej8C",
+   "lat": 55.6580022,
+   "lng": 12.6062922,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Englandsvej 8C, 2300 København S",
+   "base": 9
+  },
+  {
+   "address": "Thyrasgade 2, 2200 København N",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasgade, 2",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasgade 2 dto 1 tv",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasgade 2 København N denmark",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "thyrasgade 2 københavn n denmark",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Apt 1 tv Thyrasgade 2 København N",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasgade2",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasgade 2 apt 4b",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Thyrasagde 2",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "THYRASGADE 2",
+   "lat": 55.6975228,
+   "lng": 12.5461867,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Thyrasgade 2, 2200 København N",
+   "base": 10
+  },
+  {
+   "address": "Ørestads Boulevard 126D, 2300 København S",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "126D Ørestads Boulevard",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "Ørestads Boulevard 126D dto 7 th",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "denmark, Ørestads Boulevard 126D, København S",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "København S denmark Ørestads Boulevard 126D",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "2300 Ørestads Boulevard Apt 7 th København S 126D",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "ørestads boulevard 126d",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "Ørsetads Boulevard 126D",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "Ørestads Boulevard 126D (green door)",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "ØRESTADS BOULEVARD 126D",
+   "lat": 55.6243944,
+   "lng": 12.5762058,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ørestads Boulevard 126D, 2300 København S",
+   "base": 11
+  },
+  {
+   "address": "Annexstræde 5, 2500 Valby",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Annexstræde, 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Annexstræde 5, 2500",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "denmark Valby Annexstræde 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "denmark Valby Annexstræde 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "2500 - Annexstræde - Apt 1 tv - Valby - 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Annexstræde 5 apt 4b",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Mary annexstræde 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Annexstræde5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Anexstræde 5",
+   "lat": 55.6649994,
+   "lng": 12.5126755,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Annexstræde 5, 2500 Valby",
+   "base": 12
+  },
+  {
+   "address": "Lemnosvej 15, 2300 København S",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Lemnosvej, 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Lemnosvej 15, depto 2 th",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "København S denmark Lemnosvej 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Lemnosvej 15, denmark, København S",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "København S - Apt 2 th - 2300 - 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Deli lemnosvej 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Lemonsvej 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Lemnosvej15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "LEMNOSVEJ 15",
+   "lat": 55.6531371,
+   "lng": 12.622234,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lemnosvej 15, 2300 København S",
+   "base": 13
+  },
+  {
+   "address": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Frederikssundsvej 147A",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Frederikssundsvej 147A, 2700",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Frederikssundsvej 147A Brønshøj denmark",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Frederikssundsvej 147A denmark Brønshøj",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "147A - Brønshøj - 2700 - Frederikssundsvej",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "FREDERIKSSUNDSVEJ 147A",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Frederikssundsvej147A",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Mary frederikssundsvej 147A",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "frederikssundsvej 147a",
+   "lat": 55.7048243,
+   "lng": 12.5031809,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Frederikssundsvej 147A, 2700 Brønshøj",
+   "base": 14
+  },
+  {
+   "address": "Händelsvej 14, 2450 København SV",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Händelsvej, 14",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Händelsvej 14, depto 2 tv",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "denmark Händelsvej 14 København SV",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "København København SV, Handelsvej 14, denmark",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Apt 2 tv - København SV - Händelsvej - 2450 - 14",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Händelsvej 14 apt 4b",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Händelsbej 14",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Mary händelsvej 14",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Händelsvej14",
+   "lat": 55.6495313,
+   "lng": 12.5262826,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Händelsvej 14, 2450 København SV",
+   "base": 15
+  },
+  {
+   "address": "Randkløve Alle 1, 2770 Kastrup",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Randkløve Alle 1",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Randkløve Alle 1, 2770",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "denmark, Randkløve Alle 1, Kastrup",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "denmark Randkløve Alle 1 Kastrup",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Kastrup - Randkløve Alle - 1 - Apt 1 tv - 2770",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Randkløve Alle 1 back entrance",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Randkløbe Alle 1",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Mary randkløve alle 1",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "alle 1",
+   "lat": 55.6357831,
+   "lng": 12.601317,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Randkløve Alle 1, 2770 Kastrup",
+   "base": 16
+  },
+  {
+   "address": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Preben Kaas' Vænge, 5R",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Preben Kaas' Vænge 5R, 2000",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Frederiksberg, denmark, Preben Kaas' Vænge 5R",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Frederiksberg Preben Kaas' Vænge 5R denmark",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Frederiksberg 2000 Apt 3 305 Preben Kaas' Vænge",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Mary preben kaas' vænge 5R",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "preben kaas' vænge 5r",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Preven Kaas' Vænge 5R",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Preben Kaas' Vænge 5R john",
+   "lat": 55.6839855,
+   "lng": 12.5013595,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Preben Kaas' Vænge 5R, 2000 Frederiksberg",
+   "base": 17
+  },
+  {
+   "address": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle 63",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle 63 1970",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle 63, Frederiksberg C, denmark",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "denmark, Frederiksberg C, Rosenørns Alle 63",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle 63 Frederiksberg C Apt 4 tv",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "ROSENØRNS ALLE 63",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle 63 john",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Rosenørns Alle63",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Mary rosenørns alle 63",
+   "lat": 55.6832612,
+   "lng": 12.5466024,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rosenørns Alle 63, 1970 Frederiksberg C",
+   "base": 18
+  },
+  {
+   "address": "Ørestads Boulevard 36, 2300 København S",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Ørestads Boulevard 36",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Ørestads Boulevard 36 dto 4 3",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "København S, Ørestads Boulevard 36, denmark",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "København S, Ørestads Boulevard 36, denmark",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "36, København S, Apt 4 3, 2300, Ørestads Boulevard",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Ørestads Boulevard 36 apt 4b",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Mary ørestads boulevard 36",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "ØRESTADS BOULEVARD 36",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Øresatds Boulevard 36",
+   "lat": 55.6395153,
+   "lng": 12.5829072,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ørestads Boulevard 36, 2300 København S",
+   "base": 19
+  },
+  {
+   "address": "Skotterupgade 8, 2200 København N",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade, 8",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade 8 2200",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade 8, København N, denmark",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "denmark Skotterupgade 8 København N",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade København N 8 Apt 3 tv",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade 8 back entrance",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "SKOTTERUPGADE 8",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "skotterupgade 8",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Skotterupgade8",
+   "lat": 55.6909958,
+   "lng": 12.5405623,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Skotterupgade 8, 2200 København N",
+   "base": 20
+  },
+  {
+   "address": "Langelandsvej 15, 2000 Frederiksberg",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsvej 15",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsvej 15, 2000",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "denmark Langelandsvej 15 Frederiksberg",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsvej 15 Frederiksberg denmark",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Apt st th Frederiksberg 15 2000 Langelandsvej",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsbej 15",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "LANGELANDSVEJ 15",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsvej15",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Langelandsvej 15 (green door)",
+   "lat": 55.6844621,
+   "lng": 12.529526,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Langelandsvej 15, 2000 Frederiksberg",
+   "base": 21
+  },
+  {
+   "address": "Bogtrykkervej 28, 2400 København NV",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Bogtrykkervej 28",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Bogtrykkervej 28 dto 4 tv",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "København NV denmark Bogtrykkervej 28",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "bogtrykkervej 28, københavn nv, denmark",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "København NV, 28, 2400, Bogtrykkervej",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Bogtrykkervej 28 (green door)",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "bogtrykkervej 28",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Bogtrykkervej28",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Deli bogtrykkervej 28",
+   "lat": 55.7093863,
+   "lng": 12.5354281,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bogtrykkervej 28, 2400 København NV",
+   "base": 22
+  },
+  {
+   "address": "Hesseløgade 39B, 2100 København Ø",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgade, 39B",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgade 39B 2100",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "København Ø denmark Hesseløgade 39B",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgade 39B, København København Ø, denmark",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "København Ø - Hesseløgade - Apt 2 mf - 39B",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgdae 39B",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgade39B",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Hesseløgade 39B apt 4b",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "hesseløgade 39b",
+   "lat": 55.7109269,
+   "lng": 12.5701971,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hesseløgade 39B, 2100 København Ø",
+   "base": 23
+  },
+  {
+   "address": "Rovsingsgade 28, 2100 København Ø",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Rovsingsgade 28",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Rovsingsgade 28, depto 1 1",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "denmark København Ø Rovsingsgade 28",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Rovsingsgade 28, København Ø, denmark",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "2100 København Ø Rovsingsgade Apt 1 1",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Rovsingsgade 28 back entrance",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Robsingsgade 28",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Rovsingsgade28",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "ROVSINGSGADE 28",
+   "lat": 55.7124203,
+   "lng": 12.5565219,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rovsingsgade 28, 2100 København Ø",
+   "base": 24
+  },
+  {
+   "address": "Toftegårds Allé 8, 2500 Valby",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "8 Toftegårds Allé",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Toftegårds Allé 8, 2500",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "denmark, Toftegårds Allé 8, Valby",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Toftegards Alle 8, Valby, denmark",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "2500, 8, Apt 2 th, Valby, Toftegårds Allé",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "allé 8",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Toftegårds Allé 8 apt 4b",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Toftgeårds Allé 8",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Mary toftegårds allé 8",
+   "lat": 55.6658688,
+   "lng": 12.5168875,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Toftegårds Allé 8, 2500 Valby",
+   "base": 25
+  },
+  {
+   "address": "Ourøgade 35, 2100 København Ø",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Ourøgade, 35",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Ourøgade 35, depto st th",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Ourøgade 35 denmark København Ø",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "københavn ø, ourøgade 35, 35, denmark",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "København Ø - Ourøgade - 2100 - Apt st th - 35",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Mary ourøgade 35",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Ourøgade 35 apt 4b",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "OURØGADE 35",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "ourøgade 35",
+   "lat": 55.7097453,
+   "lng": 12.5666789,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ourøgade 35, 2100 København Ø",
+   "base": 26
+  },
+  {
+   "address": "Mjølnerparken 80, 2200 København N",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Mjølnerparken, 80",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Mjølnerparken 80 2200",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Mjølnerparken 80 denmark København N",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "København N, Mjølnerparken 80, denmark",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "2200, Apt 3 th, Mjølnerparken, 80, København N",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Mjølnerpakren 80",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "mjølnerparken 80",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Deli mjølnerparken 80",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "MJØLNERPARKEN 80",
+   "lat": 55.7047126,
+   "lng": 12.5421857,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mjølnerparken 80, 2200 København N",
+   "base": 27
+  },
+  {
+   "address": "Mesterstien 2, 2400 København NV",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien, 2",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien 2 dto 3",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "København NV, denmark, Mesterstien 2",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien 2 denmark København NV",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien - 2400 - 2 - Apt 3",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien2",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Deli mesterstien 2",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Mesterstien 2 back entrance",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "MESTERSTIEN 2",
+   "lat": 55.7077536,
+   "lng": 12.5203653,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mesterstien 2, 2400 København NV",
+   "base": 28
+  },
+  {
+   "address": "Jorisvej 7, 2300 København S",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Jorisvej, 7",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Jorisvej 7 dto 3 3",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "København S Jorisvej 7 denmark",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Jorisvej 7 denmark København S",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Apt 3 3, Jorisvej, København S, 7, 2300",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "jorisvej 7",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "JORISVEJ 7",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Joirsvej 7",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Jorisvej 7 back entrance",
+   "lat": 55.6463116,
+   "lng": 12.6367838,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jorisvej 7, 2300 København S",
+   "base": 29
+  },
+  {
+   "address": "Ryesgade 9, 2200 København N",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "9 Ryesgade",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Ryesgade 9 dto kl th",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "København N Ryesgade 9 denmark",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "denmark, ryesgade 9, københavn n",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Apt kl th - Ryesgade - 2200 - København N - 9",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Ryesgade 9 back entrance",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Riesgade 9",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Ryesgade9",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Mary ryesgade 9",
+   "lat": 55.6908756,
+   "lng": 12.5649177,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ryesgade 9, 2200 København N",
+   "base": 30
+  },
+  {
+   "address": "Hf. Engvang 9, 2300 København S",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "Hf. Engvang 9",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "Hf. Engvang 9, 2300",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "Hf. Engvang 9, denmark, København S",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "denmark, hf. engvang 9, københavn s",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "2300, 9, København S",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "Hf. Engvang9",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "engvang 9",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "HF. ENGVANG 9",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "hf. engvang 9",
+   "lat": 55.6444835,
+   "lng": 12.5972998,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hf. Engvang 9, 2300 København S",
+   "base": 31
+  },
+  {
+   "address": "Jernbane Allé 39, 2720 Vanløse",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Jernbane Allé 39",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Jernbane Allé 39 2720",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Jernbane Allé 39 Vanløse denmark",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "denmark Vanløse Jernbane Alle 39",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Apt 1 tv - Jernbane Allé - 39 - Vanløse - 2720",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Jernbane Allé39",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "allé 39",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Jernbane Allé 39 apt 4b",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "JERNBANE ALLÉ 39",
+   "lat": 55.6866865,
+   "lng": 12.4906874,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Jernbane Allé 39, 2720 Vanløse",
+   "base": 32
+  },
+  {
+   "address": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Aggersvoldvej, 3A",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Aggersvoldvej 3A 2700",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Brønshøj, denmark, Aggersvoldvej 3A",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Aggersvoldvej 3A, Brønshøj, denmark",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "3A Brønshøj Apt st tv Aggersvoldvej 2700",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Aggersvoldvej 3A (green door)",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "AGGERSVOLDVEJ 3A",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "aggersvoldvej 3a",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Aggersboldvej 3A",
+   "lat": 55.695836,
+   "lng": 12.5003093,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Aggersvoldvej 3A, 2700 Brønshøj",
+   "base": 33
+  },
+  {
+   "address": "Østerbrogade 151, 2100 København Ø",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Østerbrogade 151",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Østerbrogade 151, 2100",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Østerbrogade 151 København Ø denmark",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "København Ø Østerbrogade Østerbrogade 151 denmark",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "151, Østerbrogade, København Ø, 2100, Apt st 1",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Østervrogade 151",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "østerbrogade 151",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Østerbrogade151",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Mary østerbrogade 151",
+   "lat": 55.7140923,
+   "lng": 12.5772856,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Østerbrogade 151, 2100 København Ø",
+   "base": 34
+  },
+  {
+   "address": "Dalslandsgade 8F, 2300 København S",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dalslandsgade, 8F",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dalslandsgade 8F, depto 7 801",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dalslandsgade 8F denmark København S",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dalslandsgade 8F, denmark, København S",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "8F, Apt 7 801, 2300, København S, Dalslandsgade",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dlaslandsgade 8F",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Deli dalslandsgade 8F",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Dalslandsgade 8F john",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "DALSLANDSGADE 8F",
+   "lat": 55.6668765,
+   "lng": 12.6031605,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dalslandsgade 8F, 2300 København S",
+   "base": 35
+  },
+  {
+   "address": "Enghavevej 176, 2450 København SV",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "176 Enghavevej",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "Enghavevej 176 2450",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "denmark Enghavevej 176 København SV",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "København SV, Enghavevej 176, denmark",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "176, København SV, Apt st tv, 2450, Enghavevej",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "Enghabevej 176",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "Enghavevej 176 john",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "Mary enghavevej 176",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "enghavevej 176",
+   "lat": 55.6564012,
+   "lng": 12.5377372,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Enghavevej 176, 2450 København SV",
+   "base": 36
+  },
+  {
+   "address": "Lundtoftegade 75, 2200 København N",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "75 Lundtoftegade",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lundtoftegade 75 2200",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "København N, denmark, Lundtoftegade 75",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lundtoftegade 75 København N denmark",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "København N - 75 - Lundtoftegade - 2200 - Apt 8 th",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lundotftegade 75",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lundtoftegade75",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "LUNDTOFTEGADE 75",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lundtoftegade 75 back entrance",
+   "lat": 55.6961911,
+   "lng": 12.5377109,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lundtoftegade 75, 2200 København N",
+   "base": 37
+  },
+  {
+   "address": "Lindenovsgade 3, 2100 København Ø",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Lindenovsgade 3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Lindenovsgade 3, depto 3 tv",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Lindenovsgade 3, denmark, København Ø",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "denmark, københavn ø, lindenovsgade 3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "2100 - Apt 3 tv - København Ø - Lindenovsgade",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Mary lindenovsgade 3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "LINDENOVSGADE 3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Lindenobsgade 3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Lindenovsgade3",
+   "lat": 55.7030327,
+   "lng": 12.5887513,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lindenovsgade 3, 2100 København Ø",
+   "base": 38
+  },
+  {
+   "address": "Uglevej 9, 2400 København NV",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Uglevej 9",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Uglevej 9 2400",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Uglevej 9 denmark København NV",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "københavn nv, uglevej 9, denmark",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "2400 9 Apt st tv Uglevej",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Deli uglevej 9",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Uglevej 9 apt 4b",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "Ugelvej 9",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  },
+  {
+   "address": "uglevej 9",
+   "lat": 55.7040888,
+   "lng": 12.5260709,
+   "country": "DK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Uglevej 9, 2400 København NV",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,3618 @@
+{
+ "source": "openaddresses",
+ "country": "UY",
+ "city": "Montevideo",
+ "country_label": "Uruguay",
+ "depot": {
+  "lat": -34.9011,
+  "lon": -56.1645,
+  "city": "Montevideo",
+  "country": "Uruguay"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 360,
+ "note": "OpenAddresses uy/mo/montevideo, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "JOSE DE BEJAR 2611, Montevideo",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "2611 JOSE DE BEJAR",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "JOSE DE BEJAR 2611, uruguay, Montevideo",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "Montevideo, uruguay, JOSE DE BEJAR 2611",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "Montevideo, JOSE DE BEJAR",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "JOSE DE BEJAR 2611 martin",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "bejar 2611",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "JOSE DE BEJAR 2611",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "JOSE DE BEJAR2611",
+   "lat": -34.8596964,
+   "lng": -56.1283859,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "JOSE DE BEJAR 2611, Montevideo",
+   "base": 0
+  },
+  {
+   "address": "MIGUEL GRAU 3754, Montevideo",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "MIGUEL GRAU, 3754",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "uruguay Montevideo MIGUEL GRAU 3754",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "Montevideo MIGUEL GRAU 3754 uruguay",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "3754 Montevideo MIGUEL GRAU",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "MIGUEL GRAU 3754",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "MIGUEL GRAU3754",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "MIGUEL GRAU 3754 frente a la plaza",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "grau 3754",
+   "lat": -34.9030093,
+   "lng": -56.1325754,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "MIGUEL GRAU 3754, Montevideo",
+   "base": 1
+  },
+  {
+   "address": "MARIANO MORENO 2398, Montevideo",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "MARIANO MORENO, 2398",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "MARIANO MORENO 2398 Montevideo uruguay",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "uruguay, Montevideo, MARIANO MORENO MORENO 2398",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "2398 - MARIANO MORENO - Montevideo",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "MARIANO MORENO 2398 martin",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "moreno 2398",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "MRAIANO MORENO 2398",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "MARIANO MORENO2398",
+   "lat": -34.8792222,
+   "lng": -56.1609231,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MARIANO MORENO 2398, Montevideo",
+   "base": 2
+  },
+  {
+   "address": "CARLOS M MAESO 2791, Montevideo",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "2791 CARLOS M MAESO",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "CARLOS M MAESO 2791, Montevideo, uruguay",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "uruguay Montevideo CARLOS M MAESO 2791",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "2791, Montevideo",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "carlos m maeso 2791",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "maeso 2791",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "Marcela carlos m maeso 2791",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "CALROS M MAESO 2791",
+   "lat": -34.9113091,
+   "lng": -56.1559229,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CARLOS M MAESO 2791, Montevideo",
+   "base": 3
+  },
+  {
+   "address": "AGACES 3682, Montevideo",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "3682 AGACES",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "uruguay, AGACES 3682, Montevideo",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "Montevideo, AGACES 3682, uruguay",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "AGACES, 3682, Montevideo",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "AGACES 3682",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "AGACES 3682 timbre 2",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "Marcela agaces 3682",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "AAGCES 3682",
+   "lat": -34.8693698,
+   "lng": -56.1486634,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "AGACES 3682, Montevideo",
+   "base": 4
+  },
+  {
+   "address": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "JUAN JACOBO ROUSSEAU 3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "uruguay, Montevideo, JUAN JACOBO ROUSSEAU 3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "Montevideo JUAN JACOBO ROUSSEAU 3385 uruguay",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "Montevideo JUAN JACOBO ROUSSEAU",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "JUAN JACOBO ROUSSEAU3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "JUAN JACOBO ROU 3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "JUAN JACOBO ROUSSAEU 3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "Marcela juan jacobo rousseau 3385",
+   "lat": -34.8781635,
+   "lng": -56.1502165,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "JUAN JACOBO ROUSSEAU 3385, Montevideo",
+   "base": 5
+  },
+  {
+   "address": "MARCELINO SOSA 2278, Montevideo",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "MARCELINO SOSA, 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "uruguay Montevideo MARCELINO SOSA 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "MARCELINO SOSA 2278, uruguay, Montevideo",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "2278 MARCELINO SOSA",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "marcelino sosa 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "Juan marcelino sosa 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "MARseLINO SOSA 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "sosa 2278",
+   "lat": -34.8850698,
+   "lng": -56.1850408,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "MARCELINO SOSA 2278, Montevideo",
+   "base": 6
+  },
+  {
+   "address": "NIZA 1809, Montevideo",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "NIZA, 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "uruguay, Montevideo, NIZA 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "Montevideo, NIZA 1809, uruguay",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "Montevideo, 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "NIZA 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "Kiosco niza 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "niza 1809",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "NIZA 1809 (porton verde)",
+   "lat": -34.8900519,
+   "lng": -56.1300233,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "NIZA 1809, Montevideo",
+   "base": 7
+  },
+  {
+   "address": "PAYSANDU 1551, Montevideo",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "1551 PAYSANDU",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "Montevideo, PAYSANDU 1551, uruguay",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "PAYSANDU 1551 Montevideo uruguay",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "Montevideo - 1551 - PAYSANDU",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "PAYSNADU 1551",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "paysandu 1551",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "Marcela paysandu 1551",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "PAYSANDU1551",
+   "lat": -34.9012368,
+   "lng": -56.184363,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PAYSANDU 1551, Montevideo",
+   "base": 8
+  },
+  {
+   "address": "CARABELA 3642, Montevideo",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "3642 CARABELA",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "CARABELA 3642 Montevideo uruguay",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "Montevideo, uruguay, CARABELA 3642",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "3642 CARABELA Montevideo",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "CARABELA3642",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "CARABELA 3642",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "CARABELA 3642 martin",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "CARABLEA 3642",
+   "lat": -34.8573089,
+   "lng": -56.1787352,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CARABELA 3642, Montevideo",
+   "base": 9
+  },
+  {
+   "address": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "DR AUGUSTO TURENNE, 3317",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "Montevideo DR AUGUSTO TURENNE 3317 uruguay",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "DR AUGUSTO TURENNE 3317, uruguay, Montevideo",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "3317 Montevideo DR AUGUSTO TURENNE",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "DR AUGUSTO TURENNE3317",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "DR AUGUSTO TUR 3317",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "turenne 3317",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "Marcela dr augusto turenne 3317",
+   "lat": -34.8815132,
+   "lng": -56.1468212,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "DR AUGUSTO TURENNE 3317, Montevideo",
+   "base": 10
+  },
+  {
+   "address": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAMANTE 1718",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "uruguay, PEDRO BUSTAMANTE 1718, Montevideo",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAMANTE 1718, uruguay, Montevideo Montevideo",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "1718, Montevideo",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAAMNTE 1718",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAMANTE1718",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAMANTE 1718 timbre 2",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "PEDRO BUSTAMANTE 1718",
+   "lat": -34.8936726,
+   "lng": -56.1366896,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PEDRO BUSTAMANTE 1718, Montevideo",
+   "base": 11
+  },
+  {
+   "address": "MARCELINO SOSA 2972, Montevideo",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "2972 MARCELINO SOSA",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "uruguay MARCELINO SOSA 2972 Montevideo",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "uruguay Montevideo MARCELINO SOSA 2972",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "2972 MARCELINO SOSA Montevideo",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "marcelino sosa 2972",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "MARCELINO SOSA 2972",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "MARCELINO SOSA2972",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "sosa 2972",
+   "lat": -34.87309,
+   "lng": -56.1796521,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "MARCELINO SOSA 2972, Montevideo",
+   "base": 12
+  },
+  {
+   "address": "LA PAZ 1626, Montevideo",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "LA PAZ, 1626",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "LA PAZ 1626, Montevideo, uruguay",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "Montevideo, uruguay, LA PAZ 1626",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "Montevideo - 1626 - LA PAZ",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "LA PAZ1626",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "Juan la paz 1626",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "LA PAZ 1626",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "LA PAZ 1626 casa 18",
+   "lat": -34.8975858,
+   "lng": -56.1823776,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LA PAZ 1626, Montevideo",
+   "base": 13
+  },
+  {
+   "address": "JUAN JOSE QUESADA 3877, Montevideo",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "3877 JUAN JOSE QUESADA",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "Montevideo, uruguay, JUAN JOSE QUESADA 3877",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "JUAN JOSE QUESADA 3877, Montevideo, uruguay",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "JUAN JOSE QUESADA - Montevideo",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "JUAN JOSE QUESADA 3877 (porton verde)",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "juan jose quesada 3877",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "quesada 3877",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "JUAN JOSE QUEASDA 3877",
+   "lat": -34.8609913,
+   "lng": -56.177046,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JUAN JOSE QUESADA 3877, Montevideo",
+   "base": 14
+  },
+  {
+   "address": "ARROYO GRANDE 2640, Montevideo",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "ARROYO GRANDE 2640",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "Montevideo, uruguay, ARROYO GRANDE 2640",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "ARROYO GRANDE 2640, uruguay, Montevideo",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "ARROYO GRANDE, 2640, Montevideo",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "arroyo grande 2640",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "ARROYO GRANDE 2640",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "Marcela arroyo grande 2640",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "ARROYO GRANDE 2640 timbre 2",
+   "lat": -34.877626,
+   "lng": -56.1897184,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ARROYO GRANDE 2640, Montevideo",
+   "base": 15
+  },
+  {
+   "address": "LA HABANA 3024, Montevideo",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "3024 LA HABANA",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABANA 3024, uruguay, Montevideo",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "Montevideo LA LA HABANA 3024 uruguay",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABANA Montevideo 3024",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABANA 3024 timbre 2",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABANA 3024",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABANA3024",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "LA HABNAA 3024",
+   "lat": -34.859227,
+   "lng": -56.1388461,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LA HABANA 3024, Montevideo",
+   "base": 16
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "1384 DR JOAQUIN DE SALTERAIN",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1384, uruguay, Montevideo",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1384 Montevideo uruguay",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "1384 Montevideo",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1384",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "dr joaquin de salterain 1384",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "Juan dr joaquin de salterain 1384",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1384 (porton verde)",
+   "lat": -34.9035328,
+   "lng": -56.1700132,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1384, Montevideo",
+   "base": 17
+  },
+  {
+   "address": "GDOR VIANA 2616, Montevideo",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "GDOR VIANA 2616",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "uruguay, Montevideo, GDOR VIANA 2616",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "GDOR VIANA 2616 Montevideo uruguay uruguay",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "GDOR VIANA, 2616, Montevideo",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "viana 2616",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "GDOR VIANA 2616 martin",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "gdor viana 2616",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "GDOR VIANA 2616",
+   "lat": -34.8745727,
+   "lng": -56.1423966,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "GDOR VIANA 2616, Montevideo",
+   "base": 18
+  },
+  {
+   "address": "LARRAVIDE 2858BIS, Montevideo",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "LARRAVIDE, 2858BIS",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "Montevideo, LARRAVIDE 2858BIS, uruguay",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "larravide 2858bis montevideo uruguay",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "LARRAVIDE - 2858BIS - Montevideo",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "larravide 2858bis",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "LARRAVIDE 2858BIS (porton verde)",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "Juan larravide 2858BIS",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "LARRAVIDE 2858BIS",
+   "lat": -34.8694431,
+   "lng": -56.142534,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LARRAVIDE 2858BIS, Montevideo",
+   "base": 19
+  },
+  {
+   "address": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "CANOVAS DEL CASTILLO 4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "CANOVAS DEL CASTILLO 4759, Montevideo, uruguay",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "uruguay, Montevideo, CANOVAS DEL CASTILLO 4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "Montevideo CANOVAS DEL CASTILLO",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "CANOVAS DEL CASTILLO4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "Kiosco canovas del castillo 4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "CANOVAS DEL CASTIlO 4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "CANOVAS DEL CAS 4759",
+   "lat": -34.8664881,
+   "lng": -56.1200687,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "CANOVAS DEL CASTILLO 4759, Montevideo",
+   "base": 20
+  },
+  {
+   "address": "GUILLAPI 3585, Montevideo",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "GUILLAPI, 3585",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "uruguay, Montevideo, GUILLAPI 3585",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "Montevideo GUILLAPI 3585 uruguay",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "GUILLAPI, 3585, Montevideo",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "GUILLAPI 3585 casa 18",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "GUILLAPI3585",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "GUILLAPI 3585",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "guillapi 3585",
+   "lat": -34.8588443,
+   "lng": -56.1781641,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "GUILLAPI 3585, Montevideo",
+   "base": 21
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN 1244, uruguay, Montevideo",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "Montevideo, DR JOAQUIN DE SALTERAIN SALTERAIN 1244, uruguay",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN - Montevideo - 1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "Kiosco dr joaquin de salterain 1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "salterain 1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "DR JOAQUIN DE SAL 1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "DR JOAQUIN DE SALTERAIN1244",
+   "lat": -34.9062292,
+   "lng": -56.1697093,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "DR JOAQUIN DE SALTERAIN 1244, Montevideo",
+   "base": 22
+  },
+  {
+   "address": "JUSTICIA 2341, Montevideo",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "JUSTICIA 2341",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "uruguay JUSTICIA 2341 Montevideo",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "JUSTICIA 2341 Montevideo uruguay",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "2341 Montevideo JUSTICIA",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "JUSTICIA 2341",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "Kiosco justicia 2341",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "JUSTCIIA 2341",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "justicia 2341",
+   "lat": -34.8865872,
+   "lng": -56.1795442,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JUSTICIA 2341, Montevideo",
+   "base": 23
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ, 2788",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ 2788, uruguay, Montevideo",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "uruguay GRAL GRAL GREGORIO SUAREZ 2788 Montevideo",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ - 2788",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ 2788 timbre 2",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "Kiosco gral gregorio suarez 2788",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "GRAL GREGORIO SUAREZ2788",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "suarez 2788",
+   "lat": -34.919499,
+   "lng": -56.1587468,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "GRAL GREGORIO SUAREZ 2788, Montevideo",
+   "base": 24
+  },
+  {
+   "address": "DURAZNO 1470, Montevideo",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "DURAZNO, 1470",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "Montevideo DURAZNO 1470 uruguay",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "Montevideo DURAZNO DURAZNO 1470 uruguay",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "Montevideo, 1470, DURAZNO",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "Juan durazno 1470",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "durazno 1470",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "DURAZNO 1470 frente a la plaza",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "DUARZNO 1470",
+   "lat": -34.910136,
+   "lng": -56.1835441,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "DURAZNO 1470, Montevideo",
+   "base": 25
+  },
+  {
+   "address": "RAMON Y CAJAL 2557, Montevideo",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "2557 RAMON Y CAJAL",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "RAMON Y CAJAL 2557, Montevideo, uruguay",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "ramon y cajal 2557 montevideo uruguay",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "RAMON Y CAJAL Montevideo 2557",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "RAMON Y CAJAL 2557 martin",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "RAMON Y CAJAL 2557",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "cajal 2557",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "ramon y cajal 2557",
+   "lat": -34.888053,
+   "lng": -56.1643333,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "RAMON Y CAJAL 2557, Montevideo",
+   "base": 26
+  },
+  {
+   "address": "QUIJOTE 2661, Montevideo",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "QUIJOTE 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "uruguay, Montevideo, QUIJOTE 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "uruguay quijote 2661 montevideo",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "QUIJOTE - Montevideo - 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "quijote 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "QUIJOTE 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "QUIJOTE 2661 martin",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "QIUJOTE 2661",
+   "lat": -34.8777032,
+   "lng": -56.1655099,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "QUIJOTE 2661, Montevideo",
+   "base": 27
+  },
+  {
+   "address": "JUSTICIA 2349, Montevideo",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "JUSTICIA 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "uruguay Montevideo JUSTICIA 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "Montevideo, uruguay, JUSTICIA 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "Montevideo - 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "JUSTICIA 2349 casa 18",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "justicia 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "JUSTCIIA 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "JUSTICIA 2349",
+   "lat": -34.8865471,
+   "lng": -56.1795493,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "JUSTICIA 2349, Montevideo",
+   "base": 28
+  },
+  {
+   "address": "FONSECA 4637, Montevideo",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "FONSECA, 4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "uruguay, FONSECA 4637, Montevideo",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "FONSECA 4637 uruguay Montevideo",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "FONSECA, 4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "fonseca 4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "FONSCEA 4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "Kiosco fonseca 4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "FONSECA4637",
+   "lat": -34.8538546,
+   "lng": -56.1426668,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "FONSECA 4637, Montevideo",
+   "base": 29
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA, 1076",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA 1076 uruguay Montevideo",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA 1076, uruguay, Montevideo",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "Montevideo - GRAL JOSE MARIA LUNA - 1076",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA 1076 casa 18",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "gral jose maria luna 1076",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "GRAL JOSE MARIA LUNA1076",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "Juan gral jose maria luna 1076",
+   "lat": -34.8842411,
+   "lng": -56.1954223,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "GRAL JOSE MARIA LUNA 1076, Montevideo",
+   "base": 30
+  },
+  {
+   "address": "ANDRES LATORRE 4589, Montevideo",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "ANDRES LATORRE 4589",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "uruguay, ANDRES LATORRE 4589, Montevideo",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "ANDRES LATORRE 4589 uruguay Montevideo",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "4589 Montevideo ANDRES LATORRE",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "ANDRES LATOrE 4589",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "ANDRES LAT 4589",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "ANDRES LATORRE4589",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "latorre 4589",
+   "lat": -34.8617337,
+   "lng": -56.1321796,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "ANDRES LATORRE 4589, Montevideo",
+   "base": 31
+  },
+  {
+   "address": "MARCOS SASTRE 2518, Montevideo",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "MARCOS SASTRE, 2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "Montevideo uruguay MARCOS SASTRE 2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "uruguay, Montevideo, MARCOS SASTRE SASTRE 2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "Montevideo - 2518 - MARCOS SASTRE",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "MARCOS SASTRE2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "MARCOS SASTRE 2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "MARCOS SASTRE 2518 frente a la plaza",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "Marcela marcos sastre 2518",
+   "lat": -34.8616595,
+   "lng": -56.1255435,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MARCOS SASTRE 2518, Montevideo",
+   "base": 32
+  },
+  {
+   "address": "AV 18 DE JULIO 1586, Montevideo",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "AV 18 DE JULIO, 1586",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "AV 18 DE JULIO 1586, uruguay, Montevideo",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "av 18 de julio 1586, montevideo, uruguay",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "AV 18 DE JULIO 1586",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "18 de julio 1586",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "Juan 18 de julio 1586",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "18 DE JULIO 1586",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "18 DE JULIO 1586 timbre 2",
+   "lat": -34.9043227,
+   "lng": -56.1818074,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "AV 18 DE JULIO 1586, Montevideo",
+   "base": 33
+  },
+  {
+   "address": "LARRAVIDE 3015, Montevideo",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "LARRAVIDE, 3015",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "Montevideo uruguay LARRAVIDE 3015",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "larravide 3015 montevideo uruguay uruguay",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "3015, LARRAVIDE",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "Marcela larravide 3015",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "LARRAVIDE3015",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "LARRAVIDE 3015 casa 18",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "LARRAVIDE 3015",
+   "lat": -34.8668043,
+   "lng": -56.1449798,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LARRAVIDE 3015, Montevideo",
+   "base": 34
+  },
+  {
+   "address": "AV GRAL FLORES 3501, Montevideo",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "3501 AV GRAL FLORES",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "AV GRAL FLORES 3501, Montevideo, uruguay",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "montevideo uruguay av gral flores 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "Montevideo AV GRAL FLORES 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "gral flores 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "GRAL FLOERS 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "Kiosco gral flores 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "flores 3501",
+   "lat": -34.8633076,
+   "lng": -56.1698422,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "AV GRAL FLORES 3501, Montevideo",
+   "base": 35
+  },
+  {
+   "address": "SAN SALVADOR 1779BIS, Montevideo",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "SAN SALVADOR, 1779BIS",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "uruguay, SAN SALVADOR 1779BIS, Montevideo",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "SAN SALVADOR 1779BIS uruguay Montevideo",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "SAN SALVADOR - 1779BIS",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "SAN SAL 1779BIS",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "san salvador 1779bis",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "SAN SALbADOR 1779BIS",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "salvador 1779BIS",
+   "lat": -34.9112659,
+   "lng": -56.1763671,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "SAN SALVADOR 1779BIS, Montevideo",
+   "base": 36
+  },
+  {
+   "address": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "DR JUAN J DE AMEZAGA 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "Montevideo uruguay DR JUAN J DE AMEZAGA 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "uruguay, DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "Montevideo DR JUAN J DE AMEZAGA 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "dr juan j de amezaga 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "amezaga 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "DR JUAN J DE AMZEAGA 1930",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "DR JUAN J DE AMEZAGA 1930 martin",
+   "lat": -34.8862489,
+   "lng": -56.1765423,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DR JUAN J DE AMEZAGA 1930, Montevideo",
+   "base": 37
+  },
+  {
+   "address": "IBIROCAHY 3579, Montevideo",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "3579 IBIROCAHY",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "Montevideo, IBIROCAHY 3579, uruguay",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "Montevideo, uruguay, IBIROCAHY 3579",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "IBIROCAHY Montevideo",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "IBIROCAHY 3579",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "IBIROCAHY 3579 martin",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "IBIORCAHY 3579",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "IBIROCAHY3579",
+   "lat": -34.85574,
+   "lng": -56.1853673,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "IBIROCAHY 3579, Montevideo",
+   "base": 38
+  },
+  {
+   "address": "ROCHA 2903BIS, Montevideo",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "2903BIS ROCHA",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "Montevideo ROCHA 2903BIS uruguay",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "uruguay, Montevideo, ROCHA 2903BIS",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "ROCHA, Montevideo, 2903BIS",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "ROCHA2903BIS",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "ROCCHA 2903BIS",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "Juan rocha 2903BIS",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  },
+  {
+   "address": "rocha 2903bis",
+   "lat": -34.8743505,
+   "lng": -56.1804483,
+   "country": "UY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "ROCHA 2903BIS, Montevideo",
+   "base": 39
+  }
+ ]
+}

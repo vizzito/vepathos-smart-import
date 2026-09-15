@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "HK",
+ "city": "Hong Kong",
+ "country_label": "Hong Kong",
+ "depot": {
+  "lat": 22.3193,
+  "lon": 114.1694,
+  "city": "Hong Kong",
+  "country": "Hong Kong"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n22.40_s22.20_e114.30_w114.10-hong-kong.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "4 鐘山台 Chung Shan Terrace",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "鐘山台 Chung Shan Terrace 4, Hong Kong",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "Hong Kong, hk, 鐘山台 Chung Shan Terrace 4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "Hong Kong, hk, 鐘山台 Chung Shan Terrace 4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "Hong Kong, 鐘山台 Chung Shan Terrace",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "Mary 鐘山台 chung shan terrace 4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "鐘山台 chung shan terrace 4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "shan terrace 4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "鐘山台 Chung Shan Terrace4",
+   "lat": 22.34436382,
+   "lng": 114.13833067333333,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 鐘山台 Chung Shan Terrace, Hong Kong",
+   "base": 0
+  },
+  {
+   "address": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "15-16 域多利皇后街 Queen Victoria Street",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Victoria Street 15-16, Hong Kong",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Victoria Street 15-16, Hong Kong, hk",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "Hong Kong 域多利皇后街 Queen Victoria Street 15-16 hk",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "15-16 Hong Kong 域多利皇后街 Queen Victoria Street",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Victoria Street15-16",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Vcitoria Street 15-16",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Victoria Street 15-16 (green door)",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "域多利皇后街 Queen Vic Street 15-16",
+   "lat": 22.28354513636364,
+   "lng": 114.1554996090909,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "15-16 域多利皇后街 Queen Victoria Street, Hong Kong",
+   "base": 1
+  },
+  {
+   "address": "39-49 恆安街 Hang On Street, Hong Kong",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "恆安街 Hang On Street 39-49",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "恆安街 Hang On Street 39-49, Hong Kong",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "hk, Hong Kong, 恆安街 Hang On Street 39-49",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "hk, 恆安街 Hang On Street 39-49, Hong Hong Kong",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "39-49 - 恆安街 Hang On Street - Hong Kong",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "Mary 恆安街 hang on street 39-49",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "hang street 39-49",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "恆安街 Hang On Street39-49",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "恆安街 Hang On Street 39-49 apt 4b",
+   "lat": 22.315870872727274,
+   "lng": 114.22250320909092,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "39-49 恆安街 Hang On Street, Hong Kong",
+   "base": 2
+  },
+  {
+   "address": "11 普義街 Po Yee Street, Hong Kong",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "11 普義街 Po Yee Street",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "普義街 Po Yee Street 11, Hong Kong",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "hk, 普義街 Po Yee Street 11, Hong Kong",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "Hong Kong, hk, 普義街 Po Yee Street 11",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "普義街 Po Yee Street, Hong Kong",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "Deli 普義街 po yee street 11",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "普義街 Po Yee Street 11 (green door)",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "普義街 po yee street 11",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "普義街 Po Yee Street11",
+   "lat": 22.28518772857143,
+   "lng": 114.14740982857143,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 普義街 Po Yee Street, Hong Kong",
+   "base": 3
+  },
+  {
+   "address": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 Lung Poon Street 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 Lung Poon Street 3, Hong Kong",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 Lung Poon Street 3 Hong Kong hk",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "hk Hong Kong 龍蟠街 Lung Poon Street Street 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 Lung Poon Street - 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 lung poon street 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "poon street 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 Lung Poon Street 3 john",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "龍蟠街 LUNG POON STREET 3",
+   "lat": 22.34081468,
+   "lng": 114.2018965125,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 龍蟠街 Lung Poon Street, Hong Kong",
+   "base": 4
+  },
+  {
+   "address": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 Wai Ching Street, 77",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 Wai Ching Street 77, Hong Kong",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "Hong Kong 偉晴街 Wai Ching Street 77 hk",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 wai ching street 77 hong kong hk",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 Wai Ching Street, Hong Kong",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 WAI CHING STREET 77",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 Wai Ching Street77",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "ching street 77",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "偉晴街 wai ching street 77",
+   "lat": 22.307529640000002,
+   "lng": 114.16810047999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "77 偉晴街 Wai Ching Street, Hong Kong",
+   "base": 5
+  },
+  {
+   "address": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 Lyndhurst Terrace 18-20",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 Lyndhurst Terrace 18-20, Hong Kong",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "hk, 擺花街 Lyndhurst Terrace 18-20, Hong Kong",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 Lyndhurst Terrace 18-20, hk, Hong Kong",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "Hong Kong 擺花街 Lyndhurst Terrace",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "Mary 擺花街 lyndhurst terrace 18-20",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 Lyndhurst Terrace 18-20 john",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 lyndhurst terrace 18-20",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "擺花街 LYNDHURST TERRACE 18-20",
+   "lat": 22.2823549,
+   "lng": 114.154493,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "18-20 擺花街 Lyndhurst Terrace, Hong Kong",
+   "base": 6
+  },
+  {
+   "address": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 Choi Yee Lane 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 Choi Yee Lane 9, Hong Kong",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "hk Hong Kong 彩頤里 Choi Yee Lane 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 Choi Yee Lane 9, Hong Kong, hk",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "Hong Kong, 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 CHOI YEE LANE 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "Mary 彩頤里 choi yee lane 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 choi yee lane 9",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "彩頤里 Choi Yee Lane 9 (green door)",
+   "lat": 22.337132611111112,
+   "lng": 114.2017489888889,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 彩頤里 Choi Yee Lane, Hong Kong",
+   "base": 7
+  },
+  {
+   "address": "1 昌新里 Cheong San Lane, Hong Kong",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "1 昌新里 Cheong San Lane",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "昌新里 Cheong San Lane 1, Hong Kong",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "hk Hong Kong 昌新里 Cheong San Lane 1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "hk 昌新里 Cheong San Lane 1 Hong Kong",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "昌新里 Cheong San Lane - 1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "昌新里 Choeng San Lane 1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "昌新里 cheong san lane 1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "Deli 昌新里 cheong san lane 1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "昌新里 Cheong San Lane1",
+   "lat": 22.32707705,
+   "lng": 114.15739736666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 昌新里 Cheong San Lane, Hong Kong",
+   "base": 8
+  },
+  {
+   "address": "21 康強街 Hong Keung Street, Hong Kong",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "21 康強街 Hong Keung Street",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "康強街 Hong Keung Street 21, Hong Kong",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "Hong Kong, hk, 康強街 Hong Keung Street 21",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "康強街 Hong Keung Street Street 21 Hong Kong hk",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "Hong Kong - 21 - 康強街 Hong Keung Street",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "康強街 hong keung street 21",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "康強街 Hong Keung Street 21 (green door)",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "康強街 HONG KEUNG STREET 21",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "Mary 康強街 hong keung street 21",
+   "lat": 22.334640185714285,
+   "lng": 114.19733647142857,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "21 康強街 Hong Keung Street, Hong Kong",
+   "base": 9
+  },
+  {
+   "address": "34 聯福道 Renfrew Road, Hong Kong",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renfrew Road 34",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renfrew Road 34, Hong Kong",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renfrew Road 34, hk, Hong Kong",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "hk 聯福道 Renfrew Road 34 Hong Kong",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "34 Hong Kong",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 RENFREW ROAD 34",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renfrew Road 34 back entrance",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renrfew Road 34",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "聯福道 Renfrew Road34",
+   "lat": 22.33880037777778,
+   "lng": 114.18201201111111,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "34 聯福道 Renfrew Road, Hong Kong",
+   "base": 10
+  },
+  {
+   "address": "1 皇后街 Queen Street, Hong Kong",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "皇后街 Queen Street, 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "皇后街 Queen Street 1, Hong Kong",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "Hong Kong, hk, 皇后街 Queen Street 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "hk, 皇后街 queen street 1, hong kong",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "皇后街 Queen Street - 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "皇后街 queen street 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "Mary 皇后街 queen street 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "皇后街 Queen Street1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "queen street 1",
+   "lat": 22.28675074,
+   "lng": 114.14733111999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 皇后街 Queen Street, Hong Kong",
+   "base": 11
+  },
+  {
+   "address": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "12 英華臺 Ying Wa Terrace",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "英華臺 Ying Wa Terrace 12, Hong Kong",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "hk Hong Kong 英華臺 Ying Wa Terrace 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "Hong Kong 英華臺 Ying Wa Wa Terrace 12 hk",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "Hong Kong 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "ying terrace 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "Mary 英華臺 ying wa terrace 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "英華臺 YING WA TERRACE 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "英華臺 ying wa terrace 12",
+   "lat": 22.2848069,
+   "lng": 114.14276689,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 英華臺 Ying Wa Terrace, Hong Kong",
+   "base": 12
+  },
+  {
+   "address": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "1A 堅彌地街 Kennedy Street",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "堅彌地街 Kennedy Street 1A, Hong Kong",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "Hong Kong hk 堅彌地街 Kennedy Street 1A",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "hong kong, 堅彌地街 kennedy street 1a, hk",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "1A, Hong Kong",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "堅彌地街 Kennedy Street1A",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "堅彌地街 KENNEDY STREET 1A",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "堅彌地街 Ken Street 1A",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "Mary 堅彌地街 kennedy street 1A",
+   "lat": 22.273850816666666,
+   "lng": 114.17450303333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1A 堅彌地街 Kennedy Street, Hong Kong",
+   "base": 13
+  },
+  {
+   "address": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 Hong Lok Street 14-15",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 Hong Lok Street 14-15, Hong Kong",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 Hong Lok Street 14-15 Hong Kong hk",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "Hong Kong 康樂街 Hong Lok Street 14-15 hk",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "14-15 - Hong Kong - 康樂街 Hong Lok Street",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 Hong Lok Street14-15",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 HONG LOK STREET 14-15",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "Mary 康樂街 hong lok street 14-15",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "康樂街 Hong Lok Street 14-15 apt 4b",
+   "lat": 22.319657855555555,
+   "lng": 114.16838077777778,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14-15 康樂街 Hong Lok Street, Hong Kong",
+   "base": 14
+  },
+  {
+   "address": "8 宏基街 Wang Kee Street, Hong Kong",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 Wang Kee Street, 8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 Wang Kee Street 8, Hong Kong",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "hk Hong Kong 宏基街 Wang Kee Street 8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "hk Hong Kong 宏基街 Wang Kee Street 8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 Wang Kee Street, 8, Hong Kong",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 Wang Kee Street 8 apt 4b",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 WANG KEE STREET 8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "Mary 宏基街 wang kee street 8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "宏基街 Wang Kee Street8",
+   "lat": 22.3226339,
+   "lng": 114.2054072,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 宏基街 Wang Kee Street, Hong Kong",
+   "base": 15
+  },
+  {
+   "address": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "89 薄扶林道 Pok Fu Lam Road",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "薄扶林道 Pok Fu Lam Road 89, Shek Tong Tsui",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "hk Shek Tong Tsui 薄扶林道 Pok Fu Lam Road 89",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "hk 薄扶林道 Pok Fu Lam Road 89 Shek Tong Tsui",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "薄扶林道 Pok Fu Lam Road - 89 - Shek Tong Tsui",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "薄扶林道 POK FU LAM ROAD 89",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "薄扶林道 Pok Fu Lam Road 89 john",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "Mary 薄扶林道 pok fu lam road 89",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "薄扶林道 pok fu lam road 89",
+   "lat": 22.28503914848485,
+   "lng": 114.13336863030304,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "89 薄扶林道 Pok Fu Lam Road, Shek Tong Tsui",
+   "base": 16
+  },
+  {
+   "address": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 Upper Lascar Row 14-20",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 Upper Lascar Row 14-20, Hong Kong",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "hk, 摩羅上街 Upper Lascar Row 14-20, Hong Kong",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "hk Hong Kong 摩羅上街 Upper Lascar Row 14-20",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "14-20, 摩羅上街 Upper Lascar Row",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 Upper Lascar Row 14-20 (green door)",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 Upper Lacsar Row 14-20",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 upper lascar row 14-20",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "摩羅上街 UPPER LASCAR ROW 14-20",
+   "lat": 22.2846259,
+   "lng": 114.1499362,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14-20 摩羅上街 Upper Lascar Row, Hong Kong",
+   "base": 17
+  },
+  {
+   "address": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "譚公道 Tam Kung Road, 16-26",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "譚公道 Tam Kung Road 16-26, Hong Kong",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "譚公道 Tam Kung Road 16-26, hk, Hong Kong",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "hk hk 譚公道 tam kung road 16-26 hong kong",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "16-26, 譚公道 Tam Kung Road, Hong Kong",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "譚公道 TAM KUNG ROAD 16-26",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "kung road 16-26",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "譚公道 Tam Kung Road16-26",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "Deli 譚公道 tam kung road 16-26",
+   "lat": 22.321195975000002,
+   "lng": 114.1879591,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16-26 譚公道 Tam Kung Road, Hong Kong",
+   "base": 18
+  },
+  {
+   "address": "8 欣業街 Yan Yip Street, Hong Kong",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street 8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street 8, Hong Kong",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street 8, Hong Kong, hk",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "Hong Kong hk 欣業街 Yan Yip Street 8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street - 8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 Yan Yip Street 8 (green door)",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "欣業街 YAN YIP STREET 8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "Deli 欣業街 yan yip street 8",
+   "lat": 22.3151714,
+   "lng": 114.2166674,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8 欣業街 Yan Yip Street, Hong Kong",
+   "base": 19
+  },
+  {
+   "address": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "1-3 卑利士道 Breezy Path",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "卑利士道 Breezy Path 1-3, Hong Kong",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "hk, 卑利士道 Breezy Path 1-3, Hong Kong",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "hk hong kong 卑利士道 breezy path 1-3",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "卑利士道 Breezy Path, 1-3, Hong Kong",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "卑利士道 Breezy Path1-3",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "卑利士道 Breesy Path 1-3",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "path 1-3",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "卑利士道 breezy path 1-3",
+   "lat": 22.28364606153846,
+   "lng": 114.14579512307692,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1-3 卑利士道 Breezy Path, Hong Kong",
+   "base": 20
+  },
+  {
+   "address": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 Muk Lun Street 8",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 Muk Lun Street 8, Hong Kong",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "hk 睦鄰街 Muk Lun Street 8 Hong Kong",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 muk lun street 8, hong kong, hk",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "8 睦鄰街 Muk Lun Street",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 MUK LUN STREET 8",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 muk lun street 8",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 Muk Lun Street 8 apt 4b",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "睦鄰街 Muk Lun Street8",
+   "lat": 22.340385555,
+   "lng": 114.196995965,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 睦鄰街 Muk Lun Street, Hong Kong",
+   "base": 21
+  },
+  {
+   "address": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "秀竹園道 Sau Chuk Yuen Road, 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "秀竹園道 Sau Chuk Yuen Road 12, Hong Kong",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "Hong Kong, hk, 秀竹園道 Sau Chuk Yuen Road 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "hk Hong Kong 秀竹園道 Sau Sau Chuk Yuen Road 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "12 - 秀竹園道 Sau Chuk Yuen Road",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "秀竹園道 SAU CHUK YUEN ROAD 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "秀竹園道 sau chuk yuen road 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "yuen road 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "Mary 秀竹園道 sau chuk yuen road 12",
+   "lat": 22.32838744,
+   "lng": 114.18487855999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "12 秀竹園道 Sau Chuk Yuen Road, Hong Kong",
+   "base": 22
+  },
+  {
+   "address": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "石水渠街 Stone Nullah Lane, 17",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "石水渠街 Stone Nullah Lane 17, Hong Kong",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "Hong Kong 石水渠街 Stone Nullah Lane 17 hk",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "hk, 石水渠街 stone nullah lane 17, hong kong",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "17, 石水渠街 Stone Nullah Lane, Hong Kong",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "Deli 石水渠街 stone nullah lane 17",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "石水渠街 stone nullah lane 17",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "石水渠街 Stone Nullah Lane17",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "nullah lane 17",
+   "lat": 22.2759632,
+   "lng": 114.1736053,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "17 石水渠街 Stone Nullah Lane, Hong Kong",
+   "base": 23
+  },
+  {
+   "address": "6 志士達道 Chester Road, Hong Kong",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 Chester Road, 6",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 Chester Road 6, Hong Kong",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "hk, Hong Kong, 志士達道 Chester Road 6",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 Chester Road 6 hk Hong Kong",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "6 Hong Kong",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "Mary 志士達道 chester road 6",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 Chseter Road 6",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 Chester Road 6 apt 4b",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "志士達道 CHESTER ROAD 6",
+   "lat": 22.3291664,
+   "lng": 114.17962134,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 志士達道 Chester Road, Hong Kong",
+   "base": 24
+  },
+  {
+   "address": "60 荷李活道 Hollywood Road, Hong Kong",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "荷李活道 Hollywood Road 60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "荷李活道 Hollywood Road 60, Hong Kong",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "荷李活道 Hollywood Road 60 Hong Kong hk",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "hk 荷李活道 hollywood road 60 hong kong",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "Hong Kong - 荷李活道 Hollywood Road - 60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "荷李活道 hollywood road 60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "hollywood road 60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "Mary 荷李活道 hollywood road 60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "荷李活道 Hollywood Road60",
+   "lat": 22.2828373125,
+   "lng": 114.1527628,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "60 荷李活道 Hollywood Road, Hong Kong",
+   "base": 25
+  },
+  {
+   "address": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 Sam Chuk Street 19",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 Sam Chuk Street 19, Hong Kong",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 Sam Chuk Street 19 hk Hong Kong",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 Sam Chuk Street 19, Hong Kong, hk",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "Hong Kong - 19 - 三祝街 Sam Chuk Street",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 SAM CHUK STREET 19",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "chuk street 19",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "Deli 三祝街 sam chuk street 19",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "三祝街 Sam Chuk Street19",
+   "lat": 22.3359767,
+   "lng": 114.1978918,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "19 三祝街 Sam Chuk Street, Hong Kong",
+   "base": 26
+  },
+  {
+   "address": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 Ngau Tau Kok Road 15-19",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 Ngau Tau Kok Road 15-19, Hong Kong",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 Ngau Tau Kok Road 15-19, hk, Hong Kong",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "hk 牛頭角道 Ngau Tau Kok Road 15-19 Hong Kong",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "15-19, 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 Ngau Tau Kok Road15-19",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 Ngau Tau Kok Road 15-19 (green door)",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "牛頭角道 NGAU TAU KOK ROAD 15-19",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "Deli 牛頭角道 ngau tau kok road 15-19",
+   "lat": 22.3261862375,
+   "lng": 114.214815425,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15-19 牛頭角道 Ngau Tau Kok Road, Hong Kong",
+   "base": 27
+  },
+  {
+   "address": "32 牛津道 Oxford Road, Hong Kong",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxford Road, 32",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxford Road 32, Hong Kong",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxford Road 32 Hong Kong hk",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "hk, Hong Kong, 牛津道 Oxford Road 32",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "32 - Hong Kong",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxford Road32",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxofrd Road 32",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "牛津道 Oxford Road 32 (green door)",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "Mary 牛津道 oxford road 32",
+   "lat": 22.332647286666667,
+   "lng": 114.18109181999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "32 牛津道 Oxford Road, Hong Kong",
+   "base": 28
+  },
+  {
+   "address": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 Ngan Mok Street, 19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 Ngan Mok Street 19-21, Hong Kong",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "Hong Kong hk 銀幕街 Ngan Mok Street 19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "Hong Kong, 銀幕街 Ngan Mok Street 19-21, hk",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 Ngan Mok Street, Hong Kong, 19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 Ngan Mok Street19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "Mary 銀幕街 ngan mok street 19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 Ngan Mok Street 19-21 john",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "銀幕街 NGAN MOK STREET 19-21",
+   "lat": 22.283866427272727,
+   "lng": 114.1921234,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "19-21 銀幕街 Ngan Mok Street, Hong Kong",
+   "base": 29
+  },
+  {
+   "address": "350 砵蘭街 Portland Street, Hong Kong",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "砵蘭街 Portland Street, 350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "砵蘭街 Portland Street 350, Hong Kong",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "Hong Kong hk 砵蘭街 Portland Street 350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "Hong Kong 砵蘭街 Portland Street 350 350 hk",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "350 Hong Kong 砵蘭街 Portland Street",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "砵蘭街 PORTLAND STREET 350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "portland street 350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "砵蘭街 Portland Street350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "砵蘭街 portland street 350",
+   "lat": 22.3213967,
+   "lng": 114.168389,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "350 砵蘭街 Portland Street, Hong Kong",
+   "base": 30
+  },
+  {
+   "address": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "啟超道 Kai Chiu Road 2-4",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "啟超道 Kai Chiu Road 2-4, Hong Kong",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "hk Hong Kong 啟超道 Kai Chiu Road 2-4",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "hk 啟超道 Kai Chiu Chiu Road 2-4 Hong Kong",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "2-4 啟超道 Kai Chiu Road Hong Kong",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "啟超道 Kai Chiu Road 2-4 (green door)",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "啟超道 KAI CHIU ROAD 2-4",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "chiu road 2-4",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "啟超道 Kai Chiu Road2-4",
+   "lat": 22.27924568,
+   "lng": 114.18361388000001,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2-4 啟超道 Kai Chiu Road, Hong Kong",
+   "base": 31
+  },
+  {
+   "address": "6 第二街 2nd Street, Hong Kong",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "第二街 2nd Street, 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "第二街 2nd Street 6, Hong Kong",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "hk Hong Kong 第二街 2nd Street 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "Hong Kong Kong hk 第二街 2nd Street 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "Hong Kong, 6, 第二街 2nd Street",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "Deli 第二街 2nd street 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "第二街 2nd Street 6 (green door)",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "第二街 2nd street 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "第二街 2ND STREET 6",
+   "lat": 22.308089550000002,
+   "lng": 114.21235740000002,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 第二街 2nd Street, Hong Kong",
+   "base": 32
+  },
+  {
+   "address": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "2-8 何東道 Ho Tung Road",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 Ho Tung Road 2-8, Hong Kong",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "hk, 何東道 Ho Tung Road 2-8, Hong Kong",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 Ho Tung Road 2-8 Hong Kong hk",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 Ho Tung Road - 2-8 - Hong Kong",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 Ho Tung Road 2-8 john",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 ho tung road 2-8",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "tung road 2-8",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "何東道 Ho Tung Road2-8",
+   "lat": 22.3274393,
+   "lng": 114.17991509999999,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2-8 何東道 Ho Tung Road, Hong Kong",
+   "base": 33
+  },
+  {
+   "address": "4 第十街 10th Street, Hong Kong",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "第十街 10th Street, 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "第十街 10th Street 4, Hong Kong",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "Hong Kong, hk, 第十街 10th Street 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "hk, Hong Kong, 第十街 10th Street 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "Hong Kong, 4, 第十街 10th Street",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "Deli 第十街 10th street 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "第十街 10th Street 4 john",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "10th street 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "第十街 10TH STREET 4",
+   "lat": 22.306203366666665,
+   "lng": 114.21462331666667,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 第十街 10th Street, Hong Kong",
+   "base": 34
+  },
+  {
+   "address": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 Ma Tau Wai Road 2",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 Ma Tau Wai Road 2, Hong Kong",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "hk, 馬頭圍道 Ma Tau Wai Road 2, Hong Kong",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 Ma Tau Wai Road 2, hk, Hong Kong",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "Hong Kong - 2",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 Ma Tau Wai Road 2 john",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "Deli 馬頭圍道 ma tau wai road 2",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 MA TAU WAI ROAD 2",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "馬頭圍道 Ma Tau Wai Road2",
+   "lat": 22.307084314285714,
+   "lng": 114.18662822857142,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 馬頭圍道 Ma Tau Wai Road, Hong Kong",
+   "base": 35
+  },
+  {
+   "address": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "歌頓道 Gordon Road, 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "歌頓道 Gordon Road 6-14, Hong Kong",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "Hong Kong hk 歌頓道 Gordon Road 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "Hong Kong 歌頓道 Gordon Road 6-14 hk",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "Hong Kong 歌頓道 Gordon Road 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "歌頓道 Gorodn Road 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "歌頓道 Gordon Road 6-14 (green door)",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "gordon road 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "歌頓道 gordon road 6-14",
+   "lat": 22.2855562125,
+   "lng": 114.191233925,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6-14 歌頓道 Gordon Road, Hong Kong",
+   "base": 36
+  },
+  {
+   "address": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 Choi Shing Lane 1",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 Choi Shing Lane 1, Hong Kong",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 Choi Shing Lane 1, Hong Kong, hk",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 Choi Shing Lane 1 Hong Kong hk",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "1, Hong Kong",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 CHOI SHING LANE 1",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "shing lane 1",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 Choi Shhing Lane 1",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "彩盛里 choi shing lane 1",
+   "lat": 22.3317718375,
+   "lng": 114.21371151875,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 彩盛里 Choi Shing Lane, Hong Kong",
+   "base": 37
+  },
+  {
+   "address": "4 梭椏道 Soares Avenue, Hong Kong",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 Soares Avenue 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 Soares Avenue 4, Hong Kong",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 Soares Avenue 4, Hong Kong, hk",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "Hong Kong, hk, 梭椏道 Soares Avenue 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "4, 梭椏道 Soares Avenue, Hong Kong",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 Saores Avenue 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "soares avenue 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 SOARES AVENUE 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "梭椏道 soares avenue 4",
+   "lat": 22.3194379,
+   "lng": 114.1751256,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4 梭椏道 Soares Avenue, Hong Kong",
+   "base": 38
+  },
+  {
+   "address": "22 玫瑰街 Rose Street, Hong Kong",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 Rose Street 22",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 Rose Street 22, Hong Kong",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "hk, 玫瑰街 Rose Street 22, Hong Kong",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 Rose Street 22 hk Hong Kong",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "22, 玫瑰街 Rose Street, Hong Kong",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 ROSE STREET 22",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "rose street 22",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 Rose Street22",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  },
+  {
+   "address": "玫瑰街 Rose Street 22 back entrance",
+   "lat": 22.332881699999998,
+   "lng": 114.17274169333334,
+   "country": "HK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "22 玫瑰街 Rose Street, Hong Kong",
+   "base": 39
+  }
+ ]
+}

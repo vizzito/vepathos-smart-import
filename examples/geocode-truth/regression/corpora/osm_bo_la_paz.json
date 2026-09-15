@@ -1,0 +1,3958 @@
+{
+ "source": "osm-addr",
+ "country": "BO",
+ "city": "La Paz",
+ "country_label": "Bolivia",
+ "depot": {
+  "lat": -16.4897,
+  "lon": -68.1193,
+  "city": "La Paz",
+  "country": "Bolivia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 394,
+ "note": "Nodos addr:* del indice n-16.40_s-16.60_e-68.00_w-68.20-bolivia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Calle 9 de Abril 143, La Paz",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "143 9 de Abril",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "9 de Abril 143, La Paz",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "La Paz, bo, 9 de Abril 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "La Paz, bo, 9 de Abril 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "La Paz, Calle 9 de Abril",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "9 de Avril 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "Deli 9 de abril 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "9 de abril 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "9 DE ABRIL 143",
+   "lat": -16.5225277,
+   "lng": -68.1429598,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 9 de Abril 143, La Paz",
+   "base": 0
+  },
+  {
+   "address": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "1-A 3 - Regimiento Illimani",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "3 - Regimiento Illimani 1-A, La Paz",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "bo, La Paz, 3 - Regimiento Illimani 1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "3 - regimiento illimani 1-a bo la paz",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "Calle 3 - Regimiento Illimani, La Paz, 1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "3 - Regimeinto Illimani 1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "Mary 3 - regimiento illimani 1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "illimani 1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "3 - Regimiento Illimani1-A",
+   "lat": -16.5283023,
+   "lng": -68.0881499,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 3 - Regimiento Illimani 1-A, La Paz",
+   "base": 1
+  },
+  {
+   "address": "José F. Caballero 2188, La Paz",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "José F. Caballero 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "La Paz, bo, José F. Caballero 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "La Paz José F. Caballero Caballero 2188 bo",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "José F. Caballero - La Paz - 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "josé f. caballero 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "caballero 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "José F. Caballero 2188 apt 4b",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "JOSÉ F. CABALLERO 2188",
+   "lat": -16.531905645454547,
+   "lng": -68.15151491818182,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "José F. Caballero 2188, La Paz",
+   "base": 2
+  },
+  {
+   "address": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "1068 Arturo Ballivian Otero",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "Arturo Ballivian Otero 1068, La Paz",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "bo, Arturo Ballivian Otero 1068, La Paz",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "La La Paz, bo, Arturo Ballivian Otero 1068",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "La Paz, 1068",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "ARTURO BALLIVIAN OTERO 1068",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "Arturo Balivian Otero 1068",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "Arturo Ballivian Otero 1068 john",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "Mary arturo ballivian otero 1068",
+   "lat": -16.52193856875,
+   "lng": -68.1506852625,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Arturo Ballivian Otero 1068, La Paz",
+   "base": 3
+  },
+  {
+   "address": "Calle Reyes Cardona 871, La Paz",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "871 Reyes Cardona",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Reyes Cardona 871, La Paz",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "La Paz Reyes Cardona 871 bo",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "bo La Paz Reyes Cardona 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Calle Reyes Cardona, 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "cardona 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Mary reyes cardona 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Reyes Cardnoa 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Reyes Car 871",
+   "lat": -16.4958192,
+   "lng": -68.1553415,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Reyes Cardona 871, La Paz",
+   "base": 4
+  },
+  {
+   "address": "Calle J 60, La Paz",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "J 60",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "J 60, La Paz",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "J 60, La Paz, bo",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "j 60, bo, la paz",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "La Paz Calle J 60",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "J 60 (green door)",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "Deli j 60",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "J 60",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "j 60",
+   "lat": -16.53235618888889,
+   "lng": -68.14997792222222,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle J 60, La Paz",
+   "base": 5
+  },
+  {
+   "address": "Calle Coroico 1437, 000 La Paz",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Coroico, 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Coroico 1437, 000",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Coroico 1437 La Paz bo",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "bo, La Paz, Coroico 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Calle Coroico 000 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "COROICO 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Deli coroico 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Corocio 1437",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Coroico 1437 apt 4b",
+   "lat": -16.4961332,
+   "lng": -68.1299767,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Coroico 1437, 000 La Paz",
+   "base": 6
+  },
+  {
+   "address": "Calle Plaza Libertad 63, La Paz",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad, 63",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad 63, La Paz",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad 63 La Paz bo",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad 63, bo, La Paz",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "63 La Paz",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad63",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Lib 63",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "PLAZA LIBERTAD 63",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Plaza Libertad 63 john",
+   "lat": -16.4951584,
+   "lng": -68.174133,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Plaza Libertad 63, La Paz",
+   "base": 7
+  },
+  {
+   "address": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "310 Teniente José Manuel Oquendo",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "Teniente José Manuel Oquendo 310, La Paz",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "bo La Paz Teniente José Manuel Oquendo 310",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "bo, Teniente Jose Manuel Oquendo 310, La Paz",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "310 La Paz Calle Teniente José Manuel Oquendo",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "oquendo 310",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "Teneinte José Manuel Oquendo 310",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "Teniente José Manuel Oqu 310",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "Teniente José Manuel Oquendo310",
+   "lat": -16.4873559,
+   "lng": -68.142493,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Teniente José Manuel Oquendo 310, La Paz",
+   "base": 8
+  },
+  {
+   "address": "Calle Héroes del Acre 1734, La Paz",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "1734 Héroes del Acre",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "Héroes del Acre 1734, La Paz",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "La Paz Héroes del Acre 1734 bo",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "bo, La Paz, Héroes del Acre 1734",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "1734 La Paz Calle Héroes del Acre",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "acre 1734",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "HÉROES DEL ACRE 1734",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "Héroes del Acre 1734 john",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "Héroes del Acre1734",
+   "lat": -16.50531282,
+   "lng": -68.13413485999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Héroes del Acre 1734, La Paz",
+   "base": 9
+  },
+  {
+   "address": "Luis Lara 523, La Paz",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "Luis Lara, 523",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "La Paz Luis Lara 523 bo",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "La Paz, bo, Luis Lara 523",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "523, La Paz",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "Luis Lara523",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "Deli luis lara 523",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "luis lara 523",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "Luis Lara 523 back entrance",
+   "lat": -16.5012409,
+   "lng": -68.1402197,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Luis Lara 523, La Paz",
+   "base": 10
+  },
+  {
+   "address": "Av. Hernando Siles TS-11, La Paz",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "TS-11 Hernando Siles",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "Hernando Siles TS-11, La Paz",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "bo Hernando Siles TS-11 La Paz",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "bo Hernando Siles TS-11 La Paz",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "Av. Hernando Siles - La Paz - TS-11",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "Deli hernando siles TS-11",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "HERNANDO SILES TS-11",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "Hernadno Siles TS-11",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "siles TS-11",
+   "lat": -16.5226592,
+   "lng": -68.1141362,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Av. Hernando Siles TS-11, La Paz",
+   "base": 11
+  },
+  {
+   "address": "Calle Demetrio Canelas 26, La Paz",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "Demetrio Canelas 26",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "Demetrio Canelas 26, La Paz",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "La Paz, Demetrio Canelas 26, bo",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "Demetrio Canelas 26 bo La Paz",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "La Paz, Calle Demetrio Canelas, 26",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "Demetrio Canelas 26 john",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "canelas 26",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "DEMETRIO CANELAS 26",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "demetrio canelas 26",
+   "lat": -16.52871744285714,
+   "lng": -68.10121671428571,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Demetrio Canelas 26, La Paz",
+   "base": 12
+  },
+  {
+   "address": "Calle Castro 1566, La Paz",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Castro, 1566",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Castro 1566, La Paz",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "La Paz bo Castro 1566",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Castro 1566, La Paz, bo",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "1566 La Paz Calle Castro",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "castro 1566",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Castro1566",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Deli castro 1566",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Castro 1566 john",
+   "lat": -16.49881938888889,
+   "lng": -68.13048717777777,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Castro 1566, La Paz",
+   "base": 13
+  },
+  {
+   "address": "Calle Los Ceibos 120, la paz",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "120 Los Ceibos",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "Los Ceibos 120, la paz",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "bo, la paz, Los Ceibos 120",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "la paz bo Los Ceibos 120",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "Calle Los Ceibos la paz",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "LOS CEIBOS 120",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "los ceibos 120",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "Los Ciebos 120",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "Los Ceibos 120 john",
+   "lat": -16.5275328375,
+   "lng": -68.1269575125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Los Ceibos 120, la paz",
+   "base": 14
+  },
+  {
+   "address": "Calle Boquerón 1104, La Paz",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Boquerón, 1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Boquerón 1104, La Paz",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "bo La Paz Boquerón 1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Boquerón 1104 La Paz bo",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "La Paz - Calle Boquerón",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "BOQUERÓN 1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Mary boquerón 1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Boquerón1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "boquerón 1104",
+   "lat": -16.5029343,
+   "lng": -68.1384167,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Boquerón 1104, La Paz",
+   "base": 15
+  },
+  {
+   "address": "Esq. C/5Constantino Medina 2045, La Paz",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "2045 Esq. C/5Constantino Medina",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "bo, Esq. C/5Constantino Medina 2045, La Paz",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "bo, Esq. C/5Constantino Medina 2045, La Paz",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "La Paz 2045 Esq. C/5Constantino Medina",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "Esq. C/5Constantino Medina2045",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "Deli esq. c/5constantino medina 2045",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "medina 2045",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "Esq. C/5Constantino Medina 2045 (green door)",
+   "lat": -16.5094041,
+   "lng": -68.1581841,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Esq. C/5Constantino Medina 2045, La Paz",
+   "base": 16
+  },
+  {
+   "address": "Avenida Jorge Carrazco 127, La Paz",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "127 Jorge Carrazco",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "Jorge Carrazco 127, La Paz",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "Jorge Carrazco 127 bo La Paz",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "La Paz, Jorge Carrazco 127, bo",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "127, Avenida Jorge Carrazco",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "carrazco 127",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "jorge carrazco 127",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "Jorge Carrazco127",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "JORGE CARRAZCO 127",
+   "lat": -16.5275501,
+   "lng": -68.09873359999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Jorge Carrazco 127, La Paz",
+   "base": 17
+  },
+  {
+   "address": "Avenida Presbítero Medina 2595, La Paz",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Presbítero Medina 2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Presbítero Medina 2595, La Paz",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "La Paz, bo, Presbítero Medina 2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "bo, Presbítero Medina 2595, La Paz",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Avenida Presbítero Medina La Paz 2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Presbítero Medina2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Mary presbítero medina 2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Presvítero Medina 2595",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Presbítero Medina 2595 john",
+   "lat": -16.51408326,
+   "lng": -68.12633122,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Presbítero Medina 2595, La Paz",
+   "base": 18
+  },
+  {
+   "address": "Avenida General Juan Jose Torres 500, La Paz",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "500 General Juan Jose Torres",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "General Juan Jose Torres 500, La Paz",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "bo, La Paz, General Juan Jose Torres 500",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "general juan jose torres torres 500 la paz bo",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "500, La Paz",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "General Juan Jose Torres 500 (green door)",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "general juan jose torres 500",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "General Juan Jose Torres500",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "Gneeral Juan Jose Torres 500",
+   "lat": -16.4857085,
+   "lng": -68.1409125,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida General Juan Jose Torres 500, La Paz",
+   "base": 19
+  },
+  {
+   "address": "Calle Estados Unidos 655, La Paz",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Estados Unidos, 655",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Estados Unidos 655, La Paz",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "La Paz Estados Unidos 655 bo",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Estados Unidos Unidos 655, La Paz, bo",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "655, La Paz",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Estados Unidos 655 back entrance",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Deli estados unidos 655",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "unidos 655",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "Estaods Unidos 655",
+   "lat": -16.485723940000003,
+   "lng": -68.12234842000001,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Estados Unidos 655, La Paz",
+   "base": 20
+  },
+  {
+   "address": "circunvalación 100, La Paz",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "circunvalación 100",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "circunvalación 100 La Paz bo",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "bo la paz circunvalación 100",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "100 La Paz",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "circunvalación100",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "circunvalación 100 (green door)",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "CIRCUNVALACIÓN 100",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "circunvalación 100",
+   "lat": -16.5182708,
+   "lng": -68.1336334,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "circunvalación 100, La Paz",
+   "base": 21
+  },
+  {
+   "address": "Calle 1 - General Centeno 612, La Paz",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "1 - General Centeno, 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "1 - General Centeno 612, La Paz",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "bo, La Paz, 1 - General Centeno 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "La Paz bo 1 - General Centeno 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "Calle 1 - General Centeno, La Paz",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "centeno 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "1 - General Cen 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "1 - general centeno 612",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "1 - General Centeno 612 john",
+   "lat": -16.5302962,
+   "lng": -68.0872751,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 1 - General Centeno 612, La Paz",
+   "base": 22
+  },
+  {
+   "address": "Calle RP Jose Zampa 865, La Paz",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "RP Jose Zampa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "RP Jose Zampa 865, La Paz",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "bo RP Jose Zampa 865 La Paz",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "bo La Paz RP Jose Zampa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "Calle RP Jose Zampa La Paz 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "Deli rp jose zampa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "zampa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "rp jose zampa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "RP Jose Zammpa 865",
+   "lat": -16.5227246,
+   "lng": -68.1058969,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle RP Jose Zampa 865, La Paz",
+   "base": 23
+  },
+  {
+   "address": "Avenida de las Américas 780, La Paz",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "de las Américas 780",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "de las Américas 780, La Paz",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "La Paz, de las Américas 780, bo",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "La Paz de las Américas 780 bo",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "La Paz, Avenida de las Américas",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "de las Amércias 780",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "Mary de las américas 780",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "de las Américas 780 john",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "de las Américas780",
+   "lat": -16.4728084,
+   "lng": -68.1166079,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida de las Américas 780, La Paz",
+   "base": 24
+  },
+  {
+   "address": "Pasaje 1880 1785, La Paz",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "1785 1880",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "1880 1785, La Paz",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "bo La Paz 1880 1785",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "La Paz 1880 1785 bo",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "La Paz - Pasaje 1880 - 1785",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "1880 1785 john",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "18801785",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "1880 1785",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "Deli 1880 1785",
+   "lat": -16.5010182,
+   "lng": -68.1254876,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pasaje 1880 1785, La Paz",
+   "base": 25
+  },
+  {
+   "address": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Nicolas Acosta, Oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Nicolas Acosta Oficina 105, La Paz",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "La Paz, bo, Nicolas Acosta Oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "bo Nicolas Acosta Oficina 105 La La Paz",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Calle Nicolas Acosta, Oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "nicolas acosta oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "acosta Oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Deli nicolas acosta Oficina 105",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Nicolas Acosta Oficina 105 apt 4b",
+   "lat": -16.5032138,
+   "lng": -68.1354963,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Nicolas Acosta Oficina 105, La Paz",
+   "base": 26
+  },
+  {
+   "address": "Calle Sagapnaga 175, La Paz",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "175 Sagapnaga",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "Sagapnaga 175, La Paz",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "Sagapnaga 175, La Paz, bo",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "bo, La Paz, Sagapnaga 175 175",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "175 - La Paz",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "Sagpanaga 175",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "SAGAPNAGA 175",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "sagapnaga 175",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "Sagapnaga 175 (green door)",
+   "lat": -16.4969429,
+   "lng": -68.1375078,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Sagapnaga 175, La Paz",
+   "base": 27
+  },
+  {
+   "address": "Calle Pedro de la Gasca 668, La Paz",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Pedro de la Gasca 668",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Pedro de la Gasca 668, La Paz",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "bo, Pedro de la Gasca 668, La Paz",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "pedro de la gasca 668 bo la paz",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Calle Pedro de la Gasca La Paz",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "PEDRO DE LA GASCA 668",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Pedro de la Gasca668",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "gasca 668",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Peddro de la Gasca 668",
+   "lat": -16.4979423,
+   "lng": -68.1429878,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Pedro de la Gasca 668, La Paz",
+   "base": 28
+  },
+  {
+   "address": "Avenida Naciones Unidas 1313, La Paz",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "Naciones Unidas, 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "Naciones Unidas 1313, La Paz",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "bo, La Paz, Naciones Unidas 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "La Paz bo Naciones Unidas 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "La Paz, Avenida Naciones Unidas",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "Deli naciones unidas 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "NACIONES UNIDAS 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "Nasiones Unidas 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "unidas 1313",
+   "lat": -16.4871921,
+   "lng": -68.1555891,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Naciones Unidas 1313, La Paz",
+   "base": 29
+  },
+  {
+   "address": "Calle Issac Soria 855, La Paz",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "Issac Soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "Issac Soria 855, La Paz",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "La Paz, bo, Issac Soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "La Paz, Issac Soria 855, bo",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "855 - La Paz",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "Isac Soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "Mary issac soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "issac soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "soria 855",
+   "lat": -16.4992759,
+   "lng": -68.1496614,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Issac Soria 855, La Paz",
+   "base": 30
+  },
+  {
+   "address": "Calle Tomás D'Oconor 1143, La Paz",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "1143 Tomás D'Oconor",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "Tomás D'Oconor 1143, La Paz",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "Tomás D'Oconor 1143 La Paz bo",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "Tomás D'Oconor 1143, La Paz, bo",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "La Paz, 1143",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "tomás d'oconor 1143",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "Deli tomás d'oconor 1143",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "TOMÁS D'OCONOR 1143",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "d'oconor 1143",
+   "lat": -16.522105757142857,
+   "lng": -68.15148107857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Tomás D'Oconor 1143, La Paz",
+   "base": 31
+  },
+  {
+   "address": "Avenida Santa Cruz 938, La Paz",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "938 Santa Cruz",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "Santa Cruz 938, La Paz",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "La Paz, Santa Cruz 938, bo",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "La Paz, Santa Cruz 938, bo",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "La Paz - 938",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "Deli santa cruz 938",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "Santa Cruz 938 john",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "cruz 938",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "Santta Cruz 938",
+   "lat": -16.4968003,
+   "lng": -68.1366915,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Santa Cruz 938, La Paz",
+   "base": 32
+  },
+  {
+   "address": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "# 31 Pampahasi Bajo av. 5 o Raul Salmon",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "Pampahasi Bajo av. 5 o Raul Salmon # 31 La Paz bo",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "la paz bo pampahasi bajo av. av. 5 o raul salmon # 31",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "La Paz, # 31, Pampahasi Bajo av. 5 o Raul Salmon",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "Mary pampahasi bajo av. 5 o raul salmon # 31",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "Pampahasi Bajo av. 5 o Raul Salmon # 31 john",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "pampahasi bajo av. 5 o raul salmon # 31",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "PAMPAHASI BAJO AV. 5 O RAUL SALMON # 31",
+   "lat": -16.5056732,
+   "lng": -68.1033565,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pampahasi Bajo av. 5 o Raul Salmon # 31, La Paz",
+   "base": 33
+  },
+  {
+   "address": "Calle Juan Manuel Loza 1776, La Paz",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Manuel Loza 1776",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Manuel Loza 1776, La Paz",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "bo Juan Manuel Loza 1776 La Paz",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Manuel Loza 1776, La Paz, bo",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "1776, La Paz, Calle Juan Manuel Loza",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Maunel Loza 1776",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Manuel Loza1776",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Juan Manuel Loza 1776 (green door)",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "loza 1776",
+   "lat": -16.50068718,
+   "lng": -68.12462968,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Juan Manuel Loza 1776, La Paz",
+   "base": 34
+  },
+  {
+   "address": "Avenida Jaimes Freyre 2961, La Paz",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Jaimes Freyre 2961",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Jaimes Freyre 2961, La Paz",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Jaimes Freyre 2961 bo La Paz",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "la paz bo jaimes freyre 2961",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "2961 - Avenida Jaimes Freyre",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Jaimes Freyre2961",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "jaimes freyre 2961",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Jaimes Freyre 2961 john",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "freyre 2961",
+   "lat": -16.517436214814815,
+   "lng": -68.12987507037036,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Jaimes Freyre 2961, La Paz",
+   "base": 35
+  },
+  {
+   "address": "Calle Eduardo Calderon 11, La Paz",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "11 Eduardo Calderon",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Eduardo Calderon 11, La Paz",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "bo Eduardo Calderon 11 La Paz",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Eduardo Calderon 11, bo, La Paz",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "La Paz 11",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "EDUARDO CALDERON 11",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Mary eduardo calderon 11",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Eduardo Cal 11",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Eduardo Claderon 11",
+   "lat": -16.527271816666666,
+   "lng": -68.15351111666666,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Eduardo Calderon 11, La Paz",
+   "base": 36
+  },
+  {
+   "address": "Isaac Tamayo 705, La Paz",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Isaac Tamayo, 705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "bo Isaac Tamayo 705 La Paz",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Isaac Tamayo 705, La Paz, bo",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Isaac Tamayo La Paz 705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Isaac Tamayo705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "isaac tamayo 705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Isaac Tamaio 705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "ISAAC TAMAYO 705",
+   "lat": -16.49573,
+   "lng": -68.1412798,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Isaac Tamayo 705, La Paz",
+   "base": 37
+  },
+  {
+   "address": "Calle José Caballero 135, La Paz",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "José Caballero, 135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "José Caballero 135, La Paz",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "bo José Caballero 135 La Paz",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "La Paz bo José Caballero 135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "Calle José Caballero - La Paz",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "José Cavallero 135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "josé caballero 135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "JOSÉ CABALLERO 135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "José Caballero135",
+   "lat": -16.526381208333333,
+   "lng": -68.14887664999999,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle José Caballero 135, La Paz",
+   "base": 38
+  },
+  {
+   "address": "Calle Eduardo Calderón 1035, La Paz",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "Eduardo Calderón, 1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "Eduardo Calderón 1035, La Paz",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "La Paz, bo, Eduardo Calderón 1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "bo La Paz Eduardo Calderón 1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "1035 - Calle Eduardo Calderón - La Paz",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "Eduardo Calderón 1035 john",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "EDUARDO CALDERÓN 1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "eduardo calderón 1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  },
+  {
+   "address": "Eduardo Calderón1035",
+   "lat": -16.521649764285716,
+   "lng": -68.15074742857142,
+   "country": "BO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Eduardo Calderón 1035, La Paz",
+   "base": 39
+  }
+ ]
+}

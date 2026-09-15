@@ -1,0 +1,4008 @@
+{
+ "source": "osm-addr",
+ "country": "VE",
+ "city": "Caracas",
+ "country_label": "Venezuela",
+ "depot": {
+  "lat": 10.4806,
+  "lon": -66.9036,
+  "city": "Caracas",
+  "country": "Venezuela"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 399,
+ "note": "Nodos addr:* del indice n10.60_s10.40_e-66.80_w-67.00-venezuela.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Av. Sur 9 93, 1010 Caracas",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "93 Sur 9",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Sur 9 93, 1010",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Caracas, ve, Sur 9 93",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Caracas, ve, Sur 9 93",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "93 Av. Sur 9 Caracas",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Sur 9 93 apt 4b",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "SUR 9 93",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Sur 993",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "sur 9 93",
+   "lat": 10.498766583333333,
+   "lng": -66.90948336666666,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Sur 9 93, 1010 Caracas",
+   "base": 0
+  },
+  {
+   "address": "Av. Sorocaima 1, 1060 Caracas",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Sorocaima, 1",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Sorocaima 1, 1060",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "ve, Sorocaima 1, Caracas",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Sorocaima 1, Caracas, ve",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Av. Sorocaima 1 Caracas 1060",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "SOROCAIMA 1",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Sorcoaima 1",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "sorocaima 1",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "Mary sorocaima 1",
+   "lat": 10.490282,
+   "lng": -66.8609187,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Sorocaima 1, 1060 Caracas",
+   "base": 1
+  },
+  {
+   "address": "El Recreo 191, Caracas",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "El Recreo, 191",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "ve El Recreo 191 Caracas",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "Caracas, El Recreo 191, ve",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "El Recreo Caracas 191",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "El Recreo 191 back entrance",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "Mary el recreo 191",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "El Recreo191",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "El Recero 191",
+   "lat": 10.4907604,
+   "lng": -66.8773122,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "El Recreo 191, Caracas",
+   "base": 2
+  },
+  {
+   "address": "Av. Este 2 150, 1010 Caracas",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Este 2 150",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Este 2 150, 1010",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "ve Este 2 150 Caracas",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Este 2 150, ve, Caracas",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "150 Av. Este 2 Caracas",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "este 2 150",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Mary este 2 150",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Este 2150",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "ESTE 2 150",
+   "lat": 10.50166492142857,
+   "lng": -66.89977313571428,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Este 2 150, 1010 Caracas",
+   "base": 3
+  },
+  {
+   "address": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Principal de Prados del Este PA25",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Principal de Prados del Este PA25, 1080",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "ve Caracas Principal de Prados del Este PA25",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Principal de Prados del Este Este PA25 ve Caracas",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Caracas PA25 Avenida Principal de Prados del Este 1080",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "principal de prados del este pa25",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Principal de Prados del Este PA25 back entrance",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "este PA25",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Principal de Prados del EstePA25",
+   "lat": 10.4497107,
+   "lng": -66.8807151,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Principal de Prados del Este PA25, 1080 Caracas",
+   "base": 4
+  },
+  {
+   "address": "Avenida Este 0 248, 1010 Caracas",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "248 Este 0",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "Este 0 248 1010",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "Este 0 248 Caracas ve",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "ve, Este 0 248, Caracas",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "248, 1010, Avenida Este 0, Caracas",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "Este 0 248 (green door)",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "este 0 248",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "Deli este 0 248",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "Este 0248",
+   "lat": 10.502455059999999,
+   "lng": -66.89688726,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Este 0 248, 1010 Caracas",
+   "base": 5
+  },
+  {
+   "address": "2.° Avenida 1, 1060 Caracas",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° Avenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° Avenida 1 1060",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "ve, Caracas, 2.° Avenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "ve Caracas 2.° Avenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° Avenida - 1 - 1060 - Caracas",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° Ave 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° avenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "Deli 2.° avenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "2.° Abenida 1",
+   "lat": 10.493817714285713,
+   "lng": -66.86228324285715,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2.° Avenida 1, 1060 Caracas",
+   "base": 6
+  },
+  {
+   "address": "Avenida Universidad 1, 1010 Caracas",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Universidad, 1",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Universidad 1 1010",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Universidad 1 ve Caracas",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "ve Universidad 1 Caracas",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "1010 Caracas Avenida Universidad",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Deli universidad 1",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "UNIVERSIDAD 1",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "universidad 1",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Universidad1",
+   "lat": 10.503856840000001,
+   "lng": -66.91135335999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Universidad 1, 1010 Caracas",
+   "base": 7
+  },
+  {
+   "address": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Guzmán Blanco 8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Guzmán Blanco 8 1090",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "ve, Caracas, Guzmán Blanco 8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "ve, guzmán blanco 8, caracas",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "1090 - 8 - Av. Guzmán Blanco - Caracas",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Guzmán Blanco8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Guzámn Blanco 8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Deli guzmán blanco 8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "guzmán blanco 8",
+   "lat": 10.44307418,
+   "lng": -66.9264536,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Guzmán Blanco 8, 1090 Caracas",
+   "base": 8
+  },
+  {
+   "address": "Calle California 398, 1060 Caracas",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "California, 398",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "California 398 1060",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "California 398, ve, Caracas",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "ve Caracas California 398",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "Calle California, 398, 1060",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "California398",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "california 398",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "CALIFORNIA 398",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "California 398 (green door)",
+   "lat": 10.482525079999998,
+   "lng": -66.86348154,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle California 398, 1060 Caracas",
+   "base": 9
+  },
+  {
+   "address": "Bernardo Slimak 2, 1020 Caracas",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Bernardo Slimak 2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Bernardo Slimak 2 1020",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "ve Caracas Bernardo Slimak 2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "ve Caracas Bernardo Slimak 2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Caracas, Bernardo Slimak, 2, 1020",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Bernardo Slimak 2 apt 4b",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "slimak 2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "BERNARDO SLIMAK 2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Bernardo Slimak2",
+   "lat": 10.493170525,
+   "lng": -66.9350656375,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bernardo Slimak 2, 1020 Caracas",
+   "base": 10
+  },
+  {
+   "address": "Av. Este 5 99, 1010 Caracas",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Este 5, 99",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Este 5 99 1010",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "ve Este 5 99 Caracas",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Este Este 5 99, ve, Caracas",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "1010, Av. Este 5, Caracas, 99",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Este 599",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Deli este 5 99",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Este 5 99 apt 4b",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "este 5 99",
+   "lat": 10.508417333333334,
+   "lng": -66.90281788888889,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Este 5 99, 1010 Caracas",
+   "base": 11
+  },
+  {
+   "address": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Kemal Ataturk, 6",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Kemal Ataturk 6 1061",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Kemal Ataturk 6, Caracas, ve",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "ve Caracas Kemal Ataturk 6",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Caracas - 1061 - 6 - Avenida Kemal Ataturk",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Kemal Ataturk6",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Mary kemal ataturk 6",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "ataturk 6",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Kemal Ataturk 6 back entrance",
+   "lat": 10.4768343,
+   "lng": -66.8672115,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Kemal Ataturk 6, 1061 Caracas",
+   "base": 12
+  },
+  {
+   "address": "Avenida Libertador 13, 1050 Caracas",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Libertador 13",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Libertador 13, 1050",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Libertador 13 ve Caracas",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "ve Libertador 13 Caracas",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "1050, Avenida Libertador, 13",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Libertador13",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Libertador 13 john",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Mary libertador 13",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "libertador 13",
+   "lat": 10.4967425,
+   "lng": -66.8744372,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Libertador 13, 1050 Caracas",
+   "base": 13
+  },
+  {
+   "address": "Baruta 66, 1040 Caracas",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "66 Baruta",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "Baruta 66, 1040",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "ve, Caracas, Baruta 66",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "Caracas, Baruta 66, 66, ve",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "1040 - 66 - Caracas - Baruta",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "baruta 66",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "Mary baruta 66",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "Bartua 66",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "BARUTA 66",
+   "lat": 10.46960544,
+   "lng": -66.9056134,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Baruta 66, 1040 Caracas",
+   "base": 14
+  },
+  {
+   "address": "Av. Urdaneta 27, 1010 Caracas",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Urdaneta, 27",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Urdaneta 27, 1010",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "ve Caracas Urdaneta 27",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Urdaneta 27 ve Caracas",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "27 - 1010 - Caracas - Av. Urdaneta",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Mary urdaneta 27",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "URDANETA 27",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Urdaneta 27 back entrance",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Urdaenta 27",
+   "lat": 10.5075245,
+   "lng": -66.9140393,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Urdaneta 27, 1010 Caracas",
+   "base": 15
+  },
+  {
+   "address": "Av. Washington 64, 1020 Caracas",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Washington, 64",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Washington 64, 1020",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Caracas, Washington 64, ve",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Caracas Washington Washington 64 ve",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Caracas, 1020, 64, Av. Washington",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "WASHINGTON 64",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Washington64",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Wsahington 64",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Mary washington 64",
+   "lat": 10.48604854,
+   "lng": -66.93994848,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Washington 64, 1020 Caracas",
+   "base": 16
+  },
+  {
+   "address": "Los Chaguaramos 1, 1060 Caracas",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Los Chaguaramos 1",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Los Chaguaramos 1 1060",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Caracas, Los Chaguaramos 1, ve",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "ve Caracas Los Chaguaramos Chaguaramos 1",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Caracas, 1060, 1, Los Chaguaramos",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Los Cha 1",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Los Chaguaramos 1 (green door)",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Deli los chaguaramos 1",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "LOS CHAGUARAMOS 1",
+   "lat": 10.4984743,
+   "lng": -66.8534116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Los Chaguaramos 1, 1060 Caracas",
+   "base": 17
+  },
+  {
+   "address": "Calle 9 9, 1040 Caracas",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "9 9",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "9 9, 1040",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "ve 9 9 Caracas",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "9 9 ve caracas",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "1040, Calle 9, 9",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "9 9",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "Mary 9 9",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "9 9 back entrance",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "99",
+   "lat": 10.46001805,
+   "lng": -66.9181048125,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 9 9, 1040 Caracas",
+   "base": 18
+  },
+  {
+   "address": "Av. Orinoco 23-11, 1050 Caracas",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "23-11 Orinoco",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Orinoco 23-11, 1050",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Caracas, Orinoco 23-11, ve",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Caracas Caracas ve Orinoco 23-11",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "1050, Caracas, 23-11",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "orinoco 23-11",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Orinoco23-11",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Orinoco 23-11 (green door)",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Oirnoco 23-11",
+   "lat": 10.488826900000001,
+   "lng": -66.87468788,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Orinoco 23-11, 1050 Caracas",
+   "base": 19
+  },
+  {
+   "address": "Av. Norte 3 43, 1010 Caracas",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Norte 3 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Norte 3 43, 1010",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Norte 3 43, ve, Caracas",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Caracas ve Norte 3 3 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "1010 Caracas 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "NORTE 3 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Norte 343",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "norte 3 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Deli norte 3 43",
+   "lat": 10.510116,
+   "lng": -66.9109292,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Norte 3 43, 1010 Caracas",
+   "base": 20
+  },
+  {
+   "address": "Av. Lecuna 1101, 1010 Caracas",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "1101 Lecuna",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "Lecuna 1101, 1010",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "ve, Lecuna 1101, Caracas",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "lecuna 1101 caracas ve ve",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "Av. Lecuna Caracas 1101 1010",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "Lecnua 1101",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "Lecuna1101",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "lecuna 1101",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "LECUNA 1101",
+   "lat": 10.5005487,
+   "lng": -66.9138575,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Lecuna 1101, 1010 Caracas",
+   "base": 21
+  },
+  {
+   "address": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva Granada, Local Nº. 2",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva Granada Local Nº. 2, 1040",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva Granada Local Nº. 2, Caracas, ve",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "ve, Nueva Granada Local Nº. 2, Caracas",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Local Nº. 2 1040 Av. Nueva Granada",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva GranadaLocal Nº. 2",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva Granada Local Nº. 2 back entrance",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "NUEVA GRANADA LOCAL Nº. 2",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Nueva Grnaada Local Nº. 2",
+   "lat": 10.4814056,
+   "lng": -66.9039676,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Nueva Granada Local Nº. 2, 1040 Caracas",
+   "base": 22
+  },
+  {
+   "address": "Sorocaima 8, 1010 Caracas",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Sorocaima 8",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Sorocaima 8 1010",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Caracas, ve, Sorocaima 8",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Sorocaima 8, Caracas, ve ve",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "8 Sorocaima 1010",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Sorocaima 8 back entrance",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Mary sorocaima 8",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "SOROCAIMA 8",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Sorocaima8",
+   "lat": 10.513151942857144,
+   "lng": -66.89624637857143,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sorocaima 8, 1010 Caracas",
+   "base": 23
+  },
+  {
+   "address": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Diego de Lozada Edificio Colegio\"12 de Febrero\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Diego de Lozada Edificio Colegio\"12 de Febrero\" Caracas ve",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "caracas, ve, diego de lozada edificio colegio\"12 de febrero\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Edificio Colegio\"12 de Febrero\" - Calle Diego de Lozada - Caracas",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "DIEGO DE LOZADA EDIFICIO COLEGIO\"12 DE FEBRERO\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Diego de LozadaEdificio Colegio\"12 de Febrero\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Diego de Losada Edificio Colegio\"12 de Febrero\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Mary diego de lozada Edificio Colegio\"12 de Febrero\"",
+   "lat": 10.514113917647059,
+   "lng": -66.89328736470588,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Diego de Lozada Edificio Colegio\"12 de Febrero\", Caracas",
+   "base": 24
+  },
+  {
+   "address": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Berrezbeitia, 12",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Berrezbeitia 12, 1020",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "ve, Caracas, Berrezbeitia 12",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "berrezbeitia 12, ve, ve, caracas",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "1020, Caracas, Avenida Berrezbeitia",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Mary berrezbeitia 12",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Berrezveitia 12",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Berrezbeitia 12 (green door)",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Berrezbeitia12",
+   "lat": 10.487649139999998,
+   "lng": -66.9346157,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Berrezbeitia 12, 1020 Caracas",
+   "base": 25
+  },
+  {
+   "address": "Calle El Carmen 12, Caracas",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "El Carmen 12",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "El Carmen 12, Caracas",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "Caracas, El Carmen 12, ve",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "ve el carmen 12 caracas",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "12 - Calle El Carmen",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "El Carmen 12 (green door)",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "El Carmen12",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "EL CARMEN 12",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "El Cramen 12",
+   "lat": 10.4904312,
+   "lng": -66.9133385,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle El Carmen 12, Caracas",
+   "base": 26
+  },
+  {
+   "address": "Av. Norte 17, 1010 Caracas",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "17 Norte",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Norte 17, 1010",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Norte 17 ve Caracas",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Norte 17 Caracas ve",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "1010 - Av. Norte - 17 - Caracas",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Nortte 17",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "NORTE 17",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "norte 17",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Norte17",
+   "lat": 10.51718494,
+   "lng": -66.91307162000001,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Norte 17, 1010 Caracas",
+   "base": 27
+  },
+  {
+   "address": "Calle Negrín 1, 1050 Caracas",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Negrín, 1",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Negrín 1 1050",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Caracas, Negrín 1, ve",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Negrín 1 ve Caracas",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "1050 - 1 - Caracas - Calle Negrín",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "negrín 1",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "NEGRÍN 1",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Negrín 1 apt 4b",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Negírn 1",
+   "lat": 10.4953422,
+   "lng": -66.8756619,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Negrín 1, 1050 Caracas",
+   "base": 28
+  },
+  {
+   "address": "Av. Oeste 0 11, 1010 Caracas",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "11 Oeste 0",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "Oeste 0 11 1010",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "ve Oeste 0 11 Caracas",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "ve ve Oeste 0 11 Caracas",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "1010, Av. Oeste 0, Caracas",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "Oeste 011",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "Mary oeste 0 11",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "OESTE 0 11",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "Oesste 0 11",
+   "lat": 10.50674074,
+   "lng": -66.91674716,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Oeste 0 11, 1010 Caracas",
+   "base": 29
+  },
+  {
+   "address": "Av. Este 11 1103, 1010 Caracas",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Este 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Este 11 1103 1010",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "ve Caracas Este 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "ve caracas este 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Av. Este 11 1103 1010",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "ESTE 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "este 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Deli este 11 1103",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Este 11 1103 (green door)",
+   "lat": 10.51258614,
+   "lng": -66.90735502,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Este 11 1103, 1010 Caracas",
+   "base": 30
+  },
+  {
+   "address": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "CC Lord Center, PB, Locales 11 y 12 Vollmer",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "Vollmer CC Lord Center, PB, Locales 11 y 12 1010",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "Caracas, Vollmer CC Lord Center, PB, Locales 11 y 12, ve",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "ve Caracas Vollmer CC Lord Center, PB, Locales 11 y 12",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "1010, Caracas, CC Lord Center, PB, Locales 11 y 12, Av. Vollmer",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "Vollmer CC Lord Center, PB, Locales 11 y 12 john",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "VOLLMER CC LORD CENTER, PB, LOCALES 11 Y 12",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "Deli vollmer CC Lord Center, PB, Locales 11 y 12",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "VollmerCC Lord Center, PB, Locales 11 y 12",
+   "lat": 10.5057879,
+   "lng": -66.9001964,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Vollmer CC Lord Center, PB, Locales 11 y 12, 1010 Caracas",
+   "base": 31
+  },
+  {
+   "address": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Edificio Neveri, Piso PB, Local PP30 Neverí",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Neverí Edificio Neveri, Piso PB, Local PP30, 1050",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Caracas ve Neverí Edificio Neveri, Piso PB, Local PP30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "ve Caracas Neveri Edificio Neveri, Piso PB, Local PP30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Avenida Neverí - Caracas - Edificio Neveri, Piso PB, Local PP30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "NeveríEdificio Neveri, Piso PB, Local PP30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Neberí Edificio Neveri, Piso PB, Local PP30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "neverí edificio neveri, piso pb, local pp30",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Neverí Edificio Neveri, Piso PB, Local PP30 (green door)",
+   "lat": 10.4861536,
+   "lng": -66.8758809,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Neverí Edificio Neveri, Piso PB, Local PP30, 1050 Caracas",
+   "base": 32
+  },
+  {
+   "address": "Avenida Oeste 9 3, 1010 Caracas",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "3 Oeste 9",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Oeste 9 3 1010",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Caracas, ve, Oeste 9 3",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Oeste 9 3 ve Caracas",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Caracas 3 1010 Avenida Oeste 9",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Oeste 9 3 john",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "oeste 9 3",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "OESTE 9 3",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Oeste 93",
+   "lat": 10.51366556,
+   "lng": -66.91668116,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Oeste 9 3, 1010 Caracas",
+   "base": 33
+  },
+  {
+   "address": "Boulevard de Catia 84, Caracas",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "de Catia, 84",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "de Catia 84, Caracas",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "de Catia 84 ve Caracas",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "Caracas, de Catia 84, ve",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "Caracas, Boulevard de Catia, 84",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "de Catia 84 back entrance",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "DE CATIA 84",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "de catia 84",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "Mary de catia 84",
+   "lat": 10.510136020000001,
+   "lng": -66.9476713,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard de Catia 84, Caracas",
+   "base": 34
+  },
+  {
+   "address": "Av. Universidad 49, 1010 Caracas",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Universidad 49",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Universidad 49 1010",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "ve, Universidad 49, Caracas",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Caracas ve Universidad 49",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "49 1010 Caracas Av. Universidad",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "UNIVERSIDAD 49",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Universidad49",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "universidad 49",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Universidad 49 apt 4b",
+   "lat": 10.5033065,
+   "lng": -66.9100449,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Universidad 49, 1010 Caracas",
+   "base": 35
+  },
+  {
+   "address": "Vereda 60 de Coche 11, 1090 Caracas",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "11 Vereda 60 de Coche",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Vereda 60 de Coche 11, 1090",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Caracas, Vereda 60 de Coche 11, ve",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Caracas, Vereda 60 de Coche 11, ve",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Vereda 60 de Coche Caracas 1090 11",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Vereda 60 de Coche11",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Mary vereda 60 de coche 11",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "VEREDA 60 DE COCHE 11",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Vereda 60 de Coche 11 john",
+   "lat": 10.45119752,
+   "lng": -66.92538569999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vereda 60 de Coche 11, 1090 Caracas",
+   "base": 36
+  },
+  {
+   "address": "Avenida Este 2 155, 1010 Caracas",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "155 Este 2",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Este 2 155 1010",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "ve Caracas Este 2 155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Caracas, ve, Este 2 155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Avenida Este 2, Caracas, 155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Este 2155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "este 2 155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Mary este 2 155",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Este 2 155 back entrance",
+   "lat": 10.5021202,
+   "lng": -66.8989605,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Este 2 155, 1010 Caracas",
+   "base": 37
+  },
+  {
+   "address": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "La Forestal +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "La Forestal +58 212-5511710 1010",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "ve Caracas La Forestal +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "Caracas, ve, La Forestal +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "1010 - Caracas - Calle La Forestal",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "LA FORESTAL +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "La Foerstal +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "La Forestal +58 212-5511710 back entrance",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "La For +58 212-5511710",
+   "lat": 10.521001674999999,
+   "lng": -66.90843915,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle La Forestal +58 212-5511710, 1010 Caracas",
+   "base": 38
+  },
+  {
+   "address": "Av. Gamboa 11, 1010 Caracas",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "11 Gamboa",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Gamboa 11 1010",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Gamboa 11, ve, Caracas",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "ve ve Caracas Gamboa 11",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Caracas, 1010, 11, Av. Gamboa",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "GAMBOA 11",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Gamboa 11 back entrance",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Gamboa11",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  },
+  {
+   "address": "Mary gamboa 11",
+   "lat": 10.509347,
+   "lng": -66.90089259999999,
+   "country": "VE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Gamboa 11, 1010 Caracas",
+   "base": 39
+  }
+ ]
+}

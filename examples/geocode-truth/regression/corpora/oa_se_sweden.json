@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "SE",
+ "city": "Stockholm",
+ "country_label": "Sweden",
+ "depot": {
+  "lat": 59.3293,
+  "lon": 18.0686,
+  "city": "Stockholm",
+  "country": "Sweden"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses se/municipality_of_stockholm, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "14 Dag Hammarskjölds Väg",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Dag Hammarskjölds Väg 14, 115 27",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Stockholm, sweden, Dag Hammarskjölds Väg 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Stockholm, sweden, Dag Hammarskjölds Väg 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "14 Dag Hammarskjölds Väg Stockholm",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "DAG HAMMARSKJÖLDS VÄG 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "dag hammarskjölds väg 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Mary dag hammarskjölds väg 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Dag Hmamarskjölds Väg 14",
+   "lat": 59.3326364,
+   "lng": 18.1021651,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Dag Hammarskjölds Väg 14, 115 27 Stockholm",
+   "base": 0
+  },
+  {
+   "address": "Skinnarviksringen 1, 117 27 Stockholm",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinnarviksringen, 1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinnarviksringen 1 117 27",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Stockholm, sweden, Skinnarviksringen 1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinnarviksringen 1, Stockholm, sweden",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinnarviksringen 1 Stockholm 117 27",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "SKINNARVIKSRINGEN 1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinarviksringen 1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Skinnarviksringen1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Deli skinnarviksringen 1",
+   "lat": 59.3188545,
+   "lng": 18.047315,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Skinnarviksringen 1, 117 27 Stockholm",
+   "base": 1
+  },
+  {
+   "address": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Herman Ygbergs Väg, 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Herman Ygbergs Väg 23 167 61",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Bromma sweden Herman Ygbergs Väg 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Bromma, Herman Ygbergs Väg 23, sweden",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Herman Ygbergs Väg, Bromma, 167 61, 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "HERMAN YGBERGS VÄG 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Herman Ygbergs Väg 23 back entrance",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Deli herman ygbergs väg 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Herman Ygebrgs Väg 23",
+   "lat": 59.32255,
+   "lng": 17.9673723,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Herman Ygbergs Väg 23, 167 61 Bromma",
+   "base": 2
+  },
+  {
+   "address": "Kindstugatan 4, 111 31 Stockholm",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kindstugatan 4",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kindstugatan 4, 111 31",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kindstugatan 4, Stockholm, sweden",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Stockholm Kindstugatan 4 sweden sweden",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Stockholm - 111 31 - 4",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "kindstugatan 4",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kindstugatan4",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kidnstugatan 4",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Kindstugatan 4 apt 4b",
+   "lat": 59.3248384,
+   "lng": 18.0727061,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kindstugatan 4, 111 31 Stockholm",
+   "base": 3
+  },
+  {
+   "address": "Rålambshovsleden 40, 112 19 Stockholm",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Rålambshovsleden, 40",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Rålambshovsleden 40 112 19",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "sweden Rålambshovsleden 40 Stockholm",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Rålambshovsleden 40, Stockholm, sweden",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Stockholm - 40 - Rålambshovsleden",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Rålambshovsleden 40 (green door)",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Råalmbshovsleden 40",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Mary rålambshovsleden 40",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Rålambshovsleden40",
+   "lat": 59.3310129,
+   "lng": 18.0223382,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rålambshovsleden 40, 112 19 Stockholm",
+   "base": 4
+  },
+  {
+   "address": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "46 Sickla Kanalgata",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "Sickla Kanalgata 46, 120 68",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "sweden Sickla Kanalgata 46 Stockholm",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "Sickla Kanalgata 46 Stockholm sweden",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "46, Stockholm, 120 68, Sickla Kanalgata",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "SICKLA KANALGATA 46",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "sickla kanalgata 46",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "Sickla Kanalgata 46 john",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "kanalgata 46",
+   "lat": 59.3038088,
+   "lng": 18.1074789,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Sickla Kanalgata 46, 120 68 Stockholm",
+   "base": 5
+  },
+  {
+   "address": "Brunnbyvägen 16, 120 44 Årsta",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Brunnbyvägen 16",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Brunnbyvägen 16 120 44",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Brunnbyvägen 16, sweden, Årsta",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "brunnbyvägen 16, årsta, sweden",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "120 44 - Brunnbyvägen - Årsta - 16",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "brunnbyvägen 16",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Brunnbivägen 16",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Brunnbyvägen 16 back entrance",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Mary brunnbyvägen 16",
+   "lat": 59.2932559,
+   "lng": 18.0309219,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Brunnbyvägen 16, 120 44 Årsta",
+   "base": 6
+  },
+  {
+   "address": "Osquldas Väg 11, 114 28 Stockholm",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Osquldas Väg 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Osquldas Väg 11 114 28",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "sweden Stockholm Osquldas Väg 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "sweden Stockholm Osquldas Väg Väg 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Osquldas Väg, 11, Stockholm, 114 28",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "osquldas väg 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Mary osquldas väg 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Osquldas Väg 11 back entrance",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "OSQULDAS VÄG 11",
+   "lat": 59.349615,
+   "lng": 18.0681557,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Osquldas Väg 11, 114 28 Stockholm",
+   "base": 7
+  },
+  {
+   "address": "Mårdvägen 42, 167 56 Bromma",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Mårdvägen, 42",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Mårdvägen 42, 167 56",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Bromma Mårdvägen 42 sweden",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "sweden, Mardvagen 42, Bromma",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Bromma Mårdvägen 42 167 56",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Mary mårdvägen 42",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Mårdvägen42",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "mårdvägen 42",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Mårdbägen 42",
+   "lat": 59.3327308,
+   "lng": 17.9679452,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mårdvägen 42, 167 56 Bromma",
+   "base": 8
+  },
+  {
+   "address": "Vänskapsvägen 51, 112 65 Stockholm",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Vänskapsvägen, 51",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Vänskapsvägen 51 112 65",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Stockholm, Vänskapsvägen 51, sweden",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Vanskapsvagen 51 51 Stockholm sweden",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "51 112 65 Vänskapsvägen Stockholm",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "vänskapsvägen 51",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Mary vänskapsvägen 51",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "VÄNSKAPSVÄGEN 51",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Vänskapsvägen 51 (green door)",
+   "lat": 59.3217678,
+   "lng": 17.9873136,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vänskapsvägen 51, 112 65 Stockholm",
+   "base": 9
+  },
+  {
+   "address": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarvägen 1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarvägen 1 121 32",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarvägen 1 sweden Enskededalen",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "sweden, enskededalen, glasmålarvägen 1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "121 32, Enskededalen, 1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Mary glasmålarvägen 1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarbägen 1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarvägen1",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Glasmålarvägen 1 apt 4b",
+   "lat": 59.2884309,
+   "lng": 18.0890769,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Glasmålarvägen 1, 121 32 Enskededalen",
+   "base": 10
+  },
+  {
+   "address": "Nytorgsgatan 44, 116 40 Stockholm",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "44 Nytorgsgatan",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Nytorgsgatan 44, 116 40",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Nytorgsgatan 44, sweden, Stockholm",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Stockholm Nytorgsgatan 44 sweden",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "44, 116 40, Stockholm",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "nytorgsgatan 44",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Deli nytorgsgatan 44",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "NYTORGSGATAN 44",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Nytorgsgatan 44 apt 4b",
+   "lat": 59.3129708,
+   "lng": 18.0823204,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nytorgsgatan 44, 116 40 Stockholm",
+   "base": 11
+  },
+  {
+   "address": "Stenkullavägen 2, 112 65 Stockholm",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkullavägen, 2",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkullavägen 2, 112 65",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkullavägen 2 Stockholm sweden",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "sweden, Stenkullavägen 2, Stockholm",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stockholm, 2, Stenkullavägen, 112 65",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkullavägen 2 back entrance",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkullavägen2",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Stenkulavägen 2",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "stenkullavägen 2",
+   "lat": 59.3187863,
+   "lng": 17.9896735,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Stenkullavägen 2, 112 65 Stockholm",
+   "base": 12
+  },
+  {
+   "address": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Ludvigsbergsgatan 12",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Ludvigsbergsgatan 12, 118 23",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "sweden Ludvigsbergsgatan 12 Stockholm",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "ludvigsbergsgatan 12, stockholm, sweden",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Ludvigsbergsgatan - Stockholm - 12 - 118 23",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Ludvigsbergsgatan 12 (green door)",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Deli ludvigsbergsgatan 12",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Ludvigsbergsgatan12",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "LUDVIGSBERGSGATAN 12",
+   "lat": 59.3198758,
+   "lng": 18.0554909,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ludvigsbergsgatan 12, 118 23 Stockholm",
+   "base": 13
+  },
+  {
+   "address": "Sockenvägen 542, 121 34 Enskededalen",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Sockenvägen, 542",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Sockenvägen 542, 121 34",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Enskededalen sweden Sockenvägen 542",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Sockenvägen 542, Enskededalen, sweden",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "542 Enskededalen Sockenvägen 121 34",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Sockenvägen542",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Sockenvägen 542 john",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "sockenvägen 542",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Deli sockenvägen 542",
+   "lat": 59.2799393,
+   "lng": 18.110535,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sockenvägen 542, 121 34 Enskededalen",
+   "base": 14
+  },
+  {
+   "address": "Olofsgatan 18, 111 36 Stockholm",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "18 Olofsgatan",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Olofsgatan 18 111 36",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Olofsgatan 18, sweden, Stockholm",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "sweden Olofsgatan 18 Stockholm",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Stockholm 18 111 36",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Olfosgatan 18",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "OLOFSGATAN 18",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Olofsgatan18",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "olofsgatan 18",
+   "lat": 59.3372711,
+   "lng": 18.0608518,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Olofsgatan 18, 111 36 Stockholm",
+   "base": 15
+  },
+  {
+   "address": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Södra Fiskartorpsvägen, 15H",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Södra Fiskartorpsvägen 15H 114 33",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "sweden Södra Fiskartorpsvägen 15H Stockholm",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "sweden Stockholm Södra Fiskartorpsvägen 15H",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Södra Fiskartorpsvägen Stockholm 114 33",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Södra Fiskartorpsvägen15H",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Mary södra fiskartorpsvägen 15H",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Södra Fis 15H",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "södra fiskartorpsvägen 15h",
+   "lat": 59.3480948,
+   "lng": 18.0803466,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Södra Fiskartorpsvägen 15H, 114 33 Stockholm",
+   "base": 16
+  },
+  {
+   "address": "Stamgatan 68D, 125 74 Älvsjö",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "68D Stamgatan",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Stamgatan 68D 125 74",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Älvsjö, sweden, Stamgatan 68D",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Stamgatan 68D sweden Älvsjö",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "68D Stamgatan 125 74 Älvsjö",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Stamgatan68D",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Stamgatan 68D apt 4b",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "STAMGATAN 68D",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "stamgatan 68d",
+   "lat": 59.2845235,
+   "lng": 18.04143,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Stamgatan 68D, 125 74 Älvsjö",
+   "base": 17
+  },
+  {
+   "address": "Baggensgatan 25, 111 31 Stockholm",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Baggensgatan 25",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Baggensgatan 25 111 31",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "sweden Baggensgatan 25 Stockholm",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "sweden, baggensgatan 25, stockholm",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Baggensgatan, 25, 111 31",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Mary baggensgatan 25",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Baggensgatan 25 (green door)",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Baggensgatan25",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "BAGGENSGATAN 25",
+   "lat": 59.3239289,
+   "lng": 18.0733653,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Baggensgatan 25, 111 31 Stockholm",
+   "base": 18
+  },
+  {
+   "address": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "Hornsbergs Strand 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "Hornsbergs Strand 15C, 112 17",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "sweden Stockholm Hornsbergs Strand 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "sweden Stockholm Hornsbergs Strand 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "112 17, Stockholm, 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "Hornsvergs Strand 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "Hornsbergs Strand 15C back entrance",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "HORNSBERGS STRAND 15C",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "hornsbergs strand 15c",
+   "lat": 59.339731,
+   "lng": 18.0147794,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hornsbergs Strand 15C, 112 17 Stockholm",
+   "base": 19
+  },
+  {
+   "address": "Julitavägen 6, 125 71 Älvsjö",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Julitavägen 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Julitavägen 6 125 71",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Älvsjö, sweden, Julitavägen 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Älvsjö, Julitavägen 6, sweden",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "125 71 Älvsjö 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Mary julitavägen 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "JULITAVÄGEN 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "julitavägen 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Julitabägen 6",
+   "lat": 59.2846513,
+   "lng": 18.0350424,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Julitavägen 6, 125 71 Älvsjö",
+   "base": 20
+  },
+  {
+   "address": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Storkyrkobrinken 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Storkyrkobrinken 4, 111 28",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Stockholm, sweden, Storkyrkobrinken 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Storkyrkobrinken 4 Stockholm sweden",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "111 28, Stockholm, 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Mary storkyrkobrinken 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "storkyrkobrinken 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Storkyrkobrinken4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "STORKYRKOBRINKEN 4",
+   "lat": 59.3258391,
+   "lng": 18.0693736,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Storkyrkobrinken 4, 111 28 Stockholm",
+   "base": 21
+  },
+  {
+   "address": "Margaretavägen 44, 122 32 Enskede",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "44 Margaretavägen",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Margaretavägen 44 122 32",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "sweden, Enskede, Margaretavägen 44",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Margaretavägen 44 sweden Enskede",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Margaretavägen, 44, Enskede",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Mary margaretavägen 44",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Margaretabägen 44",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "MARGARETAVÄGEN 44",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Margaretavägen44",
+   "lat": 59.2832761,
+   "lng": 18.0799934,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Margaretavägen 44, 122 32 Enskede",
+   "base": 22
+  },
+  {
+   "address": "Flädermorsbacken 24, 167 62 Bromma",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "24 Flädermorsbacken",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Flädermorsbacken 24 167 62",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "sweden Flädermorsbacken 24 Bromma",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Bromma, sweden, Flädermorsbacken 24",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Bromma - 167 62 - Flädermorsbacken",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Flädermorsbacken 24 john",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Deli flädermorsbacken 24",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Flädermorsbacken24",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Flädermorsbaken 24",
+   "lat": 59.3206029,
+   "lng": 17.9694801,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Flädermorsbacken 24, 167 62 Bromma",
+   "base": 23
+  },
+  {
+   "address": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Norr Mälarstrand, 16",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Norr Mälarstrand 16 112 20",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "sweden Norr Mälarstrand 16 Stockholm",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "sweden, Stockholm, Norr Norr Mälarstrand 16",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "16 - 112 20 - Stockholm",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "norr mälarstrand 16",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Mary norr mälarstrand 16",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Norr Mälarstrand 16 back entrance",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Norr Mälarstrnad 16",
+   "lat": 59.3269004,
+   "lng": 18.0474741,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Norr Mälarstrand 16, 112 20 Stockholm",
+   "base": 24
+  },
+  {
+   "address": "Ekorrvägen 12, 167 56 Bromma",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "12 Ekorrvägen",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "Ekorrvägen 12 167 56",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "sweden Bromma Ekorrvägen 12",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "sweden Ekorrvägen 12 Bromma",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "167 56 - Ekorrvägen - 12 - Bromma",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "Ekorrvägen 12 back entrance",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "EKORRVÄGEN 12",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "Mary ekorrvägen 12",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "Eokrrvägen 12",
+   "lat": 59.331575,
+   "lng": 17.9680293,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ekorrvägen 12, 167 56 Bromma",
+   "base": 25
+  },
+  {
+   "address": "Stockholmsvägen 87, 122 63 Enskede",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "87 Stockholmsvägen",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Stockholmsvägen 87, 122 63",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Enskede, sweden, Stockholmsvägen 87",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "stockholmsvägen 87, sweden, enskede",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Stockholmsvägen, 87, 122 63",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Stockholmsvägen87",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Deli stockholmsvägen 87",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "STOCKHOLMSVÄGEN 87",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "stockholmsvägen 87",
+   "lat": 59.2785415,
+   "lng": 18.081704,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Stockholmsvägen 87, 122 63 Enskede",
+   "base": 26
+  },
+  {
+   "address": "Babordsgatan 20, 120 64 Stockholm",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "20 Babordsgatan",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Babordsgatan 20 120 64",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Babordsgatan 20 sweden Stockholm",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Stockholm Stockholm sweden Babordsgatan 20",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "20, Stockholm, Babordsgatan, 120 64",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Babordsgatan20",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Deli babordsgatan 20",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Babordsgatan 20 (green door)",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Bavordsgatan 20",
+   "lat": 59.304842,
+   "lng": 18.1006119,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Babordsgatan 20, 120 64 Stockholm",
+   "base": 27
+  },
+  {
+   "address": "Vapengatan 4, 126 52 Hägersten",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vapengatan, 4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vapengatan 4, 126 52",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vapengatan 4 sweden Hägersten",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "sweden Hagersten Vapengatan 4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Hägersten - Vapengatan - 126 52 - 4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vapengatan4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vpaengatan 4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Mary vapengatan 4",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Vapengatan 4 john",
+   "lat": 59.3061907,
+   "lng": 17.9969742,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Vapengatan 4, 126 52 Hägersten",
+   "base": 28
+  },
+  {
+   "address": "Restadsvägen 12, 167 33 Bromma",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Restadsvägen, 12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Restadsvägen 12 167 33",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "sweden, Restadsvägen 12, Bromma",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "sweden, Bromma, Restadsvägen 12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "167 33, Restadsvägen, Bromma",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Mary restadsvägen 12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Restadsvägen12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Restadsbägen 12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "restadsvägen 12",
+   "lat": 59.3373608,
+   "lng": 17.9719548,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Restadsvägen 12, 167 33 Bromma",
+   "base": 29
+  },
+  {
+   "address": "Kindstugatan 1, 111 31 Stockholm",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Kindstugatan 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Kindstugatan 1, 111 31",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Kindstugatan 1, Stockholm, sweden",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Stockholm, sweden, Kindstugatan 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "111 31 Kindstugatan Stockholm 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "kindstugatan 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "KINDSTUGATAN 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Mary kindstugatan 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Kindstguatan 1",
+   "lat": 59.3247454,
+   "lng": 18.0726622,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kindstugatan 1, 111 31 Stockholm",
+   "base": 30
+  },
+  {
+   "address": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Drottning Kristinas Väg 49",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Drottning Kristinas Väg 49 114 28",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Drottning Kristinas Väg 49, sweden, Stockholm",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "drottning kristinas vag vag 49 sweden stockholm",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "114 28 - Drottning Kristinas Väg - 49 - Stockholm",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Drottning Kristinas Väg49",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Drotning Kristinas Väg 49",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "DROTTNING KRISTINAS VÄG 49",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "drottning kristinas väg 49",
+   "lat": 59.3499819,
+   "lng": 18.0684635,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Drottning Kristinas Väg 49, 114 28 Stockholm",
+   "base": 31
+  },
+  {
+   "address": "Sjövikstorget 12, 117 60 Stockholm",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjövikstorget, 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjövikstorget 12, 117 60",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjövikstorget 12, Stockholm, sweden",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "sweden, sweden, Stockholm, Sjovikstorget 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjövikstorget Stockholm 117 60 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Deli sjövikstorget 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "sjövikstorget 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjövikstorget 12 john",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sjöbikstorget 12",
+   "lat": 59.3078183,
+   "lng": 18.0285906,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sjövikstorget 12, 117 60 Stockholm",
+   "base": 32
+  },
+  {
+   "address": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Sibbarpsgränd, 27",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Sibbarpsgränd 27 125 73",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "sweden Älvsjö Sibbarpsgränd 27",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "älvsjö, sibbarpsgränd sibbarpsgränd 27, sweden",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "125 73 - Sibbarpsgränd - 27 - Älvsjö",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Mary sibbarpsgränd 27",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Sivbarpsgränd 27",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Sibbarpsgränd 27 back entrance",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "sibbarpsgränd 27",
+   "lat": 59.2897685,
+   "lng": 18.0356073,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sibbarpsgränd 27, 125 73 Älvsjö",
+   "base": 33
+  },
+  {
+   "address": "Pollargatan 3, 120 71 Stockholm",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "3 Pollargatan",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "Pollargatan 3, 120 71",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "sweden, Pollargatan 3, Stockholm",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "sweden Stockholm Pollargatan 3 3",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "Stockholm - Pollargatan - 120 71",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "Pollargatan 3 back entrance",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "Deli pollargatan 3",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "pollargatan 3",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "POLLARGATAN 3",
+   "lat": 59.3098841,
+   "lng": 18.1037262,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pollargatan 3, 120 71 Stockholm",
+   "base": 34
+  },
+  {
+   "address": "Årstavägen 71, 120 54 Årsta",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Årstavägen, 71",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Årstavägen 71 120 54",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Årsta Årstavägen 71 sweden",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Arstavagen 71, sweden, Arsta",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "71 - Årstavägen - Årsta",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "ÅRSTAVÄGEN 71",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Årstabägen 71",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "årstavägen 71",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Mary årstavägen 71",
+   "lat": 59.2975762,
+   "lng": 18.0486582,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Årstavägen 71, 120 54 Årsta",
+   "base": 35
+  },
+  {
+   "address": "Gullmarsplan 10, 121 40 Johanneshov",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "10 Gullmarsplan",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Gullmarsplan 10 121 40",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Johanneshov, sweden, Gullmarsplan 10",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "sweden, Gullmarsplan 10, Johanneshov",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "121 40 10 Johanneshov",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Gulmarsplan 10",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Gullmarsplan 10 apt 4b",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Gullmarsplan10",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Deli gullmarsplan 10",
+   "lat": 59.297971,
+   "lng": 18.0793842,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gullmarsplan 10, 121 40 Johanneshov",
+   "base": 36
+  },
+  {
+   "address": "Ängsvägen 3, 122 62 Enskede",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "3 Ängsvägen",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Ängsvägen 3, 122 62",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "sweden Ängsvägen 3 Enskede",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Ängsvägen 3 Enskede sweden",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Ängsvägen - 122 62 - Enskede",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "ängsvägen 3",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Ängsvägen 3 apt 4b",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Mary ängsvägen 3",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "ÄNGSVÄGEN 3",
+   "lat": 59.2822868,
+   "lng": 18.0869526,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ängsvägen 3, 122 62 Enskede",
+   "base": 37
+  },
+  {
+   "address": "Personnevägen 48, 129 35 Hägersten",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnevägen 48",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnevägen 48, 129 35",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "sweden Personnevägen 48 Hägersten",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Hägersten Personnevägen 48 sweden",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnevägen - 129 35 - Hägersten - 48",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnebägen 48",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Deli personnevägen 48",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnevägen48",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Personnevägen 48 john",
+   "lat": 59.3013406,
+   "lng": 17.9785786,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Personnevägen 48, 129 35 Hägersten",
+   "base": 38
+  },
+  {
+   "address": "Tegnérgatan 37, 111 61 Stockholm",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Tegnérgatan 37",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Tegnérgatan 37, 111 61",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Tegnérgatan 37, sweden, Stockholm",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Tegnergatan Tegnergatan 37, sweden, Stockholm",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "111 61 Tegnérgatan Stockholm",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Deli tegnérgatan 37",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "Tegnérgatan37",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "tegnérgatan 37",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  },
+  {
+   "address": "TEGNÉRGATAN 37",
+   "lat": 59.3388294,
+   "lng": 18.0575542,
+   "country": "SE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tegnérgatan 37, 111 61 Stockholm",
+   "base": 39
+  }
+ ]
+}

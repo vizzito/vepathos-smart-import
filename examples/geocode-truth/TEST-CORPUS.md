@@ -244,7 +244,7 @@ python scripts/generate_address_corpus.py \
 
 | Flag | Default | Significado |
 |------|---------|-------------|
-| `--noise-level {1-5}` | — | Intensidad del desorden |
+| `--noise-level {1-6}` | — | Intensidad del desorden |
 | `--noise-cumulative` | off | Genera niveles 1..N (no solo N) |
 | `--noise-baseline` | off | Incluye fila limpia (`noise_level=0`) |
 | `--noise-permutations` | 4 | Máx. permutaciones por nivel (3–5) |
@@ -257,6 +257,7 @@ python scripts/generate_address_corpus.py \
 | 3 | Ciudad/país, permutaciones |
 | 4 | Typos y puntuación rota |
 | 5 | Bloques casi completos permutados |
+| 6 | Planilla de despacho real: apellido solo, truncada, typo fonético, número pegado, nota al final, nombre adelante, mayúsculas (`noise_kind` por fila) |
 
 ### 8. Auto-generación en `geocode-accuracy`
 
@@ -357,6 +358,13 @@ Ver [README.md](./README.md): `caba_stops_2907.json`, `caba_ml_13.csv`,
 `tandil_stops_326.json`, `miami_whatsapp_6.json`, etc.
 
 ---
+
+## Regresión por el camino del producto
+
+`geocode-accuracy` llama al geocoder directo y se saltea el gate, `force_review`,
+geofences y reintento limpio. Para validar un cambio del geocoder usar
+`geocode-regression` (82 suites, 70+ países, nota por fila y diff de regresiones):
+ver [regression/README.md](./regression/README.md).
 
 ## Traps (regresión congelada)
 

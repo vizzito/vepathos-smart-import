@@ -1,0 +1,4008 @@
+{
+ "source": "osm-addr",
+ "country": "SK",
+ "city": "Bratislava",
+ "country_label": "Slovakia",
+ "depot": {
+  "lat": 48.1486,
+  "lon": 17.1077,
+  "city": "Bratislava",
+  "country": "Slovakia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 399,
+ "note": "Nodos addr:* del indice n48.30_s48.00_e17.20_w17.00-slovakia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Priemyselná 668/5, 82109 Bratislava",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "668/5 Priemyselná",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "Priemyselná 668/5, 82109",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "Bratislava, sk, Priemyselná 668/5",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "Bratislava, sk, Priemyselná 668/5",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "668/5 Priemyselná Bratislava",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "Priemyselná 668/5 back entrance",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "PRIEMYSELNÁ 668/5",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "Deli priemyselná 668/5",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "priemyselná 668/5",
+   "lat": 48.15292548,
+   "lng": 17.144331,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Priemyselná 668/5, 82109 Bratislava",
+   "base": 0
+  },
+  {
+   "address": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "M. Schneidra Trnavského, 1979/4",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "M. Schneidra Trnavského 1979/4, 84101",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "Bratislava sk M. Schneidra Trnavského 1979/4",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "M. Schneidra Trnavského 1979/4, Bratislava, sk",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "1979/4, 84101, M. Schneidra Trnavského, Bratislava",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "trnavského 1979/4",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "M. Schneidra Trnavského 1979/4 back entrance",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "m. schneidra trnavského 1979/4",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "M. SCHNEIDRA TRNAVSKÉHO 1979/4",
+   "lat": 48.17945021818182,
+   "lng": 17.044628131818182,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "M. Schneidra Trnavského 1979/4, 84101 Bratislava",
+   "base": 1
+  },
+  {
+   "address": "Rusovská cesta 802/14, 85101 Bratislava",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Rusovská cesta 802/14",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Rusovská cesta 802/14, 85101",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "sk Rusovská cesta 802/14 Bratislava",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Bratislava, Rusovská cesta 802/14, sk",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "802/14 - 85101 - Bratislava",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Deli rusovská cesta 802/14",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Rusovská cesta802/14",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "RUSOVSKÁ CESTA 802/14",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "rusovská cesta 802/14",
+   "lat": 48.128190714285715,
+   "lng": 17.093426857142855,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rusovská cesta 802/14, 85101 Bratislava",
+   "base": 2
+  },
+  {
+   "address": "Jazdecká 376/7, 83103 Bratislava",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "376/7 Jazdecká",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Jazdecká 376/7, 83103",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Jazdecká 376/7, Bratislava, sk",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Bratislava Jazdecká 376/7 sk",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "376/7, 83103, Jazdecká, Bratislava",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Jasdecká 376/7",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Jazdecká376/7",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "jazdecká 376/7",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Deli jazdecká 376/7",
+   "lat": 48.1689678,
+   "lng": 17.13338725,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Jazdecká 376/7, 83103 Bratislava",
+   "base": 3
+  },
+  {
+   "address": "Lamanského 898/1, 83103 Bratislava",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Lamanského, 898/1",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Lamanského 898/1 83103",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "sk Bratislava Lamanského 898/1",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Bratislava, Lamanskeho 898/1, sk",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Bratislava - 898/1 - Lamanského",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "LAMANSKÉHO 898/1",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Lamanskhéo 898/1",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Deli lamanského 898/1",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Lamanského 898/1 john",
+   "lat": 48.17070118181818,
+   "lng": 17.138602936363636,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lamanského 898/1, 83103 Bratislava",
+   "base": 4
+  },
+  {
+   "address": "Bratská 1741/10, 85101 Bratislava",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratská 1741/10",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratská 1741/10, 85101",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratislava Bratská 1741/10 sk",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratská 1741/10 Bratislava sk",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "1741/10, Bratislava, 85101, Bratská",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "bratská 1741/10",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratská 1741/10 apt 4b",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "BRATSKÁ 1741/10",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Bratksá 1741/10",
+   "lat": 48.116277133333334,
+   "lng": 17.089816044444447,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bratská 1741/10, 85101 Bratislava",
+   "base": 5
+  },
+  {
+   "address": "Sliačska 13903/1C, 83102 Bratislava",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Sliačska 13903/1C",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Sliačska 13903/1C 83102",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Sliačska 13903/1C, sk, Bratislava",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "sliačska 13903/1c, bratislava, sk",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "83102 - Sliačska - Bratislava - 13903/1C",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Sliačska13903/1C",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Slaičska 13903/1C",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "sliačska 13903/1c",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Mary sliačska 13903/1C",
+   "lat": 48.171977000000005,
+   "lng": 17.12527896,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sliačska 13903/1C, 83102 Bratislava",
+   "base": 6
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C, 83101",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C, Bratislava, sk",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C sk sk Bratislava",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke, 13692/5C, Bratislava, 83101",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Mary na rozhliadke 13692/5C",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke13692/5C",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "na rozhliadke 13692/5c",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Na Rozhliadke 13692/5C back entrance",
+   "lat": 48.1651617,
+   "lng": 17.1102945,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Na Rozhliadke 13692/5C, 83101 Bratislava",
+   "base": 7
+  },
+  {
+   "address": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "19473/4 Pribinova-zimný prístav",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Pribinova-zimný prístav 19473/4, 82109",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Pribinova-zimný prístav 19473/4 Bratislava sk",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Bratislava, Pribinova-zimny pristav 19473/4, sk",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Bratislava Pribinova-zimný prístav 19473/4 82109",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Pribinova-zimný prístav19473/4",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Pribinova-zimný prí 19473/4",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "PRIBINOVA-ZIMNÝ PRÍSTAV 19473/4",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Privinova-zimný prístav 19473/4",
+   "lat": 48.13918801111111,
+   "lng": 17.129062666666666,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pribinova-zimný prístav 19473/4, 82109 Bratislava",
+   "base": 8
+  },
+  {
+   "address": "Rovníková 3250/12, 82102 Bratislava",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Rovníková, 3250/12",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Rovníková 3250/12 82102",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Rovníková 3250/12, Bratislava, sk",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "bratislava sk rovníková 3250/12",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "82102 3250/12 Rovníková Bratislava",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "rovníková 3250/12",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Mary rovníková 3250/12",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "ROVNÍKOVÁ 3250/12",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Rovníková 3250/12 (green door)",
+   "lat": 48.16034632307692,
+   "lng": 17.167556046153848,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rovníková 3250/12, 82102 Bratislava",
+   "base": 9
+  },
+  {
+   "address": "Hlavná 2069/7, 83101 Bratislava",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlavná 2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlavná 2069/7 83101",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlavná 2069/7 sk Bratislava",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "sk, bratislava, hlavná 2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "83101, Bratislava, 2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Mary hlavná 2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlabná 2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlavná2069/7",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Hlavná 2069/7 apt 4b",
+   "lat": 48.166654566666665,
+   "lng": 17.11351748888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hlavná 2069/7, 83101 Bratislava",
+   "base": 10
+  },
+  {
+   "address": "Kláštorská 2428/32, 82105 Bratislava",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "2428/32 Kláštorská",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Kláštorská 2428/32, 82105",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Kláštorská 2428/32, sk, Bratislava",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Bratislava Kláštorská 2428/32 sk",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "2428/32, 82105, Bratislava",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "KLÁŠTORSKÁ 2428/32",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Deli kláštorská 2428/32",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Kláštorská 2428/32 john",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Kláštorská2428/32",
+   "lat": 48.14419524,
+   "lng": 17.16985882,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kláštorská 2428/32, 82105 Bratislava",
+   "base": 11
+  },
+  {
+   "address": "Bohúňova 3597/18, 81104 Bratislava",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňova 3597/18",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňova 3597/18 81104",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "sk Bratislava Bohúňova 3597/18",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňova 3597/18, 3597/18, Bratislava, sk",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bratislava, 3597/18, Bohúňova, 81104",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňova 3597/18 back entrance",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňova3597/18",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Bohúňoba 3597/18",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "bohúňova 3597/18",
+   "lat": 48.16211351428571,
+   "lng": 17.0851812,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bohúňova 3597/18, 81104 Bratislava",
+   "base": 12
+  },
+  {
+   "address": "Pavlovičova 3326/6, 82104 Bratislava",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Pavlovičova 3326/6",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Pavlovičova 3326/6, 82104",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "sk Pavlovičova 3326/6 Bratislava",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "pavlovičova 3326/6, bratislava, sk",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Pavlovičova - Bratislava - 3326/6 - 82104",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Pavlovičova 3326/6 (green door)",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Deli pavlovičova 3326/6",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Pavlovičova3326/6",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "PAVLOVIČOVA 3326/6",
+   "lat": 48.165896483333334,
+   "lng": 17.164972433333332,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pavlovičova 3326/6, 82104 Bratislava",
+   "base": 13
+  },
+  {
+   "address": "Planét 3243/1, 82102 Bratislava",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Planét, 3243/1",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Planét 3243/1, 82102",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Bratislava sk Planét 3243/1",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Planét 3243/1, Bratislava, sk",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "3243/1 Bratislava Planét 82102",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Planét3243/1",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Planét 3243/1 john",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "PLANÉT 3243/1",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Mary planét 3243/1",
+   "lat": 48.1625455125,
+   "lng": 17.1709525,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Planét 3243/1, 82102 Bratislava",
+   "base": 14
+  },
+  {
+   "address": "Žilinská 2956/8, 81105 Bratislava",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "2956/8 Žilinská",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Žilinská 2956/8 81105",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Žilinská 2956/8, sk, Bratislava",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "sk Žilinská 2956/8 Bratislava",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Bratislava 2956/8 81105",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Žiilnská 2956/8",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "ŽILINSKÁ 2956/8",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Žilinská2956/8",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "žilinská 2956/8",
+   "lat": 48.1550293,
+   "lng": 17.1120162,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Žilinská 2956/8, 81105 Bratislava",
+   "base": 15
+  },
+  {
+   "address": "Sekulská 671/3, 84104 Bratislava",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Sekulská, 671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Sekulská 671/3 84104",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "sk Sekulská 671/3 Bratislava",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "sk Bratislava Sekulská 671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Sekulská Bratislava 84104",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Skeulská 671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Sekulská671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "sekulská 671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Mary sekulská 671/3",
+   "lat": 48.16220664137931,
+   "lng": 17.047157610344826,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sekulská 671/3, 84104 Bratislava",
+   "base": 16
+  },
+  {
+   "address": "Gavlovičova 781/1, 83103 Bratislava",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "781/1 Gavlovičova",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Gavlovičova 781/1, 83103",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Gavlovičova 781/1 sk Bratislava",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "sk, Gavlovičova 781/1, Bratislava",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Gavlovičova Bratislava 83103 781/1",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Gavlovičova 781/1 john",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Gavlovičova781/1",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Mary gavlovičova 781/1",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "GAVLOVIČOVA 781/1",
+   "lat": 48.174624563636364,
+   "lng": 17.135740454545456,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gavlovičova 781/1, 83103 Bratislava",
+   "base": 17
+  },
+  {
+   "address": "Pionierska 10520/10, Bratislava",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Pionierska, 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "sk, Bratislava, Pionierska 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "sk, pionierska 10520/10, bratislava",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Pionierska, 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "pionierska 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Pionierska 10520/10 john",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Pioneirska 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Mary pionierska 10520/10",
+   "lat": 48.161800343835615,
+   "lng": 17.11818651506849,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pionierska 10520/10, Bratislava",
+   "base": 18
+  },
+  {
+   "address": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "6115/1A Sumbalova",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Sumbalova 6115/1A, 841 04",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Sumbalova 6115/1A sk Bratislava",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Sumbalova 6115/1A, sk, Bratislava",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Sumbalova - Bratislava - 6115/1A",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Smubalova 6115/1A",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Sumbalova 6115/1A apt 4b",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Mary sumbalova 6115/1A",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "SUMBALOVA 6115/1A",
+   "lat": 48.1557186,
+   "lng": 17.0521049,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sumbalova 6115/1A, 841 04 Bratislava",
+   "base": 19
+  },
+  {
+   "address": "Cyrilova 488/2, 82108 Bratislava",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Cyrilova 488/2",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Cyrilova 488/2 82108",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Bratislava, sk, Cyrilova 488/2",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Cyrilova 488/2 488/2 sk Bratislava",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "488/2 - 82108 - Cyrilova",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Cyriloba 488/2",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "cyrilova 488/2",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Cyrilova 488/2 back entrance",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Deli cyrilova 488/2",
+   "lat": 48.15542706923077,
+   "lng": 17.127407246153844,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Cyrilova 488/2, 82108 Bratislava",
+   "base": 20
+  },
+  {
+   "address": "Americká 1629/5, 83102 Bratislava",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Americká, 1629/5",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Americká 1629/5 83102",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Bratislava, Americká 1629/5, sk",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "sk, Americká 1629/5, 1629/5, Bratislava",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Bratislava, 83102, Americká",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Americká1629/5",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "americká 1629/5",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Ameriká 1629/5",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Deli americká 1629/5",
+   "lat": 48.16272802857143,
+   "lng": 17.12327635714286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Americká 1629/5, 83102 Bratislava",
+   "base": 21
+  },
+  {
+   "address": "Osuského 1647/22, 85103 Bratislava",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuského, 1647/22",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuského 1647/22, 85103",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "sk, Osuského 1647/22, Bratislava",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuského 1647/22, sk, Bratislava",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Bratislava, 1647/22, 85103, Osuského",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuského1647/22",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuského 1647/22 john",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Deli osuského 1647/22",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Osuksého 1647/22",
+   "lat": 48.118069625,
+   "lng": 17.1133501875,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Osuského 1647/22, 85103 Bratislava",
+   "base": 22
+  },
+  {
+   "address": "Klatovská 1412/14, 83104 Bratislava",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Klatovská, 1412/14",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Klatovská 1412/14, 83104",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Bratislava sk Klatovská 1412/14",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "klatovská 1412/14 sk bratislava",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "1412/14, Klatovská, 83104",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Klatovská1412/14",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Klatovská 1412/14 john",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "KLATOVSKÁ 1412/14",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Klatobská 1412/14",
+   "lat": 48.177664822222226,
+   "lng": 17.16627726666667,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Klatovská 1412/14, 83104 Bratislava",
+   "base": 23
+  },
+  {
+   "address": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "5076/5 Pôvabnicová",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Pôvabnicová 5076/5 84107",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Pôvabnicová 5076/5 Bratislava sk",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "sk, Pôvabnicová Pôvabnicová 5076/5, Bratislava",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Pôvabnicová, Bratislava, 84107, 5076/5",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "PÔVABNICOVÁ 5076/5",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Deli pôvabnicová 5076/5",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Pôvabnicová5076/5",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Pôvavnicová 5076/5",
+   "lat": 48.16492226666667,
+   "lng": 17.059291833333333,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pôvabnicová 5076/5, 84107 Bratislava",
+   "base": 24
+  },
+  {
+   "address": "Prvosienková 1521/7, 81102 Bratislava",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Prvosienková 1521/7",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Prvosienková 1521/7 81102",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "sk, Prvosienková 1521/7, Bratislava",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Bratislava sk Prvosienková 1521/7",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Prvosienková 1521/7 Bratislava 81102",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "prvosienková 1521/7",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Provsienková 1521/7",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Mary prvosienková 1521/7",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Prvosienková 1521/7 (green door)",
+   "lat": 48.15489936666667,
+   "lng": 17.08228028888889,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prvosienková 1521/7, 81102 Bratislava",
+   "base": 25
+  },
+  {
+   "address": "Ostredková 3231/2, 82102 Bratislava",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ostredková 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ostredková 3231/2 82102",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ostredková 3231/2, sk, Bratislava",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "bratislava, sk, ostredkova 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Bratislava 82102 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ostredkobá 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "ostredková 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Mary ostredková 3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ostredková3231/2",
+   "lat": 48.16055665,
+   "lng": 17.165937535714285,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ostredková 3231/2, 82102 Bratislava",
+   "base": 26
+  },
+  {
+   "address": "Ďurgalova 2860/4, 83101 Bratislava",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Ďurgalova, 2860/4",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Ďurgalova 2860/4, 83101",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Bratislava Ďurgalova 2860/4 sk",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "sk, Ďurgalova 2860/4, Bratislava",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "2860/4, Bratislava, 83101",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Ďurgalova 2860/4 back entrance",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Ďurgaloba 2860/4",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "ĎURGALOVA 2860/4",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Deli ďurgalova 2860/4",
+   "lat": 48.1643793,
+   "lng": 17.091375,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ďurgalova 2860/4, 83101 Bratislava",
+   "base": 27
+  },
+  {
+   "address": "Rumančeková 856/10, 82101 Bratislava",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Rumančeková 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Rumančeková 856/10 82101",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "sk, Bratislava, Rumančeková 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Bratislava, sk, Rumancekova 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Bratislava - Rumančeková - 82101 - 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Rumančeková 856/10 john",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Rumančeková856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Mary rumančeková 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Rumančekobá 856/10",
+   "lat": 48.149995775,
+   "lng": 17.155771625,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rumančeková 856/10, 82101 Bratislava",
+   "base": 28
+  },
+  {
+   "address": "Bojnická 1487/15, 83104 Bratislava",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Bojnická 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Bojnická 1487/15, 83104",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "sk, Bratislava, Bojnická 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "sk, Bratislava, Bojnická 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "83104, Bojnická, Bratislava",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Mary bojnická 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Bojnická1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Bojniká 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "bojnická 1487/15",
+   "lat": 48.178426916666666,
+   "lng": 17.1658283,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bojnická 1487/15, 83104 Bratislava",
+   "base": 29
+  },
+  {
+   "address": "Prokofievova 12, 85238 Bratislava",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Prokofievova 12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Prokofievova 12, 85238",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Prokofievova 12, Bratislava, sk",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Bratislava, sk, Prokofievova 12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "85238 Prokofievova Bratislava 12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "PROKOFIEVOVA 12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Prokofievova 12 (green door)",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Mary prokofievova 12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Prokofievova12",
+   "lat": 48.11725862,
+   "lng": 17.10097871,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Prokofievova 12, 85238 Bratislava",
+   "base": 30
+  },
+  {
+   "address": "Banšelova 3995/5, 82104 Bratislava",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Banšelova 3995/5",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Banšelova 3995/5, 82104",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Banšelova 3995/5, Bratislava, sk",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Bratislava, Banselova Banselova 3995/5, sk",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "3995/5, Bratislava, 82104, Banšelova",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "banšelova 3995/5",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Banšelova3995/5",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Banšeloba 3995/5",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Mary banšelova 3995/5",
+   "lat": 48.17509464,
+   "lng": 17.1657286,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Banšelova 3995/5, 82104 Bratislava",
+   "base": 31
+  },
+  {
+   "address": "Krížna 4082/8, 81107 Bratislava",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "4082/8 Krížna",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Krížna 4082/8, 81107",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "sk, Bratislava, Krížna 4082/8",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Bratislava Krizna 4082/8 sk",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Krížna Bratislava 81107 4082/8",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Mary krížna 4082/8",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "KRÍŽNA 4082/8",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Krížna 4082/8 john",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "krížna 4082/8",
+   "lat": 48.15265766,
+   "lng": 17.12135098,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Krížna 4082/8, 81107 Bratislava",
+   "base": 32
+  },
+  {
+   "address": "Janotova 3248/2B, 84104 Bratislava",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Janotova, 3248/2B",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Janotova 3248/2B 84104",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "sk Bratislava Janotova 3248/2B",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "bratislava, janotova janotova 3248/2b, sk",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "84104 - Janotova - 3248/2B - Bratislava",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Mary janotova 3248/2B",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Janotoba 3248/2B",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Janotova 3248/2B back entrance",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "janotova 3248/2b",
+   "lat": 48.147910714285715,
+   "lng": 17.058030657142858,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Janotova 3248/2B, 84104 Bratislava",
+   "base": 33
+  },
+  {
+   "address": "Štetinova 143/2, 81106 Bratislava",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "143/2 Štetinova",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Štetinova 143/2, 81106",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "sk, Štetinova 143/2, Bratislava",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Stetinova Stetinova 143/2 Bratislava sk",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Bratislava - Štetinova - 81106",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Štetinova 143/2 back entrance",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Deli štetinova 143/2",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "štetinova 143/2",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "ŠTETINOVA 143/2",
+   "lat": 48.148519271428576,
+   "lng": 17.104377157142856,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Štetinova 143/2, 81106 Bratislava",
+   "base": 34
+  },
+  {
+   "address": "Západná 3268/2, 82102 Bratislava",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Západná, 3268/2",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Západná 3268/2 82102",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Bratislava Západná 3268/2 sk",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Zapadna 3268/2, sk, Bratislava",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "3268/2 - Západná - Bratislava",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "západná 3268/2",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Západná 3268/2 back entrance",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "ZÁPADNÁ 3268/2",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Západná3268/2",
+   "lat": 48.1592231,
+   "lng": 17.1673073,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Západná 3268/2, 82102 Bratislava",
+   "base": 35
+  },
+  {
+   "address": "Mojmírova 921/10, 82108 Bratislava",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova 921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova 921/10, 82108",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Bratislava sk Mojmírova 921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova 921/10 Bratislava Bratislava sk",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova 82108 921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmíroba 921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova 921/10 apt 4b",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Mojmírova921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Deli mojmírova 921/10",
+   "lat": 48.1517985,
+   "lng": 17.1325926,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mojmírova 921/10, 82108 Bratislava",
+   "base": 36
+  },
+  {
+   "address": "Prúdová 3034/8, 82105 Bratislava",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "3034/8 Prúdová",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Prúdová 3034/8, 82105",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "sk Prúdová 3034/8 Bratislava",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Prúdová 3034/8 Bratislava sk",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Prúdová - 82105 - Bratislava",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "prúdová 3034/8",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Prúdová 3034/8 apt 4b",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Mary prúdová 3034/8",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "PRÚDOVÁ 3034/8",
+   "lat": 48.15212134285714,
+   "lng": 17.178945414285714,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Prúdová 3034/8, 82105 Bratislava",
+   "base": 37
+  },
+  {
+   "address": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové pálenisko 18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové pálenisko 18688/3, 82105",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "sk Nové pálenisko 18688/3 Bratislava",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Bratislava Nové pálenisko 18688/3 sk",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové pálenisko - 82105 - Bratislava - 18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "NOVÉ PÁLENISKO 18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové pálenisko18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové pál 18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Nové páelnisko 18688/3",
+   "lat": 48.13824677777777,
+   "lng": 17.158263488888892,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nové pálenisko 18688/3, 82105 Bratislava",
+   "base": 38
+  },
+  {
+   "address": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hradné údolie 1996/5",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hradné údolie 1996/5, 811 01",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hradné údolie 1996/5, sk, Bratislava",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hradne Hradne udolie 1996/5, sk, Bratislava",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "811 01 Hradné údolie Bratislava",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hradné údolie 1996/5 (green door)",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Hardné údolie 1996/5",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "hradné údolie 1996/5",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  },
+  {
+   "address": "Deli hradné údolie 1996/5",
+   "lat": 48.14250731111111,
+   "lng": 17.09522557777778,
+   "country": "SK",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hradné údolie 1996/5, 811 01 Bratislava",
+   "base": 39
+  }
+ ]
+}

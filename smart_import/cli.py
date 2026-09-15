@@ -901,6 +901,91 @@ def geocode_eval(
     _echo_json({"worst": d["worst"]})
 
 
+@app.command("geocode-regression")
+def geocode_regression(
+    manifest: Path = typer.Option(
+        None, "--manifest", help="Suites a correr (default: examples/geocode-truth/regression/manifest.json)."),
+    profile: str = typer.Option("fast", "--profile", help="fast | full (limites por suite)."),
+    label: str = typer.Option(..., "--label", help="Nombre del snapshot (baseline, fix-gate, ...)."),
+    out: Path = typer.Option(Path("out/regression"), "--out", help="Carpeta raiz de snapshots."),
+    only: str = typer.Option(None, "--only", help="Ids de suite separados por coma."),
+    tags: str = typer.Option(None, "--tags", help="Solo suites con alguno de estos tags (coma)."),
+    against: Path = typer.Option(
+        None, "--against", help="Snapshot previo: al terminar imprime el diff y sale 1 si hay regresiones."),
+    env_file: Path = typer.Option(
+        None, "--env-file", exists=True,
+        help="Umbrales de un despliegue (GEOCODE_*): p.ej. deploy/templates/api-prod.env.template."),
+) -> None:
+    """Geocodifica cada suite por el MISMO camino que produccion y guarda un snapshot.
+
+    A diferencia de `geocode-accuracy`, pasa por `geocoding.runner.run`: gate de
+    evidencia, bandas con force_review, geofences y reintento limpio incluidos.
+    Cada fila se califica contra su verdad y el diff entre snapshots lista las
+    regresiones una por una.
+    """
+    from .tools.geocode_regression import (
+        DEFAULT_MANIFEST, diff_snapshots, format_diff, format_summary,
+        load_manifest, read_snapshot, run_suite, write_snapshot, write_suite_rows,
+    )
+
+    if env_file is not None:
+        import os
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            key, sep, value = line.strip().partition("=")
+            if sep and key.startswith("GEOCODE_") and not key.startswith("#"):
+                os.environ[key] = value.strip()
+    suites = load_manifest(manifest or DEFAULT_MANIFEST)
+    wanted = {s.strip() for s in (only or "").split(",") if s.strip()}
+    wanted_tags = {s.strip() for s in (tags or "").split(",") if s.strip()}
+    selected = [s for s in suites
+                if profile in s.profiles
+                and (not wanted or s.id in wanted)
+                and (not wanted_tags or wanted_tags & set(s.tags))]
+    if not selected:
+        raise typer.BadParameter("ninguna suite coincide con el filtro")
+
+    target = out / label
+    runs = []
+    for suite in selected:
+        typer.echo(f"  ▸ {suite.id} ({suite.corpus.name})", err=True)
+        runs.append(run_suite(suite, profile=profile, workdir=target / "_work"))
+        write_suite_rows(runs[-1], target)
+    write_snapshot(runs, target, label=label, profile=profile)
+    summary = json.loads((target / "summary.json").read_text(encoding="utf-8"))
+    typer.echo(format_summary(summary))
+    typer.echo(f"\n  snapshot: {target}")
+
+    if against is not None:
+        result = diff_snapshots(read_snapshot(against), read_snapshot(target))
+        typer.echo("\n" + format_diff(result))
+        if any(c.kind == "regression" for c in result["changes"]):
+            raise typer.Exit(1)
+
+
+@app.command("geocode-regression-diff")
+def geocode_regression_diff(
+    before: Path = typer.Argument(..., exists=True, help="Snapshot base."),
+    after: Path = typer.Argument(..., exists=True, help="Snapshot candidato."),
+    max_improvements: int = typer.Option(40, "--max-improvements"),
+    json_out: Path = typer.Option(None, "--json", help="Guardar el diff completo en JSON."),
+) -> None:
+    """Regresiones / mejoras / deriva fila por fila entre dos snapshots. Sale 1 si hay regresiones."""
+    from .tools.geocode_regression import diff_snapshots, format_diff, read_snapshot
+
+    result = diff_snapshots(read_snapshot(before), read_snapshot(after))
+    typer.echo(format_diff(result, max_improvements=max_improvements))
+    if json_out is not None:
+        payload = {
+            "changes": [{"kind": c.kind, "key": c.key, "suite": c.suite,
+                         "address": c.address, "before": c.before, "after": c.after}
+                        for c in result["changes"]],
+            "per_suite": result["per_suite"], "per_noise": result["per_noise"],
+        }
+        json_out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    if any(c.kind == "regression" for c in result["changes"]):
+        raise typer.Exit(1)
+
+
 @app.command()
 def serve(
     host: str = typer.Option("0.0.0.0", help="0.0.0.0 para exponerlo al host."),

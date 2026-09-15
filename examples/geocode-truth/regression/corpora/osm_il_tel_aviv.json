@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "IL",
+ "city": "Tel Aviv",
+ "country_label": "Israel",
+ "depot": {
+  "lat": 32.0853,
+  "lon": 34.7818,
+  "city": "Tel Aviv",
+  "country": "Israel"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n32.20_s32.00_e34.90_w34.70-israel-and-palestine.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "15א קהילת ונציה, Tel Aviv",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "15א קהילת ונציה",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "קהילת ונציה 15א, Tel Aviv",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "Tel Aviv, il, קהילת ונציה 15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "Tel Aviv, il, קהילת ונציה 15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "Tel Aviv, קהילת ונציה",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "קהילת ונציה15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "ונציה 15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "Mary קהילת ונציה 15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "קהיללת ונציה 15א",
+   "lat": 32.114129,
+   "lng": 34.822322,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15א קהילת ונציה, Tel Aviv",
+   "base": 0
+  },
+  {
+   "address": "14 3677, Tel Aviv",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "3677, 14",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "3677 14, Tel Aviv",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "3677 14, Tel Aviv, il",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "Tel Aviv 3677 14 il",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "14 Tel Aviv 3677",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "3677 14",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "Deli 3677 14",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "367714",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "3677 14 apt 4b",
+   "lat": 32.047833,
+   "lng": 34.782616,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14 3677, Tel Aviv",
+   "base": 1
+  },
+  {
+   "address": "15 חיבת ציון, Tel Aviv",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "15 חיבת ציון",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "חיבת ציון 15, Tel Aviv",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "Tel Aviv, il, חיבת ציון 15",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "Tel Aviv, חיבת ציון 15, il",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "Tel Aviv - 15 - חיבת ציון",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "חיבת ציון 15",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "ציון 15",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "חיבת ציון15",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "חיבת ציון 15 apt 4b",
+   "lat": 32.0793831,
+   "lng": 34.8220057,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 חיבת ציון, Tel Aviv",
+   "base": 2
+  },
+  {
+   "address": "999 אצטדיון חדש, Tel Aviv",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "999 אצטדיון חדש",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "אצטדיון חדש 999, Tel Aviv",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "il, אצטדיון חדש 999, Tel Aviv",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "Tel Aviv, il, אצטדיון חדש 999",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "אצטדיון חדש, Tel Aviv",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "אצטדיון חדש 999",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "Mary אצטדיון חדש 999",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "אצטדיון חדש 999 (green door)",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "אצטדיון חדש999",
+   "lat": 32.102046,
+   "lng": 34.823277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "999 אצטדיון חדש, Tel Aviv",
+   "base": 3
+  },
+  {
+   "address": "62 ישיבת וולוז'ין, Tel Aviv",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין 62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין 62, Tel Aviv",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין 62 Tel Aviv il",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "il Tel Aviv ישיבת ישיבת וולוז'ין 62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין - 62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולו'זין 62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "Mary ישיבת וולוז'ין 62",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "ישיבת וולוז'ין 62 john",
+   "lat": 32.06008,
+   "lng": 34.762732,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "62 ישיבת וולוז'ין, Tel Aviv",
+   "base": 4
+  },
+  {
+   "address": "1 אנכי, Tel Aviv",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "אנכי, 1",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "אנכי 1, Tel Aviv",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "il אנכי 1 Tel Aviv",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "Tel Aviv, אנכי 1, il",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "Tel Aviv 1",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "אנכי 1 apt 4b",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "אנכי 1",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "אנכי1",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "Deli אנכי 1",
+   "lat": 32.118756,
+   "lng": 34.819033,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 אנכי, Tel Aviv",
+   "base": 5
+  },
+  {
+   "address": "42 גרונימן, Tel Aviv",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "42 גרונימן",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "גרונימן 42, Tel Aviv",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "Tel Aviv, גרונימן 42, il",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "il tel aviv גרונימן 42",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "42 - גרונימן - Tel Aviv",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "גרונימן 42",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "Deli גרונימן 42",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "גרונימן 42 apt 4b",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "גרונימן42",
+   "lat": 32.106635,
+   "lng": 34.799852,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "42 גרונימן, Tel Aviv",
+   "base": 6
+  },
+  {
+   "address": "52 רוקח ישראל, Tel Aviv",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "רוקח ישראל 52",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "רוקח ישראל 52, Tel Aviv",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "il רוקח ישראל 52 Tel Aviv",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "רוקח רוקח ישראל 52 Tel Aviv il",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "52 Tel Aviv רוקח ישראל",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "Deli רוקח ישראל 52",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "ישראל 52",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "רוקח ישראל 52 apt 4b",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "רוקח ישראל52",
+   "lat": 32.09891,
+   "lng": 34.791668,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "52 רוקח ישראל, Tel Aviv",
+   "base": 7
+  },
+  {
+   "address": "33 1245, Tel Aviv",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "1245, 33",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "1245 33, Tel Aviv",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "Tel Aviv, 1245 33, il",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "1245 33 Tel Aviv il",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "Tel Aviv - 33 - 1245",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "Mary 1245 33",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "1245 33 john",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "1245 33",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "124533",
+   "lat": 32.063212,
+   "lng": 34.78508,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "33 1245, Tel Aviv",
+   "base": 8
+  },
+  {
+   "address": "9 פרי מגדים, Tel Aviv",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "9 פרי מגדים",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "פרי מגדים 9, Tel Aviv",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "Tel Aviv il פרי מגדים 9",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "il פרי פרי מגדים 9 Tel Aviv",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "פרי מגדים Tel Aviv",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "Mary פרי מגדים 9",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "פרי מגדים 9",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "פרי מגדים 9 apt 4b",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "מגדים 9",
+   "lat": 32.075993,
+   "lng": 34.796826,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "9 פרי מגדים, Tel Aviv",
+   "base": 9
+  },
+  {
+   "address": "4 חנוך, Tel Aviv",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך, 4",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך 4, Tel Aviv",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך 4, il, Tel Aviv",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "il חנוך 4 tel aviv",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "Tel Aviv - חנוך",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך 4 back entrance",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "Deli חנוך 4",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך4",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "חנוך 4",
+   "lat": 32.052161,
+   "lng": 34.787841,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 חנוך, Tel Aviv",
+   "base": 10
+  },
+  {
+   "address": "13 ישראליס, Tel Aviv",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ישראליס, 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ישראליס 13, Tel Aviv",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "Tel Aviv il ישראליס 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ישראליס 13, il, tel aviv",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "Tel Aviv - 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ירשאליס 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "Deli ישראליס 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ישראליס 13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "ישראליס13",
+   "lat": 32.080765,
+   "lng": 34.774422,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "13 ישראליס, Tel Aviv",
+   "base": 11
+  },
+  {
+   "address": "15 Sharabi St., Tel Aviv",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Sharabi St., 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Sharabi St. 15, Tel Aviv",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Tel Aviv il Sharabi St. 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "il Tel Aviv Sharabi St. 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "15 Sharabi St. Tel Aviv",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "sharabi st. 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Shaarbi St. 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Sharabi St. 15 apt 4b",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "Mary sharabi st. 15",
+   "lat": 32.0616061,
+   "lng": 34.7664148,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15 Sharabi St., Tel Aviv",
+   "base": 12
+  },
+  {
+   "address": "16 עציון גבר, Tel Aviv",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "16 עציון גבר",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "עציון גבר 16, Tel Aviv",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "il עציון גבר 16 Tel Aviv",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "Tel Aviv, עציון גבר 16, il",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "Tel Aviv - 16 - עציון גבר",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "עציון גבר16",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "עציוון גבר 16",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "Deli עציון גבר 16",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "עציון גבר 16",
+   "lat": 32.052879,
+   "lng": 34.761078,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 עציון גבר, Tel Aviv",
+   "base": 13
+  },
+  {
+   "address": "1 470, Tel Aviv",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "470, 1",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "470 1, Tel Aviv",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "Tel Aviv il 470 1",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "il 470 1 Tel Aviv",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "1 - Tel Aviv - 470",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "470 1",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "4701",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "470 1 back entrance",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "Deli 470 1",
+   "lat": 32.057657,
+   "lng": 34.799839,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 470, Tel Aviv",
+   "base": 14
+  },
+  {
+   "address": "26 ווג'ווד, Tel Aviv",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד, 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד 26, Tel Aviv",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד 26 il Tel Aviv",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "il, Tel Aviv, ווג'ווד 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד, 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "Deli ווג'ווד 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "וגו'ווד 26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "ווג'ווד26",
+   "lat": 32.057378,
+   "lng": 34.790183,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "26 ווג'ווד, Tel Aviv",
+   "base": 15
+  },
+  {
+   "address": "14 אנילביץ, בני ברק",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ 14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ 14, בני ברק",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "בני ברק il אנילביץ 14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "il אנילביץ אנילביץ 14 בני ברק",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ בני ברק 14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ 14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "אנילביץ 14 apt 4b",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "Mary אנילביץ 14",
+   "lat": 32.0819046,
+   "lng": 34.829974,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "14 אנילביץ, בני ברק",
+   "base": 16
+  },
+  {
+   "address": "79 מסילת ישרים, Tel Aviv",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "79 מסילת ישרים",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "מסילת ישרים 79, Tel Aviv",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "il Tel Aviv מסילת ישרים 79",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "מסילת ישרים 79, 79, il, Tel Aviv",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "79 Tel Aviv",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "מסילת ישרים 79",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "מסיללת ישרים 79",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "Deli מסילת ישרים 79",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "מסילת ישרים 79 (green door)",
+   "lat": 32.052944,
+   "lng": 34.777156,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "79 מסילת ישרים, Tel Aviv",
+   "base": 17
+  },
+  {
+   "address": "11 ארזי יהודה, Tel Aviv",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "11 ארזי יהודה",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "ארזי יהודה 11, Tel Aviv",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "ארזי יהודה 11, il, Tel Aviv",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "Tel Aviv, il, ארזי יהודה יהודה 11",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "Tel Aviv, ארזי יהודה",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "ארזי יההודה 11",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "ארזי יהודה11",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "יהודה 11",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "ארזי יהודה 11",
+   "lat": 32.119301,
+   "lng": 34.803617,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "11 ארזי יהודה, Tel Aviv",
+   "base": 18
+  },
+  {
+   "address": "28 בנגו, בני ברק",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בנגו 28",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בנגו 28, בני ברק",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "il בנגו 28 בני ברק",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "il בנגו 28 בני ברק",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בני ברק - 28",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בנגו 28 (green door)",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בנגו28",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "Mary בנגו 28",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "בנגו 28",
+   "lat": 32.0821049,
+   "lng": 34.827947,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "28 בנגו, בני ברק",
+   "base": 19
+  },
+  {
+   "address": "4 פרחי אביב, Tel Aviv",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "4 פרחי אביב",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב 4, Tel Aviv",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "il Tel Aviv פרחי אביב 4",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב 4, il, Tel Aviv",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב - Tel Aviv",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב4",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב 4",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "Deli פרחי אביב 4",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "פרחי אביב 4 back entrance",
+   "lat": 32.075805,
+   "lng": 34.797418,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 פרחי אביב, Tel Aviv",
+   "base": 20
+  },
+  {
+   "address": "10 הארבעה, Tel Aviv",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה 10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה 10, Tel Aviv",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "Tel Aviv il הארבעה 10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "Tel Aviv il הארבעה 10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה, 10, Tel Aviv",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה 10 (green door)",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "הארבעה 10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "Mary הארבעה 10",
+   "lat": 32.070295,
+   "lng": 34.783726,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "10 הארבעה, Tel Aviv",
+   "base": 21
+  },
+  {
+   "address": "22 וילקומירר, Tel Aviv",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר, 22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר 22, Tel Aviv",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "il, Tel Aviv, וילקומירר 22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "il, וילקומירר 22, Tel Aviv Aviv",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר - Tel Aviv - 22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקמוירר 22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר 22",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "וילקומירר 22 apt 4b",
+   "lat": 32.082259199999996,
+   "lng": 34.8349879,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "22 וילקומירר, Tel Aviv",
+   "base": 22
+  },
+  {
+   "address": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "George Wise Street 24",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "George Wise Street 24, 6997801",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "George Wise Street 24 תל אביב-יפו il",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "il George Wise Street 24 תל אביב-יפו",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "6997801 תל אביב-יפו 24 George Wise Street",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "george wise street 24",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "Geogre Wise Street 24",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "George Wise Street24",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "Deli george wise street 24",
+   "lat": 32.10827227777778,
+   "lng": 34.80332766666667,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "24 George Wise Street, 6997801 תל אביב-יפו",
+   "base": 23
+  },
+  {
+   "address": "10 רות, Tel Aviv",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות, 10",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות 10, Tel Aviv",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "Tel Aviv, רות 10, il",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות 10 il Tel Aviv",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "Tel Aviv, רות",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות10",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות 10",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "רות 10 (green door)",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "Mary רות 10",
+   "lat": 32.079111,
+   "lng": 34.776246,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "10 רות, Tel Aviv",
+   "base": 24
+  },
+  {
+   "address": "4 קורדובה, Tel Aviv",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה, 4",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה 4, Tel Aviv",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "il קורדובה 4 Tel Aviv",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה 4, tel aviv, il",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה, 4, Tel Aviv",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "Deli קורדובה 4",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה4",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קורדובה 4 back entrance",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "קודרובה 4",
+   "lat": 32.088047,
+   "lng": 34.778532,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "4 קורדובה, Tel Aviv",
+   "base": 25
+  },
+  {
+   "address": "3 המעפילים, Tel Aviv",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעפילים 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעפילים 3, Tel Aviv",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "Tel Aviv המעפילים 3 il",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "il Tel Aviv המעפילים 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעפילים, 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעיפלים 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "Deli המעפילים 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעפילים 3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "המעפילים3",
+   "lat": 32.054527,
+   "lng": 34.788545,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 המעפילים, Tel Aviv",
+   "base": 26
+  },
+  {
+   "address": "8 אופטושו יוסף, Tel Aviv",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף 8",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף 8, Tel Aviv",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף 8 Tel Aviv il",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף 8, Tel Aviv, il",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "8 - Tel Aviv",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "יוסף 8",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "Mary אופטושו יוסף 8",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף 8",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "אופטושו יוסף8",
+   "lat": 32.042084,
+   "lng": 34.781633,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 אופטושו יוסף, Tel Aviv",
+   "base": 27
+  },
+  {
+   "address": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Yigal Alon St 51",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Yigal Alon St 51 61210",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "il, Yigal Alon St 51, Tel Aviv-Yafo",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "yigal alon st 51 il tel aviv-yafo",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Yigal Alon St - 51 - 61210 - Tel Aviv-Yafo",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Yigal Alon St51",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Mary yigal alon st 51",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "yigal alon st 51",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "Yiggal Alon St 51",
+   "lat": 32.1091657,
+   "lng": 34.8111176,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "51 Yigal Alon St, 61210 Tel Aviv-Yafo",
+   "base": 28
+  },
+  {
+   "address": "2 ישראל טייבר, גבעתיים",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "ישראל טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "ישראל טייבר 2, גבעתיים",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "גבעתיים, il, ישראל טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "il il גבעתיים ישראל טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "2 גבעתיים ישראל טייבר",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "Deli ישראל טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "ישראל טייבר 2 john",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "ישראל טייבר 2",
+   "lat": 32.0712703,
+   "lng": 34.8020934,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 ישראל טייבר, גבעתיים",
+   "base": 29
+  },
+  {
+   "address": "2 החזיון, Tel Aviv",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "2 החזיון",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "החזיון 2, Tel Aviv",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "il Tel Aviv החזיון 2",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "il החזיון החזיון 2 Tel Aviv",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "2 החזיון Tel Aviv",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "החזיון 2 apt 4b",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "החזיון 2",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "הזחיון 2",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "החזיון2",
+   "lat": 32.040271,
+   "lng": 34.777992,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 החזיון, Tel Aviv",
+   "base": 30
+  },
+  {
+   "address": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "הרב יוסף צוברי, 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "הרב יוסף צוברי 18, 6767589",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "il תל-אביב הרב יוסף צוברי 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "תל-אביב il il הרב יוסף צוברי 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "תל-אביב הרב יוסף צוברי 18 6767589",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "הרב יוסף צוברי 18 apt 4b",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "צוברי 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "Deli הרב יוסף צוברי 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "הרב יוסף צובררי 18",
+   "lat": 32.05102712,
+   "lng": 34.80740382,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "18 הרב יוסף צוברי, 6767589 תל-אביב",
+   "base": 31
+  },
+  {
+   "address": "6 קהילת בריסק, Tel Aviv",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "6 קהילת בריסק",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק 6, Tel Aviv",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק 6, il, Tel Aviv",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק 6 tel aviv il",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק Tel Aviv",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק 6",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "Mary קהילת בריסק 6",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהיילת בריסק 6",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "קהילת בריסק 6 (green door)",
+   "lat": 32.109713,
+   "lng": 34.819664,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 קהילת בריסק, Tel Aviv",
+   "base": 32
+  },
+  {
+   "address": "15 הדסה, Tel Aviv",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה, 15",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה 15, Tel Aviv",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "Tel Aviv, il, הדסה 15",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה 15 Tel Aviv il",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "Tel Aviv, 15, הדסה",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה 15",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה 15 john",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "הדסה15",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "Mary הדסה 15",
+   "lat": 32.083127,
+   "lng": 34.780272,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "15 הדסה, Tel Aviv",
+   "base": 33
+  },
+  {
+   "address": "2 דוד פנקס, בני ברק",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס 2, בני ברק",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס 2, il, בני ברק",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "בני ברק il דוד פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "Mary דוד פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "דוד פנקס 2",
+   "lat": 32.0811195,
+   "lng": 34.8291277,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 דוד פנקס, בני ברק",
+   "base": 34
+  },
+  {
+   "address": "16 מאפו, Tel Aviv",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "16 מאפו",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו 16, Tel Aviv",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו 16 Tel Aviv il",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "il מאפו 16 Tel Tel Aviv",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו - 16",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו16",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "Mary מאפו 16",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו 16 john",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "מאפו 16",
+   "lat": 32.080504,
+   "lng": 34.769899,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 מאפו, Tel Aviv",
+   "base": 35
+  },
+  {
+   "address": "1 אחרון יוסף, Tel Aviv",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחרון יוסף, 1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחרון יוסף 1, Tel Aviv",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "il, Tel Aviv, אחרון יוסף 1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "tel aviv, il, אחרון אחרון יוסף 1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחרון יוסף 1 Tel Aviv",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחרון יוסף 1 apt 4b",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחחרון יוסף 1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "אחרון יוסף1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "Deli אחרון יוסף 1",
+   "lat": 32.04305,
+   "lng": 34.78178,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 אחרון יוסף, Tel Aviv",
+   "base": 36
+  },
+  {
+   "address": "3 פיינברג יוסף, Tel Aviv",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיינברג יוסף, 3",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיינברג יוסף 3, Tel Aviv",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "Tel Aviv, פיינברג יוסף 3, il",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "Tel Aviv פיינברג יוסף 3 il il",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "3 פיינברג יוסף Tel Aviv",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיינברג יוסף 3",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיינברג יוסף 3 back entrance",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיינברג יוסף3",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "פיניברג יוסף 3",
+   "lat": 32.045167,
+   "lng": 34.805244,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 פיינברג יוסף, Tel Aviv",
+   "base": 37
+  },
+  {
+   "address": "16 העלייה, תל אביב-יפו",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העלייה 16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העלייה 16, תל אביב-יפו",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "il תל אביב-יפו העלייה 16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העלייה 16 il תל אביב-יפו",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "16 העלייה",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "Mary העלייה 16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העללייה 16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העלייה16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "העלייה 16",
+   "lat": 32.0595338,
+   "lng": 34.7735544,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 העלייה, תל אביב-יפו",
+   "base": 38
+  },
+  {
+   "address": "6 סעדיה גאון, Tel Aviv",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון, 6",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון 6, Tel Aviv",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "Tel Aviv il סעדיה גאון 6",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון 6 il Tel Aviv Aviv",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון Tel Aviv",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון 6 back entrance",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון 6",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "גאון 6",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  },
+  {
+   "address": "סעדיה גאון6",
+   "lat": 32.08180062,
+   "lng": 34.833778540000004,
+   "country": "IL",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 סעדיה גאון, Tel Aviv",
+   "base": 39
+  }
+ ]
+}

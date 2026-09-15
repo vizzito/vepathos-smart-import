@@ -1,0 +1,3978 @@
+{
+ "source": "osm-addr",
+ "country": "PA",
+ "city": "Panamá",
+ "country_label": "Panama",
+ "depot": {
+  "lat": 8.9824,
+  "lon": -79.5199,
+  "city": "Panamá",
+  "country": "Panama"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 396,
+ "note": "Nodos addr:* del indice n9.10_s8.90_e-79.40_w-79.60-panama.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Calle Andres Mojica 43, Panamá",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "43 Andres Mojica",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Andres Mojica 43, Panamá",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Panamá, pa, Andres Mojica 43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Panamá, pa, Andres Mojica 43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Panamá, Calle Andres Mojica",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Mary andres mojica 43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "andres mojica 43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "mojica 43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Andres Mojica43",
+   "lat": 8.99405732,
+   "lng": -79.50364434000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Andres Mojica 43, Panamá",
+   "base": 0
+  },
+  {
+   "address": "Calle 63a Oeste 15A, Panamá",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "15A 63a Oeste",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "63a Oeste 15A, Panamá",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "63a Oeste 15A, Panamá, pa",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "Panamá 63a Oeste 15A pa",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "15A Panamá Calle 63a Oeste",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "63a Oeste15A",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "63a Oeste 15A (green door)",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "Deli 63a oeste 15A",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "63A OESTE 15A",
+   "lat": 8.999473442857143,
+   "lng": -79.53217398571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 63a Oeste 15A, Panamá",
+   "base": 1
+  },
+  {
+   "address": "Avenida 12 de Octubre Local 21, Panama City",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "12 de Octubre, Local 21",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "12 de Octubre Local 21, Panama City",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "Panama City, 12 de Octubre Local 21, pa",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "pa, 12 de Octubre Local 21, Panama Panama City",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "Local 21 - Avenida 12 de Octubre - Panama City",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "12 de Oct Local 21",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "Deli 12 de octubre Local 21",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "12 de Octubre Local 21 back entrance",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "12 de Octuvre Local 21",
+   "lat": 9.0119261,
+   "lng": -79.5100904,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida 12 de Octubre Local 21, Panama City",
+   "base": 2
+  },
+  {
+   "address": "Calle 95 C Este 93, Panama City",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C Este, 93",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C Este 93, Panama City",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C Este 93 pa Panama City",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C Este 93 Panama City pa",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "93, Panama City",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C ESTE 93",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 C Este93",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "95 c este 93",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "Deli 95 c este 93",
+   "lat": 9.006962514285714,
+   "lng": -79.49070968571428,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 95 C Este 93, Panama City",
+   "base": 3
+  },
+  {
+   "address": "Avenida Demetrio B. Lakas 783, Panamá",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Demetrio B. Lakas 783",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Demetrio B. Lakas 783, Panamá",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Demetrio B. Lakas 783, pa, Panamá",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Panamá, Demetrio B. Lakas 783, pa",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Avenida Demetrio B. Lakas, 783, Panamá",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Deli demetrio b. lakas 783",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Demetrio B. Lakas783",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Demetrio B. Lakas 783 back entrance",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "lakas 783",
+   "lat": 8.998409975862069,
+   "lng": -79.56099147931035,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Demetrio B. Lakas 783, Panamá",
+   "base": 4
+  },
+  {
+   "address": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama, pa",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Ciudad de Panama pa Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Calle Centennial, Ciudad de Panama",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Cetnennial Plaza Centennial Piso 1, subiendo por Papa Jhons",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "CENTENNIAL PLAZA CENTENNIAL PISO 1, SUBIENDO POR PAPA JHONS",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "centennial plaza centennial piso 1, subiendo por papa jhons",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "CentennialPlaza Centennial Piso 1, subiendo por Papa Jhons",
+   "lat": 9.0293872,
+   "lng": -79.5304619,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Centennial Plaza Centennial Piso 1, subiendo por Papa Jhons, Ciudad de Panama",
+   "base": 5
+  },
+  {
+   "address": "Calle 63 Oeste 25, Panamá",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 Oeste 25",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 Oeste 25, Panamá",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "pa, 63 Oeste 25, Panamá",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 Oeste 25, pa, Panamá",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "Panamá Calle 63 Oeste",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 OESTE 25",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 oeste 25",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 Oeste 25 john",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "63 Oeste25",
+   "lat": 9.000298599999999,
+   "lng": -79.52762272,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 63 Oeste 25, Panamá",
+   "base": 6
+  },
+  {
+   "address": "Calle 22 D Norte 9A, Panama",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D Norte, 9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D Norte 9A, Panama",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D Norte 9A, Panama, pa",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "pa, Panama, 22 D Norte 9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "Panama, 9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "Mary 22 d norte 9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D Norte 9A (green door)",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D NORTE 9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "22 D Norte9A",
+   "lat": 9.018499283333334,
+   "lng": -79.53309095,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 22 D Norte 9A, Panama",
+   "base": 7
+  },
+  {
+   "address": "Calle Ricardo Arias 14, Panama City",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "14 Ricardo Arias",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "Ricardo Arias 14, Panama City",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "pa Panama City Ricardo Arias 14",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "pa Ricardo Arias 14 Panama City",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "Calle Ricardo Arias - 14",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "arias 14",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "Ricardo Arias 14 apt 4b",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "RICARDO ARIAS 14",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "ricardo arias 14",
+   "lat": 8.98250384,
+   "lng": -79.52521282000001,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Ricardo Arias 14, Panama City",
+   "base": 8
+  },
+  {
+   "address": "Camino Real de Betania 306, 0818 Panama City",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Camino Real de Betania, 306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Camino Real de Betania 306, 0818",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Panama City, pa, Camino Real de Betania 306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Camino Real de Betania Betania 306 Panama City pa",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "306 - 0818 - Panama City - Camino Real de Betania",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Real de Betania306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Real de Bet 306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "real de betania 306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Deli real de betania 306",
+   "lat": 9.01086862,
+   "lng": -79.5281776,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Camino Real de Betania 306, 0818 Panama City",
+   "base": 9
+  },
+  {
+   "address": "Calle Las Carrasquilla 472, Panamá",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Las Carrasquilla 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Las Carrasquilla 472, Panamá",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Panamá, pa, Las Carrasquilla 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Panamá pa Las Carrasquilla 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Panamá Calle Las Carrasquilla",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Las Carrasquilla472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Las Car 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Mary las carrasquilla 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "las carrasquilla 472",
+   "lat": 9.00040722,
+   "lng": -79.5147604,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Las Carrasquilla 472, Panamá",
+   "base": 10
+  },
+  {
+   "address": "Avenida 3 D Sur 43, Panamá",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "43 3 D Sur",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "3 D Sur 43, Panamá",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "Panamá, pa, 3 D Sur 43",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "pa, 3 D Sur 43, Panamá",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "43 Avenida 3 D Sur Panamá",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "3 D Sur 43 (green door)",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "Mary 3 d sur 43",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "3 D SUR 43",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "3 d sur 43",
+   "lat": 8.996883744444444,
+   "lng": -79.50081987777779,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 3 D Sur 43, Panamá",
+   "base": 11
+  },
+  {
+   "address": "Calle 67 Este 67, San Francisco",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 Este 67",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 Este 67, San Francisco",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 Este 67 San Francisco pa",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "pa, 67 Este 67, San Francisco",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "Calle 67 Este San Francisco",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 este 67",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 ESTE 67",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "67 Este67",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "Deli 67 este 67",
+   "lat": 8.99206672,
+   "lng": -79.51119638,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 67 Este 67, San Francisco",
+   "base": 12
+  },
+  {
+   "address": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Republica De Bolivia 60",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Republica De Bolivia 60, Ciudad de Panamá",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "pa Republica De Bolivia 60 Ciudad de Panamá",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "pa, Republica De Bolivia 60, Ciudad de Panama",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Calle Republica De Bolivia, 60, Ciudad de Panamá",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "republica de bolivia 60",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Mary republica de bolivia 60",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "REPUBLICA DE BOLIVIA 60",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Repuvlica De Bolivia 60",
+   "lat": 8.973331286666667,
+   "lng": -79.53093207333333,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Republica De Bolivia 60, Ciudad de Panamá",
+   "base": 13
+  },
+  {
+   "address": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "SF69 Plaza Mario Rognoni",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "Mario Rognoni SF69 Plaza, 07099",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "pa San Francisco Mario Rognoni SF69 Plaza",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "Mario Rognoni SF69 Plaza, San Francisco, pa",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "San Francisco, 07099, SF69 Plaza, Calle Mario Rognoni",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "mario rognoni sf69 plaza",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "Mario Rog SF69 Plaza",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "rognoni SF69 Plaza",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "Mario RognoniSF69 Plaza",
+   "lat": 8.988789,
+   "lng": -79.5088722,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Mario Rognoni SF69 Plaza, 07099 San Francisco",
+   "base": 14
+  },
+  {
+   "address": "Calle Nispero 4, Panamá",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Nispero, 4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Nispero 4, Panamá",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Panamá, Nispero 4, pa",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Panamá, pa, Nispero 4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Calle Nispero - Panamá - 4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "NISPERO 4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Nispero4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Mary nispero 4",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Nispero 4 back entrance",
+   "lat": 8.996670720000001,
+   "lng": -79.51291328666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Nispero 4, Panamá",
+   "base": 15
+  },
+  {
+   "address": "Calle 70 Este Bis 647, Panamá",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 Este Bis 647",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 Este Bis 647, Panamá",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 Este Bis 647 pa Panamá",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "pa Panamá 70 Este Bis 647 647",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "647 - Panamá - Calle 70 Este Bis",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "Mary 70 este bis 647",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 Este Bis 647 john",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 ESTE BIS 647",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "70 Este Bis647",
+   "lat": 8.998261526666665,
+   "lng": -79.51393750666666,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 70 Este Bis 647, Panamá",
+   "base": 16
+  },
+  {
+   "address": "Calle 65 A Este 655, Panamá",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "655 65 A Este",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "65 A Este 655, Panamá",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "pa Panamá 65 A Este 655",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "65 A Este 655, Panamá, pa",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "Calle 65 A Este, Panamá",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "65 A Este655",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "Mary 65 a este 655",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "65 A Este 655 (green door)",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "65 A ESTE 655",
+   "lat": 8.99917886,
+   "lng": -79.51350302,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 65 A Este 655, Panamá",
+   "base": 17
+  },
+  {
+   "address": "Calle 75 A Oeste 55 7, Panamá",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A Oeste 55 7",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A Oeste 55 7, Panamá",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A Oeste 55 7 pa Panamá",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "panama 75 a oeste 55 7 pa",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "Panamá 55 7",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A Oestte 55 7",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "Deli 75 a oeste 55 7",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A Oeste 55 7 john",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "75 A OESTE 55 7",
+   "lat": 9.015711788888888,
+   "lng": -79.52951141111112,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 75 A Oeste 55 7, Panamá",
+   "base": 18
+  },
+  {
+   "address": "Calle 64 Este 16, San Francisco",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "16 64 Este",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "64 Este 16, San Francisco",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "64 Este 16 pa San Francisco",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "pa San Francisco Francisco 64 Este 16",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "Calle 64 Este, 16, San Francisco",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "64 ESTE 16",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "Mary 64 este 16",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "64 Este 16 apt 4b",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "64 Este16",
+   "lat": 8.99196214,
+   "lng": -79.51356994,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 64 Este 16, San Francisco",
+   "base": 19
+  },
+  {
+   "address": "Sector Los Sauces B L-26, Panamá",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Sector Los Sauces B L-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Panamá pa Sector Los Sauces B L-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Panamá pa Sector Los Sauces B L-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Sector Los Sauces B, L-26, Panamá",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Sector Los Sauces BL-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "SECTOR LOS SAUCES B L-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Secotr Los Sauces B L-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "sector los sauces b l-26",
+   "lat": 9.00758854,
+   "lng": -79.51112388,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sector Los Sauces B L-26, Panamá",
+   "base": 20
+  },
+  {
+   "address": "Aguamarina 9C, Panama",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "9C Aguamarina",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "pa, Aguamarina 9C, Panama",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Aguamarina 9C pa Panama",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Aguamarina, Panama",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Aguamarina9C",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Mary aguamarina 9C",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "AGUAMARINA 9C",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Aguamairna 9C",
+   "lat": 8.996669842857143,
+   "lng": -79.52554472857143,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Aguamarina 9C, Panama",
+   "base": 21
+  },
+  {
+   "address": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "10 José de Fábrega",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "José de Fábrega 10, Ciudad de Panamá",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "pa Ciudad de Panamá José de Fábrega 10",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "pa José de Fábrega 10 Ciudad de Panamá",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "Ciudad de Panamá - 10 - Avenida José de Fábrega",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "fábrega 10",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "JOSÉ DE FÁBREGA 10",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "José de Fábrega 10 back entrance",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "Deli josé de fábrega 10",
+   "lat": 8.982985233333332,
+   "lng": -79.53123088888889,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida José de Fábrega 10, Ciudad de Panamá",
+   "base": 22
+  },
+  {
+   "address": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Justo Arosemena Calle 25 y Calle 26",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Ciudad de Panamá, Justo Arosemena Calle 25 y Calle 26, pa",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Ciudad de Panamá, Justo Arosemena Calle 25 y Calle 26, pa",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Ciudad de Panamá - Calle 25 y Calle 26 - Avenida Justo Arosemena",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Justo Aro Calle 25 y Calle 26",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Justo ArosemenaCalle 25 y Calle 26",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Justo Arosemena Calle 25 y Calle 26 back entrance",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "justo arosemena calle 25 y calle 26",
+   "lat": 8.9642019,
+   "lng": -79.5379161,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Justo Arosemena Calle 25 y Calle 26, Ciudad de Panamá",
+   "base": 23
+  },
+  {
+   "address": "Vía Brasil 5073887073, Panamá",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Vía Brasil 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "pa, Panamá, Vía Brasil 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Via Brasil 5073887073 pa Panama",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Panamá Vía Brasil",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "brasil 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "VÍA BRASIL 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Mary vía brasil 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Vía Brsail 5073887073",
+   "lat": 8.9944448,
+   "lng": -79.5253716,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Vía Brasil 5073887073, Panamá",
+   "base": 24
+  },
+  {
+   "address": "Calle 1era 3, Panamá",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1era 3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1era 3, Panamá",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "pa, 1era 3, Panamá",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1era 3 Panamá pa",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "Panamá, Calle 1era, 3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1ERA 3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1era3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "Deli 1era 3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "1era 3",
+   "lat": 9.011827442857143,
+   "lng": -79.51179917142858,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 1era 3, Panamá",
+   "base": 25
+  },
+  {
+   "address": "Calle 73 Oeste 14B, Panamá",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "14B 73 Oeste",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "73 Oeste 14B, Panamá",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "pa Panamá 73 Oeste 14B",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "Panama, 73 Oeste 14B, pa",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "14B - Panamá - Calle 73 Oeste",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "73 Oeste14B",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "73 Oestte 14B",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "Deli 73 oeste 14B",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "73 oeste 14b",
+   "lat": 9.011427422222223,
+   "lng": -79.53113187777778,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 73 Oeste 14B, Panamá",
+   "base": 26
+  },
+  {
+   "address": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "Calle 45 Frente al Riba Smith 45",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "pa, Ciudad de Panamá, 45 Calle 45 Frente al Riba Smith",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "pa, Ciudad de Panamá, 45 Calle 45 Frente al Riba Smith",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "45 Calle 45 Frente al Riba Smith john",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "Mary 45 Calle 45 Frente al Riba Smith",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "45 calle 45 frente al riba smith",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "45 CALLE 45 FRENTE AL RIBA SMITH",
+   "lat": 8.976631485714284,
+   "lng": -79.53066905714286,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 45 Calle 45 Frente al Riba Smith, Ciudad de Panamá",
+   "base": 27
+  },
+  {
+   "address": "Calle Valencia H1, Panamá",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "H1 Valencia",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Valencia H1, Panamá",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Panamá, pa, Valencia H1",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Panama Valencia H1 pa",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Calle Valencia, H1",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "ValenciaH1",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "valencia h1",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Valencia H1 back entrance",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "VALENCIA H1",
+   "lat": 9.01628852,
+   "lng": -79.53454006,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Valencia H1, Panamá",
+   "base": 28
+  },
+  {
+   "address": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Romulo Escobar Bethancourt, 743",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Romulo Escobar Bethancourt 743, Panamá",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Panamá, pa, Romulo Escobar Bethancourt 743",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Panamá, Romulo Escobar Bethancourt 743, pa pa",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "743, Avenida Romulo Escobar Bethancourt",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "romulo escobar bethancourt 743",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "ROMULO ESCOBAR BETHANCOURT 743",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "bethancourt 743",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Romulo Escobar Bethancourt 743 john",
+   "lat": 8.956102580000001,
+   "lng": -79.55640792,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Romulo Escobar Bethancourt 743, Panamá",
+   "base": 29
+  },
+  {
+   "address": "Avenida 20 D Norte J110, Panamá",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 D Norte, J110",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 D Norte J110, Panamá",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 D Norte J110 Panamá pa",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "panamá 20 d d norte j110 pa",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "Panamá Avenida 20 D Norte J110",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 D NORTE J110",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 d norte j110",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "Deli 20 d norte J110",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "20 D Norte J110 back entrance",
+   "lat": 9.02067332,
+   "lng": -79.52583054,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 20 D Norte J110, Panamá",
+   "base": 30
+  },
+  {
+   "address": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "Abel Bravo Obarrio, 8B",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "Abel Bravo Obarrio 8B, Panamá",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "pa, Abel Bravo Obarrio 8B, Panamá",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "pa, Abel Bravo Obarrio 8B, Panama Panama",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "Panamá - 8B - Calle Abel Bravo Obarrio",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "Abel Bravo Obarrio 8B (green door)",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "ABEL BRAVO OBARRIO 8B",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "abel bravo obarrio 8b",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "obarrio 8B",
+   "lat": 8.9521286,
+   "lng": -79.5416887,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Abel Bravo Obarrio 8B, Panamá",
+   "base": 31
+  },
+  {
+   "address": "Calle 8 Este 909, Panamá",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 Este 909",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 Este 909, Panamá",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "pa, 8 Este 909, Panamá",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 Este 909 pa Panamá",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "Calle 8 Este Panamá",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 ESTE 909",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 Este909",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "Mary 8 este 909",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "8 este 909",
+   "lat": 8.9531538,
+   "lng": -79.5356648,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 8 Este 909, Panamá",
+   "base": 32
+  },
+  {
+   "address": "Avenida 15 C Norte 57, Panamá",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 C Norte 57",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 C Norte 57, Panamá",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "Panamá 15 C Norte 57 pa",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 C C Norte 57, pa, Panama",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "Panamá 57",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 C Norte 57 john",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 C Nortte 57",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "15 c norte 57",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "Mary 15 c norte 57",
+   "lat": 9.0140857625,
+   "lng": -79.52682025,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 15 C Norte 57, Panamá",
+   "base": 33
+  },
+  {
+   "address": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Balboa Edificio H2O",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Balboa Edificio H2O, Ciudad de Panamá",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Ciudad de Panamá, Balboa Edificio H2O, pa",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Balboa Edificio H2O Ciudad de Panamá pa",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Ciudad de Panamá - Edificio H2O",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "BALBOA EDIFICIO H2O",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Balboa Edificio H2O apt 4b",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Deli balboa Edificio H2O",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Balvoa Edificio H2O",
+   "lat": 8.9660665,
+   "lng": -79.5342123,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Balboa Edificio H2O, Ciudad de Panamá",
+   "base": 34
+  },
+  {
+   "address": "Bulevar Andrews 812, Ciudad de Panamá",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Bulevar Andrews 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "pa, Ciudad de Panamá, Bulevar Andrews 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "pa Bulevar Andrews Andrews 812 Ciudad de Panamá",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Bulevar Andrews - 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Anrdews 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "ANDREWS 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Andrews812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Mary andrews 812",
+   "lat": 8.9719864,
+   "lng": -79.56323838,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bulevar Andrews 812, Ciudad de Panamá",
+   "base": 35
+  },
+  {
+   "address": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "20L 23 B Norte",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 B Norte 20L, Ciudad de Panamá",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 B Norte 20L Ciudad de Panamá pa",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 B Norte 20L, Ciudad de Panama, pa",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "Ciudad de Panamá Avenida 23 B Norte 20L",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 B NORTE 20L",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "Mary 23 b norte 20L",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 b norte 20l",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "23 B Norte 20L (green door)",
+   "lat": 9.00946758,
+   "lng": -79.54133108,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 23 B Norte 20L, Ciudad de Panamá",
+   "base": 36
+  },
+  {
+   "address": "Calle Central 21, Panamá",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Central, 21",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Central 21, Panamá",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Panamá, Central 21, pa",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "central 21, pa, panama",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "21 Calle Central Panamá",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Mary central 21",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "CENTRAL 21",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Central21",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Central 21 john",
+   "lat": 8.951759525,
+   "lng": -79.5324654375,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Central 21, Panamá",
+   "base": 37
+  },
+  {
+   "address": "Calle 78 C Oeste 3C, Panamá",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 C Oeste, 3C",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 C Oeste 3C, Panamá",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "pa, 78 C Oeste 3C, Panamá",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "pa, Panamá, 78 C Oeste 3C",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "3C - Calle 78 C Oeste - Panamá",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 C OESTE 3C",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 c oeste 3c",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 C Oeste3C",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "78 C Oesste 3C",
+   "lat": 9.022175916666667,
+   "lng": -79.52183965,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle 78 C Oeste 3C, Panamá",
+   "base": 38
+  },
+  {
+   "address": "Avenida 13 C Norte 4, Panamá",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte, 4",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte 4, Panamá",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte 4 Panamá pa",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte 4 Panamá pa",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "Panamá Avenida 13 C Norte",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "Mary 13 c norte 4",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte 4 back entrance",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Nortte 4",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  },
+  {
+   "address": "13 C Norte4",
+   "lat": 9.01900964,
+   "lng": -79.51860284,
+   "country": "PA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 13 C Norte 4, Panamá",
+   "base": 39
+  }
+ ]
+}

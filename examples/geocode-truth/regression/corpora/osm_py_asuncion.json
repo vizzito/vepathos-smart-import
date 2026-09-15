@@ -1,0 +1,3758 @@
+{
+ "source": "osm-addr",
+ "country": "PY",
+ "city": "Asunción",
+ "country_label": "Paraguay",
+ "depot": {
+  "lat": -25.2637,
+  "lon": -57.5759,
+  "city": "Asunción",
+  "country": "Paraguay"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 374,
+ "note": "Nodos addr:* del indice n-25.20_s-25.40_e-57.50_w-57.70-paraguay.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Primer Presidente 2882, Asunción",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "2882 Primer Presidente",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Primer Presidente 2882, py, Asunción",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Asunción, py, Primer Presidente 2882",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Asunción, Primer Presidente",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "presidente 2882",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Primer Presidente2882",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Mary primer presidente 2882",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Primer Presidente 2882 john",
+   "lat": -25.263001455555557,
+   "lng": -57.559439811111105,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Primer Presidente 2882, Asunción",
+   "base": 0
+  },
+  {
+   "address": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "923 Doctor Cirilo Cáceres Zorrilla",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Asunción, Doctor Cirilo Cáceres Zorrilla 923, py",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "doctor cirilo cáceres zorrilla 923 asunción py",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Doctor Cirilo Cáceres Zorrilla, Asunción, 923",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Doctor Cirilo Cáceres Zorrilla 923 (green door)",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Deli doctor cirilo cáceres zorrilla 923",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Doctor Cirilo Cáceres Zorrilla923",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Doctor Cirilo Cáceres Zor 923",
+   "lat": -25.280831957142855,
+   "lng": -57.567551171428576,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Doctor Cirilo Cáceres Zorrilla 923, Asunción",
+   "base": 1
+  },
+  {
+   "address": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "Teniente Primero Ramón Gaspar Zabala, 636",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "Asunción Teniente Primero Ramón Gaspar Zabala 636 py",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "teniente primero ramón ramón gaspar zabala 636, py, asunción",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "636 - Teniente Primero Ramón Gaspar Zabala - Asunción",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "zabala 636",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "Mary teniente primero ramón gaspar zabala 636",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "Teniente Primero Ramón Gaspar Zabala 636 john",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "TENIENTE PRIMERO RAMÓN GASPAR ZABALA 636",
+   "lat": -25.2757689,
+   "lng": -57.5558862,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Teniente Primero Ramón Gaspar Zabala 636, Asunción",
+   "base": 2
+  },
+  {
+   "address": "Procer Francisco Gonzalez 396, Asunción",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Francisco Gonzalez, 396",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Francisco Gonzalez 396 py Asunción",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Francisco Gonzalez 396 Asunción py",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "396, Asunción",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Francisco Gonzalez 396 (green door)",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Francisco Gonzalez396",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "gonzalez 396",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Procer Farncisco Gonzalez 396",
+   "lat": -25.27614148,
+   "lng": -57.559012239999994,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Procer Francisco Gonzalez 396, Asunción",
+   "base": 3
+  },
+  {
+   "address": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Teniente Héctor Vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Teniente Héctor Vera 2318, 001409",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "py Ycuá Satí Teniente Héctor Vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "ycua sati, py, teniente hector vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "001409, Ycuá Satí, 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "teniente héctor vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Teninete Héctor Vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Deli teniente héctor vera 2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Teniente Héctor Vera2318",
+   "lat": -25.290922616666666,
+   "lng": -57.5651602,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Teniente Héctor Vera 2318, 001409 Ycuá Satí",
+   "base": 4
+  },
+  {
+   "address": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Manuel del Castillo y Rada 5156`",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Asuncion Manuel del Castillo y Rada 5156` py",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Manuel del Castillo y y Rada 5156` py Asuncion",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "5156` Asuncion",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "manuel del castillo y rada 5156`",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "rada 5156`",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Manuel del Castilo y Rada 5156`",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Manuel del Castillo y Rada5156`",
+   "lat": -25.29841168,
+   "lng": -57.58196178000001,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Manuel del Castillo y Rada 5156`, Asuncion",
+   "base": 5
+  },
+  {
+   "address": "Maximo Santos 1170, 001204 Asuncion",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "Maximo Santos, 1170",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "Maximo Santos 1170 001204",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "py Maximo Santos 1170 Asuncion",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "maximo santos 1170 py asuncion asuncion",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "1170 - 001204 - Maximo Santos",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "MAXIMO SANTOS 1170",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "Maixmo Santos 1170",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "santos 1170",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "Maximo Santos1170",
+   "lat": -25.27968344285714,
+   "lng": -57.608623099999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Maximo Santos 1170, 001204 Asuncion",
+   "base": 6
+  },
+  {
+   "address": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "798 Intendentes Militares de la Guerra del Chaco",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "Intendentes Militares de la Guerra del Chaco 798 001210",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "py Asuncion Intendentes Militares de la Guerra del Chaco 798",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "Intendentes Militares de la Guerra del Chaco 798 py Asuncion",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "798 Intendentes Militares de la Guerra del Chaco Asuncion 001210",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "INTENDENTES MILITARES DE LA GUERRA DEL CHACO 798",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "Intendentes Militares de la Guerra del Chaco798",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "chaco 798",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "Intendetnes Militares de la Guerra del Chaco 798",
+   "lat": -25.2816161,
+   "lng": -57.6142432,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Intendentes Militares de la Guerra del Chaco 798, 001210 Asuncion",
+   "base": 7
+  },
+  {
+   "address": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Capitán Brizuela, 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Capitán Brizuela 831 001409",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "py, Ycuá Satí, Capitán Brizuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "py, Ycuá Satí, Capitán Brizuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Capitán Brizuela, 001409, 831, Ycuá Satí",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Mary capitán brizuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "capitán brizuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Capitán Brisuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "brizuela 831",
+   "lat": -25.289671579999997,
+   "lng": -57.572631539999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Capitán Brizuela 831, 001409 Ycuá Satí",
+   "base": 8
+  },
+  {
+   "address": "Curva San Miguel 209, 001209 Asuncion",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "209 Curva San Miguel",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Curva San Miguel 209, 001209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Curva San Miguel 209, Asuncion, py",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "py Asuncion Curva Curva San Miguel 209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Curva San Miguel, 001209, Asuncion",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "miguel 209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Curva San Migeul 209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "curva san miguel 209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Deli curva san miguel 209",
+   "lat": -25.2926949,
+   "lng": -57.6110252,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Curva San Miguel 209, 001209 Asuncion",
+   "base": 9
+  },
+  {
+   "address": "Genaro Romero 442, Asunción",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Genaro Romero 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Asunción, py, Genaro Romero 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "py asuncion genaro romero 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Genaro Romero Asunción 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "GENARO ROMERO 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Genaro Romero442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Genrao Romero 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Mary genaro romero 442",
+   "lat": -25.2701524,
+   "lng": -57.5774013,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Genaro Romero 442, Asunción",
+   "base": 10
+  },
+  {
+   "address": "Benitez Vera 851, 001409 Ycuá Satí",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Benitez Vera, 851",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Benitez Vera 851, 001409",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Benitez Vera 851, Ycuá Satí, py",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "py Ycuá Satí Benitez Vera 851",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Ycuá Satí, Benitez Vera, 001409",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Benites Vera 851",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Benitez Vera 851 back entrance",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Deli benitez vera 851",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "BENITEZ VERA 851",
+   "lat": -25.2903879,
+   "lng": -57.56917516,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Benitez Vera 851, 001409 Ycuá Satí",
+   "base": 11
+  },
+  {
+   "address": "Coronel Angel Enrique Lopez 574, Asunción",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Coronel Angel Enrique Lopez, 574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Coronel Angel Enrique Lopez 574 py Asunción",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "asunción, coronel angel enrique lopez 574, py",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Asunción Coronel Angel Enrique Lopez 574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Coronel Angel Enrique Lopez574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "lopez 574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Croonel Angel Enrique Lopez 574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Mary coronel angel enrique lopez 574",
+   "lat": -25.3070819,
+   "lng": -57.5640688,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Coronel Angel Enrique Lopez 574, Asunción",
+   "base": 12
+  },
+  {
+   "address": "Virgen de Caacupe 4093, Asunción",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "Virgen de Caacupe 4093",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "Asunción Virgen de Caacupe 4093 py",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "py, Asuncion, Virgen de Caacupe 4093",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "Asunción 4093 Virgen de Caacupe",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "Virgen de Caacupe 4093 apt 4b",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "VIRGEN DE CAACUPE 4093",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "Deli virgen de caacupe 4093",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "virgen de caacupe 4093",
+   "lat": -25.29872462,
+   "lng": -57.54697608,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Virgen de Caacupe 4093, Asunción",
+   "base": 13
+  },
+  {
+   "address": "San Rafael 428, Asunción",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "San Rafael 428",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "py, Asunción, San Rafael 428",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "py, San Rafael 428, Asuncion Asuncion",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "San Rafael, 428, Asunción",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "SAN RAFAEL 428",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "San Rafael 428 john",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "rafael 428",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "Mary san rafael 428",
+   "lat": -25.284456159999998,
+   "lng": -57.57482228,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "San Rafael 428, Asunción",
+   "base": 14
+  },
+  {
+   "address": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Teniente Primero Blas A. Jimenez 1390",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Asunción, Teniente Primero Blas A. Jimenez 1390, py",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "py Asunción Teniente Primero Blas A. Jimenez 1390",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Teniente Primero Blas A. Jimenez - 1390 - Asunción",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Teniente Primero Blas A. Jimenez 1390 (green door)",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Teniente Primero Blas A. Jimenez1390",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "teniente primero blas a. jimenez 1390",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "jimenez 1390",
+   "lat": -25.2666185,
+   "lng": -57.5527135,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Teniente Primero Blas A. Jimenez 1390, Asunción",
+   "base": 15
+  },
+  {
+   "address": "Luis Morales 766, Asunción",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Luis Morales, 766",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "py, Luis Morales 766, Asunción",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Luis Morales 766 Asunción py",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Asunción, Luis Morales, 766",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "morales 766",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Luis Moarles 766",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Luis Morales 766 apt 4b",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Luis Mor 766",
+   "lat": -25.28425814,
+   "lng": -57.599931240000004,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Luis Morales 766, Asunción",
+   "base": 16
+  },
+  {
+   "address": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Overava 547",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Overava 547, 001525",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "py Overava 547 Madame Elisa Alicia Lynch",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "py, Madame Elisa Alicia Lynch, Overava 547",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "547 - Overava - 001525",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "overava 547",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Ovreava 547",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Overava 547 back entrance",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Deli overava 547",
+   "lat": -25.27214694,
+   "lng": -57.553206895,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Overava 547, 001525 Madame Elisa Alicia Lynch",
+   "base": 17
+  },
+  {
+   "address": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "420 Maestro Nicolino Pellegrini",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Asuncion, Maestro Nicolino Pellegrini 420, py",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Asuncion py Maestro Nicolino Pellegrini 420",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Asuncion, 420, Maestro Nicolino Pellegrini",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Maestro Nicolino Pellegrini420",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "maestro nicolino pellegrini 420",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "MAESTRO NICOLINO PELLEGRINI 420",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Maestro Nicolino Pellegrini 420 john",
+   "lat": -25.26441576,
+   "lng": -57.573770939999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Maestro Nicolino Pellegrini 420, Asuncion",
+   "base": 18
+  },
+  {
+   "address": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "2910 Teniente Segundo Julio Macchio",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Teniente Segundo Julio Macchio 2910 Asunción py",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Teniente Segundo Julio Julio Macchio 2910, Asuncion, py",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Teniente Segundo Julio Macchio - 2910 - Asunción",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Teniente Segundo Julio Macchio2910",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Teniente Segundo Julio Mac 2910",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "teniente segundo julio macchio 2910",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "TENIENTE SEGUNDO JULIO MACCHIO 2910",
+   "lat": -25.2808176,
+   "lng": -57.5530321,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Teniente Segundo Julio Macchio 2910, Asunción",
+   "base": 19
+  },
+  {
+   "address": "Río Vermejo 1533, Asunción",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Río Vermejo, 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Asunción py Río Vermejo 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "py, Asuncion, Rio Vermejo 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Asunción Río Vermejo",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Río Vemrejo 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Río Vermejo1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Deli río vermejo 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "río vermejo 1533",
+   "lat": -25.2694386,
+   "lng": -57.5854563,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Río Vermejo 1533, Asunción",
+   "base": 20
+  },
+  {
+   "address": "Doctor Antolín Irala 3190, Asunción",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Doctor Antolín Irala 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Asunción py Doctor Antolín Irala 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Asunción Doctor Antolín Irala 3190 py",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Doctor Antolín Irala - 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Mary doctor antolín irala 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Doctor Antoíln Irala 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "DOCTOR ANTOLÍN IRALA 3190",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Doctor Antolín Irala 3190 (green door)",
+   "lat": -25.29749014,
+   "lng": -57.555087639999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Doctor Antolín Irala 3190, Asunción",
+   "base": 21
+  },
+  {
+   "address": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Teniente Coronel Cezar Lopez, 785",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Teniente Coronel Cezar Lopez 785 py Asunción",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Teniente Coronel Cezar Lopez 785, Asunción, py",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Asunción - 785 - Teniente Coronel Cezar Lopez",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Mary teniente coronel cezar lopez 785",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "teniente coronel cezar lopez 785",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "TENIENTE CORONEL CEZAR LOPEZ 785",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "lopez 785",
+   "lat": -25.270219857142855,
+   "lng": -57.557764057142855,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Teniente Coronel Cezar Lopez 785, Asunción",
+   "base": 22
+  },
+  {
+   "address": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "1577 Sargento Primero Manuel Benítez",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "Sargento Primero Manuel Benítez 1577, py, Asunción",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "py Asunción Sargento Primero Manuel Benítez 1577",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "1577, Asunción, Sargento Primero Manuel Benítez",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "benítez 1577",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "Sargento Primero Manuel Ben 1577",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "sargento primero manuel benítez 1577",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "Sargneto Primero Manuel Benítez 1577",
+   "lat": -25.26893732,
+   "lng": -57.566572740000005,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sargento Primero Manuel Benítez 1577, Asunción",
+   "base": 23
+  },
+  {
+   "address": "Romulo Rios 698, 001210 Asuncion",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Romulo Rios, 698",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Romulo Rios 698, 001210",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Romulo Rios 698 Asuncion py",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Romulo Rios 698, py, Asuncion",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "698 - Asuncion - 001210",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "ROMULO RIOS 698",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Romulo Rios698",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "rios 698",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Deli romulo rios 698",
+   "lat": -25.2808329,
+   "lng": -57.6151915,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Romulo Rios 698, 001210 Asuncion",
+   "base": 24
+  },
+  {
+   "address": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gervasio Artigas 1945",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gervasio Artigas 1945, Asuncion",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gervasio Artigas 1945 Asuncion py",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General Jose Gervasio Artigas 1945, py, Asuncion",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "Asuncion 1945 Avenida General José Gervasio Artigas",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gervasio Artigas1945",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gerbasio Artigas 1945",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "General José Gervasio Artigas 1945 apt 4b",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "Deli general josé gervasio artigas 1945",
+   "lat": -25.270111275,
+   "lng": -57.60427480833334,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida General José Gervasio Artigas 1945, Asuncion",
+   "base": 25
+  },
+  {
+   "address": "Bomberos Voluntarios 580, Asunción",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "Bomberos Voluntarios 580",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "Bomberos Voluntarios 580 Asunción py",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "bomberos voluntarios 580, py, py, asunción",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "580, Asunción",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "Bomberos Voluntarios 580 apt 4b",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "voluntarios 580",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "BOMBEROS VOLUNTARIOS 580",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "Bomberos Volnutarios 580",
+   "lat": -25.2987925,
+   "lng": -57.6074933,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bomberos Voluntarios 580, Asunción",
+   "base": 26
+  },
+  {
+   "address": "Teniente Genaro Ruiz 905, Asuncion",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "905 Teniente Genaro Ruiz",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Teniente Genaro Ruiz 905, Asuncion, py",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Asuncion, py, Teniente Genaro Ruiz 905",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "905 Teniente Genaro Ruiz Asuncion",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Deli teniente genaro ruiz 905",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Tenietne Genaro Ruiz 905",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "TENIENTE GENARO RUIZ 905",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Teniente Genaro Ruiz 905 (green door)",
+   "lat": -25.28299133333333,
+   "lng": -57.61202522222223,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Teniente Genaro Ruiz 905, Asuncion",
+   "base": 27
+  },
+  {
+   "address": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "632 Regimiento de Infantería 4 Curupayty",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "py Asunción Regimiento de Infantería 4 Curupayty 632",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Regimiento de Infantería 4 Curupayty Curupayty 632 py Asunción",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Regimiento de Infantería 4 Curupayty - 632 - Asunción",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Regimiento de Infantería 4 Curupayty 632 apt 4b",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "REGIMIENTO DE INFANTERÍA 4 CURUPAYTY 632",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Regimiento de Infantería 4 Curupayty632",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Regimiento de Infantería 4 Cur 632",
+   "lat": -25.3053671,
+   "lng": -57.5694899,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Regimiento de Infantería 4 Curupayty 632, Asunción",
+   "base": 28
+  },
+  {
+   "address": "Mariscal Francisco Solano López 1923, Asunción",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Mariscal Francisco Solano López, 1923",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Asunción py Mariscal Francisco Solano López 1923",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "mariscal francisco solano lópez lópez 1923 asunción py",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "1923, Mariscal Francisco Solano López",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Mariscal Francisco Solano López 1923 apt 4b",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Mariscal Francsico Solano López 1923",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Mariscal Francisco Solano López1923",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Deli mariscal francisco solano lópez 1923",
+   "lat": -25.2919625,
+   "lng": -57.6015738,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mariscal Francisco Solano López 1923, Asunción",
+   "base": 29
+  },
+  {
+   "address": "Chaco Boreal 363, Asunción",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "363 Chaco Boreal",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "Chaco Boreal 363, Asunción, py",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "asunción py chaco boreal 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "Asunción Chaco Boreal 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "chaco boreal 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "Chaco Borael 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "Mary chaco boreal 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "boreal 363",
+   "lat": -25.293485920000002,
+   "lng": -57.59505882,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Chaco Boreal 363, Asunción",
+   "base": 30
+  },
+  {
+   "address": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Oscar cardozo ocampos, 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Oscar cardozo ocampos 0000 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "py, Oscar cardozo ocampos 0000, Asunción",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "py Oscar cardozo ocampos 0000 Asunción Asunción",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Oscar cardozo ocampos 0000 Asunción 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Oscar cardozo oca 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Mary oscar cardozo ocampos 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Oscar cardozo ocampos 0000 (green door)",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "oscar cardozo ocampos 0000",
+   "lat": -25.2473017,
+   "lng": -57.5510794,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Oscar cardozo ocampos 0000, 0000 Asunción",
+   "base": 31
+  },
+  {
+   "address": "Constitución 236, Asunción",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Constitución 236",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Asunción, Constitución 236, py",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Constitución 236 py Asunción",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Constitución Asunción 236",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Constitución 236 back entrance",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "constitución 236",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Constitución236",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "CONSTITUCIÓN 236",
+   "lat": -25.2882177,
+   "lng": -57.6231241,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Constitución 236, Asunción",
+   "base": 32
+  },
+  {
+   "address": "Comandante José Dolores Molas 1415, Asunción",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Comandante José Dolores Molas, 1415",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "py Comandante José Dolores Molas 1415 Asunción",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Asunción py Comandante José Dolores Molas 1415",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Comandante José Dolores Molas - Asunción",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Comandnate José Dolores Molas 1415",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Comandante José Dolores Molas1415",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Comandante José Dolores Molas 1415 john",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "molas 1415",
+   "lat": -25.274213760000002,
+   "lng": -57.600884359999995,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Comandante José Dolores Molas 1415, Asunción",
+   "base": 33
+  },
+  {
+   "address": "Marco de Brix 198, 001208 Asuncion",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "198 Marco de Brix",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "Marco de Brix 198 001208",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "Asuncion py Marco de Brix 198",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "Asuncion Marco Marco de Brix 198 py",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "001208, Asuncion, Marco de Brix",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "brix 198",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "MARCO DE BRIX 198",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "Deli marco de brix 198",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "marco de brix 198",
+   "lat": -25.292777,
+   "lng": -57.6107896,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Marco de Brix 198, 001208 Asuncion",
+   "base": 34
+  },
+  {
+   "address": "Avenida Perú 233, Asunción",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Perú, 233",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Perú 233, Asunción",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "py Perú 233 Asunción",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Perú 233 py Asunción",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Avenida Perú Asunción",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "PERÚ 233",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "perú 233",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Perú 233 (green door)",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Deli perú 233",
+   "lat": -25.2883381,
+   "lng": -57.6182898,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Perú 233, Asunción",
+   "base": 35
+  },
+  {
+   "address": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Doctor Eusebio Ayala 585",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Doctor Eusebio Ayala 585 001226",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Ciudad Nueva Doctor Eusebio Ayala 585 py",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "py, Doctor Eusebio Ayala 585, Ciudad Nueva",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "585 001226 Avenida Doctor Eusebio Ayala",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Doctor Eusebio Ayala585",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "ayala 585",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Doctor Eusebio Ayala 585 apt 4b",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "DOCTOR EUSEBIO AYALA 585",
+   "lat": -25.301618400000002,
+   "lng": -57.616863439999996,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Doctor Eusebio Ayala 585, 001226 Ciudad Nueva",
+   "base": 36
+  },
+  {
+   "address": "Félix de Azara 1043, 595 Asuncion",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "1043 Félix de Azara",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "Félix de Azara 1043, 595",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "py Asuncion Félix de Azara 1043",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "Félix de Azara 1043 Asuncion py",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "Asuncion - 1043 - 595",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "FÉLIX DE AZARA 1043",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "Féélix de Azara 1043",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "félix de azara 1043",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "azara 1043",
+   "lat": -25.2891371,
+   "lng": -57.6269569,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Félix de Azara 1043, 595 Asuncion",
+   "base": 37
+  },
+  {
+   "address": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lombardo, 2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lombardo 2345, py, Asuncion",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "py, Asuncion, Capitán José José Domingo Lombardo 2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lombardo, 2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lomvardo 2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lombardo2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Capitán José Domingo Lombardo 2345 (green door)",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "CAPITÁN JOSÉ DOMINGO LOMBARDO 2345",
+   "lat": -25.261986439999998,
+   "lng": -57.59053198,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Capitán José Domingo Lombardo 2345, Asuncion",
+   "base": 38
+  },
+  {
+   "address": "Cerro Cora 3730, Asunción",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "Cerro Cora 3730",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "Asunción Cerro Cora 3730 py",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "Asuncion Cerro Cora 3730 py",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "3730 Asunción",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "cerro cora 3730",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "cora 3730",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "CERRO CORA 3730",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  },
+  {
+   "address": "Cerro Cora3730",
+   "lat": -25.2957221,
+   "lng": -57.5461677,
+   "country": "PY",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Cerro Cora 3730, Asunción",
+   "base": 39
+  }
+ ]
+}

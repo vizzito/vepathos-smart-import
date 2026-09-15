@@ -1,0 +1,1585 @@
+{
+  "version": 1,
+  "note": "Suites de regresion del geocoder por el camino de produccion (geocoding.runner.run). Correr: python -m smart_import geocode-regression --label <nombre> [--profile full] [--against out/regression/<base>]. Los corpus de esta carpeta estan congelados: regenerarlos cambia las claves y el diff deja de ser comparable.",
+  "suites": [
+    {
+      "id": "tandil_planillas_reales",
+      "corpus": "corpora/tandil_planillas_reales.json",
+      "depot": {
+        "lat": -37.3470648,
+        "lon": -59.1341686,
+        "country": "AR",
+        "address": "1402, Brivio, Brisas del Lago, Tandil, Partido de Tandil, Buenos Aires, B7000GKN, Argentina"
+      },
+      "tags": [
+        "real",
+        "frozen",
+        "ar"
+      ],
+      "good_m": 100,
+      "fair_m": 300,
+      "note": "Mismos query params que mando el cliente web el 2026-09-15 (sin depot_city)."
+    },
+    {
+      "id": "tandil_stops_326",
+      "corpus": "../tandil_stops_326.json",
+      "depot": {
+        "lat": -37.3470648,
+        "lon": -59.1341686,
+        "country": "AR",
+        "address": "1402, Brivio, Brisas del Lago, Tandil, Partido de Tandil, Buenos Aires, B7000GKN, Argentina"
+      },
+      "tags": [
+        "real",
+        "ar"
+      ]
+    },
+    {
+      "id": "caba_stops_2907",
+      "corpus": "../caba_stops_2907.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "limits": {
+        "fast": 700
+      },
+      "tags": [
+        "real",
+        "ar"
+      ]
+    },
+    {
+      "id": "caba_ml_13",
+      "corpus": "../caba_ml_13.csv",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "keep_locality": true,
+      "tags": [
+        "real",
+        "export",
+        "ar"
+      ],
+      "good_m": 800,
+      "fair_m": 2000,
+      "note": "Coordenadas del export ML son aproximadas (300-750 m de la puerta): la tolerancia es la del test real_geo."
+    },
+    {
+      "id": "mercadolibre_ba_12",
+      "corpus": "../mercadolibre_ba_12.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "keep_locality": true,
+      "tags": [
+        "export",
+        "ar"
+      ],
+      "good_m": 800,
+      "fair_m": 2000
+    },
+    {
+      "id": "shopify_caba_12",
+      "corpus": "../shopify_caba_12.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "keep_locality": true,
+      "tags": [
+        "export",
+        "ar"
+      ],
+      "good_m": 800,
+      "fair_m": 2000
+    },
+    {
+      "id": "tiendanube_ba_12",
+      "corpus": "../tiendanube_ba_12.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "keep_locality": true,
+      "tags": [
+        "export",
+        "ar"
+      ],
+      "good_m": 800,
+      "fair_m": 2000
+    },
+    {
+      "id": "vepathos_orders_caba_12",
+      "corpus": "../vepathos_orders_caba_12.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "keep_locality": true,
+      "tags": [
+        "export",
+        "ar"
+      ],
+      "good_m": 800,
+      "fair_m": 2000
+    },
+    {
+      "id": "trap_caba_homonyms",
+      "corpus": "../traps/caba_homonyms.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina",
+        "address": "Av. Cordoba 3500"
+      },
+      "tags": [
+        "trap",
+        "frozen",
+        "ar"
+      ],
+      "good_m": 650,
+      "fair_m": 1000
+    },
+    {
+      "id": "trap_caba_oa_compound",
+      "corpus": "../traps/caba_oa_compound.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "tags": [
+        "trap",
+        "frozen",
+        "ar"
+      ],
+      "good_m": 500,
+      "fair_m": 1000
+    },
+    {
+      "id": "miami_whatsapp_6",
+      "corpus": "../miami_whatsapp_6.json",
+      "depot": {
+        "lat": 25.774,
+        "lon": -80.194,
+        "city": "Miami",
+        "country": "United States"
+      },
+      "tags": [
+        "real",
+        "us"
+      ]
+    },
+    {
+      "id": "oa_ae_uae",
+      "corpus": "corpora/oa_ae_uae.json",
+      "depot": {
+        "lat": 25.2048,
+        "lon": 55.2708,
+        "city": "Dubai",
+        "country": "United Arab Emirates"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "ae"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_ar_argentina",
+      "corpus": "corpora/oa_ar_argentina.json",
+      "depot": {
+        "lat": -34.598,
+        "lon": -58.416,
+        "city": "CABA",
+        "country": "Argentina"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "ar"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_at_austria",
+      "corpus": "corpora/oa_at_austria.json",
+      "depot": {
+        "lat": 48.2082,
+        "lon": 16.3738,
+        "city": "Vienna",
+        "country": "Austria"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "at"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_au_australia",
+      "corpus": "corpora/oa_au_australia.json",
+      "depot": {
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "city": "Melbourne",
+        "country": "Australia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "au"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_be_belgium",
+      "corpus": "corpora/oa_be_belgium.json",
+      "depot": {
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "city": "Bruxelles",
+        "country": "Belgium"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "be"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_ca_canada",
+      "corpus": "corpora/oa_ca_canada.json",
+      "depot": {
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "city": "Toronto",
+        "country": "Canada"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "ca"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_ch_switzerland",
+      "corpus": "corpora/oa_ch_switzerland.json",
+      "depot": {
+        "lat": 46.2044,
+        "lon": 6.1432,
+        "city": "Geneva",
+        "country": "Switzerland"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "ch"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_cl_chile",
+      "corpus": "corpora/oa_cl_chile.json",
+      "depot": {
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "city": "Santiago",
+        "country": "Chile"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "cl"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_co_colombia",
+      "corpus": "corpora/oa_co_colombia.json",
+      "depot": {
+        "lat": 6.2442,
+        "lon": -75.5812,
+        "city": "Medellín",
+        "country": "Colombia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "co"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_de_germany",
+      "corpus": "corpora/oa_de_germany.json",
+      "depot": {
+        "lat": 52.52,
+        "lon": 13.405,
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "de"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_dk_denmark",
+      "corpus": "corpora/oa_dk_denmark.json",
+      "depot": {
+        "lat": 55.6761,
+        "lon": 12.5683,
+        "city": "Copenhagen",
+        "country": "Denmark"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "dk"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_fr_france",
+      "corpus": "corpora/oa_fr_france.json",
+      "depot": {
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "city": "Paris",
+        "country": "France"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "fr"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_it_italy",
+      "corpus": "corpora/oa_it_italy.json",
+      "depot": {
+        "lat": 44.4949,
+        "lon": 11.3426,
+        "city": "Bologna",
+        "country": "Italy"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "it"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_jp_japan",
+      "corpus": "corpora/oa_jp_japan.json",
+      "depot": {
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "city": "Tokyo",
+        "country": "Japan"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "jp"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_lu_luxembourg",
+      "corpus": "corpora/oa_lu_luxembourg.json",
+      "depot": {
+        "lat": 49.6116,
+        "lon": 6.1319,
+        "city": "Luxembourg",
+        "country": "Luxembourg"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "lu"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_mx_mexico",
+      "corpus": "corpora/oa_mx_mexico.json",
+      "depot": {
+        "lat": 20.6597,
+        "lon": -103.3496,
+        "city": "Guadalajara",
+        "country": "México"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "mx"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_no_norway",
+      "corpus": "corpora/oa_no_norway.json",
+      "depot": {
+        "lat": 59.9139,
+        "lon": 10.7522,
+        "city": "Oslo",
+        "country": "Norway"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "no"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_nz_new_zealand",
+      "corpus": "corpora/oa_nz_new_zealand.json",
+      "depot": {
+        "lat": -45.8788,
+        "lon": 170.5028,
+        "city": "Dunedin",
+        "country": "New Zealand"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "nz"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_pl_poland",
+      "corpus": "corpora/oa_pl_poland.json",
+      "depot": {
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "city": "Warsaw",
+        "country": "Poland"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "pl"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_ro_romania",
+      "corpus": "corpora/oa_ro_romania.json",
+      "depot": {
+        "lat": 44.9375562,
+        "lon": 26.0232449,
+        "city": "Bucharest",
+        "country": "Romania"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "ro"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_se_sweden",
+      "corpus": "corpora/oa_se_sweden.json",
+      "depot": {
+        "lat": 59.3293,
+        "lon": 18.0686,
+        "city": "Stockholm",
+        "country": "Sweden"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "se"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_sg_singapore",
+      "corpus": "corpora/oa_sg_singapore.json",
+      "depot": {
+        "lat": 1.3521,
+        "lon": 103.8198,
+        "city": "Singapore",
+        "country": "Singapore"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "sg"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_us_us_california",
+      "corpus": "corpora/oa_us_us_california.json",
+      "depot": {
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "city": "San Francisco",
+        "country": "United States"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "us"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_us_us_new_york",
+      "corpus": "corpora/oa_us_us_new_york.json",
+      "depot": {
+        "lat": 40.7128,
+        "lon": -74.006,
+        "city": "New York",
+        "country": "United States"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "us"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_uy_uruguay",
+      "corpus": "corpora/oa_uy_uruguay.json",
+      "depot": {
+        "lat": -34.9011,
+        "lon": -56.1645,
+        "city": "Montevideo",
+        "country": "Uruguay"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "uy"
+      ],
+      "generated": true
+    },
+    {
+      "id": "oa_za_south_africa",
+      "corpus": "corpora/oa_za_south_africa.json",
+      "depot": {
+        "lat": -33.9249,
+        "lon": 18.4241,
+        "city": "Cape Town",
+        "country": "South Africa"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "openaddresses",
+        "za"
+      ],
+      "generated": true
+    },
+    {
+      "id": "osm_bg_sofia",
+      "corpus": "corpora/osm_bg_sofia.json",
+      "depot": {
+        "lat": 42.6977,
+        "lon": 23.3219,
+        "city": "Sofia",
+        "country": "Bulgaria"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "bg"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_bo_la_paz",
+      "corpus": "corpora/osm_bo_la_paz.json",
+      "depot": {
+        "lat": -16.4897,
+        "lon": -68.1193,
+        "city": "La Paz",
+        "country": "Bolivia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "bo"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_br_sao_paulo",
+      "corpus": "corpora/osm_br_sao_paulo.json",
+      "depot": {
+        "lat": -23.5505,
+        "lon": -46.6333,
+        "city": "São Paulo",
+        "country": "Brasil"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "br"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_cn_shanghai",
+      "corpus": "corpora/osm_cn_shanghai.json",
+      "depot": {
+        "lat": 31.2304,
+        "lon": 121.4737,
+        "city": "Shanghai",
+        "country": "China"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "cn"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_cr_san_jose",
+      "corpus": "corpora/osm_cr_san_jose.json",
+      "depot": {
+        "lat": 9.9281,
+        "lon": -84.0907,
+        "city": "San José",
+        "country": "Costa Rica"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "cr"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_do_santo_domingo",
+      "corpus": "corpora/osm_do_santo_domingo.json",
+      "depot": {
+        "lat": 18.4861,
+        "lon": -69.9312,
+        "city": "Santo Domingo",
+        "country": "Dominican Republic"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "do"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ec_quito",
+      "corpus": "corpora/osm_ec_quito.json",
+      "depot": {
+        "lat": -0.1807,
+        "lon": -78.4678,
+        "city": "Quito",
+        "country": "Ecuador"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ec"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ee_tallinn",
+      "corpus": "corpora/osm_ee_tallinn.json",
+      "depot": {
+        "lat": 59.437,
+        "lon": 24.7536,
+        "city": "Tallinn",
+        "country": "Estonia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ee"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_eg_cairo",
+      "corpus": "corpora/osm_eg_cairo.json",
+      "depot": {
+        "lat": 30.0444,
+        "lon": 31.2357,
+        "city": "Cairo",
+        "country": "Egypt"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "eg"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_es_madrid",
+      "corpus": "corpora/osm_es_madrid.json",
+      "depot": {
+        "lat": 40.4168,
+        "lon": -3.7038,
+        "city": "Madrid",
+        "country": "España"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "es"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_fi_helsinki",
+      "corpus": "corpora/osm_fi_helsinki.json",
+      "depot": {
+        "lat": 60.1699,
+        "lon": 24.9384,
+        "city": "Helsinki",
+        "country": "Finland"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "fi"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_gb_london",
+      "corpus": "corpora/osm_gb_london.json",
+      "depot": {
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "city": "London",
+        "country": "United Kingdom"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "gb"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_gr_athens",
+      "corpus": "corpora/osm_gr_athens.json",
+      "depot": {
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "city": "Athens",
+        "country": "Greece"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "gr"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_gt_guatemala",
+      "corpus": "corpora/osm_gt_guatemala.json",
+      "depot": {
+        "lat": 14.6349,
+        "lon": -90.5069,
+        "city": "Guatemala",
+        "country": "Guatemala"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "gt"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_hk_hong_kong",
+      "corpus": "corpora/osm_hk_hong_kong.json",
+      "depot": {
+        "lat": 22.3193,
+        "lon": 114.1694,
+        "city": "Hong Kong",
+        "country": "Hong Kong"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "hk"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_hr_zagreb",
+      "corpus": "corpora/osm_hr_zagreb.json",
+      "depot": {
+        "lat": 45.815,
+        "lon": 15.9819,
+        "city": "Zagreb",
+        "country": "Croatia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "hr"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_hu_budapest",
+      "corpus": "corpora/osm_hu_budapest.json",
+      "depot": {
+        "lat": 47.4979,
+        "lon": 19.0402,
+        "city": "Budapest",
+        "country": "Hungary"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "hu"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_id_jakarta",
+      "corpus": "corpora/osm_id_jakarta.json",
+      "depot": {
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "city": "Jakarta",
+        "country": "Indonesia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "id"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ie_dublin",
+      "corpus": "corpora/osm_ie_dublin.json",
+      "depot": {
+        "lat": 53.3498,
+        "lon": -6.2603,
+        "city": "Dublin",
+        "country": "Ireland"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ie"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_il_tel_aviv",
+      "corpus": "corpora/osm_il_tel_aviv.json",
+      "depot": {
+        "lat": 32.0853,
+        "lon": 34.7818,
+        "city": "Tel Aviv",
+        "country": "Israel"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "il"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_in_mumbai",
+      "corpus": "corpora/osm_in_mumbai.json",
+      "depot": {
+        "lat": 19.076,
+        "lon": 72.8777,
+        "city": "Mumbai",
+        "country": "India"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "in"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ke_nairobi",
+      "corpus": "corpora/osm_ke_nairobi.json",
+      "depot": {
+        "lat": -1.2921,
+        "lon": 36.8219,
+        "city": "Nairobi",
+        "country": "Kenya"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ke"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_kr_seoul",
+      "corpus": "corpora/osm_kr_seoul.json",
+      "depot": {
+        "lat": 37.5665,
+        "lon": 126.978,
+        "city": "Seoul",
+        "country": "South Korea"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "kr"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_lt_vilnius",
+      "corpus": "corpora/osm_lt_vilnius.json",
+      "depot": {
+        "lat": 54.6872,
+        "lon": 25.2797,
+        "city": "Vilnius",
+        "country": "Lithuania"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "lt"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_lv_riga",
+      "corpus": "corpora/osm_lv_riga.json",
+      "depot": {
+        "lat": 56.9496,
+        "lon": 24.1052,
+        "city": "Riga",
+        "country": "Latvia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "lv"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ma_casablanca",
+      "corpus": "corpora/osm_ma_casablanca.json",
+      "depot": {
+        "lat": 33.5731,
+        "lon": -7.5898,
+        "city": "Casablanca",
+        "country": "Morocco"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ma"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_my_kuala_lumpur",
+      "corpus": "corpora/osm_my_kuala_lumpur.json",
+      "depot": {
+        "lat": 3.139,
+        "lon": 101.6869,
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "my"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ng_lagos",
+      "corpus": "corpora/osm_ng_lagos.json",
+      "depot": {
+        "lat": 6.5244,
+        "lon": 3.3792,
+        "city": "Lagos",
+        "country": "Nigeria"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ng"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_nl_amsterdam",
+      "corpus": "corpora/osm_nl_amsterdam.json",
+      "depot": {
+        "lat": 52.3676,
+        "lon": 4.9041,
+        "city": "Amsterdam",
+        "country": "Netherlands"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "nl"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_pa_panama",
+      "corpus": "corpora/osm_pa_panama.json",
+      "depot": {
+        "lat": 8.9824,
+        "lon": -79.5199,
+        "city": "Panamá",
+        "country": "Panama"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "pa"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_pe_lima",
+      "corpus": "corpora/osm_pe_lima.json",
+      "depot": {
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "city": "Lima",
+        "country": "Peru"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "pe"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ph_manila",
+      "corpus": "corpora/osm_ph_manila.json",
+      "depot": {
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "city": "Manila",
+        "country": "Philippines"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ph"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_pt_lisboa",
+      "corpus": "corpora/osm_pt_lisboa.json",
+      "depot": {
+        "lat": 38.7223,
+        "lon": -9.1393,
+        "city": "Lisboa",
+        "country": "Portugal"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "pt"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_py_asuncion",
+      "corpus": "corpora/osm_py_asuncion.json",
+      "depot": {
+        "lat": -25.2637,
+        "lon": -57.5759,
+        "city": "Asunción",
+        "country": "Paraguay"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "py"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_rs_belgrade",
+      "corpus": "corpora/osm_rs_belgrade.json",
+      "depot": {
+        "lat": 44.7866,
+        "lon": 20.4489,
+        "city": "Belgrade",
+        "country": "Serbia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "rs"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ru_moscow",
+      "corpus": "corpora/osm_ru_moscow.json",
+      "depot": {
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "city": "Moscow",
+        "country": "Russia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ru"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_sa_riyadh",
+      "corpus": "corpora/osm_sa_riyadh.json",
+      "depot": {
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "city": "Riyadh",
+        "country": "Saudi Arabia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "sa"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_si_ljubljana",
+      "corpus": "corpora/osm_si_ljubljana.json",
+      "depot": {
+        "lat": 46.0569,
+        "lon": 14.5058,
+        "city": "Ljubljana",
+        "country": "Slovenia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "si"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_sk_bratislava",
+      "corpus": "corpora/osm_sk_bratislava.json",
+      "depot": {
+        "lat": 48.1486,
+        "lon": 17.1077,
+        "city": "Bratislava",
+        "country": "Slovakia"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "sk"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_th_bangkok",
+      "corpus": "corpora/osm_th_bangkok.json",
+      "depot": {
+        "lat": 13.7563,
+        "lon": 100.5018,
+        "city": "Bangkok",
+        "country": "Thailand"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "th"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_tr_istanbul",
+      "corpus": "corpora/osm_tr_istanbul.json",
+      "depot": {
+        "lat": 41.0082,
+        "lon": 28.9784,
+        "city": "Istanbul",
+        "country": "Turkey"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "tr"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_tw_taipei",
+      "corpus": "corpora/osm_tw_taipei.json",
+      "depot": {
+        "lat": 25.033,
+        "lon": 121.5654,
+        "city": "Taipei",
+        "country": "Taiwan"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "tw"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ua_kyiv",
+      "corpus": "corpora/osm_ua_kyiv.json",
+      "depot": {
+        "lat": 50.4501,
+        "lon": 30.5234,
+        "city": "Kyiv",
+        "country": "Ukraine"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ua"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_ve_caracas",
+      "corpus": "corpora/osm_ve_caracas.json",
+      "depot": {
+        "lat": 10.4806,
+        "lon": -66.9036,
+        "city": "Caracas",
+        "country": "Venezuela"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "ve"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    },
+    {
+      "id": "osm_vn_hanoi",
+      "corpus": "corpora/osm_vn_hanoi.json",
+      "depot": {
+        "lat": 21.0278,
+        "lon": 105.8342,
+        "city": "Hanoi",
+        "country": "Vietnam"
+      },
+      "limits": {
+        "fast": 90
+      },
+      "tags": [
+        "noise",
+        "osm",
+        "vn"
+      ],
+      "generated": true,
+      "index_margin_km": 6.0
+    }
+  ]
+}

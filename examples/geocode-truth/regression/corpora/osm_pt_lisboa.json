@@ -1,0 +1,3818 @@
+{
+ "source": "osm-addr",
+ "country": "PT",
+ "city": "Lisboa",
+ "country_label": "Portugal",
+ "depot": {
+  "lat": 38.7223,
+  "lon": -9.1393,
+  "city": "Lisboa",
+  "country": "Portugal"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 380,
+ "note": "Nodos addr:* del indice n38.80_s38.60_e-9.00_w-9.30-portugal.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "9 Rua Dom João de Portugal",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Rua Dom João de Portugal 9, 2800-109",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Almada, portugal, Rua Dom João de Portugal 9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Almada, portugal, Rua Dom João de Portugal 9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "9 Rua Dom João de Portugal Almada",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Dom João de Protugal 9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "dom joão de portugal 9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Dom João de Portugal9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Mercado dom joão de portugal 9",
+   "lat": 38.683601583333335,
+   "lng": -9.153825249999999,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Dom João de Portugal 9, 2800-109 Almada",
+   "base": 0
+  },
+  {
+   "address": "Rua Dom Pedro V 56 56, Lisboa",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Rua Dom Pedro V 56, 56",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Lisboa, portugal, Rua Dom Pedro V 56 56",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Rua Dom Pedro V 56 56, Lisboa, portugal",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Rua Dom Pedro V 56 - Lisboa - 56",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "dom pedro v 56 56",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Dom Pedro V 56 56 (portao azul)",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Dom Pedro V 5656",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "DOM PEDRO V 56 56",
+   "lat": 38.7157558,
+   "lng": -9.1459316,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Dom Pedro V 56 56, Lisboa",
+   "base": 1
+  },
+  {
+   "address": "Rua Castelo Picão 14, Lisboa",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "14 Rua Castelo Picão",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Lisboa portugal Rua Castelo Picão 14",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Rua Castelo Picão 14, Lisboa, portugal",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "14 Lisboa Rua Castelo Picão",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Maria castelo picão 14",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Castelo Picão 14 joao",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Catselo Picão 14",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "castelo picão 14",
+   "lat": 38.7116658,
+   "lng": -9.1295098,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Castelo Picão 14, Lisboa",
+   "base": 2
+  },
+  {
+   "address": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "5 Rua Lourenço Pires de Távora",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "Rua Lourenço Pires de Távora 5, 2800-157",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "Almada Rua Lourenço Pires de Távora 5 portugal",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "portugal, Almada, Rua Lourenço Pires Pires de Távora 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "2800-157, Almada, 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "Maria lourenço pires de távora 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "távora 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "Lurenço Pires de Távora 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "LOURENÇO PIRES DE TÁVORA 5",
+   "lat": 38.68087797777778,
+   "lng": -9.153840011111111,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Lourenço Pires de Távora 5, 2800-157 Almada",
+   "base": 3
+  },
+  {
+   "address": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "Rua Professor Veiga Beirão, 8 B",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "portugal Lisboa Rua Professor Veiga Beirão 8 B",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "lisboa, rua professor veiga beirão 8 b, portugal portugal",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "Rua Professor Veiga Beirão - Lisboa",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "professor veiga beirão 8 b",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "beirão 8 B",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "Profesor Veiga Beirão 8 B",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "Professor Veiga Beirão8 B",
+   "lat": 38.7558376,
+   "lng": -9.133875416666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Professor Veiga Beirão 8 B, Lisboa",
+   "base": 4
+  },
+  {
+   "address": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Rua Engenheiro Ferreira de Mesquita, 1",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Rua Engenheiro Ferreira de Mesquita 1 1099-035",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "portugal Rua Engenheiro Ferreira de Mesquita 1 Campolide",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Rua Engenheiro Ferreira Ferreira de Mesquita 1 portugal Campolide",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Campolide 1 Rua Engenheiro Ferreira de Mesquita",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Engenheiro Ferreira de Mes 1",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "engenheiro ferreira de mesquita 1",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Engenheiro Ferreira de Mesquita1",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "ENGENHEIRO FERREIRA DE MESQUITA 1",
+   "lat": 38.73050662608696,
+   "lng": -9.167794352173914,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Engenheiro Ferreira de Mesquita 1, 1099-035 Campolide",
+   "base": 5
+  },
+  {
+   "address": "Rua Pedro Nunes 27, Lisboa",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "27 Rua Pedro Nunes",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "Rua Pedro Nunes 27 portugal Lisboa",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "portugal portugal Lisboa Rua Pedro Nunes 27",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "Lisboa Rua Pedro Nunes 27",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "pedro nunes 27",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "Mercado pedro nunes 27",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "nunes 27",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "Pedro Nunes 27 joao",
+   "lat": 38.732730419999996,
+   "lng": -9.1481809,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Pedro Nunes 27, Lisboa",
+   "base": 6
+  },
+  {
+   "address": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "Rua de Artilharia Um, 15",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "Rua de Artilharia Um 15 1250-096",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "Lisboa, Rua de Artilharia Um 15, portugal",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "Lisboa, Rua de Artilharia Um 15, portugal",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "15 - Lisboa - 1250-096 - Rua de Artilharia Um",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "de Artilharia Um15",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "DE ARTILHARIA UM 15",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "de Aritlharia Um 15",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "de artilharia um 15",
+   "lat": 38.7232046,
+   "lng": -9.1544047,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua de Artilharia Um 15, 1250-096 Lisboa",
+   "base": 7
+  },
+  {
+   "address": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Rua Marcos Portugal, 18A",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Rua Marcos Portugal 18A, 1200-258",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Lisboa Rua Marcos Portugal 18A portugal",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Rua Marcos Portugal Portugal 18A Lisboa portugal",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Rua Marcos Portugal Lisboa 18A 1200-258",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Marcos Portugal18A",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "MARCOS PORTUGAL 18A",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Maria marcos portugal 18A",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Marcos Portugal 18A (portao azul)",
+   "lat": 38.71626,
+   "lng": -9.1522307,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Marcos Portugal 18A, 1200-258 Lisboa",
+   "base": 8
+  },
+  {
+   "address": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "4 Azinhaga dos Ulmeiros",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "portugal Lisboa Azinhaga dos Ulmeiros 4",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "Lisboa, portugal, Azinhaga dos Ulmeiros 4",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "4 - Azinhaga dos Ulmeiros - Lisboa",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "azinhaga dos ulmeiros 4",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "Azinhaga dos Ulmeiros4",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "Asinhaga dos Ulmeiros 4",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "Azinhaga dos Ulmeiros 4 fundos",
+   "lat": 38.7692411,
+   "lng": -9.17264342,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Azinhaga dos Ulmeiros 4, Lisboa",
+   "base": 9
+  },
+  {
+   "address": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Beco das Fontaínhas 30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Beco das Fontaínhas 30 1300-257",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Lisboa, portugal, Beco das Fontaínhas 30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Beco das Fontaínhas 30, Lisboa, portugal",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "1300-257 - Beco das Fontaínhas - 30 - Lisboa",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Beco das Fon 30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Beco das Fontaínhas30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Maria beco das fontaínhas 30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "fontaínhas 30",
+   "lat": 38.70619,
+   "lng": -9.1749159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Beco das Fontaínhas 30, 1300-257 Lisboa",
+   "base": 10
+  },
+  {
+   "address": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Rua Cidade de São Salvador LT 247",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Lisboa, portugal, Rua Cidade de São Salvador LT 247",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "portugal Rua Cidade de Sao Salvador LT 247 Lisboa",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Rua Cidade de São Salvador - Lisboa",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "cidade de são salvador lt 247",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Joao cidade de são salvador LT 247",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Cidade de São Salvador LT 247 joao",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Cidade de São SalvadorLT 247",
+   "lat": 38.76430114,
+   "lng": -9.11555702,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Cidade de São Salvador LT 247, Lisboa",
+   "base": 11
+  },
+  {
+   "address": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Praça de Luis de Camóes, 36",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Praça de Luis de Camóes 36, 1200-243 Encarnação",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Praça de Luis de Camóes 36 portugal Lisboa",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Praça de Luis de Camóes 36 portugal Lisboa",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "1200-243 Encarnação, 36, Lisboa",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "praça de luis de camóes 36",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Praça de Luis de Camóes 36 casa 2",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "camóes 36",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "PRAÇA DE LUIS DE CAMÓES 36",
+   "lat": 38.71091357,
+   "lng": -9.14356091,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Praça de Luis de Camóes 36, 1200-243 Encarnação Lisboa",
+   "base": 12
+  },
+  {
+   "address": "Rua Cais do Tojo 31-37, Lisboa",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "31-37 Rua Cais do Tojo",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Lisboa, portugal, Rua Cais do Tojo 31-37",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Lisboa Rua Cais do Tojo 31-37 portugal",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Lisboa - 31-37 - Rua Cais do Tojo",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Cais do Tojo31-37",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "cais do tojo 31-37",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Joao cais do tojo 31-37",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "tojo 31-37",
+   "lat": 38.70795416,
+   "lng": -9.1519908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Cais do Tojo 31-37, Lisboa",
+   "base": 13
+  },
+  {
+   "address": "Travessa do Monte 5, 1170-296 Lisboa",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Travessa do Monte 5",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Travessa do Monte 5 1170-296",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Travessa do Monte 5, portugal, Lisboa",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Lisboa Travessa do Monte 5 portugal portugal",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "1170-296, Lisboa, 5, Travessa do Monte",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "do Montte 5",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "do monte 5",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "do Monte 5 (portao azul)",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Maria do monte 5",
+   "lat": 38.718592,
+   "lng": -9.1302093,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Travessa do Monte 5, 1170-296 Lisboa",
+   "base": 14
+  },
+  {
+   "address": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Rua Trindade Coelho 8",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Rua Trindade Coelho 8, 2800-297",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Rua Trindade Coelho 8, Almada, portugal",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Almada, Rua Trindade Coelho 8, portugal",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "2800-297 - 8 - Rua Trindade Coelho",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "coelho 8",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Trnidade Coelho 8",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "trindade coelho 8",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "TRINDADE COELHO 8",
+   "lat": 38.6873071,
+   "lng": -9.149542114285714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Trindade Coelho 8, 2800-297 Almada",
+   "base": 15
+  },
+  {
+   "address": "Beco do Mexias 11, 1100-349 Lisboa",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Beco do Mexias, 11",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Beco do Mexias 11, 1100-349",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "portugal, Beco do Mexias 11, Lisboa",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Beco do Mexias 11 portugal portugal Lisboa",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "11 - 1100-349 - Lisboa - Beco do Mexias",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Joao beco do mexias 11",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "BECO DO MEXIAS 11",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Beco do Mexias11",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Beco do Mxeias 11",
+   "lat": 38.7114903,
+   "lng": -9.1282608,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Beco do Mexias 11, 1100-349 Lisboa",
+   "base": 16
+  },
+  {
+   "address": "Rua de Santa Bárbara 7, Lisboa",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "Rua de Santa Bárbara, 7",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "Lisboa, Rua de Santa Bárbara 7, portugal",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "Rua de Santa Bárbara 7, portugal, Lisboa",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "7 - Lisboa - Rua de Santa Bárbara",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "de Santa Bárbara 7 casa 2",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "Maria de santa bárbara 7",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "de santa bárbara 7",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "de Santa Bárbara7",
+   "lat": 38.7246931,
+   "lng": -9.1369009,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua de Santa Bárbara 7, Lisboa",
+   "base": 17
+  },
+  {
+   "address": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "4 Gomes Pereira",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Gomes Pereira 4 1500-329",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Lisboa, Gomes Pereira 4, portugal",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Lisboa, portugal, Gomes Pereira 4",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Avenida Gomes Pereira, 4, Lisboa, 1500-329",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "pereira 4",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "GOMES PEREIRA 4",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "gomes pereira 4",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Mercado gomes pereira 4",
+   "lat": 38.7503101,
+   "lng": -9.1976578,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Gomes Pereira 4, 1500-329 Lisboa",
+   "base": 18
+  },
+  {
+   "address": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "Rua Fernando Curado Ribeiro, 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "Rua Fernando Curado Ribeiro 4, portugal, Lisboa",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "portugal portugal Lisboa Rua Fernando Curado Ribeiro 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "4 Rua Fernando Curado Ribeiro",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "Joao fernando curado ribeiro 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "FERNANDO CURADO RIBEIRO 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "ribeiro 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "fernando curado ribeiro 4",
+   "lat": 38.761105773333334,
+   "lng": -9.156562166666667,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Fernando Curado Ribeiro 4, Lisboa",
+   "base": 19
+  },
+  {
+   "address": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Rua Henrique Barrilaro Ruas 41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Lisboa Rua Henrique Barrilaro Ruas 41 portugal",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "portugal Lisboa Rua Henrique Barrilaro Ruas 41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Rua Henrique Barrilaro Ruas - Lisboa",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Henrique Barrilaro Ruas41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Henrique Barrrilaro Ruas 41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "ruas 41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Maria henrique barrilaro ruas 41",
+   "lat": 38.7241758,
+   "lng": -9.1212842,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Henrique Barrilaro Ruas 41, Lisboa",
+   "base": 20
+  },
+  {
+   "address": "Rua da Bempostinha 66, Lisboa",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "66 Rua da Bempostinha",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "Rua da Bempostinha 66 portugal Lisboa",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "rua da bempostinha 66 portugal lisboa",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "Rua da Bempostinha, Lisboa",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "Joao da bempostinha 66",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "da Bempostinha 66 casa 2",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "da Bempostniha 66",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "da Bempostinha66",
+   "lat": 38.72300206,
+   "lng": -9.13710714,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua da Bempostinha 66, Lisboa",
+   "base": 21
+  },
+  {
+   "address": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Rua Pedro Bandeira, 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Rua Pedro Bandeira 2-A 1750-217 Lumiar",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Lisboa, portugal, Rua Pedro Bandeira 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "portugal portugal Rua Pedro Bandeira 2-A Lisboa",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Rua Pedro Bandeira, Lisboa, 1750-217 Lumiar, 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Pedro Banderia 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Pedro Ban 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Maria pedro bandeira 2-A",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "pedro bandeira 2-a",
+   "lat": 38.7627728,
+   "lng": -9.1536361,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Pedro Bandeira 2-A, 1750-217 Lumiar Lisboa",
+   "base": 22
+  },
+  {
+   "address": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Largo de São Domingos 14",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Largo de São Domingos 14 1169-060",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Largo de São Domingos 14 Lisboa portugal",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "portugal, Lisboa, Largo de São Domingos 14",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Lisboa, 14, Largo de São Domingos",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "largo de são domingos 14",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Largo de São Dom 14",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Largo de São Domingos 14 (portao azul)",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "LARGO DE SÃO DOMINGOS 14",
+   "lat": 38.7151664,
+   "lng": -9.1387615,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Largo de São Domingos 14, 1169-060 Lisboa",
+   "base": 23
+  },
+  {
+   "address": "Praça da Figueira 6, Lisboa",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Praça da Figueira 6",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Praça da Figueira 6, Lisboa, portugal",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "portugal, Praça Praça da Figueira 6, Lisboa",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Lisboa 6 Praça da Figueira",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Praça da Figueira 6 (portao azul)",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Praça da Fig 6",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "figueira 6",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Praça da Fiugeira 6",
+   "lat": 38.714221380000005,
+   "lng": -9.13808908,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Praça da Figueira 6, Lisboa",
+   "base": 24
+  },
+  {
+   "address": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Rua Francisco Andrade, 5A",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Rua Francisco Andrade 5A, 1700-197",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "portugal, Lisboa, Rua Francisco Andrade 5A",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "rua francisco andrade andrade 5a lisboa portugal",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "5A - 1700-197 - Rua Francisco Andrade - Lisboa",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Franicsco Andrade 5A",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Francisco Andrade5A",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Francisco Andrade 5A fundos",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Francisco And 5A",
+   "lat": 38.7479792,
+   "lng": -9.13303868,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua Francisco Andrade 5A, 1700-197 Lisboa",
+   "base": 25
+  },
+  {
+   "address": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "Calçada da Cruz da Pedra, 17",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "Calçada da Cruz da Pedra 17, 1900-290",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "portugal Calçada da Cruz da Pedra 17 Lisboa",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "Calçada da Cruz da Pedra 17 Lisboa portugal",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "1900-290 Lisboa Calçada da Cruz da Pedra",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "pedra 17",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "CALÇADA DA CRUZ DA PEDRA 17",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "Mercado calçada da cruz da pedra 17",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "calçada da cruz da pedra 17",
+   "lat": 38.7222616,
+   "lng": -9.1157698,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calçada da Cruz da Pedra 17, 1900-290 Lisboa",
+   "base": 26
+  },
+  {
+   "address": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "5 Rua António Pereira Carrilho",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "Rua António Pereira Carrilho 5, 1000-047",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "portugal Lisboa Rua António Pereira Carrilho 5",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "Lisboa portugal Rua António Pereira Carrilho 5",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "Lisboa - Rua António Pereira Carrilho - 1000-047",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "António Pereira Carrilho 5 casa 2",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "António Pereira Car 5",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "Joao antónio pereira carrilho 5",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "António Pereira Carrilho5",
+   "lat": 38.7338266,
+   "lng": -9.1354792,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua António Pereira Carrilho 5, 1000-047 Lisboa",
+   "base": 27
+  },
+  {
+   "address": "Beco das Cruzes 22, Lisboa",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "22 Beco das Cruzes",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "Lisboa portugal Beco das Cruzes 22",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "Beco das Cruzes 22, portugal, portugal, Lisboa",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "22 - Lisboa - Beco das Cruzes",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "Beco das Cruzes22",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "BECO DAS CRUZES 22",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "beco das cruzes 22",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "Beco das Cruzes 22 joao",
+   "lat": 38.7118604,
+   "lng": -9.1290549,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Beco das Cruzes 22, Lisboa",
+   "base": 28
+  },
+  {
+   "address": "Rua António Enes 1D, Lisboa",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "Rua António Enes 1D",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "portugal, Lisboa, Rua António Enes 1D",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "Lisboa, Rua António Enes 1D, portugal",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "Rua António Enes, 1D, Lisboa",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "António Enes 1D casa 2",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "António Enes1D",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "Antóino Enes 1D",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "enes 1D",
+   "lat": 38.7339908,
+   "lng": -9.1476081,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua António Enes 1D, Lisboa",
+   "base": 29
+  },
+  {
+   "address": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "5 Travessa das Florindas",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "Travessa das Florindas 5, 1300-250",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "Travessa das Florindas 5, portugal, Lisboa",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "Travessa das Florindas 5, portugal, Lisboa",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "Lisboa Travessa das Florindas 1300-250 5",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "das Floirndas 5",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "das Flo 5",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "das Florindas5",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "das Florindas 5 fundos",
+   "lat": 38.7054684,
+   "lng": -9.1944807,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Travessa das Florindas 5, 1300-250 Lisboa",
+   "base": 30
+  },
+  {
+   "address": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Saldanha, 14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Saldanha 14-15 1050-094",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "São Jorge de Arroios, Praça Duque de Saldanha 14-15, portugal",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "portugal, São São Jorge de Arroios, Praça Duque de Saldanha 14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Saldanha - 14-15 - 1050-094",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Sal 14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "praça duque de saldanha 14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Sladanha 14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Praça Duque de Saldanha14-15",
+   "lat": 38.734134,
+   "lng": -9.144159,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Praça Duque de Saldanha 14-15, 1050-094 São Jorge de Arroios",
+   "base": 31
+  },
+  {
+   "address": "Travessa do Benformoso 2, Lisboa",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "Travessa do Benformoso, 2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "Travessa do Benformoso 2, Lisboa, portugal",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "Lisboa, Travessa do Benformoso 2, portugal",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "Lisboa, Travessa do Benformoso, 2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "DO BENFORMOSO 2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "do Befnormoso 2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "do Benformoso2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "do Ben 2",
+   "lat": 38.7198629,
+   "lng": -9.1351395,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Travessa do Benformoso 2, Lisboa",
+   "base": 32
+  },
+  {
+   "address": "Rua Vicente Borga 29, 1200 Lisboa",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Rua Vicente Borga, 29",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Rua Vicente Borga 29, 1200",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "portugal Rua Vicente Borga 29 Lisboa",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Lisboa Rua Vicente Borga 29 portugal",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "29 - 1200 - Lisboa",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Vicente Borga29",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "borga 29",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "VICENTE BORGA 29",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Vicente Borga 29 fundos",
+   "lat": 38.709087,
+   "lng": -9.1547778,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Vicente Borga 29, 1200 Lisboa",
+   "base": 33
+  },
+  {
+   "address": "Travessa da Tapada 1-A, Alcântara",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "Travessa da Tapada 1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "Alcântara portugal Travessa da Tapada 1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "portugal Alcantara Travessa da Tapada 1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "Travessa da Tapada - Alcântara",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "da Tapada1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "Mercado da tapada 1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "da Tapada 1-A joao",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "DA TAPADA 1-A",
+   "lat": 38.7053973,
+   "lng": -9.1807095,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Travessa da Tapada 1-A, Alcântara",
+   "base": 34
+  },
+  {
+   "address": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Eng. Duarte Pacheco 26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Eng. Duarte Pacheco 26, 1070-110",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Eng. Duarte Pacheco 26 Lisboa portugal",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "portugal, Lisboa, Eng. Duarte Pacheco 26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Av. Eng. Duarte Pacheco - 26 - Lisboa",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "ENG. DUARTE PACHECO 26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Eng. Duarte Pachceo 26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Mercado eng. duarte pacheco 26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Eng. Duarte Pacheco26",
+   "lat": 38.7247081,
+   "lng": -9.160828,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Av. Eng. Duarte Pacheco 26, 1070-110 Lisboa",
+   "base": 35
+  },
+  {
+   "address": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "Rua Luciana Stegagno Picchio 12",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "portugal, Rua Luciana Stegagno Picchio 12, Lisboa",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "portugal portugal rua luciana stegagno picchio 12 lisboa",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "Lisboa, Rua Luciana Stegagno Picchio, 12",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "Luciana Stegagno Picchio 12 joao",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "LUCIANA STEGAGNO PICCHIO 12",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "Luciana Stgeagno Picchio 12",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "luciana stegagno picchio 12",
+   "lat": 38.75403649230769,
+   "lng": -9.181362753846154,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Luciana Stegagno Picchio 12, Lisboa",
+   "base": 36
+  },
+  {
+   "address": "Calçada das Lajes 19, Lisboa",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "19 Calçada das Lajes",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "portugal Calçada das Lajes 19 Lisboa",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "portugal Calcada das Lajes 19 Lisboa",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "Calçada das Lajes - Lisboa - 19",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "Calaçda das Lajes 19",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "Calçada das Lajes 19 fundos",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "calçada das lajes 19",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "Mercado calçada das lajes 19",
+   "lat": 38.7235884,
+   "lng": -9.117654,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calçada das Lajes 19, Lisboa",
+   "base": 37
+  },
+  {
+   "address": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "Largo da Academia Nacional de Belas Artes, 18",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "portugal Largo da Academia Nacional de Belas Artes 18 Lisboa",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "portugal Lisboa Largo da da Academia Nacional de Belas Artes 18",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "18 Lisboa Largo da Academia Nacional de Belas Artes",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "largo da academia nacional de belas artes 18",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "Largo da Academia Nacional de Belas Artes 18 casa 2",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "Joao largo da academia nacional de belas artes 18",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "LARGO DA ACADEMIA NACIONAL DE BELAS ARTES 18",
+   "lat": 38.7084663,
+   "lng": -9.1399688,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Largo da Academia Nacional de Belas Artes 18, Lisboa",
+   "base": 38
+  },
+  {
+   "address": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "Rua Cidade de Nova Lisboa 17",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "portugal Rua Cidade de Nova Lisboa 17 Lisboa",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "lisboa, rua cidade de nova lisboa 17, portugal",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "Lisboa - Rua Cidade de Nova Lisboa",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "CIDADE DE NOVA LISBOA 17",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "lisboa 17",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "Cidade de Nova Lisboa17",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  },
+  {
+   "address": "cidade de nova lisboa 17",
+   "lat": 38.7665875,
+   "lng": -9.111095885714287,
+   "country": "PT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rua Cidade de Nova Lisboa 17, Lisboa",
+   "base": 39
+  }
+ ]
+}

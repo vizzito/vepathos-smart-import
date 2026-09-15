@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "PH",
+ "city": "Manila",
+ "country_label": "Philippines",
+ "depot": {
+  "lat": 14.5995,
+  "lon": 120.9842,
+  "city": "Manila",
+  "country": "Philippines"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n14.70_s14.50_e121.10_w120.90-philippines.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "221 Senator Gil J. Puyat Avenue",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "Senator Gil J. Puyat Avenue 221, 1200",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "Makati, ph, Senator Gil J. Puyat Avenue 221",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "Makati, ph, Senator Gil J. Puyat Avenue 221",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "221 Senator Gil J. Puyat Avenue Makati",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "Mary senator gil j. puyat avenue 221",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "SENATOR GIL J. PUYAT AVENUE 221",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "Senator Gil J. Puyat Avenue 221 apt 4b",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "puyat avenue 221",
+   "lat": 14.55944706,
+   "lng": 121.01030696000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "221 Senator Gil J. Puyat Avenue, 1200 Makati",
+   "base": 0
+  },
+  {
+   "address": "746A Maginhawa Street, 1004 Manila",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Maginhawa Street, 746A",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Maginhawa Street 746A 1004",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Manila, ph, Maginhawa Street 746A",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Maginhawa Street 746A, Manila, ph",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Maginhawa Street 746A Manila 1004",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "MAGINHAWA STREET 746A",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Magnihawa Street 746A",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "maginhawa street 746a",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "Mary maginhawa street 746A",
+   "lat": 14.567657,
+   "lng": 120.9910682,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "746A Maginhawa Street, 1004 Manila",
+   "base": 1
+  },
+  {
+   "address": "12 Tagdalit Street, Manila",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagdalit Street, 12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagdalit Street 12, Manila",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Manila ph Tagdalit Street 12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Manila, Tagdalit Street 12, ph",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagdalit Street Manila 12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagdalit Street 12 john",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagadlit Street 12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "tagdalit street 12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "Tagdalit Street12",
+   "lat": 14.63926466,
+   "lng": 120.99645278,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12 Tagdalit Street, Manila",
+   "base": 2
+  },
+  {
+   "address": "183 A. Del Mundo Street, Manila",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "183 A. Del Mundo Street",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street 183, Manila",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street 183 ph Manila",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street 183, Manila, ph",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street, Manila",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Munndo Street 183",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street183",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "A. Del Mundo Street 183 back entrance",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "Mary a. del mundo street 183",
+   "lat": 14.6518413,
+   "lng": 120.9822469,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "183 A. Del Mundo Street, Manila",
+   "base": 3
+  },
+  {
+   "address": "1 Maude Street, Manila",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street, 1",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street 1, Manila",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street 1, Manila, ph",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street 1 ph Manila",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "1 - Manila - Maude Street",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "MAUDE STREET 1",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street1",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "maude street 1",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "Maude Street 1 john",
+   "lat": 14.5948216,
+   "lng": 121.0359143,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Maude Street, Manila",
+   "base": 4
+  },
+  {
+   "address": "114 San Francisco Avenue, Manila",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "San Francisco Avenue, 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "San Francisco Avenue 114, Manila",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "Manila, ph, San Francisco Avenue 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "San Francisco Avenue 114 Manila ph",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "Manila San Francisco Avenue 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "San Francisco Avenue 114 back entrance",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "francisco avenue 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "san francisco avenue 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "Deli san francisco avenue 114",
+   "lat": 14.576551760000001,
+   "lng": 121.03262402,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "114 San Francisco Avenue, Manila",
+   "base": 5
+  },
+  {
+   "address": "1125 F. R. Hidalgo Street, Manila",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "1125 F. R. Hidalgo Street",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "F. R. Hidalgo Street 1125, Manila",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "ph F. R. Hidalgo Street 1125 Manila",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "ph F. R. R. Hidalgo Street 1125 Manila",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "F. R. Hidalgo Street Manila 1125",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "f. r. hidalgo street 1125",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "Mary f. r. hidalgo street 1125",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "F. R. Hiadlgo Street 1125",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "F. R. HIDALGO STREET 1125",
+   "lat": 14.599145279999998,
+   "lng": 120.98777132000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1125 F. R. Hidalgo Street, Manila",
+   "base": 6
+  },
+  {
+   "address": "3459 A. P. Reyes Avenue, Manila",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "3459 A. P. Reyes Avenue",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "A. P. Reyes Avenue 3459, Manila",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "ph Manila A. P. Reyes Avenue 3459",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "A. P. Reyes Avenue 3459 Manila ph",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "A. P. Reyes Avenue 3459",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "a. p. reyes avenue 3459",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "A. P. REYES AVENUE 3459",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "Mary a. p. reyes avenue 3459",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "A. P. Reyes Avenue 3459 (green door)",
+   "lat": 14.573558,
+   "lng": 121.0160433,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3459 A. P. Reyes Avenue, Manila",
+   "base": 7
+  },
+  {
+   "address": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "Valero Access Road 3, U1802-1803, 18th Floor, Antel 2000 Corporate Center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "Valero Access Road 3 U1802-1803, 18th Floor, Antel 2000 Corporate Center 1227",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "ph Makati Valero Access Road 3 U1802-1803, 18th Floor, Antel 2000 Corporate Center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "ph valero access road 3 u1802-1803, 18th floor, antel 2000 corporate center makati",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "1227 - Valero Access Road 3 - Makati - U1802-1803, 18th Floor, Antel 2000 Corporate Center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "Vlaero Access Road 3 U1802-1803, 18th Floor, Antel 2000 Corporate Center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "road U1802-1803, 18th Floor, Antel 2000 Corporate Center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "valero access road 3 u1802-1803, 18th floor, antel 2000 corporate center",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "Valero Access Road 3 U1802-1803, 18th Floor, Antel 2000 Corporate Center john",
+   "lat": 14.5588346,
+   "lng": 121.0197368,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "U1802-1803, 18th Floor, Antel 2000 Corporate Center Valero Access Road 3, 1227 Makati",
+   "base": 8
+  },
+  {
+   "address": "1384 Alvarado Street, Manila",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Alvarado Street 1384",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Alvarado Street 1384, Manila",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Alvarado Street 1384, Manila, ph",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Alvarado Street 1384 ph ph Manila",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Manila - 1384",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Albarado Street 1384",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "ALVARADO STREET 1384",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "alvarado street 1384",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "Alvarado Street 1384 john",
+   "lat": 14.6088022,
+   "lng": 120.9766631,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1384 Alvarado Street, Manila",
+   "base": 9
+  },
+  {
+   "address": "1997 Pililia Street, Manila",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Pililia Street 1997",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Pililia Street 1997, Manila",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Pililia Street 1997, Manila, ph",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "ph, Pililia Street 1997, Manila",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Pililia Street Manila",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Pliilia Street 1997",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "pililia street 1997",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "Deli pililia street 1997",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "PILILIA STREET 1997",
+   "lat": 14.5705756,
+   "lng": 121.0237297,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1997 Pililia Street, Manila",
+   "base": 10
+  },
+  {
+   "address": "165 A. Luna Street, 1500 Manila",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. Luna Street 165",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. Luna Street 165, 1500",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. Luna Street 165, ph, Manila",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "a. luna street 165 ph manila",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "165 - Manila - A. Luna Street",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. LUNA STREET 165",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. Luna Street 165 back entrance",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "Deli a. luna street 165",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "A. Luna Street165",
+   "lat": 14.6135526,
+   "lng": 121.0236342,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "165 A. Luna Street, 1500 Manila",
+   "base": 11
+  },
+  {
+   "address": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "604 Andres Bonifacio Avenue",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "Andres Bonifacio Avenue 604 1115",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "Quezon City, ph, Andres Bonifacio Avenue 604",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "Andres Bonifacio Avenue 604, ph, Quezon City",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "604 - Andres Bonifacio Avenue - Quezon City",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "Deli andres bonifacio avenue 604",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "Andres Bonifacio Avenue604",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "bonifacio avenue 604",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "andres bonifacio avenue 604",
+   "lat": 14.644599381818182,
+   "lng": 120.99513470000001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "604 Andres Bonifacio Avenue, 1115 Quezon City",
+   "base": 12
+  },
+  {
+   "address": "7193-B M. Ocampo Street, 1230 Manila",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "7193-B M. Ocampo Street",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "M. Ocampo Street 7193-B 1230",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "M. Ocampo Street 7193-B, Manila, ph",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "ph, Manila, M. Ocampo Street 7193-B",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "Manila - 7193-B - M. Ocampo Street - 1230",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "Deli m. ocampo street 7193-B",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "M. OCAMPO STREET 7193-B",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "m. ocampo street 7193-b",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "M. Ocmapo Street 7193-B",
+   "lat": 14.5563234,
+   "lng": 121.0117517,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7193-B M. Ocampo Street, 1230 Manila",
+   "base": 13
+  },
+  {
+   "address": "421 Barraca Street, 1010 San Nicolas",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "421 Barraca Street",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Barraca Street 421 1010",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Barraca Street 421 ph San Nicolas",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Barraca Street 421, San Nicolas, ph",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Barraca Street, 421, San Nicolas",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Baraca Street 421",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "barraca street 421",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "BARRACA STREET 421",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "Barraca Street 421 back entrance",
+   "lat": 14.5981442,
+   "lng": 120.9726421,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "421 Barraca Street, 1010 San Nicolas",
+   "base": 14
+  },
+  {
+   "address": "841 Torres Street, Mandaluyong",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "841 Torres Street",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Torres Street 841, Mandaluyong",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Mandaluyong, ph, Torres Street 841",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Torres Street 841, Mandaluyong, ph",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "841, Mandaluyong",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Deli torres street 841",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Tores Street 841",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Torres Street 841 (green door)",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "Torres Street841",
+   "lat": 14.591943,
+   "lng": 121.0393663,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "841 Torres Street, Mandaluyong",
+   "base": 15
+  },
+  {
+   "address": "218 Banawe Street, Quezon City",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Banawe Street, 218",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Banawe Street 218, Quezon City",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Quezon City Banawe Street 218 ph",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Banawe Street Street 218, Quezon City, ph",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "218, Quezon City",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Banawe Street218",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Baanwe Street 218",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "Deli banawe street 218",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "BANAWE STREET 218",
+   "lat": 14.6232683,
+   "lng": 121.0083602,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "218 Banawe Street, Quezon City",
+   "base": 16
+  },
+  {
+   "address": "2151 Sobriedad Street, 1008 Sampaloc",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sobriedad Street, 2151",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sobriedad Street 2151, 1008",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "ph, Sobriedad Street 2151, Sampaloc",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sampaloc ph ph Sobriedad Street 2151",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sobriedad Street 2151 Sampaloc 1008",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sobriedad Street 2151 john",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Mary sobriedad street 2151",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "sobriedad street 2151",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "Sobriedad Street2151",
+   "lat": 14.6123503,
+   "lng": 121.0042295,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2151 Sobriedad Street, 1008 Sampaloc",
+   "base": 17
+  },
+  {
+   "address": "450 Jaboneros Street, Manila",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Jaboneros Street 450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Jaboneros Street 450, Manila",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Manila, Jaboneros Street 450, ph",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "ph Manila Jaboneros Street 450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Manila, Jaboneros Street, 450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Javoneros Street 450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Jaboneros Street450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Jaboneros Street 450 back entrance",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "Deli jaboneros street 450",
+   "lat": 14.599244811111113,
+   "lng": 120.9718561,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "450 Jaboneros Street, Manila",
+   "base": 18
+  },
+  {
+   "address": "671 Madrid Street, Manila",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Madrid Street, 671",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Madrid Street 671, Manila",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Manila, Madrid Street 671, ph",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Manila, ph, Madrid Street Street 671",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "671 - Manila - Madrid Street",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Madrid Street 671 back entrance",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "MADRID STREET 671",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "madrid street 671",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "Madrid Street671",
+   "lat": 14.599627353333334,
+   "lng": 120.96826906,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "671 Madrid Street, Manila",
+   "base": 19
+  },
+  {
+   "address": "515 Lakandula Street, 1012 Manila",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "515 Lakandula Street",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Lakandula Street 515 1012",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Lakandula Street 515 Manila ph",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "ph lakandula street 515 manila",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Manila, Lakandula Street, 515, 1012",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "LAKANDULA STREET 515",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Lakandula Street515",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Lkaandula Street 515",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "Mary lakandula street 515",
+   "lat": 14.6065873,
+   "lng": 120.965927,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "515 Lakandula Street, 1012 Manila",
+   "base": 20
+  },
+  {
+   "address": "9 C Calavite Annex, 1114 La Loma",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "Calavite Annex 9 C",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "Calavite Annex 9 C 1114",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "La Loma, Calavite Annex 9 C, ph",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "ph La Loma Calavite Calavite Annex 9 C",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "La Loma, 1114, 9 C, Calavite Annex",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "annex 9 C",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "Calavite Annex 9 C (green door)",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "Deli calavite annex 9 C",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "calavite annex 9 c",
+   "lat": 14.6251539,
+   "lng": 120.9910264,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 C Calavite Annex, 1114 La Loma",
+   "base": 21
+  },
+  {
+   "address": "171-173 4th Avenue, Manila",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th Avenue 171-173",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th Avenue 171-173, Manila",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "ph 4th Avenue 171-173 Manila",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th avenue 171-173 ph manila",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th Avenue 171-173 Manila",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "Mary 4th avenue 171-173",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th Avenue171-173",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4TH AVENUE 171-173",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "4th avenue 171-173",
+   "lat": 14.6433318,
+   "lng": 120.981211,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "171-173 4th Avenue, Manila",
+   "base": 22
+  },
+  {
+   "address": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "West Zamora Street, 1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "West Zamora Street 1660, 822 Paco, Manila, 1007 Metro Manila, Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "Manila, ph, West Zamora Street 1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "Manila ph West Zamora Street 1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "Manila, West Zamora Street",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "Mary west zamora street 1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "West Zamora Street 1660, 822 Paco, Manila, 1007 Metro Manila (green door)",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "West Zaomra Street 1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "West Zamora Street1660, 822 Paco, Manila, 1007 Metro Manila",
+   "lat": 14.583275345454545,
+   "lng": 120.99824314545454,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1660, 822 Paco, Manila, 1007 Metro Manila West Zamora Street, Manila",
+   "base": 23
+  },
+  {
+   "address": "94 San Carlos Street, Mandaluyong",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "94 San Carlos Street",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "San Carlos Street 94, Mandaluyong",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "ph Mandaluyong San Carlos Street 94",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "ph Mandaluyong San Carlos Street 94",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "Mandaluyong San Carlos Street",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "san carlos street 94",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "San Calros Street 94",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "San Carlos Street 94 apt 4b",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "Deli san carlos street 94",
+   "lat": 14.5799363,
+   "lng": 121.0303219,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "94 San Carlos Street, Mandaluyong",
+   "base": 24
+  },
+  {
+   "address": "106 T. Hernandez Street, Mandaluyong",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "106 T. Hernandez Street",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "T. Hernandez Street 106, Mandaluyong",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "ph T. Hernandez Street 106 Mandaluyong",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "Mandaluyong, T. Hernandez Hernandez Street 106, ph",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "Mandaluyong - 106",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "T. Her Street 106",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "T. HERNANDEZ STREET 106",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "T. Hernandez Street 106 john",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "Mary t. hernandez street 106",
+   "lat": 14.5783905,
+   "lng": 121.0272092,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "106 T. Hernandez Street, Mandaluyong",
+   "base": 25
+  },
+  {
+   "address": "2010-E Angel Linao Street, Manila",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Angel Linao Street 2010-E",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Angel Linao Street 2010-E, Manila",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Angel Linao Street 2010-E ph Manila",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Manila, Angel Linao Street 2010-E, ph",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Angel Linao Street, 2010-E, Manila",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "angel linao street 2010-e",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Deli angel linao street 2010-E",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "linao street 2010-E",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "Angel Linao Street2010-E",
+   "lat": 14.57258574,
+   "lng": 120.99566834,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2010-E Angel Linao Street, Manila",
+   "base": 26
+  },
+  {
+   "address": "63 Propietarios Street, Manila",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "63 Propietarios Street",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Propietarios Street 63, Manila",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Propietarios Street 63 ph Manila",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "propietarios street 63 manila ph",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Manila Propietarios Street 63",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "PROPIETARIOS STREET 63",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Propietarios Street 63 apt 4b",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Propietairos Street 63",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "Mary propietarios street 63",
+   "lat": 14.5497768,
+   "lng": 120.9946398,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "63 Propietarios Street, Manila",
+   "base": 27
+  },
+  {
+   "address": "1113 Tanay Street, Manila",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street, 1113",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street 1113, Manila",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street 1113, Manila, ph",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street 1113, ph, Manila",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "1113 - Manila - Tanay Street",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street 1113 back entrance",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Tanay Street1113",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "tanay street 1113",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "Mary tanay street 1113",
+   "lat": 14.5711265,
+   "lng": 121.0243157,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1113 Tanay Street, Manila",
+   "base": 28
+  },
+  {
+   "address": "106 Hoover, Manila",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Hoover, 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Hoover 106, Manila",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Manila ph Hoover 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Hoover 106, ph, Manila",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "106, Manila",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "HOOVER 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Mary hoover 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "hoover 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "Hovoer 106",
+   "lat": 14.59171868,
+   "lng": 121.03500524,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "106 Hoover, Manila",
+   "base": 29
+  },
+  {
+   "address": "1451 Quirino Avenue Extension, 1007 Manila",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extension 1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extension 1451, 1007",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Manila, ph, Quirino Avenue Extension 1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Manila Quirino Avenue Extension 1451 ph",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extension, Manila, 1007, 1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "quirino avenue extension 1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extension1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extnesion 1451",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "Quirino Avenue Extension 1451 (green door)",
+   "lat": 14.5812932,
+   "lng": 120.9984302,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1451 Quirino Avenue Extension, 1007 Manila",
+   "base": 30
+  },
+  {
+   "address": "187 P. Burgos, San Juan",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "P. Burgos 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "P. Burgos 187, San Juan",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "San Juan ph P. Burgos 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "san juan, ph, p. burgos 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "187 P. Burgos San Juan",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "P. BURGOS 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "Deli p. burgos 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "p. burgos 187",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "P. Burgos 187 apt 4b",
+   "lat": 14.5954899,
+   "lng": 121.03867782,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "187 P. Burgos, San Juan",
+   "base": 31
+  },
+  {
+   "address": "1802 Flores Street, 1300 Manila",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street 1802",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street 1802, 1300",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street 1802, ph, Manila",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street 1802 Manila ph",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "1300 - Manila - Flores Street",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Mary flores street 1802",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street 1802 apt 4b",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "Flores Street1802",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "flores street 1802",
+   "lat": 14.5595608,
+   "lng": 120.9978422,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1802 Flores Street, 1300 Manila",
+   "base": 32
+  },
+  {
+   "address": "2244 Linceo Street, Manila",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "2244 Linceo Street",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Linceo Street 2244, Manila",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Linceo Street 2244, ph, Manila",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Linceo Street 2244, ph, Manila",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Linceo Street 2244",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "linceo street 2244",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Deli linceo street 2244",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "LINCEO STREET 2244",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "Linceo Street2244",
+   "lat": 14.588211079999999,
+   "lng": 121.00535061999999,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2244 Linceo Street, Manila",
+   "base": 33
+  },
+  {
+   "address": "3 Moonlite Street, Manila",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Moonlite Street, 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Moonlite Street 3, Manila",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Moonlite Street 3, Manila, ph",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Manila, ph, Moonlite Street 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Manila - Moonlite Street - 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "MOONLITE STREET 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Moonlite Street 3 apt 4b",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Moonltie Street 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "Deli moonlite street 3",
+   "lat": 14.5725861,
+   "lng": 121.0109067,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 Moonlite Street, Manila",
+   "base": 34
+  },
+  {
+   "address": "1717 G. Tuazon Street, Manila",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "1717 G. Tuazon Street",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "G. Tuazon Street 1717, Manila",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "Manila, G. Tuazon Street 1717, ph",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "Manila, ph, G. Tuazon Street 1717",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "Manila, 1717",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "G. Tuazon Street 1717 back entrance",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "Mary g. tuazon street 1717",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "G. TUAZON STREET 1717",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "G. Tuzaon Street 1717",
+   "lat": 14.60562095,
+   "lng": 121.00067638333333,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1717 G. Tuazon Street, Manila",
+   "base": 35
+  },
+  {
+   "address": "2736 South Avenue, Manila",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "South Avenue, 2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "South Avenue 2736, Manila",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "South Avenue 2736 Manila ph",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "ph, Manila, South Avenue 2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "2736 Manila",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "Deli south avenue 2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "South Avenue2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "SOUTH AVENUE 2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "Suth Avenue 2736",
+   "lat": 14.5673968,
+   "lng": 121.0173963,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2736 South Avenue, Manila",
+   "base": 36
+  },
+  {
+   "address": "621 Muelle del Binondo, Manila",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "621 Muelle del Binondo",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "Muelle del Binondo 621, Manila",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "Muelle del Binondo 621 ph Manila",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "ph Muelle del Binondo 621 Manila",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "621 - Muelle del Binondo - Manila",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "Muelle del Binondo621",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "MUELLE DEL BINONDO 621",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "Muelle del Bniondo 621",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "binondo 621",
+   "lat": 14.60153546,
+   "lng": 120.97163254,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "621 Muelle del Binondo, Manila",
+   "base": 37
+  },
+  {
+   "address": "1920 M. Adriatico Street, 1004 Manila",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "1920 M. Adriatico Street",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "M. Adriatico Street 1920 1004",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "ph M. Adriatico Street 1920 Manila",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "Manila, M. Adriatico Street 1920, ph",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "1004 M. Adriatico Street 1920",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "m. adriatico street 1920",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "M. Adr Street 1920",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "M. ADRIATICO STREET 1920",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "M. Adriatico Street1920",
+   "lat": 14.569385405,
+   "lng": 120.98660965500001,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1920 M. Adriatico Street, 1004 Manila",
+   "base": 38
+  },
+  {
+   "address": "1020 Panay, Manila",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "1020 Panay",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Panay 1020, Manila",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Panay 1020, Manila, ph",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Panay 1020 ph Manila",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "1020, Manila",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Panay 1020 apt 4b",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Panai 1020",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "panay 1020",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  },
+  {
+   "address": "Mary panay 1020",
+   "lat": 14.611405,
+   "lng": 121.0073617,
+   "country": "PH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1020 Panay, Manila",
+   "base": 39
+  }
+ ]
+}

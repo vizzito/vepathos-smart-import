@@ -146,9 +146,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", type=Path)
     parser.add_argument("--csv", type=Path)
     parser.add_argument("--list-presets", action="store_true")
-    parser.add_argument("--noise-level", type=int, choices=range(1, 6),
-                        metavar="{1-5}",
-                        help="ruido humano: 1=mínimo … 5=permutaciones casi completas")
+    parser.add_argument("--noise-level", type=int, choices=range(1, 7),
+                        metavar="{1-6}",
+                        help="ruido humano: 1=mínimo … 5=permutaciones casi completas, 6=planilla de despacho")
     parser.add_argument("--noise-cumulative", action="store_true",
                         help="generar niveles 1..N (no solo el nivel pedido)")
     parser.add_argument("--noise-rate", type=float, default=1.0,

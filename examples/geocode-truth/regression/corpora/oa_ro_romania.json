@@ -1,0 +1,3618 @@
+{
+ "source": "openaddresses",
+ "country": "RO",
+ "city": "Bucharest",
+ "country_label": "Romania",
+ "depot": {
+  "lat": 44.9375562,
+  "lon": 26.0232449,
+  "city": "Bucharest",
+  "country": "Romania"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 360,
+ "note": "OpenAddresses ro/bucharest, 40 direcciones a <= 6 km del depot. Depot centrado en la mediana de los datos (el dataset no cubre la ciudad del preset).",
+ "rows": [
+  {
+   "address": "Str. Capsunilor 10, PLOIESTI",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "10 Str. Capsunilor",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "Str. Capsunilor 10, romania, PLOIESTI",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Capsunilor 10",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "PLOIESTI, Str. Capsunilor",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "capsunilor 10",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "Str. Capsunilor10",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "Mary str. capsunilor 10",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "Str. Capsunilor 10 john",
+   "lat": 44.9488778,
+   "lng": 26.0487402,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Capsunilor 10, PLOIESTI",
+   "base": 0
+  },
+  {
+   "address": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "23 Str. General Eremia Grigorescu",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "PLOIESTI, Str. General Eremia Grigorescu 23, romania",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "str. general eremia grigorescu 23 ploiesti romania",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "Str. General Eremia Grigorescu, PLOIESTI, 23",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "Str. General Eremia Grigorescu 23 apt 4b",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "Deli str. general eremia grigorescu 23",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "Str. General Eremia Grigorescu23",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "str. general eremia grigorescu 23",
+   "lat": 44.933014,
+   "lng": 25.9848723,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. General Eremia Grigorescu 23, PLOIESTI",
+   "base": 1
+  },
+  {
+   "address": "Str. Salciei 5, PLOIESTI",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "Str. Salciei, 5",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "PLOIESTI Str. Salciei 5 romania",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "str. salciei salciei 5, romania, ploiesti",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "5 - Str. Salciei - PLOIESTI",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "salciei 5",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "Str. Salciei 5 back entrance",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "str. salciei 5",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "STR. SALCIEI 5",
+   "lat": 44.9532397,
+   "lng": 26.0385274,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Salciei 5, PLOIESTI",
+   "base": 2
+  },
+  {
+   "address": "Str. Unghiului 49, PLOIESTI",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "Str. Unghiului 49",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Unghiului 49",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "romania, Str. Unghiului 49, PLOIESTI",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "49, PLOIESTI",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "Mary str. unghiului 49",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "Str. Unghuilui 49",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "Str. Unghiului 49 back entrance",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "str. unghiului 49",
+   "lat": 44.9453114,
+   "lng": 26.0021366,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Unghiului 49, PLOIESTI",
+   "base": 3
+  },
+  {
+   "address": "Str. Simion Barnut 12, PLOIESTI",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "Str. Simion Barnut, 12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "Str. Simion Barnut 12, PLOIESTI, romania",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "romania PLOIESTI Str. Simion Barnut 12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "12, PLOIESTI",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "barnut 12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "STR. SIMION BARNUT 12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "Str. Simion Barnut12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "Deli str. simion barnut 12",
+   "lat": 44.932794,
+   "lng": 26.0401034,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Simion Barnut 12, PLOIESTI",
+   "base": 4
+  },
+  {
+   "address": "Str. Vornicul Bold 48, PLOIESTI",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "Str. Vornicul Bold, 48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "romania PLOIESTI Str. Vornicul Bold 48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "PLOIESTI, Str. Vornicul Bold 48, romania",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "PLOIESTI 48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "str. vornicul bold 48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "Str. Vornicul Bold48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "Str. Vornicul Bold 48 apt 4b",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "Mary str. vornicul bold 48",
+   "lat": 44.9350602,
+   "lng": 26.0362573,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Vornicul Bold 48, PLOIESTI",
+   "base": 5
+  },
+  {
+   "address": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "Str. Gheorghe Grigore Cantacuzino, 11",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "romania Str. Gheorghe Grigore Cantacuzino 11 PLOIESTI",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Gheorghe Grigore Cantacuzino 11",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "11 Str. Gheorghe Grigore Cantacuzino",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "cantacuzino 11",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "Str. Gheorghe Grigore Cantacuzino11",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "str. gheorghe grigore cantacuzino 11",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "Str. Gheorghe Grigore Cantacuzino 11 back entrance",
+   "lat": 44.9376685,
+   "lng": 25.9887614,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Gheorghe Grigore Cantacuzino 11, PLOIESTI",
+   "base": 6
+  },
+  {
+   "address": "Str. Morilor 5, PLOIESTI",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "Str. Morilor 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Morilor 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "Str. Morilor Morilor 5 romania PLOIESTI",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "Str. Morilor, 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "morilor 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "Str. Morilor 5 back entrance",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "str. morilor 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "STR. MORILOR 5",
+   "lat": 44.954734,
+   "lng": 26.0193858,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Morilor 5, PLOIESTI",
+   "base": 7
+  },
+  {
+   "address": "Str. 8 Martie 97, PLOIESTI",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "Str. 8 Martie 97",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "PLOIESTI, romania, Str. 8 Martie 97",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "romania, Str. 8 Martie 97, PLOIESTI",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "97 PLOIESTI",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "Deli str. 8 martie 97",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "Str. 8 Matrie 97",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "martie 97",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "Str. 8 Martie 97 back entrance",
+   "lat": 44.944996,
+   "lng": 26.0002049,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. 8 Martie 97, PLOIESTI",
+   "base": 8
+  },
+  {
+   "address": "Str. Vioarei 17, PLOIESTI",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "17 Str. Vioarei",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "Str. Vioarei 17 PLOIESTI romania",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "romania, Str. Vioarei 17, PLOIESTI",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "PLOIESTI, Str. Vioarei",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "Str. Vio 17",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "STR. VIOAREI 17",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "str. vioarei 17",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "Str. Vioaeri 17",
+   "lat": 44.9334979,
+   "lng": 26.0342774,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Vioarei 17, PLOIESTI",
+   "base": 9
+  },
+  {
+   "address": "Str. Rafov 101, PLOIESTI",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Rafov, 101",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Rafov 101 PLOIESTI romania",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Rafov 101 romania romania PLOIESTI",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "101 - Str. Rafov",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Rafov 101 back entrance",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Rafov101",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "STR. RAFOV 101",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Mary str. rafov 101",
+   "lat": 44.9207632,
+   "lng": 26.0549781,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Rafov 101, PLOIESTI",
+   "base": 10
+  },
+  {
+   "address": "Str. Iuliu Maniu 14, PLOIESTI",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Iuliu Maniu, 14",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Iuliu Maniu 14 PLOIESTI romania",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "str. iuliu maniu 14, romania, ploiesti",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Iuliu Maniu - 14",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Mary str. iuliu maniu 14",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Iuliu Maniu 14 back entrance",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Iuliu Maniu14",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "STR. IULIU MANIU 14",
+   "lat": 44.9473216,
+   "lng": 26.0213361,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Iuliu Maniu 14, PLOIESTI",
+   "base": 11
+  },
+  {
+   "address": "Str. Rosiori 1, PLOIESTI",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "Str. Rosiori 1",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "romania, Str. Rosiori 1, PLOIESTI",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "ploiesti, romania, str. rosiori 1",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "1, Str. Rosiori, PLOIESTI",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "STR. ROSIORI 1",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "Str. Rosiori1",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "Str. Roisori 1",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "Str. Rosiori 1 (green door)",
+   "lat": 44.9392935,
+   "lng": 26.0353116,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Rosiori 1, PLOIESTI",
+   "base": 12
+  },
+  {
+   "address": "Str. Latina 4, PLOIESTI",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "Str. Latina 4",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "Str. Latina 4, romania, PLOIESTI",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "str. latina 4 romania ploiesti",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "4, PLOIESTI",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "latina 4",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "str. latina 4",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "Str. Latina4",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "Deli str. latina 4",
+   "lat": 44.9408895,
+   "lng": 26.0319194,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Latina 4, PLOIESTI",
+   "base": 13
+  },
+  {
+   "address": "Str. Licurici 4, PLOIESTI",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "4 Str. Licurici",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "romania Str. Licurici 4 PLOIESTI",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "romania PLOIESTI Str. Licurici 4",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "4, Str. Licurici",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "Str. Licurici4",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "Str. Lic 4",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "Str. Licurisi 4",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "Deli str. licurici 4",
+   "lat": 44.9266226,
+   "lng": 26.0129014,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Licurici 4, PLOIESTI",
+   "base": 14
+  },
+  {
+   "address": "Str. Albinei 20, PLOIESTI",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "20 Str. Albinei",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Albinei 20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "romania Str. Albinei 20 PLOIESTI",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "Str. Albinei - 20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "Str. Alvinei 20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "Deli str. albinei 20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "albinei 20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "Str. Albinei20",
+   "lat": 44.9336374,
+   "lng": 26.0155756,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Albinei 20, PLOIESTI",
+   "base": 15
+  },
+  {
+   "address": "Str. Cercelus 14, PLOIESTI",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "Str. Cercelus, 14",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "PLOIESTI Str. Cercelus 14 romania",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "Str. Cercelus 14 PLOIESTI romania",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "PLOIESTI, 14, Str. Cercelus",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "str. cercelus 14",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "Str. Cer 14",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "Str. Cercelus14",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "STR. CERCELUS 14",
+   "lat": 44.9356076,
+   "lng": 26.0244904,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Cercelus 14, PLOIESTI",
+   "base": 16
+  },
+  {
+   "address": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Alexandru Odobescu 66A",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Alexandru Odobescu 66A romania PLOIESTI",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "ploiesti romania str. alexandru odobescu 66a",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "66A Str. Alexandru Odobescu",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "STR. ALEXANDRU ODOBESCU 66A",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Alexandru Odo 66A",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Alexadnru Odobescu 66A",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Alexandru Odobescu 66A apt 4b",
+   "lat": 44.9419106,
+   "lng": 26.0098338,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Alexandru Odobescu 66A, PLOIESTI",
+   "base": 17
+  },
+  {
+   "address": "Str. Baiului 2, PLOIESTI",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Baiului, 2",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Baiului 2 romania PLOIESTI",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Baiului 2, PLOIESTI, romania",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Baiului, PLOIESTI",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Mary str. baiului 2",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "STR. BAIULUI 2",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Bai 2",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Baiului 2 john",
+   "lat": 44.9293092,
+   "lng": 26.0067075,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Baiului 2, PLOIESTI",
+   "base": 18
+  },
+  {
+   "address": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "Str. Prof.Dr.Ghe. Marinescu, 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Prof.Dr.Ghe. Marinescu 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "romania str. prof.dr.ghe. marinescu 22 ploiesti",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "PLOIESTI 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "str. prof.dr.ghe. marinescu 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "Str. Prof.Dr.Ghe. Marinescu22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "Str. Prof.Dr.ge. Marinescu 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "STR. PROF.DR.GHE. MARINESCU 22",
+   "lat": 44.9355458,
+   "lng": 26.0319952,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Prof.Dr.Ghe. Marinescu 22, PLOIESTI",
+   "base": 19
+  },
+  {
+   "address": "Str. Erou Necunoscut 29, PLOIESTI",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "29 Str. Erou Necunoscut",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Erou Necunoscut 29 PLOIESTI romania",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "PLOIESTI, Str. Erou Necunoscut 29, romania",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Erou Necunoscut, PLOIESTI",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "STR. EROU NECUNOSCUT 29",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Erou Necunoscut29",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Erou Nec 29",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Erou Necunoscut 29 john",
+   "lat": 44.9522585,
+   "lng": 26.0065226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Erou Necunoscut 29, PLOIESTI",
+   "base": 20
+  },
+  {
+   "address": "Str. Simion Barnut 26, PLOIESTI",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "Str. Simion Barnut 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "PLOIESTI romania Str. Simion Barnut 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "PLOIESTI romania Str. Simion Barnut 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "Str. Simion Barnut, 26, PLOIESTI",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "Str. Simion Barnut26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "STR. SIMION BARNUT 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "Str. Simoin Barnut 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "str. simion barnut 26",
+   "lat": 44.9322939,
+   "lng": 26.0391036,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Simion Barnut 26, PLOIESTI",
+   "base": 21
+  },
+  {
+   "address": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "45 Str. Tudor Vladimirescu",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "romania, Str. Tudor Vladimirescu 45, PLOIESTI",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "romania, Str. Tudor Vladimirescu 45, 45, PLOIESTI",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "Str. Tudor Vladimirescu - PLOIESTI - 45",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "Mary str. tudor vladimirescu 45",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "vladimirescu 45",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "Str. Tudor Vla 45",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "Str. Tudor Vladimirescu45",
+   "lat": 44.9358276,
+   "lng": 26.0126593,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Tudor Vladimirescu 45, PLOIESTI",
+   "base": 22
+  },
+  {
+   "address": "Str. Albinei 25, PLOIESTI",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "Str. Albinei 25",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "romania Str. Albinei 25 PLOIESTI",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "Str. Albinei 25 PLOIESTI romania",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "25 PLOIESTI Str. Albinei",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "albinei 25",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "Str. Albinei25",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "STR. ALBINEI 25",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "Str. Albinei 25 john",
+   "lat": 44.9334983,
+   "lng": 26.0157355,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Albinei 25, PLOIESTI",
+   "base": 23
+  },
+  {
+   "address": "Str. Stegarului 6, PLOIESTI",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Stegarului, 6",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Stegarului 6, romania, PLOIESTI",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "romania Str. Stegarului 6 PLOIESTI",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Stegarului - 6",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Ste 6",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Stegarului6",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Stegarului 6 back entrance",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "str. stegarului 6",
+   "lat": 44.9485809,
+   "lng": 26.0247362,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Stegarului 6, PLOIESTI",
+   "base": 24
+  },
+  {
+   "address": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "Str. Ion Luca Caragiale 49",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Ion Luca Caragiale 49",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "Str. Ion Luca Caragiale 49 romania PLOIESTI",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "PLOIESTI Str. Ion Luca Caragiale",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "caragiale 49",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "STR. ION LUCA CARAGIALE 49",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "Str. Ion Luca Caragiale 49 (green door)",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "Str. Ion Luca Car 49",
+   "lat": 44.938512,
+   "lng": 26.0161226,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Ion Luca Caragiale 49, PLOIESTI",
+   "base": 25
+  },
+  {
+   "address": "Str. Mihai Bravu 94, PLOIESTI",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu 94",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu 94 PLOIESTI romania",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu 94 PLOIESTI romania",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu - PLOIESTI - 94",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu 94 (green door)",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Mihai Bravu94",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "bravu 94",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "str. mihai bravu 94",
+   "lat": 44.9396963,
+   "lng": 26.0378947,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Mihai Bravu 94, PLOIESTI",
+   "base": 26
+  },
+  {
+   "address": "Str. Padurii 5, PLOIESTI",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "5 Str. Padurii",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "PLOIESTI Str. Padurii 5 romania",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "romania PLOIESTI Str. Padurii 5",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "5 - PLOIESTI - Str. Padurii",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "Str. Pdaurii 5",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "str. padurii 5",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "STR. PADURII 5",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "Str. Pad 5",
+   "lat": 44.949868,
+   "lng": 26.0481605,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Padurii 5, PLOIESTI",
+   "base": 27
+  },
+  {
+   "address": "Str. Rubinelor 8, PLOIESTI",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "8 Str. Rubinelor",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "romania, Str. Rubinelor 8, PLOIESTI",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "str. rubinelor 8, 8, ploiesti, romania",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "PLOIESTI, Str. Rubinelor",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "Str. Rub 8",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "STR. RUBINELOR 8",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "Mary str. rubinelor 8",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "rubinelor 8",
+   "lat": 44.9425972,
+   "lng": 26.0010043,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Rubinelor 8, PLOIESTI",
+   "base": 28
+  },
+  {
+   "address": "Str. Democratiei 38, PLOIESTI",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "38 Str. Democratiei",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "Str. Democratiei 38 romania PLOIESTI",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Democratiei 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "Str. Democratiei, 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "Str. Dem 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "STR. DEMOCRATIEI 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "Str. Democrateii 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "democratiei 38",
+   "lat": 44.9347119,
+   "lng": 26.0292549,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Democratiei 38, PLOIESTI",
+   "base": 29
+  },
+  {
+   "address": "Str. Vioarei 43, PLOIESTI",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "Str. Vioarei 43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "Str. Vioarei 43, PLOIESTI, romania",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Vioarei 43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "PLOIESTI 43 Str. Vioarei",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "STR. VIOAREI 43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "Str. Viaorei 43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "Str. Vioarei43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "vioarei 43",
+   "lat": 44.9322727,
+   "lng": 26.0349868,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Vioarei 43, PLOIESTI",
+   "base": 30
+  },
+  {
+   "address": "Str. Dumbravei 3, PLOIESTI",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Str. Dumbravei, 3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "romania, PLOIESTI, Str. Dumbravei 3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Str. Dumbravei 3 romania PLOIESTI",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "3, PLOIESTI",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "str. dumbravei 3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Mary str. dumbravei 3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Str. Dumbravei3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Str. Dum 3",
+   "lat": 44.9531548,
+   "lng": 26.043455,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Dumbravei 3, PLOIESTI",
+   "base": 31
+  },
+  {
+   "address": "Str. Carpenului 58, PLOIESTI",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Carpenului 58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Carpenului 58, romania, PLOIESTI",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "ploiesti romania str. carpenului 58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Carpenului, PLOIESTI",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "STR. CARPENULUI 58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Carpenului58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Crapenului 58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Car 58",
+   "lat": 44.9419745,
+   "lng": 26.0440961,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Carpenului 58, PLOIESTI",
+   "base": 32
+  },
+  {
+   "address": "Str. Valeni 39, PLOIESTI",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Str. Valeni 39",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Valeni 39",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "PLOIESTI PLOIESTI Str. Valeni 39 romania",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Str. Valeni PLOIESTI",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Str. Valeni 39 back entrance",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Deli str. valeni 39",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "str. valeni 39",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Str. Valeni39",
+   "lat": 44.9468172,
+   "lng": 26.0188125,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Valeni 39, PLOIESTI",
+   "base": 33
+  },
+  {
+   "address": "Str. Podetului 8, PLOIESTI",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "8 Str. Podetului",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "PLOIESTI Str. Podetului 8 romania",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "romania, Str. Str. Podetului 8, PLOIESTI",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "PLOIESTI - 8 - Str. Podetului",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "Str. Pod 8",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "Str. Podetului 8 john",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "STR. PODETULUI 8",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "Deli str. podetului 8",
+   "lat": 44.9542898,
+   "lng": 26.0153154,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Podetului 8, PLOIESTI",
+   "base": 34
+  },
+  {
+   "address": "Str. Olteni 9, PLOIESTI",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "Str. Olteni, 9",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "PLOIESTI, Str. Olteni 9, romania",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "romania PLOIESTI Str. Olteni 9",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "9, PLOIESTI, Str. Olteni",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "Str. Oltnei 9",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "str. olteni 9",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "olteni 9",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "Str. Olteni 9 (green door)",
+   "lat": 44.9323245,
+   "lng": 26.0095298,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Olteni 9, PLOIESTI",
+   "base": 35
+  },
+  {
+   "address": "Str. Arcasi 12, PLOIESTI",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Str. Arcasi, 12",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Str. Arcasi 12 romania PLOIESTI",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "ploiesti str. arcasi 12 romania",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "12, Str. Arcasi, PLOIESTI",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Mary str. arcasi 12",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Str. Arcasi12",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "str. arcasi 12",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Str. Arcasi 12 john",
+   "lat": 44.9377111,
+   "lng": 26.0352045,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Arcasi 12, PLOIESTI",
+   "base": 36
+  },
+  {
+   "address": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu 33-33A",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu 33-33A PLOIESTI romania",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu 33-33A, PLOIESTI, romania",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu PLOIESTI",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu 33-33A (green door)",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "STR. NICOLAE TITULESCU 33-33A",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "titulescu 33-33A",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Nicolae Titulescu33-33A",
+   "lat": 44.9445769,
+   "lng": 26.0054246,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Nicolae Titulescu 33-33A, PLOIESTI",
+   "base": 37
+  },
+  {
+   "address": "Str. Jupiter 33, PLOIESTI",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Jupiter, 33",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "PLOIESTI, romania, Str. Jupiter 33",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Jupiter 33 romania PLOIESTI",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Jupiter 33 PLOIESTI",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "str. jupiter 33",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Jupiter33",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Jupiter 33 john",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Mary str. jupiter 33",
+   "lat": 44.9282236,
+   "lng": 26.0143874,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Jupiter 33, PLOIESTI",
+   "base": 38
+  },
+  {
+   "address": "Str. Romana 115, PLOIESTI",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "115 Str. Romana",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "PLOIESTI romania Str. Romana 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "PLOIESTI romania Str. Romana 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "PLOIESTI, Str. Romana, 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "Str. Romana115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "Deli str. romana 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "str. romana 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  },
+  {
+   "address": "STR. ROMANA 115",
+   "lat": 44.950761,
+   "lng": 26.0230581,
+   "country": "RO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Str. Romana 115, PLOIESTI",
+   "base": 39
+  }
+ ]
+}

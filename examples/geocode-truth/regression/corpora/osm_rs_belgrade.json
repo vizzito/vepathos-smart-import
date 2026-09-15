@@ -1,0 +1,3658 @@
+{
+ "source": "osm-addr",
+ "country": "RS",
+ "city": "Belgrade",
+ "country_label": "Serbia",
+ "depot": {
+  "lat": 44.7866,
+  "lon": 20.4489,
+  "city": "Belgrade",
+  "country": "Serbia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 364,
+ "note": "Nodos addr:* del indice n44.90_s44.70_e20.60_w20.30-serbia.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Стишка 4, Belgrade",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "4 Стишка",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Стишка 4, rs, Belgrade",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Belgrade, rs, Стишка 4",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Belgrade, Стишка",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Стишка 4 john",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Стикша 4",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "СТИШКА 4",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Стишка4",
+   "lat": 44.779339911111116,
+   "lng": 20.52036481111111,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Стишка 4, Belgrade",
+   "base": 0
+  },
+  {
+   "address": "Косте Војиновића 1, Belgrade",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Косте Војиновића, 1",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "rs Belgrade Косте Војиновића 1",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Belgrade Косте Војиновића 1 rs",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "1 Belgrade Косте Војиновића",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Косте Војиновића1",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Косте Вјоиновића 1",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Косте Војиновића 1 (green door)",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Косте Вој 1",
+   "lat": 44.769494380000005,
+   "lng": 20.45778002,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Косте Војиновића 1, Belgrade",
+   "base": 1
+  },
+  {
+   "address": "Војводе Тозе 6, Belgrade",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "Војводе Тозе 6",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "Belgrade, Војводе Тозе 6, rs",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "rs, Војводе Тозе 6, 6, Belgrade",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "6 - Војводе Тозе - Belgrade",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "тозе 6",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "Mary војводе тозе 6",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "Војводе Тозе 6 john",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "ВОЈВОДЕ ТОЗЕ 6",
+   "lat": 44.7896931,
+   "lng": 20.49094992,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Војводе Тозе 6, Belgrade",
+   "base": 2
+  },
+  {
+   "address": "Левскога 4, Belgrade",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Левскога, 4",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Левскога 4 rs Belgrade",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Левскога 4 Belgrade rs",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "4, Belgrade",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Левскога4",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Левсокга 4",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "ЛЕВСКОГА 4",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Deli левскога 4",
+   "lat": 44.81522246,
+   "lng": 20.50266948,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Левскога 4, Belgrade",
+   "base": 3
+  },
+  {
+   "address": "Прерадовићева 9b, Belgrade",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Прерадовићева 9b",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "rs, Belgrade, Прерадовићева 9b",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Belgrade, Прерадовићева 9b, rs",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Прерадовићева, 9b, Belgrade",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "ПРЕРАДОВИЋЕВА 9B",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Прерадовићева 9b back entrance",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Deli прерадовићева 9b",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Прердаовићева 9b",
+   "lat": 44.81246302,
+   "lng": 20.482811140000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Прерадовићева 9b, Belgrade",
+   "base": 4
+  },
+  {
+   "address": "Здравка Челара 2, 11120 Београд",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Здравка Челара 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Здравка Челара 2, 11120",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Здравка Челара 2, Београд, rs",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Београд Здравка Челара 2 rs rs",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Београд - 11120 - 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "ЗДРАВКА ЧЕЛАРА 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Зрдавка Челара 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "здравка челара 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "челара 2",
+   "lat": 44.811493142857145,
+   "lng": 20.47995972857143,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Здравка Челара 2, 11120 Београд",
+   "base": 5
+  },
+  {
+   "address": "Др Миливоја Петровића 8, Belgrade",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Др Миливоја Петровића, 8",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Belgrade Др Миливоја Петровића 8 rs",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Belgrade, Др Миливоја Петровића 8, rs",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "8 - Др Миливоја Петровића",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Др Миливоја Пет 8",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "др миливоја петровића 8",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "петровића 8",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Др Миливоја Петрвоића 8",
+   "lat": 44.74686828,
+   "lng": 20.43900038,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Др Миливоја Петровића 8, Belgrade",
+   "base": 6
+  },
+  {
+   "address": "Лимска 9, Belgrade",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска 9",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска 9 rs Belgrade",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска 9 Belgrade rs",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска Belgrade 9",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "лимска 9",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "ЛИМСКА 9",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска9",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Лимска 9 john",
+   "lat": 44.7837309,
+   "lng": 20.47332872,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Лимска 9, Belgrade",
+   "base": 7
+  },
+  {
+   "address": "Јована Бијелића 31, Београд",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Јована Бијелића 31",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "rs, Јована Бијелића 31, Београд",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "rs, Јована Бијелића 31, Београд",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Београд - Јована Бијелића",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Јована Бијелића31",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Deli јована бијелића 31",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "ЈОВАНА БИЈЕЛИЋА 31",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Јована Бијеилћа 31",
+   "lat": 44.76799604,
+   "lng": 20.49181664,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Јована Бијелића 31, Београд",
+   "base": 8
+  },
+  {
+   "address": "Саве Машковића 4, Belgrade",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "Саве Машковића, 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "rs Belgrade Саве Машковића 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "rs саве машковића 4 belgrade",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "Саве Машковића, Belgrade, 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "Саве Машковића 4 back entrance",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "Deli саве машковића 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "машковића 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "саве машковића 4",
+   "lat": 44.76069635714286,
+   "lng": 20.4830961,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Саве Машковића 4, Belgrade",
+   "base": 9
+  },
+  {
+   "address": "Топчидерска 11, Belgrade",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "11 Топчидерска",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Belgrade, rs, Топчидерска 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Топчидерска 11, Belgrade, rs",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Belgrade - 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "ТОПЧИДЕРСКА 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Deli топчидерска 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Тпочидерска 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "топчидерска 11",
+   "lat": 44.776741519999995,
+   "lng": 20.43748176,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Топчидерска 11, Belgrade",
+   "base": 10
+  },
+  {
+   "address": "Николе Ђурковића 26, Belgrade",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "Николе Ђурковића 26",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "rs, Николе Ђурковића 26, Belgrade",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "Николе Ђурковића 26 Belgrade rs",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "26 Николе Ђурковића Belgrade",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "НИКОЛЕ ЂУРКОВИЋА 26",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "Deli николе ђурковића 26",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "Николе Ђуркоивћа 26",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "ђурковића 26",
+   "lat": 44.776251880000004,
+   "lng": 20.47752314,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Николе Ђурковића 26, Belgrade",
+   "base": 11
+  },
+  {
+   "address": "Крушевачка 46, Belgrade",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Крушевачка, 46",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Крушевачка 46, Belgrade, rs",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Крушевачка Крушевачка 46 Belgrade rs",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "46 Belgrade",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Mary крушевачка 46",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "КРУШЕВАЧКА 46",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Крушевакча 46",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "крушевачка 46",
+   "lat": 44.78640275714286,
+   "lng": 20.482363099999997,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Крушевачка 46, Belgrade",
+   "base": 12
+  },
+  {
+   "address": "Космајска 38, Belgrade",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "38 Космајска",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Космајска 38, Belgrade, rs",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Космајска 38 rs Belgrade",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Космајска - Belgrade",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "КОСМАЈСКА 38",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Космајска38",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Косамјска 38",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Космајска 38 (green door)",
+   "lat": 44.7520254,
+   "lng": 20.4171946,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Космајска 38, Belgrade",
+   "base": 13
+  },
+  {
+   "address": "Добривоја Исаиловића 2, Belgrade",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Добривоја Исаиловића 2",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Belgrade, rs, Добривоја Исаиловића 2",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Добривоја Исаиловића 2, rs, Belgrade",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Добривоја Исаиловића, 2, Belgrade",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "ДОБРИВОЈА ИСАИЛОВИЋА 2",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Добривоја Исаиловића 2 back entrance",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Deli добривоја исаиловића 2",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Добривоја Иса 2",
+   "lat": 44.75670054285714,
+   "lng": 20.483863657142855,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Добривоја Исаиловића 2, Belgrade",
+   "base": 14
+  },
+  {
+   "address": "Слободана Перовића 7, Belgrade",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Слободана Перовића 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Слободана Перовића 7, rs, Belgrade",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Belgrade Слободана Слободана Перовића 7 rs",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Слободана Перовића Belgrade 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "слободана перовића 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Deli слободана перовића 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Слобоадна Перовића 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Слободана Пер 7",
+   "lat": 44.7490768,
+   "lng": 20.4280934,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Слободана Перовића 7, Belgrade",
+   "base": 15
+  },
+  {
+   "address": "Топличка 27, Belgrade",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "Топличка 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "rs Belgrade Топличка 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "belgrade rs топличка 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "27 Belgrade",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "топличка 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "Топличка27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "ТОПЛИЧКА 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "Deli топличка 27",
+   "lat": 44.8044467,
+   "lng": 20.4880629,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Топличка 27, Belgrade",
+   "base": 16
+  },
+  {
+   "address": "Славке Томић 17, Belgrade",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "17 Славке Томић",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Славке Томић 17, rs, Belgrade",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Belgrade, rs, Славке Томић 17 17",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Славке Томић, 17, Belgrade",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "СЛАВКЕ ТОМИЋ 17",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Славке Томић 17 john",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "томић 17",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Mary славке томић 17",
+   "lat": 44.7556587,
+   "lng": 20.48818824,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Славке Томић 17, Belgrade",
+   "base": 17
+  },
+  {
+   "address": "Мадридска 16, Belgrade",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Мадридска 16",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Belgrade, Мадридска 16, rs",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "мадридска 16 belgrade rs",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Мадридска - 16 - Belgrade",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "МАДРИДСКА 16",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Mary мадридска 16",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Мадридска 16 (green door)",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Мадрдиска 16",
+   "lat": 44.78796731999999,
+   "lng": 20.5159012,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Мадридска 16, Belgrade",
+   "base": 18
+  },
+  {
+   "address": "Палисадска прилаз 2 7, Belgrade",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "Палисадска прилаз 2, 7",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "rs, Палисадска прилаз 2 7, Belgrade",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "Палисадска прилаз 2 7 Belgrade rs",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "Belgrade, Палисадска прилаз 2, 7",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "Палисадска прилаз 27",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "прилаз 7",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "ПАЛИСАДСКА ПРИЛАЗ 2 7",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "палисадска прилаз 2 7",
+   "lat": 44.748895219999994,
+   "lng": 20.40191202,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Палисадска прилаз 2 7, Belgrade",
+   "base": 19
+  },
+  {
+   "address": "Милана Делића 24, Belgrade",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Милана Делића 24",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Милана Делића 24, rs, Belgrade",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Милана Делића Делића 24 rs Belgrade",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "24 Милана Делића",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "милана делића 24",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Милана Делића24",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "делића 24",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Милнаа Делића 24",
+   "lat": 44.74951952,
+   "lng": 20.4079412,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Милана Делића 24, Belgrade",
+   "base": 20
+  },
+  {
+   "address": "Зимоњићева 4, Belgrade",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "4 Зимоњићева",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "rs, Belgrade, Зимоњићева 4",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "Belgrade Зимоњићева 4 rs",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "4 - Зимоњићева - Belgrade",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "Зимоњићева 4 john",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "ЗИМОЊИЋЕВА 4",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "зимоњићева 4",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "Deli зимоњићева 4",
+   "lat": 44.7713557,
+   "lng": 20.4232317,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Зимоњићева 4, Belgrade",
+   "base": 21
+  },
+  {
+   "address": "Милице Милојковић 5, Belgrade",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "5 Милице Милојковић",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Belgrade, rs, Милице Милојковић 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Belgrade rs Милице Милојковић 5 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Belgrade Милице Милојковић 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Милице Милојковић 5 back entrance",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Милице Мил 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "МИЛИЦЕ МИЛОЈКОВИЋ 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Милице Милјоковић 5",
+   "lat": 44.764386439999996,
+   "lng": 20.48016462,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Милице Милојковић 5, Belgrade",
+   "base": 22
+  },
+  {
+   "address": "Савски трг 3, Belgrade",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "Савски трг 3",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "rs, Савски трг 3, Belgrade",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "Савски Савски трг 3 Belgrade rs",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "3 - Савски трг - Belgrade",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "Deli савски трг 3",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "САВСКИ ТРГ 3",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "савски трг 3",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "Савски трг3",
+   "lat": 44.8089161,
+   "lng": 20.4572366,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Савски трг 3, Belgrade",
+   "base": 23
+  },
+  {
+   "address": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "15a Булевар хероја са Кошара",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Булевар хероја са Кошара 15a 11077",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Belgrade, rs, Булевар хероја са Кошара 15a",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Булевар хероја са Кошара 15a, rs, Belgrade",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "15a 11077 Belgrade Булевар хероја са Кошара",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "булевар хероја са кошара 15a",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "БУЛЕВАР ХЕРОЈА СА КОШАРА 15A",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Булевар хероја са Кошара 15a apt 4b",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Deli булевар хероја са кошара 15a",
+   "lat": 44.814182,
+   "lng": 20.400893,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Булевар хероја са Кошара 15a, 11077 Belgrade",
+   "base": 24
+  },
+  {
+   "address": "Боривоја Стевановића 47, Београд",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Боривоја Стевановића 47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Београд, Боривоја Стевановића 47, rs",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Београд, rs, Боривоја Стевановића Стевановића 47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Боривоја Стевановића, Београд",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Боривоја Стеванвоића 47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "стевановића 47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Mary боривоја стевановића 47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Боривоја Стевановића47",
+   "lat": 44.77230338571428,
+   "lng": 20.503469157142856,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Боривоја Стевановића 47, Београд",
+   "base": 25
+  },
+  {
+   "address": "Палисадска 1. део 3, Belgrade",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Палисадска 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "rs Belgrade Палисадска 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Belgrade, rs, Палисадска 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Палисадска 1. део - Belgrade",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Палисадкса 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Deli палисадска 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "ПАЛИСАДСКА 1. ДЕО 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "палисадска 1. део 3",
+   "lat": 44.747717619999996,
+   "lng": 20.40127146,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Палисадска 1. део 3, Belgrade",
+   "base": 26
+  },
+  {
+   "address": "Јабланичка 20a, Belgrade",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "Јабланичка 20a",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "rs Јабланичка 20a Belgrade",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "јабланичка 20a, belgrade, rs rs",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "20a, Belgrade, Јабланичка",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "јабланичка 20a",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "Јаблаинчка 20a",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "ЈАБЛАНИЧКА 20A",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "Јабланичка20a",
+   "lat": 44.74841474,
+   "lng": 20.4177398,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Јабланичка 20a, Belgrade",
+   "base": 27
+  },
+  {
+   "address": "Милана Гајића 10, Belgrade",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "Милана Гајића 10",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "rs Милана Гајића 10 Belgrade",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "Милана Гајића 10 Belgrade rs",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "10, Милана Гајића",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "Mary милана гајића 10",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "гајића 10",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "Милана Гајића 10 back entrance",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "МИЛАНА ГАЈИЋА 10",
+   "lat": 44.73749635555556,
+   "lng": 20.4650431,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Милана Гајића 10, Belgrade",
+   "base": 28
+  },
+  {
+   "address": "Јованке Бончић 6, Belgrade",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Јованке Бончић, 6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Belgrade rs Јованке Бончић 6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Belgrade, Јованке Бончић 6, rs",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Belgrade Јованке Бончић 6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "јованке бончић 6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Јованке Бончић6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Јованке Бончић 6 john",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "ЈОВАНКЕ БОНЧИЋ 6",
+   "lat": 44.780102899999996,
+   "lng": 20.51209816,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Јованке Бончић 6, Belgrade",
+   "base": 29
+  },
+  {
+   "address": "Краљице Јелене 22, 11090 Београд",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Краљице Јелене, 22",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Краљице Јелене 22, 11090",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Краљице Јелене 22, rs, Београд",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Београд Краљице Јелене 22 22 rs",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "22 11090 Београд Краљице Јелене",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Краљице Јелене 22 (green door)",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Крљаице Јелене 22",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "краљице јелене 22",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "јелене 22",
+   "lat": 44.74540080909091,
+   "lng": 20.44135,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Краљице Јелене 22, 11090 Београд",
+   "base": 30
+  },
+  {
+   "address": "Осме црногорске бригаде 12, Belgrade",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "12 Осме црногорске бригаде",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "Belgrade, Осме црногорске бригаде 12, rs",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "rs осме црногорске бригаде 12 belgrade",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "12 Belgrade Осме црногорске бригаде",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "осме црногорске бригаде 12",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "Осме црнгоорске бригаде 12",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "Осме црногорске бригаде 12 apt 4b",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "Осме црногорске бри 12",
+   "lat": 44.749076560000006,
+   "lng": 20.45340338,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Осме црногорске бригаде 12, Belgrade",
+   "base": 31
+  },
+  {
+   "address": "Османа Ђикића 2, Belgrade",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "Османа Ђикића 2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "rs, Belgrade, Османа Ђикића 2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "rs Османа Османа Ђикића 2 Belgrade",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "2 - Османа Ђикића - Belgrade",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "ОСМАНА ЂИКИЋА 2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "Османа Ђикића2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "ђикића 2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "Deli османа ђикића 2",
+   "lat": 44.81669075,
+   "lng": 20.4797654,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Османа Ђикића 2, Belgrade",
+   "base": 32
+  },
+  {
+   "address": "Земунска 43a, 11073 Belgrade",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска, 43a",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска 43a, 11073",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска 43a, rs, Belgrade",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска 43a, rs, Belgrade",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска 43a 11073",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земунска43a",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Земнуска 43a",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "земунска 43a",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Mary земунска 43a",
+   "lat": 44.812251,
+   "lng": 20.387784,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Земунска 43a, 11073 Belgrade",
+   "base": 33
+  },
+  {
+   "address": "Цара Јована Црног 6a, Belgrade",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Цара Јована Црног, 6a",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "rs Цара Јована Црног 6a Belgrade",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Belgrade, rs, Цара Јована Црног 6a",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "6a Цара Јована Црног Belgrade",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Цара Јована Црног6a",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Mary цара јована црног 6a",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Цара Јовнаа Црног 6a",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Цара Јована Црног 6a (green door)",
+   "lat": 44.79562344,
+   "lng": 20.501006940000003,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Цара Јована Црног 6a, Belgrade",
+   "base": 34
+  },
+  {
+   "address": "Раковичка 4, Belgrade",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Раковичка, 4",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Belgrade Раковичка 4 rs",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Belgrade rs Раковичка 4",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "4 Раковичка Belgrade",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "раковичка 4",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "РАКОВИЧКА 4",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Раоквичка 4",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Раковичка 4 apt 4b",
+   "lat": 44.752065040000005,
+   "lng": 20.45007474,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Раковичка 4, Belgrade",
+   "base": 35
+  },
+  {
+   "address": "Индире Ганди 17, Београд",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Индире Ганди, 17",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "rs Београд Индире Ганди 17",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "индире индире ганди 17, београд, rs",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Индире Ганди - Београд",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Индрие Ганди 17",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Индире Ганди17",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Индире Ганди 17 john",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "ганди 17",
+   "lat": 44.769694279999996,
+   "lng": 20.499795069999998,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Индире Ганди 17, Београд",
+   "base": 36
+  },
+  {
+   "address": "Срнетичка 4, Belgrade",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "4 Срнетичка",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "rs, Срнетичка 4, Belgrade",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Срнетичка 4 rs Belgrade",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "4 - Срнетичка - Belgrade",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Deli срнетичка 4",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Срнеитчка 4",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Срнетичка 4 john",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Срнетичка4",
+   "lat": 44.81393577777778,
+   "lng": 20.508755377777778,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Срнетичка 4, Belgrade",
+   "base": 37
+  },
+  {
+   "address": "Градиштанска 1, Belgrade",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "Градиштанска, 1",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "Градиштанска 1 Belgrade rs",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "градиштанска 1 belgrade rs",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "1, Belgrade, Градиштанска",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "Mary градиштанска 1",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "Градитшанска 1",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "ГРАДИШТАНСКА 1",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "градиштанска 1",
+   "lat": 44.802129,
+   "lng": 20.4914785,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Градиштанска 1, Belgrade",
+   "base": 38
+  },
+  {
+   "address": "Булевар војводе Мишића 67, Belgrade",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Булевар војводе Мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Belgrade rs Булевар војводе Мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Belgrade rs Булевар војводе Мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "67 - Булевар војводе Мишића",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Булевар војводе Мишића67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Блуевар војводе Мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "Deli булевар војводе мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  },
+  {
+   "address": "мишића 67",
+   "lat": 44.7930297,
+   "lng": 20.429988771428572,
+   "country": "RS",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Булевар војводе Мишића 67, Belgrade",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "MX",
+ "city": "Guadalajara",
+ "country_label": "México",
+ "depot": {
+  "lat": 20.6597,
+  "lon": -103.3496,
+  "city": "Guadalajara",
+  "country": "México"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses mx/jal/statewide, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "1845 ISLAS MALVINAS",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "ISLAS MALVINAS 1845, 44950",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "GUADALAJARA, méxico, ISLAS MALVINAS 1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "GUADALAJARA, méxico, ISLAS MALVINAS 1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "1845 ISLAS MALVINAS GUADALAJARA",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "ISLAS MALVINAS1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "ISLAS MALVINAS 1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "ISLAS MALbINAS 1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "Marcela islas malvinas 1845",
+   "lat": 20.6403212,
+   "lng": -103.3764391,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ISLAS MALVINAS 1845, 44950 GUADALAJARA",
+   "base": 0
+  },
+  {
+   "address": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "HERRERA Y CAIRO, 904",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "HERRERA Y CAIRO 904, 44200",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "GUADALAJARA méxico HERRERA Y CAIRO 904",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "HERRERA Y CAIRO 904, GUADALAJARA, méxico",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "904, 44200, HERRERA Y CAIRO, GUADALAJARA",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "cairo 904",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "HERRERA Y CAIRO 904 timbre 2",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "Juan herrera y cairo 904",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "herrera y cairo 904",
+   "lat": 20.6828087,
+   "lng": -103.3563342,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "HERRERA Y CAIRO 904, 44200 GUADALAJARA",
+   "base": 1
+  },
+  {
+   "address": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "1108 SANTA ROSALÍA",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "SANTA ROSALÍA 1108 44350",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "méxico GUADALAJARA SANTA ROSALÍA 1108",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "SANTA ROSALÍA 1108, GUADALAJARA, méxico",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "SANTA ROSALÍA 1108 GUADALAJARA",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "Marcela santa rosalía 1108",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "rosalía 1108",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "SANTA ROSAÍLA 1108",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "SANTA ROSALÍA 1108 frente a la plaza",
+   "lat": 20.6920217,
+   "lng": -103.3141679,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "SANTA ROSALÍA 1108, 44350 GUADALAJARA",
+   "base": 2
+  },
+  {
+   "address": "LA LEY 2664, 44680 GUADALAJARA",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "LA LEY, 2664",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "LA LEY 2664 44680",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "GUADALAJARA LA LEY 2664 méxico",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "la ley 2664 guadalajara méxico",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "GUADALAJARA - 44680 - 2664",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "LA LEY 2664",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "Marcela la ley 2664",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "LA LEY 2664 frente a la plaza",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "LA LEY2664",
+   "lat": 20.6812495,
+   "lng": -103.3844452,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LA LEY 2664, 44680 GUADALAJARA",
+   "base": 3
+  },
+  {
+   "address": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "2147 9 (CARLOS A. CARRILLO)",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "9 (CARLOS A. CARRILLO) 2147 44960",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "9 (CARLOS A. CARRILLO) 2147, méxico, GUADALAJARA",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "mexico, 9 (CARLOS A. CARRILLO) 2147, GUADALAJARA",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "GUADALAJARA - 2147 - 9 (CARLOS A. CARRILLO)",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "9 (CARLOS A. CARRILLO) 2147",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "Kiosco 9 (carlos a. carrillo) 2147",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "9 (CARLOS A. CRARILLO) 2147",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "9 (CARLOS A. CAR 2147",
+   "lat": 20.62787,
+   "lng": -103.3754608,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "9 (CARLOS A. CARRILLO) 2147, 44960 GUADALAJARA",
+   "base": 4
+  },
+  {
+   "address": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PLUTARCO ELÍAS CALLES 155",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PLUTARCO ELÍAS CALLES 155, 44756",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PLUTARCO ELÍAS CALLES 155 méxico GUADALAJARA",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PLUTARCO ELIAS CALLES 155 mexico GUADALAJARA",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "GUADALAJARA - PLUTARCO ELÍAS CALLES - 44756 - 155",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PLUTARCO ELÍAS CALLES 155 frente a la plaza",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "calles 155",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "Marcela plutarco elías calles 155",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "plutarco elías calles 155",
+   "lat": 20.6651297,
+   "lng": -103.2980345,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PLUTARCO ELÍAS CALLES 155, 44756 GUADALAJARA",
+   "base": 5
+  },
+  {
+   "address": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PEDRO MORENO 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PEDRO MORENO 1250, 44160",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "GUADALAJARA méxico PEDRO MORENO 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "méxico, GUADALAJARA, PEDRO MORENO 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "44160, GUADALAJARA, 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "Marcela pedro moreno 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PEDRO MOERNO 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PEDRO MORENO 1250 martin",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PEDRO MORENO 1250",
+   "lat": 20.6756019,
+   "lng": -103.3634502,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PEDRO MORENO 1250, 44160 GUADALAJARA",
+   "base": 6
+  },
+  {
+   "address": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "PELÍCANO, 1220",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "PELÍCANO 1220 44910",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "GUADALAJARA, méxico, PELÍCANO 1220",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "GUADALAJARA, PELICANO 1220, mexico mexico",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "GUADALAJARA - 1220 - PELÍCANO - 44910",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "PELÍCANO1220",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "Marcela pelícano 1220",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "PELÍCANO 1220 casa 18",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "PELÍCANO 1220",
+   "lat": 20.6504047,
+   "lng": -103.3601707,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PELÍCANO 1220, 44910 GUADALAJARA",
+   "base": 7
+  },
+  {
+   "address": "HIDALGO 474, 44200 GUADALAJARA",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "HIDALGO 474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "HIDALGO 474 44200",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "méxico, HIDALGO 474, GUADALAJARA",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "GUADALAJARA, mexico, HIDALGO 474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "GUADALAJARA HIDALGO 474 44200",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "hidalgo 474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "HIDALGO474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "HIDALGO 474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "HIDLAGO 474",
+   "lat": 20.6773669,
+   "lng": -103.3493024,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "HIDALGO 474, 44200 GUADALAJARA",
+   "base": 8
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ÁLVARO OBREGÓN, 476",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 476 44360",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "GUADALAJARA, ÁLVARO OBREGÓN 476, méxico",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ALVARO OBREGON 476 mexico GUADALAJARA",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 44360 GUADALAJARA",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 476 frente a la plaza",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 476",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "obregón 476",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "álvaro obregón 476",
+   "lat": 20.6723676,
+   "lng": -103.3340203,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "ÁLVARO OBREGÓN 476, 44360 GUADALAJARA",
+   "base": 9
+  },
+  {
+   "address": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "OBSIDIANA, 2792",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "OBSIDIANA 2792 45089",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "méxico OBSIDIANA 2792 ZAPOPAN",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "ZAPOPAN, méxico, OBSIDIANA 2792",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "2792 OBSIDIANA 45089 ZAPOPAN",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "OBSIDIANA 2792 martin",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "obsidiana 2792",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "Juan obsidiana 2792",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "OvSIDIANA 2792",
+   "lat": 20.6426827,
+   "lng": -103.4010409,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "OBSIDIANA 2792, 45089 ZAPOPAN",
+   "base": 10
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 3064",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 3064 44750",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "GUADALAJARA méxico DIONISIO RODRÍGUEZ 3064",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "GUADALAJARA, DIONISIO RODRÍGUEZ 3064, méxico",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ - GUADALAJARA - 3064 - 44750",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO ROD 3064",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 3064",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "rodríguez 3064",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 3064 casa 18",
+   "lat": 20.6659189,
+   "lng": -103.2927919,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DIONISIO RODRÍGUEZ 3064, 44750 GUADALAJARA",
+   "base": 11
+  },
+  {
+   "address": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MANUEL ACUÑA 1429",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MANUEL ACUÑA 1429 44600",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MANUEL ACUÑA 1429 méxico GUADALAJARA",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "méxico, GUADALAJARA, MANUEL ACUÑA 1429",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "GUADALAJARA, 1429, MANUEL ACUÑA, 44600",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MANUEL ACUÑA 1429",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MANUEL ACUÑA 1429 timbre 2",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "MNAUEL ACUÑA 1429",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "manuel acuña 1429",
+   "lat": 20.6841186,
+   "lng": -103.366731,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MANUEL ACUÑA 1429, 44600 GUADALAJARA",
+   "base": 12
+  },
+  {
+   "address": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "SAN IGNACIO, 93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "SAN IGNACIO 93 45040",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "méxico, ZAPOPAN, SAN IGNACIO 93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "san ignacio 93, mexico, zapopan",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "SAN IGNACIO - ZAPOPAN - 93 - 45040",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "san ignacio 93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "Marcela san ignacio 93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "SAN INGACIO 93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "SAN IGNACIO93",
+   "lat": 20.6677004,
+   "lng": -103.4048866,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "SAN IGNACIO 93, 45040 ZAPOPAN",
+   "base": 13
+  },
+  {
+   "address": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "LÓPEZ COTILLA, 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "LÓPEZ COTILLA 571, 44100",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "GUADALAJARA méxico LÓPEZ COTILLA 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "LÓPEZ COTILLA 571, GUADALAJARA, méxico",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "571 GUADALAJARA LÓPEZ COTILLA 44100",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "LÓPEZ COTIlA 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "LÓPEZ COT 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "Marcela lópez cotilla 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "lópez cotilla 571",
+   "lat": 20.6741195,
+   "lng": -103.3521068,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "LÓPEZ COTILLA 571, 44100 GUADALAJARA",
+   "base": 14
+  },
+  {
+   "address": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "1173 JUAN GARABITO",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "JUAN GARABITO 1173 44220",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "GUADALAJARA méxico JUAN GARABITO 1173",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "JUAN GARABITO 1173 GUADALAJARA méxico",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "GUADALAJARA 1173 44220",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "Kiosco juan garabito 1173",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "JUAN GARABITO 1173 martin",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "JUAN GAR 1173",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "juan garabito 1173",
+   "lat": 20.7108975,
+   "lng": -103.3494529,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JUAN GARABITO 1173, 44220 GUADALAJARA",
+   "base": 15
+  },
+  {
+   "address": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "52 JAVIER MINA",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "JAVIER MINA 52 44360",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "méxico JAVIER MINA 52 GUADALAJARA",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "méxico JAVIER MINA MINA 52 GUADALAJARA",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "JAVIER MINA GUADALAJARA 44360",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "JAbIER MINA 52",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "mina 52",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "javier mina 52",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "JAVIER MINA 52",
+   "lat": 20.6749074,
+   "lng": -103.3392346,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "JAVIER MINA 52, 44360 GUADALAJARA",
+   "base": 16
+  },
+  {
+   "address": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO 1620",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO 1620 44630",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO 1620 méxico GUADALAJARA",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "méxico, RUBÉN DARÍO 1620, GUADALAJARA",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO GUADALAJARA 44630 1620",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO 1620",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUvÉN DARÍO 1620",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "RUBÉN DARÍO 1620 frente a la plaza",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "Kiosco rubén darío 1620",
+   "lat": 20.7012162,
+   "lng": -103.3833565,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "RUBÉN DARÍO 1620, 44630 GUADALAJARA",
+   "base": 17
+  },
+  {
+   "address": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MAGISTERIO, 1425",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MAGISTERIO 1425, 44266",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "GUADALAJARA, MAGISTERIO 1425, méxico",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "magisterio 1425, méxico, guadalajara",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MAGISTERIO, 1425, 44266",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "Juan magisterio 1425",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "magisterio 1425",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MAGISTERIO1425",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MAGISTERIO 1425",
+   "lat": 20.6978674,
+   "lng": -103.3492278,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MAGISTERIO 1425, 44266 GUADALAJARA",
+   "base": 18
+  },
+  {
+   "address": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "MARIANO OTERO 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "MARIANO OTERO 3431, 44550",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "méxico GUADALAJARA MARIANO OTERO 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "méxico GUADALAJARA MARIANO OTERO 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "44550, GUADALAJARA, 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "mariano otero 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "MARIANO OTERO 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "MRAIANO OTERO 3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "MARIANO OTERO3431",
+   "lat": 20.6511914,
+   "lng": -103.3977209,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MARIANO OTERO 3431, 44550 GUADALAJARA",
+   "base": 19
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ, 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 149 44380",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "méxico, GUADALAJARA, DIONISIO RODRÍGUEZ 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "GUADALAJARA méxico DIONISIO RODRÍGUEZ RODRÍGUEZ 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "44380 GUADALAJARA 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 149 (porton verde)",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEZ 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "DIONISIO RODRÍGUEs 149",
+   "lat": 20.675851,
+   "lng": -103.3384211,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "DIONISIO RODRÍGUEZ 149, 44380 GUADALAJARA",
+   "base": 20
+  },
+  {
+   "address": "MÉXICO 3300, 44690 GUADALAJARA",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "MÉXICO 3300",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "MÉXICO 3300, 44690",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "GUADALAJARA MÉXICO 3300 méxico",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "GUADALAJARA MEXICO 3300 3300 mexico",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "3300 MÉXICO 44690 GUADALAJARA",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "Kiosco méxico 3300",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "MÉIXCO 3300",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "MÉXICO3300",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "MÉXICO 3300",
+   "lat": 20.6786463,
+   "lng": -103.3983096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MÉXICO 3300, 44690 GUADALAJARA",
+   "base": 21
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "ÁLVARO OBREGÓN, 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 1665, 44730",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "méxico GUADALAJARA ÁLVARO OBREGÓN 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "méxico ÁLVARO OBREGÓN 1665 GUADALAJARA",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "GUADALAJARA ÁLVARO OBREGÓN 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "ÁLVARO OBREGÓN 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "Juan álvaro obregón 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "ÁLVARO OBREÓGN 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "obregón 1665",
+   "lat": 20.6656604,
+   "lng": -103.3108453,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "ÁLVARO OBREGÓN 1665, 44730 GUADALAJARA",
+   "base": 22
+  },
+  {
+   "address": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "4486 O. DEGAS",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "O. DEGAS 4486 45590",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "SAN PEDRO TLAQUEPAQUE, O. DEGAS 4486, méxico",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "mexico SAN PEDRO TLAQUEPAQUE O. DEGAS 4486",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "O. DEGAS, 45590, 4486",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "O. DEGAS4486",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "O. DEGAS 4486 (porton verde)",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "o. degas 4486",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "O. DEGAS 4486",
+   "lat": 20.6096475,
+   "lng": -103.3468879,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "O. DEGAS 4486, 45590 SAN PEDRO TLAQUEPAQUE",
+   "base": 23
+  },
+  {
+   "address": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "93 CORREGIDORA",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "CORREGIDORA 93, 44400",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "méxico CORREGIDORA 93 GUADALAJARA",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "méxico CORREGIDORA CORREGIDORA 93 GUADALAJARA",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "93 CORREGIDORA 44400",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "corregidora 93",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "CORREGIDORA93",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "CORREGIDORA 93 martin",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "Marcela corregidora 93",
+   "lat": 20.6669213,
+   "lng": -103.3236795,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "CORREGIDORA 93, 44400 GUADALAJARA",
+   "base": 24
+  },
+  {
+   "address": "JUÁREZ 881, 44170 GUADALAJARA",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "881 JUÁREZ",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREZ 881, 44170",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREZ 881 méxico GUADALAJARA",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "méxico GUADALAJARA JUÁREZ 881",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREZ GUADALAJARA 44170 881",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREZ 881 frente a la plaza",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREZ881",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "juárez 881",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "JUÁREs 881",
+   "lat": 20.6746617,
+   "lng": -103.3578742,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "JUÁREZ 881, 44170 GUADALAJARA",
+   "base": 25
+  },
+  {
+   "address": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN 1599",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN 1599, 44340",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "GUADALAJARA, MONTE ALBÁN 1599, méxico",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "méxico, méxico, GUADALAJARA, MONTE ALBÁN 1599",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN - 1599 - 44340",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN1599",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN 1599",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "MONTE ALBÁN 1599 casa 18",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "Juan monte albán 1599",
+   "lat": 20.6950655,
+   "lng": -103.3262788,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MONTE ALBÁN 1599, 44340 GUADALAJARA",
+   "base": 26
+  },
+  {
+   "address": "SINALOA 1296, 44260 GUADALAJARA",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINALOA, 1296",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINALOA 1296 44260",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINALOA 1296, GUADALAJARA, méxico",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "GUADALAJARA, SINALOA 1296, méxico",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "44260 SINALOA GUADALAJARA",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINALOA 1296 frente a la plaza",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "Juan sinaloa 1296",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINALOA1296",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "SINLAOA 1296",
+   "lat": 20.6997573,
+   "lng": -103.3575659,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "SINALOA 1296, 44260 GUADALAJARA",
+   "base": 27
+  },
+  {
+   "address": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "MOCTEZUMA 193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "MOCTEZUMA 193 45050",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "méxico, MOCTEZUMA 193, ZAPOPAN",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "méxico, ZAPOPAN, MOCTEZUMA 193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "MOCTEZUMA - 193 - ZAPOPAN",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "MOCTEZUMA193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "MOCTEZUMA 193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "moctezuma 193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "Marcela moctezuma 193",
+   "lat": 20.6509047,
+   "lng": -103.4054413,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "MOCTEZUMA 193, 45050 ZAPOPAN",
+   "base": 28
+  },
+  {
+   "address": "ARISTA 1478, 44200 GUADALAJARA",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "1478 ARISTA",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "ARISTA 1478, 44200",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "ARISTA 1478 GUADALAJARA méxico",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "arista 1478, méxico, guadalajara",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "1478, GUADALAJARA, 44200",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "ARISTA1478",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "ARISTA 1478 timbre 2",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "ARITSA 1478",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "Kiosco arista 1478",
+   "lat": 20.6876976,
+   "lng": -103.3586574,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ARISTA 1478, 44200 GUADALAJARA",
+   "base": 29
+  },
+  {
+   "address": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GÓMEZ FARÍAS, 151",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GÓMEZ FARÍAS 151 44450",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GÓMEZ FARÍAS 151 GUADALAJARA méxico",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GUADALAJARA, GÓMEZ FARÍAS 151, méxico méxico",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "151 GÓMEZ FARÍAS GUADALAJARA 44450",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GÓMEZ FARÍAS151",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "farías 151",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "Marcela gómez farías 151",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "GÓMEZ FARÍAS 151 casa 18",
+   "lat": 20.6723719,
+   "lng": -103.3399096,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "GÓMEZ FARÍAS 151, 44450 GUADALAJARA",
+   "base": 30
+  },
+  {
+   "address": "FRANCIA 1747, 44190 GUADALAJARA",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "1747 FRANCIA",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "FRANCIA 1747, 44190",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "méxico, GUADALAJARA, FRANCIA 1747",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "GUADALAJARA, FRANCIA 1747, mexico",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "44190 - FRANCIA - 1747 - GUADALAJARA",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "francia 1747",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "FRANCIA1747",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "FRANCIA 1747 frente a la plaza",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "FRANsiA 1747",
+   "lat": 20.6649059,
+   "lng": -103.3648593,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "FRANCIA 1747, 44190 GUADALAJARA",
+   "base": 31
+  },
+  {
+   "address": "RUBÍ 950, 44380 GUADALAJARA",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "950 RUBÍ",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ 950 44380",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ 950 GUADALAJARA méxico",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ 950 GUADALAJARA méxico",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "950 GUADALAJARA RUBÍ 44380",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "Kiosco rubí 950",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ950",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ 950",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "RUBÍ 950 frente a la plaza",
+   "lat": 20.6904706,
+   "lng": -103.3363842,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "RUBÍ 950, 44380 GUADALAJARA",
+   "base": 32
+  },
+  {
+   "address": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NICOLÁS ROMERO, 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NICOLÁS ROMERO 436, 44600",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "GUADALAJARA méxico NICOLÁS ROMERO 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "GUADALAJARA, méxico, NICOLÁS ROMERO 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NICOLÁS ROMERO 436 GUADALAJARA 44600",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NICOLÁS ROMERO 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NCIOLÁS ROMERO 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "romero 436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "NICOLÁS ROMERO436",
+   "lat": 20.683883,
+   "lng": -103.3619901,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "NICOLÁS ROMERO 436, 44600 GUADALAJARA",
+   "base": 33
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171 44450",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "GUADALAJARA, DOCTOR R. MICHEL 171, méxico",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171 méxico GUADALAJARA GUADALAJARA",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "171, 44450, GUADALAJARA, DOCTOR R. MICHEL",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DCOTOR R. MICHEL 171",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171 casa 18",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "michel 171",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "DOCTOR R. MICHEL 171",
+   "lat": 20.6640668,
+   "lng": -103.3457358,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "DOCTOR R. MICHEL 171, 44450 GUADALAJARA",
+   "base": 34
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ, 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ 548 44360",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ 548 méxico GUADALAJARA",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "méxico guadalajara belisario domínguez 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ, GUADALAJARA, 44360, 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "domínguez 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELISARIO DOMÍNGUEZ 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "BELIASRIO DOMÍNGUEZ 548",
+   "lat": 20.6796093,
+   "lng": -103.3280377,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "BELISARIO DOMÍNGUEZ 548, 44360 GUADALAJARA",
+   "base": 35
+  },
+  {
+   "address": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "FRANCISCO DE AYZA 1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "FRANCISCO DE AYZA 1196, 44730",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "GUADALAJARA, méxico, FRANCISCO DE AYZA 1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "FRANCISCO DE AYZA 1196 méxico GUADALAJARA",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "44730 - GUADALAJARA - 1196 - FRANCISCO DE AYZA",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "ayza 1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "Marcela francisco de ayza 1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "francisco de ayza 1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "FRANCISCO DE AYZA1196",
+   "lat": 20.6718106,
+   "lng": -103.3091383,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "FRANCISCO DE AYZA 1196, 44730 GUADALAJARA",
+   "base": 36
+  },
+  {
+   "address": "6 642, 44530 GUADALAJARA",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "6, 642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "6 642, 44530",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "méxico GUADALAJARA 6 642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "GUADALAJARA, GUADALAJARA, méxico, 6 642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "642, 44530, GUADALAJARA",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "6642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "Marcela 6 642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "6 642 frente a la plaza",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "6 642",
+   "lat": 20.6554507,
+   "lng": -103.3818434,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 642, 44530 GUADALAJARA",
+   "base": 37
+  },
+  {
+   "address": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS, 729",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS 729 44520",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "méxico LOS ARCOS 729 GUADALAJARA",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "GUADALAJARA LOS ARCOS 729 méxico",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS - 44520 - GUADALAJARA - 729",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS 729",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS729",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARCOS 729 casa 18",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "LOS ARRCOS 729",
+   "lat": 20.6660524,
+   "lng": -103.3843182,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "LOS ARCOS 729, 44520 GUADALAJARA",
+   "base": 38
+  },
+  {
+   "address": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HEROLES 3392",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HEROLES 3392 44987",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "GUADALAJARA, JESÚS REYES HEROLES 3392, méxico",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESUS JESUS REYES HEROLES 3392, mexico, GUADALAJARA",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "44987 JESÚS REYES HEROLES GUADALAJARA",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HEROLES3392",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HER 3392",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HEROLES 3392",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  },
+  {
+   "address": "JESÚS REYES HEROLES 3392 (porton verde)",
+   "lat": 20.6314134,
+   "lng": -103.3952322,
+   "country": "MX",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "JESÚS REYES HEROLES 3392, 44987 GUADALAJARA",
+   "base": 39
+  }
+ ]
+}

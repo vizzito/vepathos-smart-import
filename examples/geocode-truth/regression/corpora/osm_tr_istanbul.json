@@ -1,0 +1,3748 @@
+{
+ "source": "osm-addr",
+ "country": "TR",
+ "city": "Istanbul",
+ "country_label": "Turkey",
+ "depot": {
+  "lat": 41.0082,
+  "lon": 28.9784,
+  "city": "Istanbul",
+  "country": "Turkey"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 373,
+ "note": "Nodos addr:* del indice n41.10_s40.90_e29.10_w28.90-turkey.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "No.48 Selmani Pak Caddesi",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Selmani Pak Caddesi No.48, 34762",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Istanbul, tr, Selmani Pak Caddesi No.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Istanbul, tr, Selmani Pak Caddesi No.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "No.48 Selmani Pak Caddesi Istanbul",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Slemani Pak Caddesi No.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "selmani pak caddesi no.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Selmani Pak CaddesiNo.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Mary selmani pak caddesi No.48",
+   "lat": 41.0250604,
+   "lng": 29.0191857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Selmani Pak Caddesi No.48, 34762 Istanbul",
+   "base": 0
+  },
+  {
+   "address": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Piyer Loti Caddesi, 4",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Piyer Loti Caddesi 4, 34122",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Istanbul tr Piyer Loti Caddesi 4",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Piyer Loti Caddesi 4, Istanbul, tr",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "4, 34122, Piyer Loti Caddesi, Istanbul",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Piyer Loti Caddesi 4 back entrance",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "caddesi 4",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "PIYER LOTI CADDESI 4",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Piyer Loti Caddesi4",
+   "lat": 41.007410533333335,
+   "lng": 28.972381916666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Piyer Loti Caddesi 4, 34122 Istanbul",
+   "base": 1
+  },
+  {
+   "address": "Harman Sokak 25, 34435 Istanbul",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Harman Sokak, 25",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Harman Sokak 25 34435",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Istanbul tr Harman Sokak 25",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Istanbul, Harman Sokak 25, tr",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "25 - 34435 - Istanbul",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Harman Sokak25",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Deli harman sokak 25",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Harman Sokak 25 (green door)",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "harman sokak 25",
+   "lat": 41.0359199,
+   "lng": 28.9748438,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Harman Sokak 25, 34435 Istanbul",
+   "base": 2
+  },
+  {
+   "address": "Köyiçi caddesi 1, Istanbul",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Köyiçi caddesi 1",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Köyiçi caddesi 1, Istanbul, tr",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Istanbul Köyiçi caddesi 1 tr tr",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Köyiçi caddesi, Istanbul",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "caddesi 1",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Deli köyiçi caddesi 1",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "köyiçi caddesi 1",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "KÖYIÇI CADDESI 1",
+   "lat": 41.0434829,
+   "lng": 29.0050623,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Köyiçi caddesi 1, Istanbul",
+   "base": 3
+  },
+  {
+   "address": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Kadırga Hamamı Sokağı 51",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Kadırga Hamamı Sokağı 51 34126",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "tr, Kadırga Hamamı Sokağı 51, Istanbul",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Kadırga Hamamı Sokağı 51, tr, Istanbul",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "34126, Kadırga Hamamı Sokağı, 51, Istanbul",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "KADIRGA HAMAMI SOKAĞI 51",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Kadırga Hamamı Sokağı 51 back entrance",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Deli kadırga hamamı sokağı 51",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "sokağı 51",
+   "lat": 41.0055411,
+   "lng": 28.9669364,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kadırga Hamamı Sokağı 51, 34126 Istanbul",
+   "base": 4
+  },
+  {
+   "address": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Arayıcıbaşı Sokağı 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Arayıcıbaşı Sokağı 15 tr Istanbul",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Arayıcıbası Sokagı 15 15 tr Istanbul",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Arayıcıbaşı Sokağı Istanbul 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Deli arayıcıbaşı sokağı 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "sokağı 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Araiıcıbaşı Sokağı 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "ARAYICIBAŞI SOKAĞI 15",
+   "lat": 40.98830428,
+   "lng": 29.02707446,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Arayıcıbaşı Sokağı 15, Istanbul",
+   "base": 5
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı, 45",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Istanbul Mühürdar Karakolu Sokağı 45 tr",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı 45 Istanbul tr",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı 45",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı 45 john",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "mühürdar karakolu sokağı 45",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "sokağı 45",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Mühürdar Karakolu Sokağı45",
+   "lat": 40.98564595,
+   "lng": 29.02157676666667,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mühürdar Karakolu Sokağı 45, Istanbul",
+   "base": 6
+  },
+  {
+   "address": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "Şahkulu Bostan Sokağı, 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "tr Istanbul Şahkulu Bostan Sokağı 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "tr şahkulu bostan sokağı 10 istanbul",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "Şahkulu Bostan Sokağı, Istanbul, 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "Deli şahkulu bostan sokağı 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "ŞAHKULU BOSTAN SOKAĞI 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "sokağı 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "Şahuklu Bostan Sokağı 10",
+   "lat": 41.02742126,
+   "lng": 28.975287660000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Şahkulu Bostan Sokağı 10, Istanbul",
+   "base": 7
+  },
+  {
+   "address": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "22B Kavak İskele Caddesi",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Kavak İskele Caddesi 22B 34668",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "İstanbul, tr, Kavak İskele Caddesi 22B",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Kavak İskele Caddesi 22B, İstanbul, tr",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "34668, İstanbul, 22B",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Kavak İskele Caddesi 22B back entrance",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "kavak i̇skele caddesi 22b",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Kavak İskele Cad 22B",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Kavak İskele Caddsei 22B",
+   "lat": 41.0096315,
+   "lng": 29.0193488,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kavak İskele Caddesi 22B, 34668 İstanbul",
+   "base": 8
+  },
+  {
+   "address": "Ebusuud Caddesi 31, İstanbul",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "31 Ebusuud Caddesi",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "Ebusuud Caddesi 31, İstanbul, tr",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "i̇stanbul, tr, ebusuud caddesi 31",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "Ebusuud Caddesi İstanbul",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "Ebusuud Caddesi31",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "caddesi 31",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "Deli ebusuud caddesi 31",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "ebusuud caddesi 31",
+   "lat": 41.0130358,
+   "lng": 28.9756727,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ebusuud Caddesi 31, İstanbul",
+   "base": 9
+  },
+  {
+   "address": "Neşe Sokağı 21, Istanbul",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Sokağı, 21",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Istanbul, Neşe Sokağı 21, tr",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Sokağı 21 tr Istanbul",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Sokağı, 21, Istanbul",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Sokağı21",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "neşe sokağı 21",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Soakğı 21",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Neşe Sokağı 21 back entrance",
+   "lat": 40.9864134375,
+   "lng": 29.0245271125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Neşe Sokağı 21, Istanbul",
+   "base": 10
+  },
+  {
+   "address": "Alacatekke 58, 34050 İstanbul",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alacatekke 58",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alacatekke 58, 34050",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alacatekke 58, İstanbul, tr",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alacatekke 58 İstanbul tr",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "58, İstanbul, 34050",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alacatekke 58 apt 4b",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Alcaatekke 58",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "ALACATEKKE 58",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "alacatekke 58",
+   "lat": 41.03965116,
+   "lng": 28.93523756,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Alacatekke 58, 34050 İstanbul",
+   "base": 11
+  },
+  {
+   "address": "Suzi Dilara Sokak 4, Istanbul",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Suzi Dilara Sokak, 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "tr, Suzi Dilara Sokak 4, Istanbul",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "tr Istanbul Istanbul Suzi Dilara Sokak 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Suzi Dilara Sokak Istanbul 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Suzi Dilraa Sokak 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Deli suzi dilara sokak 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Suzi Dilara Sokak4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "suzi dilara sokak 4",
+   "lat": 41.0032628,
+   "lng": 28.9715543,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Suzi Dilara Sokak 4, Istanbul",
+   "base": 12
+  },
+  {
+   "address": "Divitçiler Çk. 21, İstanbul",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "21 Divitçiler Çk.",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "Divitçiler Çk. 21, tr, İstanbul",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "tr Divitçiler Çk. 21 İstanbul",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "21 İstanbul",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "divitçiler çk. 21",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "Divitçiler Çk.21",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "DIVITÇILER ÇK. 21",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "Deli divitçiler çk. 21",
+   "lat": 41.014686059999995,
+   "lng": 29.02401784,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Divitçiler Çk. 21, İstanbul",
+   "base": 13
+  },
+  {
+   "address": "Yıldız Rona Sokağı 8, Istanbul",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "8 Yıldız Rona Sokağı",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Yıldız Rona Sokağı 8, tr, Istanbul",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Istanbul, Yıldız Rona Sokağı 8, tr",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Istanbul, Yıldız Rona Sokağı",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "YILDIZ RONA SOKAĞI 8",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Yıldız Rona Sokağı 8 john",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "sokağı 8",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Mary yıldız rona sokağı 8",
+   "lat": 40.9869935,
+   "lng": 29.042663620000003,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Yıldız Rona Sokağı 8, Istanbul",
+   "base": 14
+  },
+  {
+   "address": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuyu Caddesi 125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuyu Caddesi 125 34440",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuyu Caddesi 125 tr İstanbul",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuyu Caddesi 125 tr Istanbul",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "İstanbul, 34440, 125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuyu Caddesi125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Zincirlikuiu Caddesi 125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "caddesi 125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "zincirlikuyu caddesi 125",
+   "lat": 41.03968020833333,
+   "lng": 28.964963125,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zincirlikuyu Caddesi 125, 34440 İstanbul",
+   "base": 15
+  },
+  {
+   "address": "Ihlamurdere caddesi 126, Istanbul",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "126 Ihlamurdere caddesi",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "Istanbul, tr, Ihlamurdere caddesi 126",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "Ihlamurdere caddesi 126, Istanbul, tr",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "126 Ihlamurdere caddesi",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "Ihlamurdere caddesi126",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "IHLAMURDERE CADDESI 126",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "Ihlamurdere cad 126",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "caddesi 126",
+   "lat": 41.0486285,
+   "lng": 29.0025056,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ihlamurdere caddesi 126, Istanbul",
+   "base": 16
+  },
+  {
+   "address": "Üçler Hamamı Sokağı 8, Istanbul",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "8 Üçler Hamamı Sokağı",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "tr Istanbul Üçler Hamamı Sokağı 8",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "tr Üçler Hamamı Sokağı 8 Istanbul",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "Istanbul, Üçler Hamamı Sokağı, 8",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "ÜÇLER HAMAMI SOKAĞI 8",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "üçler hamamı sokağı 8",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "Üçler Hamamı Sokağı8",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "Üçler Hamamı Sokağı 8 (green door)",
+   "lat": 41.0049211,
+   "lng": 28.9730924,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Üçler Hamamı Sokağı 8, Istanbul",
+   "base": 17
+  },
+  {
+   "address": "Yeni Ocak Sokağı 15, Istanbul",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "15 Yeni Ocak Sokağı",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "Istanbul, Yeni Ocak Sokağı 15, tr",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "istanbul tr yeni ocak sokagı 15",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "Istanbul, 15, Yeni Ocak Sokağı",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "yeni ocak sokağı 15",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "Mary yeni ocak sokağı 15",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "Yeni Ocak Sokağı 15 (green door)",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "sokağı 15",
+   "lat": 41.02209475,
+   "lng": 29.032120612499998,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Yeni Ocak Sokağı 15, Istanbul",
+   "base": 18
+  },
+  {
+   "address": "Hamam Sokağı 1, İstanbul",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "1 Hamam Sokağı",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "tr İstanbul Hamam Sokağı 1",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Hamam Sokağı Sokağı 1, İstanbul, tr",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Hamam Sokağı - İstanbul - 1",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "HAMAM SOKAĞI 1",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Hamam Sokağı 1 apt 4b",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Hamam Sokağı1",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Mary hamam sokağı 1",
+   "lat": 41.02620708,
+   "lng": 28.980537500000004,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hamam Sokağı 1, İstanbul",
+   "base": 19
+  },
+  {
+   "address": "Nemlizade Sokağı 47, Istanbul",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Nemlizade Sokağı, 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Istanbul, tr, Nemlizade Sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Nemlizade Sokağı 47, Istanbul, tr",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Istanbul Nemlizade Sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Nemlisade Sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Mary nemlizade sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "nemlizade sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "sokağı 47",
+   "lat": 40.99579096,
+   "lng": 29.02710022,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Nemlizade Sokağı 47, Istanbul",
+   "base": 20
+  },
+  {
+   "address": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Çırağan Caddesi, 44/A",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Çırağan Caddesi 44/A 34349",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Çırağan Caddesi 44/A tr İstanbul",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Çırağan Caddesi 44/A İstanbul tr",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "44/A - Çırağan Caddesi - 34349",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "ÇIRAĞAN CADDESI 44/A",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Çırağan Cad 44/A",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "caddesi 44/A",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Deli çırağan caddesi 44/A",
+   "lat": 41.0474384,
+   "lng": 29.0237927,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Çırağan Caddesi 44/A, 34349 İstanbul",
+   "base": 21
+  },
+  {
+   "address": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "23/A Prof. Muammer Aksoy Caddesi",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "İstanbul Prof. Muammer Aksoy Caddesi 23/A tr",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "tr, İstanbul, Prof. Muammer Aksoy Caddesi 23/A",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "23/A - İstanbul - Prof. Muammer Aksoy Caddesi",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "Prof. Maummer Aksoy Caddesi 23/A",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "prof. muammer aksoy caddesi 23/a",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "PROF. MUAMMER AKSOY CADDESI 23/A",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "Prof. Muammer Aksoy Cad 23/A",
+   "lat": 40.9943483,
+   "lng": 28.9106911,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Prof. Muammer Aksoy Caddesi 23/A, İstanbul",
+   "base": 22
+  },
+  {
+   "address": "Ayşeçik Sokağı 6, Istanbul",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "6 Ayşeçik Sokağı",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "tr, Ayşeçik Sokağı 6, Istanbul",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "ayşeçik sokağı 6, 6, istanbul, tr",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "Istanbul, Ayşeçik Sokağı",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "Ayşeçik Sokağı6",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "sokağı 6",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "AYŞEÇIK SOKAĞI 6",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "Ayşeçik Sokağı 6 back entrance",
+   "lat": 41.06026299333334,
+   "lng": 28.995092553333333,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ayşeçik Sokağı 6, Istanbul",
+   "base": 23
+  },
+  {
+   "address": "Çinili Hamam Sokak 6, İstanbul",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Çinili Hamam Sokak, 6",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "İstanbul, Çinili Hamam Sokak 6, tr",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Çinili Hamam Sokak 6 tr İstanbul",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Çinili Hamam Sokak, 6",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "çinili hamam sokak 6",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Çinili Hamam Sokak6",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "sokak 6",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Çinili Hamam Sokak 6 john",
+   "lat": 41.019816999999996,
+   "lng": 29.02823957142857,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Çinili Hamam Sokak 6, İstanbul",
+   "base": 24
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "10 Adile Naşit Çıkmazı Sokağı",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı 10, 34433",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı 10 tr İstanbul",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı 10, tr, İstanbul",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı - İstanbul - 10",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "sokağı 10",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı 10 apt 4b",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Mary adile naşit çıkmazı sokağı 10",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Adile Naşit Çıkmazı Sokağı10",
+   "lat": 41.0324595,
+   "lng": 28.9827833,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Adile Naşit Çıkmazı Sokağı 10, 34433 İstanbul",
+   "base": 25
+  },
+  {
+   "address": "Nüshetefendi 54A, 34716 İstanbul",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Nüshetefendi 54A",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Nüshetefendi 54A 34716",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "tr, Nüshetefendi 54A, İstanbul",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Nüshetefendi Nüshetefendi 54A İstanbul tr",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Nüshetefendi, 34716, 54A",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Nüshetefendi 54A apt 4b",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Deli nüshetefendi 54A",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "nüshetefendi 54a",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "NÜSHETEFENDI 54A",
+   "lat": 40.9937368,
+   "lng": 29.0267108,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nüshetefendi 54A, 34716 İstanbul",
+   "base": 26
+  },
+  {
+   "address": "Recaizade Sokak 54/1, Istanbul",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Recaizade Sokak, 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Istanbul, tr, Recaizade Sokak 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Recaizade Sokak 54/1 54/1 tr Istanbul",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Recaizade Sokak - Istanbul - 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Recaizade Sokak 54/1 (green door)",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Mary recaizade sokak 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Recaisade Sokak 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "RECAIZADE SOKAK 54/1",
+   "lat": 40.9940187,
+   "lng": 29.0289884,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Recaizade Sokak 54/1, Istanbul",
+   "base": 27
+  },
+  {
+   "address": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Firuzağa Cami Sokağı, 1B",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "tr, Firuzağa Cami Sokağı 1B, Istanbul",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "tr, firuzağa cami sokağı 1b, istanbul",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Firuzağa Cami Sokağı, 1B, Istanbul",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Firuzağa Cami Sokağı1B",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Firuzağa Cami Sokağı 1B (green door)",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Deli firuzağa cami sokağı 1B",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "sokağı 1B",
+   "lat": 41.0312998,
+   "lng": 28.9823482,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Firuzağa Cami Sokağı 1B, Istanbul",
+   "base": 28
+  },
+  {
+   "address": "Üçler Sokağı 2, Istanbul",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "2 Üçler Sokağı",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Istanbul tr Üçler Sokağı 2",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Istanbul Üçler Sokağı 2 tr",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Istanbul 2 Üçler Sokağı",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Mary üçler sokağı 2",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Üçler Sokağı2",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Üçler Sokağı 2 john",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Üçler Soakğı 2",
+   "lat": 41.0055621,
+   "lng": 28.9736802,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Üçler Sokağı 2, Istanbul",
+   "base": 29
+  },
+  {
+   "address": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "36/A Necatibey Caddesi",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "Necatibey Caddesi 36/A 34425",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "tr, Necatibey Caddesi 36/A, Istanbul",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "Necatibey Caddesi 36/A Istanbul tr",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "36/A, Istanbul, Necatibey Caddesi",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "caddesi 36/A",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "Neactibey Caddesi 36/A",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "NECATIBEY CADDESI 36/A",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "Mary necatibey caddesi 36/A",
+   "lat": 41.0247717,
+   "lng": 28.9778887,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Necatibey Caddesi 36/A, 34425 Istanbul",
+   "base": 30
+  },
+  {
+   "address": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Keçeciler Caddesi 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Keçeciler Caddesi 103 34091",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "İstanbul, tr, Keçeciler Caddesi 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "i̇stanbul, tr, keçeciler caddesi caddesi 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Keçeciler Caddesi - 103 - İstanbul - 34091",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Keçesiler Caddesi 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "keçeciler caddesi 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "KEÇECILER CADDESI 103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Keçeciler Caddesi103",
+   "lat": 41.02189176666666,
+   "lng": 28.936644144444447,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Keçeciler Caddesi 103, 34091 İstanbul",
+   "base": 31
+  },
+  {
+   "address": "Üçler sokak 13, Istanbul",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Üçler sokak 13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "tr, Istanbul, Üçler sokak 13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Istanbul, Üçler sokak 13, tr",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Üçler sokak, 13, Istanbul",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Üçler sokak13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "sokak 13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Deli üçler sokak 13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Üçller sokak 13",
+   "lat": 41.0055379,
+   "lng": 28.973752,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Üçler sokak 13, Istanbul",
+   "base": 32
+  },
+  {
+   "address": "Asmalı Çeşme Sok. 4, Istanbul",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "4 Asmalı Çeşme Sok.",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "tr, Asmalı Çeşme Sok. 4, Istanbul",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Asmalı Çeşme Sok. 4, tr, Istanbul",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Asmalı Çeşme Sok. 4",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "asmalı çeşme sok. 4",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Asmalı Çeşme Sok. 4 back entrance",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Deli asmalı çeşme sok. 4",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Asmlaı Çeşme Sok. 4",
+   "lat": 41.0057948,
+   "lng": 28.9741914,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Asmalı Çeşme Sok. 4, Istanbul",
+   "base": 33
+  },
+  {
+   "address": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Ahmet Galip Paşa Sokağı, 2",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Ahmet Galip Paşa Sokağı 2 34091",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Ahmet Galip Paşa Sokağı 2, İstanbul, tr",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "İstanbul, tr, Ahmet Galip Paşa Sokağı 2",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "İstanbul - 2 - Ahmet Galip Paşa Sokağı - 34091",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Ahmet Galip Paşa Soakğı 2",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Ahmet Galip Paşa Sokağı 2 (green door)",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Mary ahmet galip paşa sokağı 2",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "sokağı 2",
+   "lat": 41.02741571818182,
+   "lng": 28.93476149090909,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ahmet Galip Paşa Sokağı 2, 34091 İstanbul",
+   "base": 34
+  },
+  {
+   "address": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "Şehit Mehmetpaşa Sokağı, 12",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "tr, Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "tr Şehit Mehmetpaşa Sokağı 12 İstanbul",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "Şehit Mehmetpaşa Sokağı İstanbul",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "Şehit Mehmetpaşa Sokağı12",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "sokağı 12",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "Şehit Mehmetpaşa Sokağı 12 apt 4b",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "ŞEHIT MEHMETPAŞA SOKAĞI 12",
+   "lat": 41.0040097,
+   "lng": 28.9727044,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Şehit Mehmetpaşa Sokağı 12, İstanbul",
+   "base": 35
+  },
+  {
+   "address": "Dünya Sağlık Sokağı 17, Istanbul",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Dünya Sağlık Sokağı, 17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Dünya Sağlık Sokağı 17, Istanbul, tr",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Dunya Saglık Sokagı 17 Istanbul tr",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Istanbul 17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Mary dünya sağlık sokağı 17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "sokağı 17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Dünya Sağlık Sokağı17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "DÜNYA SAĞLIK SOKAĞI 17",
+   "lat": 41.0354356125,
+   "lng": 28.9869327625,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dünya Sağlık Sokağı 17, Istanbul",
+   "base": 36
+  },
+  {
+   "address": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "14 Kuzguncuk Çarşısı Caddesi",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "Kuzguncuk Çarşısı Caddesi 14 tr Istanbul",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "Istanbul, Kuzguncuk Çarşısı Caddesi 14, tr",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "14 - Istanbul",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "caddesi 14",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "kuzguncuk çarşısı caddesi 14",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "Kusguncuk Çarşısı Caddesi 14",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "KUZGUNCUK ÇARŞISI CADDESI 14",
+   "lat": 41.036738666666665,
+   "lng": 29.0303894,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kuzguncuk Çarşısı Caddesi 14, Istanbul",
+   "base": 37
+  },
+  {
+   "address": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Tom Tom Kaptan Sokak, 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Tom Tom Kaptan Sokak 18, Istanbul, tr",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "tr, Tom Tom Kaptan Sokak 18, Istanbul",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Tom Tom Kaptan Sokak 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Tom Tom Kapatn Sokak 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "sokak 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "TOM TOM KAPTAN SOKAK 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Deli tom tom kaptan sokak 18",
+   "lat": 41.0302302,
+   "lng": 28.9778284,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tom Tom Kaptan Sokak 18, Istanbul",
+   "base": 38
+  },
+  {
+   "address": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "Prof. Dr. Müfide Küley Solak 45",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "tr, Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "Prof. Dr. Müfide Küley Solak 45 tr Istanbul",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "Istanbul, 45, Prof. Dr. Müfide Küley Solak",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "PROF. DR. MÜFIDE KÜLEY SOLAK 45",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "Prof. Dr. Müfdie Küley Solak 45",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "Prof. Dr. Müfide Küley Solak 45 (green door)",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  },
+  {
+   "address": "prof. dr. müfide küley solak 45",
+   "lat": 41.0527745,
+   "lng": 28.99506,
+   "country": "TR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prof. Dr. Müfide Küley Solak 45, Istanbul",
+   "base": 39
+  }
+ ]
+}

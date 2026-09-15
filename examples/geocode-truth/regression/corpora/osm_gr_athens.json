@@ -1,0 +1,3748 @@
+{
+ "source": "osm-addr",
+ "country": "GR",
+ "city": "Athens",
+ "country_label": "Greece",
+ "depot": {
+  "lat": 37.9838,
+  "lon": 23.7275,
+  "city": "Athens",
+  "country": "Greece"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 373,
+ "note": "Nodos addr:* del indice n38.10_s37.90_e23.80_w23.60-greece.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Ολυμπίων 12, Αθήνα",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "12 Ολυμπίων",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Ολυμπίων 12, gr, Αθήνα",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Αθήνα, gr, Ολυμπίων 12",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Αθήνα, Ολυμπίων",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "ΟΛΥΜΠΊΩΝ 12",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Mary ολυμπίων 12",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Ολυμίπων 12",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "ολυμπίων 12",
+   "lat": 38.02412917142857,
+   "lng": 23.735384976190478,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ολυμπίων 12, Αθήνα",
+   "base": 0
+  },
+  {
+   "address": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "11 Στ. Τσαλαβούτα",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "Στ. Τσαλαβούτα 11 12131",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "gr, Περιστέρι, Στ. Τσαλαβούτα 11",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "στ. τσαλαβούτα 11 περιστέρι gr",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "11 12131 Περιστέρι",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "Στ. Τσα 11",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "Στ. Τσααλβούτα 11",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "τσαλαβούτα 11",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "Στ. Τσαλαβούτα11",
+   "lat": 37.9993741,
+   "lng": 23.6949946,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Στ. Τσαλαβούτα 11, 12131 Περιστέρι",
+   "base": 1
+  },
+  {
+   "address": "Πανσελήνου 14, Athens",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Πανσελήνου 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Athens, gr, Πανσελήνου 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Athens, gr, Πανσελήνου 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Athens, 14, Πανσελήνου",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "πανσελήνου 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Πανεσλήνου 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Πανσελήνου 14 (green door)",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "ΠΑΝΣΕΛΉΝΟΥ 14",
+   "lat": 38.0141973,
+   "lng": 23.742075,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Πανσελήνου 14, Athens",
+   "base": 2
+  },
+  {
+   "address": "Δήμητρος 15, 17778 Ταύρος",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Δήμητρος, 15",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Δήμητρος 15, 17778",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Ταύρος, Δήμητρος 15, gr",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Δημητρος 15, Ταυρος, gr",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Ταύρος, 15, 17778, Δήμητρος",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Δήμητορς 15",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "ΔΉΜΗΤΡΟΣ 15",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Δήμητρος 15 (green door)",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "δήμητρος 15",
+   "lat": 37.9729634,
+   "lng": 23.6929167,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Δήμητρος 15, 17778 Ταύρος",
+   "base": 3
+  },
+  {
+   "address": "Ευγενίου Καραβία 50, Αθήνα",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Ευγενίου Καραβία 50",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Αθήνα Ευγενίου Καραβία 50 gr",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Ευγενιου Καραβια 50, Αθηνα, gr",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Αθήνα Ευγενίου Καραβία 50",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Ευγενίου Καραβία50",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Ευεγνίου Καραβία 50",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Ευγενίου Καραβία 50 apt 4b",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Deli ευγενίου καραβία 50",
+   "lat": 38.0125572,
+   "lng": 23.731218,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ευγενίου Καραβία 50, Αθήνα",
+   "base": 4
+  },
+  {
+   "address": "Κορήνη 3, 10553 Αθήνα",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Κορήνη 3",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Κορήνη 3, 10553",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Κορήνη 3, Αθήνα, gr",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "gr αθήνα κορήνη 3",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "3 - 10553 - Κορήνη - Αθήνα",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "ΚΟΡΉΝΗ 3",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Κορνήη 3",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Deli κορήνη 3",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Κορήνη 3 apt 4b",
+   "lat": 37.981032,
+   "lng": 23.7234304,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Κορήνη 3, 10553 Αθήνα",
+   "base": 5
+  },
+  {
+   "address": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Χρυσοστόμου Γρεβενών, 59",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Athens, Χρυσοστόμου Γρεβενών 59, gr",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Χρυσοστόμου Γρεβενών 59 Athens gr",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Athens - 59 - Χρυσοστόμου Γρεβενών",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "γρεβενών 59",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "χρυσοστόμου γρεβενών 59",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Deli χρυσοστόμου γρεβενών 59",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "ΧΡΥΣΟΣΤΌΜΟΥ ΓΡΕΒΕΝΏΝ 59",
+   "lat": 37.9679285,
+   "lng": 23.6938298,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Χρυσοστόμου Γρεβενών 59, Athens",
+   "base": 6
+  },
+  {
+   "address": "Φιλοκτήτου 68, Ίλιον",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Φιλοκτήτου, 68",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Ίλιον, gr, Φιλοκτήτου 68",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Φιλοκτήτου 68 68 Ίλιον gr",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Ίλιον - 68 - Φιλοκτήτου",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "φιλοκτήτου 68",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Φιλοκτήτου 68 (green door)",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "ΦΙΛΟΚΤΉΤΟΥ 68",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Mary φιλοκτήτου 68",
+   "lat": 38.0332618,
+   "lng": 23.709894,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Φιλοκτήτου 68, Ίλιον",
+   "base": 7
+  },
+  {
+   "address": "Ιουστινιανου 19, Athens",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "Ιουστινιανου 19",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "gr, Athens, Ιουστινιανου 19",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "gr Ιουστινιανου 19 Athens",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "19 Athens",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "Ιουστινιανου 19 back entrance",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "ιουστινιανου 19",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "ΙΟΥΣΤΙΝΙΑΝΟΥ 19",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "Ιουστινιανου19",
+   "lat": 37.9408189,
+   "lng": 23.75639094,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ιουστινιανου 19, Athens",
+   "base": 8
+  },
+  {
+   "address": "Πουκεβίλ 7, Athens",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "7 Πουκεβίλ",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "Athens Πουκεβίλ 7 gr",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "πουκεβίλ 7, gr, athens",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "Athens - 7",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "ΠΟΥΚΕΒΊΛ 7",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "Deli πουκεβίλ 7",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "Πυοκεβίλ 7",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "πουκεβίλ 7",
+   "lat": 37.9868432,
+   "lng": 23.7229003,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πουκεβίλ 7, Athens",
+   "base": 9
+  },
+  {
+   "address": "Λεγάκη 5, Athens",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Λεγάκη 5",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "gr, Λεγάκη 5, Athens",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Λεγακη 5 Athens gr",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "5 Λεγάκη Athens",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "λεγάκη 5",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Λεγκάη 5",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Deli λεγάκη 5",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Λεγάκη5",
+   "lat": 37.9695694,
+   "lng": 23.6800513,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Λεγάκη 5, Athens",
+   "base": 10
+  },
+  {
+   "address": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "33 Δημητρακοπούλου",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Δημητρακοπούλου 33 11141",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "gr Δημητρακοπούλου 33 Αθήνα",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Δημητρακοπουλου Δημητρακοπουλου 33 Αθηνα gr",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Αθήνα - Δημητρακοπούλου - 33 - 11141",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Δημητρακοπούλου 33 john",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Mary δημητρακοπούλου 33",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Δημητρακοπούλου33",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Δημητρακοπύολου 33",
+   "lat": 38.0230566,
+   "lng": 23.7373118,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Δημητρακοπούλου 33, 11141 Αθήνα",
+   "base": 11
+  },
+  {
+   "address": "Πινοτση 4, Αθήνα",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Πινοτση 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Αθήνα, Πινοτση 4, gr",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Πινοτση 4 Αθήνα gr",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Πινοτση - 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Πινοστη 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "ΠΙΝΟΤΣΗ 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "πινοτση 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Mary πινοτση 4",
+   "lat": 37.9630683,
+   "lng": 23.7182105,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πινοτση 4, Αθήνα",
+   "base": 12
+  },
+  {
+   "address": "Agisilaou 32-34, 10436 Athens",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "32-34 Agisilaou",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Agisilaou 32-34 10436",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "gr Agisilaou 32-34 Athens",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "gr Athens Agisilaou 32-34",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Athens, Agisilaou, 32-34, 10436",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Agisilaou32-34",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Deli agisilaou 32-34",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Aigsilaou 32-34",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "agisilaou 32-34",
+   "lat": 37.98213461666666,
+   "lng": 23.721725616666664,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Agisilaou 32-34, 10436 Athens",
+   "base": 13
+  },
+  {
+   "address": "Ναϊάδων 2, 10681 Αθήνα",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Ναϊάδων 2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Ναϊάδων 2 10681",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Ναϊάδων 2 gr Αθήνα",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Αθηνα, gr, Ναιαδων 2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "10681, Ναϊάδων, Αθήνα, 2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Ναϊάδων 2 (green door)",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Ναϊάδων2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Νϊαάδων 2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "ΝΑΪΆΔΩΝ 2",
+   "lat": 37.9740459,
+   "lng": 23.7471408,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ναϊάδων 2, 10681 Αθήνα",
+   "base": 14
+  },
+  {
+   "address": "Λεύκτρων 2-4, Athens",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "2-4 Λεύκτρων",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "gr Λεύκτρων 2-4 Athens",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Athens Athens Λεύκτρων 2-4 gr",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Λεύκτρων, 2-4",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Λεύκρτων 2-4",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Λεύκτρων2-4",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Λεύκτρων 2-4 back entrance",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Mary λεύκτρων 2-4",
+   "lat": 37.98247273076923,
+   "lng": 23.76221243846154,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Λεύκτρων 2-4, Athens",
+   "base": 15
+  },
+  {
+   "address": "Κιουπετζόγλου 14, Athens",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Κιουπετζόγλου 14",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Κιουπετζόγλου 14 Athens gr",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Κιουπετζόγλου 14, Athens, gr",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "14, Athens",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Deli κιουπετζόγλου 14",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "κιουπετζόγλου 14",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Κιουπετζόγλου 14 (green door)",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "Κιουπετζόγλου14",
+   "lat": 37.945858795238095,
+   "lng": 23.726495633333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Κιουπετζόγλου 14, Athens",
+   "base": 16
+  },
+  {
+   "address": "110 110, Athens",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "110, 110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "Athens gr 110 110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "110 110, gr, Athens",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "Athens, 110, 110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "110 110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "Mary 110 110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "110110",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "110 110 back entrance",
+   "lat": 37.973471159999995,
+   "lng": 23.7299101,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "110 110, Athens",
+   "base": 17
+  },
+  {
+   "address": "Νωνακρίδος 24, Αθήνα",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "Νωνακρίδος 24",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "Νωνακρίδος 24 Αθήνα gr",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "gr αθήνα νωνακρίδος 24",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "24 Αθήνα",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "Mary νωνακρίδος 24",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "νωνακρίδος 24",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "Νωνακρίδος 24 (green door)",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "ΝΩΝΑΚΡΊΔΟΣ 24",
+   "lat": 37.9924881,
+   "lng": 23.7576937,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Νωνακρίδος 24, Αθήνα",
+   "base": 18
+  },
+  {
+   "address": "Ιαλεμου 6, Αθήνα",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "6 Ιαλεμου",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Αθήνα, Ιαλεμου 6, gr",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Αθήνα, Ιαλεμου 6, gr",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Ιαλεμου, 6",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Ιαελμου 6",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Deli ιαλεμου 6",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Ιαλεμου6",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "ιαλεμου 6",
+   "lat": 38.0231283,
+   "lng": 23.7408208,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ιαλεμου 6, Αθήνα",
+   "base": 19
+  },
+  {
+   "address": "Σισμάνη 16, Αθήνα",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "16 Σισμάνη",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Αθήνα Σισμάνη 16 gr",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Αθήνα, gr, gr, Σισμάνη 16",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Σισμάνη - Αθήνα - 16",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "σισμάνη 16",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Mary σισμάνη 16",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Σισμάνη 16 apt 4b",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "ΣΙΣΜΆΝΗ 16",
+   "lat": 37.9649167,
+   "lng": 23.7299205,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Σισμάνη 16, Αθήνα",
+   "base": 20
+  },
+  {
+   "address": "Ρεθύμνου 18, Αθήνα",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Ρεθύμνου, 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Αθήνα, gr, Ρεθύμνου 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Ρεθύμνου 18, Αθήνα, gr",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Αθήνα Ρεθύμνου 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "ρεθύμνου 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "ΡΕΘΎΜΝΟΥ 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Ρεθύμνου18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Deli ρεθύμνου 18",
+   "lat": 37.9908914,
+   "lng": 23.7329771,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ρεθύμνου 18, Αθήνα",
+   "base": 21
+  },
+  {
+   "address": "Αγαθοδαίμονος 41, Αθήνα",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Αγαθοδαίμονος, 41",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "gr, Αγαθοδαίμονος 41, Αθήνα",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "gr Αγαθοδαιμονος 41 Αθηνα",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Αθήνα 41",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Αγαθοδαίμονος41",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Αγαθοδαίμοονς 41",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Αγαθοδαίμονος 41 john",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Mary αγαθοδαίμονος 41",
+   "lat": 37.9690389,
+   "lng": 23.7028319,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Αγαθοδαίμονος 41, Αθήνα",
+   "base": 22
+  },
+  {
+   "address": "Οιτύλου 15, 11523 Αθήνα",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτύλου 15",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτύλου 15, 11523",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "gr, Οιτύλου 15, Αθήνα",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτύλου 15 Αθήνα gr",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτύλου 15 Αθήνα 11523",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "οιτύλου 15",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτύλου 15 apt 4b",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Οιτλύου 15",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Mary οιτύλου 15",
+   "lat": 37.990994,
+   "lng": 23.7597396,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Οιτύλου 15, 11523 Αθήνα",
+   "base": 23
+  },
+  {
+   "address": "Ερασμίας 4, Αθήνα",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Ερασμίας 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "gr Αθήνα Ερασμίας 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Αθήνα, gr, Ερασμίας 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Αθήνα - 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Ερασμίας 4 apt 4b",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "ερασμίας 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Ερασίμας 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "ΕΡΑΣΜΊΑΣ 4",
+   "lat": 38.0032362,
+   "lng": 23.7390145,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ερασμίας 4, Αθήνα",
+   "base": 24
+  },
+  {
+   "address": "Κοτοπούλη 2, Αθήνα",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Κοτοπούλη, 2",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "gr, Κοτοπούλη 2, Αθήνα",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Κοτοπουλη 2 gr Αθηνα",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Κοτοπούλη, 2",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "κοτοπούλη 2",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Κοτοπούλη 2 john",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Κοτοοπύλη 2",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Mary κοτοπούλη 2",
+   "lat": 37.9848321,
+   "lng": 23.727782,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Κοτοπούλη 2, Αθήνα",
+   "base": 25
+  },
+  {
+   "address": "Υδρας 1, Καλλιθέα",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "1 Υδρας",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Υδρας 1 gr Καλλιθέα",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Υδρας 1, gr, Καλλιθέα",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Καλλιθέα - Υδρας - 1",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Υδρας 1 apt 4b",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Deli υδρας 1",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "ΥΔΡΑΣ 1",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Υδρρας 1",
+   "lat": 37.9629371,
+   "lng": 23.7140832,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Υδρας 1, Καλλιθέα",
+   "base": 26
+  },
+  {
+   "address": "Κύκνων 4, Γαλάτσι",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Κύκνων 4",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Κύκνων 4, gr, Γαλάτσι",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "gr, Κύκνων 4, Γαλάτσι",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "4 Κύκνων Γαλάτσι",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Κύκνων 4 apt 4b",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "κύκνων 4",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Κκύνων 4",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Κύκνων4",
+   "lat": 38.0157515,
+   "lng": 23.7461065,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Κύκνων 4, Γαλάτσι",
+   "base": 27
+  },
+  {
+   "address": "Ιπποδάμου 13-15, Athens",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Ιπποδάμου, 13-15",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Athens Ιπποδάμου 13-15 gr",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Athens gr gr Ιπποδαμου 13-15",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Athens, 13-15, Ιπποδάμου",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Ιπποδάμου 13-15 (green door)",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "ιπποδάμου 13-15",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Ιπποδάμου13-15",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Ιποπδάμου 13-15",
+   "lat": 37.96940380909091,
+   "lng": 23.74476862727273,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ιπποδάμου 13-15, Athens",
+   "base": 28
+  },
+  {
+   "address": "Πυργοτέλους 8, 11635 Αθήνα",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "Πυργοτέλους, 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "Πυργοτέλους 8 11635",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "gr, Πυργοτέλους 8, Αθήνα",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "gr, Αθήνα, Πυργοτέλους 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "11635 Αθήνα 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "ΠΥΡΓΟΤΈΛΟΥΣ 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "Πυργοέτλους 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "πυργοτέλους 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "Mary πυργοτέλους 8",
+   "lat": 37.96649608,
+   "lng": 23.744913320000002,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πυργοτέλους 8, 11635 Αθήνα",
+   "base": 29
+  },
+  {
+   "address": "Βασιλειάδου 9, Αθήνα",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Βασιλειάδου 9",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "gr, Αθήνα, Βασιλειάδου 9",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Βασιλειάδου 9 gr Αθήνα",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "9, Βασιλειάδου, Αθήνα",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Βασιλειάδου 9 back entrance",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "βασιλειάδου 9",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Βασλιειάδου 9",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Mary βασιλειάδου 9",
+   "lat": 38.0212944,
+   "lng": 23.7370784,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Βασιλειάδου 9, Αθήνα",
+   "base": 30
+  },
+  {
+   "address": "Γρηγόρη Αυξεντίου 24, Athens",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Γρηγόρη Αυξεντίου 24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Athens gr Γρηγόρη Αυξεντίου 24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "γρηγόρη αυξεντίου 24 athens gr",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Athens - Γρηγόρη Αυξεντίου",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "αυξεντίου 24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "ΓΡΗΓΌΡΗ ΑΥΞΕΝΤΊΟΥ 24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Γρηγόρη Αυξ 24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Γρηγόρη Αυξεντίου24",
+   "lat": 38.0272573,
+   "lng": 23.7158841,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Γρηγόρη Αυξεντίου 24, Athens",
+   "base": 31
+  },
+  {
+   "address": "Πολυκράτους 1, 10442 Αθήνα",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πολυκράτους 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πολυκράτους 1 10442",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Αθήνα gr Πολυκράτους 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πολυκράτους 1 Αθήνα gr",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πολυκράτους Αθήνα 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "πολυκράτους 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πολκυράτους 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Mary πολυκράτους 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "ΠΟΛΥΚΡΆΤΟΥΣ 1",
+   "lat": 37.9899925,
+   "lng": 23.7076874,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Πολυκράτους 1, 10442 Αθήνα",
+   "base": 32
+  },
+  {
+   "address": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Πλατεία Νοσοκομείου Παίδων, 1",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Αθήνα, gr, Πλατεία Νοσοκομείου Παίδων 1",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Πλατεία Νοσοκομείου Παίδων 1, gr, Αθήνα",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "1, Αθήνα, Πλατεία Νοσοκομείου Παίδων",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "παίδων 1",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Πλατεία Νοσοκομείου Παίδων 1 apt 4b",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Deli πλατεία νοσοκομείου παίδων 1",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Πλατεία Νοσοκομείου Παίδων1",
+   "lat": 37.9838519,
+   "lng": 23.7675952,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Πλατεία Νοσοκομείου Παίδων 1, Αθήνα",
+   "base": 33
+  },
+  {
+   "address": "Βυζαντίου 24, Athens",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "24 Βυζαντίου",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "Athens Βυζαντίου 24 gr",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "Athens Βυζαντίου 24 gr",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "24 - Athens - Βυζαντίου",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "ΒΥΖΑΝΤΊΟΥ 24",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "Βυζαντίου 24 john",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "βυζαντίου 24",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "Mary βυζαντίου 24",
+   "lat": 37.990756423076924,
+   "lng": 23.792057253846153,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Βυζαντίου 24, Athens",
+   "base": 34
+  },
+  {
+   "address": "Ηλιοδώρου 11, Αθήνα",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "Ηλιοδώρου, 11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "gr, Ηλιοδώρου 11, Αθήνα",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "Αθηνα gr Ηλιοδωρου 11 11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "11 Ηλιοδώρου",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "ηλιοδώρου 11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "Ηλιοδρώου 11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "Ηλιοδώρου11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "ΗΛΙΟΔΏΡΟΥ 11",
+   "lat": 37.9689316,
+   "lng": 23.7443989,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ηλιοδώρου 11, Αθήνα",
+   "base": 35
+  },
+  {
+   "address": "Πόρου 26, 11256 Αθήνα",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Πόρου, 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Πόρου 26 11256",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Αθήνα gr Πόρου 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Πόρου 26 26 gr Αθήνα",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Αθήνα 11256 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Πόρου26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "πόρου 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Deli πόρου 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Πόόρου 26",
+   "lat": 38.006261085714286,
+   "lng": 23.736592714285713,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Πόρου 26, 11256 Αθήνα",
+   "base": 36
+  },
+  {
+   "address": "Χαρβούρη 2, 11636 Αθήνα",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "2 Χαρβούρη",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χαρβούρη 2, 11636",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Αθήνα, gr, Χαρβούρη 2",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χαρβούρη 2 gr gr Αθήνα",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χαρβούρη - 2 - 11636",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χαρβούρη2",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χραβούρη 2",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Χαρβούρη 2 apt 4b",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Deli χαρβούρη 2",
+   "lat": 37.9658811,
+   "lng": 23.7354663,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Χαρβούρη 2, 11636 Αθήνα",
+   "base": 37
+  },
+  {
+   "address": "Aristonikou 25, 116 36 Athina",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Aristonikou, 25",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Aristonikou 25 116 36",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Aristonikou 25, Athina, gr",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Athina, Aristonikou 25, gr",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "116 36 Aristonikou Athina",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "aristonikou 25",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "ARISTONIKOU 25",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Aristoniku 25",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Aristonikou25",
+   "lat": 37.96632824444444,
+   "lng": 23.735953433333336,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Aristonikou 25, 116 36 Athina",
+   "base": 38
+  },
+  {
+   "address": "Άστιγγος 10, 10555 Αθήνα",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "10 Άστιγγος",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Άστιγγος 10 10555",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Αθήνα gr Άστιγγος 10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Άστιγγος 10, Αθήνα, gr",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Άστιγγος, Αθήνα, 10555, 10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Άστιγγος10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "Άστιγγοος 10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "ΆΣΤΙΓΓΟΣ 10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  },
+  {
+   "address": "άστιγγος 10",
+   "lat": 37.976754,
+   "lng": 23.7228849,
+   "country": "GR",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Άστιγγος 10, 10555 Αθήνα",
+   "base": 39
+  }
+ ]
+}

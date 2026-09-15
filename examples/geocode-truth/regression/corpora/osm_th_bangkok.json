@@ -1,0 +1,3918 @@
+{
+ "source": "osm-addr",
+ "country": "TH",
+ "city": "Bangkok",
+ "country_label": "Thailand",
+ "depot": {
+  "lat": 13.7563,
+  "lon": 100.5018,
+  "city": "Bangkok",
+  "country": "Thailand"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 390,
+ "note": "Nodos addr:* del indice n13.90_s13.70_e100.60_w100.40-thailand.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "ซอยเจริญกรุง 43 214, Bangkok",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "214 ซอยเจริญกรุง 43",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "ซอยเจริญกรุง 43 214, th, Bangkok",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "Bangkok, th, ซอยเจริญกรุง 43 214",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "Bangkok, ซอยเจริญกรุง 43",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "ซอยเจริญกรุง 43 214",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "Mary ซอยเจริญกรุง 43 214",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "ซอยเจริญรกุง 43 214",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "ซอยเจริญกรุง 43 214 john",
+   "lat": 13.7285412,
+   "lng": 100.5183719,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยเจริญกรุง 43 214, Bangkok",
+   "base": 0
+  },
+  {
+   "address": "Charoennakorn Road 257, 10600 Bangkok",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "257 Charoennakorn Road",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Charoennakorn Road 257 10600",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Charoennakorn Road 257, Bangkok, th",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Bangkok Charoennakorn Road 257 th",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Charoennakorn Road, Bangkok, 257, 10600",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Charoennakorn Road 257 (green door)",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Chareonnakorn Road 257",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "CHAROENNAKORN ROAD 257",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "Charoennakorn Road257",
+   "lat": 13.7050249,
+   "lng": 100.491371,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Charoennakorn Road 257, 10600 Bangkok",
+   "base": 1
+  },
+  {
+   "address": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปราโมทย์, 285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปราโมทย์ 285/11 10500",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปราโมทย์ 285/11 th Bangkok",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "th, Bangkok, ซอยปราโมทย์ ซอยปราโมทย์ 285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "285/11 10500 ซอยปราโมทย์",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปรามโทย์ 285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปราโมทย์285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "Deli ซอยปราโมทย์ 285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ซอยปราโมทย์ 285/11",
+   "lat": 13.72632022,
+   "lng": 100.52123739999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยปราโมทย์ 285/11, 10500 Bangkok",
+   "base": 2
+  },
+  {
+   "address": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "69 ถนนพระรามที่ 5",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "ถนนพระรามที่ 5 69 10300",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "Bangkok ถนนพระรามที่ 5 69 th",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "th Bangkok ถนนพระรามท 5 69",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "69, Bangkok, ถนนพระรามที่ 5, 10300",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "ถนนพระรามที่ 5 69",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "ถนนพระรามที่ 5 69 back entrance",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "ถนนพระรมาที่ 5 69",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "Mary ถนนพระรามที่ 5 69",
+   "lat": 13.76611099047619,
+   "lng": 100.51402603333334,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนพระรามที่ 5 69, 10300 Bangkok",
+   "base": 3
+  },
+  {
+   "address": "ซอยอารีย์ 4 46/1, Bangkok",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยอารีย์ 4 46/1",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "th ซอยอารีย์ 4 46/1 Bangkok",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยอารีย์ 4 46/1, Bangkok, th",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "Bangkok ซอยอารีย์ 4",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "Mary ซอยอารีย์ 4 46/1",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยอารีย์ 4 46/1 back entrance",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยอารีย์ 4 46/1",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยอราีย์ 4 46/1",
+   "lat": 13.7825877,
+   "lng": 100.5428171,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยอารีย์ 4 46/1, Bangkok",
+   "base": 4
+  },
+  {
+   "address": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซอยสามเสน 4, 29",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซอยสามเสน 4 29 10200",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "th ซอยสามเสน 4 29 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "Ban Phan Thom, Phra Nakhon, Bangkok ซอยสามเสน 4 29 th",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซอยสามเสน 4 29 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซอยสามเสน 429",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "Mary ซอยสามเสน 4 29",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซยอสามเสน 4 29",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "ซอยสามเสน 4 29",
+   "lat": 13.7636928,
+   "lng": 100.5000461,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสามเสน 4 29, 10200 Ban Phan Thom, Phra Nakhon, Bangkok",
+   "base": 5
+  },
+  {
+   "address": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Charan Sanit Wong 95/1, 539",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Charan Sanit Wong 95/1 539, 10700",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Charan Sanit Wong 95/1 539 th แขวงบางอ้อ",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "th แขวงบางอ้อ Charan Sanit Wong 95/1 539 539",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "539, แขวงบางอ้อ, 10700, Charan Sanit Wong 95/1",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Cahran Sanit Wong 95/1 539",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Deli charan sanit wong 95/1 539",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "95/1 539",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "Charan Sanit Wong 95/1 539 back entrance",
+   "lat": 13.8036292,
+   "lng": 100.5118001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Charan Sanit Wong 95/1 539, 10700 แขวงบางอ้อ",
+   "base": 6
+  },
+  {
+   "address": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "58 ถนนมหาเศรษฐ์",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "th แขวงสี่พระยา ถนนมหาเศรษฐ์ 58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา, th",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "ถนนมหาเศรษฐ์, 58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "ถนนมหาเศรษฐ์ 58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "Mary ถนนมหาเศรษฐ์ 58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "ถนนมหาเศรษฐ์58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "ถนนมหเาศรษฐ์ 58",
+   "lat": 13.7298254,
+   "lng": 100.5182151,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนมหาเศรษฐ์ 58, แขวงสี่พระยา",
+   "base": 7
+  },
+  {
+   "address": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande, 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Bangkok th Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "prachathipatai rd, khwaeng ban phan thom, khet phra nakhon, bangkok 10200, thaïlande 1 6, th, bangkok",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "10200, Bangkok, 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Thaïlande Bangkok 10200 Khet Phra Nakhon Khwaeng Ban Phan Thom Prachathipatai Rd 1 6 back entrance",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "thaïlande bangkok 10200 khet phra nakhon khwaeng ban phan thom prachathipatai rd 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Thaïlande Bangkok 10200 Khet Phra Nakhon Khwaeng Ban Phan Thom Pra Rd 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "Thaïlande Bangkok 10200 Khet Phra Nakhon Khwaeng Ban Phan Thom Prachatihpatai Rd 1 6",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prachathipatai Rd, Khwaeng Ban Phan Thom, Khet Phra Nakhon, Bangkok 10200, Thaïlande 1 6, 10200 Bangkok",
+   "base": 8
+  },
+  {
+   "address": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "219 ซอยจรัญสนิทวงศ์ 66/1",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "ซอยจรัญสนิทวงศ์ 66/1 219 10700",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "th, Bangkok, ซอยจรัญสนิทวงศ์ 66/1 219",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "ซอยจรัญสนิทวงศ์ 66/1 219, th, Bangkok",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "Bangkok, 10700, ซอยจรัญสนิทวงศ์ 66/1, 219",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "ซอยจรัญสนิทวงศ์ 66/1 219 apt 4b",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "Deli ซอยจรัญสนิทวงศ์ 66/1 219",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "66/1 219",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "ซอยจรัญสนทิวงศ์ 66/1 219",
+   "lat": 13.783474411111111,
+   "lng": 100.50093195555556,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยจรัญสนิทวงศ์ 66/1 219, 10700 Bangkok",
+   "base": 9
+  },
+  {
+   "address": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "Khao San Road, 9 Khao San",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "Khao San Road 9 Khao San 10200",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "Khao San Road 9 Khao San Bangkok th",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "th, Khao San Road 9 Khao San, Bangkok",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "10200 - Khao San Road - 9 Khao San - Bangkok",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "Mary khao san road 9 Khao San",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "khao san road 9 khao san",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "Khao San Road 9 Khao San (green door)",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "KHAO SAN ROAD 9 KHAO SAN",
+   "lat": 13.759069,
+   "lng": 100.4957861,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Khao San Road 9 Khao San, 10200 Bangkok",
+   "base": 10
+  },
+  {
+   "address": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "19/1 ซอยอารีย์ 1",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 1 19/1, 10400",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "Bangkok ซอยอารีย์ 1 19/1 th",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 1 19/1 Bangkok th",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 1 - Bangkok - 10400",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "Mary ซอยอารีย์ 1 19/1",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 119/1",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 1 19/1 john",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ซอยอารีย์ 1 19/1",
+   "lat": 13.77849996,
+   "lng": 100.5427417,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยอารีย์ 1 19/1, 10400 Bangkok",
+   "base": 11
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพระยา 341",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพระยา 341, 10600",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "th, ถนนสมเด็จเจ้าพระยา 341, Bangkok",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "th ถนนสมเด็จเจ้าพระยา 341 Bangkok",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "Bangkok - ถนนสมเด็จเจ้าพระยา - 341",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพระยา 341",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพะรยา 341",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "Mary ถนนสมเด็จเจ้าพระยา 341",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนสมเด็จเจ้าพระยา 341 back entrance",
+   "lat": 13.732064333333334,
+   "lng": 100.50338555,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนสมเด็จเจ้าพระยา 341, 10600 Bangkok",
+   "base": 12
+  },
+  {
+   "address": "ถนนมหาไชย 194, 10200 Bangkok",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนมหาไชย 194",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนมหาไชย 194, 10200",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "Bangkok ถนนมหาไชย 194 th",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "th, ถนนมหาไชย 194, Bangkok Bangkok",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "Bangkok 10200 194 ถนนมหาไชย",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนมหาไชย 194",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนมหาไชย 194 back entrance",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนมหาไชย194",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "Mary ถนนมหาไชย 194",
+   "lat": 13.752509949999999,
+   "lng": 100.5044495,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนมหาไชย 194, 10200 Bangkok",
+   "base": 13
+  },
+  {
+   "address": "ถนนนครสวรรค์ 425, Bangkok",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ถนนนครสวรรค์, 425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "th, ถนนนครสวรรค์ 425, Bangkok",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "th, Bangkok, ถนนนครสวรรค์ 425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "Bangkok, 425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ถนนนครรสวรรค์ 425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ถนนนครสวรรค์ 425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ถนนนครสวรรค์425",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ถนนนครสวรรค์ 425 john",
+   "lat": 13.760016380000001,
+   "lng": 100.51227634,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนนครสวรรค์ 425, Bangkok",
+   "base": 14
+  },
+  {
+   "address": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "57 ซอยสะพานเตี้ย",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "ซอยสะพานเตี้ย 57, 10500",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "Bangkok, th, ซอยสะพานเตี้ย 57",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "ซอยสะพานเตี้ย 57, Bangkok, th",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "10500 Bangkok ซอยสะพานเตี้ย",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "ซอยสะาพนเตี้ย 57",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "Deli ซอยสะพานเตี้ย 57",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "ซอยสะพานเตี้ย 57 back entrance",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "ซอยสะพานเตี้ย57",
+   "lat": 13.73206024,
+   "lng": 100.52289546,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสะพานเตี้ย 57, 10500 Bangkok",
+   "base": 15
+  },
+  {
+   "address": "Si Lom 3 16/6, Bangkok",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "16/6 Si Lom 3",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "th Bangkok Si Lom 3 16/6",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "th Si Lom 3 16/6 Bangkok",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "Bangkok - 16/6 - Si Lom 3",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "Mary si lom 3 16/6",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "Si Lom 316/6",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "SI LOM 3 16/6",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "si lom 3 16/6",
+   "lat": 13.725613,
+   "lng": 100.5312772,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Si Lom 3 16/6, Bangkok",
+   "base": 16
+  },
+  {
+   "address": "Samsen Soi 6 3, 10200 Bangkok",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "Samsen Soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "Samsen Soi 6 3, 10200",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "th, Bangkok, Samsen Soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "th, Bangkok, Samsen Soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "10200 Bangkok Samsen Soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "Smasen Soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "samsen soi 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "Samsen Soi 6 3 (green door)",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "SAMSEN SOI 6 3",
+   "lat": 13.7643609,
+   "lng": 100.4999041,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Samsen Soi 6 3, 10200 Bangkok",
+   "base": 17
+  },
+  {
+   "address": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยสุขุมวิท 4, 134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยสุขุมวิท 4 134/1, 10110",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "Bangkok, th, ซอยสุขุมวิท 4 134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "Bangkok, th, ซอยสุขุมวิท 4 134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "134/1 - ซอยสุขุมวิท 4 - 10110",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยสุขุมวิท 4134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยสุขุมวิท 4 134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยสุขุมวิท 4 134/1 (green door)",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยุสขุมวิท 4 134/1",
+   "lat": 13.7350912,
+   "lng": 100.55260345714285,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสุขุมวิท 4 134/1, 10110 Bangkok",
+   "base": 18
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334 10120",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334 th Bangkok",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธวาสราชนครนทร 13 334 Bangkok th",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "10120 ซอยนราธิวาสราชนครินทร์ 13 Bangkok",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนรคินทร์ 13 334",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13334",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยนราธิวาสราชนครินทร์ 13 334 apt 4b",
+   "lat": 13.71758782,
+   "lng": 100.53528756,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยนราธิวาสราชนครินทร์ 13 334, 10120 Bangkok",
+   "base": 19
+  },
+  {
+   "address": "ซอยเจริญนคร 13 24, Bangkok",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจริญนคร 13 24",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "th, Bangkok, ซอยเจริญนคร 13 24",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจริญนคร ซอยเจริญนคร 13 24 bangkok th",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจริญนคร 13 24 Bangkok",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจริญนคร 13 24",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจรินญคร 13 24",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "Deli ซอยเจริญนคร 13 24",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยเจริญนคร 13 24 back entrance",
+   "lat": 13.7220307,
+   "lng": 100.5101066,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยเจริญนคร 13 24, Bangkok",
+   "base": 20
+  },
+  {
+   "address": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยสวนพลู 7, 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยสวนพลู 7 626 10120",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "Bangkok, th, ซอยสวนพลู 7 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "Bangkok th ซอยสวนพล 7 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "10120, 626, ซอยสวนพลู 7, Bangkok",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยสวพนลู 7 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยสวนพลู 7 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "Deli ซอยสวนพลู 7 626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยสวนพลู 7626",
+   "lat": 13.71747994,
+   "lng": 100.53934976000001,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสวนพลู 7 626, 10120 Bangkok",
+   "base": 21
+  },
+  {
+   "address": "ซอยรองเมือง 2 10/9, Bangkok",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "10/9 ซอยรองเมือง 2",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "Bangkok ซอยรองเมือง 2 10/9 th",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "th, Bangkok, ซอยรองเมือง 2 10/9 10/9",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "Bangkok, 10/9, ซอยรองเมือง 2",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "ซอยรองเมือง 2 10/9 apt 4b",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "ซอยรองเมือง 2 10/9",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "ซยอรองเมือง 2 10/9",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "ซอยรองเมือง 210/9",
+   "lat": 13.7450061,
+   "lng": 100.5200063,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยรองเมือง 2 10/9, Bangkok",
+   "base": 22
+  },
+  {
+   "address": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Langsuan Soi 1, 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Langsuan Soi 1 59/4, 10330",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Langsuan Soi 1 59/4 th Bangkok",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "th, langsuan soi 1 1 59/4, bangkok",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Bangkok 10330 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "langsuan soi 1 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Deli langsuan soi 1 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "Lagnsuan Soi 1 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "LANGSUAN SOI 1 59/4",
+   "lat": 13.739189,
+   "lng": 100.5435824,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Langsuan Soi 1 59/4, 10330 Bangkok",
+   "base": 23
+  },
+  {
+   "address": "ซอยวาณิช 2 771, Bangkok",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "771 ซอยวาณิช 2",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "th, ซอยวาณิช 2 771, Bangkok",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "ซอยวาณิช 2 771 bangkok bangkok th",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "771, ซอยวาณิช 2",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "Deli ซอยวาณิช 2 771",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "ซอยวาณิช 2771",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "ซอยวาณิช 2 771 apt 4b",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "ซอยวาณิช 2 771",
+   "lat": 13.7346138,
+   "lng": 100.5126352,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยวาณิช 2 771, Bangkok",
+   "base": 24
+  },
+  {
+   "address": "ซอยสุขสันต์ 142/31, Bangkok",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "142/31 ซอยสุขสันต์",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซอยสุขสันต์ 142/31, Bangkok, th",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "Bangkok th ซอยสขสนต 142/31",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "Bangkok, 142/31",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซอยสุขสันต์ 142/31 (green door)",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซอยสุขสันต์ 142/31",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซอยสุขสันต์142/31",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซยอสุขสันต์ 142/31",
+   "lat": 13.7306877,
+   "lng": 100.5282181,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสุขสันต์ 142/31, Bangkok",
+   "base": 25
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 41 18",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 41 18 10700",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "อรุณอมรินทร์ ซอย จรัญสนิทวงศ์ 41 18 th",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 41 18 th อรุณอมรินทร์",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "18 อรุณอมรินทร์ 10700",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 41 18 (green door)",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "ซอย จรัญสนิทวงศ์ 4118",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "Mary ซอย จรัญสนิทวงศ์ 41 18",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "จรัญสนิทวงศ์ 18",
+   "lat": 13.768967866666666,
+   "lng": 100.4753396888889,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "ซอย จรัญสนิทวงศ์ 41 18, 10700 อรุณอมรินทร์",
+   "base": 26
+  },
+  {
+   "address": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "1 4 Ratchabodit Rd., Phra Nakorn",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Ratchabodit Rd., Phra Nakorn 1 4, 10200",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "th, Bangkok, Ratchabodit Rd., Phra Nakorn 1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Bangkok Ratchabodit Rd., Rd., Phra Nakorn 1 4 th",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Ratchabodit Rd., Phra Nakorn, 10200, 1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Phra Nakorn Ratchabodit Rd.1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "PHRA NAKORN RATCHABODIT RD. 1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Phra Nakorn Rat Rd. 1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "Mary phra nakorn ratchabodit rd. 1 4",
+   "lat": 13.7496791,
+   "lng": 100.4983647,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ratchabodit Rd., Phra Nakorn 1 4, 10200 Bangkok",
+   "base": 27
+  },
+  {
+   "address": "ถนนพระราม 1 939, 10330 Bangkok",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนพระราม 1, 939",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนพระราม 1 939 10330",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "th, ถนนพระราม 1 939, Bangkok",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "th, Bangkok, ถนนพระราม 1 939",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "10330 - Bangkok - ถนนพระราม 1",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "Mary ถนนพระราม 1 939",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนพระราม 1 939 apt 4b",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนพระราม 1939",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนพระราม 1 939",
+   "lat": 13.746746306666667,
+   "lng": 100.53024526666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนพระราม 1 939, 10330 Bangkok",
+   "base": 28
+  },
+  {
+   "address": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "126/1 ถนนทรงเสริม",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงเสริม 126/1, 10100",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงเสริม 126/1, th, Bangkok",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงเสริม 126/1, th, Bangkok",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "Bangkok ถนนทรงเสริม 10100 126/1",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงเสริม126/1",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงสเริม 126/1",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ถนนทรงเสริม 126/1 back entrance",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "Deli ถนนทรงเสริม 126/1",
+   "lat": 13.736721466666665,
+   "lng": 100.50958591666667,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนทรงเสริม 126/1, 10100 Bangkok",
+   "base": 29
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2, 486",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2 486 10120",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "Bangkok, ซอยเจริญราษฎร์ 2 486, th",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "th, th, Bangkok, ซอยเจริญราษฎร์ 2 486",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2 - 486 - 10120",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2486",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอเยจริญราษฎร์ 2 486",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยเจริญราษฎร์ 2 486 apt 4b",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "Deli ซอยเจริญราษฎร์ 2 486",
+   "lat": 13.714130979999998,
+   "lng": 100.51778008,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยเจริญราษฎร์ 2 486, 10120 Bangkok",
+   "base": 30
+  },
+  {
+   "address": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยสารสิน 2, 187/3",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยสารสิน 2 187/3 10330",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยสารสิน 2 187/3, Bangkok, th",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "Bangkok, ซอยสารสิน 2 187/3, th",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "10330 ซอยสารสิน 2 Bangkok",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "Mary ซอยสารสิน 2 187/3",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยาสรสิน 2 187/3",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยสารสิน 2 187/3",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยสารสิน 2 187/3 apt 4b",
+   "lat": 13.735000785714286,
+   "lng": 100.53988005714287,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยสารสิน 2 187/3, 10330 Bangkok",
+   "base": 31
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9, 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9 105 10400",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "Bangkok th ซอยพิบูลวัฒนา 9 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9 105, Bangkok, th",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9, Bangkok, 10400, 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูวลัฒนา 9 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยพิบูลวัฒนา 9105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "Deli ซอยพิบูลวัฒนา 9 105",
+   "lat": 13.783257338461539,
+   "lng": 100.53767686923076,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ซอยพิบูลวัฒนา 9 105, 10400 Bangkok",
+   "base": 32
+  },
+  {
+   "address": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "252 ซอยสมเด็จเจ้าพระยา 5",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "Bangkok th ซอยสมเด็จเจ้าพระยา 5 252",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "Bangkok, th, ซอยสมเด็จเจ้าพระยา 5 252",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "252 ซอยสมเด็จเจ้าพระยา 5",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "ซอยสมเด็จเจ้าพระยา 5 252 (green door)",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "ซอยสมเด็จเจ้าพระยา 5252",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "ซอยสมเด็จเจ้าพระยา 5 252",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "ซอยสเมด็จเจ้าพระยา 5 252",
+   "lat": 13.733843,
+   "lng": 100.500841,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยสมเด็จเจ้าพระยา 5 252, Bangkok",
+   "base": 33
+  },
+  {
+   "address": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ถนนสวนพลู 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ถนนสวนพลู 616;618, 10120",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "Bangkok, th, ถนนสวนพลู 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "Bangkok, th, th, ถนนสวนพล 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "Bangkok, ถนนสวนพลู, 10120, 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ถนนสวนพลู 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ถนนสวนพลู616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ถนนสวนพลู 616;618 (green door)",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "Mary ถนนสวนพลู 616;618",
+   "lat": 13.71764402,
+   "lng": 100.53936175999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนสวนพลู 616;618, 10120 Bangkok",
+   "base": 34
+  },
+  {
+   "address": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยบรมบรรพต 40",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยบรมบรรพต 40 10100",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "Bangkok ซอยบรมบรรพต 40 th",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "Bangkok ซอยบรมบรรพต 40 th",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "40 - 10100 - ซอยบรมบรรพต - Bangkok",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยบรมบรรพต40",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยบรมบรรพต 40",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยรบมบรรพต 40",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "ซอยบรมบรรพต 40 back entrance",
+   "lat": 13.7554692,
+   "lng": 100.5070979,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ซอยบรมบรรพต 40, 10100 Bangkok",
+   "base": 35
+  },
+  {
+   "address": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "1677/8 Charoen Krung 63",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "Charoen Krung 63 1677/8, 10120",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "Bangkok Charoen Krung 63 1677/8 th",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "th Bangkok Bangkok Charoen Krung 63 1677/8",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "10120 Bangkok 1677/8 Charoen Krung 63",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "Chraoen Krung 63 1677/8",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "krung 1677/8",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "Charoen Krung 631677/8",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "Deli charoen krung 63 1677/8",
+   "lat": 13.7141342,
+   "lng": 100.5132286,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Charoen Krung 63 1677/8, 10120 Bangkok",
+   "base": 36
+  },
+  {
+   "address": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหลานหลวง, 273",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหลานหลวง 273 10100",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "th ถนนหลานหลวง 273 Bangkok",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหลานหลวง 273, th, Bangkok",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "273 - 10100 - Bangkok - ถนนหลานหลวง",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหลานหลวง 273 (green door)",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหาลนหลวง 273",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "Mary ถนนหลานหลวง 273",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "ถนนหลานหลวง273",
+   "lat": 13.7566895,
+   "lng": 100.5133054,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "ถนนหลานหลวง 273, 10100 Bangkok",
+   "base": 37
+  },
+  {
+   "address": "สีลม 19 2, 10500 Bangkok",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "2 สีลม 19",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "สีลม 19 2, 10500",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "th สีลม 19 2 Bangkok",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "th สีลม 19 2 Bangkok",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "สีลม 19, 10500, Bangkok, 2",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "สีลม 192",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "Deli สีลม 19 2",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "สีลม 19 2 back entrance",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "สีลม 19 2",
+   "lat": 13.7232384,
+   "lng": 100.52045,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "สีลม 19 2, 10500 Bangkok",
+   "base": 38
+  },
+  {
+   "address": "ถนนมหาราช 70, 10200 Bangkok",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "70 ถนนมหาราช",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "ถนนมหาราช 70, 10200",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "th, Bangkok, ถนนมหาราช 70",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "Bangkok th ถนนมหาราช 70",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "70 Bangkok 10200",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "ถนนมหาราช 70 (green door)",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "Mary ถนนมหาราช 70",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "ถนนมหาราช 70",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  },
+  {
+   "address": "ถนนหมาราช 70",
+   "lat": 13.754858379999998,
+   "lng": 100.48944245999999,
+   "country": "TH",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "ถนนมหาราช 70, 10200 Bangkok",
+   "base": 39
+  }
+ ]
+}

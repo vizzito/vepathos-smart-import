@@ -1,0 +1,1160 @@
+{
+ "source": "planillas reales de reparto (Tandil, 2026-09-15): 2_Recorridos_KIA.xlsx y recorrido_sprinter.xlsx",
+ "note": "Solo la columna de direccion. Filas que eran nombres de personas o notas de cobro se reemplazaron por equivalentes sinteticos con la misma forma. Verdad: calle del indice OSM (street), cruce verificado por nodos a <40 m (intersection) o 'no es una direccion' (none). No hay coordenada de puerta: 'good' significa sobre la calle correcta.",
+ "rows": [
+  {
+   "id": "kia-01",
+   "address": "Bruno ldt",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "solo_nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-02",
+   "address": "Lisandro dlt 1146",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Lisandro de la Torre"
+    ]
+   },
+   "noise_kind": "abreviatura",
+   "country": "AR"
+  },
+  {
+   "id": "kia-03",
+   "address": "LUNGUI 540",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Lunghi"
+    ]
+   },
+   "noise_kind": "typo+3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-04",
+   "address": "De la Canal 264",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "De la Canal"
+    ]
+   },
+   "noise_kind": "3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-05",
+   "address": "lungui y navarro",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Avenida Lunghi",
+     "Julián Navarro"
+    ],
+    "lat": -37.29851,
+    "lng": -59.172789,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "kia-06",
+   "address": "Lungui 2237",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Lunghi"
+    ]
+   },
+   "noise_kind": "typo",
+   "country": "AR"
+  },
+  {
+   "id": "kia-07",
+   "address": "Lungui 2333",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Lunghi"
+    ]
+   },
+   "noise_kind": "typo",
+   "country": "AR"
+  },
+  {
+   "id": "kia-08",
+   "address": "lungui y piscirilli",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Avenida Lunghi",
+     "Piccirilli"
+    ],
+    "lat": -37.299419,
+    "lng": -59.171662,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+typo",
+   "country": "AR"
+  },
+  {
+   "id": "kia-09",
+   "address": "Lungui y dante aligieri",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Avenida Lunghi",
+     "Dante Alighieri"
+    ],
+    "lat": -37.304809,
+    "lng": -59.164723,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "kia-10",
+   "address": "Gonzalo",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "solo_nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-11",
+   "address": "Chaperouge 892",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Carlos de Chapeaurouge"
+    ]
+   },
+   "noise_kind": "typo+nombre_oficial",
+   "country": "AR"
+  },
+  {
+   "id": "kia-12",
+   "address": "alvarado 471",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "General Rudecindo Alvarado"
+    ]
+   },
+   "noise_kind": "apellido+3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-13",
+   "address": "alvarado y santa cruz",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "General Rudecindo Alvarado",
+     "Santa Cruz"
+    ],
+    "lat": -37.304066,
+    "lng": -59.17521,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "kia-14",
+   "address": "Lungui y Alvarado",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Avenida Lunghi",
+     "General Rudecindo Alvarado"
+    ],
+    "lat": -37.300614,
+    "lng": -59.170532,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "kia-15",
+   "address": "Alvarado 1157",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "General Rudecindo Alvarado"
+    ]
+   },
+   "noise_kind": "apellido",
+   "country": "AR"
+  },
+  {
+   "id": "kia-16",
+   "address": "Azucena 116",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Azucena"
+    ]
+   },
+   "noise_kind": "3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-17",
+   "address": "Chubut 2020",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Chubut"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-18",
+   "address": "Azucena 1139",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Azucena"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-19",
+   "address": "Los rosales 2072",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Rosales"
+    ]
+   },
+   "noise_kind": "homonimo_rosales",
+   "country": "AR"
+  },
+  {
+   "id": "kia-20",
+   "address": "Santa cruz 2050",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Santa Cruz"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-21",
+   "address": "Los tulipanes 2283",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Tulipanes"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-22",
+   "address": "La pastora y los jasmines",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "La Pastora",
+     "Los Jazmines"
+    ],
+    "lat": -37.31165,
+    "lng": -59.175466,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+typo",
+   "country": "AR"
+  },
+  {
+   "id": "kia-23",
+   "address": "Paseo de los niños 2060",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Paseo de los Niños"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-24",
+   "address": "Paseo de los niños 2146",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Paseo de los Niños"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-25",
+   "address": "Los pensamientos 2068",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Pensamientos"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-26",
+   "address": "Los pensamientos 1871",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Pensamientos"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-27",
+   "address": "los crisantelmos 2212",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Crisantemos"
+    ]
+   },
+   "noise_kind": "typo",
+   "country": "AR"
+  },
+  {
+   "id": "kia-28",
+   "address": "Los crisantemos 2123",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Crisantemos"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-29",
+   "address": "Los tulipanes 2218",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Tulipanes"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-30",
+   "address": "Los jasmines 2052 martin",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Jazmines"
+    ]
+   },
+   "noise_kind": "typo+nota_final",
+   "country": "AR"
+  },
+  {
+   "id": "kia-31",
+   "address": "Los crisantelmos1904",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Crisantemos"
+    ]
+   },
+   "noise_kind": "typo+pegado",
+   "country": "AR"
+  },
+  {
+   "id": "kia-32",
+   "address": "Los crisantemos 1909",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Los Crisantemos"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-33",
+   "address": "Iraola 1327",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Iraola"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-34",
+   "address": "MISIONES 2123",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Misiones"
+    ]
+   },
+   "noise_kind": "mayusculas",
+   "country": "AR"
+  },
+  {
+   "id": "kia-35",
+   "address": "DE LA CANAL 1129",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "De la Canal"
+    ]
+   },
+   "noise_kind": "mayusculas",
+   "country": "AR"
+  },
+  {
+   "id": "kia-36",
+   "address": "paseo de los niños 2060",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Paseo de los Niños"
+    ]
+   },
+   "noise_kind": "minusculas",
+   "country": "AR"
+  },
+  {
+   "id": "kia-37",
+   "address": "pasaje vela 1860",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Vela"
+    ]
+   },
+   "noise_kind": "tipo_via_extra",
+   "country": "AR"
+  },
+  {
+   "id": "kia-38",
+   "address": "Alvarado 1038",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "General Rudecindo Alvarado"
+    ]
+   },
+   "noise_kind": "apellido",
+   "country": "AR"
+  },
+  {
+   "id": "kia-39",
+   "address": "Formosa 1858",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Formosa"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-40",
+   "address": "Formosa 1872",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Formosa"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "kia-41",
+   "address": "MARGARITA GALFRE 1860",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Margarita Galfre"
+    ]
+   },
+   "noise_kind": "mayusculas",
+   "country": "AR"
+  },
+  {
+   "id": "kia-42",
+   "address": "Flaco corralon",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "solo_nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-43",
+   "address": "Juan pablo dominicano",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "solo_nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-44",
+   "address": "Mariela entre  rios 711",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Entre Ríos"
+    ]
+   },
+   "noise_kind": "nombre_inicial+3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-45",
+   "address": "Ferrari (entre rios y dufau)",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Entre Ríos",
+     "Intendente Dufau"
+    ],
+    "lat": -37.292732,
+    "lng": -59.159107,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-46",
+   "address": "entre rios y dufau (mi sueño)",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Entre Ríos",
+     "Intendente Dufau"
+    ],
+    "lat": -37.292732,
+    "lng": -59.159107,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+nota",
+   "country": "AR"
+  },
+  {
+   "id": "kia-47",
+   "address": "Amer rey y La pamp almacen",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Américo Reynoso",
+     "La Pampa"
+    ],
+    "lat": -37.295485,
+    "lng": -59.157899,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+abreviatura",
+   "country": "AR"
+  },
+  {
+   "id": "kia-48",
+   "address": "Amer rey y La pamp polleria",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Américo Reynoso",
+     "La Pampa"
+    ],
+    "lat": -37.295485,
+    "lng": -59.157899,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+abreviatura",
+   "country": "AR"
+  },
+  {
+   "id": "kia-49",
+   "address": "Dufau 1418",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Intendente Dufau"
+    ]
+   },
+   "noise_kind": "apellido",
+   "country": "AR"
+  },
+  {
+   "id": "kia-50",
+   "address": "vivot 976",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Emilio Vivot"
+    ]
+   },
+   "noise_kind": "apellido+3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-51",
+   "address": "Del Rio y Pujol",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Calle 9 - Del Río",
+     "Pujol"
+    ],
+    "lat": -37.297687,
+    "lng": -59.146968,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "kia-52",
+   "address": "Marzocca y Mosconi",
+   "expect": {
+    "kind": "skip"
+   },
+   "noise_kind": "esquina_dudosa",
+   "country": "AR"
+  },
+  {
+   "id": "kia-53",
+   "address": "Amer reyno y la pampa verdu",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Américo Reynoso",
+     "La Pampa"
+    ],
+    "lat": -37.295485,
+    "lng": -59.157899,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+abreviatura",
+   "country": "AR"
+  },
+  {
+   "id": "kia-54",
+   "address": "Trabajadores Mun 1723",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Trabajadores Municipales"
+    ]
+   },
+   "noise_kind": "truncada",
+   "country": "AR"
+  },
+  {
+   "id": "kia-55",
+   "address": "Suarez Garcia 2049. casa 18",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "José M. Suárez García"
+    ]
+   },
+   "noise_kind": "apellido+nota",
+   "country": "AR"
+  },
+  {
+   "id": "kia-56",
+   "address": "Bautista",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "solo_nombre",
+   "country": "AR"
+  },
+  {
+   "id": "kia-57",
+   "address": "Pasaje 1 914",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Pasaje 1"
+    ]
+   },
+   "noise_kind": "calle_numerada+3dig",
+   "country": "AR"
+  },
+  {
+   "id": "kia-58",
+   "address": "FIGUEROA 2299",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Figueroa"
+    ]
+   },
+   "noise_kind": "mayusculas",
+   "country": "AR"
+  },
+  {
+   "id": "kia-59",
+   "address": "quintana 1050",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Quintana"
+    ]
+   },
+   "noise_kind": "minusculas",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-01",
+   "address": "Alsina y Pelegrini",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Alsina",
+     "Pellegrini"
+    ],
+    "lat": -37.314756,
+    "lng": -59.132713,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+typo",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-02",
+   "address": "Avellaneda 1725",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Avellaneda"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-03",
+   "address": "Punto carne Moreno",
+   "expect": {
+    "kind": "skip"
+   },
+   "noise_kind": "comercio",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-04",
+   "address": "Las heras 1475 (punto c moreno)",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Las Heras"
+    ]
+   },
+   "noise_kind": "nota_final",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-05",
+   "address": "Roca 1160",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Roca"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-06",
+   "address": "san martin 1322",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "San Martín"
+    ]
+   },
+   "noise_kind": "minusculas",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-07",
+   "address": "Garibaldi y Montiel",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Garibaldi",
+     "Montiel"
+    ],
+    "lat": -37.316321,
+    "lng": -59.126087,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-08",
+   "address": "Sarmiento 1382",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Sarmiento"
+    ]
+   },
+   "noise_kind": "homonimo_fragata",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-09",
+   "address": "MAIPU Y MONTIEL",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Maipú",
+     "Montiel"
+    ],
+    "lat": -37.324917,
+    "lng": -59.121001,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+mayusculas",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-10",
+   "address": "Buzon 574",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Buzón"
+    ]
+   },
+   "noise_kind": "3dig",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-11",
+   "address": "Caseros y Venezuela",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Caseros",
+     "Venezuela"
+    ],
+    "lat": -37.320983,
+    "lng": -59.114123,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-12",
+   "address": "San Martin Y Moreno",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "San Martín",
+     "Moreno"
+    ],
+    "lat": -37.320572,
+    "lng": -59.121761,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-13",
+   "address": "Moreno y Montevideo",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Moreno",
+     "Montevideo"
+    ],
+    "lat": -37.31371,
+    "lng": -59.126142,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-14",
+   "address": "Colon y Arana",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Avenida Colón",
+     "Arana"
+    ],
+    "lat": -37.313282,
+    "lng": -59.137011,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-15",
+   "address": "Saavedra y Mitre",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Saavedra",
+     "Mitre"
+    ],
+    "lat": -37.317943,
+    "lng": -59.121851,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-16",
+   "address": "punto carne Falucho",
+   "expect": {
+    "kind": "skip"
+   },
+   "noise_kind": "comercio",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-17",
+   "address": "El brete",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "comercio",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-18",
+   "address": "Bolivar 57",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Avenida Bolívar"
+    ]
+   },
+   "noise_kind": "2dig",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-19",
+   "address": "Frankling 1674",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Franklin"
+    ]
+   },
+   "noise_kind": "typo",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-20",
+   "address": "bon o bon",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "basura",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-21",
+   "address": "Uriburu 1652",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Uriburu"
+    ]
+   },
+   "noise_kind": "limpia",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-22",
+   "address": "Pelegrini 1453",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Pellegrini"
+    ]
+   },
+   "noise_kind": "typo",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-23",
+   "address": "Martin 9 de juio",
+   "expect": {
+    "kind": "skip"
+   },
+   "noise_kind": "basura",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-24",
+   "address": "Montiel y uriburu",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Montiel",
+     "Uriburu"
+    ],
+    "lat": -37.311603,
+    "lng": -59.128884,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-25",
+   "address": "Montiel y 25 de mayo",
+   "expect": {
+    "kind": "intersection",
+    "streets": [
+     "Montiel",
+     "25 de Mayo"
+    ],
+    "lat": -37.326373,
+    "lng": -59.120453,
+    "good_m": 60,
+    "fair_m": 250
+   },
+   "noise_kind": "esquina+calle_fecha",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-26",
+   "address": "MORENO 245",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Moreno"
+    ]
+   },
+   "noise_kind": "3dig",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-27",
+   "address": "ROCA 930",
+   "expect": {
+    "kind": "street",
+    "streets": [
+     "Roca"
+    ]
+   },
+   "noise_kind": "3dig",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-28",
+   "address": "MONTENEGRO",
+   "expect": {
+    "kind": "skip"
+   },
+   "noise_kind": "sin_altura",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-29",
+   "address": "COBRAR ex juli",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "nota",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-30",
+   "address": "Cobrar FERREYRA  plata en el CAJON",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "nota",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-31",
+   "address": "totales bolsas 0",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "pie_de_planilla",
+   "country": "AR"
+  },
+  {
+   "id": "sprinter-32",
+   "address": "kilos cargados",
+   "expect": {
+    "kind": "none"
+   },
+   "noise_kind": "pie_de_planilla",
+   "country": "AR"
+  }
+ ]
+}

@@ -1,0 +1,3708 @@
+{
+ "source": "osm-addr",
+ "country": "MA",
+ "city": "Casablanca",
+ "country_label": "Morocco",
+ "depot": {
+  "lat": 33.5731,
+  "lon": -7.5898,
+  "city": "Casablanca",
+  "country": "Morocco"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 369,
+ "note": "Nodos addr:* del indice n33.70_s33.50_e-7.50_w-7.70-morocco.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Rue El Yarmouke 8, Casablanca",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "8 Rue El Yarmouke",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "Rue El Yarmouke 8, ma, Casablanca",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "Casablanca, ma, Rue El Yarmouke 8",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "Casablanca, Rue El Yarmouke",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "El Yar 8",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "Deli el yarmouke 8",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "El Yarmouke 8 john",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "el yarmouke 8",
+   "lat": 33.58925241428572,
+   "lng": -7.635668042857143,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue El Yarmouke 8, Casablanca",
+   "base": 0
+  },
+  {
+   "address": "Zanqat 77 11, Casablanca",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "11 Zanqat 77",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "Casablanca Zanqat 77 11 ma",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "ma, casablanca, zanqat 77 77 11",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "Casablanca, Zanqat 77, 11",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "Deli zanqat 77 11",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "ZANQAT 77 11",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "zanqat 77 11",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "Zanqat 7711",
+   "lat": 33.5377651,
+   "lng": -7.5871928,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Zanqat 77 11, Casablanca",
+   "base": 1
+  },
+  {
+   "address": "Rue Ibnou Habib 15, Casablanca",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Rue Ibnou Habib, 15",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Casablanca, Rue Ibnou Habib 15, ma",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Casablanca, Rue Ibnou Habib 15, ma",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Casablanca - 15 - Rue Ibnou Habib",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "habib 15",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Mary ibnou habib 15",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Ibnou Habib 15 john",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "IBNOU HABIB 15",
+   "lat": 33.59669426000001,
+   "lng": -7.64404538,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Ibnou Habib 15, Casablanca",
+   "base": 2
+  },
+  {
+   "address": "Rue15 26, Casablanca",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue15, 26",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue15 26 ma Casablanca",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue15 26 Casablanca ma",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "26, Casablanca",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue15 26 apt 4b",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue1526",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "rue15 26",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "RUE15 26",
+   "lat": 33.5405429,
+   "lng": -7.5698859,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue15 26, Casablanca",
+   "base": 3
+  },
+  {
+   "address": "Rue Moulay Bouchaib 3, Casablanca",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Rue Moulay Bouchaib 3",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "ma, Casablanca, Rue Moulay Bouchaib 3",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Casablanca, Rue Moulay Bouchaib 3, ma",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Rue Moulay Bouchaib, 3, Casablanca",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Moulay Bocuhaib 3",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Moulay Bouchaib 3 back entrance",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "moulay bouchaib 3",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "MOULAY BOUCHAIB 3",
+   "lat": 33.582961239999996,
+   "lng": -7.628243960000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Moulay Bouchaib 3, Casablanca",
+   "base": 4
+  },
+  {
+   "address": "Rue EssanoIbar 42, Casablanca",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "Rue EssanoIbar 42",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "Rue EssanoIbar 42, Casablanca, ma",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "Casablanca Rue EssanoIbar 42 ma ma",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "Rue EssanoIbar, Casablanca",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "EsasnoIbar 42",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "ESSANOIBAR 42",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "essanoibar 42",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "EssanoIbar42",
+   "lat": 33.5887973,
+   "lng": -7.6143421,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue EssanoIbar 42, Casablanca",
+   "base": 5
+  },
+  {
+   "address": "Rue Yatrib 10, Casablanca",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Rue Yatrib 10",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "ma, Rue Yatrib 10, Casablanca",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Rue Yatrib 10, ma, Casablanca",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Casablanca Rue Yatrib",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "YATRIB 10",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Yatrib10",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "yatrib 10",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Yatrib 10 john",
+   "lat": 33.58720518,
+   "lng": -7.6179767599999995,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Yatrib 10, Casablanca",
+   "base": 6
+  },
+  {
+   "address": "Rue 242 25, Casablanca",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "Rue 242, 25",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "Casablanca Rue 242 25 ma",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "Rue 242 25, Casablanca, ma",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "25, Casablanca, Rue 242",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "242 25 (green door)",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "24225",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "Deli 242 25",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "242 25",
+   "lat": 33.5425907,
+   "lng": -7.5832104,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 242 25, Casablanca",
+   "base": 7
+  },
+  {
+   "address": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "km 7,3 Route de Rabat",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "Aîn Sebaâ, Route de Rabat km 7,3, ma",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "ma, Route de Rabat km km 7,3, Aîn Sebaâ",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "Route de Rabat km 7,3 Aîn Sebaâ",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "Rute de Rabat km 7,3",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "rabat km 7,3",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "Mary route de rabat km 7,3",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "route de rabat km 7,3",
+   "lat": 33.6050173,
+   "lng": -7.543465473333333,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Route de Rabat km 7,3, Aîn Sebaâ",
+   "base": 8
+  },
+  {
+   "address": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Rue Isli زنقة إيسلي 6",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Rue Isli زنقة إيسلي 6 ma Casablanca",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "ma, Rue Isli زنقة إيسلي 6, Casablanca",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "6, Rue Isli زنقة إيسلي, Casablanca",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Isli زنقة إيسلي 6 (green door)",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Isli زنقة إيسلي6",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Mary isli زنقة إيسلي 6",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "إيسلي 6",
+   "lat": 33.59038236666667,
+   "lng": -7.63645265,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Isli زنقة إيسلي 6, Casablanca",
+   "base": 9
+  },
+  {
+   "address": "Rue 30 22, Casablanca",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "Rue 30 22",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "Casablanca, Rue 30 22, ma",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "rue 30 22, casablanca, ma",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "22, Casablanca, Rue 30",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "30 22",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "Deli 30 22",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "30 22 back entrance",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "3022",
+   "lat": 33.568731,
+   "lng": -7.6049249,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 30 22, Casablanca",
+   "base": 10
+  },
+  {
+   "address": "Rue Faidi Khalifa 20, Casablanca",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "20 Rue Faidi Khalifa",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Rue Faidi Khalifa 20 ma Casablanca",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "ma Rue Faidi Khalifa 20 Casablanca",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Rue Faidi Khalifa, Casablanca, 20",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Faidi Khalifa20",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "FAIDI KHALIFA 20",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Deli faidi khalifa 20",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Faidi Khalifa 20 apt 4b",
+   "lat": 33.5922717,
+   "lng": -7.6058871,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Faidi Khalifa 20, Casablanca",
+   "base": 11
+  },
+  {
+   "address": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Rue Mustapha El Manfalouti, 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Casablanca, ma, Rue Mustapha El Manfalouti 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "ma, Casablanca, Rue Mustapha El Manfalouti 31 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Casablanca, Rue Mustapha El Manfalouti, 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "MUSTAPHA EL MANFALOUTI 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Mustapha El Man 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Mustapha El Manfalouti 31 (green door)",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Mustapha El Manaflouti 31",
+   "lat": 33.58845645555556,
+   "lng": -7.628893377777778,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Mustapha El Manfalouti 31, Casablanca",
+   "base": 12
+  },
+  {
+   "address": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "52 Sidi Abderrahmane شارع سيدي عبد الرحمان",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca, ma",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "sidi abderrahmane شارع سيدي عبد الرحمان 52 casablanca ma",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان Casablanca 52",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Deli sidi abderrahmane شارع سيدي عبد الرحمان 52",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Sidi Abderrahmane شارع سيدي عبد الرحمان 52 back entrance",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Sidi Avderrahmane شارع سيدي عبد الرحمان 52",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Sidi Abderrahmane شارع سيدي عبد الرحمان52",
+   "lat": 33.56626280909091,
+   "lng": -7.650431545454546,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Sidi Abderrahmane شارع سيدي عبد الرحمان 52, Casablanca",
+   "base": 13
+  },
+  {
+   "address": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "45 Rue Mohamed El Qorri",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "Rue Mohamed El Qorri 45, 20100",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "ma Casablanca Rue Mohamed El Qorri 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "Casablanca ma Rue Mohamed El Qorri 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "Casablanca, 20100, 45, Rue Mohamed El Qorri",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "Mohaemd El Qorri 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "MOHAMED EL QORRI 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "qorri 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "mohamed el qorri 45",
+   "lat": 33.5939635,
+   "lng": -7.614938,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Mohamed El Qorri 45, 20100 Casablanca",
+   "base": 14
+  },
+  {
+   "address": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Yacoub El Mansour 104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Yacoub El Mansour 104, Casablanca",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "ma, Yacoub El Mansour 104, Casablanca",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Casablanca ma Yacoub El Mansour 104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "104 Casablanca Boulevard Yacoub El Mansour",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "yacoub el mansour 104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Yacoub El Mansour104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Deli yacoub el mansour 104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Yacoub El Man 104",
+   "lat": 33.5756389,
+   "lng": -7.6415767,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Boulevard Yacoub El Mansour 104, Casablanca",
+   "base": 15
+  },
+  {
+   "address": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "12 Rue Abdelaziz Ben Idriss",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Casablanca, Rue Abdelaziz Ben Idriss 12, ma",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "ma Rue Abdelaziz Ben Idriss 12 Casablanca",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Casablanca - Rue Abdelaziz Ben Idriss",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Abdelaziz Ben Idriss12",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "ABDELAZIZ BEN IDRISS 12",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Deli abdelaziz ben idriss 12",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Abdelaziz Ben Idriss 12 john",
+   "lat": 33.56083506,
+   "lng": -7.63695934,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Abdelaziz Ben Idriss 12, Casablanca",
+   "base": 16
+  },
+  {
+   "address": "Rue 76 21, Casablanca",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "Rue 76, 21",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "Rue 76 21, Casablanca, ma",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "ma, Casablanca, Rue 76 21",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "21, Rue 76, Casablanca",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "7621",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "Deli 76 21",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "76 21 apt 4b",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "76 21",
+   "lat": 33.566966,
+   "lng": -7.590441,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 76 21, Casablanca",
+   "base": 17
+  },
+  {
+   "address": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Rue Al Wouroud زنقة الورود 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Rue Al Wouroud زنقة الورود 129, Casablanca, ma",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "ma Casablanca Rue Al Wouroud زنقة الورود 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Rue Al Wouroud زنقة الورود, 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "al wouroud زنقة الورود 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Al Wuroud زنقة الورود 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "الورود 129",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Al Wouroud زنقة الورود 129 back entrance",
+   "lat": 33.5709166125,
+   "lng": -7.64918475,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Al Wouroud زنقة الورود 129, Casablanca",
+   "base": 18
+  },
+  {
+   "address": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Mohamed Zerktouni شارع محمد الزرقطوني 225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Mohamed Zerktouni شارع محمد الزرقطوني 225, ma, Casablanca",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Casablanca ma Mohamed Zerktouni شارع محمد الزرقطوني 225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "225 - Boulevard Mohamed Zerktouni شارع محمد الزرقطوني",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Mohamed Zerktouni شارع محمد الزرقطوني225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "mohamed zerktouni شارع محمد الزرقطوني 225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "MOHAMED ZERKTOUNI شارع محمد الزرقطوني 225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Mohamed Zerktouni شارع محمد الز 225",
+   "lat": 33.58956428333334,
+   "lng": -7.6349355333333335,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني 225, Casablanca",
+   "base": 19
+  },
+  {
+   "address": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "9 Rue Al Farabi زنقة الفارابي",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Rue Al Farabi زنقة الفارابي 9, 20070",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Rue Al Farabi زنقة الفارابي 9, ma",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Rue Al Farabi زنقة الفارابي 9, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, ma",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "9, 20070, Rue Al Farabi زنقة الفارابي",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Mary al farabi زنقة الفارابي 9",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "AL FARABI زنقة الفارابي 9",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Al Farabi زنقة الف 9",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "al farabi زنقة الفارابي 9",
+   "lat": 33.5922826,
+   "lng": -7.62701505,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Al Farabi زنقة الفارابي 9, 20070 Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+   "base": 20
+  },
+  {
+   "address": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "Rue Ibrahim Ben Adham, 2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "Casablanca, Rue Ibrahim Ben Adham 2, ma",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "ma Casablanca Rue Rue Ibrahim Ben Adham 2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "2 - Rue Ibrahim Ben Adham",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "Ibrahim Ben Adham2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "IBRAHIM BEN ADHAM 2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "adham 2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "ibrahim ben adham 2",
+   "lat": 33.58207608181818,
+   "lng": -7.632689754545454,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Ibrahim Ben Adham 2, Casablanca",
+   "base": 21
+  },
+  {
+   "address": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "101 Ziraoui شارع الزيراوي",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Ziraoui شارع الزيراوي 101, Casablanca",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Casablanca, Ziraoui شارع الزيراوي 101, ma",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Ziraoui شارع الزيراوي 101 ma Casablanca",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Boulevard Ziraoui شارع الزيراوي, 101, Casablanca",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Deli ziraoui شارع الزيراوي 101",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Ziraoui شارع الز 101",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "ZIRAOUI شارع الزيراوي 101",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Ziraoui شارع الزيراوي101",
+   "lat": 33.59642936153846,
+   "lng": -7.631893192307692,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Ziraoui شارع الزيراوي 101, Casablanca",
+   "base": 22
+  },
+  {
+   "address": "Rue 108 48, Casablanca",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "Rue 108, 48",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "Casablanca, Rue 108 48, ma",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "Casablanca, ma, Rue 108 108 48",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "48 - Casablanca - Rue 108",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "Deli 108 48",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "108 48",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "108 48 back entrance",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "10848",
+   "lat": 33.5464212,
+   "lng": -7.565766,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 108 48, Casablanca",
+   "base": 23
+  },
+  {
+   "address": "Rue 22 40, Casablanca",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "Rue 22, 40",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "ma Rue 22 40 Casablanca",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "Rue 22 40 ma Casablanca",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "Casablanca Rue 22",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "2240",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "Deli 22 40",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "22 40 back entrance",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "22 40",
+   "lat": 33.5748733,
+   "lng": -7.5942296,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 22 40, Casablanca",
+   "base": 24
+  },
+  {
+   "address": "Route de La Mecque 34, Casablanca",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "34 Route de La Mecque",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Casablanca, Route de La Mecque 34, ma",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Route de La Mecque 34 Casablanca ma",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Route de La Mecque 34 Casablanca",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Deli route de la mecque 34",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Route de La Mecke 34",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "mecque 34",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Route de La Mecque 34 apt 4b",
+   "lat": 33.54826765714286,
+   "lng": -7.632319757142858,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Route de La Mecque 34, Casablanca",
+   "base": 25
+  },
+  {
+   "address": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "ma, Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102 Casablanca ma",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "102 Casablanca",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "AHMED EL MAJJATI زنقة أحمد المجاطي 102",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Ahmed El Majjati زنقة أحمد المجاطي 102 apt 4b",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Deli ahmed el majjati زنقة أحمد المجاطي 102",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Ahmed El Majjati زنقة أحمد الم 102",
+   "lat": 33.584499925,
+   "lng": -7.6371553125,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Ahmed El Majjati زنقة أحمد المجاطي 102, Casablanca",
+   "base": 26
+  },
+  {
+   "address": "Rue Al Manaziz 5, Casablanca",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Rue Al Manaziz, 5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Rue Al Manaziz 5, ma, Casablanca",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "ma Rue Al Manaziz 5 Casablanca",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Rue Al Manaziz - 5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Al Man 5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Al Manaziz5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Mary al manaziz 5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "AL MANAZIZ 5",
+   "lat": 33.5860048,
+   "lng": -7.6333336,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Al Manaziz 5, Casablanca",
+   "base": 27
+  },
+  {
+   "address": "Boulevard Dammam 3, Casablanca",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Dammam 3",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Dammam 3, Casablanca",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Dammam 3, Casablanca, ma",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "ma, Casablanca, Dammam 3",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "3 Boulevard Dammam Casablanca",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "DAMMAM 3",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Mary dammam 3",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Dammam 3 (green door)",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Dammam3",
+   "lat": 33.549954529999994,
+   "lng": -7.63303326,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Dammam 3, Casablanca",
+   "base": 28
+  },
+  {
+   "address": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "170 Rue Ibnou Mounir زنقة ابن منير",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "ma, Casablanca, Rue Ibnou Mounir زنقة ابن منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "Casablanca ma Rue Ibnou Mounir زنقة ابن منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "Casablanca, Rue Ibnou Mounir زنقة ابن منير",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "Deli ibnou mounir زنقة ابن منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "IBNOU MOUNIR زنقة ابن منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "Ibnou Munir زنقة ابن منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "منير 170",
+   "lat": 33.583541724999996,
+   "lng": -7.6379020875000005,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Ibnou Mounir زنقة ابن منير 170, Casablanca",
+   "base": 29
+  },
+  {
+   "address": "Rue 17 13, Casablanca",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "Rue 17 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "ma, Casablanca, Rue 17 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "casablanca ma rue 17 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "Rue 17 - Casablanca - 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "17 13 (green door)",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "17 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "Mary 17 13",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "1713",
+   "lat": 33.5412371,
+   "lng": -7.5693709,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 17 13, Casablanca",
+   "base": 30
+  },
+  {
+   "address": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Avenue Hassan II شارع الحسن الثاني 60",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Avenue Hassan II شارع الحسن الثاني 60 Casablanca ma",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Casablanca, ma, Avenue Hassan II شارع الحسن الثاني 60",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "60 Casablanca",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Hassan II شارع الحسن الثاني 60 (green door)",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "الثاني 60",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "HASSAN II شارع الحسن الثاني 60",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Mary hassan ii شارع الحسن الثاني 60",
+   "lat": 33.59223180833333,
+   "lng": -7.619373225,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenue Hassan II شارع الحسن الثاني 60, Casablanca",
+   "base": 31
+  },
+  {
+   "address": "Rue 164 11, Casablanca",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Rue 164, 11",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Rue 164 11 ma Casablanca",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Casablanca, Rue 164 11, ma",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Rue 164, 11, Casablanca",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "164 11 john",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "16411",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "164 11",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Deli 164 11",
+   "lat": 33.54228,
+   "lng": -7.5752402,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 164 11, Casablanca",
+   "base": 32
+  },
+  {
+   "address": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "Rue Attabari زنقة الطبري, 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "Rue Attabari زنقة الطبري 166 20370",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "ma, Rue Attabari زنقة الطبري 166, Casablanca",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "Rue Attabari زنقة الطبري 166 Casablanca ma",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "20370 Casablanca 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "Mary attabari زنقة الطبري 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "attabari زنقة الطبري 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "الطبري 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "ATTABARI زنقة الطبري 166",
+   "lat": 33.5773426,
+   "lng": -7.6472543,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Attabari زنقة الطبري 166, 20370 Casablanca",
+   "base": 33
+  },
+  {
+   "address": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "Rue Assanaani زنقة الصنعاني, 7",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "ma, Casablanca, Rue Assanaani زنقة الصنعاني 7",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "Rue Assanaani زنقة الصنعاني 7 ma Casablanca",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "7, Rue Assanaani زنقة الصنعاني, Casablanca",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "ASSANAANI زنقة الصنعاني 7",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "Assanaani زنقة الصنعاني 7 (green door)",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "Mary assanaani زنقة الصنعاني 7",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "assanaani زنقة الصنعاني 7",
+   "lat": 33.59319763333333,
+   "lng": -7.6424241777777775,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Assanaani زنقة الصنعاني 7, Casablanca",
+   "base": 34
+  },
+  {
+   "address": "Rue 136 24, Casablanca",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "Rue 136 24",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "Rue 136 24 ma Casablanca",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "ma Casablanca Rue 136 24",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "Rue 136 24",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "13624",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "136 24 apt 4b",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "136 24",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "Mary 136 24",
+   "lat": 33.5430546,
+   "lng": -7.5706892,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue 136 24, Casablanca",
+   "base": 35
+  },
+  {
+   "address": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Rue Al Houcine Ibn Ali 27",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "ma, Rue Al Houcine Ibn Ali 27, Casablanca",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "casablanca, rue al al houcine ibn ali 27, ma",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Casablanca - 27 - Rue Al Houcine Ibn Ali",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Al Houcnie Ibn Ali 27",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Al Houcine Ibn Ali 27 apt 4b",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Al Houcine Ibn Ali27",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "al houcine ibn ali 27",
+   "lat": 33.59292201666667,
+   "lng": -7.621563383333334,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rue Al Houcine Ibn Ali 27, Casablanca",
+   "base": 36
+  },
+  {
+   "address": "Boulevard Panoramique 300, 20470 Casablanca",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Panoramique 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Panoramique 300 20470",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Casablanca, ma, Panoramique 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "casablanca, ma, panoramique 300 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Boulevard Panoramique - 300 - Casablanca - 20470",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Panoramique300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Mary panoramique 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "panoramique 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Panoramike 300",
+   "lat": 33.5544616,
+   "lng": -7.6008895,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Boulevard Panoramique 300, 20470 Casablanca",
+   "base": 37
+  },
+  {
+   "address": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Rue Ibnou Malik زنقة ابن مالك 14",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Rue Ibnou Malik زنقة ابن مالك 14 ma Casablanca",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Rue Ibnou Malik زنقة ابن مالك 14 ma Casablanca",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Casablanca, 14",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Mary ibnou malik زنقة ابن مالك 14",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Ibnou Malik زنقة ابن مالك 14 (green door)",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "IBNOU MALIK زنقة ابن مالك 14",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "مالك 14",
+   "lat": 33.58949304,
+   "lng": -7.635366240000001,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Rue Ibnou Malik زنقة ابن مالك 14, Casablanca",
+   "base": 38
+  },
+  {
+   "address": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "5 Rue du 6 Octobre زنقة 6 أكتوبر",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "Casablanca, ma, Rue du 6 Octobre زنقة 6 أكتوبر 5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "Casablanca ma Rue du 6 Octobre زنقة 6 اكتوبر 5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "5 - Casablanca",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "Mary du 6 octobre زنقة 6 أكتوبر 5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "DU 6 OCTOBRE زنقة 6 أكتوبر 5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "du 6 Octobre زنقة 6 أكتوبر5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  },
+  {
+   "address": "du 6 Ocotbre زنقة 6 أكتوبر 5",
+   "lat": 33.588220920000005,
+   "lng": -7.64195308,
+   "country": "MA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rue du 6 Octobre زنقة 6 أكتوبر 5, Casablanca",
+   "base": 39
+  }
+ ]
+}

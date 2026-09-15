@@ -1,0 +1,3658 @@
+{
+ "source": "osm-addr",
+ "country": "VN",
+ "city": "Hanoi",
+ "country_label": "Vietnam",
+ "depot": {
+  "lat": 21.0278,
+  "lon": 105.8342,
+  "city": "Hanoi",
+  "country": "Vietnam"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 364,
+ "note": "Nodos addr:* del indice n21.10_s20.90_e105.90_w105.70-vietnam.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "22 Ngõ 1 - Nguyễn Thị Định",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Ngõ 1 - Nguyễn Thị Định 22, vn, Hanoi",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Hanoi, vn, Ngõ 1 - Nguyễn Thị Định 22",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Hanoi, Ngõ 1 - Nguyễn Thị Định",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "định 22",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Deli ngõ 1 - nguyễn thị định 22",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Ngõ 1 - Nguyễn Thị Định 22 john",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "ngõ 1 - nguyễn thị định 22",
+   "lat": 21.0119404,
+   "lng": 105.8032709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 1 - Nguyễn Thị Định 22, Hanoi",
+   "base": 0
+  },
+  {
+   "address": "Nguyễn Thượng Hiền 4, Hanoi",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "4 Nguyễn Thượng Hiền",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "Hanoi Nguyễn Thượng Hiền 4 vn",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "nguyễn thượng hiền 4 vn hanoi",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "Nguyễn Thượng Hiền, Hanoi, 4",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "Deli nguyễn thượng hiền 4",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "NGUYỄN THƯỢNG HIỀN 4",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "Nguyễn Thượng Hiền 4 (green door)",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "Nguiễn Thượng Hiền 4",
+   "lat": 21.0189476,
+   "lng": 105.8437866,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Nguyễn Thượng Hiền 4, Hanoi",
+   "base": 1
+  },
+  {
+   "address": "đường Đại Cồ Việt 87, Hanoi",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "đường Đại Cồ Việt, 87",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "Hanoi đường Đại Cồ Việt 87 vn",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "đường đại đại cồ việt 87, vn, hanoi",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "87 - đường Đại Cồ Việt - Hanoi",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "việt 87",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "Mary đường đại cồ việt 87",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "đường Đại Cồ Việt 87 john",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "ĐƯỜNG ĐẠI CỒ VIỆT 87",
+   "lat": 21.0076788,
+   "lng": 105.8451514,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "đường Đại Cồ Việt 87, Hanoi",
+   "base": 2
+  },
+  {
+   "address": "Phạm Ngũ Lão 33b, Hanoi",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Phạm Ngũ Lão, 33b",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Phạm Ngũ Lão 33b vn Hanoi",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Phạm Ngũ Lão 33b Hanoi vn",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "33b, Hanoi",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "PHẠM NGŨ LÃO 33B",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Phạm Ngũ Lão33b",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "phạm ngũ lão 33b",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Deli phạm ngũ lão 33b",
+   "lat": 21.0200525,
+   "lng": 105.8601709,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phạm Ngũ Lão 33b, Hanoi",
+   "base": 3
+  },
+  {
+   "address": "Phố Miếu Đầm 86, Hanoi",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Phố Miếu Đầm 86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "vn, Hanoi, Phố Miếu Đầm 86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Hanoi, Phố Miếu Đầm 86, vn",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Phố Miếu Đầm, 86, Hanoi",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "PHỐ MIẾU ĐẦM 86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Mary phố miếu đầm 86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Phố Miếu Đầm86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "phố miếu đầm 86",
+   "lat": 21.0054019,
+   "lng": 105.7825988,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Miếu Đầm 86, Hanoi",
+   "base": 4
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm, 17",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Hà Nội vn Ngõ 273 Ngọc Lâm 17",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm 17, Hà Nội, vn",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm Hà Nội",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "ngõ 273 ngọc lâm 17",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm17",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 273 Ngọc Lâm 17 apt 4b",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "NGÕ 273 NGỌC LÂM 17",
+   "lat": 21.047354733333332,
+   "lng": 105.87153191666665,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 273 Ngọc Lâm 17, Hà Nội",
+   "base": 5
+  },
+  {
+   "address": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Ngõ 218 Ngõ Chợ Khâm Thiên 38",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Ngõ 218 Ngõ Chợ Khâm Thiên 38 Hanoi vn",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Hanoi, Ngõ 218 Ngõ Chợ Khâm Thiên 38, vn",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Ngõ 218 Ngõ Chợ Khâm Thiên 38",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "thiên 38",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "NGÕ 218 NGÕ CHỢ KHÂM THIÊN 38",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "ngõ 218 ngõ chợ khâm thiên 38",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Ngõ 218 Ngõ Chợ Khâm Thiên 38 john",
+   "lat": 21.015636399999998,
+   "lng": 105.83672903333334,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 218 Ngõ Chợ Khâm Thiên 38, Hanoi",
+   "base": 6
+  },
+  {
+   "address": "Phố Trung Kính 102, Hanoi",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Phố Trung Kính 102",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Phố Trung Kính 102 vn Hanoi",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "vn Hanoi Pho Trung Kinh 102",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "102 - Phố Trung Kính - Hanoi",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Phố Trung Kính102",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "phố trung kính 102",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Phố Trung Kính 102 apt 4b",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Deli phố trung kính 102",
+   "lat": 21.016622644444443,
+   "lng": 105.7948329,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Trung Kính 102, Hanoi",
+   "base": 7
+  },
+  {
+   "address": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "95B/95 Võ Chí Công",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "Võ Chí Công 95B/95 100000",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "Võ Chí Công 95B/95, vn, Hanoi",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "vn, Võ Chí Chí Công 95B/95, Hanoi",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "Hanoi - Võ Chí Công - 100000 - 95B/95",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "công 95B/95",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "Võ Chí Công95B/95",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "VÕ CHÍ CÔNG 95B/95",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "võ chí công 95b/95",
+   "lat": 21.0686025,
+   "lng": 105.8077767,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Võ Chí Công 95B/95, 100000 Hanoi",
+   "base": 8
+  },
+  {
+   "address": "Phố Lê Hồng Phong 115, Hà Nội",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "Phố Lê Hồng Phong, 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "vn Hà Nội Phố Lê Hồng Phong 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "hà nội, vn, phố lê hồng phong 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "Phố Lê Hồng Phong Hà Nội",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "phong 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "Phố Lê Hồng Phong115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "phố lê hồng phong 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "PHỐ LÊ HỒNG PHONG 115",
+   "lat": 21.03431322,
+   "lng": 105.8317496,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Lê Hồng Phong 115, Hà Nội",
+   "base": 9
+  },
+  {
+   "address": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "18 Ngõ 11 Tô Ngọc Vân",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "vn Ngõ 11 Tô Ngọc Vân 18 Hanoi",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Ngõ 11 11 Tô Ngọc Vân 18 vn Hanoi",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Ngõ 11 Tô Ngọc Vân, 18, Hanoi",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Ngõ 11 Tô Ngọc Vân 18 apt 4b",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Mary ngõ 11 tô ngọc vân 18",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "ngõ 11 tô ngọc vân 18",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Ngõ 11 Tô Ngọc Vân18",
+   "lat": 21.0672778,
+   "lng": 105.824663,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ 11 Tô Ngọc Vân 18, Hanoi",
+   "base": 10
+  },
+  {
+   "address": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "42 Ngõ 643 Phạm Văn Đồng",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "Ngõ 643 Phạm Văn Đồng 42 Hà Nội vn",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "vn Ha Noi Ngo 643 Pham Van Đong 42",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "Ngõ 643 Phạm Văn Đồng 42 Hà Nội",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "đồng 42",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "Deli ngõ 643 phạm văn đồng 42",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "ngõ 643 phạm văn đồng 42",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "NGÕ 643 PHẠM VĂN ĐỒNG 42",
+   "lat": 21.04973884,
+   "lng": 105.78318233999998,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 643 Phạm Văn Đồng 42, Hà Nội",
+   "base": 11
+  },
+  {
+   "address": "Đ. Trung Yên 10A 2, Hanoi",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Đ. Trung Yên 10A 2",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Hanoi, Đ. Trung Yên 10A 2, vn",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "vn, Đ. Trung Trung Yên 10A 2, Hanoi",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Hanoi - Đ. Trung Yên 10A - 2",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Đ. TRUNG YÊN 10A 2",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Deli đ. trung yên 10a 2",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Đ. Trung Yên 10A 2 apt 4b",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Đ. Trunng Yên 10A 2",
+   "lat": 21.0188929,
+   "lng": 105.7999101,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Đ. Trung Yên 10A 2, Hanoi",
+   "base": 12
+  },
+  {
+   "address": "Trần Xuân Soạn 40A, Hanoi",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "Trần Xuân Soạn 40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "vn Hanoi Trần Xuân Soạn 40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "tran xuan soan 40a vn hanoi",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "Trần Xuân Soạn Hanoi 40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "Trần Xuân Soạn 40A apt 4b",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "Trần Xuân Soạn40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "TRẦN XUÂN SOẠN 40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "soạn 40A",
+   "lat": 21.01709,
+   "lng": 105.8543279,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Trần Xuân Soạn 40A, Hanoi",
+   "base": 13
+  },
+  {
+   "address": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "Ngõ 169 Tây Sơn 56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "vn, Ngõ 169 Tây Sơn 56, Hanoi",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "vn Hanoi Ngõ 169 Tây Sơn 56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "56 - Hanoi - Ngõ 169 Tây Sơn",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "NGÕ 169 TÂY SƠN 56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "Mary ngõ 169 tây sơn 56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "Ngõ 169 Tây Sơn56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "ngõ 169 tây sơn 56",
+   "lat": 21.0091721,
+   "lng": 105.825831,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 169 Tây Sơn 56, Hanoi",
+   "base": 14
+  },
+  {
+   "address": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "60 Lô 5 Đền Lừ 2",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "vn, Lô 5 Đền Lừ 2 60, Hanoi",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Lo 5 Đen Lu 2 60 Hanoi vn vn",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Hanoi 60 Lô 5 Đền Lừ 2",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "LÔ 5 ĐỀN LỪ 2 60",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Lô 5 Đền Lừ 2 60 john",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Lô 5 Đền Lừ 260",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Deli lô 5 đền lừ 2 60",
+   "lat": 20.9867788,
+   "lng": 105.8587921,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lô 5 Đền Lừ 2 60, Hanoi",
+   "base": 15
+  },
+  {
+   "address": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Ngõ 12 Phố Đặng Thai Mai, 27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "vn Ngõ 12 Phố Đặng Thai Mai 27 Hanoi",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Hanoi, vn, Ngõ 12 Phố Đặng Thai Mai 27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Hanoi - Ngõ 12 Phố Đặng Thai Mai - 27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Ngõ 12 Phố Đặng Thai Mai27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "ngõ 12 phố đặng thai mai 27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Ngõ 12 Phố Đặng Thai Mai 27 apt 4b",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Deli ngõ 12 phố đặng thai mai 27",
+   "lat": 21.062475,
+   "lng": 105.8233973,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 12 Phố Đặng Thai Mai 27, Hanoi",
+   "base": 16
+  },
+  {
+   "address": "Phố Lương Khánh Thiện 15, Hanoi",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "Phố Lương Khánh Thiện, 15",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "Hanoi, vn, Phố Lương Khánh Thiện 15",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "vn Phố Lương Khánh Thiện Thiện 15 Hanoi",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "15 - Hanoi - Phố Lương Khánh Thiện",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "phố lương khánh thiện 15",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "thiện 15",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "Phố Lương Khánh Thiện 15 (green door)",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "Phố Lương Khánh Thiện15",
+   "lat": 20.986386111111113,
+   "lng": 105.85095591111111,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Lương Khánh Thiện 15, Hanoi",
+   "base": 17
+  },
+  {
+   "address": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Ngách 643/40 Phạm Văn Đồng, 2",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "vn Hà Nội Ngách 643/40 Phạm Văn Đồng 2",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội, vn",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Ngách 643/40 Phạm Văn Đồng, Hà Nội",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Ngách 634/40 Phạm Văn Đồng 2",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Ngách 643/40 Phạm Văn Đồng 2 john",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "đồng 2",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "NGÁCH 643/40 PHẠM VĂN ĐỒNG 2",
+   "lat": 21.0496198875,
+   "lng": 105.783039275,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngách 643/40 Phạm Văn Đồng 2, Hà Nội",
+   "base": 18
+  },
+  {
+   "address": "Phố Trúc Bạch 17, Hà Nội",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "17 Phố Trúc Bạch",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "Hà Nội, Phố Trúc Bạch 17, vn",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "Phố Trúc Bạch 17 Hà Nội vn",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "17 Phố Trúc Bạch Hà Nội",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "bạch 17",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "Deli phố trúc bạch 17",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "PHỐ TRÚC BẠCH 17",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "Phố Trúc Bạch17",
+   "lat": 21.0488745,
+   "lng": 105.8399389,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Trúc Bạch 17, Hà Nội",
+   "base": 19
+  },
+  {
+   "address": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "Ngõ 76 Phố An Dương 2",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "Ngõ 76 Phố An Dương 2, Hanoi, vn",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "vn, Ngõ 76 Phố An Dương 2, Hanoi",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "2 - Ngõ 76 Phố An Dương",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "NGÕ 76 PHỐ AN DƯƠNG 2",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "Ngõ 76 Phố An Dương 2 apt 4b",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "dương 2",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "Ngõ 76 Phố An Dưương 2",
+   "lat": 21.054992116666668,
+   "lng": 105.84025266666667,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ngõ 76 Phố An Dương 2, Hanoi",
+   "base": 20
+  },
+  {
+   "address": "Phố Chùa Quỳnh 92, Hanoi",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "Phố Chùa Quỳnh 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "vn, Hanoi, Phố Chùa Quỳnh 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "vn, Hanoi, Phố Chùa Quỳnh 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "92 - Phố Chùa Quỳnh",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "Phố Chùa Quỳnh 92 john",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "PHỐ CHÙA QUỲNH 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "Mary phố chùa quỳnh 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "phố chùa quỳnh 92",
+   "lat": 20.99949172,
+   "lng": 105.85730524,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Chùa Quỳnh 92, Hanoi",
+   "base": 21
+  },
+  {
+   "address": "Phố Trần Thánh Tông 2, Hà Nội",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Phố Trần Thánh Tông 2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "vn Phố Trần Thánh Tông 2 Hà Nội",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "vn, hà nội, phố trần thánh tông 2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Phố Trần Thánh Tông, 2, Hà Nội",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "tông 2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Phố Trần Thánh Tông2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Mary phố trần thánh tông 2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Phố Trần Tháánh Tông 2",
+   "lat": 21.01596546,
+   "lng": 105.85929684,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Phố Trần Thánh Tông 2, Hà Nội",
+   "base": 22
+  },
+  {
+   "address": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngõ Tân Lạc, Ngách 33",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "vn Ngõ Tân Lạc Ngách 33 Hà nội",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngõ Tân Lạc Ngách 33 Hà nội vn",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngách 33 Hà nội Ngõ Tân Lạc",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngõ Tân LạcNgách 33",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "ngõ tân lạc ngách 33",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Mary ngõ tân lạc Ngách 33",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngõ Tân Lạc Ngách 33 john",
+   "lat": 20.99744242,
+   "lng": 105.84717696,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ Tân Lạc Ngách 33, Hà nội",
+   "base": 23
+  },
+  {
+   "address": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "Ngõ 90 Láng Hạ, 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "vn, Hà Nội, Ngõ 90 Láng Hạ 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "hà nội ngõ 90 láng hạ 17 vn",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "Ngõ 90 Láng Hạ - 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "Mary ngõ 90 láng hạ 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "NGÕ 90 LÁNG HẠ 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "Ngõ 90 Láng Hạ 17 back entrance",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "láng 17",
+   "lat": 21.0119082,
+   "lng": 105.8112697,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 90 Láng Hạ 17, Hà Nội",
+   "base": 24
+  },
+  {
+   "address": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Sô1, Ngõ 250 Đường Kim Giang, 250",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Hà Nội, Sô1, Ngõ 250 Đường Kim Giang 250, vn",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "So1, Ngo 250 Đuong Kim Giang 250 vn Ha Noi",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Sô1, Ngõ 250 Đường Kim Giang 11718 250 Hà Nội",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Ngõ 250 Đường Kim Giang Sô1250",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Ngõ 250 Đưường Kim Giang Sô1 250",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "ngõ 250 đường kim giang sô1 250",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "NGÕ 250 ĐƯỜNG KIM GIANG SÔ1 250",
+   "lat": 20.9790995,
+   "lng": 105.8206071,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Sô1, Ngõ 250 Đường Kim Giang 250, 11718 Hà Nội",
+   "base": 25
+  },
+  {
+   "address": "Phố An Trạch 114, Hanoi",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Phố An Trạch 114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "vn Phố An Trạch 114 Hanoi",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "vn Hanoi Phố An Trạch 114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Phố An Trạch, Hanoi",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Phố An Trạch114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "trạch 114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Phố An Trạạch 114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Mary phố an trạch 114",
+   "lat": 21.0272099,
+   "lng": 105.8282076,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố An Trạch 114, Hanoi",
+   "base": 26
+  },
+  {
+   "address": "Phố Hồng Mai 197, Hanoi",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Phố Hồng Mai, 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "vn Phố Hồng Mai 197 Hanoi",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Hanoi, vn, Pho Hong Mai 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Phố Hồng Mai - 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Mary phố hồng mai 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Phố Hồng Mai 197 john",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "phố hồng mai 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "PHỐ HỒNG MAI 197",
+   "lat": 20.998964,
+   "lng": 105.8560482,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Hồng Mai 197, Hanoi",
+   "base": 27
+  },
+  {
+   "address": "Phố Quỳnh Mai 1, Hanoi",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Phố Quỳnh Mai, 1",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Phố Quỳnh Mai 1 Hanoi vn",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Pho Quynh Mai 1, vn, Hanoi",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Phố Quỳnh Mai 1 Hanoi",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "PHỐ QUỲNH MAI 1",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "phố quỳnh mai 1",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Deli phố quỳnh mai 1",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Phố Quỳỳnh Mai 1",
+   "lat": 21.00086898,
+   "lng": 105.86067401999999,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Phố Quỳnh Mai 1, Hanoi",
+   "base": 28
+  },
+  {
+   "address": "Phố Hoàng Văn Thái 62, Hanoi",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "62 Phố Hoàng Văn Thái",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "vn, Hanoi, Phố Hoàng Văn Thái 62",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Hanoi vn Pho Hoang Van Thai 62",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Hanoi, Phố Hoàng Văn Thái",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Mary phố hoàng văn thái 62",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Phố Hoàng Văn Thái 62 (green door)",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Phố Hoààng Văn Thái 62",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Phố Hoàng Văn Thái62",
+   "lat": 20.9962661,
+   "lng": 105.827239,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Hoàng Văn Thái 62, Hanoi",
+   "base": 29
+  },
+  {
+   "address": "Ngõ Nội Miếu 3, Hà Nội",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "3 Ngõ Nội Miếu",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "vn Hà Nội Ngõ Nội Miếu 3",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "hà nội ngõ nội miếu 3 vn",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "Hà Nội - 3 - Ngõ Nội Miếu",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "Ngõ Nội Miếu3",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "NGÕ NỘI MIẾU 3",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "Ngõ Nội Miếu 3 apt 4b",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "miếu 3",
+   "lat": 21.0346395,
+   "lng": 105.8509525,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ Nội Miếu 3, Hà Nội",
+   "base": 30
+  },
+  {
+   "address": "Phố Lò Sũ 18, Hanoi",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Phố Lò Sũ 18",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Phố Lò Sũ 18 Hanoi vn",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Hanoi, vn, Phố Lò Sũ 18",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "18 Hanoi",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Mary phố lò sũ 18",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Phố Lò Sũ18",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "phố lò sũ 18",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Phố Lò Sũ 18 apt 4b",
+   "lat": 21.031473679999998,
+   "lng": 105.85534156000001,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Phố Lò Sũ 18, Hanoi",
+   "base": 31
+  },
+  {
+   "address": "Tu Hoa 27, Hanoi",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Tu Hoa, 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Hanoi vn Tu Hoa 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "hanoi, tu hoa 27, vn",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Tu Hoa, Hanoi, 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Deli tu hoa 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "TU HOA 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Tu Hoa27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "tu hoa 27",
+   "lat": 21.0602857,
+   "lng": 105.8307796,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tu Hoa 27, Hanoi",
+   "base": 32
+  },
+  {
+   "address": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Ngõ 162 Nguyễn Văn Cừ, 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Ngõ 162 Nguyễn Văn Cừ 21 100000",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Hà Nội, Ngõ 162 Nguyễn Văn Cừ 21, vn",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "vn Ha Noi Ngo 162 Nguyen Van Cu 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "100000 Hà Nội 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "NGÕ 162 NGUYỄN VĂN CỪ 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Ngõ 162 Ngyuễn Văn Cừ 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "ngõ 162 nguyễn văn cừ 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Mary ngõ 162 nguyễn văn cừ 21",
+   "lat": 21.0416208,
+   "lng": 105.8724139,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 162 Nguyễn Văn Cừ 21, 100000 Hà Nội",
+   "base": 33
+  },
+  {
+   "address": "Cầu Giáp Tứ 19, Hanoi",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "Cầu Giáp Tứ 19",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "vn, Hanoi, Cầu Giáp Tứ 19",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "Cầu Giáp Tứ 19 vn Hanoi",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "19, Cầu Giáp Tứ, Hanoi",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "Cầu Giáp Tứ 19 (green door)",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "CẦU GIÁP TỨ 19",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "giáp 19",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "cầu giáp tứ 19",
+   "lat": 20.9767154,
+   "lng": 105.8489009,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Cầu Giáp Tứ 19, Hanoi",
+   "base": 34
+  },
+  {
+   "address": "Ngõ 168 Kim Giang 97, Hanoi",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Ngõ 168 Kim Giang 97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Hanoi vn Ngõ 168 Kim Giang 97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "ngõ 168 kim giang 97 hanoi vn",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Hanoi - Ngõ 168 Kim Giang",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "giang 97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Ngõ 168 Kim Giang97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Deli ngõ 168 kim giang 97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "ngõ 168 kim giang 97",
+   "lat": 20.9791093,
+   "lng": 105.8158356,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ngõ 168 Kim Giang 97, Hanoi",
+   "base": 35
+  },
+  {
+   "address": "Dao Tan 12, 100000 Hà Nội",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "Dao Tan 12",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "Dao Tan 12 100000",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "vn, Dao Tan 12, Hà Nội",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "vn Dao Tan 12 Hà Nội Nội",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "12, Hà Nội, Dao Tan",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "Dao Tan12",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "DAO TAN 12",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "Dao Tan 12 apt 4b",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "dao tan 12",
+   "lat": 21.032618,
+   "lng": 105.8093764,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Dao Tan 12, 100000 Hà Nội",
+   "base": 36
+  },
+  {
+   "address": "Trần Quý Kiên 46, Hà Nội",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Trần Quý Kiên 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Hà Nội, vn, Trần Quý Kiên 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Hà Nội Trần Quý Kiên 46 vn",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Trần Quý Kiên - 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "kiên 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Trần Quý Kiên 46 apt 4b",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "TRẦN QUÝ KIÊN 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Mary trần quý kiên 46",
+   "lat": 21.038469,
+   "lng": 105.7917348,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Trần Quý Kiên 46, Hà Nội",
+   "base": 37
+  },
+  {
+   "address": "Hàng Mắm 9a, Hà Nội",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Hàng Mắm 9a",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Hà Nội, Hàng Mắm 9a, vn",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "vn, Hàng Mắm 9a, Hà Nội",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Hà Nội, Hàng Mắm",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "hàng mắm 9a",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "HÀNG MẮM 9A",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Mary hàng mắm 9a",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Hàng Mắm 9a back entrance",
+   "lat": 21.0337894,
+   "lng": 105.854991,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hàng Mắm 9a, Hà Nội",
+   "base": 38
+  },
+  {
+   "address": "Phõ Láng Hạ 137, Hanoi",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "Phõ Láng Hạ 137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "vn Hanoi Phõ Láng Hạ 137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "Pho Lang Ha 137 vn Hanoi",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "137 Phõ Láng Hạ",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "phõ láng hạ 137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "láng 137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "Phõ Láng Hạ137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  },
+  {
+   "address": "PHÕ LÁNG HẠ 137",
+   "lat": 21.0116317,
+   "lng": 105.8118763,
+   "country": "VN",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Phõ Láng Hạ 137, Hanoi",
+   "base": 39
+  }
+ ]
+}

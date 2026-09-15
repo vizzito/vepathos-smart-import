@@ -1,0 +1,3978 @@
+{
+ "source": "osm-addr",
+ "country": "DO",
+ "city": "Santo Domingo",
+ "country_label": "Dominican Republic",
+ "depot": {
+  "lat": 18.4861,
+  "lon": -69.9312,
+  "city": "Santo Domingo",
+  "country": "Dominican Republic"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 396,
+ "note": "Nodos addr:* del indice n18.60_s18.40_e-69.80_w-70.00-haiti-and-domrep.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "398 27 de Febrero, esq Carmen Mendoza de Cornielle",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "Santo Domingo, do, 27 de Febrero, esq Carmen Mendoza de Cornielle 398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "Santo Domingo, do, 27 de Febrero, esq Carmen Mendoza de Cornielle 398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "Santo Domingo, Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "febrero 398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "Deli esq carmen mendoza de cornielle avenida 27 de febrero 398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "esq Carmen Mendoza de Cornielle Avenida 27 de Febrero398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "esq Carmen Mendoza de Corniele Avenida 27 de Febrero 398",
+   "lat": 18.456902799999998,
+   "lng": -69.94925212857143,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida 27 de Febrero, esq Carmen Mendoza de Cornielle 398, Santo Domingo",
+   "base": 0
+  },
+  {
+   "address": "Calle L 15, Santo Domingo",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "15 L",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "L 15, Santo Domingo",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "Santo Domingo L 15 do",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "do, santo domingo, l l 15",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "Santo Domingo, Calle L, 15",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "L 15 (green door)",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "L 15",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "l 15",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "Deli l 15",
+   "lat": 18.5047208,
+   "lng": -69.9518547,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle L 15, Santo Domingo",
+   "base": 1
+  },
+  {
+   "address": "Calle Los Pinos 1, Santo Domingo",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "1 Los Pinos",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Los Pinos 1, Santo Domingo",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Los Pinos 1 do Santo Domingo",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Los Pinos 1 do Santo Domingo",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "1 - Calle Los Pinos",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "LOS PINOS 1",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Los Pinos1",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Deli los pinos 1",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Los Pinos 1 john",
+   "lat": 18.4963982,
+   "lng": -69.9460947,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Los Pinos 1, Santo Domingo",
+   "base": 2
+  },
+  {
+   "address": "Calle Trinitaria 11, Santo Domingo",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "11 Trinitaria",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Trinitaria 11, Santo Domingo",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Trinitaria 11, Santo Domingo, do",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Trinitaria 11, Santo Domingo, do",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Calle Trinitaria, Santo Domingo",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "TRINITARIA 11",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "trinitaria 11",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Trinitaria 11 (green door)",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "Trinitaria11",
+   "lat": 18.4832201,
+   "lng": -69.9624632,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Trinitaria 11, Santo Domingo",
+   "base": 3
+  },
+  {
+   "address": "San Cristóbal 4, Santo Domingo",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "San Cristóbal 4",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "Santo Domingo San Cristóbal 4 do",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "do, San Cristóbal 4, Santo Domingo",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "4, San Cristóbal",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "SAN CRISTÓBAL 4",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "cristóbal 4",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "San Cristóval 4",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "San Cristóbal4",
+   "lat": 18.4972658,
+   "lng": -69.9616488,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "San Cristóbal 4, Santo Domingo",
+   "base": 4
+  },
+  {
+   "address": "Paseo de la Isabela 30, Santo Domingo",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "30 de la Isabela",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "de la Isabela 30, Santo Domingo",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "de la Isabela 30, do, Santo Domingo",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "do, de la Isabela 30, Santo Domingo",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "Paseo de la Isabela Santo Domingo",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "de la Isabela30",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "de la Isa 30",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "DE LA ISABELA 30",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "de la Isavela 30",
+   "lat": 18.51410432,
+   "lng": -69.93368848,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paseo de la Isabela 30, Santo Domingo",
+   "base": 5
+  },
+  {
+   "address": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51 10510",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Santo Domnigo Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51 do",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Santo Santo Domnigo Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51 do",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 10510 51 Santo Domnigo",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Esq. Calle Bienvenido Garcia Gautier Calle Euclides Morillo 51 back entrance",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "esq. calle bienvenido garcia gautier calle euclides morillo 51",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "ESQ. CALLE BIENVENIDO GARCIA GAUTIER CALLE EUCLIDES MORILLO 51",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Esq. Calle Bievnenido Garcia Gautier Calle Euclides Morillo 51",
+   "lat": 18.48722736,
+   "lng": -69.93791175999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Euclides Morillo, Esq. Calle Bienvenido Garcia Gautier 51, 10510 Santo Domnigo",
+   "base": 6
+  },
+  {
+   "address": "Calle Bohechío 14, Santo Domingo",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Bohechío, 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Bohechío 14, Santo Domingo",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Bohechío 14, do, Santo Domingo",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "do, Santo Domingo, Bohechio Bohechio 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "14 Santo Domingo",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "BOHECHÍO 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "bohechío 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Deli bohechío 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Bhoechío 14",
+   "lat": 18.4607847,
+   "lng": -69.9465624,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Bohechío 14, Santo Domingo",
+   "base": 7
+  },
+  {
+   "address": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Arístides García Mella 32",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Arístides García Mella 32 10114",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Arístides García Mella 32 do Distrito Nacional",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Distrito Nacional, do, Arístides García Mella 32",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "10114, Calle Arístides García Mella, 32, Distrito Nacional",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Arístides García Mella 32 (green door)",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Arístides García Mella32",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Mary arístides garcía mella 32",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "mella 32",
+   "lat": 18.444885183333334,
+   "lng": -69.95586395,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Arístides García Mella 32, 10114 Distrito Nacional",
+   "base": 8
+  },
+  {
+   "address": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Madre Teresa de Calcuta Edificio:2,",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Madre Teresa de Calcuta Edificio:2,, do, Santo Domingo",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "madre teresa de calcuta edificio:2, , santo domingo, do",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Edificio:2,, Santo Domingo, Calle Madre Teresa de Calcuta",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "madre teresa de calcuta edificio:2,",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "MADRE TERESA DE CALCUTA EDIFICIO:2,",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "calcuta Edificio:2,",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Madre Teresa de Cal Edificio:2,",
+   "lat": 18.5167651,
+   "lng": -69.9592794,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Madre Teresa de Calcuta Edificio:2,, Santo Domingo",
+   "base": 9
+  },
+  {
+   "address": "Calle Padre Miguel 29, Santo Domingo",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "29 Padre Miguel",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Padre Miguel 29, Santo Domingo",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Santo Domingo, do, Padre Miguel 29",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Padre Miguel 29, Santo Domingo, do",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Santo Domingo - 29",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "PADRE MIGUEL 29",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Padre Miguel 29 (green door)",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "miguel 29",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "padre miguel 29",
+   "lat": 18.47576592,
+   "lng": -69.89356234,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Padre Miguel 29, Santo Domingo",
+   "base": 10
+  },
+  {
+   "address": "Freddy Prestol Castillo 10, Santo Domingo",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Freddy Prestol Castillo 10",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "do, Freddy Prestol Castillo 10, Santo Domingo",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Freddy Prestol Castillo 10 Santo Domingo do",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "10 Freddy Prestol Castillo Santo Domingo",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Mary freddy prestol castillo 10",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Freddy Prestol Cas 10",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Freddy Prestol Casitllo 10",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "castillo 10",
+   "lat": 18.4715676,
+   "lng": -69.9400396,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Freddy Prestol Castillo 10, Santo Domingo",
+   "base": 11
+  },
+  {
+   "address": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Federico Geraldino, 8",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Federico Geraldino 8, 10149",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Santo Domingo, do, Federico Geraldino 8",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Santo Domingo, Federico Geraldino 8, do",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "8 - 10149 - Calle Federico Geraldino - Santo Domingo",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "geraldino 8",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Federico Geraldnio 8",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Federico Geraldino 8 (green door)",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Federico Ger 8",
+   "lat": 18.466625479999998,
+   "lng": -69.9337241,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Federico Geraldino 8, 10149 Santo Domingo",
+   "base": 12
+  },
+  {
+   "address": "Calle Cordillera Oriental 33, Santo Domingo",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Cordillera Oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Cordillera Oriental 33, Santo Domingo",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Santo Domingo do Cordillera Oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Santo Domingo do Cordillera Oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Santo Domingo Calle Cordillera Oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Mary cordillera oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "oriental 33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Cordillera Oriental 33 apt 4b",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Cordillera Oriental33",
+   "lat": 18.498014114285716,
+   "lng": -69.96795788571428,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Cordillera Oriental 33, Santo Domingo",
+   "base": 13
+  },
+  {
+   "address": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Rafael Augusto Sánchez 102",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Rafael Augusto Sánchez 102, Santo Domingo",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "do, Rafael Augusto Sánchez 102, Santo Domingo",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "do Rafael Augusto Sanchez 102 Santo Domingo",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Santo Domingo, Calle Rafael Augusto Sánchez",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Rafael Augusto Sán 102",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Mary rafael augusto sánchez 102",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "sánchez 102",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Rafael Aguusto Sánchez 102",
+   "lat": 18.4668277,
+   "lng": -69.9434533,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Rafael Augusto Sánchez 102, Santo Domingo",
+   "base": 14
+  },
+  {
+   "address": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Ángel Severo Cabral 3",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Ángel Severo Cabral 3, Santo Domingo",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Ángel Severo Cabral 3, do, Santo Domingo",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Angel Severo Cabral 3, do, Santo Domingo",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Calle Ángel Severo Cabral, 3, Santo Domingo",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Ángel Seevro Cabral 3",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Ángel Severo Cabral 3 back entrance",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "cabral 3",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "ÁNGEL SEVERO CABRAL 3",
+   "lat": 18.4735675,
+   "lng": -69.944023,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Ángel Severo Cabral 3, Santo Domingo",
+   "base": 15
+  },
+  {
+   "address": "Calle F2 8, Santo Domingo",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "F2 8",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "F2 8, Santo Domingo",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "Santo Domingo, F2 8, do",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "do, Santo Domingo, F2 8",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "8, Calle F2",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "Mary f2 8",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "F2 8 john",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "F28",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "f2 8",
+   "lat": 18.46644,
+   "lng": -69.95724,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle F2 8, Santo Domingo",
+   "base": 16
+  },
+  {
+   "address": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "76 César Nicolás Pensón",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "César Nicolás Pensón 76, 10205",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "Santo Domingo do César Nicolás Pensón 76",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "do César Nicolás Pensón 76 Santo Domingo",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "76 - Santo Domingo - 10205",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "pensón 76",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "césar nicolás pensón 76",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "CÉSAR NICOLÁS PENSÓN 76",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "César Nicolás Pensón76",
+   "lat": 18.4701259,
+   "lng": -69.9072674,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida César Nicolás Pensón 76, 10205 Santo Domingo",
+   "base": 17
+  },
+  {
+   "address": "Prolongación 5 43, Santo Domingo",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "43 Prolongación 5",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Santo Domingo do Prolongación 5 43",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Prolongación 5 43, Santo Domingo, do",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "43 Prolongación 5",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Prolongación 543",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "prolongación 5 43",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Prolongacóin 5 43",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Prolongación 5 43 john",
+   "lat": 18.490212,
+   "lng": -69.9423758,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Prolongación 5 43, Santo Domingo",
+   "base": 18
+  },
+  {
+   "address": "Calle Panorama 7a, Santo Domingo",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Panorama 7a",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Panorama 7a, Santo Domingo",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Panorama 7a, Santo Domingo, do",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "panorama 7a, santo domingo, do",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Santo Domingo, 7a",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "panorama 7a",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Panorama7a",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Panorama 7a john",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Mary panorama 7a",
+   "lat": 18.5029544,
+   "lng": -69.9487672,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Panorama 7a, Santo Domingo",
+   "base": 19
+  },
+  {
+   "address": "Avenida Bolivar 407, Santo Domingo",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "407 Bolivar",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Bolivar 407, Santo Domingo",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Bolivar 407, do, Santo Domingo",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Santo Domingo, Bolivar 407, do",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "407 Santo Domingo Avenida Bolivar",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "bolivar 407",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Bolivar407",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "BOLIVAR 407",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Mary bolivar 407",
+   "lat": 18.46872794,
+   "lng": -69.90611612000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Bolivar 407, Santo Domingo",
+   "base": 20
+  },
+  {
+   "address": "Calle Maguaca 29, Santo Domingo",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "29 Maguaca",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Maguaca 29, Santo Domingo",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Maguaca 29, Santo Domingo, do",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "do Maguaca 29 Santo Domingo",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Santo Domingo - Calle Maguaca",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "MAGUACA 29",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Deli maguaca 29",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Magucaa 29",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Maguaca29",
+   "lat": 18.4931417,
+   "lng": -69.9612016,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Maguaca 29, Santo Domingo",
+   "base": 21
+  },
+  {
+   "address": "Calle María Montez 234, 2111 Santo Domingo",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "María Montez, 234",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "María Montez 234, 2111",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "María Montez 234, do, Santo Domingo",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "do Maria Maria Montez 234 Santo Domingo",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "Santo Domingo Calle María Montez 2111",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "montez 234",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "María Montez 234 john",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "María Montez234",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "maría montez 234",
+   "lat": 18.498043,
+   "lng": -69.9093079,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle María Montez 234, 2111 Santo Domingo",
+   "base": 22
+  },
+  {
+   "address": "Pedro Antonio Bobea 7, Santo Domingo",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Pedro Antonio Bobea, 7",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Santo Domingo Pedro Antonio Bobea 7 do",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Pedro Antonio Bobea 7 Santo Domingo Domingo do",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Pedro Antonio Bobea - 7 - Santo Domingo",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Pedro Antonio Bobea 7 back entrance",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "pedro antonio bobea 7",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Deli pedro antonio bobea 7",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "PEDRO ANTONIO BOBEA 7",
+   "lat": 18.4574194,
+   "lng": -69.9374032,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pedro Antonio Bobea 7, Santo Domingo",
+   "base": 23
+  },
+  {
+   "address": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "60 Emile Boyrie De Moya",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "Emile Boyrie De Moya 60 10147",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "do Santo Domingo Emile Boyrie De Moya 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "do Santo Domingo Emile Boyrie De Moya 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "60 Emile Boyrie De Moya Santo Domingo 10147",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "Emile Byorie De Moya 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "emile boyrie de moya 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "Mary emile boyrie de moya 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "EMILE BOYRIE DE MOYA 60",
+   "lat": 18.46413186,
+   "lng": -69.945236,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Emile Boyrie De Moya 60, 10147 Santo Domingo",
+   "base": 24
+  },
+  {
+   "address": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "75 Winston Churchill",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Winston Churchill 75 10148",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Santo Domingo do Winston Churchill 75",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Winston Churchill 75 Santo Domingo do",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "75 Santo Domingo 10148",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Deli winston churchill 75",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Winston Churchil 75",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "WINSTON CHURCHILL 75",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Winston Churchill75",
+   "lat": 18.4713312,
+   "lng": -69.94042522,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Winston Churchill 75, 10148 Santo Domingo",
+   "base": 25
+  },
+  {
+   "address": "Paseo Principal 19, Santo Domingo",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Principal 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Principal 19, Santo Domingo",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Santo Domingo do Principal 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "do, Principal 19, Santo Domingo Domingo",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Santo Domingo - Paseo Principal - 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "principal 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Mary principal 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Principal19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Prinsipal 19",
+   "lat": 18.4934556,
+   "lng": -69.9462349,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paseo Principal 19, Santo Domingo",
+   "base": 26
+  },
+  {
+   "address": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Mendoza 55",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Mendoza 55, 10103",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Santo Domingo, DN Nicolás Ureña de Mendoza 55 do",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Mendoza 55 Santo Domingo, DN do",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "55, Santo Domingo, DN, 10103, Calle Nicolás Ureña de Mendoza",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Men 55",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Mendoza55",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Nicolás Ureña de Mendoza 55 (green door)",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "nicolás ureña de mendoza 55",
+   "lat": 18.4747916,
+   "lng": -69.9537036,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Nicolás Ureña de Mendoza 55, 10103 Santo Domingo, DN",
+   "base": 27
+  },
+  {
+   "address": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Luis C. Del Castillo, 42",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Luis C. Del Castillo 42, Santo Domingo",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Santo Domingo Luis C. Del Castillo 42 do",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Luis C. Del Castillo 42, do, Santo Domingo",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Calle Luis C. Del Castillo - 42 - Santo Domingo",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Luis C. Del Cas 42",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "luis c. del castillo 42",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "LUIS C. DEL CASTILLO 42",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Luis C. Del Castillo 42 john",
+   "lat": 18.48164632,
+   "lng": -69.89888880000001,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Luis C. Del Castillo 42, Santo Domingo",
+   "base": 28
+  },
+  {
+   "address": "Avenida Sarasota 51, Santo Domingo",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Sarasota, 51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Sarasota 51, Santo Domingo",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Santo Domingo, do, Sarasota 51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Sarasota 51 do do Santo Domingo",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Avenida Sarasota - Santo Domingo - 51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Mary sarasota 51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Sarasota51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "SARASOTA 51",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Sarasota 51 (green door)",
+   "lat": 18.4571496,
+   "lng": -69.9363657,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Avenida Sarasota 51, Santo Domingo",
+   "base": 29
+  },
+  {
+   "address": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Miguel Angel Monclus 209",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Miguel Angel Monclus 209, Santo Domingo",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "do, Miguel Angel Monclus 209, Santo Domingo",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Santo Domingo, Miguel Angel Monclus 209, do",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "209, Calle Miguel Angel Monclus",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Miguel Angel Monclus 209 (green door)",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "miguel angel monclus 209",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Miguel Angel Mocnlus 209",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Miguel Angel Mon 209",
+   "lat": 18.45002824,
+   "lng": -69.96247486,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Miguel Angel Monclus 209, Santo Domingo",
+   "base": 30
+  },
+  {
+   "address": "Calle B Grigri 8-a, Santo Domingo",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "8-a B Grigri",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "B Grigri 8-a, Santo Domingo",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "Santo Domingo, do, B Grigri 8-a",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "Santo Domingo, B Grigri 8-a, do",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "8-a, Calle B Grigri",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "B Girgri 8-a",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "Deli b grigri 8-a",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "B GRIGRI 8-A",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "b grigri 8-a",
+   "lat": 18.513361,
+   "lng": -69.9373401,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle B Grigri 8-a, Santo Domingo",
+   "base": 31
+  },
+  {
+   "address": "Calle Int. 2da. 6, Santo Domingo",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "6 Int. 2da.",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Int. 2da. 6, Santo Domingo",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Santo Domingo Int. 2da. 6 do",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Int. 2da. 6, Santo Domingo, do",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Santo Domingo - Calle Int. 2da. - 6",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "2da. 6",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "INT. 2DA. 6",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Int. 2da. 6 (green door)",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Mary int. 2da. 6",
+   "lat": 18.526483988888888,
+   "lng": -69.9028333888889,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Int. 2da. 6, Santo Domingo",
+   "base": 32
+  },
+  {
+   "address": "Calle M 3, Santo Domingo",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "3 M",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "M 3, Santo Domingo",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "do M 3 Santo Domingo",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "m m 3 santo domingo do",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "3, Calle M, Santo Domingo",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "Mary m 3",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "m 3",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "M 3",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "M3",
+   "lat": 18.4985067,
+   "lng": -69.93984909411765,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle M 3, Santo Domingo",
+   "base": 33
+  },
+  {
+   "address": "Calle Las Hortensias #13, Santo Domingo",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Las Hortensias #13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Las Hortensias #13, Santo Domingo",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "do Las Hortensias #13 Santo Domingo",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Santo Domingo Las Hortensias #13 do",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Calle Las Hortensias - #13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Las Hor #13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Mary las hortensias #13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "las hortensias #13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Las Hortensias#13",
+   "lat": 18.5064649,
+   "lng": -69.9555976,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Las Hortensias #13, Santo Domingo",
+   "base": 34
+  },
+  {
+   "address": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "San Juan de la Maguana, 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "San Juan de la Maguana 46, Santo Domingo",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "Santo Domingo, do, San Juan de la Maguana 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "Santo Domingo do San Juan de la Maguana 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "46 - Santo Domingo - Calle San Juan de la Maguana",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "San Juan de la Magunaa 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "san juan de la maguana 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "maguana 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "Deli san juan de la maguana 46",
+   "lat": 18.5018827,
+   "lng": -69.91095643999999,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle San Juan de la Maguana 46, Santo Domingo",
+   "base": 35
+  },
+  {
+   "address": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Camila Henríquez Urena 25",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Camila Henríquez Urena 25 10114",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Camila Henríquez Urena 25, do, Santo Domingo",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "do, camila henriquez urena 25, santo domingo",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "25 Calle Camila Henríquez Urena 10114",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "camila henríquez urena 25",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Camila Henríquez Urena 25 back entrance",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Deli camila henríquez urena 25",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Camila Henríqeuz Urena 25",
+   "lat": 18.4503153,
+   "lng": -69.9577587,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Camila Henríquez Urena 25, 10114 Santo Domingo",
+   "base": 36
+  },
+  {
+   "address": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "6, 5",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "6 5 10902",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "6 5, Santo Domingo Oeste, do",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "Santo Domingo Oeste, do, 6 5",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "Santo Domingo Oeste - 5 - Calle 6 - 10902",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "65",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "6 5 back entrance",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "6 5",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "Deli 6 5",
+   "lat": 18.49067702857143,
+   "lng": -69.98721605714286,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle 6 5, 10902 Santo Domingo Oeste",
+   "base": 37
+  },
+  {
+   "address": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Juan Isidro Ortega, 53",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Juan Isidro Ortega 53, Santo Domingo",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Santo Domingo Juan Isidro Ortega 53 do",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "do, Juan Isidro Ortega 53, Santo Domingo",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Calle Juan Isidro Ortega Santo Domingo",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Juan Isidro Ortega53",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "ortega 53",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Juan Isidro Ortega 53 apt 4b",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "JUAN ISIDRO ORTEGA 53",
+   "lat": 18.4791539,
+   "lng": -69.9591136,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Juan Isidro Ortega 53, Santo Domingo",
+   "base": 38
+  },
+  {
+   "address": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "Altagracia Henriquez, 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "Altagracia Henriquez 31, 11109",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "do, Altagracia Henriquez 31, Santo Domingo",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "do, Santo Domingo, Altagracia Henriquez 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "31 Calle Altagracia Henriquez Santo Domingo",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "altagracia henriquez 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "Deli altagracia henriquez 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "ALTAGRACIA HENRIQUEZ 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  },
+  {
+   "address": "Altagrasia Henriquez 31",
+   "lat": 18.44663194,
+   "lng": -69.96005414,
+   "country": "DO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calle Altagracia Henriquez 31, 11109 Santo Domingo",
+   "base": 39
+  }
+ ]
+}

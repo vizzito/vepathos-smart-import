@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "NO",
+ "city": "Oslo",
+ "country_label": "Norway",
+ "depot": {
+  "lat": 59.9139,
+  "lon": 10.7522,
+  "city": "Oslo",
+  "country": "Norway"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses no/03/statewide, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Ivar Knutsons vei 13, 1161 OSLO",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "13 Ivar Knutsons vei",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "Ivar Knutsons vei 13, 1161",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "OSLO, norway, Ivar Knutsons vei 13",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "OSLO, norway, Ivar Knutsons vei 13",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "1161 - Apt H0302 - 13 - OSLO",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "Ivar Kuntsons vei 13",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "IVAR KNUTSONS VEI 13",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "Ivar Knutsons vei13",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "Ivar Knutsons vei 13 back entrance",
+   "lat": 59.8673724,
+   "lng": 10.7977817,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ivar Knutsons vei 13, 1161 OSLO",
+   "base": 0
+  },
+  {
+   "address": "Toftes gate 25K, 0556 OSLO",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "25K Toftes gate",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "Toftes gate 25K 0556",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "OSLO norway Toftes gate 25K",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "Toftes gate 25K, OSLO, norway",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "0556 OSLO 25K Toftes gate",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "gate 25K",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "TOFTES GATE 25K",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "Deli toftes gate 25K",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "Toftes gate 25K back entrance",
+   "lat": 59.927935,
+   "lng": 10.7598488,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Toftes gate 25K, 0556 OSLO",
+   "base": 1
+  },
+  {
+   "address": "Refstad allé 18, 0586 OSLO",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "Refstad allé 18",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "Refstad allé 18 dto H0302",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "OSLO norway Refstad allé 18",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "norway, Refstad allé 18, OSLO",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "OSLO, 0586, 18, Apt H0302",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "REFSTAD ALLÉ 18",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "Refstad allé 18 (green door)",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "Refsatd allé 18",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "allé 18",
+   "lat": 59.9416969,
+   "lng": 10.8042213,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Refstad allé 18, 0586 OSLO",
+   "base": 2
+  },
+  {
+   "address": "Trudvangveien 5B, 0364 OSLO",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Trudvangveien 5B",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Trudvangveien 5B, 0364",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Trudvangveien 5B, norway, OSLO",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "OSLO, Trudvangveien 5B, norway",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "OSLO - Apt H0501 - 0364 - 5B",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Trudbangveien 5B",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "TRUDVANGVEIEN 5B",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "trudvangveien 5b",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Trudvangveien5B",
+   "lat": 59.9298745,
+   "lng": 10.7193828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trudvangveien 5B, 0364 OSLO",
+   "base": 3
+  },
+  {
+   "address": "Meltzers gate 15B, 0257 OSLO",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "15B Meltzers gate",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "Meltzers gate 15B dto H0401",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "norway Meltzers gate 15B OSLO",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "norway, Meltzers gate gate 15B, OSLO",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "15B - Apt H0401 - Meltzers gate - 0257 - OSLO",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "Meltzers gate15B",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "Mary meltzers gate 15B",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "meltzers gate 15b",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "Meltzers gate 15B back entrance",
+   "lat": 59.9186037,
+   "lng": 10.7182828,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Meltzers gate 15B, 0257 OSLO",
+   "base": 4
+  },
+  {
+   "address": "Christian Krohgs gate 30, 0186 OSLO",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Christian Krohgs gate, 30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Christian Krohgs gate 30 dto H0704",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Christian Krohgs gate 30 OSLO norway",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "oslo, norway, christian krohgs gate 30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Apt H0704 30 Christian Krohgs gate 0186",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "christian krohgs gate 30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Mary christian krohgs gate 30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "gate 30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Christian Krohgs gate30",
+   "lat": 59.9157238,
+   "lng": 10.7595779,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Christian Krohgs gate 30, 0186 OSLO",
+   "base": 5
+  },
+  {
+   "address": "Emil Korsmos vei 2, 0678 OSLO",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "2 Emil Korsmos vei",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Emil Korsmos vei 2 0678",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "OSLO, Emil Korsmos vei 2, norway",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Emil Korsmos vei 2 OSLO norway",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Apt H0301, OSLO, Emil Korsmos vei, 2, 0678",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Emil Korsmos vei2",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "emil korsmos vei 2",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Mary emil korsmos vei 2",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Emil Korsmos vei 2 john",
+   "lat": 59.8986863,
+   "lng": 10.8073404,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Emil Korsmos vei 2, 0678 OSLO",
+   "base": 6
+  },
+  {
+   "address": "Engebråtveien 8C, 0493 OSLO",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Engebråtveien 8C",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Engebråtveien 8C 0493",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "OSLO, norway, Engebråtveien 8C",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "OSLO, Engebråtveien 8C, norway",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "OSLO - 0493 - Engebråtveien",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Engebråtveien 8C apt 4b",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "engebråtveien 8c",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Engebråtbeien 8C",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Engebråtveien8C",
+   "lat": 59.9579338,
+   "lng": 10.7806784,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Engebråtveien 8C, 0493 OSLO",
+   "base": 7
+  },
+  {
+   "address": "Enebakkveien 25A, 0657 OSLO",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "Enebakkveien, 25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "Enebakkveien 25A 0657",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "norway OSLO Enebakkveien 25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "OSLO norway norway Enebakkveien 25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "0657 - OSLO - 25A - Apt H0101",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "Enebakkvveien 25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "ENEBAKKVEIEN 25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "enebakkveien 25a",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "Enebakkveien25A",
+   "lat": 59.9063723,
+   "lng": 10.7824371,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Enebakkveien 25A, 0657 OSLO",
+   "base": 8
+  },
+  {
+   "address": "Anna Sethnes gate 4B, 0474 OSLO",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "4B Anna Sethnes gate",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Anna Sethnes gate 4B dto H0203",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Anna Sethnes gate 4B OSLO norway",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Anna Sethnes gate 4B norway OSLO",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "0474 Anna Sethnes gate 4B Apt H0203",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "ANNA SETHNES GATE 4B",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Mary anna sethnes gate 4B",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "gate 4B",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Anna Sehtnes gate 4B",
+   "lat": 59.9325253,
+   "lng": 10.767179,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Anna Sethnes gate 4B, 0474 OSLO",
+   "base": 9
+  },
+  {
+   "address": "Klinkerveien 17, 0683 OSLO",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "17 Klinkerveien",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Klinkerveien 17 0683",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Klinkerveien 17, OSLO, norway",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Klinkerveien 17 OSLO norway norway",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "OSLO 0683 17",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "KLINKERVEIEN 17",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Deli klinkerveien 17",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Klinkerveien 17 back entrance",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "klinkerveien 17",
+   "lat": 59.901026,
+   "lng": 10.8401154,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Klinkerveien 17, 0683 OSLO",
+   "base": 10
+  },
+  {
+   "address": "Johan Selmers gate 10, 0475 OSLO",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Johan Selmers gate, 10",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Johan Selmers gate 10 0475",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "OSLO Johan Selmers gate 10 norway",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Johan Selmers gate 10, norway, OSLO",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Apt H0101 - Johan Selmers gate - OSLO - 10",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Johan Selmers gate10",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "gate 10",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "JOHAN SELMERS GATE 10",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Johan Selmers gate 10 back entrance",
+   "lat": 59.9339759,
+   "lng": 10.7742001,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Johan Selmers gate 10, 0475 OSLO",
+   "base": 11
+  },
+  {
+   "address": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Wilhelm Færdens vei 15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Wilhelm Færdens vei 15C 0361",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "OSLO norway Wilhelm Færdens vei 15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Wilhelm Færdens vei 15C OSLO norway",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Apt H0101 - OSLO - 0361 - Wilhelm Færdens vei - 15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Mary wilhelm færdens vei 15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "wilhelm færdens vei 15c",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Wilehlm Færdens vei 15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Wilhelm Færdens vei15C",
+   "lat": 59.9344161,
+   "lng": 10.7275123,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Wilhelm Færdens vei 15C, 0361 OSLO",
+   "base": 12
+  },
+  {
+   "address": "Oppsalveien 24B, 0686 OSLO",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "Oppsalveien 24B",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "Oppsalveien 24B, depto H0106",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "OSLO, norway, Oppsalveien 24B",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "norway, norway, OSLO, Oppsalveien 24B",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "0686, 24B, OSLO, Apt H0106",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "Oppsalveien 24B back entrance",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "Oppsalbeien 24B",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "OPPSALVEIEN 24B",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "oppsalveien 24b",
+   "lat": 59.8926395,
+   "lng": 10.8386506,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Oppsalveien 24B, 0686 OSLO",
+   "base": 13
+  },
+  {
+   "address": "Skogbrynet 39D, 0283 OSLO",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "39D Skogbrynet",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrynet 39D 0283",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrynet 39D OSLO norway",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "norway, Skogbrynet Skogbrynet 39D, OSLO",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrynet, Apt H0102, 0283, 39D",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrynet39D",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrinet 39D",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Skogbrynet 39D back entrance",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "SKOGBRYNET 39D",
+   "lat": 59.9183797,
+   "lng": 10.6478814,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Skogbrynet 39D, 0283 OSLO",
+   "base": 14
+  },
+  {
+   "address": "Conradis gate 8A, 0559 OSLO",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "8A Conradis gate",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "Conradis gate 8A 0559",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "norway, OSLO, Conradis gate 8A",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "conradis gate 8a, norway, oslo",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "Conradis gate - OSLO - Apt H0102 - 8A",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "gate 8A",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "Mary conradis gate 8A",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "CONRADIS GATE 8A",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "conradis gate 8a",
+   "lat": 59.9207881,
+   "lng": 10.765052,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Conradis gate 8A, 0559 OSLO",
+   "base": 15
+  },
+  {
+   "address": "Ullevålsalléen 32, 0852 OSLO",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Ullevålsalléen, 32",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Ullevålsalléen 32, 0852",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "OSLO Ullevålsalléen 32 norway",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "norway ullevålsalléen 32 oslo",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Apt H0201 32 Ullevålsalléen 0852",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Mary ullevålsalléen 32",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Ullevålsalléen32",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Ullebålsalléen 32",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Ullevålsalléen 32 (green door)",
+   "lat": 59.9416943,
+   "lng": 10.7356097,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ullevålsalléen 32, 0852 OSLO",
+   "base": 16
+  },
+  {
+   "address": "Kirkegårdsgata 4A, 0558 OSLO",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Kirkegårdsgata, 4A",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Kirkegårdsgata 4A, 0558",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "norway OSLO Kirkegårdsgata 4A",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "OSLO Kirkegårdsgata 4A norway",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Apt H0401 - 0558 - Kirkegårdsgata - OSLO - 4A",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "KIRKEGÅRDSGATA 4A",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "kirkegårdsgata 4a",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Kirkegårdsgata4A",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Kirkegårdsgata 4A john",
+   "lat": 59.9217707,
+   "lng": 10.7634403,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kirkegårdsgata 4A, 0558 OSLO",
+   "base": 17
+  },
+  {
+   "address": "Ullernkammen 17, 0380 OSLO",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen, 17",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen 17, depto H0303",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "norway Ullernkammen 17 OSLO",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen 17, norway, OSLO",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen - 0380 - Apt H0303 - OSLO - 17",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ulernkammen 17",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "ullernkammen 17",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen17",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Ullernkammen 17 john",
+   "lat": 59.9356758,
+   "lng": 10.6537686,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ullernkammen 17, 0380 OSLO",
+   "base": 18
+  },
+  {
+   "address": "Manglerudveien 122, 0678 OSLO",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudveien, 122",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudveien 122 0678",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "OSLO norway Manglerudveien 122",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudveien 122, OSLO, norway norway",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "0678, Manglerudveien, 122, Apt H0202",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudveien 122 (green door)",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudveien122",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "manglerudveien 122",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Manglerudbeien 122",
+   "lat": 59.9028954,
+   "lng": 10.8180293,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Manglerudveien 122, 0678 OSLO",
+   "base": 19
+  },
+  {
+   "address": "Refstad allé 8, 0586 OSLO",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "8 Refstad allé",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "Refstad allé 8, depto H0201",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "Refstad allé 8 OSLO norway",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "oslo norway refstad allé 8",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "OSLO 8 Apt H0201 0586 Refstad allé",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "refstad allé 8",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "Refstad allé 8 back entrance",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "Rfestad allé 8",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "allé 8",
+   "lat": 59.9412862,
+   "lng": 10.8020687,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Refstad allé 8, 0586 OSLO",
+   "base": 20
+  },
+  {
+   "address": "Malerhaugveien 8A, 0661 OSLO",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugveien, 8A",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugveien 8A, 0661",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugveien 8A OSLO norway",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "OSLO norway norway Malerhaugveien 8A",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Apt H0201 8A Malerhaugveien OSLO 0661",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugbeien 8A",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "MALERHAUGVEIEN 8A",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugveien8A",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Malerhaugveien 8A (green door)",
+   "lat": 59.9124701,
+   "lng": 10.7924221,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Malerhaugveien 8A, 0661 OSLO",
+   "base": 21
+  },
+  {
+   "address": "Drammensveien 61B, 0271 OSLO",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Drammensveien 61B",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Drammensveien 61B dto H0102",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "OSLO norway Drammensveien 61B",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "drammensveien 61b, oslo, norway",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "OSLO, 61B, 0271, Drammensveien",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Drammensveien 61B (green door)",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "drammensveien 61b",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Drammensveien61B",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Deli drammensveien 61B",
+   "lat": 59.9131541,
+   "lng": 10.7084502,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Drammensveien 61B, 0271 OSLO",
+   "base": 22
+  },
+  {
+   "address": "Hengsengveien 14A, 0287 OSLO",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengveien, 14A",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengveien 14A 0287",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "OSLO norway Hengsengveien 14A",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengveien 14A, OSLO, OSLO, norway",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "OSLO - Hengsengveien - Apt H0202 - 14A",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengevien 14A",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengveien14A",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Hengsengveien 14A apt 4b",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "hengsengveien 14a",
+   "lat": 59.914339,
+   "lng": 10.6733454,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Hengsengveien 14A, 0287 OSLO",
+   "base": 23
+  },
+  {
+   "address": "Holmenveien 44F, 0376 OSLO",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Holmenveien 44F",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Holmenveien 44F 0376",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "norway OSLO Holmenveien 44F",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Holmenveien 44F, OSLO, norway",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "44F, OSLO, 0376, Holmenveien",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Holemnveien 44F",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Mary holmenveien 44F",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "holmenveien 44f",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Holmenveien44F",
+   "lat": 59.9445773,
+   "lng": 10.6877105,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Holmenveien 44F, 0376 OSLO",
+   "base": 24
+  },
+  {
+   "address": "Heimdalsgata 37, 0578 OSLO",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Heimdalsgata, 37",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Heimdalsgata 37, depto H0502",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "OSLO, norway, Heimdalsgata 37",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "OSLO Heimdalsgata 37 norway",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "OSLO, 37, Heimdalsgata, Apt H0502, 0578",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Mary heimdalsgata 37",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Heimdalsgata37",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Heimdalsgata 37 apt 4b",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Heimdalsagta 37",
+   "lat": 59.9143211,
+   "lng": 10.7670874,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Heimdalsgata 37, 0578 OSLO",
+   "base": 25
+  },
+  {
+   "address": "Camilla Colletts vei 15, 0258 OSLO",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Camilla Colletts vei 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Camilla Colletts vei 15 0258",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "norway OSLO Camilla Colletts vei 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "OSLO, norway, Camilla Colletts vei 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Apt H0507 - 15 - Camilla Colletts vei - 0258 - OSLO",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Camilla Colletts vei 15 (green door)",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "camilla colletts vei 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Deli camilla colletts vei 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "CAMILLA COLLETTS VEI 15",
+   "lat": 59.9209018,
+   "lng": 10.7224982,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Camilla Colletts vei 15, 0258 OSLO",
+   "base": 26
+  },
+  {
+   "address": "Tromsøgata 17, 0565 OSLO",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata, 17",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata 17, 0565",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata 17 norway OSLO",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "OSLO, OSLO, Tromsøgata 17, norway",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata 17 0565 OSLO Apt H0101",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata17",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsøgata 17 (green door)",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Tromsgøata 17",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "TROMSØGATA 17",
+   "lat": 59.9247464,
+   "lng": 10.772598,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Tromsøgata 17, 0565 OSLO",
+   "base": 27
+  },
+  {
+   "address": "Elsters gate 2, 0367 OSLO",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsters gate, 2",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsters gate 2, depto H0204",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsters gate 2 norway OSLO",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsters gate 2, norway, OSLO",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "OSLO, 2, Elsters gate, 0367, Apt H0204",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Mary elsters gate 2",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "gate 2",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsetrs gate 2",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Elsters gate2",
+   "lat": 59.9253371,
+   "lng": 10.7129591,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Elsters gate 2, 0367 OSLO",
+   "base": 28
+  },
+  {
+   "address": "Kingos gate 24, 0457 OSLO",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "24 Kingos gate",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "Kingos gate 24 0457",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "Kingos gate 24 norway OSLO",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "kingos gate 24, oslo, norway",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "24, 0457, Kingos gate, OSLO, Apt H0108",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "Deli kingos gate 24",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "gate 24",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "Kingos gate 24 (green door)",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "kingos gate 24",
+   "lat": 59.9305605,
+   "lng": 10.7497126,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kingos gate 24, 0457 OSLO",
+   "base": 29
+  },
+  {
+   "address": "Smålensgata 8C, 0657 OSLO",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Smålensgata, 8C",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Smålensgata 8C dto H0201",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Smålensgata 8C, OSLO, norway",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "OSLO, Smålensgata 8C, norway",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Apt H0201, Smålensgata, OSLO, 0657",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "SMÅLENSGATA 8C",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "smålensgata 8c",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Smålensgata8C",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Smålensgata 8C back entrance",
+   "lat": 59.9067373,
+   "lng": 10.784674,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Smålensgata 8C, 0657 OSLO",
+   "base": 30
+  },
+  {
+   "address": "Wilhelms gate 10A, 0168 OSLO",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "10A Wilhelms gate",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "Wilhelms gate 10A, 0168",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "OSLO Wilhelms gate 10A norway",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "norway, OSLO, Wilhelms gate 10A",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "Apt H0201 Wilhelms gate 0168 OSLO 10A",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "Mary wilhelms gate 10A",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "Wilhelms gate10A",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "WILHELMS GATE 10A",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "wilhelms gate 10a",
+   "lat": 59.9269382,
+   "lng": 10.7354437,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Wilhelms gate 10A, 0168 OSLO",
+   "base": 31
+  },
+  {
+   "address": "Karl Staaffs vei 55, 0665 OSLO",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Karl Staaffs vei 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Karl Staaffs vei 55 0665",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "norway, OSLO, Karl Staaffs vei 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "norway OSLO Karl Staaffs vei 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Apt H0202 OSLO 0665 55 Karl Staaffs vei",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Deli karl staaffs vei 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Karl Staaffs vei55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Karl Staafffs vei 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "KARL STAAFFS VEI 55",
+   "lat": 59.9197412,
+   "lng": 10.812421,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Karl Staaffs vei 55, 0665 OSLO",
+   "base": 32
+  },
+  {
+   "address": "Fyrstikkbakken 9, 0667 OSLO",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Fyrstikkbakken 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Fyrstikkbakken 9, 0667",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "OSLO norway Fyrstikkbakken 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "OSLO Fyrstikkbakken 9 norway",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Apt H0903 - Fyrstikkbakken - 0667 - OSLO - 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "FYRSTIKKBAKKEN 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Mary fyrstikkbakken 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Fyrstikkbakken 9 apt 4b",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "fyrstikkbakken 9",
+   "lat": 59.9113175,
+   "lng": 10.827307,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Fyrstikkbakken 9, 0667 OSLO",
+   "base": 33
+  },
+  {
+   "address": "Sørkedalsveien 5B, 0369 OSLO",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsveien, 5B",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsveien 5B, depto H0502",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsveien 5B, norway, OSLO",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "norway OSLO Sørkedalsveien 5B 5B",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "5B OSLO 0369 Sørkedalsveien",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsveien 5B back entrance",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsbeien 5B",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Mary sørkedalsveien 5B",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Sørkedalsveien5B",
+   "lat": 59.9306909,
+   "lng": 10.7121974,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Sørkedalsveien 5B, 0369 OSLO",
+   "base": 34
+  },
+  {
+   "address": "Trimveien 6, 0372 OSLO",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "Trimveien 6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "Trimveien 6, depto H0316",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "OSLO, norway, Trimveien 6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "OSLO, norway, Trimveien 6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "0372 OSLO 6 Apt H0316 Trimveien",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "Trimveien6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "TRIMVEIEN 6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "Trimveien 6 apt 4b",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "trimveien 6",
+   "lat": 59.9458183,
+   "lng": 10.7249439,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Trimveien 6, 0372 OSLO",
+   "base": 35
+  },
+  {
+   "address": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kjelsåsvei, 19",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kjelsåsvei 19, 0489",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "OSLO, norway, Gamle Kjelsåsvei 19",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kjelsåsvei 19, OSLO, norway",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "19 0489 OSLO Gamle Kjelsåsvei",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "kjelsåsvei 19",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kjelsåsvei 19 john",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kjelsåsvei19",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Gamle Kje 19",
+   "lat": 59.9555453,
+   "lng": 10.7824988,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Gamle Kjelsåsvei 19, 0489 OSLO",
+   "base": 36
+  },
+  {
+   "address": "Protonveien 20C, 0690 OSLO",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien 20C",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien 20C, 0690",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien 20C OSLO norway",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien 20C, norway, OSLO",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "OSLO, 20C, Protonveien, 0690",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "protonveien 20c",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien 20C apt 4b",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Mary protonveien 20C",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Protonveien20C",
+   "lat": 59.8860581,
+   "lng": 10.8397881,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Protonveien 20C, 0690 OSLO",
+   "base": 37
+  },
+  {
+   "address": "Casparis gate 5, 0174 OSLO",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "5 Casparis gate",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Casparis gate 5 dto H0103",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "OSLO Casparis gate 5 norway",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "OSLO Casparis gate 5 norway",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Casparis gate, 5, Apt H0103, 0174",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Casparis gate 5 apt 4b",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "CASPARIS GATE 5",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Deli casparis gate 5",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Caspairs gate 5",
+   "lat": 59.9258165,
+   "lng": 10.7489653,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Casparis gate 5, 0174 OSLO",
+   "base": 38
+  },
+  {
+   "address": "Stockfleths gate 51A, 0461 OSLO",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "Stockfleths gate 51A",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "Stockfleths gate 51A, depto H0302",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "OSLO, norway, Stockfleths gate 51A",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "OSLO, Stockfleths gate 51A, norway",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "0461 - OSLO - Stockfleths gate - 51A - Apt H0302",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "gate 51A",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "Stocfkleths gate 51A",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "stockfleths gate 51a",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  },
+  {
+   "address": "Stockfleths gate51A",
+   "lat": 59.9362242,
+   "lng": 10.7524845,
+   "country": "NO",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Stockfleths gate 51A, 0461 OSLO",
+   "base": 39
+  }
+ ]
+}

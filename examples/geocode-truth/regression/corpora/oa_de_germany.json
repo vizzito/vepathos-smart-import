@@ -1,0 +1,4018 @@
+{
+ "source": "openaddresses",
+ "country": "DE",
+ "city": "Berlin",
+ "country_label": "Germany",
+ "depot": {
+  "lat": 52.52,
+  "lon": 13.405,
+  "city": "Berlin",
+  "country": "Germany"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "OpenAddresses de/berlin, 40 direcciones a <= 6 km del depot.",
+ "rows": [
+  {
+   "address": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "2 Gutenbergstraße",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Gutenbergstraße 2, 10587",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Charlottenburg, germany, Gutenbergstraße 2",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Charlottenburg, germany, Gutenbergstraße 2",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "2 Gutenbergstraße Charlottenburg",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Gutenbergstraße 2 2 og",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "GUTENBERGSTRASSE 2",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Kiosk gutenbergstraße 2",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "gutenbergstraße 2",
+   "lat": 52.5160567,
+   "lng": 13.3319824,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gutenbergstraße 2, 10587 Charlottenburg",
+   "base": 0
+  },
+  {
+   "address": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Stralsunder Straße, 43",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Stralsunder Straße 43, 13355",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Gesundbrunnen germany Stralsunder Straße 43",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Stralsunder Straße 43, Gesundbrunnen, germany",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "43, 13355, Stralsunder Straße, Gesundbrunnen",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "straße 43",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Stralsunder Straße 43 2 og",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "stralsunder straße 43",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "STRALSUNDER STRASSE 43",
+   "lat": 52.5382056,
+   "lng": 13.3904852,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Stralsunder Straße 43, 13355 Gesundbrunnen",
+   "base": 1
+  },
+  {
+   "address": "Potsdamer Straße 147, 10783 Schöneberg",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "147 Potsdamer Straße",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Potsdamer Straße 147 10783",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "germany Schöneberg Potsdamer Straße 147",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Potsdamer Straße 147, Schöneberg, germany",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Potsdamer Straße 147 Schöneberg",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "POTSDAMER STRASSE 147",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "straße 147",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Potsdamer Straße147",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Anna potsdamer straße 147",
+   "lat": 52.496039,
+   "lng": 13.3616096,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Potsdamer Straße 147, 10783 Schöneberg",
+   "base": 2
+  },
+  {
+   "address": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Paul-Lincke-Ufer, 31",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Paul-Lincke-Ufer 31 10999",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Kreuzberg Paul-Lincke-Ufer 31 germany",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "paul-lincke-ufer 31 kreuzberg germany",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Kreuzberg - 10999 - 31",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "paul-lincke-ufer 31",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Paul-Lincke-Ufer31",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Paul-Linke-Ufer 31",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Paul-Lincke-Ufer 31 hinterhaus",
+   "lat": 52.4951321,
+   "lng": 13.4254366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Paul-Lincke-Ufer 31, 10999 Kreuzberg",
+   "base": 3
+  },
+  {
+   "address": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hausotterstraße, 22 B",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hausotterstraße 22 B 13409",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "germany Hausotterstraße 22 B Reinickendorf",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hausotterstraße 22 B, Reinickendorf, germany",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Reinickendorf - 22 B - Hausotterstraße",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hausotterstraße 22 B (grune tur)",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hasuotterstraße 22 B",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Anna hausotterstraße 22 B",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Hausotterstraße22 B",
+   "lat": 52.5673357,
+   "lng": 13.3691791,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Hausotterstraße 22 B, 13409 Reinickendorf",
+   "base": 4
+  },
+  {
+   "address": "Gotenstraße 61, 10829 Schöneberg",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "61 Gotenstraße",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "Gotenstraße 61, 10829",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "germany Gotenstraße 61 Schöneberg",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "Gotenstraße 61 Schöneberg germany",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "61, Schöneberg, 10829, Gotenstraße",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "gotenstraße 61",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "Gotenstraße 61 hinterhaus",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "GOTENSTRASSE 61",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "Gotenstrßae 61",
+   "lat": 52.480827,
+   "lng": 13.3604565,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gotenstraße 61, 10829 Schöneberg",
+   "base": 5
+  },
+  {
+   "address": "Emser Straße 28, 12051 Neukölln",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Emser Straße 28",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Emser Straße 28 12051",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Emser Straße 28, germany, Neukölln",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "emser straße 28, neukölln, germany",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "12051 - Emser Straße - Neukölln - 28",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Emser Srtaße 28",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "straße 28",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "emser straße 28",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Emser Straße 28 peter",
+   "lat": 52.4689276,
+   "lng": 13.4334456,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Emser Straße 28, 12051 Neukölln",
+   "base": 6
+  },
+  {
+   "address": "Grünberger Straße 55, 10245 Friedrichshain",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße 55",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße 55, 10245",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße 55, Friedrichshain, germany",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße 55 germany germany Friedrichshain",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße, 55, Friedrichshain, 10245",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Anna grünberger straße 55",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße55",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "grünberger straße 55",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Grünberger Straße 55 2 og",
+   "lat": 52.5119505,
+   "lng": 13.4563775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Grünberger Straße 55, 10245 Friedrichshain",
+   "base": 7
+  },
+  {
+   "address": "Esplanade 36, 13187 Pankow",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "36 Esplanade",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Esplanade 36, 13187",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Esplanade 36 Pankow germany",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Pankow, Esplanade 36, germany",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Pankow Esplanade 36 13187",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "esplanade 36",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Esplanade36",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "ESPLANADE 36",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Espalnade 36",
+   "lat": 52.5583432,
+   "lng": 13.4020904,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Esplanade 36, 13187 Pankow",
+   "base": 8
+  },
+  {
+   "address": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Gustav-Adolf-Straße, 165",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Gustav-Adolf-Straße 165 13086",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Weißensee, Gustav-Adolf-Straße 165, germany",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Gustav-Adolf-Straße 165 165 Weißensee germany",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "165 13086 Gustav-Adolf-Straße Weißensee",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "gustav-adolf-straße 165",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Anna gustav-adolf-straße 165",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "GUSTAV-ADOLF-STRASSE 165",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Gustav-Adolf-Straße 165 (grune tur)",
+   "lat": 52.5526404,
+   "lng": 13.4322586,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gustav-Adolf-Straße 165, 13086 Weißensee",
+   "base": 9
+  },
+  {
+   "address": "Almstadtstraße 49, 10119 Mitte",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Almstadtstraße 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Almstadtstraße 49 10119",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Almstadtstraße 49 germany Mitte",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "germany, mitte, almstadtstraße 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "10119, Mitte, 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Kiosk almstadtstraße 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Almsatdtstraße 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Almstadtstraße49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "almstadtstraße 49",
+   "lat": 52.5271164,
+   "lng": 13.4098303,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Almstadtstraße 49, 10119 Mitte",
+   "base": 10
+  },
+  {
+   "address": "Kleineweg 142, 12101 Tempelhof",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "142 Kleineweg",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Kleineweg 142, 12101",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Kleineweg 142, germany, Tempelhof",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Tempelhof Kleineweg 142 germany",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "142, 12101, Tempelhof",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "KLEINEWEG 142",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Kiosk kleineweg 142",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Kleineweg 142 peter",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Kleineweg142",
+   "lat": 52.4742345,
+   "lng": 13.3838172,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kleineweg 142, 12101 Tempelhof",
+   "base": 11
+  },
+  {
+   "address": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Oderberger Straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Oderberger Straße 11 10435",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "germany Prenzlauer Berg Oderberger Straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "prenzlauer berg germany oderberger straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Prenzlauer Berg, 11, Oderberger Straße, 10435",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Oderberger Straße11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Oderverger Straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "oderberger straße 11",
+   "lat": 52.538993,
+   "lng": 13.4091039,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Oderberger Straße 11, 10435 Prenzlauer Berg",
+   "base": 12
+  },
+  {
+   "address": "Bamberger Straße 35, 10779 Schöneberg",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bamberger Straße 35",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bamberger Straße 35, 10779",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "germany Bamberger Straße 35 Schöneberg",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "bamberger straße 35, schöneberg, germany",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bamberger Straße - Schöneberg - 35 - 10779",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bamberger Straße35",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bamberger Straße 35 (grune tur)",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Bmaberger Straße 35",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "BAMBERGER STRASSE 35",
+   "lat": 52.4898138,
+   "lng": 13.3370366,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Bamberger Straße 35, 10779 Schöneberg",
+   "base": 13
+  },
+  {
+   "address": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Josef-Orlopp-Straße, 6",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Josef-Orlopp-Straße 6, 10367",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Lichtenberg germany Josef-Orlopp-Straße 6",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Josef-Orlopp-Straße 6, Lichtenberg, germany",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "6 Lichtenberg Josef-Orlopp-Straße 10367",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Josef-Orlopp-Straße6",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Josef-Orlopp-Straße 6 peter",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "josef-orlopp-straße 6",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Kiosk josef-orlopp-straße 6",
+   "lat": 52.5229017,
+   "lng": 13.4806364,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Josef-Orlopp-Straße 6, 10367 Lichtenberg",
+   "base": 14
+  },
+  {
+   "address": "Fehrbelliner Straße 58, 10119 Mitte",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "58 Fehrbelliner Straße",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Fehrbelliner Straße 58 10119",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Fehrbelliner Straße 58, germany, Mitte",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "germany Fehrbelliner Straße 58 Mitte",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Mitte 58 10119",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Anna fehrbelliner straße 58",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "FEHRBELLINER STRASSE 58",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Fehrbeliner Straße 58",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "straße 58",
+   "lat": 52.5334004,
+   "lng": 13.4031932,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Fehrbelliner Straße 58, 10119 Mitte",
+   "base": 15
+  },
+  {
+   "address": "Mickestraße 17, 13409 Reinickendorf",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mickestraße, 17",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mickestraße 17 13409",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "germany Mickestraße 17 Reinickendorf",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "germany Mickestraße 17 17 Reinickendorf",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mickestraße Reinickendorf 13409",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "mickestraße 17",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mickestraße 17 2 og",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mickestraße17",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Mikestraße 17",
+   "lat": 52.5629406,
+   "lng": 13.3719116,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Mickestraße 17, 13409 Reinickendorf",
+   "base": 16
+  },
+  {
+   "address": "Neue Roßstraße 14, 10179 Mitte",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Neue Roßstraße 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Neue Roßstraße 14, 10179",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Mitte, germany, Neue Roßstraße 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "germany, mitte, mitte, neue roßstraße 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "14 Neue Roßstraße 10179 Mitte",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Neue Roßstrßae 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "neue roßstraße 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "NEUE ROSSSTRASSE 14",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Neue Roßstraße 14 hinterhaus",
+   "lat": 52.511815,
+   "lng": 13.4087332,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Neue Roßstraße 14, 10179 Mitte",
+   "base": 17
+  },
+  {
+   "address": "Neumannstraße 40, 13189 Pankow",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Neumannstraße 40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Neumannstraße 40, 13189",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Pankow germany Neumannstraße 40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "germany, Neumannstraße 40, Pankow",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Neumannstraße, 40, 13189",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Neumannstraße40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Neumanstraße 40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "NEUMANNSTRASSE 40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "neumannstraße 40",
+   "lat": 52.5683452,
+   "lng": 13.4193916,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Neumannstraße 40, 13189 Pankow",
+   "base": 18
+  },
+  {
+   "address": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "Herbert-Baum-Straße 30",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "Herbert-Baum-Straße 30, 13088",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "germany, Herbert-Baum-Straße 30, Weißensee",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "weißensee germany herbert-baum-straße 30",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "13088, Weißensee, 30, Herbert-Baum-Straße",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "Herbert-Baum-Straße 30 hinterhaus",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "Kiosk herbert-baum-straße 30",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "herbert-baum-straße 30",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "HERBERT-BAUM-STRASSE 30",
+   "lat": 52.5468651,
+   "lng": 13.4568071,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Herbert-Baum-Straße 30, 13088 Weißensee",
+   "base": 19
+  },
+  {
+   "address": "Lehderstraße 88, 13086 Weißensee",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Lehderstraße 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Lehderstraße 88, 13086",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "germany Lehderstraße 88 Weißensee",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Weißensee, Lehderstraße 88, germany",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "13086 Weißensee 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "lehderstraße 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Kiosk lehderstraße 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Lehedrstraße 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "LEHDERSTRASSE 88",
+   "lat": 52.5500629,
+   "lng": 13.4386845,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lehderstraße 88, 13086 Weißensee",
+   "base": 20
+  },
+  {
+   "address": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "12 Alice-und-Hella-Hirsch-Ring",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Alice-und-Hella-Hirsch-Ring 12 10317",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Alice-und-Hella-Hirsch-Ring 12, germany, Rummelsburg",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Alice-und-Hella-Hirsch-Ring 12, germany, Rummelsburg",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "12 Rummelsburg 10317 Alice-und-Hella-Hirsch-Ring",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "ALICE-UND-HELLA-HIRSCH-RING 12",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "alice-und-hella-hirsch-ring 12",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Alise-und-Hella-Hirsch-Ring 12",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Alice-und-Hella-Hirsch-Ring12",
+   "lat": 52.4969526,
+   "lng": 13.48223,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Alice-und-Hella-Hirsch-Ring 12, 10317 Rummelsburg",
+   "base": 21
+  },
+  {
+   "address": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Heinrich-Heine-Straße 7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Heinrich-Heine-Straße 7 10179",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "germany Mitte Heinrich-Heine-Straße 7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Mitte Heinrich-Heine-Straße 7 germany",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Mitte Heinrich-Heine-Straße 7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Heinrich-Heine-Straße 7 peter",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Kiosk heinrich-heine-straße 7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Heinrich-Heine-Straße7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Heinirch-Heine-Straße 7",
+   "lat": 52.5094286,
+   "lng": 13.416179,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Heinrich-Heine-Straße 7, 10179 Mitte",
+   "base": 22
+  },
+  {
+   "address": "Obersteiner Weg 28, 13086 Weißensee",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "28 Obersteiner Weg",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Obersteiner Weg 28, 13086",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Weißensee Obersteiner Weg 28 germany",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Obersteiner Weg 28 Weißensee germany",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "13086, Weißensee, 28, Obersteiner Weg",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Oebrsteiner Weg 28",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Kiosk obersteiner weg 28",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "OBERSTEINER WEG 28",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Obersteiner Weg 28 hinterhaus",
+   "lat": 52.5619401,
+   "lng": 13.4488866,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Obersteiner Weg 28, 13086 Weißensee",
+   "base": 23
+  },
+  {
+   "address": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "17 A Schwedenstraße",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Schwedenstraße 17 A 13357",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Gesundbrunnen Schwedenstraße 17 A germany",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Gesundbrunnen Schwedenstraße 17 A germany",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Gesundbrunnen Schwedenstraße 17 A",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "SCHWEDENSTRASSE 17 A",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Kiosk schwedenstraße 17 A",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Schwedenstraße17 A",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Schwdeenstraße 17 A",
+   "lat": 52.5547395,
+   "lng": 13.3756831,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Schwedenstraße 17 A, 13357 Gesundbrunnen",
+   "base": 24
+  },
+  {
+   "address": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "61 Görlitzer Straße",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Görlitzer Straße 61, 10997",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Görlitzer Straße 61, Kreuzberg, germany",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Kreuzberg, germany, Görlitzer Straße 61",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Kreuzberg Görlitzer Straße 10997 61",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Görlitser Straße 61",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Kiosk görlitzer straße 61",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "görlitzer straße 61",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Görlitzer Straße 61 peter",
+   "lat": 52.4979437,
+   "lng": 13.4367124,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Görlitzer Straße 61, 10997 Kreuzberg",
+   "base": 25
+  },
+  {
+   "address": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Frankfurter Allee, 94 A",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Frankfurter Allee 94 A 10247",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Frankfurter Allee 94 A germany Friedrichshain",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "germany, Frankfurter Allee 94 A, Friedrichshain",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "94 A 10247 Frankfurter Allee",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "FRANKFURTER ALLEE 94 A",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "allee 94 A",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Frankfurter Allee 94 A (grune tur)",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Kiosk frankfurter allee 94 A",
+   "lat": 52.5137482,
+   "lng": 13.4720383,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Frankfurter Allee 94 A, 10247 Friedrichshain",
+   "base": 26
+  },
+  {
+   "address": "Clematisweg 3 B, 13089 Heinersdorf",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "3 B Clematisweg",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Clematisweg 3 B, 13089",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "germany Heinersdorf Clematisweg 3 B",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Clematisweg 3 B Heinersdorf germany",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Heinersdorf - 3 B - 13089",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "clematisweg 3 b",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Clematisweg3 B",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Cleamtisweg 3 B",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Clematisweg 3 B hinterhaus",
+   "lat": 52.5661836,
+   "lng": 13.4476329,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Clematisweg 3 B, 13089 Heinersdorf",
+   "base": 27
+  },
+  {
+   "address": "Pücklerstraße 20, 10997 Kreuzberg",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Pücklerstraße, 20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Pücklerstraße 20 10997",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "germany Pücklerstraße 20 Kreuzberg",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "germany, Pücklerstraße 20, Kreuzberg Kreuzberg",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Pücklerstraße, Kreuzberg, 10997, 20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "pücklerstraße 20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Pücklerstraße20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "PÜCKLERSTRASSE 20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Püklerstraße 20",
+   "lat": 52.5023386,
+   "lng": 13.4305186,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pücklerstraße 20, 10997 Kreuzberg",
+   "base": 28
+  },
+  {
+   "address": "Barbarossastraße 29, 10779 Schöneberg",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Barbarossastraße, 29",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Barbarossastraße 29 10779",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "germany, Barbarossastraße 29, Schöneberg",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Barbarossastraße 29, Schöneberg, germany",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "29, Schöneberg, 10779",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Barbarossastraße 29 peter",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "BARBAROSSASTRASSE 29",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Anna barbarossastraße 29",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Barbarossastraße29",
+   "lat": 52.4924472,
+   "lng": 13.3384742,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Barbarossastraße 29, 10779 Schöneberg",
+   "base": 29
+  },
+  {
+   "address": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Gleimstraße 1",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Gleimstraße 1 13355",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Gleimstraße 1 germany Gesundbrunnen",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Gleimstraße 1 germany Gesundbrunnen",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "13355 1 Gesundbrunnen",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "gleimstraße 1",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Kiosk gleimstraße 1",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "GLEIMSTRASSE 1",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Gleimstraße1",
+   "lat": 52.5459488,
+   "lng": 13.3959107,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Gleimstraße 1, 13355 Gesundbrunnen",
+   "base": 30
+  },
+  {
+   "address": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Landsberger Allee 122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Landsberger Allee 122, 10369",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "germany Fennpfuhl Landsberger Allee 122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "germany germany Landsberger Allee 122 Fennpfuhl",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "10369 - Landsberger Allee - 122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "landsberger allee 122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Landsberger Allee 122 hinterhaus",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Landsberger Allee122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Landsverger Allee 122",
+   "lat": 52.5291769,
+   "lng": 13.4608147,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Landsberger Allee 122, 10369 Fennpfuhl",
+   "base": 31
+  },
+  {
+   "address": "Löwestraße 13, 10249 Friedrichshain",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löwestraße, 13",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löwestraße 13, 10249",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löwestraße 13 germany Friedrichshain",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Lowestraße 13 Friedrichshain Friedrichshain germany",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "13 - Friedrichshain - 10249 - Löwestraße",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Anna löwestraße 13",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löewstraße 13",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löwestraße 13 peter",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Löwestraße13",
+   "lat": 52.5193146,
+   "lng": 13.4465282,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Löwestraße 13, 10249 Friedrichshain",
+   "base": 32
+  },
+  {
+   "address": "Calvinstraße 13 A, 10557 Moabit",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße, 13 A",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße 13 A, 10557",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße 13 A, Moabit, germany",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "germany, germany, calvinstraße 13 a, moabit",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße - 10557 - 13 A - Moabit",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calbinstraße 13 A",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "CALVINSTRASSE 13 A",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße 13 A 2 og",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Calvinstraße13 A",
+   "lat": 52.5216908,
+   "lng": 13.3512551,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Calvinstraße 13 A, 10557 Moabit",
+   "base": 33
+  },
+  {
+   "address": "Naunynstraße 66, 10997 Kreuzberg",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "66 Naunynstraße",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Naunynstraße 66 10997",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Kreuzberg, Naunynstraße 66, germany",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Kreuzberg Naunynstraße 66 germany germany",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "66, Kreuzberg, Naunynstraße, 10997",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Naunynstraße 66 2 og",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Anna naunynstraße 66",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Naunynstraße66",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "NAUNYNSTRASSE 66",
+   "lat": 52.5016366,
+   "lng": 13.4217274,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Naunynstraße 66, 10997 Kreuzberg",
+   "base": 34
+  },
+  {
+   "address": "Boddinstraße 23, 12053 Neukölln",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Boddinstraße, 23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Boddinstraße 23 12053",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Neukölln germany Boddinstraße 23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Neukölln germany Boddinstraße Boddinstraße 23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Boddinstraße, 12053, 23, Neukölln",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Kiosk boddinstraße 23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Boddinstraße23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "boddinstraße 23",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Boddinstraße 23 peter",
+   "lat": 52.480141,
+   "lng": 13.4277347,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Boddinstraße 23, 12053 Neukölln",
+   "base": 35
+  },
+  {
+   "address": "Langhansstraße 81, 13086 Weißensee",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "81 Langhansstraße",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Langhansstraße 81, 13086",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Langhansstraße 81 germany Weißensee",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Weißensee Langhansstraße 81 germany",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "81 Langhansstraße Weißensee",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Langhansstraße 81 hinterhaus",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Langhansstraße81",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Langhasnstraße 81",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Kiosk langhansstraße 81",
+   "lat": 52.5544823,
+   "lng": 13.4312775,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Langhansstraße 81, 13086 Weißensee",
+   "base": 36
+  },
+  {
+   "address": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Paulus-Straße, 4",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Paulus-Straße 4 10823",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Paulus-Straße 4 germany Schöneberg",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "germany, Apostel-Paulus-Straße 4, Schöneberg",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Paulus-Straße, Schöneberg, 10823, 4",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Pualus-Straße 4",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Apostel-Paulus-Straße 4 hinterhaus",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "apostel-paulus-straße 4",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "APOSTEL-PAULUS-STRASSE 4",
+   "lat": 52.48845,
+   "lng": 13.3499765,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Apostel-Paulus-Straße 4, 10823 Schöneberg",
+   "base": 37
+  },
+  {
+   "address": "Gürtelstraße 13, 13088 Weißensee",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Gürtelstraße 13",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Gürtelstraße 13, 13088",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Weißensee Gürtelstraße 13 germany",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Gürtelstraße Gürtelstraße 13, germany, Weißensee",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Weißensee, 13088, Gürtelstraße, 13",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Gürtelstraße 13 2 og",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Kiosk gürtelstraße 13",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "gürtelstraße 13",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Gürtelstarße 13",
+   "lat": 52.5449258,
+   "lng": 13.4531978,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Gürtelstraße 13, 13088 Weißensee",
+   "base": 38
+  },
+  {
+   "address": "Oderstraße 15, 10247 Friedrichshain",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "Oderstraße 15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "Oderstraße 15 10247",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "germany, Oderstraße 15, Friedrichshain",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "friedrichshain friedrichshain germany oderstraße 15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "Oderstraße - 15 - Friedrichshain",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "Kiosk oderstraße 15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "ODERSTRASSE 15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "oderstraße 15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  },
+  {
+   "address": "Oderstraße15",
+   "lat": 52.5116434,
+   "lng": 13.4663777,
+   "country": "DE",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Oderstraße 15, 10247 Friedrichshain",
+   "base": 39
+  }
+ ]
+}

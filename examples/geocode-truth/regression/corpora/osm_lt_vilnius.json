@@ -1,0 +1,3758 @@
+{
+ "source": "osm-addr",
+ "country": "LT",
+ "city": "Vilnius",
+ "country_label": "Lithuania",
+ "depot": {
+  "lat": 54.6872,
+  "lon": 25.2797,
+  "city": "Vilnius",
+  "country": "Lithuania"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 374,
+ "note": "Nodos addr:* del indice n54.80_s54.60_e25.40_w25.10-lithuania.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Rinktinės g. 1F, Vilnius",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "1F Rinktinės g.",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Rinktinės g. 1F, lt, Vilnius",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Vilnius, lt, Rinktinės g. 1F",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Vilnius, Rinktinės g.",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Rinktinės g. 1F john",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Rinktiėns g. 1F",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "RINKTINĖS G. 1F",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Rinktinės g.1F",
+   "lat": 54.6920744,
+   "lng": 25.2897848,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Rinktinės g. 1F, Vilnius",
+   "base": 0
+  },
+  {
+   "address": "Amatų g. 5, Vilnius",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Amatų g., 5",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "lt Vilnius Amatų g. 5",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Vilnius Amatų g. 5 lt",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "5 Vilnius Amatų g.",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Amatų g.5",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Amatų g. 5 (green door)",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Deli amatų g. 5",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "AMATŲ G. 5",
+   "lat": 54.6729562,
+   "lng": 25.2679747,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Amatų g. 5, Vilnius",
+   "base": 1
+  },
+  {
+   "address": "Lakūnų g. 51, 09108 Vilnius",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Lakūnų g., 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Lakūnų g. 51 09108",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Vilnius, Lakūnų g. 51, lt",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "lt, Lakūnų g. 51, 51, Vilnius",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Lakūnų g. Vilnius 09108 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Lkaūnų g. 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "Mary lakūnų g. 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "LAKŪNŲ G. 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "lakūnų g. 51",
+   "lat": 54.7144086,
+   "lng": 25.3046662,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Lakūnų g. 51, 09108 Vilnius",
+   "base": 2
+  },
+  {
+   "address": "V. Kudirkos g. 3, Vilnius",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "3 V. Kudirkos g.",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "Vilnius lt V. Kudirkos g. 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "vilnius lt v. kudirkos g. 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "V. Kudirkos g. Vilnius 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "v. kudirkos g. 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "V. Kudikros g. 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "V. Kudirkos g. 3 back entrance",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "V. KUDIRKOS G. 3",
+   "lat": 54.68304163571429,
+   "lng": 25.265331257142858,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "V. Kudirkos g. 3, Vilnius",
+   "base": 3
+  },
+  {
+   "address": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "18 Pragiedrulių Sodų 1-oji g.",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "lt Pragiedrulių Sodų 1-oji g. 18 Vilnius",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "Vilnius Pragiedrulių Sodų 1-oji g. 18 lt",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "Vilnius, 18",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "Pragiedrulių Sodų 1-oji g.18",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "Pragiedrulių Sodų 1-oji g. 18 back entrance",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "PRAGIEDRULIŲ SODŲ 1-OJI G. 18",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "pragiedrulių sodų 1-oji g. 18",
+   "lat": 54.71294082000001,
+   "lng": 25.3351342,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pragiedrulių Sodų 1-oji g. 18, Vilnius",
+   "base": 4
+  },
+  {
+   "address": "Ramybės g. 9, 02103 Vilnius",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "9 Ramybės g.",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "Ramybės g. 9, 02103",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "Vilnius, Ramybės g. 9, lt",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "lt, Ramybės g. 9, Vilnius",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "02103 Ramybės g. 9",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "Rmaybės g. 9",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "RAMYBĖS G. 9",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "ramybės g. 9",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "Ramybės g. 9 back entrance",
+   "lat": 54.6717942,
+   "lng": 25.297675014285716,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ramybės g. 9, 02103 Vilnius",
+   "base": 5
+  },
+  {
+   "address": "Aguonų g. 20, 03212 Vilnius",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Aguonų g. 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Aguonų g. 20 03212",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "lt, Vilnius, Aguonų g. 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Aguonų g. 20 Vilnius lt",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "03212 - Aguonų g. - 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "aguonų g. 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "AGUONŲ G. 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Mary aguonų g. 20",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Aguonų g. 20 john",
+   "lat": 54.6746158,
+   "lng": 25.27779316666667,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Aguonų g. 20, 03212 Vilnius",
+   "base": 6
+  },
+  {
+   "address": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "21 Pavilnio Sodų 16-oji g.",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "lt, Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "Pavilnio Sodų 16-oji g. 21, Vilnius, lt",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "21 Pavilnio Sodų 16-oji g. Vilnius",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "Pavilino Sodų 16-oji g. 21",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "Mary pavilnio sodų 16-oji g. 21",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "Pavilnio Sodų 16-oji g.21",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "16-oji 21",
+   "lat": 54.6632174,
+   "lng": 25.3599039,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pavilnio Sodų 16-oji g. 21, Vilnius",
+   "base": 7
+  },
+  {
+   "address": "Bulgarų g. 4, Vilnius",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Bulgarų g., 4",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Vilnius Bulgarų g. 4 lt",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Bulgarų g. 4, lt, Vilnius",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "4 Vilnius Bulgarų g.",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Bulgraų g. 4",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "bulgarų g. 4",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Deli bulgarų g. 4",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Bulgarų g. 4 (green door)",
+   "lat": 54.65301614545455,
+   "lng": 25.35179189090909,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Bulgarų g. 4, Vilnius",
+   "base": 8
+  },
+  {
+   "address": "Juodupio g. 25, 13282 Vilnius",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Juodupio g., 25",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Juodupio g. 25 13282",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "lt Vilnius Juodupio g. 25",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Vilnius, Juodupio g. 25, lt lt",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "25, 13282, Juodupio g.",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "JUODUPIO G. 25",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Juodupio g. 25 back entrance",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Juodupio g.25",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Juodpuio g. 25",
+   "lat": 54.6547833,
+   "lng": 25.33603596,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Juodupio g. 25, 13282 Vilnius",
+   "base": 9
+  },
+  {
+   "address": "Arklių g. 18E, Vilnius",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Arklių g. 18E",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Vilnius, lt, Arklių g. 18E",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "vilnius, lt, arklių g. 18e",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Arklių g. Vilnius",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "ARKLIŲ G. 18E",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Deli arklių g. 18E",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Arkilų g. 18E",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "arklių g. 18e",
+   "lat": 54.67466413333333,
+   "lng": 25.2865518,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Arklių g. 18E, Vilnius",
+   "base": 10
+  },
+  {
+   "address": "Portugalų g. 20, 13282 Vilnius",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Portugalų g. 20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Portugalų g. 20 13282",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "lt Portugalų g. 20 Vilnius",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "lt, Portugalu g. 20, Vilnius",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Portugalų g. - 13282 - 20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Portugalų g.20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Mary portugalų g. 20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "portugalų g. 20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "PORTUGALŲ G. 20",
+   "lat": 54.65418675714285,
+   "lng": 25.334048385714286,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Portugalų g. 20, 13282 Vilnius",
+   "base": 11
+  },
+  {
+   "address": "Upės g. 9, Vilnius",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Upės g. 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Upės g. 9 lt Vilnius",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "lt, Vilnius, Upės g. 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Upės g., 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Upės g. 9 apt 4b",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "UPĖS G. 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "upės g. 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Mary upės g. 9",
+   "lat": 54.6939897,
+   "lng": 25.2758453,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Upės g. 9, Vilnius",
+   "base": 12
+  },
+  {
+   "address": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Viršupio Sodų 6-oji g., 14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Viršupio Sodų 6-oji g. 14 lt Vilnius",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "vilnius, viršupio sodų 6-oji g. 14, lt",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Vilnius Viršupio Sodų 6-oji g. 14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Viršupio Sodų 6-oji g.14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "6-oji 14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Vrišupio Sodų 6-oji g. 14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Mary viršupio sodų 6-oji g. 14",
+   "lat": 54.7105027,
+   "lng": 25.3584865,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Viršupio Sodų 6-oji g. 14, Vilnius",
+   "base": 13
+  },
+  {
+   "address": "Žaros g. 6A, Vilnius",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Žaros g. 6A",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Vilnius Žaros g. 6A lt",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "lt, Vilnius, Zaros g. 6A",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Vilnius 6A Žaros g.",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Deli žaros g. 6A",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "ŽAROS G. 6A",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Žaros g.6A",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "žaros g. 6a",
+   "lat": 54.66628206,
+   "lng": 25.194155079999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Žaros g. 6A, Vilnius",
+   "base": 14
+  },
+  {
+   "address": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Pavilnio Sodų 3-ioji g., 3",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Vilnius Pavilnio Sodų 3-ioji g. 3 lt",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Pavilnio Sodų Sodų 3-ioji g. 3, Vilnius, lt",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Vilnius, Pavilnio Sodų 3-ioji g.",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "pavilnio sodų 3-ioji g. 3",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "3-ioji 3",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Mary pavilnio sodų 3-ioji g. 3",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "Pabilnio Sodų 3-ioji g. 3",
+   "lat": 54.66451973636363,
+   "lng": 25.347933763636362,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Pavilnio Sodų 3-ioji g. 3, Vilnius",
+   "base": 15
+  },
+  {
+   "address": "F. Vaitkaus g. 1, Vilnius",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "F. Vaitkaus g. 1",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "lt F. Vaitkaus g. 1 Vilnius",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "lt Vilnius F. Vaitkaus g. 1",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "1 - F. Vaitkaus g. - Vilnius",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "Mary f. vaitkaus g. 1",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "F. Vaiktaus g. 1",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "F. Vaitkaus g.1",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "F. Vaitkaus g. 1 back entrance",
+   "lat": 54.6426841,
+   "lng": 25.2757082,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "F. Vaitkaus g. 1, Vilnius",
+   "base": 16
+  },
+  {
+   "address": "Eglių g. 35, Vilnius",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Eglių g. 35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "lt, Eglių g. 35, Vilnius",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Vilnius lt Eglių g. 35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "35 - Eglių g.",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Eglių g.35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Deli eglių g. 35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Egllių g. 35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "eglių g. 35",
+   "lat": 54.66981893846154,
+   "lng": 25.248343323076924,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Eglių g. 35, Vilnius",
+   "base": 17
+  },
+  {
+   "address": "Mortos g. 14, 03219 Vilnius",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "14 Mortos g.",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Mortos g. 14, 03219",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Vilnius, lt, Mortos g. 14",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "lt, Mortos g. 14, Vilnius",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Mortos g. - Vilnius - 14",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Mortos g. 14 john",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "MORTOS G. 14",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Mary mortos g. 14",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "mortos g. 14",
+   "lat": 54.67628440769231,
+   "lng": 25.26973423076923,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Mortos g. 14, 03219 Vilnius",
+   "base": 18
+  },
+  {
+   "address": "Kareivių g. 11A, Vilnius",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "Kareivių g. 11A",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "lt Kareivių g. 11A Vilnius",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "lt, vilnius, kareivių g. 11a",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "Kareivių g., 11A, Vilnius",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "kareivių g. 11a",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "Kareviių g. 11A",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "KAREIVIŲ G. 11A",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "Kareivių g. 11A back entrance",
+   "lat": 54.7178356,
+   "lng": 25.2999528,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kareivių g. 11A, Vilnius",
+   "base": 19
+  },
+  {
+   "address": "Rožių al. 2, 03106 Vilnius",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "2 Rožių al.",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Rožių al. 2 03106",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "lt Rožių al. 2 Vilnius",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Rožių al. 2 lt Vilnius",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Rožių al., 2, Vilnius, 03106",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "rožių al. 2",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Deli rožių al. 2",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Rožių al. 2 apt 4b",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "ROŽIŲ AL. 2",
+   "lat": 54.68311739999999,
+   "lng": 25.274965499999997,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rožių al. 2, 03106 Vilnius",
+   "base": 20
+  },
+  {
+   "address": "Neužmirštuolių g. 7, Vilnius",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "7 Neužmirštuolių g.",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "Neužmirštuolių g. 7, lt, Vilnius",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "lt vilnius neužmirštuolių g. 7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "Neužmirštuolių g. - Vilnius - 7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "NEUŽMIRŠTUOLIŲ G. 7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "neužmirštuolių g. 7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "Neužmirštuolių g.7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "Mary neužmirštuolių g. 7",
+   "lat": 54.665225889655176,
+   "lng": 25.21700255862069,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Neužmirštuolių g. 7, Vilnius",
+   "base": 21
+  },
+  {
+   "address": "Maišiagalos g. 28, 08213 Vilnius",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "28 Maišiagalos g.",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Maišiagalos g. 28, 08213",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Vilnius lt Maišiagalos g. 28",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "maišiagalos g. 28 lt vilnius",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Maišiagalos g. - Vilnius - 08213",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Maišiagalos g.28",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Mary maišiagalos g. 28",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Maišiagalos g. 28 (green door)",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "MAIŠIAGALOS G. 28",
+   "lat": 54.709932277777774,
+   "lng": 25.282299522222225,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Maišiagalos g. 28, 08213 Vilnius",
+   "base": 22
+  },
+  {
+   "address": "Atradimų aklg. 7, Vilnius",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "Atradimų aklg. 7",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "Atradimų aklg. 7 lt Vilnius",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "lt Vilnius Atradimu aklg. 7",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "7, Vilnius, Atradimų aklg.",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "aklg. 7",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "atradimų aklg. 7",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "Atradimų aklg. 7 apt 4b",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "Atradimų aklg.7",
+   "lat": 54.650977714285716,
+   "lng": 25.223606385714284,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Atradimų aklg. 7, Vilnius",
+   "base": 23
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g., 70",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g. 70, 02122",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g. 70 Vilnius lt",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "lt, Vilnius, Ribiškių Sodų 3-ioji g. 70",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Vilnius, Ribiškių Sodų 3-ioji g., 02122",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "3-ioji 70",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g. 70 apt 4b",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 3-ioji g.70",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "ribiškių sodų 3-ioji g. 70",
+   "lat": 54.65795724444445,
+   "lng": 25.311357855555556,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ribiškių Sodų 3-ioji g. 70, 02122 Vilnius",
+   "base": 24
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji g. 42",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji g. 42, 02122",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji g. 42 lt Vilnius",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji 2-oji g. 42 Vilnius lt",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Vilnius - Ribiškių Sodų 2-oji g. - 02122",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Rbiiškių Sodų 2-oji g. 42",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Deli ribiškių sodų 2-oji g. 42",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "2-oji 42",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "Ribiškių Sodų 2-oji g.42",
+   "lat": 54.656217771428565,
+   "lng": 25.310683771428575,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Ribiškių Sodų 2-oji g. 42, 02122 Vilnius",
+   "base": 25
+  },
+  {
+   "address": "J. Rutkausko g. 6, Vilnius",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "6 J. Rutkausko g.",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "lt J. Rutkausko g. 6 Vilnius",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "Vilnius lt J. Rutkausko g. 6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "Vilnius - 6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "j. rutkausko g. 6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "Deli j. rutkausko g. 6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "J. Rutkausko g.6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "J. RUTKAUSKO G. 6",
+   "lat": 54.700365,
+   "lng": 25.2113834,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "J. Rutkausko g. 6, Vilnius",
+   "base": 26
+  },
+  {
+   "address": "Daumanto g. 5, 13279 Kuprioniškės",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Daumanto g., 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Daumanto g. 5 13279",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Daumanto g. 5, lt, Kuprioniškės",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Daumanto g. 5, lt, Kuprioniskes",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Kuprioniškės 13279 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "daumanto g. 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Deli daumanto g. 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "Damuanto g. 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "DAUMANTO G. 5",
+   "lat": 54.6396604,
+   "lng": 25.3213779,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Daumanto g. 5, 13279 Kuprioniškės",
+   "base": 27
+  },
+  {
+   "address": "V. Gerulaičio g. 10, Vilnius",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "10 V. Gerulaičio g.",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "lt, V. Gerulaičio g. 10, Vilnius",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "v. gerulaičio g. 10 10 vilnius lt",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "10, V. Gerulaičio g.",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "Deli v. gerulaičio g. 10",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "v. gerulaičio g. 10",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "V. Gerulaičio g. 10 back entrance",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "V. GERULAIČIO G. 10",
+   "lat": 54.7163816,
+   "lng": 25.2781555,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "V. Gerulaičio g. 10, Vilnius",
+   "base": 28
+  },
+  {
+   "address": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "32 Tolimosios Sodų 1-oji g.",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "Tolimosios Sodų 1-oji g. 32, Vilnius, lt",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "vilnius lt tolimosios sodų 1-oji g. 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "Vilnius Tolimosios Sodų 1-oji g. 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "tolimosios sodų 1-oji g. 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "Tolimoisos Sodų 1-oji g. 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "Mary tolimosios sodų 1-oji g. 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "1-oji 32",
+   "lat": 54.66661653999999,
+   "lng": 25.34263908,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Tolimosios Sodų 1-oji g. 32, Vilnius",
+   "base": 29
+  },
+  {
+   "address": "Rudnios g. 29, 08216 Vilnius",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Rudnios g., 29",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Rudnios g. 29 08216",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "lt, Rudnios g. 29, Vilnius",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Rudnios g. 29 lt Vilnius",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Rudnios g. 29 Vilnius 08216",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Deli rudnios g. 29",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "rudnios g. 29",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "RUDNIOS G. 29",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Rudnois g. 29",
+   "lat": 54.70489753636364,
+   "lng": 25.275790181818184,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rudnios g. 29, 08216 Vilnius",
+   "base": 30
+  },
+  {
+   "address": "Traidenio g. 27A, Vilnius",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "27A Traidenio g.",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Traidenio g. 27A Vilnius lt",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Traidenio g. 27A 27A Vilnius lt",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Vilnius 27A",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Traidenio g.27A",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Traidenio g. 27A apt 4b",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "TRAIDENIO G. 27A",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Mary traidenio g. 27A",
+   "lat": 54.6908761,
+   "lng": 25.2497481,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Traidenio g. 27A, Vilnius",
+   "base": 31
+  },
+  {
+   "address": "Lūkesčių g. 49, 04125 Vilnius",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Lūkesčių g. 49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Lūkesčių g. 49, 04125",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Lūkesčių g. 49 Vilnius lt",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "lt, Vilnius, Lūkesčių g. 49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "49 - Vilnius - Lūkesčių g. - 04125",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "LŪKESČIŲ G. 49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Lūkesčių g.49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Mary lūkesčių g. 49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Lūkesičų g. 49",
+   "lat": 54.66612218,
+   "lng": 25.193871039999998,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Lūkesčių g. 49, 04125 Vilnius",
+   "base": 32
+  },
+  {
+   "address": "Pašilaičių g. 19D, Vilnius",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pašilaičių g. 19D",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pašilaičių g. 19D, Vilnius, lt",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pasilaiciu g. 19D lt Vilnius",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pašilaičių g. - 19D - Vilnius",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pašilaičių g. 19D john",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Pašilaičių g.19D",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "pašilaičių g. 19d",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "PAŠILAIČIŲ G. 19D",
+   "lat": 54.73293585,
+   "lng": 25.233239866666665,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Pašilaičių g. 19D, Vilnius",
+   "base": 33
+  },
+  {
+   "address": "Rukainių g. 104G, Vilnius",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Rukainių g., 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "lt, Rukainių g. 104G, Vilnius",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Vilnius lt Rukainių Rukainių g. 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Vilnius - 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "RUKAINIŲ G. 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Rukianių g. 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "rukainių g. 104g",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Mary rukainių g. 104G",
+   "lat": 54.651731,
+   "lng": 25.3281526,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Rukainių g. 104G, Vilnius",
+   "base": 34
+  },
+  {
+   "address": "Kuosų g. 18, 10311 Vilnius",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Kuosų g., 18",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Kuosų g. 18 10311",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Vilnius, Kuosų g. 18, lt",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "lt, lt, Vilnius, Kuosų g. 18",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Kuosų g. - 18 - 10311",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Kuosų g. 18 apt 4b",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Kuosų g.18",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Deli kuosų g. 18",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "KUOSŲ G. 18",
+   "lat": 54.69969131538461,
+   "lng": 25.31547396923077,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Kuosų g. 18, 10311 Vilnius",
+   "base": 35
+  },
+  {
+   "address": "Airių g. 5, Vilnius",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Airių g., 5",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Airių g. 5, Vilnius, lt",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Vilnius, Airių g. 5, lt",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Vilnius, Airių g., 5",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Airių g. 5 back entrance",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Airių g.5",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Deli airių g. 5",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "AIRIŲ G. 5",
+   "lat": 54.65168336666667,
+   "lng": 25.349136255555557,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Airių g. 5, Vilnius",
+   "base": 36
+  },
+  {
+   "address": "Zanavykų g. 8A, Vilnius",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "8A Zanavykų g.",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Vilnius Zanavykų g. 8A lt",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Zanavyku g. 8A, Vilnius, lt",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "8A - Vilnius - Zanavykų g.",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Zanavykų g. 8A (green door)",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Zanavykų g.8A",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Zanavikų g. 8A",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Mary zanavykų g. 8A",
+   "lat": 54.66614922,
+   "lng": 25.28375132,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Zanavykų g. 8A, Vilnius",
+   "base": 37
+  },
+  {
+   "address": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "6 Žirgo Sodų 1-oji g.",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "lt, Vilnius, Žirgo Sodų 1-oji g. 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "Vilnius, Žirgo Sodų 1-oji g. 6, lt",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "Žirgo Sodų 1-oji g. 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "Žirggo Sodų 1-oji g. 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "1-oji 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "ŽIRGO SODŲ 1-OJI G. 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "Deli žirgo sodų 1-oji g. 6",
+   "lat": 54.719531724999996,
+   "lng": 25.334409091666668,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Žirgo Sodų 1-oji g. 6, Vilnius",
+   "base": 38
+  },
+  {
+   "address": "Šaltūnų g. 11A, Vilnius",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Šaltūnų g. 11A",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "lt, Šaltūnų g. 11A, Vilnius",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Šaltūnų g. 11A lt Vilnius",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Vilnius, 11A, Šaltūnų g.",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Deli šaltūnų g. 11A",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Šaltūnų g.11A",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "Šatlūnų g. 11A",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  },
+  {
+   "address": "ŠALTŪNŲ G. 11A",
+   "lat": 54.6824576,
+   "lng": 25.2257386,
+   "country": "LT",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Šaltūnų g. 11A, Vilnius",
+   "base": 39
+  }
+ ]
+}

@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "NG",
+ "city": "Lagos",
+ "country_label": "Nigeria",
+ "depot": {
+  "lat": 6.5244,
+  "lon": 3.3792,
+  "city": "Lagos",
+  "country": "Nigeria"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n6.60_s6.40_e3.50_w3.30-nigeria.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "13b Muri Folami Street, 100231 Ogudu",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "13b Muri Folami Street",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "Muri Folami Street 13b, 100231",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "Ogudu, ng, Muri Folami Street 13b",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "Ogudu, ng, Muri Folami Street 13b",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "13b Muri Folami Street Ogudu",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "Mary muri folami street 13b",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "MURI FOLAMI STREET 13B",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "Muri Folami Street 13b apt 4b",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "folami street 13b",
+   "lat": 6.5760257,
+   "lng": 3.3869161,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "13b Muri Folami Street, 100231 Ogudu",
+   "base": 0
+  },
+  {
+   "address": "6 Akinwumi Street, Lagos",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street, 6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street 6, Lagos",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Lagos, ng, Akinwumi Street 6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street 6, Lagos, ng",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street - Lagos - 6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Deli akinwumi street 6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street 6 (green door)",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "akinwumi street 6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "Akinwumi Street6",
+   "lat": 6.4984932,
+   "lng": 3.3810654,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Akinwumi Street, Lagos",
+   "base": 1
+  },
+  {
+   "address": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "7 Ogunbadejo St, Somolu",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "Ogunbadejo St, Somolu 7, 102216",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "ng Lagos Ogunbadejo St, Somolu 7",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "ng, Ogunbadejo St, Somolu 7, Lagos",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "7, Ogunbadejo St, Somolu, Lagos, 102216",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "ogunbadejo st 7",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "SOMOLU OGUNBADEJO ST 7",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "Somolu Ogu St 7",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "Deli somolu ogunbadejo st 7",
+   "lat": 6.534832271428571,
+   "lng": 3.3792147285714287,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 Ogunbadejo St, Somolu, 102216 Lagos",
+   "base": 2
+  },
+  {
+   "address": "6 Cemetry Street, Lagos",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "6 Cemetry Street",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Cemetry Street 6, Lagos",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Lagos ng Cemetry Street 6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Cemetry Street 6, Lagos, ng",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Lagos, Cemetry Street, 6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Cemetry Street6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "cemetry street 6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Mary cemetry street 6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "Ceemtry Street 6",
+   "lat": 6.48095352,
+   "lng": 3.38806706,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Cemetry Street, Lagos",
+   "base": 3
+  },
+  {
+   "address": "1-3 Adeteju Adeyeye, Laogs",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "Adeteju Adeyeye, 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "Adeteju Adeyeye 1-3, Laogs",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "Laogs, ng, Adeteju Adeyeye 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "ng, Adeteju Adeyeye 1-3, Laogs",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "Laogs, 1-3, Adeteju Adeyeye",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "adeteju adeyeye 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "Adeteju Ade 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "ADETEJU ADEYEYE 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "adeyeye 1-3",
+   "lat": 6.558387281818182,
+   "lng": 3.3705135999999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1-3 Adeteju Adeyeye, Laogs",
+   "base": 4
+  },
+  {
+   "address": "11 Commercial Avenue, Lagos",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Commercial Avenue, 11",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Commercial Avenue 11, Lagos",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "ng Commercial Avenue 11 Lagos",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Commercial Avenue 11, Lagos, ng",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "11 - Commercial Avenue",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Commrecial Avenue 11",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "commercial avenue 11",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Commercial Avenue11",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "Deli commercial avenue 11",
+   "lat": 6.5063862,
+   "lng": 3.3742223,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "11 Commercial Avenue, Lagos",
+   "base": 5
+  },
+  {
+   "address": "17 Akinola Street, Lagos",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "Akinola Street 17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "Akinola Street 17, Lagos",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "ng, Akinola Street 17, Lagos",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "ng Lagos Akinola Akinola Street 17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "Akinola Street Lagos 17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "akinola street 17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "AKINOLA STREET 17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "Akinola Street17",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "Akinola Street 17 john",
+   "lat": 6.5387717,
+   "lng": 3.3876821,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "17 Akinola Street, Lagos",
+   "base": 6
+  },
+  {
+   "address": "1 Alhaji Adebesin Street, Ifako",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Adebesin Street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Adebesin Street 1, Ifako",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "ng Ifako Alhaji Adebesin Street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Adebesin Street 1 Ifako ng",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Adebesin Street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Deli alhaji adebesin street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Adebesin Street1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "Alhaji Ade Street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "adebesin street 1",
+   "lat": 6.560986560000001,
+   "lng": 3.3919568,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Alhaji Adebesin Street, Ifako",
+   "base": 7
+  },
+  {
+   "address": "9 McEwen Street, Yaba Lagos",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "9 McEwen Street",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "McEwen Street 9 Yaba",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "ng, McEwen Street 9, Lagos",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "McEwen Street 9, Lagos, ng",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "Yaba - McEwen Street - Lagos",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "McEwen Street9",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "mcewen street 9",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "MCEWEN STREET 9",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "Msewen Street 9",
+   "lat": 6.5034495,
+   "lng": 3.3785608,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "9 McEwen Street, Yaba Lagos",
+   "base": 8
+  },
+  {
+   "address": "37 Okugade Okunneye Street, Lagos",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "37 Okugade Okunneye Street",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "Okugade Okunneye Street 37, Lagos",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "Okugade Okunneye Street 37 Lagos ng",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "ng Lagos Okugade Okunneye Street 37",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "Okugade Okunneye Street 37 Lagos",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "okunneye street 37",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "OKUGADE OKUNNEYE STREET 37",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "Okugade Oku Street 37",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "Okugade Okuneye Street 37",
+   "lat": 6.57112314,
+   "lng": 3.3761999000000005,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "37 Okugade Okunneye Street, Lagos",
+   "base": 9
+  },
+  {
+   "address": "6 Akanni Street, 102216 Lagos",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Akanni Street, 6",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Akanni Street 6, 102216",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "ng Akanni Street 6 Lagos",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "ng, Akanni Street 6, Lagos",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Akanni Street - 102216 - Lagos",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Akani Street 6",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Akanni Street6",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "akanni street 6",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "Deli akanni street 6",
+   "lat": 6.53509636,
+   "lng": 3.37866438,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Akanni Street, 102216 Lagos",
+   "base": 10
+  },
+  {
+   "address": "100 Otunba Bakare Avenue, shomolu lagos",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "100 Otunba Bakare Avenue",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "Otunba Bakare Avenue 100, shomolu lagos",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "ng, shomolu lagos, Otunba Bakare Avenue 100",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "ng, Otunba Bakare Avenue 100, shomolu lagos",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "100 - shomolu lagos",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "OTUNBA BAKARE AVENUE 100",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "bakare avenue 100",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "Otunva Bakare Avenue 100",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "Mary otunba bakare avenue 100",
+   "lat": 6.555030588888889,
+   "lng": 3.3978296222222224,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "100 Otunba Bakare Avenue, shomolu lagos",
+   "base": 11
+  },
+  {
+   "address": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "1300 Trailhead Pl.",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailhead Pl. 1300 48",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailhead Pl. 1300, ng, Shomolu Lagos",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailhead Pl. 1300 ng Shomolu Lagos",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailhead Pl. 48 Shomolu Lagos",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Deli trailhead pl. 1300",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailehad Pl. 1300",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "TRAILHEAD PL. 1300",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "Trailhead Pl. 1300 apt 4b",
+   "lat": 6.562276000000001,
+   "lng": 3.3660446777777775,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1300 Trailhead Pl., 48 Shomolu Lagos",
+   "base": 12
+  },
+  {
+   "address": "21 Modupe Street, Somolu",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "21 Modupe Street",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Modupe Street 21, Somolu",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Somolu ng Modupe Street 21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "ng, modupe street 21, somolu",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Somolu - Modupe Street - 21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Modupe Street21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "MODUPE STREET 21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Mdoupe Street 21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "Mary modupe street 21",
+   "lat": 6.527743822222222,
+   "lng": 3.383045488888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "21 Modupe Street, Somolu",
+   "base": 13
+  },
+  {
+   "address": "2 Ilesanmi Street, 105102 Lagos",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "2 Ilesanmi Street",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Ilesanmi Street 2 105102",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Ilesanmi Street 2, ng, Lagos",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Lagos Ilesanmi Street Street 2 ng",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Lagos Ilesanmi Street 2 105102",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Ilesamni Street 2",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "Ilesanmi Street 2 back entrance",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "ilesanmi street 2",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "ILESANMI STREET 2",
+   "lat": 6.568169,
+   "lng": 3.3797956200000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Ilesanmi Street, 105102 Lagos",
+   "base": 14
+  },
+  {
+   "address": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road 1A",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road 1A, 101233",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road 1A ng Maryland , Lagos",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "maryland , lagos ikorodu-ososun road 1a ng",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road, 1A, Maryland , Lagos",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "IKORODU-OSOSUN ROAD 1A",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road 1A (green door)",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Ikorodu-ososun Road1A",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "Deli ikorodu-ososun road 1A",
+   "lat": 6.572785128571428,
+   "lng": 3.3675554857142855,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1A Ikorodu-ososun Road, 101233 Maryland , Lagos",
+   "base": 15
+  },
+  {
+   "address": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Makoko Road, 2 Makoko, Road Adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Makoko Road 2 Makoko, Road Adekunle, Yaba",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "ng, Yaba, Makoko Road 2 Makoko, Road Adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "yaba, ng, makoko road 2 makoko, road adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Yaba - Makoko Road",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Makoko Road 2 Makoko, Road Adekunle back entrance",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Mary makoko road 2 Makoko, Road Adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "Mkaoko Road 2 Makoko, Road Adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "makoko road 2 makoko, road adekunle",
+   "lat": 6.49357905,
+   "lng": 3.3824523875,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2 Makoko, Road Adekunle Makoko Road, Yaba",
+   "base": 16
+  },
+  {
+   "address": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "Emmanuel Street , behind Ikorodu road, 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "Emmanuel Street , behind Ikorodu road 7 101233",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "Emmanuel Street , behind Ikorodu road 7 Maryland , Lagos ng",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "ng maryland , lagos emmanuel street , behind ikorodu road 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "101233, Maryland , Lagos, Emmanuel Street , behind Ikorodu road",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "behind Ikorodu road Emm Street 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "BEHIND IKORODU ROAD EMMANUEL STREET 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "behind Ikorodu road Emamnuel Street 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "Deli behind ikorodu road emmanuel street 7",
+   "lat": 6.573818484615385,
+   "lng": 3.3683153615384613,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 Emmanuel Street , behind Ikorodu road, 101233 Maryland , Lagos",
+   "base": 17
+  },
+  {
+   "address": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Williams Crescent 16",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Williams Crescent 16, Surulere, Lagos",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "ng, Raufu Williams Crescent 16, Surulere, Lagos",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Surulere, Lagos Raufu Williams Crescent 16 ng",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Williams Crescent, 16, Surulere, Lagos",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "RAUFU WILLIAMS CRESCENT 16",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Wil Crescent 16",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Wliliams Crescent 16",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "Raufu Williams Crescent16",
+   "lat": 6.4972253222222225,
+   "lng": 3.349996288888889,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "16 Raufu Williams Crescent, Surulere, Lagos",
+   "base": 18
+  },
+  {
+   "address": "1 Igbehinadun Street, Lagos",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Igbehinadun Street, 1",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Igbehinadun Street 1, Lagos",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Lagos, Igbehinadun Street 1, ng",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Lagos, ng, Igbehinadun Street Street 1",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "1 - Lagos - Igbehinadun Street",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "igbehinadun street 1",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Igbehinadun Street 1 apt 4b",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "IGBEHINADUN STREET 1",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "Igbehiandun Street 1",
+   "lat": 6.499655,
+   "lng": 3.386877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Igbehinadun Street, Lagos",
+   "base": 19
+  },
+  {
+   "address": "58 Mosaku Street, Oshodi",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Mosaku Street 58",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Mosaku Street 58, Oshodi",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Mosaku Street 58 Oshodi ng",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "ng mosaku street 58 oshodi",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Oshodi - Mosaku Street - 58",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Moskau Street 58",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Mosaku Street 58 (green door)",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "MOSAKU STREET 58",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "Mosaku Street58",
+   "lat": 6.5578289142857145,
+   "lng": 3.3401971285714285,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "58 Mosaku Street, Oshodi",
+   "base": 20
+  },
+  {
+   "address": "7 7 Aiyepe Ave, 102216 Lagos",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 7 Aiyepe Ave",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 Aiyepe Ave 7, 102216",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "Lagos ng 7 Aiyepe Ave 7",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 Aiyepe Ave 7 Lagos ng",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "Lagos - 102216 - 7 - 7 Aiyepe Ave",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 Aiyepe Ave 7 john",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 Aiiepe Ave 7",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "7 aiyepe ave 7",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "Deli 7 aiyepe ave 7",
+   "lat": 6.534682114285714,
+   "lng": 3.3790558,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7 7 Aiyepe Ave, 102216 Lagos",
+   "base": 21
+  },
+  {
+   "address": "9 Palm Avenue, Lagos",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Palm Avenue, 9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Palm Avenue 9, Lagos",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Lagos Palm Avenue 9 ng",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "ng Lagos Palm Avenue 9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Palm Avenue - Lagos",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "PALM AVENUE 9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "palm avenue 9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Palm Avenue9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "Deli palm avenue 9",
+   "lat": 6.5364615,
+   "lng": 3.3508702,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "9 Palm Avenue, Lagos",
+   "base": 22
+  },
+  {
+   "address": "27 Zainab Crescent, Lagos",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "Zainab Crescent 27",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "Zainab Crescent 27, Lagos",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "ng Zainab Crescent 27 Lagos",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "zainab crescent 27 ng lagos",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "Zainab Crescent 27 Lagos",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "ZAINAB CRESCENT 27",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "Deli zainab crescent 27",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "zainab crescent 27",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "Zainab Crescent27",
+   "lat": 6.5604882,
+   "lng": 3.3811431,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "27 Zainab Crescent, Lagos",
+   "base": 23
+  },
+  {
+   "address": "280 Ikorodu Road, Lagos",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "280 Ikorodu Road",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Ikorodu Road 280, Lagos",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Ikorodu Road 280, Lagos, ng",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Lagos ng Ikorodu Road 280",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Lagos, Ikorodu Road",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Mary ikorodu road 280",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Ikorodu Road 280 (green door)",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "Ikorodu Road280",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "IKORODU ROAD 280",
+   "lat": 6.5537946,
+   "lng": 3.3672997,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "280 Ikorodu Road, Lagos",
+   "base": 24
+  },
+  {
+   "address": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthony Way 1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthony Way 1, Maryland , Lagos",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "ng Maryland , Lagos Mobolaji Bank-Anthony Way 1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Maryland , Lagos Mobolaji Bank-Anthony Way 1 ng",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthony Way - Maryland , Lagos - 1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "bank-anthony way 1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthony Way1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthony Way 1 apt 4b",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "Mobolaji Bank-Anthoni Way 1",
+   "lat": 6.57295974,
+   "lng": 3.3663278400000003,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "1 Mobolaji Bank-Anthony Way, Maryland , Lagos",
+   "base": 25
+  },
+  {
+   "address": "47 Apata Street, Lagos",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Street 47",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Street 47, Lagos",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "ng, Apata Street 47, Lagos",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Apata Street 47 Lagos ng",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Street, 47",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Street47",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Apata Street 47 (green door)",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "Appata Street 47",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "APATA STREET 47",
+   "lat": 6.5368729000000005,
+   "lng": 3.3733805599999998,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "47 Apata Street, Lagos",
+   "base": 26
+  },
+  {
+   "address": "2 Ojota Road, Lagos",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojota Road 2",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojota Road 2, Lagos",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Lagos Ojota Road 2 ng",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojota Road 2, Lagos, ng",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Lagos 2 Ojota Road",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "OJOTA ROAD 2",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojota Road2",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojjota Road 2",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "Ojota Road 2 (green door)",
+   "lat": 6.5731911375,
+   "lng": 3.394321,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 Ojota Road, Lagos",
+   "base": 27
+  },
+  {
+   "address": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "Atiba Osborne street, 12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "Atiba Osborne street 12, 105102",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "ng, Maryland , Lagos, Atiba Osborne street 12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "ng Atiba Osborne street 12 Maryland , Lagos",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "Maryland , Lagos 105102 Atiba Osborne street",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "Atiba Osborne street12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "ATIBA OSBORNE STREET 12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "Atiba Osb street 12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "atiba osborne street 12",
+   "lat": 6.572622814285714,
+   "lng": 3.369423557142857,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "12 Atiba Osborne street, 105102 Maryland , Lagos",
+   "base": 28
+  },
+  {
+   "address": "3 Adeyinka street, Oshodi",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "3 Adeyinka street",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Adeyinka street 3, Oshodi",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "ng, Oshodi, Adeyinka street 3",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Adeyinka street 3 ng Oshodi",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "3, Oshodi",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Mary adeyinka street 3",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Adeiinka street 3",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Adeyinka street3",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "Adeyinka street 3 (green door)",
+   "lat": 6.554052920000001,
+   "lng": 3.3417877,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3 Adeyinka street, Oshodi",
+   "base": 29
+  },
+  {
+   "address": "6 Alakija Street, Lagos",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Alakija Street 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Alakija Street 6, Lagos",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "ng, Lagos, Alakija Street 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Alakija Street 6, ng, Lagos",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Alakija Street - 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Aalkija Street 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "ALAKIJA STREET 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "alakija street 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "Mary alakija street 6",
+   "lat": 6.5199653,
+   "lng": 3.3716695,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Alakija Street, Lagos",
+   "base": 30
+  },
+  {
+   "address": "13 Okunfolami Street, 100232 Anthony Village",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Okunfolami Street 13",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Okunfolami Street 13 100232",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "ng Anthony Village Okunfolami Street 13",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Anthony Village, Okunfolami Street 13, ng",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "13 Okunfolami Street 100232",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Okunfolami Street 13 back entrance",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Mary okunfolami street 13",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "OKUNFOLAMI STREET 13",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "Okunfolami Street13",
+   "lat": 6.5657924,
+   "lng": 3.3722595,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "13 Okunfolami Street, 100232 Anthony Village",
+   "base": 31
+  },
+  {
+   "address": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Apapa-Oworonshoki Expressway 296",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Apapa-Oworonshoki Expressway 296, Lagos",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Apapa-Oworonshoki Expressway 296 Lagos ng",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "lagos, ng, apapa-oworonshoki expressway 296",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "296 - Apapa-Oworonshoki Expressway - Lagos",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "APAPA-OWORONSHOKI EXPRESSWAY 296",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Apapa-Oworonshoki Exp 296",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Apapa-Oworonshoki Expressway 296 apt 4b",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "Mary apapa-oworonshoki expressway 296",
+   "lat": 6.5483888,
+   "lng": 3.3876489,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "296 Apapa-Oworonshoki Expressway, Lagos",
+   "base": 32
+  },
+  {
+   "address": "24a Fola Jinadu Crescent, Lagos",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent 24a",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent 24a, Lagos",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent 24a Lagos ng",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent 24a ng Lagos Lagos",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Lagos Fola Jinadu Crescent",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent 24a back entrance",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jinadu Crescent24a",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "jinadu crescent 24a",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "Fola Jindau Crescent 24a",
+   "lat": 6.5480954,
+   "lng": 3.3774423,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "24a Fola Jinadu Crescent, Lagos",
+   "base": 33
+  },
+  {
+   "address": "56b Apolo Makoko, Lagos",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "56b Apolo Makoko",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "Apolo Makoko 56b, Lagos",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "Apolo Makoko 56b ng Lagos",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "Lagos Apolo Makoko 56b ng",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "56b, Lagos, Apolo Makoko",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "Apolo Makoko 56b john",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "APOLO MAKOKO 56B",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "Deli apolo makoko 56b",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "apolo makoko 56b",
+   "lat": 6.4956426,
+   "lng": 3.3883093,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "56b Apolo Makoko, Lagos",
+   "base": 34
+  },
+  {
+   "address": "7 Oludele Fakunle Street, Lagos",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludele Fakunle Street 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludele Fakunle Street 7, Lagos",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Lagos, ng, Oludele Fakunle Street 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludele Fakunle Street 7 ng Lagos",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Lagos 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludele Fak Street 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "oludele fakunle street 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludlee Fakunle Street 7",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "Oludele Fakunle Street 7 john",
+   "lat": 6.5567203,
+   "lng": 3.3944267,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7 Oludele Fakunle Street, Lagos",
+   "base": 35
+  },
+  {
+   "address": "60 Adelabu Street, Lagos",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "60 Adelabu Street",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "Adelabu Street 60, Lagos",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "ng Adelabu Street 60 Lagos",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "adelabu street 60 lagos ng",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "60, Lagos",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "Adelavu Street 60",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "Mary adelabu street 60",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "ADELABU STREET 60",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "Adelabu Street60",
+   "lat": 6.494097549999999,
+   "lng": 3.349070616666667,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "60 Adelabu Street, Lagos",
+   "base": 36
+  },
+  {
+   "address": "154 Murtula Muhammed Way, Lagos",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "Murtula Muhammed Way 154",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "Murtula Muhammed Way 154, Lagos",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "Murtula Muhammed Way 154, Lagos, ng",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "ng, Lagos, Murtula Muhammed Way 154",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "154 - Murtula Muhammed Way",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "murtula muhammed way 154",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "Murtula Muahmmed Way 154",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "muhammed way 154",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "Murtula Muhammed Way 154 john",
+   "lat": 6.490707380000001,
+   "lng": 3.37971298,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "154 Murtula Muhammed Way, Lagos",
+   "base": 37
+  },
+  {
+   "address": "8a Olayinka Street, Lagos",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "8a Olayinka Street",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "Olayinka Street 8a, Lagos",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "ng, Olayinka Street 8a, Lagos",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "Lagos ng Olayinka Street 8a",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "Lagos, 8a, Olayinka Street",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "Oalyinka Street 8a",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "olayinka street 8a",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "OLAYINKA STREET 8A",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "Olayinka Street 8a apt 4b",
+   "lat": 6.5603878,
+   "lng": 3.3831693,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8a Olayinka Street, Lagos",
+   "base": 38
+  },
+  {
+   "address": "6 Aina George Street, Lagos",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Aina George Street, 6",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Aina George Street 6, Lagos",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "ng, Lagos, Aina George Street 6",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "lagos, aina george street 6, ng",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "6 Aina George Street",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Aina George Street 6 (green door)",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Aina Geogre Street 6",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Aina George Street6",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  },
+  {
+   "address": "Deli aina george street 6",
+   "lat": 6.551802855555556,
+   "lng": 3.364207722222222,
+   "country": "NG",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "6 Aina George Street, Lagos",
+   "base": 39
+  }
+ ]
+}

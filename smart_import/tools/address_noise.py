@@ -1,11 +1,17 @@
 """Variantes de direcciones con ruido humano para probar parser/enhance/geocode.
 
-Niveles (1–5):
+Niveles (1–6):
   1 — calle + altura mínima (sin ciudad/CP/país)
   2 — + un dato extra (CP o depto)
   3 — subconjunto con ciudad/país; permutaciones de orden
   4 — como 3 + typos / puntuación rota
   5 — dirección casi completa; permutaciones de bloques
+  6 — planilla de despacho real: apellido solo ('alvarado 471' por 'General
+      Rudecindo Alvarado'), nombre truncado ('Trabajadores Mun'), typo fonético
+      ('Lungui' por 'Lunghi'), número pegado ('Crisantemos1904'), nota al final
+      ('… 2052 martin'), nombre adelante ('Marcela entre rios 711') y
+      mayúsculas. Sin ciudad, como las escribe un repartidor. Salieron de dos
+      planillas reales de Tandil (2026-09-15) donde 35 de 59 filas quedaron sin pin.
 
 Cada variante conserva lat/lng del registro base (ground truth).
 """
@@ -226,13 +232,168 @@ def _variants_level5(rec: CorpusRecord, rng: random.Random,
     return list(dict.fromkeys(out))
 
 
-_LEVEL_BUILDERS: dict[int, Callable[..., list[str]]] = {
+#: tipo de via adelante, multi-idioma (el nivel 6 lo saca como lo saca la gente)
+_WAY_HEADS = (
+    "avenida", "av.", "av", "calle", "pasaje", "paseo", "boulevard", "bulevar",
+    "diagonal", "camino", "carrera", "rua", "travessa", "rue", "avenue", "bd",
+    "boulevard", "chemin", "place", "via", "viale", "piazza", "corso", "strada",
+    "calea", "ulica", "ul.", "aleja", "carrer", "passeig",
+)
+#: tipo de via al FINAL (ingles): 'Deer Park Drive' → el apellido es 'Park', no 'Drive'
+_WAY_TAILS = {
+    "street", "st", "road", "rd", "avenue", "ave", "av", "drive", "dr", "lane", "ln",
+    "crescent", "cres", "close", "way", "place", "pl", "court", "ct", "boulevard",
+    "blvd", "terrace", "tce", "parade", "pde", "highway", "hwy", "grove", "square",
+    "sq", "row", "walk", "mews", "gardens", "gdns", "circuit", "cct", "esplanade",
+    "parkway", "pkwy", "loop", "trail", "circle", "cir", "alley", "plaza",
+}
+_GLUE = {"de", "del", "la", "las", "los", "el", "da", "do", "dos", "das", "di",
+         "du", "des", "le", "van", "von", "der", "y", "e", "of", "the"}
+_EN_ORDER = {"US", "CA", "AU", "NZ", "ZA", "SG", "AE", "GB", "IE", "IN"}
+_NOTES = {
+    "es": ("casa 18", "(porton verde)", "timbre 2", "martin", "frente a la plaza"),
+    "pt": ("casa 2", "(portao azul)", "fundos", "joao"),
+    "fr": ("bat b", "(porte verte)", "2e etage", "pierre"),
+    "it": ("int 4", "(portone verde)", "scala b", "marco"),
+    "de": ("hinterhaus", "(grune tur)", "2 og", "peter"),
+    "en": ("apt 4b", "(green door)", "back entrance", "john"),
+}
+_HEAD_NAMES = {
+    "es": ("Marcela", "Kiosco", "Juan"),
+    "pt": ("Maria", "Mercado", "Joao"),
+    "fr": ("Chez Paul", "Marie"),
+    "it": ("Bar", "Giulia"),
+    "de": ("Kiosk", "Anna"),
+    "en": ("Deli", "Mary"),
+}
+_LANG_BY_COUNTRY = {
+    "AR": "es", "UY": "es", "CL": "es", "MX": "es", "CO": "es", "ES": "es", "PE": "es",
+    "BR": "pt", "PT": "pt", "FR": "fr", "BE": "fr", "CH": "fr", "LU": "fr",
+    "IT": "it", "DE": "de", "AT": "de",
+}
+LEVEL6_KINDS = ("surname", "truncate", "typo", "glued", "note_tail", "name_head",
+                "caps", "lower")
+
+
+def _lang(rec: CorpusRecord) -> str:
+    return _LANG_BY_COUNTRY.get((rec.country or "").upper(), "en")
+
+
+def _street_core(street: str) -> str:
+    """'Avenida General Paz' → 'General Paz'. Solo el tipo de via inicial.
+
+    OpenAddresses CABA invierte el nombre ('LAS HERAS, GENERAL'): nadie lo
+    escribe asi en una planilla, se reordena antes de ensuciarlo.
+    """
+    if "," in (street or ""):
+        parts = [p.strip() for p in street.split(",") if p.strip()]
+        street = " ".join(reversed(parts))
+    words = (street or "").split()
+    while len(words) > 1 and words[0].lower().strip(".,") in _WAY_HEADS:
+        words = words[1:]
+    return " ".join(words)
+
+
+def _name_words(core: str) -> list[str]:
+    """Palabras del nombre sin tipo de via final ('Deer Park Drive' → Deer, Park)."""
+    words = core.split()
+    while len(words) > 1 and words[-1].lower().strip(".,") in _WAY_TAILS:
+        words = words[:-1]
+    return words
+
+
+def _content_words(core: str) -> list[str]:
+    return [w for w in _name_words(core) if w.lower() not in _GLUE and len(w) > 2
+            and not w.isdigit()]
+
+
+_PHONETIC_EDITS: tuple[tuple[str, str], ...] = (
+    ("ll", "l"), ("rr", "r"), ("ss", "s"), ("tt", "t"), ("nn", "n"), ("pp", "p"),
+    ("gh", "g"), ("ph", "f"), ("ck", "k"), ("sch", "sh"), ("v", "b"), ("b", "v"),
+    ("z", "s"), ("ce", "se"), ("ci", "si"), ("qu", "k"), ("y", "i"), ("ou", "u"),
+)
+
+
+def _phonetic_typo(word: str, rng: random.Random) -> str | None:
+    """Un solo error, del tipo que comete quien escribe de oido."""
+    lower = word.lower()
+    options = [(a, b) for a, b in _PHONETIC_EDITS if a in lower[1:]]
+    if options and rng.random() < 0.7:
+        a, b = rng.choice(options)
+        pos = lower.find(a, 1)
+        out = word[:pos] + b + word[pos + len(a):]
+        return out if out.lower() != lower else None
+    if len(word) >= 6:
+        i = rng.randrange(1, len(word) - 2)
+        if word[i] != word[i + 1]:
+            return word[:i] + word[i + 1] + word[i] + word[i + 2:]
+    if len(word) >= 5:
+        i = rng.randrange(1, len(word) - 1)
+        if word[i].lower() not in "aeiou":
+            return word[:i] + word[i] + word[i:]
+    return None
+
+
+def _line(rec: CorpusRecord, core: str, number: str) -> str:
+    if (rec.country or "").upper() in _EN_ORDER:
+        return f"{number} {core}".strip()
+    return f"{core} {number}".strip()
+
+
+def _variants_level6(rec: CorpusRecord, rng: random.Random,
+                     *, max_permutations: int) -> list[tuple[str, str]]:
+    """(texto, tipo). Un tipo de ruido por variante, para poder atribuir fallas."""
+    street = (rec.street or "").strip()
+    number = (rec.number or "").strip()
+    if not street or not number:
+        return []
+    core = _street_core(street)
+    content = _content_words(core)
+    lang = _lang(rec)
+    out: list[tuple[str, str]] = []
+
+    if len(content) >= 2 and len(content[-1]) >= 4:
+        tail = " ".join(core.split()[len(_name_words(core)):])
+        surname = f"{content[-1]} {tail}".strip() if tail else content[-1]
+        out.append((_line(rec, surname.lower(), number), "surname"))
+    name_words = _name_words(core)
+    tail_words = core.split()[len(name_words):]
+    last = name_words[-1] if name_words else ""
+    if len(last) >= 7 and len(name_words) >= 2:
+        short = " ".join(name_words[:-1] + [last[:3]] + tail_words)
+        out.append((_line(rec, short, number), "truncate"))
+    target = max(content, key=len) if content else ""
+    if len(target) >= 5:
+        typo = _phonetic_typo(target, rng)
+        if typo:
+            out.append((_line(rec, core.replace(target, typo, 1), number), "typo"))
+    if (rec.country or "").upper() not in _EN_ORDER:
+        out.append((f"{core}{number}", "glued"))
+    out.append((f"{_line(rec, core, number)} {rng.choice(_NOTES[lang])}", "note_tail"))
+    if (rec.country or "").upper() not in _EN_ORDER:
+        out.append((f"{rng.choice(_HEAD_NAMES[lang])} {_line(rec, core.lower(), number)}",
+                    "name_head"))
+    out.append((_line(rec, core, number).upper(), "caps"))
+    out.append((_line(rec, core, number).lower(), "lower"))
+
+    seen: set[str] = set()
+    uniq = []
+    for text, kind in out:
+        if text and text not in seen:
+            seen.add(text)
+            uniq.append((text, kind))
+    return uniq
+
+
+_LEVEL_BUILDERS: dict[int, Callable[..., list]] = {
     1: _variants_level1,
     2: _variants_level2,
     3: _variants_level3,
     4: _variants_level4,
     5: _variants_level5,
+    6: _variants_level6,
 }
+MAX_NOISE_LEVEL = max(_LEVEL_BUILDERS)
 
 
 def expand_records_with_noise(
@@ -246,8 +407,8 @@ def expand_records_with_noise(
     include_baseline: bool = False,
 ) -> list[CorpusRecord]:
     """Expande cada registro base en variantes ruidosas verificables."""
-    if level < 1 or level > 5:
-        raise ValueError("noise level debe estar entre 1 y 5")
+    if level < 1 or level > MAX_NOISE_LEVEL:
+        raise ValueError(f"noise level debe estar entre 1 y {MAX_NOISE_LEVEL}")
     if not 0.0 < rate <= 1.0:
         raise ValueError("noise rate debe estar en (0, 1]")
 
@@ -279,10 +440,11 @@ def expand_records_with_noise(
             else:
                 variants = builder(rec, rng)
             for vi, variant in enumerate(variants, start=1):
+                text, kind = variant if isinstance(variant, tuple) else (variant, f"L{lv}")
                 sid = rec.source_id or "row"
                 out.append(replace(
                     rec,
-                    address=variant,
+                    address=text,
                     source=f"{rec.source}+noise",
                     source_id=f"{sid}_n{lv}_v{vi}",
                     style=f"noise{lv}",
@@ -291,6 +453,7 @@ def expand_records_with_noise(
                         "address_clean": clean,
                         "noise_level": lv,
                         "noise_variant": vi,
+                        "noise_kind": kind,
                     },
                 ))
     return out

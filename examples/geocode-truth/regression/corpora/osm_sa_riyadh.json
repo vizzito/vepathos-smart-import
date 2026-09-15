@@ -1,0 +1,4018 @@
+{
+ "source": "osm-addr",
+ "country": "SA",
+ "city": "Riyadh",
+ "country_label": "Saudi Arabia",
+ "depot": {
+  "lat": 24.7136,
+  "lon": 46.6753,
+  "city": "Riyadh",
+  "country": "Saudi Arabia"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 400,
+ "note": "Nodos addr:* del indice n24.80_s24.60_e46.80_w46.60-gcc-states.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "4478 King Abdullah Branch Rd",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "King Abdullah Branch Rd 4478, 12462",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "Riyadh, sa, King Abdullah Branch Rd 4478",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "Riyadh, sa, King Abdullah Branch Rd 4478",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "4478 King Abdullah Branch Rd Riyadh",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "King Abdullah Branch Rd4478",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "KING ABDULLAH BRANCH RD 4478",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "King Abdullah Branch Rd 4478 back entrance",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "king abdullah branch rd 4478",
+   "lat": 24.74421864,
+   "lng": 46.70109258,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4478 King Abdullah Branch Rd, 12462 Riyadh",
+   "base": 0
+  },
+  {
+   "address": "7393 ابن يونس الصدفي, Riyadh",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصدفي, 7393",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصدفي 7393, Riyadh",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "Riyadh sa ابن يونس الصدفي 7393",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصدفي 7393, Riyadh, sa",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "7393, ابن يونس الصدفي, Riyadh",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصفدي 7393",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "Mary ابن يونس الصدفي 7393",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصدفي7393",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "ابن يونس الصدفي 7393 apt 4b",
+   "lat": 24.6878288,
+   "lng": 46.6654939,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7393 ابن يونس الصدفي, Riyadh",
+   "base": 1
+  },
+  {
+   "address": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "الأمير محمد بن عبدالعزيز, 4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "الأمير محمد بن عبدالعزيز 4240, 12242",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "sa, riyadh, الأمير محمد بن عبدالعزيز 4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "الأمير محمد بن عبدالعزيز 4240, riyadh, sa",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "4240 الأمير محمد بن عبدالعزيز riyadh",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "الأمير محمد بن عبدالعزيز4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "Mary الأمير محمد بن عبدالعزيز 4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "الأمير محمد بن عبدالعزيز 4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "عبدالعزيز 4240",
+   "lat": 24.70258,
+   "lng": 46.6974275,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4240 الأمير محمد بن عبدالعزيز, 12242 riyadh",
+   "base": 2
+  },
+  {
+   "address": "8039 Dareen Street, Riyadh",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Dareen Street, 8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Dareen Street 8039, Riyadh",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Riyadh sa Dareen Street 8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "dareen street 8039, riyadh, sa",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Riyadh, Dareen Street, 8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Dareen Street 8039 (green door)",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "Dareen Street8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "DAREEN STREET 8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "dareen street 8039",
+   "lat": 24.6857908,
+   "lng": 46.6317752,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8039 Dareen Street, Riyadh",
+   "base": 3
+  },
+  {
+   "address": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "أحمد عبدالغفور عطار, 2979",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "أحمد عبدالغفور عطار 2979, Riyadh",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "Riyadh أحمد عبدالغفور عطار 2979 sa",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "Riyadh, أحمد عبدالغفور عطار 2979, sa",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "2979 Riyadh",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "أحمد عبدالغفور عطار2979",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "أحمد عبدالغفور عطار 2979",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "أحمد عبدالغفور عطار 2979 back entrance",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "عطار 2979",
+   "lat": 24.69512538,
+   "lng": 46.69377392,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2979 أحمد عبدالغفور عطار, Riyadh",
+   "base": 4
+  },
+  {
+   "address": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64, 103, 2nd floor",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64 103, 2nd floor, 12213",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "sa, Riyadh, رقم 64 103, 2nd floor",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64 103, 2nd floor, sa, Riyadh",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "103, 2nd floor - 12213 - رقم 64 - Riyadh",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64 103, 2nd floor",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64103, 2nd floor",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "رقم 64 103, 2ND FLOOR",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "Deli رقم 64 103, 2nd floor",
+   "lat": 24.7012602,
+   "lng": 46.6798349,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "103, 2nd floor رقم 64, 12213 Riyadh",
+   "base": 5
+  },
+  {
+   "address": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Prince Muhammad Bin Abdulaziz Rd, Al Olaya, 4114",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Prince Muhammad Bin Abdulaziz Rd, Al Olaya 4114, Riyadh",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Riyadh, Prince Muhammad Bin Abdulaziz Rd, Al Olaya 4114, sa",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Prince Muhammad Bin Abdulaziz Rd, Al Olaya 4114 Riyadh sa",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Riyadh - 4114 - Prince Muhammad Bin Abdulaziz Rd, Al Olaya",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "abdulaziz rd 4114",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "al olaya prince muhammad bin abdulaziz rd 4114",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "Deli al olaya prince muhammad bin abdulaziz rd 4114",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "AL OLAYA PRINCE MUHAMMAD BIN ABDULAZIZ RD 4114",
+   "lat": 24.69327518,
+   "lng": 46.67480278,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "4114 Prince Muhammad Bin Abdulaziz Rd, Al Olaya, Riyadh",
+   "base": 6
+  },
+  {
+   "address": "8484 شارع العليا, 12213 Riyadh",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع العليا, 8484",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع العليا 8484, 12213",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "Riyadh, sa, شارع العليا 8484",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع العليا 8484 Riyadh sa",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "8484, 12213, شارع العليا, Riyadh",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع العليا 8484 john",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع اعلليا 8484",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "العليا 8484",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "شارع العليا 8484",
+   "lat": 24.7012972,
+   "lng": 46.6810641,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8484 شارع العليا, 12213 Riyadh",
+   "base": 7
+  },
+  {
+   "address": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "Umar bin Dhafr Street 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "Umar bin Dhafr Street 20, 11693",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "Rijad sa Umar bin Dhafr Street 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "sa Umar bin Dhafr Street 20 Rijad Rijad",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "11693 - Umar bin Dhafr Street - 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "UMAR BIN DHAFR STREET 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "Umar bin Dhafr Street 20 (green door)",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "dhafr street 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "umar bin dhafr street 20",
+   "lat": 24.7292051,
+   "lng": 46.67039146666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "20 Umar bin Dhafr Street, 11693 Rijad",
+   "base": 8
+  },
+  {
+   "address": "7184 Mohamed Al Abaderi, Riyadh",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "Mohamed Al Abaderi 7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "Mohamed Al Abaderi 7184, Riyadh",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "Mohamed Al Abaderi 7184 Riyadh sa",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "sa Riyadh Mohamed Al Abaderi 7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "7184, Mohamed Al Abaderi, Riyadh",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "MOHAMED AL ABADERI 7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "Mohamed Al Aba 7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "Mohamed Al Abaderi7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "mohamed al abaderi 7184",
+   "lat": 24.70213034,
+   "lng": 46.61838416,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "7184 Mohamed Al Abaderi, Riyadh",
+   "base": 9
+  },
+  {
+   "address": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "6388 طريق مكة المكرمة",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "طريق مكة المكرمة 6388 12231",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "طريق مكة المكرمة 6388, sa, Riyadh",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "Riyadh, طريق مكة المكرمة 6388, sa",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "6388 - 12231 - طريق مكة المكرمة - Riyadh",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "المكرمة 6388",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "طريق مكة الكمرمة 6388",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "طريق مكة المكرمة 6388 apt 4b",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "طريق مكة الم 6388",
+   "lat": 24.6869865,
+   "lng": 46.7043775,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "6388 طريق مكة المكرمة, 12231 Riyadh",
+   "base": 10
+  },
+  {
+   "address": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبدالرحمن 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبدالرحمن 56, Riyadh",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "Riyadh sa الأمير فيصل بن سعد بن عبدالرحمن 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "sa, Riyadh, الأمير فيصل بن سعد بن بن عبدالرحمن 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبدالرحمن 56 john",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبدلارحمن 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "Deli الأمير فيصل بن سعد بن عبدالرحمن 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "الأمير فيصل بن سعد بن عبد 56",
+   "lat": 24.71635268,
+   "lng": 46.67758366,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "56 الأمير فيصل بن سعد بن عبدالرحمن, Riyadh",
+   "base": 11
+  },
+  {
+   "address": "10 النقرة, Riyadh",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "النقرة, 10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "النقرة 10, Riyadh",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "sa, النقرة 10, Riyadh",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "النقرة 10 Riyadh sa",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "Riyadh, 10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "Deli النقرة 10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "النقرة 10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "انلقرة 10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "النقرة10",
+   "lat": 24.729088199999996,
+   "lng": 46.68817803333334,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "10 النقرة, Riyadh",
+   "base": 12
+  },
+  {
+   "address": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز, 8235",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز 8235 3914",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز 8235, Riyadh, sa",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز 8235, 8235, sa, Riyadh",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "8235 Riyadh 3914 الملك عبدالعزيز",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز8235",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز 8235",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "عبدالعزيز 8235",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "الملك عبدالعزيز 8235 (green door)",
+   "lat": 24.6847672,
+   "lng": 46.7185038,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8235 الملك عبدالعزيز, 3914 Riyadh",
+   "base": 13
+  },
+  {
+   "address": "7553 الملك فهد, 12212 Riyadh",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "الملك فهد, 7553",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "الملك فهد 7553 12212",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "sa, Riyadh, الملك فهد 7553",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "sa sa الملك فهد 7553 riyadh",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "7553 Riyadh الملك فهد",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "الملك فهد 7553",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "الملك فهد7553",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "الملك فهد 7553 back entrance",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "Mary الملك فهد 7553",
+   "lat": 24.693150814285712,
+   "lng": 46.68229412857143,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7553 الملك فهد, 12212 Riyadh",
+   "base": 14
+  },
+  {
+   "address": "12333 طريق التخصصي, 12333 Riyadh",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "12333 طريق التخصصي",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "طريق التخصصي 12333, 12333",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "طريق التخصصي 12333, Riyadh, sa",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "sa طريق التخصصي 12333 Riyadh",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "12333 12333 Riyadh طريق التخصصي",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "Mary طريق التخصصي 12333",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "طريق الت 12333",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "التخصصي 12333",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "طريق الختصصي 12333",
+   "lat": 24.7008354,
+   "lng": 46.66784956,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "12333 طريق التخصصي, 12333 Riyadh",
+   "base": 15
+  },
+  {
+   "address": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "7079 Dhabiyat Bint Al Barra Street",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "Dhabiyat Bint Al Barra Street 7079, 12465",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "sa Dhabiyat Bint Al Barra Street 7079 Riyadh",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "Riyadh sa Dhabiyat Bint Al Barra Street 7079",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "12465, 7079, Riyadh",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "Mary dhabiyat bint al barra street 7079",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "Dhabiyat Bint Al Barra Street 7079 (green door)",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "DHABIYAT BINT AL BARRA STREET 7079",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "Dhaviyat Bint Al Barra Street 7079",
+   "lat": 24.7630221,
+   "lng": 46.6833189,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7079 Dhabiyat Bint Al Barra Street, 12465 Riyadh",
+   "base": 16
+  },
+  {
+   "address": "7733 العباس الرشيدي, Riyadh",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "7733 العباس الرشيدي",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "العباس الرشيدي 7733, Riyadh",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "العباس الرشيدي 7733 sa Riyadh",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "sa العباس الرشيدي 7733 Riyadh",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "Riyadh - 7733 - العباس الرشيدي",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "العباس الرشيدي 7733 back entrance",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "الرشيدي 7733",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "Deli العباس الرشيدي 7733",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "العباس الرشيدي7733",
+   "lat": 24.7120786,
+   "lng": 46.6830077,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7733 العباس الرشيدي, Riyadh",
+   "base": 17
+  },
+  {
+   "address": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "King Fahd Branch Rd 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "King Fahd Branch Rd 8508 12333",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "King Fahd Branch Rd 8508, Riyadh, sa",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "King Fahd Branch Rd 8508, sa, sa, Riyadh",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "Riyadh, King Fahd Branch Rd, 12333, 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "King Fahd Barnch Rd 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "Mary king fahd branch rd 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "king fahd branch rd 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "branch rd 8508",
+   "lat": 24.71024542,
+   "lng": 46.67211758,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8508 King Fahd Branch Rd, 12333 Riyadh",
+   "base": 18
+  },
+  {
+   "address": "3114 الإدريسي, 12513 منطقة الرياض",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي, 3114",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي 3114 12513",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي 3114 sa منطقة الرياض",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي 3114 منطقة الرياض sa",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "3114 - الإدريسي - 12513",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الدإريسي 3114",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي 3114 (green door)",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "Deli الإدريسي 3114",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "الإدريسي3114",
+   "lat": 24.687588444444444,
+   "lng": 46.62376587777778,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3114 الإدريسي, 12513 منطقة الرياض",
+   "base": 19
+  },
+  {
+   "address": "4 حبيب الحنظلي, Riyadh",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "حبيب الحنظلي 4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "حبيب الحنظلي 4, Riyadh",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "Riyadh حبيب الحنظلي 4 sa",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "sa Riyadh حبيب الحنظلي 4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "4 - Riyadh - حبيب الحنظلي",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "حبيب الحنظلي4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "حبيب الح 4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "Mary حبيب الحنظلي 4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "الحنظلي 4",
+   "lat": 24.683421579999997,
+   "lng": 46.67958888,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "4 حبيب الحنظلي, Riyadh",
+   "base": 20
+  },
+  {
+   "address": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St.",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "Abdulaziz Bin Musa'ed Bin Jalawi St. 63987, 11526",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "Riyadh, Abdulaziz Bin Musa'ed Bin Jalawi St. 63987, sa",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "abdulaziz bin musa'ed bin jalawi jalawi st. 63987, riyadh, sa",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "11526, Abdulaziz Bin Musa'ed Bin Jalawi St., 63987, Riyadh",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "Mary abdulaziz bin musa'ed bin jalawi st. 63987",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "Abdulaziz Bin Musa'ed Bin Jalawi St. 63987 (green door)",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "Abdulaziz Bin Musa'ed Bin Jalawi St.63987",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "jalawi st. 63987",
+   "lat": 24.6796137,
+   "lng": 46.7020892,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "63987 Abdulaziz Bin Musa'ed Bin Jalawi St., 11526 Riyadh",
+   "base": 21
+  },
+  {
+   "address": "121 طريق الملك خالد, 3211 الرياض",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "121 طريق الملك خالد",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "طريق الملك خالد 121, 3211",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "sa, الرياض, طريق الملك خالد 121",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "sa, طريق الملك خالد 121, الرياض",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "121, 3211, طريق الملك خالد",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "طريق الملك خالد 121 apt 4b",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "طريق الملك خالد121",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "Deli طريق الملك خالد 121",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "طريق الملك خالد 121",
+   "lat": 24.6704396,
+   "lng": 46.6544521,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "121 طريق الملك خالد, 3211 الرياض",
+   "base": 22
+  },
+  {
+   "address": "PO 66833 Rafaha, 11586 Riyadh",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "Rafaha PO 66833",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "Rafaha PO 66833, 11586",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "sa Rafaha PO 66833 Riyadh",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "Rafaha PO 66833 sa Riyadh",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "11586, Riyadh, Rafaha",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "Rafaha PO 66833 back entrance",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "RafahaPO 66833",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "RAFAHA PO 66833",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "rafaha po 66833",
+   "lat": 24.735283236363635,
+   "lng": 46.699586690909086,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "PO 66833 Rafaha, 11586 Riyadh",
+   "base": 23
+  },
+  {
+   "address": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "2071 شارع صلاح الدين الأيوبي",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "شارع صلاح الدين الأيوبي 2071 12811",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "sa شارع صلاح الدين الأيوبي 2071 Riyadh",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "sa, Riyadh, شارع صلاح الدين الايوبي 2071",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "12811 شارع صلاح الدين الأيوبي Riyadh 2071",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "Deli شارع صلاح الدين الأيوبي 2071",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "شارع صلاح الدين الأ 2071",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "شارع صلاح الدين الأيوبي2071",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "شارع صلاح الدين الأيوبي 2071 (green door)",
+   "lat": 24.6927478,
+   "lng": 46.7237949,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2071 شارع صلاح الدين الأيوبي, 12811 Riyadh",
+   "base": 24
+  },
+  {
+   "address": "3346 وادي الثمامة, 12223 Riyadh",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الثمامة 3346",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الثمامة 3346 12223",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "Riyadh, وادي الثمامة 3346, sa",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الثمامة 3346 sa Riyadh",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "3346 وادي الثمامة 12223 Riyadh",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الثمامة3346",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "الثمامة 3346",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الث 3346",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "وادي الثمامة 3346 apt 4b",
+   "lat": 24.694872120000003,
+   "lng": 46.69710346,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "3346 وادي الثمامة, 12223 Riyadh",
+   "base": 25
+  },
+  {
+   "address": "RHSA3248 جلاجل, 12234 Riyadh",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "جلاجل, RHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "جلاجل RHSA3248, 12234",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "sa Riyadh جلاجل RHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "sa جلاجل RHSA3248 Riyadh",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "Riyadh جلاجل RHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "جلاجل RHSA3248 john",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "Deli جلاجل RHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "جلاجلRHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "جللاجل RHSA3248",
+   "lat": 24.7076334,
+   "lng": 46.7115057,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "RHSA3248 جلاجل, 12234 Riyadh",
+   "base": 26
+  },
+  {
+   "address": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "2 طريق عبد الله بن حذافة السهمي",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "طريق عبد الله بن حذافة السهمي 2, Riyadh",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "Riyadh طريق عبد الله بن حذافة السهمي 2 sa",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "طريق عبد الله بن حذافة السهمي 2 Riyadh sa",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "2 طريق عبد الله بن حذافة السهمي",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "طريق عبد الله بن حذافة السهمي 2 back entrance",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "السهمي 2",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "طريق عبد الله بن حذافة السهمي2",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "Mary طريق عبد الله بن حذافة السهمي 2",
+   "lat": 24.68882635,
+   "lng": 46.62931525,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2 طريق عبد الله بن حذافة السهمي, Riyadh",
+   "base": 27
+  },
+  {
+   "address": "8 الملك عبدالله, riyadh",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله 8",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله 8, riyadh",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله 8, sa, riyadh",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله 8 sa riyadh",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "8, الملك عبدالله, riyadh",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبد 8",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله8",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "الملك عبدالله 8 apt 4b",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "عبدالله 8",
+   "lat": 24.7450191,
+   "lng": 46.7034273,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "8 الملك عبدالله, riyadh",
+   "base": 28
+  },
+  {
+   "address": "345 أحمد بن فضلان, الرياض",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "345 أحمد بن فضلان",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "أحمد بن فضلان 345, الرياض",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "الرياض, أحمد بن فضلان 345, sa",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "sa أحمد بن فضلان 345 الرياض",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "أحمد بن فضلان, 345, الرياض",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "أحمد بن فضلان345",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "فضلان 345",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "Deli أحمد بن فضلان 345",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "أحمد بن فضللان 345",
+   "lat": 24.70778725,
+   "lng": 46.66739416666667,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "345 أحمد بن فضلان, الرياض",
+   "base": 29
+  },
+  {
+   "address": "1 ابن هبة الله, Riyadh",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "1 ابن هبة الله",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1, Riyadh",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1, sa, Riyadh",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1, sa, Riyadh",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "Deli ابن هبة الله 1",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله1",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "ابن هبة الله 1 back entrance",
+   "lat": 24.7274313,
+   "lng": 46.6752451,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "1 ابن هبة الله, Riyadh",
+   "base": 30
+  },
+  {
+   "address": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Northern Ring Road, Al Muruj, 2653",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Northern Ring Road, Al Muruj 2653 12283",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Northern Ring Road, Al Muruj 2653, Riyadh, sa",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Riyadh, sa, Northern Ring Road, Al Muruj 2653",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Riyadh - 2653 - Northern Ring Road, Al Muruj - 12283",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Al Muruj Norhtern Ring Road 2653",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Al Muruj Northern Ring Road 2653 (green door)",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "Mary al muruj northern ring road 2653",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "ring road 2653",
+   "lat": 24.764486871428574,
+   "lng": 46.657338814285716,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2653 Northern Ring Road, Al Muruj, 12283 Riyadh",
+   "base": 31
+  },
+  {
+   "address": "8 واسط, Riyadh",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط, 8",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط 8, Riyadh",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "sa, Riyadh, واسط 8",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "sa sa واسط 8 Riyadh",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط Riyadh",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط 8",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط8",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "Deli واسط 8",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "واسط 8 back entrance",
+   "lat": 24.693479416666666,
+   "lng": 46.64527035,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8 واسط, Riyadh",
+   "base": 32
+  },
+  {
+   "address": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "7341 المهندس مساعد العنقري",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "المهندس مساعد العنقري 7341, 12245",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "sa المهندس مساعد العنقري 7341 Riyadh",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "sa Riyadh المهندس مساعد العنقري 7341",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "12245 7341 Riyadh المهندس مساعد العنقري",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "الهمندس مساعد العنقري 7341",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "المهندس مساعد العنقري7341",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "المهندس مساعد الع 7341",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "Deli المهندس مساعد العنقري 7341",
+   "lat": 24.708566,
+   "lng": 46.6865286,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "7341 المهندس مساعد العنقري, 12245 Riyadh",
+   "base": 33
+  },
+  {
+   "address": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "7842 طريق الملك عبدالعزيز",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز 7842 12284",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز 7842 الرياض sa",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك الملك عبدالعزيز 7842, sa, الرياض",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز الرياض 7842",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز7842",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز 7842 (green door)",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "عبدالعزيز 7842",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "طريق الملك عبدالعزيز 7842",
+   "lat": 24.7622602,
+   "lng": 46.6716645,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "7842 طريق الملك عبدالعزيز, 12284 الرياض",
+   "base": 34
+  },
+  {
+   "address": "8991 Olaya Road, 12611 Riyadh",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Olaya Road, 8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Olaya Road 8991 12611",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Riyadh sa Olaya Road 8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "sa Riyadh Olaya Olaya Road 8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Riyadh - 12611 - Olaya Road",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Olaya Road 8991 (green door)",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "Olaya Road8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "olaya road 8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "OLAYA ROAD 8991",
+   "lat": 24.6773299,
+   "lng": 46.69380365,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "8991 Olaya Road, 12611 Riyadh",
+   "base": 35
+  },
+  {
+   "address": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "2465 شارع زيد بن ثابت",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "شارع زيد بن ثابت 2465, 12811",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "Riyadh sa شارع زيد بن ثابت 2465",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "Riyadh شارع زيد بن ثابت 2465 sa",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "Riyadh شارع زيد بن ثابت 2465 12811",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "Deli شارع زيد بن ثابت 2465",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "شارع زيد بن ثابت 2465 (green door)",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "شارع زيد بن ثابت2465",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "ثابت 2465",
+   "lat": 24.6890044,
+   "lng": 46.7276781,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "2465 شارع زيد بن ثابت, 12811 Riyadh",
+   "base": 36
+  },
+  {
+   "address": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "12232 عبد العزيز بن مساعد بن جلوي",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "عبد العزيز بن مساعد بن جلوي 12232, riadyh",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "riadyh, sa, عبد العزيز بن مساعد بن جلوي 12232",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "riadyh, sa, عبد العزيز بن مساعد بن جلوي 12232",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "عبد العزيز بن مساعد بن جلوي - 12232 - riadyh",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "Deli عبد العزيز بن مساعد بن جلوي 12232",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "عبد العزيز بن مساعد بن جلوي12232",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "عبد العزيز بن مساعد بن جلوي 12232 apt 4b",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "جلوي 12232",
+   "lat": 24.6948127,
+   "lng": 46.7027024,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "12232 عبد العزيز بن مساعد بن جلوي, riadyh",
+   "base": 37
+  },
+  {
+   "address": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "Al Ulaya, RHWA6644, 6644 2858",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "Al Ulaya, RHWA6644, 6644 2858, 12215",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "Al Ulaya, RHWA6644, 6644 2858, sa, Riyadh",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "sa Al Ulaya, RHWA6644, 6644 2858 Riyadh",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "12215 Riyadh 2858 Al Ulaya, RHWA6644, 6644",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "6644 RHWA6464 Al Ulaya 2858",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "6644 rhwa6644 al ulaya 2858",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "6644 RHWA6644 Al Ulaya2858",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "Deli 6644 rhwa6644 al ulaya 2858",
+   "lat": 24.71789618,
+   "lng": 46.67224314,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "2858 Al Ulaya, RHWA6644, 6644, 12215 Riyadh",
+   "base": 38
+  },
+  {
+   "address": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبدالله العنقري, 12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبدالله العنقري 12254 12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "sa الشيخ عبدالله العنقري 12254 Riyadh",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبدالله العنقري 12254, sa, Riyadh",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "12254 - 12254 - Riyadh - الشيخ عبدالله العنقري",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبادلله العنقري 12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "العنقري 12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبدالله العنقري12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  },
+  {
+   "address": "الشيخ عبدالله الع 12254",
+   "lat": 24.7276727,
+   "lng": 46.6888869,
+   "country": "SA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "12254 الشيخ عبدالله العنقري, 12254 Riyadh",
+   "base": 39
+  }
+ ]
+}

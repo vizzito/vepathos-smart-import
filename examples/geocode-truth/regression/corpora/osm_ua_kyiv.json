@@ -1,0 +1,3648 @@
+{
+ "source": "osm-addr",
+ "country": "UA",
+ "city": "Kyiv",
+ "country_label": "Ukraine",
+ "depot": {
+  "lat": 50.4501,
+  "lon": 30.5234,
+  "city": "Kyiv",
+  "country": "Ukraine"
+ },
+ "seed": 42,
+ "bases": 40,
+ "rows_count": 363,
+ "note": "Nodos addr:* del indice n50.60_s50.30_e30.70_w30.40-ukraine.sqlite a <= 6 km, una direccion por calle. La fila limpia es optimista: mide el ruido.",
+ "rows": [
+  {
+   "address": "Татарський провулок 8, Kyiv",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "8 Татарський провулок",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Татарський провулок 8, ua, Kyiv",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Kyiv, ua, Татарський провулок 8",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Kyiv, Татарський провулок",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "провулок 8",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Татарський провулок8",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Mary татарський провулок 8",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "Татарський провулок 8 john",
+   "lat": 50.46763656,
+   "lng": 30.487115879999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Татарський провулок 8, Kyiv",
+   "base": 0
+  },
+  {
+   "address": "вулиця Федора Ернста 2, Kyiv",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "2 вулиця Федора Ернста",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "Kyiv, вулиця Федора Ернста 2, ua",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "вулиця федора ернста 2 kyiv ua",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "вулиця Федора Ернста, Kyiv, 2",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "влуиця Федора Ернста 2",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "вулиця Федора Ернста 2 apt 4b",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "Deli вулиця федора ернста 2",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "ВУЛИЦЯ ФЕДОРА ЕРНСТА 2",
+   "lat": 50.41553323333333,
+   "lng": 30.460667166666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Федора Ернста 2, Kyiv",
+   "base": 1
+  },
+  {
+   "address": "провулок Федьковича 1, Kyiv",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "провулок Федьковича 1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "провулок Федьковича 1 ua Kyiv",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "Kyiv, ua, провулок Федьковича 1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "1 - провулок Федьковича - Kyiv",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "федьковича 1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "провулок федьковича 1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "провулок Федьковича1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "ПРОВУЛОК ФЕДЬКОВИЧА 1",
+   "lat": 50.40239808,
+   "lng": 30.48563666,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "провулок Федьковича 1, Kyiv",
+   "base": 2
+  },
+  {
+   "address": "Ясна вулиця 26/28, Kyiv",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "Ясна вулиця, 26/28",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "Ясна вулиця 26/28 ua Kyiv",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "Ясна вулиця 26/28 Kyiv ua",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "26/28, Kyiv",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "ясна вулиця 26/28",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "вулиця 26/28",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "Deli ясна вулиця 26/28",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "Ясна вуилця 26/28",
+   "lat": 50.40763964,
+   "lng": 30.487712679999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Ясна вулиця 26/28, Kyiv",
+   "base": 3
+  },
+  {
+   "address": "вулиця Комбайнерів 5, Kyiv",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "5 вулиця Комбайнерів",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "ua, вулиця Комбайнерів 5, Kyiv",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "Kyiv, вулиця Комбайнерів 5, ua",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "вулиця Комбайнерів, 5, Kyiv",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "вулиця Комбйанерів 5",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "вулиця Комбайнерів 5 back entrance",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "вулиця комбайнерів 5",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "ВУЛИЦЯ КОМБАЙНЕРІВ 5",
+   "lat": 50.43751988,
+   "lng": 30.44169162,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Комбайнерів 5, Kyiv",
+   "base": 4
+  },
+  {
+   "address": "вулиця Менделєєва 19, Kyiv",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Менделєєва 19",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Менделєєва 19, Kyiv, ua",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "Kyiv вулиця Менделєєва 19 ua ua",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Менделєєва, Kyiv",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця менделєєва 19",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Менделєєва 19 john",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "Deli вулиця менделєєва 19",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Мен 19",
+   "lat": 50.410670440000004,
+   "lng": 30.535894459999998,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "вулиця Менделєєва 19, Kyiv",
+   "base": 5
+  },
+  {
+   "address": "вулиця Нижній Вал 7/9, Kyiv",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "вулиця Нижній Вал 7/9",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "ua, вулиця Нижній Вал 7/9, Kyiv",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "вулиця Нижній Вал 7/9, ua, Kyiv",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "Kyiv вулиця Нижній Вал",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "вулиця нижній вал 7/9",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "ВУЛИЦЯ НИЖНІЙ ВАЛ 7/9",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "вулиця Нижній Вал7/9",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "Mary вулиця нижній вал 7/9",
+   "lat": 50.46353501428571,
+   "lng": 30.50763722857143,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Нижній Вал 7/9, Kyiv",
+   "base": 6
+  },
+  {
+   "address": "Іллінська вулиця 8, Kyiv",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Іллінська вулиця 8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Іллінська вулиця 8, Kyiv, ua",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "ua, Kyiv, Іллінська вулиця 8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Kyiv, 8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Іллінська вулиця 8 (green door)",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Іллінська вулиця8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "іллінська вулиця 8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Mary іллінська вулиця 8",
+   "lat": 50.46434235,
+   "lng": 30.5215232625,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Іллінська вулиця 8, Kyiv",
+   "base": 7
+  },
+  {
+   "address": "Костанайська вулиця 6, Kyiv",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "Костанайська вулиця, 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "ua Kyiv Костанайська вулиця 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "ua Костанаиська вулиця 6 Kyiv",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "Костанайська вулиця - 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "вулиця 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "Костанайська вулиця 6 apt 4b",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "КОСТАНАЙСЬКА ВУЛИЦЯ 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "костанайська вулиця 6",
+   "lat": 50.405656533333335,
+   "lng": 30.50484266666667,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Костанайська вулиця 6, Kyiv",
+   "base": 8
+  },
+  {
+   "address": "Голосіївський проспект 15, 03039 Kyiv",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Голосіївський проспект, 15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Голосіївський проспект 15, 03039",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Kyiv, ua, Голосіївський проспект 15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Голосіївський проспект 15 Kyiv ua",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "15, 03039, Голосіївський проспект, Kyiv",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "ГОЛОСІЇВСЬКИЙ ПРОСПЕКТ 15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "голосіївський проспект 15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Голосіївський про 15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Голосіївський проспект15",
+   "lat": 50.4034466,
+   "lng": 30.5168124,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Голосіївський проспект 15, 03039 Kyiv",
+   "base": 9
+  },
+  {
+   "address": "Смородинський узвіз 19, Kyiv",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "19 Смородинський узвіз",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "Kyiv ua Смородинський узвіз 19",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "ua, Смородинський Смородинський узвіз 19, Kyiv",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "19 - Kyiv - Смородинський узвіз",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "Смоординський узвіз 19",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "узвіз 19",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "смородинський узвіз 19",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "Смородинський узвіз 19 john",
+   "lat": 50.4771672,
+   "lng": 30.480312194736843,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Смородинський узвіз 19, Kyiv",
+   "base": 10
+  },
+  {
+   "address": "Броварський проспект 3-А, Kyiv",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броварський проспект 3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броварський проспект 3-А ua Kyiv",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "ua Kyiv Броварськии проспект 3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броварський проспект 3-А Kyiv",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "проспект 3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броварський проспект3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броварський про 3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Броаврський проспект 3-А",
+   "lat": 50.44620672,
+   "lng": 30.575076439999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Броварський проспект 3-А, Kyiv",
+   "base": 11
+  },
+  {
+   "address": "Наддніпрянське шосе 8, Kyiv",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "Наддніпрянське шосе 8",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "Kyiv, Наддніпрянське шосе 8, ua",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "ua, наддніпрянське шосе 8, kyiv",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "Kyiv 8",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "наддніпрянське шосе 8",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "шосе 8",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "Наддніпрянське шосе 8 john",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "Mary наддніпрянське шосе 8",
+   "lat": 50.4168976,
+   "lng": 30.570958316666665,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Наддніпрянське шосе 8, Kyiv",
+   "base": 12
+  },
+  {
+   "address": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "вулиця Митрополита Андрея Шептицького, 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "ua Kyiv вулиця Митрополита Андрея Шептицького 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "вулиця Митрополита Андрея Шептицького 14-Б ua Kyiv",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "Kyiv, вулиця Митрополита Андрея Шептицького, 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "вулиця Митрополита Андрея Шептицького14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "ВУЛИЦЯ МИТРОПОЛИТА АНДРЕЯ ШЕПТИЦЬКОГО 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "вулиця Митрополита Андрея Шеп 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "Mary вулиця митрополита андрея шептицького 14-Б",
+   "lat": 50.45560026923077,
+   "lng": 30.600368184615384,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Митрополита Андрея Шептицького 14-Б, Kyiv",
+   "base": 13
+  },
+  {
+   "address": "провулок Бабієнків 33, Kyiv",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "провулок Бабієнків 33",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "ua провулок Бабієнків 33 Kyiv",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "Kyiv провулок Бабієнків 33 ua",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "33 - Kyiv - провулок Бабієнків",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "Mary провулок бабієнків 33",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "провулок бабієнків 33",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "бабієнків 33",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "ПРОВУЛОК БАБІЄНКІВ 33",
+   "lat": 50.4026566,
+   "lng": 30.505739060000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "провулок Бабієнків 33, Kyiv",
+   "base": 14
+  },
+  {
+   "address": "Оборонна вулиця 5/13, Kyiv",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "5/13 Оборонна вулиця",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "ua, Оборонна вулиця 5/13, Kyiv",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "Оборонна вулиця 5/13, Kyiv, ua",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "5/13 - Kyiv - Оборонна вулиця",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "Deli оборонна вулиця 5/13",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "Оборонна вулиця5/13",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "Обоорнна вулиця 5/13",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "ОБОРОННА ВУЛИЦЯ 5/13",
+   "lat": 50.4168573,
+   "lng": 30.480257239999997,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Оборонна вулиця 5/13, Kyiv",
+   "base": 15
+  },
+  {
+   "address": "вулиця Лілії Лобанової 5, Kyiv",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "5 вулиця Лілії Лобанової",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "вулиця Лілії Лобанової 5 ua Kyiv",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "Kyiv, ua, вулиця Ліліі Лобановоі 5",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "Kyiv 5 вулиця Лілії Лобанової",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "вулиця Лілії Лоб 5",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "вулиця Лілії Лобанової 5 apt 4b",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "Deli вулиця лілії лобанової 5",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "лобанової 5",
+   "lat": 50.434261199999995,
+   "lng": 30.50210136,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Лілії Лобанової 5, Kyiv",
+   "base": 16
+  },
+  {
+   "address": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "12/16 вулиця Богдана Гаврилишина",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "Kyiv ua вулиця Богдана Гаврилишина 12/16",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця Богдана Гаврилишина 12/16 Kyiv Kyiv ua",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "12/16 - Kyiv - вулиця Богдана Гаврилишина",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця Богдана Гав 12/16",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця Богдана Гавирлишина 12/16",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця Богдана Гаврилишина12/16",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця богдана гаврилишина 12/16",
+   "lat": 50.454035827272726,
+   "lng": 30.4715094,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Богдана Гаврилишина 12/16, Kyiv",
+   "base": 17
+  },
+  {
+   "address": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "3 вулиця Гулаків-Артемовських",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "ua Kyiv вулиця Гулаків-Артемовських 3",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "вулиця Гулаків-Артемовських 3, Kyiv, ua",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "вулиця Гулаків-Артемовських, Kyiv",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "гулаків-артемовських 3",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "вулиця Гулаків-Артемовських3",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "вулиця гулаків-артемовських 3",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "ВУЛИЦЯ ГУЛАКІВ-АРТЕМОВСЬКИХ 3",
+   "lat": 50.48068904,
+   "lng": 30.49333254,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Гулаків-Артемовських 3, Kyiv",
+   "base": 18
+  },
+  {
+   "address": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "27 вулиця Добровольчих Батальйонів",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "вулиця Добровольчих Батальйонів 27 ua Kyiv",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "вулиця Добровольчих Батальионів 27, Kyiv, ua",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "Kyiv 27 вулиця Добровольчих Батальйонів",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "батальйонів 27",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "Deli вулиця добровольчих батальйонів 27",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "вулиця добровольчих батальйонів 27",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "вулиця Добровольчих Батальйонів27",
+   "lat": 50.43012242,
+   "lng": 30.552212199999996,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Добровольчих Батальйонів 27, Kyiv",
+   "base": 19
+  },
+  {
+   "address": "вулиця Саперне Поле 5, Kyiv",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "вулиця Саперне Поле 5",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "ua вулиця Саперне Поле 5 Kyiv",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "Kyiv, ua, ua, вулиця Саперне Поле 5",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "5, вулиця Саперне Поле, Kyiv",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "вулиця Саперне Поле 5 (green door)",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "Mary вулиця саперне поле 5",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "вулиця саперне поле 5",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "поле 5",
+   "lat": 50.41890022352941,
+   "lng": 30.53105256470588,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Саперне Поле 5, Kyiv",
+   "base": 20
+  },
+  {
+   "address": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "вулиця Гетьмана Павла Полуботка 1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "вулиця Гетьмана Павла Полуботка 1, Kyiv, ua",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "ua вулиця Гетьмана Павла Полуботка 1 Kyiv",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "Kyiv - вулиця Гетьмана Павла Полуботка - 1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "вулиця Гетьмана Павла Плоуботка 1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "вулиця Гетьмана Павла Пол 1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "вулиця Гетьмана Павла Полуботка1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "ВУЛИЦЯ ГЕТЬМАНА ПАВЛА ПОЛУБОТКА 1",
+   "lat": 50.454069,
+   "lng": 30.6073243,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Гетьмана Павла Полуботка 1, Kyiv",
+   "base": 21
+  },
+  {
+   "address": "Пішохідний провулок 4, Kyiv",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "Пішохідний провулок, 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "ua, Kyiv, Пішохідний провулок 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "ua пішохідний провулок 4 kyiv",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "4 - Пішохідний провулок",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "Deli пішохідний провулок 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "Пішоіхдний провулок 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "провулок 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "ПІШОХІДНИЙ ПРОВУЛОК 4",
+   "lat": 50.407431020000004,
+   "lng": 30.536658080000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Пішохідний провулок 4, Kyiv",
+   "base": 22
+  },
+  {
+   "address": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "вулиця Сергія Берегового 17-А",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "вулиця Сергія Берегового 17-А, 03186",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "Kyiv, вулиця Сергія Берегового 17-А, ua",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "вулиця Сергія Берегового 17-А ua Kyiv",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "03186 - Kyiv - вулиця Сергія Берегового - 17-А",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "вулиця Сергія Береговгоо 17-А",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "берегового 17-А",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "ВУЛИЦЯ СЕРГІЯ БЕРЕГОВОГО 17-А",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "вулиця сергія берегового 17-а",
+   "lat": 50.42959752,
+   "lng": 30.452003180000002,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Сергія Берегового 17-А, 03186 Kyiv",
+   "base": 23
+  },
+  {
+   "address": "Провідницька вулиця 2, Kyiv",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "Провідницька вулиця, 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "ua, Провідницька вулиця 2, Kyiv",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "провідницька вулиця 2 kyiv ua",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "Провідницька вулиця, Kyiv, 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "Mary провідницька вулиця 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "ПРОВІДНИЦЬКА ВУЛИЦЯ 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "Проівдницька вулиця 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "вулиця 2",
+   "lat": 50.433044685714286,
+   "lng": 30.495956514285716,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Провідницька вулиця 2, Kyiv",
+   "base": 24
+  },
+  {
+   "address": "34-та Садова вулиця 13, Kyiv",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "34-та Садова вулиця, 13",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "ua 34-та Садова вулиця 13 Kyiv",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "ua 34-та Садова Садова вулиця 13 Kyiv",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "34-та Садова вулиця - Kyiv",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "34-ТА САДОВА ВУЛИЦЯ 13",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "Mary 34-та садова вулиця 13",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "34-та Садвоа вулиця 13",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "34-та Садова вулиця13",
+   "lat": 50.48100486,
+   "lng": 30.561632499999995,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "34-та Садова вулиця 13, Kyiv",
+   "base": 25
+  },
+  {
+   "address": "23-тя Садова вулиця 26, Kyiv",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "23-тя Садова вулиця, 26",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "23-тя Садова вулиця 26, Kyiv, ua",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "Kyiv 23-тя Садова вулиця 26 ua",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "23-тя Садова вулиця, Kyiv",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "23-тя Садова вулиця26",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "вулиця 26",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "23-тя Саодва вулиця 26",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "Mary 23-тя садова вулиця 26",
+   "lat": 50.47668992,
+   "lng": 30.569924980000003,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "23-тя Садова вулиця 26, Kyiv",
+   "base": 26
+  },
+  {
+   "address": "Приозерна вулиця 12-А, Kyiv",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "Приозерна вулиця, 12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "ua Приозерна вулиця 12-А Kyiv",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "Приозерна вулиця 12-А ua Kyiv",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "Приозерна вулиця - 12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "Приозерна вулиця12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "вулиця 12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "ПРИОЗЕРНА ВУЛИЦЯ 12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "Приоезрна вулиця 12-А",
+   "lat": 50.49280061,
+   "lng": 30.51237036,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Приозерна вулиця 12-А, Kyiv",
+   "base": 27
+  },
+  {
+   "address": "вулиця Івана Федорова 10, Kyiv",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця Івана Федорова 10",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "Kyiv, ua, вулиця Івана Федорова 10",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця Івана Федорова 10, ua, Kyiv",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "Kyiv 10 вулиця Івана Федорова",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "Mary вулиця івана федорова 10",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця Івана Федорова 10 (green door)",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця Івана Фдеорова 10",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця івана федорова 10",
+   "lat": 50.42821145,
+   "lng": 30.51495425,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Івана Федорова 10, Kyiv",
+   "base": 28
+  },
+  {
+   "address": "вулиця Шовкуненка 8/20, Kyiv",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "вулиця Шовкуненка 8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "вулиця Шовкуненка 8/20, Kyiv, ua",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "Kyiv, ua, вулиця Шовкуненка 8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "Kyiv 8/20 вулиця Шовкуненка",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "ВУЛИЦЯ ШОВКУНЕНКА 8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "вулиця Шоквуненка 8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "вулиця Шовкуненка8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "шовкуненка 8/20",
+   "lat": 50.43560673333334,
+   "lng": 30.476217344444446,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Шовкуненка 8/20, Kyiv",
+   "base": 29
+  },
+  {
+   "address": "Велика Китаївська вулиця 10, Kyiv",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "Велика Китаївська вулиця, 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "ua, Kyiv, Велика Китаївська вулиця 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "Велика Китаївська вулиця 10, ua, Kyiv",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "10, Kyiv",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "Mary велика китаївська вулиця 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "Велика Ктиаївська вулиця 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "ВЕЛИКА КИТАЇВСЬКА ВУЛИЦЯ 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "вулиця 10",
+   "lat": 50.40047516,
+   "lng": 30.53080632,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Велика Китаївська вулиця 10, Kyiv",
+   "base": 30
+  },
+  {
+   "address": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "вулиця Івана Пулюя, 1",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "вулиця Івана Пулюя 1 03048",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 2,
+   "noise_kind": "L2",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "ua, вулиця Івана Пулюя 1, Kyiv",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "kyiv ua вулиця івана пулюя 1",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "Kyiv, 03048, вулиця Івана Пулюя",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "Mary вулиця івана пулюя 1",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "вулиця Івана Пулюя 1 john",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "пулюя 1",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "вулиця івана пулюя 1",
+   "lat": 50.4177316923077,
+   "lng": 30.46596326153846,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "вулиця Івана Пулюя 1, 03048 Kyiv",
+   "base": 31
+  },
+  {
+   "address": "Назарівська вулиця 19, Kyiv",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "Назарівська вулиця 19",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "ua, Назарівська вулиця 19, Kyiv",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "ua Назарівська вулиця 19 Kyiv",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "Назарівська вулиця, Kyiv",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "Deli назарівська вулиця 19",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "Назарівська вулиця 19 apt 4b",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "назарівська вулиця 19",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "вулиця 19",
+   "lat": 50.44355392,
+   "lng": 30.49943204,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Назарівська вулиця 19, Kyiv",
+   "base": 32
+  },
+  {
+   "address": "Старокиївська вулиця 27, Kyiv",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "Старокиївська вулиця 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "Старокиївська вулиця 27 ua Kyiv",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "ua, Kyiv, Старокиівська вулиця 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "Kyiv 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "Старокиївська вулиця27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "Староикївська вулиця 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "СТАРОКИЇВСЬКА ВУЛИЦЯ 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "вулиця 27",
+   "lat": 50.454571944444446,
+   "lng": 30.473639322222223,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Старокиївська вулиця 27, Kyiv",
+   "base": 33
+  },
+  {
+   "address": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "вулиця Віктора Ярмоли 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "Kyiv ua вулиця Віктора Ярмоли 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "ua, вулиця Віктора Ярмоли 38-А, Kyiv",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "вулиця Віктора Ярмоли, 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "Mary вулиця віктора ярмоли 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "ярмоли 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "вулиця Вікотра Ярмоли 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "ВУЛИЦЯ ВІКТОРА ЯРМОЛИ 38-А",
+   "lat": 50.454870420000006,
+   "lng": 30.46840486,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "вулиця Віктора Ярмоли 38-А, Kyiv",
+   "base": 34
+  },
+  {
+   "address": "Арсенальний провулок 5, Kyiv",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "Арсенальний провулок 5",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "ua Kyiv Арсенальний провулок 5",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "Арсенальний провулок 5 Kyiv ua",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "Арсенальний провулок, Kyiv",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "Арсенальний провулок5",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "АРСЕНАЛЬНИЙ ПРОВУЛОК 5",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "Арсенальний провулок 5 john",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "провулок 5",
+   "lat": 50.43160581428572,
+   "lng": 30.537769914285715,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Арсенальний провулок 5, Kyiv",
+   "base": 35
+  },
+  {
+   "address": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "3 провулок Архітектора Івана Зарудного",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "провулок Архітектора Івана Зарудного 3 Kyiv ua",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "Kyiv провулок Архітектора Івана Зарудного 3 ua",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "3, Kyiv",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "провулок Архітектора Івана Зарудного 3 back entrance",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "ПРОВУЛОК АРХІТЕКТОРА ІВАНА ЗАРУДНОГО 3",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "зарудного 3",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "провулок Архітектора Івана Зар 3",
+   "lat": 50.4668243,
+   "lng": 30.4776278,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "провулок Архітектора Івана Зарудного 3, Kyiv",
+   "base": 36
+  },
+  {
+   "address": "провулок Івана Козловського 3, Kyiv",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "провулок Івана Козловського, 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "ua, провулок Івана Козловського 3, Kyiv",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "ua Kyiv провулок Івана Козловського 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "Kyiv, провулок Івана Козловського",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "провулок Івана Коз 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "truncate",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "провулок Івана Козловьского 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "козловського 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "ПРОВУЛОК ІВАНА КОЗЛОВСЬКОГО 3",
+   "lat": 50.44199885555556,
+   "lng": 30.527456244444448,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "провулок Івана Козловського 3, Kyiv",
+   "base": 37
+  },
+  {
+   "address": "Рейтарська вулиця 12, Kyiv",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Рейтарська вулиця 12",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Kyiv, Рейтарська вулиця 12, ua",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "ua Kyiv Рейтарська вулиця 12",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Kyiv Рейтарська вулиця",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Рейтарська вулиця 12 back entrance",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Рейтарська вулиця12",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "glued",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "вулиця 12",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "surname",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Рейтасрька вулиця 12",
+   "lat": 50.4520907,
+   "lng": 30.5116721,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "typo",
+   "address_clean": "Рейтарська вулиця 12, Kyiv",
+   "base": 38
+  },
+  {
+   "address": "Липська вулиця 15/17, Kyiv",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 0,
+   "noise_kind": "clean",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "15/17 Липська вулиця",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 1,
+   "noise_kind": "L1",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "ua Липська вулиця 15/17 Kyiv",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 3,
+   "noise_kind": "L3",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "Kyiv Липська вулиця 15/17 ua",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 4,
+   "noise_kind": "L4",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "15/17, Kyiv, Липська вулиця",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 5,
+   "noise_kind": "L5",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "Липська вулиця 15/17 john",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "note_tail",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "ЛИПСЬКА ВУЛИЦЯ 15/17",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "caps",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "Deli липська вулиця 15/17",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "name_head",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  },
+  {
+   "address": "липська вулиця 15/17",
+   "lat": 50.44329686571429,
+   "lng": 30.534574225714284,
+   "country": "UA",
+   "noise_level": 6,
+   "noise_kind": "lower",
+   "address_clean": "Липська вулиця 15/17, Kyiv",
+   "base": 39
+  }
+ ]
+}
