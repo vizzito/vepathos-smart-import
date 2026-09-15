@@ -9,6 +9,9 @@
   Si: cuando el texto trae ciudad sin pais ("…, Lyon", "…, Mumbai").
   No tanto: si el depot ya inyecta city/country (flujo tipico con mapa).
   El JSON curado (CABA, CDMX, …) sigue ganando para aliases especiales.
+  Muchas ciudades se llaman como un apellido (Lopez, Castro): por eso el
+  normalizador solo cree estas pistas en posicion de localidad
+  (`normalization.address._geonames_cue_position`), nunca adentro de la calle.
 
 Uso:
   python scripts/import_geonames_localities.py

@@ -13,6 +13,7 @@ import re
 
 from ..addresses.heuristic import find_street_span
 from ..addresses.scoring import AddressCandidateScorer
+from .canvas import CONSUMED
 from .labels import tidy
 from .result import FieldValue
 
@@ -54,7 +55,12 @@ def extract_address(canvas, context, scorer: AddressCandidateScorer | None = Non
                     parser=None) -> FieldValue | None:
     """La direccion mas creible del texto restante, o None si no hay evidencia."""
     text = canvas.remaining()
-    span = find_street_span(text, context.locales)
+    # El ancla se busca con lo consumido como corte, no como blanco: un nombre de
+    # calle no tiene adentro un telefono, un email ni bultos. Con blancos,
+    # 'Juan Lopez 1133334444 Gorriti 4500' anclaba en 'Juan Lopez Gorriti' (la
+    # calle acepta toda palabra a la izquierda) y el nombre nunca le llegaba a
+    # `extract_customer_name`. Sin nada consumido en el medio sigue ambiguo.
+    span = find_street_span(canvas.remaining(fill=CONSUMED), context.locales)
     scorer = scorer or AddressCandidateScorer(context.locales)
 
     if span is None:

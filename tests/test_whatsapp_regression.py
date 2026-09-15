@@ -124,3 +124,41 @@ def test_es_practicamente_instantaneo(resultado):
     """12 registros con reglas: milisegundos, no decenas de segundos."""
     assert resultado.report["extraction"]["processing_time_ms"] < 500
     assert resultado.report["processing_times"]["total"] < 1.0
+
+
+#: nombre, telefono y calle pegados, y apellidos que GeoNames conoce como ciudades:
+#: Lopez y Rodriguez (Filipinas), Castro (Brasil)
+APELLIDOS_QUE_SON_CIUDADES = """Hola! Van las de hoy:
+
+- Juan Lopez 1133334444 Gorriti 4500 depto 3B
+- Pedro Castro 1144445555 Juan B Justo 4500
+- Carlos Rodriguez 1155556666 Rivadavia 5000 3B
+
+Gracias
+"""
+
+
+@pytest.fixture(scope="module")
+def apellidos_que_son_ciudades(tmp_path_factory):
+    path = tmp_path_factory.mktemp("paste") / "apellidos_que_son_ciudades.txt"
+    path.write_text(APELLIDOS_QUE_SON_CIUDADES, encoding="utf-8")
+    return run_normalize(path, SCHEMA, phone_region="AR", service_date=DAY)
+
+
+def test_un_apellido_que_es_ciudad_no_cambia_el_pais(apellidos_que_son_ciudades):
+    """Antes: 'Juan Lopez Gorriti 4500, 3B, Philippines' → el geocoder vetaba
+    los candidatos argentinos y la parada quedaba sin pin."""
+    for delivery in apellidos_que_son_ciudades.deliveries:
+        address = delivery.get("address") or ""
+        assert address.endswith(", Argentina"), address
+        assert "Philippines" not in address and "Brazil" not in address, address
+
+
+def test_el_telefono_separa_el_nombre_de_la_calle(apellidos_que_son_ciudades):
+    obtenido = [(d.get("customer_name"), d.get("address"), d.get("phone"))
+                for d in apellidos_que_son_ciudades.deliveries]
+    assert obtenido == [
+        ("Juan Lopez", "Gorriti 4500, 3B, Argentina", "+541133334444"),
+        ("Pedro Castro", "Juan B Justo 4500, Argentina", "+541144445555"),
+        ("Carlos Rodriguez", "Rivadavia 5000, 3B, Argentina", "+541155556666"),
+    ]

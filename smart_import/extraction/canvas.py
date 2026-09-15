@@ -7,6 +7,10 @@ entrada, asi que todo valor extraido se puede rastrear hasta su posicion exacta.
 """
 from __future__ import annotations
 
+#: relleno de lo consumido que no es espacio, palabra, digito ni puntuacion: ningun
+#: patron de calle lo atraviesa
+CONSUMED = "\x00"
+
 
 class TextCanvas:
     """`original` no cambia; `remaining()` devuelve el texto con lo consumido en blanco."""
@@ -26,9 +30,13 @@ class TextCanvas:
         start, end = span
         return not any(self._mask[max(0, start):min(len(self._mask), end)])
 
-    def remaining(self) -> str:
-        """Mismo largo que el original: los offsets siguen sirviendo."""
-        return "".join(" " if used else ch
+    def remaining(self, fill: str = " ") -> str:
+        """Mismo largo que el original: los offsets siguen sirviendo.
+
+        `fill` reemplaza cada caracter consumido. El blanco deja que lo de los dos
+        costados se lea de corrido; `CONSUMED` lo deja como un corte.
+        """
+        return "".join(fill if used else ch
                        for ch, used in zip(self.original, self._mask))
 
     def remaining_text(self) -> str:

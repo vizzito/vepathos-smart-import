@@ -10,12 +10,16 @@ Los diccionarios viven en `resources/locality_expand.json` (+ ISO en
 from __future__ import annotations
 
 import re
+from functools import lru_cache
 from typing import Any, Mapping
 
 from ..resources import (
+    LocalityExpansion,
     fold,
+    geonames_cue_countries,
+    label_set,
     locality_alias_groups,
-    locality_expansions,
+    locality_expansion_rows,
     phone_region_country_map,
 )
 
@@ -180,6 +184,48 @@ def _cue_matches(folded_haystack: str, cue: str, tokens: frozenset[str] | None =
     return c in bag
 
 
+#: (filas indexadas, token → filas, filas sin token ASCII que se prueban siempre)
+_cue_index_cache: tuple[tuple[LocalityExpansion, ...], dict[str, tuple[int, ...]],
+                        tuple[int, ...]] | None = None
+
+
+def _candidate_rows(tokens: frozenset[str]) -> list[LocalityExpansion]:
+    """Las filas cuya pista PUEDE aparecer en el texto, en el orden original.
+
+    Recorrer las ~32 mil filas re-foldeando cada pista costaba 35-50 ms por
+    direccion. `_cue_matches` solo acepta una pista suelta si esta en la bolsa de
+    tokens, y una frase si su primer token esta; asi que indexar por ese token no
+    deja afuera ninguna fila que la recorrida completa hubiera aceptado. Las
+    frases sin token ASCII ('санкт-петербург') no se pueden indexar y se prueban
+    siempre. Lo que decide sigue siendo `_expansion_applies`, fila por fila.
+    """
+    global _cue_index_cache
+    rows = locality_expansion_rows()
+    if _cue_index_cache is None or _cue_index_cache[0] is not rows:
+        by_token: dict[str, list[int]] = {}
+        always: list[int] = []
+        for position, row in enumerate(rows):
+            for cue in row.cues:
+                if len(cue) < _CUE_MIN_LEN:
+                    continue
+                if " " in cue or "-" in cue:
+                    first = re.search(r"[a-z0-9]+", cue)
+                    if first is None:
+                        always.append(position)
+                        continue
+                    key = first.group(0)
+                else:
+                    key = cue
+                by_token.setdefault(key, []).append(position)
+        _cue_index_cache = (rows, {k: tuple(v) for k, v in by_token.items()},
+                            tuple(always))
+    _, by_token, always = _cue_index_cache
+    positions = set(always)
+    for token in tokens:
+        positions.update(by_token.get(token, ()))
+    return [rows[p] for p in sorted(positions)]
+
+
 #: separadores de segmento dentro de una direccion escrita
 _SEGMENTS = re.compile(r"[,;|]|\s+-\s+")
 #: una altura de calle: numero pelado, con a lo sumo una letra ('1234', '450b').
@@ -214,13 +260,141 @@ def _cue_is_street(folded_haystack: str, cue: str) -> bool:
     return False
 
 
-def _country_names() -> set[str]:
+#: palabras de un segmento foldeado, sin la puntuacion
+_WORD = re.compile(r"[^\W_]+")
+
+#: donde esta una pista de GeoNames, de menos a mas evidencia de localidad
+_INSIDE, _AFTER_HOUSE_NUMBER, _OWN_SEGMENT = 0, 1, 2
+
+
+def _is_locality_decoration(word: str) -> bool:
+    """Lo que acompaña a una ciudad sin dejar de ser su segmento: CP, CPA o sigla.
+
+    'b7000 tandil', 'campinas sp 13010', 'springfield il 62701'. Un tipo de via de
+    dos letras no es sigla: 'elgin rd 114' es una calle, no Elgin (Illinois).
+    """
+    if any(ch.isdigit() for ch in word):
+        return True
+    return len(word) == 2 and word.isalpha() and word not in label_set("street_tokens", None)
+
+
+def _geonames_cue_position(folded_haystack: str, cue: str) -> int:
+    """Que tan en posicion de localidad esta una pista de GeoNames.
+
+    GeoNames trae 32 mil ciudades y muchas se llaman como un apellido o una calle
+    de otro pais: Lopez (Filipinas), Castro (Brasil), Medina (Irak), Cabildo
+    (Chile). Que la palabra aparezca no dice nada; donde aparece, si:
+
+        'gorriti 4500, 3b, lopez'   -> _OWN_SEGMENT         su propio segmento
+        '123 main st springfield'   -> _AFTER_HOUSE_NUMBER  cierra la direccion
+        'juan lopez gorriti 4500'   -> _INSIDE              nombre o calle
+
+    El primer segmento es la calle (igual que en `geocoding.scoring`). Una pista
+    pegada a una altura ('callao 1219', '4500 lopez') es calle en cualquier lado.
+    """
+    target = _WORD.findall(cue)
+    if not target:
+        return _INSIDE
+    best = _INSIDE
+    for index, segment in enumerate(_SEGMENTS.split(folded_haystack)):
+        words = _WORD.findall(segment)
+        for i in range(len(words) - len(target) + 1):
+            if words[i:i + len(target)] != target:
+                continue
+            before, after = words[:i], words[i + len(target):]
+            if ((before and _BARE_NUMBER.match(before[-1]))
+                    or (after and _BARE_NUMBER.match(after[0]))):
+                continue
+            if not all(_is_locality_decoration(w) for w in after):
+                continue
+            # Adelante solo un CP ('b7000 tandil'): una sigla adelante es un
+            # tratamiento, y 'sr lopez' es una persona.
+            if index > 0 and all(any(ch.isdigit() for ch in w) for w in before):
+                return _OWN_SEGMENT
+            if any(_BARE_NUMBER.match(w) for w in before):
+                best = _AFTER_HOUSE_NUMBER
+    return best
+
+
+def _expansion_applies(row: LocalityExpansion, folded_haystack: str,
+                       tokens: frozenset[str], explicit_iso: str | None,
+                       written_iso: str | None = None) -> bool:
+    matched = [cue for cue in row.cues if _cue_matches(folded_haystack, cue, tokens)]
+    if not matched:
+        return False
+    row_isos = {iso for token in row.tokens if (iso := _country_iso(token))}
+    # Un pais escrito en la direccion le gana a cualquier pista:
+    # 'guatemala, Bulevar Ensenada de San Isidro 13-55' no es Peru.
+    if written_iso and row_isos and written_iso not in row_isos:
+        return False
+    # Tambien coincide si el texto ya nombra el pais de la fila, aunque sea sin
+    # coma: 'San Francisco united states SANSOME ST 1045'.
+    agrees = (explicit_iso is None or not row_isos or explicit_iso in row_isos
+              or any(_country_iso(t) and already_present(folded_haystack, t)
+                     for t in row.tokens))
+
+    if row.curated:
+        # Una pista pegada a una altura es el nombre de la CALLE, no la ciudad.
+        # Sin esto 'Av Callao 1219' se enriquece con 'Peru' y la query sale a
+        # buscar la direccion al pais equivocado.
+        places = [cue for cue in matched if not _cue_is_street(folded_haystack, cue)]
+        # Tampoco pisa al pais del depot/telefono si ese pais tiene una ciudad
+        # con el mismo nombre: 'San Isidro' con AR es el partido, no Lima; 'Paris'
+        # con US es Texas.
+        return bool(places) and (
+            agrees or any(not _city_in_country(cue, explicit_iso) for cue in places))
+
+    # GeoNames: 'Juan Lopez 1133334444 Gorriti 4500' dejaba 'Juan Lopez Gorriti
+    # 4500, Philippines' y el geocoder vetaba los candidatos argentinos.
+    for cue in matched:
+        if cue in _country_name_keys():
+            continue    # 'Mexico' tambien es un pueblo de Filipinas; el segmento es el pais
+        position = _geonames_cue_position(folded_haystack, cue)
+        # En su segmento pisa al pais del depot/telefono, salvo que ese pais tenga
+        # una ciudad con el mismo nombre: 'Av Massey 100, Lincoln' con AR es
+        # Lincoln (Buenos Aires), no Nebraska.
+        if position == _OWN_SEGMENT and (agrees or not _city_in_country(cue, explicit_iso)):
+            return True
+        # Cerrando la direccion sin coma es evidencia debil: completa el pais si
+        # nadie lo dijo, pero no pisa el del depot ni el del telefono.
+        if position == _AFTER_HOUSE_NUMBER and agrees:
+            return True
+    return False
+
+
+def _city_in_country(cue: str, iso: str | None) -> bool:
+    return any(_country_iso(name) == iso for name in geonames_cue_countries().get(cue, ()))
+
+
+@lru_cache(maxsize=1)
+def _country_name_keys() -> frozenset[str]:
+    """Nombres de pais foldeados: los de la tabla ISO, los preferidos y los alias."""
+    return frozenset(_iso_by_country_name()) | frozenset(_country_names())
+
+
+@lru_cache(maxsize=1)
+def _iso_by_country_name() -> dict[str, str]:
+    """Nombre foldeado → ISO-2, con los nombres de GeoNames ('Brazil') y los preferidos ('Brasil')."""
+    from ..resources import load_json
+    table = {fold(str(name)): str(code).upper()
+             for code, name in load_json("iso3166_alpha2.json").items()}
+    table.update({fold(name): code for code, name in phone_region_country_map().items()})
+    return table
+
+
+def _country_iso(label: str) -> str | None:
+    """Nombre exacto de pais → ISO-2. Sin substring: 'y Portugal' es una calle de Quito."""
+    return _iso_by_country_name().get(fold(label))
+
+
+@lru_cache(maxsize=1)
+def _country_names() -> frozenset[str]:
     names = {fold(v) for v in phone_region_country_map().values()}
     names.update({
         "united states", "usa", "estados unidos", "estados unidos de america",
         "uk", "great britain", "england",
     })
-    return names
+    return frozenset(names)
 
 
 def _looks_like_country(token: str) -> bool:
@@ -306,25 +480,28 @@ def maximize_address_for_geocode(
     implica otro pais — un paste de Miami no puede terminar en Argentina
     solo porque RouteHub mando ``phone_region=AR``.
     """
-    raw = dedupe_address_segments(
-        re.sub(r"\s+", " ", (address or "").strip()).strip(" ,;")
-    )
+    written = re.sub(r"\s+", " ", (address or "").strip()).strip(" ,;")
+    raw = dedupe_address_segments(written)
     if not raw:
         return raw
 
     extras: list[str] = []
     folded = fold(raw)
     bag = _haystack_tokens(folded)
-    for cues, tokens in locality_expansions():
-        # Una pista pegada a una altura es el nombre de la CALLE, no la ciudad.
-        # Sin esto 'Av Callao 1219' se enriquece con 'Peru' y la query sale a
-        # buscar la direccion al pais equivocado.
-        if any(_cue_matches(folded, cue, bag) and not _cue_is_street(folded, cue)
-               for cue in cues):
-            for tok in tokens:
+    written_country = _written_country(written)
+    written_iso = iso_from_country_label(written_country) if written_country else None
+    explicit_iso = (written_iso or iso_from_country_label(country)
+                    or (phone_region or "").upper() or None)
+    for row in _candidate_rows(bag):
+        if _expansion_applies(row, folded, bag, explicit_iso, written_iso):
+            for tok in row.tokens:
                 if tok not in extras:
                     extras.append(tok)
             break
+    # Los tokens de una fila de expansion son paises por construccion: 'Brazil'
+    # tiene que implicar Brasil aunque no este entre los nombres preferidos. Sin
+    # esto 'Campinas' salia con 'Brazil, Argentina'.
+    expansion_country = next((t for t in extras if _country_iso(t)), None)
 
     if extra_tokens:
         for tok in extra_tokens:
@@ -332,18 +509,54 @@ def maximize_address_for_geocode(
             if t and t not in extras:
                 extras.append(t)
 
-    implied_country = country or next((t for t in extras if _looks_like_country(t)), None)
+    # Un pais escrito en la direccion tambien lo implica: 'Carrera 7 45, Colombia'
+    # con phone_region=AR no puede terminar en 'Colombia, Argentina'.
+    implied_country = (country or written_country or expansion_country
+                       or next((t for t in extras if _looks_like_country(t)), None))
     region_country = country_from_phone_region(phone_region)
     if region_country and not implied_country:
         extras.append(region_country)
-    elif region_country and implied_country and fold(region_country) == fold(implied_country):
-        pass
     # si implied_country != region_country: se ignora phone_region (conflicto)
 
     if country and country not in extras:
         extras.append(country)
 
-    missing = [t for t in extras if not already_present(raw, t)]
+    missing = _missing_tokens(raw, extras)
     if not missing:
         return dedupe_address_segments(raw)
     return dedupe_address_segments(f"{raw}, {', '.join(missing)}")
+
+
+def _written_country(address: str) -> str | None:
+    """El pais que la direccion ya nombra en un segmento propio, si lo hay.
+
+    Solo nombres de pais preferidos o sus alias ('Colombia', 'USA'), no la tabla
+    ISO entera: 'Georgia' es un estado, 'Chad' y 'Jordan' son nombres. Seguido de
+    una altura es la calle: en 'Nicaragua, 4824' (export OA de CABA) Nicaragua es
+    la calle; en 'guatemala, Bulevar Ensenada 13-55' es el pais.
+    """
+    parts = [part.strip(" .") for part in _SEGMENTS.split(address)]
+    for index, label in enumerate(parts):
+        if not label or fold(label) not in _country_names():
+            continue
+        following = parts[index + 1] if index + 1 < len(parts) else ""
+        if re.fullmatch(r"\d{1,5}\s*[a-z]{0,3}", fold(following)):    # '4824', '6474BIS'
+            continue
+        return label
+    return None
+
+
+def _missing_tokens(raw: str, extras: list[str]) -> list[str]:
+    """Lo que falta agregar, sin repetir un pais con otro nombre ('Czech Republic' y 'Czechia')."""
+    countries = {iso for part in _SEGMENTS.split(raw) if (iso := _country_iso(part.strip()))}
+    missing: list[str] = []
+    for token in extras:
+        if already_present(raw, token):
+            continue
+        iso = _country_iso(token)
+        if iso and iso in countries:
+            continue
+        if iso:
+            countries.add(iso)
+        missing.append(token)
+    return missing

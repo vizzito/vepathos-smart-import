@@ -298,3 +298,154 @@ def test_la_ciudad_de_verdad_sigue_enriqueciendo(address, debe_aparecer):
     """La regla mira el vecino inmediato: un CPA ('B7000') no es una altura."""
     from smart_import.normalization.address import maximize_address_for_geocode
     assert debe_aparecer in maximize_address_for_geocode(address, phone_region="AR")
+
+
+# ---------- GeoNames: un apellido que tambien es ciudad no cambia el pais ----------
+
+@pytest.mark.parametrize("address, no_debe_aparecer", [
+    ("Juan Lopez Gorriti 4500, 3B", "Philippines"),
+    ("Pedro Castro Juan B Justo 4500", "Brazil"),
+    ("Carlos Rodriguez Rivadavia 5000, 3B", "Philippines"),
+    ("Av Cabildo y Juramento", "Chile"),
+    ("Lavalle 3690, Martin Diaz", "Slovakia"),
+])
+def test_una_pista_de_geonames_adentro_de_la_calle_no_es_localidad(address, no_debe_aparecer):
+    """GeoNames trae 32 mil ciudades: Lopez, Castro y Rodriguez son ciudades.
+
+    El nombre del cliente pegado a la calle ('Juan Lopez Gorriti 4500') le
+    agregaba 'Philippines' a la query y el geocoder vetaba los candidatos
+    argentinos. Sin coma que la aisle, una ciudad de GeoNames no es localidad.
+    """
+    from smart_import.normalization.address import maximize_address_for_geocode
+    salida = maximize_address_for_geocode(address, phone_region="AR")
+    assert no_debe_aparecer not in salida, salida
+    assert salida.endswith("Argentina"), salida
+
+
+def test_lopez_pegado_a_la_calle_termina_en_argentina():
+    from smart_import.normalization.address import maximize_address_for_geocode
+    assert maximize_address_for_geocode(
+        "Juan Lopez Gorriti 4500, 3B", phone_region="AR",
+    ) == "Juan Lopez Gorriti 4500, 3B, Argentina"
+
+
+@pytest.mark.parametrize("address, debe_aparecer", [
+    ("Main St 123, Springfield, IL 62701", "United States"),
+    ("Rua Augusta 1500, Campinas SP 13010", "Brazil"),
+    ("10 Park Row, Leeds LS1 5HD", "United Kingdom"),
+])
+def test_una_ciudad_de_geonames_en_su_segmento_sigue_enriqueciendo(address, debe_aparecer):
+    """En su propio segmento (con CP o sigla al lado) sigue siendo la ciudad.
+
+    Springfield, Campinas y Leeds no estan en el JSON curado: solo GeoNames las conoce.
+    """
+    from smart_import.normalization.address import maximize_address_for_geocode
+    assert debe_aparecer in maximize_address_for_geocode(address, phone_region="AR")
+
+
+@pytest.mark.parametrize("address, phone_region, esperado", [
+    # homonimas: el pais explicito tambien tiene una ciudad con ese nombre
+    ("Av Massey 100, Lincoln", "AR", "Av Massey 100, Lincoln, Argentina"),
+    ("San Martin 200, Colon", "AR", "San Martin 200, Colon, Argentina"),
+    # 'rd' es tipo de via, no sigla: el segmento es una calle, no Elgin (Illinois)
+    ("Dunedin, Elgin Rd 114", "NZ", "Dunedin, Elgin Rd 114, New Zealand"),
+    # 'Mexico' tambien es un pueblo de Filipinas en GeoNames; el segmento es el pais
+    ("Avenida Juarez 100, Mexico", None, "Avenida Juarez 100, Mexico"),
+])
+def test_una_ciudad_de_geonames_en_su_segmento_no_inventa_otro_pais(
+        address, phone_region, esperado):
+    """Medido sobre 49.748 direcciones de los corpus con su pais verdadero: sin
+    estas tres reglas, sacar la pista de adentro de la calle dejaba ganar a una
+    homonima de otro pais (Scarborough → Reino Unido, Tala → Egipto)."""
+    from smart_import.normalization.address import maximize_address_for_geocode
+    assert maximize_address_for_geocode(address, phone_region=phone_region) == esperado
+
+
+def test_una_ciudad_de_geonames_sin_coma_no_pisa_el_pais_explicito():
+    """Cerrando la direccion sin coma es evidencia debil: completa, no pisa.
+
+    'Gorriti 4500 Juan Lopez' tiene la misma forma que '123 Main St Springfield'.
+    Con phone_region o depot manda el pais explicito; sin ninguno, la ciudad
+    completa el pais.
+    """
+    from smart_import.normalization.address import maximize_address_for_geocode
+
+    assert maximize_address_for_geocode(
+        "Gorriti 4500 Juan Lopez", phone_region="AR",
+    ) == "Gorriti 4500 Juan Lopez, Argentina"
+    assert maximize_address_for_geocode(
+        "Gorriti 4500 Juan Lopez", country="Argentina",
+    ) == "Gorriti 4500 Juan Lopez, Argentina"
+    assert maximize_address_for_geocode(
+        "123 Main St Springfield", phone_region="US",
+    ) == "123 Main St Springfield, United States"
+    assert maximize_address_for_geocode(
+        "123 Main St Springfield",
+    ) == "123 Main St Springfield, United States"
+
+
+# ---------- un solo pais por query ----------
+
+@pytest.mark.parametrize("address, phone_region, esperado", [
+    # 'Brazil' (nombre de GeoNames) implica el pais aunque el preferido sea 'Brasil'
+    ("Rua Augusta 1500, Campinas", "AR", "Rua Augusta 1500, Campinas, Brazil"),
+    # el pais ya escrito manda sobre phone_region
+    ("Carrera 7 45, Colombia", "AR", "Carrera 7 45, Colombia"),
+    ("Av Corrientes 100, Argentina", "US", "Av Corrientes 100, Argentina"),
+    ("guatemala, Bulevar Ensenada de San Isidro 13-55, gt", "GT",
+     "Bulevar Ensenada de San Isidro 13-55, guatemala, gt"),
+    # ...pero una calle con nombre de pais seguida de su altura no es el pais
+    ("NICARAGUA, 4824", "AR", "4824, NICARAGUA, Argentina"),
+    ("COSTA RICA, 6474BIS", "UY", "6474BIS, COSTA RICA, Uruguay"),
+    # 'Georgia' es un estado: no alcanza para dejar de agregar el pais
+    ("123 Main St, Georgia", "US", "123 Main St, Georgia, United States"),
+    # el mismo pais con dos nombres va una sola vez
+    ("Zapadla 763, Liberec, 46311", "CZ", "Zapadla 763, Liberec, 46311, Czech Republic"),
+])
+def test_la_query_lleva_un_solo_pais(address, phone_region, esperado):
+    """'Campinas, Brazil, Argentina' y 'Colombia, Argentina' mandaban al geocoder
+    dos paises a la vez. Medido sobre los corpus con phone_region=AR para
+    direcciones extranjeras: las queries con 2+ paises bajaron de 6.413 a 203."""
+    from smart_import.normalization.address import maximize_address_for_geocode
+    assert maximize_address_for_geocode(address, phone_region=phone_region) == esperado
+
+
+@pytest.mark.parametrize("address, phone_region, esperado", [
+    ("Av Libertador 16000, San Isidro", "AR", "Av Libertador 16000, San Isidro, Argentina"),
+    ("Av Canaval y Moreyra 390, San Isidro", "PE", "Av Canaval y Moreyra 390, San Isidro, Peru"),
+    ("Av Canaval y Moreyra 390, San Isidro", None, "Av Canaval y Moreyra 390, San Isidro, Peru"),
+    ("123 Main St, Paris, TX", "US", "123 Main St, Paris, TX, United States"),
+    ("12 Rue de Rivoli, Paris", "AR", "12 Rue de Rivoli, Paris, France"),
+    ("Via Roma 10, Palermo", "IT", "Via Roma 10, Palermo, Italy"),
+    ("Malabia 1136, Palermo", "AR", "Malabia 1136, Palermo, CABA, Buenos Aires, Argentina"),
+])
+def test_una_pista_curada_no_pisa_una_homonima_del_pais_explicito(address, phone_region, esperado):
+    """El JSON curado dice San Isidro → Peru, Paris → Francia, Palermo → CABA.
+    Son ciertas salvo cuando el pais del depot/telefono tiene su propia ciudad
+    con ese nombre: ahi el pais explicito gana. Sin pais explicito, el curado."""
+    from smart_import.normalization.address import maximize_address_for_geocode
+    assert maximize_address_for_geocode(address, phone_region=phone_region) == esperado
+
+
+@pytest.mark.parametrize("address", [
+    "Juan Lopez Gorriti 4500, 3B",            # GeoNames adentro de la calle
+    "Main St 123, Springfield, IL 62701",     # GeoNames en su segmento
+    "200 Ocean Dr, South Beach, Miami Beach, FL",   # frase curada al final
+    "Av Colon 1234, Mar del Plata",           # frase curada pegada a la altura
+    "12 Rue X, Saint-Denis",                  # frase con guion
+    "ул. Тверская 1, санкт-петербург",        # frase sin token ASCII
+    "Av Corrientes 100, Palermo, CABA",
+    "Rua Augusta 1500, Campinas SP 13010",
+])
+def test_el_indice_de_pistas_da_lo_mismo_que_recorrer_todas_las_filas(address, monkeypatch):
+    """`_candidate_rows` evita recorrer 32 mil filas por direccion (35 ms → <1 ms).
+    Solo puede saltear filas que `_cue_matches` igual rechazaria."""
+    from smart_import.normalization import address as mod
+    from smart_import.resources import locality_expansion_rows
+
+    rapido = [mod.maximize_address_for_geocode(address, phone_region=region)
+              for region in ("AR", "US", None)]
+    monkeypatch.setattr(mod, "_candidate_rows", lambda _tokens: list(locality_expansion_rows()))
+    completo = [mod.maximize_address_for_geocode(address, phone_region=region)
+                for region in ("AR", "US", None)]
+    assert rapido == completo

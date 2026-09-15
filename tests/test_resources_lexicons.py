@@ -60,16 +60,24 @@ def test_labels_and_packaging_vocab():
 
 def test_locality_expand_merges_geonames_when_present():
     from pathlib import Path
-    from smart_import.resources import locality_expansions, load_json, _DIR
+    from smart_import.resources import (
+        _DIR, load_json, locality_expansion_rows, locality_expansions,
+    )
 
     load_json.cache_clear()
+    locality_expansion_rows.cache_clear()
     locality_expansions.cache_clear()
     geo = _DIR / "locality_expand_geonames.json"
     exp = locality_expansions()
     assert any("caba" in cues for cues, _ in exp)  # curado
+    rows = locality_expansion_rows()
+    assert len(rows) == len(exp)
+    assert next(r for r in rows if "caba" in r.cues).curated
     if geo.exists():
         assert len(exp) > 100
         assert any("mumbai" in cues or "paris" in cues for cues, _ in exp)
+        # la normalizacion trata distinto a GeoNames: tiene que saber de donde vino
+        assert not next(r for r in rows if "lopez" in r.cues).curated
 
 
 # ---------- lo que se aprendio validando el refactor ----------
