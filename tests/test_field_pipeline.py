@@ -170,6 +170,37 @@ def test_una_unidad_sin_etiqueta_no_corta_la_direccion(pipeline, texto, esperado
         assert parte in direccion, f"{texto!r} -> {direccion!r} perdio {parte!r}"
 
 
+@pytest.mark.parametrize("texto,nombre,direccion", [
+    ("Juan Lopez 1133334444 Gorriti 4500 depto 3B", "Juan Lopez", "Gorriti 4500 depto 3B"),
+    ("Pedro Castro 11 4444-5555 Juan B Justo 4500", "Pedro Castro", "Juan B Justo 4500"),
+    ("Juan Lopez juanlopez@gmail.com Gorriti 4500", "Juan Lopez", "Gorriti 4500"),
+    ("Juan Lopez 2 cajas Gorriti 4500, 1133334444", "Juan Lopez", "Gorriti 4500"),
+])
+def test_lo_ya_extraido_separa_el_nombre_de_la_calle(pipeline, texto, nombre, direccion):
+    """Un telefono (o email, o bultos) entre el nombre y la calle es un corte.
+
+    La calle acepta toda palabra alfabetica a su izquierda ('Av cabildo 834' en
+    minuscula tiene que seguir siendo calle), asi que con el telefono en blanco
+    'Juan Lopez Gorriti' se leia como una sola calle: el nombre desaparecia y
+    'Lopez' —ciudad de Filipinas en GeoNames— terminaba cambiando el pais.
+    """
+    record = pipeline.run(texto, service_date=DAY)
+    assert record.get("address") == direccion
+    assert record.get("customer_name") == nombre
+
+
+def test_sin_nada_en_el_medio_el_nombre_pegado_sigue_siendo_ambiguo(pipeline):
+    """Limitacion conocida: 'Juan Lopez Gorriti' se lee igual que 'Juan B Justo'.
+
+    Sin un corte no hay forma de saber donde termina el nombre y empieza la
+    calle. Lo que si tiene que salir bien es el pais (ver test_addresses).
+    """
+    record = pipeline.run("Juan Lopez Gorriti 4500 depto 3B, tel 1133334444",
+                          service_date=DAY)
+    assert record.get("address") == "Juan Lopez Gorriti 4500 depto 3B"
+    assert record.get("customer_name") is None
+
+
 @pytest.mark.parametrize("texto,no_debe_estar", [
     ("Av. Cabildo 174, llamar al 11-4002-1002 si no contesta", "llamar"),
     ("Av Cabildo 174, 2 u", "2 u"),

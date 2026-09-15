@@ -29,6 +29,9 @@ class RuleSchemaMapper:
         self.config = config or Config.from_env()
 
     def detect(self, table: Table, schema: TargetSchema) -> MappingResult:
+        # import tardio: row_normalizer importa mapping.base (ciclo)
+        from ..normalization.row_normalizer import PASSTHROUGH_PREFIX
+
         cfg = self.config
         sample_limit = max(cfg.sample_rows * 10, 200)
 
@@ -38,6 +41,12 @@ class RuleSchemaMapper:
         content_hits: dict[tuple[str, str], float] = {}
 
         for col in table.columns:
+            # `geocode_*` son diagnostico del geocoder que viaja en el round-trip
+            # (ver PASSTHROUGH_PREFIX). No son datos del cliente: sin esto, al
+            # regenerar el nested, `geocode_confidence` (0.8..1.0) se mapeaba a
+            # `weight_kg` y cada entrega geocodificada ganaba un bulto de ~1 kg.
+            if col.startswith(PASSTHROUGH_PREFIX):
+                continue
             values = table.column_values(col, limit=sample_limit)
             profile = heuristics.ColumnProfile(values)
 

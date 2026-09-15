@@ -10,7 +10,10 @@ from ..readers.base import Table
 from ..schemas import TargetSchema
 from . import phone as phone_mod
 from .address import apply_composed_address
-from .units import column_declares_pounds, pounds_to_kg
+from .units import (
+    column_declares_cubic_meters, column_declares_major_currency, column_declares_pounds,
+    cubic_meters_to_cm3, major_to_cents, pounds_to_kg,
+)
 from .values import coerce, is_blank
 
 STATUS_OK = "ok"
@@ -37,6 +40,31 @@ PASSTHROUGH_PREFIX = "geocode_"
 PACKAGE_TEXT_FIELDS = ("quantity", "weight_kg", "packaging",
                        "length_cm", "width_cm", "height_cm", "volume_cm3")
 _HAS_LETTER = re.compile(r"[^\W\d_]", re.UNICODE)
+
+
+_SUMMARY_TOKEN = re.compile(r"[^\W_]+", re.UNICODE)
+
+
+def is_summary_row_text(text: Any) -> bool:
+    """True si el texto es un total de planilla: cue al principio + solo relleno.
+
+    'totales bolsas 0' y 'kilos cargados' si; 'Total 1195' si (es la suma del
+    pie); 'Totoral 1195' o 'Suarez 100' no, porque el cue tiene que ser la frase
+    inicial entera y lo que sigue no puede traer un nombre propio.
+    """
+    from ..resources import fold, summary_row_cues, summary_row_filler
+
+    tokens = _SUMMARY_TOKEN.findall(fold(str(text or "")))
+    if not tokens:
+        return False
+    for cue in sorted(summary_row_cues(), key=lambda c: -len(c.split())):
+        words = cue.split()
+        if tokens[:len(words)] != words:
+            continue
+        rest = tokens[len(words):]
+        filler = summary_row_filler()
+        return all(t.isdigit() or t in filler for t in rest)
+    return False
 
 
 @dataclass
@@ -132,6 +160,11 @@ class RowNormalizer:
         weight_src = by_target.get("weight_kg")
         convert_lb = bool(weight_src and column_declares_pounds(weight_src))
         converted_lb_rows = 0
+        volume_src = by_target.get("volume_cm3")
+        convert_m3 = bool(volume_src and column_declares_cubic_meters(volume_src))
+        value_src = by_target.get("value_cents")
+        convert_major = bool(value_src and column_declares_major_currency(value_src))
+        converted_m3_rows = converted_value_rows = 0
         package_sources = [t for t in PACKAGE_TEXT_FIELDS if t in by_target]
 
         for i, raw_row in enumerate(table.rows, start=1):
@@ -150,6 +183,12 @@ class RowNormalizer:
             if convert_lb and values.get("weight_kg") is not None:
                 values["weight_kg"] = pounds_to_kg(values["weight_kg"])
                 converted_lb_rows += 1
+            if convert_m3 and values.get("volume_cm3") is not None:
+                values["volume_cm3"] = cubic_meters_to_cm3(values["volume_cm3"])
+                converted_m3_rows += 1
+            if convert_major and values.get("value_cents") is not None:
+                values["value_cents"] = major_to_cents(values["value_cents"])
+                converted_value_rows += 1
 
             row = NormalizedRow(index=i, values=values)
             self._read_package_text(row, raw_row, col_index, by_target,
@@ -177,6 +216,12 @@ class RowNormalizer:
                 f"Columna '{weight_src}' interpretada como libras → convertida a "
                 f"weight_kg (×{0.45359237:g}) en {converted_lb_rows} fila(s)."
             )
+        if convert_m3 and converted_m3_rows:
+            warn(f"Columna '{volume_src}' interpretada como m3 → convertida a volume_cm3 "
+                 f"(×1.000.000) en {converted_m3_rows} fila(s).")
+        if convert_major and converted_value_rows:
+            warn(f"Columna '{value_src}' interpretada como unidades de moneda → convertida a "
+                 f"value_cents (×100) en {converted_value_rows} fila(s).")
 
         for name in derivable:
             if any(name in r.values for r in out.rows):
@@ -330,6 +375,14 @@ class RowNormalizer:
         has_address = not is_blank(row.values.get("address"))
         if has_coords:
             row.status = STATUS_OK
+            return
+        if has_address and is_summary_row_text(row.values.get("address")) and not any(
+                not is_blank(row.values.get(f)) for f in ("customer_name", "phone")):
+            # 'totales bolsas 0' en la columna de direccion: es el pie de la
+            # planilla, no una entrega a ubicar a mano.
+            row.status = STATUS_IGNORED
+            row.flag("address", "la fila parece un total de la planilla, no una entrega: "
+                                "se ignora", severity="warning")
             return
         if has_address:
             row.status = STATUS_NEEDS_GEOCODE

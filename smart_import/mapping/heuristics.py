@@ -19,6 +19,8 @@ from ..resources import fold, packaging_codes, packaging_words, status_words
 
 CAP = 0.93                      # techo general: nunca le gana a un alias exacto
 CAP_STRONG = 0.95               # solo para evidencia dura (rango de coordenadas)
+#: celdas con valor por debajo de las cuales una columna no tiene 'forma' (altura, prioridad)
+MIN_SHAPE_VALUES = 3
 
 #: Evidencia promedio para declarar que una columna ES la direccion. El margen
 #: es comodo a proposito: las direcciones dan 0.70+, lo demas no pasa de 0.20.
@@ -259,9 +261,15 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
         if p.all_int and 0 < p.lo and p.hi <= 200 and p.distinct <= 30:
             add("quantity", 0.72, f"enteros chicos {int(p.lo)}..{int(p.hi)}")
         # Altura tipica: enteros/cortos, NO secuencia de orden (1,2,3… o 1001,1002…).
+        # Con menos de MIN_SHAPE_VALUES celdas no hay forma de columna: en una
+        # planilla de reparto real, 'Blanco 8kg' (bolsas de un producto, una sola
+        # celda con 0) se mapeaba a house_number con 0.70 y 'Garrafas' a priority.
+        # Una altura 0 tampoco existe.
         if (
             p.numeric_frac >= 0.9
+            and p.n >= MIN_SHAPE_VALUES
             and p.all_int                    # 2.75 no es la altura de una calle
+            and p.lo >= 1
             and p.avg_len <= 6
             and p.hi <= 30_000
             and p.cardinality >= 0.5
@@ -269,7 +277,8 @@ def candidates(values: list[Any], profile: ColumnProfile | None = None
         ):
             add("house_number", 0.70,
                 f"numeros cortos no-secuenciales ({int(p.lo)}..{int(p.hi)})")
-        if p.all_int and 1 <= p.lo and p.hi <= 10 and p.distinct <= 10:
+        if (p.all_int and p.n >= MIN_SHAPE_VALUES and 1 <= p.lo and p.hi <= 10
+                and p.distinct <= 10):
             add("priority", 0.70, f"enteros 1..10, {p.distinct} valores distintos")
         if p.has_decimals and 0 <= p.lo and p.hi <= 2000:
             # Decimales chicos y variados: la forma de una columna de peso. Un
