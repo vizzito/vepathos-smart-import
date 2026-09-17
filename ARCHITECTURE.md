@@ -335,6 +335,27 @@ POST  /imports/{id}/geocode?origin_lat&origin_lon
 GET  /geocoding/coverage?lat&lon   ¿hay PBF acá? consultalo antes de ofrecer el botón
 ```
 
+**Mapping con unidad y formato.** Cada columna del `PUT /imports/{id}/mapping` va a un campo, a
+`null`, o a un objeto cuando la columna viene en otra unidad o formato. Claves y valores en español,
+inglés o portugués; lo declarado gana sobre lo que sugiere el nombre de la columna:
+
+```jsonc
+{
+  "Peso (lb)":   {"campo": "weight_kg", "unidad": "libras"},          // lb, pounds, g, gramas, oz, onzas, t
+  "Largo":       {"field": "length_cm", "unit": "inches"},            // mm, m, in, pulgadas, polegadas, ft
+  "Vol":         {"campo": "volume_cm3", "unidade": "litros",         // m3, l, ml, ft3, in3
+                  "formato": "vírgula decimal"},                       // coma decimal, decimal point, 1.234,56
+  "Desde":       {"campo": "tw_start", "formato": "mm/dd/aaaa hh:mm am/pm"}, // día primero, month first, iso
+  "Valor":       {"campo": "value_cents", "unidad": "pesos"},         // centavos / cents
+  "Servicio":    {"campo": "service_time_min", "unidad": "segundos"}  // min, s, h
+}
+```
+
+Una unidad que no corresponde al campo, un formato desconocido o una clave extra devuelven `422`
+con lo que se acepta, sin volver a normalizar. Una fecha que no cumple el formato declarado queda
+vacía (no se adivina día/mes invertidos) y el reporte avisa cuántas filas fueron. El `report.mapping`
+devuelve `unit` y `format` canónicos de las columnas que los declararon (`lb`, `%m/%d/%Y %I:%M %p`).
+
 **`next_actions` es el contrato clave.** Cada respuesta dice qué puede hacer el usuario
 ahora y con qué link. Tu UI dibuja un botón por acción y no replica la máquina de estados:
 

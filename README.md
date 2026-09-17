@@ -235,7 +235,7 @@ python -m smart_import serve --port 8100
 | `GET` | `/imports/{id}/progress` | solo barra de avance (polling liviano) |
 | `GET` | `/imports/{id}/events` | **SSE**: `progress` + `done` en vivo |
 | `GET` | `/imports/{id}/preview` | muestra de filas para pintar en la UI |
-| `PUT` | `/imports/{id}/mapping` | corrige el mapping y re-normaliza |
+| `PUT` | `/imports/{id}/mapping` | corrige el mapping y re-normaliza; cada columna acepta `{campo, unidad, formato}` (es/en/pt, ver ARCHITECTURE §5) |
 | `GET` | `/imports/{id}/download?format=flat\|nested\|geocoded` | descarga el resultado |
 | `POST` | `/imports/{id}/geocode` | geolocaliza (async). **Nunca automático** |
 | `GET` | `/geocoding/coverage?lat&lon` | ¿hay PBF para esta zona? Consultalo antes de ofrecer el botón |

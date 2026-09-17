@@ -15,6 +15,7 @@ from .logging_setup import detail, get_logger, stage
 from .emit import write_flat_csv, write_flat_xlsx, write_nested_json, write_report
 from .mapping import build_mapper
 from .mapping.base import ColumnMapping, MappingResult
+from .mapping.column_spec import ColumnSpec, ColumnSpecError, parse_column_spec
 from .normalization.row_normalizer import (
     STATUS_IGNORED, STATUS_INVALID, STATUS_NEEDS_GEOCODE, STATUS_OK, RowNormalizer,
 )
@@ -50,9 +51,23 @@ class ImportResult:
     outputs: dict[str, str] = field(default_factory=dict)
 
 
-def apply_manual_mapping(mapping: MappingResult, overrides: dict[str, str]) -> MappingResult:
-    """El usuario corrige el mapping sugerido; sus decisiones son finales."""
-    for column, target in overrides.items():
+def apply_manual_mapping(mapping: MappingResult, overrides: dict[str, Any],
+                         schema: "TargetSchema | None" = None) -> MappingResult:
+    """El usuario corrige el mapping sugerido; sus decisiones son finales.
+
+    Cada valor es un campo (`"weight_kg"`), `None` para no usar la columna, o
+    `{campo, unidad, formato}` (claves en es / en / pt) cuando la columna viene en
+    otra unidad o formato. Ver `mapping/column_spec.py`.
+    """
+    field_types = ({f.name: f.type for f in schema.fields.values()} if schema is not None else None)
+    for column, raw in overrides.items():
+        if field_types is not None:
+            spec = parse_column_spec(raw, field_types)
+        elif isinstance(raw, dict):
+            raise ColumnSpecError("{campo, unidad, formato} necesita el schema para validarse")
+        else:
+            spec = ColumnSpec(field=raw or None)
+        target = spec.field
         if target is None or target == "":
             mapping.mapping.pop(column, None)
             if column not in mapping.unmapped:
@@ -62,7 +77,8 @@ def apply_manual_mapping(mapping: MappingResult, overrides: dict[str, str]) -> M
             if m.target == target and other != column:
                 mapping.mapping.pop(other)          # un target, una sola columna
                 mapping.unmapped.append(other)
-        mapping.mapping[column] = ColumnMapping(column, target, 1.0, "manual", "corregido por el usuario")
+        mapping.mapping[column] = ColumnMapping(column, target, 1.0, "manual", "corregido por el usuario",
+                                                unit=spec.unit, format=spec.format)
         if column in mapping.unmapped:
             mapping.unmapped.remove(column)
     mapping.ambiguous = [a for a in mapping.ambiguous if a["column"] not in overrides]
@@ -75,7 +91,7 @@ def run_normalize(
     output_path: str | Path | None = None,
     emit: tuple[str, ...] = ("flat",),
     config: Config | None = None,
-    manual_mapping: dict[str, str] | None = None,
+    manual_mapping: dict[str, Any] | None = None,
     phone_region: str | None = None,
     diagnostics: bool = False,
     sheet: str | None = None,
@@ -142,7 +158,7 @@ def run_normalize(
     if manual_mapping:
         stage(logger, "DETECT", "aplicando correcciones del usuario",
               columnas=len(manual_mapping))
-        mapping = apply_manual_mapping(mapping, manual_mapping)
+        mapping = apply_manual_mapping(mapping, manual_mapping, schema)
 
     if expand_composite and extraction is None and not meta.is_free_text:
         # Una columna que mezcla nombre/direccion/telefono se separa con reglas.

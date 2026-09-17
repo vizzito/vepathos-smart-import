@@ -151,6 +151,62 @@ def coerce(value: Any, type_name: str) -> Any:
     return COERCERS.get(type_name, to_str)(value)
 
 
+def _float_with_decimal(value: Any, decimal: str) -> float | None:
+    """Numero con el separador decimal que declaro el usuario: '1.234' con coma decimal es 1234."""
+    if is_blank(value) or isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        return float(value)
+    s = re.sub(r"[^\d,.\-+eE]", "", str(value).strip())
+    thousands = "." if decimal == "," else ","
+    s = s.replace(thousands, "").replace(decimal, ".")
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _datetime_candidates(fmt: str) -> list[str]:
+    """Un formato de fecha declarado, con la hora opcional y cualquier separador de fecha."""
+    bases = [fmt]
+    for sep in ("/", "-", "."):
+        for other in ("/", "-", "."):
+            if sep != other and sep in fmt:
+                bases.append(fmt.replace(sep, other))
+    out: list[str] = []
+    for base in bases:
+        out.append(base)
+        if "%H" not in base and "%I" not in base:
+            out += [base + " %H:%M", base + " %H:%M:%S", base + "T%H:%M", base + "T%H:%M:%S"]
+    return list(dict.fromkeys(out))
+
+
+def coerce_formatted(value: Any, type_name: str, fmt: str) -> Any:
+    """Coercion con el formato que declaro el usuario. Un valor que no cumple el formato da None:
+    adivinar con otro formato (dia/mes invertidos) seria peor que no tener el dato."""
+    if fmt in ("decimal_comma", "decimal_point") and type_name in ("float", "integer"):
+        number = _float_with_decimal(value, "," if fmt == "decimal_comma" else ".")
+        if number is None:
+            return None
+        return int(round(number)) if type_name == "integer" else number
+    if type_name == "datetime":
+        if is_blank(value):
+            return None
+        if isinstance(value, datetime):
+            return _as_utc_iso(value)
+        if isinstance(value, date):
+            return _as_utc_iso(datetime(value.year, value.month, value.day))
+        s = " ".join(str(value).strip().split())
+        s = re.sub(r"(?i)\b([ap])\.?\s?m\.?$", lambda m: m.group(1).upper() + "M", s)
+        for candidate in _datetime_candidates(fmt):
+            try:
+                return _as_utc_iso(datetime.strptime(s, candidate))
+            except ValueError:
+                continue
+        return None
+    return coerce(value, type_name)
+
+
 def render(value: Any) -> str:
     if value is None:
         return ""

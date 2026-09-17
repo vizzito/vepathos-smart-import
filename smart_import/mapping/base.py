@@ -14,11 +14,17 @@ class ColumnMapping:
     confidence: float
     method: str                      # alias | normalized | fuzzy | heuristic | ai | manual
     evidence: str = ""
+    unit: str | None = None          # unidad declarada por el usuario (canonica: lb, in, l, ...)
+    format: str | None = None        # formato declarado: strptime o decimal_comma / decimal_point
 
     def as_dict(self) -> dict[str, Any]:
         d = {"target": self.target, "confidence": round(self.confidence, 3), "method": self.method}
         if self.evidence:
             d["evidence"] = self.evidence
+        if self.unit:
+            d["unit"] = self.unit
+        if self.format:
+            d["format"] = self.format
         return d
 
 

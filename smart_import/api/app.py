@@ -41,6 +41,7 @@ from ..artifacts import (
 )
 from ..config import Config
 from ..geocoding.validation import resolve_allowed_index, validate_geo
+from ..mapping.column_spec import ColumnSpecError, parse_column_spec
 from ..schemas import (
     SchemaNotFound, TargetSchema, resolve_schema_dir, resolve_schema_path,
 )
@@ -1124,7 +1125,11 @@ def issues(job_id: str, limit: int = Query(500, le=2000)) -> dict[str, Any]:
 @app.put("/imports/{job_id}/mapping", tags=["import"])
 async def confirm_mapping(
     job_id: str,
-    mapping: dict[str, str | None] = Body(..., examples=[{"Dest.": "address", "Obs": None}]),
+    mapping: dict[str, str | dict[str, Any] | None] = Body(..., examples=[{
+        "Dest.": "address", "Obs": None,
+        "Peso (lb)": {"campo": "weight_kg", "unidad": "libras"},
+        "Delivery date": {"field": "tw_start", "format": "mm/dd/yyyy hh:mm am/pm"},
+    }]),
     phone_region: str | None = Query(None),
     timezone: str | None = Query(None),
     depot_timezone: str | None = Query(None),
@@ -1138,9 +1143,18 @@ async def confirm_mapping(
 ) -> dict[str, Any]:
     """Corrige el mapping sugerido y vuelve a normalizar.
 
-    Lo que decide el usuario es final: se marca `manual` y confianza 1.0.
+    Lo que decide el usuario es final: se marca `manual` y confianza 1.0. Cada columna va a un
+    campo, a `null`, o a `{campo, unidad, formato}` (claves y valores en es / en / pt) cuando viene
+    en otra unidad (libras, pulgadas, litros) o formato (mes/dia, coma decimal).
     """
     job = _job_or_404(job_id)
+    try:
+        schema = TargetSchema.load(_schema_path(job.schema))
+        field_types = {f.name: f.type for f in schema.fields.values()}
+        for value in mapping.values():
+            parse_column_spec(value, field_types)
+    except ColumnSpecError as exc:
+        raise HTTPException(422, str(exc)) from None
     if not artifacts.exists(job.id, RAW, job.raw_path):
         raise HTTPException(409, "el archivo original ya no esta disponible")
 

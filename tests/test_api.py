@@ -139,6 +139,21 @@ def test_corregir_el_mapping_re_normaliza(client):
     assert body["report"]["mapping"]["Codigo interno"]["method"] == "manual"
 
 
+def test_el_mapping_acepta_campo_unidad_y_formato(client):
+    job_id = _upload(client, "preamble_dirty.xlsx").json()["job_id"]
+    body = client.put(f"/imports/{job_id}/mapping",
+                      json={"Codigo interno": {"campo": "reference"}}).json()
+    assert body["report"]["mapping"]["Codigo interno"]["target"] == "reference"
+
+
+def test_el_mapping_rechaza_una_unidad_que_no_aplica_sin_re_normalizar(client):
+    job_id = _upload(client, "preamble_dirty.xlsx").json()["job_id"]
+    r = client.put(f"/imports/{job_id}/mapping",
+                   json={"Codigo interno": {"campo": "reference", "unidad": "libras"}})
+    assert r.status_code == 422
+    assert "no lleva unidad" in r.json()["detail"]
+
+
 def test_geocode_requiere_saber_que_region_usar(client):
     job_id = _upload(client, "es_sin_coords.csv").json()["job_id"]
     r = client.post(f"/imports/{job_id}/geocode")

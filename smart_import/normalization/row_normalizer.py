@@ -14,7 +14,12 @@ from .units import (
     column_declares_cubic_meters, column_declares_major_currency, column_declares_pounds,
     cubic_meters_to_cm3, major_to_cents, pounds_to_kg,
 )
-from .values import coerce, is_blank
+from ..mapping.column_spec import unit_factor
+from .values import coerce, coerce_formatted, is_blank
+
+#: la unidad en la que el schema guarda cada campo con unidad
+_CANONICAL_UNIT = {"weight_kg": "kg", "length_cm": "cm", "width_cm": "cm", "height_cm": "cm",
+                   "volume_cm3": "cm3", "value_cents": "cents", "service_time_min": "min"}
 
 STATUS_OK = "ok"
 STATUS_NEEDS_GEOCODE = "needs_geocode"
@@ -157,13 +162,23 @@ class RowNormalizer:
 
         passthrough = [c for c in table.columns if c.startswith(PASSTHROUGH_PREFIX)]
 
+        # Unidad y formato que el usuario declaro en el mapeo manual: ganan sobre lo que sugiere el
+        # nombre de la columna ('peso lb', 'm3').
+        declared = {t: mapping.mapping.get(by_target[t]) for t in targets}
+        explicit_unit = {t: m.unit for t, m in declared.items() if m is not None and m.unit}
+        explicit_format = {t: m.format for t, m in declared.items() if m is not None and m.format}
+        converted_unit_rows: dict[str, int] = {}
+        unformatted_rows: dict[str, int] = {}
+
         weight_src = by_target.get("weight_kg")
-        convert_lb = bool(weight_src and column_declares_pounds(weight_src))
+        convert_lb = bool(weight_src and column_declares_pounds(weight_src)) and "weight_kg" not in explicit_unit
         converted_lb_rows = 0
         volume_src = by_target.get("volume_cm3")
-        convert_m3 = bool(volume_src and column_declares_cubic_meters(volume_src))
+        convert_m3 = (bool(volume_src and column_declares_cubic_meters(volume_src))
+                      and "volume_cm3" not in explicit_unit)
         value_src = by_target.get("value_cents")
-        convert_major = bool(value_src and column_declares_major_currency(value_src))
+        convert_major = (bool(value_src and column_declares_major_currency(value_src))
+                         and "value_cents" not in explicit_unit)
         converted_m3_rows = converted_value_rows = 0
         package_sources = [t for t in PACKAGE_TEXT_FIELDS if t in by_target]
 
@@ -172,13 +187,27 @@ class RowNormalizer:
             for target in targets:
                 idx = col_index.get(by_target[target])
                 raw = raw_row[idx] if idx is not None and idx < len(raw_row) else None
-                values[target] = coerce(raw, self.schema.fields[target].type)
+                type_name = self.schema.fields[target].type
+                if target in explicit_format:
+                    values[target] = coerce_formatted(raw, type_name, explicit_format[target])
+                    if values[target] is None and not is_blank(raw):
+                        unformatted_rows[target] = unformatted_rows.get(target, 0) + 1
+                else:
+                    values[target] = coerce(raw, type_name)
 
             # La decision de "fila vacia" mira SOLO los campos del schema: un
             # `geocode_status` suelto no convierte una fila vacia en una entrega.
             if all(is_blank(v) for v in values.values()):
                 out.skipped_empty += 1
                 continue
+
+            for target, unit in explicit_unit.items():
+                if values.get(target) is None:
+                    continue
+                converted = float(values[target]) * unit_factor(target, unit)
+                values[target] = (int(round(converted)) if self.schema.fields[target].type == "integer"
+                                  else round(converted, 6))
+                converted_unit_rows[target] = converted_unit_rows.get(target, 0) + 1
 
             if convert_lb and values.get("weight_kg") is not None:
                 values["weight_kg"] = pounds_to_kg(values["weight_kg"])
@@ -210,6 +239,14 @@ class RowNormalizer:
             self._derive_volume(row, derivable, warn)
             self._classify(row)
             out.rows.append(row)
+
+        for target, rows in converted_unit_rows.items():
+            if explicit_unit[target] != _CANONICAL_UNIT[target]:
+                warn(f"Columna '{by_target[target]}' en {explicit_unit[target]} (declarado en el mapeo) → "
+                     f"convertida a {target} en {rows} fila(s).")
+        for target, rows in unformatted_rows.items():
+            warn(f"Columna '{by_target[target]}': {rows} fila(s) no cumplen el formato declarado "
+                 f"y quedaron vacias en {target}.")
 
         if convert_lb and converted_lb_rows:
             warn(
