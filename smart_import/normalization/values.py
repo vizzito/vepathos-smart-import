@@ -69,6 +69,21 @@ def to_float(value: Any) -> float | None:
         return None
 
 
+def to_coordinate(value: Any) -> float | None:
+    """Latitud o longitud: un unico separador es SIEMPRE decimal, sea coma o punto.
+
+    `to_float` lee '1,250' como 1250 porque en un monto tres digitos tras la coma son miles. Una
+    coordenada no tiene miles: '-37,321' (un Excel es-AR que redondeo a 3 decimales) es -37.321, y
+    leerlo como -37321 la manda fuera de rango y la entrega queda sin ubicar. Con los dos separadores
+    ('-37.321,5' no existe en la practica) decide `to_float` como siempre.
+    """
+    if isinstance(value, str):
+        s = re.sub(r"[^\d,.\-+eE]", "", value.strip())
+        if s.count(",") == 1 and "." not in s:
+            value = s.replace(",", ".")
+    return to_float(value)
+
+
 def to_int(value: Any) -> int | None:
     f = to_float(value)
     if f is None:
@@ -147,7 +162,13 @@ COERCERS = {
 }
 
 
-def coerce(value: Any, type_name: str) -> Any:
+# Campos cuyo numero es una coordenada, no una cantidad: ver `to_coordinate`.
+COORDINATE_FIELDS = frozenset({"lat", "lng"})
+
+
+def coerce(value: Any, type_name: str, field: str | None = None) -> Any:
+    if field in COORDINATE_FIELDS and type_name == "float":
+        return to_coordinate(value)
     return COERCERS.get(type_name, to_str)(value)
 
 

@@ -193,7 +193,7 @@ class RowNormalizer:
                     if values[target] is None and not is_blank(raw):
                         unformatted_rows[target] = unformatted_rows.get(target, 0) + 1
                 else:
-                    values[target] = coerce(raw, type_name)
+                    values[target] = coerce(raw, type_name, target)
 
             # La decision de "fila vacia" mira SOLO los campos del schema: un
             # `geocode_status` suelto no convierte una fila vacia en una entrega.
