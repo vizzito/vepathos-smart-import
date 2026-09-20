@@ -390,6 +390,11 @@ def expand_free_text_column(table, column: str, extractor: "FreeTextExtractor",
 
     El resto del archivo no se toca: las columnas ya mapeadas siguen el camino
     rapido de siempre (punto 17 del refactor).
+
+    Esta funcion solo corre cuando el mapper mapeo esa columna a ``address``.
+    Al reemplazarla hay que dejar un ``address`` en la tabla: el extraido o,
+    si el extractor no lo produjo, el texto original de la celda. Si no, el
+    geocoder nunca se ofrece (needs_geocode=0).
     """
     from ..readers.base import Table
 
@@ -397,23 +402,39 @@ def expand_free_text_column(table, column: str, extractor: "FreeTextExtractor",
     produced: list[str] = []
     extracted: list[dict] = []
     for row in table.rows:
-        record = extractor.run_value(row[index] if index < len(row) else None)
+        raw = row[index] if index < len(row) else None
+        record = extractor.run_value(raw)
         values = record.flat() if record else {}
+        if _blank_cell(values.get("address")) and not _blank_cell(raw):
+            values["address"] = raw
         extracted.append(values)
         for name in values:
-            if name in schema.fields and name not in produced and name != column:
+            if name in schema.fields and name not in produced:
                 produced.append(name)
+    if "address" not in produced:
+        produced.append("address")
 
-    columns = [c for c in table.columns if c != column] + [
-        c for c in schema.column_order if c in produced]
-    keep = [table.columns.index(c) for c in table.columns if c != column]
+    remaining = [c for c in table.columns if c != column]
+    extra = [c for c in schema.column_order if c in produced and c not in remaining]
+    columns = remaining + extra
+    keep = [table.columns.index(c) for c in remaining]
 
     rows = []
     for row, values in zip(table.rows, extracted):
         base = tuple(row[i] if i < len(row) else None for i in keep)
-        rows.append(base + tuple(values.get(c) for c in columns[len(keep):]))
+        extras = tuple(
+            (row[index] if index < len(row) else None)
+            if name == "address" and _blank_cell(values.get(name))
+            else values.get(name)
+            for name in extra
+        )
+        rows.append(base + extras)
 
     table.meta.notes.append(
         f"columna '{column}' detectada como texto libre: se separo en "
-        f"{', '.join(columns[len(keep):]) or 'ningun campo'} con reglas (sin modelo)")
+        f"{', '.join(extra) or 'ningun campo'} con reglas (sin modelo)")
     return Table(meta=table.meta, columns=columns, rows=rows)
+
+
+def _blank_cell(value) -> bool:
+    return value is None or (isinstance(value, str) and not str(value).strip())
