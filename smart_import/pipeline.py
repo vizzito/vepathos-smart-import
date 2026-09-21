@@ -166,6 +166,15 @@ def run_normalize(
         # Tras geocode el CSV YA es Vepathos enriquecido: expand_composite=False.
         table, mapping = _expand_composite_column(
             table, mapping, schema, cfg, phone_region, service_date, timezone)
+        # Separar la columna re-detecta el mapping desde cero sobre la tabla expandida, y con eso se
+        # llevaba puestas las correcciones del usuario: un archivo con una columna mezclada (la mayoria
+        # de los que traen la direccion completa) no salia NUNCA de "a revisar", corrigiera lo que
+        # corrigiera. Lo que decidio la persona es final, asi que se vuelve a aplicar encima. Una
+        # columna que la expansion ya no tiene (la mezclada, reemplazada por sus partes) se saltea.
+        if manual_mapping:
+            vigentes = {c: v for c, v in manual_mapping.items() if c in table.columns}
+            if vigentes:
+                mapping = apply_manual_mapping(mapping, vigentes, schema)
 
     stage(logger, "NORMALIZE", "aplicando el mapping a todas las filas",
           filas=len(table), region_telefono=phone_region)
