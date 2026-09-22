@@ -81,6 +81,7 @@ def run_normalize_job(ctx: WorkerContext, job: Job, schema_path: Path,
         raise NormalizeFailed("el archivo original ya no esta disponible")
     output = ctx.artifacts.reserve(job.id, FLAT)
     resolved_tz = resolve_timezone(timezone, depot_timezone, job.timezone)
+    service_date = service_date or (date.fromisoformat(job.service_date) if job.service_date else None)
 
     # OCUPADO mientras se trabaja, no `normalized`. Cuando el normalize corria
     # inline nadie podia ver este estado intermedio; con el trabajo en otro nodo,
@@ -125,6 +126,7 @@ def run_normalize_job(ctx: WorkerContext, job: Job, schema_path: Path,
     _publish(ctx, job.id, REPORT, result.outputs.get("report"))
     job.phone_region = phone_region
     job.timezone = resolved_tz
+    job.service_date = service_date.isoformat() if service_date else None
     job.touch(NEEDS_REVIEW if result.report.get("needs_review") else NORMALIZED)
     ctx.store.save(job)
     return job.as_dict()

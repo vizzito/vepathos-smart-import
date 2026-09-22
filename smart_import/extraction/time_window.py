@@ -62,6 +62,16 @@ def _clock(match: re.Match, prefix: str) -> tuple[int, int] | None:
 
 def find_time_expression(text: str) -> TimeHit | None:
     """La primera restriccion horaria del texto, con su texto original intacto."""
+    from ..time_window_range import RANGE_RE, parse_window
+    for match in RANGE_RE.finditer(text or ""):
+        raw = match.group().strip()
+        # Unadorned '9-11' inside an address is not a delivery window.
+        if not re.search(r"[:h]|\b(?:de|entre|between|from|am|pm)\b", raw, re.I):
+            continue
+        parsed = parse_window(raw)
+        if parsed.kind in {"range", "overnight"}:
+            return TimeHit(raw, (match.start(), match.start() + len(raw)), "range",
+                           parsed.start, parsed.end)
     for pattern, kind in _PATTERNS:
         match = pattern.search(text or "")
         if not match:

@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import re
+from collections import Counter
+from datetime import date, datetime, time, timezone as datetime_timezone
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -126,6 +128,8 @@ class NormalizeOutcome:
     skipped_empty: int = 0
     warnings: list[str] = field(default_factory=list)
     targets_present: list[str] = field(default_factory=list)
+    time_window_summary: dict[str, int] = field(default_factory=dict)
+    time_window_issues: list[dict] = field(default_factory=list)
 
     def counts(self) -> dict[str, int]:
         out = {STATUS_OK: 0, STATUS_NEEDS_GEOCODE: 0, STATUS_INVALID: 0, STATUS_IGNORED: 0}
@@ -136,17 +140,22 @@ class NormalizeOutcome:
 
 class RowNormalizer:
     def __init__(self, schema: TargetSchema, phone_region: str | None = None,
-                 derive_volume: bool = False, timezone: str | None = None):
+                 derive_volume: bool = False, timezone: str | None = None,
+                 service_date: date | None = None):
         self.schema = schema
         self.phone_region = phone_region
         # Derivar volumen AGREGA una columna que el cliente no mando. Por defecto
         # no se hace: el output tiene que reflejar lo que vino en el archivo.
         self.derive_volume = derive_volume
         self.timezone = timezone
+        self.service_date = service_date
 
     def run(self, table: Table, mapping: MappingResult) -> NormalizeOutcome:
         by_target = mapping.by_target()                  # target -> columna origen
-        targets = [t for t in self.schema.column_order if t in by_target]
+        targets = [t for t in self.schema.column_order if t in by_target
+                   and not self.schema.fields[t].input_only]
+        range_source = by_target.get("time_window")
+        window_counts = Counter()
         derivable = ([f.name for f in self.schema.fields.values()
                       if f.derivable and f.name not in targets]
                      if self.derive_volume else [])
@@ -233,12 +242,40 @@ class RowNormalizer:
                     values[column] = str(raw).strip()
 
             self._validate_coordinates(row, warn)
+            if range_source:
+                def raw_value(column):
+                    idx = col_index.get(column)
+                    return raw_row[idx] if idx is not None and idx < len(raw_row) else None
+
+                code, message = self._read_time_range(
+                    row, raw_value(range_source), mapping,
+                    {t: raw_value(by_target.get(t)) for t in ("tw_start", "tw_end")})
+                window_counts[code] += 1
+                if message:
+                    row.flag("time_window", message, severity="warning")
+                    out.time_window_issues.append({
+                        "row": i, "delivery_id": values.get("delivery_id"),
+                        "column": range_source, "raw": str(raw_value(range_source) or ""),
+                        "code": code, "message": message, "severity": "warning"})
             self._validate_time_window(row, warn)
             self._apply_timezone(row)
             self._normalize_phone(row)
             self._derive_volume(row, derivable, warn)
             self._classify(row)
             out.rows.append(row)
+
+        if range_source:
+            out.time_window_summary = dict(window_counts)
+            out.time_window_summary["rows_with_warnings"] = len(out.time_window_issues)
+            out.time_window_summary["with_time_window"] = sum(
+                bool(r.values.get("tw_start") and r.values.get("tw_end")) for r in out.rows)
+            for target in ("tw_start", "tw_end", "tw_timezone"):
+                if target in self.schema.fields and any(r.values.get(target) for r in out.rows):
+                    if target not in out.targets_present:
+                        out.targets_present.append(target)
+            if out.time_window_issues:
+                warn(f"Ventanas horarias: {len(out.time_window_issues)} fila(s) con avisos; "
+                     "ver time_window_issues en el reporte completo.")
 
         for target, rows in converted_unit_rows.items():
             if explicit_unit[target] != _CANONICAL_UNIT[target]:
@@ -351,6 +388,73 @@ class RowNormalizer:
         if (row.values.get("lat") is None) != (row.values.get("lng") is None):
             row.flag("lat", "coordenada incompleta: hace falta lat Y lng")
             row.values["lat"] = row.values["lng"] = None
+
+    def _read_time_range(self, row, raw, mapping, scalar_raw):
+        from ..time_window_range import parse_window
+        from .values import parse_datetime
+        from ..extraction.tz import convert_naive_stamp
+
+        def report(code, message):
+            return code, f"{message}. Valor original: {raw!r}"
+
+        if mapping.ignored_targets & {"tw_start", "tw_end"}:
+            return report("excluded", "Ventana no generada: un extremo fue excluido manualmente")
+        source = mapping.by_target()["time_window"]
+        range_manual = mapping.mapping[source].method == "manual"
+        scalar_manual = any(m.target in {"tw_start", "tw_end"} and m.method == "manual"
+                            for m in mapping.mapping.values())
+        if range_manual and scalar_manual:
+            return report("manual_conflict", "Selecciones manuales de rango y extremos en conflicto; se conservan los extremos")
+        hit = parse_window(str(raw) if not is_blank(raw) else "")
+        errors = {
+            "empty": "Ventana vacía: no se generó un rango",
+            "invalid": "Ventana no interpretable",
+            "before": "Falta el inicio de la ventana; no se inventó",
+            "after": "Falta el fin de la ventana; no se inventó",
+            "overnight": "Ventana que cruza medianoche: requiere soporte del plan; no se generó",
+        }
+        if range_manual and not scalar_manual:
+            row.values.pop("tw_start", None)
+            row.values.pop("tw_end", None)
+            row.values.pop("tw_timezone", None)
+        if hit.kind != "range":
+            return report(hit.kind, errors[hit.kind])
+        start, end = row.values.get("tw_start"), row.values.get("tw_end")
+        # Do not hide malformed scalar data by filling one endpoint from a range.
+        scalar_present = any(not is_blank(v) for v in scalar_raw.values())
+        if not range_manual and scalar_present and not (start and end and start < end):
+            return report("invalid_endpoints", "Extremos separados incompletos o inválidos; no se mezclaron con el rango")
+        if self.service_date is None:
+            return report("missing_service_date", "Fecha de servicio requerida para interpretar el rango")
+        derived = [datetime.combine(self.service_date, time(*clock)).strftime("%Y-%m-%d %H:%M")
+                   for clock in (hit.start, hit.end)]
+        if self.timezone:
+            # zoneinfo's default silently chooses a fold or a nonexistent time.
+            from zoneinfo import ZoneInfo
+            zone = ZoneInfo(self.timezone)
+            for stamp in derived:
+                local = parse_datetime(stamp)
+                offsets = set()
+                for fold in (0, 1):
+                    aware = local.replace(tzinfo=zone, fold=fold)
+                    back = aware.astimezone(datetime_timezone.utc).astimezone(zone).replace(tzinfo=None)
+                    if back == local:
+                        offsets.add(aware.utcoffset())
+                if len(offsets) != 1:
+                    return report("ambiguous_local_time", "Hora local ambigua o inexistente por cambio de horario")
+        if not range_manual and (scalar_manual or scalar_present):
+            if not (start and end):
+                return report("invalid_endpoints", "Extremos manuales vacíos; no se reemplazaron con el rango")
+            actual = [start, end]
+            expected = derived
+            if self.timezone:
+                actual = [convert_naive_stamp(v, self.timezone) for v in actual]
+                expected = [convert_naive_stamp(v, self.timezone) for v in expected]
+            if actual != expected:
+                return report("conflict", f"El rango difiere de los extremos separados ({start}, {end}); se conservaron los extremos")
+            return "matched_endpoints", None
+        row.values["tw_start"], row.values["tw_end"] = derived
+        return "generated", None
 
     def _validate_time_window(self, row: NormalizedRow, warn) -> None:
         start, end = row.values.get("tw_start"), row.values.get("tw_end")

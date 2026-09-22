@@ -485,6 +485,12 @@
         "situacion"
       ]
     },
+    "time_window": {
+      "type": "time_window_range",
+      "level": "timewindow",
+      "input_only": true,
+      "aliases": ["delivery_window", "delivery time window", "delivery_time_window", "ventana de entrega", "ventana horaria de entrega", "horario de entrega", "franja de entrega", "janela de entrega"]
+    },
     "tw_start": {
       "type": "datetime",
       "level": "timewindow",

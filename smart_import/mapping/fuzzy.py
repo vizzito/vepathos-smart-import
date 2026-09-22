@@ -20,6 +20,8 @@ def candidates(column: str, schema: TargetSchema) -> list[tuple[str, float, str,
 
     out: list[tuple[str, float, str, str]] = []
     for fname, f in schema.fields.items():
+        if f.input_only:
+            continue  # compound semantics require an exact alias or explicit review
         best, best_alias = 0.0, ""
         for alias in (normalize_key(fname), *f.normalized_aliases):
             if not alias or len(alias) < MIN_ALIAS_LEN:

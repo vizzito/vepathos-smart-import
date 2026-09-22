@@ -35,6 +35,7 @@ class MappingResult:
     ambiguous: list[dict[str, Any]] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
     ai_used: bool = False
+    ignored_targets: set[str] = field(default_factory=set)
 
     @property
     def needs_review(self) -> bool:

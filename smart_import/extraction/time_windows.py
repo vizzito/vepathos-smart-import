@@ -13,6 +13,8 @@ from __future__ import annotations
 import re
 from datetime import date, datetime, timedelta, time
 
+from ..time_window_range import parse_clock
+
 # antes de las 14hs | before 4 pm | hasta las 16:30 | by 2:00 p.m.
 _BEFORE = re.compile(
     r"(?:"
@@ -35,19 +37,6 @@ def default_service_date() -> date:
     """'Entregas de mañana' — default operativo del paste de despacho."""
     return date.today() + timedelta(days=1)
 
-
-def parse_clock(hour: int, minute: int, ampm: str | None) -> tuple[int, int] | None:
-    if not (0 <= hour <= 23 and 0 <= minute <= 59):
-        return None
-    tag = (ampm or "").lower().replace(" ", "").replace(".", "")
-    if tag in ("pm", "p") and hour < 12:
-        hour += 12
-    elif tag in ("am", "a") and hour == 12:
-        hour = 0
-    # "14hs" / "16h" sin am/pm: ya es 24h si hour>=13; si hour<=12 sin ampm, asumir 24h
-    if hour > 23:
-        return None
-    return hour, minute
 
 
 def parse_before_constraint(

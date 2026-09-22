@@ -681,7 +681,7 @@ async def create_import(
         None, description="IANA TZ del depot (fallback si no hay timezone de settings).",
     ),
     service_date: date | None = Query(
-        None, description="Dia de servicio para ventanas horarias (default: manana).",
+        None, description="Dia de servicio: requerido para rangos horarios tabulares; texto libre usa manana si falta.",
     ),
     depot_city: str | None = Query(None, description="Ciudad del depot (enriquece address)"),
     depot_region: str | None = Query(None),

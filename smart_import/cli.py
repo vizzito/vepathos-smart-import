@@ -135,6 +135,7 @@ def normalize(
     timezone: str = typer.Option(
         None, help="IANA TZ (ej. America/Argentina/Buenos_Aires). Ventanas → UTC.",
     ),
+    service_date: str = typer.Option(None, help="Fecha de servicio YYYY-MM-DD para rangos horarios."),
     diagnostics: bool = typer.Option(False, help="Agrega columnas row_status/row_issues."),
     derive_volume: bool = typer.Option(False, help="Calcular volume_cm3 desde LxWxH si falta."),
     sheet: str = typer.Option(None),
@@ -142,6 +143,12 @@ def normalize(
     """Convierte el archivo al formato Vepathos. NUNCA geocodifica."""
     from .extraction.tz import resolve_timezone
     from .pipeline import run_normalize
+    from datetime import date
+
+    try:
+        day = date.fromisoformat(service_date) if service_date else None
+    except ValueError as exc:
+        raise typer.BadParameter("use YYYY-MM-DD", param_hint="--service-date") from exc
 
     overrides = json.loads(Path(mapping).read_text(encoding="utf-8")) if mapping else None
     result = run_normalize(
@@ -150,6 +157,7 @@ def normalize(
         manual_mapping=overrides, phone_region=phone_region,
         diagnostics=diagnostics, sheet=sheet, derive_volume=derive_volume,
         timezone=resolve_timezone(timezone),
+        service_date=day,
     )
     r = result.report
     typer.echo(f"  {r['rows_input']} filas leidas -> {r['deliveries']} entregas, {r['packages']} bultos")
@@ -1078,7 +1086,6 @@ def worker(
 
 if __name__ == "__main__":
     main()
-
 
 
 

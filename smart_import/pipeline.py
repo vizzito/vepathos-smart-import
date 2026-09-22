@@ -20,7 +20,7 @@ from .normalization.row_normalizer import (
     STATUS_IGNORED, STATUS_INVALID, STATUS_NEEDS_GEOCODE, STATUS_OK, RowNormalizer,
 )
 from .readers import read_any
-from .schemas import TargetSchema
+from .schemas import normalize_key, TargetSchema
 from .assemble import assemble
 from .locality import detect_locality
 
@@ -69,7 +69,13 @@ def apply_manual_mapping(mapping: MappingResult, overrides: dict[str, Any],
             spec = ColumnSpec(field=raw or None)
         target = spec.field
         if target is None or target == "":
-            mapping.mapping.pop(column, None)
+            previous = mapping.mapping.pop(column, None)
+            if previous:
+                mapping.ignored_targets.add(previous.target)
+            if schema:
+                canonical = schema.alias_index().get(normalize_key(column))
+                if canonical:
+                    mapping.ignored_targets.add(canonical)
             if column not in mapping.unmapped:
                 mapping.unmapped.append(column)
             continue
@@ -77,6 +83,7 @@ def apply_manual_mapping(mapping: MappingResult, overrides: dict[str, Any],
             if m.target == target and other != column:
                 mapping.mapping.pop(other)          # un target, una sola columna
                 mapping.unmapped.append(other)
+        mapping.ignored_targets.discard(target)
         mapping.mapping[column] = ColumnMapping(column, target, 1.0, "manual", "corregido por el usuario",
                                                 unit=spec.unit, format=spec.format)
         if column in mapping.unmapped:
@@ -180,7 +187,7 @@ def run_normalize(
           filas=len(table), region_telefono=phone_region)
     outcome = RowNormalizer(schema, phone_region=phone_region,
                             derive_volume=derive_volume,
-                            timezone=timezone).run(table, mapping)
+                            timezone=timezone, service_date=service_date).run(table, mapping)
     timer.mark("normalize")
     counts_ = outcome.counts()
     stage(logger, "NORMALIZE", "",
@@ -269,6 +276,13 @@ def run_normalize(
              "fields": r.problem_fields}
             for r in outcome.rows if r.issues
         ][:200],
+        "row_issues_total": sum(bool(r.issues) for r in outcome.rows),
+        "row_issues_truncated": sum(bool(r.issues) for r in outcome.rows) > 200,
+        # Complete TW audit travels in the existing downloadable report artifact,
+        # independently of the bounded general-purpose row preview.
+        "time_window_summary": outcome.time_window_summary,
+        "time_window_issues": outcome.time_window_issues,
+        "service_date": service_date.isoformat() if service_date else None,
     }
     report["processing_times"] = timer.as_dict(time.perf_counter() - t_start)
     report["extraction"] = (extraction.as_dict() if extraction is not None
@@ -406,6 +420,7 @@ def _expand_composite_column(table, mapping, schema, cfg, phone_region,
 
     mapper = build_mapper(cfg)
     new_mapping = mapper.detect(expanded, schema)
+    new_mapping.ignored_targets.update(mapping.ignored_targets)
     stage(logger, "EXTRACT", "", campos_nuevos=len(expanded.columns) - len(table.columns) + 1,
           t=f"{extractor.fields.stats.elapsed_s:.3f}s")
     return expanded, new_mapping

@@ -55,6 +55,24 @@ class RuleSchemaMapper:
                 by_name += fuzzy.candidates(col, schema)
             by_content = heuristics.candidates(values, profile)
 
+            # Clock syntax is not evidence that a business's opening hours are
+            # delivery constraints. Content-only matches always need review.
+            if "time_window" in schema.fields:
+                from ..time_window_range import parse_window
+                norm = normalize_key(col)
+                business = any(word in norm.split() for word in
+                               ("atencion", "apertura", "cierre", "opening", "closing", "business"))
+                fraction = profile.frac(lambda text: parse_window(text).kind in
+                                        {"range", "overnight", "before", "after"})
+                generic = norm in {"horario", "franja", "ventana", "ventana horaria", "tw"}
+                if business:
+                    by_name = [h for h in by_name if h[0] != "time_window"]
+                elif generic or fraction >= 0.8:
+                    # Don't reinterpret an explicitly named scalar field.
+                    if generic or not any(h[1] >= 0.97 for h in by_name):
+                        by_content.append(("time_window", 0.80, "heuristic",
+                                           "posible ventana horaria; confirmar que corresponde a la entrega"))
+
             for target, score, method, why in by_name:
                 name_hits[(col, target)] = max(name_hits.get((col, target), 0.0), score)
                 _keep(scored, col, target, score, method, why)

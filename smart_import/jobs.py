@@ -72,6 +72,7 @@ class Job:
     schema: str = "vepathos_flat_v1"
     phone_region: str | None = None
     timezone: str | None = None
+    service_date: str | None = None  # ISO date, persists across manual remapping
     raw_path: str | None = None
     normalized_path: str | None = None
     nested_path: str | None = None

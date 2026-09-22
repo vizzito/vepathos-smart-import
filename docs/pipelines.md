@@ -844,3 +844,54 @@ pide medir, no editar un `.env`.
 unidad/barrio/landmark, palabras de narración y expansiones de localidad viven en
 `resources/geo_keywords.json` y `resources/locality_expand.json`. El aviso *"no
 hardcodear listas acá"* está en `heuristic.py:14`.
+
+### Ventana horaria en una columna (A+C)
+
+`time_window` es un campo **sólo de entrada**, de tipo `time_window_range`.
+No se agrega al CSV canónico: el normalizador produce `tw_start` y `tw_end`.
+Aliases explícitos de entrega se mapean automáticamente. Nombres genéricos
+(`horario`, `franja`, `ventana`) y detección sólo por contenido requieren revisión;
+los horarios comerciales no se interpretan automáticamente como entregas.
+También se acepta `{"Horario": {"campo": "time_window", "formato": "rango"}}`
+o simplemente `{"Horario": "time_window"}`. `null` excluye la columna.
+
+El parser comparte las reglas de reloj con extracción de texto y acepta rangos
+con `-`, `–`, `—`, `/`, `a`, `to`, `y`, `and`, horas de 24 h, AM/PM y sufijos
+`h`, `hs`, `hrs`. Acepta `de 9 a 11`, `entre 9 y 11`, `between 9 and 11` y
+formatos mezclados por fila. En columnas exige coincidencia de toda la celda;
+en texto libre sólo busca rangos con señales horarias para no tomar `Calle 9-11`.
+
+Los rangos tabulares necesitan `service_date` explícita; el worker la conserva
+al volver a mapear el job. Nunca se usa una columna `source_date` excluida ni
+se toma “mañana” del fallback de texto libre. Con timezone se emite UTC; sin
+ella se mantienen datetimes locales. Horas inexistentes/ambiguas por DST,
+extremos únicos y cruces de medianoche se reconocen y avisan sin inventar
+extremos ni un día siguiente. El consumidor de planes aún necesita soporte
+específico para medianoche.
+
+Precedencia: una selección manual del rango gana sobre extremos automáticos;
+una selección manual de extremos se conserva. Seleccionar manualmente ambas
+representaciones produce un aviso y conserva los extremos. Automáticamente,
+el par separado completo gana; si ambos valores originales están vacíos se
+usa el rango. No se mezclan extremos, no se ocultan valores separados inválidos
+y una exclusión manual de un extremo impide regenerarlo. Las diferencias entre
+representaciones producen un aviso por fila.
+
+`mapping`, `unmapped`, `ambiguous` mantienen sus tipos. El target compuesto se
+reporta como el string `time_window`. El reporte agrega `time_window_summary`
+y `time_window_issues` (auditoría completa con fila, columna, valor original,
+código y mensaje), además de `row_issues_total` y `row_issues_truncated`.
+`row_issues` conserva su muestra de 200 filas. El artefacto `.report.json`
+descargable contiene todos los avisos de ventanas; el resumen de api-doc muestra
+su total y una muestra. Los avisos no invalidan una entrega con destino válido.
+
+Fixture de regresión: `tests/fixtures/tandil_time_windows.csv`, copia del archivo
+público provisto para el incidente (Drive id
+`1rYEezZpfEjQWMtzbs-cskmWjB7dxhU98`), 250 filas, con tres rangos horarios.
+La prueba fija la fecha de servicio; no descarga datos durante CI.
+
+Interfaces: en CLI usar `normalize --service-date YYYY-MM-DD`; en HTTP Smart
+Import, query `service_date=YYYY-MM-DD`. En api-doc, la subida acepta
+`service_date` en el cuerpo y el remapeo acepta
+`{"mapping": {"Horario": {"field": "time_window", "format": "range"}}, "service_date": "2026-09-21"}`.
+La fecha se valida como día de calendario y no se reemplaza por el día actual.

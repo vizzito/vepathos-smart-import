@@ -203,6 +203,10 @@ def canonical_format(field: str, field_type: str, fmt: Any) -> str:
     raw = str(fmt).strip()
     if not raw:
         raise ColumnSpecError("formato vacio")
+    if field_type == "time_window_range":
+        if normalize_key(raw) in {"range", "rango", "intervalo"}:
+            return "range"
+        raise ColumnSpecError(f"formato de ventana no reconocido: {raw}; use rango | range | intervalo")
     if field_type == "datetime":
         preset = _DATE_PRESETS.get(normalize_key(raw))
         if preset:

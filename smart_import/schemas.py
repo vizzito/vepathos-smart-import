@@ -31,6 +31,7 @@ class SchemaField:
     aliases: tuple[str, ...] = ()
     range: tuple[float, float] | None = None
     derivable: bool = False
+    input_only: bool = False
 
     @property
     def normalized_aliases(self) -> tuple[str, ...]:
@@ -59,6 +60,7 @@ class TargetSchema:
                 aliases=tuple(spec.get("aliases", ())),
                 range=(float(rng[0]), float(rng[1])) if rng else None,
                 derivable=bool(spec.get("derivable", False)),
+                input_only=bool(spec.get("input_only", False)),
             )
         return cls(
             name=raw["name"],
