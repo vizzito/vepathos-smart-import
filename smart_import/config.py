@@ -142,7 +142,9 @@ def _resolve_pbf_dir() -> str:
 @dataclass(frozen=True)
 class Config:
     # ---------------- limites de entrada ----------------
-    max_file_mb: float = 10.0
+    # Safety net only. The product quota is PlanLimits.maxSmartImportFileMb
+    # (Free 2, Enterprise 100). This default must stay at least that high.
+    max_file_mb: float = 100.0
     max_rows: int = 50_000
 
     # ---------------- deteccion de schema ----------------
@@ -190,7 +192,7 @@ class Config:
     #: body, asi que el rechazo no toca disco.
     #:
     #: Acota el peor caso de una avalancha. Sin esta puerta, 1000 uploads
-    #: simultaneos escriben hasta 1000 x `max_file_mb` (10 GB con los defaults)
+    #: simultaneos escriben hasta 1000 x `max_file_mb` (100 GB con el default de 100 MB)
     #: en el disco que comparte con el cutter antes de que el techo de CPU
     #: rechace a uno solo, porque el archivo se recibe antes de pedir turno.
     max_normalize_queue: int = 32
@@ -397,7 +399,7 @@ class Config:
     @classmethod
     def from_env(cls) -> "Config":
         return cls(
-            max_file_mb=_float("SMART_IMPORT_MAX_FILE_MB", 10.0),
+            max_file_mb=_float("SMART_IMPORT_MAX_FILE_MB", 100.0),
             max_rows=_int("SMART_IMPORT_MAX_ROWS", 50_000),
 
             auto_accept_threshold=_float("AUTO_ACCEPT_THRESHOLD", 0.90),
